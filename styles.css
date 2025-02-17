@@ -162,3 +162,74 @@ footer .social-links a {
     color: #fff;
     text-decoration: none;
 }
+
+/* Contact Form Styles */
+form {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
+
+/*Lightmode and Dark Mode*/
+:root {
+    /* Light theme (default) */
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --accent-color: #ff6600;
+}
+
+[data-theme="dark"] {
+    /* Dark theme */
+    --background-color: #1a1a1a;
+    --text-color: #ffffff;
+    --accent-color: #ff8c00;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Style the toggle button */
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+
+    a, button, input {
+        transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+    }
+    
+}
