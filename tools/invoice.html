@@ -41,20 +41,211 @@
 
     <!-- Main Content -->
     <main>
-        <div class="coming-soon-container">
-            <div class="coming-soon-icon">🔧</div>
-            <span class="coming-soon-badge">Coming Soon</span>
-            <h1>Mechanic Invoice Creator</h1>
-            <p>A free tool to help independent mechanics and DIYers create professional invoices for their work.</p>
-            <p>Features planned:</p>
-            <ul style="text-align: left; max-width: 400px; margin: 1rem auto;">
-                <li>Customizable shop information</li>
-                <li>Parts and labor line items</li>
-                <li>Tax calculation</li>
-                <li>PDF export</li>
-                <li>Save templates for common jobs</li>
-            </ul>
-            <p>Want to be notified when this launches? <a href="../contact.html">Contact us</a> to join our mailing list.</p>
+        <div class="invoice-container">
+            <h1 class="invoice-title">Mechanic Invoice Creator</h1>
+
+            <!-- Template Controls -->
+            <div class="template-controls">
+                <select id="template-select">
+                    <option value="">-- Select Template --</option>
+                </select>
+                <button type="button" id="load-template-btn" class="btn-secondary">Load</button>
+                <button type="button" id="save-template-btn" class="btn-secondary">Save Template</button>
+                <button type="button" id="delete-template-btn" class="btn-danger">Delete</button>
+            </div>
+
+            <form id="invoice-form">
+                <!-- Shop Information -->
+                <section class="invoice-section">
+                    <h2>Shop Information</h2>
+                    <div class="invoice-row">
+                        <div class="invoice-col">
+                            <label for="shop-name">Shop Name</label>
+                            <input type="text" id="shop-name" name="shopName" placeholder="Your Shop Name">
+
+                            <label for="shop-address">Address</label>
+                            <textarea id="shop-address" name="shopAddress" rows="2" placeholder="Street Address&#10;City, State ZIP"></textarea>
+                        </div>
+                        <div class="invoice-col">
+                            <label for="shop-phone">Phone</label>
+                            <input type="tel" id="shop-phone" name="shopPhone" placeholder="(555) 123-4567">
+
+                            <label for="shop-email">Email</label>
+                            <input type="email" id="shop-email" name="shopEmail" placeholder="shop@example.com">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Invoice Details -->
+                <section class="invoice-section">
+                    <h2>Invoice Details</h2>
+                    <div class="invoice-row">
+                        <div class="invoice-col-third">
+                            <label for="invoice-number">Invoice #</label>
+                            <input type="text" id="invoice-number" name="invoiceNumber" readonly>
+                        </div>
+                        <div class="invoice-col-third">
+                            <label for="invoice-date">Date</label>
+                            <input type="date" id="invoice-date" name="invoiceDate">
+                        </div>
+                        <div class="invoice-col-third">
+                            <label for="tax-rate">Tax Rate (%)</label>
+                            <input type="number" id="tax-rate" name="taxRate" value="8.25" step="0.01" min="0" max="100">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Customer Information -->
+                <section class="invoice-section">
+                    <h2>Customer Information</h2>
+                    <div class="invoice-row">
+                        <div class="invoice-col">
+                            <label for="customer-name">Name</label>
+                            <input type="text" id="customer-name" name="customerName" placeholder="Customer Name">
+
+                            <label for="customer-address">Address</label>
+                            <textarea id="customer-address" name="customerAddress" rows="2" placeholder="Street Address&#10;City, State ZIP"></textarea>
+                        </div>
+                        <div class="invoice-col">
+                            <label for="customer-phone">Phone</label>
+                            <input type="tel" id="customer-phone" name="customerPhone" placeholder="(555) 123-4567">
+
+                            <label for="customer-email">Email</label>
+                            <input type="email" id="customer-email" name="customerEmail" placeholder="customer@example.com">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Vehicle Information -->
+                <section class="invoice-section">
+                    <h2>Vehicle Information</h2>
+                    <div class="invoice-row">
+                        <div class="invoice-col-third">
+                            <label for="vehicle-year">Year</label>
+                            <input type="number" id="vehicle-year" name="vehicleYear" placeholder="2024" min="1900" max="2100">
+                        </div>
+                        <div class="invoice-col-third">
+                            <label for="vehicle-make">Make</label>
+                            <input type="text" id="vehicle-make" name="vehicleMake" placeholder="BMW">
+                        </div>
+                        <div class="invoice-col-third">
+                            <label for="vehicle-model">Model</label>
+                            <input type="text" id="vehicle-model" name="vehicleModel" placeholder="E36 M3">
+                        </div>
+                    </div>
+                    <div class="invoice-row">
+                        <div class="invoice-col">
+                            <label for="vehicle-vin">VIN</label>
+                            <input type="text" id="vehicle-vin" name="vehicleVin" placeholder="WBSCD9323VEE12345" maxlength="17">
+                        </div>
+                        <div class="invoice-col">
+                            <label for="vehicle-mileage">Mileage</label>
+                            <input type="number" id="vehicle-mileage" name="vehicleMileage" placeholder="125000" min="0">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Parts -->
+                <section class="invoice-section">
+                    <h2>Parts</h2>
+                    <table class="line-items-table" id="parts-table">
+                        <thead>
+                            <tr>
+                                <th>Part Name</th>
+                                <th>Part #</th>
+                                <th>Qty</th>
+                                <th>Unit Price</th>
+                                <th>Total</th>
+                                <th class="no-print"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="parts-body">
+                            <tr class="part-row">
+                                <td><input type="text" name="partName[]" placeholder="Part description"></td>
+                                <td><input type="text" name="partNumber[]" placeholder="ABC123"></td>
+                                <td><input type="number" name="partQty[]" value="1" min="1" class="qty-input"></td>
+                                <td><input type="number" name="partPrice[]" value="0.00" step="0.01" min="0" class="price-input"></td>
+                                <td class="line-total">$0.00</td>
+                                <td class="no-print"><button type="button" class="remove-row-btn" onclick="removePartRow(this)">×</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="add-row-btn" onclick="addPartRow()">+ Add Part</button>
+                </section>
+
+                <!-- Labor -->
+                <section class="invoice-section">
+                    <h2>Labor</h2>
+                    <table class="line-items-table" id="labor-table">
+                        <thead>
+                            <tr>
+                                <th>Description</th>
+                                <th>Hours</th>
+                                <th>Rate ($/hr)</th>
+                                <th>Total</th>
+                                <th class="no-print"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="labor-body">
+                            <tr class="labor-row">
+                                <td><input type="text" name="laborDesc[]" placeholder="Labor description"></td>
+                                <td><input type="number" name="laborHours[]" value="1" step="0.25" min="0" class="hours-input"></td>
+                                <td><input type="number" name="laborRate[]" value="85.00" step="0.01" min="0" class="rate-input"></td>
+                                <td class="line-total">$85.00</td>
+                                <td class="no-print"><button type="button" class="remove-row-btn" onclick="removeLaborRow(this)">×</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="add-row-btn" onclick="addLaborRow()">+ Add Labor</button>
+                </section>
+
+                <!-- Summary -->
+                <section class="invoice-section invoice-summary">
+                    <h2>Summary</h2>
+                    <div class="summary-row">
+                        <span>Parts Subtotal:</span>
+                        <span id="parts-subtotal">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Labor Subtotal:</span>
+                        <span id="labor-subtotal">$85.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax (<span id="tax-rate-display">8.25</span>% on parts):</span>
+                        <span id="tax-amount">$0.00</span>
+                    </div>
+                    <div class="summary-row summary-total">
+                        <span>TOTAL:</span>
+                        <span id="grand-total">$85.00</span>
+                    </div>
+                </section>
+
+                <!-- Notes -->
+                <section class="invoice-section">
+                    <h2>Notes</h2>
+                    <textarea id="invoice-notes" name="notes" rows="4" placeholder="Warranty information, payment terms, additional notes..."></textarea>
+                </section>
+
+                <!-- Actions -->
+                <div class="invoice-actions">
+                    <button type="button" id="clear-btn" class="btn-secondary">Clear Form</button>
+                    <button type="button" id="print-btn" class="btn-primary">Print Invoice</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Save Template Modal -->
+        <div id="template-modal" class="modal">
+            <div class="modal-content">
+                <h3>Save Template</h3>
+                <p>Save your shop information as a reusable template.</p>
+                <label for="template-name">Template Name</label>
+                <input type="text" id="template-name" placeholder="My Shop Template">
+                <div class="modal-actions">
+                    <button type="button" id="cancel-template-btn" class="btn-secondary">Cancel</button>
+                    <button type="button" id="confirm-save-btn" class="btn-primary">Save</button>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -71,5 +262,6 @@
     </footer>
 
     <script src="../script.js"></script>
+    <script src="invoice.js"></script>
 </body>
 </html>
