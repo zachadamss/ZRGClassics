@@ -114,10 +114,13 @@
 - [ ] Add images to resource pages (engine bays, problem areas)
 - [ ] Add estimated repair costs to issue cards
 - [ ] Add difficulty ratings for DIY repairs
-- [ ] Mobile navigation improvements (hamburger menu)
+- [x] Mobile navigation improvements (hamburger menu)
 - [ ] Search functionality across all resources
 - [ ] Newsletter signup for launch notifications
 - [ ] Add more vehicle platforms (E90, 987, 991, etc.)
+- [ ] Add better navigation structure/home page for each brand to see all of the models, and then the same for each model to see all of the resources for that model.  
+- [ ] Adjust color scheme to match color codes of vintage porsche racing in a very aesthetic, modern, and still timeless way.  
+- [x] Fix usability on mobile, does not work well, user menu is not fully visible and page is not resizing correctly.  
 
 ---
 
