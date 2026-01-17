@@ -71,7 +71,7 @@
 
 ## Tools Section
 
-- [ ] **Invoice Creator** - Build functional tool
+- [x] **Invoice Creator** - Build functional tool
   - Customizable shop information
   - Parts and labor line items
   - Tax calculation
@@ -98,6 +98,16 @@
   - Reputation/feedback system
 
 ---
+
+## New Platforms Added
+- [x] **Porsche 924** (1976-1988) - Placeholder page created
+- [x] **Porsche 944** (1982-1991) - Placeholder page created
+- [x] **Porsche 928** (1977-1995) - Placeholder page created
+
+## Platforms Ready for Content
+- [ ] **Porsche 924** - Add detailed common issues content
+- [ ] **Porsche 944** - Add detailed common issues content
+- [ ] **Porsche 928** - Add detailed common issues content
 
 ## Enhancements
 
