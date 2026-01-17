@@ -10,16 +10,29 @@
     <!-- Header -->
     <header>
         <div class="logo">
-            <img src="images/logo.jpg" alt="ZRG Classics Logo">
+            <a href="index.html"><img src="images/logo.jpg" alt="ZRG Classics Logo"></a>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Resources</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="resources/bmw/e30.html">BMW E30</a></li>
+                        <li><a href="resources/bmw/e36.html">BMW E36</a></li>
+                        <li><a href="resources/bmw/e46.html">BMW E46</a></li>
+                        <li><a href="resources/porsche/986.html">Porsche 986</a></li>
+                        <li><a href="resources/porsche/996.html">Porsche 996</a></li>
+                        <li><a href="resources/porsche/997.html">Porsche 997</a></li>
+                    </ul>
+                </li>
+                <li><a href="tools/invoice.html">Tools</a></li>
+                <li><a href="community/forums.html">Community</a></li>
                 <li><a href="shop.html">Shop</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <button id="theme-toggle" aria-label="Toggle Dark Mode">
-                    🌓 <!-- Default icon (you can replace with emojis/svgs) -->
+                    🌓
                 </button>
             </ul>
         </nav>
@@ -77,5 +90,7 @@
             </ul>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

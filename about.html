@@ -5,28 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - ZRG Classics</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="logo">
-            <img src="images/logo.jpg" alt="ZRG Classics Logo">
+            <a href="index.html"><img src="images/logo.jpg" alt="ZRG Classics Logo"></a>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Resources</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="resources/bmw/e30.html">BMW E30</a></li>
+                        <li><a href="resources/bmw/e36.html">BMW E36</a></li>
+                        <li><a href="resources/bmw/e46.html">BMW E46</a></li>
+                        <li><a href="resources/porsche/986.html">Porsche 986</a></li>
+                        <li><a href="resources/porsche/996.html">Porsche 996</a></li>
+                        <li><a href="resources/porsche/997.html">Porsche 997</a></li>
+                    </ul>
+                </li>
+                <li><a href="tools/invoice.html">Tools</a></li>
+                <li><a href="community/forums.html">Community</a></li>
                 <li><a href="shop.html">Shop</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    🌓
+                </button>
             </ul>
         </nav>
     </header>
 
     <!-- Main Content -->
-    <main>
+    <main class="resource-content">
         <h1>About ZRG Classics</h1>
-        <p>Welcome to ZRG Classics, your destination for timeless classics.</p>
-        <p>We specialize in bringing you the best in vintage and modern classics.</p>
+        <p class="subtitle">Building a resource hub for the classic German car community</p>
+
+        <div class="issue-card">
+            <h3>Our Mission</h3>
+            <p class="description">ZRG Classics started as a place to buy and sell classic German cars. We've since evolved into something bigger: a community-driven resource hub dedicated to helping enthusiasts maintain, repair, and enjoy their classic Porsches and BMWs.</p>
+            <p>We believe that the knowledge needed to keep these machines running shouldn't be locked behind paywalls or scattered across dozens of forums. Our goal is to consolidate the collective wisdom of the enthusiast community into one accessible place.</p>
+        </div>
+
+        <div class="issue-card">
+            <h3>What We Offer</h3>
+            <div class="fix">
+                <h4>Vehicle Resources</h4>
+                <ul>
+                    <li>Common issues and their symptoms for each platform</li>
+                    <li>Recommended fixes with parts sourcing information</li>
+                    <li>Attribution to original sources and community contributors</li>
+                </ul>
+            </div>
+            <div class="fix">
+                <h4>Coming Soon</h4>
+                <ul>
+                    <li>Free invoice creator tool for mechanics and DIYers</li>
+                    <li>Community forums for discussion and help</li>
+                    <li>Parts marketplace for buying and selling</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="issue-card">
+            <h3>Contribute</h3>
+            <p class="description">This resource hub is only as good as the community that builds it. If you have knowledge to share about common issues, fixes, or maintenance tips, we'd love to hear from you.</p>
+            <p><a href="contact.html" class="btn">Get in Touch</a></p>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -40,5 +88,7 @@
             </ul>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
