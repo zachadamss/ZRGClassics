@@ -98,6 +98,10 @@
             <td class="no-print"><button type="button" class="remove-row-btn" onclick="removePartRow(this)">×</button></td>
         `;
         partsBody.appendChild(newRow);
+        // Apply mobile labels for responsive display
+        if (window.applyMobileLabels) {
+            window.applyMobileLabels();
+        }
     };
 
     // Remove a part row
@@ -122,6 +126,10 @@
         `;
         laborBody.appendChild(newRow);
         calculateTotals();
+        // Apply mobile labels for responsive display
+        if (window.applyMobileLabels) {
+            window.applyMobileLabels();
+        }
     };
 
     // Remove a labor row
@@ -334,6 +342,10 @@
         document.getElementById('tax-rate').value = '8.25';
         document.getElementById('tax-rate-display').textContent = '8.25';
         calculateTotals();
+        // Apply mobile labels for responsive display
+        if (window.applyMobileLabels) {
+            window.applyMobileLabels();
+        }
     }
 
     // Print the invoice
