@@ -133,7 +133,10 @@
 ## Enhancements
 
 - [ ] Add images to resource pages (engine bays, problem areas)
-- [ ] Add estimated repair costs to issue cards
+- [x] **Add estimated repair costs to issue cards**
+  - All 132 issues across 17 vehicles now include DIY and Shop cost estimates
+  - Added OEM part numbers and price ranges for common replacement parts
+  - Cost notes explain labor hours, considerations, and recommendations
 - [ ] Add difficulty ratings for DIY repairs
 - [x] Mobile navigation improvements (hamburger menu)
 - [x] Search functionality across all resources
@@ -171,9 +174,9 @@
 - [ ] Add "Related Issues" links between similar problems across platforms
 - [ ] Add print-friendly styling for resource pages (mechanics can print guides)
 - [ ] Add "Report Issue" or "Suggest Edit" links for community contributions
-- [ ] Add estimated repair costs to issue cards
+- [x] Add estimated repair costs to issue cards
 - [ ] Add difficulty ratings for DIY repairs (Easy/Moderate/Advanced)
-- [ ] Add parts links or part numbers where applicable
+- [x] Add parts links or part numbers where applicable
 
 ### New Platforms to Add
 - [x] BMW E90/E91/E92/E93 (2005-2013 3 Series)

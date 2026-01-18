@@ -33,6 +33,38 @@
           "name": "Turner Motorsport",
           "url": "https://www.turnermotorsport.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$250-400",
+        "shop": "$600-1200",
+        "notes": "Full refresh recommended. Replace all plastic components together."
+      },
+      "parts": [
+        {
+          "name": "Water Pump",
+          "partNumber": "11517527799",
+          "price": "$60-100"
+        },
+        {
+          "name": "Thermostat",
+          "partNumber": "11531733803",
+          "price": "$20-40"
+        },
+        {
+          "name": "Expansion Tank",
+          "partNumber": "17111723520",
+          "price": "$30-50"
+        },
+        {
+          "name": "Radiator Hose Kit",
+          "partNumber": "Various",
+          "price": "$80-150"
+        },
+        {
+          "name": "Radiator",
+          "partNumber": "17111728907",
+          "price": "$120-200"
+        }
       ]
     },
     {
@@ -54,6 +86,28 @@
         {
           "name": "Bimmerforums",
           "url": "https://www.bimmerforums.com/forum/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$80-150",
+        "shop": "$300-600",
+        "notes": "Single VANOS on M50TU/M52. Seal kit is most common fix."
+      },
+      "parts": [
+        {
+          "name": "VANOS Seal Kit (Beisan)",
+          "partNumber": "BS030",
+          "price": "$80-100"
+        },
+        {
+          "name": "VANOS Piston",
+          "partNumber": "11361738403",
+          "price": "$100-150"
+        },
+        {
+          "name": "VANOS Solenoid",
+          "partNumber": "11361433513",
+          "price": "$80-120"
         }
       ]
     },
@@ -78,6 +132,28 @@
           "name": "Bimmerforums",
           "url": "https://www.bimmerforums.com/forum/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$100-200",
+        "shop": "$400-700",
+        "notes": "Budget for alignment after replacement. Both sides recommended."
+      },
+      "parts": [
+        {
+          "name": "RTAB Bushing (OEM)",
+          "partNumber": "33326770824",
+          "price": "$25-40"
+        },
+        {
+          "name": "RTAB Bushing (Poly)",
+          "partNumber": "Various aftermarket",
+          "price": "$60-100"
+        },
+        {
+          "name": "Trailing Arm",
+          "partNumber": "33321090031",
+          "price": "$150-250"
+        }
       ]
     },
     {
@@ -99,6 +175,28 @@
         {
           "name": "ECS Tuning",
           "url": "https://www.ecstuning.com/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$60-120",
+        "shop": "$200-350",
+        "notes": "Per window. Common DIY job."
+      },
+      "parts": [
+        {
+          "name": "Window Regulator (Front Left)",
+          "partNumber": "51338201465",
+          "price": "$60-100"
+        },
+        {
+          "name": "Window Regulator (Front Right)",
+          "partNumber": "51338201466",
+          "price": "$60-100"
+        },
+        {
+          "name": "Window Motor",
+          "partNumber": "67628360977",
+          "price": "$50-80"
         }
       ]
     },
@@ -123,6 +221,33 @@
           "name": "FCP Euro",
           "url": "https://www.fcpeuro.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$150-300",
+        "shop": "$400-800",
+        "notes": "Valve cover gasket is easiest. Oil filter housing and pan require more labor."
+      },
+      "parts": [
+        {
+          "name": "Valve Cover Gasket",
+          "partNumber": "11129070531",
+          "price": "$25-50"
+        },
+        {
+          "name": "Oil Filter Housing Gasket",
+          "partNumber": "11421719855",
+          "price": "$15-30"
+        },
+        {
+          "name": "Oil Pan Gasket",
+          "partNumber": "11131437237",
+          "price": "$30-60"
+        },
+        {
+          "name": "Cam Position Sensor Seal",
+          "partNumber": "12141748398",
+          "price": "$10-20"
+        }
       ]
     },
     {
@@ -146,6 +271,33 @@
           "name": "Bimmerforums",
           "url": "https://www.bimmerforums.com/forum/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$150-300",
+        "shop": "$400-700",
+        "notes": "Replace in pairs. Alignment required after."
+      },
+      "parts": [
+        {
+          "name": "Control Arm (Lower Left)",
+          "partNumber": "31121139991",
+          "price": "$50-80"
+        },
+        {
+          "name": "Control Arm (Lower Right)",
+          "partNumber": "31121139992",
+          "price": "$50-80"
+        },
+        {
+          "name": "Control Arm Bushing",
+          "partNumber": "31129069035",
+          "price": "$15-30"
+        },
+        {
+          "name": "Ball Joint",
+          "partNumber": "31126758510",
+          "price": "$30-50"
+        }
       ]
     },
     {
@@ -168,6 +320,28 @@
         {
           "name": "Bimmerforums",
           "url": "https://www.bimmerforums.com/forum/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$100-250",
+        "shop": "$200-450",
+        "notes": "Replace all coils and plugs together for best results."
+      },
+      "parts": [
+        {
+          "name": "Ignition Coil",
+          "partNumber": "12131703228",
+          "price": "$25-50"
+        },
+        {
+          "name": "Spark Plugs (NGK)",
+          "partNumber": "BKR6EQUP",
+          "price": "$8-15 each"
+        },
+        {
+          "name": "Spark Plug Wires (M50)",
+          "partNumber": "12121727583",
+          "price": "$80-120"
         }
       ]
     }

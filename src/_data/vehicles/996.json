@@ -32,6 +32,23 @@
           "name": "LN Engineering",
           "url": "https://lnengineering.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$500-1000",
+        "shop": "$2000-3500",
+        "notes": "Same M96 engine as 986. Critical maintenance."
+      },
+      "parts": [
+        {
+          "name": "IMS Bearing Retrofit",
+          "partNumber": "LN Engineering",
+          "price": "$400-600"
+        },
+        {
+          "name": "IMS Guardian",
+          "partNumber": "LN Engineering",
+          "price": "$80-120"
+        }
       ]
     },
     {
@@ -54,6 +71,23 @@
         {
           "name": "Flat Six Innovations",
           "url": "https://flat6innovations.com/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "N/A",
+        "shop": "$5000-15000",
+        "notes": "D-chunk and bore scoring. Major engine repair."
+      },
+      "parts": [
+        {
+          "name": "Cylinder Sleeving",
+          "partNumber": "LN Engineering",
+          "price": "$800-1200/cyl"
+        },
+        {
+          "name": "Piston Set",
+          "partNumber": "Various",
+          "price": "$1500-2500"
         }
       ]
     },
@@ -78,6 +112,23 @@
           "name": "Rennlist",
           "url": "https://rennlist.com/forums/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$400-800",
+        "shop": "$1500-2500",
+        "notes": "Combine with IMS and clutch if needed."
+      },
+      "parts": [
+        {
+          "name": "Rear Main Seal",
+          "partNumber": "99610322571",
+          "price": "$30-60"
+        },
+        {
+          "name": "Intermediate Plate Seal",
+          "partNumber": "99610322870",
+          "price": "$20-40"
+        }
       ]
     },
     {
@@ -100,6 +151,18 @@
         {
           "name": "FCP Euro",
           "url": "https://www.fcpeuro.com/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$200-400",
+        "shop": "$400-800",
+        "notes": "Same as 986. Causes smoke from exhaust."
+      },
+      "parts": [
+        {
+          "name": "AOS Assembly",
+          "partNumber": "99610702558",
+          "price": "$200-350"
         }
       ]
     },
@@ -125,6 +188,23 @@
           "name": "Rennlist",
           "url": "https://rennlist.com/forums/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$200-400",
+        "shop": "$500-1000",
+        "notes": "Plastic to aluminum upgrade recommended."
+      },
+      "parts": [
+        {
+          "name": "Coolant Pipe Kit",
+          "partNumber": "Various",
+          "price": "$150-300"
+        },
+        {
+          "name": "Water Pump",
+          "partNumber": "99610601157",
+          "price": "$100-180"
+        }
       ]
     },
     {
@@ -148,6 +228,23 @@
           "name": "Planet-9",
           "url": "https://www.planet-9.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$50-150",
+        "shop": "$200-400",
+        "notes": "Moisture causes fogging. Reseal or replace."
+      },
+      "parts": [
+        {
+          "name": "Headlight Seal Kit",
+          "partNumber": "Various",
+          "price": "$30-80"
+        },
+        {
+          "name": "Headlight Assembly",
+          "partNumber": "99663103214",
+          "price": "$400-800"
+        }
       ]
     },
     {
@@ -170,6 +267,23 @@
         {
           "name": "Rennlist",
           "url": "https://rennlist.com/forums/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$300-600",
+        "shop": "$700-1400",
+        "notes": "Control arms and bushings wear."
+      },
+      "parts": [
+        {
+          "name": "Control Arm (Front)",
+          "partNumber": "99634105314",
+          "price": "$150-250"
+        },
+        {
+          "name": "Control Arm Bushing",
+          "partNumber": "99634105000",
+          "price": "$30-60"
         }
       ]
     }

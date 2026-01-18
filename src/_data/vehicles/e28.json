@@ -33,6 +33,33 @@
           "name": "BMW CCA",
           "url": "https://www.bmwcca.org/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$150-300",
+        "shop": "$500-900",
+        "notes": "M30 has timing chain - less common issue. M20 requires belt service."
+      },
+      "parts": [
+        {
+          "name": "Timing Belt (M20)",
+          "partNumber": "11311711081",
+          "price": "$30-50"
+        },
+        {
+          "name": "Timing Chain Kit (M30)",
+          "partNumber": "11311717597",
+          "price": "$200-350"
+        },
+        {
+          "name": "Tensioner",
+          "partNumber": "11311308652",
+          "price": "$40-70"
+        },
+        {
+          "name": "Guides (M30)",
+          "partNumber": "11311265513",
+          "price": "$30-50 each"
+        }
       ]
     },
     {
@@ -55,6 +82,28 @@
         {
           "name": "R3VLimited",
           "url": "https://www.r3vlimited.com/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$300-600",
+        "shop": "$800-1500",
+        "notes": "M30 timing chain and guides. Less common failure than M20 belt."
+      },
+      "parts": [
+        {
+          "name": "Timing Chain Kit",
+          "partNumber": "11311717597",
+          "price": "$200-350"
+        },
+        {
+          "name": "Chain Guide Rails",
+          "partNumber": "11311265513",
+          "price": "$30-50 each"
+        },
+        {
+          "name": "Tensioner",
+          "partNumber": "11311308652",
+          "price": "$60-100"
         }
       ]
     },
@@ -80,6 +129,28 @@
           "name": "R3VLimited",
           "url": "https://www.r3vlimited.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$200-1000",
+        "shop": "$1000-5000+",
+        "notes": "Common on 40+ year old cars. Check floors and fenders."
+      },
+      "parts": [
+        {
+          "name": "Fender Patch Panel",
+          "partNumber": "Various",
+          "price": "$50-150"
+        },
+        {
+          "name": "Rocker Panel",
+          "partNumber": "Various",
+          "price": "$80-200"
+        },
+        {
+          "name": "Floor Pan Section",
+          "partNumber": "Various",
+          "price": "$100-250"
+        }
       ]
     },
     {
@@ -102,6 +173,23 @@
         {
           "name": "Pelican Parts",
           "url": "https://www.pelicanparts.com/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$100-300",
+        "shop": "$300-700",
+        "notes": "Valve cover and oil pan gaskets common."
+      },
+      "parts": [
+        {
+          "name": "Valve Cover Gasket",
+          "partNumber": "11121730229",
+          "price": "$30-60"
+        },
+        {
+          "name": "Oil Pan Gasket",
+          "partNumber": "11131730234",
+          "price": "$30-60"
         }
       ]
     },
@@ -126,6 +214,28 @@
         {
           "name": "Bimmerforums",
           "url": "https://www.bimmerforums.com/forum/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$50-200",
+        "shop": "$150-400",
+        "notes": "Ground connections and relays are common culprits."
+      },
+      "parts": [
+        {
+          "name": "Main Relay",
+          "partNumber": "12631709557",
+          "price": "$40-70"
+        },
+        {
+          "name": "Fuel Pump Relay",
+          "partNumber": "12631735424",
+          "price": "$25-45"
+        },
+        {
+          "name": "Ground Point Kit",
+          "partNumber": "Various",
+          "price": "$20-40"
         }
       ]
     },
@@ -152,6 +262,28 @@
           "name": "Bimmerforums",
           "url": "https://www.bimmerforums.com/forum/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$300-600",
+        "shop": "$700-1200",
+        "notes": "Full refresh common at this age."
+      },
+      "parts": [
+        {
+          "name": "Front Control Arm Kit",
+          "partNumber": "Various",
+          "price": "$150-300"
+        },
+        {
+          "name": "Strut Mount",
+          "partNumber": "31331139438",
+          "price": "$30-60"
+        },
+        {
+          "name": "Tie Rod Assembly",
+          "partNumber": "32111125186",
+          "price": "$40-70"
+        }
       ]
     },
     {
@@ -176,6 +308,28 @@
           "name": "Bimmerforums",
           "url": "https://www.bimmerforums.com/forum/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$200-400",
+        "shop": "$500-1000",
+        "notes": "Full system refresh recommended on older cars."
+      },
+      "parts": [
+        {
+          "name": "Water Pump",
+          "partNumber": "11511719836",
+          "price": "$60-100"
+        },
+        {
+          "name": "Thermostat",
+          "partNumber": "11531266763",
+          "price": "$20-35"
+        },
+        {
+          "name": "Radiator",
+          "partNumber": "17111712447",
+          "price": "$150-250"
+        }
       ]
     },
     {
@@ -199,6 +353,28 @@
         {
           "name": "BMW CCA",
           "url": "https://www.bmwcca.org/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$100-400",
+        "shop": "$300-700",
+        "notes": "L-Jetronic and Motronic systems. AFM and WUR common issues."
+      },
+      "parts": [
+        {
+          "name": "Air Flow Meter",
+          "partNumber": "13621286615",
+          "price": "$150-300"
+        },
+        {
+          "name": "Warm-Up Regulator",
+          "partNumber": "Various",
+          "price": "$200-400"
+        },
+        {
+          "name": "Fuel Injector",
+          "partNumber": "13641730060",
+          "price": "$40-80 each"
         }
       ]
     }

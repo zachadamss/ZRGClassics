@@ -31,6 +31,33 @@
           "name": "Bimmerforums",
           "url": "https://www.bimmerforums.com/forum/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$150-300",
+        "shop": "$500-900",
+        "notes": "Critical maintenance. Replace water pump at same time."
+      },
+      "parts": [
+        {
+          "name": "Timing Belt (M20)",
+          "partNumber": "11311711081",
+          "price": "$30-50"
+        },
+        {
+          "name": "Timing Belt (M42)",
+          "partNumber": "11311714670",
+          "price": "$25-45"
+        },
+        {
+          "name": "Tensioner",
+          "partNumber": "11311308652",
+          "price": "$40-70"
+        },
+        {
+          "name": "Water Pump",
+          "partNumber": "11519070755",
+          "price": "$50-80"
+        }
       ]
     },
     {
@@ -53,6 +80,33 @@
         {
           "name": "E30Zone",
           "url": "https://www.e30zone.net/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$200-1000",
+        "shop": "$1000-5000+",
+        "notes": "Cost varies widely by extent. Fenders and floors most common."
+      },
+      "parts": [
+        {
+          "name": "Fender (Reproduction)",
+          "partNumber": "Various",
+          "price": "$150-300"
+        },
+        {
+          "name": "Rocker Panel",
+          "partNumber": "Various",
+          "price": "$100-200"
+        },
+        {
+          "name": "Battery Box Repair Panel",
+          "partNumber": "41111945025",
+          "price": "$80-150"
+        },
+        {
+          "name": "POR-15 Rust Treatment Kit",
+          "partNumber": "N/A",
+          "price": "$50-100"
         }
       ]
     },
@@ -77,6 +131,33 @@
           "name": "Bimmerforums",
           "url": "https://www.bimmerforums.com/forum/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$50-200",
+        "shop": "$150-400",
+        "notes": "Often ground connection issues. Check grounds first."
+      },
+      "parts": [
+        {
+          "name": "Combination Relay",
+          "partNumber": "12631709557",
+          "price": "$40-70"
+        },
+        {
+          "name": "Fuel Pump Relay",
+          "partNumber": "12631735424",
+          "price": "$25-45"
+        },
+        {
+          "name": "Ground Strap Kit",
+          "partNumber": "Various",
+          "price": "$20-40"
+        },
+        {
+          "name": "Ignition Switch",
+          "partNumber": "61321377135",
+          "price": "$50-90"
+        }
       ]
     },
     {
@@ -99,6 +180,33 @@
         {
           "name": "Ireland Engineering",
           "url": "https://www.iemotorsport.com/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$200-400",
+        "shop": "$500-900",
+        "notes": "Full refresh transforms handling. Common on 30+ year old cars."
+      },
+      "parts": [
+        {
+          "name": "Control Arm Bushing Set",
+          "partNumber": "31129058817",
+          "price": "$40-80"
+        },
+        {
+          "name": "Subframe Bushing",
+          "partNumber": "33311128437",
+          "price": "$30-50 each"
+        },
+        {
+          "name": "Strut Mount",
+          "partNumber": "31331139438",
+          "price": "$30-60"
+        },
+        {
+          "name": "Tie Rod End",
+          "partNumber": "32111125186",
+          "price": "$25-45"
         }
       ]
     },
@@ -124,6 +232,33 @@
           "name": "BMW CCA",
           "url": "https://www.bmwcca.org/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$100-400",
+        "shop": "$300-800",
+        "notes": "Motronic systems need proper diagnosis. AFM common failure."
+      },
+      "parts": [
+        {
+          "name": "Air Flow Meter (AFM)",
+          "partNumber": "13621286615",
+          "price": "$150-300"
+        },
+        {
+          "name": "Fuel Injector (each)",
+          "partNumber": "13641730060",
+          "price": "$40-80"
+        },
+        {
+          "name": "Fuel Pressure Regulator",
+          "partNumber": "13531715685",
+          "price": "$80-150"
+        },
+        {
+          "name": "Cold Start Valve",
+          "partNumber": "13411286064",
+          "price": "$60-100"
+        }
       ]
     },
     {
@@ -146,6 +281,33 @@
         {
           "name": "Pelican Parts",
           "url": "https://www.pelicanparts.com/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$150-300",
+        "shop": "$400-700",
+        "notes": "Replace all hoses and thermostat during water pump service."
+      },
+      "parts": [
+        {
+          "name": "Water Pump (M20)",
+          "partNumber": "11519070755",
+          "price": "$50-80"
+        },
+        {
+          "name": "Thermostat",
+          "partNumber": "11531266763",
+          "price": "$20-35"
+        },
+        {
+          "name": "Radiator (Manual)",
+          "partNumber": "17111712447",
+          "price": "$120-200"
+        },
+        {
+          "name": "Coolant Hose Kit",
+          "partNumber": "Various",
+          "price": "$80-150"
         }
       ]
     }

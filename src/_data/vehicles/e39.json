@@ -36,6 +36,33 @@
           "name": "FCP Euro",
           "url": "https://www.fcpeuro.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$300-500",
+        "shop": "$700-1400",
+        "notes": "V8 models add complexity. Full refresh strongly recommended."
+      },
+      "parts": [
+        {
+          "name": "Water Pump (M52/M54)",
+          "partNumber": "11517527910",
+          "price": "$80-150"
+        },
+        {
+          "name": "Thermostat",
+          "partNumber": "11537509227",
+          "price": "$25-45"
+        },
+        {
+          "name": "Expansion Tank",
+          "partNumber": "17137787039",
+          "price": "$40-70"
+        },
+        {
+          "name": "Radiator",
+          "partNumber": "17117503249",
+          "price": "$180-300"
+        }
       ]
     },
     {
@@ -58,6 +85,28 @@
         {
           "name": "Bimmerforums",
           "url": "https://www.bimmerforums.com/forum/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$100-200",
+        "shop": "$400-800",
+        "notes": "Double VANOS on M52TU/M54. Seals and solenoids common."
+      },
+      "parts": [
+        {
+          "name": "VANOS Seal Kit (Beisan)",
+          "partNumber": "BS032",
+          "price": "$100-130"
+        },
+        {
+          "name": "VANOS Solenoid (Intake)",
+          "partNumber": "11361432532",
+          "price": "$80-120"
+        },
+        {
+          "name": "VANOS Solenoid (Exhaust)",
+          "partNumber": "11361433513",
+          "price": "$80-120"
         }
       ]
     },
@@ -82,6 +131,23 @@
           "name": "Bimmerforums",
           "url": "https://www.bimmerforums.com/forum/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$80-150",
+        "shop": "$200-400",
+        "notes": "M54 engines. DISA flap can break and get ingested."
+      },
+      "parts": [
+        {
+          "name": "DISA Valve Assembly",
+          "partNumber": "11617544805",
+          "price": "$150-250"
+        },
+        {
+          "name": "DISA Repair Kit",
+          "partNumber": "Various aftermarket",
+          "price": "$30-50"
+        }
       ]
     },
     {
@@ -104,6 +170,23 @@
         {
           "name": "Bimmerforums",
           "url": "https://www.bimmerforums.com/forum/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$150-300",
+        "shop": "$400-700",
+        "notes": "Critical for E39 handling. Replace with control arms."
+      },
+      "parts": [
+        {
+          "name": "Thrust Arm (Left)",
+          "partNumber": "31126774825",
+          "price": "$60-100"
+        },
+        {
+          "name": "Thrust Arm (Right)",
+          "partNumber": "31126774826",
+          "price": "$60-100"
         }
       ]
     },
@@ -128,6 +211,23 @@
           "name": "BimmerBoard",
           "url": "https://www.bimmerboard.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$500-1000",
+        "shop": "$1500-3000",
+        "notes": "M62 V8 timing chain guide failure. Serious job."
+      },
+      "parts": [
+        {
+          "name": "Timing Chain Guide Set (M62)",
+          "partNumber": "Various",
+          "price": "$300-500"
+        },
+        {
+          "name": "Timing Chains",
+          "partNumber": "Various",
+          "price": "$200-350"
+        }
       ]
     },
     {
@@ -150,6 +250,23 @@
         {
           "name": "Bimmerforums",
           "url": "https://www.bimmerforums.com/forum/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$200-400",
+        "shop": "$500-1000",
+        "notes": "M62 V8 only. Leaks coolant into valley."
+      },
+      "parts": [
+        {
+          "name": "Valley Pan Gasket",
+          "partNumber": "11141742042",
+          "price": "$30-60"
+        },
+        {
+          "name": "Valley Pan Bolts",
+          "partNumber": "Various",
+          "price": "$20-40"
         }
       ]
     },
@@ -175,6 +292,23 @@
           "name": "Pelican Parts",
           "url": "https://www.pelicanparts.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$100-300",
+        "shop": "$300-700",
+        "notes": "Valve cover and oil filter housing common."
+      },
+      "parts": [
+        {
+          "name": "Valve Cover Gasket (M54)",
+          "partNumber": "11127512839",
+          "price": "$30-60"
+        },
+        {
+          "name": "Oil Filter Housing Gasket",
+          "partNumber": "11428637820",
+          "price": "$15-30"
+        }
       ]
     },
     {
@@ -199,6 +333,28 @@
           "name": "Bimmerforums",
           "url": "https://www.bimmerforums.com/forum/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$300-600",
+        "shop": "$700-1200",
+        "notes": "Thrust arm and control arm bushings wear. Alignment required."
+      },
+      "parts": [
+        {
+          "name": "Thrust Arm Kit",
+          "partNumber": "31126774826",
+          "price": "$60-100"
+        },
+        {
+          "name": "Control Arm (Lower)",
+          "partNumber": "31126758520",
+          "price": "$60-100"
+        },
+        {
+          "name": "Tie Rod Assembly",
+          "partNumber": "32106774335",
+          "price": "$50-80"
+        }
       ]
     },
     {
@@ -221,6 +377,23 @@
         {
           "name": "Pelican Parts",
           "url": "https://www.pelicanparts.com/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$30-100",
+        "shop": "$150-350",
+        "notes": "Pixel ribbon and final stage unit failures common."
+      },
+      "parts": [
+        {
+          "name": "Pixel Repair Ribbon",
+          "partNumber": "Various aftermarket",
+          "price": "$20-40"
+        },
+        {
+          "name": "Final Stage Unit",
+          "partNumber": "64116923204",
+          "price": "$80-150"
         }
       ]
     }

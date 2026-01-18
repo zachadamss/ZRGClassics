@@ -32,6 +32,23 @@
           "name": "LN Engineering",
           "url": "https://lnengineering.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$500-1000",
+        "shop": "$2000-3500",
+        "notes": "997.1 only. 997.2 has different engine design."
+      },
+      "parts": [
+        {
+          "name": "IMS Bearing Retrofit",
+          "partNumber": "LN Engineering",
+          "price": "$400-600"
+        },
+        {
+          "name": "IMS Solution Kit",
+          "partNumber": "Flat Six Innovations",
+          "price": "$1200-1500"
+        }
       ]
     },
     {
@@ -54,6 +71,18 @@
         {
           "name": "Flat Six Innovations",
           "url": "https://flat6innovations.com/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "N/A",
+        "shop": "$5000-15000",
+        "notes": "997.1 M97 engine. Less common than 996 but still occurs."
+      },
+      "parts": [
+        {
+          "name": "Cylinder Sleeving",
+          "partNumber": "LN Engineering",
+          "price": "$800-1200/cyl"
         }
       ]
     },
@@ -78,6 +107,23 @@
           "name": "Planet-9",
           "url": "https://www.planet-9.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$100-200",
+        "shop": "$400-2000+",
+        "notes": "Fluid service DIY possible. Major repairs shop only."
+      },
+      "parts": [
+        {
+          "name": "PDK Fluid (7L)",
+          "partNumber": "Pentosin FFL-2",
+          "price": "$150-200"
+        },
+        {
+          "name": "PDK Filter",
+          "partNumber": "9G132153300",
+          "price": "$40-80"
+        }
       ]
     },
     {
@@ -100,6 +146,28 @@
         {
           "name": "Pelican Parts",
           "url": "https://www.pelicanparts.com/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$400-800",
+        "shop": "$800-1500",
+        "notes": "Per damper. Remanufactured units available."
+      },
+      "parts": [
+        {
+          "name": "PASM Damper (Front)",
+          "partNumber": "99734305310",
+          "price": "$500-900"
+        },
+        {
+          "name": "PASM Damper (Rear)",
+          "partNumber": "99733305310",
+          "price": "$500-900"
+        },
+        {
+          "name": "Remanufactured PASM",
+          "partNumber": "Various",
+          "price": "$300-500"
         }
       ]
     },
@@ -124,6 +192,23 @@
           "name": "Rennlist",
           "url": "https://rennlist.com/forums/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$200-400",
+        "shop": "$500-1000",
+        "notes": "Similar to 996/986. Aluminum upgrade recommended."
+      },
+      "parts": [
+        {
+          "name": "Coolant Pipe Kit",
+          "partNumber": "Various",
+          "price": "$150-300"
+        },
+        {
+          "name": "Water Pump",
+          "partNumber": "99710601106",
+          "price": "$120-200"
+        }
       ]
     },
     {
@@ -147,6 +232,23 @@
           "name": "Pelican Parts",
           "url": "https://www.pelicanparts.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$200-400",
+        "shop": "$500-1000",
+        "notes": "997.2 DFI engines. Walnut blasting required."
+      },
+      "parts": [
+        {
+          "name": "Walnut Media (bag)",
+          "partNumber": "N/A",
+          "price": "$30-50"
+        },
+        {
+          "name": "Intake Gaskets",
+          "partNumber": "9A111023500",
+          "price": "$20-40"
+        }
       ]
     },
     {
@@ -168,6 +270,18 @@
         {
           "name": "Rennlist",
           "url": "https://rennlist.com/forums/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$400-800",
+        "shop": "$1500-2500",
+        "notes": "997.1 only. Same M97 engine RMS issues."
+      },
+      "parts": [
+        {
+          "name": "Rear Main Seal",
+          "partNumber": "99710322571",
+          "price": "$30-60"
         }
       ]
     }

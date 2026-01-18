@@ -697,6 +697,144 @@ button:hover {
     color: var(--gulf-orange);
 }
 
+/* Repair Costs Section */
+.issue-card .repair-costs {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: var(--background-alt);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--gulf-orange);
+}
+
+.issue-card .repair-costs h4 {
+    margin: 0 0 0.75rem 0;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .issue-card .repair-costs h4 {
+    color: var(--gulf-orange);
+}
+
+.cost-comparison {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cost-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-sm);
+    min-width: 100px;
+}
+
+.cost-item.diy {
+    background-color: rgba(0, 120, 60, 0.1);
+    border: 1px solid rgba(0, 120, 60, 0.3);
+}
+
+.cost-item.shop {
+    background-color: rgba(0, 80, 160, 0.1);
+    border: 1px solid rgba(0, 80, 160, 0.3);
+}
+
+[data-theme="dark"] .cost-item.diy {
+    background-color: rgba(0, 180, 90, 0.15);
+    border-color: rgba(0, 180, 90, 0.4);
+}
+
+[data-theme="dark"] .cost-item.shop {
+    background-color: rgba(0, 120, 200, 0.15);
+    border-color: rgba(0, 120, 200, 0.4);
+}
+
+.cost-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.25rem;
+}
+
+.cost-value {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.cost-notes {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin: 0.5rem 0 0 0;
+    font-style: italic;
+}
+
+/* Parts Table */
+.issue-card .parts-list {
+    margin: 1rem 0;
+}
+
+.issue-card .parts-list h4 {
+    margin: 0 0 0.75rem 0;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .issue-card .parts-list h4 {
+    color: var(--gulf-blue);
+}
+
+.parts-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+    background-color: var(--background-color);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.parts-table th {
+    background-color: var(--navy);
+    color: #fff;
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+[data-theme="dark"] .parts-table th {
+    background-color: var(--background-alt);
+    color: var(--gulf-blue);
+}
+
+.parts-table td {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.parts-table tr:last-child td {
+    border-bottom: none;
+}
+
+.parts-table tr:hover td {
+    background-color: var(--background-alt);
+}
+
+.parts-table .part-number {
+    font-family: monospace;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.parts-table .part-price {
+    font-weight: 600;
+    color: var(--gulf-orange);
+    white-space: nowrap;
+}
+
 /* ================================
    Coming Soon Badge & Container
    ================================ */
@@ -3032,6 +3170,54 @@ nav ul li.dropdown.touch-open .dropdown-menu {
 
     .issue-card .attribution {
         font-size: 0.75rem;
+    }
+
+    /* Mobile repair costs */
+    .issue-card .repair-costs {
+        padding: 0.75rem;
+    }
+
+    .issue-card .repair-costs h4 {
+        font-size: 0.85rem;
+    }
+
+    .cost-comparison {
+        gap: 0.75rem;
+    }
+
+    .cost-item {
+        min-width: 80px;
+        padding: 0.4rem 0.75rem;
+    }
+
+    .cost-label {
+        font-size: 0.7rem;
+    }
+
+    .cost-value {
+        font-size: 0.95rem;
+    }
+
+    .cost-notes {
+        font-size: 0.8rem;
+    }
+
+    /* Mobile parts table */
+    .issue-card .parts-list h4 {
+        font-size: 0.85rem;
+    }
+
+    .parts-table {
+        font-size: 0.75rem;
+    }
+
+    .parts-table th,
+    .parts-table td {
+        padding: 0.4rem 0.5rem;
+    }
+
+    .parts-table .part-number {
+        font-size: 0.7rem;
     }
 
     .guide-card {

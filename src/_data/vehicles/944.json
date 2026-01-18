@@ -33,6 +33,33 @@
           "name": "Pelican Parts",
           "url": "https://www.pelicanparts.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$200-400",
+        "shop": "$700-1200",
+        "notes": "BOTH timing and balance shaft belts required. Critical service."
+      },
+      "parts": [
+        {
+          "name": "Timing Belt",
+          "partNumber": "94410502504",
+          "price": "$50-80"
+        },
+        {
+          "name": "Balance Shaft Belt",
+          "partNumber": "94410502404",
+          "price": "$40-70"
+        },
+        {
+          "name": "Tensioner Roller",
+          "partNumber": "94410523300",
+          "price": "$60-120"
+        },
+        {
+          "name": "Water Pump",
+          "partNumber": "94410601104",
+          "price": "$80-150"
+        }
       ]
     },
     {
@@ -55,6 +82,23 @@
         {
           "name": "Rennlist",
           "url": "https://rennlist.com/forums/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$150-300",
+        "shop": "$500-900",
+        "notes": "Always do with timing belt. Driven by belt."
+      },
+      "parts": [
+        {
+          "name": "Water Pump",
+          "partNumber": "94410601104",
+          "price": "$80-150"
+        },
+        {
+          "name": "Thermostat",
+          "partNumber": "94410612702",
+          "price": "$30-50"
         }
       ]
     },
@@ -79,6 +123,18 @@
           "name": "944Online",
           "url": "https://www.944online.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$30-80",
+        "shop": "$100-200",
+        "notes": "Infamous 944 failure. Carry a spare."
+      },
+      "parts": [
+        {
+          "name": "DME Relay",
+          "partNumber": "92861530120",
+          "price": "$30-60"
+        }
       ]
     },
     {
@@ -101,6 +157,23 @@
         {
           "name": "Rennlist",
           "url": "https://rennlist.com/forums/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$100-200",
+        "shop": "$300-600",
+        "notes": "Master and slave cylinders both fail with age."
+      },
+      "parts": [
+        {
+          "name": "Clutch Master Cylinder",
+          "partNumber": "94423171100",
+          "price": "$80-150"
+        },
+        {
+          "name": "Clutch Slave Cylinder",
+          "partNumber": "94411623100",
+          "price": "$60-120"
         }
       ]
     },
@@ -125,6 +198,23 @@
           "name": "944Online",
           "url": "https://www.944online.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$200-400",
+        "shop": "$600-1200",
+        "notes": "Center bearing and flex disc (guibo) wear."
+      },
+      "parts": [
+        {
+          "name": "Center Support Bearing",
+          "partNumber": "94433231900",
+          "price": "$80-150"
+        },
+        {
+          "name": "Flex Disc (Guibo)",
+          "partNumber": "94433221900",
+          "price": "$60-120"
+        }
       ]
     },
     {
@@ -147,6 +237,23 @@
         {
           "name": "944Online",
           "url": "https://www.944online.com/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$100-300",
+        "shop": "$300-800",
+        "notes": "All 944 dashes crack. Covers or professional restoration."
+      },
+      "parts": [
+        {
+          "name": "Dashboard Cover",
+          "partNumber": "Various aftermarket",
+          "price": "$80-200"
+        },
+        {
+          "name": "Dashboard (Used)",
+          "partNumber": "N/A",
+          "price": "$200-500"
         }
       ]
     },
@@ -171,6 +278,23 @@
           "name": "Rennlist",
           "url": "https://rennlist.com/forums/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$150-300",
+        "shop": "$400-800",
+        "notes": "Rack seals and pump common failures."
+      },
+      "parts": [
+        {
+          "name": "Steering Rack Seal Kit",
+          "partNumber": "Various",
+          "price": "$60-120"
+        },
+        {
+          "name": "Power Steering Pump",
+          "partNumber": "Various",
+          "price": "$200-400"
+        }
       ]
     },
     {
@@ -193,6 +317,18 @@
           "name": "Pelican Parts",
           "url": "https://www.pelicanparts.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$30-80",
+        "shop": "$150-300",
+        "notes": "Plastic gears strip. Brass upgrade kits available."
+      },
+      "parts": [
+        {
+          "name": "Odometer Gear Kit (Brass)",
+          "partNumber": "Various aftermarket",
+          "price": "$20-40"
+        }
       ]
     },
     {
@@ -214,6 +350,18 @@
         {
           "name": "944Online",
           "url": "https://www.944online.com/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$100-200",
+        "shop": "$250-500",
+        "notes": "Rubber deteriorates. Replace as set."
+      },
+      "parts": [
+        {
+          "name": "Engine Mount Set",
+          "partNumber": "94437504900",
+          "price": "$80-150"
         }
       ]
     }

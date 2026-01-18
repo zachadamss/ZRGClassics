@@ -20,6 +20,17 @@
         "Replace VANOS solenoids if seals don't resolve issue",
         "Full VANOS unit rebuild for severe cases"
       ],
+      "repairCosts": {
+        "diy": "$100-200",
+        "shop": "$400-800",
+        "notes": "Labor is 3-5 hours. Seal kit is most cost-effective fix."
+      },
+      "parts": [
+        { "name": "VANOS Seal Kit (Beisan)", "partNumber": "BS032", "price": "$100-130" },
+        { "name": "VANOS Solenoid (Intake)", "partNumber": "11361432532", "price": "$80-120" },
+        { "name": "VANOS Solenoid (Exhaust)", "partNumber": "11361433513", "price": "$80-120" },
+        { "name": "VANOS Oil Line O-Rings", "partNumber": "11361705532", "price": "$5-10" }
+      ],
       "sources": [
         {
           "name": "Bimmerforums",
@@ -42,6 +53,19 @@
         "Replace water pump with metal impeller version",
         "Replace all coolant hoses as preventive maintenance"
       ],
+      "repairCosts": {
+        "diy": "$300-500",
+        "shop": "$800-1500",
+        "notes": "Full refresh recommended. Budget for all components to avoid repeat work."
+      },
+      "parts": [
+        { "name": "Expansion Tank", "partNumber": "17137543003", "price": "$40-60" },
+        { "name": "Thermostat Housing (Aluminum)", "partNumber": "11531437040", "price": "$80-150" },
+        { "name": "Thermostat (97°C)", "partNumber": "11537509227", "price": "$25-40" },
+        { "name": "Water Pump (Metal Impeller)", "partNumber": "11517527910", "price": "$80-150" },
+        { "name": "Coolant Hose Kit", "partNumber": "17127510952", "price": "$100-200" },
+        { "name": "Radiator (Manual Trans)", "partNumber": "17117503249", "price": "$150-250" }
+      ],
       "sources": [
         {
           "name": "RealOEM",
@@ -62,6 +86,16 @@
         "Professional inspection of subframe mounting points",
         "Subframe reinforcement plates (if caught early)",
         "Full floor pan repair and subframe reinforcement for severe cases"
+      ],
+      "repairCosts": {
+        "diy": "$200-400",
+        "shop": "$1500-5000",
+        "notes": "DIY only for reinforcement plates on undamaged floors. Welding repairs require professional fabrication."
+      },
+      "parts": [
+        { "name": "Subframe Reinforcement Plates (Kit)", "partNumber": "Various aftermarket", "price": "$100-200" },
+        { "name": "Subframe Bushing Set", "partNumber": "33312283573", "price": "$80-150" },
+        { "name": "Floor Pan Section (if needed)", "partNumber": "41118238251", "price": "$200-400" }
       ],
       "sources": [
         {
@@ -84,6 +118,18 @@
         "Some owners replace just the plastic clips if caught early",
         "Consider replacing both front regulators at the same time"
       ],
+      "repairCosts": {
+        "diy": "$80-150",
+        "shop": "$250-400",
+        "notes": "Per window. Easy DIY job - 1-2 hours. Door panel removal required."
+      },
+      "parts": [
+        { "name": "Window Regulator (Front Left)", "partNumber": "51338252393", "price": "$80-130" },
+        { "name": "Window Regulator (Front Right)", "partNumber": "51338252394", "price": "$80-130" },
+        { "name": "Window Regulator (Rear Left)", "partNumber": "51358212099", "price": "$70-110" },
+        { "name": "Window Regulator (Rear Right)", "partNumber": "51358212100", "price": "$70-110" },
+        { "name": "Door Panel Clips (Set)", "partNumber": "51418224768", "price": "$10-20" }
+      ],
       "sources": [
         {
           "name": "Bimmerforums",
@@ -104,6 +150,19 @@
         "Replace control arms with new bushings (often sold as complete assemblies)",
         "Consider upgraded polyurethane bushings for performance applications",
         "Perform wheel alignment after replacement"
+      ],
+      "repairCosts": {
+        "diy": "$200-400",
+        "shop": "$500-900",
+        "notes": "For pair of lower control arms + alignment. Upper arms add $150-300."
+      },
+      "parts": [
+        { "name": "Lower Control Arm (Left)", "partNumber": "31126758519", "price": "$60-100" },
+        { "name": "Lower Control Arm (Right)", "partNumber": "31126758520", "price": "$60-100" },
+        { "name": "Thrust Arm (Left)", "partNumber": "31126774825", "price": "$50-80" },
+        { "name": "Thrust Arm (Right)", "partNumber": "31126774826", "price": "$50-80" },
+        { "name": "Control Arm Bushing (Lemförder)", "partNumber": "31126783376", "price": "$20-35" },
+        { "name": "Front Suspension Refresh Kit", "partNumber": "Various kits", "price": "$300-500" }
       ],
       "sources": [
         {

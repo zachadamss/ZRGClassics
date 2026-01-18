@@ -32,6 +32,28 @@
           "name": "Rennlist",
           "url": "https://rennlist.com/forums/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$200-500",
+        "shop": "$500-1200",
+        "notes": "Chain housings, valve covers, and cam towers common."
+      },
+      "parts": [
+        {
+          "name": "Chain Housing Gasket Set",
+          "partNumber": "96410519501",
+          "price": "$100-200"
+        },
+        {
+          "name": "Valve Cover Gasket Set",
+          "partNumber": "96410593300",
+          "price": "$50-100"
+        },
+        {
+          "name": "Cam Tower Gasket",
+          "partNumber": "96410573900",
+          "price": "$30-60"
+        }
       ]
     },
     {
@@ -54,6 +76,28 @@
         {
           "name": "Pelican Parts",
           "url": "https://www.pelicanparts.com/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$800-1500",
+        "shop": "$2000-3500",
+        "notes": "DMF failure requires trans removal. Convert to single mass optional."
+      },
+      "parts": [
+        {
+          "name": "Dual Mass Flywheel",
+          "partNumber": "96411401200",
+          "price": "$800-1200"
+        },
+        {
+          "name": "Single Mass Conversion",
+          "partNumber": "Various",
+          "price": "$600-1000"
+        },
+        {
+          "name": "Clutch Kit",
+          "partNumber": "96411691100",
+          "price": "$400-700"
         }
       ]
     },
@@ -78,6 +122,28 @@
           "name": "911 Motorsport",
           "url": "https://www.911motorsport.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$200-400",
+        "shop": "$400-800",
+        "notes": "DME trigger failure. Rebuilt units available."
+      },
+      "parts": [
+        {
+          "name": "Distributor (Rebuilt)",
+          "partNumber": "Various specialists",
+          "price": "$300-600"
+        },
+        {
+          "name": "Rotor",
+          "partNumber": "93060291600",
+          "price": "$40-80"
+        },
+        {
+          "name": "Distributor Cap",
+          "partNumber": "93060291800",
+          "price": "$50-100"
+        }
       ]
     },
     {
@@ -100,6 +166,23 @@
         {
           "name": "Pelican Parts",
           "url": "https://www.pelicanparts.com/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$200-400",
+        "shop": "$500-1000",
+        "notes": "Pump and rack leaks common."
+      },
+      "parts": [
+        {
+          "name": "Power Steering Pump",
+          "partNumber": "96434704007",
+          "price": "$300-500"
+        },
+        {
+          "name": "Steering Rack Seal Kit",
+          "partNumber": "Various",
+          "price": "$80-150"
         }
       ]
     },
@@ -124,6 +207,23 @@
           "name": "Pelican Parts",
           "url": "https://www.pelicanparts.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$100-300",
+        "shop": "$400-1500",
+        "notes": "Synchros wear (especially 2nd). Use correct GL-4 fluid."
+      },
+      "parts": [
+        {
+          "name": "GL-4 Gear Oil (Swepco 201)",
+          "partNumber": "N/A",
+          "price": "$40-80"
+        },
+        {
+          "name": "Shift Coupler",
+          "partNumber": "96442407500",
+          "price": "$30-60"
+        }
       ]
     },
     {
@@ -146,6 +246,23 @@
         {
           "name": "Rennlist",
           "url": "https://rennlist.com/forums/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$800-1500",
+        "shop": "$2500-5000",
+        "notes": "Head stud failures on early 964. Requires engine removal."
+      },
+      "parts": [
+        {
+          "name": "Head Stud Kit (Dilavar)",
+          "partNumber": "Various aftermarket",
+          "price": "$400-700"
+        },
+        {
+          "name": "Head Gasket Set",
+          "partNumber": "96410421500",
+          "price": "$200-400"
         }
       ]
     },
@@ -171,6 +288,23 @@
           "name": "Pelican Parts",
           "url": "https://www.pelicanparts.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$200-500",
+        "shop": "$600-1500",
+        "notes": "R12 to R134a conversion common."
+      },
+      "parts": [
+        {
+          "name": "AC Compressor",
+          "partNumber": "Various",
+          "price": "$400-700"
+        },
+        {
+          "name": "R134a Conversion Kit",
+          "partNumber": "Various",
+          "price": "$100-200"
+        }
       ]
     },
     {
@@ -194,6 +328,23 @@
         {
           "name": "Rennlist",
           "url": "https://rennlist.com/forums/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$100-300",
+        "shop": "$300-700",
+        "notes": "DME and relay issues. Grounds important."
+      },
+      "parts": [
+        {
+          "name": "DME Relay",
+          "partNumber": "96461815100",
+          "price": "$40-80"
+        },
+        {
+          "name": "Fuel Pump Relay",
+          "partNumber": "Various",
+          "price": "$30-60"
         }
       ]
     }

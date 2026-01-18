@@ -32,6 +32,28 @@
           "name": "Rennlist",
           "url": "https://rennlist.com/forums/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$200-500",
+        "shop": "$600-1500",
+        "notes": "Chain housings and cam covers most common. Valve cover O-rings."
+      },
+      "parts": [
+        {
+          "name": "Chain Housing Gasket Set",
+          "partNumber": "99310519501",
+          "price": "$100-200"
+        },
+        {
+          "name": "Valve Cover O-Ring Set",
+          "partNumber": "99310593300",
+          "price": "$40-80"
+        },
+        {
+          "name": "Oil Cooler Seal",
+          "partNumber": "99310704900",
+          "price": "$20-40"
+        }
       ]
     },
     {
@@ -54,6 +76,28 @@
         {
           "name": "Pelican Parts",
           "url": "https://www.pelicanparts.com/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$800-1500",
+        "shop": "$2000-3500",
+        "notes": "Same as 964. DMF failure common on high-mileage cars."
+      },
+      "parts": [
+        {
+          "name": "Dual Mass Flywheel",
+          "partNumber": "99311401201",
+          "price": "$900-1300"
+        },
+        {
+          "name": "Single Mass Conversion",
+          "partNumber": "Various",
+          "price": "$600-1000"
+        },
+        {
+          "name": "Clutch Kit",
+          "partNumber": "99311691100",
+          "price": "$450-750"
         }
       ]
     },
@@ -78,6 +122,23 @@
           "name": "Porsche Club of America",
           "url": "https://www.pca.org/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$400-800",
+        "shop": "$1000-2000",
+        "notes": "Lifter tick on cold start. Replace in sets."
+      },
+      "parts": [
+        {
+          "name": "Hydraulic Lifter (each)",
+          "partNumber": "93010508302",
+          "price": "$30-50"
+        },
+        {
+          "name": "Lifter Set (24)",
+          "partNumber": "Various",
+          "price": "$600-1000"
+        }
       ]
     },
     {
@@ -100,6 +161,23 @@
         {
           "name": "Pelican Parts",
           "url": "https://www.pelicanparts.com/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$100-300",
+        "shop": "$400-1500",
+        "notes": "Same G50 as 964. Synchro wear common."
+      },
+      "parts": [
+        {
+          "name": "GL-4 Gear Oil",
+          "partNumber": "N/A",
+          "price": "$40-80"
+        },
+        {
+          "name": "Shift Coupler",
+          "partNumber": "99342407500",
+          "price": "$30-60"
         }
       ]
     },
@@ -125,6 +203,28 @@
           "name": "Rennlist",
           "url": "https://rennlist.com/forums/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$400-800",
+        "shop": "$1000-2000",
+        "notes": "30-year-old bushings need replacement. LSA upgrade available."
+      },
+      "parts": [
+        {
+          "name": "Control Arm Kit",
+          "partNumber": "Various",
+          "price": "$300-500"
+        },
+        {
+          "name": "Rear Trailing Arm Bushing",
+          "partNumber": "99333114106",
+          "price": "$50-100"
+        },
+        {
+          "name": "Shock Absorber (Bilstein)",
+          "partNumber": "Various",
+          "price": "$150-300 each"
+        }
       ]
     },
     {
@@ -147,6 +247,23 @@
         {
           "name": "Rennlist",
           "url": "https://rennlist.com/forums/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$200-400",
+        "shop": "$500-1000",
+        "notes": "Hydraulic system ages. Check pump and rack."
+      },
+      "parts": [
+        {
+          "name": "Power Steering Pump",
+          "partNumber": "99334704008",
+          "price": "$350-600"
+        },
+        {
+          "name": "PS Reservoir",
+          "partNumber": "99334743104",
+          "price": "$80-150"
         }
       ]
     },
@@ -172,6 +289,28 @@
           "name": "Pelican Parts",
           "url": "https://www.pelicanparts.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$100-300",
+        "shop": "$400-1000",
+        "notes": "Blower motor and resistor common. AC conversion available."
+      },
+      "parts": [
+        {
+          "name": "Blower Motor",
+          "partNumber": "99362431401",
+          "price": "$200-400"
+        },
+        {
+          "name": "Blower Resistor",
+          "partNumber": "96465441100",
+          "price": "$50-100"
+        },
+        {
+          "name": "AC Retrofit Kit (R134a)",
+          "partNumber": "Various",
+          "price": "$200-400"
+        }
       ]
     },
     {
@@ -195,6 +334,23 @@
         {
           "name": "Planet-9",
           "url": "https://www.planet-9.com/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$300-800",
+        "shop": "$1500-4000",
+        "notes": "993 Turbo only. Wastegate actuators and boost issues."
+      },
+      "parts": [
+        {
+          "name": "Wastegate Actuator",
+          "partNumber": "Various",
+          "price": "$200-400"
+        },
+        {
+          "name": "Turbo Rebuild Kit",
+          "partNumber": "Various",
+          "price": "$400-800"
         }
       ]
     }

@@ -32,6 +32,23 @@
           "name": "Rennlist",
           "url": "https://rennlist.com/forums/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$500-1000",
+        "shop": "$2000-3500",
+        "notes": "987.1 only (M97). 987.2 has different design - no IMS concern."
+      },
+      "parts": [
+        {
+          "name": "IMS Bearing Retrofit",
+          "partNumber": "LN Engineering",
+          "price": "$400-600"
+        },
+        {
+          "name": "IMS Guardian",
+          "partNumber": "LN Engineering",
+          "price": "$80-120"
+        }
       ]
     },
     {
@@ -54,6 +71,18 @@
         {
           "name": "Rennlist",
           "url": "https://rennlist.com/forums/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "N/A",
+        "shop": "$5000-15000",
+        "notes": "987.1 M97 engine. Borescope inspection recommended."
+      },
+      "parts": [
+        {
+          "name": "Cylinder Sleeving",
+          "partNumber": "LN Engineering",
+          "price": "$800-1200/cyl"
         }
       ]
     },
@@ -78,6 +107,18 @@
           "name": "Rennlist",
           "url": "https://rennlist.com/forums/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$400-800",
+        "shop": "$1500-2500",
+        "notes": "987.1 shares RMS issues with 986/996."
+      },
+      "parts": [
+        {
+          "name": "Rear Main Seal",
+          "partNumber": "99710322571",
+          "price": "$30-60"
+        }
       ]
     },
     {
@@ -101,6 +142,18 @@
           "name": "Pelican Parts",
           "url": "https://www.pelicanparts.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$200-400",
+        "shop": "$400-800",
+        "notes": "Both 987.1 and 987.2 can have AOS issues."
+      },
+      "parts": [
+        {
+          "name": "AOS Assembly",
+          "partNumber": "99710704453",
+          "price": "$200-350"
+        }
       ]
     },
     {
@@ -123,6 +176,23 @@
         {
           "name": "Rennlist",
           "url": "https://rennlist.com/forums/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$200-400",
+        "shop": "$500-1000",
+        "notes": "Same plastic pipe issues as 986. Aluminum upgrade available."
+      },
+      "parts": [
+        {
+          "name": "Coolant Pipe Kit",
+          "partNumber": "Various",
+          "price": "$150-300"
+        },
+        {
+          "name": "Water Pump",
+          "partNumber": "99710601106",
+          "price": "$120-200"
         }
       ]
     },
@@ -148,6 +218,23 @@
           "name": "Rennlist",
           "url": "https://rennlist.com/forums/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$100-400",
+        "shop": "$400-1500",
+        "notes": "Boxster only. Hydraulic system issues common."
+      },
+      "parts": [
+        {
+          "name": "Hydraulic Pump",
+          "partNumber": "98756160901",
+          "price": "$400-700"
+        },
+        {
+          "name": "Microswitch",
+          "partNumber": "Various",
+          "price": "$30-60"
+        }
       ]
     },
     {
@@ -171,6 +258,23 @@
           "name": "Planet-9",
           "url": "https://www.planet-9.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$200-400",
+        "shop": "$500-1000",
+        "notes": "987.2 DFI engines. Walnut blasting every 50-80k miles."
+      },
+      "parts": [
+        {
+          "name": "Walnut Media",
+          "partNumber": "N/A",
+          "price": "$30-50"
+        },
+        {
+          "name": "Intake Gaskets",
+          "partNumber": "9A111023500",
+          "price": "$20-40"
+        }
       ]
     },
     {
@@ -193,6 +297,18 @@
         {
           "name": "Rennlist",
           "url": "https://rennlist.com/forums/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$100-200",
+        "shop": "$300-500",
+        "notes": "Frameless windows. Adjustment and regulator issues."
+      },
+      "parts": [
+        {
+          "name": "Window Regulator",
+          "partNumber": "98754207504",
+          "price": "$150-250"
         }
       ]
     }

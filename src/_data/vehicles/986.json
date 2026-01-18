@@ -31,6 +31,28 @@
           "name": "LN Engineering",
           "url": "https://lnengineering.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$500-1000",
+        "shop": "$2000-3500",
+        "notes": "Critical preventive maintenance. Often combined with RMS and clutch."
+      },
+      "parts": [
+        {
+          "name": "IMS Bearing (Single Row Retrofit)",
+          "partNumber": "LN Engineering",
+          "price": "$400-600"
+        },
+        {
+          "name": "IMS Guardian/Magnetic Drain",
+          "partNumber": "LN Engineering",
+          "price": "$80-120"
+        },
+        {
+          "name": "RMS (Rear Main Seal)",
+          "partNumber": "99610322571",
+          "price": "$30-60"
+        }
       ]
     },
     {
@@ -52,6 +74,28 @@
         {
           "name": "Rennlist",
           "url": "https://rennlist.com/forums/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$400-800",
+        "shop": "$1500-2500",
+        "notes": "Requires transmission removal. Often done with IMS bearing."
+      },
+      "parts": [
+        {
+          "name": "Rear Main Seal",
+          "partNumber": "99610322571",
+          "price": "$30-60"
+        },
+        {
+          "name": "Intermediate Plate Seal",
+          "partNumber": "99610322870",
+          "price": "$20-40"
+        },
+        {
+          "name": "Clutch Kit (if needed)",
+          "partNumber": "98611691100",
+          "price": "$400-700"
         }
       ]
     },
@@ -75,6 +119,28 @@
         {
           "name": "FCP Euro",
           "url": "https://www.fcpeuro.com/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$200-400",
+        "shop": "$500-1000",
+        "notes": "Replace with aluminum upgrade. Plastic pipes crack with age."
+      },
+      "parts": [
+        {
+          "name": "Coolant Pipe Kit (Aluminum)",
+          "partNumber": "Various aftermarket",
+          "price": "$150-300"
+        },
+        {
+          "name": "Water Pump",
+          "partNumber": "99610601157",
+          "price": "$100-180"
+        },
+        {
+          "name": "Thermostat",
+          "partNumber": "99610601501",
+          "price": "$30-60"
         }
       ]
     },
@@ -100,6 +166,28 @@
           "name": "Pelican Parts",
           "url": "https://www.pelicanparts.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$100-400",
+        "shop": "$400-1500",
+        "notes": "Hydraulic system issues. Microswitches and pump common."
+      },
+      "parts": [
+        {
+          "name": "Hydraulic Pump",
+          "partNumber": "98656160901",
+          "price": "$300-600"
+        },
+        {
+          "name": "Microswitch Set",
+          "partNumber": "Various",
+          "price": "$50-100"
+        },
+        {
+          "name": "Hydraulic Fluid",
+          "partNumber": "Pentosin CHF 11S",
+          "price": "$25-40"
+        }
       ]
     },
     {
@@ -122,6 +210,23 @@
         {
           "name": "Flat 6 Innovations",
           "url": "https://flat6innovations.com/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$200-400",
+        "shop": "$400-800",
+        "notes": "Air-Oil Separator. Causes smoke and consumption when failed."
+      },
+      "parts": [
+        {
+          "name": "AOS Assembly",
+          "partNumber": "99610702558",
+          "price": "$200-350"
+        },
+        {
+          "name": "AOS Hose Kit",
+          "partNumber": "Various",
+          "price": "$50-100"
         }
       ]
     },
@@ -146,6 +251,23 @@
           "name": "Rennlist",
           "url": "https://rennlist.com/forums/"
         }
+      ],
+      "repairCosts": {
+        "diy": "N/A",
+        "shop": "$5000-15000",
+        "notes": "Major engine work. Cylinder sleeving or replacement required."
+      },
+      "parts": [
+        {
+          "name": "Cylinder Sleeving (per cyl)",
+          "partNumber": "LN Engineering",
+          "price": "$800-1200"
+        },
+        {
+          "name": "Used Engine",
+          "partNumber": "N/A",
+          "price": "$5000-10000"
+        }
       ]
     },
     {
@@ -167,6 +289,23 @@
         {
           "name": "Planet-9",
           "url": "https://www.planet-9.com/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$100-200",
+        "shop": "$300-500",
+        "notes": "Frameless windows require proper adjustment."
+      },
+      "parts": [
+        {
+          "name": "Window Regulator (Left)",
+          "partNumber": "98654207504",
+          "price": "$150-250"
+        },
+        {
+          "name": "Window Regulator (Right)",
+          "partNumber": "98654207604",
+          "price": "$150-250"
         }
       ]
     }

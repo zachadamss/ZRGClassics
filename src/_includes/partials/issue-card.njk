@@ -2,6 +2,26 @@
     <h3>{{ issue.title }}</h3>
     <p class="symptoms"><strong>Symptoms:</strong> {{ issue.symptoms }}</p>
     <p class="description">{{ issue.description }}</p>
+
+    {% if issue.repairCosts %}
+    <div class="repair-costs">
+        <h4>Estimated Repair Costs</h4>
+        <div class="cost-comparison">
+            <div class="cost-item diy">
+                <span class="cost-label">DIY</span>
+                <span class="cost-value">{{ issue.repairCosts.diy }}</span>
+            </div>
+            <div class="cost-item shop">
+                <span class="cost-label">Shop</span>
+                <span class="cost-value">{{ issue.repairCosts.shop }}</span>
+            </div>
+        </div>
+        {% if issue.repairCosts.notes %}
+        <p class="cost-notes">{{ issue.repairCosts.notes }}</p>
+        {% endif %}
+    </div>
+    {% endif %}
+
     <div class="fix">
         <h4>Common Fixes</h4>
         <ul>
@@ -10,11 +30,36 @@
             {% endfor %}
         </ul>
     </div>
+
+    {% if issue.parts and issue.parts.length > 0 %}
+    <div class="parts-list">
+        <h4>Common Parts</h4>
+        <table class="parts-table">
+            <thead>
+                <tr>
+                    <th>Part</th>
+                    <th>Part Number</th>
+                    <th>Est. Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for part in issue.parts %}
+                <tr>
+                    <td data-label="Part">{{ part.name }}</td>
+                    <td data-label="Part #" class="part-number">{{ part.partNumber }}</td>
+                    <td data-label="Price" class="part-price">{{ part.price }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% endif %}
+
     {% if issue.sources %}
     <div class="attribution">
         <p>Sources:
             {% for source in issue.sources %}
-            <a href="{{ source.url }}">{{ source.name }}</a>{% if not loop.last %}, {% endif %}
+            <a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.name }}</a>{% if not loop.last %}, {% endif %}
             {% endfor %}
         </p>
     </div>

@@ -32,6 +32,28 @@
           "name": "Pelican Parts",
           "url": "https://www.pelicanparts.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$150-300",
+        "shop": "$500-900",
+        "notes": "Interference engine. Critical maintenance every 30-40k miles."
+      },
+      "parts": [
+        {
+          "name": "Timing Belt",
+          "partNumber": "95110515190",
+          "price": "$40-70"
+        },
+        {
+          "name": "Tensioner",
+          "partNumber": "95110551100",
+          "price": "$50-100"
+        },
+        {
+          "name": "Water Pump",
+          "partNumber": "95110601100",
+          "price": "$60-100"
+        }
       ]
     },
     {
@@ -57,6 +79,28 @@
           "name": "Pelican Parts",
           "url": "https://www.pelicanparts.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$100-400",
+        "shop": "$300-800",
+        "notes": "K-Jetronic system. WUR and accumulator common issues."
+      },
+      "parts": [
+        {
+          "name": "Warm-Up Regulator",
+          "partNumber": "Various Bosch",
+          "price": "$200-400"
+        },
+        {
+          "name": "Fuel Accumulator",
+          "partNumber": "Various Bosch",
+          "price": "$100-200"
+        },
+        {
+          "name": "Fuel Injector (each)",
+          "partNumber": "Various Bosch",
+          "price": "$40-80"
+        }
       ]
     },
     {
@@ -79,6 +123,18 @@
         {
           "name": "924Board",
           "url": "https://www.924board.org/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$50-100",
+        "shop": "$150-300",
+        "notes": "Cable stretches. Adjustment first, then replace."
+      },
+      "parts": [
+        {
+          "name": "Clutch Cable",
+          "partNumber": "94423721106",
+          "price": "$40-80"
         }
       ]
     },
@@ -104,6 +160,23 @@
           "name": "Rennlist",
           "url": "https://rennlist.com/forums/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$200-1000",
+        "shop": "$1000-5000+",
+        "notes": "Battery box, fenders, floors common rust areas."
+      },
+      "parts": [
+        {
+          "name": "Fender (Repro)",
+          "partNumber": "Various",
+          "price": "$150-300"
+        },
+        {
+          "name": "Battery Box Repair",
+          "partNumber": "Various",
+          "price": "$80-150"
+        }
       ]
     },
     {
@@ -127,6 +200,23 @@
         {
           "name": "Pelican Parts",
           "url": "https://www.pelicanparts.com/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$50-200",
+        "shop": "$150-400",
+        "notes": "Relay and ground issues. DME relay common."
+      },
+      "parts": [
+        {
+          "name": "DME/Fuel Pump Relay",
+          "partNumber": "92861530120",
+          "price": "$30-60"
+        },
+        {
+          "name": "Combination Relay",
+          "partNumber": "Various",
+          "price": "$40-80"
         }
       ]
     },
@@ -152,6 +242,28 @@
           "name": "Pelican Parts",
           "url": "https://www.pelicanparts.com/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$150-300",
+        "shop": "$400-700",
+        "notes": "Replace entire system on 40+ year old cars."
+      },
+      "parts": [
+        {
+          "name": "Water Pump",
+          "partNumber": "95110601100",
+          "price": "$60-100"
+        },
+        {
+          "name": "Thermostat",
+          "partNumber": "Various",
+          "price": "$20-40"
+        },
+        {
+          "name": "Radiator",
+          "partNumber": "Various",
+          "price": "$150-300"
+        }
       ]
     },
     {
@@ -174,6 +286,28 @@
         {
           "name": "Rennlist",
           "url": "https://rennlist.com/forums/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$100-300",
+        "shop": "$400-1500",
+        "notes": "Synchros wear. Use correct GL-4 fluid."
+      },
+      "parts": [
+        {
+          "name": "Trans Mount (Donut)",
+          "partNumber": "94433323500",
+          "price": "$30-60"
+        },
+        {
+          "name": "Shift Bushing Kit",
+          "partNumber": "Various",
+          "price": "$40-80"
+        },
+        {
+          "name": "GL-4 Gear Oil",
+          "partNumber": "Various",
+          "price": "$30-50"
         }
       ]
     },
@@ -198,6 +332,23 @@
         {
           "name": "Pelican Parts",
           "url": "https://www.pelicanparts.com/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$200-400",
+        "shop": "$500-900",
+        "notes": "Bushings and strut mounts wear on all 40+ year cars."
+      },
+      "parts": [
+        {
+          "name": "Strut Mount",
+          "partNumber": "Various",
+          "price": "$40-80"
+        },
+        {
+          "name": "Control Arm Bushing Set",
+          "partNumber": "Various",
+          "price": "$60-120"
         }
       ]
     }

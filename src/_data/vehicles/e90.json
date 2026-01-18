@@ -34,6 +34,28 @@
           "name": "Bimmerpost",
           "url": "https://www.bimmerpost.com/forums/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$200-400",
+        "shop": "$600-1200",
+        "notes": "Electric water pump on N52/N54. Thermostat often done together."
+      },
+      "parts": [
+        {
+          "name": "Electric Water Pump (N52)",
+          "partNumber": "11517586925",
+          "price": "$300-500"
+        },
+        {
+          "name": "Electric Water Pump (N54)",
+          "partNumber": "11517632426",
+          "price": "$350-550"
+        },
+        {
+          "name": "Thermostat (Electric)",
+          "partNumber": "11537549476",
+          "price": "$80-150"
+        }
       ]
     },
     {
@@ -57,6 +79,28 @@
           "name": "E90Post",
           "url": "https://www.e90post.com/forums/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$100-300",
+        "shop": "$300-700",
+        "notes": "Valve cover and oil filter housing gaskets common."
+      },
+      "parts": [
+        {
+          "name": "Valve Cover Gasket (N52)",
+          "partNumber": "11127552281",
+          "price": "$40-80"
+        },
+        {
+          "name": "Valve Cover Gasket (N54)",
+          "partNumber": "11127565284",
+          "price": "$50-90"
+        },
+        {
+          "name": "Oil Filter Housing Gasket",
+          "partNumber": "11428637820",
+          "price": "$15-30"
+        }
       ]
     },
     {
@@ -78,6 +122,18 @@
         {
           "name": "Bimmerpost",
           "url": "https://www.bimmerpost.com/forums/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$400-700",
+        "shop": "$700-1200",
+        "notes": "N54 only. High pressure fuel pump failure causes rough running."
+      },
+      "parts": [
+        {
+          "name": "High Pressure Fuel Pump",
+          "partNumber": "13517616170",
+          "price": "$400-700"
         }
       ]
     },
@@ -102,6 +158,23 @@
           "name": "E90Post",
           "url": "https://www.e90post.com/forums/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$300-600",
+        "shop": "$600-1200",
+        "notes": "N54 piezo injectors. Replace as set if multiple fail."
+      },
+      "parts": [
+        {
+          "name": "Fuel Injector (Index 12)",
+          "partNumber": "13538616079",
+          "price": "$80-120 each"
+        },
+        {
+          "name": "Injector Seal Kit",
+          "partNumber": "Various",
+          "price": "$30-60"
+        }
       ]
     },
     {
@@ -125,6 +198,23 @@
           "name": "Bimmerpost",
           "url": "https://www.bimmerpost.com/forums/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$100-200",
+        "shop": "$250-500",
+        "notes": "Solenoid failures cause rough idle and codes."
+      },
+      "parts": [
+        {
+          "name": "VANOS Solenoid (N52)",
+          "partNumber": "11367585425",
+          "price": "$100-180"
+        },
+        {
+          "name": "VANOS Solenoid (N54)",
+          "partNumber": "11367516293",
+          "price": "$100-180"
+        }
       ]
     },
     {
@@ -146,6 +236,23 @@
         {
           "name": "E90Post",
           "url": "https://www.e90post.com/forums/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$800-1500",
+        "shop": "$2000-4000",
+        "notes": "N54 turbos. Wastegate rattle common. Replacement often in pairs."
+      },
+      "parts": [
+        {
+          "name": "Turbocharger (each)",
+          "partNumber": "11657649291",
+          "price": "$600-1000"
+        },
+        {
+          "name": "Turbo Oil Line Kit",
+          "partNumber": "11427573211",
+          "price": "$80-150"
         }
       ]
     },
@@ -170,6 +277,23 @@
           "name": "N54Tech",
           "url": "https://www.n54tech.com/forums/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$150-300",
+        "shop": "$400-800",
+        "notes": "N54 direct injection. Walnut blasting required every 50-60k."
+      },
+      "parts": [
+        {
+          "name": "Walnut Media",
+          "partNumber": "N/A",
+          "price": "$30-50"
+        },
+        {
+          "name": "Intake Gaskets",
+          "partNumber": "11617547242",
+          "price": "$25-50"
+        }
       ]
     },
     {
@@ -193,6 +317,23 @@
           "name": "Bimmerpost",
           "url": "https://www.bimmerpost.com/forums/"
         }
+      ],
+      "repairCosts": {
+        "diy": "$500-1000",
+        "shop": "$2500-4500",
+        "notes": "S65 V8 (M3) only. Preventive replacement recommended."
+      },
+      "parts": [
+        {
+          "name": "Rod Bearing Set (ACL)",
+          "partNumber": "Various aftermarket",
+          "price": "$150-300"
+        },
+        {
+          "name": "Rod Bolts",
+          "partNumber": "11247840093",
+          "price": "$100-200"
+        }
       ]
     },
     {
@@ -215,6 +356,23 @@
         {
           "name": "FCP Euro",
           "url": "https://www.fcpeuro.com/"
+        }
+      ],
+      "repairCosts": {
+        "diy": "$400-800",
+        "shop": "$1500-3000",
+        "notes": "N54/N55 timing chain stretch. Often guides and tensioner too."
+      },
+      "parts": [
+        {
+          "name": "Timing Chain Kit",
+          "partNumber": "Various",
+          "price": "$300-500"
+        },
+        {
+          "name": "Chain Guide Set",
+          "partNumber": "Various",
+          "price": "$150-300"
         }
       ]
     }
