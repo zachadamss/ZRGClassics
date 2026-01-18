@@ -10,7 +10,7 @@
       "symptoms": "Engine won't start, loud slapping noise before failure, visible belt wear or cracking",
       "description": "The M20 (6-cylinder) and M42 (4-cylinder) engines in the E30 use timing belts rather than chains. These belts have a service interval of approximately 50,000 miles, but many recommend replacing them earlier. The M20 is an interference engine, meaning if the belt snaps, the pistons will contact the valves causing catastrophic engine damage.",
       "keywords": "timing belt m20 m42 interference engine valves pistons service interval",
-      "url": "resources/bmw/e30.html"
+      "url": "/resources/bmw/e30/"
     },
     {
       "id": "e30-rust",
@@ -22,7 +22,7 @@
       "symptoms": "Bubbling paint, visible rust holes, soft floor pans, rusty fenders and wheel arches",
       "description": "E30s are notorious for rust, especially in areas with road salt. Common rust spots include the front fenders, rear wheel arches, rocker panels, battery tray, and floor pans. The trunk floor and spare tire well are also vulnerable.",
       "keywords": "rust corrosion fenders wheel arches rocker panels floor pans battery tray",
-      "url": "resources/bmw/e30.html"
+      "url": "/resources/bmw/e30/"
     },
     {
       "id": "e30-electrical",
@@ -34,7 +34,7 @@
       "symptoms": "Intermittent gauge failures, flickering lights, dead pixels in OBC, non-working windows/sunroof",
       "description": "The E30's electrical system suffers from age-related issues. Ground points corrode, causing erratic behavior. The instrument cluster capacitors fail, leading to dead gauges or pixels. Window and sunroof switches wear out.",
       "keywords": "electrical ground instrument cluster capacitors gauges OBC windows sunroof switches",
-      "url": "resources/bmw/e30.html"
+      "url": "/resources/bmw/e30/"
     },
     {
       "id": "e30-suspension",
@@ -46,7 +46,7 @@
       "symptoms": "Clunking over bumps, vague steering, uneven tire wear, wandering at highway speeds",
       "description": "After 30+ years, nearly all E30s have worn suspension bushings. The front control arm bushings, subframe mounts, rear trailing arm bushings, and sway bar end links all deteriorate with age.",
       "keywords": "suspension bushings control arm subframe trailing arm sway bar handling",
-      "url": "resources/bmw/e30.html"
+      "url": "/resources/bmw/e30/"
     },
     {
       "id": "e30-fuel-injection",
@@ -58,7 +58,7 @@
       "symptoms": "Hard starting, rough idle, poor fuel economy, hesitation under acceleration, stalling",
       "description": "E30s use Bosch Motronic or L-Jetronic fuel injection systems. Common failure points include the idle control valve (ICV), mass airflow sensor (AFM), coolant temperature sensor, and fuel injectors.",
       "keywords": "fuel injection motronic l-jetronic ICV idle control valve AFM airflow sensor injectors",
-      "url": "resources/bmw/e30.html"
+      "url": "/resources/bmw/e30/"
     },
     {
       "id": "e30-cooling",
@@ -70,7 +70,7 @@
       "symptoms": "Overheating, coolant leaks, heater not working, temperature gauge fluctuation",
       "description": "The E30's cooling system components fail with age. The water pump, thermostat, and radiator are common failure points. The heater core can leak, and the expansion tank can crack.",
       "keywords": "cooling overheating water pump thermostat radiator heater core coolant",
-      "url": "resources/bmw/e30.html"
+      "url": "/resources/bmw/e30/"
     },
     {
       "id": "e36-cooling",
@@ -82,7 +82,7 @@
       "symptoms": "Overheating, coolant leaks, temperature gauge pegged high, steam from engine bay, heater blowing cold",
       "description": "The E36 cooling system is notoriously fragile. BMW used plastic components that become brittle with heat cycles. The expansion tank, thermostat housing, water pump impeller, and radiator end tanks are all prone to failure.",
       "keywords": "cooling overheating expansion tank thermostat water pump radiator plastic",
-      "url": "resources/bmw/e36.html"
+      "url": "/resources/bmw/e36/"
     },
     {
       "id": "e36-vanos",
@@ -94,7 +94,7 @@
       "symptoms": "Rough idle, loss of low-end torque, engine rattle at startup, hesitation between 2500-3500 RPM",
       "description": "The E36 with M50TU and M52 engines uses BMW's Single VANOS variable valve timing system. The VANOS unit's seals harden and fail over time, leading to oil leaks and loss of proper valve timing.",
       "keywords": "vanos m50tu m52 variable valve timing seals rattle torque",
-      "url": "resources/bmw/e36.html"
+      "url": "/resources/bmw/e36/"
     },
     {
       "id": "e36-rtab",
@@ -106,7 +106,7 @@
       "symptoms": "Clunking from rear over bumps, vague rear-end feel, rear tire wear on inside edge, visible bushing deterioration",
       "description": "The rear trailing arm bushings on the E36 are a well-known weak point. When they wear out, they allow excessive movement of the rear wheels, affecting handling and causing accelerated tire wear.",
       "keywords": "rtab rear trailing arm bushing suspension handling tire wear",
-      "url": "resources/bmw/e36.html"
+      "url": "/resources/bmw/e36/"
     },
     {
       "id": "e36-window-regulator",
@@ -118,7 +118,7 @@
       "symptoms": "Window drops into door, grinding noise during operation, window moves slowly or crooked, clicking sounds",
       "description": "E36 window regulators use plastic clips and guides that fail over time. When the clips break, the window can drop into the door panel. The regulators use a cable system that can also stretch or break.",
       "keywords": "window regulator plastic clips cable door panel",
-      "url": "resources/bmw/e36.html"
+      "url": "/resources/bmw/e36/"
     },
     {
       "id": "e36-oil-leaks",
@@ -130,7 +130,7 @@
       "symptoms": "Oil spots under car, burning oil smell, visible oil on engine, low oil level between changes",
       "description": "E36s are known for developing oil leaks. The valve cover gasket, oil filter housing gasket (OFHG), oil pan gasket, and rear main seal are all common leak points.",
       "keywords": "oil leak valve cover gasket ofhg oil filter housing oil pan rear main seal",
-      "url": "resources/bmw/e36.html"
+      "url": "/resources/bmw/e36/"
     },
     {
       "id": "e36-control-arm",
@@ -142,7 +142,7 @@
       "symptoms": "Steering wheel vibration, clunking over bumps, pulling to one side, uneven front tire wear",
       "description": "The E36 front suspension uses control arms with pressed-in bushings that wear over time. Worn bushings cause imprecise steering, vibration, and accelerated tire wear.",
       "keywords": "control arm bushings suspension steering vibration tire wear",
-      "url": "resources/bmw/e36.html"
+      "url": "/resources/bmw/e36/"
     },
     {
       "id": "e36-ignition",
@@ -154,7 +154,7 @@
       "symptoms": "Misfires, rough idle, poor fuel economy, check engine light, hesitation under load",
       "description": "The E36's ignition system components wear out. The ignition coils, spark plugs, plug wires, and crankshaft position sensor are common failure points.",
       "keywords": "ignition coils spark plugs misfire crankshaft position sensor cps",
-      "url": "resources/bmw/e36.html"
+      "url": "/resources/bmw/e36/"
     },
     {
       "id": "e46-vanos",
@@ -166,7 +166,7 @@
       "symptoms": "Rough idle, loss of power, rattling noise on startup, check engine light, poor fuel economy",
       "description": "The E46 uses Double VANOS for both intake and exhaust cam timing. The seals in the VANOS units harden over time, causing rattling and performance issues. The solenoids can also fail.",
       "keywords": "vanos double vanos variable valve timing seals solenoid rattle",
-      "url": "resources/bmw/e46.html"
+      "url": "/resources/bmw/e46/"
     },
     {
       "id": "e46-cooling",
@@ -178,7 +178,7 @@
       "symptoms": "Overheating, coolant leaks, temperature gauge fluctuation, heater issues, steam from engine",
       "description": "Like the E36, the E46 cooling system uses plastic components that fail. The expansion tank, thermostat housing, water pump, and radiator are common failure points.",
       "keywords": "cooling overheating expansion tank thermostat water pump radiator plastic",
-      "url": "resources/bmw/e46.html"
+      "url": "/resources/bmw/e46/"
     },
     {
       "id": "e46-subframe",
@@ -190,7 +190,7 @@
       "symptoms": "Clunking from rear, visible cracks in floor pan around subframe mounts, rear suspension feels loose",
       "description": "The E46 has a known issue with the rear subframe mounts tearing out of the floor pan. This is a serious structural problem that can affect handling and safety. Common on higher-mileage cars and those driven hard.",
       "keywords": "subframe cracking floor pan rear suspension structural mounts",
-      "url": "resources/bmw/e46.html"
+      "url": "/resources/bmw/e46/"
     },
     {
       "id": "e46-window-regulator",
@@ -202,7 +202,7 @@
       "symptoms": "Window drops into door, grinding noise, slow window operation, window off track",
       "description": "E46 window regulators use cable-driven mechanisms with plastic components that fail. Similar to E36, this is a common issue requiring regulator replacement.",
       "keywords": "window regulator cable plastic door panel",
-      "url": "resources/bmw/e46.html"
+      "url": "/resources/bmw/e46/"
     },
     {
       "id": "e46-control-arm",
@@ -214,7 +214,7 @@
       "symptoms": "Clunking over bumps, steering wheel shimmy, uneven tire wear, pulling to one side",
       "description": "The E46 front control arm bushings wear out over time, affecting steering precision and causing noise. The thrust arm bushings are particularly prone to failure.",
       "keywords": "control arm bushings thrust arm suspension steering clunking",
-      "url": "resources/bmw/e46.html"
+      "url": "/resources/bmw/e46/"
     },
     {
       "id": "924-timing-belt",
@@ -226,7 +226,7 @@
       "symptoms": "Engine won't start, loud slapping noise, bent valves after failure, visible belt cracking or fraying",
       "description": "The 924's Audi-derived 2.0L inline-4 uses a timing belt. This is an interference engine, meaning if the belt breaks, the pistons will contact the valves, causing severe engine damage.",
       "keywords": "timing belt interference engine valves pistons audi 2.0",
-      "url": "resources/porsche/924.html"
+      "url": "/resources/porsche/924/"
     },
     {
       "id": "924-cis",
@@ -238,7 +238,7 @@
       "symptoms": "Hard starting, rough idle, hesitation under acceleration, poor fuel economy, flooding, black smoke",
       "description": "The 924 uses Bosch K-Jetronic Continuous Injection System (CIS), a mechanical fuel injection system. Age causes the fuel distributor diaphragm to harden, injectors to clog, and control pressure regulator to fail.",
       "keywords": "cis k-jetronic fuel injection bosch warm-up regulator injectors fuel distributor",
-      "url": "resources/porsche/924.html"
+      "url": "/resources/porsche/924/"
     },
     {
       "id": "924-clutch",
@@ -250,7 +250,7 @@
       "symptoms": "Heavy clutch pedal, clutch slipping, difficulty shifting, clutch pedal sticks down, grinding when shifting",
       "description": "The 924 uses a cable-operated clutch system. The clutch cable stretches with age and use, and the guide tube in the tunnel can wear. The throwout bearing and clutch fork pivot ball are high-wear items.",
       "keywords": "clutch cable throwout bearing clutch fork transaxle shifting",
-      "url": "resources/porsche/924.html"
+      "url": "/resources/porsche/924/"
     },
     {
       "id": "924-rust",
@@ -262,7 +262,7 @@
       "symptoms": "Bubbling paint, visible rust holes, soft floors, leaking trunk or cabin, rusty battery box",
       "description": "The 924 is prone to rust in several well-known areas. The front fenders rust behind the headlights. The battery box corrodes from acid exposure. Door bottoms and rocker panels trap moisture.",
       "keywords": "rust corrosion battery box fenders floor pans rocker panels",
-      "url": "resources/porsche/924.html"
+      "url": "/resources/porsche/924/"
     },
     {
       "id": "924-electrical",
@@ -274,7 +274,7 @@
       "symptoms": "Intermittent no-start, dead gauges, flickering lights, non-functional windows/mirrors, fuel pump runs constantly",
       "description": "The 924's electrical system suffers from age. The DME/fuel pump relay, corroded ground connections, and degraded wiring insulation are main culprits.",
       "keywords": "electrical dme relay fuel pump ground connections wiring gauges",
-      "url": "resources/porsche/924.html"
+      "url": "/resources/porsche/924/"
     },
     {
       "id": "924-cooling",
@@ -286,7 +286,7 @@
       "symptoms": "Overheating, coolant leaks, heater not working, temperature gauge fluctuation, steam from engine bay",
       "description": "The 924's cooling system works hard. The water pump, thermostat, radiator's plastic end tanks, and heater core can all fail with age.",
       "keywords": "cooling overheating water pump thermostat radiator heater core",
-      "url": "resources/porsche/924.html"
+      "url": "/resources/porsche/924/"
     },
     {
       "id": "924-transaxle",
@@ -298,7 +298,7 @@
       "symptoms": "Grinding when shifting, popping out of gear, whining noise from rear, difficulty engaging reverse, oil leaks at rear",
       "description": "The 924 uses a rear-mounted transaxle. Common issues include worn synchros (especially 2nd gear), tired shift linkage, and differential wear.",
       "keywords": "transaxle differential synchros shifting transmission gear oil",
-      "url": "resources/porsche/924.html"
+      "url": "/resources/porsche/924/"
     },
     {
       "id": "924-suspension",
@@ -310,7 +310,7 @@
       "symptoms": "Clunking over bumps, vague steering, uneven tire wear, wandering at highway speed, squeaking from front end",
       "description": "After 35-45 years, nearly every 924 needs suspension attention. Common wear items include strut mounts, control arm bushings, tie rod ends, ball joints, and steering rack.",
       "keywords": "suspension steering strut mounts control arm bushings tie rods ball joints",
-      "url": "resources/porsche/924.html"
+      "url": "/resources/porsche/924/"
     },
     {
       "id": "944-timing-belt",
@@ -322,7 +322,7 @@
       "symptoms": "Engine won't start, catastrophic engine noise, bent valves, snapped belt visible through timing cover",
       "description": "The 944's inline-4 is an interference engine that relies on timing and balance shaft belts. If either belt fails, the valves will contact the pistons, requiring an engine rebuild. This is the most critical maintenance item on the 944.",
       "keywords": "timing belt balance shaft belt interference engine valves pistons critical maintenance",
-      "url": "resources/porsche/944.html"
+      "url": "/resources/porsche/944/"
     },
     {
       "id": "944-water-pump",
@@ -334,7 +334,7 @@
       "symptoms": "Coolant leak at front of engine, overheating, squealing noise from engine, play in water pump shaft",
       "description": "The 944 water pump is driven by the timing belt. When the pump bearings or seals fail, coolant can leak into the timing belt area, contaminating and weakening the belt.",
       "keywords": "water pump coolant leak timing belt overheating bearings seals",
-      "url": "resources/porsche/944.html"
+      "url": "/resources/porsche/944/"
     },
     {
       "id": "944-dme-relay",
@@ -346,7 +346,7 @@
       "symptoms": "No-start condition, fuel pump doesn't prime, car dies while driving and won't restart, intermittent starting issues",
       "description": "The DME relay is an infamous weak point on all 944s. This relay controls power to the fuel pump, fuel injectors, and engine management computer. Solder joints crack over time from thermal cycling.",
       "keywords": "dme relay no start fuel pump injectors engine management solder",
-      "url": "resources/porsche/944.html"
+      "url": "/resources/porsche/944/"
     },
     {
       "id": "944-clutch-hydraulic",
@@ -358,7 +358,7 @@
       "symptoms": "Clutch pedal goes to floor, soft or spongy pedal, difficulty shifting, clutch won't disengage, fluid leak",
       "description": "The 944 uses a hydraulic clutch system with master and slave cylinders. Both cylinders use rubber seals that deteriorate over time, causing internal and external leaks.",
       "keywords": "clutch hydraulic master cylinder slave cylinder pedal shifting bleeding",
-      "url": "resources/porsche/944.html"
+      "url": "/resources/porsche/944/"
     },
     {
       "id": "944-torque-tube",
@@ -370,7 +370,7 @@
       "symptoms": "Vibration at certain speeds, humming or growling noise from center of car, vibration when accelerating or decelerating",
       "description": "The 944 uses a torque tube to connect the front engine to the rear transaxle. The center support bearing wears over time, causing vibrations and noise.",
       "keywords": "torque tube bearing vibration driveshaft cv joint flex disc guibo",
-      "url": "resources/porsche/944.html"
+      "url": "/resources/porsche/944/"
     },
     {
       "id": "944-dashboard",
@@ -382,7 +382,7 @@
       "symptoms": "Cracks appearing on dashboard surface, especially on top near windshield, warping, deteriorating texture",
       "description": "The 944 dashboard is made of foam covered with vinyl and is extremely prone to cracking, especially in hot climates or when exposed to direct sunlight.",
       "keywords": "dashboard cracking vinyl interior sun damage cosmetic",
-      "url": "resources/porsche/944.html"
+      "url": "/resources/porsche/944/"
     },
     {
       "id": "944-power-steering",
@@ -394,7 +394,7 @@
       "symptoms": "Power steering fluid leak, low fluid in reservoir, heavy steering when cold, whining from power steering pump",
       "description": "The 944 power steering rack commonly develops leaks from seals as they age. Leaks typically occur at the pinion seal, tie rod end seals, or pressure line connections.",
       "keywords": "power steering rack leak fluid pump seals tie rod",
-      "url": "resources/porsche/944.html"
+      "url": "/resources/porsche/944/"
     },
     {
       "id": "944-odometer",
@@ -406,7 +406,7 @@
       "symptoms": "Odometer stops working while speedometer works, intermittent odometer, trip meter stuck",
       "description": "The 944 instrument cluster uses plastic gears to drive the odometer from the speedometer. These gears strip or crack with age, causing the odometer to stop functioning.",
       "keywords": "odometer speedometer gears instrument cluster vdo trip meter",
-      "url": "resources/porsche/944.html"
+      "url": "/resources/porsche/944/"
     },
     {
       "id": "944-engine-mounts",
@@ -418,7 +418,7 @@
       "symptoms": "Excessive engine vibration, engine moves visibly during acceleration/deceleration, clunking when shifting, harsh NVH",
       "description": "The 944 engine mounts deteriorate over time. The large inline-4 engine with balance shafts puts significant stress on these mounts, causing vibrations when worn.",
       "keywords": "engine mounts vibration nvh clunking rubber polyurethane transaxle mounts",
-      "url": "resources/porsche/944.html"
+      "url": "/resources/porsche/944/"
     },
     {
       "id": "928-timing-belt",
@@ -430,7 +430,7 @@
       "symptoms": "Engine won't start, catastrophic engine noise, bent valves, visible belt damage",
       "description": "The 928's V8 engine is an interference engine that uses a timing belt to drive the camshafts. Belt failure results in piston-to-valve contact and catastrophic engine damage.",
       "keywords": "timing belt v8 interference engine valves pistons camshaft rollers",
-      "url": "resources/porsche/928.html"
+      "url": "/resources/porsche/928/"
     },
     {
       "id": "928-oil-leaks",
@@ -442,7 +442,7 @@
       "symptoms": "Oil leaks at top of engine, burning oil smell, oil on exhaust manifolds, low oil level, smoke from engine bay",
       "description": "The 928 V8 is notorious for oil leaks, primarily from the cam tower gaskets. These gaskets harden with age and heat, causing oil to leak onto exhaust manifolds.",
       "keywords": "oil leak cam tower gasket valve cover cylinder head rear main seal",
-      "url": "resources/porsche/928.html"
+      "url": "/resources/porsche/928/"
     },
     {
       "id": "928-wiring-harness",
@@ -454,7 +454,7 @@
       "symptoms": "Random misfires, check engine light, running issues, no-start conditions, sensors not reading correctly",
       "description": "The 928's engine wiring harness is routed through a hot area and uses insulation that becomes brittle and cracks with age. This causes short circuits and intermittent connections.",
       "keywords": "wiring harness electrical insulation short circuit sensors misfires",
-      "url": "resources/porsche/928.html"
+      "url": "/resources/porsche/928/"
     },
     {
       "id": "928-transmission",
@@ -466,7 +466,7 @@
       "symptoms": "Harsh shifting, slipping, delayed engagement, no movement in gear, fluid leaks, overheating warning",
       "description": "Most 928s have automatic transmissions that require proper maintenance. Common issues include worn valve body, torque converter failure, and failed seals.",
       "keywords": "automatic transmission shifting slipping torque converter valve body atf fluid",
-      "url": "resources/porsche/928.html"
+      "url": "/resources/porsche/928/"
     },
     {
       "id": "928-cooling",
@@ -478,7 +478,7 @@
       "symptoms": "Overheating, coolant leaks, white smoke from tailpipe, heater not working, temperature gauge fluctuation",
       "description": "The 928's V8 produces significant heat. The water pump, radiator's plastic end tanks, thermostat, and heater core are common failure points.",
       "keywords": "cooling overheating water pump thermostat radiator heater core coolant v8",
-      "url": "resources/porsche/928.html"
+      "url": "/resources/porsche/928/"
     },
     {
       "id": "928-vacuum",
@@ -490,7 +490,7 @@
       "symptoms": "Climate control not working, doors won't lock, cruise control failure, rough idle, brake booster issues",
       "description": "The 928 uses vacuum to power many systems including HVAC controls, door locks, cruise control, and brake booster. Vacuum hoses become brittle and crack with age.",
       "keywords": "vacuum hoses hvac climate control door locks cruise control brake booster",
-      "url": "resources/porsche/928.html"
+      "url": "/resources/porsche/928/"
     },
     {
       "id": "928-weissach",
@@ -502,7 +502,7 @@
       "symptoms": "Rear-end wander, unpredictable handling at limit, clunking from rear, uneven rear tire wear",
       "description": "Later 928 models use the Weissach rear axle, a sophisticated multi-link suspension that provides passive rear-wheel steering. The system uses multiple bushings that wear over time.",
       "keywords": "weissach axle suspension rear bushings control arms handling s4 gts",
-      "url": "resources/porsche/928.html"
+      "url": "/resources/porsche/928/"
     },
     {
       "id": "928-headlights",
@@ -514,7 +514,7 @@
       "symptoms": "Headlights stuck up or down, slow headlight operation, one headlight won't open, motor noise but no movement",
       "description": "The 928's pop-up headlights are operated by electric motors driving cables and linkages. Motors can fail, cables can break, and plastic linkage components can crack.",
       "keywords": "pop-up headlights motors cables linkage stuck pivot",
-      "url": "resources/porsche/928.html"
+      "url": "/resources/porsche/928/"
     },
     {
       "id": "928-instrument-cluster",
@@ -526,7 +526,7 @@
       "symptoms": "Dead or flickering gauges, inaccurate readings, warning lights stuck on, odometer failure, dim display",
       "description": "The 928's instrument cluster is a complex electronic unit. Circuit board solder cracks, capacitors fail, LCD displays fade, and odometer gears strip.",
       "keywords": "instrument cluster gauges lcd display odometer capacitors circuit board",
-      "url": "resources/porsche/928.html"
+      "url": "/resources/porsche/928/"
     },
     {
       "id": "928-ac",
@@ -538,7 +538,7 @@
       "symptoms": "No cold air, weak airflow, hot on one side and cold on the other, clicking from dashboard, refrigerant leaks",
       "description": "The 928's automatic climate control system is advanced but old. The compressor, condenser, evaporator, and servo motors for blend doors can all fail.",
       "keywords": "air conditioning ac hvac compressor condenser evaporator refrigerant r12 r134a",
-      "url": "resources/porsche/928.html"
+      "url": "/resources/porsche/928/"
     },
     {
       "id": "986-ims",
@@ -550,7 +550,7 @@
       "symptoms": "Metallic debris in oil, grinding noise from engine, sudden catastrophic engine failure, oil light flickering",
       "description": "The Intermediate Shaft (IMS) bearing is the most feared issue on the M96 engine. When it fails, metal debris circulates through the engine, causing catastrophic damage.",
       "keywords": "ims bearing intermediate shaft m96 engine failure debris oil",
-      "url": "resources/porsche/986.html"
+      "url": "/resources/porsche/986/"
     },
     {
       "id": "986-rms",
@@ -562,7 +562,7 @@
       "symptoms": "Oil drips from bell housing area, oil on clutch, burning oil smell, oil consumption",
       "description": "The rear main seal on the M96 engine is known to leak. Oil leaks onto the clutch causing slipping and requiring clutch replacement along with the seal.",
       "keywords": "rear main seal rms oil leak clutch bell housing m96",
-      "url": "resources/porsche/986.html"
+      "url": "/resources/porsche/986/"
     },
     {
       "id": "986-coolant-pipe",
@@ -574,7 +574,7 @@
       "symptoms": "Sudden coolant loss, overheating, coolant smell, puddle under car, white smoke from engine bay",
       "description": "The 986 uses plastic coolant pipes that run under the intake manifold. These pipes become brittle with age and heat, eventually cracking and causing rapid coolant loss.",
       "keywords": "coolant pipe plastic overheating intake manifold aluminum upgrade",
-      "url": "resources/porsche/986.html"
+      "url": "/resources/porsche/986/"
     },
     {
       "id": "986-convertible-top",
@@ -586,7 +586,7 @@
       "symptoms": "Top won't open/close, warning light on dash, hydraulic fluid leak, slow operation, top stops mid-cycle",
       "description": "The 986 Boxster's convertible top mechanism is hydraulic and electrically controlled. Common failure points include the hydraulic pump, rams, and micro switches.",
       "keywords": "convertible top hydraulic pump rams micro switches pentosin",
-      "url": "resources/porsche/986.html"
+      "url": "/resources/porsche/986/"
     },
     {
       "id": "986-aos",
@@ -598,7 +598,7 @@
       "symptoms": "Rough idle, smoke from exhaust on startup, oil consumption, whistling noise, check engine light",
       "description": "The Air/Oil Separator (AOS) is part of the crankcase ventilation system. When it fails, it causes vacuum leaks and allows oil into the intake.",
       "keywords": "aos air oil separator crankcase ventilation vacuum leak oil consumption",
-      "url": "resources/porsche/986.html"
+      "url": "/resources/porsche/986/"
     },
     {
       "id": "986-bore-scoring",
@@ -610,7 +610,7 @@
       "symptoms": "Knocking noise from engine, increased oil consumption, smoke on startup, low compression",
       "description": "Some M96 engines develop bore scoring - damage to the cylinder walls. It's more common on cars that sit for long periods or are driven short distances.",
       "keywords": "bore scoring cylinder wear m96 lokasil oil consumption compression",
-      "url": "resources/porsche/986.html"
+      "url": "/resources/porsche/986/"
     },
     {
       "id": "986-window-regulator",
@@ -622,7 +622,7 @@
       "symptoms": "Window drops into door, grinding noise, slow window operation, window off track",
       "description": "The 986 uses cable-driven window regulators with plastic components that fail. Frameless windows put more stress on the regulator system.",
       "keywords": "window regulator cable plastic frameless door",
-      "url": "resources/porsche/986.html"
+      "url": "/resources/porsche/986/"
     },
     {
       "id": "996-ims",
@@ -634,7 +634,7 @@
       "symptoms": "Metallic debris in oil, grinding noise from engine, catastrophic engine failure, oil light flickering",
       "description": "The 996 shares the M96 engine with the 986 Boxster and has the same IMS bearing issue. The bearing supports the intermediate shaft that drives the camshafts.",
       "keywords": "ims bearing intermediate shaft m96 engine failure debris oil",
-      "url": "resources/porsche/996.html"
+      "url": "/resources/porsche/996/"
     },
     {
       "id": "996-bore-scoring",
@@ -646,7 +646,7 @@
       "symptoms": "Knocking noise, increased oil consumption, smoke from exhaust, loss of power, low compression",
       "description": "The M96 engine can develop bore scoring or 'D-Chunk' where pieces of cylinder wall break away. This is a serious issue requiring engine rebuild.",
       "keywords": "bore scoring d-chunk cylinder wall m96 engine rebuild compression",
-      "url": "resources/porsche/996.html"
+      "url": "/resources/porsche/996/"
     },
     {
       "id": "996-rms",
@@ -658,7 +658,7 @@
       "symptoms": "Oil drips from engine area, oil on clutch, burning oil smell, oil spots under car",
       "description": "Like the 986, the 996's M96 engine rear main seal leaks over time, allowing oil to escape and potentially contaminate the clutch.",
       "keywords": "rear main seal rms oil leak clutch m96",
-      "url": "resources/porsche/996.html"
+      "url": "/resources/porsche/996/"
     },
     {
       "id": "996-aos",
@@ -670,7 +670,7 @@
       "symptoms": "Rough idle, smoke from exhaust, oil consumption, whistling noise from engine, check engine light",
       "description": "The 996 shares the AOS design with the 986. When the diaphragm fails, it causes vacuum leaks and oil in the intake.",
       "keywords": "aos air oil separator vacuum leak oil consumption crankcase ventilation",
-      "url": "resources/porsche/996.html"
+      "url": "/resources/porsche/996/"
     },
     {
       "id": "996-coolant",
@@ -682,7 +682,7 @@
       "symptoms": "Overheating, coolant leaks, temperature warning, coolant smell, steam from engine area",
       "description": "The 996 cooling system uses plastic components that fail with age. Coolant pipes, expansion tank, and water pump are common failure points.",
       "keywords": "cooling overheating coolant pipes expansion tank water pump plastic",
-      "url": "resources/porsche/996.html"
+      "url": "/resources/porsche/996/"
     },
     {
       "id": "996-headlights",
@@ -694,7 +694,7 @@
       "symptoms": "Moisture in headlights, foggy headlight lenses, yellowed headlights, water dripping from headlights",
       "description": "The 996's distinctive 'fried egg' headlights are known for seal failure, allowing moisture to enter. This damages the reflectors and reduces light output.",
       "keywords": "headlights fried egg seal moisture foggy yellowed lenses",
-      "url": "resources/porsche/996.html"
+      "url": "/resources/porsche/996/"
     },
     {
       "id": "996-suspension",
@@ -706,7 +706,7 @@
       "symptoms": "Clunking over bumps, vague steering, uneven tire wear, reduced handling precision",
       "description": "The 996 suspension components wear over time. Control arm bushings, thrust arm bushings, and shock absorbers are common wear items.",
       "keywords": "suspension bushings control arm thrust arm shocks handling",
-      "url": "resources/porsche/996.html"
+      "url": "/resources/porsche/996/"
     },
     {
       "id": "997-ims",
@@ -718,7 +718,7 @@
       "symptoms": "Metallic debris in oil, grinding noise from engine, catastrophic engine failure, oil warning light",
       "description": "Early 997 models (997.1, 2005-2008) use the M96/M97 engine with IMS bearing issues. Later 997.2 models (2009+) use the improved 9A1 engine without this issue.",
       "keywords": "ims bearing m96 m97 997.1 engine failure debris",
-      "url": "resources/porsche/997.html"
+      "url": "/resources/porsche/997/"
     },
     {
       "id": "997-bore-scoring",
@@ -730,7 +730,7 @@
       "symptoms": "Engine knocking, increased oil consumption, smoke from exhaust, loss of power",
       "description": "The 997.1 M97 engine can develop bore scoring like the M96. The 997.2 with the 9A1 engine doesn't have this issue.",
       "keywords": "bore scoring m97 997.1 cylinder wall oil consumption engine rebuild",
-      "url": "resources/porsche/997.html"
+      "url": "/resources/porsche/997/"
     },
     {
       "id": "997-pdk",
@@ -742,7 +742,7 @@
       "symptoms": "Harsh shifts, shuddering, warning messages, delayed engagement, grinding noises",
       "description": "The 997.2 introduced the PDK dual-clutch transmission. While generally reliable, issues can include clutch wear, mechatronics failures, and software glitches.",
       "keywords": "pdk dual clutch transmission mechatronics 997.2 shifting clutch",
-      "url": "resources/porsche/997.html"
+      "url": "/resources/porsche/997/"
     },
     {
       "id": "997-pasm",
@@ -754,7 +754,7 @@
       "symptoms": "PASM warning light, harsh ride, no difference between comfort and sport modes, leaking shocks",
       "description": "PASM (Porsche Active Suspension Management) uses electronically adjustable shocks that can fail. The shocks are expensive to replace.",
       "keywords": "pasm suspension shocks dampers electronic adjustable warning light",
-      "url": "resources/porsche/997.html"
+      "url": "/resources/porsche/997/"
     },
     {
       "id": "997-coolant",
@@ -766,7 +766,7 @@
       "symptoms": "Coolant leaks, overheating, coolant warning, steam from engine area, low coolant level",
       "description": "The 997 uses plastic coolant components that can fail. The coolant pipes, expansion tank, and water pump are common failure points.",
       "keywords": "coolant pipes water pump overheating plastic expansion tank",
-      "url": "resources/porsche/997.html"
+      "url": "/resources/porsche/997/"
     },
     {
       "id": "997-carbon-buildup",
@@ -778,7 +778,7 @@
       "symptoms": "Rough idle, misfires, reduced power, poor fuel economy, hesitation",
       "description": "The 997.2's direct injection engine can develop carbon buildup on the intake valves since fuel doesn't wash over them like in port injection systems.",
       "keywords": "carbon buildup direct injection intake valves dfi 997.2 walnut blasting",
-      "url": "resources/porsche/997.html"
+      "url": "/resources/porsche/997/"
     },
     {
       "id": "997-rms",
@@ -790,7 +790,1512 @@
       "symptoms": "Oil drips from engine, oil on clutch, burning oil smell, oil spots under car",
       "description": "The 997.1 with M97 engine can develop rear main seal leaks like the earlier M96 engines. The 997.2 with 9A1 engine has improved sealing.",
       "keywords": "rear main seal rms oil leak m97 997.1 clutch",
-      "url": "resources/porsche/997.html"
+      "url": "/resources/porsche/997/"
+    }
+  ],
+  "torqueSpecs": [
+    {
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "years": "1982-1994",
+      "category": "Engine",
+      "component": "Cylinder Head Bolts (M20)",
+      "spec": "44 ft-lbs + 90°",
+      "notes": "Torque-to-yield bolts, replace each use",
+      "keywords": "cylinder head bolts m20 tty torque angle",
+      "url": "/resources/bmw/e30/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "years": "1982-1994",
+      "category": "Engine",
+      "component": "Main Bearing Caps",
+      "spec": "47 ft-lbs",
+      "notes": "",
+      "keywords": "main bearing caps crankshaft",
+      "url": "/resources/bmw/e30/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "years": "1982-1994",
+      "category": "Engine",
+      "component": "Connecting Rod Bolts",
+      "spec": "38 ft-lbs",
+      "notes": "",
+      "keywords": "connecting rod bolts conrod",
+      "url": "/resources/bmw/e30/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "years": "1982-1994",
+      "category": "Engine",
+      "component": "Flywheel Bolts",
+      "spec": "72-80 ft-lbs",
+      "notes": "Use thread locker",
+      "keywords": "flywheel bolts clutch",
+      "url": "/resources/bmw/e30/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "years": "1982-1994",
+      "category": "Engine",
+      "component": "Spark Plugs",
+      "spec": "18-22 ft-lbs",
+      "notes": "",
+      "keywords": "spark plugs ignition",
+      "url": "/resources/bmw/e30/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "years": "1982-1994",
+      "category": "Engine",
+      "component": "Valve Cover Nuts",
+      "spec": "7 ft-lbs",
+      "notes": "Do not overtighten",
+      "keywords": "valve cover nuts gasket",
+      "url": "/resources/bmw/e30/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "years": "1982-1994",
+      "category": "Engine",
+      "component": "Oil Drain Plug",
+      "spec": "18 ft-lbs",
+      "notes": "Replace crush washer",
+      "keywords": "oil drain plug sump",
+      "url": "/resources/bmw/e30/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "years": "1982-1994",
+      "category": "Suspension",
+      "component": "Front Strut Top Nut",
+      "spec": "47 ft-lbs",
+      "notes": "",
+      "keywords": "strut top nut shock mount",
+      "url": "/resources/bmw/e30/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "years": "1982-1994",
+      "category": "Suspension",
+      "component": "Control Arm to Subframe",
+      "spec": "57 ft-lbs",
+      "notes": "Tighten with weight on wheels",
+      "keywords": "control arm subframe suspension",
+      "url": "/resources/bmw/e30/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "years": "1982-1994",
+      "category": "Suspension",
+      "component": "Tie Rod End Nut",
+      "spec": "25-33 ft-lbs",
+      "notes": "",
+      "keywords": "tie rod end steering",
+      "url": "/resources/bmw/e30/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "years": "1982-1994",
+      "category": "Suspension",
+      "component": "Wheel Lug Bolts",
+      "spec": "80 ft-lbs",
+      "notes": "Tighten in star pattern",
+      "keywords": "wheel lug bolts nuts",
+      "url": "/resources/bmw/e30/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "years": "1982-1994",
+      "category": "Suspension",
+      "component": "Rear Trailing Arm",
+      "spec": "52 ft-lbs",
+      "notes": "Tighten with weight on wheels",
+      "keywords": "rear trailing arm suspension",
+      "url": "/resources/bmw/e30/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "years": "1982-1994",
+      "category": "Suspension",
+      "component": "Subframe Bolts",
+      "spec": "57 ft-lbs",
+      "notes": "",
+      "keywords": "subframe bolts chassis",
+      "url": "/resources/bmw/e30/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "years": "1982-1994",
+      "category": "Brakes",
+      "component": "Brake Caliper Bolts (Front)",
+      "spec": "63 ft-lbs",
+      "notes": "",
+      "keywords": "brake caliper bolts front",
+      "url": "/resources/bmw/e30/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "years": "1982-1994",
+      "category": "Brakes",
+      "component": "Brake Caliper Bolts (Rear)",
+      "spec": "48 ft-lbs",
+      "notes": "",
+      "keywords": "brake caliper bolts rear",
+      "url": "/resources/bmw/e30/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "years": "1982-1994",
+      "category": "Brakes",
+      "component": "Brake Rotor Set Screws",
+      "spec": "9 ft-lbs",
+      "notes": "Use thread locker",
+      "keywords": "brake rotor set screws disc",
+      "url": "/resources/bmw/e30/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "years": "1982-1994",
+      "category": "Brakes",
+      "component": "Brake Line Fittings",
+      "spec": "11-13 ft-lbs",
+      "notes": "Do not overtighten",
+      "keywords": "brake line fittings hydraulic",
+      "url": "/resources/bmw/e30/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E36",
+      "modelName": "E36 3 Series",
+      "years": "1990-2000",
+      "category": "Engine",
+      "component": "Cylinder Head Bolts (M50/M52)",
+      "spec": "22 ft-lbs + 90° + 90°",
+      "notes": "TTY bolts, replace each use",
+      "keywords": "cylinder head bolts m50 m52 tty torque angle",
+      "url": "/resources/bmw/e36/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E36",
+      "modelName": "E36 3 Series",
+      "years": "1990-2000",
+      "category": "Engine",
+      "component": "VANOS Unit Bolts",
+      "spec": "10 ft-lbs",
+      "notes": "",
+      "keywords": "vanos unit bolts variable valve timing",
+      "url": "/resources/bmw/e36/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E36",
+      "modelName": "E36 3 Series",
+      "years": "1990-2000",
+      "category": "Engine",
+      "component": "Spark Plugs",
+      "spec": "18-22 ft-lbs",
+      "notes": "",
+      "keywords": "spark plugs ignition",
+      "url": "/resources/bmw/e36/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E36",
+      "modelName": "E36 3 Series",
+      "years": "1990-2000",
+      "category": "Engine",
+      "component": "Valve Cover Bolts",
+      "spec": "89 in-lbs",
+      "notes": "Do not overtighten",
+      "keywords": "valve cover bolts gasket",
+      "url": "/resources/bmw/e36/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E36",
+      "modelName": "E36 3 Series",
+      "years": "1990-2000",
+      "category": "Engine",
+      "component": "Oil Drain Plug",
+      "spec": "18 ft-lbs",
+      "notes": "Replace crush washer",
+      "keywords": "oil drain plug sump",
+      "url": "/resources/bmw/e36/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E36",
+      "modelName": "E36 3 Series",
+      "years": "1990-2000",
+      "category": "Suspension",
+      "component": "Control Arm to Subframe",
+      "spec": "57 ft-lbs",
+      "notes": "Tighten with weight on wheels",
+      "keywords": "control arm subframe suspension",
+      "url": "/resources/bmw/e36/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E36",
+      "modelName": "E36 3 Series",
+      "years": "1990-2000",
+      "category": "Suspension",
+      "component": "Strut Top Nut",
+      "spec": "47 ft-lbs",
+      "notes": "",
+      "keywords": "strut top nut shock mount",
+      "url": "/resources/bmw/e36/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E36",
+      "modelName": "E36 3 Series",
+      "years": "1990-2000",
+      "category": "Suspension",
+      "component": "Wheel Lug Bolts",
+      "spec": "80 ft-lbs",
+      "notes": "Tighten in star pattern",
+      "keywords": "wheel lug bolts nuts",
+      "url": "/resources/bmw/e36/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E36",
+      "modelName": "E36 3 Series",
+      "years": "1990-2000",
+      "category": "Suspension",
+      "component": "RTAB Bolts",
+      "spec": "52 ft-lbs",
+      "notes": "Tighten with weight on wheels",
+      "keywords": "rtab rear trailing arm bushing",
+      "url": "/resources/bmw/e36/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E36",
+      "modelName": "E36 3 Series",
+      "years": "1990-2000",
+      "category": "Brakes",
+      "component": "Front Caliper Carrier",
+      "spec": "81 ft-lbs",
+      "notes": "",
+      "keywords": "brake caliper carrier front",
+      "url": "/resources/bmw/e36/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E36",
+      "modelName": "E36 3 Series",
+      "years": "1990-2000",
+      "category": "Brakes",
+      "component": "Rear Caliper Carrier",
+      "spec": "48 ft-lbs",
+      "notes": "",
+      "keywords": "brake caliper carrier rear",
+      "url": "/resources/bmw/e36/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E46",
+      "modelName": "E46 3 Series",
+      "years": "1999-2006",
+      "category": "Engine",
+      "component": "Cylinder Head Bolts",
+      "spec": "22 ft-lbs + 90° + 90° + 90°",
+      "notes": "TTY bolts, replace each use",
+      "keywords": "cylinder head bolts tty torque angle",
+      "url": "/resources/bmw/e46/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E46",
+      "modelName": "E46 3 Series",
+      "years": "1999-2006",
+      "category": "Engine",
+      "component": "Spark Plugs",
+      "spec": "18-22 ft-lbs",
+      "notes": "",
+      "keywords": "spark plugs ignition",
+      "url": "/resources/bmw/e46/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E46",
+      "modelName": "E46 3 Series",
+      "years": "1999-2006",
+      "category": "Engine",
+      "component": "Valve Cover Bolts",
+      "spec": "89 in-lbs",
+      "notes": "",
+      "keywords": "valve cover bolts gasket",
+      "url": "/resources/bmw/e46/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E46",
+      "modelName": "E46 3 Series",
+      "years": "1999-2006",
+      "category": "Engine",
+      "component": "Oil Drain Plug",
+      "spec": "18 ft-lbs",
+      "notes": "Replace crush washer",
+      "keywords": "oil drain plug sump",
+      "url": "/resources/bmw/e46/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E46",
+      "modelName": "E46 3 Series",
+      "years": "1999-2006",
+      "category": "Engine",
+      "component": "VANOS Solenoid",
+      "spec": "7 ft-lbs",
+      "notes": "",
+      "keywords": "vanos solenoid variable valve timing",
+      "url": "/resources/bmw/e46/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E46",
+      "modelName": "E46 3 Series",
+      "years": "1999-2006",
+      "category": "Suspension",
+      "component": "Control Arm to Subframe",
+      "spec": "81 ft-lbs",
+      "notes": "Tighten with weight on wheels",
+      "keywords": "control arm subframe suspension",
+      "url": "/resources/bmw/e46/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E46",
+      "modelName": "E46 3 Series",
+      "years": "1999-2006",
+      "category": "Suspension",
+      "component": "Strut Top Nut",
+      "spec": "47 ft-lbs",
+      "notes": "",
+      "keywords": "strut top nut shock mount",
+      "url": "/resources/bmw/e46/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E46",
+      "modelName": "E46 3 Series",
+      "years": "1999-2006",
+      "category": "Suspension",
+      "component": "Wheel Lug Bolts",
+      "spec": "88 ft-lbs",
+      "notes": "Tighten in star pattern",
+      "keywords": "wheel lug bolts nuts",
+      "url": "/resources/bmw/e46/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E46",
+      "modelName": "E46 3 Series",
+      "years": "1999-2006",
+      "category": "Suspension",
+      "component": "Subframe Bolts",
+      "spec": "74 ft-lbs",
+      "notes": "",
+      "keywords": "subframe bolts chassis",
+      "url": "/resources/bmw/e46/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E46",
+      "modelName": "E46 3 Series",
+      "years": "1999-2006",
+      "category": "Brakes",
+      "component": "Front Caliper Carrier",
+      "spec": "81 ft-lbs",
+      "notes": "",
+      "keywords": "brake caliper carrier front",
+      "url": "/resources/bmw/e46/#torque-specs"
+    },
+    {
+      "brand": "BMW",
+      "model": "E46",
+      "modelName": "E46 3 Series",
+      "years": "1999-2006",
+      "category": "Brakes",
+      "component": "Rear Caliper Carrier",
+      "spec": "48 ft-lbs",
+      "notes": "",
+      "keywords": "brake caliper carrier rear",
+      "url": "/resources/bmw/e46/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "924",
+      "modelName": "924",
+      "years": "1976-1988",
+      "category": "Engine",
+      "component": "Cylinder Head Bolts",
+      "spec": "54 ft-lbs + 90°",
+      "notes": "Cold engine",
+      "keywords": "cylinder head bolts torque angle",
+      "url": "/resources/porsche/924/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "924",
+      "modelName": "924",
+      "years": "1976-1988",
+      "category": "Engine",
+      "component": "Timing Belt Tensioner",
+      "spec": "33 ft-lbs",
+      "notes": "",
+      "keywords": "timing belt tensioner",
+      "url": "/resources/porsche/924/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "924",
+      "modelName": "924",
+      "years": "1976-1988",
+      "category": "Engine",
+      "component": "Spark Plugs",
+      "spec": "18-22 ft-lbs",
+      "notes": "",
+      "keywords": "spark plugs ignition",
+      "url": "/resources/porsche/924/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "924",
+      "modelName": "924",
+      "years": "1976-1988",
+      "category": "Engine",
+      "component": "Oil Drain Plug",
+      "spec": "22 ft-lbs",
+      "notes": "Replace washer",
+      "keywords": "oil drain plug sump",
+      "url": "/resources/porsche/924/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "924",
+      "modelName": "924",
+      "years": "1976-1988",
+      "category": "Suspension",
+      "component": "Strut Top Nut",
+      "spec": "40 ft-lbs",
+      "notes": "",
+      "keywords": "strut top nut shock mount",
+      "url": "/resources/porsche/924/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "924",
+      "modelName": "924",
+      "years": "1976-1988",
+      "category": "Suspension",
+      "component": "Control Arm Bolts",
+      "spec": "65 ft-lbs",
+      "notes": "",
+      "keywords": "control arm bolts suspension",
+      "url": "/resources/porsche/924/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "924",
+      "modelName": "924",
+      "years": "1976-1988",
+      "category": "Suspension",
+      "component": "Wheel Lug Nuts",
+      "spec": "96 ft-lbs",
+      "notes": "",
+      "keywords": "wheel lug nuts",
+      "url": "/resources/porsche/924/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "924",
+      "modelName": "924",
+      "years": "1976-1988",
+      "category": "Brakes",
+      "component": "Caliper Bolts",
+      "spec": "48 ft-lbs",
+      "notes": "",
+      "keywords": "brake caliper bolts",
+      "url": "/resources/porsche/924/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "944",
+      "modelName": "944",
+      "years": "1982-1991",
+      "category": "Engine",
+      "component": "Cylinder Head Bolts",
+      "spec": "48 ft-lbs + 90°",
+      "notes": "New bolts required",
+      "keywords": "cylinder head bolts torque angle tty",
+      "url": "/resources/porsche/944/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "944",
+      "modelName": "944",
+      "years": "1982-1991",
+      "category": "Engine",
+      "component": "Timing Belt Tensioner",
+      "spec": "33 ft-lbs",
+      "notes": "",
+      "keywords": "timing belt tensioner",
+      "url": "/resources/porsche/944/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "944",
+      "modelName": "944",
+      "years": "1982-1991",
+      "category": "Engine",
+      "component": "Balance Shaft Belt Tensioner",
+      "spec": "15 ft-lbs",
+      "notes": "",
+      "keywords": "balance shaft belt tensioner",
+      "url": "/resources/porsche/944/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "944",
+      "modelName": "944",
+      "years": "1982-1991",
+      "category": "Engine",
+      "component": "Spark Plugs",
+      "spec": "22 ft-lbs",
+      "notes": "",
+      "keywords": "spark plugs ignition",
+      "url": "/resources/porsche/944/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "944",
+      "modelName": "944",
+      "years": "1982-1991",
+      "category": "Engine",
+      "component": "Oil Drain Plug",
+      "spec": "22 ft-lbs",
+      "notes": "Replace washer",
+      "keywords": "oil drain plug sump",
+      "url": "/resources/porsche/944/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "944",
+      "modelName": "944",
+      "years": "1982-1991",
+      "category": "Suspension",
+      "component": "Strut Top Nut",
+      "spec": "58 ft-lbs",
+      "notes": "",
+      "keywords": "strut top nut shock mount",
+      "url": "/resources/porsche/944/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "944",
+      "modelName": "944",
+      "years": "1982-1991",
+      "category": "Suspension",
+      "component": "Wheel Lug Nuts",
+      "spec": "96 ft-lbs",
+      "notes": "",
+      "keywords": "wheel lug nuts",
+      "url": "/resources/porsche/944/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "944",
+      "modelName": "944",
+      "years": "1982-1991",
+      "category": "Brakes",
+      "component": "Caliper Bolts",
+      "spec": "63 ft-lbs",
+      "notes": "",
+      "keywords": "brake caliper bolts",
+      "url": "/resources/porsche/944/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "928",
+      "modelName": "928",
+      "years": "1977-1995",
+      "category": "Engine",
+      "component": "Cylinder Head Bolts",
+      "spec": "Varies by year - see manual",
+      "notes": "Complex procedure",
+      "keywords": "cylinder head bolts v8",
+      "url": "/resources/porsche/928/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "928",
+      "modelName": "928",
+      "years": "1977-1995",
+      "category": "Engine",
+      "component": "Timing Belt Tensioner",
+      "spec": "33 ft-lbs",
+      "notes": "",
+      "keywords": "timing belt tensioner",
+      "url": "/resources/porsche/928/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "928",
+      "modelName": "928",
+      "years": "1977-1995",
+      "category": "Engine",
+      "component": "Spark Plugs",
+      "spec": "22 ft-lbs",
+      "notes": "",
+      "keywords": "spark plugs ignition v8",
+      "url": "/resources/porsche/928/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "928",
+      "modelName": "928",
+      "years": "1977-1995",
+      "category": "Engine",
+      "component": "Cam Tower Bolts",
+      "spec": "7 ft-lbs",
+      "notes": "Tighten evenly",
+      "keywords": "cam tower bolts valve cover",
+      "url": "/resources/porsche/928/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "928",
+      "modelName": "928",
+      "years": "1977-1995",
+      "category": "Suspension",
+      "component": "Wheel Lug Nuts",
+      "spec": "96 ft-lbs",
+      "notes": "",
+      "keywords": "wheel lug nuts",
+      "url": "/resources/porsche/928/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "928",
+      "modelName": "928",
+      "years": "1977-1995",
+      "category": "Brakes",
+      "component": "Caliper Bolts",
+      "spec": "63 ft-lbs",
+      "notes": "",
+      "keywords": "brake caliper bolts",
+      "url": "/resources/porsche/928/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "986",
+      "modelName": "986 Boxster",
+      "years": "1996-2004",
+      "category": "Engine",
+      "component": "Spark Plugs",
+      "spec": "22 ft-lbs",
+      "notes": "",
+      "keywords": "spark plugs ignition flat-6",
+      "url": "/resources/porsche/986/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "986",
+      "modelName": "986 Boxster",
+      "years": "1996-2004",
+      "category": "Engine",
+      "component": "Oil Drain Plug",
+      "spec": "37 ft-lbs",
+      "notes": "Replace washer",
+      "keywords": "oil drain plug sump",
+      "url": "/resources/porsche/986/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "986",
+      "modelName": "986 Boxster",
+      "years": "1996-2004",
+      "category": "Engine",
+      "component": "Intake Manifold Bolts",
+      "spec": "7 ft-lbs",
+      "notes": "",
+      "keywords": "intake manifold bolts",
+      "url": "/resources/porsche/986/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "986",
+      "modelName": "986 Boxster",
+      "years": "1996-2004",
+      "category": "Suspension",
+      "component": "Wheel Lug Nuts",
+      "spec": "96 ft-lbs",
+      "notes": "",
+      "keywords": "wheel lug nuts",
+      "url": "/resources/porsche/986/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "986",
+      "modelName": "986 Boxster",
+      "years": "1996-2004",
+      "category": "Suspension",
+      "component": "Control Arm Bolts",
+      "spec": "63 ft-lbs",
+      "notes": "",
+      "keywords": "control arm bolts suspension",
+      "url": "/resources/porsche/986/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "986",
+      "modelName": "986 Boxster",
+      "years": "1996-2004",
+      "category": "Suspension",
+      "component": "Strut Top Nut",
+      "spec": "44 ft-lbs",
+      "notes": "",
+      "keywords": "strut top nut shock mount",
+      "url": "/resources/porsche/986/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "986",
+      "modelName": "986 Boxster",
+      "years": "1996-2004",
+      "category": "Brakes",
+      "component": "Caliper Bolts",
+      "spec": "63 ft-lbs",
+      "notes": "",
+      "keywords": "brake caliper bolts",
+      "url": "/resources/porsche/986/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "996",
+      "modelName": "996 911",
+      "years": "1998-2005",
+      "category": "Engine",
+      "component": "Spark Plugs",
+      "spec": "22 ft-lbs",
+      "notes": "",
+      "keywords": "spark plugs ignition flat-6",
+      "url": "/resources/porsche/996/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "996",
+      "modelName": "996 911",
+      "years": "1998-2005",
+      "category": "Engine",
+      "component": "Oil Drain Plug",
+      "spec": "37 ft-lbs",
+      "notes": "Replace washer",
+      "keywords": "oil drain plug sump",
+      "url": "/resources/porsche/996/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "996",
+      "modelName": "996 911",
+      "years": "1998-2005",
+      "category": "Suspension",
+      "component": "Wheel Lug Nuts",
+      "spec": "96 ft-lbs",
+      "notes": "",
+      "keywords": "wheel lug nuts",
+      "url": "/resources/porsche/996/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "996",
+      "modelName": "996 911",
+      "years": "1998-2005",
+      "category": "Suspension",
+      "component": "Control Arm Bolts",
+      "spec": "63 ft-lbs",
+      "notes": "",
+      "keywords": "control arm bolts suspension",
+      "url": "/resources/porsche/996/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "996",
+      "modelName": "996 911",
+      "years": "1998-2005",
+      "category": "Brakes",
+      "component": "Caliper Bolts",
+      "spec": "63 ft-lbs",
+      "notes": "",
+      "keywords": "brake caliper bolts",
+      "url": "/resources/porsche/996/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "997",
+      "modelName": "997 911",
+      "years": "2004-2012",
+      "category": "Engine",
+      "component": "Spark Plugs",
+      "spec": "22 ft-lbs",
+      "notes": "",
+      "keywords": "spark plugs ignition flat-6",
+      "url": "/resources/porsche/997/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "997",
+      "modelName": "997 911",
+      "years": "2004-2012",
+      "category": "Engine",
+      "component": "Oil Drain Plug",
+      "spec": "37 ft-lbs",
+      "notes": "Replace washer",
+      "keywords": "oil drain plug sump",
+      "url": "/resources/porsche/997/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "997",
+      "modelName": "997 911",
+      "years": "2004-2012",
+      "category": "Suspension",
+      "component": "Wheel Lug Nuts",
+      "spec": "118 ft-lbs",
+      "notes": "Center-lock wheels different",
+      "keywords": "wheel lug nuts",
+      "url": "/resources/porsche/997/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "997",
+      "modelName": "997 911",
+      "years": "2004-2012",
+      "category": "Suspension",
+      "component": "Control Arm Bolts",
+      "spec": "63 ft-lbs",
+      "notes": "",
+      "keywords": "control arm bolts suspension",
+      "url": "/resources/porsche/997/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "997",
+      "modelName": "997 911",
+      "years": "2004-2012",
+      "category": "Suspension",
+      "component": "PASM Damper Top Nut",
+      "spec": "44 ft-lbs",
+      "notes": "",
+      "keywords": "pasm damper strut top nut",
+      "url": "/resources/porsche/997/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "997",
+      "modelName": "997 911",
+      "years": "2004-2012",
+      "category": "Brakes",
+      "component": "Caliper Bolts",
+      "spec": "63 ft-lbs",
+      "notes": "",
+      "keywords": "brake caliper bolts",
+      "url": "/resources/porsche/997/#torque-specs"
+    },
+    {
+      "brand": "Porsche",
+      "model": "997",
+      "modelName": "997 911",
+      "years": "2004-2012",
+      "category": "Brakes",
+      "component": "PCCB Caliper Bolts",
+      "spec": "74 ft-lbs",
+      "notes": "Ceramic brake cars",
+      "keywords": "pccb ceramic brake caliper bolts",
+      "url": "/resources/porsche/997/#torque-specs"
+    }
+  ],
+  "guides": [
+    {
+      "type": "restoration",
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "years": "1982-1994",
+      "title": "M20 Engine Rebuild Guide",
+      "description": "Complete teardown and rebuild of the M20 inline-6 engine, including machine work specifications and assembly tips.",
+      "difficulty": "Advanced",
+      "time": "40+ hours",
+      "keywords": "m20 engine rebuild teardown assembly machine work inline-6",
+      "url": "/resources/bmw/e30/#restoration-guides"
+    },
+    {
+      "type": "restoration",
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "years": "1982-1994",
+      "title": "Full Suspension Refresh",
+      "description": "Step-by-step guide to replacing all bushings, shocks, and worn components for a factory-fresh ride.",
+      "difficulty": "Intermediate",
+      "time": "16-20 hours",
+      "keywords": "suspension refresh bushings shocks struts control arms",
+      "url": "/resources/bmw/e30/#restoration-guides"
+    },
+    {
+      "type": "restoration",
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "years": "1982-1994",
+      "title": "Electrical System Troubleshooting",
+      "description": "Diagnosing and repairing common electrical issues including ground points, relays, and wiring repairs.",
+      "difficulty": "Intermediate",
+      "time": "Varies",
+      "keywords": "electrical troubleshooting ground points relays wiring",
+      "url": "/resources/bmw/e30/#restoration-guides"
+    },
+    {
+      "type": "restoration",
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "years": "1982-1994",
+      "title": "Rust Repair & Prevention",
+      "description": "Identifying rust-prone areas and techniques for cutting, welding, and preventing future corrosion.",
+      "difficulty": "Advanced",
+      "time": "Varies",
+      "keywords": "rust repair prevention welding corrosion bodywork",
+      "url": "/resources/bmw/e30/#restoration-guides"
+    },
+    {
+      "type": "diy",
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "years": "1982-1994",
+      "title": "Oil Change",
+      "description": "Complete guide to changing oil and filter on M20 and M42 engines.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "keywords": "oil change filter m20 m42 maintenance",
+      "url": "/resources/bmw/e30/#diy-guides"
+    },
+    {
+      "type": "diy",
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "years": "1982-1994",
+      "title": "Brake Pad Replacement",
+      "description": "Front and rear brake pad replacement with rotor inspection tips.",
+      "difficulty": "Easy",
+      "time": "1-2 hours",
+      "keywords": "brake pads replacement front rear rotor",
+      "url": "/resources/bmw/e30/#diy-guides"
+    },
+    {
+      "type": "diy",
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "years": "1982-1994",
+      "title": "Timing Belt Replacement",
+      "description": "Step-by-step timing belt, tensioner, and water pump replacement.",
+      "difficulty": "Intermediate",
+      "time": "4-6 hours",
+      "keywords": "timing belt tensioner water pump m20 m42",
+      "url": "/resources/bmw/e30/#diy-guides"
+    },
+    {
+      "type": "diy",
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "years": "1982-1994",
+      "title": "Valve Adjustment (M20)",
+      "description": "How to check and adjust valve clearances on the M20 engine.",
+      "difficulty": "Intermediate",
+      "time": "2-3 hours",
+      "keywords": "valve adjustment clearance m20 feeler gauge",
+      "url": "/resources/bmw/e30/#diy-guides"
+    },
+    {
+      "type": "restoration",
+      "brand": "BMW",
+      "model": "E36",
+      "modelName": "E36 3 Series",
+      "years": "1990-2000",
+      "title": "Complete Cooling System Refresh",
+      "description": "Replace all cooling system components including expansion tank, thermostat, water pump, hoses, and radiator.",
+      "difficulty": "Intermediate",
+      "time": "6-8 hours",
+      "keywords": "cooling system refresh expansion tank thermostat water pump radiator",
+      "url": "/resources/bmw/e36/#restoration-guides"
+    },
+    {
+      "type": "restoration",
+      "brand": "BMW",
+      "model": "E36",
+      "modelName": "E36 3 Series",
+      "years": "1990-2000",
+      "title": "VANOS Seal Replacement",
+      "description": "Step-by-step guide to replacing VANOS seals and restoring proper valve timing.",
+      "difficulty": "Intermediate",
+      "time": "3-4 hours",
+      "keywords": "vanos seal replacement m50 m52 variable valve timing",
+      "url": "/resources/bmw/e36/#restoration-guides"
+    },
+    {
+      "type": "diy",
+      "brand": "BMW",
+      "model": "E36",
+      "modelName": "E36 3 Series",
+      "years": "1990-2000",
+      "title": "Valve Cover Gasket",
+      "description": "Stop oil leaks with a new valve cover gasket - one of the easiest E36 repairs.",
+      "difficulty": "Easy",
+      "time": "1 hour",
+      "keywords": "valve cover gasket oil leak",
+      "url": "/resources/bmw/e36/#diy-guides"
+    },
+    {
+      "type": "restoration",
+      "brand": "BMW",
+      "model": "E46",
+      "modelName": "E46 3 Series",
+      "years": "1999-2006",
+      "title": "Cooling System Overhaul",
+      "description": "Complete replacement of all cooling system components to prevent overheating disasters.",
+      "difficulty": "Intermediate",
+      "time": "5-7 hours",
+      "keywords": "cooling system overhaul expansion tank water pump thermostat",
+      "url": "/resources/bmw/e46/#restoration-guides"
+    },
+    {
+      "type": "restoration",
+      "brand": "BMW",
+      "model": "E46",
+      "modelName": "E46 3 Series",
+      "years": "1999-2006",
+      "title": "Subframe Inspection & Reinforcement",
+      "description": "How to inspect for subframe cracks and install reinforcement plates.",
+      "difficulty": "Advanced",
+      "time": "8-12 hours",
+      "keywords": "subframe inspection reinforcement cracks floor pan",
+      "url": "/resources/bmw/e46/#restoration-guides"
+    },
+    {
+      "type": "diy",
+      "brand": "BMW",
+      "model": "E46",
+      "modelName": "E46 3 Series",
+      "years": "1999-2006",
+      "title": "Expansion Tank Replacement",
+      "description": "Replace the plastic expansion tank before it cracks and leaves you stranded.",
+      "difficulty": "Easy",
+      "time": "1 hour",
+      "keywords": "expansion tank replacement coolant",
+      "url": "/resources/bmw/e46/#diy-guides"
+    },
+    {
+      "type": "restoration",
+      "brand": "Porsche",
+      "model": "924",
+      "modelName": "924",
+      "years": "1976-1988",
+      "title": "Timing Belt Service",
+      "description": "Complete timing belt, water pump, and tensioner replacement guide.",
+      "difficulty": "Intermediate",
+      "time": "5-7 hours",
+      "keywords": "timing belt service water pump tensioner",
+      "url": "/resources/porsche/924/#restoration-guides"
+    },
+    {
+      "type": "restoration",
+      "brand": "Porsche",
+      "model": "924",
+      "modelName": "924",
+      "years": "1976-1988",
+      "title": "CIS Fuel Injection Tuning",
+      "description": "Diagnosing and tuning the K-Jetronic fuel injection system.",
+      "difficulty": "Advanced",
+      "time": "3-4 hours",
+      "keywords": "cis fuel injection tuning k-jetronic bosch",
+      "url": "/resources/porsche/924/#restoration-guides"
+    },
+    {
+      "type": "diy",
+      "brand": "Porsche",
+      "model": "924",
+      "modelName": "924",
+      "years": "1976-1988",
+      "title": "Clutch Cable Adjustment",
+      "description": "Restore proper clutch pedal feel with cable adjustment.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "keywords": "clutch cable adjustment pedal",
+      "url": "/resources/porsche/924/#diy-guides"
+    },
+    {
+      "type": "restoration",
+      "brand": "Porsche",
+      "model": "944",
+      "modelName": "944",
+      "years": "1982-1991",
+      "title": "Timing & Balance Shaft Belt Service",
+      "description": "Complete timing belt, balance shaft belt, water pump, and roller replacement.",
+      "difficulty": "Advanced",
+      "time": "8-12 hours",
+      "keywords": "timing belt balance shaft belt water pump rollers",
+      "url": "/resources/porsche/944/#restoration-guides"
+    },
+    {
+      "type": "restoration",
+      "brand": "Porsche",
+      "model": "944",
+      "modelName": "944",
+      "years": "1982-1991",
+      "title": "Clutch Replacement",
+      "description": "Full clutch disc, pressure plate, and throwout bearing replacement.",
+      "difficulty": "Advanced",
+      "time": "10-14 hours",
+      "keywords": "clutch replacement disc pressure plate throwout bearing",
+      "url": "/resources/porsche/944/#restoration-guides"
+    },
+    {
+      "type": "diy",
+      "brand": "Porsche",
+      "model": "944",
+      "modelName": "944",
+      "years": "1982-1991",
+      "title": "DME Relay Replacement",
+      "description": "Replace the notorious DME relay before it leaves you stranded.",
+      "difficulty": "Easy",
+      "time": "15 min",
+      "keywords": "dme relay replacement fuel pump",
+      "url": "/resources/porsche/944/#diy-guides"
+    },
+    {
+      "type": "restoration",
+      "brand": "Porsche",
+      "model": "928",
+      "modelName": "928",
+      "years": "1977-1995",
+      "title": "Timing Belt Service",
+      "description": "Complete V8 timing belt, rollers, water pump, and seal replacement.",
+      "difficulty": "Advanced",
+      "time": "10-14 hours",
+      "keywords": "timing belt service v8 rollers water pump seals",
+      "url": "/resources/porsche/928/#restoration-guides"
+    },
+    {
+      "type": "restoration",
+      "brand": "Porsche",
+      "model": "928",
+      "modelName": "928",
+      "years": "1977-1995",
+      "title": "Engine Wiring Harness Repair",
+      "description": "Inspecting, repairing, or replacing the deteriorated engine harness.",
+      "difficulty": "Advanced",
+      "time": "8-16 hours",
+      "keywords": "wiring harness repair electrical",
+      "url": "/resources/porsche/928/#restoration-guides"
+    },
+    {
+      "type": "diy",
+      "brand": "Porsche",
+      "model": "928",
+      "modelName": "928",
+      "years": "1977-1995",
+      "title": "Pop-Up Headlight Lubrication",
+      "description": "Keep your pop-up headlights working smoothly.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "keywords": "pop-up headlight lubrication maintenance",
+      "url": "/resources/porsche/928/#diy-guides"
+    },
+    {
+      "type": "restoration",
+      "brand": "Porsche",
+      "model": "986",
+      "modelName": "986 Boxster",
+      "years": "1996-2004",
+      "title": "IMS Bearing Replacement",
+      "description": "Complete guide to replacing the IMS bearing with upgraded unit.",
+      "difficulty": "Advanced",
+      "time": "8-12 hours",
+      "keywords": "ims bearing replacement m96 intermediate shaft",
+      "url": "/resources/porsche/986/#restoration-guides"
+    },
+    {
+      "type": "restoration",
+      "brand": "Porsche",
+      "model": "986",
+      "modelName": "986 Boxster",
+      "years": "1996-2004",
+      "title": "Coolant Pipe Upgrade",
+      "description": "Replace plastic coolant pipes with aluminum upgrade kit.",
+      "difficulty": "Intermediate",
+      "time": "4-6 hours",
+      "keywords": "coolant pipe upgrade aluminum plastic",
+      "url": "/resources/porsche/986/#restoration-guides"
+    },
+    {
+      "type": "restoration",
+      "brand": "Porsche",
+      "model": "986",
+      "modelName": "986 Boxster",
+      "years": "1996-2004",
+      "title": "AOS Replacement",
+      "description": "Air/Oil Separator replacement and vacuum line refresh.",
+      "difficulty": "Intermediate",
+      "time": "3-4 hours",
+      "keywords": "aos air oil separator replacement vacuum",
+      "url": "/resources/porsche/986/#restoration-guides"
+    },
+    {
+      "type": "diy",
+      "brand": "Porsche",
+      "model": "986",
+      "modelName": "986 Boxster",
+      "years": "1996-2004",
+      "title": "Convertible Top Maintenance",
+      "description": "Keep your top working smoothly with regular lubrication.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "keywords": "convertible top maintenance lubrication",
+      "url": "/resources/porsche/986/#diy-guides"
+    },
+    {
+      "type": "restoration",
+      "brand": "Porsche",
+      "model": "996",
+      "modelName": "996 911",
+      "years": "1998-2005",
+      "title": "IMS Bearing Replacement",
+      "description": "Complete guide to replacing the IMS bearing with upgraded unit.",
+      "difficulty": "Advanced",
+      "time": "10-14 hours",
+      "keywords": "ims bearing replacement m96 intermediate shaft",
+      "url": "/resources/porsche/996/#restoration-guides"
+    },
+    {
+      "type": "restoration",
+      "brand": "Porsche",
+      "model": "996",
+      "modelName": "996 911",
+      "years": "1998-2005",
+      "title": "Headlight Reseal",
+      "description": "Remove moisture and reseal the headlight housings.",
+      "difficulty": "Intermediate",
+      "time": "4-6 hours",
+      "keywords": "headlight reseal moisture fried egg",
+      "url": "/resources/porsche/996/#restoration-guides"
+    },
+    {
+      "type": "diy",
+      "brand": "Porsche",
+      "model": "996",
+      "modelName": "996 911",
+      "years": "1998-2005",
+      "title": "Spark Plug Replacement",
+      "description": "Replace spark plugs on the M96 engine.",
+      "difficulty": "Easy",
+      "time": "1 hour",
+      "keywords": "spark plug replacement m96",
+      "url": "/resources/porsche/996/#diy-guides"
+    },
+    {
+      "type": "restoration",
+      "brand": "Porsche",
+      "model": "997",
+      "modelName": "997 911",
+      "years": "2004-2012",
+      "title": "IMS Bearing Replacement (997.1)",
+      "description": "Complete guide to replacing the IMS bearing on 997.1 cars.",
+      "difficulty": "Advanced",
+      "time": "10-14 hours",
+      "keywords": "ims bearing replacement 997.1 m97",
+      "url": "/resources/porsche/997/#restoration-guides"
+    },
+    {
+      "type": "restoration",
+      "brand": "Porsche",
+      "model": "997",
+      "modelName": "997 911",
+      "years": "2004-2012",
+      "title": "Intake Valve Carbon Cleaning (997.2)",
+      "description": "Walnut shell blasting to remove carbon deposits from intake valves.",
+      "difficulty": "Advanced",
+      "time": "4-6 hours",
+      "keywords": "carbon cleaning walnut blasting intake valves 997.2 dfi",
+      "url": "/resources/porsche/997/#restoration-guides"
+    },
+    {
+      "type": "diy",
+      "brand": "Porsche",
+      "model": "997",
+      "modelName": "997 911",
+      "years": "2004-2012",
+      "title": "Spark Plug Replacement",
+      "description": "Replace spark plugs on the M97 or 9A1 engine.",
+      "difficulty": "Easy",
+      "time": "1 hour",
+      "keywords": "spark plug replacement m97 9a1",
+      "url": "/resources/porsche/997/#diy-guides"
+    }
+  ],
+  "suppliers": [
+    {
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "type": "oem",
+      "name": "BMW Parts",
+      "notes": "Genuine BMW OEM parts",
+      "keywords": "bmw oem genuine parts dealer",
+      "url": "/resources/bmw/e30/#parts-suppliers"
+    },
+    {
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "type": "oem",
+      "name": "FCP Euro",
+      "notes": "Lifetime replacement guarantee",
+      "keywords": "fcp euro lifetime warranty oem",
+      "url": "/resources/bmw/e30/#parts-suppliers"
+    },
+    {
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "type": "aftermarket",
+      "name": "Ireland Engineering",
+      "notes": "Performance upgrades & suspension",
+      "keywords": "ireland engineering performance suspension e30",
+      "url": "/resources/bmw/e30/#parts-suppliers"
+    },
+    {
+      "brand": "BMW",
+      "model": "E30",
+      "modelName": "E30 3 Series",
+      "type": "aftermarket",
+      "name": "Condor Speed Shop",
+      "notes": "E30 specialists",
+      "keywords": "condor speed shop e30 specialist",
+      "url": "/resources/bmw/e30/#parts-suppliers"
+    },
+    {
+      "brand": "BMW",
+      "model": "E36",
+      "modelName": "E36 3 Series",
+      "type": "aftermarket",
+      "name": "Turner Motorsport",
+      "notes": "Performance parts & accessories",
+      "keywords": "turner motorsport performance bmw",
+      "url": "/resources/bmw/e36/#parts-suppliers"
+    },
+    {
+      "brand": "BMW",
+      "model": "E46",
+      "modelName": "E46 3 Series",
+      "type": "aftermarket",
+      "name": "Bimmerworld",
+      "notes": "Racing and performance parts",
+      "keywords": "bimmerworld racing performance bmw",
+      "url": "/resources/bmw/e46/#parts-suppliers"
+    },
+    {
+      "brand": "Porsche",
+      "model": "944",
+      "modelName": "944",
+      "type": "aftermarket",
+      "name": "Lindsey Racing",
+      "notes": "Performance and OEM parts",
+      "keywords": "lindsey racing porsche performance",
+      "url": "/resources/porsche/944/#parts-suppliers"
+    },
+    {
+      "brand": "Porsche",
+      "model": "986",
+      "modelName": "986 Boxster",
+      "type": "aftermarket",
+      "name": "LN Engineering",
+      "notes": "IMS bearing specialists",
+      "keywords": "ln engineering ims bearing porsche",
+      "url": "/resources/porsche/986/#parts-suppliers"
+    },
+    {
+      "brand": "Porsche",
+      "model": "986",
+      "modelName": "986 Boxster",
+      "type": "aftermarket",
+      "name": "Flat 6 Innovations",
+      "notes": "986/996 performance parts",
+      "keywords": "flat 6 innovations porsche performance",
+      "url": "/resources/porsche/986/#parts-suppliers"
+    },
+    {
+      "brand": "Porsche",
+      "model": "996",
+      "modelName": "996 911",
+      "type": "aftermarket",
+      "name": "LN Engineering",
+      "notes": "IMS bearing specialists",
+      "keywords": "ln engineering ims bearing porsche",
+      "url": "/resources/porsche/996/#parts-suppliers"
+    },
+    {
+      "brand": "Porsche",
+      "model": "997",
+      "modelName": "997 911",
+      "type": "aftermarket",
+      "name": "LN Engineering",
+      "notes": "IMS bearing specialists (997.1)",
+      "keywords": "ln engineering ims bearing porsche 997",
+      "url": "/resources/porsche/997/#parts-suppliers"
     }
   ]
 }

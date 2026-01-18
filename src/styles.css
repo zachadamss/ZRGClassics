@@ -1835,6 +1835,276 @@ nav ul li.dropdown.touch-open .dropdown-menu {
     background-color: rgba(255, 140, 0, 0.3);
 }
 
+/* Type filter buttons */
+.type-filters {
+    margin-top: 0.5rem;
+}
+
+.type-filter-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background-color 0.2s;
+}
+
+.type-filter-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.type-filter-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+[data-theme="dark"] .type-filter-btn {
+    background-color: #333;
+    border-color: #444;
+    color: #ddd;
+}
+
+[data-theme="dark"] .type-filter-btn:hover {
+    background-color: #444;
+}
+
+[data-theme="dark"] .type-filter-btn.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+/* Results summary */
+.results-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+[data-theme="dark"] .results-summary {
+    border-bottom-color: #444;
+}
+
+.results-breakdown {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.type-count {
+    font-size: 0.85rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 12px;
+    background-color: #f0f0f0;
+}
+
+[data-theme="dark"] .type-count {
+    background-color: #333;
+}
+
+.type-count.issue { background-color: #fff3cd; color: #856404; }
+.type-count.torque { background-color: #d4edda; color: #155724; }
+.type-count.guide { background-color: #d1ecf1; color: #0c5460; }
+.type-count.supplier { background-color: #f8d7da; color: #721c24; }
+
+[data-theme="dark"] .type-count.issue { background-color: rgba(255, 193, 7, 0.2); color: #ffc107; }
+[data-theme="dark"] .type-count.torque { background-color: rgba(40, 167, 69, 0.2); color: #28a745; }
+[data-theme="dark"] .type-count.guide { background-color: rgba(23, 162, 184, 0.2); color: #17a2b8; }
+[data-theme="dark"] .type-count.supplier { background-color: rgba(220, 53, 69, 0.2); color: #dc3545; }
+
+/* Result type badges */
+.result-type-badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.result-type-badge.issue {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.result-type-badge.torque {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.result-type-badge.guide {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+.result-type-badge.supplier {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+[data-theme="dark"] .result-type-badge.issue {
+    background-color: rgba(255, 193, 7, 0.2);
+    color: #ffc107;
+}
+
+[data-theme="dark"] .result-type-badge.torque {
+    background-color: rgba(40, 167, 69, 0.2);
+    color: #28a745;
+}
+
+[data-theme="dark"] .result-type-badge.guide {
+    background-color: rgba(23, 162, 184, 0.2);
+    color: #17a2b8;
+}
+
+[data-theme="dark"] .result-type-badge.supplier {
+    background-color: rgba(220, 53, 69, 0.2);
+    color: #dc3545;
+}
+
+/* Torque spec result styling */
+.result-torque .torque-spec-value {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0.75rem 0;
+    padding: 0.75rem;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+}
+
+[data-theme="dark"] .result-torque .torque-spec-value {
+    background-color: #2a2a2a;
+}
+
+.spec-category {
+    font-size: 0.85rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+[data-theme="dark"] .spec-category {
+    color: #999;
+}
+
+.spec-value {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.result-notes {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+[data-theme="dark"] .result-notes {
+    color: #aaa;
+}
+
+/* Guide result styling */
+.result-guide .guide-meta {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.75rem;
+}
+
+.guide-difficulty {
+    font-size: 0.85rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.guide-difficulty.easy {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.guide-difficulty.intermediate {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.guide-difficulty.advanced {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+[data-theme="dark"] .guide-difficulty.easy {
+    background-color: rgba(40, 167, 69, 0.2);
+    color: #28a745;
+}
+
+[data-theme="dark"] .guide-difficulty.intermediate {
+    background-color: rgba(255, 193, 7, 0.2);
+    color: #ffc107;
+}
+
+[data-theme="dark"] .guide-difficulty.advanced {
+    background-color: rgba(220, 53, 69, 0.2);
+    color: #dc3545;
+}
+
+.guide-time {
+    font-size: 0.85rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+[data-theme="dark"] .guide-time {
+    color: #aaa;
+}
+
+/* Supplier result styling */
+.supplier-type {
+    display: inline-block;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.supplier-type.oem {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.supplier-type.aftermarket {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+.supplier-type.used {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+[data-theme="dark"] .supplier-type.oem {
+    background-color: rgba(40, 167, 69, 0.2);
+    color: #28a745;
+}
+
+[data-theme="dark"] .supplier-type.aftermarket {
+    background-color: rgba(23, 162, 184, 0.2);
+    color: #17a2b8;
+}
+
+[data-theme="dark"] .supplier-type.used {
+    background-color: rgba(255, 193, 7, 0.2);
+    color: #ffc107;
+}
+
 /* Small phones (480px and below) */
 @media (max-width: 480px) {
     /* Hero section */
