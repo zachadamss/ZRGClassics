@@ -31,7 +31,6 @@
     { "label": "Tools", "url": "/tools/invoice/" },
     { "label": "Community", "url": "/community/forums/" },
     { "label": "Shop", "url": "/shop/" },
-    { "label": "About", "url": "/about/" },
-    { "label": "Contact", "url": "/contact/" }
+    { "label": "About", "url": "/about/" }
   ]
 }
