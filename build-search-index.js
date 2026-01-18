@@ -67,6 +67,9 @@ vehicleFiles.forEach(file => {
   const allGuides = [...(vehicleData.guides || []), ...(vehicleData.diyGuides || [])];
   allGuides.forEach(guide => {
     const type = vehicleData.guides?.includes(guide) ? 'restoration' : 'diy';
+    const toolsText = guide.tools ? guide.tools.join(' ') : '';
+    const stepsText = guide.steps ? guide.steps.slice(0, 3).join(' ') : '';
+    const tipsText = guide.tips ? guide.tips.slice(0, 2).join(' ') : '';
     searchIndex.guides.push({
       id: `${model.toLowerCase()}-${guide.id}`,
       brand,
@@ -77,8 +80,10 @@ vehicleFiles.forEach(file => {
       description: guide.description,
       difficulty: guide.difficulty,
       time: guide.time,
+      interval: guide.interval || '',
+      cost: guide.cost || '',
       type,
-      keywords: `${guide.title} ${guide.description} ${guide.difficulty} ${type}`.toLowerCase(),
+      keywords: `${guide.title} ${guide.description} ${guide.difficulty} ${type} ${guide.interval || ''} ${guide.cost || ''} ${toolsText} ${stepsText} ${tipsText}`.toLowerCase(),
       url
     });
   });

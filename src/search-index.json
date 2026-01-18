@@ -6980,8 +6980,10 @@
       "description": "Complete timing belt, water pump, and tensioner replacement guide.",
       "difficulty": "Intermediate",
       "time": "5-7 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "timing belt service complete timing belt, water pump, and tensioner replacement guide. intermediate restoration",
+      "keywords": "timing belt service complete timing belt, water pump, and tensioner replacement guide. intermediate restoration     ",
       "url": "/resources/porsche/924/"
     },
     {
@@ -6994,8 +6996,10 @@
       "description": "Diagnosing and tuning the K-Jetronic fuel injection system.",
       "difficulty": "Advanced",
       "time": "3-4 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "cis fuel injection tuning diagnosing and tuning the k-jetronic fuel injection system. advanced restoration",
+      "keywords": "cis fuel injection tuning diagnosing and tuning the k-jetronic fuel injection system. advanced restoration     ",
       "url": "/resources/porsche/924/"
     },
     {
@@ -7008,8 +7012,10 @@
       "description": "Complete front and rear suspension overhaul.",
       "difficulty": "Intermediate",
       "time": "12-16 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "suspension refresh complete front and rear suspension overhaul. intermediate restoration",
+      "keywords": "suspension refresh complete front and rear suspension overhaul. intermediate restoration     ",
       "url": "/resources/porsche/924/"
     },
     {
@@ -7019,11 +7025,13 @@
       "modelName": "924",
       "years": "1976-1988",
       "title": "Oil Change",
-      "description": "Basic oil and filter change procedure.",
+      "description": "Complete oil and filter change procedure for 924 engines.",
       "difficulty": "Easy",
       "time": "30 min",
+      "interval": "Every 3,000-5,000 miles",
+      "cost": "$35-55",
       "type": "diy",
-      "keywords": "oil change basic oil and filter change procedure. easy diy",
+      "keywords": "oil change complete oil and filter change procedure for 924 engines. easy diy every 3,000-5,000 miles $35-55 19mm socket for drain plug oil filter wrench drain pan funnel jack and jack stands or ramps warm the engine briefly to thin the oil for better drainage. raise the front of the car safely or drive onto ramps. locate the oil drain plug on the rear of the oil pan. the audi-derived 924 engine benefits from high-zinc oils. many owners use diesel-rated 15w-40 for the added zinc content.",
       "url": "/resources/porsche/924/"
     },
     {
@@ -7033,11 +7041,13 @@
       "modelName": "924",
       "years": "1976-1988",
       "title": "Clutch Cable Adjustment",
-      "description": "Restore proper clutch pedal feel with cable adjustment.",
+      "description": "Restore proper clutch pedal feel and engagement with cable adjustment.",
       "difficulty": "Easy",
       "time": "30 min",
+      "interval": "As needed or every 10,000 miles",
+      "cost": "$0",
       "type": "diy",
-      "keywords": "clutch cable adjustment restore proper clutch pedal feel with cable adjustment. easy diy",
+      "keywords": "clutch cable adjustment restore proper clutch pedal feel and engagement with cable adjustment. easy diy as needed or every 10,000 miles $0 13mm wrench (2) ruler or tape measure flashlight penetrating oil (if needed) locate the clutch cable adjustment at the rear transaxle end. the adjustment is where the cable exits the guide tube near the transaxle. measure clutch pedal free play at the pedal - should be 15-20mm (5/8\"-3/4\"). too little free play causes clutch slipping and premature wear. too much free play can prevent full clutch disengagement.",
       "url": "/resources/porsche/924/"
     },
     {
@@ -7047,11 +7057,29 @@
       "modelName": "924",
       "years": "1976-1988",
       "title": "Fuel Filter Replacement",
-      "description": "Replace the fuel filter for better running.",
+      "description": "Replace the inline fuel filter for better engine performance.",
       "difficulty": "Easy",
       "time": "30 min",
+      "interval": "Every 15,000-20,000 miles",
+      "cost": "$20-40",
       "type": "diy",
-      "keywords": "fuel filter replacement replace the fuel filter for better running. easy diy",
+      "keywords": "fuel filter replacement replace the inline fuel filter for better engine performance. easy diy every 15,000-20,000 miles $20-40 17mm wrench screwdriver for hose clamps drain pan rags new fuel filter new hose clamps (recommended) relieve fuel system pressure by removing the fuel pump fuse and running engine until it stalls. locate the fuel filter - it's typically mounted under the car near the fuel tank. place drain pan under the filter to catch fuel. work in a well-ventilated area away from ignition sources. the cis fuel system operates at high pressure - be cautious.",
+      "url": "/resources/porsche/924/"
+    },
+    {
+      "id": "924-spark-plugs",
+      "brand": "Porsche",
+      "model": "924",
+      "modelName": "924",
+      "years": "1976-1988",
+      "title": "Spark Plug Replacement",
+      "description": "Replace spark plugs to maintain proper ignition.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "interval": "Every 15,000-20,000 miles",
+      "cost": "$20-40",
+      "type": "diy",
+      "keywords": "spark plug replacement replace spark plugs to maintain proper ignition. easy diy every 15,000-20,000 miles $20-40 spark plug socket (5/8\" or 16mm) extension ratchet torque wrench spark plug gap tool compressed air allow engine to cool completely. remove the spark plug wires by pulling on the boot, not the wire. number or mark the wires so they go back in the correct order. use bosch w7dtc or equivalent plugs for the audi engine. worn plugs can cause hard starting and poor fuel economy.",
       "url": "/resources/porsche/924/"
     },
     {
@@ -7064,8 +7092,10 @@
       "description": "Complete V8 timing belt, rollers, water pump, and seal replacement.",
       "difficulty": "Advanced",
       "time": "10-14 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "timing belt service complete v8 timing belt, rollers, water pump, and seal replacement. advanced restoration",
+      "keywords": "timing belt service complete v8 timing belt, rollers, water pump, and seal replacement. advanced restoration     ",
       "url": "/resources/porsche/928/"
     },
     {
@@ -7078,8 +7108,10 @@
       "description": "Inspecting, repairing, or replacing the deteriorated engine harness.",
       "difficulty": "Advanced",
       "time": "8-16 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "engine wiring harness repair inspecting, repairing, or replacing the deteriorated engine harness. advanced restoration",
+      "keywords": "engine wiring harness repair inspecting, repairing, or replacing the deteriorated engine harness. advanced restoration     ",
       "url": "/resources/porsche/928/"
     },
     {
@@ -7092,8 +7124,10 @@
       "description": "Complete vacuum line replacement and system diagnosis.",
       "difficulty": "Intermediate",
       "time": "6-10 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "vacuum system overhaul complete vacuum line replacement and system diagnosis. intermediate restoration",
+      "keywords": "vacuum system overhaul complete vacuum line replacement and system diagnosis. intermediate restoration     ",
       "url": "/resources/porsche/928/"
     },
     {
@@ -7103,11 +7137,13 @@
       "modelName": "928",
       "years": "1977-1995",
       "title": "Oil Change",
-      "description": "V8 oil and filter change procedure.",
+      "description": "Complete V8 oil and filter change procedure.",
       "difficulty": "Easy",
-      "time": "30 min",
+      "time": "45 min",
+      "interval": "Every 5,000-7,500 miles",
+      "cost": "$60-90",
       "type": "diy",
-      "keywords": "oil change v8 oil and filter change procedure. easy diy",
+      "keywords": "oil change complete v8 oil and filter change procedure. easy diy every 5,000-7,500 miles $60-90 19mm socket for drain plug oil filter wrench drain pan (2 gallon capacity) funnel jack and jack stands or ramps warm the engine for 2-3 minutes to thin the oil. raise the front of the car safely or drive onto ramps. locate the oil drain plug on the oil pan - passenger side. the 928 v8 holds 8-9 quarts depending on model year and oil cooler. use quality synthetic 15w-50 for hot climates or track use.",
       "url": "/resources/porsche/928/"
     },
     {
@@ -7117,11 +7153,13 @@
       "modelName": "928",
       "years": "1977-1995",
       "title": "Pop-Up Headlight Lubrication",
-      "description": "Keep your pop-up headlights working smoothly.",
+      "description": "Keep your pop-up headlights operating smoothly with regular lubrication.",
       "difficulty": "Easy",
       "time": "30 min",
+      "interval": "Every 6 months or annually",
+      "cost": "$10-20",
       "type": "diy",
-      "keywords": "pop-up headlight lubrication keep your pop-up headlights working smoothly. easy diy",
+      "keywords": "pop-up headlight lubrication keep your pop-up headlights operating smoothly with regular lubrication. easy diy every 6 months or annually $10-20 white lithium grease spray clean rags flashlight small brush turn on the headlights to raise them to the up position. turn off the engine and headlights, leaving them raised. open the hood for access to the headlight mechanisms. slow or uneven headlight operation usually means it's time for lubrication. don't use wd-40 - it's not a lubricant and attracts dust.",
       "url": "/resources/porsche/928/"
     },
     {
@@ -7131,11 +7169,29 @@
       "modelName": "928",
       "years": "1977-1995",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement.",
+      "description": "Front and rear brake pad replacement with rotor inspection.",
       "difficulty": "Easy",
       "time": "1-2 hours",
+      "interval": "Every 25,000-40,000 miles",
+      "cost": "$100-180",
       "type": "diy",
-      "keywords": "brake pad replacement front and rear brake pad replacement. easy diy",
+      "keywords": "brake pad replacement front and rear brake pad replacement with rotor inspection. easy diy every 25,000-40,000 miles $100-180 19mm socket for lug bolts 7mm allen socket for caliper pins c-clamp or brake piston tool wire brush brake cleaner brake grease jack and jack stands loosen lug bolts while the car is on the ground. raise and support the car safely on jack stands. remove wheel to access the caliper. the 928 uses large brakes with good pad life. bed in new pads with moderate stops - avoid panic stops for 100 miles.",
+      "url": "/resources/porsche/928/"
+    },
+    {
+      "id": "928-vacuum-hose-inspection",
+      "brand": "Porsche",
+      "model": "928",
+      "modelName": "928",
+      "years": "1977-1995",
+      "title": "Vacuum System Inspection",
+      "description": "Inspect and identify cracked vacuum lines that cause various system failures.",
+      "difficulty": "Easy",
+      "time": "1 hour",
+      "interval": "Annually or when systems malfunction",
+      "cost": "$30-80 for replacement hoses",
+      "type": "diy",
+      "keywords": "vacuum system inspection inspect and identify cracked vacuum lines that cause various system failures. easy diy annually or when systems malfunction $30-80 for replacement hoses flashlight inspection mirror vacuum line kit (various sizes) vacuum gauge (optional) carburetor cleaner for leak detection start with the engine cool and off. open the hood and locate the main vacuum reservoir and distribution block. visually inspect all visible vacuum lines for cracks, hardening, or collapse. the 928 uses vacuum for hvac, door locks, cruise control, and brake booster. original vacuum lines become brittle after 25+ years.",
       "url": "/resources/porsche/928/"
     },
     {
@@ -7148,8 +7204,10 @@
       "description": "Complete timing belt, balance shaft belt, water pump, and roller replacement.",
       "difficulty": "Advanced",
       "time": "8-12 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "timing & balance shaft belt service complete timing belt, balance shaft belt, water pump, and roller replacement. advanced restoration",
+      "keywords": "timing & balance shaft belt service complete timing belt, balance shaft belt, water pump, and roller replacement. advanced restoration     ",
       "url": "/resources/porsche/944/"
     },
     {
@@ -7162,8 +7220,10 @@
       "description": "Full clutch disc, pressure plate, and throwout bearing replacement.",
       "difficulty": "Advanced",
       "time": "10-14 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "clutch replacement full clutch disc, pressure plate, and throwout bearing replacement. advanced restoration",
+      "keywords": "clutch replacement full clutch disc, pressure plate, and throwout bearing replacement. advanced restoration     ",
       "url": "/resources/porsche/944/"
     },
     {
@@ -7176,8 +7236,10 @@
       "description": "Complete front and rear suspension overhaul.",
       "difficulty": "Intermediate",
       "time": "12-16 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "suspension refresh complete front and rear suspension overhaul. intermediate restoration",
+      "keywords": "suspension refresh complete front and rear suspension overhaul. intermediate restoration     ",
       "url": "/resources/porsche/944/"
     },
     {
@@ -7187,11 +7249,13 @@
       "modelName": "944",
       "years": "1982-1991",
       "title": "Oil Change",
-      "description": "Basic oil and filter change procedure.",
+      "description": "Complete oil and filter change procedure for all 944 engine variants.",
       "difficulty": "Easy",
       "time": "30 min",
+      "interval": "Every 3,000-5,000 miles",
+      "cost": "$40-60",
       "type": "diy",
-      "keywords": "oil change basic oil and filter change procedure. easy diy",
+      "keywords": "oil change complete oil and filter change procedure for all 944 engine variants. easy diy every 3,000-5,000 miles $40-60 19mm socket for drain plug oil filter wrench (cap style) drain pan funnel ramps or jack and jack stands warm the engine for 2-3 minutes to thin the oil. drive onto ramps or raise and support the car safely. locate the oil drain plug on the rear of the oil pan. the 944 takes 6.5-7 quarts depending on model and oil cooler configuration. high-zinc oils (15w-40 diesel-rated) are recommended for the flat-tappet cam.",
       "url": "/resources/porsche/944/"
     },
     {
@@ -7204,8 +7268,10 @@
       "description": "Replace the notorious DME relay before it leaves you stranded.",
       "difficulty": "Easy",
       "time": "15 min",
+      "interval": "Every 10 years or as needed",
+      "cost": "$30-60",
       "type": "diy",
-      "keywords": "dme relay replacement replace the notorious dme relay before it leaves you stranded. easy diy",
+      "keywords": "dme relay replacement replace the notorious dme relay before it leaves you stranded. easy diy every 10 years or as needed $30-60 small flathead screwdriver flashlight new dme relay the dme relay is located in the central electric panel under the dash, driver's side. remove the lower dash panel to access the fuse/relay panel. locate the dme relay - it's typically in position xi (11) on the relay board. the dme relay controls fuel pump, injectors, and dme computer power. if car dies while driving and won't restart, dme relay is the prime suspect.",
       "url": "/resources/porsche/944/"
     },
     {
@@ -7215,11 +7281,29 @@
       "modelName": "944",
       "years": "1982-1991",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement.",
+      "description": "Front and rear brake pad replacement with rotor inspection.",
       "difficulty": "Easy",
       "time": "1-2 hours",
+      "interval": "Every 20,000-40,000 miles",
+      "cost": "$80-150",
       "type": "diy",
-      "keywords": "brake pad replacement front and rear brake pad replacement. easy diy",
+      "keywords": "brake pad replacement front and rear brake pad replacement with rotor inspection. easy diy every 20,000-40,000 miles $80-150 19mm socket for lug bolts 7mm allen socket 13mm socket c-clamp or brake piston tool wire brush brake cleaner brake grease jack and jack stands loosen lug bolts while the car is on the ground. raise and support the car safely on jack stands. remove wheel to access the caliper. the 944 uses solid front rotors on base models, vented on turbo and s2. rear brakes on 944 are cable-operated parking brake - adjust cable after pad change.",
+      "url": "/resources/porsche/944/"
+    },
+    {
+      "id": "944-timing-belt-inspection",
+      "brand": "Porsche",
+      "model": "944",
+      "modelName": "944",
+      "years": "1982-1991",
+      "title": "Timing Belt Inspection",
+      "description": "Inspect timing and balance shaft belts through the inspection window.",
+      "difficulty": "Easy",
+      "time": "15 min",
+      "interval": "Every 5,000 miles or annually",
+      "cost": "$0",
+      "type": "diy",
+      "keywords": "timing belt inspection inspect timing and balance shaft belts through the inspection window. easy diy every 5,000 miles or annually $0 flashlight inspection mirror (optional) 10mm socket for cover removal park the car and allow the engine to cool. open the hood and locate the timing belt cover on the driver's side of the engine. remove the small inspection cover plate (1-2 10mm bolts) from the upper timing cover. this is an interference engine - belt failure destroys valves and pistons. oil on the belt means water pump or seal failure - address immediately.",
       "url": "/resources/porsche/944/"
     },
     {
@@ -7232,8 +7316,10 @@
       "description": "Comprehensive guide to addressing oil leaks including chain housing and valve covers.",
       "difficulty": "Advanced",
       "time": "20-30 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "engine resealing comprehensive guide to addressing oil leaks including chain housing and valve covers. advanced restoration",
+      "keywords": "engine resealing comprehensive guide to addressing oil leaks including chain housing and valve covers. advanced restoration     ",
       "url": "/resources/porsche/964/"
     },
     {
@@ -7246,8 +7332,10 @@
       "description": "Complete clutch replacement including DMF replacement or conversion options.",
       "difficulty": "Advanced",
       "time": "10-14 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "clutch and dual-mass flywheel replacement complete clutch replacement including dmf replacement or conversion options. advanced restoration",
+      "keywords": "clutch and dual-mass flywheel replacement complete clutch replacement including dmf replacement or conversion options. advanced restoration     ",
       "url": "/resources/porsche/964/"
     },
     {
@@ -7260,8 +7348,10 @@
       "description": "Rebuild or replace worn suspension components for proper handling.",
       "difficulty": "Intermediate",
       "time": "8-12 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "suspension refresh rebuild or replace worn suspension components for proper handling. intermediate restoration",
+      "keywords": "suspension refresh rebuild or replace worn suspension components for proper handling. intermediate restoration     ",
       "url": "/resources/porsche/964/"
     },
     {
@@ -7274,8 +7364,10 @@
       "description": "Pump, rack, and line service for the hydraulic power steering system.",
       "difficulty": "Intermediate",
       "time": "6-8 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "power steering system overhaul pump, rack, and line service for the hydraulic power steering system. intermediate restoration",
+      "keywords": "power steering system overhaul pump, rack, and line service for the hydraulic power steering system. intermediate restoration     ",
       "url": "/resources/porsche/964/"
     },
     {
@@ -7285,11 +7377,13 @@
       "modelName": "964 911",
       "years": "1989-1994",
       "title": "Oil Change",
-      "description": "Complete oil and filter change procedure for the M64 engine.",
+      "description": "Complete oil and filter change procedure for the M64 air-cooled flat-six.",
       "difficulty": "Easy",
       "time": "45 min",
+      "interval": "Every 3,000-5,000 miles",
+      "cost": "$60-90",
       "type": "diy",
-      "keywords": "oil change complete oil and filter change procedure for the m64 engine. easy diy",
+      "keywords": "oil change complete oil and filter change procedure for the m64 air-cooled flat-six. easy diy every 3,000-5,000 miles $60-90 21mm socket for drain plug oil filter wrench (various types may be needed) drain pan (3 gallon capacity) funnel with extension tube ramps or jack and jack stands warm the engine for 2-3 minutes - oil flows better when warm. drive onto ramps or raise and support the car safely. locate the main oil drain plug on the bottom of the engine case. air-cooled 911s have large oil capacity (10-11 quarts) for cooling. use quality 15w-50 or 20w-50 conventional or synthetic oil.",
       "url": "/resources/porsche/964/"
     },
     {
@@ -7299,11 +7393,13 @@
       "modelName": "964 911",
       "years": "1989-1994",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement.",
+      "description": "Front and rear brake pad replacement on the 964's four-piston calipers.",
       "difficulty": "Easy",
       "time": "1-2 hours",
+      "interval": "Every 20,000-35,000 miles",
+      "cost": "$120-200",
       "type": "diy",
-      "keywords": "brake pad replacement front and rear brake pad replacement. easy diy",
+      "keywords": "brake pad replacement front and rear brake pad replacement on the 964's four-piston calipers. easy diy every 20,000-35,000 miles $120-200 19mm socket for lug bolts 7mm allen socket flathead screwdriver brake piston spreader tool wire brush brake cleaner brake grease jack and jack stands loosen lug bolts while the car is on the ground. raise and support the car safely on jack stands. remove wheel to access the caliper. four-piston calipers require all pistons pushed back evenly. open brake fluid reservoir before compressing pistons.",
       "url": "/resources/porsche/964/"
     },
     {
@@ -7313,11 +7409,13 @@
       "modelName": "964 911",
       "years": "1989-1994",
       "title": "Distributor Cap and Rotor",
-      "description": "Replace distributor caps and rotors on both distributors.",
+      "description": "Replace distributor caps and rotors on both dual distributors.",
       "difficulty": "Easy",
       "time": "1 hour",
+      "interval": "Every 15,000-20,000 miles",
+      "cost": "$80-150",
       "type": "diy",
-      "keywords": "distributor cap and rotor replace distributor caps and rotors on both distributors. easy diy",
+      "keywords": "distributor cap and rotor replace distributor caps and rotors on both dual distributors. easy diy every 15,000-20,000 miles $80-150 phillips screwdriver flathead screwdriver pliers for wire clips new caps, rotors, and dust covers dielectric grease the 964 has two distributors - one for each cylinder bank (1-3-5 and 2-4-6). locate both distributors at the rear of the engine, driven off the camshafts. mark or photograph the spark plug wire positions before removal. always use bosch or oem quality caps and rotors. note the firing order: 1-6-2-4-3-5 with cylinders numbered from front.",
       "url": "/resources/porsche/964/"
     },
     {
@@ -7327,11 +7425,13 @@
       "modelName": "964 911",
       "years": "1989-1994",
       "title": "Valve Adjustment",
-      "description": "Check and adjust valve clearances on the M64 engine.",
+      "description": "Check and adjust valve clearances on the M64 flat-six engine.",
       "difficulty": "Intermediate",
       "time": "2-3 hours",
+      "interval": "Every 15,000 miles",
+      "cost": "$20-40",
       "type": "diy",
-      "keywords": "valve adjustment check and adjust valve clearances on the m64 engine. intermediate diy",
+      "keywords": "valve adjustment check and adjust valve clearances on the m64 flat-six engine. intermediate diy every 15,000 miles $20-40 10mm socket for valve covers feeler gauge set (metric) 13mm wrench for locknut 8mm allen for adjuster 24mm socket for crank pulley flashlight engine must be cold - valves expand when hot, changing clearances. remove the valve covers on both cylinder banks (six 10mm nuts each). rotate engine to tdc on cylinder 1 using 24mm socket on crank pulley. slight drag on feeler gauge is correct - not too tight, not too loose. mark each valve as you adjust to track progress.",
       "url": "/resources/porsche/964/"
     },
     {
@@ -7344,8 +7444,10 @@
       "description": "Complete guide to replacing the IMS bearing with upgraded unit.",
       "difficulty": "Advanced",
       "time": "8-12 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "ims bearing replacement complete guide to replacing the ims bearing with upgraded unit. advanced restoration",
+      "keywords": "ims bearing replacement complete guide to replacing the ims bearing with upgraded unit. advanced restoration     ",
       "url": "/resources/porsche/986/"
     },
     {
@@ -7358,8 +7460,10 @@
       "description": "Replace plastic coolant pipes with aluminum upgrade kit.",
       "difficulty": "Intermediate",
       "time": "4-6 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "coolant pipe upgrade replace plastic coolant pipes with aluminum upgrade kit. intermediate restoration",
+      "keywords": "coolant pipe upgrade replace plastic coolant pipes with aluminum upgrade kit. intermediate restoration     ",
       "url": "/resources/porsche/986/"
     },
     {
@@ -7372,8 +7476,10 @@
       "description": "Air/Oil Separator replacement and vacuum line refresh.",
       "difficulty": "Intermediate",
       "time": "3-4 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "aos replacement air/oil separator replacement and vacuum line refresh. intermediate restoration",
+      "keywords": "aos replacement air/oil separator replacement and vacuum line refresh. intermediate restoration     ",
       "url": "/resources/porsche/986/"
     },
     {
@@ -7383,11 +7489,13 @@
       "modelName": "986 Boxster",
       "years": "1996-2004",
       "title": "Oil Change",
-      "description": "Flat-6 oil and filter change procedure.",
+      "description": "Complete oil and filter change for the M96 water-cooled flat-six.",
       "difficulty": "Easy",
       "time": "30 min",
+      "interval": "Every 5,000 miles (critical for IMS health)",
+      "cost": "$50-80",
       "type": "diy",
-      "keywords": "oil change flat-6 oil and filter change procedure. easy diy",
+      "keywords": "oil change complete oil and filter change for the m96 water-cooled flat-six. easy diy every 5,000 miles (critical for ims health) $50-80 19mm socket for drain plug oil filter wrench drain pan funnel ramps or jack and jack stands warm the engine for 2-3 minutes - warm oil drains better. drive onto ramps or raise and support the car safely. locate the oil drain plug on the bottom of the engine. critical: cut open and inspect oil filter for metal debris - early ims warning sign. frequent oil changes (every 5,000 miles) help protect the ims bearing.",
       "url": "/resources/porsche/986/"
     },
     {
@@ -7397,11 +7505,13 @@
       "modelName": "986 Boxster",
       "years": "1996-2004",
       "title": "Convertible Top Maintenance",
-      "description": "Keep your top working smoothly with regular lubrication.",
+      "description": "Keep your Boxster top working smoothly with regular lubrication.",
       "difficulty": "Easy",
       "time": "30 min",
+      "interval": "Every 6 months",
+      "cost": "$15-30",
       "type": "diy",
-      "keywords": "convertible top maintenance keep your top working smoothly with regular lubrication. easy diy",
+      "keywords": "convertible top maintenance keep your boxster top working smoothly with regular lubrication. easy diy every 6 months $15-30 white lithium grease silicone lubricant spray clean rags flashlight lower the convertible top fully to access all mechanism areas. inspect the hydraulic rams for any signs of leaking fluid. locate the pivot points on the top mechanism links. don't operate the top if it's wet or below freezing. a slow-operating top often means low hydraulic fluid.",
       "url": "/resources/porsche/986/"
     },
     {
@@ -7411,11 +7521,29 @@
       "modelName": "986 Boxster",
       "years": "1996-2004",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement.",
+      "description": "Front and rear brake pad replacement on the 986's Brembo calipers.",
       "difficulty": "Easy",
       "time": "1-2 hours",
+      "interval": "Every 20,000-40,000 miles",
+      "cost": "$80-150",
       "type": "diy",
-      "keywords": "brake pad replacement front and rear brake pad replacement. easy diy",
+      "keywords": "brake pad replacement front and rear brake pad replacement on the 986's brembo calipers. easy diy every 20,000-40,000 miles $80-150 19mm socket for lug bolts 7mm allen socket for caliper pins brake piston spreader or c-clamp wire brush brake cleaner brake grease jack and jack stands loosen lug bolts while car is on the ground. raise and support the car safely on jack stands. remove wheel to access caliper. the 986 uses brembo four-piston calipers on s models. open reservoir cap before compressing pistons.",
+      "url": "/resources/porsche/986/"
+    },
+    {
+      "id": "986-spark-plugs",
+      "brand": "Porsche",
+      "model": "986",
+      "modelName": "986 Boxster",
+      "years": "1996-2004",
+      "title": "Spark Plug Replacement",
+      "description": "Replace spark plugs on the M96 flat-six engine.",
+      "difficulty": "Easy",
+      "time": "1 hour",
+      "interval": "Every 30,000-40,000 miles",
+      "cost": "$50-100",
+      "type": "diy",
+      "keywords": "spark plug replacement replace spark plugs on the m96 flat-six engine. easy diy every 30,000-40,000 miles $50-100 spark plug socket (5/8\" or 16mm thin-wall) extensions (6\" and 3\") universal joint torque wrench compressed air dielectric grease allow engine to cool completely. open the engine lid for access. the m96 has 6 spark plugs - accessed from the top of the engine. use ngk or bosch platinum/iridium plugs. the 986 uses coil-on-plug ignition - no plug wires.",
       "url": "/resources/porsche/986/"
     },
     {
@@ -7428,8 +7556,10 @@
       "description": "Complete guide to IMS bearing upgrade for 987.1 models.",
       "difficulty": "Advanced",
       "time": "10-14 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "ims bearing replacement (987.1) complete guide to ims bearing upgrade for 987.1 models. advanced restoration",
+      "keywords": "ims bearing replacement (987.1) complete guide to ims bearing upgrade for 987.1 models. advanced restoration     ",
       "url": "/resources/porsche/987/"
     },
     {
@@ -7442,8 +7572,10 @@
       "description": "Replace plastic coolant pipes with aluminum upgrade kit.",
       "difficulty": "Intermediate",
       "time": "4-6 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "coolant pipe upgrade replace plastic coolant pipes with aluminum upgrade kit. intermediate restoration",
+      "keywords": "coolant pipe upgrade replace plastic coolant pipes with aluminum upgrade kit. intermediate restoration     ",
       "url": "/resources/porsche/987/"
     },
     {
@@ -7456,8 +7588,10 @@
       "description": "Replace the AOS to eliminate smoke and oil consumption.",
       "difficulty": "Intermediate",
       "time": "3-4 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "air/oil separator replacement replace the aos to eliminate smoke and oil consumption. intermediate restoration",
+      "keywords": "air/oil separator replacement replace the aos to eliminate smoke and oil consumption. intermediate restoration     ",
       "url": "/resources/porsche/987/"
     },
     {
@@ -7470,8 +7604,10 @@
       "description": "Walnut shell blasting procedure for DFI engines.",
       "difficulty": "Intermediate",
       "time": "4-6 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "intake valve carbon cleaning (987.2) walnut shell blasting procedure for dfi engines. intermediate restoration",
+      "keywords": "intake valve carbon cleaning (987.2) walnut shell blasting procedure for dfi engines. intermediate restoration     ",
       "url": "/resources/porsche/987/"
     },
     {
@@ -7484,8 +7620,10 @@
       "description": "Complete oil and filter change for M97 and MA1 engines.",
       "difficulty": "Easy",
       "time": "30 min",
+      "interval": "Every 5,000-7,500 miles",
+      "cost": "$60-90",
       "type": "diy",
-      "keywords": "oil change complete oil and filter change for m97 and ma1 engines. easy diy",
+      "keywords": "oil change complete oil and filter change for m97 and ma1 engines. easy diy every 5,000-7,500 miles $60-90 19mm socket for drain plug (987.1) 8mm allen for drain plug (987.2) oil filter wrench or 76mm cap drain pan funnel ramps or jack and jack stands warm the engine for 2-3 minutes - warm oil drains better. drive onto ramps or raise and support the car safely. locate the oil drain plug on the bottom of the engine. 987.1: cut open filter and inspect for metal debris (ims warning sign). 987.2 has no ims concern - uses different engine design.",
       "url": "/resources/porsche/987/"
     },
     {
@@ -7495,11 +7633,13 @@
       "modelName": "987 Boxster/Cayman",
       "years": "2005-2012",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement.",
+      "description": "Front and rear brake pad replacement on the 987's Brembo calipers.",
       "difficulty": "Easy",
       "time": "1-2 hours",
+      "interval": "Every 20,000-40,000 miles",
+      "cost": "$100-180",
       "type": "diy",
-      "keywords": "brake pad replacement front and rear brake pad replacement. easy diy",
+      "keywords": "brake pad replacement front and rear brake pad replacement on the 987's brembo calipers. easy diy every 20,000-40,000 miles $100-180 19mm socket for lug bolts 7mm allen socket for caliper pins brake piston spreader or c-clamp wire brush brake cleaner brake grease jack and jack stands loosen lug bolts while car is on the ground. raise and support the car safely on jack stands. remove wheel to access caliper. s models have larger brakes than base models. four-piston calipers require all pistons pushed back evenly.",
       "url": "/resources/porsche/987/"
     },
     {
@@ -7509,11 +7649,13 @@
       "modelName": "987 Boxster/Cayman",
       "years": "2005-2012",
       "title": "Spark Plug Replacement",
-      "description": "Replace spark plugs on the flat-6 engine.",
+      "description": "Replace spark plugs on the M97 or MA1 flat-six engine.",
       "difficulty": "Easy",
       "time": "1 hour",
+      "interval": "Every 30,000-40,000 miles",
+      "cost": "$50-100",
       "type": "diy",
-      "keywords": "spark plug replacement replace spark plugs on the flat-6 engine. easy diy",
+      "keywords": "spark plug replacement replace spark plugs on the m97 or ma1 flat-six engine. easy diy every 30,000-40,000 miles $50-100 spark plug socket (5/8\" or 16mm thin-wall) extensions universal joint torque wrench compressed air dielectric grease allow engine to cool completely. open the engine lid for access. the 987 has 6 spark plugs - accessed from the top of the engine. use ngk or bosch platinum/iridium plugs specified for your engine. both 987.1 and 987.2 use coil-on-plug ignition.",
       "url": "/resources/porsche/987/"
     },
     {
@@ -7523,11 +7665,13 @@
       "modelName": "987 Boxster/Cayman",
       "years": "2005-2012",
       "title": "Serpentine Belt Replacement",
-      "description": "Replace accessory drive belt and tensioner.",
+      "description": "Replace accessory drive belt and inspect tensioner.",
       "difficulty": "Easy",
       "time": "1 hour",
+      "interval": "Every 40,000-60,000 miles or if cracked",
+      "cost": "$40-80",
       "type": "diy",
-      "keywords": "serpentine belt replacement replace accessory drive belt and tensioner. easy diy",
+      "keywords": "serpentine belt replacement replace accessory drive belt and inspect tensioner. easy diy every 40,000-60,000 miles or if cracked $40-80 19mm wrench or socket for tensioner belt routing diagram flashlight new belt open engine lid and locate the serpentine belt. note or photograph the belt routing before removal. locate the automatic belt tensioner with 19mm bolt head. take a photo of belt routing before removal. if the tensioner pulley is noisy, replace it with the belt.",
       "url": "/resources/porsche/987/"
     },
     {
@@ -7540,8 +7684,10 @@
       "description": "Replace plastic coolant pipes with aluminum upgrade for reliability.",
       "difficulty": "Intermediate",
       "time": "4-6 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "coolant pipe upgrade replace plastic coolant pipes with aluminum upgrade for reliability. intermediate restoration",
+      "keywords": "coolant pipe upgrade replace plastic coolant pipes with aluminum upgrade for reliability. intermediate restoration     ",
       "url": "/resources/porsche/991/"
     },
     {
@@ -7554,8 +7700,10 @@
       "description": "Walnut shell blasting procedure to remove carbon buildup.",
       "difficulty": "Intermediate",
       "time": "4-6 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "intake valve carbon cleaning walnut shell blasting procedure to remove carbon buildup. intermediate restoration",
+      "keywords": "intake valve carbon cleaning walnut shell blasting procedure to remove carbon buildup. intermediate restoration     ",
       "url": "/resources/porsche/991/"
     },
     {
@@ -7568,8 +7716,10 @@
       "description": "PDK transmission fluid change procedure.",
       "difficulty": "Intermediate",
       "time": "2-3 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "pdk fluid service pdk transmission fluid change procedure. intermediate restoration",
+      "keywords": "pdk fluid service pdk transmission fluid change procedure. intermediate restoration     ",
       "url": "/resources/porsche/991/"
     },
     {
@@ -7582,8 +7732,10 @@
       "description": "Replace failed PASM shock absorbers.",
       "difficulty": "Intermediate",
       "time": "3-4 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "pasm damper replacement replace failed pasm shock absorbers. intermediate restoration",
+      "keywords": "pasm damper replacement replace failed pasm shock absorbers. intermediate restoration     ",
       "url": "/resources/porsche/991/"
     },
     {
@@ -7596,8 +7748,10 @@
       "description": "Complete oil and filter change for 991.1 and 991.2 engines.",
       "difficulty": "Easy",
       "time": "30 min",
+      "interval": "Every 10,000 miles or 1 year (some owners prefer 5,000-7,500)",
+      "cost": "$70-100",
       "type": "diy",
-      "keywords": "oil change complete oil and filter change for 991.1 and 991.2 engines. easy diy",
+      "keywords": "oil change complete oil and filter change for 991.1 and 991.2 engines. easy diy every 10,000 miles or 1 year (some owners prefer 5,000-7,500) $70-100 19mm socket for drain plug 76mm oil filter cap wrench drain pan (10l capacity) funnel torque wrench ramps or jack and jack stands warm the engine for 2-3 minutes to thin the oil for better drainage. drive onto ramps or raise vehicle and support on jack stands. locate the oil drain plug on the bottom of the engine case - 19mm socket. 991.1 cars may consume oil - monitor level between changes and top up as needed. use only oils meeting porsche a40 specification (mobil 1, motul 8100, etc.).",
       "url": "/resources/porsche/991/"
     },
     {
@@ -7607,11 +7761,13 @@
       "modelName": "991 911",
       "years": "2012-2019",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement with sensor reset.",
+      "description": "Front and rear brake pad replacement with electronic sensor reset.",
       "difficulty": "Easy",
       "time": "1-2 hours",
+      "interval": "Every 20,000-40,000 miles depending on driving style",
+      "cost": "$150-350",
       "type": "diy",
-      "keywords": "brake pad replacement front and rear brake pad replacement with sensor reset. easy diy",
+      "keywords": "brake pad replacement front and rear brake pad replacement with electronic sensor reset. easy diy every 20,000-40,000 miles depending on driving style $150-350 19mm socket for wheel bolts 7mm hex/allen socket for caliper guide pins brake piston retractor (rear requires screw-in type) wire brush brake cleaner anti-seize lubricant torque wrench diagnostic tool for sensor reset (optional) loosen wheel bolts slightly before raising the vehicle. raise and safely support vehicle on jack stands at designated lift points. remove wheel bolts (19mm) and remove wheel. 991 has electronic brake pad monitoring - sensors are single-use, replace with pads. after pad replacement, the warning may stay on until cleared with diagnostic tool.",
       "url": "/resources/porsche/991/"
     },
     {
@@ -7621,25 +7777,29 @@
       "modelName": "991 911",
       "years": "2012-2019",
       "title": "Spark Plug Replacement",
-      "description": "Replace spark plugs on the flat-6 engine.",
+      "description": "Replace spark plugs on the 991 flat-six engine (NA and turbo).",
       "difficulty": "Easy",
       "time": "1-2 hours",
+      "interval": "Every 40,000-60,000 miles",
+      "cost": "$100-180",
       "type": "diy",
-      "keywords": "spark plug replacement replace spark plugs on the flat-6 engine. easy diy",
+      "keywords": "spark plug replacement replace spark plugs on the 991 flat-six engine (na and turbo). easy diy every 40,000-60,000 miles $100-180 10mm socket for coil bolts 5/8\" (16mm) spark plug socket with rubber insert 6\" and 12\" extensions torque wrench anti-seize compound dielectric grease compressed air allow engine to cool completely - critical for aluminum cylinder heads. remove any engine covers for better access to coil packs. disconnect the electrical connector from each ignition coil by pressing the release tab. 991.2 turbo models may have slightly different access - same basic procedure. use only oem or equivalent quality plugs (ngk or bosch).",
       "url": "/resources/porsche/991/"
     },
     {
-      "id": "991-cabin-filter",
+      "id": "991-coolant-flush",
       "brand": "Porsche",
       "model": "991",
       "modelName": "991 911",
       "years": "2012-2019",
-      "title": "Cabin Filter Replacement",
-      "description": "Replace the cabin air filter for fresh interior air.",
-      "difficulty": "Easy",
-      "time": "30 min",
+      "title": "Coolant Flush",
+      "description": "Drain and refill cooling system with fresh coolant to prevent corrosion.",
+      "difficulty": "Moderate",
+      "time": "1-2 hours",
+      "interval": "Every 4 years or 40,000 miles",
+      "cost": "$50-80",
       "type": "diy",
-      "keywords": "cabin filter replacement replace the cabin air filter for fresh interior air. easy diy",
+      "keywords": "coolant flush drain and refill cooling system with fresh coolant to prevent corrosion. moderate diy every 4 years or 40,000 miles $50-80 drain pan (2+ gallon capacity) distilled water g40 or g48 coolant concentrate (porsche approved) coolant funnel or vacuum fill tool phillips screwdriver pliers allow engine to cool completely - never open cooling system when hot. locate the coolant drain on the radiator and position drain pan. open the expansion tank cap to allow air in and speed draining. use only porsche-approved g40 or g48 coolant - mixing types causes problems. the 991's long coolant runs make air purging challenging - take your time.",
       "url": "/resources/porsche/991/"
     },
     {
@@ -7652,8 +7812,10 @@
       "description": "Comprehensive guide to addressing common oil leaks including chain tensioner and valve covers.",
       "difficulty": "Advanced",
       "time": "20-30 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "engine resealing guide comprehensive guide to addressing common oil leaks including chain tensioner and valve covers. advanced restoration",
+      "keywords": "engine resealing guide comprehensive guide to addressing common oil leaks including chain tensioner and valve covers. advanced restoration     ",
       "url": "/resources/porsche/993/"
     },
     {
@@ -7666,8 +7828,10 @@
       "description": "Complete clutch replacement including dual-mass flywheel service or conversion.",
       "difficulty": "Advanced",
       "time": "10-14 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "clutch and flywheel replacement complete clutch replacement including dual-mass flywheel service or conversion. advanced restoration",
+      "keywords": "clutch and flywheel replacement complete clutch replacement including dual-mass flywheel service or conversion. advanced restoration     ",
       "url": "/resources/porsche/993/"
     },
     {
@@ -7680,8 +7844,10 @@
       "description": "Complete rear suspension overhaul including all bushings and alignment.",
       "difficulty": "Intermediate",
       "time": "12-16 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "multi-link suspension refresh complete rear suspension overhaul including all bushings and alignment. intermediate restoration",
+      "keywords": "multi-link suspension refresh complete rear suspension overhaul including all bushings and alignment. intermediate restoration     ",
       "url": "/resources/porsche/993/"
     },
     {
@@ -7694,8 +7860,10 @@
       "description": "Pump, rack, and line service for the hydraulic power steering system.",
       "difficulty": "Intermediate",
       "time": "6-8 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "power steering overhaul pump, rack, and line service for the hydraulic power steering system. intermediate restoration",
+      "keywords": "power steering overhaul pump, rack, and line service for the hydraulic power steering system. intermediate restoration     ",
       "url": "/resources/porsche/993/"
     },
     {
@@ -7705,11 +7873,13 @@
       "modelName": "993 911",
       "years": "1994-1998",
       "title": "Oil Change",
-      "description": "Complete oil and filter change for the M64 engine.",
+      "description": "Complete oil and filter change for the M64 air-cooled flat-six.",
       "difficulty": "Easy",
       "time": "45 min",
+      "interval": "Every 3,000-5,000 miles",
+      "cost": "$60-90",
       "type": "diy",
-      "keywords": "oil change complete oil and filter change for the m64 engine. easy diy",
+      "keywords": "oil change complete oil and filter change for the m64 air-cooled flat-six. easy diy every 3,000-5,000 miles $60-90 21mm socket for drain plug oil filter wrench drain pan (3 gallon capacity) funnel with extension ramps or jack and jack stands warm the engine for 2-3 minutes - warm oil flows better. drive onto ramps or raise and support the car safely. locate the main drain plug on the bottom of the engine case. air-cooled engines need 10-11 quarts - the oil helps with cooling. use quality 15w-50 or 20w-50 oil - mobil 1 15w-50 is popular.",
       "url": "/resources/porsche/993/"
     },
     {
@@ -7719,11 +7889,13 @@
       "modelName": "993 911",
       "years": "1994-1998",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement.",
+      "description": "Front and rear brake pad replacement on the 993's four-piston calipers.",
       "difficulty": "Easy",
       "time": "1-2 hours",
+      "interval": "Every 20,000-35,000 miles",
+      "cost": "$120-200",
       "type": "diy",
-      "keywords": "brake pad replacement front and rear brake pad replacement. easy diy",
+      "keywords": "brake pad replacement front and rear brake pad replacement on the 993's four-piston calipers. easy diy every 20,000-35,000 miles $120-200 19mm socket for lug bolts 7mm allen socket flathead screwdriver brake piston spreader tool wire brush brake cleaner brake grease jack and jack stands loosen lug bolts while the car is on the ground. raise and support the car safely on jack stands. remove wheel to access the caliper. four-piston calipers require all pistons pushed back evenly. open brake fluid reservoir before compressing pistons.",
       "url": "/resources/porsche/993/"
     },
     {
@@ -7733,11 +7905,13 @@
       "modelName": "993 911",
       "years": "1994-1998",
       "title": "Spark Plug Replacement",
-      "description": "Replace spark plugs on the M64 engine.",
+      "description": "Replace spark plugs on the M64 flat-six engine.",
       "difficulty": "Easy",
       "time": "1 hour",
+      "interval": "Every 15,000-20,000 miles",
+      "cost": "$40-80",
       "type": "diy",
-      "keywords": "spark plug replacement replace spark plugs on the m64 engine. easy diy",
+      "keywords": "spark plug replacement replace spark plugs on the m64 flat-six engine. easy diy every 15,000-20,000 miles $40-80 spark plug socket (5/8\" or 16mm) 6\" extension universal joint (optional but helpful) torque wrench compressed air or vacuum anti-seize compound allow engine to cool completely before starting. open engine lid for access to the top of the engine. the 993 has 6 spark plugs - one per cylinder, accessible from above. the firing order is 1-6-2-4-3-5 - cylinder 1 is front right. use bosch or ngk plugs specified for the 993.",
       "url": "/resources/porsche/993/"
     },
     {
@@ -7750,8 +7924,10 @@
       "description": "Replace accessory drive belt and inspect tensioner.",
       "difficulty": "Easy",
       "time": "1 hour",
+      "interval": "Every 40,000-60,000 miles or if cracked",
+      "cost": "$40-80",
       "type": "diy",
-      "keywords": "serpentine belt replacement replace accessory drive belt and inspect tensioner. easy diy",
+      "keywords": "serpentine belt replacement replace accessory drive belt and inspect tensioner. easy diy every 40,000-60,000 miles or if cracked $40-80 15mm wrench for tensioner belt routing diagram (in engine bay or manual) flashlight new belt open engine lid and locate the serpentine belt on the front of the engine. note or photograph the belt routing before removal. locate the automatic belt tensioner - usually has a 15mm bolt head. take a photo of belt routing before removal for reference. if the tensioner pulley is worn or noisy, replace it with the belt.",
       "url": "/resources/porsche/993/"
     },
     {
@@ -7764,8 +7940,10 @@
       "description": "Complete guide to replacing the IMS bearing with upgraded unit.",
       "difficulty": "Advanced",
       "time": "10-14 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "ims bearing replacement complete guide to replacing the ims bearing with upgraded unit. advanced restoration",
+      "keywords": "ims bearing replacement complete guide to replacing the ims bearing with upgraded unit. advanced restoration     ",
       "url": "/resources/porsche/996/"
     },
     {
@@ -7778,8 +7956,10 @@
       "description": "Replace plastic coolant pipes with aluminum upgrade kit.",
       "difficulty": "Intermediate",
       "time": "4-6 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "coolant pipe upgrade replace plastic coolant pipes with aluminum upgrade kit. intermediate restoration",
+      "keywords": "coolant pipe upgrade replace plastic coolant pipes with aluminum upgrade kit. intermediate restoration     ",
       "url": "/resources/porsche/996/"
     },
     {
@@ -7792,8 +7972,10 @@
       "description": "Remove moisture and reseal the headlight housings.",
       "difficulty": "Intermediate",
       "time": "4-6 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "headlight reseal remove moisture and reseal the headlight housings. intermediate restoration",
+      "keywords": "headlight reseal remove moisture and reseal the headlight housings. intermediate restoration     ",
       "url": "/resources/porsche/996/"
     },
     {
@@ -7803,11 +7985,13 @@
       "modelName": "996 911",
       "years": "1998-2005",
       "title": "Oil Change",
-      "description": "Flat-6 oil and filter change procedure.",
+      "description": "Complete oil and filter change for the M96 water-cooled flat-six.",
       "difficulty": "Easy",
       "time": "30 min",
+      "interval": "Every 5,000 miles (critical for IMS health)",
+      "cost": "$60-90",
       "type": "diy",
-      "keywords": "oil change flat-6 oil and filter change procedure. easy diy",
+      "keywords": "oil change complete oil and filter change for the m96 water-cooled flat-six. easy diy every 5,000 miles (critical for ims health) $60-90 19mm socket for drain plug oil filter wrench drain pan (2 gallon capacity) funnel ramps or jack and jack stands warm the engine for 2-3 minutes - warm oil drains better. drive onto ramps or raise the car safely. locate the oil drain plug on the bottom of the engine. critical: cut open the old oil filter and inspect for metal debris - early ims warning. frequent oil changes (5,000 miles) help protect the ims bearing.",
       "url": "/resources/porsche/996/"
     },
     {
@@ -7817,11 +8001,13 @@
       "modelName": "996 911",
       "years": "1998-2005",
       "title": "Spark Plug Replacement",
-      "description": "Replace spark plugs on the M96 engine.",
+      "description": "Replace spark plugs on the M96 flat-six engine.",
       "difficulty": "Easy",
       "time": "1 hour",
+      "interval": "Every 30,000-40,000 miles",
+      "cost": "$50-100",
       "type": "diy",
-      "keywords": "spark plug replacement replace spark plugs on the m96 engine. easy diy",
+      "keywords": "spark plug replacement replace spark plugs on the m96 flat-six engine. easy diy every 30,000-40,000 miles $50-100 spark plug socket (5/8\" or 16mm thin-wall) extensions (6\" and 3\") universal joint torque wrench compressed air dielectric grease allow engine to cool completely. open the engine lid for access. the m96 has 6 spark plugs - access from the top of the engine. use ngk or bosch platinum/iridium plugs for best performance. the 996 uses individual coil-on-plug ignition - no plug wires.",
       "url": "/resources/porsche/996/"
     },
     {
@@ -7831,11 +8017,29 @@
       "modelName": "996 911",
       "years": "1998-2005",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement.",
+      "description": "Front and rear brake pad replacement on the 996's Brembo calipers.",
       "difficulty": "Easy",
       "time": "1-2 hours",
+      "interval": "Every 20,000-40,000 miles",
+      "cost": "$100-180",
       "type": "diy",
-      "keywords": "brake pad replacement front and rear brake pad replacement. easy diy",
+      "keywords": "brake pad replacement front and rear brake pad replacement on the 996's brembo calipers. easy diy every 20,000-40,000 miles $100-180 19mm socket for lug bolts 7mm allen socket for caliper pins brake piston spreader or large c-clamp wire brush brake cleaner brake grease jack and jack stands loosen lug bolts while car is on the ground. raise and support the car safely on jack stands. remove wheel to access caliper. the 996 uses four-piston front and rear calipers on most models. open reservoir cap before compressing pistons to prevent overflow.",
+      "url": "/resources/porsche/996/"
+    },
+    {
+      "id": "996-coolant-flush",
+      "brand": "Porsche",
+      "model": "996",
+      "modelName": "996 911",
+      "years": "1998-2005",
+      "title": "Coolant Flush and Fill",
+      "description": "Flush and refill the cooling system to prevent overheating.",
+      "difficulty": "Intermediate",
+      "time": "1-2 hours",
+      "interval": "Every 4 years or 48,000 miles",
+      "cost": "$50-80",
+      "type": "diy",
+      "keywords": "coolant flush and fill flush and refill the cooling system to prevent overheating. intermediate diy every 4 years or 48,000 miles $50-80 drain pan (2+ gallons) funnel distilled water (for flush) porsche coolant (2 gallons concentrate or premix) pliers for hose clamps allow engine to cool completely before starting. the 996 has dual front radiators and a complex cooling circuit. remove the coolant reservoir cap slowly to release pressure. use only porsche-approved coolant (g40 spec) - green or pink. the 996's plastic coolant pipes can crack - inspect while draining.",
       "url": "/resources/porsche/996/"
     },
     {
@@ -7848,8 +8052,10 @@
       "description": "Complete guide to replacing the IMS bearing on 997.1 cars.",
       "difficulty": "Advanced",
       "time": "10-14 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "ims bearing replacement (997.1) complete guide to replacing the ims bearing on 997.1 cars. advanced restoration",
+      "keywords": "ims bearing replacement (997.1) complete guide to replacing the ims bearing on 997.1 cars. advanced restoration     ",
       "url": "/resources/porsche/997/"
     },
     {
@@ -7862,8 +8068,10 @@
       "description": "Replace plastic coolant pipes with aluminum upgrade kit.",
       "difficulty": "Intermediate",
       "time": "4-6 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "coolant pipe upgrade replace plastic coolant pipes with aluminum upgrade kit. intermediate restoration",
+      "keywords": "coolant pipe upgrade replace plastic coolant pipes with aluminum upgrade kit. intermediate restoration     ",
       "url": "/resources/porsche/997/"
     },
     {
@@ -7876,8 +8084,10 @@
       "description": "Walnut shell blasting to remove carbon deposits from intake valves.",
       "difficulty": "Advanced",
       "time": "4-6 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "intake valve carbon cleaning (997.2) walnut shell blasting to remove carbon deposits from intake valves. advanced restoration",
+      "keywords": "intake valve carbon cleaning (997.2) walnut shell blasting to remove carbon deposits from intake valves. advanced restoration     ",
       "url": "/resources/porsche/997/"
     },
     {
@@ -7890,22 +8100,10 @@
       "description": "Flat-6 oil and filter change procedure for both 997.1 and 997.2.",
       "difficulty": "Easy",
       "time": "30 min",
+      "interval": "Every 5,000 miles (critical for 997.1 IMS health)",
+      "cost": "$60-90",
       "type": "diy",
-      "keywords": "oil change flat-6 oil and filter change procedure for both 997.1 and 997.2. easy diy",
-      "url": "/resources/porsche/997/"
-    },
-    {
-      "id": "997-spark-plugs",
-      "brand": "Porsche",
-      "model": "997",
-      "modelName": "997 911",
-      "years": "2004-2012",
-      "title": "Spark Plug Replacement",
-      "description": "Replace spark plugs on the M97 or 9A1 engine.",
-      "difficulty": "Easy",
-      "time": "1 hour",
-      "type": "diy",
-      "keywords": "spark plug replacement replace spark plugs on the m97 or 9a1 engine. easy diy",
+      "keywords": "oil change flat-6 oil and filter change procedure for both 997.1 and 997.2. easy diy every 5,000 miles (critical for 997.1 ims health) $60-90 19mm socket for drain plug oil filter wrench (997.1) or 76mm cap wrench (997.2) drain pan (10l capacity) funnel torque wrench ramps or jack and jack stands warm the engine for 2-3 minutes - warm oil drains more completely. drive onto ramps or safely raise and support the vehicle. locate the oil drain plug on the bottom of the engine - 19mm socket. critical for 997.1: cut open and inspect oil filter for metal debris - this is an early ims bearing warning sign. 997.2 has no ims bearing concern - different engine design (9a1).",
       "url": "/resources/porsche/997/"
     },
     {
@@ -7915,11 +8113,45 @@
       "modelName": "997 911",
       "years": "2004-2012",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement.",
+      "description": "Front and rear brake pad replacement on 997 with optional sensor replacement.",
       "difficulty": "Easy",
       "time": "1-2 hours",
+      "interval": "Every 20,000-40,000 miles depending on driving style",
+      "cost": "$150-300",
       "type": "diy",
-      "keywords": "brake pad replacement front and rear brake pad replacement. easy diy",
+      "keywords": "brake pad replacement front and rear brake pad replacement on 997 with optional sensor replacement. easy diy every 20,000-40,000 miles depending on driving style $150-300 19mm socket for wheel bolts 7mm hex/allen socket for caliper guide pins brake piston retractor tool (rear uses screw-in type) wire brush brake cleaner anti-seize lubricant torque wrench loosen wheel bolts before raising vehicle. raise and safely support vehicle on jack stands. remove wheel bolts and wheel. replace pads in axle pairs - never replace just one side. wear sensors are one-time use - replace if triggered or during pad change.",
+      "url": "/resources/porsche/997/"
+    },
+    {
+      "id": "997-spark-plugs",
+      "brand": "Porsche",
+      "model": "997",
+      "modelName": "997 911",
+      "years": "2004-2012",
+      "title": "Spark Plug Replacement",
+      "description": "Replace spark plugs on the M97 (997.1) or 9A1 (997.2) flat-six engine.",
+      "difficulty": "Easy",
+      "time": "1-1.5 hours",
+      "interval": "Every 40,000 miles (997.1) or 60,000 miles (997.2)",
+      "cost": "$80-150",
+      "type": "diy",
+      "keywords": "spark plug replacement replace spark plugs on the m97 (997.1) or 9a1 (997.2) flat-six engine. easy diy every 40,000 miles (997.1) or 60,000 miles (997.2) $80-150 10mm socket for coil bolts 5/8\" (16mm) spark plug socket with rubber insert 6\" and 12\" extensions torque wrench anti-seize compound dielectric grease compressed air or vacuum allow engine to cool completely - spark plugs in aluminum heads must be replaced cold. remove engine cover (if equipped) for better access. disconnect electrical connector from each ignition coil. use ngk or bosch plugs - these engines are sensitive to plug brand and heat range. 997.1 uses different plugs than 997.2 - verify correct part number.",
+      "url": "/resources/porsche/997/"
+    },
+    {
+      "id": "997-serpentine-belt",
+      "brand": "Porsche",
+      "model": "997",
+      "modelName": "997 911",
+      "years": "2004-2012",
+      "title": "Serpentine Belt Replacement",
+      "description": "Replace the accessory drive belt on the 997 flat-six engine.",
+      "difficulty": "Easy",
+      "time": "30-45 min",
+      "interval": "Every 40,000-60,000 miles or 4 years",
+      "cost": "$30-60",
+      "type": "diy",
+      "keywords": "serpentine belt replacement replace the accessory drive belt on the 997 flat-six engine. easy diy every 40,000-60,000 miles or 4 years $30-60 serpentine belt tool or 3/8\" breaker bar flashlight belt routing diagram (photograph existing before removal) open the rear deck lid and locate the accessory belt (visible from rear of engine compartment). take a photo or draw the belt routing before removal. locate the spring-loaded belt tensioner pulley. replace tensioner and idler pulley if over 80,000 miles or showing wear. a squealing belt on startup usually indicates worn belt or tensioner.",
       "url": "/resources/porsche/997/"
     },
     {
@@ -7932,8 +8164,10 @@
       "description": "Complete teardown and rebuild of the legendary M30 big-six engine with machine work specifications.",
       "difficulty": "Advanced",
       "time": "40+ hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "m30 engine rebuild guide complete teardown and rebuild of the legendary m30 big-six engine with machine work specifications. advanced restoration",
+      "keywords": "m30 engine rebuild guide complete teardown and rebuild of the legendary m30 big-six engine with machine work specifications. advanced restoration     ",
       "url": "/resources/bmw/e28/"
     },
     {
@@ -7946,8 +8180,10 @@
       "description": "Complete front suspension refresh including all bushings, ball joints, and steering components.",
       "difficulty": "Intermediate",
       "time": "12-16 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "front suspension overhaul complete front suspension refresh including all bushings, ball joints, and steering components. intermediate restoration",
+      "keywords": "front suspension overhaul complete front suspension refresh including all bushings, ball joints, and steering components. intermediate restoration     ",
       "url": "/resources/bmw/e28/"
     },
     {
@@ -7960,8 +8196,10 @@
       "description": "Identifying common rust areas and proper repair techniques for structural and cosmetic rust.",
       "difficulty": "Advanced",
       "time": "Varies",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "rust repair and prevention identifying common rust areas and proper repair techniques for structural and cosmetic rust. advanced restoration",
+      "keywords": "rust repair and prevention identifying common rust areas and proper repair techniques for structural and cosmetic rust. advanced restoration     ",
       "url": "/resources/bmw/e28/"
     },
     {
@@ -7974,8 +8212,10 @@
       "description": "Diagnosing and repairing common electrical issues, ground points, and instrument cluster restoration.",
       "difficulty": "Intermediate",
       "time": "Varies",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "electrical system restoration diagnosing and repairing common electrical issues, ground points, and instrument cluster restoration. intermediate restoration",
+      "keywords": "electrical system restoration diagnosing and repairing common electrical issues, ground points, and instrument cluster restoration. intermediate restoration     ",
       "url": "/resources/bmw/e28/"
     },
     {
@@ -7988,8 +8228,10 @@
       "description": "Complete guide to oil and filter change on M20 and M30 engines.",
       "difficulty": "Easy",
       "time": "30 min",
+      "interval": "Every 3,000-5,000 miles",
+      "cost": "$40-60",
       "type": "diy",
-      "keywords": "oil change complete guide to oil and filter change on m20 and m30 engines. easy diy",
+      "keywords": "oil change complete guide to oil and filter change on m20 and m30 engines. easy diy every 3,000-5,000 miles $40-60 17mm socket for drain plug oil filter wrench (cap style) drain pan funnel jack and jack stands torque wrench warm the engine for 2-3 minutes to thin the oil. raise the front of the car and secure on jack stands. locate the oil drain plug on the rear of the oil pan. classic m30 and m20 engines run best on conventional or high-zinc oil. many e28 owners prefer 15w-40 diesel-rated oils for the higher zinc content.",
       "url": "/resources/bmw/e28/"
     },
     {
@@ -8002,8 +8244,10 @@
       "description": "Front and rear brake pad replacement with rotor inspection.",
       "difficulty": "Easy",
       "time": "1-2 hours",
+      "interval": "Every 20,000-40,000 miles",
+      "cost": "$50-100",
       "type": "diy",
-      "keywords": "brake pad replacement front and rear brake pad replacement with rotor inspection. easy diy",
+      "keywords": "brake pad replacement front and rear brake pad replacement with rotor inspection. easy diy every 20,000-40,000 miles $50-100 17mm socket for lug bolts 13mm socket or wrench for caliper bolts flathead screwdriver c-clamp or brake piston tool wire brush brake cleaner brake grease jack and jack stands loosen lug bolts while the car is on the ground. raise the car and support on jack stands, then remove wheel. the e28 uses ate sliding calipers - locate the two 13mm caliper bolts on the rear of the caliper bracket. e28 front rotors are directional on some models - ensure correct side. the parking brake on e28 is cable-actuated drum inside the rear rotors.",
       "url": "/resources/bmw/e28/"
     },
     {
@@ -8016,8 +8260,10 @@
       "description": "Checking and adjusting valve clearances on the M30 engine.",
       "difficulty": "Intermediate",
       "time": "2-3 hours",
+      "interval": "Every 15,000 miles",
+      "cost": "$15-30",
       "type": "diy",
-      "keywords": "valve adjustment (m30) checking and adjusting valve clearances on the m30 engine. intermediate diy",
+      "keywords": "valve adjustment (m30) checking and adjusting valve clearances on the m30 engine. intermediate diy every 15,000 miles $15-30 10mm socket for valve cover 32mm wrench for crank pulley feeler gauge set (metric) 13mm wrench for adjuster locknut flathead screwdriver for adjuster flashlight new valve cover gasket ensure the engine is cold - valves expand when hot, affecting clearances. remove the 10mm valve cover nuts and lift off the valve cover. locate the timing mark on the vibration damper - you'll need to rotate the engine. the m30 firing order is 1-5-3-6-2-4 - adjust valves in this sequence. slight drag on the feeler gauge is correct - not too tight, not too loose.",
       "url": "/resources/bmw/e28/"
     },
     {
@@ -8030,8 +8276,10 @@
       "description": "Step-by-step timing belt, tensioner, and water pump replacement.",
       "difficulty": "Intermediate",
       "time": "4-6 hours",
+      "interval": "Every 50,000 miles or 4 years",
+      "cost": "$150-250",
       "type": "diy",
-      "keywords": "timing belt replacement (m20) step-by-step timing belt, tensioner, and water pump replacement. intermediate diy",
+      "keywords": "timing belt replacement (m20) step-by-step timing belt, tensioner, and water pump replacement. intermediate diy every 50,000 miles or 4 years $150-250 32mm wrench for fan clutch 10mm, 13mm sockets timing belt tension gauge (optional) large flathead screwdriver harmonic balancer holder tool drain pan new coolant disconnect the negative battery terminal. drain the cooling system from the radiator drain cock. remove the fan clutch (left-hand thread) and fan shroud. the m20 is an interference engine - belt failure will bend valves. never rotate the engine backwards with the belt installed.",
       "url": "/resources/bmw/e28/"
     },
     {
@@ -8044,8 +8292,10 @@
       "description": "Complete teardown and rebuild of the M20 inline-6 engine, including machine work specifications and assembly tips.",
       "difficulty": "Advanced",
       "time": "40+ hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "m20 engine rebuild guide complete teardown and rebuild of the m20 inline-6 engine, including machine work specifications and assembly tips. advanced restoration",
+      "keywords": "m20 engine rebuild guide complete teardown and rebuild of the m20 inline-6 engine, including machine work specifications and assembly tips. advanced restoration     ",
       "url": "/resources/bmw/e30/"
     },
     {
@@ -8058,8 +8308,10 @@
       "description": "Step-by-step guide to replacing all bushings, shocks, and worn components for a factory-fresh ride.",
       "difficulty": "Intermediate",
       "time": "16-20 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "full suspension refresh step-by-step guide to replacing all bushings, shocks, and worn components for a factory-fresh ride. intermediate restoration",
+      "keywords": "full suspension refresh step-by-step guide to replacing all bushings, shocks, and worn components for a factory-fresh ride. intermediate restoration     ",
       "url": "/resources/bmw/e30/"
     },
     {
@@ -8072,8 +8324,10 @@
       "description": "Diagnosing and repairing common electrical issues including ground points, relays, and wiring repairs.",
       "difficulty": "Intermediate",
       "time": "Varies",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "electrical system troubleshooting diagnosing and repairing common electrical issues including ground points, relays, and wiring repairs. intermediate restoration",
+      "keywords": "electrical system troubleshooting diagnosing and repairing common electrical issues including ground points, relays, and wiring repairs. intermediate restoration     ",
       "url": "/resources/bmw/e30/"
     },
     {
@@ -8086,8 +8340,10 @@
       "description": "Identifying rust-prone areas and techniques for cutting, welding, and preventing future corrosion.",
       "difficulty": "Advanced",
       "time": "Varies",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "rust repair & prevention identifying rust-prone areas and techniques for cutting, welding, and preventing future corrosion. advanced restoration",
+      "keywords": "rust repair & prevention identifying rust-prone areas and techniques for cutting, welding, and preventing future corrosion. advanced restoration     ",
       "url": "/resources/bmw/e30/"
     },
     {
@@ -8097,11 +8353,13 @@
       "modelName": "E30 3 Series",
       "years": "1982-1994",
       "title": "Oil Change",
-      "description": "Complete guide to changing oil and filter on M20 and M42 engines.",
+      "description": "Complete guide to changing oil and filter on M20 and M42 engines. Regular oil changes are the single most important maintenance item for engine longevity.",
       "difficulty": "Easy",
-      "time": "30 min",
+      "time": "30-45 min",
+      "interval": "Every 3,000-5,000 miles or 6 months",
+      "cost": "$30-50",
       "type": "diy",
-      "keywords": "oil change complete guide to changing oil and filter on m20 and m42 engines. easy diy",
+      "keywords": "oil change complete guide to changing oil and filter on m20 and m42 engines. regular oil changes are the single most important maintenance item for engine longevity. easy diy every 3,000-5,000 miles or 6 months $30-50 17mm socket or wrench oil filter wrench drain pan (6+ quart capacity) funnel jack and jack stands torque wrench warm up the engine for 5 minutes to thin the oil, then turn off and let sit for 2 minutes. lift the front of the car and secure on jack stands. never work under a car supported only by a jack. position drain pan under the oil pan. the drain plug is located at the rear of the oil pan. use 15w-40 or 20w-50 for high-mileage engines, 10w-40 for normal use always use a quality filter - mann, mahle, or oem bmw",
       "url": "/resources/bmw/e30/"
     },
     {
@@ -8111,11 +8369,13 @@
       "modelName": "E30 3 Series",
       "years": "1982-1994",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement with rotor inspection tips.",
+      "description": "Front and rear brake pad replacement with rotor inspection. Essential safety maintenance that should not be delayed when pads are worn.",
       "difficulty": "Easy",
       "time": "1-2 hours",
+      "interval": "Every 25,000-50,000 miles or when pad thickness reaches 3mm",
+      "cost": "$50-100 for pads (all four corners)",
       "type": "diy",
-      "keywords": "brake pad replacement front and rear brake pad replacement with rotor inspection tips. easy diy",
+      "keywords": "brake pad replacement front and rear brake pad replacement with rotor inspection. essential safety maintenance that should not be delayed when pads are worn. easy diy every 25,000-50,000 miles or when pad thickness reaches 3mm $50-100 for pads (all four corners) 17mm socket for lug bolts 7mm hex (allen) socket for caliper slides large c-clamp or brake piston tool wire brush brake cleaner spray brake grease (for slide pins) jack and jack stands loosen lug bolts while the car is on the ground. lift the car and secure on jack stands. remove the wheel to access the brake caliper. remove the two 7mm hex bolts holding the caliper carrier to the caliper bracket. bed in new pads: 10 moderate stops from 30 mph, then 10 harder stops from 40 mph replace pads in axle pairs - both fronts or both rears together",
       "url": "/resources/bmw/e30/"
     },
     {
@@ -8125,25 +8385,29 @@
       "modelName": "E30 3 Series",
       "years": "1982-1994",
       "title": "Timing Belt Replacement",
-      "description": "Step-by-step timing belt, tensioner, and water pump replacement.",
+      "description": "Step-by-step timing belt, tensioner, and water pump replacement. Critical service for M20 and M42 engines - failure causes catastrophic valve damage.",
       "difficulty": "Intermediate",
       "time": "4-6 hours",
+      "interval": "Every 50,000 miles or 4 years (whichever comes first)",
+      "cost": "$150-250 for parts (belt, tensioner, water pump, seals)",
       "type": "diy",
-      "keywords": "timing belt replacement step-by-step timing belt, tensioner, and water pump replacement. intermediate diy",
+      "keywords": "timing belt replacement step-by-step timing belt, tensioner, and water pump replacement. critical service for m20 and m42 engines - failure causes catastrophic valve damage. intermediate diy every 50,000 miles or 4 years (whichever comes first) $150-250 for parts (belt, tensioner, water pump, seals) 32mm fan clutch wrench 10mm, 13mm sockets torque wrench tdc timing pin (or 6mm drill bit) cam locking tool (or careful marking) coolant drain pan belt tension gauge (optional) gasket scraper drain coolant from the radiator using the petcock at the bottom. collect in a clean pan if reusing. remove the fan shroud (4 clips) and fan clutch (32mm, turns clockwise to loosen - reverse thread). remove the accessory belts by loosening the tensioner pulleys. never reuse an old timing belt - always replace when removed replace the front crank seal and cam seal while the covers are off",
       "url": "/resources/bmw/e30/"
     },
     {
-      "id": "e30-valve-adjustment",
+      "id": "e30-cooling-system-service",
       "brand": "BMW",
       "model": "E30",
       "modelName": "E30 3 Series",
       "years": "1982-1994",
-      "title": "Valve Adjustment (M20)",
-      "description": "How to check and adjust valve clearances on the M20 engine.",
-      "difficulty": "Intermediate",
-      "time": "2-3 hours",
+      "title": "Cooling System Service",
+      "description": "Complete coolant flush and thermostat replacement. Prevents overheating failures that can destroy the head gasket or warp the cylinder head.",
+      "difficulty": "Easy",
+      "time": "1-2 hours",
+      "interval": "Every 2 years or 30,000 miles",
+      "cost": "$40-80 (thermostat, gasket, coolant)",
       "type": "diy",
-      "keywords": "valve adjustment (m20) how to check and adjust valve clearances on the m20 engine. intermediate diy",
+      "keywords": "cooling system service complete coolant flush and thermostat replacement. prevents overheating failures that can destroy the head gasket or warp the cylinder head. easy diy every 2 years or 30,000 miles $40-80 (thermostat, gasket, coolant) phillips screwdriver 10mm socket drain pan (2+ gallon) funnel flush kit or garden hose adapter gasket scraper allow the engine to cool completely. never open the cooling system when hot. place a drain pan under the radiator and open the petcock at the bottom of the radiator. also open the bleed screw on the thermostat housing to speed draining. remove the lower radiator hose for more complete drainage. approximately 2 gallons will drain. use bmw blue coolant or a phosphate-free equivalent - never use green universal coolant replace the expansion tank if it shows any cracks or discoloration",
       "url": "/resources/bmw/e30/"
     },
     {
@@ -8156,8 +8420,10 @@
       "description": "Essential service for M60 V8 engines - complete guide to replacing the failing timing chain guides.",
       "difficulty": "Advanced",
       "time": "12-16 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "m60 timing chain guide replacement essential service for m60 v8 engines - complete guide to replacing the failing timing chain guides. advanced restoration",
+      "keywords": "m60 timing chain guide replacement essential service for m60 v8 engines - complete guide to replacing the failing timing chain guides. advanced restoration     ",
       "url": "/resources/bmw/e34/"
     },
     {
@@ -8170,8 +8436,10 @@
       "description": "Step-by-step VANOS seal replacement and rebuild procedure.",
       "difficulty": "Intermediate",
       "time": "4-6 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "m50tu vanos rebuild step-by-step vanos seal replacement and rebuild procedure. intermediate restoration",
+      "keywords": "m50tu vanos rebuild step-by-step vanos seal replacement and rebuild procedure. intermediate restoration     ",
       "url": "/resources/bmw/e34/"
     },
     {
@@ -8184,8 +8452,10 @@
       "description": "Full front and rear suspension overhaul with all bushings and components.",
       "difficulty": "Intermediate",
       "time": "16-24 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "complete suspension refresh full front and rear suspension overhaul with all bushings and components. intermediate restoration",
+      "keywords": "complete suspension refresh full front and rear suspension overhaul with all bushings and components. intermediate restoration     ",
       "url": "/resources/bmw/e34/"
     },
     {
@@ -8198,8 +8468,10 @@
       "description": "Complete cooling system refresh including radiator, hoses, water pump, and thermostat.",
       "difficulty": "Intermediate",
       "time": "4-6 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "cooling system overhaul complete cooling system refresh including radiator, hoses, water pump, and thermostat. intermediate restoration",
+      "keywords": "cooling system overhaul complete cooling system refresh including radiator, hoses, water pump, and thermostat. intermediate restoration     ",
       "url": "/resources/bmw/e34/"
     },
     {
@@ -8212,8 +8484,10 @@
       "description": "Complete oil and filter change procedure for M50, M60, and S38 engines.",
       "difficulty": "Easy",
       "time": "30 min",
+      "interval": "Every 5,000-7,500 miles",
+      "cost": "$45-70",
       "type": "diy",
-      "keywords": "oil change complete oil and filter change procedure for m50, m60, and s38 engines. easy diy",
+      "keywords": "oil change complete oil and filter change procedure for m50, m60, and s38 engines. easy diy every 5,000-7,500 miles $45-70 17mm socket for drain plug 36mm socket or filter wrench (m50) oil filter wrench cap style (m60/s38) drain pan funnel jack and jack stands torque wrench warm the engine for 2-3 minutes to thin the oil for complete drainage. safely raise the front of the car and secure on jack stands. position drain pan under the oil pan. m50 uses cartridge filter on top of engine; m60 and s38 use spin-on canister style. use 5w-40 or 0w-40 synthetic for m50; 15w-40 or 20w-50 works well for m60 and s38.",
       "url": "/resources/bmw/e34/"
     },
     {
@@ -8226,8 +8500,10 @@
       "description": "Front and rear brake pad replacement with rotor inspection.",
       "difficulty": "Easy",
       "time": "1-2 hours",
+      "interval": "Every 25,000-50,000 miles",
+      "cost": "$60-120",
       "type": "diy",
-      "keywords": "brake pad replacement front and rear brake pad replacement with rotor inspection. easy diy",
+      "keywords": "brake pad replacement front and rear brake pad replacement with rotor inspection. easy diy every 25,000-50,000 miles $60-120 17mm socket for lug bolts 7mm allen socket for caliper pins flathead screwdriver brake piston tool or c-clamp wire brush brake cleaner brake grease jack and jack stands loosen lug bolts while car is on the ground, then raise and secure on jack stands. remove wheel to expose the brake caliper. disconnect the brake pad wear sensor electrical connector if equipped. open the brake fluid reservoir cap before compressing pistons. e34 wear sensors are typically on front left and rear right wheels.",
       "url": "/resources/bmw/e34/"
     },
     {
@@ -8240,8 +8516,10 @@
       "description": "Repair dead pixels in the cluster display with ribbon cable resoldering.",
       "difficulty": "Intermediate",
       "time": "2-3 hours",
+      "interval": "As needed (common issue)",
+      "cost": "$20-40",
       "type": "diy",
-      "keywords": "instrument cluster pixel repair repair dead pixels in the cluster display with ribbon cable resoldering. intermediate diy",
+      "keywords": "instrument cluster pixel repair repair dead pixels in the cluster display with ribbon cable resoldering. intermediate diy as needed (common issue) $20-40 small phillips screwdriver t10 torx driver soldering iron with fine tip solder pixel repair ribbon cable (replacement) isopropyl alcohol magnifying glass or loupe disconnect the negative battery terminal and wait 10 minutes. remove the two t10 screws on top of the instrument cluster hood. pull the cluster hood toward you and remove it. use a temperature-controlled soldering iron set to around 300°c. don't apply too much heat - you can damage the lcd if overheated.",
       "url": "/resources/bmw/e34/"
     },
     {
@@ -8254,8 +8532,10 @@
       "description": "Proper cooling system drain, flush, and refill procedure.",
       "difficulty": "Easy",
       "time": "1-2 hours",
+      "interval": "Every 2 years or 30,000 miles",
+      "cost": "$30-50",
       "type": "diy",
-      "keywords": "cooling system flush proper cooling system drain, flush, and refill procedure. easy diy",
+      "keywords": "cooling system flush proper cooling system drain, flush, and refill procedure. easy diy every 2 years or 30,000 miles $30-50 drain pan (2+ gallon capacity) pliers for hose clamps funnel or spill-free fill tool distilled water for flushing bmw blue coolant (1.5 gallons premixed or concentrate) clean rags allow the engine to cool completely - never open a hot cooling system. remove the expansion tank cap slowly to release any pressure. position drain pan under the radiator and open the drain cock on lower passenger side. use only bmw-approved blue coolant or equivalent phosphate-free formula. inspect the expansion tank for cracks - this is a common failure point.",
       "url": "/resources/bmw/e34/"
     },
     {
@@ -8268,8 +8548,10 @@
       "description": "Replace all cooling system components including expansion tank, thermostat, water pump, hoses, and radiator.",
       "difficulty": "Intermediate",
       "time": "6-8 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "complete cooling system refresh replace all cooling system components including expansion tank, thermostat, water pump, hoses, and radiator. intermediate restoration",
+      "keywords": "complete cooling system refresh replace all cooling system components including expansion tank, thermostat, water pump, hoses, and radiator. intermediate restoration     ",
       "url": "/resources/bmw/e36/"
     },
     {
@@ -8282,8 +8564,10 @@
       "description": "Step-by-step guide to replacing VANOS seals and restoring proper valve timing.",
       "difficulty": "Intermediate",
       "time": "3-4 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "vanos seal replacement step-by-step guide to replacing vanos seals and restoring proper valve timing. intermediate restoration",
+      "keywords": "vanos seal replacement step-by-step guide to replacing vanos seals and restoring proper valve timing. intermediate restoration     ",
       "url": "/resources/bmw/e36/"
     },
     {
@@ -8296,8 +8580,10 @@
       "description": "Complete front and rear suspension overhaul including control arms, RTABs, and bushings.",
       "difficulty": "Intermediate",
       "time": "12-16 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "full suspension refresh complete front and rear suspension overhaul including control arms, rtabs, and bushings. intermediate restoration",
+      "keywords": "full suspension refresh complete front and rear suspension overhaul including control arms, rtabs, and bushings. intermediate restoration     ",
       "url": "/resources/bmw/e36/"
     },
     {
@@ -8310,8 +8596,10 @@
       "description": "Complete oil and filter change procedure for M50 and M52 engines.",
       "difficulty": "Easy",
       "time": "30 min",
+      "interval": "Every 5,000-7,500 miles",
+      "cost": "$40-60",
       "type": "diy",
-      "keywords": "oil change complete oil and filter change procedure for m50 and m52 engines. easy diy",
+      "keywords": "oil change complete oil and filter change procedure for m50 and m52 engines. easy diy every 5,000-7,500 miles $40-60 17mm socket or wrench oil filter wrench or 36mm socket drain pan funnel jack and jack stands torque wrench warm up the engine for 2-3 minutes to thin the oil for better drainage. safely raise the front of the car and support on jack stands. locate the oil drain plug on the passenger side of the oil pan. bmw e36s use a cartridge-style oil filter - never install the metal canister type. always replace the o-ring on the filter housing cap to prevent leaks.",
       "url": "/resources/bmw/e36/"
     },
     {
@@ -8324,8 +8612,10 @@
       "description": "Stop oil leaks with a new valve cover gasket - one of the easiest E36 repairs.",
       "difficulty": "Easy",
       "time": "1 hour",
+      "interval": "As needed (typically 80,000-120,000 miles)",
+      "cost": "$30-50",
       "type": "diy",
-      "keywords": "valve cover gasket stop oil leaks with a new valve cover gasket - one of the easiest e36 repairs. easy diy",
+      "keywords": "valve cover gasket stop oil leaks with a new valve cover gasket - one of the easiest e36 repairs. easy diy as needed (typically 80,000-120,000 miles) $30-50 10mm socket flathead screwdriver gasket scraper or plastic razor clean rags rtv sealant (optional) disconnect the negative battery terminal for safety. remove the cabin microfilter housing cover (4 clips) for better access. disconnect any electrical connectors on top of the valve cover (coil packs, etc). do not overtighten valve cover bolts - the plastic cover can crack. replace the spark plug tube seals at the same time to prevent oil pooling around plugs.",
       "url": "/resources/bmw/e36/"
     },
     {
@@ -8335,11 +8625,29 @@
       "modelName": "E36 3 Series",
       "years": "1990-2000",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement with sensor reset.",
+      "description": "Front and rear brake pad replacement with rotor inspection.",
       "difficulty": "Easy",
       "time": "1-2 hours",
+      "interval": "Every 25,000-50,000 miles",
+      "cost": "$60-120",
       "type": "diy",
-      "keywords": "brake pad replacement front and rear brake pad replacement with sensor reset. easy diy",
+      "keywords": "brake pad replacement front and rear brake pad replacement with rotor inspection. easy diy every 25,000-50,000 miles $60-120 17mm socket for lug bolts 7mm allen socket for caliper pins flathead screwdriver brake caliper piston tool or c-clamp wire brush brake cleaner brake grease jack and jack stands loosen lug bolts while car is on the ground, then raise and secure on jack stands. remove wheel to access brake caliper. disconnect brake pad wear sensor if equipped (front driver side, rear passenger side). open the brake fluid reservoir cap when compressing pistons to prevent pressure buildup. clean rotors with brake cleaner to remove any oils before installing new pads.",
+      "url": "/resources/bmw/e36/"
+    },
+    {
+      "id": "e36-cooling-system-refresh",
+      "brand": "BMW",
+      "model": "E36",
+      "modelName": "E36 3 Series",
+      "years": "1990-2000",
+      "title": "Cooling System Refresh",
+      "description": "Replace expansion tank, thermostat, and water pump to prevent overheating failures.",
+      "difficulty": "Intermediate",
+      "time": "4-6 hours",
+      "interval": "Every 60,000-80,000 miles",
+      "cost": "$250-400",
+      "type": "diy",
+      "keywords": "cooling system refresh replace expansion tank, thermostat, and water pump to prevent overheating failures. intermediate diy every 60,000-80,000 miles $250-400 32mm wrench for fan clutch fan clutch holding tool 10mm, 13mm sockets flathead and phillips screwdrivers drain pan pliers for hose clamps new coolant (1.5 gallons bmw blue) spill-free funnel (recommended) allow engine to cool completely before beginning work. remove the fan shroud upper clips and expansion tank cap. using a 32mm wrench and fan holding tool, remove the fan clutch (left-hand thread - turn clockwise to loosen). the fan clutch is left-hand threaded - turn clockwise to remove. use a water pump with a metal impeller - plastic impellers can shatter.",
       "url": "/resources/bmw/e36/"
     },
     {
@@ -8352,8 +8660,10 @@
       "description": "Full cooling system refresh including radiator, water pump, hoses, thermostat, and expansion tank.",
       "difficulty": "Intermediate",
       "time": "4-6 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "complete cooling system overhaul full cooling system refresh including radiator, water pump, hoses, thermostat, and expansion tank. intermediate restoration",
+      "keywords": "complete cooling system overhaul full cooling system refresh including radiator, water pump, hoses, thermostat, and expansion tank. intermediate restoration     ",
       "url": "/resources/bmw/e39/"
     },
     {
@@ -8366,8 +8676,10 @@
       "description": "Step-by-step guide to rebuilding the dual-VANOS system on M52TU and M54 engines.",
       "difficulty": "Intermediate",
       "time": "4-6 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "vanos seal replacement step-by-step guide to rebuilding the dual-vanos system on m52tu and m54 engines. intermediate restoration",
+      "keywords": "vanos seal replacement step-by-step guide to rebuilding the dual-vanos system on m52tu and m54 engines. intermediate restoration     ",
       "url": "/resources/bmw/e39/"
     },
     {
@@ -8380,8 +8692,10 @@
       "description": "Complete front suspension overhaul including control arms, thrust arms, and tie rods.",
       "difficulty": "Intermediate",
       "time": "8-12 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "front suspension refresh complete front suspension overhaul including control arms, thrust arms, and tie rods. intermediate restoration",
+      "keywords": "front suspension refresh complete front suspension overhaul including control arms, thrust arms, and tie rods. intermediate restoration     ",
       "url": "/resources/bmw/e39/"
     },
     {
@@ -8394,8 +8708,10 @@
       "description": "Comprehensive guide to replacing timing chain guides on the M62 V8.",
       "difficulty": "Advanced",
       "time": "16-24 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "m62 timing chain guide replacement comprehensive guide to replacing timing chain guides on the m62 v8. advanced restoration",
+      "keywords": "m62 timing chain guide replacement comprehensive guide to replacing timing chain guides on the m62 v8. advanced restoration     ",
       "url": "/resources/bmw/e39/"
     },
     {
@@ -8408,8 +8724,10 @@
       "description": "Complete oil and filter change procedure for M52, M54, and M62 engines.",
       "difficulty": "Easy",
       "time": "30 min",
+      "interval": "Every 7,500 miles",
+      "cost": "$50-80",
       "type": "diy",
-      "keywords": "oil change complete oil and filter change procedure for m52, m54, and m62 engines. easy diy",
+      "keywords": "oil change complete oil and filter change procedure for m52, m54, and m62 engines. easy diy every 7,500 miles $50-80 17mm socket for drain plug 36mm socket or filter cap wrench (i6) oil filter wrench (v8) drain pan funnel jack and jack stands torque wrench warm the engine for 2-3 minutes to thin the oil for better drainage. raise the front of the car safely and secure on jack stands. position drain pan under the oil pan on the passenger side. the e39 m52/m54 uses the same cartridge filter setup as the e46. m62 v8 requires more oil capacity - ensure you have enough before starting.",
       "url": "/resources/bmw/e39/"
     },
     {
@@ -8419,11 +8737,13 @@
       "modelName": "E39 5 Series",
       "years": "1995-2003",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement with sensor reset.",
+      "description": "Front and rear brake pad replacement with sensor reset procedure.",
       "difficulty": "Easy",
       "time": "1-2 hours",
+      "interval": "Every 25,000-50,000 miles",
+      "cost": "$60-130",
       "type": "diy",
-      "keywords": "brake pad replacement front and rear brake pad replacement with sensor reset. easy diy",
+      "keywords": "brake pad replacement front and rear brake pad replacement with sensor reset procedure. easy diy every 25,000-50,000 miles $60-130 17mm socket for lug bolts 7mm allen socket for caliper pins flathead screwdriver brake piston tool or c-clamp wire brush brake cleaner brake grease jack and jack stands loosen lug bolts while the car is on the ground. raise and support the car on jack stands, remove wheel. disconnect the brake pad wear sensor connector (if equipped on that corner). e39 wear sensors are typically on front left and rear right. after pad replacement, reset the brake pad wear indicator if equipped (cbs).",
       "url": "/resources/bmw/e39/"
     },
     {
@@ -8436,8 +8756,10 @@
       "description": "Critical preventive maintenance - replace before it fails.",
       "difficulty": "Easy",
       "time": "1 hour",
+      "interval": "Every 60,000 miles (preventive)",
+      "cost": "$50-80",
       "type": "diy",
-      "keywords": "expansion tank replacement critical preventive maintenance - replace before it fails. easy diy",
+      "keywords": "expansion tank replacement critical preventive maintenance - replace before it fails. easy diy every 60,000 miles (preventive) $50-80 10mm socket pliers for hose clamps flathead screwdriver drain pan new coolant (1 gallon bmw blue) allow engine to cool completely - never work on a hot cooling system. remove expansion tank cap slowly to release any residual pressure. place drain pan under the expansion tank area to catch coolant. the e39 expansion tank is a known failure point - don't wait for it to crack. cracks usually appear at the seams or around the level sensor fitting.",
       "url": "/resources/bmw/e39/"
     },
     {
@@ -8450,8 +8772,10 @@
       "description": "Restore blower motor speed control function.",
       "difficulty": "Easy",
       "time": "30 min",
+      "interval": "As needed (common failure)",
+      "cost": "$80-150",
       "type": "diy",
-      "keywords": "hvac final stage unit replacement restore blower motor speed control function. easy diy",
+      "keywords": "hvac final stage unit replacement restore blower motor speed control function. easy diy as needed (common failure) $80-150 t20 torx driver small flathead screwdriver work light new final stage unit the final stage unit (fsu) is located under the passenger side dashboard. remove the passenger footwell cover/trim panel for access. locate the fsu mounted to the blower motor housing - rectangular unit with fins. symptoms of fsu failure: blower only works on high speed or intermittently. thermal paste helps the fsu dissipate heat - don't skip this step.",
       "url": "/resources/bmw/e39/"
     },
     {
@@ -8464,8 +8788,10 @@
       "description": "Complete replacement of all cooling system components to prevent overheating disasters.",
       "difficulty": "Intermediate",
       "time": "5-7 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "cooling system overhaul complete replacement of all cooling system components to prevent overheating disasters. intermediate restoration",
+      "keywords": "cooling system overhaul complete replacement of all cooling system components to prevent overheating disasters. intermediate restoration     ",
       "url": "/resources/bmw/e46/"
     },
     {
@@ -8478,8 +8804,10 @@
       "description": "How to inspect for subframe cracks and install reinforcement plates.",
       "difficulty": "Advanced",
       "time": "8-12 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "subframe inspection & reinforcement how to inspect for subframe cracks and install reinforcement plates. advanced restoration",
+      "keywords": "subframe inspection & reinforcement how to inspect for subframe cracks and install reinforcement plates. advanced restoration     ",
       "url": "/resources/bmw/e46/"
     },
     {
@@ -8492,8 +8820,10 @@
       "description": "Restore proper valve timing with new VANOS seals.",
       "difficulty": "Intermediate",
       "time": "4-5 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "vanos seal replacement restore proper valve timing with new vanos seals. intermediate restoration",
+      "keywords": "vanos seal replacement restore proper valve timing with new vanos seals. intermediate restoration     ",
       "url": "/resources/bmw/e46/"
     },
     {
@@ -8506,8 +8836,10 @@
       "description": "Complete oil and filter change procedure for M54 engines.",
       "difficulty": "Easy",
       "time": "30 min",
+      "interval": "Every 7,500 miles or annually",
+      "cost": "$50-70",
       "type": "diy",
-      "keywords": "oil change complete oil and filter change procedure for m54 engines. easy diy",
+      "keywords": "oil change complete oil and filter change procedure for m54 engines. easy diy every 7,500 miles or annually $50-70 17mm socket for drain plug 36mm socket or oil filter wrench drain pan funnel torque wrench jack and jack stands warm the engine for 2-3 minutes to thin the oil for better drainage. raise the front of the car safely and support on jack stands. position drain pan under the oil pan and remove the 17mm drain plug. the e46 uses a cartridge-style filter - the housing stays in place. always replace the o-ring to prevent leaks from the filter housing.",
       "url": "/resources/bmw/e46/"
     },
     {
@@ -8520,22 +8852,42 @@
       "description": "Replace the plastic expansion tank before it cracks and leaves you stranded.",
       "difficulty": "Easy",
       "time": "1 hour",
+      "interval": "Every 60,000 miles (preventive)",
+      "cost": "$40-70",
       "type": "diy",
-      "keywords": "expansion tank replacement replace the plastic expansion tank before it cracks and leaves you stranded. easy diy",
+      "keywords": "expansion tank replacement replace the plastic expansion tank before it cracks and leaves you stranded. easy diy every 60,000 miles (preventive) $40-70 10mm socket flathead screwdriver pliers for hose clamps drain pan new coolant (1 gallon bmw blue) allow the engine to cool completely - never open a hot cooling system. remove the expansion tank cap slowly to release any residual pressure. place drain pan under the expansion tank area. inspect the old tank carefully - cracks often start at the seams or sensor fitting. this is a known failure point - replace preventively rather than waiting for failure.",
       "url": "/resources/bmw/e46/"
     },
     {
-      "id": "e46-window-regulator",
+      "id": "e46-brake-pads",
       "brand": "BMW",
       "model": "E46",
       "modelName": "E46 3 Series",
       "years": "1999-2006",
-      "title": "Window Regulator Replacement",
-      "description": "Fix dropped windows with new regulator installation.",
+      "title": "Brake Pad Replacement",
+      "description": "Front and rear brake pad replacement with sensor reset procedure.",
       "difficulty": "Easy",
       "time": "1-2 hours",
+      "interval": "Every 25,000-50,000 miles",
+      "cost": "$60-120",
       "type": "diy",
-      "keywords": "window regulator replacement fix dropped windows with new regulator installation. easy diy",
+      "keywords": "brake pad replacement front and rear brake pad replacement with sensor reset procedure. easy diy every 25,000-50,000 miles $60-120 17mm socket for lug bolts 7mm allen socket for caliper pins flathead screwdriver brake caliper piston tool or c-clamp wire brush brake cleaner brake grease jack and jack stands loosen lug bolts slightly while the car is on the ground. raise and support the car safely on jack stands. remove wheel and set aside. always replace pads in axle pairs - never replace just one side. e46 wear sensors are on front left and rear right - reset the cbs if equipped.",
+      "url": "/resources/bmw/e46/"
+    },
+    {
+      "id": "e46-cooling-system-refresh",
+      "brand": "BMW",
+      "model": "E46",
+      "modelName": "E46 3 Series",
+      "years": "1999-2006",
+      "title": "Cooling System Refresh",
+      "description": "Complete cooling system overhaul including water pump, thermostat, and hoses.",
+      "difficulty": "Intermediate",
+      "time": "5-7 hours",
+      "interval": "Every 60,000-80,000 miles",
+      "cost": "$300-500",
+      "type": "diy",
+      "keywords": "cooling system refresh complete cooling system overhaul including water pump, thermostat, and hoses. intermediate diy every 60,000-80,000 miles $300-500 32mm wrench for fan clutch fan clutch holding tool 10mm, 13mm sockets e10 torx socket flathead screwdriver drain pan pliers for hose clamps new coolant (1.5 gallons) spill-free funnel ensure engine is completely cool before starting. remove the intake snorkel and cabin filter housing cover for access. remove the fan clutch using 32mm wrench and holding tool (left-hand thread - clockwise to loosen). the fan clutch is left-hand threaded - turn clockwise to remove, counter-clockwise to tighten. use a water pump with metal impeller - plastic impellers can fail catastrophically.",
       "url": "/resources/bmw/e46/"
     },
     {
@@ -8548,8 +8900,10 @@
       "description": "Proactive replacement of the electric water pump and electronic thermostat.",
       "difficulty": "Intermediate",
       "time": "3-5 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "water pump and thermostat replacement proactive replacement of the electric water pump and electronic thermostat. intermediate restoration",
+      "keywords": "water pump and thermostat replacement proactive replacement of the electric water pump and electronic thermostat. intermediate restoration     ",
       "url": "/resources/bmw/e90/"
     },
     {
@@ -8562,8 +8916,10 @@
       "description": "Replace leaking valve cover gasket or entire valve cover assembly.",
       "difficulty": "Intermediate",
       "time": "2-4 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "valve cover and gasket replacement replace leaking valve cover gasket or entire valve cover assembly. intermediate restoration",
+      "keywords": "valve cover and gasket replacement replace leaking valve cover gasket or entire valve cover assembly. intermediate restoration     ",
       "url": "/resources/bmw/e90/"
     },
     {
@@ -8576,8 +8932,10 @@
       "description": "Remove carbon deposits from intake valves on direct injection engines.",
       "difficulty": "Intermediate",
       "time": "4-6 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "intake valve walnut blasting remove carbon deposits from intake valves on direct injection engines. intermediate restoration",
+      "keywords": "intake valve walnut blasting remove carbon deposits from intake valves on direct injection engines. intermediate restoration     ",
       "url": "/resources/bmw/e90/"
     },
     {
@@ -8590,8 +8948,10 @@
       "description": "Preventive rod bearing service for the E9X M3 S65 V8.",
       "difficulty": "Advanced",
       "time": "12-16 hours",
+      "interval": "",
+      "cost": "",
       "type": "restoration",
-      "keywords": "s65 rod bearing replacement preventive rod bearing service for the e9x m3 s65 v8. advanced restoration",
+      "keywords": "s65 rod bearing replacement preventive rod bearing service for the e9x m3 s65 v8. advanced restoration     ",
       "url": "/resources/bmw/e90/"
     },
     {
@@ -8604,8 +8964,10 @@
       "description": "Complete oil and filter change for N52, N54, and N55 engines.",
       "difficulty": "Easy",
       "time": "30 min",
+      "interval": "Every 7,500-10,000 miles",
+      "cost": "$60-90",
       "type": "diy",
-      "keywords": "oil change complete oil and filter change for n52, n54, and n55 engines. easy diy",
+      "keywords": "oil change complete oil and filter change for n52, n54, and n55 engines. easy diy every 7,500-10,000 miles $60-90 17mm socket for drain plug 36mm socket or oil filter cap wrench drain pan funnel jack and jack stands torque wrench warm the engine for 2-3 minutes to thin the oil. raise the front of the car and secure on jack stands, or use ramps. locate the oil drain plug on the oil pan - passenger side. the e90 uses a cartridge filter - the housing stays on the engine. always replace the o-ring to prevent leaks from the filter housing cap.",
       "url": "/resources/bmw/e90/"
     },
     {
@@ -8615,11 +8977,13 @@
       "modelName": "E90/E91/E92/E93 3 Series",
       "years": "2005-2013",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement with sensor reset.",
+      "description": "Front and rear brake pad replacement with electronic sensor reset.",
       "difficulty": "Easy",
       "time": "1-2 hours",
+      "interval": "Every 25,000-50,000 miles",
+      "cost": "$80-150",
       "type": "diy",
-      "keywords": "brake pad replacement front and rear brake pad replacement with sensor reset. easy diy",
+      "keywords": "brake pad replacement front and rear brake pad replacement with electronic sensor reset. easy diy every 25,000-50,000 miles $80-150 17mm socket for lug bolts 7mm allen socket for caliper pins t30 torx for wear sensor brake piston tool or c-clamp wire brush brake cleaner brake grease diagnostic tool for cbs reset (optional) loosen lug bolts while the car is on the ground. raise and support the car on jack stands, remove wheel. disconnect the brake pad wear sensor connector and unclip from bracket. e90 electronic wear sensors are usually on front left and rear right. after replacement, reset the cbs (condition based service) brake indicator.",
       "url": "/resources/bmw/e90/"
     },
     {
@@ -8632,8 +8996,10 @@
       "description": "Spark plug replacement for all E90 engine variants.",
       "difficulty": "Easy",
       "time": "1-2 hours",
+      "interval": "Every 60,000 miles (N52) or 45,000 miles (N54/N55)",
+      "cost": "$60-120",
       "type": "diy",
-      "keywords": "spark plug replacement spark plug replacement for all e90 engine variants. easy diy",
+      "keywords": "spark plug replacement spark plug replacement for all e90 engine variants. easy diy every 60,000 miles (n52) or 45,000 miles (n54/n55) $60-120 10mm socket t30 torx spark plug socket (5/8\" or 14mm thin-wall) 6\" extension torque wrench compressed air or vacuum anti-seize (optional - some plugs pre-applied) allow engine to cool completely - spark plugs can seize in hot aluminum. remove the engine cover by pulling up on the four corners. disconnect the electrical connector from each ignition coil. n54 uses 6 spark plugs; the n52 uses 6 spark plugs - one per cylinder. use ngk or bosch oem-equivalent plugs for best results.",
       "url": "/resources/bmw/e90/"
     },
     {
@@ -8646,8 +9012,10 @@
       "description": "Replace the notorious leaking oil filter housing gasket.",
       "difficulty": "Intermediate",
       "time": "2-3 hours",
+      "interval": "As needed (common leak point)",
+      "cost": "$30-60",
       "type": "diy",
-      "keywords": "oil filter housing gasket replace the notorious leaking oil filter housing gasket. intermediate diy",
+      "keywords": "oil filter housing gasket replace the notorious leaking oil filter housing gasket. intermediate diy as needed (common leak point) $30-60 36mm socket for filter cap e10, e12 torx sockets 10mm socket flathead screwdriver gasket pick clean rags new gasket kit fresh oil for top-off remove the engine cover and intake snorkel for access. drain some coolant - the oil cooler (if equipped) ties into the cooling system. remove the oil filter cap and filter element. the ofhg is one of the most common oil leaks on n52 and n54 engines. oil dripping onto the exhaust can cause smoke and fire - don't delay this repair.",
       "url": "/resources/bmw/e90/"
     }
   ],
