@@ -5717,3 +5717,850 @@ nav ul li.dropdown.touch-open .dropdown-menu {
         width: 100%;
     }
 }
+
+/* ================================
+   Maintenance Tracker Styles
+   ================================ */
+
+.maintenance-tracker {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.tracker-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.tracker-header h1 {
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+}
+
+.tracker-header p {
+    color: var(--text-muted);
+}
+
+.tracker-section {
+    background: var(--background-color);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Garage Section */
+.garage-section .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.garage-section .section-header h2 {
+    margin: 0;
+    color: var(--navy);
+}
+
+.garage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.empty-garage {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-muted);
+    background: var(--background-alt);
+    border-radius: var(--radius-md);
+}
+
+/* Vehicle Card */
+.vehicle-card {
+    background: var(--background-alt);
+    border-radius: var(--radius-md);
+    border: 2px solid transparent;
+    padding: 1.25rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.vehicle-card:hover {
+    border-color: var(--gulf-blue);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.vehicle-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.vehicle-card-header h3 {
+    margin: 0;
+    color: var(--navy);
+    font-size: 1.1rem;
+}
+
+.platform-badge {
+    background: var(--navy);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.vehicle-card-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.vehicle-stat {
+    text-align: center;
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+}
+
+.stat-value {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--navy);
+}
+
+.vehicle-card-status {
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.status-ok {
+    background: rgba(34, 165, 89, 0.15);
+    color: var(--success-color);
+}
+
+.status-due-soon {
+    background: rgba(245, 166, 35, 0.15);
+    color: var(--warning-color);
+}
+
+.status-overdue {
+    background: rgba(220, 53, 69, 0.15);
+    color: var(--danger-color);
+}
+
+/* Vehicle Detail View */
+.vehicle-detail-section .section-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.vehicle-detail-section .vehicle-info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.vehicle-detail-section .vehicle-info h2 {
+    margin: 0;
+    color: var(--navy);
+}
+
+.vehicle-platform-badge {
+    background: var(--navy);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-full);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.vehicle-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Mileage Card */
+.mileage-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.mileage-display {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.mileage-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.mileage-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.mileage-unit {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.mileage-update {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.mileage-update input {
+    width: 140px;
+    padding: 0.5rem 0.75rem;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-size: 1rem;
+}
+
+/* Tabs */
+.detail-tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0;
+}
+
+.tab-btn {
+    padding: 0.75rem 1.25rem;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    color: var(--text-muted);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-bottom: -2px;
+}
+
+.tab-btn:hover {
+    color: var(--navy);
+}
+
+.tab-btn.active {
+    color: var(--navy);
+    border-bottom-color: var(--gulf-orange);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Upcoming Maintenance */
+.upcoming-header,
+.schedule-header,
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.upcoming-header h3,
+.schedule-header h3,
+.history-header h3 {
+    margin: 0;
+    color: var(--navy);
+}
+
+.upcoming-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.upcoming-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: var(--background-alt);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--success-color);
+}
+
+.upcoming-item.due-soon {
+    border-left-color: var(--warning-color);
+}
+
+.upcoming-item.overdue {
+    border-left-color: var(--danger-color);
+}
+
+.upcoming-info h4 {
+    margin: 0 0 0.25rem 0;
+    color: var(--navy);
+}
+
+.upcoming-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.upcoming-item.overdue .upcoming-info p {
+    color: var(--danger-color);
+    font-weight: 500;
+}
+
+.upcoming-item.due-soon .upcoming-info p {
+    color: var(--warning-color);
+    font-weight: 500;
+}
+
+/* Schedule Table */
+.schedule-table-wrapper {
+    overflow-x: auto;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.schedule-table th {
+    background: var(--background-alt);
+    color: var(--navy);
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+.schedule-table td {
+    color: var(--text-color);
+}
+
+.schedule-table .actions-cell {
+    white-space: nowrap;
+}
+
+/* Service History */
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.history-item {
+    background: var(--background-alt);
+    border-radius: var(--radius-md);
+    padding: 1rem;
+    position: relative;
+}
+
+.history-item .history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.history-item h4 {
+    margin: 0;
+    color: var(--navy);
+}
+
+.history-date {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.history-details {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.history-mileage {
+    color: var(--text-muted);
+}
+
+.history-cost {
+    color: var(--success-color);
+    font-weight: 500;
+}
+
+.history-shop {
+    background: var(--navy);
+    color: white;
+    padding: 0.15rem 0.5rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+}
+
+.history-parts,
+.history-notes {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+}
+
+.history-actions {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.25rem;
+}
+
+/* Modals */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal-content {
+    background: var(--background-color);
+    border-radius: var(--radius-lg);
+    max-width: 500px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: var(--shadow-lg);
+}
+
+.modal-content.modal-wide {
+    max-width: 600px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.modal-header h3 {
+    margin: 0;
+    color: var(--navy);
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.modal-close:hover {
+    color: var(--navy);
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+/* Form Elements */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--navy);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: 1rem;
+    color: var(--text-color);
+    background: var(--background-color);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--gulf-blue);
+    box-shadow: 0 0 0 3px rgba(125, 207, 234, 0.2);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.6rem 1.25rem;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background: var(--gulf-orange);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--gulf-orange-dark);
+}
+
+.btn-secondary {
+    background: var(--background-alt);
+    color: var(--navy);
+    border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    background: var(--border-color);
+}
+
+.btn-danger {
+    background: var(--danger-color);
+    color: white;
+}
+
+.btn-danger:hover {
+    background: #c82333;
+}
+
+.btn-sm {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.85rem;
+}
+
+.btn-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 0.25rem;
+    color: var(--text-muted);
+    transition: color 0.2s ease;
+}
+
+.btn-icon:hover {
+    color: var(--navy);
+}
+
+.btn-icon.delete-maintenance:hover,
+.btn-icon.delete-service:hover {
+    color: var(--danger-color);
+}
+
+/* Export Section */
+.export-section {
+    background: var(--background-alt);
+}
+
+.export-section h3 {
+    margin: 0 0 1rem 0;
+    color: var(--navy);
+}
+
+.export-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-muted);
+}
+
+/* Dark Mode */
+[data-theme="dark"] .maintenance-tracker {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .tracker-header h1,
+[data-theme="dark"] .section-header h2,
+[data-theme="dark"] .upcoming-header h3,
+[data-theme="dark"] .schedule-header h3,
+[data-theme="dark"] .history-header h3,
+[data-theme="dark"] .vehicle-card-header h3,
+[data-theme="dark"] .vehicle-info h2,
+[data-theme="dark"] .history-item h4,
+[data-theme="dark"] .upcoming-info h4,
+[data-theme="dark"] .modal-header h3,
+[data-theme="dark"] .export-section h3 {
+    color: var(--gulf-blue-light);
+}
+
+[data-theme="dark"] .vehicle-card {
+    background: var(--background-alt);
+}
+
+[data-theme="dark"] .vehicle-card:hover {
+    border-color: var(--gulf-blue);
+}
+
+[data-theme="dark"] .platform-badge,
+[data-theme="dark"] .vehicle-platform-badge {
+    background: var(--gulf-blue);
+    color: var(--navy-dark);
+}
+
+[data-theme="dark"] .stat-value {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .mileage-card {
+    background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
+}
+
+[data-theme="dark"] .tab-btn {
+    color: var(--text-muted);
+}
+
+[data-theme="dark"] .tab-btn:hover,
+[data-theme="dark"] .tab-btn.active {
+    color: var(--gulf-blue-light);
+}
+
+[data-theme="dark"] .upcoming-item,
+[data-theme="dark"] .history-item {
+    background: var(--background-alt);
+}
+
+[data-theme="dark"] .schedule-table th {
+    background: var(--navy-dark);
+    color: var(--gulf-blue-light);
+}
+
+[data-theme="dark"] .schedule-table td {
+    border-bottom-color: var(--border-color);
+}
+
+[data-theme="dark"] .modal-content {
+    background: var(--background-color);
+}
+
+[data-theme="dark"] .form-group label {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .form-group input,
+[data-theme="dark"] .form-group select,
+[data-theme="dark"] .form-group textarea {
+    background: var(--background-alt);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .btn-secondary {
+    background: var(--navy);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .btn-secondary:hover {
+    background: var(--navy-light);
+}
+
+[data-theme="dark"] .history-shop {
+    background: var(--gulf-blue);
+    color: var(--navy-dark);
+}
+
+/* Print Styles */
+@media print {
+    .maintenance-tracker {
+        max-width: 100%;
+    }
+
+    .tracker-section {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+
+    .garage-section,
+    .export-section,
+    .vehicle-actions,
+    .mileage-update,
+    .detail-tabs,
+    .modal-overlay,
+    .btn,
+    .btn-icon,
+    .upcoming-item button {
+        display: none !important;
+    }
+
+    .vehicle-detail-section {
+        display: block !important;
+    }
+
+    .tab-content {
+        display: block !important;
+        margin-bottom: 2rem;
+        page-break-inside: avoid;
+    }
+
+    .mileage-card {
+        background: #1E3A5F !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .garage-section .section-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+
+    .vehicle-detail-section .section-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .vehicle-detail-section .vehicle-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .vehicle-actions {
+        width: 100%;
+    }
+
+    .vehicle-actions button {
+        flex: 1;
+    }
+
+    .mileage-card {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .mileage-update {
+        width: 100%;
+    }
+
+    .mileage-update input {
+        flex: 1;
+    }
+
+    .detail-tabs {
+        flex-wrap: wrap;
+    }
+
+    .tab-btn {
+        flex: 1;
+        text-align: center;
+        padding: 0.6rem 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .upcoming-item {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: stretch;
+    }
+
+    .history-actions {
+        position: static;
+        margin-top: 0.75rem;
+    }
+
+    .export-buttons {
+        flex-direction: column;
+    }
+
+    .export-buttons button {
+        width: 100%;
+    }
+
+    .schedule-table {
+        font-size: 0.85rem;
+    }
+
+    .schedule-table th,
+    .schedule-table td {
+        padding: 0.5rem;
+    }
+}

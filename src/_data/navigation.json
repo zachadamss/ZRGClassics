@@ -40,7 +40,8 @@
       "label": "Tools",
       "children": [
         { "label": "Invoice Creator", "url": "/tools/invoice/" },
-        { "label": "Build Cost Calculator", "url": "/tools/build-calculator/" }
+        { "label": "Build Cost Calculator", "url": "/tools/build-calculator/" },
+        { "label": "Maintenance Tracker", "url": "/tools/maintenance-tracker/" }
       ]
     },
     { "label": "Community", "url": "/community/forums/" },

@@ -8,17 +8,19 @@
 - Related issues cross-references between similar problems
 - Invoice Creator tool live
 - Build Cost Calculator tool live
+- Maintenance Tracker tool live
 - Mobile responsive, dark mode, print-friendly
 
 ---
 
 ## Tools (Coming Soon)
 
-- [ ] **Maintenance Tracker** - Track service history and reminders
-  - Service history log per vehicle
-  - Interval-based maintenance reminders
-  - Mileage tracking
-  - Export/import service records
+- [x] **Maintenance Tracker** - Track service history and reminders
+  - Multi-vehicle garage with platform selection
+  - Vehicle-specific maintenance presets for all 17 platforms
+  - Mileage + date-based interval reminders
+  - Service history logging with costs, parts, and notes
+  - Export/import (JSON backup, CSV export, print)
 
 - [x] **Build Cost Calculator** - Estimate restoration and modification costs
   - Parts cost estimation by category (11 categories)
