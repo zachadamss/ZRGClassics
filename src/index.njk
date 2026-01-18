@@ -4,76 +4,227 @@ title: Home
 description: "ZRG Classics - Your complete resource hub for classic Porsche and BMW vehicles. Find common issues, repair guides, torque specs, parts suppliers, and DIY maintenance guides for E30, E36, E46, 911, Boxster, and more."
 keywords: "classic BMW, classic Porsche, E30, E36, E46, 911, Boxster, Cayman, 944, 928, repair guide, restoration, parts suppliers"
 ---
+
 <!-- Hero Section -->
-<section class="hero">
-    <div class="hero-content">
-        <h1>Welcome to ZRG Classics</h1>
-        <p>Your Resource Hub for Classic Porsche & BMW</p>
-        <a href="/resources/bmw/" class="btn">Explore Resources</a>
+<section class="home-hero">
+    <div class="home-hero-content">
+        <span class="hero-badge">The Resource Hub for Enthusiasts</span>
+        <h1>Keep Your <span class="highlight">Classic German</span> Machine on the Road</h1>
+        <p class="hero-subtitle">Comprehensive guides, verified specs, and trusted resources for BMW and Porsche owners who do it right.</p>
+        <div class="hero-actions">
+            <a href="/search/" class="btn btn-primary">Search All Resources</a>
+            <a href="#vehicles" class="btn btn-secondary">Browse Vehicles</a>
+        </div>
     </div>
 </section>
 
-<!-- Featured Models Section -->
-<main>
+<!-- Stats Bar -->
+<section class="stats-bar">
+    <div class="stats-container">
+        <div class="stat-item">
+            <span class="stat-number">17</span>
+            <span class="stat-label">Vehicle Platforms</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">130+</span>
+            <span class="stat-label">Issues Documented</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">400+</span>
+            <span class="stat-label">Torque Specs</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">170+</span>
+            <span class="stat-label">Parts Suppliers</span>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Search Section -->
+<section class="quick-search-section">
+    <div class="quick-search-container">
+        <h2>What are you working on?</h2>
+        <p>Search across all vehicles for issues, specs, guides, and suppliers</p>
+        <form class="home-search-form" action="/search/" method="get">
+            <input type="text" name="q" placeholder="Try 'VANOS', 'IMS bearing', 'cooling system'..." class="home-search-input">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+        <div class="popular-searches">
+            <span>Popular:</span>
+            <a href="/search/?q=vanos">VANOS</a>
+            <a href="/search/?q=ims+bearing">IMS Bearing</a>
+            <a href="/search/?q=cooling">Cooling System</a>
+            <a href="/search/?q=subframe">Subframe</a>
+            <a href="/search/?q=timing+belt">Timing Belt</a>
+        </div>
+    </div>
+</section>
+
+<!-- Vehicle Platforms Section -->
+<section id="vehicles" class="vehicles-section">
     <div class="section-header">
-        <h2>Vehicle Resources</h2>
-        <p>Select your make and model for common issues, restoration guides, parts suppliers, and more.</p>
+        <h2>Vehicle Platforms</h2>
+        <p>Select your vehicle for common issues, repair costs, torque specs, and parts suppliers</p>
     </div>
 
-    <div class="brand-section">
-        <h3>BMW</h3>
-        <div class="resource-grid">
-            <div class="resource-card">
-                <h3>E30 3 Series</h3>
-                <p>1982-1994</p>
-                <a href="/resources/bmw/e30/" class="btn">View Resources</a>
-            </div>
-            <div class="resource-card">
-                <h3>E36 3 Series</h3>
-                <p>1990-2000</p>
-                <a href="/resources/bmw/e36/" class="btn">View Resources</a>
-            </div>
-            <div class="resource-card">
-                <h3>E46 3 Series</h3>
-                <p>1999-2006</p>
-                <a href="/resources/bmw/e46/" class="btn">View Resources</a>
-            </div>
+    <!-- BMW Vehicles -->
+    <div class="brand-block">
+        <div class="brand-header">
+            <h3 class="brand-title">BMW</h3>
+            <a href="/resources/bmw/" class="brand-link">View All BMW →</a>
+        </div>
+        <div class="vehicle-grid">
+            {% for key in vehicleList.bmw %}
+            {% set vehicle = vehicles[key] %}
+            <a href="/resources/bmw/{{ key }}/" class="vehicle-card">
+                <div class="vehicle-card-image" style="{% if vehicle.heroImage %}background-image: url('{{ vehicle.heroImage }}'){% endif %}">
+                    <span class="vehicle-badge">{{ vehicle.issues | length }} Issues</span>
+                </div>
+                <div class="vehicle-card-content">
+                    <h4>{{ vehicle.model }}</h4>
+                    <span class="vehicle-years">{{ vehicle.years }}</span>
+                    <span class="vehicle-name">{{ vehicle.fullName | replace("BMW ", "") }}</span>
+                </div>
+            </a>
+            {% endfor %}
         </div>
     </div>
 
-    <div class="brand-section">
-        <h3>Porsche</h3>
-        <div class="resource-grid">
-            <div class="resource-card">
-                <h3>924</h3>
-                <p>1976-1988</p>
-                <a href="/resources/porsche/924/" class="btn">View Resources</a>
-            </div>
-            <div class="resource-card">
-                <h3>944</h3>
-                <p>1982-1991</p>
-                <a href="/resources/porsche/944/" class="btn">View Resources</a>
-            </div>
-            <div class="resource-card">
-                <h3>928</h3>
-                <p>1977-1995</p>
-                <a href="/resources/porsche/928/" class="btn">View Resources</a>
-            </div>
-            <div class="resource-card">
-                <h3>986 Boxster</h3>
-                <p>1996-2004</p>
-                <a href="/resources/porsche/986/" class="btn">View Resources</a>
-            </div>
-            <div class="resource-card">
-                <h3>996 911</h3>
-                <p>1998-2005</p>
-                <a href="/resources/porsche/996/" class="btn">View Resources</a>
-            </div>
-            <div class="resource-card">
-                <h3>997 911</h3>
-                <p>2004-2012</p>
-                <a href="/resources/porsche/997/" class="btn">View Resources</a>
+    <!-- Porsche Vehicles -->
+    <div class="brand-block">
+        <div class="brand-header">
+            <h3 class="brand-title">Porsche</h3>
+            <a href="/resources/porsche/" class="brand-link">View All Porsche →</a>
+        </div>
+        <div class="vehicle-grid">
+            {% for key in vehicleList.porsche %}
+            {% set vehicle = vehicles[key] %}
+            <a href="/resources/porsche/{{ key }}/" class="vehicle-card">
+                <div class="vehicle-card-image" style="{% if vehicle.heroImage %}background-image: url('{{ vehicle.heroImage }}'){% endif %}">
+                    <span class="vehicle-badge">{{ vehicle.issues | length }} Issues</span>
+                </div>
+                <div class="vehicle-card-content">
+                    <h4>{{ vehicle.model }}</h4>
+                    <span class="vehicle-years">{{ vehicle.years }}</span>
+                    <span class="vehicle-name">{{ vehicle.fullName | replace("Porsche ", "") }}</span>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section">
+    <div class="section-header">
+        <h2>Everything You Need</h2>
+        <p>Built by enthusiasts, for enthusiasts</p>
+    </div>
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">🔧</div>
+            <h3>Common Issues</h3>
+            <p>Detailed documentation of known problems with symptoms, causes, and proven fixes. Know what to look for before it becomes expensive.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">💰</div>
+            <h3>Repair Costs</h3>
+            <p>DIY vs shop cost estimates for every repair. Plan your budget with real-world pricing and labor hour estimates.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">📐</div>
+            <h3>Torque Specs</h3>
+            <p>Factory-verified torque specifications for engine, suspension, brakes, and drivetrain. No more guessing or searching forums.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">#</div>
+            <h3>OEM Part Numbers</h3>
+            <p>Genuine part numbers for common replacement items. Cross-reference with aftermarket alternatives to save money.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🛒</div>
+            <h3>Parts Suppliers</h3>
+            <p>Curated lists of trusted OEM, aftermarket, and used parts suppliers. Know where to buy quality parts.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🔍</div>
+            <h3>Powerful Search</h3>
+            <p>Search across all vehicles, issues, specs, and suppliers. Find exactly what you need in seconds.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Tools Section -->
+<section class="tools-section">
+    <div class="tools-container">
+        <div class="tools-content">
+            <span class="section-badge">Free Tools</span>
+            <h2>Tools for the Workshop</h2>
+            <p>Practical tools to help you work smarter. Built for home mechanics and professional shops alike.</p>
+            <div class="tools-list">
+                <a href="/tools/invoice/" class="tool-item">
+                    <div class="tool-icon">📄</div>
+                    <div class="tool-info">
+                        <h4>Invoice Creator</h4>
+                        <p>Generate professional repair invoices with parts, labor, and tax calculations. Export to PDF.</p>
+                    </div>
+                    <span class="tool-arrow">→</span>
+                </a>
+                <div class="tool-item coming-soon">
+                    <div class="tool-icon">📊</div>
+                    <div class="tool-info">
+                        <h4>Maintenance Tracker</h4>
+                        <p>Track service history, set reminders, and never miss an interval again.</p>
+                    </div>
+                    <span class="tool-badge">Coming Soon</span>
+                </div>
+                <div class="tool-item coming-soon">
+                    <div class="tool-icon">🧮</div>
+                    <div class="tool-info">
+                        <h4>Build Cost Calculator</h4>
+                        <p>Estimate restoration and modification costs before you start your project.</p>
+                    </div>
+                    <span class="tool-badge">Coming Soon</span>
+                </div>
             </div>
         </div>
     </div>
-</main>
+</section>
+
+<!-- Community Section -->
+<section class="community-section">
+    <div class="community-container">
+        <div class="community-content">
+            <span class="section-badge">Coming Soon</span>
+            <h2>Join the Community</h2>
+            <p>Connect with fellow enthusiasts, share knowledge, and find parts in our upcoming community features.</p>
+            <div class="community-features">
+                <div class="community-feature">
+                    <h4>💬 Forums</h4>
+                    <p>Technical discussions, project threads, and expert advice</p>
+                </div>
+                <div class="community-feature">
+                    <h4>🏪 Parts Marketplace</h4>
+                    <p>Buy and sell parts within a trusted community</p>
+                </div>
+                <div class="community-feature">
+                    <h4>📅 Events</h4>
+                    <p>Car meets, tech sessions, and driving events</p>
+                </div>
+            </div>
+            <a href="/community/forums/" class="btn btn-secondary">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="cta-container">
+        <h2>Ready to dive in?</h2>
+        <p>Start with your vehicle and discover everything ZRG Classics has to offer.</p>
+        <div class="cta-buttons">
+            <a href="/resources/bmw/" class="btn btn-primary">BMW Resources</a>
+            <a href="/resources/porsche/" class="btn btn-primary">Porsche Resources</a>
+        </div>
+    </div>
+</section>
