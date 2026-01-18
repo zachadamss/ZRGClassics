@@ -30,6 +30,16 @@
   - `npm run build:search` to rebuild search index
   - `npm run build:all` to rebuild search index and site together
 - [x] **Fixed search rendering bug** - Supplier results were crashing search due to undefined `type` field (was using `category`)
+- [x] **Homepage Redesign** - Modern, comprehensive homepage layout
+  - Hero section with background image and gradient overlay
+  - Stats bar (17 vehicles, 130+ issues, 400+ torque specs, 170+ suppliers)
+  - Quick search with popular search links
+  - Vehicle platforms section showing all 17 BMW and Porsche models dynamically
+  - Features section highlighting site capabilities
+  - Tools section with Invoice Creator and coming soon items
+  - Community section preview (forums, marketplace, events)
+  - Full mobile responsive design
+  - Added `vehicleList.json` data file for template iteration
 
 ---
 
