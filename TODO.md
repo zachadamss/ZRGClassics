@@ -115,7 +115,7 @@
 - [ ] Add estimated repair costs to issue cards
 - [ ] Add difficulty ratings for DIY repairs
 - [x] Mobile navigation improvements (hamburger menu)
-- [ ] Search functionality across all resources
+- [x] Search functionality across all resources
 - [ ] Newsletter signup for launch notifications
 - [ ] Add more vehicle platforms (E90, 987, 991, etc.)
 - [x] Add better navigation structure/home page for each brand to see all of the models, and then the same for each model to see all of the resources for that model.
@@ -138,7 +138,7 @@
 - [ ] Improve typography hierarchy on resource pages
 
 ### Features
-- [ ] Add search functionality across all resources
+- [x] Add search functionality across all resources
 - [ ] Add "Related Issues" links between similar problems across platforms
 - [ ] Add print-friendly styling for resource pages (mechanics can print guides)
 - [ ] Add "Report Issue" or "Suggest Edit" links for community contributions
