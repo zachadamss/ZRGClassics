@@ -68,13 +68,53 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.7;
     background-color: var(--background-color);
     color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Scale */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 0;
+}
+
+h1 { font-size: 2.5rem; letter-spacing: -0.02em; }
+h2 { font-size: 2rem; letter-spacing: -0.01em; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1.1rem; }
+h6 { font-size: 1rem; }
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+strong, b {
+    font-weight: 600;
+}
+
+small {
+    font-size: 0.875rem;
+}
+
+/* Label/Overline Text */
+.label, .overline {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 a {
@@ -403,25 +443,28 @@ main {
 }
 
 .hero-badge {
+    font-family: 'Inter', sans-serif;
     display: inline-block;
     background: rgba(242, 101, 34, 0.2);
     border: 1px solid var(--gulf-orange);
     color: var(--gulf-orange);
     padding: 0.5rem 1rem;
     border-radius: var(--radius-full);
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
     margin-bottom: 1.5rem;
 }
 
 .home-hero h1 {
-    font-size: 3rem;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 3.25rem;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.15;
     margin-bottom: 1.5rem;
     color: #fff;
+    letter-spacing: -0.02em;
 }
 
 .home-hero h1 .highlight {
@@ -429,12 +472,15 @@ main {
 }
 
 .hero-subtitle {
-    font-size: 1.25rem;
-    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.85);
     margin-bottom: 2rem;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.7;
 }
 
 .hero-actions {
@@ -469,20 +515,24 @@ main {
 }
 
 .stat-number {
+    font-family: 'Playfair Display', Georgia, serif;
     display: block;
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     font-weight: 700;
     color: var(--gulf-orange);
     line-height: 1;
+    letter-spacing: -0.02em;
 }
 
 .stat-label {
+    font-family: 'Inter', sans-serif;
     display: block;
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.8);
-    margin-top: 0.25rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.75);
+    margin-top: 0.35rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
 }
 
 /* Quick Search Section */
@@ -498,14 +548,19 @@ main {
 }
 
 .quick-search-container h2 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
     color: var(--text-primary);
+    letter-spacing: -0.01em;
 }
 
 .quick-search-container > p {
+    font-family: 'Inter', sans-serif;
     color: var(--text-secondary);
     margin-bottom: 2rem;
+    font-size: 1.05rem;
 }
 
 .home-search-form {
@@ -574,13 +629,18 @@ main {
 }
 
 .section-header h2 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
     color: var(--text-primary);
+    letter-spacing: -0.01em;
 }
 
 .section-header p {
+    font-family: 'Inter', sans-serif;
     color: var(--text-secondary);
+    font-size: 1.05rem;
 }
 
 .brand-block {
@@ -602,16 +662,20 @@ main {
 }
 
 .brand-title {
-    font-size: 1.5rem;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.75rem;
     font-weight: 700;
     color: var(--text-primary);
     margin: 0;
+    letter-spacing: -0.01em;
 }
 
 .brand-link {
+    font-family: 'Inter', sans-serif;
     color: var(--gulf-orange);
     text-decoration: none;
     font-weight: 600;
+    font-size: 0.9rem;
     transition: color 0.2s;
 }
 
@@ -1200,14 +1264,18 @@ button:hover {
     justify-content: space-between;
     align-items: flex-start;
     gap: 1rem;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
     flex-wrap: wrap;
 }
 
 .issue-card h3 {
+    font-family: 'Playfair Display', Georgia, serif;
     color: var(--primary-color);
+    font-size: 1.35rem;
+    font-weight: 600;
     margin-bottom: 0;
     flex: 1;
+    line-height: 1.3;
 }
 
 [data-theme="dark"] .issue-card h3 {
@@ -1215,13 +1283,14 @@ button:hover {
 }
 
 .difficulty-badge {
+    font-family: 'Inter', sans-serif;
     display: inline-block;
-    padding: 0.25rem 0.75rem;
+    padding: 0.3rem 0.85rem;
     border-radius: var(--radius-full);
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     white-space: nowrap;
     flex-shrink: 0;
 }
@@ -1263,26 +1332,50 @@ button:hover {
 }
 
 .issue-card .symptoms {
+    font-family: 'Inter', sans-serif;
     font-style: italic;
     color: var(--text-muted);
-    margin-bottom: 0.75rem;
-    padding: 0.75rem;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    padding: 0.875rem 1rem;
     background-color: var(--background-alt);
     border-radius: var(--radius-sm);
     border-left: 3px solid var(--gulf-blue);
+    line-height: 1.6;
+}
+
+.issue-card .symptoms strong {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
 }
 
 .issue-card .description {
-    margin-bottom: 1rem;
-    line-height: 1.7;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 1.25rem;
+    line-height: 1.75;
+    font-size: 0.95rem;
+    color: var(--text-color);
 }
 
-.issue-card .fix h4 {
+.issue-card .fix h4,
+.issue-card .repair-costs h4,
+.issue-card .parts-list h4 {
+    font-family: 'Inter', sans-serif;
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.75rem;
 }
 
-[data-theme="dark"] .issue-card .fix h4 {
+[data-theme="dark"] .issue-card .fix h4,
+[data-theme="dark"] .issue-card .repair-costs h4,
+[data-theme="dark"] .issue-card .parts-list h4 {
     color: var(--gulf-blue);
 }
 
@@ -1292,18 +1385,28 @@ button:hover {
 }
 
 .issue-card .fix li {
-    margin-bottom: 0.35rem;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
 }
 
 .issue-card .attribution {
-    font-size: 0.85rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
     color: var(--text-muted);
-    padding-top: 0.75rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
     border-top: 1px solid var(--border-color);
+}
+
+.issue-card .attribution p {
+    margin: 0;
 }
 
 .issue-card .attribution a {
     color: var(--gulf-orange);
+    font-weight: 500;
 }
 
 /* Repair Costs Section */
@@ -2432,15 +2535,26 @@ input:focus, textarea:focus, select:focus {
 }
 
 .vehicle-hero h1 {
-    font-size: 2.5rem;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 3rem;
+    font-weight: 700;
     margin-bottom: 1rem;
     color: #fff;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
 }
 
 .vehicle-meta {
+    font-family: 'Inter', sans-serif;
     font-size: 1.1rem;
-    margin-bottom: 1rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
     opacity: 0.9;
+    letter-spacing: 0.02em;
+}
+
+.vehicle-meta .vehicle-years {
+    font-weight: 400;
 }
 
 .vehicle-engines {
@@ -2452,21 +2566,29 @@ input:focus, textarea:focus, select:focus {
 }
 
 .engines-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     margin-right: 0.5rem;
+    opacity: 0.8;
 }
 
 .engine-tag {
-    background-color: rgba(125, 207, 234, 0.3);
-    padding: 0.35rem 0.75rem;
+    font-family: 'Inter', sans-serif;
+    background-color: rgba(125, 207, 234, 0.25);
+    padding: 0.4rem 0.85rem;
     border-radius: var(--radius-full);
-    font-size: 0.9rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    letter-spacing: 0.01em;
 }
 
 [data-theme="dark"] .engine-tag {
-    background-color: rgba(242, 101, 34, 0.3);
-    border-color: rgba(242, 101, 34, 0.5);
+    background-color: rgba(242, 101, 34, 0.25);
+    border-color: rgba(242, 101, 34, 0.4);
 }
 
 /* ================================
@@ -2486,13 +2608,16 @@ input:focus, textarea:focus, select:focus {
 }
 
 .quick-links a {
-    padding: 0.5rem 1rem;
+    font-family: 'Inter', sans-serif;
+    padding: 0.5rem 1.1rem;
     color: var(--primary-color);
     text-decoration: none;
     border: 2px solid var(--gulf-blue);
     border-radius: var(--radius-full);
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
     transition: all 0.2s;
 }
 
@@ -2522,21 +2647,43 @@ input:focus, textarea:focus, select:focus {
 }
 
 .section-title {
+    font-family: 'Playfair Display', Georgia, serif;
     color: var(--primary-color);
-    font-size: 1.75rem;
-    margin-bottom: 0.5rem;
-    padding-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
     border-bottom: 3px solid var(--gulf-orange);
+    letter-spacing: -0.01em;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--gulf-blue);
 }
 
 [data-theme="dark"] .section-title {
     color: var(--gulf-blue);
-    border-bottom-color: var(--gulf-blue);
+    border-bottom-color: rgba(125, 207, 234, 0.3);
+}
+
+[data-theme="dark"] .section-title::after {
+    background-color: var(--gulf-orange);
 }
 
 .section-subtitle {
+    font-family: 'Inter', sans-serif;
     color: var(--text-muted);
-    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    max-width: 600px;
 }
 
 .section-divider {
@@ -2579,9 +2726,12 @@ input:focus, textarea:focus, select:focus {
 }
 
 .guide-card h3 {
+    font-family: 'Playfair Display', Georgia, serif;
     color: var(--primary-color);
     margin-bottom: 0.75rem;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.35;
 }
 
 [data-theme="dark"] .guide-card h3 {
@@ -2589,9 +2739,10 @@ input:focus, textarea:focus, select:focus {
 }
 
 .guide-description {
+    font-family: 'Inter', sans-serif;
     color: var(--text-color);
-    font-size: 0.95rem;
-    line-height: 1.5;
+    font-size: 0.9rem;
+    line-height: 1.6;
     margin-bottom: 1rem;
     flex-grow: 1;
 }
