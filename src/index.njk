@@ -78,7 +78,6 @@ keywords: "classic BMW, classic Porsche, E30, E36, E46, 911, Boxster, Cayman, 94
             {% set vehicle = vehicles[key] %}
             <a href="/resources/bmw/{{ key }}/" class="vehicle-card">
                 <div class="vehicle-card-image" style="{% if vehicle.heroImage %}background-image: url('{{ vehicle.heroImage }}'){% endif %}">
-                    <span class="vehicle-badge">{{ vehicle.issues | length }} Issues</span>
                 </div>
                 <div class="vehicle-card-content">
                     <h4>{{ vehicle.model }}</h4>
@@ -101,7 +100,6 @@ keywords: "classic BMW, classic Porsche, E30, E36, E46, 911, Boxster, Cayman, 94
             {% set vehicle = vehicles[key] %}
             <a href="/resources/porsche/{{ key }}/" class="vehicle-card">
                 <div class="vehicle-card-image" style="{% if vehicle.heroImage %}background-image: url('{{ vehicle.heroImage }}'){% endif %}">
-                    <span class="vehicle-badge">{{ vehicle.issues | length }} Issues</span>
                 </div>
                 <div class="vehicle-card-content">
                     <h4>{{ vehicle.model }}</h4>
