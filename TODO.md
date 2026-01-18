@@ -22,6 +22,14 @@
   - Automatic navigation generation from data
   - Build system with `npm run build` and `npm run serve`
 - [x] **Consolidated About & Contact pages** - Contact form moved to bottom of About page, removed separate Contact page from navigation
+- [x] **Added 8 new vehicle platforms** - BMW E28, E34, E39, E90 and Porsche 964, 987, 991, 993
+  - Full vehicle data files with issues, torque specs, guides, and suppliers
+  - Vehicle page templates for all new models
+  - Updated navigation with new models
+- [x] **Search index build script** - Added `build-search-index.js` for generating search index from vehicle data
+  - `npm run build:search` to rebuild search index
+  - `npm run build:all` to rebuild search index and site together
+- [x] **Fixed search rendering bug** - Supplier results were crashing search due to undefined `type` field (was using `category`)
 
 ---
 
@@ -136,7 +144,7 @@
   - Added comprehensive mobile styles for search results
   - Added mobile styles for vehicle hero, issue cards, guide cards, supplier tabs, specs tables
 - [ ] Newsletter signup for launch notifications
-- [ ] Add more vehicle platforms (E90, 987, 991, etc.)
+- [x] Add more vehicle platforms (E90, 987, 991, etc.) - Added E28, E34, E39, E90, 964, 987, 991, 993
 - [x] Add better navigation structure/home page for each brand to see all of the models, and then the same for each model to see all of the resources for that model.
 - [ ] Adjust color scheme to match color codes of vintage porsche racing in a very aesthetic, modern, and still timeless way.
 - [x] Fix usability on mobile, does not work well, user menu is not fully visible and page is not resizing correctly.
@@ -168,11 +176,14 @@
 - [ ] Add parts links or part numbers where applicable
 
 ### New Platforms to Add
-- [ ] BMW E90/E91/E92/E93 (2005-2013 3 Series)
-- [ ] Porsche 987 Boxster/Cayman (2005-2012)
-- [ ] Porsche 991 911 (2012-2019)
-- [ ] BMW E39 5 Series (1995-2003)
-- [ ] BMW E34 5 Series (1988-1996)
+- [x] BMW E90/E91/E92/E93 (2005-2013 3 Series)
+- [x] Porsche 987 Boxster/Cayman (2005-2012)
+- [x] Porsche 991 911 (2012-2019)
+- [x] BMW E39 5 Series (1995-2003)
+- [x] BMW E34 5 Series (1988-1996)
+- [x] BMW E28 5 Series (1981-1988)
+- [x] Porsche 964 911 (1989-1994)
+- [x] Porsche 993 911 (1994-1998)
 
 ---
 
