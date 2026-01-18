@@ -1,0 +1,257 @@
+{
+  "model": "964",
+  "brand": "Porsche",
+  "fullName": "Porsche 964 911",
+  "years": "1989-1994",
+  "engines": ["3.6L Flat-6 M64/01", "3.6L Flat-6 Turbo M64/50", "3.3L Flat-6 Turbo (early)"],
+  "heroImage": "/images/vehicles/964-hero.jpg",
+  "issues": [
+    {
+      "id": "oil-leaks",
+      "title": "Oil Leaks (Chain Housing and Case Seams)",
+      "symptoms": "Oil spots under car, oil on engine surfaces, visible seepage, low oil level, burning oil smell",
+      "description": "The 964's M64 engine is notorious for oil leaks. The most common source is the chain housing gasket (timing chain cover), but oil also seeps from the case half seams, valve cover gaskets, oil cooler seals, and cam tower o-rings. While some seepage is considered normal for air-cooled engines, excessive leaks require attention.",
+      "fixes": [
+        "Chain housing (timing cover) gasket replacement - most common leak",
+        "Case seam resealing requires engine removal",
+        "Valve cover gaskets - relatively accessible",
+        "Oil cooler hose and fitting inspection",
+        "Cam tower o-rings (requires cam housing removal)",
+        "Use correct Porsche sealant for case seams"
+      ],
+      "sources": [
+        { "name": "Pelican Parts", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "dual-mass-flywheel",
+      "title": "Dual-Mass Flywheel Failure",
+      "symptoms": "Clutch chatter, vibration at idle in gear, rattling noise, difficulty engaging gears",
+      "description": "The 964 was the first 911 to use a dual-mass flywheel (DMF) to smooth out the flat-six's inherent vibration. These flywheels have internal springs and dampers that wear out over time, causing chatter and vibration. A failed DMF can also damage the clutch and transmission input shaft bearing.",
+      "fixes": [
+        "Replace dual-mass flywheel with OEM or single-mass conversion",
+        "Single-mass conversion popular but increases drivetrain NVH",
+        "Replace clutch and throw-out bearing at the same time",
+        "Inspect transmission input shaft bearing while apart",
+        "Consider lightweight flywheel for track use"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    },
+    {
+      "id": "distributor-issues",
+      "title": "Distributor and Ignition Problems",
+      "symptoms": "Hard starting, misfires, rough running, stalling, no spark",
+      "description": "The 964 uses twin distributors driven off the camshafts. The distributor caps, rotors, and internal components wear over time. The distributor drive gears (plastic in early cars) can strip. Moisture intrusion causes cap corrosion and misfires. The dual-distributor system is complex but essential for the engine's operation.",
+      "fixes": [
+        "Replace distributor caps and rotors (quality Bosch parts)",
+        "Inspect and replace distributor drive gear if worn",
+        "Check and clean all ignition connections",
+        "Replace spark plug wires if original",
+        "Upgrade to brass distributor gear (if equipped with plastic)"
+      ],
+      "sources": [
+        { "name": "Pelican Parts", "url": "#" },
+        { "name": "911 Motorsport", "url": "#" }
+      ]
+    },
+    {
+      "id": "power-steering",
+      "title": "Power Steering System Issues",
+      "symptoms": "Whining pump, heavy steering, fluid leaks, lack of assist, groaning noise",
+      "description": "The 964 was the first 911 with standard power steering. The hydraulic system includes a pump, rack, reservoir, and lines that all age. Power steering pump failure is common, as are leaks from the rack seals, high-pressure lines, and return lines. The fluid should be changed regularly.",
+      "fixes": [
+        "Power steering pump rebuild or replacement",
+        "Replace leaking high-pressure and return hoses",
+        "Rack seal replacement or rack rebuild",
+        "Fluid flush and fill (use correct Pentosin fluid)",
+        "Check and clean reservoir screen"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    },
+    {
+      "id": "g50-transmission",
+      "title": "G50 Transmission Synchro Wear",
+      "symptoms": "Grinding when shifting, difficulty engaging gears, blocked shifts, gear pop-out",
+      "description": "The 964 uses the Getrag G50 5-speed transmission. While generally robust, the synchros wear over time, especially second gear. Aggressive driving, improper fluid, and inadequate warm-up accelerate wear. A worn synchro will grind or block when trying to engage the affected gear.",
+      "fixes": [
+        "Regular transmission fluid changes (GL-4 or Swepco 201)",
+        "Synchro replacement during transmission rebuild",
+        "Proper shifting technique and full clutch engagement",
+        "Allow transmission to warm up before aggressive driving",
+        "Some owners run thicker fluid in worn transmissions"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    },
+    {
+      "id": "cylinder-head-studs",
+      "title": "Cylinder Head Stud Failures",
+      "symptoms": "Oil leak at head, coolant seepage, compression loss, misfires",
+      "description": "The M64 engine can develop head stud issues, particularly the through-bolts that secure the heads to the case. These studs can pull out or stretch, especially if the engine has been overheated or has had incorrect torque applied. This is more common on Turbo models due to higher cylinder pressures.",
+      "fixes": [
+        "Head stud inspection during any engine work",
+        "Proper torque procedure critical for reassembly",
+        "Helicoil repair for pulled threads (requires engine removal)",
+        "Through-bolt style studs can be replaced with Dilavar studs",
+        "Always use new hardware when reassembling"
+      ],
+      "sources": [
+        { "name": "Pelican Parts", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "ac-system",
+      "title": "Air Conditioning System Problems",
+      "symptoms": "Weak cooling, no cold air, AC compressor noise, clutch not engaging",
+      "description": "The 964's air conditioning system uses R-12 refrigerant (original) and is complex due to the mid-engine layout. Compressor failures, condenser leaks, and evaporator issues are common in older systems. Many have been converted to R-134a with varying success. The AC evaporator requires dashboard removal to replace.",
+      "fixes": [
+        "R-134a conversion with proper components",
+        "Compressor replacement (denso or OEM)",
+        "Condenser inspection and replacement if leaking",
+        "Evaporator replacement (major labor, dashboard out)",
+        "Receiver-drier replacement with any major AC work",
+        "System leak test before recharging"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    },
+    {
+      "id": "electrical-issues",
+      "title": "Electrical System Problems",
+      "symptoms": "Gauge failures, intermittent lights, dead dashboard, alarm issues, starting problems",
+      "description": "The 964 introduced more electrical complexity than earlier 911s, and these systems age poorly. The DME relay is a common failure point, as are ground connections and the alarm/immobilizer system. Gauge clusters develop cold solder joints. Wiring in the engine bay becomes brittle from heat.",
+      "fixes": [
+        "DME relay replacement (common failure)",
+        "Clean and resecure ground connections",
+        "Gauge cluster solder repair",
+        "Alarm system bypass or repair",
+        "Inspect and repair brittle wiring in engine compartment",
+        "Central electric panel inspection"
+      ],
+      "sources": [
+        { "name": "Pelican Parts", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "id": "engine-reseal",
+      "title": "Engine Resealing",
+      "description": "Comprehensive guide to addressing oil leaks including chain housing and valve covers.",
+      "difficulty": "Advanced",
+      "time": "20-30 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "clutch-dmf",
+      "title": "Clutch and Dual-Mass Flywheel Replacement",
+      "description": "Complete clutch replacement including DMF replacement or conversion options.",
+      "difficulty": "Advanced",
+      "time": "10-14 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "suspension-refresh",
+      "title": "Suspension Refresh",
+      "description": "Rebuild or replace worn suspension components for proper handling.",
+      "difficulty": "Intermediate",
+      "time": "8-12 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "power-steering",
+      "title": "Power Steering System Overhaul",
+      "description": "Pump, rack, and line service for the hydraulic power steering system.",
+      "difficulty": "Intermediate",
+      "time": "6-8 hours",
+      "status": "coming-soon"
+    }
+  ],
+  "suppliers": {
+    "oem": [
+      { "name": "Porsche Classic", "url": "#", "notes": "Genuine Porsche OEM parts" },
+      { "name": "Sunset Porsche Parts", "url": "#", "notes": "OEM Porsche dealer" },
+      { "name": "Pelican Parts", "url": "#", "notes": "Extensive Porsche catalog" }
+    ],
+    "aftermarket": [
+      { "name": "Elephant Racing", "url": "#", "notes": "Suspension specialists" },
+      { "name": "Wevo", "url": "#", "notes": "Shifters and drivetrain" },
+      { "name": "LN Engineering", "url": "#", "notes": "Engine components" }
+    ],
+    "used": [
+      { "name": "Rennlist Classifieds", "url": "#", "notes": "Porsche community marketplace" },
+      { "name": "eBay Motors", "url": "#", "notes": "Used and NOS parts" },
+      { "name": "The Parts Shop", "url": "#", "notes": "Used Porsche parts" }
+    ]
+  },
+  "torqueSpecs": {
+    "engine": [
+      { "component": "Spark Plugs", "spec": "18-22 ft-lbs", "notes": "Anti-seize recommended" },
+      { "component": "Valve Cover Nuts", "spec": "11 ft-lbs", "notes": "Diagonal pattern" },
+      { "component": "Oil Drain Plug", "spec": "37 ft-lbs", "notes": "Replace crush washer" },
+      { "component": "Flywheel Bolts", "spec": "66 ft-lbs + 90°", "notes": "Use new bolts" },
+      { "component": "Chain Housing Bolts", "spec": "17 ft-lbs", "notes": "" },
+      { "component": "Oil Cooler Lines", "spec": "33 ft-lbs", "notes": "Use new sealing washers" }
+    ],
+    "suspension": [
+      { "component": "Wheel Lug Nuts", "spec": "96 ft-lbs", "notes": "Tighten in star pattern" },
+      { "component": "Control Arm Bolts", "spec": "63 ft-lbs", "notes": "Tighten with weight on wheels" },
+      { "component": "Tie Rod End Nut", "spec": "33 ft-lbs", "notes": "Use new cotter pin" },
+      { "component": "Shock Absorber Top Nut", "spec": "55 ft-lbs", "notes": "" },
+      { "component": "Torsion Bar Cover", "spec": "34 ft-lbs", "notes": "" }
+    ],
+    "brakes": [
+      { "component": "Front Caliper Bolts", "spec": "63 ft-lbs", "notes": "" },
+      { "component": "Rear Caliper Bolts", "spec": "43 ft-lbs", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "11-14 ft-lbs", "notes": "Do not overtighten" },
+      { "component": "ABS Sensor Bolt", "spec": "7 ft-lbs", "notes": "" }
+    ]
+  },
+  "diyGuides": [
+    {
+      "id": "oil-change",
+      "title": "Oil Change",
+      "description": "Complete oil and filter change procedure for the M64 engine.",
+      "difficulty": "Easy",
+      "time": "45 min",
+      "status": "coming-soon"
+    },
+    {
+      "id": "brake-pads",
+      "title": "Brake Pad Replacement",
+      "description": "Front and rear brake pad replacement.",
+      "difficulty": "Easy",
+      "time": "1-2 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "distributor-service",
+      "title": "Distributor Cap and Rotor",
+      "description": "Replace distributor caps and rotors on both distributors.",
+      "difficulty": "Easy",
+      "time": "1 hour",
+      "status": "coming-soon"
+    },
+    {
+      "id": "valve-adjustment",
+      "title": "Valve Adjustment",
+      "description": "Check and adjust valve clearances on the M64 engine.",
+      "difficulty": "Intermediate",
+      "time": "2-3 hours",
+      "status": "coming-soon"
+    }
+  ]
+}

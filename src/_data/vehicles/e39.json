@@ -1,0 +1,280 @@
+{
+  "model": "E39",
+  "brand": "BMW",
+  "fullName": "BMW E39 5 Series",
+  "years": "1995-2003",
+  "engines": ["M52 2.5L I6", "M52 2.8L I6", "M54 2.5L I6", "M54 3.0L I6", "M62 4.4L V8", "S62 4.9L V8 (M5)"],
+  "heroImage": "/images/vehicles/e39-hero.jpg",
+  "issues": [
+    {
+      "id": "cooling-system",
+      "title": "Cooling System Failures",
+      "symptoms": "Overheating, coolant leaks, temperature warning, steam from hood, heater issues",
+      "description": "The E39 cooling system is notorious for failures. The expansion tank, radiator, thermostat housing, and water pump are all plastic components that become brittle with heat and age. The electric water pump (auxiliary) also fails. A cooling system failure at highway speed can destroy an engine in minutes - many E39 engines have been lost to overheating.",
+      "fixes": [
+        "Replace expansion tank every 60,000 miles preventatively",
+        "Install aluminum or quality OEM radiator",
+        "Replace water pump (Stewart or Graf metal impeller recommended)",
+        "New thermostat and housing (aluminum housing upgrade available)",
+        "Replace all coolant hoses including small bypass hoses",
+        "Replace auxiliary water pump (electric pump on firewall)",
+        "Consider full cooling system refresh on purchase"
+      ],
+      "sources": [
+        { "name": "Bimmerforums", "url": "#" },
+        { "name": "FCP Euro", "url": "#" }
+      ]
+    },
+    {
+      "id": "vanos-issues",
+      "title": "VANOS System Problems (M52/M54)",
+      "symptoms": "Loss of low-end torque, rough idle, engine hesitation, rattling noise, check engine light",
+      "description": "The dual-VANOS system on M52TU and M54 engines (1999+) adjusts both intake and exhaust cam timing. The seals within the VANOS unit deteriorate, causing loss of variable timing. Symptoms often appear gradually and are sometimes mistaken for other issues. The VANOS solenoids can also fail or become clogged with oil sludge.",
+      "fixes": [
+        "Replace VANOS seals (Beisan Systems or Dr. VANOS kits)",
+        "Clean or replace VANOS solenoids",
+        "Check and clean VANOS oil lines",
+        "Use quality oil and maintain proper oil change intervals",
+        "Full VANOS unit rebuild for severely worn units"
+      ],
+      "sources": [
+        { "name": "Beisan Systems", "url": "#" },
+        { "name": "Bimmerforums", "url": "#" }
+      ]
+    },
+    {
+      "id": "disa-valve",
+      "title": "DISA Valve Failure (M54)",
+      "symptoms": "Rattling/flapping noise from intake, loss of power, check engine light, potential engine damage",
+      "description": "The M54 engine uses a DISA (Differentiated Intake System Adjustment) valve to vary intake runner length. The plastic flap inside can crack and potentially break off, being ingested into the engine and causing catastrophic damage. Early symptoms include a rattling or flapping noise from the intake area.",
+      "fixes": [
+        "Inspect DISA valve - if any cracks visible, replace immediately",
+        "Replace with updated aluminum/stainless flap design",
+        "Rebuild with aftermarket aluminum flap kit",
+        "Do not ignore rattling from the intake area",
+        "Check valve during any intake-related service"
+      ],
+      "sources": [
+        { "name": "Pelican Parts", "url": "#" },
+        { "name": "Bimmerforums", "url": "#" }
+      ]
+    },
+    {
+      "id": "thrust-arm-bushings",
+      "title": "Front Thrust Arm Bushing Failure",
+      "symptoms": "Vibration under braking, steering wheel shimmy, clunking over bumps, wandering steering",
+      "description": "The front thrust arm (tension strut) bushings are a known weak point on the E39. These bushings handle braking forces and wear out relatively quickly, especially with spirited driving. Worn thrust arm bushings cause a pronounced vibration or shimmy during braking and can affect tire wear and alignment.",
+      "fixes": [
+        "Replace thrust arm bushings (Lemforder OEM recommended)",
+        "Consider complete thrust arm replacement if ball joint worn",
+        "Upgraded polyurethane bushings available for firmer feel",
+        "Always replace in pairs",
+        "Alignment required after replacement"
+      ],
+      "sources": [
+        { "name": "FCP Euro", "url": "#" },
+        { "name": "Bimmerforums", "url": "#" }
+      ]
+    },
+    {
+      "id": "timing-chain-guides",
+      "title": "Timing Chain Guide Wear (M62 V8)",
+      "symptoms": "Timing chain rattle on startup, rough running, check engine light, potential catastrophic failure",
+      "description": "The M62 V8 in the 540i uses timing chain guides that wear over time. Early M62 engines (1996-1998) used guides with plastic that would shed and clog the oil pickup. Later M62TU engines (1999-2003) improved the guides but they still wear. Chain guide failure can cause timing to jump and severe engine damage.",
+      "fixes": [
+        "Replace timing chain guides and tensioners",
+        "Use updated guide part numbers with improved material",
+        "Replace secondary air injection rails while apart",
+        "Consider chain replacement if high mileage",
+        "Inspect timing chain guides on any M62 purchase"
+      ],
+      "sources": [
+        { "name": "Bimmerforums", "url": "#" },
+        { "name": "BimmerBoard", "url": "#" }
+      ]
+    },
+    {
+      "id": "valley-pan-gasket",
+      "title": "Valley Pan Gasket Leak (M62 V8)",
+      "symptoms": "Coolant loss without visible external leak, overheating, white smoke from exhaust, coolant mixing with oil",
+      "description": "The M62 V8 has a valley pan between the cylinder banks that can leak coolant into the engine valley or oil system. The gasket degrades from heat and age. Because the leak is internal or into the valley, coolant loss may occur without visible external leaks. This can cause overheating or coolant contamination of oil.",
+      "fixes": [
+        "Replace valley pan gasket",
+        "Requires significant disassembly - often combined with timing guide job",
+        "Replace water pump and thermostat while accessible",
+        "Pressure test cooling system if coolant loss without visible leak",
+        "Check oil for coolant contamination"
+      ],
+      "sources": [
+        { "name": "Pelican Parts", "url": "#" },
+        { "name": "Bimmerforums", "url": "#" }
+      ]
+    },
+    {
+      "id": "oil-leaks",
+      "title": "Oil Leaks",
+      "symptoms": "Oil spots under car, oil smell, visible oil on engine, low oil level, smoke from engine bay",
+      "description": "E39s develop oil leaks from various locations as seals age. Common leak points include the valve cover gasket, oil filter housing gasket (M52/M54), oil pan gasket, VANOS solenoid seals, rear main seal, and power steering hoses. The M62 V8 leaks from additional locations including the valley pan and timing cover.",
+      "fixes": [
+        "Valve cover gasket replacement (common service)",
+        "Oil filter housing gasket (M52/M54) - notorious leak point",
+        "VANOS solenoid o-rings",
+        "Oil pan gasket replacement",
+        "Check power steering hoses and pump",
+        "Address leaks promptly - oil on exhaust is fire hazard"
+      ],
+      "sources": [
+        { "name": "FCP Euro", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    },
+    {
+      "id": "suspension-wear",
+      "title": "Suspension Component Wear",
+      "symptoms": "Clunking, poor handling, uneven tire wear, vague steering, rear end instability",
+      "description": "The E39's multi-link front and rear suspension uses numerous bushings that wear with age. Control arm bushings, thrust arm bushings, rear integral link bushings, and subframe mounts all deteriorate. Worn suspension significantly diminishes the refined handling the E39 is known for.",
+      "fixes": [
+        "Comprehensive front suspension refresh (control arms, thrust arms, tie rods)",
+        "Rear suspension refresh (integral links, trailing arm bushings)",
+        "Replace subframe bushings if worn or torn",
+        "Quality shocks/struts (Bilstein, Sachs)",
+        "All sway bar bushings and end links",
+        "Full alignment after suspension work"
+      ],
+      "sources": [
+        { "name": "FCP Euro", "url": "#" },
+        { "name": "Bimmerforums", "url": "#" }
+      ]
+    },
+    {
+      "id": "pixels-final-stage",
+      "title": "Pixel Failure and HVAC Final Stage Unit",
+      "symptoms": "Missing pixels in radio/cluster, HVAC blower only works on high, intermittent blower operation",
+      "description": "Two common electrical issues: the pixel displays in the instrument cluster and radio fail due to ribbon cable connection issues. Additionally, the HVAC final stage unit (blower resistor) fails, causing the blower to only work on the highest speed setting. Both are relatively common age-related failures.",
+      "fixes": [
+        "Pixel repair via ribbon cable resoldering or replacement",
+        "Professional cluster and radio pixel repair services available",
+        "Replace final stage unit (FSU) for blower speed issues",
+        "Updated FSU designs available with improved reliability",
+        "Both are accessible DIY repairs with basic skills"
+      ],
+      "sources": [
+        { "name": "Bimmerforums", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "id": "cooling-system-overhaul",
+      "title": "Complete Cooling System Overhaul",
+      "description": "Full cooling system refresh including radiator, water pump, hoses, thermostat, and expansion tank.",
+      "difficulty": "Intermediate",
+      "time": "4-6 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "vanos-rebuild",
+      "title": "VANOS Seal Replacement",
+      "description": "Step-by-step guide to rebuilding the dual-VANOS system on M52TU and M54 engines.",
+      "difficulty": "Intermediate",
+      "time": "4-6 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "suspension-refresh",
+      "title": "Front Suspension Refresh",
+      "description": "Complete front suspension overhaul including control arms, thrust arms, and tie rods.",
+      "difficulty": "Intermediate",
+      "time": "8-12 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "m62-timing-guides",
+      "title": "M62 Timing Chain Guide Replacement",
+      "description": "Comprehensive guide to replacing timing chain guides on the M62 V8.",
+      "difficulty": "Advanced",
+      "time": "16-24 hours",
+      "status": "coming-soon"
+    }
+  ],
+  "suppliers": {
+    "oem": [
+      { "name": "BMW Parts", "url": "#", "notes": "Genuine BMW OEM parts" },
+      { "name": "FCP Euro", "url": "#", "notes": "Lifetime replacement guarantee" },
+      { "name": "Pelican Parts", "url": "#", "notes": "Extensive BMW catalog" }
+    ],
+    "aftermarket": [
+      { "name": "Turner Motorsport", "url": "#", "notes": "Performance parts and upgrades" },
+      { "name": "Beisan Systems", "url": "#", "notes": "VANOS repair specialists" },
+      { "name": "Rogue Engineering", "url": "#", "notes": "E39 performance specialists" }
+    ],
+    "used": [
+      { "name": "Bimmerforums Classifieds", "url": "#", "notes": "E39 community marketplace" },
+      { "name": "eBay Motors", "url": "#", "notes": "Used and NOS parts" },
+      { "name": "Car-Part.com", "url": "#", "notes": "Salvage yard inventory" }
+    ]
+  },
+  "torqueSpecs": {
+    "engine": [
+      { "component": "Cylinder Head Bolts (M52/M54)", "spec": "22 ft-lbs + 90° + 90° + 45°", "notes": "Torque-to-yield, new bolts required" },
+      { "component": "Main Bearing Caps (M52/M54)", "spec": "15 ft-lbs + 70°", "notes": "" },
+      { "component": "Connecting Rod Bolts", "spec": "15 ft-lbs + 70°", "notes": "" },
+      { "component": "Valve Cover Bolts", "spec": "9 ft-lbs", "notes": "Do not overtighten" },
+      { "component": "Spark Plugs", "spec": "18-22 ft-lbs", "notes": "" },
+      { "component": "Oil Drain Plug", "spec": "18 ft-lbs", "notes": "Replace crush washer" },
+      { "component": "Oil Filter Housing Bolts", "spec": "18 ft-lbs", "notes": "" },
+      { "component": "VANOS Solenoid", "spec": "11 ft-lbs", "notes": "" },
+      { "component": "DISA Valve Bolts", "spec": "7 ft-lbs", "notes": "" }
+    ],
+    "suspension": [
+      { "component": "Control Arm to Subframe", "spec": "57 ft-lbs", "notes": "Tighten with weight on wheels" },
+      { "component": "Thrust Arm Bolts", "spec": "81 ft-lbs", "notes": "Tighten with weight on wheels" },
+      { "component": "Tie Rod End Nut", "spec": "48 ft-lbs", "notes": "" },
+      { "component": "Wheel Lug Bolts", "spec": "88 ft-lbs", "notes": "Tighten in star pattern" },
+      { "component": "Strut Top Nut", "spec": "18 ft-lbs", "notes": "Hold strut shaft" },
+      { "component": "Front Subframe Bolts", "spec": "74 ft-lbs", "notes": "" },
+      { "component": "Rear Subframe Bolts", "spec": "74 ft-lbs + 90°", "notes": "Stretch bolts" }
+    ],
+    "brakes": [
+      { "component": "Front Caliper Carrier", "spec": "81 ft-lbs", "notes": "" },
+      { "component": "Rear Caliper Carrier", "spec": "48 ft-lbs", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "13 ft-lbs", "notes": "Do not overtighten" },
+      { "component": "ABS Sensor Bolt", "spec": "7 ft-lbs", "notes": "" }
+    ]
+  },
+  "diyGuides": [
+    {
+      "id": "oil-change",
+      "title": "Oil Change",
+      "description": "Complete oil and filter change procedure for M52, M54, and M62 engines.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "status": "coming-soon"
+    },
+    {
+      "id": "brake-pads",
+      "title": "Brake Pad Replacement",
+      "description": "Front and rear brake pad replacement with sensor reset.",
+      "difficulty": "Easy",
+      "time": "1-2 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "expansion-tank",
+      "title": "Expansion Tank Replacement",
+      "description": "Critical preventive maintenance - replace before it fails.",
+      "difficulty": "Easy",
+      "time": "1 hour",
+      "status": "coming-soon"
+    },
+    {
+      "id": "final-stage-unit",
+      "title": "HVAC Final Stage Unit Replacement",
+      "description": "Restore blower motor speed control function.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "status": "coming-soon"
+    }
+  ]
+}

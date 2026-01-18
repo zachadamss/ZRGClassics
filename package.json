@@ -5,6 +5,8 @@
   "main": ".eleventy.js",
   "scripts": {
     "build": "eleventy",
+    "build:search": "node build-search-index.js",
+    "build:all": "node build-search-index.js && eleventy",
     "serve": "eleventy --serve",
     "watch": "eleventy --watch"
   },

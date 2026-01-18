@@ -1,0 +1,261 @@
+{
+  "model": "993",
+  "brand": "Porsche",
+  "fullName": "Porsche 993 911",
+  "years": "1994-1998",
+  "engines": ["3.6L Flat-6 M64/05", "3.8L Flat-6 (RS)", "3.6L Twin-Turbo M64/60"],
+  "heroImage": "/images/vehicles/993-hero.jpg",
+  "issues": [
+    {
+      "id": "oil-leaks",
+      "title": "Oil Leaks (Chain Tensioner and Case Seams)",
+      "symptoms": "Oil spots under car, oil on engine, seepage visible, low oil level, burning smell",
+      "description": "Like its predecessor, the 993 is prone to oil leaks. The most common source is the chain tensioner cover, but leaks also develop at case seams, valve covers, cam tower seals, and oil cooler connections. The 993 added hydraulic valve lifters which also have potential leak points at the lifter galleries.",
+      "fixes": [
+        "Chain tensioner cover reseal (common and accessible)",
+        "Valve cover gaskets replacement",
+        "Cam tower seal replacement (more involved)",
+        "Case seam resealing (requires engine removal)",
+        "Oil cooler line inspection and replacement",
+        "Use correct Porsche sealant specifications"
+      ],
+      "sources": [
+        { "name": "Pelican Parts", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "dual-mass-flywheel",
+      "title": "Dual-Mass Flywheel Wear",
+      "symptoms": "Clutch chatter, vibration at idle, rattling noise, harsh engagement, gear engagement difficulty",
+      "description": "The 993 continues with the dual-mass flywheel to dampen drivetrain vibrations. These flywheels have a service life and their internal springs and dampers wear out. A worn DMF causes chatter, vibration, and can damage the clutch disc and transmission input shaft bearing. Replacement is recommended with any clutch service.",
+      "fixes": [
+        "Replace dual-mass flywheel (OEM or quality aftermarket)",
+        "Single-mass flywheel conversion (increases NVH but more durable)",
+        "Replace clutch disc, pressure plate, and release bearing",
+        "Inspect input shaft bearing while transmission is out",
+        "Resurface or replace DMF if within spec"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    },
+    {
+      "id": "hydraulic-lifters",
+      "title": "Hydraulic Lifter Noise and Failure",
+      "symptoms": "Ticking noise on cold start, persistent ticking, reduced power, misfire, rough idle",
+      "description": "The 993 was the first 911 to use hydraulic valve lifters, eliminating the need for periodic valve adjustments. However, these lifters can develop issues - they may tick on cold start (often normal) or persistently (indicating wear). Using improper oil or extended oil change intervals accelerates lifter wear.",
+      "fixes": [
+        "Use proper viscosity oil (Porsche specification)",
+        "Regular oil changes to maintain lifter hydraulics",
+        "Lifter replacement for persistent ticking (labor intensive)",
+        "Some ticking on cold start is normal - observe if it clears",
+        "Check oil pressure if lifter noise is widespread"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Porsche Club of America", "url": "#" }
+      ]
+    },
+    {
+      "id": "g50-transmission",
+      "title": "G50/52 Transmission Issues",
+      "symptoms": "Grinding into gear, synchro failure, gear pop-out, shift cable wear, notchy shifting",
+      "description": "The 993 uses the G50 six-speed transmission. While robust, synchros wear over time, particularly second gear. The shift cables also wear and need adjustment or replacement. Improper fluid or aggressive cold shifting accelerates synchro wear. Some 993s have the limited-slip differential which has its own service needs.",
+      "fixes": [
+        "Regular transmission fluid changes with GL-4 spec fluid",
+        "Shift cable adjustment or replacement",
+        "Synchro replacement requires transmission rebuild",
+        "Allow transmission to warm up before aggressive shifting",
+        "LSD service if equipped (inspect during trans work)"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    },
+    {
+      "id": "suspension-wear",
+      "title": "Suspension Component Wear",
+      "symptoms": "Clunking over bumps, vague handling, uneven tire wear, loose steering feel, wandering",
+      "description": "The 993 introduced a completely redesigned multi-link rear suspension replacing the semi-trailing arms of earlier 911s. All suspension bushings, ball joints, and tie rods wear over time. The rear suspension has numerous bushings that affect alignment and handling. Worn components significantly diminish the 993's excellent handling.",
+      "fixes": [
+        "Comprehensive suspension inspection and refresh",
+        "Replace all worn bushings (OEM rubber or polyurethane)",
+        "Rear suspension overhaul (multiple bushings per side)",
+        "Front control arm bushings and ball joints",
+        "Replace tie rods and steering components as needed",
+        "Full alignment after suspension work"
+      ],
+      "sources": [
+        { "name": "Elephant Racing", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "power-steering",
+      "title": "Power Steering System Failures",
+      "symptoms": "Whining pump, heavy steering, fluid leaks, intermittent assist, groaning noise",
+      "description": "The 993 hydraulic power steering system shares components with the 964. The pump, rack, hoses, and reservoir all age. Power steering pump bearings fail causing whining. Rack seals leak. Hoses deteriorate internally and externally. Regular fluid changes help longevity.",
+      "fixes": [
+        "Power steering fluid flush (use Pentosin CHF 11S)",
+        "Pump rebuild or replacement",
+        "High-pressure line replacement",
+        "Rack seal replacement or rack rebuild",
+        "Reservoir cleaning and line inspection"
+      ],
+      "sources": [
+        { "name": "Pelican Parts", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "hvac-issues",
+      "title": "Climate Control and HVAC Issues",
+      "symptoms": "AC not cooling, heater not heating, blend door clicking, fan not working, temperature fluctuation",
+      "description": "The 993 climate control system is complex and prone to age-related failures. The blend door actuators (servos) fail, causing clicking noises and incorrect temperature output. The AC compressor, condenser, and evaporator develop issues. The heater core can leak. Blower motor resistors fail.",
+      "fixes": [
+        "Blend door actuator (servo) replacement",
+        "AC system diagnosis and repair",
+        "R-134a conversion if still on R-12",
+        "Heater core replacement (labor intensive)",
+        "Blower motor or resistor replacement",
+        "Full climate control diagnostic before major work"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    },
+    {
+      "id": "turbo-specific",
+      "title": "Turbo-Specific Issues (993 Turbo)",
+      "symptoms": "Boost problems, wastegate issues, intercooler leaks, turbo failure, check engine light",
+      "description": "The 993 Turbo uses twin KKK turbochargers. While generally reliable, the turbo system has specific maintenance needs. Wastegates can stick, boost hoses crack, and intercoolers can develop leaks. Oil feed and drain lines must be inspected. Turbo bearing wear occurs at high mileage.",
+      "fixes": [
+        "Wastegate inspection and service",
+        "Boost hose inspection and replacement",
+        "Intercooler leak testing",
+        "Turbo oil line inspection and replacement",
+        "Turbo rebuild or replacement at high mileage",
+        "Proper warm-up and cool-down procedures"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Planet-9", "url": "#" }
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "id": "engine-reseal",
+      "title": "Engine Resealing Guide",
+      "description": "Comprehensive guide to addressing common oil leaks including chain tensioner and valve covers.",
+      "difficulty": "Advanced",
+      "time": "20-30 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "clutch-dmf",
+      "title": "Clutch and Flywheel Replacement",
+      "description": "Complete clutch replacement including dual-mass flywheel service or conversion.",
+      "difficulty": "Advanced",
+      "time": "10-14 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "suspension-refresh",
+      "title": "Multi-Link Suspension Refresh",
+      "description": "Complete rear suspension overhaul including all bushings and alignment.",
+      "difficulty": "Intermediate",
+      "time": "12-16 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "power-steering",
+      "title": "Power Steering Overhaul",
+      "description": "Pump, rack, and line service for the hydraulic power steering system.",
+      "difficulty": "Intermediate",
+      "time": "6-8 hours",
+      "status": "coming-soon"
+    }
+  ],
+  "suppliers": {
+    "oem": [
+      { "name": "Porsche Classic", "url": "#", "notes": "Genuine Porsche OEM parts" },
+      { "name": "Sunset Porsche Parts", "url": "#", "notes": "OEM Porsche dealer" },
+      { "name": "Pelican Parts", "url": "#", "notes": "Extensive Porsche catalog" }
+    ],
+    "aftermarket": [
+      { "name": "Elephant Racing", "url": "#", "notes": "Suspension specialists" },
+      { "name": "LN Engineering", "url": "#", "notes": "Engine components" },
+      { "name": "Wevo", "url": "#", "notes": "Shifter and drivetrain" },
+      { "name": "FVD Brombacher", "url": "#", "notes": "Performance parts" }
+    ],
+    "used": [
+      { "name": "Rennlist Classifieds", "url": "#", "notes": "Porsche community marketplace" },
+      { "name": "eBay Motors", "url": "#", "notes": "Used and NOS parts" },
+      { "name": "The Parts Shop", "url": "#", "notes": "Used Porsche parts" }
+    ]
+  },
+  "torqueSpecs": {
+    "engine": [
+      { "component": "Spark Plugs", "spec": "18-22 ft-lbs", "notes": "Anti-seize recommended" },
+      { "component": "Valve Cover Nuts", "spec": "11 ft-lbs", "notes": "Diagonal pattern" },
+      { "component": "Oil Drain Plug", "spec": "37 ft-lbs", "notes": "Replace crush washer" },
+      { "component": "Flywheel Bolts", "spec": "66 ft-lbs + 90°", "notes": "Use new bolts" },
+      { "component": "Chain Tensioner Cover", "spec": "17 ft-lbs", "notes": "" },
+      { "component": "Oil Cooler Lines", "spec": "33 ft-lbs", "notes": "New sealing washers" },
+      { "component": "Intake Manifold Nuts", "spec": "7 ft-lbs", "notes": "" }
+    ],
+    "suspension": [
+      { "component": "Wheel Lug Nuts", "spec": "96 ft-lbs", "notes": "Tighten in star pattern" },
+      { "component": "Front Control Arm", "spec": "63 ft-lbs", "notes": "Tighten with weight on wheels" },
+      { "component": "Rear Multi-Link Bolts", "spec": "63 ft-lbs", "notes": "Tighten with weight on wheels" },
+      { "component": "Tie Rod End Nut", "spec": "33 ft-lbs", "notes": "Use new cotter pin" },
+      { "component": "Strut Top Mount", "spec": "55 ft-lbs", "notes": "" },
+      { "component": "Sway Bar End Links", "spec": "34 ft-lbs", "notes": "" }
+    ],
+    "brakes": [
+      { "component": "Front Caliper Bolts", "spec": "63 ft-lbs", "notes": "" },
+      { "component": "Rear Caliper Bolts", "spec": "43 ft-lbs", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "11-14 ft-lbs", "notes": "Do not overtighten" },
+      { "component": "ABS Sensor Bolt", "spec": "7 ft-lbs", "notes": "" }
+    ]
+  },
+  "diyGuides": [
+    {
+      "id": "oil-change",
+      "title": "Oil Change",
+      "description": "Complete oil and filter change for the M64 engine.",
+      "difficulty": "Easy",
+      "time": "45 min",
+      "status": "coming-soon"
+    },
+    {
+      "id": "brake-pads",
+      "title": "Brake Pad Replacement",
+      "description": "Front and rear brake pad replacement.",
+      "difficulty": "Easy",
+      "time": "1-2 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "spark-plugs",
+      "title": "Spark Plug Replacement",
+      "description": "Replace spark plugs on the M64 engine.",
+      "difficulty": "Easy",
+      "time": "1 hour",
+      "status": "coming-soon"
+    },
+    {
+      "id": "serpentine-belt",
+      "title": "Serpentine Belt Replacement",
+      "description": "Replace accessory drive belt and inspect tensioner.",
+      "difficulty": "Easy",
+      "time": "1 hour",
+      "status": "coming-soon"
+    }
+  ]
+}

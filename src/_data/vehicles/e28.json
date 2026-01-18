@@ -1,0 +1,264 @@
+{
+  "model": "E28",
+  "brand": "BMW",
+  "fullName": "BMW E28 5 Series",
+  "years": "1982-1988",
+  "engines": ["M20 2.7L I6", "M30 2.8L I6", "M30 3.2L I6", "M30 3.4L I6", "S38 3.5L I6 (M5)"],
+  "heroImage": "/images/vehicles/e28-hero.jpg",
+  "issues": [
+    {
+      "id": "timing-belt",
+      "title": "Timing Belt Failure (M20 Engine)",
+      "symptoms": "Engine won't start, loud slapping noise before failure, visible belt wear or cracking",
+      "description": "E28s equipped with the M20 engine (528e) use a timing belt that requires regular replacement. The M20 is an interference engine - if the belt fails, pistons will strike valves causing major engine damage. Factory interval is 60,000 miles but many recommend 50,000 miles for safety. The tensioner and water pump should always be replaced at the same time.",
+      "fixes": [
+        "Replace timing belt every 50,000 miles or 4 years (whichever comes first)",
+        "Always replace tensioner and water pump during service",
+        "Replace front crankshaft seal while accessible",
+        "Inspect and replace idler pulleys if showing wear",
+        "Consider upgraded tensioner from later models"
+      ],
+      "sources": [
+        { "name": "Bimmerforums", "url": "#" },
+        { "name": "BMW CCA", "url": "#" }
+      ]
+    },
+    {
+      "id": "timing-chain",
+      "title": "Timing Chain and Guide Wear (M30 Engine)",
+      "symptoms": "Rattling on startup, chain slap noise, timing drift, poor running",
+      "description": "The M30 big-six engines (533i, 535i, M5) use timing chains rather than belts. While chains last longer, the plastic chain guides and tensioner pads deteriorate over time, especially in high-mileage examples. Broken guide pieces can clog the oil pickup. The chain itself stretches with age, affecting timing accuracy.",
+      "fixes": [
+        "Replace timing chain guides and tensioner at 150,000+ miles or if noise present",
+        "Use updated metal-backed guide rails where available",
+        "Replace chain if stretched beyond specification",
+        "Always replace tensioner piston seal during service",
+        "Inspect oil pan for guide debris during service"
+      ],
+      "sources": [
+        { "name": "Bimmerforums", "url": "#" },
+        { "name": "R3VLimited", "url": "#" }
+      ]
+    },
+    {
+      "id": "rust-corrosion",
+      "title": "Rust and Corrosion",
+      "symptoms": "Bubbling paint, rust holes, soft floor pans, damaged fender lips, deteriorated jack points",
+      "description": "E28s are extremely rust-prone, particularly in areas with road salt. Critical areas include the front fenders behind the wheels, rocker panels, rear wheel arches, jack points, battery tray, and trunk floor. The windshield frame and A-pillars can also rust from the inside out. Structural rust can compromise safety.",
+      "fixes": [
+        "Comprehensive rust inspection before purchase (check hidden areas)",
+        "Treat surface rust immediately before it spreads",
+        "Weld in repair panels for structural rust (jack points, floor pans)",
+        "Replace fenders if rust is severe (reproduction panels available)",
+        "Apply rust prevention to undercarriage (POR-15, Fluid Film)",
+        "Keep all drain holes clear to prevent water accumulation"
+      ],
+      "sources": [
+        { "name": "Bimmerforums", "url": "#" },
+        { "name": "R3VLimited", "url": "#" }
+      ]
+    },
+    {
+      "id": "oil-leaks",
+      "title": "Oil Leaks (M30 Engine)",
+      "symptoms": "Oil spots under car, burning oil smell, visible oil on engine, low oil level",
+      "description": "The M30 engine is notorious for oil leaks as gaskets age. Common leak points include the valve cover gasket, oil pan gasket, rear main seal, front crankshaft seal, oil filter housing gasket, and camshaft seal. While often dismissed as 'normal' for old BMWs, these leaks should be addressed to prevent oil starvation and fire risk.",
+      "fixes": [
+        "Replace valve cover gasket with quality BMW or Elring gasket",
+        "Oil pan gasket replacement (requires subframe lowering)",
+        "Rear main seal replacement (requires transmission removal)",
+        "Replace all seals with quality German-made parts",
+        "Address leaks promptly - oil on exhaust is a fire hazard"
+      ],
+      "sources": [
+        { "name": "Bimmerforums", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    },
+    {
+      "id": "electrical-issues",
+      "title": "Electrical System Problems",
+      "symptoms": "Flickering lights, dead gauges, check control warnings, intermittent accessories, starting issues",
+      "description": "E28 electrical systems suffer from age-related degradation. Ground points corrode, causing erratic behavior. The instrument cluster uses early electronics that fail over time. The check control panel (OBC) is a common failure point. Window switches, sunroof motors, and the HVAC blower motor all wear out.",
+      "fixes": [
+        "Clean and re-establish all ground points (multiple locations)",
+        "Rebuild or replace instrument cluster (capacitor replacement common)",
+        "Replace failed check control unit (rebuilds available)",
+        "Clean all fuse box connections and replace corroded fuses",
+        "Replace worn switches and relays with quality parts",
+        "Inspect and repair wiring harness if brittle"
+      ],
+      "sources": [
+        { "name": "E28 Goodies", "url": "#" },
+        { "name": "Bimmerforums", "url": "#" }
+      ]
+    },
+    {
+      "id": "suspension-wear",
+      "title": "Suspension Bushing and Component Wear",
+      "symptoms": "Clunking over bumps, vague steering, uneven tire wear, wandering at speed, poor handling",
+      "description": "After 35+ years, all rubber suspension components in E28s need replacement. Control arm bushings, thrust arm bushings, subframe mounts, and steering components all deteriorate. The front end uses a complex multi-link design that requires careful attention. Worn bushings severely compromise the refined handling these cars are known for.",
+      "fixes": [
+        "Complete front suspension refresh with quality bushings",
+        "Replace control arm and thrust arm bushings (polyurethane available)",
+        "Install new subframe mounts",
+        "Replace tie rod ends and idler arm",
+        "Install new shocks/struts (Bilstein B4 or B6 recommended)",
+        "Replace all sway bar bushings and end links",
+        "Alignment after any suspension work"
+      ],
+      "sources": [
+        { "name": "Ireland Engineering", "url": "#" },
+        { "name": "Bimmerforums", "url": "#" }
+      ]
+    },
+    {
+      "id": "cooling-system",
+      "title": "Cooling System Failures",
+      "symptoms": "Overheating, coolant leaks, temperature gauge fluctuation, heater not working",
+      "description": "The E28 cooling system components degrade with age. Radiators develop leaks at the plastic end tanks, water pumps fail, and thermostats stick. The auxiliary electric fan and its relay are failure points. Overheating an M30 can crack the head, while M20 head gaskets are vulnerable to overheating damage.",
+      "fixes": [
+        "Replace radiator if original (aluminum upgrade recommended)",
+        "New water pump (metal impeller versions preferred)",
+        "Replace thermostat (80°C for warmer climates, 88°C standard)",
+        "Install new coolant hoses (silicone upgrades available)",
+        "Test and replace auxiliary fan and relay if needed",
+        "Flush system and use proper BMW coolant"
+      ],
+      "sources": [
+        { "name": "Pelican Parts", "url": "#" },
+        { "name": "Bimmerforums", "url": "#" }
+      ]
+    },
+    {
+      "id": "fuel-injection",
+      "title": "Fuel Injection Issues",
+      "symptoms": "Hard starting, rough idle, hesitation, poor fuel economy, stalling",
+      "description": "Early E28s use Bosch L-Jetronic fuel injection, while later models use Motronic. Common failures include the airflow meter (AFM), idle control valve (ICV), coolant temperature sensor, and cold start injector. Vacuum leaks from deteriorated hoses cause running problems. Fuel injectors can clog or leak.",
+      "fixes": [
+        "Clean or replace idle control valve (ICV)",
+        "Test airflow meter (AFM) and replace if faulty",
+        "Replace all vacuum hoses with silicone",
+        "New coolant temperature sensor for ECU",
+        "Clean fuel injectors (or replace with new/rebuilt)",
+        "Check fuel pressure and replace pump/filter if low"
+      ],
+      "sources": [
+        { "name": "Bimmerforums", "url": "#" },
+        { "name": "BMW CCA", "url": "#" }
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "id": "m30-rebuild",
+      "title": "M30 Engine Rebuild Guide",
+      "description": "Complete teardown and rebuild of the legendary M30 big-six engine with machine work specifications.",
+      "difficulty": "Advanced",
+      "time": "40+ hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "suspension-refresh",
+      "title": "Front Suspension Overhaul",
+      "description": "Complete front suspension refresh including all bushings, ball joints, and steering components.",
+      "difficulty": "Intermediate",
+      "time": "12-16 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "rust-repair",
+      "title": "Rust Repair and Prevention",
+      "description": "Identifying common rust areas and proper repair techniques for structural and cosmetic rust.",
+      "difficulty": "Advanced",
+      "time": "Varies",
+      "status": "coming-soon"
+    },
+    {
+      "id": "electrical-restoration",
+      "title": "Electrical System Restoration",
+      "description": "Diagnosing and repairing common electrical issues, ground points, and instrument cluster restoration.",
+      "difficulty": "Intermediate",
+      "time": "Varies",
+      "status": "coming-soon"
+    }
+  ],
+  "suppliers": {
+    "oem": [
+      { "name": "BMW Classic Parts", "url": "#", "notes": "Genuine BMW OEM and NLA parts" },
+      { "name": "FCP Euro", "url": "#", "notes": "Lifetime replacement guarantee" },
+      { "name": "Pelican Parts", "url": "#", "notes": "Extensive BMW catalog" }
+    ],
+    "aftermarket": [
+      { "name": "Ireland Engineering", "url": "#", "notes": "Suspension and performance parts" },
+      { "name": "Metric Mechanic", "url": "#", "notes": "M30 engine specialists" },
+      { "name": "Blunt Tech", "url": "#", "notes": "E28 restoration parts" }
+    ],
+    "used": [
+      { "name": "Bimmerforums Classifieds", "url": "#", "notes": "E28 community marketplace" },
+      { "name": "eBay Motors", "url": "#", "notes": "Used and NOS parts" },
+      { "name": "Car-Part.com", "url": "#", "notes": "Salvage yard inventory search" }
+    ]
+  },
+  "torqueSpecs": {
+    "engine": [
+      { "component": "Cylinder Head Bolts (M30)", "spec": "42-44 ft-lbs", "notes": "Cold engine, tighten in sequence" },
+      { "component": "Main Bearing Caps (M30)", "spec": "42-46 ft-lbs", "notes": "" },
+      { "component": "Connecting Rod Bolts (M30)", "spec": "38-41 ft-lbs", "notes": "" },
+      { "component": "Flywheel Bolts", "spec": "72-80 ft-lbs", "notes": "Use thread locker" },
+      { "component": "Valve Cover Nuts", "spec": "7-9 ft-lbs", "notes": "Do not overtighten" },
+      { "component": "Spark Plugs", "spec": "18-22 ft-lbs", "notes": "" },
+      { "component": "Oil Drain Plug", "spec": "18-22 ft-lbs", "notes": "Replace crush washer" },
+      { "component": "Oil Filter Housing Bolt", "spec": "18 ft-lbs", "notes": "" }
+    ],
+    "suspension": [
+      { "component": "Control Arm to Subframe", "spec": "57-65 ft-lbs", "notes": "Tighten with weight on wheels" },
+      { "component": "Thrust Arm Bolts", "spec": "65 ft-lbs", "notes": "Tighten with weight on wheels" },
+      { "component": "Tie Rod End Nut", "spec": "25-33 ft-lbs", "notes": "Use new cotter pin" },
+      { "component": "Wheel Lug Bolts", "spec": "80 ft-lbs", "notes": "Tighten in star pattern" },
+      { "component": "Shock Absorber Top Nut", "spec": "16-18 ft-lbs", "notes": "" },
+      { "component": "Subframe Bolts", "spec": "65 ft-lbs", "notes": "" },
+      { "component": "Sway Bar End Links", "spec": "16-18 ft-lbs", "notes": "" }
+    ],
+    "brakes": [
+      { "component": "Front Caliper Bolts", "spec": "58-72 ft-lbs", "notes": "" },
+      { "component": "Rear Caliper Bolts", "spec": "42-48 ft-lbs", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "11-14 ft-lbs", "notes": "Do not overtighten" },
+      { "component": "Brake Rotor Set Screw", "spec": "9 ft-lbs", "notes": "Use thread locker" }
+    ]
+  },
+  "diyGuides": [
+    {
+      "id": "oil-change",
+      "title": "Oil Change",
+      "description": "Complete guide to oil and filter change on M20 and M30 engines.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "status": "coming-soon"
+    },
+    {
+      "id": "brake-pads",
+      "title": "Brake Pad Replacement",
+      "description": "Front and rear brake pad replacement with rotor inspection.",
+      "difficulty": "Easy",
+      "time": "1-2 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "valve-adjustment",
+      "title": "Valve Adjustment (M30)",
+      "description": "Checking and adjusting valve clearances on the M30 engine.",
+      "difficulty": "Intermediate",
+      "time": "2-3 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "timing-belt",
+      "title": "Timing Belt Replacement (M20)",
+      "description": "Step-by-step timing belt, tensioner, and water pump replacement.",
+      "difficulty": "Intermediate",
+      "time": "4-6 hours",
+      "status": "coming-soon"
+    }
+  ]
+}

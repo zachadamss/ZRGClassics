@@ -1,0 +1,271 @@
+{
+  "model": "E90",
+  "brand": "BMW",
+  "fullName": "BMW E90/E91/E92/E93 3 Series",
+  "years": "2005-2013",
+  "engines": ["N52 3.0L I6", "N54 3.0L Twin-Turbo I6", "N55 3.0L Turbo I6", "N46 2.0L I4", "N20 2.0L Turbo I4", "S65 4.0L V8 (M3)"],
+  "heroImage": "/images/vehicles/e90-hero.jpg",
+  "issues": [
+    {
+      "id": "water-pump-thermostat",
+      "title": "Electric Water Pump and Thermostat Failure",
+      "symptoms": "Overheating, coolant warning, reduced power mode, water pump whining, engine shut down",
+      "description": "The E90 generation was the first to use BMW's electric water pump and electronic thermostat. Both components have high failure rates, typically between 60,000-100,000 miles. When the water pump fails, there is no warning - the engine can overheat rapidly. The pump may also become noisy before complete failure. These are considered wear items requiring proactive replacement.",
+      "fixes": [
+        "Proactive water pump replacement at 80,000 miles",
+        "Replace thermostat at the same time",
+        "Use OEM or quality German-made parts (Pierburg/VDO)",
+        "Don't ignore any coolant warning lights",
+        "Consider replacing when doing timing chain service (N20/N54/N55)"
+      ],
+      "sources": [
+        { "name": "E90Post", "url": "#" },
+        { "name": "Bimmerpost", "url": "#" }
+      ]
+    },
+    {
+      "id": "oil-leaks",
+      "title": "Oil Leaks (Valve Cover and Oil Filter Housing)",
+      "symptoms": "Oil smell, visible oil on engine, oil spots under car, smoke from engine bay, low oil warning",
+      "description": "The E90's N52 and N5x engines develop oil leaks as they age. The valve cover gasket is a very common leak point due to the plastic valve cover warping from heat. The oil filter housing gasket (OFHG) is another notorious leak point that can drip oil onto hot exhaust components, creating fire risk and smoke.",
+      "fixes": [
+        "Valve cover gasket replacement - consider replacing entire valve cover (plastic warps)",
+        "Oil filter housing gasket - common leak, relatively accessible",
+        "Oil cooler gasket (if equipped)",
+        "Eccentric shaft sensor seal (N52)",
+        "Address oil leaks promptly - oil on exhaust is fire hazard"
+      ],
+      "sources": [
+        { "name": "FCP Euro", "url": "#" },
+        { "name": "E90Post", "url": "#" }
+      ]
+    },
+    {
+      "id": "hpfp-failure",
+      "title": "High Pressure Fuel Pump Failure (N54/N55)",
+      "symptoms": "Long crank time, rough idle, loss of power, engine stalling, check engine light, limp mode",
+      "description": "The N54 and early N55 engines use a mechanical high-pressure fuel pump (HPFP) driven by the intake camshaft. Early versions were prone to failure, causing drivability issues or complete stalling. BMW extended warranty coverage on early pumps. Later revisions improved reliability.",
+      "fixes": [
+        "Check for updated HPFP part number (several revisions exist)",
+        "Replace with latest revision pump if experiencing issues",
+        "Monitor fuel pressure with diagnostic tool if symptoms appear",
+        "Later production N55 engines have improved pumps"
+      ],
+      "sources": [
+        { "name": "N54Tech", "url": "#" },
+        { "name": "Bimmerpost", "url": "#" }
+      ]
+    },
+    {
+      "id": "injector-issues",
+      "title": "Fuel Injector Problems (N54/N55)",
+      "symptoms": "Rough idle, misfires, check engine light, poor fuel economy, hesitation",
+      "description": "The direct injection N54 engine is known for fuel injector issues, including leaking and failure to atomize fuel properly. The piezoelectric injectors are expensive and can fail individually or multiple at once. Index 12 injectors are the latest revision with improved reliability. N55 injectors are generally more reliable but can still fail.",
+      "fixes": [
+        "Replace failed injectors with latest index revision (Index 12 for N54)",
+        "Replace all injectors at once if multiple failures (common on N54)",
+        "Verify injector index before ordering",
+        "Use quality fuel to reduce injector wear",
+        "Walnut blast intake valves while replacing injectors"
+      ],
+      "sources": [
+        { "name": "N54Tech", "url": "#" },
+        { "name": "E90Post", "url": "#" }
+      ]
+    },
+    {
+      "id": "vanos-issues",
+      "title": "VANOS Solenoid and System Issues",
+      "symptoms": "Rough idle, loss of power, engine rattle, check engine light, fault codes for VANOS",
+      "description": "All E90 engines use VANOS variable valve timing. The VANOS solenoids can fail or become clogged with oil sludge, especially with extended oil change intervals. The N54 and N55 also have VANOS-related issues with the adjustment units themselves, including the bolts backing out and damaging components.",
+      "fixes": [
+        "Replace VANOS solenoids (relatively inexpensive service)",
+        "Clean VANOS system if sludge buildup suspected",
+        "Use quality oil and don't exceed oil change intervals",
+        "N54/N55: VANOS bolt recall - verify upgrade bolts installed",
+        "Timing chain tensioner service may be needed (N20)"
+      ],
+      "sources": [
+        { "name": "Beisan Systems", "url": "#" },
+        { "name": "Bimmerpost", "url": "#" }
+      ]
+    },
+    {
+      "id": "wastegate-rattle",
+      "title": "Turbo Wastegate Rattle (N54)",
+      "symptoms": "Rattling noise on cold start, rattle under load, metallic rattling from engine bay",
+      "description": "The N54's twin turbochargers develop wastegate rattle due to wear in the wastegate actuator mechanism. The rattle is typically worst on cold startup and may diminish when warm. While the turbos still function with this rattle, it indicates wear that will eventually require turbo replacement or rebuild.",
+      "fixes": [
+        "Wastegate actuator replacement or adjustment (temporary fix)",
+        "Turbo rebuild with upgraded wastegate components",
+        "Turbo replacement (OEM or upgraded aftermarket units)",
+        "Upgraded pure turbos or Vargas units for performance builds"
+      ],
+      "sources": [
+        { "name": "N54Tech", "url": "#" },
+        { "name": "E90Post", "url": "#" }
+      ]
+    },
+    {
+      "id": "carbon-buildup",
+      "title": "Carbon Buildup on Intake Valves (Direct Injection Engines)",
+      "symptoms": "Rough idle, misfires, reduced power, poor fuel economy, hesitation",
+      "description": "All direct injection engines (N54, N55, N20) are susceptible to carbon buildup on the intake valves. Because fuel is injected directly into the cylinder rather than onto the valves, there is no fuel washing the valves clean. Over time, carbon deposits accumulate, affecting airflow and performance. Walnut blasting is the standard solution.",
+      "fixes": [
+        "Walnut shell blasting every 50,000-80,000 miles",
+        "Chemical treatments (less effective but less invasive)",
+        "Catch can installation to reduce oil vapor deposits",
+        "Use quality fuel with good detergent additives",
+        "Combine with injector replacement or other intake work"
+      ],
+      "sources": [
+        { "name": "E90Post", "url": "#" },
+        { "name": "N54Tech", "url": "#" }
+      ]
+    },
+    {
+      "id": "rod-bearings",
+      "title": "Rod Bearing Wear (S65 M3)",
+      "symptoms": "Knocking noise, engine rattle, low oil pressure, metal in oil",
+      "description": "The S65 V8 in the E90/E92/E93 M3 has a known rod bearing wear issue. The factory bearings can wear prematurely, especially with track use or aggressive driving. If caught early, bearings can be replaced. If ignored, bearing failure leads to catastrophic engine damage. Oil analysis is crucial for monitoring.",
+      "fixes": [
+        "Regular oil analysis to detect bearing wear early (essential for M3 owners)",
+        "Proactive rod bearing replacement (BE bearings recommended)",
+        "Use appropriate oil (10W-60 recommended for track use)",
+        "Proper warm-up and cool-down procedures",
+        "Address any abnormal noise immediately"
+      ],
+      "sources": [
+        { "name": "M3Post", "url": "#" },
+        { "name": "Bimmerpost", "url": "#" }
+      ]
+    },
+    {
+      "id": "timing-chain",
+      "title": "Timing Chain and Guide Issues (N20/N54/N55)",
+      "symptoms": "Timing chain rattle, rough running, check engine light, chain stretch codes, failure to start",
+      "description": "The N20 four-cylinder engine has documented timing chain stretch and guide wear issues, sometimes at relatively low mileage. The N54 and N55 six-cylinders can also have chain and guide wear at high mileage. Ignoring chain stretch can lead to jumped timing and engine damage.",
+      "fixes": [
+        "Monitor for timing chain stretch via diagnostic codes",
+        "Replace chain, guides, and tensioner as a kit",
+        "N20: Known issue - may be covered under BMW's extended coverage",
+        "Consider proactive replacement on high-mileage N54/N55",
+        "Replace water pump and thermostat while apart"
+      ],
+      "sources": [
+        { "name": "Bimmerpost", "url": "#" },
+        { "name": "FCP Euro", "url": "#" }
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "id": "water-pump",
+      "title": "Water Pump and Thermostat Replacement",
+      "description": "Proactive replacement of the electric water pump and electronic thermostat.",
+      "difficulty": "Intermediate",
+      "time": "3-5 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "valve-cover",
+      "title": "Valve Cover and Gasket Replacement",
+      "description": "Replace leaking valve cover gasket or entire valve cover assembly.",
+      "difficulty": "Intermediate",
+      "time": "2-4 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "walnut-blast",
+      "title": "Intake Valve Walnut Blasting",
+      "description": "Remove carbon deposits from intake valves on direct injection engines.",
+      "difficulty": "Intermediate",
+      "time": "4-6 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "rod-bearing",
+      "title": "S65 Rod Bearing Replacement",
+      "description": "Preventive rod bearing service for the E9X M3 S65 V8.",
+      "difficulty": "Advanced",
+      "time": "12-16 hours",
+      "status": "coming-soon"
+    }
+  ],
+  "suppliers": {
+    "oem": [
+      { "name": "BMW Parts", "url": "#", "notes": "Genuine BMW OEM parts" },
+      { "name": "FCP Euro", "url": "#", "notes": "Lifetime replacement guarantee" },
+      { "name": "ECS Tuning", "url": "#", "notes": "OEM and aftermarket" }
+    ],
+    "aftermarket": [
+      { "name": "Turner Motorsport", "url": "#", "notes": "Performance parts" },
+      { "name": "BimmerWorld", "url": "#", "notes": "Track-focused parts" },
+      { "name": "Burger Motorsports", "url": "#", "notes": "N54/N55 performance" },
+      { "name": "Pure Turbos", "url": "#", "notes": "Upgraded turbo units" }
+    ],
+    "used": [
+      { "name": "E90Post Classifieds", "url": "#", "notes": "E90 community marketplace" },
+      { "name": "eBay Motors", "url": "#", "notes": "Used and aftermarket" },
+      { "name": "Car-Part.com", "url": "#", "notes": "Salvage yard inventory" }
+    ]
+  },
+  "torqueSpecs": {
+    "engine": [
+      { "component": "Spark Plugs (N52)", "spec": "17 ft-lbs", "notes": "" },
+      { "component": "Spark Plugs (N54/N55)", "spec": "17 ft-lbs", "notes": "Anti-seize not needed" },
+      { "component": "Valve Cover Bolts (N52)", "spec": "9 ft-lbs", "notes": "Specific sequence required" },
+      { "component": "Oil Drain Plug", "spec": "18 ft-lbs", "notes": "Replace crush washer" },
+      { "component": "Oil Filter Housing Bolts", "spec": "18 ft-lbs", "notes": "" },
+      { "component": "Intake Manifold (N52)", "spec": "7 ft-lbs", "notes": "" },
+      { "component": "Charge Pipe Clamps (N54/N55)", "spec": "5 ft-lbs", "notes": "" }
+    ],
+    "suspension": [
+      { "component": "Wheel Lug Bolts", "spec": "88 ft-lbs", "notes": "Tighten in star pattern" },
+      { "component": "Control Arm Bolts", "spec": "74 ft-lbs", "notes": "Tighten with weight on wheels" },
+      { "component": "Strut Top Nut", "spec": "25 ft-lbs", "notes": "" },
+      { "component": "Tie Rod Nut", "spec": "52 ft-lbs", "notes": "" },
+      { "component": "Subframe Bolts", "spec": "74 ft-lbs + 90°", "notes": "Stretch bolts, replace" }
+    ],
+    "brakes": [
+      { "component": "Front Caliper Carrier", "spec": "81 ft-lbs", "notes": "" },
+      { "component": "Rear Caliper Carrier", "spec": "48 ft-lbs", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "13 ft-lbs", "notes": "" },
+      { "component": "Pad Wear Sensor", "spec": "Hand tight", "notes": "Clips into place" }
+    ]
+  },
+  "diyGuides": [
+    {
+      "id": "oil-change",
+      "title": "Oil Change",
+      "description": "Complete oil and filter change for N52, N54, and N55 engines.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "status": "coming-soon"
+    },
+    {
+      "id": "brake-pads",
+      "title": "Brake Pad Replacement",
+      "description": "Front and rear brake pad replacement with sensor reset.",
+      "difficulty": "Easy",
+      "time": "1-2 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "spark-plugs",
+      "title": "Spark Plug Replacement",
+      "description": "Spark plug replacement for all E90 engine variants.",
+      "difficulty": "Easy",
+      "time": "1-2 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "oil-filter-housing",
+      "title": "Oil Filter Housing Gasket",
+      "description": "Replace the notorious leaking oil filter housing gasket.",
+      "difficulty": "Intermediate",
+      "time": "2-3 hours",
+      "status": "coming-soon"
+    }
+  ]
+}

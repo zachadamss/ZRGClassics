@@ -1,0 +1,255 @@
+{
+  "model": "987",
+  "brand": "Porsche",
+  "fullName": "Porsche 987 Boxster/Cayman",
+  "years": "2005-2012",
+  "engines": ["2.7L Flat-6 M97/MA1", "2.9L Flat-6 MA1 (987.2)", "3.2L Flat-6 M97 (987.1 S)", "3.4L Flat-6 M97/MA1 (S/R)"],
+  "heroImage": "/images/vehicles/987-hero.jpg",
+  "issues": [
+    {
+      "id": "ims-bearing",
+      "title": "IMS Bearing Failure (987.1 Only)",
+      "symptoms": "Metallic debris in oil, grinding noise, oil pressure warning, catastrophic engine failure",
+      "description": "The 987.1 (2005-2008) uses the M97 engine which has the IMS (intermediate shaft) bearing that can fail. This dual-row bearing supports the intermediate shaft that drives the camshafts. When it fails, metal debris contaminates the engine and failure is catastrophic. The 987.2 (2009+) uses a different engine design with no IMS bearing concern.",
+      "fixes": [
+        "987.1: Proactive IMS bearing replacement highly recommended",
+        "LN Engineering or IMS Retrofit single-row bearing upgrade",
+        "Regular oil analysis to detect early bearing wear",
+        "987.2: No IMS bearing - not a concern on these models",
+        "Always verify production date when purchasing a 987"
+      ],
+      "sources": [
+        { "name": "LN Engineering", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "bore-scoring",
+      "title": "Bore Scoring / Cylinder Wear (987.1)",
+      "symptoms": "Ticking/knocking noise, smoke on cold start, excessive oil consumption, low compression",
+      "description": "The M97 engine in the 987.1 can develop cylinder bore scoring, where the cylinder walls become damaged, allowing oil to bypass the piston rings. Cylinder 6 is most commonly affected due to cooling system design. The 987.2 with the MA1 engine has improved cooling and does not have this issue.",
+      "fixes": [
+        "Borescope inspection essential for pre-purchase (987.1)",
+        "Minor scoring: monitor with oil analysis, use quality oil",
+        "Moderate scoring: cylinder sleeving by specialists",
+        "Severe scoring: engine rebuild or replacement",
+        "Prevention: proper warm-up, quality oil, avoid short trips"
+      ],
+      "sources": [
+        { "name": "Flat Six Innovations", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "rms-leak",
+      "title": "Rear Main Seal Leak (987.1)",
+      "symptoms": "Oil drips from bell housing area, oil smell, clutch slipping (manual), burning oil smell",
+      "description": "The M97 engine in the 987.1 can develop rear main seal (RMS) leaks, similar to the 997.1. Oil leaks onto the clutch in manual transmission cars, causing slippage. The leak can also affect the intermediate plate seal. This is less common in the 987.2.",
+      "fixes": [
+        "Rear main seal replacement (requires transmission removal)",
+        "Replace clutch if contaminated with oil",
+        "Often combined with IMS bearing upgrade to save labor",
+        "Use updated seal design for longer service life",
+        "Inspect intermediate plate seal while apart"
+      ],
+      "sources": [
+        { "name": "Pelican Parts", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "aos-failure",
+      "title": "Air/Oil Separator (AOS) Failure",
+      "symptoms": "Smoke from exhaust, oil consumption, rough idle, check engine light, vacuum leaks",
+      "description": "The AOS separates oil vapor from crankcase gases. When it fails, oil is drawn into the intake manifold and burned, causing smoke and consumption. The AOS diaphragm can also tear, creating a vacuum leak that affects idle quality. This affects both 987.1 and 987.2 models.",
+      "fixes": [
+        "AOS replacement (located under intake manifold)",
+        "Replace vacuum lines while accessible",
+        "Updated AOS design available for better durability",
+        "Check for collateral damage from oil in intake",
+        "Clean throttle body if oil contaminated"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    },
+    {
+      "id": "coolant-pipes",
+      "title": "Coolant Pipe and System Failures",
+      "symptoms": "Coolant loss, overheating, coolant warning, sweet smell, puddles under car",
+      "description": "The 987's mid-engine layout requires long coolant runs from the front-mounted radiators to the rear engine. Plastic coolant pipes, water pump, and expansion tank all degrade with heat and age. Coolant pipe failure can cause overheating and engine damage if not addressed immediately.",
+      "fixes": [
+        "Replace plastic coolant pipes with aluminum upgrade",
+        "Replace water pump with metal impeller version",
+        "New expansion tank (common failure point)",
+        "Replace thermostat during cooling system work",
+        "Flush and refill with proper coolant mix"
+      ],
+      "sources": [
+        { "name": "FCP Euro", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "convertible-top",
+      "title": "Convertible Top Issues (Boxster)",
+      "symptoms": "Top won't open/close, slow operation, error messages, hydraulic leaks, torn fabric",
+      "description": "The Boxster's power convertible top is complex and can develop issues. The hydraulic pump and rams wear, causing slow operation or failure to complete cycles. Microswitches fail, preventing operation. The fabric top itself wears and can develop tears or leaks at seams and the rear window.",
+      "fixes": [
+        "Hydraulic fluid top-off (use correct fluid)",
+        "Hydraulic pump and ram replacement",
+        "Microswitch adjustment or replacement",
+        "Top fabric replacement for tears or worn seams",
+        "Rear window replacement if delaminating",
+        "Convertible top reset procedure after battery disconnect"
+      ],
+      "sources": [
+        { "name": "Pelican Parts", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "carbon-buildup",
+      "title": "Carbon Buildup on Intake Valves (987.2 DFI)",
+      "symptoms": "Rough idle, misfires, reduced power, hesitation, poor fuel economy",
+      "description": "The 987.2 uses direct fuel injection (DFI) which doesn't wash the intake valves with fuel. Over time, carbon deposits accumulate on the intake valves, affecting airflow and combustion. This requires periodic cleaning via walnut shell blasting, typically every 50,000-80,000 miles.",
+      "fixes": [
+        "Walnut shell blasting to remove carbon deposits",
+        "Chemical treatments (less effective but less invasive)",
+        "Catch can installation to reduce oil vapor deposits",
+        "Use quality fuel with good detergent additives",
+        "Periodic spirited driving to help burn off deposits"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Planet-9", "url": "#" }
+      ]
+    },
+    {
+      "id": "window-regulators",
+      "title": "Window Regulator Failure",
+      "symptoms": "Window won't go up/down, grinding noise, slow window operation, window drops",
+      "description": "The 987's frameless windows use regulators that wear over time. The cable-driven regulators can fail, causing the window to drop or operate erratically. Since the windows must drop slightly for the door to open and close, a failed regulator can make it difficult to close the door properly.",
+      "fixes": [
+        "Window regulator replacement",
+        "Motor replacement if regulator is intact but motor failed",
+        "Check door seal condition when windows are serviced",
+        "Lubricate window guides during service",
+        "Window reset procedure after replacement"
+      ],
+      "sources": [
+        { "name": "Pelican Parts", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "id": "ims-bearing",
+      "title": "IMS Bearing Replacement (987.1)",
+      "description": "Complete guide to IMS bearing upgrade for 987.1 models.",
+      "difficulty": "Advanced",
+      "time": "10-14 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "coolant-pipes",
+      "title": "Coolant Pipe Upgrade",
+      "description": "Replace plastic coolant pipes with aluminum upgrade kit.",
+      "difficulty": "Intermediate",
+      "time": "4-6 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "aos-replacement",
+      "title": "Air/Oil Separator Replacement",
+      "description": "Replace the AOS to eliminate smoke and oil consumption.",
+      "difficulty": "Intermediate",
+      "time": "3-4 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "walnut-blast",
+      "title": "Intake Valve Carbon Cleaning (987.2)",
+      "description": "Walnut shell blasting procedure for DFI engines.",
+      "difficulty": "Intermediate",
+      "time": "4-6 hours",
+      "status": "coming-soon"
+    }
+  ],
+  "suppliers": {
+    "oem": [
+      { "name": "Porsche Parts", "url": "#", "notes": "Genuine Porsche OEM" },
+      { "name": "FCP Euro", "url": "#", "notes": "Lifetime replacement guarantee" },
+      { "name": "Pelican Parts", "url": "#", "notes": "Extensive Porsche catalog" }
+    ],
+    "aftermarket": [
+      { "name": "LN Engineering", "url": "#", "notes": "IMS bearing specialists" },
+      { "name": "Flat 6 Innovations", "url": "#", "notes": "Engine specialists" },
+      { "name": "Softronic", "url": "#", "notes": "ECU tuning" },
+      { "name": "Fabspeed", "url": "#", "notes": "Exhaust and performance" }
+    ],
+    "used": [
+      { "name": "Rennlist Classifieds", "url": "#", "notes": "Porsche community marketplace" },
+      { "name": "Planet-9 Classifieds", "url": "#", "notes": "Boxster/Cayman forum" },
+      { "name": "eBay Motors", "url": "#", "notes": "Used and NOS parts" }
+    ]
+  },
+  "torqueSpecs": {
+    "engine": [
+      { "component": "Spark Plugs", "spec": "22 ft-lbs", "notes": "" },
+      { "component": "Oil Drain Plug", "spec": "37 ft-lbs", "notes": "Replace crush washer" },
+      { "component": "Intake Manifold", "spec": "7 ft-lbs", "notes": "" },
+      { "component": "AOS Mounting Bolts", "spec": "7 ft-lbs", "notes": "" },
+      { "component": "Coolant Pipe Fittings", "spec": "15 ft-lbs", "notes": "New o-rings" }
+    ],
+    "suspension": [
+      { "component": "Wheel Lug Nuts", "spec": "96 ft-lbs", "notes": "Tighten in star pattern" },
+      { "component": "Control Arm Bolts", "spec": "63 ft-lbs", "notes": "Tighten at ride height" },
+      { "component": "Tie Rod End Nut", "spec": "37 ft-lbs", "notes": "" },
+      { "component": "Strut Top Nut", "spec": "44 ft-lbs", "notes": "" },
+      { "component": "Sway Bar End Links", "spec": "48 ft-lbs", "notes": "" }
+    ],
+    "brakes": [
+      { "component": "Front Caliper Bolts", "spec": "63 ft-lbs", "notes": "" },
+      { "component": "Rear Caliper Bolts", "spec": "63 ft-lbs", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "13 ft-lbs", "notes": "" },
+      { "component": "Pad Wear Sensor", "spec": "Hand tight", "notes": "" }
+    ]
+  },
+  "diyGuides": [
+    {
+      "id": "oil-change",
+      "title": "Oil Change",
+      "description": "Complete oil and filter change for M97 and MA1 engines.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "status": "coming-soon"
+    },
+    {
+      "id": "brake-pads",
+      "title": "Brake Pad Replacement",
+      "description": "Front and rear brake pad replacement.",
+      "difficulty": "Easy",
+      "time": "1-2 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "spark-plugs",
+      "title": "Spark Plug Replacement",
+      "description": "Replace spark plugs on the flat-6 engine.",
+      "difficulty": "Easy",
+      "time": "1 hour",
+      "status": "coming-soon"
+    },
+    {
+      "id": "serpentine-belt",
+      "title": "Serpentine Belt Replacement",
+      "description": "Replace accessory drive belt and tensioner.",
+      "difficulty": "Easy",
+      "time": "1 hour",
+      "status": "coming-soon"
+    }
+  ]
+}

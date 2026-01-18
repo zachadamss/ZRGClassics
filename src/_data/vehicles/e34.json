@@ -1,0 +1,264 @@
+{
+  "model": "E34",
+  "brand": "BMW",
+  "fullName": "BMW E34 5 Series",
+  "years": "1988-1996",
+  "engines": ["M20 2.5L I6", "M50 2.5L I6", "M50TU 2.5L I6 VANOS", "M30 3.5L I6", "M60 3.0L V8", "M60 4.0L V8", "S38 3.6L I6 (M5)"],
+  "heroImage": "/images/vehicles/e34-hero.jpg",
+  "issues": [
+    {
+      "id": "timing-chain-guides",
+      "title": "Timing Chain Guide Failure (M60 V8)",
+      "symptoms": "Rattling on startup, chain noise, engine warning lights, catastrophic failure risk",
+      "description": "The M60 V8 engine in the 530i and 540i has timing chain guides made from a defective Nikasil-coated material that degrades and breaks apart. Broken guide pieces can jam the chain or clog the oil pickup, leading to catastrophic engine failure. This is considered a must-do service item on any M60-equipped E34.",
+      "fixes": [
+        "Replace timing chain guides with updated parts immediately",
+        "Use the updated BMW guide part numbers with improved material",
+        "Replace chain tensioners at the same time",
+        "Inspect timing chains for stretch while access is available",
+        "Clear oil pan of any debris during service"
+      ],
+      "sources": [
+        { "name": "Bimmerforums", "url": "#" },
+        { "name": "M5Board", "url": "#" }
+      ]
+    },
+    {
+      "id": "vanos-issues",
+      "title": "VANOS Problems (M50TU Engine)",
+      "symptoms": "Loss of low-end power, rough idle, rattling noise, check engine light, poor fuel economy",
+      "description": "The M50TU engine introduced BMW's first VANOS (variable valve timing) system. The VANOS unit uses oil pressure to adjust intake cam timing. Seals within the unit harden and fail with age, causing loss of variable timing function. The unit can also develop mechanical wear in the helical gear mechanism.",
+      "fixes": [
+        "Replace VANOS seals (rebuild kits available)",
+        "Check and replace VANOS piston rings if worn",
+        "Ensure proper oil pressure and use quality oil",
+        "Full VANOS unit replacement if mechanically worn",
+        "Dr. VANOS and Beisan Systems offer quality rebuild kits"
+      ],
+      "sources": [
+        { "name": "Bimmerforums", "url": "#" },
+        { "name": "Beisan Systems", "url": "#" }
+      ]
+    },
+    {
+      "id": "cooling-system",
+      "title": "Cooling System Failures",
+      "symptoms": "Overheating, coolant leaks, temperature warning, heater problems, expansion tank cracking",
+      "description": "The E34 cooling system uses plastic components that become brittle with age and heat cycles. The expansion tank, radiator end tanks, thermostat housing, and coolant hoses all fail. The water pump impeller can also degrade. Overheating can cause head gasket failure (especially M50) or head warping (M60).",
+      "fixes": [
+        "Replace expansion tank (common failure point)",
+        "Install aluminum or quality OEM radiator",
+        "Replace water pump with metal impeller version",
+        "New thermostat and housing",
+        "Replace all coolant hoses (silicone upgrade available)",
+        "Flush system and use BMW-approved coolant"
+      ],
+      "sources": [
+        { "name": "Pelican Parts", "url": "#" },
+        { "name": "FCP Euro", "url": "#" }
+      ]
+    },
+    {
+      "id": "pixel-display",
+      "title": "Instrument Cluster Pixel Failure",
+      "symptoms": "Missing pixels in odometer/OBC display, complete display failure, intermittent display",
+      "description": "The E34's digital displays use ribbon cables with connections that fail over time due to heat cycling. This affects the odometer, on-board computer (OBC), and check control displays. The issue is cosmetic but can make it difficult to read important information.",
+      "fixes": [
+        "Solder repair of ribbon cable connections",
+        "Ribbon cable replacement with improved materials",
+        "Professional cluster rebuild services available",
+        "Complete cluster replacement with known-good unit",
+        "Some owners upgrade to later-style displays"
+      ],
+      "sources": [
+        { "name": "Bimmerforums", "url": "#" },
+        { "name": "BavAuto", "url": "#" }
+      ]
+    },
+    {
+      "id": "rust-corrosion",
+      "title": "Rust and Corrosion",
+      "symptoms": "Bubbling paint, rust holes, deteriorated jack points, rusty wheel arches",
+      "description": "While better protected than the E28, E34s still develop rust in typical BMW problem areas. Front fenders behind wheels, rear wheel arches, rocker panels, jack points, and trunk floor are common. Northern cars with salt exposure are particularly vulnerable. Rust around the rear subframe mounting points is a structural concern.",
+      "fixes": [
+        "Regular inspection of rust-prone areas",
+        "Treat surface rust before it penetrates",
+        "Weld in repair panels for structural rust",
+        "Replace fenders if repair is impractical",
+        "Apply rust prevention (cavity wax, undercoating)",
+        "Address rear subframe mount rust immediately"
+      ],
+      "sources": [
+        { "name": "Bimmerforums", "url": "#" },
+        { "name": "R3VLimited", "url": "#" }
+      ]
+    },
+    {
+      "id": "oil-leaks",
+      "title": "Oil Leaks",
+      "symptoms": "Oil spots under car, burning oil smell, oil on engine components, low oil level",
+      "description": "Both inline-6 and V8 engines develop oil leaks as gaskets age. Common leak points include valve cover gaskets, oil pan gasket, oil filter housing gasket (M50/M60), VANOS line seals (M50TU), rear main seal, and timing cover gaskets. The M60 V8 also leaks from the valley pan gasket.",
+      "fixes": [
+        "Valve cover gasket replacement (common service)",
+        "Oil filter housing gasket replacement",
+        "VANOS line o-ring replacement (M50TU)",
+        "Oil pan gasket (requires subframe lowering)",
+        "Valley pan gasket replacement (M60)",
+        "Address leaks before they cause damage or fire risk"
+      ],
+      "sources": [
+        { "name": "Pelican Parts", "url": "#" },
+        { "name": "Bimmerforums", "url": "#" }
+      ]
+    },
+    {
+      "id": "suspension-wear",
+      "title": "Suspension Component Wear",
+      "symptoms": "Clunking over bumps, vague handling, uneven tire wear, wandering at highway speeds",
+      "description": "E34 suspension uses numerous rubber bushings that deteriorate with age. Control arm bushings, thrust arm bushings, rear trailing arm bushings, and subframe mounts all wear out. Ball joints, tie rod ends, and center support bearing also fail. Worn suspension dramatically affects the E34's refined handling.",
+      "fixes": [
+        "Full suspension refresh recommended for 25+ year old cars",
+        "Replace all control arm and thrust arm bushings",
+        "New tie rod ends, ball joints, and center tie rod",
+        "Rear trailing arm bushings and subframe mounts",
+        "Quality shocks (Bilstein, Koni, Sachs)",
+        "All sway bar bushings and end links",
+        "Alignment after suspension work"
+      ],
+      "sources": [
+        { "name": "Ireland Engineering", "url": "#" },
+        { "name": "FCP Euro", "url": "#" }
+      ]
+    },
+    {
+      "id": "electrical-issues",
+      "title": "Electrical Problems",
+      "symptoms": "Flickering lights, intermittent accessories, dead windows, climate control issues, starting problems",
+      "description": "The E34's electrical system is more complex than earlier BMWs and suffers from age-related issues. Ground points corrode, the general module can fail, window regulators break, and the climate control system develops faults. The SRS (airbag) system can trigger warning lights due to connector issues.",
+      "fixes": [
+        "Clean and resecure all ground points",
+        "Repair or replace general module (GM) if needed",
+        "Window regulator replacement (common failure)",
+        "Climate control unit rebuild or replacement",
+        "Check SRS connectors under seats",
+        "Repair brittle wiring as needed"
+      ],
+      "sources": [
+        { "name": "Bimmerforums", "url": "#" },
+        { "name": "BMW CCA", "url": "#" }
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "id": "m60-timing-guides",
+      "title": "M60 Timing Chain Guide Replacement",
+      "description": "Essential service for M60 V8 engines - complete guide to replacing the failing timing chain guides.",
+      "difficulty": "Advanced",
+      "time": "12-16 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "vanos-rebuild",
+      "title": "M50TU VANOS Rebuild",
+      "description": "Step-by-step VANOS seal replacement and rebuild procedure.",
+      "difficulty": "Intermediate",
+      "time": "4-6 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "suspension-refresh",
+      "title": "Complete Suspension Refresh",
+      "description": "Full front and rear suspension overhaul with all bushings and components.",
+      "difficulty": "Intermediate",
+      "time": "16-24 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "cooling-system",
+      "title": "Cooling System Overhaul",
+      "description": "Complete cooling system refresh including radiator, hoses, water pump, and thermostat.",
+      "difficulty": "Intermediate",
+      "time": "4-6 hours",
+      "status": "coming-soon"
+    }
+  ],
+  "suppliers": {
+    "oem": [
+      { "name": "BMW Classic Parts", "url": "#", "notes": "Genuine BMW OEM parts" },
+      { "name": "FCP Euro", "url": "#", "notes": "Lifetime replacement guarantee" },
+      { "name": "Pelican Parts", "url": "#", "notes": "Extensive BMW catalog" }
+    ],
+    "aftermarket": [
+      { "name": "Turner Motorsport", "url": "#", "notes": "Performance parts and accessories" },
+      { "name": "Ireland Engineering", "url": "#", "notes": "Suspension and performance" },
+      { "name": "Beisan Systems", "url": "#", "notes": "VANOS repair specialists" }
+    ],
+    "used": [
+      { "name": "Bimmerforums Classifieds", "url": "#", "notes": "E34 community marketplace" },
+      { "name": "eBay Motors", "url": "#", "notes": "Used and NOS parts" },
+      { "name": "Car-Part.com", "url": "#", "notes": "Salvage yard inventory" }
+    ]
+  },
+  "torqueSpecs": {
+    "engine": [
+      { "component": "Cylinder Head Bolts (M50)", "spec": "22 ft-lbs + 90° + 90°", "notes": "Torque-to-yield, new bolts required" },
+      { "component": "Cylinder Head Bolts (M60)", "spec": "22 ft-lbs + 70° + 70°", "notes": "Torque-to-yield, new bolts required" },
+      { "component": "Main Bearing Caps (M50)", "spec": "48 ft-lbs", "notes": "" },
+      { "component": "Connecting Rod Bolts (M50)", "spec": "37 ft-lbs", "notes": "" },
+      { "component": "Valve Cover Bolts (M50)", "spec": "9 ft-lbs", "notes": "Do not overtighten" },
+      { "component": "Spark Plugs", "spec": "18-22 ft-lbs", "notes": "" },
+      { "component": "Oil Drain Plug", "spec": "18 ft-lbs", "notes": "Replace crush washer" },
+      { "component": "VANOS Solenoid (M50TU)", "spec": "11 ft-lbs", "notes": "" }
+    ],
+    "suspension": [
+      { "component": "Control Arm to Subframe", "spec": "57 ft-lbs", "notes": "Tighten with weight on wheels" },
+      { "component": "Thrust Arm Bolts", "spec": "81 ft-lbs", "notes": "Tighten with weight on wheels" },
+      { "component": "Tie Rod End Nut", "spec": "30 ft-lbs", "notes": "Use new cotter pin" },
+      { "component": "Wheel Lug Bolts", "spec": "88 ft-lbs", "notes": "Tighten in star pattern" },
+      { "component": "Strut Top Nut", "spec": "18 ft-lbs", "notes": "Hold strut shaft while tightening" },
+      { "component": "Subframe Bolts", "spec": "74 ft-lbs", "notes": "" },
+      { "component": "Rear Trailing Arm", "spec": "52 ft-lbs", "notes": "Tighten with weight on wheels" }
+    ],
+    "brakes": [
+      { "component": "Front Caliper Carrier Bolts", "spec": "81 ft-lbs", "notes": "" },
+      { "component": "Rear Caliper Carrier Bolts", "spec": "48 ft-lbs", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "13 ft-lbs", "notes": "Do not overtighten" },
+      { "component": "Wheel Speed Sensor", "spec": "7 ft-lbs", "notes": "" }
+    ]
+  },
+  "diyGuides": [
+    {
+      "id": "oil-change",
+      "title": "Oil Change",
+      "description": "Complete oil and filter change procedure for M50, M60, and S38 engines.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "status": "coming-soon"
+    },
+    {
+      "id": "brake-pads",
+      "title": "Brake Pad Replacement",
+      "description": "Front and rear brake pad replacement with rotor inspection.",
+      "difficulty": "Easy",
+      "time": "1-2 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "pixel-repair",
+      "title": "Instrument Cluster Pixel Repair",
+      "description": "Repair dead pixels in the cluster display with ribbon cable resoldering.",
+      "difficulty": "Intermediate",
+      "time": "2-3 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "coolant-flush",
+      "title": "Cooling System Flush",
+      "description": "Proper cooling system drain, flush, and refill procedure.",
+      "difficulty": "Easy",
+      "time": "1-2 hours",
+      "status": "coming-soon"
+    }
+  ]
+}

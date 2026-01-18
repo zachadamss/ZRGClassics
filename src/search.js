@@ -312,7 +312,7 @@ function renderSupplierResult(supplier, query) {
                 <a href="${supplier.url}">${highlightTerms(supplier.name, query)}</a>
             </h3>
             <p class="result-description">${highlightTerms(supplier.notes, query)}</p>
-            <span class="supplier-type ${supplier.type}">${supplier.type.toUpperCase()}</span>
+            <span class="supplier-type ${supplier.category}">${supplier.category.toUpperCase()}</span>
             <a href="${supplier.url}" class="result-link">View all ${supplier.modelName} suppliers &rarr;</a>
         </article>
     `;

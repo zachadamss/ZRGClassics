@@ -1,0 +1,254 @@
+{
+  "model": "991",
+  "brand": "Porsche",
+  "fullName": "Porsche 991 911",
+  "years": "2012-2019",
+  "engines": ["3.4L Flat-6 MA1 (991.1)", "3.8L Flat-6 MA1 (991.1 S)", "3.0L Twin-Turbo Flat-6 (991.2)", "4.0L Flat-6 MA1 (GT3)"],
+  "heroImage": "/images/vehicles/991-hero.jpg",
+  "issues": [
+    {
+      "id": "coolant-pipes",
+      "title": "Coolant Pipe Failures",
+      "symptoms": "Coolant loss, overheating warning, coolant puddles, sweet smell, temperature fluctuation",
+      "description": "The 991 continues to use plastic coolant pipes in the cooling system. These pipes run from the front radiators to the rear engine and are subjected to heat cycling and vibration. They can crack, especially at connection points, causing coolant loss. The coolant transfer pipe in particular is a known failure point.",
+      "fixes": [
+        "Replace plastic coolant pipes with aluminum upgrade",
+        "Coolant transfer pipe replacement (common failure)",
+        "Replace expansion tank if showing age",
+        "Water pump replacement as preventive maintenance",
+        "Flush and refill with proper coolant mix"
+      ],
+      "sources": [
+        { "name": "FCP Euro", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "carbon-buildup",
+      "title": "Carbon Buildup on Intake Valves (DFI Engines)",
+      "symptoms": "Rough idle, misfires, reduced power, poor fuel economy, hesitation under load",
+      "description": "All 991 engines use direct fuel injection (DFI), meaning fuel doesn't wash over the intake valves. Carbon deposits accumulate on the valve backs and intake ports, restricting airflow and affecting engine performance. This is a maintenance item requiring periodic walnut blasting, typically every 50,000-80,000 miles depending on driving style.",
+      "fixes": [
+        "Walnut shell blasting (standard solution)",
+        "Chemical treatments (less invasive but less effective)",
+        "Catch can installation to reduce oil vapor deposits",
+        "Use Top Tier fuel with good detergent packages",
+        "Spirited driving helps but doesn't eliminate buildup"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Planet-9", "url": "#" }
+      ]
+    },
+    {
+      "id": "pdk-issues",
+      "title": "PDK Transmission Issues",
+      "symptoms": "Harsh shifts, jerky low-speed operation, shuddering, warning lights, delayed engagement",
+      "description": "The PDK dual-clutch transmission is generally reliable but can develop issues. Low-speed jerkiness, especially when cold, is common and may be normal for the system. More serious issues include clutch pack wear, mechatronic unit failures, and software glitches. PDK fluid should be serviced despite Porsche's 'lifetime' fill claim.",
+      "fixes": [
+        "PDK fluid change (recommended every 50,000-60,000 miles)",
+        "Software updates to address shift quality",
+        "Clutch adaptation reset via PIWIS diagnostic",
+        "Clutch pack replacement if severely worn",
+        "Mechatronic unit repair for electronic issues"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Planet-9", "url": "#" }
+      ]
+    },
+    {
+      "id": "pasm-failures",
+      "title": "PASM Suspension Damper Failures",
+      "symptoms": "PASM warning light, harsh ride, damper leaking, clunking noises, uneven handling",
+      "description": "PASM (Porsche Active Suspension Management) dampers use electronic valving to adjust stiffness. These dampers can fail, usually by leaking or developing electrical issues. A failed damper triggers a warning light and the system may default to a fixed setting. PASM dampers are expensive compared to conventional shocks.",
+      "fixes": [
+        "Diagnose with Porsche diagnostic tool (PIWIS)",
+        "Replace failed PASM damper (OEM or remanufactured)",
+        "Some owners convert to quality coilovers when multiple fail",
+        "Check wiring and connectors before replacing damper",
+        "Remanufactured dampers available at reduced cost"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    },
+    {
+      "id": "oil-consumption",
+      "title": "Oil Consumption Concerns",
+      "symptoms": "Low oil warnings, need to add oil between changes, blue smoke on startup, oil smell",
+      "description": "Some 991.1 models exhibit higher than expected oil consumption. Porsche's stated acceptable consumption is up to 1 quart per 1,000 miles, which many owners find excessive. Direct injection, high compression, and tight tolerances contribute. Tracking oil level is important, and the car should not be run low on oil.",
+      "fixes": [
+        "Monitor oil level regularly using on-board system",
+        "Keep oil level in proper range (not overfilled)",
+        "Some owners report improvement with different oil brands",
+        "Severe consumption may indicate piston ring issues",
+        "Compression and leak-down test for diagnosis"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Porsche Club of America", "url": "#" }
+      ]
+    },
+    {
+      "id": "turbo-specific",
+      "title": "Twin-Turbo Specific Issues (991.2)",
+      "symptoms": "Boost inconsistency, wastegate rattle, turbo whine, check engine light, reduced power",
+      "description": "The 991.2 moved to twin-turbo engines for all models. While generally reliable, the turbos can develop issues including wastegate rattle, actuator problems, and seal failures. Turbo feed and drain lines need monitoring. These engines are more complex than the naturally aspirated 991.1.",
+      "fixes": [
+        "Wastegate actuator adjustment or replacement",
+        "Turbo oil line inspection and replacement",
+        "Intercooler inspection for leaks",
+        "Boost leak testing if low power complaints",
+        "Proper warm-up and cool-down for turbo longevity"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "6SpeedOnline", "url": "#" }
+      ]
+    },
+    {
+      "id": "convertible-top",
+      "title": "Convertible Top Issues (Cabriolet)",
+      "symptoms": "Slow operation, error messages, hydraulic leaks, top doesn't complete cycle, fabric wear",
+      "description": "The 991 Cabriolet's power top system is complex and can develop age-related issues. Hydraulic pump wear, microswitch failures, and ram seal leaks cause operational problems. The fabric top can wear at stress points, and the rear window can develop issues. Proper operation and storage help longevity.",
+      "fixes": [
+        "Hydraulic system inspection and fluid top-off",
+        "Hydraulic pump replacement if failing",
+        "Microswitch adjustment or replacement",
+        "Top fabric replacement for worn or damaged tops",
+        "System reset procedure after battery work"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    },
+    {
+      "id": "steering-column",
+      "title": "Electric Steering Column Issues",
+      "symptoms": "Creaking noise, steering feel inconsistency, steering wheel off-center, warning lights",
+      "description": "The 991 uses an electric power steering system. While generally reliable, some owners report issues with the steering column producing creaking noises, especially when turning at low speeds. There can also be software-related issues affecting steering feel or causing warning messages.",
+      "fixes": [
+        "Steering column lubrication for creaking",
+        "Software update for steering feel issues",
+        "Steering rack inspection if play detected",
+        "Steering angle sensor recalibration",
+        "Full diagnosis with Porsche diagnostic tool"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Planet-9", "url": "#" }
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "id": "coolant-pipe-upgrade",
+      "title": "Coolant Pipe Upgrade",
+      "description": "Replace plastic coolant pipes with aluminum upgrade for reliability.",
+      "difficulty": "Intermediate",
+      "time": "4-6 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "walnut-blast",
+      "title": "Intake Valve Carbon Cleaning",
+      "description": "Walnut shell blasting procedure to remove carbon buildup.",
+      "difficulty": "Intermediate",
+      "time": "4-6 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "pdk-service",
+      "title": "PDK Fluid Service",
+      "description": "PDK transmission fluid change procedure.",
+      "difficulty": "Intermediate",
+      "time": "2-3 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "pasm-replacement",
+      "title": "PASM Damper Replacement",
+      "description": "Replace failed PASM shock absorbers.",
+      "difficulty": "Intermediate",
+      "time": "3-4 hours",
+      "status": "coming-soon"
+    }
+  ],
+  "suppliers": {
+    "oem": [
+      { "name": "Porsche Parts", "url": "#", "notes": "Genuine Porsche OEM" },
+      { "name": "FCP Euro", "url": "#", "notes": "Lifetime replacement guarantee" },
+      { "name": "Pelican Parts", "url": "#", "notes": "Extensive Porsche catalog" }
+    ],
+    "aftermarket": [
+      { "name": "Fabspeed", "url": "#", "notes": "Exhaust and performance" },
+      { "name": "Dundon Motorsports", "url": "#", "notes": "Exhaust specialists" },
+      { "name": "Softronic", "url": "#", "notes": "ECU tuning" },
+      { "name": "JRZ", "url": "#", "notes": "Suspension components" }
+    ],
+    "used": [
+      { "name": "Rennlist Classifieds", "url": "#", "notes": "Porsche community marketplace" },
+      { "name": "eBay Motors", "url": "#", "notes": "Used and NOS parts" },
+      { "name": "Car-Part.com", "url": "#", "notes": "Salvage yard inventory" }
+    ]
+  },
+  "torqueSpecs": {
+    "engine": [
+      { "component": "Spark Plugs", "spec": "22 ft-lbs", "notes": "" },
+      { "component": "Oil Drain Plug", "spec": "37 ft-lbs", "notes": "Replace crush washer" },
+      { "component": "Intake Manifold", "spec": "7 ft-lbs", "notes": "" },
+      { "component": "Engine Mount Bolts", "spec": "63 ft-lbs", "notes": "" },
+      { "component": "Coolant Pipe Fittings", "spec": "15 ft-lbs", "notes": "New o-rings" }
+    ],
+    "suspension": [
+      { "component": "Wheel Lug Nuts", "spec": "118 ft-lbs", "notes": "Center-lock different" },
+      { "component": "Control Arm Bolts", "spec": "74 ft-lbs", "notes": "Tighten at ride height" },
+      { "component": "PASM Damper Top Nut", "spec": "44 ft-lbs", "notes": "" },
+      { "component": "Tie Rod End Nut", "spec": "48 ft-lbs", "notes": "" },
+      { "component": "Sway Bar End Links", "spec": "48 ft-lbs", "notes": "" }
+    ],
+    "brakes": [
+      { "component": "Caliper Bolts", "spec": "63 ft-lbs", "notes": "" },
+      { "component": "PCCB Caliper Bolts", "spec": "74 ft-lbs", "notes": "Ceramic brake cars" },
+      { "component": "Brake Line Fittings", "spec": "13 ft-lbs", "notes": "" },
+      { "component": "Wheel Speed Sensor", "spec": "7 ft-lbs", "notes": "" }
+    ]
+  },
+  "diyGuides": [
+    {
+      "id": "oil-change",
+      "title": "Oil Change",
+      "description": "Complete oil and filter change for 991.1 and 991.2 engines.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "status": "coming-soon"
+    },
+    {
+      "id": "brake-pads",
+      "title": "Brake Pad Replacement",
+      "description": "Front and rear brake pad replacement with sensor reset.",
+      "difficulty": "Easy",
+      "time": "1-2 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "spark-plugs",
+      "title": "Spark Plug Replacement",
+      "description": "Replace spark plugs on the flat-6 engine.",
+      "difficulty": "Easy",
+      "time": "1-2 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "cabin-filter",
+      "title": "Cabin Filter Replacement",
+      "description": "Replace the cabin air filter for fresh interior air.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "status": "coming-soon"
+    }
+  ]
+}
