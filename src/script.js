@@ -9,7 +9,6 @@ const themeToggle = document.getElementById('theme-toggle');
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
     document.documentElement.setAttribute('data-theme', savedTheme);
-    updateToggleIcon(savedTheme);
 }
 
 // Toggle theme on button click
@@ -19,13 +18,7 @@ themeToggle.addEventListener('click', () => {
 
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
-    updateToggleIcon(newTheme);
 });
-
-// Update the toggle icon
-function updateToggleIcon(theme) {
-    themeToggle.textContent = theme === 'dark' ? '🌞' : '🌓';
-}
 
 // ================================
 // Mobile Navigation

@@ -297,19 +297,89 @@ nav ul li.dropdown:hover .dropdown-menu {
     transform: rotate(90deg);
 }
 
-/* Theme Toggle */
-#theme-toggle {
+/* Theme Toggle - Modern Switch */
+.theme-toggle {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    border-radius: var(--radius-sm);
-    transition: background-color 0.2s;
+    padding: 0;
+    display: flex;
+    align-items: center;
 }
 
-#theme-toggle:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+.toggle-track {
+    position: relative;
+    width: 52px;
+    height: 28px;
+    background: linear-gradient(135deg, #87CEEB 0%, #4A90D9 100%);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6px;
+    transition: background 0.3s ease;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-thumb {
+    position: absolute;
+    left: 3px;
+    width: 22px;
+    height: 22px;
+    background: linear-gradient(145deg, #fff 0%, #f0f0f0 100%);
+    border-radius: 50%;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.sun-icon, .moon-icon {
+    width: 14px;
+    height: 14px;
+    transition: opacity 0.2s ease, transform 0.3s ease;
+    z-index: 1;
+}
+
+.sun-icon {
+    color: #FDB813;
+    opacity: 1;
+}
+
+.moon-icon {
+    color: #fff;
+    opacity: 0.5;
+}
+
+/* Dark mode state */
+[data-theme="dark"] .toggle-track {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+[data-theme="dark"] .toggle-thumb {
+    transform: translateX(24px);
+    background: linear-gradient(145deg, #2d2d44 0%, #1a1a2e 100%);
+}
+
+[data-theme="dark"] .sun-icon {
+    opacity: 0.4;
+}
+
+[data-theme="dark"] .moon-icon {
+    color: #E8D5B7;
+    opacity: 1;
+}
+
+.theme-toggle:hover .toggle-track {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+.theme-toggle:focus {
+    outline: none;
+}
+
+.theme-toggle:focus-visible .toggle-track {
+    outline: 2px solid var(--gulf-orange);
+    outline-offset: 2px;
 }
 
 /* ================================
@@ -3064,7 +3134,7 @@ nav ul li.dropdown.touch-open .dropdown-menu {
 @media print {
     /* Hide non-essential elements */
     header, footer, .template-controls, .invoice-actions,
-    .add-row-btn, .remove-row-btn, .no-print, #theme-toggle, .modal,
+    .add-row-btn, .remove-row-btn, .no-print, .theme-toggle, .modal,
     .quick-links, .breadcrumb, .hamburger, .nav-overlay,
     .hero-actions, .btn, .guide-card a, .supplier-link {
         display: none !important;
@@ -3555,13 +3625,25 @@ nav ul li.dropdown.touch-open .dropdown-menu {
         font-size: 0.9rem;
     }
 
-    nav ul li:has(#theme-toggle) {
+    nav ul li:has(.theme-toggle) {
         border-bottom: none;
         padding: 1rem 0;
+        display: flex;
+        justify-content: center;
     }
 
-    #theme-toggle {
-        font-size: 1.75rem;
+    .theme-toggle .toggle-track {
+        width: 56px;
+        height: 30px;
+    }
+
+    .theme-toggle .toggle-thumb {
+        width: 24px;
+        height: 24px;
+    }
+
+    [data-theme="dark"] .theme-toggle .toggle-thumb {
+        transform: translateX(26px);
     }
 
     .hero {
