@@ -591,26 +591,120 @@
     {
       "id": "oil-change",
       "title": "Oil Change",
-      "description": "Complete oil and filter change for the M64 engine.",
+      "description": "Complete oil and filter change for the M64 air-cooled flat-six.",
       "difficulty": "Easy",
       "time": "45 min",
-      "status": "coming-soon"
+      "interval": "Every 3,000-5,000 miles",
+      "cost": "$60-90",
+      "tools": [
+        "21mm socket for drain plug",
+        "Oil filter wrench",
+        "Drain pan (3 gallon capacity)",
+        "Funnel with extension",
+        "Ramps or jack and jack stands"
+      ],
+      "steps": [
+        "Warm the engine for 2-3 minutes - warm oil flows better.",
+        "Drive onto ramps or raise and support the car safely.",
+        "Locate the main drain plug on the bottom of the engine case.",
+        "Position large drain pan and remove the 21mm drain plug.",
+        "Allow oil to drain completely - 15-20 minutes for thorough drainage.",
+        "The spin-on oil filter is in the engine compartment, left side of engine.",
+        "Using filter wrench, remove the old filter.",
+        "Apply fresh oil to the new filter's gasket.",
+        "Thread new filter on by hand until seated, then 3/4 turn more.",
+        "Replace the copper crush washer on the drain plug.",
+        "Reinstall drain plug and torque to 37 ft-lbs (50 Nm).",
+        "Add 10-11 quarts of 15W-50 or 20W-50 oil through the filler.",
+        "Start engine and check for leaks at drain and filter.",
+        "Let idle briefly, shut off, wait 3 minutes, check level."
+      ],
+      "tips": [
+        "Air-cooled engines need 10-11 quarts - the oil helps with cooling.",
+        "Use quality 15W-50 or 20W-50 oil - Mobil 1 15W-50 is popular.",
+        "Check for oil leaks at valve covers and chain tensioner while working.",
+        "The 993 has hydraulic lifters - no valve adjustment needed."
+      ]
     },
     {
       "id": "brake-pads",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement.",
+      "description": "Front and rear brake pad replacement on the 993's four-piston calipers.",
       "difficulty": "Easy",
       "time": "1-2 hours",
-      "status": "coming-soon"
+      "interval": "Every 20,000-35,000 miles",
+      "cost": "$120-200",
+      "tools": [
+        "19mm socket for lug bolts",
+        "7mm Allen socket",
+        "Flathead screwdriver",
+        "Brake piston spreader tool",
+        "Wire brush",
+        "Brake cleaner",
+        "Brake grease",
+        "Jack and jack stands"
+      ],
+      "steps": [
+        "Loosen lug bolts while the car is on the ground.",
+        "Raise and support the car safely on jack stands.",
+        "Remove wheel to access the caliper.",
+        "The 993 uses four-piston fixed calipers - pads slide out without caliper removal.",
+        "Remove the pad retaining pins (cross pins through the caliper).",
+        "Use a flathead screwdriver to push and slide the old pads out.",
+        "Inspect rotor for scoring, cracks, or minimum thickness markings.",
+        "Clean the caliper pad contact surfaces with brake cleaner.",
+        "Use the piston spreader tool to push all four pistons back evenly.",
+        "Apply brake grease to the back of new pads.",
+        "Slide new pads into the caliper, ensuring proper orientation.",
+        "Reinstall pad retaining pins.",
+        "Reinstall wheel and torque lug bolts to 96 ft-lbs (130 Nm).",
+        "Repeat for all corners.",
+        "Pump brake pedal until firm before driving."
+      ],
+      "tips": [
+        "Four-piston calipers require all pistons pushed back evenly.",
+        "Open brake fluid reservoir before compressing pistons.",
+        "Use quality pads from Pagid, Hawk, or Porsche OEM.",
+        "Bed new pads with gradual stops - avoid hard braking for 100 miles."
+      ]
     },
     {
       "id": "spark-plugs",
       "title": "Spark Plug Replacement",
-      "description": "Replace spark plugs on the M64 engine.",
+      "description": "Replace spark plugs on the M64 flat-six engine.",
       "difficulty": "Easy",
       "time": "1 hour",
-      "status": "coming-soon"
+      "interval": "Every 15,000-20,000 miles",
+      "cost": "$40-80",
+      "tools": [
+        "Spark plug socket (5/8\" or 16mm)",
+        "6\" extension",
+        "Universal joint (optional but helpful)",
+        "Torque wrench",
+        "Compressed air or vacuum",
+        "Anti-seize compound"
+      ],
+      "steps": [
+        "Allow engine to cool completely before starting.",
+        "Open engine lid for access to the top of the engine.",
+        "The 993 has 6 spark plugs - one per cylinder, accessible from above.",
+        "Remove the spark plug wire by pulling on the boot, not the wire.",
+        "Mark or note wire positions if concerned about mixing them up.",
+        "Use compressed air to blow debris away from the spark plug wells.",
+        "Using spark plug socket and extension, remove each plug.",
+        "Inspect old plugs - note condition (gap wear, color, fouling).",
+        "Apply a thin coat of anti-seize to new plug threads.",
+        "Hand-thread new plugs into the head to avoid cross-threading.",
+        "Torque spark plugs to 18-22 ft-lbs (25-30 Nm).",
+        "Reconnect spark plug wires firmly onto the new plugs.",
+        "Start engine and verify smooth operation."
+      ],
+      "tips": [
+        "The firing order is 1-6-2-4-3-5 - cylinder 1 is front right.",
+        "Use Bosch or NGK plugs specified for the 993.",
+        "Inspect plug wires for cracks or carbon tracking while replacing plugs.",
+        "A universal joint helps access plugs in tight areas."
+      ]
     },
     {
       "id": "serpentine-belt",
@@ -618,7 +712,35 @@
       "description": "Replace accessory drive belt and inspect tensioner.",
       "difficulty": "Easy",
       "time": "1 hour",
-      "status": "coming-soon"
+      "interval": "Every 40,000-60,000 miles or if cracked",
+      "cost": "$40-80",
+      "tools": [
+        "15mm wrench for tensioner",
+        "Belt routing diagram (in engine bay or manual)",
+        "Flashlight",
+        "New belt"
+      ],
+      "steps": [
+        "Open engine lid and locate the serpentine belt on the front of the engine.",
+        "Note or photograph the belt routing before removal.",
+        "Locate the automatic belt tensioner - usually has a 15mm bolt head.",
+        "Using the 15mm wrench, rotate the tensioner to release belt tension.",
+        "Slip the old belt off the pulleys while holding tensioner back.",
+        "Slowly release the tensioner.",
+        "Inspect the old belt for cracks, glazing, or missing ribs.",
+        "Inspect the tensioner pulley - spin it by hand, feel for roughness or play.",
+        "Route the new belt according to the diagram, leaving tensioner pulley for last.",
+        "Rotate the tensioner again and slip the belt over the tensioner pulley.",
+        "Release the tensioner slowly - it will take up the belt slack.",
+        "Verify the belt is properly seated in all pulley grooves.",
+        "Start the engine and observe belt tracking for a few seconds."
+      ],
+      "tips": [
+        "Take a photo of belt routing before removal for reference.",
+        "If the tensioner pulley is worn or noisy, replace it with the belt.",
+        "A cracked or glazed belt can slip and cause accessory issues.",
+        "Check all pulleys for smooth rotation while the belt is off."
+      ]
     }
   ]
 }

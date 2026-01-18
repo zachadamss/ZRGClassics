@@ -626,7 +626,37 @@
       "description": "Complete oil and filter change procedure for M50, M60, and S38 engines.",
       "difficulty": "Easy",
       "time": "30 min",
-      "status": "coming-soon"
+      "interval": "Every 5,000-7,500 miles",
+      "cost": "$45-70",
+      "tools": [
+        "17mm socket for drain plug",
+        "36mm socket or filter wrench (M50)",
+        "Oil filter wrench cap style (M60/S38)",
+        "Drain pan",
+        "Funnel",
+        "Jack and jack stands",
+        "Torque wrench"
+      ],
+      "steps": [
+        "Warm the engine for 2-3 minutes to thin the oil for complete drainage.",
+        "Safely raise the front of the car and secure on jack stands.",
+        "Position drain pan under the oil pan.",
+        "Remove the 17mm drain plug and allow oil to drain completely (10+ minutes).",
+        "Replace the copper crush washer on the drain plug.",
+        "Reinstall drain plug and torque to 18 ft-lbs (25 Nm).",
+        "For M50: Remove the cartridge filter cap on top of the engine with 36mm socket.",
+        "For M60/S38: Remove the spin-on filter from the side of the block with filter wrench.",
+        "M50: Replace filter element and O-ring, lubricate O-ring with fresh oil.",
+        "M60/S38: Apply oil to new filter gasket, thread on hand-tight plus 3/4 turn.",
+        "Add oil: 6.9 quarts (M50), 8 quarts (M60), 6 quarts (S38).",
+        "Start engine and check for leaks at drain plug and filter.",
+        "Shut off, wait 2 minutes, then check level and top off as needed."
+      ],
+      "tips": [
+        "M50 uses cartridge filter on top of engine; M60 and S38 use spin-on canister style.",
+        "Use 5W-40 or 0W-40 synthetic for M50; 15W-40 or 20W-50 works well for M60 and S38.",
+        "Check oil filter housing gasket (M50) for leaks while changing oil."
+      ]
     },
     {
       "id": "brake-pads",
@@ -634,7 +664,39 @@
       "description": "Front and rear brake pad replacement with rotor inspection.",
       "difficulty": "Easy",
       "time": "1-2 hours",
-      "status": "coming-soon"
+      "interval": "Every 25,000-50,000 miles",
+      "cost": "$60-120",
+      "tools": [
+        "17mm socket for lug bolts",
+        "7mm Allen socket for caliper pins",
+        "Flathead screwdriver",
+        "Brake piston tool or C-clamp",
+        "Wire brush",
+        "Brake cleaner",
+        "Brake grease",
+        "Jack and jack stands"
+      ],
+      "steps": [
+        "Loosen lug bolts while car is on the ground, then raise and secure on jack stands.",
+        "Remove wheel to expose the brake caliper.",
+        "Disconnect the brake pad wear sensor electrical connector if equipped.",
+        "Remove the two 7mm Allen caliper guide pin bolts from the back of the caliper.",
+        "Swing the caliper up and secure with wire - do not let it hang by the hose.",
+        "Remove the old brake pads from the caliper bracket.",
+        "Inspect rotor surface for scoring, cracks, or minimum thickness wear.",
+        "Clean the pad contact surfaces in the bracket with wire brush.",
+        "Compress the caliper piston fully using C-clamp or piston tool.",
+        "Apply thin layer of brake grease to pad backing plate contact areas.",
+        "Install new pads - wear sensor slot goes on inner pad, toward piston.",
+        "Swing caliper back over pads and reinstall guide pins to 22 ft-lbs (30 Nm).",
+        "Reconnect wear sensor and reinstall wheel. Torque lug bolts to 88 ft-lbs (120 Nm).",
+        "Pump brake pedal several times until firm before driving."
+      ],
+      "tips": [
+        "Open the brake fluid reservoir cap before compressing pistons.",
+        "E34 wear sensors are typically on front left and rear right wheels.",
+        "Consider replacing rotors if they're grooved or near minimum thickness."
+      ]
     },
     {
       "id": "pixel-repair",
@@ -642,7 +704,39 @@
       "description": "Repair dead pixels in the cluster display with ribbon cable resoldering.",
       "difficulty": "Intermediate",
       "time": "2-3 hours",
-      "status": "coming-soon"
+      "interval": "As needed (common issue)",
+      "cost": "$20-40",
+      "tools": [
+        "Small Phillips screwdriver",
+        "T10 Torx driver",
+        "Soldering iron with fine tip",
+        "Solder",
+        "Pixel repair ribbon cable (replacement)",
+        "Isopropyl alcohol",
+        "Magnifying glass or loupe"
+      ],
+      "steps": [
+        "Disconnect the negative battery terminal and wait 10 minutes.",
+        "Remove the two T10 screws on top of the instrument cluster hood.",
+        "Pull the cluster hood toward you and remove it.",
+        "Remove the four T10 screws holding the instrument cluster.",
+        "Carefully pull the cluster out and disconnect the electrical connectors from the rear.",
+        "Remove the cluster to a clean work surface.",
+        "Remove the clear lens and surround by releasing the clips around the edge.",
+        "Locate the LCD display ribbon cable connection on the circuit board.",
+        "Inspect the ribbon cable - look for cracks or lifted traces at the solder joints.",
+        "Apply flux to the ribbon cable connection and carefully reflow solder with iron.",
+        "Alternatively, install a replacement ribbon cable using proper alignment.",
+        "Test the display before reassembly by reconnecting the cluster in the car.",
+        "Reassemble cluster, reinstall in dashboard, and reconnect all connectors.",
+        "Reconnect battery and verify all pixels are working."
+      ],
+      "tips": [
+        "Use a temperature-controlled soldering iron set to around 300°C.",
+        "Don't apply too much heat - you can damage the LCD if overheated.",
+        "Replacement ribbon cables are inexpensive and often easier than resoldering.",
+        "Consider doing the OBC display ribbon at the same time if it has pixel issues."
+      ]
     },
     {
       "id": "coolant-flush",
@@ -650,7 +744,39 @@
       "description": "Proper cooling system drain, flush, and refill procedure.",
       "difficulty": "Easy",
       "time": "1-2 hours",
-      "status": "coming-soon"
+      "interval": "Every 2 years or 30,000 miles",
+      "cost": "$30-50",
+      "tools": [
+        "Drain pan (2+ gallon capacity)",
+        "Pliers for hose clamps",
+        "Funnel or spill-free fill tool",
+        "Distilled water for flushing",
+        "BMW blue coolant (1.5 gallons premixed or concentrate)",
+        "Clean rags"
+      ],
+      "steps": [
+        "Allow the engine to cool completely - never open a hot cooling system.",
+        "Remove the expansion tank cap slowly to release any pressure.",
+        "Position drain pan under the radiator and open the drain cock on lower passenger side.",
+        "For a more complete drain, remove the lower radiator hose at the thermostat housing.",
+        "Allow coolant to drain completely from the radiator and block.",
+        "Optional flush: Close drain, fill with distilled water, run engine to temp, drain again.",
+        "Close the radiator drain cock or reconnect the lower hose.",
+        "Fill the system through the expansion tank with 50/50 BMW coolant mix.",
+        "Fill slowly to allow air to escape - the system holds about 11 liters.",
+        "Start the engine with the heater on full hot and expansion tank cap off.",
+        "Allow engine to reach operating temperature and thermostat to open.",
+        "Top off coolant as level drops and air bubbles escape.",
+        "Install expansion tank cap once level stabilizes and no more bubbles appear.",
+        "Check for leaks at all connections after the engine warms up.",
+        "Recheck coolant level after the car has cooled completely."
+      ],
+      "tips": [
+        "Use only BMW-approved blue coolant or equivalent phosphate-free formula.",
+        "Inspect the expansion tank for cracks - this is a common failure point.",
+        "If the old coolant is rusty or contaminated, consider a block flush.",
+        "Check all hoses for cracks or soft spots while the system is drained."
+      ]
     }
   ]
 }

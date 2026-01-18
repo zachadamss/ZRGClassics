@@ -517,26 +517,157 @@
     {
       "id": "oil-change",
       "title": "Oil Change",
-      "description": "Flat-6 oil and filter change procedure.",
+      "description": "Complete oil and filter change for the M96 water-cooled flat-six.",
       "difficulty": "Easy",
       "time": "30 min",
-      "status": "coming-soon"
+      "interval": "Every 5,000 miles (critical for IMS health)",
+      "cost": "$50-80",
+      "tools": [
+        "19mm socket for drain plug",
+        "Oil filter wrench",
+        "Drain pan",
+        "Funnel",
+        "Ramps or jack and jack stands"
+      ],
+      "steps": [
+        "Warm the engine for 2-3 minutes - warm oil drains better.",
+        "Drive onto ramps or raise and support the car safely.",
+        "Locate the oil drain plug on the bottom of the engine.",
+        "Position drain pan and remove the 19mm drain plug.",
+        "Allow oil to drain completely - at least 10 minutes.",
+        "The spin-on oil filter is located under the car near the oil pan.",
+        "Using filter wrench, remove the old filter.",
+        "IMPORTANT: Cut open the old filter and inspect for metal debris (IMS warning).",
+        "Apply fresh oil to the new filter's gasket.",
+        "Thread new filter on by hand until seated, then 3/4 turn more.",
+        "Replace the copper crush washer on the drain plug.",
+        "Reinstall drain plug and torque to 37 ft-lbs (50 Nm).",
+        "Add 8.5-9 quarts of 0W-40 or 5W-40 synthetic oil.",
+        "Start engine and check for leaks.",
+        "Check level after 2 minutes and top off as needed."
+      ],
+      "tips": [
+        "CRITICAL: Cut open and inspect oil filter for metal debris - early IMS warning sign.",
+        "Frequent oil changes (every 5,000 miles) help protect the IMS bearing.",
+        "Use quality synthetic oil meeting Porsche A40 specification.",
+        "Consider periodic oil analysis to monitor engine wear."
+      ]
     },
     {
       "id": "convertible-top-lube",
       "title": "Convertible Top Maintenance",
-      "description": "Keep your top working smoothly with regular lubrication.",
+      "description": "Keep your Boxster top working smoothly with regular lubrication.",
       "difficulty": "Easy",
       "time": "30 min",
-      "status": "coming-soon"
+      "interval": "Every 6 months",
+      "cost": "$15-30",
+      "tools": [
+        "White lithium grease",
+        "Silicone lubricant spray",
+        "Clean rags",
+        "Flashlight"
+      ],
+      "steps": [
+        "Lower the convertible top fully to access all mechanism areas.",
+        "Inspect the hydraulic rams for any signs of leaking fluid.",
+        "Locate the pivot points on the top mechanism links.",
+        "Apply white lithium grease to all pivot points and hinges.",
+        "Lubricate the guide rails where the top slides.",
+        "Apply silicone spray to the rubber seals (top perimeter).",
+        "Inspect the fabric for any tears, wear spots, or loose stitching.",
+        "Check the rear window for delamination or cracks.",
+        "Operate the top up and down 2-3 times to distribute lubricant.",
+        "Wipe away excess lubricant that could attract dirt.",
+        "Check hydraulic fluid level in the reservoir if accessible.",
+        "Verify both microswitches are working (top should stop at endpoints)."
+      ],
+      "tips": [
+        "Don't operate the top if it's wet or below freezing.",
+        "A slow-operating top often means low hydraulic fluid.",
+        "The hydraulic pump is in the rear storage compartment.",
+        "Use Pentosin CHF 11S for any hydraulic fluid top-off."
+      ]
     },
     {
       "id": "brake-pads",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement.",
+      "description": "Front and rear brake pad replacement on the 986's Brembo calipers.",
       "difficulty": "Easy",
       "time": "1-2 hours",
-      "status": "coming-soon"
+      "interval": "Every 20,000-40,000 miles",
+      "cost": "$80-150",
+      "tools": [
+        "19mm socket for lug bolts",
+        "7mm Allen socket for caliper pins",
+        "Brake piston spreader or C-clamp",
+        "Wire brush",
+        "Brake cleaner",
+        "Brake grease",
+        "Jack and jack stands"
+      ],
+      "steps": [
+        "Loosen lug bolts while car is on the ground.",
+        "Raise and support the car safely on jack stands.",
+        "Remove wheel to access caliper.",
+        "Disconnect brake pad wear sensor if equipped.",
+        "Remove the two 7mm Allen caliper guide pin bolts.",
+        "Swing the caliper up and support it - don't let it hang by the hose.",
+        "Remove the old pads from the caliper bracket.",
+        "Inspect rotor for scoring, cracks, or minimum thickness.",
+        "Clean pad contact surfaces with wire brush and brake cleaner.",
+        "Open brake fluid reservoir, then compress caliper piston.",
+        "Apply brake grease to pad backing plate contact points.",
+        "Install new pads - wear sensor slot goes on the inner pad.",
+        "Swing caliper down and reinstall guide pins to 22 ft-lbs (30 Nm).",
+        "Reconnect wear sensor.",
+        "Reinstall wheel and torque lugs to 96 ft-lbs (130 Nm).",
+        "Repeat for all corners.",
+        "Pump brake pedal until firm before driving."
+      ],
+      "tips": [
+        "The 986 uses Brembo four-piston calipers on S models.",
+        "Open reservoir cap before compressing pistons.",
+        "Bed new pads with moderate stops - avoid hard braking initially.",
+        "Consider upgrading to ceramic pads for less brake dust."
+      ]
+    },
+    {
+      "id": "spark-plugs",
+      "title": "Spark Plug Replacement",
+      "description": "Replace spark plugs on the M96 flat-six engine.",
+      "difficulty": "Easy",
+      "time": "1 hour",
+      "interval": "Every 30,000-40,000 miles",
+      "cost": "$50-100",
+      "tools": [
+        "Spark plug socket (5/8\" or 16mm thin-wall)",
+        "Extensions (6\" and 3\")",
+        "Universal joint",
+        "Torque wrench",
+        "Compressed air",
+        "Dielectric grease"
+      ],
+      "steps": [
+        "Allow engine to cool completely.",
+        "Open the engine lid for access.",
+        "The M96 has 6 spark plugs - accessed from the top of the engine.",
+        "Remove the coil packs by disconnecting connectors and removing bolts.",
+        "Use compressed air to blow debris from the spark plug wells.",
+        "Using spark plug socket and extension, remove each plug.",
+        "Inspect old plugs for wear, fouling, or damage.",
+        "Check plug gap on new plugs - should be 0.7-0.8mm.",
+        "Hand-thread new plugs to avoid cross-threading.",
+        "Torque plugs to 18-22 ft-lbs (25-30 Nm).",
+        "Apply dielectric grease to coil pack boots.",
+        "Reinstall coil packs and connect wiring.",
+        "Start engine and verify smooth operation."
+      ],
+      "tips": [
+        "Use NGK or Bosch platinum/iridium plugs.",
+        "The 986 uses coil-on-plug ignition - no plug wires.",
+        "Inspect coil boots for cracks while replacing plugs.",
+        "Replace coils if you're experiencing misfires."
+      ]
     }
   ]
 }

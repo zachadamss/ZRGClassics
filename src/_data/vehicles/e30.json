@@ -577,34 +577,149 @@
     {
       "id": "oil-change",
       "title": "Oil Change",
-      "description": "Complete guide to changing oil and filter on M20 and M42 engines.",
+      "description": "Complete guide to changing oil and filter on M20 and M42 engines. Regular oil changes are the single most important maintenance item for engine longevity.",
       "difficulty": "Easy",
-      "time": "30 min",
-      "status": "coming-soon"
+      "time": "30-45 min",
+      "interval": "Every 3,000-5,000 miles or 6 months",
+      "cost": "$30-50",
+      "tools": [
+        "17mm socket or wrench",
+        "Oil filter wrench",
+        "Drain pan (6+ quart capacity)",
+        "Funnel",
+        "Jack and jack stands",
+        "Torque wrench"
+      ],
+      "steps": [
+        "Warm up the engine for 5 minutes to thin the oil, then turn off and let sit for 2 minutes.",
+        "Lift the front of the car and secure on jack stands. Never work under a car supported only by a jack.",
+        "Position drain pan under the oil pan. The drain plug is located at the rear of the oil pan.",
+        "Remove the 17mm drain plug and allow oil to drain completely (10-15 minutes).",
+        "While draining, remove the oil filter using an oil filter wrench. The filter is located on the driver's side of the engine block.",
+        "Apply a thin layer of fresh oil to the new filter gasket. Hand-tighten the new filter until the gasket contacts, then turn an additional 3/4 turn.",
+        "Clean the drain plug and inspect the crush washer. Replace the washer if it's damaged or reused multiple times.",
+        "Reinstall the drain plug and torque to 18-22 ft-lbs (25-30 Nm).",
+        "Lower the car and add oil through the filler cap. M20: 5.0 quarts, M42: 4.5 quarts.",
+        "Start the engine and check for leaks. Let idle for 2 minutes, then turn off and check the oil level. Top off as needed."
+      ],
+      "tips": [
+        "Use 15W-40 or 20W-50 for high-mileage engines, 10W-40 for normal use",
+        "Always use a quality filter - Mann, Mahle, or OEM BMW",
+        "Check for oil leaks from the valve cover gasket while you're under the car"
+      ]
     },
     {
       "id": "brake-pads",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement with rotor inspection tips.",
+      "description": "Front and rear brake pad replacement with rotor inspection. Essential safety maintenance that should not be delayed when pads are worn.",
       "difficulty": "Easy",
       "time": "1-2 hours",
-      "status": "coming-soon"
+      "interval": "Every 25,000-50,000 miles or when pad thickness reaches 3mm",
+      "cost": "$50-100 for pads (all four corners)",
+      "tools": [
+        "17mm socket for lug bolts",
+        "7mm hex (Allen) socket for caliper slides",
+        "Large C-clamp or brake piston tool",
+        "Wire brush",
+        "Brake cleaner spray",
+        "Brake grease (for slide pins)",
+        "Jack and jack stands"
+      ],
+      "steps": [
+        "Loosen lug bolts while the car is on the ground. Lift the car and secure on jack stands.",
+        "Remove the wheel to access the brake caliper.",
+        "Remove the two 7mm hex bolts holding the caliper carrier to the caliper bracket.",
+        "Slide the caliper off the rotor. Do not let it hang by the brake line - support it with a wire or bungee.",
+        "Remove the old brake pads from the caliper carrier. Note the orientation of any wear sensors.",
+        "Inspect the rotor surface for scoring, hot spots, or excessive wear. Minimum thickness is stamped on the rotor.",
+        "Use a C-clamp to compress the caliper piston back into the caliper body. Open the brake fluid reservoir cap first to prevent pressure buildup.",
+        "Clean the caliper slides and apply fresh brake grease. Inspect the slide pin boots for tears.",
+        "Install the new pads into the carrier. The pad with the wear sensor (if equipped) goes on the inner position.",
+        "Reinstall the caliper over the new pads and torque the slide bolts to 22-26 ft-lbs.",
+        "Reinstall the wheel and torque lug bolts to 80 ft-lbs in a star pattern.",
+        "Before driving, pump the brake pedal several times until firm to seat the pads against the rotors."
+      ],
+      "tips": [
+        "Bed in new pads: 10 moderate stops from 30 mph, then 10 harder stops from 40 mph",
+        "Replace pads in axle pairs - both fronts or both rears together",
+        "Check brake fluid level after compressing pistons - it will rise in the reservoir"
+      ]
     },
     {
       "id": "timing-belt-diy",
       "title": "Timing Belt Replacement",
-      "description": "Step-by-step timing belt, tensioner, and water pump replacement.",
+      "description": "Step-by-step timing belt, tensioner, and water pump replacement. Critical service for M20 and M42 engines - failure causes catastrophic valve damage.",
       "difficulty": "Intermediate",
       "time": "4-6 hours",
-      "status": "coming-soon"
+      "interval": "Every 50,000 miles or 4 years (whichever comes first)",
+      "cost": "$150-250 for parts (belt, tensioner, water pump, seals)",
+      "tools": [
+        "32mm fan clutch wrench",
+        "10mm, 13mm sockets",
+        "Torque wrench",
+        "TDC timing pin (or 6mm drill bit)",
+        "Cam locking tool (or careful marking)",
+        "Coolant drain pan",
+        "Belt tension gauge (optional)",
+        "Gasket scraper"
+      ],
+      "steps": [
+        "Drain coolant from the radiator using the petcock at the bottom. Collect in a clean pan if reusing.",
+        "Remove the fan shroud (4 clips) and fan clutch (32mm, turns clockwise to loosen - reverse thread).",
+        "Remove the accessory belts by loosening the tensioner pulleys.",
+        "Remove the upper and lower timing belt covers (10mm bolts).",
+        "Rotate the engine clockwise using a 22mm socket on the crank bolt until the timing marks align. The cam gear dot should point straight up, and the crank gear dot should align with the mark on the oil pump housing.",
+        "Insert a 6mm pin or drill bit through the hole in the flywheel (access from below) to lock the engine at TDC.",
+        "Loosen the timing belt tensioner and remove the old belt. Note the direction of rotation marked on the belt.",
+        "Remove the water pump (6 bolts). Clean the mating surface thoroughly.",
+        "Install the new water pump with a new gasket. Torque bolts to 7 ft-lbs in a cross pattern.",
+        "Install the new timing belt starting at the crank gear. Keep tension on the belt between the crank and cam gears.",
+        "Set belt tension by rotating the tensioner until the belt can be twisted 90 degrees with moderate finger pressure.",
+        "Rotate the engine two full revolutions by hand and verify timing marks still align. If not, repeat the process.",
+        "Reinstall timing covers, fan, belts, and refill coolant. Run engine and check for leaks."
+      ],
+      "tips": [
+        "Never reuse an old timing belt - always replace when removed",
+        "Replace the front crank seal and cam seal while the covers are off",
+        "Use only OEM or high-quality belts (Continental, Gates) - not cheap alternatives",
+        "Mark the old belt's rotation direction - running a used belt backward can cause failure"
+      ]
     },
     {
-      "id": "valve-adjustment",
-      "title": "Valve Adjustment (M20)",
-      "description": "How to check and adjust valve clearances on the M20 engine.",
-      "difficulty": "Intermediate",
-      "time": "2-3 hours",
-      "status": "coming-soon"
+      "id": "cooling-system-service",
+      "title": "Cooling System Service",
+      "description": "Complete coolant flush and thermostat replacement. Prevents overheating failures that can destroy the head gasket or warp the cylinder head.",
+      "difficulty": "Easy",
+      "time": "1-2 hours",
+      "interval": "Every 2 years or 30,000 miles",
+      "cost": "$40-80 (thermostat, gasket, coolant)",
+      "tools": [
+        "Phillips screwdriver",
+        "10mm socket",
+        "Drain pan (2+ gallon)",
+        "Funnel",
+        "Flush kit or garden hose adapter",
+        "Gasket scraper"
+      ],
+      "steps": [
+        "Allow the engine to cool completely. Never open the cooling system when hot.",
+        "Place a drain pan under the radiator and open the petcock at the bottom of the radiator. Also open the bleed screw on the thermostat housing to speed draining.",
+        "Remove the lower radiator hose for more complete drainage. Approximately 2 gallons will drain.",
+        "For a thorough flush: close the petcock, fill with distilled water, run the engine to operating temp with heat on high, drain again. Repeat until water runs clear.",
+        "Remove the thermostat housing (upper radiator hose neck). The M20 housing uses 10mm bolts.",
+        "Remove the old thermostat. Note the orientation - the spring goes toward the engine.",
+        "Clean the mating surfaces of all old gasket material. Do not let debris fall into the engine.",
+        "Install the new thermostat with a new gasket. Use an 88°C (192°F) thermostat for normal driving, 80°C (176°F) for warm climates or track use.",
+        "Reinstall the housing and hoses. Torque bolts to 7 ft-lbs. Do not overtighten - the housing is aluminum.",
+        "Fill the system with a 50/50 mix of BMW-approved coolant and distilled water. Fill slowly to minimize air pockets.",
+        "Leave the bleed screw open until a steady stream of coolant (no bubbles) emerges, then close it.",
+        "Start the engine with the heat on high. Watch the temperature gauge and top off coolant as air bleeds out. The level will drop as air pockets clear."
+      ],
+      "tips": [
+        "Use BMW blue coolant or a phosphate-free equivalent - never use green universal coolant",
+        "Replace the expansion tank if it shows any cracks or discoloration",
+        "Squeeze the upper hose while filling to help push air out of the system"
+      ]
     }
   ]
 }

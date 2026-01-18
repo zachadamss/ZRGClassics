@@ -531,23 +531,159 @@
       "description": "Flat-6 oil and filter change procedure for both 997.1 and 997.2.",
       "difficulty": "Easy",
       "time": "30 min",
-      "status": "coming-soon"
-    },
-    {
-      "id": "spark-plugs",
-      "title": "Spark Plug Replacement",
-      "description": "Replace spark plugs on the M97 or 9A1 engine.",
-      "difficulty": "Easy",
-      "time": "1 hour",
-      "status": "coming-soon"
+      "interval": "Every 5,000 miles (critical for 997.1 IMS health)",
+      "cost": "$60-90",
+      "tools": [
+        "19mm socket for drain plug",
+        "Oil filter wrench (997.1) or 76mm cap wrench (997.2)",
+        "Drain pan (10L capacity)",
+        "Funnel",
+        "Torque wrench",
+        "Ramps or jack and jack stands"
+      ],
+      "steps": [
+        "Warm the engine for 2-3 minutes - warm oil drains more completely.",
+        "Drive onto ramps or safely raise and support the vehicle.",
+        "Locate the oil drain plug on the bottom of the engine - 19mm socket.",
+        "Position drain pan and remove drain plug - oil capacity is approximately 9 quarts.",
+        "997.1: Remove spin-on oil filter using filter wrench (located on lower right of engine).",
+        "997.2: Remove cartridge filter cap (76mm) and replace filter element.",
+        "Allow oil to drain completely (10-15 minutes for thorough drain).",
+        "Install new drain plug washer and reinstall plug - torque to 37 ft-lbs (50 Nm).",
+        "997.1: Lubricate new filter gasket with oil and install - hand tight plus 3/4 turn.",
+        "997.2: Install new filter element and o-ring, torque cap to 19 ft-lbs (26 Nm).",
+        "Lower vehicle and add approximately 8.5 quarts of 0W-40 full synthetic.",
+        "Start engine and check for leaks around drain plug and filter.",
+        "Check oil level on the dashboard - add oil as needed to reach proper level.",
+        "Reset oil service interval in instrument cluster."
+      ],
+      "tips": [
+        "CRITICAL for 997.1: Cut open and inspect oil filter for metal debris - this is an early IMS bearing warning sign.",
+        "997.2 has no IMS bearing concern - different engine design (9A1).",
+        "Use quality 0W-40 oil meeting Porsche A40 spec (Mobil 1, Motul, etc.).",
+        "Consider oil analysis for 997.1 cars - helps monitor IMS bearing health.",
+        "Don't overfill - these engines are sensitive to overfilling."
+      ]
     },
     {
       "id": "brake-pads",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement.",
+      "description": "Front and rear brake pad replacement on 997 with optional sensor replacement.",
       "difficulty": "Easy",
       "time": "1-2 hours",
-      "status": "coming-soon"
+      "interval": "Every 20,000-40,000 miles depending on driving style",
+      "cost": "$150-300",
+      "tools": [
+        "19mm socket for wheel bolts",
+        "7mm hex/Allen socket for caliper guide pins",
+        "Brake piston retractor tool (rear uses screw-in type)",
+        "Wire brush",
+        "Brake cleaner",
+        "Anti-seize lubricant",
+        "Torque wrench"
+      ],
+      "steps": [
+        "Loosen wheel bolts before raising vehicle.",
+        "Raise and safely support vehicle on jack stands.",
+        "Remove wheel bolts and wheel.",
+        "Disconnect brake pad wear sensor connector if equipped.",
+        "Remove caliper guide pin bolts (7mm hex) - do not remove caliper bracket.",
+        "Swing caliper up and support it - do not let it hang by the brake hose.",
+        "Remove old brake pads and anti-rattle clips.",
+        "Clean caliper bracket and slide pins with brake cleaner and wire brush.",
+        "Inspect rotors for wear, scoring, or minimum thickness.",
+        "Front: Use brake piston tool to push piston back into caliper.",
+        "Rear: Use screw-in type retractor - piston must be rotated clockwise while pushing.",
+        "Install new anti-rattle clips and apply thin film of brake lubricant to pad backing.",
+        "Install new brake pads with wear sensor on inner pad (if equipped).",
+        "Reinstall caliper and torque guide pins to 25 ft-lbs.",
+        "Connect wear sensor and reinstall wheel - torque bolts to 118 ft-lbs (160 Nm).",
+        "Pump brake pedal several times before driving to seat pads."
+      ],
+      "tips": [
+        "Replace pads in axle pairs - never replace just one side.",
+        "Wear sensors are one-time use - replace if triggered or during pad change.",
+        "Bed in new pads properly: 10 moderate stops from 40 mph, then cool down.",
+        "PCCB (ceramic brake) cars have different procedure - do not attempt without proper training.",
+        "Open brake fluid reservoir cap before compressing pistons to prevent overflow."
+      ]
+    },
+    {
+      "id": "spark-plugs",
+      "title": "Spark Plug Replacement",
+      "description": "Replace spark plugs on the M97 (997.1) or 9A1 (997.2) flat-six engine.",
+      "difficulty": "Easy",
+      "time": "1-1.5 hours",
+      "interval": "Every 40,000 miles (997.1) or 60,000 miles (997.2)",
+      "cost": "$80-150",
+      "tools": [
+        "10mm socket for coil bolts",
+        "5/8\" (16mm) spark plug socket with rubber insert",
+        "6\" and 12\" extensions",
+        "Torque wrench",
+        "Anti-seize compound",
+        "Dielectric grease",
+        "Compressed air or vacuum"
+      ],
+      "steps": [
+        "Allow engine to cool completely - spark plugs in aluminum heads must be replaced cold.",
+        "Remove engine cover (if equipped) for better access.",
+        "Disconnect electrical connector from each ignition coil.",
+        "Remove coil pack mounting bolt (10mm) from each coil.",
+        "Carefully pull each coil straight up and out of the spark plug well.",
+        "Use compressed air to blow debris out of spark plug wells before removal.",
+        "Remove each spark plug using 5/8\" deep socket with extension.",
+        "Inspect removed plugs for wear pattern and electrode condition.",
+        "Apply thin coat of anti-seize to new plug threads (avoid getting on electrode).",
+        "Hand-thread new plugs to avoid cross-threading in aluminum heads.",
+        "Torque spark plugs to 22 ft-lbs (30 Nm) - do not overtighten.",
+        "Apply dielectric grease inside coil boots to prevent sticking.",
+        "Reinstall coil packs and torque mounting bolts to 7.5 ft-lbs (10 Nm).",
+        "Reconnect coil electrical connectors until they click."
+      ],
+      "tips": [
+        "Use NGK or Bosch plugs - these engines are sensitive to plug brand and heat range.",
+        "997.1 uses different plugs than 997.2 - verify correct part number.",
+        "Never install plugs in a hot engine - risk of stripping aluminum threads.",
+        "Gap is preset from factory - do not adjust unless specified.",
+        "If a plug feels difficult to remove, apply penetrating oil and try again rather than forcing."
+      ]
+    },
+    {
+      "id": "serpentine-belt",
+      "title": "Serpentine Belt Replacement",
+      "description": "Replace the accessory drive belt on the 997 flat-six engine.",
+      "difficulty": "Easy",
+      "time": "30-45 min",
+      "interval": "Every 40,000-60,000 miles or 4 years",
+      "cost": "$30-60",
+      "tools": [
+        "Serpentine belt tool or 3/8\" breaker bar",
+        "Flashlight",
+        "Belt routing diagram (photograph existing before removal)"
+      ],
+      "steps": [
+        "Open the rear deck lid and locate the accessory belt (visible from rear of engine compartment).",
+        "Take a photo or draw the belt routing before removal.",
+        "Locate the spring-loaded belt tensioner pulley.",
+        "Insert 3/8\" breaker bar or serpentine belt tool into tensioner square hole.",
+        "Rotate tensioner clockwise to release belt tension.",
+        "While holding tensioner, slip belt off one of the pulleys.",
+        "Slowly release tensioner and remove belt completely.",
+        "Inspect tensioner and idler pulleys for wear, noise, or play.",
+        "Compare new belt to old belt to verify correct length and rib count.",
+        "Route new belt around all pulleys except tensioner, following diagram.",
+        "Rotate tensioner and slip belt over final pulley.",
+        "Release tensioner slowly and verify belt is properly seated in all grooves.",
+        "Start engine briefly and verify belt tracks correctly with no squealing."
+      ],
+      "tips": [
+        "Replace tensioner and idler pulley if over 80,000 miles or showing wear.",
+        "A squealing belt on startup usually indicates worn belt or tensioner.",
+        "Always verify belt is fully seated in all pulley grooves before starting.",
+        "Keep hands clear when releasing tensioner - significant spring pressure.",
+        "Some owners do this from underneath the car - personal preference."
+      ]
     }
   ]
 }

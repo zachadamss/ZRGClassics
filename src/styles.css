@@ -2942,6 +2942,144 @@ input:focus, textarea:focus, select:focus {
     color: #fff;
 }
 
+/* Guide Card - Expanded Content */
+.guide-card.has-content {
+    opacity: 1;
+}
+
+.guide-card.has-content:hover {
+    transform: none;
+}
+
+.guide-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.guide-card-header h3 {
+    margin-bottom: 0;
+}
+
+.guide-card-header .guide-meta {
+    margin-top: 0;
+    flex-shrink: 0;
+}
+
+.guide-details {
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.guide-info-grid {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.guide-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.guide-info-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+}
+
+.guide-info-value {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .guide-info-value {
+    color: var(--gulf-blue);
+}
+
+.guide-tools,
+.guide-steps,
+.guide-tips {
+    margin-bottom: 1.25rem;
+}
+
+.guide-tools h4,
+.guide-steps h4,
+.guide-tips h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+}
+
+[data-theme="dark"] .guide-tools h4,
+[data-theme="dark"] .guide-steps h4,
+[data-theme="dark"] .guide-tips h4 {
+    color: var(--gulf-orange);
+}
+
+.guide-tools ul,
+.guide-tips ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.guide-tools li,
+.guide-tips li {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    background: var(--background-alt);
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--radius-full);
+    color: var(--text-color);
+}
+
+.guide-tips ul {
+    flex-direction: column;
+}
+
+.guide-tips li {
+    background: rgba(var(--gulf-orange-rgb, 245, 130, 32), 0.1);
+    border-left: 3px solid var(--gulf-orange);
+    border-radius: var(--radius-sm);
+    padding: 0.5rem 0.75rem;
+}
+
+.guide-steps ol {
+    padding-left: 1.5rem;
+    margin: 0;
+}
+
+.guide-steps li {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+    color: var(--text-color);
+}
+
+.guide-steps li::marker {
+    color: var(--gulf-orange);
+    font-weight: 700;
+}
+
 /* ================================
    Supplier Section
    ================================ */

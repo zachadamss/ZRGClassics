@@ -575,34 +575,160 @@
     {
       "id": "oil-change",
       "title": "Oil Change",
-      "description": "Complete oil and filter change procedure for the M64 engine.",
+      "description": "Complete oil and filter change procedure for the M64 air-cooled flat-six.",
       "difficulty": "Easy",
       "time": "45 min",
-      "status": "coming-soon"
+      "interval": "Every 3,000-5,000 miles",
+      "cost": "$60-90",
+      "tools": [
+        "21mm socket for drain plug",
+        "Oil filter wrench (various types may be needed)",
+        "Drain pan (3 gallon capacity)",
+        "Funnel with extension tube",
+        "Ramps or jack and jack stands"
+      ],
+      "steps": [
+        "Warm the engine for 2-3 minutes - oil flows better when warm.",
+        "Drive onto ramps or raise and support the car safely.",
+        "Locate the main oil drain plug on the bottom of the engine case.",
+        "Position large drain pan and remove the 21mm drain plug.",
+        "Allow oil to drain completely - 15-20 minutes for thorough drainage.",
+        "The 964 has a spin-on oil filter located in the engine compartment.",
+        "Access the filter from the engine bay - it's on the left side of the engine.",
+        "Using filter wrench, remove the old filter.",
+        "Apply fresh oil to the new filter's gasket.",
+        "Thread new filter on by hand until seated, then 3/4 turn more.",
+        "Replace the copper crush washer on the drain plug.",
+        "Reinstall drain plug and torque to 37 ft-lbs (50 Nm).",
+        "Add 10-11 quarts of 15W-50 or 20W-50 oil through the oil filler.",
+        "Start engine and check for leaks at drain and filter.",
+        "Let engine idle briefly, shut off, wait 3 minutes, check level."
+      ],
+      "tips": [
+        "Air-cooled 911s have large oil capacity (10-11 quarts) for cooling.",
+        "Use quality 15W-50 or 20W-50 conventional or synthetic oil.",
+        "Check for oil leaks at valve covers and chain housings while working.",
+        "Some owners use Mobil 1 15W-50 or Brad Penn racing oil."
+      ]
     },
     {
       "id": "brake-pads",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement.",
+      "description": "Front and rear brake pad replacement on the 964's four-piston calipers.",
       "difficulty": "Easy",
       "time": "1-2 hours",
-      "status": "coming-soon"
+      "interval": "Every 20,000-35,000 miles",
+      "cost": "$120-200",
+      "tools": [
+        "19mm socket for lug bolts",
+        "7mm Allen socket",
+        "Flathead screwdriver",
+        "Brake piston spreader tool",
+        "Wire brush",
+        "Brake cleaner",
+        "Brake grease",
+        "Jack and jack stands"
+      ],
+      "steps": [
+        "Loosen lug bolts while the car is on the ground.",
+        "Raise and support the car safely on jack stands.",
+        "Remove wheel to access the caliper.",
+        "The 964 uses four-piston fixed calipers - pads slide out without removing caliper.",
+        "Remove the pad retaining pins (cross pins through the caliper).",
+        "Use a flathead screwdriver to push and slide the old pads out.",
+        "Inspect rotor for scoring, cracks, or minimum thickness markings.",
+        "Clean the caliper pad contact surfaces with brake cleaner.",
+        "Use the piston spreader tool to push all four pistons back evenly.",
+        "Apply brake grease to the back of new pads.",
+        "Slide new pads into the caliper, ensuring proper orientation.",
+        "Reinstall pad retaining pins.",
+        "Reinstall wheel and torque lug bolts to 96 ft-lbs (130 Nm).",
+        "Repeat for all corners.",
+        "Pump brake pedal until firm before driving."
+      ],
+      "tips": [
+        "Four-piston calipers require all pistons pushed back evenly.",
+        "Open brake fluid reservoir before compressing pistons.",
+        "Use quality pads from Pagid, Hawk, or Porsche OEM.",
+        "Bed new pads with gradual stops - avoid hard braking for 100 miles."
+      ]
     },
     {
       "id": "distributor-service",
       "title": "Distributor Cap and Rotor",
-      "description": "Replace distributor caps and rotors on both distributors.",
+      "description": "Replace distributor caps and rotors on both dual distributors.",
       "difficulty": "Easy",
       "time": "1 hour",
-      "status": "coming-soon"
+      "interval": "Every 15,000-20,000 miles",
+      "cost": "$80-150",
+      "tools": [
+        "Phillips screwdriver",
+        "Flathead screwdriver",
+        "Pliers for wire clips",
+        "New caps, rotors, and dust covers",
+        "Dielectric grease"
+      ],
+      "steps": [
+        "The 964 has two distributors - one for each cylinder bank (1-3-5 and 2-4-6).",
+        "Locate both distributors at the rear of the engine, driven off the camshafts.",
+        "Mark or photograph the spark plug wire positions before removal.",
+        "Remove the spark plug wires by pulling on the boots, not the wires.",
+        "Remove the distributor cap retaining clips or screws.",
+        "Lift off the old distributor cap.",
+        "Pull the old rotor straight off the distributor shaft.",
+        "Remove the dust cover (if equipped) beneath the rotor.",
+        "Install new dust cover.",
+        "Install new rotor - it only fits one way on the shaft.",
+        "Install new distributor cap and secure with clips/screws.",
+        "Apply dielectric grease to the inside of plug wire boots.",
+        "Reconnect spark plug wires in the correct order.",
+        "Repeat for the second distributor.",
+        "Start engine and verify smooth operation."
+      ],
+      "tips": [
+        "Always use Bosch or OEM quality caps and rotors.",
+        "Note the firing order: 1-6-2-4-3-5 with cylinders numbered from front.",
+        "Inspect the distributor gear for wear while the cap is off.",
+        "Replace spark plug wires if they show cracking or corrosion."
+      ]
     },
     {
       "id": "valve-adjustment",
       "title": "Valve Adjustment",
-      "description": "Check and adjust valve clearances on the M64 engine.",
+      "description": "Check and adjust valve clearances on the M64 flat-six engine.",
       "difficulty": "Intermediate",
       "time": "2-3 hours",
-      "status": "coming-soon"
+      "interval": "Every 15,000 miles",
+      "cost": "$20-40",
+      "tools": [
+        "10mm socket for valve covers",
+        "Feeler gauge set (metric)",
+        "13mm wrench for locknut",
+        "8mm Allen for adjuster",
+        "24mm socket for crank pulley",
+        "Flashlight"
+      ],
+      "steps": [
+        "Engine must be cold - valves expand when hot, changing clearances.",
+        "Remove the valve covers on both cylinder banks (six 10mm nuts each).",
+        "Rotate engine to TDC on cylinder 1 using 24mm socket on crank pulley.",
+        "At TDC #1, both lobes on cylinder 1 point away from the valves.",
+        "Check intake clearance: 0.10mm (0.004in) cold.",
+        "Check exhaust clearance: 0.10mm (0.004in) cold.",
+        "To adjust: Loosen 13mm locknut, turn 8mm adjuster, retighten locknut.",
+        "Recheck clearance after tightening - locknut can shift adjustment.",
+        "Rotate engine 120° to next firing order cylinder.",
+        "Firing order is 1-6-2-4-3-5 - adjust in this sequence.",
+        "Check and adjust all 12 valves (6 intake, 6 exhaust).",
+        "Clean valve cover mating surfaces and install new gaskets.",
+        "Reinstall valve covers and torque to 11 ft-lbs (15 Nm)."
+      ],
+      "tips": [
+        "Slight drag on feeler gauge is correct - not too tight, not too loose.",
+        "Mark each valve as you adjust to track progress.",
+        "Cylinder 1 is at the front right (passenger side, front).",
+        "Too tight = burned valves; too loose = noisy, poor performance."
+      ]
     }
   ]
 }

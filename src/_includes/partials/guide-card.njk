@@ -1,18 +1,67 @@
 {% set currentGuide = diyGuide if diyGuide else guide %}
-<article class="guide-card{% if currentGuide.status == 'coming-soon' %} coming-soon{% endif %}">
-    <div class="guide-card-content">
+<article class="guide-card{% if currentGuide.status == 'coming-soon' %} coming-soon{% endif %}{% if currentGuide.steps %} has-content{% endif %}" id="guide-{{ currentGuide.id }}">
+    <div class="guide-card-header">
         <h3>{{ currentGuide.title }}</h3>
-        <p class="guide-description">{{ currentGuide.description }}</p>
         <div class="guide-meta">
             <span class="difficulty difficulty-{{ currentGuide.difficulty | lower }}">{{ currentGuide.difficulty }}</span>
             <span class="time-estimate">{{ currentGuide.time }}</span>
         </div>
     </div>
+    <p class="guide-description">{{ currentGuide.description }}</p>
+
     {% if currentGuide.status == 'coming-soon' %}
     <div class="guide-status">
         <span class="coming-soon-badge">Coming Soon</span>
     </div>
-    {% else %}
-    <a href="/guides/{{ vehicle.brand | lower }}/{{ vehicle.model | lower }}/{{ currentGuide.id }}/" class="guide-link">View Guide</a>
+    {% elif currentGuide.steps %}
+    <div class="guide-details">
+        <div class="guide-info-grid">
+            {% if currentGuide.interval %}
+            <div class="guide-info-item">
+                <span class="guide-info-label">Interval</span>
+                <span class="guide-info-value">{{ currentGuide.interval }}</span>
+            </div>
+            {% endif %}
+            {% if currentGuide.cost %}
+            <div class="guide-info-item">
+                <span class="guide-info-label">Cost (DIY)</span>
+                <span class="guide-info-value">{{ currentGuide.cost }}</span>
+            </div>
+            {% endif %}
+        </div>
+
+        {% if currentGuide.tools and currentGuide.tools.length > 0 %}
+        <div class="guide-tools">
+            <h4>Tools Needed</h4>
+            <ul>
+                {% for tool in currentGuide.tools %}
+                <li>{{ tool }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        {% if currentGuide.steps and currentGuide.steps.length > 0 %}
+        <div class="guide-steps">
+            <h4>Procedure</h4>
+            <ol>
+                {% for step in currentGuide.steps %}
+                <li>{{ step }}</li>
+                {% endfor %}
+            </ol>
+        </div>
+        {% endif %}
+
+        {% if currentGuide.tips and currentGuide.tips.length > 0 %}
+        <div class="guide-tips">
+            <h4>Pro Tips</h4>
+            <ul>
+                {% for tip in currentGuide.tips %}
+                <li>{{ tip }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
     {% endif %}
 </article>

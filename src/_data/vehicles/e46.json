@@ -581,7 +581,37 @@
       "description": "Complete oil and filter change procedure for M54 engines.",
       "difficulty": "Easy",
       "time": "30 min",
-      "status": "coming-soon"
+      "interval": "Every 7,500 miles or annually",
+      "cost": "$50-70",
+      "tools": [
+        "17mm socket for drain plug",
+        "36mm socket or oil filter wrench",
+        "Drain pan",
+        "Funnel",
+        "Torque wrench",
+        "Jack and jack stands"
+      ],
+      "steps": [
+        "Warm the engine for 2-3 minutes to thin the oil for better drainage.",
+        "Raise the front of the car safely and support on jack stands.",
+        "Position drain pan under the oil pan and remove the 17mm drain plug.",
+        "Allow oil to drain completely - approximately 10 minutes.",
+        "Replace the copper crush washer on the drain plug.",
+        "Reinstall drain plug and torque to 18 ft-lbs (25 Nm).",
+        "The oil filter housing is on top of the engine near the front - remove the cap with 36mm socket.",
+        "Pull out the old filter element and remove the old O-ring from the cap.",
+        "Install the new filter element onto the center post in the cap.",
+        "Lubricate the new O-ring with fresh oil and install it in the cap groove.",
+        "Reinstall filter cap and torque to 25 ft-lbs (34 Nm).",
+        "Add 6.9 quarts of 5W-30 or 0W-40 synthetic oil through the fill cap.",
+        "Start engine and run for 30 seconds, then shut off and check for leaks.",
+        "Wait 2 minutes for oil to settle, then check dipstick and top off as needed."
+      ],
+      "tips": [
+        "The E46 uses a cartridge-style filter - the housing stays in place.",
+        "Always replace the O-ring to prevent leaks from the filter housing.",
+        "Check the oil filter housing gasket for signs of leaking while you have access."
+      ]
     },
     {
       "id": "expansion-tank",
@@ -589,15 +619,126 @@
       "description": "Replace the plastic expansion tank before it cracks and leaves you stranded.",
       "difficulty": "Easy",
       "time": "1 hour",
-      "status": "coming-soon"
+      "interval": "Every 60,000 miles (preventive)",
+      "cost": "$40-70",
+      "tools": [
+        "10mm socket",
+        "Flathead screwdriver",
+        "Pliers for hose clamps",
+        "Drain pan",
+        "New coolant (1 gallon BMW blue)"
+      ],
+      "steps": [
+        "Allow the engine to cool completely - never open a hot cooling system.",
+        "Remove the expansion tank cap slowly to release any residual pressure.",
+        "Place drain pan under the expansion tank area.",
+        "Disconnect the coolant level sensor electrical connector on the tank.",
+        "Use pliers to move hose clamps back, then carefully pull off the two coolant hoses.",
+        "Remove the 10mm bolt holding the expansion tank mounting bracket.",
+        "Lift the expansion tank up and out - some coolant will spill.",
+        "Clean the mounting area and inspect hoses for cracks or hardening.",
+        "Install the new expansion tank and secure with the 10mm bolt.",
+        "Reconnect both coolant hoses and slide clamps back into position.",
+        "Reconnect the coolant level sensor connector.",
+        "Fill the system with 50/50 BMW coolant mix through the expansion tank.",
+        "Start the engine with the heater on full hot and cap off.",
+        "Top off coolant as the level drops and air escapes - continue until level stabilizes.",
+        "Install the expansion tank cap and check for leaks."
+      ],
+      "tips": [
+        "Inspect the old tank carefully - cracks often start at the seams or sensor fitting.",
+        "This is a known failure point - replace preventively rather than waiting for failure.",
+        "Consider doing a full cooling system refresh while you have coolant drained."
+      ]
     },
     {
-      "id": "window-regulator",
-      "title": "Window Regulator Replacement",
-      "description": "Fix dropped windows with new regulator installation.",
+      "id": "brake-pads",
+      "title": "Brake Pad Replacement",
+      "description": "Front and rear brake pad replacement with sensor reset procedure.",
       "difficulty": "Easy",
       "time": "1-2 hours",
-      "status": "coming-soon"
+      "interval": "Every 25,000-50,000 miles",
+      "cost": "$60-120",
+      "tools": [
+        "17mm socket for lug bolts",
+        "7mm Allen socket for caliper pins",
+        "Flathead screwdriver",
+        "Brake caliper piston tool or C-clamp",
+        "Wire brush",
+        "Brake cleaner",
+        "Brake grease",
+        "Jack and jack stands"
+      ],
+      "steps": [
+        "Loosen lug bolts slightly while the car is on the ground.",
+        "Raise and support the car safely on jack stands.",
+        "Remove wheel and set aside.",
+        "Disconnect the brake wear sensor connector if equipped.",
+        "Remove the two 7mm Allen caliper guide pin bolts from the back of the caliper.",
+        "Pivot the caliper up and secure it - do not let it hang by the brake line.",
+        "Slide the old brake pads out of the caliper bracket.",
+        "Inspect the rotor for deep grooves, cracks, or minimum thickness markings.",
+        "Clean the caliper bracket pad contact areas with a wire brush.",
+        "Open the brake fluid reservoir cap, then compress the caliper piston fully.",
+        "Apply a thin layer of brake grease to the pad backing plate edges.",
+        "Install new pads - the wear sensor pad goes on the inner (piston) side.",
+        "Lower the caliper over the new pads and reinstall the guide pin bolts to 22 ft-lbs (30 Nm).",
+        "Reconnect the wear sensor if equipped.",
+        "Reinstall wheel and torque lug bolts to 87 ft-lbs (118 Nm) in a star pattern.",
+        "Repeat for remaining wheels.",
+        "Pump brake pedal firmly several times before driving to seat the pads."
+      ],
+      "tips": [
+        "Always replace pads in axle pairs - never replace just one side.",
+        "E46 wear sensors are on front left and rear right - reset the CBS if equipped.",
+        "Bed new pads with gradual stops - avoid heavy braking for the first 100 miles."
+      ]
+    },
+    {
+      "id": "cooling-system-refresh",
+      "title": "Cooling System Refresh",
+      "description": "Complete cooling system overhaul including water pump, thermostat, and hoses.",
+      "difficulty": "Intermediate",
+      "time": "5-7 hours",
+      "interval": "Every 60,000-80,000 miles",
+      "cost": "$300-500",
+      "tools": [
+        "32mm wrench for fan clutch",
+        "Fan clutch holding tool",
+        "10mm, 13mm sockets",
+        "E10 Torx socket",
+        "Flathead screwdriver",
+        "Drain pan",
+        "Pliers for hose clamps",
+        "New coolant (1.5 gallons)",
+        "Spill-free funnel"
+      ],
+      "steps": [
+        "Ensure engine is completely cool before starting.",
+        "Remove the intake snorkel and cabin filter housing cover for access.",
+        "Remove the fan clutch using 32mm wrench and holding tool (LEFT-HAND THREAD - clockwise to loosen).",
+        "Remove the fan shroud clips and lift fan and shroud out together.",
+        "Drain coolant from the radiator drain plug and expansion tank.",
+        "Disconnect all hoses from the thermostat housing.",
+        "Remove the thermostat housing bolts and extract the thermostat.",
+        "Remove the four bolts from the water pump pulley.",
+        "Remove the three bolts from the water pump and pull it out.",
+        "Clean all gasket mating surfaces thoroughly.",
+        "Install new water pump with new gasket and torque to 7 ft-lbs (10 Nm).",
+        "Install the water pump pulley.",
+        "Install new thermostat in the housing with new gasket - jiggle valve at 12 o'clock.",
+        "Replace expansion tank (recommended) and all coolant hoses.",
+        "Reinstall fan clutch (LEFT-HAND THREAD - counter-clockwise to tighten).",
+        "Fill system with 50/50 BMW coolant through the expansion tank.",
+        "Bleed the system by running engine with heater on max, cap off, until thermostat opens.",
+        "Top off coolant, install cap, and check for leaks at operating temperature."
+      ],
+      "tips": [
+        "The fan clutch is LEFT-HAND THREADED - turn clockwise to remove, counter-clockwise to tighten.",
+        "Use a water pump with metal impeller - plastic impellers can fail catastrophically.",
+        "Consider upgrading to an aluminum thermostat housing to prevent future cracks.",
+        "Inspect the radiator end tanks for cracks while you have access - replace if questionable."
+      ]
     }
   ]
 }

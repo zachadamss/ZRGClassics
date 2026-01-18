@@ -621,10 +621,39 @@
     {
       "id": "oil-change",
       "title": "Oil Change",
-      "description": "Basic oil and filter change procedure.",
+      "description": "Complete oil and filter change procedure for all 944 engine variants.",
       "difficulty": "Easy",
       "time": "30 min",
-      "status": "coming-soon"
+      "interval": "Every 3,000-5,000 miles",
+      "cost": "$40-60",
+      "tools": [
+        "19mm socket for drain plug",
+        "Oil filter wrench (cap style)",
+        "Drain pan",
+        "Funnel",
+        "Ramps or jack and jack stands"
+      ],
+      "steps": [
+        "Warm the engine for 2-3 minutes to thin the oil.",
+        "Drive onto ramps or raise and support the car safely.",
+        "Locate the oil drain plug on the rear of the oil pan.",
+        "Position drain pan and remove the 19mm drain plug.",
+        "Allow oil to drain completely - 10 minutes minimum.",
+        "The spin-on oil filter is located on the passenger side of the engine.",
+        "Using the oil filter wrench, remove the old filter.",
+        "Apply a thin film of fresh oil to the new filter's rubber gasket.",
+        "Thread new filter on by hand until gasket contacts, then tighten 3/4 turn more.",
+        "Replace the crush washer on the drain plug.",
+        "Reinstall drain plug and torque to 22 ft-lbs (30 Nm).",
+        "Add 6.5 quarts (NA) or 7 quarts (Turbo) of 15W-40 or 20W-50 oil.",
+        "Start engine and check for leaks at drain and filter.",
+        "Shut off, wait 2 minutes, check level, and top off as needed."
+      ],
+      "tips": [
+        "The 944 takes 6.5-7 quarts depending on model and oil cooler configuration.",
+        "High-zinc oils (15W-40 diesel-rated) are recommended for the flat-tappet cam.",
+        "Turbo models should use quality synthetic in hot climates."
+      ]
     },
     {
       "id": "dme-relay",
@@ -632,15 +661,109 @@
       "description": "Replace the notorious DME relay before it leaves you stranded.",
       "difficulty": "Easy",
       "time": "15 min",
-      "status": "coming-soon"
+      "interval": "Every 10 years or as needed",
+      "cost": "$30-60",
+      "tools": [
+        "Small flathead screwdriver",
+        "Flashlight",
+        "New DME relay"
+      ],
+      "steps": [
+        "The DME relay is located in the central electric panel under the dash, driver's side.",
+        "Remove the lower dash panel to access the fuse/relay panel.",
+        "Locate the DME relay - it's typically in position XI (11) on the relay board.",
+        "The DME relay is the larger relay that controls fuel pump and DME power.",
+        "Note the orientation of the relay before removing.",
+        "Gently pull the old relay straight out of its socket.",
+        "Inspect the relay socket contacts for corrosion - clean if needed.",
+        "Push the new relay firmly into the socket in the correct orientation.",
+        "Turn key to ON and listen for fuel pump prime (2-3 seconds of pump noise).",
+        "Start engine and verify it runs properly.",
+        "Reinstall dash panel.",
+        "Keep the old relay (if functional) as a spare in the glove box."
+      ],
+      "tips": [
+        "The DME relay controls fuel pump, injectors, and DME computer power.",
+        "If car dies while driving and won't restart, DME relay is the prime suspect.",
+        "Some owners re-solder the original relay's cracked joints as a roadside repair.",
+        "Always carry a spare DME relay - this is the most common 944 failure."
+      ]
     },
     {
       "id": "brake-pads",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement.",
+      "description": "Front and rear brake pad replacement with rotor inspection.",
       "difficulty": "Easy",
       "time": "1-2 hours",
-      "status": "coming-soon"
+      "interval": "Every 20,000-40,000 miles",
+      "cost": "$80-150",
+      "tools": [
+        "19mm socket for lug bolts",
+        "7mm Allen socket",
+        "13mm socket",
+        "C-clamp or brake piston tool",
+        "Wire brush",
+        "Brake cleaner",
+        "Brake grease",
+        "Jack and jack stands"
+      ],
+      "steps": [
+        "Loosen lug bolts while the car is on the ground.",
+        "Raise and support the car safely on jack stands.",
+        "Remove wheel to access the caliper.",
+        "Front calipers: Remove the two 7mm Allen caliper guide pin bolts.",
+        "Rear calipers: Remove the caliper bracket bolts (varies by year).",
+        "Swing or remove the caliper and support it - don't let it hang by the hose.",
+        "Remove the old pads from the caliper bracket.",
+        "Inspect rotor for scoring, cracks, or minimum thickness.",
+        "Clean pad contact areas in the bracket with wire brush.",
+        "Open brake fluid reservoir cap, then compress caliper piston.",
+        "Apply brake grease to the back of new pads and contact points.",
+        "Install new pads in the bracket.",
+        "Reinstall caliper and torque bolts to spec (63 ft-lbs for caliper bolts).",
+        "Reinstall wheel and torque lug bolts to 96 ft-lbs (130 Nm).",
+        "Repeat for all corners.",
+        "Pump brake pedal until firm before driving."
+      ],
+      "tips": [
+        "The 944 uses solid front rotors on base models, vented on Turbo and S2.",
+        "Rear brakes on 944 are cable-operated parking brake - adjust cable after pad change.",
+        "Bed in new pads with gradual stops - avoid hard braking for first 100 miles."
+      ]
+    },
+    {
+      "id": "timing-belt-inspection",
+      "title": "Timing Belt Inspection",
+      "description": "Inspect timing and balance shaft belts through the inspection window.",
+      "difficulty": "Easy",
+      "time": "15 min",
+      "interval": "Every 5,000 miles or annually",
+      "cost": "$0",
+      "tools": [
+        "Flashlight",
+        "Inspection mirror (optional)",
+        "10mm socket for cover removal"
+      ],
+      "steps": [
+        "Park the car and allow the engine to cool.",
+        "Open the hood and locate the timing belt cover on the driver's side of the engine.",
+        "Remove the small inspection cover plate (1-2 10mm bolts) from the upper timing cover.",
+        "Using a flashlight, peer through the inspection window.",
+        "Examine the visible portion of the timing belt for cracks, glazing, or fraying.",
+        "Look for any separation between the belt's teeth and backing.",
+        "Check for oil contamination - belt should be dry.",
+        "If possible, rotate the engine (by hand at crank bolt) to inspect more of the belt.",
+        "Reinstall the inspection cover.",
+        "Note: This is only a preliminary check - belts can fail with little visible warning.",
+        "If any damage is visible, schedule immediate belt replacement.",
+        "Even if belt looks good, replace at 30,000 mile intervals."
+      ],
+      "tips": [
+        "This is an interference engine - belt failure destroys valves and pistons.",
+        "Oil on the belt means water pump or seal failure - address immediately.",
+        "Visual inspection does not replace scheduled belt changes.",
+        "Both timing belt AND balance shaft belt must be replaced together."
+      ]
     }
   ]
 }

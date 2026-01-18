@@ -532,26 +532,148 @@
     {
       "id": "oil-change",
       "title": "Oil Change",
-      "description": "Basic oil and filter change procedure.",
+      "description": "Complete oil and filter change procedure for 924 engines.",
       "difficulty": "Easy",
       "time": "30 min",
-      "status": "coming-soon"
+      "interval": "Every 3,000-5,000 miles",
+      "cost": "$35-55",
+      "tools": [
+        "19mm socket for drain plug",
+        "Oil filter wrench",
+        "Drain pan",
+        "Funnel",
+        "Jack and jack stands or ramps"
+      ],
+      "steps": [
+        "Warm the engine briefly to thin the oil for better drainage.",
+        "Raise the front of the car safely or drive onto ramps.",
+        "Locate the oil drain plug on the rear of the oil pan.",
+        "Position drain pan and remove the 19mm drain plug.",
+        "Allow oil to drain completely - at least 10 minutes.",
+        "The spin-on oil filter is on the driver's side of the engine block.",
+        "Using filter wrench, remove the old filter - some oil will drip.",
+        "Apply a thin film of fresh oil to the new filter's gasket.",
+        "Thread the new filter on by hand until the gasket seats, then 3/4 turn more.",
+        "Replace the copper crush washer on the drain plug.",
+        "Reinstall drain plug and torque to 22 ft-lbs (30 Nm).",
+        "Add 4.5 quarts (924 2.0L) or 6 quarts (924S) of 15W-40 or 20W-50 oil.",
+        "Start engine, check for leaks at drain plug and filter.",
+        "Shut off, wait 2 minutes, check dipstick, and top off as needed."
+      ],
+      "tips": [
+        "The Audi-derived 924 engine benefits from high-zinc oils.",
+        "Many owners use diesel-rated 15W-40 for the added zinc content.",
+        "Check valve cover gasket for leaks while performing oil change."
+      ]
     },
     {
       "id": "clutch-adjustment",
       "title": "Clutch Cable Adjustment",
-      "description": "Restore proper clutch pedal feel with cable adjustment.",
+      "description": "Restore proper clutch pedal feel and engagement with cable adjustment.",
       "difficulty": "Easy",
       "time": "30 min",
-      "status": "coming-soon"
+      "interval": "As needed or every 10,000 miles",
+      "cost": "$0",
+      "tools": [
+        "13mm wrench (2)",
+        "Ruler or tape measure",
+        "Flashlight",
+        "Penetrating oil (if needed)"
+      ],
+      "steps": [
+        "Locate the clutch cable adjustment at the rear transaxle end.",
+        "The adjustment is where the cable exits the guide tube near the transaxle.",
+        "Measure clutch pedal free play at the pedal - should be 15-20mm (5/8\"-3/4\").",
+        "If adjustment is needed, loosen the locknut at the cable end.",
+        "Turn the adjusting nut to increase or decrease cable tension.",
+        "Turning the nut toward the transaxle increases free play (loosens).",
+        "Turning the nut away from the transaxle decreases free play (tightens).",
+        "Adjust until pedal has proper 15-20mm free play before engagement.",
+        "Hold the adjusting nut and tighten the locknut securely.",
+        "Test drive and verify clutch engages smoothly without slipping.",
+        "Re-check adjustment after a few days of driving."
+      ],
+      "tips": [
+        "Too little free play causes clutch slipping and premature wear.",
+        "Too much free play can prevent full clutch disengagement.",
+        "If cable is stretched beyond adjustment, replacement is needed.",
+        "Check the cable guide tube for wear - a worn tube adds friction."
+      ]
     },
     {
       "id": "fuel-filter",
       "title": "Fuel Filter Replacement",
-      "description": "Replace the fuel filter for better running.",
+      "description": "Replace the inline fuel filter for better engine performance.",
       "difficulty": "Easy",
       "time": "30 min",
-      "status": "coming-soon"
+      "interval": "Every 15,000-20,000 miles",
+      "cost": "$20-40",
+      "tools": [
+        "17mm wrench",
+        "Screwdriver for hose clamps",
+        "Drain pan",
+        "Rags",
+        "New fuel filter",
+        "New hose clamps (recommended)"
+      ],
+      "steps": [
+        "Relieve fuel system pressure by removing the fuel pump fuse and running engine until it stalls.",
+        "Locate the fuel filter - it's typically mounted under the car near the fuel tank.",
+        "Place drain pan under the filter to catch fuel.",
+        "Note the direction of fuel flow on the old filter (arrow marking).",
+        "Loosen the hose clamps on both ends of the filter.",
+        "Carefully pull the fuel hoses off the filter - fuel will drain.",
+        "Remove the old filter from the mounting bracket.",
+        "Install the new filter with the flow arrow pointing toward the engine.",
+        "Slide the fuel hoses onto the new filter and secure with clamps.",
+        "Use new clamps if the old ones are corroded or weak.",
+        "Reinstall the fuel pump fuse.",
+        "Turn key to ON (don't start) several times to prime the fuel system.",
+        "Start engine and check carefully for any fuel leaks.",
+        "Dispose of old fuel properly."
+      ],
+      "tips": [
+        "Work in a well-ventilated area away from ignition sources.",
+        "The CIS fuel system operates at high pressure - be cautious.",
+        "Replace rubber fuel lines if they are cracked or hard.",
+        "Modern ethanol fuels degrade old rubber quickly."
+      ]
+    },
+    {
+      "id": "spark-plugs",
+      "title": "Spark Plug Replacement",
+      "description": "Replace spark plugs to maintain proper ignition.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "interval": "Every 15,000-20,000 miles",
+      "cost": "$20-40",
+      "tools": [
+        "Spark plug socket (5/8\" or 16mm)",
+        "Extension",
+        "Ratchet",
+        "Torque wrench",
+        "Spark plug gap tool",
+        "Compressed air"
+      ],
+      "steps": [
+        "Allow engine to cool completely.",
+        "Remove the spark plug wires by pulling on the boot, not the wire.",
+        "Number or mark the wires so they go back in the correct order.",
+        "Use compressed air to blow debris out of the spark plug wells.",
+        "Using the spark plug socket and extension, remove each plug.",
+        "Inspect old plugs - note condition (oil fouled, worn, etc.).",
+        "Check the gap on new plugs - should be 0.7-0.8mm (0.028-0.032\").",
+        "Hand-thread new plugs into the head to avoid cross-threading.",
+        "Torque spark plugs to 18-22 ft-lbs (25-30 Nm).",
+        "Reconnect spark plug wires in the correct firing order.",
+        "Start engine and verify smooth operation.",
+        "Listen for any misfires or rough running."
+      ],
+      "tips": [
+        "Use Bosch W7DTC or equivalent plugs for the Audi engine.",
+        "Worn plugs can cause hard starting and poor fuel economy.",
+        "Inspect plug wires for cracks while replacing plugs."
+      ]
     }
   ]
 }

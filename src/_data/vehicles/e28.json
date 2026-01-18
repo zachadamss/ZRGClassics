@@ -629,7 +629,37 @@
       "description": "Complete guide to oil and filter change on M20 and M30 engines.",
       "difficulty": "Easy",
       "time": "30 min",
-      "status": "coming-soon"
+      "interval": "Every 3,000-5,000 miles",
+      "cost": "$40-60",
+      "tools": [
+        "17mm socket for drain plug",
+        "Oil filter wrench (cap style)",
+        "Drain pan",
+        "Funnel",
+        "Jack and jack stands",
+        "Torque wrench"
+      ],
+      "steps": [
+        "Warm the engine for 2-3 minutes to thin the oil.",
+        "Raise the front of the car and secure on jack stands.",
+        "Locate the oil drain plug on the rear of the oil pan.",
+        "Position drain pan and remove the 17mm drain plug.",
+        "Allow oil to drain completely - at least 10 minutes for older engines.",
+        "Replace the copper crush washer on the drain plug.",
+        "Reinstall drain plug and torque to 18 ft-lbs (25 Nm).",
+        "Locate the spin-on oil filter on the passenger side of the block (M30) or front of block (M20).",
+        "Using the oil filter wrench, remove the old filter - oil will drip.",
+        "Apply a thin film of fresh oil to the new filter's rubber gasket.",
+        "Thread the new filter on by hand until the gasket contacts, then tighten 3/4 turn more.",
+        "Lower the car and add 5.5 quarts (M30) or 4.5 quarts (M20) of 15W-40 or 20W-50 oil.",
+        "Start engine and check for leaks at drain plug and filter.",
+        "Let engine idle for 30 seconds, then shut off and check level after 2 minutes."
+      ],
+      "tips": [
+        "Classic M30 and M20 engines run best on conventional or high-zinc oil.",
+        "Many E28 owners prefer 15W-40 diesel-rated oils for the higher zinc content.",
+        "Check for oil leaks from the valve cover gasket while you're under the hood."
+      ]
     },
     {
       "id": "brake-pads",
@@ -637,7 +667,39 @@
       "description": "Front and rear brake pad replacement with rotor inspection.",
       "difficulty": "Easy",
       "time": "1-2 hours",
-      "status": "coming-soon"
+      "interval": "Every 20,000-40,000 miles",
+      "cost": "$50-100",
+      "tools": [
+        "17mm socket for lug bolts",
+        "13mm socket or wrench for caliper bolts",
+        "Flathead screwdriver",
+        "C-clamp or brake piston tool",
+        "Wire brush",
+        "Brake cleaner",
+        "Brake grease",
+        "Jack and jack stands"
+      ],
+      "steps": [
+        "Loosen lug bolts while the car is on the ground.",
+        "Raise the car and support on jack stands, then remove wheel.",
+        "The E28 uses ATE sliding calipers - locate the two 13mm caliper bolts on the rear of the caliper bracket.",
+        "Remove the caliper bolts and lift the caliper off the rotor.",
+        "Support the caliper with wire or bungee - never let it hang by the brake hose.",
+        "Slide the old pads out of the caliper bracket.",
+        "Inspect the rotor for scoring, cracks, or wear past the minimum thickness.",
+        "Clean the pad contact areas in the bracket with a wire brush.",
+        "Use a C-clamp to slowly compress the caliper piston back into its bore.",
+        "Apply brake grease to the pad backing plate edges and any anti-rattle clips.",
+        "Install new pads into the bracket - anti-squeal shims go against the piston.",
+        "Reinstall caliper and torque bolts to 58-72 ft-lbs (79-98 Nm) for front, 42-48 ft-lbs (57-65 Nm) for rear.",
+        "Reinstall wheel and torque lug bolts to 80 ft-lbs (108 Nm).",
+        "Pump brake pedal several times before driving to seat the pads."
+      ],
+      "tips": [
+        "E28 front rotors are directional on some models - ensure correct side.",
+        "The parking brake on E28 is cable-actuated drum inside the rear rotors.",
+        "Bleed brakes if pedal feels soft after compressing pistons."
+      ]
     },
     {
       "id": "valve-adjustment",
@@ -645,7 +707,38 @@
       "description": "Checking and adjusting valve clearances on the M30 engine.",
       "difficulty": "Intermediate",
       "time": "2-3 hours",
-      "status": "coming-soon"
+      "interval": "Every 15,000 miles",
+      "cost": "$15-30",
+      "tools": [
+        "10mm socket for valve cover",
+        "32mm wrench for crank pulley",
+        "Feeler gauge set (metric)",
+        "13mm wrench for adjuster locknut",
+        "Flathead screwdriver for adjuster",
+        "Flashlight",
+        "New valve cover gasket"
+      ],
+      "steps": [
+        "Ensure the engine is cold - valves expand when hot, affecting clearances.",
+        "Remove the 10mm valve cover nuts and lift off the valve cover.",
+        "Locate the timing mark on the vibration damper - you'll need to rotate the engine.",
+        "Using a 32mm wrench on the crank bolt, rotate the engine clockwise to TDC cylinder 1.",
+        "At TDC #1, both cam lobes on cylinder 1 should point up and away from the rocker arms.",
+        "Using feeler gauges, check intake valve clearance: 0.30mm (0.012in) cold.",
+        "Check exhaust valve clearance: 0.30mm (0.012in) cold.",
+        "To adjust: Loosen the 13mm locknut, turn the adjuster screw with flathead, then retighten locknut.",
+        "Recheck clearance after tightening - the locknut can change the setting.",
+        "Rotate engine 120° to the next cylinder in firing order (1-5-3-6-2-4).",
+        "Repeat measurement and adjustment for all 12 valves.",
+        "Clean the valve cover mating surfaces and install new gasket.",
+        "Reinstall valve cover and torque nuts to 7 ft-lbs (10 Nm)."
+      ],
+      "tips": [
+        "The M30 firing order is 1-5-3-6-2-4 - adjust valves in this sequence.",
+        "Slight drag on the feeler gauge is correct - not too tight, not too loose.",
+        "Mark each valve as you adjust it to keep track of progress.",
+        "Listen for ticking after adjustment - slight tick is normal, loud clatter means too loose."
+      ]
     },
     {
       "id": "timing-belt",
@@ -653,7 +746,43 @@
       "description": "Step-by-step timing belt, tensioner, and water pump replacement.",
       "difficulty": "Intermediate",
       "time": "4-6 hours",
-      "status": "coming-soon"
+      "interval": "Every 50,000 miles or 4 years",
+      "cost": "$150-250",
+      "tools": [
+        "32mm wrench for fan clutch",
+        "10mm, 13mm sockets",
+        "Timing belt tension gauge (optional)",
+        "Large flathead screwdriver",
+        "Harmonic balancer holder tool",
+        "Drain pan",
+        "New coolant"
+      ],
+      "steps": [
+        "Disconnect the negative battery terminal.",
+        "Drain the cooling system from the radiator drain cock.",
+        "Remove the fan clutch (LEFT-HAND THREAD) and fan shroud.",
+        "Remove the accessory drive belts by loosening the alternator and power steering pump.",
+        "Remove the four bolts from the water pump pulley.",
+        "Remove the upper and lower timing belt covers.",
+        "Rotate engine to TDC on cylinder 1 - align timing marks on cam and crank sprockets.",
+        "Mark the belt rotation direction if reusing (not recommended).",
+        "Loosen the timing belt tensioner and slide the belt off the sprockets.",
+        "Remove the water pump (3 bolts) if replacing - clean the mating surface.",
+        "Install new water pump with new gasket.",
+        "Inspect tensioner pulley and idler - replace if any roughness when spun.",
+        "Install the new timing belt, starting at the crankshaft sprocket.",
+        "Route belt around tensioner, water pump, then cam sprocket - keep tension on the right side.",
+        "Adjust tensioner to achieve proper belt tension (should deflect ~5mm with thumb pressure).",
+        "Rotate engine two full revolutions by hand and recheck timing marks.",
+        "Reinstall timing covers, water pump pulley, belts, fan, and shroud.",
+        "Refill cooling system and bleed air."
+      ],
+      "tips": [
+        "The M20 is an interference engine - belt failure will bend valves.",
+        "Never rotate the engine backwards with the belt installed.",
+        "Always replace the tensioner and water pump when doing the belt.",
+        "Consider replacing the front crankshaft seal while you have access."
+      ]
     }
   ]
 }

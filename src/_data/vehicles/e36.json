@@ -622,7 +622,37 @@
       "description": "Complete oil and filter change procedure for M50 and M52 engines.",
       "difficulty": "Easy",
       "time": "30 min",
-      "status": "coming-soon"
+      "interval": "Every 5,000-7,500 miles",
+      "cost": "$40-60",
+      "tools": [
+        "17mm socket or wrench",
+        "Oil filter wrench or 36mm socket",
+        "Drain pan",
+        "Funnel",
+        "Jack and jack stands",
+        "Torque wrench"
+      ],
+      "steps": [
+        "Warm up the engine for 2-3 minutes to thin the oil for better drainage.",
+        "Safely raise the front of the car and support on jack stands.",
+        "Locate the oil drain plug on the passenger side of the oil pan.",
+        "Position drain pan and remove the 17mm drain plug. Allow oil to drain completely (5-10 minutes).",
+        "Replace the copper crush washer on the drain plug.",
+        "Reinstall drain plug and torque to 18 ft-lbs (25 Nm).",
+        "The oil filter housing is on top of the engine - remove the cap with a 36mm socket or filter wrench.",
+        "Remove the old filter element and O-ring from the cap.",
+        "Install new filter element and lubricate the new O-ring with fresh oil.",
+        "Reinstall filter cap and torque to 25 ft-lbs (34 Nm).",
+        "Remove the oil fill cap and add 6.9 quarts (M50) or 6.5 quarts (M52) of 5W-40 or 0W-40 oil.",
+        "Check level with dipstick - add oil until it reaches the upper mark.",
+        "Start engine and check for leaks around drain plug and filter housing.",
+        "Recheck oil level after engine has run for a minute and settled."
+      ],
+      "tips": [
+        "BMW E36s use a cartridge-style oil filter - never install the metal canister type.",
+        "Always replace the O-ring on the filter housing cap to prevent leaks.",
+        "The oil filter housing gasket is a common leak point - inspect while changing oil."
+      ]
     },
     {
       "id": "valve-cover-gasket",
@@ -630,15 +660,125 @@
       "description": "Stop oil leaks with a new valve cover gasket - one of the easiest E36 repairs.",
       "difficulty": "Easy",
       "time": "1 hour",
-      "status": "coming-soon"
+      "interval": "As needed (typically 80,000-120,000 miles)",
+      "cost": "$30-50",
+      "tools": [
+        "10mm socket",
+        "Flathead screwdriver",
+        "Gasket scraper or plastic razor",
+        "Clean rags",
+        "RTV sealant (optional)"
+      ],
+      "steps": [
+        "Disconnect the negative battery terminal for safety.",
+        "Remove the cabin microfilter housing cover (4 clips) for better access.",
+        "Disconnect any electrical connectors on top of the valve cover (coil packs, etc).",
+        "Remove the oil fill cap.",
+        "Remove the 10mm valve cover bolts (15 bolts total) in a spiral pattern from outside to center.",
+        "Carefully lift the valve cover straight up - it may stick from the old gasket.",
+        "Clean all old gasket material from the valve cover and cylinder head mating surfaces.",
+        "Clean the spark plug tube seal areas thoroughly.",
+        "Install the new gasket onto the valve cover - it should snap into the groove.",
+        "Install new spark plug tube seals (often included with gasket kit).",
+        "Apply a small dab of RTV at the corners where the timing cover meets the head (optional but recommended).",
+        "Place valve cover back on the head, ensuring gasket is properly seated.",
+        "Install bolts finger-tight, then torque to 89 in-lbs (10 Nm) in a spiral pattern from center outward.",
+        "Reinstall oil cap, microfilter housing, and reconnect electrical connectors.",
+        "Reconnect battery and start engine to check for leaks."
+      ],
+      "tips": [
+        "Do not overtighten valve cover bolts - the plastic cover can crack.",
+        "Replace the spark plug tube seals at the same time to prevent oil pooling around plugs.",
+        "Check the grommets on the valve cover bolts - replace if cracked or deteriorated."
+      ]
     },
     {
       "id": "brake-pads",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement with sensor reset.",
+      "description": "Front and rear brake pad replacement with rotor inspection.",
       "difficulty": "Easy",
       "time": "1-2 hours",
-      "status": "coming-soon"
+      "interval": "Every 25,000-50,000 miles",
+      "cost": "$60-120",
+      "tools": [
+        "17mm socket for lug bolts",
+        "7mm Allen socket for caliper pins",
+        "Flathead screwdriver",
+        "Brake caliper piston tool or C-clamp",
+        "Wire brush",
+        "Brake cleaner",
+        "Brake grease",
+        "Jack and jack stands"
+      ],
+      "steps": [
+        "Loosen lug bolts while car is on the ground, then raise and secure on jack stands.",
+        "Remove wheel to access brake caliper.",
+        "Disconnect brake pad wear sensor if equipped (front driver side, rear passenger side).",
+        "Remove the two 7mm Allen caliper guide pin bolts from the rear of the caliper.",
+        "Swing the caliper up and support it - do not let it hang by the brake hose.",
+        "Remove old brake pads from the caliper bracket.",
+        "Inspect rotor for scoring, cracks, or minimum thickness. Replace if worn.",
+        "Clean caliper bracket pad contact points with wire brush.",
+        "Use piston tool or C-clamp to compress the caliper piston back into the housing.",
+        "Apply brake grease to the pad backing plates where they contact the caliper bracket.",
+        "Install new pads into the bracket - the pad with the wear sensor slot goes on the inner side.",
+        "Swing caliper back down over the new pads and reinstall guide pin bolts. Torque to 22 ft-lbs (30 Nm).",
+        "Reinstall brake pad wear sensor.",
+        "Reinstall wheel and torque lug bolts to 88 ft-lbs (120 Nm) in a star pattern.",
+        "Repeat for all four corners.",
+        "Before driving, pump the brake pedal several times until firm to seat the pads."
+      ],
+      "tips": [
+        "Open the brake fluid reservoir cap when compressing pistons to prevent pressure buildup.",
+        "Clean rotors with brake cleaner to remove any oils before installing new pads.",
+        "Bed in new pads with 5-10 moderate stops from 30 mph to transfer pad material to rotors."
+      ]
+    },
+    {
+      "id": "cooling-system-refresh",
+      "title": "Cooling System Refresh",
+      "description": "Replace expansion tank, thermostat, and water pump to prevent overheating failures.",
+      "difficulty": "Intermediate",
+      "time": "4-6 hours",
+      "interval": "Every 60,000-80,000 miles",
+      "cost": "$250-400",
+      "tools": [
+        "32mm wrench for fan clutch",
+        "Fan clutch holding tool",
+        "10mm, 13mm sockets",
+        "Flathead and Phillips screwdrivers",
+        "Drain pan",
+        "Pliers for hose clamps",
+        "New coolant (1.5 gallons BMW blue)",
+        "Spill-free funnel (recommended)"
+      ],
+      "steps": [
+        "Allow engine to cool completely before beginning work.",
+        "Remove the fan shroud upper clips and expansion tank cap.",
+        "Using a 32mm wrench and fan holding tool, remove the fan clutch (LEFT-HAND THREAD - turn clockwise to loosen).",
+        "Remove the fan and shroud assembly together.",
+        "Drain coolant by opening the drain plug on the lower passenger side of the radiator.",
+        "Remove the expansion tank by disconnecting hoses and removing the mounting bolt.",
+        "Remove the two 10mm bolts from the thermostat housing and note the orientation of the thermostat.",
+        "Remove old thermostat and clean mating surfaces.",
+        "For water pump: Remove the four 10mm bolts from the water pump pulley.",
+        "Remove the three 10mm bolts holding the water pump to the block.",
+        "Scrape old gasket material from the block surface.",
+        "Install new water pump with new gasket and torque bolts to 7 ft-lbs (10 Nm).",
+        "Install new thermostat (jiggle valve at 12 o'clock position) with new gasket.",
+        "Install new expansion tank and connect all hoses.",
+        "Reinstall water pump pulley, fan clutch (LEFT-HAND THREAD - turn counter-clockwise to tighten), and shroud.",
+        "Close radiator drain and fill system with 50/50 BMW coolant mix.",
+        "Bleed system: Run engine with heater on full hot, cap off, until thermostat opens and level stabilizes.",
+        "Top off coolant and install expansion tank cap.",
+        "Check for leaks after engine reaches operating temperature."
+      ],
+      "tips": [
+        "The fan clutch is LEFT-HAND THREADED - turn clockwise to remove.",
+        "Use a water pump with a metal impeller - plastic impellers can shatter.",
+        "Replace the thermostat housing with an aluminum version if the original plastic one shows any cracks.",
+        "Check all coolant hoses for cracks or soft spots while the system is apart."
+      ]
     }
   ]
 }

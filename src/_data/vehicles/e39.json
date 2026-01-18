@@ -669,15 +669,77 @@
       "description": "Complete oil and filter change procedure for M52, M54, and M62 engines.",
       "difficulty": "Easy",
       "time": "30 min",
-      "status": "coming-soon"
+      "interval": "Every 7,500 miles",
+      "cost": "$50-80",
+      "tools": [
+        "17mm socket for drain plug",
+        "36mm socket or filter cap wrench (I6)",
+        "Oil filter wrench (V8)",
+        "Drain pan",
+        "Funnel",
+        "Jack and jack stands",
+        "Torque wrench"
+      ],
+      "steps": [
+        "Warm the engine for 2-3 minutes to thin the oil for better drainage.",
+        "Raise the front of the car safely and secure on jack stands.",
+        "Position drain pan under the oil pan on the passenger side.",
+        "Remove the 17mm drain plug and allow to drain completely (10+ minutes).",
+        "Replace the copper crush washer on the drain plug.",
+        "Reinstall drain plug and torque to 18 ft-lbs (25 Nm).",
+        "M52/M54: Remove cartridge filter cap from top of engine with 36mm socket.",
+        "M62 V8: Access the spin-on filter from below - remove with filter wrench.",
+        "M52/M54: Replace filter element and O-ring, lube O-ring with fresh oil.",
+        "M62: Apply oil to new filter gasket, thread on hand-tight plus 3/4 turn.",
+        "Add oil: 7.0 quarts (M52/M54), 8.0 quarts (M62 V8).",
+        "Use 5W-30 or 0W-40 synthetic oil meeting BMW LL-01 spec.",
+        "Start engine, check for leaks, shut off and check level after 2 minutes."
+      ],
+      "tips": [
+        "The E39 M52/M54 uses the same cartridge filter setup as the E46.",
+        "M62 V8 requires more oil capacity - ensure you have enough before starting.",
+        "Check the oil filter housing gasket for leaks on the I6 engines."
+      ]
     },
     {
       "id": "brake-pads",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement with sensor reset.",
+      "description": "Front and rear brake pad replacement with sensor reset procedure.",
       "difficulty": "Easy",
       "time": "1-2 hours",
-      "status": "coming-soon"
+      "interval": "Every 25,000-50,000 miles",
+      "cost": "$60-130",
+      "tools": [
+        "17mm socket for lug bolts",
+        "7mm Allen socket for caliper pins",
+        "Flathead screwdriver",
+        "Brake piston tool or C-clamp",
+        "Wire brush",
+        "Brake cleaner",
+        "Brake grease",
+        "Jack and jack stands"
+      ],
+      "steps": [
+        "Loosen lug bolts while the car is on the ground.",
+        "Raise and support the car on jack stands, remove wheel.",
+        "Disconnect the brake pad wear sensor connector (if equipped on that corner).",
+        "Remove the two 7mm Allen caliper guide pin bolts from behind the caliper.",
+        "Pivot the caliper up and secure it - do not let it hang by the brake hose.",
+        "Remove the old pads from the caliper bracket.",
+        "Inspect rotor for grooves, cracks, or thickness below minimum spec.",
+        "Clean the pad contact surfaces in the bracket with a wire brush.",
+        "Open brake fluid reservoir, then compress caliper piston fully.",
+        "Apply brake grease to pad backing plate edges and anti-rattle clips.",
+        "Install new pads - wear sensor slot faces the piston (inner) side.",
+        "Pivot caliper down over pads and reinstall guide pins to 22 ft-lbs (30 Nm).",
+        "Reconnect wear sensor, reinstall wheel, torque lugs to 88 ft-lbs (120 Nm).",
+        "Repeat for all corners, pump brake pedal until firm before driving."
+      ],
+      "tips": [
+        "E39 wear sensors are typically on front left and rear right.",
+        "After pad replacement, reset the brake pad wear indicator if equipped (CBS).",
+        "Bed new pads with moderate stops from 30 mph - avoid hard braking initially."
+      ]
     },
     {
       "id": "expansion-tank",
@@ -685,7 +747,37 @@
       "description": "Critical preventive maintenance - replace before it fails.",
       "difficulty": "Easy",
       "time": "1 hour",
-      "status": "coming-soon"
+      "interval": "Every 60,000 miles (preventive)",
+      "cost": "$50-80",
+      "tools": [
+        "10mm socket",
+        "Pliers for hose clamps",
+        "Flathead screwdriver",
+        "Drain pan",
+        "New coolant (1 gallon BMW blue)"
+      ],
+      "steps": [
+        "Allow engine to cool completely - never work on a hot cooling system.",
+        "Remove expansion tank cap slowly to release any residual pressure.",
+        "Place drain pan under the expansion tank area to catch coolant.",
+        "Disconnect the coolant level sensor electrical connector.",
+        "Use pliers to move the spring clamps back on the coolant hoses.",
+        "Pull the two coolant hoses off the expansion tank - coolant will drain.",
+        "Remove the 10mm mounting bolt holding the tank bracket.",
+        "Lift the old expansion tank up and out of the car.",
+        "Inspect the mounting area and clean any coolant residue.",
+        "Install the new expansion tank and secure with the mounting bolt.",
+        "Reconnect both coolant hoses and slide clamps back into position.",
+        "Reconnect the coolant level sensor connector.",
+        "Fill with 50/50 BMW coolant mix through the expansion tank opening.",
+        "Start engine with heater on max and cap off, top off as air escapes.",
+        "Install cap once level stabilizes, check for leaks at operating temp."
+      ],
+      "tips": [
+        "The E39 expansion tank is a known failure point - don't wait for it to crack.",
+        "Cracks usually appear at the seams or around the level sensor fitting.",
+        "Consider doing a full cooling system refresh if you haven't recently."
+      ]
     },
     {
       "id": "final-stage-unit",
@@ -693,7 +785,33 @@
       "description": "Restore blower motor speed control function.",
       "difficulty": "Easy",
       "time": "30 min",
-      "status": "coming-soon"
+      "interval": "As needed (common failure)",
+      "cost": "$80-150",
+      "tools": [
+        "T20 Torx driver",
+        "Small flathead screwdriver",
+        "Work light",
+        "New final stage unit"
+      ],
+      "steps": [
+        "The final stage unit (FSU) is located under the passenger side dashboard.",
+        "Remove the passenger footwell cover/trim panel for access.",
+        "Locate the FSU mounted to the blower motor housing - rectangular unit with fins.",
+        "Unplug the electrical connector from the FSU.",
+        "Remove the two T20 Torx screws holding the FSU in place.",
+        "Slide the old FSU out of the blower housing.",
+        "Apply a thin layer of thermal paste to the new FSU if not pre-applied.",
+        "Slide the new FSU into the housing, ensuring good contact with the housing for heat transfer.",
+        "Reinstall the two T20 Torx mounting screws.",
+        "Reconnect the electrical connector.",
+        "Test blower operation on all speed settings before reassembling trim.",
+        "Reinstall the footwell cover/trim panel."
+      ],
+      "tips": [
+        "Symptoms of FSU failure: blower only works on high speed or intermittently.",
+        "Thermal paste helps the FSU dissipate heat - don't skip this step.",
+        "Updated FSU designs have better heat dissipation - buy the latest revision."
+      ]
     }
   ]
 }

@@ -658,15 +658,78 @@
       "description": "Complete oil and filter change for N52, N54, and N55 engines.",
       "difficulty": "Easy",
       "time": "30 min",
-      "status": "coming-soon"
+      "interval": "Every 7,500-10,000 miles",
+      "cost": "$60-90",
+      "tools": [
+        "17mm socket for drain plug",
+        "36mm socket or oil filter cap wrench",
+        "Drain pan",
+        "Funnel",
+        "Jack and jack stands",
+        "Torque wrench"
+      ],
+      "steps": [
+        "Warm the engine for 2-3 minutes to thin the oil.",
+        "Raise the front of the car and secure on jack stands, or use ramps.",
+        "Locate the oil drain plug on the oil pan - passenger side.",
+        "Position drain pan and remove the 17mm drain plug.",
+        "Allow oil to drain completely - 10 minutes minimum.",
+        "Replace the aluminum crush washer on the drain plug.",
+        "Reinstall drain plug and torque to 18 ft-lbs (25 Nm).",
+        "The oil filter housing is on top of the engine - remove cap with 36mm socket.",
+        "Lift out the old filter element and remove the O-ring from the cap.",
+        "Install the new filter element onto the center post.",
+        "Lubricate the new O-ring with fresh oil and seat it in the cap groove.",
+        "Reinstall the filter cap and torque to 25 ft-lbs (34 Nm).",
+        "Add oil: 6.5 quarts (N52), 7.0 quarts (N54/N55). Use 5W-30 BMW LL-01.",
+        "Start engine, check for leaks, shut off and verify level after 2 minutes."
+      ],
+      "tips": [
+        "The E90 uses a cartridge filter - the housing stays on the engine.",
+        "Always replace the O-ring to prevent leaks from the filter housing cap.",
+        "N54/N55 turbo engines benefit from 0W-40 in extreme temperatures."
+      ]
     },
     {
       "id": "brake-pads",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement with sensor reset.",
+      "description": "Front and rear brake pad replacement with electronic sensor reset.",
       "difficulty": "Easy",
       "time": "1-2 hours",
-      "status": "coming-soon"
+      "interval": "Every 25,000-50,000 miles",
+      "cost": "$80-150",
+      "tools": [
+        "17mm socket for lug bolts",
+        "7mm Allen socket for caliper pins",
+        "T30 Torx for wear sensor",
+        "Brake piston tool or C-clamp",
+        "Wire brush",
+        "Brake cleaner",
+        "Brake grease",
+        "Diagnostic tool for CBS reset (optional)"
+      ],
+      "steps": [
+        "Loosen lug bolts while the car is on the ground.",
+        "Raise and support the car on jack stands, remove wheel.",
+        "Disconnect the brake pad wear sensor connector and unclip from bracket.",
+        "Remove the two 7mm Allen caliper guide pin bolts from behind the caliper.",
+        "Pivot the caliper up and secure - do not let it hang by the brake hose.",
+        "Remove the old pads from the caliper bracket.",
+        "Inspect rotor for wear, grooves, or minimum thickness markings.",
+        "Clean the pad contact surfaces with wire brush and brake cleaner.",
+        "Open brake fluid reservoir cap, then compress caliper piston fully.",
+        "Apply brake grease to the back of new pads and contact points.",
+        "Install new pads - the pad with wear sensor hole goes on the inner side.",
+        "Install new wear sensor into the inner pad (sensors are typically one-time use).",
+        "Pivot caliper down and reinstall guide pins to 22 ft-lbs (30 Nm).",
+        "Reconnect wear sensor, reinstall wheel, torque lugs to 89 ft-lbs (120 Nm).",
+        "Reset brake pad wear indicator using ISTA or compatible diagnostic tool."
+      ],
+      "tips": [
+        "E90 electronic wear sensors are usually on front left and rear right.",
+        "After replacement, reset the CBS (Condition Based Service) brake indicator.",
+        "Bed new pads with 5-10 moderate stops from 30 mph before driving normally."
+      ]
     },
     {
       "id": "spark-plugs",
@@ -674,7 +737,38 @@
       "description": "Spark plug replacement for all E90 engine variants.",
       "difficulty": "Easy",
       "time": "1-2 hours",
-      "status": "coming-soon"
+      "interval": "Every 60,000 miles (N52) or 45,000 miles (N54/N55)",
+      "cost": "$60-120",
+      "tools": [
+        "10mm socket",
+        "T30 Torx",
+        "Spark plug socket (5/8\" or 14mm thin-wall)",
+        "6\" extension",
+        "Torque wrench",
+        "Compressed air or vacuum",
+        "Anti-seize (optional - some plugs pre-applied)"
+      ],
+      "steps": [
+        "Allow engine to cool completely - spark plugs can seize in hot aluminum.",
+        "Remove the engine cover by pulling up on the four corners.",
+        "Disconnect the electrical connector from each ignition coil.",
+        "Remove the 10mm bolt or T30 screw holding each coil in place.",
+        "Pull each ignition coil straight up and out of the spark plug well.",
+        "Use compressed air or vacuum to clean debris from the spark plug wells.",
+        "Using spark plug socket and extension, remove each spark plug.",
+        "Inspect old plugs for wear, fouling, or damage - note condition.",
+        "Gap new plugs if necessary (most modern plugs are pre-gapped).",
+        "Thread new plugs in by hand to prevent cross-threading.",
+        "Torque spark plugs to 17 ft-lbs (23 Nm) - do not overtighten.",
+        "Reinstall ignition coils and secure with bolt/screw.",
+        "Reconnect coil electrical connectors until they click.",
+        "Reinstall engine cover."
+      ],
+      "tips": [
+        "N54 uses 6 spark plugs; the N52 uses 6 spark plugs - one per cylinder.",
+        "Use NGK or Bosch OEM-equivalent plugs for best results.",
+        "Inspect ignition coils while replacing plugs - replace if cracked or worn."
+      ]
     },
     {
       "id": "oil-filter-housing",
@@ -682,7 +776,41 @@
       "description": "Replace the notorious leaking oil filter housing gasket.",
       "difficulty": "Intermediate",
       "time": "2-3 hours",
-      "status": "coming-soon"
+      "interval": "As needed (common leak point)",
+      "cost": "$30-60",
+      "tools": [
+        "36mm socket for filter cap",
+        "E10, E12 Torx sockets",
+        "10mm socket",
+        "Flathead screwdriver",
+        "Gasket pick",
+        "Clean rags",
+        "New gasket kit",
+        "Fresh oil for top-off"
+      ],
+      "steps": [
+        "Remove the engine cover and intake snorkel for access.",
+        "Drain some coolant - the oil cooler (if equipped) ties into the cooling system.",
+        "Remove the oil filter cap and filter element.",
+        "Disconnect any electrical connectors on or near the housing (oil pressure sensor).",
+        "Remove the 3-4 E10 or E12 Torx bolts holding the filter housing to the block.",
+        "Carefully pry the housing off the block - it may stick from the old gasket.",
+        "Remove the old gasket and clean both mating surfaces thoroughly.",
+        "Remove old O-rings from the oil cooler ports if equipped.",
+        "Install new gasket onto the housing - it should seat into the groove.",
+        "Install new oil cooler O-rings if equipped.",
+        "Position housing on block and hand-thread the mounting bolts.",
+        "Torque mounting bolts to 18 ft-lbs (25 Nm) in a cross pattern.",
+        "Reinstall filter element and cap, torque cap to 25 ft-lbs (34 Nm).",
+        "Reconnect electrical connectors and refill coolant if drained.",
+        "Start engine and check for leaks at the housing."
+      ],
+      "tips": [
+        "The OFHG is one of the most common oil leaks on N52 and N54 engines.",
+        "Oil dripping onto the exhaust can cause smoke and fire - don't delay this repair.",
+        "Some kits include the oil cooler gaskets - inspect and replace if questionable.",
+        "Check the eccentric shaft sensor seal (N52) while you have access."
+      ]
     }
   ]
 }

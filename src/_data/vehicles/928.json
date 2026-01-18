@@ -621,26 +621,151 @@
     {
       "id": "oil-change",
       "title": "Oil Change",
-      "description": "V8 oil and filter change procedure.",
+      "description": "Complete V8 oil and filter change procedure.",
       "difficulty": "Easy",
-      "time": "30 min",
-      "status": "coming-soon"
+      "time": "45 min",
+      "interval": "Every 5,000-7,500 miles",
+      "cost": "$60-90",
+      "tools": [
+        "19mm socket for drain plug",
+        "Oil filter wrench",
+        "Drain pan (2 gallon capacity)",
+        "Funnel",
+        "Jack and jack stands or ramps"
+      ],
+      "steps": [
+        "Warm the engine for 2-3 minutes to thin the oil.",
+        "Raise the front of the car safely or drive onto ramps.",
+        "Locate the oil drain plug on the oil pan - passenger side.",
+        "Position the drain pan and remove the 19mm drain plug.",
+        "Allow oil to drain completely - at least 15 minutes for the V8.",
+        "The spin-on oil filter is on the passenger side of the engine, accessible from below.",
+        "Using the oil filter wrench, remove the old filter.",
+        "Apply a thin film of fresh oil to the new filter's gasket.",
+        "Thread the new filter on by hand until seated, then 3/4 turn more.",
+        "Replace the crush washer on the drain plug.",
+        "Reinstall drain plug and torque to 22 ft-lbs (30 Nm).",
+        "Lower the car and add 8-9 quarts of 15W-50 or 20W-50 oil.",
+        "Start engine and check for leaks at drain plug and filter.",
+        "Shut off, wait 3 minutes for oil to settle, check level and top off."
+      ],
+      "tips": [
+        "The 928 V8 holds 8-9 quarts depending on model year and oil cooler.",
+        "Use quality synthetic 15W-50 for hot climates or track use.",
+        "Check for oil leaks at cam tower gaskets while under the hood."
+      ]
     },
     {
       "id": "headlight-lubrication",
       "title": "Pop-Up Headlight Lubrication",
-      "description": "Keep your pop-up headlights working smoothly.",
+      "description": "Keep your pop-up headlights operating smoothly with regular lubrication.",
       "difficulty": "Easy",
       "time": "30 min",
-      "status": "coming-soon"
+      "interval": "Every 6 months or annually",
+      "cost": "$10-20",
+      "tools": [
+        "White lithium grease spray",
+        "Clean rags",
+        "Flashlight",
+        "Small brush"
+      ],
+      "steps": [
+        "Turn on the headlights to raise them to the up position.",
+        "Turn off the engine and headlights, leaving them raised.",
+        "Open the hood for access to the headlight mechanisms.",
+        "Locate the headlight pivot points on each side.",
+        "Clean old grease and debris from the pivot points and linkages.",
+        "Apply white lithium grease to all pivot points.",
+        "Lubricate the cable pulleys and guide tracks.",
+        "Apply grease to the motor output shaft area (accessible with brush).",
+        "Operate the headlights up and down several times to distribute grease.",
+        "Wipe away any excess grease that could attract dirt.",
+        "Check that both headlights operate at the same speed.",
+        "If one is slower, inspect cable tension and motor condition."
+      ],
+      "tips": [
+        "Slow or uneven headlight operation usually means it's time for lubrication.",
+        "Don't use WD-40 - it's not a lubricant and attracts dust.",
+        "If headlights still operate slowly after lubrication, check motor brushes.",
+        "Stretched or frayed cables should be replaced, not just lubricated."
+      ]
     },
     {
       "id": "brake-pads",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement.",
+      "description": "Front and rear brake pad replacement with rotor inspection.",
       "difficulty": "Easy",
       "time": "1-2 hours",
-      "status": "coming-soon"
+      "interval": "Every 25,000-40,000 miles",
+      "cost": "$100-180",
+      "tools": [
+        "19mm socket for lug bolts",
+        "7mm Allen socket for caliper pins",
+        "C-clamp or brake piston tool",
+        "Wire brush",
+        "Brake cleaner",
+        "Brake grease",
+        "Jack and jack stands"
+      ],
+      "steps": [
+        "Loosen lug bolts while the car is on the ground.",
+        "Raise and support the car safely on jack stands.",
+        "Remove wheel to access the caliper.",
+        "Remove the two caliper guide pin bolts (7mm Allen on most).",
+        "Swing the caliper up and support it - never let it hang by the hose.",
+        "Remove the old pads from the caliper bracket.",
+        "Inspect rotor for scoring, cracks, or thickness below minimum.",
+        "Clean the pad contact surfaces with wire brush.",
+        "Open brake fluid reservoir, then compress caliper piston.",
+        "Apply brake grease to pad backing plate edges.",
+        "Install new pads in the bracket.",
+        "Swing caliper back over pads and reinstall guide pin bolts.",
+        "Torque caliper bolts to 63 ft-lbs (85 Nm).",
+        "Reinstall wheel and torque lug bolts to 96 ft-lbs (130 Nm).",
+        "Repeat for all corners.",
+        "Pump brake pedal until firm before driving."
+      ],
+      "tips": [
+        "The 928 uses large brakes with good pad life.",
+        "Bed in new pads with moderate stops - avoid panic stops for 100 miles.",
+        "Consider upgrading to ceramic or performance pads for less dust."
+      ]
+    },
+    {
+      "id": "vacuum-hose-inspection",
+      "title": "Vacuum System Inspection",
+      "description": "Inspect and identify cracked vacuum lines that cause various system failures.",
+      "difficulty": "Easy",
+      "time": "1 hour",
+      "interval": "Annually or when systems malfunction",
+      "cost": "$30-80 for replacement hoses",
+      "tools": [
+        "Flashlight",
+        "Inspection mirror",
+        "Vacuum line kit (various sizes)",
+        "Vacuum gauge (optional)",
+        "Carburetor cleaner for leak detection"
+      ],
+      "steps": [
+        "Start with the engine cool and off.",
+        "Open the hood and locate the main vacuum reservoir and distribution block.",
+        "Visually inspect all visible vacuum lines for cracks, hardening, or collapse.",
+        "Check the lines running to HVAC controls (often behind the dashboard).",
+        "Inspect vacuum lines to the cruise control system.",
+        "Check vacuum lines to the door lock actuators.",
+        "Look for lines connected to the brake booster.",
+        "With engine running, listen for hissing (vacuum leaks).",
+        "Spray carburetor cleaner near suspect areas - idle change indicates leak.",
+        "Replace any cracked or hardened lines with proper size vacuum tubing.",
+        "Mark replaced lines with tape or tie for future reference.",
+        "Test affected systems after repairs (HVAC, locks, cruise, brakes)."
+      ],
+      "tips": [
+        "The 928 uses vacuum for HVAC, door locks, cruise control, and brake booster.",
+        "Original vacuum lines become brittle after 25+ years.",
+        "A failed vacuum system can cause multiple seemingly unrelated failures.",
+        "Consider replacing all vacuum lines as preventive maintenance."
+      ]
     }
   ]
 }
