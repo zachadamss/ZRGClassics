@@ -3,7 +3,12 @@
   "brand": "BMW",
   "fullName": "BMW E30 3 Series",
   "years": "1982-1994",
-  "engines": ["M10 1.8L I4", "M20 2.5L I6", "M42 1.8L I4", "S14 2.3L I4"],
+  "engines": [
+    "M10 1.8L I4",
+    "M20 2.5L I6",
+    "M42 1.8L I4",
+    "S14 2.3L I4"
+  ],
   "heroImage": "/images/vehicles/e30-hero.jpg",
   "issues": [
     {
@@ -18,8 +23,14 @@
         "Always replace the front crankshaft seal during service"
       ],
       "sources": [
-        { "name": "R3VLimited", "url": "#" },
-        { "name": "Bimmerforums", "url": "#" }
+        {
+          "name": "R3VLimited",
+          "url": "https://www.r3vlimited.com/"
+        },
+        {
+          "name": "Bimmerforums",
+          "url": "https://www.bimmerforums.com/forum/"
+        }
       ]
     },
     {
@@ -35,8 +46,14 @@
         "Keep drain holes clear to prevent water accumulation"
       ],
       "sources": [
-        { "name": "R3VLimited", "url": "#" },
-        { "name": "E30Zone", "url": "#" }
+        {
+          "name": "R3VLimited",
+          "url": "https://www.r3vlimited.com/"
+        },
+        {
+          "name": "E30Zone",
+          "url": "https://www.e30zone.net/"
+        }
       ]
     },
     {
@@ -52,8 +69,14 @@
         "Replace worn window/sunroof switches"
       ],
       "sources": [
-        { "name": "E30Zone", "url": "#" },
-        { "name": "Bimmerforums", "url": "#" }
+        {
+          "name": "E30Zone",
+          "url": "https://www.e30zone.net/"
+        },
+        {
+          "name": "Bimmerforums",
+          "url": "https://www.bimmerforums.com/forum/"
+        }
       ]
     },
     {
@@ -69,8 +92,14 @@
         "Don't forget sway bar bushings and end links"
       ],
       "sources": [
-        { "name": "R3VLimited", "url": "#" },
-        { "name": "Ireland Engineering", "url": "#" }
+        {
+          "name": "R3VLimited",
+          "url": "https://www.r3vlimited.com/"
+        },
+        {
+          "name": "Ireland Engineering",
+          "url": "https://www.iemotorsport.com/"
+        }
       ]
     },
     {
@@ -87,8 +116,14 @@
         "Replace fuel filter and check fuel pump pressure"
       ],
       "sources": [
-        { "name": "Bimmerforums", "url": "#" },
-        { "name": "BMW CCA", "url": "#" }
+        {
+          "name": "Bimmerforums",
+          "url": "https://www.bimmerforums.com/forum/"
+        },
+        {
+          "name": "BMW CCA",
+          "url": "https://www.bmwcca.org/"
+        }
       ]
     },
     {
@@ -104,8 +139,14 @@
         "Replace heater core if leaking (labor-intensive job)"
       ],
       "sources": [
-        { "name": "R3VLimited", "url": "#" },
-        { "name": "Pelican Parts", "url": "#" }
+        {
+          "name": "R3VLimited",
+          "url": "https://www.r3vlimited.com/"
+        },
+        {
+          "name": "Pelican Parts",
+          "url": "https://www.pelicanparts.com/"
+        }
       ]
     }
   ],
@@ -145,60 +186,217 @@
   ],
   "suppliers": {
     "oem": [
-      { "name": "BMW Parts", "url": "#", "notes": "Genuine BMW OEM parts" },
-      { "name": "FCP Euro", "url": "#", "notes": "Lifetime replacement guarantee" },
-      { "name": "Pelican Parts", "url": "#", "notes": "Extensive BMW catalog" }
+      {
+        "name": "BMW Parts",
+        "url": "https://parts.bmwusa.com/",
+        "notes": "Genuine BMW OEM parts"
+      },
+      {
+        "name": "FCP Euro",
+        "url": "https://www.fcpeuro.com/",
+        "notes": "Lifetime replacement guarantee"
+      },
+      {
+        "name": "Pelican Parts",
+        "url": "https://www.pelicanparts.com/",
+        "notes": "Extensive BMW catalog"
+      }
     ],
     "aftermarket": [
-      { "name": "Ireland Engineering", "url": "#", "notes": "Performance upgrades & suspension" },
-      { "name": "Turner Motorsport", "url": "#", "notes": "Performance parts & accessories" },
-      { "name": "ECS Tuning", "url": "#", "notes": "Wide selection of parts" },
-      { "name": "Condor Speed Shop", "url": "#", "notes": "E30 specialists" }
+      {
+        "name": "Ireland Engineering",
+        "url": "https://www.iemotorsport.com/",
+        "notes": "Performance upgrades & suspension"
+      },
+      {
+        "name": "Turner Motorsport",
+        "url": "https://www.turnermotorsport.com/",
+        "notes": "Performance parts & accessories"
+      },
+      {
+        "name": "ECS Tuning",
+        "url": "https://www.ecstuning.com/",
+        "notes": "Wide selection of parts"
+      },
+      {
+        "name": "Condor Speed Shop",
+        "url": "https://www.condorspeedshop.com/",
+        "notes": "E30 specialists"
+      }
     ],
     "used": [
-      { "name": "R3VLimited Classifieds", "url": "#", "notes": "E30-specific forum marketplace" },
-      { "name": "eBay Motors", "url": "#", "notes": "Used & NOS parts" },
-      { "name": "Car-Part.com", "url": "#", "notes": "Salvage yard inventory search" }
+      {
+        "name": "R3VLimited Classifieds",
+        "url": "https://www.r3vlimited.com/board/forumdisplay.php?f=3",
+        "notes": "E30-specific forum marketplace"
+      },
+      {
+        "name": "eBay Motors",
+        "url": "https://www.ebay.com/motors/",
+        "notes": "Used & NOS parts"
+      },
+      {
+        "name": "Car-Part.com",
+        "url": "https://www.car-part.com/",
+        "notes": "Salvage yard inventory search"
+      }
     ]
   },
   "torqueSpecs": {
     "sources": [
-      { "name": "Garagistic E30 Torque Guide", "url": "https://www.garagistic.com/pages/bmw-e30-bolt-torque-values" },
-      { "name": "E30 Zone Wiki", "url": "https://www.e30zone.net/e30wiki/index.php/Torque_Settings" },
-      { "name": "RTS Auto E30 Specs", "url": "https://www.rtsauto.com/e30-torque-specs-and-technical-specifications/" }
+      {
+        "name": "Garagistic E30 Torque Guide",
+        "url": "https://www.garagistic.com/pages/bmw-e30-bolt-torque-values"
+      },
+      {
+        "name": "E30 Zone Wiki",
+        "url": "https://www.e30zone.net/e30wiki/index.php/Torque_Settings"
+      },
+      {
+        "name": "RTS Auto E30 Specs",
+        "url": "https://www.rtsauto.com/e30-torque-specs-and-technical-specifications/"
+      }
     ],
     "engine": [
-      { "component": "Cylinder Head Bolts (M20 Hex)", "spec": "44 ft-lbs (60 Nm) + 90°", "notes": "Torque-to-yield, replace each use. Wait 15 min between stages." },
-      { "component": "Cylinder Head Bolts (M20 Torx)", "spec": "22 ft-lbs (30 Nm) + 90° + 90°", "notes": "Torque-to-yield, replace each use" },
-      { "component": "Main Bearing Caps", "spec": "44 ft-lbs (60 Nm)", "notes": "All engines except M40" },
-      { "component": "Connecting Rod Bolts (M20)", "spec": "15 ft-lbs (20 Nm) + 70°", "notes": "Angle-tighten method" },
-      { "component": "Flywheel Bolts (Manual)", "spec": "77 ft-lbs (105 Nm)", "notes": "Use new bolts, apply Loctite" },
-      { "component": "Flywheel Bolts (Auto)", "spec": "88 ft-lbs (120 Nm)", "notes": "Use new bolts" },
-      { "component": "Spark Plugs", "spec": "22-24 ft-lbs (30-33 Nm)", "notes": "Non-M10 engines" },
-      { "component": "Valve Cover Nuts", "spec": "7 ft-lbs (9-11 Nm)", "notes": "Do not overtighten" },
-      { "component": "Oil Drain Plug (M12)", "spec": "18 ft-lbs (25 Nm)", "notes": "Replace crush washer" },
-      { "component": "Oil Pump Bolts", "spec": "16 ft-lbs (22 Nm)", "notes": "Except M40 engine" },
-      { "component": "Exhaust Manifold Nuts", "spec": "16-18 ft-lbs (22-25 Nm)", "notes": "" },
-      { "component": "Intake Manifold Bolts", "spec": "22-24 ft-lbs (30-33 Nm)", "notes": "Per Bentley manual" }
+      {
+        "component": "Cylinder Head Bolts (M20 Hex)",
+        "spec": "44 ft-lbs (60 Nm) + 90°",
+        "notes": "Torque-to-yield, replace each use. Wait 15 min between stages."
+      },
+      {
+        "component": "Cylinder Head Bolts (M20 Torx)",
+        "spec": "22 ft-lbs (30 Nm) + 90° + 90°",
+        "notes": "Torque-to-yield, replace each use"
+      },
+      {
+        "component": "Main Bearing Caps",
+        "spec": "44 ft-lbs (60 Nm)",
+        "notes": "All engines except M40"
+      },
+      {
+        "component": "Connecting Rod Bolts (M20)",
+        "spec": "15 ft-lbs (20 Nm) + 70°",
+        "notes": "Angle-tighten method"
+      },
+      {
+        "component": "Flywheel Bolts (Manual)",
+        "spec": "77 ft-lbs (105 Nm)",
+        "notes": "Use new bolts, apply Loctite"
+      },
+      {
+        "component": "Flywheel Bolts (Auto)",
+        "spec": "88 ft-lbs (120 Nm)",
+        "notes": "Use new bolts"
+      },
+      {
+        "component": "Spark Plugs",
+        "spec": "22-24 ft-lbs (30-33 Nm)",
+        "notes": "Non-M10 engines"
+      },
+      {
+        "component": "Valve Cover Nuts",
+        "spec": "7 ft-lbs (9-11 Nm)",
+        "notes": "Do not overtighten"
+      },
+      {
+        "component": "Oil Drain Plug (M12)",
+        "spec": "18 ft-lbs (25 Nm)",
+        "notes": "Replace crush washer"
+      },
+      {
+        "component": "Oil Pump Bolts",
+        "spec": "16 ft-lbs (22 Nm)",
+        "notes": "Except M40 engine"
+      },
+      {
+        "component": "Exhaust Manifold Nuts",
+        "spec": "16-18 ft-lbs (22-25 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Intake Manifold Bolts",
+        "spec": "22-24 ft-lbs (30-33 Nm)",
+        "notes": "Per Bentley manual"
+      }
     ],
     "suspension": [
-      { "component": "Front Strut Top Nut", "spec": "48 ft-lbs (65 Nm)", "notes": "External hex type" },
-      { "component": "Front Control Arm Outer (Ball Joint)", "spec": "47 ft-lbs (64 Nm)", "notes": "Use new self-locking nut" },
-      { "component": "Front Control Arm Inner (to Subframe)", "spec": "61 ft-lbs (83 Nm)", "notes": "Use new self-locking nut" },
-      { "component": "Control Arm Bracket to Body", "spec": "30 ft-lbs (41 Nm)", "notes": "" },
-      { "component": "Sway Bar End Links", "spec": "30 ft-lbs (41 Nm)", "notes": "" },
-      { "component": "Wheel Lug Bolts", "spec": "74-80 ft-lbs (100 Nm)", "notes": "Tighten in star pattern" },
-      { "component": "Front Hub Nut", "spec": "214 ft-lbs (290 Nm)", "notes": "" },
-      { "component": "Rear Hub Nut", "spec": "184 ft-lbs (249 Nm)", "notes": "" },
-      { "component": "Steering Wheel Nut", "spec": "58 ft-lbs (79 Nm)", "notes": "" }
+      {
+        "component": "Front Strut Top Nut",
+        "spec": "48 ft-lbs (65 Nm)",
+        "notes": "External hex type"
+      },
+      {
+        "component": "Front Control Arm Outer (Ball Joint)",
+        "spec": "47 ft-lbs (64 Nm)",
+        "notes": "Use new self-locking nut"
+      },
+      {
+        "component": "Front Control Arm Inner (to Subframe)",
+        "spec": "61 ft-lbs (83 Nm)",
+        "notes": "Use new self-locking nut"
+      },
+      {
+        "component": "Control Arm Bracket to Body",
+        "spec": "30 ft-lbs (41 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Sway Bar End Links",
+        "spec": "30 ft-lbs (41 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Wheel Lug Bolts",
+        "spec": "74-80 ft-lbs (100 Nm)",
+        "notes": "Tighten in star pattern"
+      },
+      {
+        "component": "Front Hub Nut",
+        "spec": "214 ft-lbs (290 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Rear Hub Nut",
+        "spec": "184 ft-lbs (249 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Steering Wheel Nut",
+        "spec": "58 ft-lbs (79 Nm)",
+        "notes": ""
+      }
     ],
     "brakes": [
-      { "component": "Front Caliper Bracket", "spec": "91 ft-lbs (123 Nm)", "notes": "" },
-      { "component": "Front Caliper Guide Bolts", "spec": "22-26 ft-lbs (30-35 Nm)", "notes": "" },
-      { "component": "Rear Caliper Bracket", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
-      { "component": "Rear Caliper Guide Bolts", "spec": "22-26 ft-lbs (30-35 Nm)", "notes": "" },
-      { "component": "Brake Hose Banjo Bolt", "spec": "10 ft-lbs (14 Nm)", "notes": "Use new copper washers" },
-      { "component": "Bleed Valve", "spec": "3-4 ft-lbs (4-5 Nm)", "notes": "Do not overtighten" }
+      {
+        "component": "Front Caliper Bracket",
+        "spec": "91 ft-lbs (123 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Front Caliper Guide Bolts",
+        "spec": "22-26 ft-lbs (30-35 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Rear Caliper Bracket",
+        "spec": "48 ft-lbs (65 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Rear Caliper Guide Bolts",
+        "spec": "22-26 ft-lbs (30-35 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Brake Hose Banjo Bolt",
+        "spec": "10 ft-lbs (14 Nm)",
+        "notes": "Use new copper washers"
+      },
+      {
+        "component": "Bleed Valve",
+        "spec": "3-4 ft-lbs (4-5 Nm)",
+        "notes": "Do not overtighten"
+      }
     ]
   },
   "diyGuides": [

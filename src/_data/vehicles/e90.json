@@ -3,7 +3,14 @@
   "brand": "BMW",
   "fullName": "BMW E90/E91/E92/E93 3 Series",
   "years": "2005-2013",
-  "engines": ["N52 3.0L I6", "N54 3.0L Twin-Turbo I6", "N55 3.0L Turbo I6", "N46 2.0L I4", "N20 2.0L Turbo I4", "S65 4.0L V8 (M3)"],
+  "engines": [
+    "N52 3.0L I6",
+    "N54 3.0L Twin-Turbo I6",
+    "N55 3.0L Turbo I6",
+    "N46 2.0L I4",
+    "N20 2.0L Turbo I4",
+    "S65 4.0L V8 (M3)"
+  ],
   "heroImage": "/images/vehicles/e90-hero.jpg",
   "issues": [
     {
@@ -19,8 +26,14 @@
         "Consider replacing when doing timing chain service (N20/N54/N55)"
       ],
       "sources": [
-        { "name": "E90Post", "url": "#" },
-        { "name": "Bimmerpost", "url": "#" }
+        {
+          "name": "E90Post",
+          "url": "https://www.e90post.com/forums/"
+        },
+        {
+          "name": "Bimmerpost",
+          "url": "https://www.bimmerpost.com/forums/"
+        }
       ]
     },
     {
@@ -36,8 +49,14 @@
         "Address oil leaks promptly - oil on exhaust is fire hazard"
       ],
       "sources": [
-        { "name": "FCP Euro", "url": "#" },
-        { "name": "E90Post", "url": "#" }
+        {
+          "name": "FCP Euro",
+          "url": "https://www.fcpeuro.com/"
+        },
+        {
+          "name": "E90Post",
+          "url": "https://www.e90post.com/forums/"
+        }
       ]
     },
     {
@@ -52,8 +71,14 @@
         "Later production N55 engines have improved pumps"
       ],
       "sources": [
-        { "name": "N54Tech", "url": "#" },
-        { "name": "Bimmerpost", "url": "#" }
+        {
+          "name": "N54Tech",
+          "url": "https://www.n54tech.com/forums/"
+        },
+        {
+          "name": "Bimmerpost",
+          "url": "https://www.bimmerpost.com/forums/"
+        }
       ]
     },
     {
@@ -69,8 +94,14 @@
         "Walnut blast intake valves while replacing injectors"
       ],
       "sources": [
-        { "name": "N54Tech", "url": "#" },
-        { "name": "E90Post", "url": "#" }
+        {
+          "name": "N54Tech",
+          "url": "https://www.n54tech.com/forums/"
+        },
+        {
+          "name": "E90Post",
+          "url": "https://www.e90post.com/forums/"
+        }
       ]
     },
     {
@@ -86,8 +117,14 @@
         "Timing chain tensioner service may be needed (N20)"
       ],
       "sources": [
-        { "name": "Beisan Systems", "url": "#" },
-        { "name": "Bimmerpost", "url": "#" }
+        {
+          "name": "Beisan Systems",
+          "url": "https://www.beisansystems.com/"
+        },
+        {
+          "name": "Bimmerpost",
+          "url": "https://www.bimmerpost.com/forums/"
+        }
       ]
     },
     {
@@ -102,8 +139,14 @@
         "Upgraded pure turbos or Vargas units for performance builds"
       ],
       "sources": [
-        { "name": "N54Tech", "url": "#" },
-        { "name": "E90Post", "url": "#" }
+        {
+          "name": "N54Tech",
+          "url": "https://www.n54tech.com/forums/"
+        },
+        {
+          "name": "E90Post",
+          "url": "https://www.e90post.com/forums/"
+        }
       ]
     },
     {
@@ -119,8 +162,14 @@
         "Combine with injector replacement or other intake work"
       ],
       "sources": [
-        { "name": "E90Post", "url": "#" },
-        { "name": "N54Tech", "url": "#" }
+        {
+          "name": "E90Post",
+          "url": "https://www.e90post.com/forums/"
+        },
+        {
+          "name": "N54Tech",
+          "url": "https://www.n54tech.com/forums/"
+        }
       ]
     },
     {
@@ -136,8 +185,14 @@
         "Address any abnormal noise immediately"
       ],
       "sources": [
-        { "name": "M3Post", "url": "#" },
-        { "name": "Bimmerpost", "url": "#" }
+        {
+          "name": "M3Post",
+          "url": "https://www.m3post.com/forums/"
+        },
+        {
+          "name": "Bimmerpost",
+          "url": "https://www.bimmerpost.com/forums/"
+        }
       ]
     },
     {
@@ -153,8 +208,14 @@
         "Replace water pump and thermostat while apart"
       ],
       "sources": [
-        { "name": "Bimmerpost", "url": "#" },
-        { "name": "FCP Euro", "url": "#" }
+        {
+          "name": "Bimmerpost",
+          "url": "https://www.bimmerpost.com/forums/"
+        },
+        {
+          "name": "FCP Euro",
+          "url": "https://www.fcpeuro.com/"
+        }
       ]
     }
   ],
@@ -194,62 +255,227 @@
   ],
   "suppliers": {
     "oem": [
-      { "name": "BMW Parts", "url": "#", "notes": "Genuine BMW OEM parts" },
-      { "name": "FCP Euro", "url": "#", "notes": "Lifetime replacement guarantee" },
-      { "name": "ECS Tuning", "url": "#", "notes": "OEM and aftermarket" }
+      {
+        "name": "BMW Parts",
+        "url": "https://parts.bmwusa.com/",
+        "notes": "Genuine BMW OEM parts"
+      },
+      {
+        "name": "FCP Euro",
+        "url": "https://www.fcpeuro.com/",
+        "notes": "Lifetime replacement guarantee"
+      },
+      {
+        "name": "ECS Tuning",
+        "url": "https://www.ecstuning.com/",
+        "notes": "OEM and aftermarket"
+      }
     ],
     "aftermarket": [
-      { "name": "Turner Motorsport", "url": "#", "notes": "Performance parts" },
-      { "name": "BimmerWorld", "url": "#", "notes": "Track-focused parts" },
-      { "name": "Burger Motorsports", "url": "#", "notes": "N54/N55 performance" },
-      { "name": "Pure Turbos", "url": "#", "notes": "Upgraded turbo units" }
+      {
+        "name": "Turner Motorsport",
+        "url": "https://www.turnermotorsport.com/",
+        "notes": "Performance parts"
+      },
+      {
+        "name": "BimmerWorld",
+        "url": "https://www.bimmerworld.com/",
+        "notes": "Track-focused parts"
+      },
+      {
+        "name": "Burger Motorsports",
+        "url": "https://burgertuning.com/",
+        "notes": "N54/N55 performance"
+      },
+      {
+        "name": "Pure Turbos",
+        "url": "https://pureturbos.com/",
+        "notes": "Upgraded turbo units"
+      }
     ],
     "used": [
-      { "name": "E90Post Classifieds", "url": "#", "notes": "E90 community marketplace" },
-      { "name": "eBay Motors", "url": "#", "notes": "Used and aftermarket" },
-      { "name": "Car-Part.com", "url": "#", "notes": "Salvage yard inventory" }
+      {
+        "name": "E90Post Classifieds",
+        "url": "https://www.e90post.com/forums/e90-e91-e92-e93-parts-sale-wanted.61/",
+        "notes": "E90 community marketplace"
+      },
+      {
+        "name": "eBay Motors",
+        "url": "https://www.ebay.com/motors/",
+        "notes": "Used and aftermarket"
+      },
+      {
+        "name": "Car-Part.com",
+        "url": "https://www.car-part.com/",
+        "notes": "Salvage yard inventory"
+      }
     ]
   },
   "torqueSpecs": {
     "sources": [
-      { "name": "E90Post Torque Specs Thread", "url": "https://www.e90post.com/forums/showthread.php?t=1362166" },
-      { "name": "TightTorque E90 Reference", "url": "https://tighttorque.com/cars/bmw/3-series-5" },
-      { "name": "Bentley E90 Service Manual", "url": "https://www.bentleypublishers.com/bmw.html" }
+      {
+        "name": "E90Post Torque Specs Thread",
+        "url": "https://www.e90post.com/forums/showthread.php?t=1362166"
+      },
+      {
+        "name": "TightTorque E90 Reference",
+        "url": "https://tighttorque.com/cars/bmw/3-series-5"
+      },
+      {
+        "name": "Bentley E90 Service Manual",
+        "url": "https://www.bentleypublishers.com/bmw.html"
+      }
     ],
     "engine": [
-      { "component": "Cylinder Head Bolts (N52)", "spec": "30 ft-lbs (40 Nm) + 90° + 90°", "notes": "TTY bolts, replace each use" },
-      { "component": "Cylinder Head Bolts (N54/N55)", "spec": "30 ft-lbs (40 Nm) + 90° + 90°", "notes": "TTY bolts, replace each use" },
-      { "component": "Spark Plugs (N52)", "spec": "17 ft-lbs (23 Nm)", "notes": "" },
-      { "component": "Spark Plugs (N54/N55)", "spec": "17 ft-lbs (23 Nm)", "notes": "No anti-seize needed" },
-      { "component": "Valve Cover Bolts (N52)", "spec": "9 ft-lbs (12 Nm)", "notes": "Specific sequence required" },
-      { "component": "Oil Drain Plug", "spec": "18 ft-lbs (25 Nm)", "notes": "Replace crush washer" },
-      { "component": "Oil Filter Housing Bolts", "spec": "18 ft-lbs (25 Nm)", "notes": "" },
-      { "component": "Intake Manifold (N52)", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
-      { "component": "Charge Pipe Clamps (N54/N55)", "spec": "5 ft-lbs (7 Nm)", "notes": "" },
-      { "component": "Turbo Oil Feed Line (N54)", "spec": "15 ft-lbs (20 Nm)", "notes": "" },
-      { "component": "Exhaust Forward Flanges (N54)", "spec": "15 ft-lbs (21 Nm)", "notes": "Turbo engine only" }
+      {
+        "component": "Cylinder Head Bolts (N52)",
+        "spec": "30 ft-lbs (40 Nm) + 90° + 90°",
+        "notes": "TTY bolts, replace each use"
+      },
+      {
+        "component": "Cylinder Head Bolts (N54/N55)",
+        "spec": "30 ft-lbs (40 Nm) + 90° + 90°",
+        "notes": "TTY bolts, replace each use"
+      },
+      {
+        "component": "Spark Plugs (N52)",
+        "spec": "17 ft-lbs (23 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Spark Plugs (N54/N55)",
+        "spec": "17 ft-lbs (23 Nm)",
+        "notes": "No anti-seize needed"
+      },
+      {
+        "component": "Valve Cover Bolts (N52)",
+        "spec": "9 ft-lbs (12 Nm)",
+        "notes": "Specific sequence required"
+      },
+      {
+        "component": "Oil Drain Plug",
+        "spec": "18 ft-lbs (25 Nm)",
+        "notes": "Replace crush washer"
+      },
+      {
+        "component": "Oil Filter Housing Bolts",
+        "spec": "18 ft-lbs (25 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Intake Manifold (N52)",
+        "spec": "7 ft-lbs (10 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Charge Pipe Clamps (N54/N55)",
+        "spec": "5 ft-lbs (7 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Turbo Oil Feed Line (N54)",
+        "spec": "15 ft-lbs (20 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Exhaust Forward Flanges (N54)",
+        "spec": "15 ft-lbs (21 Nm)",
+        "notes": "Turbo engine only"
+      }
     ],
     "suspension": [
-      { "component": "Wheel Lug Bolts", "spec": "89 ft-lbs (120 Nm)", "notes": "Tighten in star pattern, dry torque" },
-      { "component": "Control Arm to Knuckle", "spec": "122 ft-lbs (165 Nm)", "notes": "" },
-      { "component": "Control Arm to Subframe", "spec": "74 ft-lbs (100 Nm)", "notes": "" },
-      { "component": "Tension Strut (Thrust Arm) to Knuckle", "spec": "122 ft-lbs (165 Nm)", "notes": "" },
-      { "component": "Tension Strut to Subframe", "spec": "74 ft-lbs (100 Nm)", "notes": "" },
-      { "component": "Strut Pinch Clamp", "spec": "60 ft-lbs (81 Nm)", "notes": "" },
-      { "component": "Strut Top Nut", "spec": "25 ft-lbs (34 Nm)", "notes": "" },
-      { "component": "Tie Rod Nut", "spec": "52 ft-lbs (70 Nm)", "notes": "" },
-      { "component": "Sway Bar End Links (Front)", "spec": "44 ft-lbs (60 Nm)", "notes": "" },
-      { "component": "Sway Bar End Links (Rear)", "spec": "43 ft-lbs (58 Nm)", "notes": "" },
-      { "component": "Sway Bar Bracket to Subframe", "spec": "16 ft-lbs (21 Nm)", "notes": "M8 bolts" },
-      { "component": "Subframe Reinforcement Plate", "spec": "44 ft-lbs (59 Nm) + 90° ± 30°", "notes": "8 Torx bolts, new bolts required" }
+      {
+        "component": "Wheel Lug Bolts",
+        "spec": "89 ft-lbs (120 Nm)",
+        "notes": "Tighten in star pattern, dry torque"
+      },
+      {
+        "component": "Control Arm to Knuckle",
+        "spec": "122 ft-lbs (165 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Control Arm to Subframe",
+        "spec": "74 ft-lbs (100 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Tension Strut (Thrust Arm) to Knuckle",
+        "spec": "122 ft-lbs (165 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Tension Strut to Subframe",
+        "spec": "74 ft-lbs (100 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Strut Pinch Clamp",
+        "spec": "60 ft-lbs (81 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Strut Top Nut",
+        "spec": "25 ft-lbs (34 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Tie Rod Nut",
+        "spec": "52 ft-lbs (70 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Sway Bar End Links (Front)",
+        "spec": "44 ft-lbs (60 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Sway Bar End Links (Rear)",
+        "spec": "43 ft-lbs (58 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Sway Bar Bracket to Subframe",
+        "spec": "16 ft-lbs (21 Nm)",
+        "notes": "M8 bolts"
+      },
+      {
+        "component": "Subframe Reinforcement Plate",
+        "spec": "44 ft-lbs (59 Nm) + 90° ± 30°",
+        "notes": "8 Torx bolts, new bolts required"
+      }
     ],
     "brakes": [
-      { "component": "Front Caliper Carrier", "spec": "81 ft-lbs (110 Nm)", "notes": "" },
-      { "component": "Rear Caliper Carrier", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
-      { "component": "Caliper Guide Pins", "spec": "22 ft-lbs (30 Nm)", "notes": "" },
-      { "component": "Brake Line to Hose", "spec": "9 ft-lbs (12 Nm)", "notes": "" },
-      { "component": "Brake Rotor Set Screw", "spec": "12 ft-lbs (16 Nm)", "notes": "Use thread locker" },
-      { "component": "Pad Wear Sensor", "spec": "Hand tight", "notes": "Clips into place" }
+      {
+        "component": "Front Caliper Carrier",
+        "spec": "81 ft-lbs (110 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Rear Caliper Carrier",
+        "spec": "48 ft-lbs (65 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Caliper Guide Pins",
+        "spec": "22 ft-lbs (30 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Brake Line to Hose",
+        "spec": "9 ft-lbs (12 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Brake Rotor Set Screw",
+        "spec": "12 ft-lbs (16 Nm)",
+        "notes": "Use thread locker"
+      },
+      {
+        "component": "Pad Wear Sensor",
+        "spec": "Hand tight",
+        "notes": "Clips into place"
+      }
     ]
   },
   "diyGuides": [

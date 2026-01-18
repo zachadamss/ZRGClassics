@@ -3,7 +3,14 @@
   "brand": "BMW",
   "fullName": "BMW E39 5 Series",
   "years": "1995-2003",
-  "engines": ["M52 2.5L I6", "M52 2.8L I6", "M54 2.5L I6", "M54 3.0L I6", "M62 4.4L V8", "S62 4.9L V8 (M5)"],
+  "engines": [
+    "M52 2.5L I6",
+    "M52 2.8L I6",
+    "M54 2.5L I6",
+    "M54 3.0L I6",
+    "M62 4.4L V8",
+    "S62 4.9L V8 (M5)"
+  ],
   "heroImage": "/images/vehicles/e39-hero.jpg",
   "issues": [
     {
@@ -21,8 +28,14 @@
         "Consider full cooling system refresh on purchase"
       ],
       "sources": [
-        { "name": "Bimmerforums", "url": "#" },
-        { "name": "FCP Euro", "url": "#" }
+        {
+          "name": "Bimmerforums",
+          "url": "https://www.bimmerforums.com/forum/"
+        },
+        {
+          "name": "FCP Euro",
+          "url": "https://www.fcpeuro.com/"
+        }
       ]
     },
     {
@@ -38,8 +51,14 @@
         "Full VANOS unit rebuild for severely worn units"
       ],
       "sources": [
-        { "name": "Beisan Systems", "url": "#" },
-        { "name": "Bimmerforums", "url": "#" }
+        {
+          "name": "Beisan Systems",
+          "url": "https://www.beisansystems.com/"
+        },
+        {
+          "name": "Bimmerforums",
+          "url": "https://www.bimmerforums.com/forum/"
+        }
       ]
     },
     {
@@ -55,8 +74,14 @@
         "Check valve during any intake-related service"
       ],
       "sources": [
-        { "name": "Pelican Parts", "url": "#" },
-        { "name": "Bimmerforums", "url": "#" }
+        {
+          "name": "Pelican Parts",
+          "url": "https://www.pelicanparts.com/"
+        },
+        {
+          "name": "Bimmerforums",
+          "url": "https://www.bimmerforums.com/forum/"
+        }
       ]
     },
     {
@@ -72,8 +97,14 @@
         "Alignment required after replacement"
       ],
       "sources": [
-        { "name": "FCP Euro", "url": "#" },
-        { "name": "Bimmerforums", "url": "#" }
+        {
+          "name": "FCP Euro",
+          "url": "https://www.fcpeuro.com/"
+        },
+        {
+          "name": "Bimmerforums",
+          "url": "https://www.bimmerforums.com/forum/"
+        }
       ]
     },
     {
@@ -89,8 +120,14 @@
         "Inspect timing chain guides on any M62 purchase"
       ],
       "sources": [
-        { "name": "Bimmerforums", "url": "#" },
-        { "name": "BimmerBoard", "url": "#" }
+        {
+          "name": "Bimmerforums",
+          "url": "https://www.bimmerforums.com/forum/"
+        },
+        {
+          "name": "BimmerBoard",
+          "url": "https://www.bimmerboard.com/"
+        }
       ]
     },
     {
@@ -106,8 +143,14 @@
         "Check oil for coolant contamination"
       ],
       "sources": [
-        { "name": "Pelican Parts", "url": "#" },
-        { "name": "Bimmerforums", "url": "#" }
+        {
+          "name": "Pelican Parts",
+          "url": "https://www.pelicanparts.com/"
+        },
+        {
+          "name": "Bimmerforums",
+          "url": "https://www.bimmerforums.com/forum/"
+        }
       ]
     },
     {
@@ -124,8 +167,14 @@
         "Address leaks promptly - oil on exhaust is fire hazard"
       ],
       "sources": [
-        { "name": "FCP Euro", "url": "#" },
-        { "name": "Pelican Parts", "url": "#" }
+        {
+          "name": "FCP Euro",
+          "url": "https://www.fcpeuro.com/"
+        },
+        {
+          "name": "Pelican Parts",
+          "url": "https://www.pelicanparts.com/"
+        }
       ]
     },
     {
@@ -142,8 +191,14 @@
         "Full alignment after suspension work"
       ],
       "sources": [
-        { "name": "FCP Euro", "url": "#" },
-        { "name": "Bimmerforums", "url": "#" }
+        {
+          "name": "FCP Euro",
+          "url": "https://www.fcpeuro.com/"
+        },
+        {
+          "name": "Bimmerforums",
+          "url": "https://www.bimmerforums.com/forum/"
+        }
       ]
     },
     {
@@ -159,8 +214,14 @@
         "Both are accessible DIY repairs with basic skills"
       ],
       "sources": [
-        { "name": "Bimmerforums", "url": "#" },
-        { "name": "Pelican Parts", "url": "#" }
+        {
+          "name": "Bimmerforums",
+          "url": "https://www.bimmerforums.com/forum/"
+        },
+        {
+          "name": "Pelican Parts",
+          "url": "https://www.pelicanparts.com/"
+        }
       ]
     }
   ],
@@ -200,60 +261,217 @@
   ],
   "suppliers": {
     "oem": [
-      { "name": "BMW Parts", "url": "#", "notes": "Genuine BMW OEM parts" },
-      { "name": "FCP Euro", "url": "#", "notes": "Lifetime replacement guarantee" },
-      { "name": "Pelican Parts", "url": "#", "notes": "Extensive BMW catalog" }
+      {
+        "name": "BMW Parts",
+        "url": "https://parts.bmwusa.com/",
+        "notes": "Genuine BMW OEM parts"
+      },
+      {
+        "name": "FCP Euro",
+        "url": "https://www.fcpeuro.com/",
+        "notes": "Lifetime replacement guarantee"
+      },
+      {
+        "name": "Pelican Parts",
+        "url": "https://www.pelicanparts.com/",
+        "notes": "Extensive BMW catalog"
+      }
     ],
     "aftermarket": [
-      { "name": "Turner Motorsport", "url": "#", "notes": "Performance parts and upgrades" },
-      { "name": "Beisan Systems", "url": "#", "notes": "VANOS repair specialists" },
-      { "name": "Rogue Engineering", "url": "#", "notes": "E39 performance specialists" }
+      {
+        "name": "Turner Motorsport",
+        "url": "https://www.turnermotorsport.com/",
+        "notes": "Performance parts and upgrades"
+      },
+      {
+        "name": "Beisan Systems",
+        "url": "https://www.beisansystems.com/",
+        "notes": "VANOS repair specialists"
+      },
+      {
+        "name": "Rogue Engineering",
+        "url": "https://www.rogueengineering.co/",
+        "notes": "E39 performance specialists"
+      }
     ],
     "used": [
-      { "name": "Bimmerforums Classifieds", "url": "#", "notes": "E39 community marketplace" },
-      { "name": "eBay Motors", "url": "#", "notes": "Used and NOS parts" },
-      { "name": "Car-Part.com", "url": "#", "notes": "Salvage yard inventory" }
+      {
+        "name": "Bimmerforums Classifieds",
+        "url": "https://www.bimmerforums.com/forum/forumdisplay.php?35-E30-Classifieds",
+        "notes": "E39 community marketplace"
+      },
+      {
+        "name": "eBay Motors",
+        "url": "https://www.ebay.com/motors/",
+        "notes": "Used and NOS parts"
+      },
+      {
+        "name": "Car-Part.com",
+        "url": "https://www.car-part.com/",
+        "notes": "Salvage yard inventory"
+      }
     ]
   },
   "torqueSpecs": {
     "sources": [
-      { "name": "Bentley E39 Service Manual", "url": "https://www.bentleypublishers.com/bmw.html" },
-      { "name": "M5Board Torque Reference", "url": "https://www.m5board.com/threads/torque-specs-for-brake-job.206498/" },
-      { "name": "Bimmerforums E39 Technical", "url": "https://www.bimmerfest.com/threads/torque-settings-etc.260774/" }
+      {
+        "name": "Bentley E39 Service Manual",
+        "url": "https://www.bentleypublishers.com/bmw.html"
+      },
+      {
+        "name": "M5Board Torque Reference",
+        "url": "https://www.m5board.com/threads/torque-specs-for-brake-job.206498/"
+      },
+      {
+        "name": "Bimmerforums E39 Technical",
+        "url": "https://www.bimmerfest.com/threads/torque-settings-etc.260774/"
+      }
     ],
     "engine": [
-      { "component": "Cylinder Head Bolts (M52/M54)", "spec": "30 ft-lbs (40 Nm) + 90° + 90°", "notes": "TTY bolts, replace each use" },
-      { "component": "Main Bearing Caps (M52/M54)", "spec": "15 ft-lbs (20 Nm) + 70°", "notes": "Angle-tighten method" },
-      { "component": "Connecting Rod Bolts", "spec": "15 ft-lbs (20 Nm) + 70°", "notes": "Angle-tighten method" },
-      { "component": "Flywheel Bolts (Manual)", "spec": "77 ft-lbs (105 Nm)", "notes": "Use new bolts" },
-      { "component": "Valve Cover Bolts", "spec": "9 ft-lbs (12 Nm)", "notes": "Do not overtighten" },
-      { "component": "Spark Plugs", "spec": "22 ft-lbs (30 Nm)", "notes": "" },
-      { "component": "Oil Drain Plug", "spec": "18 ft-lbs (25 Nm)", "notes": "Replace crush washer" },
-      { "component": "Oil Filter Housing Bolts", "spec": "18 ft-lbs (25 Nm)", "notes": "" },
-      { "component": "VANOS Solenoid", "spec": "11 ft-lbs (15 Nm)", "notes": "" },
-      { "component": "DISA Valve Bolts", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
-      { "component": "Intake Manifold Bolts", "spec": "11 ft-lbs (15 Nm)", "notes": "" }
+      {
+        "component": "Cylinder Head Bolts (M52/M54)",
+        "spec": "30 ft-lbs (40 Nm) + 90° + 90°",
+        "notes": "TTY bolts, replace each use"
+      },
+      {
+        "component": "Main Bearing Caps (M52/M54)",
+        "spec": "15 ft-lbs (20 Nm) + 70°",
+        "notes": "Angle-tighten method"
+      },
+      {
+        "component": "Connecting Rod Bolts",
+        "spec": "15 ft-lbs (20 Nm) + 70°",
+        "notes": "Angle-tighten method"
+      },
+      {
+        "component": "Flywheel Bolts (Manual)",
+        "spec": "77 ft-lbs (105 Nm)",
+        "notes": "Use new bolts"
+      },
+      {
+        "component": "Valve Cover Bolts",
+        "spec": "9 ft-lbs (12 Nm)",
+        "notes": "Do not overtighten"
+      },
+      {
+        "component": "Spark Plugs",
+        "spec": "22 ft-lbs (30 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Oil Drain Plug",
+        "spec": "18 ft-lbs (25 Nm)",
+        "notes": "Replace crush washer"
+      },
+      {
+        "component": "Oil Filter Housing Bolts",
+        "spec": "18 ft-lbs (25 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "VANOS Solenoid",
+        "spec": "11 ft-lbs (15 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "DISA Valve Bolts",
+        "spec": "7 ft-lbs (10 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Intake Manifold Bolts",
+        "spec": "11 ft-lbs (15 Nm)",
+        "notes": ""
+      }
     ],
     "suspension": [
-      { "component": "Control Arm to Subframe", "spec": "57 ft-lbs (77 Nm)", "notes": "Tighten with weight on wheels" },
-      { "component": "Thrust Arm to Knuckle", "spec": "59 ft-lbs (80 Nm)", "notes": "" },
-      { "component": "Thrust Arm to Subframe", "spec": "74 ft-lbs (100 Nm)", "notes": "" },
-      { "component": "Steering Knuckle Pinch Bolt", "spec": "60 ft-lbs (81 Nm)", "notes": "" },
-      { "component": "Tie Rod End Nut", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
-      { "component": "Wheel Lug Bolts", "spec": "88 ft-lbs (120 Nm)", "notes": "Tighten in star pattern, 2-stage" },
-      { "component": "Strut Top Nut", "spec": "18 ft-lbs (24 Nm)", "notes": "Hold strut shaft" },
-      { "component": "Front Subframe Bolts", "spec": "74 ft-lbs (100 Nm)", "notes": "" },
-      { "component": "Rear Subframe Bolts", "spec": "74 ft-lbs (100 Nm) + 90°", "notes": "Stretch bolts, replace" },
-      { "component": "Sway Bar Bracket", "spec": "18 ft-lbs (24 Nm)", "notes": "" },
-      { "component": "Sway Bar End Links", "spec": "48 ft-lbs (65 Nm)", "notes": "" }
+      {
+        "component": "Control Arm to Subframe",
+        "spec": "57 ft-lbs (77 Nm)",
+        "notes": "Tighten with weight on wheels"
+      },
+      {
+        "component": "Thrust Arm to Knuckle",
+        "spec": "59 ft-lbs (80 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Thrust Arm to Subframe",
+        "spec": "74 ft-lbs (100 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Steering Knuckle Pinch Bolt",
+        "spec": "60 ft-lbs (81 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Tie Rod End Nut",
+        "spec": "48 ft-lbs (65 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Wheel Lug Bolts",
+        "spec": "88 ft-lbs (120 Nm)",
+        "notes": "Tighten in star pattern, 2-stage"
+      },
+      {
+        "component": "Strut Top Nut",
+        "spec": "18 ft-lbs (24 Nm)",
+        "notes": "Hold strut shaft"
+      },
+      {
+        "component": "Front Subframe Bolts",
+        "spec": "74 ft-lbs (100 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Rear Subframe Bolts",
+        "spec": "74 ft-lbs (100 Nm) + 90°",
+        "notes": "Stretch bolts, replace"
+      },
+      {
+        "component": "Sway Bar Bracket",
+        "spec": "18 ft-lbs (24 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Sway Bar End Links",
+        "spec": "48 ft-lbs (65 Nm)",
+        "notes": ""
+      }
     ],
     "brakes": [
-      { "component": "Front Caliper Carrier", "spec": "81 ft-lbs (110 Nm)", "notes": "" },
-      { "component": "Rear Caliper Carrier", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
-      { "component": "Caliper Guide Pins (Slide Bolts)", "spec": "22 ft-lbs (30 Nm)", "notes": "7mm Allen" },
-      { "component": "Brake Rotor Set Screw", "spec": "12 ft-lbs (16 Nm)", "notes": "Use anti-seize on threads" },
-      { "component": "Brake Line Fittings", "spec": "13 ft-lbs (18 Nm)", "notes": "Do not overtighten" },
-      { "component": "ABS Sensor Bolt", "spec": "7 ft-lbs (10 Nm)", "notes": "" }
+      {
+        "component": "Front Caliper Carrier",
+        "spec": "81 ft-lbs (110 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Rear Caliper Carrier",
+        "spec": "48 ft-lbs (65 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Caliper Guide Pins (Slide Bolts)",
+        "spec": "22 ft-lbs (30 Nm)",
+        "notes": "7mm Allen"
+      },
+      {
+        "component": "Brake Rotor Set Screw",
+        "spec": "12 ft-lbs (16 Nm)",
+        "notes": "Use anti-seize on threads"
+      },
+      {
+        "component": "Brake Line Fittings",
+        "spec": "13 ft-lbs (18 Nm)",
+        "notes": "Do not overtighten"
+      },
+      {
+        "component": "ABS Sensor Bolt",
+        "spec": "7 ft-lbs (10 Nm)",
+        "notes": ""
+      }
     ]
   },
   "diyGuides": [

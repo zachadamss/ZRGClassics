@@ -3,7 +3,12 @@
   "brand": "Porsche",
   "fullName": "Porsche 944",
   "years": "1982-1991",
-  "engines": ["2.5L I4", "2.5L Turbo I4", "2.7L I4 (944S)", "3.0L I4 (944S2)"],
+  "engines": [
+    "2.5L I4",
+    "2.5L Turbo I4",
+    "2.7L I4 (944S)",
+    "3.0L I4 (944S2)"
+  ],
   "heroImage": "/images/vehicles/944-hero.jpg",
   "issues": [
     {
@@ -20,8 +25,14 @@
         "Never buy a 944 without documented timing belt history"
       ],
       "sources": [
-        { "name": "Rennlist", "url": "#" },
-        { "name": "Pelican Parts", "url": "#" }
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        },
+        {
+          "name": "Pelican Parts",
+          "url": "https://www.pelicanparts.com/"
+        }
       ]
     },
     {
@@ -37,8 +48,14 @@
         "Pressure test cooling system after repair"
       ],
       "sources": [
-        { "name": "Pelican Parts", "url": "#" },
-        { "name": "Rennlist", "url": "#" }
+        {
+          "name": "Pelican Parts",
+          "url": "https://www.pelicanparts.com/"
+        },
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        }
       ]
     },
     {
@@ -54,8 +71,14 @@
         "Clean relay socket contacts while relay is out"
       ],
       "sources": [
-        { "name": "Rennlist", "url": "#" },
-        { "name": "944Online", "url": "#" }
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        },
+        {
+          "name": "944Online",
+          "url": "https://www.944online.com/"
+        }
       ]
     },
     {
@@ -71,8 +94,14 @@
         "Use DOT 4 brake fluid"
       ],
       "sources": [
-        { "name": "Pelican Parts", "url": "#" },
-        { "name": "Rennlist", "url": "#" }
+        {
+          "name": "Pelican Parts",
+          "url": "https://www.pelicanparts.com/"
+        },
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        }
       ]
     },
     {
@@ -88,8 +117,14 @@
         "Have torque tube serviced by specialist if unfamiliar"
       ],
       "sources": [
-        { "name": "Rennlist", "url": "#" },
-        { "name": "944Online", "url": "#" }
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        },
+        {
+          "name": "944Online",
+          "url": "https://www.944online.com/"
+        }
       ]
     },
     {
@@ -105,8 +140,14 @@
         "Prevention: always use sunshade when parked"
       ],
       "sources": [
-        { "name": "Rennlist", "url": "#" },
-        { "name": "944Online", "url": "#" }
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        },
+        {
+          "name": "944Online",
+          "url": "https://www.944online.com/"
+        }
       ]
     },
     {
@@ -122,8 +163,14 @@
         "Replace tie rod ends while rack is out"
       ],
       "sources": [
-        { "name": "Pelican Parts", "url": "#" },
-        { "name": "Rennlist", "url": "#" }
+        {
+          "name": "Pelican Parts",
+          "url": "https://www.pelicanparts.com/"
+        },
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        }
       ]
     },
     {
@@ -138,8 +185,14 @@
         "This is a common DIY repair with proper instructions"
       ],
       "sources": [
-        { "name": "Rennlist", "url": "#" },
-        { "name": "Pelican Parts", "url": "#" }
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        },
+        {
+          "name": "Pelican Parts",
+          "url": "https://www.pelicanparts.com/"
+        }
       ]
     },
     {
@@ -154,8 +207,14 @@
         "Check and replace torque tube mounts if worn"
       ],
       "sources": [
-        { "name": "Rennlist", "url": "#" },
-        { "name": "944Online", "url": "#" }
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        },
+        {
+          "name": "944Online",
+          "url": "https://www.944online.com/"
+        }
       ]
     }
   ],
@@ -187,59 +246,212 @@
   ],
   "suppliers": {
     "oem": [
-      { "name": "Porsche Parts", "url": "#", "notes": "Genuine Porsche OEM" },
-      { "name": "Pelican Parts", "url": "#", "notes": "Extensive Porsche catalog" }
+      {
+        "name": "Porsche Parts",
+        "url": "https://parts.porsche.com/",
+        "notes": "Genuine Porsche OEM"
+      },
+      {
+        "name": "Pelican Parts",
+        "url": "https://www.pelicanparts.com/",
+        "notes": "Extensive Porsche catalog"
+      }
     ],
     "aftermarket": [
-      { "name": "Lindsey Racing", "url": "#", "notes": "Performance and OEM parts" },
-      { "name": "944 Online", "url": "#", "notes": "944-specific resources" }
+      {
+        "name": "Lindsey Racing",
+        "url": "https://www.lindseyracing.com/",
+        "notes": "Performance and OEM parts"
+      },
+      {
+        "name": "944 Online",
+        "url": "https://www.944online.com/",
+        "notes": "944-specific resources"
+      }
     ],
     "used": [
-      { "name": "Rennlist Classifieds", "url": "#", "notes": "Forum marketplace" },
-      { "name": "eBay Motors", "url": "#", "notes": "Used & NOS parts" }
+      {
+        "name": "Rennlist Classifieds",
+        "url": "https://rennlist.com/forums/parts-marketplace/",
+        "notes": "Forum marketplace"
+      },
+      {
+        "name": "eBay Motors",
+        "url": "https://www.ebay.com/motors/",
+        "notes": "Used & NOS parts"
+      }
     ]
   },
   "torqueSpecs": {
     "sources": [
-      { "name": "Rennlist 944 Rear Suspension Torques", "url": "https://rennlist.com/forums/944-turbo-and-turbo-s-forum/63169-torque-specs-for-rear-suspension.html" },
-      { "name": "Clarks-Garage 944 Technical", "url": "https://www.clarks-garage.com/shop-manual/eng-02.htm" },
-      { "name": "Lindsey Racing Torque Specs", "url": "https://www.lindseyracing.com/LR/Parts/TORQUESPEC.html" }
+      {
+        "name": "Rennlist 944 Rear Suspension Torques",
+        "url": "https://rennlist.com/forums/944-turbo-and-turbo-s-forum/63169-torque-specs-for-rear-suspension.html"
+      },
+      {
+        "name": "Clarks-Garage 944 Technical",
+        "url": "https://www.clarks-garage.com/shop-manual/eng-02.htm"
+      },
+      {
+        "name": "Lindsey Racing Torque Specs",
+        "url": "https://www.lindseyracing.com/LR/Parts/TORQUESPEC.html"
+      }
     ],
     "engine": [
-      { "component": "Cylinder Head Bolts", "spec": "48 ft-lbs (65 Nm) + 90°", "notes": "New bolts required, cold engine" },
-      { "component": "Crankshaft Front Bolt (M16)", "spec": "160 ft-lbs (217 Nm)", "notes": "" },
-      { "component": "Timing Belt Tensioner", "spec": "33 ft-lbs (45 Nm)", "notes": "" },
-      { "component": "Balance Shaft Belt Tensioner", "spec": "15 ft-lbs (20 Nm)", "notes": "" },
-      { "component": "Camshaft Bearing to Head (M8)", "spec": "15 ft-lbs (20 Nm)", "notes": "" },
-      { "component": "Camshaft Housing to Head (Turbo)", "spec": "15 ft-lbs (20 Nm)", "notes": "" },
-      { "component": "Knock Sensor (pre-88)", "spec": "7 ft-lbs (9 Nm)", "notes": "From 88: 15 ft-lbs (20 Nm)" },
-      { "component": "Spark Plugs", "spec": "22 ft-lbs (30 Nm)", "notes": "" },
-      { "component": "Oil Drain Plug", "spec": "22 ft-lbs (30 Nm)", "notes": "Replace washer" },
-      { "component": "Upper Motor Mount Bolts (8mm)", "spec": "17 ft-lbs (23 Nm)", "notes": "" },
-      { "component": "Lower Motor Mount Bolts", "spec": "32 ft-lbs (43 Nm)", "notes": "" },
-      { "component": "Cross-Member Mounting Bolts (12mm)", "spec": "63 ft-lbs (85 Nm)", "notes": "" },
-      { "component": "Torque Tube to Clutch Housing (M10)", "spec": "30 ft-lbs (42 Nm)", "notes": "" }
+      {
+        "component": "Cylinder Head Bolts",
+        "spec": "48 ft-lbs (65 Nm) + 90°",
+        "notes": "New bolts required, cold engine"
+      },
+      {
+        "component": "Crankshaft Front Bolt (M16)",
+        "spec": "160 ft-lbs (217 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Timing Belt Tensioner",
+        "spec": "33 ft-lbs (45 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Balance Shaft Belt Tensioner",
+        "spec": "15 ft-lbs (20 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Camshaft Bearing to Head (M8)",
+        "spec": "15 ft-lbs (20 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Camshaft Housing to Head (Turbo)",
+        "spec": "15 ft-lbs (20 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Knock Sensor (pre-88)",
+        "spec": "7 ft-lbs (9 Nm)",
+        "notes": "From 88: 15 ft-lbs (20 Nm)"
+      },
+      {
+        "component": "Spark Plugs",
+        "spec": "22 ft-lbs (30 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Oil Drain Plug",
+        "spec": "22 ft-lbs (30 Nm)",
+        "notes": "Replace washer"
+      },
+      {
+        "component": "Upper Motor Mount Bolts (8mm)",
+        "spec": "17 ft-lbs (23 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Lower Motor Mount Bolts",
+        "spec": "32 ft-lbs (43 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Cross-Member Mounting Bolts (12mm)",
+        "spec": "63 ft-lbs (85 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Torque Tube to Clutch Housing (M10)",
+        "spec": "30 ft-lbs (42 Nm)",
+        "notes": ""
+      }
     ],
     "suspension": [
-      { "component": "Wheel Lug Bolts", "spec": "96 ft-lbs (130 Nm)", "notes": "Tighten in star pattern" },
-      { "component": "Front Control Arm Lock Nut (12mm)", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
-      { "component": "Front Control Arm Bracket Bolts (10mm)", "spec": "34 ft-lbs (46 Nm)", "notes": "" },
-      { "component": "Steering Knuckle Lock Nut (10mm)", "spec": "37 ft-lbs (50 Nm)", "notes": "" },
-      { "component": "Front Stabilizer to Control Arm (10mm)", "spec": "18 ft-lbs (24 Nm)", "notes": "" },
-      { "component": "Front Stabilizer Bracket (8mm)", "spec": "17 ft-lbs (23 Nm)", "notes": "" },
-      { "component": "Rear Bearing Flange to Cross Tube", "spec": "34 ft-lbs (46 Nm)", "notes": "" },
-      { "component": "Rear Bearing Flange to Body", "spec": "52 ft-lbs (70 Nm)", "notes": "" },
-      { "component": "Rear Trailing Arm to Axle Strut", "spec": "66 ft-lbs (90 Nm)", "notes": "" },
-      { "component": "Rear Trailing Arm to Cross Tube", "spec": "45 ft-lbs (61 Nm)", "notes": "" },
-      { "component": "Rear Shock to Body", "spec": "45 ft-lbs (61 Nm)", "notes": "" },
-      { "component": "Rear Shock to Trailing Arm", "spec": "90 ft-lbs (123 Nm)", "notes": "" },
-      { "component": "Rear Wheel Hub (Steel Arm)", "spec": "280-332 ft-lbs (380-450 Nm)", "notes": "" },
-      { "component": "Rear Wheel Hub (Aluminum Arm)", "spec": "340 ft-lbs (460 Nm)", "notes": "" }
+      {
+        "component": "Wheel Lug Bolts",
+        "spec": "96 ft-lbs (130 Nm)",
+        "notes": "Tighten in star pattern"
+      },
+      {
+        "component": "Front Control Arm Lock Nut (12mm)",
+        "spec": "48 ft-lbs (65 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Front Control Arm Bracket Bolts (10mm)",
+        "spec": "34 ft-lbs (46 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Steering Knuckle Lock Nut (10mm)",
+        "spec": "37 ft-lbs (50 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Front Stabilizer to Control Arm (10mm)",
+        "spec": "18 ft-lbs (24 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Front Stabilizer Bracket (8mm)",
+        "spec": "17 ft-lbs (23 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Rear Bearing Flange to Cross Tube",
+        "spec": "34 ft-lbs (46 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Rear Bearing Flange to Body",
+        "spec": "52 ft-lbs (70 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Rear Trailing Arm to Axle Strut",
+        "spec": "66 ft-lbs (90 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Rear Trailing Arm to Cross Tube",
+        "spec": "45 ft-lbs (61 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Rear Shock to Body",
+        "spec": "45 ft-lbs (61 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Rear Shock to Trailing Arm",
+        "spec": "90 ft-lbs (123 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Rear Wheel Hub (Steel Arm)",
+        "spec": "280-332 ft-lbs (380-450 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Rear Wheel Hub (Aluminum Arm)",
+        "spec": "340 ft-lbs (460 Nm)",
+        "notes": ""
+      }
     ],
     "brakes": [
-      { "component": "Caliper Bolts", "spec": "63 ft-lbs (85 Nm)", "notes": "" },
-      { "component": "Brake Back Plate to Trailing Arm", "spec": "43 ft-lbs (52 Nm)", "notes": "Steel trailing arm only" },
-      { "component": "Brake Line Fittings", "spec": "11 ft-lbs (15 Nm)", "notes": "Do not overtighten" }
+      {
+        "component": "Caliper Bolts",
+        "spec": "63 ft-lbs (85 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Brake Back Plate to Trailing Arm",
+        "spec": "43 ft-lbs (52 Nm)",
+        "notes": "Steel trailing arm only"
+      },
+      {
+        "component": "Brake Line Fittings",
+        "spec": "11 ft-lbs (15 Nm)",
+        "notes": "Do not overtighten"
+      }
     ]
   },
   "diyGuides": [

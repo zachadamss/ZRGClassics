@@ -3,7 +3,12 @@
   "brand": "Porsche",
   "fullName": "Porsche 991 911",
   "years": "2012-2019",
-  "engines": ["3.4L Flat-6 MA1 (991.1)", "3.8L Flat-6 MA1 (991.1 S)", "3.0L Twin-Turbo Flat-6 (991.2)", "4.0L Flat-6 MA1 (GT3)"],
+  "engines": [
+    "3.4L Flat-6 MA1 (991.1)",
+    "3.8L Flat-6 MA1 (991.1 S)",
+    "3.0L Twin-Turbo Flat-6 (991.2)",
+    "4.0L Flat-6 MA1 (GT3)"
+  ],
   "heroImage": "/images/vehicles/991-hero.jpg",
   "issues": [
     {
@@ -19,8 +24,14 @@
         "Flush and refill with proper coolant mix"
       ],
       "sources": [
-        { "name": "FCP Euro", "url": "#" },
-        { "name": "Rennlist", "url": "#" }
+        {
+          "name": "FCP Euro",
+          "url": "https://www.fcpeuro.com/"
+        },
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        }
       ]
     },
     {
@@ -36,8 +47,14 @@
         "Spirited driving helps but doesn't eliminate buildup"
       ],
       "sources": [
-        { "name": "Rennlist", "url": "#" },
-        { "name": "Planet-9", "url": "#" }
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        },
+        {
+          "name": "Planet-9",
+          "url": "https://www.planet-9.com/"
+        }
       ]
     },
     {
@@ -53,8 +70,14 @@
         "Mechatronic unit repair for electronic issues"
       ],
       "sources": [
-        { "name": "Rennlist", "url": "#" },
-        { "name": "Planet-9", "url": "#" }
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        },
+        {
+          "name": "Planet-9",
+          "url": "https://www.planet-9.com/"
+        }
       ]
     },
     {
@@ -70,8 +93,14 @@
         "Remanufactured dampers available at reduced cost"
       ],
       "sources": [
-        { "name": "Rennlist", "url": "#" },
-        { "name": "Pelican Parts", "url": "#" }
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        },
+        {
+          "name": "Pelican Parts",
+          "url": "https://www.pelicanparts.com/"
+        }
       ]
     },
     {
@@ -87,8 +116,14 @@
         "Compression and leak-down test for diagnosis"
       ],
       "sources": [
-        { "name": "Rennlist", "url": "#" },
-        { "name": "Porsche Club of America", "url": "#" }
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        },
+        {
+          "name": "Porsche Club of America",
+          "url": "https://www.pca.org/"
+        }
       ]
     },
     {
@@ -104,8 +139,14 @@
         "Proper warm-up and cool-down for turbo longevity"
       ],
       "sources": [
-        { "name": "Rennlist", "url": "#" },
-        { "name": "6SpeedOnline", "url": "#" }
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        },
+        {
+          "name": "6SpeedOnline",
+          "url": "https://www.6speedonline.com/forums/"
+        }
       ]
     },
     {
@@ -121,8 +162,14 @@
         "System reset procedure after battery work"
       ],
       "sources": [
-        { "name": "Rennlist", "url": "#" },
-        { "name": "Pelican Parts", "url": "#" }
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        },
+        {
+          "name": "Pelican Parts",
+          "url": "https://www.pelicanparts.com/"
+        }
       ]
     },
     {
@@ -138,8 +185,14 @@
         "Full diagnosis with Porsche diagnostic tool"
       ],
       "sources": [
-        { "name": "Rennlist", "url": "#" },
-        { "name": "Planet-9", "url": "#" }
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        },
+        {
+          "name": "Planet-9",
+          "url": "https://www.planet-9.com/"
+        }
       ]
     }
   ],
@@ -179,58 +232,207 @@
   ],
   "suppliers": {
     "oem": [
-      { "name": "Porsche Parts", "url": "#", "notes": "Genuine Porsche OEM" },
-      { "name": "FCP Euro", "url": "#", "notes": "Lifetime replacement guarantee" },
-      { "name": "Pelican Parts", "url": "#", "notes": "Extensive Porsche catalog" }
+      {
+        "name": "Porsche Parts",
+        "url": "https://parts.porsche.com/",
+        "notes": "Genuine Porsche OEM"
+      },
+      {
+        "name": "FCP Euro",
+        "url": "https://www.fcpeuro.com/",
+        "notes": "Lifetime replacement guarantee"
+      },
+      {
+        "name": "Pelican Parts",
+        "url": "https://www.pelicanparts.com/",
+        "notes": "Extensive Porsche catalog"
+      }
     ],
     "aftermarket": [
-      { "name": "Fabspeed", "url": "#", "notes": "Exhaust and performance" },
-      { "name": "Dundon Motorsports", "url": "#", "notes": "Exhaust specialists" },
-      { "name": "Softronic", "url": "#", "notes": "ECU tuning" },
-      { "name": "JRZ", "url": "#", "notes": "Suspension components" }
+      {
+        "name": "Fabspeed",
+        "url": "https://www.fabspeed.com/",
+        "notes": "Exhaust and performance"
+      },
+      {
+        "name": "Dundon Motorsports",
+        "url": "https://dundonmotorsports.com/",
+        "notes": "Exhaust specialists"
+      },
+      {
+        "name": "Softronic",
+        "url": "https://www.softronic.us/",
+        "notes": "ECU tuning"
+      },
+      {
+        "name": "JRZ",
+        "url": "https://www.jrz-suspension.com/",
+        "notes": "Suspension components"
+      }
     ],
     "used": [
-      { "name": "Rennlist Classifieds", "url": "#", "notes": "Porsche community marketplace" },
-      { "name": "eBay Motors", "url": "#", "notes": "Used and NOS parts" },
-      { "name": "Car-Part.com", "url": "#", "notes": "Salvage yard inventory" }
+      {
+        "name": "Rennlist Classifieds",
+        "url": "https://rennlist.com/forums/parts-marketplace/",
+        "notes": "Porsche community marketplace"
+      },
+      {
+        "name": "eBay Motors",
+        "url": "https://www.ebay.com/motors/",
+        "notes": "Used and NOS parts"
+      },
+      {
+        "name": "Car-Part.com",
+        "url": "https://www.car-part.com/",
+        "notes": "Salvage yard inventory"
+      }
     ]
   },
   "torqueSpecs": {
     "sources": [
-      { "name": "Rennlist 991 Technical Forum", "url": "https://rennlist.com/forums/991-gt3-gt3rs-and-911r/"},
-      { "name": "Porsche Workshop Manual", "url": "https://www.bentleypublishers.com/porsche.html" },
-      { "name": "Planet-9 991 Forum", "url": "https://www.planet-9.com/" }
+      {
+        "name": "Rennlist 991 Technical Forum",
+        "url": "https://rennlist.com/forums/991-gt3-gt3rs-and-911r/"
+      },
+      {
+        "name": "Porsche Workshop Manual",
+        "url": "https://www.bentleypublishers.com/porsche.html"
+      },
+      {
+        "name": "Planet-9 991 Forum",
+        "url": "https://www.planet-9.com/"
+      }
     ],
     "engine": [
-      { "component": "Spark Plugs", "spec": "22 ft-lbs (30 Nm)", "notes": "" },
-      { "component": "Ignition Coil Bolts", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
-      { "component": "Oil Drain Plug", "spec": "37 ft-lbs (50 Nm)", "notes": "Replace crush washer" },
-      { "component": "Oil Filter Housing Cap", "spec": "19 ft-lbs (26 Nm)", "notes": "" },
-      { "component": "Intake Manifold", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
-      { "component": "Engine Mount Bolts (Top)", "spec": "23 ft-lbs (31 Nm)", "notes": "" },
-      { "component": "Engine Mount Thru-Bolt", "spec": "63 ft-lbs (85 Nm)", "notes": "" },
-      { "component": "Coolant Pipe Fittings", "spec": "15 ft-lbs (20 Nm)", "notes": "New o-rings" },
-      { "component": "Turbo Oil Lines (991.2)", "spec": "15 ft-lbs (20 Nm)", "notes": "Turbo models" }
+      {
+        "component": "Spark Plugs",
+        "spec": "22 ft-lbs (30 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Ignition Coil Bolts",
+        "spec": "7 ft-lbs (10 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Oil Drain Plug",
+        "spec": "37 ft-lbs (50 Nm)",
+        "notes": "Replace crush washer"
+      },
+      {
+        "component": "Oil Filter Housing Cap",
+        "spec": "19 ft-lbs (26 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Intake Manifold",
+        "spec": "7 ft-lbs (10 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Engine Mount Bolts (Top)",
+        "spec": "23 ft-lbs (31 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Engine Mount Thru-Bolt",
+        "spec": "63 ft-lbs (85 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Coolant Pipe Fittings",
+        "spec": "15 ft-lbs (20 Nm)",
+        "notes": "New o-rings"
+      },
+      {
+        "component": "Turbo Oil Lines (991.2)",
+        "spec": "15 ft-lbs (20 Nm)",
+        "notes": "Turbo models"
+      }
     ],
     "suspension": [
-      { "component": "Wheel Lug Bolts", "spec": "118 ft-lbs (160 Nm)", "notes": "Center-lock different (443 ft-lbs)" },
-      { "component": "Front Strut Pinch Bolt", "spec": "65 ft-lbs (85 Nm)", "notes": "" },
-      { "component": "Front Control Arm to Frame", "spec": "89 ft-lbs (120 Nm)", "notes": "" },
-      { "component": "Front Control Arm Ball Joint", "spec": "56 ft-lbs (76 Nm)", "notes": "" },
-      { "component": "Front Thrust Arm to Frame", "spec": "118 ft-lbs (160 Nm)", "notes": "" },
-      { "component": "PASM Damper Top Nut", "spec": "23 ft-lbs (31 Nm)", "notes": "" },
-      { "component": "Tie Rod End Nut", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
-      { "component": "Sway Bar End Links", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
-      { "component": "Rear Control Arm Eccentric", "spec": "74 ft-lbs (100 Nm)", "notes": "" },
-      { "component": "Rear Upper Control Arm", "spec": "81 ft-lbs (110 Nm)", "notes": "" }
+      {
+        "component": "Wheel Lug Bolts",
+        "spec": "118 ft-lbs (160 Nm)",
+        "notes": "Center-lock different (443 ft-lbs)"
+      },
+      {
+        "component": "Front Strut Pinch Bolt",
+        "spec": "65 ft-lbs (85 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Front Control Arm to Frame",
+        "spec": "89 ft-lbs (120 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Front Control Arm Ball Joint",
+        "spec": "56 ft-lbs (76 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Front Thrust Arm to Frame",
+        "spec": "118 ft-lbs (160 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "PASM Damper Top Nut",
+        "spec": "23 ft-lbs (31 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Tie Rod End Nut",
+        "spec": "48 ft-lbs (65 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Sway Bar End Links",
+        "spec": "48 ft-lbs (65 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Rear Control Arm Eccentric",
+        "spec": "74 ft-lbs (100 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Rear Upper Control Arm",
+        "spec": "81 ft-lbs (110 Nm)",
+        "notes": ""
+      }
     ],
     "brakes": [
-      { "component": "Front Caliper Bolts", "spec": "63 ft-lbs (85 Nm)", "notes": "Use new bolts" },
-      { "component": "Rear Caliper Bolts", "spec": "63 ft-lbs (85 Nm)", "notes": "Use new bolts" },
-      { "component": "PCCB Caliper Bolts", "spec": "74 ft-lbs (100 Nm)", "notes": "Ceramic brake cars" },
-      { "component": "Brake Rotor Screws", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
-      { "component": "Brake Line Fittings", "spec": "13 ft-lbs (18 Nm)", "notes": "" },
-      { "component": "Wheel Speed Sensor", "spec": "7 ft-lbs (10 Nm)", "notes": "" }
+      {
+        "component": "Front Caliper Bolts",
+        "spec": "63 ft-lbs (85 Nm)",
+        "notes": "Use new bolts"
+      },
+      {
+        "component": "Rear Caliper Bolts",
+        "spec": "63 ft-lbs (85 Nm)",
+        "notes": "Use new bolts"
+      },
+      {
+        "component": "PCCB Caliper Bolts",
+        "spec": "74 ft-lbs (100 Nm)",
+        "notes": "Ceramic brake cars"
+      },
+      {
+        "component": "Brake Rotor Screws",
+        "spec": "7 ft-lbs (10 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Brake Line Fittings",
+        "spec": "13 ft-lbs (18 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Wheel Speed Sensor",
+        "spec": "7 ft-lbs (10 Nm)",
+        "notes": ""
+      }
     ]
   },
   "diyGuides": [

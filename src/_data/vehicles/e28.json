@@ -3,7 +3,13 @@
   "brand": "BMW",
   "fullName": "BMW E28 5 Series",
   "years": "1982-1988",
-  "engines": ["M20 2.7L I6", "M30 2.8L I6", "M30 3.2L I6", "M30 3.4L I6", "S38 3.5L I6 (M5)"],
+  "engines": [
+    "M20 2.7L I6",
+    "M30 2.8L I6",
+    "M30 3.2L I6",
+    "M30 3.4L I6",
+    "S38 3.5L I6 (M5)"
+  ],
   "heroImage": "/images/vehicles/e28-hero.jpg",
   "issues": [
     {
@@ -19,8 +25,14 @@
         "Consider upgraded tensioner from later models"
       ],
       "sources": [
-        { "name": "Bimmerforums", "url": "#" },
-        { "name": "BMW CCA", "url": "#" }
+        {
+          "name": "Bimmerforums",
+          "url": "https://www.bimmerforums.com/forum/"
+        },
+        {
+          "name": "BMW CCA",
+          "url": "https://www.bmwcca.org/"
+        }
       ]
     },
     {
@@ -36,8 +48,14 @@
         "Inspect oil pan for guide debris during service"
       ],
       "sources": [
-        { "name": "Bimmerforums", "url": "#" },
-        { "name": "R3VLimited", "url": "#" }
+        {
+          "name": "Bimmerforums",
+          "url": "https://www.bimmerforums.com/forum/"
+        },
+        {
+          "name": "R3VLimited",
+          "url": "https://www.r3vlimited.com/"
+        }
       ]
     },
     {
@@ -54,8 +72,14 @@
         "Keep all drain holes clear to prevent water accumulation"
       ],
       "sources": [
-        { "name": "Bimmerforums", "url": "#" },
-        { "name": "R3VLimited", "url": "#" }
+        {
+          "name": "Bimmerforums",
+          "url": "https://www.bimmerforums.com/forum/"
+        },
+        {
+          "name": "R3VLimited",
+          "url": "https://www.r3vlimited.com/"
+        }
       ]
     },
     {
@@ -71,8 +95,14 @@
         "Address leaks promptly - oil on exhaust is a fire hazard"
       ],
       "sources": [
-        { "name": "Bimmerforums", "url": "#" },
-        { "name": "Pelican Parts", "url": "#" }
+        {
+          "name": "Bimmerforums",
+          "url": "https://www.bimmerforums.com/forum/"
+        },
+        {
+          "name": "Pelican Parts",
+          "url": "https://www.pelicanparts.com/"
+        }
       ]
     },
     {
@@ -89,8 +119,14 @@
         "Inspect and repair wiring harness if brittle"
       ],
       "sources": [
-        { "name": "E28 Goodies", "url": "#" },
-        { "name": "Bimmerforums", "url": "#" }
+        {
+          "name": "E28 Goodies",
+          "url": "https://www.e28goodies.com/"
+        },
+        {
+          "name": "Bimmerforums",
+          "url": "https://www.bimmerforums.com/forum/"
+        }
       ]
     },
     {
@@ -108,8 +144,14 @@
         "Alignment after any suspension work"
       ],
       "sources": [
-        { "name": "Ireland Engineering", "url": "#" },
-        { "name": "Bimmerforums", "url": "#" }
+        {
+          "name": "Ireland Engineering",
+          "url": "https://www.iemotorsport.com/"
+        },
+        {
+          "name": "Bimmerforums",
+          "url": "https://www.bimmerforums.com/forum/"
+        }
       ]
     },
     {
@@ -126,8 +168,14 @@
         "Flush system and use proper BMW coolant"
       ],
       "sources": [
-        { "name": "Pelican Parts", "url": "#" },
-        { "name": "Bimmerforums", "url": "#" }
+        {
+          "name": "Pelican Parts",
+          "url": "https://www.pelicanparts.com/"
+        },
+        {
+          "name": "Bimmerforums",
+          "url": "https://www.bimmerforums.com/forum/"
+        }
       ]
     },
     {
@@ -144,8 +192,14 @@
         "Check fuel pressure and replace pump/filter if low"
       ],
       "sources": [
-        { "name": "Bimmerforums", "url": "#" },
-        { "name": "BMW CCA", "url": "#" }
+        {
+          "name": "Bimmerforums",
+          "url": "https://www.bimmerforums.com/forum/"
+        },
+        {
+          "name": "BMW CCA",
+          "url": "https://www.bmwcca.org/"
+        }
       ]
     }
   ],
@@ -185,56 +239,197 @@
   ],
   "suppliers": {
     "oem": [
-      { "name": "BMW Classic Parts", "url": "#", "notes": "Genuine BMW OEM and NLA parts" },
-      { "name": "FCP Euro", "url": "#", "notes": "Lifetime replacement guarantee" },
-      { "name": "Pelican Parts", "url": "#", "notes": "Extensive BMW catalog" }
+      {
+        "name": "BMW Classic Parts",
+        "url": "https://www.bmw-classic-parts.com/",
+        "notes": "Genuine BMW OEM and NLA parts"
+      },
+      {
+        "name": "FCP Euro",
+        "url": "https://www.fcpeuro.com/",
+        "notes": "Lifetime replacement guarantee"
+      },
+      {
+        "name": "Pelican Parts",
+        "url": "https://www.pelicanparts.com/",
+        "notes": "Extensive BMW catalog"
+      }
     ],
     "aftermarket": [
-      { "name": "Ireland Engineering", "url": "#", "notes": "Suspension and performance parts" },
-      { "name": "Metric Mechanic", "url": "#", "notes": "M30 engine specialists" },
-      { "name": "Blunt Tech", "url": "#", "notes": "E28 restoration parts" }
+      {
+        "name": "Ireland Engineering",
+        "url": "https://www.iemotorsport.com/",
+        "notes": "Suspension and performance parts"
+      },
+      {
+        "name": "Metric Mechanic",
+        "url": "https://www.metricmechanic.com/",
+        "notes": "M30 engine specialists"
+      },
+      {
+        "name": "Blunt Tech",
+        "url": "https://www.blunttech.com/",
+        "notes": "E28 restoration parts"
+      }
     ],
     "used": [
-      { "name": "Bimmerforums Classifieds", "url": "#", "notes": "E28 community marketplace" },
-      { "name": "eBay Motors", "url": "#", "notes": "Used and NOS parts" },
-      { "name": "Car-Part.com", "url": "#", "notes": "Salvage yard inventory search" }
+      {
+        "name": "Bimmerforums Classifieds",
+        "url": "https://www.bimmerforums.com/forum/forumdisplay.php?35-E30-Classifieds",
+        "notes": "E28 community marketplace"
+      },
+      {
+        "name": "eBay Motors",
+        "url": "https://www.ebay.com/motors/",
+        "notes": "Used and NOS parts"
+      },
+      {
+        "name": "Car-Part.com",
+        "url": "https://www.car-part.com/",
+        "notes": "Salvage yard inventory search"
+      }
     ]
   },
   "torqueSpecs": {
     "sources": [
-      { "name": "MyE28.com Forums", "url": "https://forums.mye28.com/viewtopic.php?t=27805" },
-      { "name": "M30 Basics Torque Guide", "url": "https://m30basics.wordpress.com/torques/" },
-      { "name": "Bentley E28 Service Manual", "url": "https://www.bentleypublishers.com/bmw.html" }
+      {
+        "name": "MyE28.com Forums",
+        "url": "https://forums.mye28.com/viewtopic.php?t=27805"
+      },
+      {
+        "name": "M30 Basics Torque Guide",
+        "url": "https://m30basics.wordpress.com/torques/"
+      },
+      {
+        "name": "Bentley E28 Service Manual",
+        "url": "https://www.bentleypublishers.com/bmw.html"
+      }
     ],
     "engine": [
-      { "component": "Cylinder Head Bolts (M30 pre-1988)", "spec": "44 ft-lbs (60 Nm) + 33° + 25°", "notes": "Wait 15 min, final angle at operating temp" },
-      { "component": "Cylinder Head Bolts (M30 1988+)", "spec": "44 ft-lbs (60 Nm) + 59 ft-lbs (80 Nm) + 35°", "notes": "Wait 15 min between stages, final at operating temp" },
-      { "component": "Main Bearing Caps (M30)", "spec": "44 ft-lbs (60 Nm)", "notes": "Clean and lubricate threads" },
-      { "component": "Connecting Rod Bolts (M30)", "spec": "41 ft-lbs (55 Nm)", "notes": "Clean and lubricate threads" },
-      { "component": "Flywheel Bolts (Manual)", "spec": "77 ft-lbs (105 Nm)", "notes": "Use new bolts" },
-      { "component": "Flywheel Bolts (Auto)", "spec": "88 ft-lbs (120 Nm)", "notes": "Use new bolts" },
-      { "component": "Valve Cover Nuts", "spec": "7 ft-lbs (10 Nm)", "notes": "Do not overtighten" },
-      { "component": "Spark Plugs", "spec": "18-22 ft-lbs (25-30 Nm)", "notes": "" },
-      { "component": "Oil Drain Plug", "spec": "18 ft-lbs (25 Nm)", "notes": "Replace crush washer" },
-      { "component": "Oil Pump Sprocket Bolts", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
-      { "component": "Exhaust Manifold Nuts", "spec": "11 ft-lbs (15 Nm)", "notes": "M6 bolts" },
-      { "component": "Vibration Damper Hub Bolt", "spec": "325 ft-lbs (440 Nm)", "notes": "Replace bolt each use" }
+      {
+        "component": "Cylinder Head Bolts (M30 pre-1988)",
+        "spec": "44 ft-lbs (60 Nm) + 33° + 25°",
+        "notes": "Wait 15 min, final angle at operating temp"
+      },
+      {
+        "component": "Cylinder Head Bolts (M30 1988+)",
+        "spec": "44 ft-lbs (60 Nm) + 59 ft-lbs (80 Nm) + 35°",
+        "notes": "Wait 15 min between stages, final at operating temp"
+      },
+      {
+        "component": "Main Bearing Caps (M30)",
+        "spec": "44 ft-lbs (60 Nm)",
+        "notes": "Clean and lubricate threads"
+      },
+      {
+        "component": "Connecting Rod Bolts (M30)",
+        "spec": "41 ft-lbs (55 Nm)",
+        "notes": "Clean and lubricate threads"
+      },
+      {
+        "component": "Flywheel Bolts (Manual)",
+        "spec": "77 ft-lbs (105 Nm)",
+        "notes": "Use new bolts"
+      },
+      {
+        "component": "Flywheel Bolts (Auto)",
+        "spec": "88 ft-lbs (120 Nm)",
+        "notes": "Use new bolts"
+      },
+      {
+        "component": "Valve Cover Nuts",
+        "spec": "7 ft-lbs (10 Nm)",
+        "notes": "Do not overtighten"
+      },
+      {
+        "component": "Spark Plugs",
+        "spec": "18-22 ft-lbs (25-30 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Oil Drain Plug",
+        "spec": "18 ft-lbs (25 Nm)",
+        "notes": "Replace crush washer"
+      },
+      {
+        "component": "Oil Pump Sprocket Bolts",
+        "spec": "7 ft-lbs (10 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Exhaust Manifold Nuts",
+        "spec": "11 ft-lbs (15 Nm)",
+        "notes": "M6 bolts"
+      },
+      {
+        "component": "Vibration Damper Hub Bolt",
+        "spec": "325 ft-lbs (440 Nm)",
+        "notes": "Replace bolt each use"
+      }
     ],
     "suspension": [
-      { "component": "Control Arm to Subframe", "spec": "57-65 ft-lbs (77-88 Nm)", "notes": "Tighten with weight on wheels" },
-      { "component": "Thrust Arm Bolts", "spec": "65 ft-lbs (88 Nm)", "notes": "Tighten with weight on wheels" },
-      { "component": "Tie Rod End Nut", "spec": "25-33 ft-lbs (34-45 Nm)", "notes": "Use new cotter pin" },
-      { "component": "Wheel Lug Bolts", "spec": "80 ft-lbs (108 Nm)", "notes": "Tighten in star pattern" },
-      { "component": "Shock Absorber Top Nut", "spec": "16-18 ft-lbs (22-24 Nm)", "notes": "" },
-      { "component": "Subframe Bolts", "spec": "65 ft-lbs (88 Nm)", "notes": "" },
-      { "component": "Sway Bar End Links", "spec": "16-18 ft-lbs (22-24 Nm)", "notes": "" },
-      { "component": "Front Wheel Bearing Nut", "spec": "22-24 ft-lbs (30-33 Nm)", "notes": "While rotating wheel, then back off and retorque to spec" }
+      {
+        "component": "Control Arm to Subframe",
+        "spec": "57-65 ft-lbs (77-88 Nm)",
+        "notes": "Tighten with weight on wheels"
+      },
+      {
+        "component": "Thrust Arm Bolts",
+        "spec": "65 ft-lbs (88 Nm)",
+        "notes": "Tighten with weight on wheels"
+      },
+      {
+        "component": "Tie Rod End Nut",
+        "spec": "25-33 ft-lbs (34-45 Nm)",
+        "notes": "Use new cotter pin"
+      },
+      {
+        "component": "Wheel Lug Bolts",
+        "spec": "80 ft-lbs (108 Nm)",
+        "notes": "Tighten in star pattern"
+      },
+      {
+        "component": "Shock Absorber Top Nut",
+        "spec": "16-18 ft-lbs (22-24 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Subframe Bolts",
+        "spec": "65 ft-lbs (88 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Sway Bar End Links",
+        "spec": "16-18 ft-lbs (22-24 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Front Wheel Bearing Nut",
+        "spec": "22-24 ft-lbs (30-33 Nm)",
+        "notes": "While rotating wheel, then back off and retorque to spec"
+      }
     ],
     "brakes": [
-      { "component": "Front Caliper Bolts", "spec": "58-72 ft-lbs (79-98 Nm)", "notes": "" },
-      { "component": "Rear Caliper Bolts", "spec": "42-48 ft-lbs (57-65 Nm)", "notes": "" },
-      { "component": "Brake Line Fittings", "spec": "11-14 ft-lbs (15-19 Nm)", "notes": "Do not overtighten" },
-      { "component": "Brake Rotor Set Screw", "spec": "9 ft-lbs (12 Nm)", "notes": "Use thread locker" }
+      {
+        "component": "Front Caliper Bolts",
+        "spec": "58-72 ft-lbs (79-98 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Rear Caliper Bolts",
+        "spec": "42-48 ft-lbs (57-65 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Brake Line Fittings",
+        "spec": "11-14 ft-lbs (15-19 Nm)",
+        "notes": "Do not overtighten"
+      },
+      {
+        "component": "Brake Rotor Set Screw",
+        "spec": "9 ft-lbs (12 Nm)",
+        "notes": "Use thread locker"
+      }
     ]
   },
   "diyGuides": [

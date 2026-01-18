@@ -3,7 +3,11 @@
   "brand": "Porsche",
   "fullName": "Porsche 996 911",
   "years": "1998-2005",
-  "engines": ["3.4L Flat-6 (M96)", "3.6L Flat-6 (M96)", "3.6L Twin-Turbo (Turbo)"],
+  "engines": [
+    "3.4L Flat-6 (M96)",
+    "3.6L Flat-6 (M96)",
+    "3.6L Twin-Turbo (Turbo)"
+  ],
   "heroImage": "/images/vehicles/996-hero.jpg",
   "issues": [
     {
@@ -20,8 +24,14 @@
         "Consider when purchasing: get a PPI with IMS inspection"
       ],
       "sources": [
-        { "name": "Rennlist", "url": "#" },
-        { "name": "LN Engineering", "url": "#" }
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        },
+        {
+          "name": "LN Engineering",
+          "url": "https://lnengineering.com/"
+        }
       ]
     },
     {
@@ -37,8 +47,14 @@
         "Prevention: warm up properly, don't let oil get low, regular changes"
       ],
       "sources": [
-        { "name": "Rennlist", "url": "#" },
-        { "name": "Flat Six Innovations", "url": "#" }
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        },
+        {
+          "name": "Flat Six Innovations",
+          "url": "https://flat6innovations.com/"
+        }
       ]
     },
     {
@@ -54,8 +70,14 @@
         "Consider dual-mass flywheel replacement if original"
       ],
       "sources": [
-        { "name": "Pelican Parts", "url": "#" },
-        { "name": "Rennlist", "url": "#" }
+        {
+          "name": "Pelican Parts",
+          "url": "https://www.pelicanparts.com/"
+        },
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        }
       ]
     },
     {
@@ -71,8 +93,14 @@
         "Consider upgraded AOS designs that resist failure better"
       ],
       "sources": [
-        { "name": "Rennlist", "url": "#" },
-        { "name": "FCP Euro", "url": "#" }
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        },
+        {
+          "name": "FCP Euro",
+          "url": "https://www.fcpeuro.com/"
+        }
       ]
     },
     {
@@ -89,8 +117,14 @@
         "Inspect and replace coolant hoses as preventive maintenance"
       ],
       "sources": [
-        { "name": "Pelican Parts", "url": "#" },
-        { "name": "Rennlist", "url": "#" }
+        {
+          "name": "Pelican Parts",
+          "url": "https://www.pelicanparts.com/"
+        },
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        }
       ]
     },
     {
@@ -106,8 +140,14 @@
         "Aftermarket clear lens conversions available"
       ],
       "sources": [
-        { "name": "Rennlist", "url": "#" },
-        { "name": "Planet-9", "url": "#" }
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        },
+        {
+          "name": "Planet-9",
+          "url": "https://www.planet-9.com/"
+        }
       ]
     },
     {
@@ -123,8 +163,14 @@
         "Get alignment after any suspension work"
       ],
       "sources": [
-        { "name": "FCP Euro", "url": "#" },
-        { "name": "Rennlist", "url": "#" }
+        {
+          "name": "FCP Euro",
+          "url": "https://www.fcpeuro.com/"
+        },
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        }
       ]
     }
   ],
@@ -156,50 +202,167 @@
   ],
   "suppliers": {
     "oem": [
-      { "name": "Porsche Parts", "url": "#", "notes": "Genuine Porsche OEM" },
-      { "name": "FCP Euro", "url": "#", "notes": "Lifetime replacement guarantee" },
-      { "name": "Pelican Parts", "url": "#", "notes": "Extensive Porsche catalog" }
+      {
+        "name": "Porsche Parts",
+        "url": "https://parts.porsche.com/",
+        "notes": "Genuine Porsche OEM"
+      },
+      {
+        "name": "FCP Euro",
+        "url": "https://www.fcpeuro.com/",
+        "notes": "Lifetime replacement guarantee"
+      },
+      {
+        "name": "Pelican Parts",
+        "url": "https://www.pelicanparts.com/",
+        "notes": "Extensive Porsche catalog"
+      }
     ],
     "aftermarket": [
-      { "name": "LN Engineering", "url": "#", "notes": "IMS bearing specialists" },
-      { "name": "Flat 6 Innovations", "url": "#", "notes": "986/996 performance parts" }
+      {
+        "name": "LN Engineering",
+        "url": "https://lnengineering.com/",
+        "notes": "IMS bearing specialists"
+      },
+      {
+        "name": "Flat 6 Innovations",
+        "url": "https://flat6innovations.com/",
+        "notes": "986/996 performance parts"
+      }
     ],
     "used": [
-      { "name": "Rennlist Classifieds", "url": "#", "notes": "Forum marketplace" },
-      { "name": "eBay Motors", "url": "#", "notes": "Used & NOS parts" }
+      {
+        "name": "Rennlist Classifieds",
+        "url": "https://rennlist.com/forums/parts-marketplace/",
+        "notes": "Forum marketplace"
+      },
+      {
+        "name": "eBay Motors",
+        "url": "https://www.ebay.com/motors/",
+        "notes": "Used & NOS parts"
+      }
     ]
   },
   "torqueSpecs": {
     "sources": [
-      { "name": "LN Engineering 996 Torque Book", "url": "https://lnengineering.com/996-torque-book-fastening-specifications-for-porsche-911-type-996-automobile.html" },
-      { "name": "Lindsey Racing Torque Specs", "url": "https://www.lindseyracing.com/LR/Parts/TORQUESPEC.html" },
-      { "name": "Rennlist 996 Technical", "url": "https://rennlist.com/forums/996-forum/" }
+      {
+        "name": "LN Engineering 996 Torque Book",
+        "url": "https://lnengineering.com/996-torque-book-fastening-specifications-for-porsche-911-type-996-automobile.html"
+      },
+      {
+        "name": "Lindsey Racing Torque Specs",
+        "url": "https://www.lindseyracing.com/LR/Parts/TORQUESPEC.html"
+      },
+      {
+        "name": "Rennlist 996 Technical",
+        "url": "https://rennlist.com/forums/996-forum/"
+      }
     ],
     "engine": [
-      { "component": "Crankcase Girdle (M12 studs)", "spec": "22 ft-lbs (30 Nm) + 60°", "notes": "Two-stage tightening" },
-      { "component": "Connecting Rod Bolts (M10)", "spec": "55 ft-lbs (75 Nm) + 5°", "notes": "Use assembly lube" },
-      { "component": "Front Crankshaft Bolt (M16)", "spec": "155 ft-lbs (210 Nm)", "notes": "" },
-      { "component": "Spark Plugs (M14)", "spec": "18-22 ft-lbs (25-30 Nm)", "notes": "" },
-      { "component": "Oil Drain Plug (M20)", "spec": "37 ft-lbs (50 Nm)", "notes": "Replace washer" },
-      { "component": "Oil Pressure Sensor (M18)", "spec": "26 ft-lbs (35 Nm)", "notes": "" },
-      { "component": "Intake Manifold Bolts", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
-      { "component": "Exhaust Manifold Nuts", "spec": "15 ft-lbs (20 Nm)", "notes": "" }
+      {
+        "component": "Crankcase Girdle (M12 studs)",
+        "spec": "22 ft-lbs (30 Nm) + 60°",
+        "notes": "Two-stage tightening"
+      },
+      {
+        "component": "Connecting Rod Bolts (M10)",
+        "spec": "55 ft-lbs (75 Nm) + 5°",
+        "notes": "Use assembly lube"
+      },
+      {
+        "component": "Front Crankshaft Bolt (M16)",
+        "spec": "155 ft-lbs (210 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Spark Plugs (M14)",
+        "spec": "18-22 ft-lbs (25-30 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Oil Drain Plug (M20)",
+        "spec": "37 ft-lbs (50 Nm)",
+        "notes": "Replace washer"
+      },
+      {
+        "component": "Oil Pressure Sensor (M18)",
+        "spec": "26 ft-lbs (35 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Intake Manifold Bolts",
+        "spec": "7 ft-lbs (10 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Exhaust Manifold Nuts",
+        "spec": "15 ft-lbs (20 Nm)",
+        "notes": ""
+      }
     ],
     "suspension": [
-      { "component": "Wheel Lug Bolts (M14)", "spec": "96 ft-lbs (130 Nm)", "notes": "Grease threads with aluminum paste" },
-      { "component": "Front Control Arm to Crossmember (M12)", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
-      { "component": "McPherson Strut to Knuckle (M12)", "spec": "74 ft-lbs (100 Nm)", "notes": "" },
-      { "component": "Strut Top Mount Nuts", "spec": "44 ft-lbs (60 Nm)", "notes": "" },
-      { "component": "Rear Control Arm Bolts (M12)", "spec": "63 ft-lbs (85 Nm)", "notes": "" },
-      { "component": "Wheel Hub to Shaft (M22)", "spec": "369 ft-lbs (500 Nm)", "notes": "" },
-      { "component": "Tie Rod End (M14)", "spec": "52 ft-lbs (70 Nm)", "notes": "" },
-      { "component": "Steering Wheel to Shaft (M16)", "spec": "33 ft-lbs (45 Nm)", "notes": "" }
+      {
+        "component": "Wheel Lug Bolts (M14)",
+        "spec": "96 ft-lbs (130 Nm)",
+        "notes": "Grease threads with aluminum paste"
+      },
+      {
+        "component": "Front Control Arm to Crossmember (M12)",
+        "spec": "48 ft-lbs (65 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "McPherson Strut to Knuckle (M12)",
+        "spec": "74 ft-lbs (100 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Strut Top Mount Nuts",
+        "spec": "44 ft-lbs (60 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Rear Control Arm Bolts (M12)",
+        "spec": "63 ft-lbs (85 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Wheel Hub to Shaft (M22)",
+        "spec": "369 ft-lbs (500 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Tie Rod End (M14)",
+        "spec": "52 ft-lbs (70 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Steering Wheel to Shaft (M16)",
+        "spec": "33 ft-lbs (45 Nm)",
+        "notes": ""
+      }
     ],
     "brakes": [
-      { "component": "Front Caliper to Knuckle (M12)", "spec": "63 ft-lbs (85 Nm)", "notes": "" },
-      { "component": "Rear Caliper to Control Arm (M12)", "spec": "63 ft-lbs (85 Nm)", "notes": "" },
-      { "component": "Brake Bleeder Screws", "spec": "6-9 ft-lbs (8-12 Nm)", "notes": "" },
-      { "component": "Brake Line Fittings", "spec": "11 ft-lbs (15 Nm)", "notes": "Do not overtighten" }
+      {
+        "component": "Front Caliper to Knuckle (M12)",
+        "spec": "63 ft-lbs (85 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Rear Caliper to Control Arm (M12)",
+        "spec": "63 ft-lbs (85 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Brake Bleeder Screws",
+        "spec": "6-9 ft-lbs (8-12 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Brake Line Fittings",
+        "spec": "11 ft-lbs (15 Nm)",
+        "notes": "Do not overtighten"
+      }
     ]
   },
   "diyGuides": [

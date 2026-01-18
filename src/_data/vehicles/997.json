@@ -3,7 +3,12 @@
   "brand": "Porsche",
   "fullName": "Porsche 997 911",
   "years": "2004-2012",
-  "engines": ["3.6L Flat-6 M97 (997.1)", "3.8L Flat-6 M97 (997.1 S)", "3.6L Flat-6 9A1 (997.2)", "3.8L Flat-6 9A1 (997.2 S)"],
+  "engines": [
+    "3.6L Flat-6 M97 (997.1)",
+    "3.8L Flat-6 M97 (997.1 S)",
+    "3.6L Flat-6 9A1 (997.2)",
+    "3.8L Flat-6 9A1 (997.2 S)"
+  ],
   "heroImage": "/images/vehicles/997-hero.jpg",
   "issues": [
     {
@@ -19,8 +24,14 @@
         "Always verify engine type when purchasing a 997"
       ],
       "sources": [
-        { "name": "Rennlist", "url": "#" },
-        { "name": "LN Engineering", "url": "#" }
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        },
+        {
+          "name": "LN Engineering",
+          "url": "https://lnengineering.com/"
+        }
       ]
     },
     {
@@ -36,8 +47,14 @@
         "Prevention: proper warm-up, quality oil, avoid short trips"
       ],
       "sources": [
-        { "name": "Rennlist", "url": "#" },
-        { "name": "Flat Six Innovations", "url": "#" }
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        },
+        {
+          "name": "Flat Six Innovations",
+          "url": "https://flat6innovations.com/"
+        }
       ]
     },
     {
@@ -53,8 +70,14 @@
         "Mechatronic unit repair or replacement if electrical issues"
       ],
       "sources": [
-        { "name": "Rennlist", "url": "#" },
-        { "name": "Planet-9", "url": "#" }
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        },
+        {
+          "name": "Planet-9",
+          "url": "https://www.planet-9.com/"
+        }
       ]
     },
     {
@@ -70,8 +93,14 @@
         "PASM control module can be rebuilt if electrical issue"
       ],
       "sources": [
-        { "name": "Rennlist", "url": "#" },
-        { "name": "Pelican Parts", "url": "#" }
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        },
+        {
+          "name": "Pelican Parts",
+          "url": "https://www.pelicanparts.com/"
+        }
       ]
     },
     {
@@ -87,8 +116,14 @@
         "Flush and refill coolant every 4 years"
       ],
       "sources": [
-        { "name": "FCP Euro", "url": "#" },
-        { "name": "Rennlist", "url": "#" }
+        {
+          "name": "FCP Euro",
+          "url": "https://www.fcpeuro.com/"
+        },
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        }
       ]
     },
     {
@@ -104,8 +139,14 @@
         "Some owners add catch can to reduce oil vapor deposits"
       ],
       "sources": [
-        { "name": "Rennlist", "url": "#" },
-        { "name": "Pelican Parts", "url": "#" }
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        },
+        {
+          "name": "Pelican Parts",
+          "url": "https://www.pelicanparts.com/"
+        }
       ]
     },
     {
@@ -120,8 +161,14 @@
         "Use updated seal design for longer life"
       ],
       "sources": [
-        { "name": "Pelican Parts", "url": "#" },
-        { "name": "Rennlist", "url": "#" }
+        {
+          "name": "Pelican Parts",
+          "url": "https://www.pelicanparts.com/"
+        },
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        }
       ]
     }
   ],
@@ -153,57 +200,202 @@
   ],
   "suppliers": {
     "oem": [
-      { "name": "Porsche Parts", "url": "#", "notes": "Genuine Porsche OEM" },
-      { "name": "FCP Euro", "url": "#", "notes": "Lifetime replacement guarantee" },
-      { "name": "Pelican Parts", "url": "#", "notes": "Extensive Porsche catalog" }
+      {
+        "name": "Porsche Parts",
+        "url": "https://parts.porsche.com/",
+        "notes": "Genuine Porsche OEM"
+      },
+      {
+        "name": "FCP Euro",
+        "url": "https://www.fcpeuro.com/",
+        "notes": "Lifetime replacement guarantee"
+      },
+      {
+        "name": "Pelican Parts",
+        "url": "https://www.pelicanparts.com/",
+        "notes": "Extensive Porsche catalog"
+      }
     ],
     "aftermarket": [
-      { "name": "LN Engineering", "url": "#", "notes": "IMS bearing specialists (997.1)" },
-      { "name": "Flat 6 Innovations", "url": "#", "notes": "Performance parts" }
+      {
+        "name": "LN Engineering",
+        "url": "https://lnengineering.com/",
+        "notes": "IMS bearing specialists (997.1)"
+      },
+      {
+        "name": "Flat 6 Innovations",
+        "url": "https://flat6innovations.com/",
+        "notes": "Performance parts"
+      }
     ],
     "used": [
-      { "name": "Rennlist Classifieds", "url": "#", "notes": "Forum marketplace" },
-      { "name": "eBay Motors", "url": "#", "notes": "Used & NOS parts" }
+      {
+        "name": "Rennlist Classifieds",
+        "url": "https://rennlist.com/forums/parts-marketplace/",
+        "notes": "Forum marketplace"
+      },
+      {
+        "name": "eBay Motors",
+        "url": "https://www.ebay.com/motors/",
+        "notes": "Used & NOS parts"
+      }
     ]
   },
   "torqueSpecs": {
     "sources": [
-      { "name": "Department 69 997.1 Torque Chart", "url": "https://www.department69.com/articles/porsche-9971-common-torque-specifications-maintenance-amp-diy-jobs" },
-      { "name": "LN Engineering 997 Torque Book", "url": "https://lnengineering.com/997-torque-book-fastening-specifications-for-porsche-911-type-997-automobile.html" },
-      { "name": "Rennlist 997 Technical", "url": "https://rennlist.com/forums/997-forum/" }
+      {
+        "name": "Department 69 997.1 Torque Chart",
+        "url": "https://www.department69.com/articles/porsche-9971-common-torque-specifications-maintenance-amp-diy-jobs"
+      },
+      {
+        "name": "LN Engineering 997 Torque Book",
+        "url": "https://lnengineering.com/997-torque-book-fastening-specifications-for-porsche-911-type-997-automobile.html"
+      },
+      {
+        "name": "Rennlist 997 Technical",
+        "url": "https://rennlist.com/forums/997-forum/"
+      }
     ],
     "engine": [
-      { "component": "Spark Plugs", "spec": "22 ft-lbs (30 Nm)", "notes": "" },
-      { "component": "Ignition Coil Pack Bolts", "spec": "7.5 ft-lbs (10 Nm)", "notes": "" },
-      { "component": "Oil Drain Plug", "spec": "37 ft-lbs (50 Nm)", "notes": "Replace washer" },
-      { "component": "Oil Filter Housing Cap (997.2)", "spec": "19 ft-lbs (26 Nm)", "notes": "" },
-      { "component": "Water Pump Bolts", "spec": "7.5 ft-lbs (10 Nm)", "notes": "" },
-      { "component": "Engine Carrier to Engine Bolts", "spec": "34 ft-lbs (46 Nm)", "notes": "" },
-      { "component": "Serpentine Belt Tensioner Pulley", "spec": "44 ft-lbs (60 Nm)", "notes": "" },
-      { "component": "Serpentine Belt Idler Pulley (Lower)", "spec": "17 ft-lbs (23 Nm)", "notes": "" },
-      { "component": "Catalytic Converter Bracket", "spec": "17 ft-lbs (23 Nm)", "notes": "" }
+      {
+        "component": "Spark Plugs",
+        "spec": "22 ft-lbs (30 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Ignition Coil Pack Bolts",
+        "spec": "7.5 ft-lbs (10 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Oil Drain Plug",
+        "spec": "37 ft-lbs (50 Nm)",
+        "notes": "Replace washer"
+      },
+      {
+        "component": "Oil Filter Housing Cap (997.2)",
+        "spec": "19 ft-lbs (26 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Water Pump Bolts",
+        "spec": "7.5 ft-lbs (10 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Engine Carrier to Engine Bolts",
+        "spec": "34 ft-lbs (46 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Serpentine Belt Tensioner Pulley",
+        "spec": "44 ft-lbs (60 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Serpentine Belt Idler Pulley (Lower)",
+        "spec": "17 ft-lbs (23 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Catalytic Converter Bracket",
+        "spec": "17 ft-lbs (23 Nm)",
+        "notes": ""
+      }
     ],
     "suspension": [
-      { "component": "Wheel Lug Bolts", "spec": "96-118 ft-lbs (130-160 Nm)", "notes": "118 ft-lbs is revised spec; center-lock different" },
-      { "component": "Front Strut Pinch Bolt", "spec": "65 ft-lbs (85 Nm)", "notes": "" },
-      { "component": "Front Lower Control Arm to Frame", "spec": "89 ft-lbs (120 Nm)", "notes": "" },
-      { "component": "Front Control Arm Ball Joint Nut", "spec": "56 ft-lbs (76 Nm)", "notes": "" },
-      { "component": "Front Thrust Arm to Frame", "spec": "118 ft-lbs (160 Nm)", "notes": "" },
-      { "component": "Front Strut Top Mount Nuts", "spec": "23 ft-lbs (31 Nm)", "notes": "" },
-      { "component": "Front Sway Bar Bracket Bolts", "spec": "17 ft-lbs (23 Nm)", "notes": "" },
-      { "component": "Rear Upper Control Arm Inner Bolt", "spec": "81 ft-lbs (110 Nm)", "notes": "" },
-      { "component": "Rear Control Arm Eccentric Bolts", "spec": "74 ft-lbs (100 Nm)", "notes": "" },
-      { "component": "Rear Toe Link Ball Joint Nut", "spec": "56 ft-lbs (76 Nm)", "notes": "" },
-      { "component": "Rear Sway Bar Drop Link Nuts", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
-      { "component": "Engine Mount Bolts (Top)", "spec": "23 ft-lbs (31 Nm)", "notes": "" },
-      { "component": "Engine Mount Thru-Bolt Nut (Bottom)", "spec": "63 ft-lbs (85 Nm)", "notes": "" }
+      {
+        "component": "Wheel Lug Bolts",
+        "spec": "96-118 ft-lbs (130-160 Nm)",
+        "notes": "118 ft-lbs is revised spec; center-lock different"
+      },
+      {
+        "component": "Front Strut Pinch Bolt",
+        "spec": "65 ft-lbs (85 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Front Lower Control Arm to Frame",
+        "spec": "89 ft-lbs (120 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Front Control Arm Ball Joint Nut",
+        "spec": "56 ft-lbs (76 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Front Thrust Arm to Frame",
+        "spec": "118 ft-lbs (160 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Front Strut Top Mount Nuts",
+        "spec": "23 ft-lbs (31 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Front Sway Bar Bracket Bolts",
+        "spec": "17 ft-lbs (23 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Rear Upper Control Arm Inner Bolt",
+        "spec": "81 ft-lbs (110 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Rear Control Arm Eccentric Bolts",
+        "spec": "74 ft-lbs (100 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Rear Toe Link Ball Joint Nut",
+        "spec": "56 ft-lbs (76 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Rear Sway Bar Drop Link Nuts",
+        "spec": "48 ft-lbs (65 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Engine Mount Bolts (Top)",
+        "spec": "23 ft-lbs (31 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Engine Mount Thru-Bolt Nut (Bottom)",
+        "spec": "63 ft-lbs (85 Nm)",
+        "notes": ""
+      }
     ],
     "brakes": [
-      { "component": "Front Caliper Mounting Bolts", "spec": "63 ft-lbs (85 Nm)", "notes": "Use new bolts" },
-      { "component": "Rear Caliper Mounting Bolts", "spec": "63 ft-lbs (85 Nm)", "notes": "Use new bolts" },
-      { "component": "Brake Rotor Screws", "spec": "7.5 ft-lbs (10 Nm)", "notes": "" },
-      { "component": "Brake Bleeder Screws", "spec": "6-9 ft-lbs (8-12 Nm)", "notes": "" },
-      { "component": "PCCB Caliper Bolts", "spec": "74 ft-lbs (100 Nm)", "notes": "Ceramic brake cars only" }
+      {
+        "component": "Front Caliper Mounting Bolts",
+        "spec": "63 ft-lbs (85 Nm)",
+        "notes": "Use new bolts"
+      },
+      {
+        "component": "Rear Caliper Mounting Bolts",
+        "spec": "63 ft-lbs (85 Nm)",
+        "notes": "Use new bolts"
+      },
+      {
+        "component": "Brake Rotor Screws",
+        "spec": "7.5 ft-lbs (10 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Brake Bleeder Screws",
+        "spec": "6-9 ft-lbs (8-12 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "PCCB Caliper Bolts",
+        "spec": "74 ft-lbs (100 Nm)",
+        "notes": "Ceramic brake cars only"
+      }
     ]
   },
   "diyGuides": [

@@ -3,7 +3,12 @@
   "brand": "Porsche",
   "fullName": "Porsche 987 Boxster/Cayman",
   "years": "2005-2012",
-  "engines": ["2.7L Flat-6 M97/MA1", "2.9L Flat-6 MA1 (987.2)", "3.2L Flat-6 M97 (987.1 S)", "3.4L Flat-6 M97/MA1 (S/R)"],
+  "engines": [
+    "2.7L Flat-6 M97/MA1",
+    "2.9L Flat-6 MA1 (987.2)",
+    "3.2L Flat-6 M97 (987.1 S)",
+    "3.4L Flat-6 M97/MA1 (S/R)"
+  ],
   "heroImage": "/images/vehicles/987-hero.jpg",
   "issues": [
     {
@@ -19,8 +24,14 @@
         "Always verify production date when purchasing a 987"
       ],
       "sources": [
-        { "name": "LN Engineering", "url": "#" },
-        { "name": "Rennlist", "url": "#" }
+        {
+          "name": "LN Engineering",
+          "url": "https://lnengineering.com/"
+        },
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        }
       ]
     },
     {
@@ -36,8 +47,14 @@
         "Prevention: proper warm-up, quality oil, avoid short trips"
       ],
       "sources": [
-        { "name": "Flat Six Innovations", "url": "#" },
-        { "name": "Rennlist", "url": "#" }
+        {
+          "name": "Flat Six Innovations",
+          "url": "https://flat6innovations.com/"
+        },
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        }
       ]
     },
     {
@@ -53,8 +70,14 @@
         "Inspect intermediate plate seal while apart"
       ],
       "sources": [
-        { "name": "Pelican Parts", "url": "#" },
-        { "name": "Rennlist", "url": "#" }
+        {
+          "name": "Pelican Parts",
+          "url": "https://www.pelicanparts.com/"
+        },
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        }
       ]
     },
     {
@@ -70,8 +93,14 @@
         "Clean throttle body if oil contaminated"
       ],
       "sources": [
-        { "name": "Rennlist", "url": "#" },
-        { "name": "Pelican Parts", "url": "#" }
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        },
+        {
+          "name": "Pelican Parts",
+          "url": "https://www.pelicanparts.com/"
+        }
       ]
     },
     {
@@ -87,8 +116,14 @@
         "Flush and refill with proper coolant mix"
       ],
       "sources": [
-        { "name": "FCP Euro", "url": "#" },
-        { "name": "Rennlist", "url": "#" }
+        {
+          "name": "FCP Euro",
+          "url": "https://www.fcpeuro.com/"
+        },
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        }
       ]
     },
     {
@@ -105,8 +140,14 @@
         "Convertible top reset procedure after battery disconnect"
       ],
       "sources": [
-        { "name": "Pelican Parts", "url": "#" },
-        { "name": "Rennlist", "url": "#" }
+        {
+          "name": "Pelican Parts",
+          "url": "https://www.pelicanparts.com/"
+        },
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        }
       ]
     },
     {
@@ -122,8 +163,14 @@
         "Periodic spirited driving to help burn off deposits"
       ],
       "sources": [
-        { "name": "Rennlist", "url": "#" },
-        { "name": "Planet-9", "url": "#" }
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        },
+        {
+          "name": "Planet-9",
+          "url": "https://www.planet-9.com/"
+        }
       ]
     },
     {
@@ -139,8 +186,14 @@
         "Window reset procedure after replacement"
       ],
       "sources": [
-        { "name": "Pelican Parts", "url": "#" },
-        { "name": "Rennlist", "url": "#" }
+        {
+          "name": "Pelican Parts",
+          "url": "https://www.pelicanparts.com/"
+        },
+        {
+          "name": "Rennlist",
+          "url": "https://rennlist.com/forums/"
+        }
       ]
     }
   ],
@@ -180,55 +233,192 @@
   ],
   "suppliers": {
     "oem": [
-      { "name": "Porsche Parts", "url": "#", "notes": "Genuine Porsche OEM" },
-      { "name": "FCP Euro", "url": "#", "notes": "Lifetime replacement guarantee" },
-      { "name": "Pelican Parts", "url": "#", "notes": "Extensive Porsche catalog" }
+      {
+        "name": "Porsche Parts",
+        "url": "https://parts.porsche.com/",
+        "notes": "Genuine Porsche OEM"
+      },
+      {
+        "name": "FCP Euro",
+        "url": "https://www.fcpeuro.com/",
+        "notes": "Lifetime replacement guarantee"
+      },
+      {
+        "name": "Pelican Parts",
+        "url": "https://www.pelicanparts.com/",
+        "notes": "Extensive Porsche catalog"
+      }
     ],
     "aftermarket": [
-      { "name": "LN Engineering", "url": "#", "notes": "IMS bearing specialists" },
-      { "name": "Flat 6 Innovations", "url": "#", "notes": "Engine specialists" },
-      { "name": "Softronic", "url": "#", "notes": "ECU tuning" },
-      { "name": "Fabspeed", "url": "#", "notes": "Exhaust and performance" }
+      {
+        "name": "LN Engineering",
+        "url": "https://lnengineering.com/",
+        "notes": "IMS bearing specialists"
+      },
+      {
+        "name": "Flat 6 Innovations",
+        "url": "https://flat6innovations.com/",
+        "notes": "Engine specialists"
+      },
+      {
+        "name": "Softronic",
+        "url": "https://www.softronic.us/",
+        "notes": "ECU tuning"
+      },
+      {
+        "name": "Fabspeed",
+        "url": "https://www.fabspeed.com/",
+        "notes": "Exhaust and performance"
+      }
     ],
     "used": [
-      { "name": "Rennlist Classifieds", "url": "#", "notes": "Porsche community marketplace" },
-      { "name": "Planet-9 Classifieds", "url": "#", "notes": "Boxster/Cayman forum" },
-      { "name": "eBay Motors", "url": "#", "notes": "Used and NOS parts" }
+      {
+        "name": "Rennlist Classifieds",
+        "url": "https://rennlist.com/forums/parts-marketplace/",
+        "notes": "Porsche community marketplace"
+      },
+      {
+        "name": "Planet-9 Classifieds",
+        "url": "https://www.planet-9.com/forums/981-boxster-cayman-marketplace.112/",
+        "notes": "Boxster/Cayman forum"
+      },
+      {
+        "name": "eBay Motors",
+        "url": "https://www.ebay.com/motors/",
+        "notes": "Used and NOS parts"
+      }
     ]
   },
   "torqueSpecs": {
     "sources": [
-      { "name": "Department 69 997 Torque Chart", "url": "https://www.department69.com/articles/porsche-9971-common-torque-specifications-maintenance-amp-diy-jobs" },
-      { "name": "LN Engineering Technical", "url": "https://lnengineering.com/education/technical-library/m96.html" },
-      { "name": "Planet-9 Technical Forum", "url": "https://www.planet-9.com/" }
+      {
+        "name": "Department 69 997 Torque Chart",
+        "url": "https://www.department69.com/articles/porsche-9971-common-torque-specifications-maintenance-amp-diy-jobs"
+      },
+      {
+        "name": "LN Engineering Technical",
+        "url": "https://lnengineering.com/education/technical-library/m96.html"
+      },
+      {
+        "name": "Planet-9 Technical Forum",
+        "url": "https://www.planet-9.com/"
+      }
     ],
     "engine": [
-      { "component": "Spark Plugs", "spec": "22 ft-lbs (30 Nm)", "notes": "" },
-      { "component": "Ignition Coil Bolts", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
-      { "component": "Oil Drain Plug", "spec": "37 ft-lbs (50 Nm)", "notes": "Replace crush washer" },
-      { "component": "Oil Filter Cap (987.2)", "spec": "19 ft-lbs (26 Nm)", "notes": "" },
-      { "component": "Intake Manifold", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
-      { "component": "AOS Mounting Bolts", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
-      { "component": "Coolant Pipe Fittings", "spec": "15 ft-lbs (20 Nm)", "notes": "New o-rings" },
-      { "component": "Water Pump Bolts", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
-      { "component": "Serpentine Belt Tensioner", "spec": "44 ft-lbs (60 Nm)", "notes": "" }
+      {
+        "component": "Spark Plugs",
+        "spec": "22 ft-lbs (30 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Ignition Coil Bolts",
+        "spec": "7 ft-lbs (10 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Oil Drain Plug",
+        "spec": "37 ft-lbs (50 Nm)",
+        "notes": "Replace crush washer"
+      },
+      {
+        "component": "Oil Filter Cap (987.2)",
+        "spec": "19 ft-lbs (26 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Intake Manifold",
+        "spec": "7 ft-lbs (10 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "AOS Mounting Bolts",
+        "spec": "7 ft-lbs (10 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Coolant Pipe Fittings",
+        "spec": "15 ft-lbs (20 Nm)",
+        "notes": "New o-rings"
+      },
+      {
+        "component": "Water Pump Bolts",
+        "spec": "7 ft-lbs (10 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Serpentine Belt Tensioner",
+        "spec": "44 ft-lbs (60 Nm)",
+        "notes": ""
+      }
     ],
     "suspension": [
-      { "component": "Wheel Lug Bolts (M14)", "spec": "96-118 ft-lbs (130-160 Nm)", "notes": "118 ft-lbs revised spec" },
-      { "component": "Front Strut Pinch Bolt", "spec": "65 ft-lbs (85 Nm)", "notes": "" },
-      { "component": "Front Control Arm to Frame", "spec": "89 ft-lbs (120 Nm)", "notes": "" },
-      { "component": "Front Control Arm Ball Joint", "spec": "56 ft-lbs (76 Nm)", "notes": "" },
-      { "component": "Tie Rod End Nut", "spec": "37 ft-lbs (50 Nm)", "notes": "" },
-      { "component": "Strut Top Nut", "spec": "44 ft-lbs (60 Nm)", "notes": "" },
-      { "component": "Sway Bar End Links", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
-      { "component": "Rear Control Arm Eccentric", "spec": "74 ft-lbs (100 Nm)", "notes": "" }
+      {
+        "component": "Wheel Lug Bolts (M14)",
+        "spec": "96-118 ft-lbs (130-160 Nm)",
+        "notes": "118 ft-lbs revised spec"
+      },
+      {
+        "component": "Front Strut Pinch Bolt",
+        "spec": "65 ft-lbs (85 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Front Control Arm to Frame",
+        "spec": "89 ft-lbs (120 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Front Control Arm Ball Joint",
+        "spec": "56 ft-lbs (76 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Tie Rod End Nut",
+        "spec": "37 ft-lbs (50 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Strut Top Nut",
+        "spec": "44 ft-lbs (60 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Sway Bar End Links",
+        "spec": "48 ft-lbs (65 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Rear Control Arm Eccentric",
+        "spec": "74 ft-lbs (100 Nm)",
+        "notes": ""
+      }
     ],
     "brakes": [
-      { "component": "Front Caliper Bolts", "spec": "63 ft-lbs (85 Nm)", "notes": "" },
-      { "component": "Rear Caliper Bolts", "spec": "63 ft-lbs (85 Nm)", "notes": "" },
-      { "component": "Brake Rotor Screws", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
-      { "component": "Brake Line Fittings", "spec": "13 ft-lbs (18 Nm)", "notes": "" },
-      { "component": "Pad Wear Sensor", "spec": "Hand tight", "notes": "Clips into place" }
+      {
+        "component": "Front Caliper Bolts",
+        "spec": "63 ft-lbs (85 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Rear Caliper Bolts",
+        "spec": "63 ft-lbs (85 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Brake Rotor Screws",
+        "spec": "7 ft-lbs (10 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Brake Line Fittings",
+        "spec": "13 ft-lbs (18 Nm)",
+        "notes": ""
+      },
+      {
+        "component": "Pad Wear Sensor",
+        "spec": "Hand tight",
+        "notes": "Clips into place"
+      }
     ]
   },
   "diyGuides": [

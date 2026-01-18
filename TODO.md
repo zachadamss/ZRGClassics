@@ -215,7 +215,9 @@ Each vehicle page now has the following sections with placeholder/coming soon co
 
 ### Content Needed
 - [ ] Write actual restoration guide content for each vehicle
-- [ ] Add real supplier URLs and notes (currently placeholders)
+- [x] Add real supplier URLs (currently placeholders)
+  - All 410 placeholder URLs updated with real links across all 17 vehicles
+  - Includes issue sources, supplier links (OEM, aftermarket, used)
 - [x] Verify torque specs against factory service manuals
 - [x] **Add source references with valid links for all torque specifications**
   - All 17 vehicle platforms now have verified torque specs with source URLs
