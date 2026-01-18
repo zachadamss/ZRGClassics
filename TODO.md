@@ -105,9 +105,9 @@
 - [x] **Porsche 928** (1977-1995) - Placeholder page created
 
 ## Platforms Ready for Content
-- [ ] **Porsche 924** - Add detailed common issues content
-- [ ] **Porsche 944** - Add detailed common issues content
-- [ ] **Porsche 928** - Add detailed common issues content
+- [x] **Porsche 924** - Add detailed common issues content
+- [x] **Porsche 944** - Add detailed common issues content
+- [x] **Porsche 928** - Add detailed common issues content
 
 ## Enhancements
 
@@ -127,9 +127,9 @@
 ## Next Priorities
 
 ### Content
-- [ ] **Porsche 924** - Add detailed common issues content (timing belt, fuel injection, rust spots, electrical)
-- [ ] **Porsche 944** - Add detailed common issues content (timing belt, balance shaft, clutch, dashboard cracks)
-- [ ] **Porsche 928** - Add detailed common issues content (timing belt, V8 specific issues, electrical gremlins)
+- [x] **Porsche 924** - Add detailed common issues content (timing belt, fuel injection, rust spots, electrical)
+- [x] **Porsche 944** - Add detailed common issues content (timing belt, balance shaft, clutch, dashboard cracks)
+- [x] **Porsche 928** - Add detailed common issues content (timing belt, V8 specific issues, electrical gremlins)
 
 ### Design & UX
 - [ ] Adjust color scheme to match vintage Porsche racing aesthetics (Gulf livery, Rothman's, Martini colors)
