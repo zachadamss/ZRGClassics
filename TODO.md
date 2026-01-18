@@ -128,11 +128,18 @@
 - [ ] Add difficulty ratings for DIY repairs
 - [x] Mobile navigation improvements (hamburger menu)
 - [x] Search functionality across all resources
+- [x] **Mobile Responsiveness Fixes** - Fixed vehicle page layout issues on mobile
+  - Fixed quick-links nav collision with header nav styles (was blocking whole page)
+  - Quick-links now horizontally scrollable on mobile
+  - Engine tags display horizontally with proper wrapping
+  - Added comprehensive mobile styles for search results
+  - Added mobile styles for vehicle hero, issue cards, guide cards, supplier tabs, specs tables
 - [ ] Newsletter signup for launch notifications
 - [ ] Add more vehicle platforms (E90, 987, 991, etc.)
 - [x] Add better navigation structure/home page for each brand to see all of the models, and then the same for each model to see all of the resources for that model.
 - [ ] Adjust color scheme to match color codes of vintage porsche racing in a very aesthetic, modern, and still timeless way.
-- [x] Fix usability on mobile, does not work well, user menu is not fully visible and page is not resizing correctly.  
+- [x] Fix usability on mobile, does not work well, user menu is not fully visible and page is not resizing correctly.
+- [x] Fix mobile responsiveness for vehicle pages (quick-links, engine tags, search results)  
 
 ---
 
