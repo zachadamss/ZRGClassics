@@ -250,3 +250,51 @@ Each vehicle page now has the following sections with placeholder/coming soon co
 2. Create `src/resources/<brand>/<model>.njk` page template
 3. Add to `src/_data/navigation.json`
 4. Run `npm run build`
+
+**Adding Hero Images:**
+
+Hero images are displayed as backgrounds in the vehicle page header. To add a hero image:
+
+1. **Naming Convention:** `{model-id}-hero.jpg`
+   - BMW examples: `e30-hero.jpg`, `e46-hero.jpg`, `e90-hero.jpg`
+   - Porsche examples: `986-hero.jpg`, `993-hero.jpg`, `997-hero.jpg`
+
+2. **Location:** Place images in `src/images/vehicles/`
+
+3. **Recommended Specs:**
+   - **Format:** JPEG (for best compression)
+   - **Orientation:** Landscape (wider than tall)
+   - **Resolution:** 1920x1080 minimum for sharp display on modern screens
+   - **File Size:** Under 500KB for fast loading (use image optimization)
+
+4. **Image Sources:**
+   - Own photography
+   - Stock photos from Unsplash, Pexels, Pixabay (free commercial use)
+   - Wikimedia Commons (may require attribution)
+
+5. **Current Vehicle Hero Images:**
+   | Vehicle | Image File |
+   |---------|-----------|
+   | BMW E28 | `e28-hero.jpg` |
+   | BMW E30 | `e30-hero.jpg` |
+   | BMW E34 | `e34-hero.jpg` |
+   | BMW E36 | `e36-hero.jpg` |
+   | BMW E39 | `e39-hero.jpg` |
+   | BMW E46 | `e46-hero.jpg` |
+   | BMW E90 | `e90-hero.jpg` |
+   | Porsche 924 | `924-hero.jpg` |
+   | Porsche 928 | `928-hero.jpg` |
+   | Porsche 944 | `944-hero.jpg` |
+   | Porsche 964 | `964-hero.jpg` |
+   | Porsche 986 | `986-hero.jpg` |
+   | Porsche 987 | `987-hero.jpg` |
+   | Porsche 991 | `991-hero.jpg` |
+   | Porsche 993 | `993-hero.jpg` |
+   | Porsche 996 | `996-hero.jpg` |
+   | Porsche 997 | `997-hero.jpg` |
+
+6. **How It Works:**
+   - The `heroImage` property in each vehicle's JSON file points to the image path
+   - If the image file exists, it displays as a full-width background behind the vehicle title
+   - A gradient overlay ensures text remains readable
+   - If no image exists, the default gradient background is used instead
