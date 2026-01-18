@@ -118,9 +118,40 @@
 - [ ] Search functionality across all resources
 - [ ] Newsletter signup for launch notifications
 - [ ] Add more vehicle platforms (E90, 987, 991, etc.)
-- [ ] Add better navigation structure/home page for each brand to see all of the models, and then the same for each model to see all of the resources for that model.  
-- [ ] Adjust color scheme to match color codes of vintage porsche racing in a very aesthetic, modern, and still timeless way.  
+- [x] Add better navigation structure/home page for each brand to see all of the models, and then the same for each model to see all of the resources for that model.
+- [ ] Adjust color scheme to match color codes of vintage porsche racing in a very aesthetic, modern, and still timeless way.
 - [x] Fix usability on mobile, does not work well, user menu is not fully visible and page is not resizing correctly.  
+
+---
+
+## Next Priorities
+
+### Content
+- [ ] **Porsche 924** - Add detailed common issues content (timing belt, fuel injection, rust spots, electrical)
+- [ ] **Porsche 944** - Add detailed common issues content (timing belt, balance shaft, clutch, dashboard cracks)
+- [ ] **Porsche 928** - Add detailed common issues content (timing belt, V8 specific issues, electrical gremlins)
+
+### Design & UX
+- [ ] Adjust color scheme to match vintage Porsche racing aesthetics (Gulf livery, Rothman's, Martini colors)
+- [ ] Add hero images to brand landing pages (BMW and Porsche index pages)
+- [ ] Add vehicle silhouette or icon graphics to resource cards
+- [ ] Improve typography hierarchy on resource pages
+
+### Features
+- [ ] Add search functionality across all resources
+- [ ] Add "Related Issues" links between similar problems across platforms
+- [ ] Add print-friendly styling for resource pages (mechanics can print guides)
+- [ ] Add "Report Issue" or "Suggest Edit" links for community contributions
+- [ ] Add estimated repair costs to issue cards
+- [ ] Add difficulty ratings for DIY repairs (Easy/Moderate/Advanced)
+- [ ] Add parts links or part numbers where applicable
+
+### New Platforms to Add
+- [ ] BMW E90/E91/E92/E93 (2005-2013 3 Series)
+- [ ] Porsche 987 Boxster/Cayman (2005-2012)
+- [ ] Porsche 991 911 (2012-2019)
+- [ ] BMW E39 5 Series (1995-2003)
+- [ ] BMW E34 5 Series (1988-1996)
 
 ---
 
@@ -131,3 +162,6 @@
 - [ ] Minify CSS/JS for production
 - [ ] Add sitemap.xml
 - [ ] Add robots.txt
+- [ ] Consider templating system to reduce HTML duplication (navigation in 18 files)
+- [ ] Add favicon for all pages (some missing)
+- [ ] Optimize images for web (if adding photos)
