@@ -109,6 +109,24 @@
   - PDF export
   - Save templates for common jobs
 
+- [ ] **Maintenance Tracker** - Track service history and reminders
+  - Service history log per vehicle
+  - Interval-based maintenance reminders
+  - Mileage tracking
+  - Export/import service records
+
+- [ ] **Build Cost Calculator** - Estimate restoration and modification costs
+  - Parts cost estimation by category
+  - Labor hour estimates
+  - Project budgeting and tracking
+  - Compare DIY vs shop costs
+
+- [ ] **Restoration Checklist** - Step-by-step restoration guides
+  - System-by-system checklists (engine, suspension, interior, etc.)
+  - Priority-based task organization
+  - Progress tracking
+  - Printable checklist export
+
 ---
 
 ## Community Section
