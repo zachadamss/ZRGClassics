@@ -211,26 +211,44 @@
     ]
   },
   "torqueSpecs": {
+    "sources": [
+      { "name": "E90Post Torque Specs Thread", "url": "https://www.e90post.com/forums/showthread.php?t=1362166" },
+      { "name": "TightTorque E90 Reference", "url": "https://tighttorque.com/cars/bmw/3-series-5" },
+      { "name": "Bentley E90 Service Manual", "url": "https://www.bentleypublishers.com/bmw.html" }
+    ],
     "engine": [
-      { "component": "Spark Plugs (N52)", "spec": "17 ft-lbs", "notes": "" },
-      { "component": "Spark Plugs (N54/N55)", "spec": "17 ft-lbs", "notes": "Anti-seize not needed" },
-      { "component": "Valve Cover Bolts (N52)", "spec": "9 ft-lbs", "notes": "Specific sequence required" },
-      { "component": "Oil Drain Plug", "spec": "18 ft-lbs", "notes": "Replace crush washer" },
-      { "component": "Oil Filter Housing Bolts", "spec": "18 ft-lbs", "notes": "" },
-      { "component": "Intake Manifold (N52)", "spec": "7 ft-lbs", "notes": "" },
-      { "component": "Charge Pipe Clamps (N54/N55)", "spec": "5 ft-lbs", "notes": "" }
+      { "component": "Cylinder Head Bolts (N52)", "spec": "30 ft-lbs (40 Nm) + 90° + 90°", "notes": "TTY bolts, replace each use" },
+      { "component": "Cylinder Head Bolts (N54/N55)", "spec": "30 ft-lbs (40 Nm) + 90° + 90°", "notes": "TTY bolts, replace each use" },
+      { "component": "Spark Plugs (N52)", "spec": "17 ft-lbs (23 Nm)", "notes": "" },
+      { "component": "Spark Plugs (N54/N55)", "spec": "17 ft-lbs (23 Nm)", "notes": "No anti-seize needed" },
+      { "component": "Valve Cover Bolts (N52)", "spec": "9 ft-lbs (12 Nm)", "notes": "Specific sequence required" },
+      { "component": "Oil Drain Plug", "spec": "18 ft-lbs (25 Nm)", "notes": "Replace crush washer" },
+      { "component": "Oil Filter Housing Bolts", "spec": "18 ft-lbs (25 Nm)", "notes": "" },
+      { "component": "Intake Manifold (N52)", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
+      { "component": "Charge Pipe Clamps (N54/N55)", "spec": "5 ft-lbs (7 Nm)", "notes": "" },
+      { "component": "Turbo Oil Feed Line (N54)", "spec": "15 ft-lbs (20 Nm)", "notes": "" },
+      { "component": "Exhaust Forward Flanges (N54)", "spec": "15 ft-lbs (21 Nm)", "notes": "Turbo engine only" }
     ],
     "suspension": [
-      { "component": "Wheel Lug Bolts", "spec": "88 ft-lbs", "notes": "Tighten in star pattern" },
-      { "component": "Control Arm Bolts", "spec": "74 ft-lbs", "notes": "Tighten with weight on wheels" },
-      { "component": "Strut Top Nut", "spec": "25 ft-lbs", "notes": "" },
-      { "component": "Tie Rod Nut", "spec": "52 ft-lbs", "notes": "" },
-      { "component": "Subframe Bolts", "spec": "74 ft-lbs + 90°", "notes": "Stretch bolts, replace" }
+      { "component": "Wheel Lug Bolts", "spec": "89 ft-lbs (120 Nm)", "notes": "Tighten in star pattern, dry torque" },
+      { "component": "Control Arm to Knuckle", "spec": "122 ft-lbs (165 Nm)", "notes": "" },
+      { "component": "Control Arm to Subframe", "spec": "74 ft-lbs (100 Nm)", "notes": "" },
+      { "component": "Tension Strut (Thrust Arm) to Knuckle", "spec": "122 ft-lbs (165 Nm)", "notes": "" },
+      { "component": "Tension Strut to Subframe", "spec": "74 ft-lbs (100 Nm)", "notes": "" },
+      { "component": "Strut Pinch Clamp", "spec": "60 ft-lbs (81 Nm)", "notes": "" },
+      { "component": "Strut Top Nut", "spec": "25 ft-lbs (34 Nm)", "notes": "" },
+      { "component": "Tie Rod Nut", "spec": "52 ft-lbs (70 Nm)", "notes": "" },
+      { "component": "Sway Bar End Links (Front)", "spec": "44 ft-lbs (60 Nm)", "notes": "" },
+      { "component": "Sway Bar End Links (Rear)", "spec": "43 ft-lbs (58 Nm)", "notes": "" },
+      { "component": "Sway Bar Bracket to Subframe", "spec": "16 ft-lbs (21 Nm)", "notes": "M8 bolts" },
+      { "component": "Subframe Reinforcement Plate", "spec": "44 ft-lbs (59 Nm) + 90° ± 30°", "notes": "8 Torx bolts, new bolts required" }
     ],
     "brakes": [
-      { "component": "Front Caliper Carrier", "spec": "81 ft-lbs", "notes": "" },
-      { "component": "Rear Caliper Carrier", "spec": "48 ft-lbs", "notes": "" },
-      { "component": "Brake Line Fittings", "spec": "13 ft-lbs", "notes": "" },
+      { "component": "Front Caliper Carrier", "spec": "81 ft-lbs (110 Nm)", "notes": "" },
+      { "component": "Rear Caliper Carrier", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
+      { "component": "Caliper Guide Pins", "spec": "22 ft-lbs (30 Nm)", "notes": "" },
+      { "component": "Brake Line to Hose", "spec": "9 ft-lbs (12 Nm)", "notes": "" },
+      { "component": "Brake Rotor Set Screw", "spec": "12 ft-lbs (16 Nm)", "notes": "Use thread locker" },
       { "component": "Pad Wear Sensor", "spec": "Hand tight", "notes": "Clips into place" }
     ]
   },

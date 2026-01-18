@@ -1960,6 +1960,57 @@ input:focus, textarea:focus, select:focus {
     gap: 2rem;
 }
 
+.specs-sources {
+    background-color: var(--background-alt);
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--gulf-orange);
+    margin-bottom: 0.5rem;
+}
+
+.specs-sources h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+[data-theme="dark"] .specs-sources h3 {
+    color: var(--gulf-orange);
+}
+
+.sources-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+}
+
+.sources-list li {
+    font-size: 0.875rem;
+}
+
+.sources-list a {
+    color: var(--gulf-blue);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.sources-list a:hover {
+    color: var(--gulf-orange);
+    text-decoration: underline;
+}
+
+[data-theme="dark"] .sources-list a {
+    color: var(--gulf-blue);
+}
+
+[data-theme="dark"] .sources-list a:hover {
+    color: var(--gulf-orange);
+}
+
 .specs-category h3 {
     color: var(--primary-color);
     margin-bottom: 1rem;

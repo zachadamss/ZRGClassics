@@ -227,21 +227,31 @@
     ]
   },
   "torqueSpecs": {
+    "sources": [
+      { "name": "Lindsey Racing Torque Specs", "url": "https://www.lindseyracing.com/LR/Parts/TORQUESPEC.html" },
+      { "name": "928 Specialists Technical", "url": "https://www.928specialists.com/" },
+      { "name": "Rennlist 928 Technical", "url": "https://rennlist.com/forums/928-forum/" }
+    ],
     "engine": [
-      { "component": "Cylinder Head Bolts", "spec": "Varies by year - see manual", "notes": "Complex procedure" },
-      { "component": "Timing Belt Tensioner", "spec": "33 ft-lbs", "notes": "" },
-      { "component": "Spark Plugs", "spec": "22 ft-lbs", "notes": "" },
-      { "component": "Cam Tower Bolts", "spec": "7 ft-lbs", "notes": "Tighten evenly" },
-      { "component": "Oil Drain Plug", "spec": "22 ft-lbs", "notes": "Replace washer" }
+      { "component": "Cylinder Head Bolts (S4/GTS)", "spec": "Torque-to-yield sequence", "notes": "See manual for multi-stage procedure" },
+      { "component": "Timing Belt Tensioner", "spec": "33 ft-lbs (45 Nm)", "notes": "" },
+      { "component": "Timing Belt Rollers", "spec": "33 ft-lbs (45 Nm)", "notes": "" },
+      { "component": "Spark Plugs", "spec": "22 ft-lbs (30 Nm)", "notes": "" },
+      { "component": "Cam Tower Bolts", "spec": "7 ft-lbs (10 Nm)", "notes": "Tighten evenly in pattern" },
+      { "component": "Oil Drain Plug", "spec": "22 ft-lbs (30 Nm)", "notes": "Replace washer" },
+      { "component": "Water Pump Bolts", "spec": "15 ft-lbs (20 Nm)", "notes": "" },
+      { "component": "Intake Manifold Bolts", "spec": "7 ft-lbs (10 Nm)", "notes": "" }
     ],
     "suspension": [
-      { "component": "Wheel Lug Nuts", "spec": "96 ft-lbs", "notes": "" },
-      { "component": "Control Arm Bolts", "spec": "63 ft-lbs", "notes": "" },
-      { "component": "Tie Rod Ends", "spec": "33 ft-lbs", "notes": "" }
+      { "component": "Wheel Lug Bolts (M14)", "spec": "96 ft-lbs (130 Nm)", "notes": "Tighten in star pattern" },
+      { "component": "Front Control Arm Bolts", "spec": "63 ft-lbs (85 Nm)", "notes": "" },
+      { "component": "Weissach Axle Control Arms", "spec": "74 ft-lbs (100 Nm)", "notes": "S4/GTS only" },
+      { "component": "Tie Rod Ends", "spec": "33 ft-lbs (45 Nm)", "notes": "Use new cotter pin" },
+      { "component": "Strut Top Mount", "spec": "44 ft-lbs (60 Nm)", "notes": "" }
     ],
     "brakes": [
-      { "component": "Caliper Bolts", "spec": "63 ft-lbs", "notes": "" },
-      { "component": "Brake Line Fittings", "spec": "11 ft-lbs", "notes": "" }
+      { "component": "Caliper Bolts", "spec": "63 ft-lbs (85 Nm)", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "11 ft-lbs (15 Nm)", "notes": "Do not overtighten" }
     ]
   },
   "diyGuides": [

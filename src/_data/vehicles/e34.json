@@ -201,30 +201,42 @@
     ]
   },
   "torqueSpecs": {
+    "sources": [
+      { "name": "Bentley E34 Service Manual", "url": "https://www.bentleypublishers.com/bmw.html" },
+      { "name": "Bimmerforums E34 Technical", "url": "https://www.bimmerforums.com/forum/forumdisplay.php?f=50" },
+      { "name": "M5Board Torque Reference", "url": "https://www.m5board.com/" }
+    ],
     "engine": [
-      { "component": "Cylinder Head Bolts (M50)", "spec": "22 ft-lbs + 90° + 90°", "notes": "Torque-to-yield, new bolts required" },
-      { "component": "Cylinder Head Bolts (M60)", "spec": "22 ft-lbs + 70° + 70°", "notes": "Torque-to-yield, new bolts required" },
-      { "component": "Main Bearing Caps (M50)", "spec": "48 ft-lbs", "notes": "" },
-      { "component": "Connecting Rod Bolts (M50)", "spec": "37 ft-lbs", "notes": "" },
-      { "component": "Valve Cover Bolts (M50)", "spec": "9 ft-lbs", "notes": "Do not overtighten" },
-      { "component": "Spark Plugs", "spec": "18-22 ft-lbs", "notes": "" },
-      { "component": "Oil Drain Plug", "spec": "18 ft-lbs", "notes": "Replace crush washer" },
-      { "component": "VANOS Solenoid (M50TU)", "spec": "11 ft-lbs", "notes": "" }
+      { "component": "Cylinder Head Bolts (M50/M50TU)", "spec": "22 ft-lbs (30 Nm) + 90° + 90°", "notes": "TTY bolts, replace each use" },
+      { "component": "Cylinder Head Bolts (M60 V8)", "spec": "22 ft-lbs (30 Nm) + 70° + 70°", "notes": "TTY bolts, replace each use" },
+      { "component": "Cylinder Head Bolts (M30)", "spec": "44 ft-lbs (60 Nm) + 59 ft-lbs (80 Nm) + 35°", "notes": "Wait 15 min between stages" },
+      { "component": "Main Bearing Caps (M50)", "spec": "15-18 ft-lbs (20-25 Nm) + 50°", "notes": "Angle-tighten method" },
+      { "component": "Connecting Rod Bolts (M50)", "spec": "17 ft-lbs (23 Nm) + 70°", "notes": "Angle-tighten method" },
+      { "component": "Flywheel Bolts (Manual)", "spec": "77 ft-lbs (105 Nm)", "notes": "Use new bolts" },
+      { "component": "Flywheel Bolts (Auto)", "spec": "88 ft-lbs (120 Nm)", "notes": "Use new bolts" },
+      { "component": "Valve Cover Bolts (M50)", "spec": "9 ft-lbs (12 Nm)", "notes": "Do not overtighten" },
+      { "component": "Spark Plugs", "spec": "22-24 ft-lbs (30-33 Nm)", "notes": "" },
+      { "component": "Oil Drain Plug", "spec": "18 ft-lbs (25 Nm)", "notes": "Replace crush washer" },
+      { "component": "VANOS Solenoid (M50TU)", "spec": "11 ft-lbs (15 Nm)", "notes": "" },
+      { "component": "Oil Filter Housing Bolts", "spec": "18 ft-lbs (25 Nm)", "notes": "" }
     ],
     "suspension": [
-      { "component": "Control Arm to Subframe", "spec": "57 ft-lbs", "notes": "Tighten with weight on wheels" },
-      { "component": "Thrust Arm Bolts", "spec": "81 ft-lbs", "notes": "Tighten with weight on wheels" },
-      { "component": "Tie Rod End Nut", "spec": "30 ft-lbs", "notes": "Use new cotter pin" },
-      { "component": "Wheel Lug Bolts", "spec": "88 ft-lbs", "notes": "Tighten in star pattern" },
-      { "component": "Strut Top Nut", "spec": "18 ft-lbs", "notes": "Hold strut shaft while tightening" },
-      { "component": "Subframe Bolts", "spec": "74 ft-lbs", "notes": "" },
-      { "component": "Rear Trailing Arm", "spec": "52 ft-lbs", "notes": "Tighten with weight on wheels" }
+      { "component": "Control Arm to Subframe", "spec": "57 ft-lbs (77 Nm)", "notes": "Tighten with weight on wheels" },
+      { "component": "Thrust Arm Bolts", "spec": "81 ft-lbs (110 Nm)", "notes": "Tighten with weight on wheels" },
+      { "component": "Tie Rod End Nut", "spec": "30 ft-lbs (41 Nm)", "notes": "Use new cotter pin" },
+      { "component": "Wheel Lug Bolts", "spec": "88-90 ft-lbs (120 Nm)", "notes": "Tighten in star pattern" },
+      { "component": "Strut Top Nut", "spec": "18 ft-lbs (24 Nm)", "notes": "Hold strut shaft while tightening" },
+      { "component": "Subframe Bolts", "spec": "74 ft-lbs (100 Nm)", "notes": "" },
+      { "component": "Rear Trailing Arm", "spec": "52 ft-lbs (70 Nm)", "notes": "Tighten with weight on wheels" },
+      { "component": "Sway Bar End Links", "spec": "16 ft-lbs (22 Nm)", "notes": "" }
     ],
     "brakes": [
-      { "component": "Front Caliper Carrier Bolts", "spec": "81 ft-lbs", "notes": "" },
-      { "component": "Rear Caliper Carrier Bolts", "spec": "48 ft-lbs", "notes": "" },
-      { "component": "Brake Line Fittings", "spec": "13 ft-lbs", "notes": "Do not overtighten" },
-      { "component": "Wheel Speed Sensor", "spec": "7 ft-lbs", "notes": "" }
+      { "component": "Front Caliper Carrier Bolts", "spec": "81 ft-lbs (110 Nm)", "notes": "" },
+      { "component": "Rear Caliper Carrier Bolts", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
+      { "component": "Caliper Guide Pins", "spec": "22 ft-lbs (30 Nm)", "notes": "" },
+      { "component": "Brake Rotor Set Screw", "spec": "12 ft-lbs (16 Nm)", "notes": "Use thread locker" },
+      { "component": "Brake Line Fittings", "spec": "13 ft-lbs (18 Nm)", "notes": "Do not overtighten" },
+      { "component": "Wheel Speed Sensor", "spec": "7 ft-lbs (10 Nm)", "notes": "" }
     ]
   },
   "diyGuides": [

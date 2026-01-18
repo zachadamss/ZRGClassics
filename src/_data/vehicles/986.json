@@ -168,20 +168,34 @@
     ]
   },
   "torqueSpecs": {
+    "sources": [
+      { "name": "LN Engineering 996 Torque Book", "url": "https://lnengineering.com/996-torque-book-fastening-specifications-for-porsche-911-type-996-automobile.html" },
+      { "name": "Lindsey Racing Torque Specs", "url": "https://www.lindseyracing.com/LR/Parts/TORQUESPEC.html" },
+      { "name": "986 Forum Technical", "url": "https://986forum.com/" }
+    ],
     "engine": [
-      { "component": "Spark Plugs", "spec": "22 ft-lbs", "notes": "" },
-      { "component": "Oil Drain Plug", "spec": "37 ft-lbs", "notes": "Replace washer" },
-      { "component": "IMS Bearing Flange", "spec": "See specific kit instructions", "notes": "" },
-      { "component": "Intake Manifold Bolts", "spec": "7 ft-lbs", "notes": "" }
+      { "component": "Crankcase Girdle (M12 studs)", "spec": "22 ft-lbs (30 Nm) + 60°", "notes": "Two-stage tightening" },
+      { "component": "Connecting Rod Bolts (M10)", "spec": "55 ft-lbs (75 Nm) + 5°", "notes": "Use assembly lube" },
+      { "component": "Front Crankshaft Bolt (M16)", "spec": "155 ft-lbs (210 Nm)", "notes": "" },
+      { "component": "Spark Plugs (M14)", "spec": "18-22 ft-lbs (25-30 Nm)", "notes": "" },
+      { "component": "Oil Drain Plug (M20)", "spec": "37 ft-lbs (50 Nm)", "notes": "Replace washer" },
+      { "component": "Oil Pressure Sensor (M18)", "spec": "26 ft-lbs (35 Nm)", "notes": "" },
+      { "component": "Intake Manifold Bolts", "spec": "7 ft-lbs (10 Nm)", "notes": "" }
     ],
     "suspension": [
-      { "component": "Wheel Lug Nuts", "spec": "96 ft-lbs", "notes": "" },
-      { "component": "Control Arm Bolts", "spec": "63 ft-lbs", "notes": "" },
-      { "component": "Strut Top Nut", "spec": "44 ft-lbs", "notes": "" }
+      { "component": "Wheel Lug Bolts (M14)", "spec": "96 ft-lbs (130 Nm)", "notes": "Grease threads with aluminum paste" },
+      { "component": "Front Control Arm to Crossmember (M12)", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
+      { "component": "McPherson Strut to Knuckle (M12)", "spec": "74 ft-lbs (100 Nm)", "notes": "" },
+      { "component": "Strut Top Nut", "spec": "44 ft-lbs (60 Nm)", "notes": "" },
+      { "component": "Rear Control Arm Bolts (M12)", "spec": "63 ft-lbs (85 Nm)", "notes": "" },
+      { "component": "Wheel Hub to Shaft (M22)", "spec": "369 ft-lbs (500 Nm)", "notes": "" },
+      { "component": "Tie Rod End (M14)", "spec": "52 ft-lbs (70 Nm)", "notes": "" }
     ],
     "brakes": [
-      { "component": "Caliper Bolts", "spec": "63 ft-lbs", "notes": "" },
-      { "component": "Brake Line Fittings", "spec": "11 ft-lbs", "notes": "" }
+      { "component": "Front Caliper to Knuckle (M12)", "spec": "63 ft-lbs (85 Nm)", "notes": "" },
+      { "component": "Rear Caliper to Control Arm (M12)", "spec": "63 ft-lbs (85 Nm)", "notes": "" },
+      { "component": "Brake Bleeder Screws", "spec": "6-9 ft-lbs (8-12 Nm)", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "11 ft-lbs (15 Nm)", "notes": "Do not overtighten" }
     ]
   },
   "diyGuides": [

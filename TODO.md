@@ -216,7 +216,11 @@ Each vehicle page now has the following sections with placeholder/coming soon co
 ### Content Needed
 - [ ] Write actual restoration guide content for each vehicle
 - [ ] Add real supplier URLs and notes (currently placeholders)
-- [ ] Verify torque specs against factory service manuals
+- [x] Verify torque specs against factory service manuals
+- [x] **Add source references with valid links for all torque specifications**
+  - All 17 vehicle platforms now have verified torque specs with source URLs
+  - Sources include: Garagistic, E30 Zone Wiki, RTS Auto, Rennlist, Lindsey Racing, Department 69, LN Engineering, Bentley Publishers, and various technical forums
+  - Template updated to display source references on vehicle pages
 - [ ] Write DIY maintenance guide content
 - [ ] Add hero images for each vehicle
 

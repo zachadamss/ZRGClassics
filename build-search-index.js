@@ -43,6 +43,8 @@ vehicleFiles.forEach(file => {
   // Add torque specs
   if (vehicleData.torqueSpecs) {
     Object.entries(vehicleData.torqueSpecs).forEach(([category, specs]) => {
+      // Skip sources array - it has different structure (name/url instead of component/spec)
+      if (category === 'sources' || !Array.isArray(specs)) return;
       specs.forEach(spec => {
         searchIndex.torqueSpecs.push({
           id: `${model.toLowerCase()}-${category}-${spec.component.toLowerCase().replace(/[^a-z0-9]/g, '-')}`,

@@ -201,30 +201,40 @@
     ]
   },
   "torqueSpecs": {
+    "sources": [
+      { "name": "MyE28.com Forums", "url": "https://forums.mye28.com/viewtopic.php?t=27805" },
+      { "name": "M30 Basics Torque Guide", "url": "https://m30basics.wordpress.com/torques/" },
+      { "name": "Bentley E28 Service Manual", "url": "https://www.bentleypublishers.com/bmw.html" }
+    ],
     "engine": [
-      { "component": "Cylinder Head Bolts (M30)", "spec": "42-44 ft-lbs", "notes": "Cold engine, tighten in sequence" },
-      { "component": "Main Bearing Caps (M30)", "spec": "42-46 ft-lbs", "notes": "" },
-      { "component": "Connecting Rod Bolts (M30)", "spec": "38-41 ft-lbs", "notes": "" },
-      { "component": "Flywheel Bolts", "spec": "72-80 ft-lbs", "notes": "Use thread locker" },
-      { "component": "Valve Cover Nuts", "spec": "7-9 ft-lbs", "notes": "Do not overtighten" },
-      { "component": "Spark Plugs", "spec": "18-22 ft-lbs", "notes": "" },
-      { "component": "Oil Drain Plug", "spec": "18-22 ft-lbs", "notes": "Replace crush washer" },
-      { "component": "Oil Filter Housing Bolt", "spec": "18 ft-lbs", "notes": "" }
+      { "component": "Cylinder Head Bolts (M30 pre-1988)", "spec": "44 ft-lbs (60 Nm) + 33° + 25°", "notes": "Wait 15 min, final angle at operating temp" },
+      { "component": "Cylinder Head Bolts (M30 1988+)", "spec": "44 ft-lbs (60 Nm) + 59 ft-lbs (80 Nm) + 35°", "notes": "Wait 15 min between stages, final at operating temp" },
+      { "component": "Main Bearing Caps (M30)", "spec": "44 ft-lbs (60 Nm)", "notes": "Clean and lubricate threads" },
+      { "component": "Connecting Rod Bolts (M30)", "spec": "41 ft-lbs (55 Nm)", "notes": "Clean and lubricate threads" },
+      { "component": "Flywheel Bolts (Manual)", "spec": "77 ft-lbs (105 Nm)", "notes": "Use new bolts" },
+      { "component": "Flywheel Bolts (Auto)", "spec": "88 ft-lbs (120 Nm)", "notes": "Use new bolts" },
+      { "component": "Valve Cover Nuts", "spec": "7 ft-lbs (10 Nm)", "notes": "Do not overtighten" },
+      { "component": "Spark Plugs", "spec": "18-22 ft-lbs (25-30 Nm)", "notes": "" },
+      { "component": "Oil Drain Plug", "spec": "18 ft-lbs (25 Nm)", "notes": "Replace crush washer" },
+      { "component": "Oil Pump Sprocket Bolts", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
+      { "component": "Exhaust Manifold Nuts", "spec": "11 ft-lbs (15 Nm)", "notes": "M6 bolts" },
+      { "component": "Vibration Damper Hub Bolt", "spec": "325 ft-lbs (440 Nm)", "notes": "Replace bolt each use" }
     ],
     "suspension": [
-      { "component": "Control Arm to Subframe", "spec": "57-65 ft-lbs", "notes": "Tighten with weight on wheels" },
-      { "component": "Thrust Arm Bolts", "spec": "65 ft-lbs", "notes": "Tighten with weight on wheels" },
-      { "component": "Tie Rod End Nut", "spec": "25-33 ft-lbs", "notes": "Use new cotter pin" },
-      { "component": "Wheel Lug Bolts", "spec": "80 ft-lbs", "notes": "Tighten in star pattern" },
-      { "component": "Shock Absorber Top Nut", "spec": "16-18 ft-lbs", "notes": "" },
-      { "component": "Subframe Bolts", "spec": "65 ft-lbs", "notes": "" },
-      { "component": "Sway Bar End Links", "spec": "16-18 ft-lbs", "notes": "" }
+      { "component": "Control Arm to Subframe", "spec": "57-65 ft-lbs (77-88 Nm)", "notes": "Tighten with weight on wheels" },
+      { "component": "Thrust Arm Bolts", "spec": "65 ft-lbs (88 Nm)", "notes": "Tighten with weight on wheels" },
+      { "component": "Tie Rod End Nut", "spec": "25-33 ft-lbs (34-45 Nm)", "notes": "Use new cotter pin" },
+      { "component": "Wheel Lug Bolts", "spec": "80 ft-lbs (108 Nm)", "notes": "Tighten in star pattern" },
+      { "component": "Shock Absorber Top Nut", "spec": "16-18 ft-lbs (22-24 Nm)", "notes": "" },
+      { "component": "Subframe Bolts", "spec": "65 ft-lbs (88 Nm)", "notes": "" },
+      { "component": "Sway Bar End Links", "spec": "16-18 ft-lbs (22-24 Nm)", "notes": "" },
+      { "component": "Front Wheel Bearing Nut", "spec": "22-24 ft-lbs (30-33 Nm)", "notes": "While rotating wheel, then back off and retorque to spec" }
     ],
     "brakes": [
-      { "component": "Front Caliper Bolts", "spec": "58-72 ft-lbs", "notes": "" },
-      { "component": "Rear Caliper Bolts", "spec": "42-48 ft-lbs", "notes": "" },
-      { "component": "Brake Line Fittings", "spec": "11-14 ft-lbs", "notes": "Do not overtighten" },
-      { "component": "Brake Rotor Set Screw", "spec": "9 ft-lbs", "notes": "Use thread locker" }
+      { "component": "Front Caliper Bolts", "spec": "58-72 ft-lbs (79-98 Nm)", "notes": "" },
+      { "component": "Rear Caliper Bolts", "spec": "42-48 ft-lbs (57-65 Nm)", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "11-14 ft-lbs (15-19 Nm)", "notes": "Do not overtighten" },
+      { "component": "Brake Rotor Set Screw", "spec": "9 ft-lbs (12 Nm)", "notes": "Use thread locker" }
     ]
   },
   "diyGuides": [

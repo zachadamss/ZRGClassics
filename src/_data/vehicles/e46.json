@@ -127,24 +127,53 @@
     ]
   },
   "torqueSpecs": {
+    "sources": [
+      { "name": "Garagistic E46 Torque Guide", "url": "https://www.garagistic.com/pages/bmw-e46-bolt-torque-spec-guide" },
+      { "name": "E46 Fanatics Complete Torque Specs", "url": "https://www.e46fanatics.com/threads/e46-complete-suspension-torque-specs.1054309/" },
+      { "name": "E46 Fanatics M54 Torque Thread", "url": "https://www.e46fanatics.com/threads/the-ultimate-e46-m54-torque-specs-thread.1065428" }
+    ],
     "engine": [
-      { "component": "Cylinder Head Bolts", "spec": "22 ft-lbs + 90° + 90° + 90°", "notes": "TTY bolts, replace each use" },
-      { "component": "Main Bearing Caps", "spec": "15 ft-lbs + 70°", "notes": "" },
-      { "component": "Spark Plugs", "spec": "18-22 ft-lbs", "notes": "" },
-      { "component": "Valve Cover Bolts", "spec": "89 in-lbs", "notes": "" },
-      { "component": "Oil Drain Plug", "spec": "18 ft-lbs", "notes": "Replace crush washer" },
-      { "component": "VANOS Solenoid", "spec": "7 ft-lbs", "notes": "" }
+      { "component": "Cylinder Head Bolts (M54/M52TU)", "spec": "30 ft-lbs (40 Nm) + 90° + 90°", "notes": "TTY bolts, replace each use. E12 Torx." },
+      { "component": "Camshaft Bearing Cap Bolts (M7)", "spec": "10 ft-lbs (14 Nm)", "notes": "" },
+      { "component": "Timing Chain Tensioner", "spec": "51 ft-lbs (70 Nm)", "notes": "" },
+      { "component": "Crankshaft Pulley Bolt", "spec": "300 ft-lbs (410 Nm)", "notes": "" },
+      { "component": "Flywheel Bolts (Manual)", "spec": "77 ft-lbs (105 Nm)", "notes": "Use new bolts" },
+      { "component": "Flex Plate Bolts (Auto)", "spec": "88 ft-lbs (121 Nm)", "notes": "Use new bolts" },
+      { "component": "Spark Plugs", "spec": "22 ft-lbs (30 Nm)", "notes": "" },
+      { "component": "Valve Cover Bolts", "spec": "98 in-lbs (11 Nm)", "notes": "Do not overtighten - plastic cover" },
+      { "component": "Oil Drain Plug", "spec": "18 ft-lbs (25 Nm)", "notes": "Replace crush washer" },
+      { "component": "Oil Filter Cap", "spec": "25 ft-lbs (34 Nm)", "notes": "" },
+      { "component": "Oil Pan Bolts (8.8 grade)", "spec": "88 in-lbs (10 Nm)", "notes": "" },
+      { "component": "Intake Manifold (M7)", "spec": "11 ft-lbs (15 Nm)", "notes": "" },
+      { "component": "Intake Manifold (M8)", "spec": "16 ft-lbs (22 Nm)", "notes": "" },
+      { "component": "Exhaust Manifold", "spec": "15 ft-lbs (20 Nm)", "notes": "" }
     ],
     "suspension": [
-      { "component": "Control Arm to Subframe", "spec": "81 ft-lbs", "notes": "Tighten with weight on wheels" },
-      { "component": "Strut Top Nut", "spec": "47 ft-lbs", "notes": "" },
-      { "component": "Wheel Lug Bolts", "spec": "88 ft-lbs", "notes": "Tighten in star pattern" },
-      { "component": "Subframe Bolts", "spec": "74 ft-lbs", "notes": "" }
+      { "component": "Front Control Arm Bracket to Subframe", "spec": "44 ft-lbs (60 Nm)", "notes": "" },
+      { "component": "Front Control Arm Ball Joint to Subframe", "spec": "66 ft-lbs (90 Nm)", "notes": "" },
+      { "component": "Front Control Arm Ball Joint to Steering Arm", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
+      { "component": "Steering Arm Pinch Bolt", "spec": "60 ft-lbs (81 Nm)", "notes": "" },
+      { "component": "Strut Tower Nuts", "spec": "18 ft-lbs (24 Nm)", "notes": "Self-locking nuts" },
+      { "component": "Strut Top Mount to Shaft (M14)", "spec": "47 ft-lbs (64 Nm)", "notes": "" },
+      { "component": "Front Sway Bar End Links", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
+      { "component": "Front Sway Bar Bracket", "spec": "16 ft-lbs (22 Nm)", "notes": "" },
+      { "component": "Front Subframe to Body (10.9 grade)", "spec": "81 ft-lbs (110 Nm)", "notes": "Use new bolts" },
+      { "component": "Wheel Lug Bolts", "spec": "87-89 ft-lbs (118-120 Nm)", "notes": "Tighten in star pattern" },
+      { "component": "Front Axle Nut", "spec": "214 ft-lbs (290 Nm)", "notes": "" },
+      { "component": "Rear Axle Nut", "spec": "221 ft-lbs (300 Nm)", "notes": "" },
+      { "component": "Rear Upper Control Arm to Subframe", "spec": "57 ft-lbs (77 Nm)", "notes": "" },
+      { "component": "Rear Upper Control Arm to Trailing Arm", "spec": "81 ft-lbs (110 Nm)", "notes": "" },
+      { "component": "Rear Lower Control Arm", "spec": "81 ft-lbs (110 Nm)", "notes": "Tighten at ride height" },
+      { "component": "Rear Shock to Trailing Arm", "spec": "74 ft-lbs (100 Nm)", "notes": "" },
+      { "component": "Rear Shock Top Mount to Body", "spec": "21 ft-lbs (28 Nm)", "notes": "" }
     ],
     "brakes": [
-      { "component": "Front Caliper Carrier", "spec": "81 ft-lbs", "notes": "" },
-      { "component": "Rear Caliper Carrier", "spec": "48 ft-lbs", "notes": "" },
-      { "component": "Brake Line Fittings", "spec": "11-13 ft-lbs", "notes": "" }
+      { "component": "Front Caliper Carrier", "spec": "81 ft-lbs (110 Nm)", "notes": "" },
+      { "component": "Rear Caliper Carrier", "spec": "48 ft-lbs (65 Nm)", "notes": "Note: Lower than front!" },
+      { "component": "Caliper Guide Pins", "spec": "22 ft-lbs (30 Nm)", "notes": "" },
+      { "component": "Brake Rotor Set Screw", "spec": "12 ft-lbs (16 Nm)", "notes": "Use thread locker" },
+      { "component": "Master Cylinder", "spec": "19 ft-lbs (26 Nm)", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "11-13 ft-lbs (15-18 Nm)", "notes": "Do not overtighten" }
     ]
   },
   "diyGuides": [

@@ -169,26 +169,45 @@
     ]
   },
   "torqueSpecs": {
+    "sources": [
+      { "name": "Garagistic E36 Torque Guide", "url": "https://www.garagistic.com/pages/bmw-e36-bolt-torque-spec-guide" },
+      { "name": "Bentley Service Manual", "url": "https://www.bentleypublishers.com/bmw/repair-information/bmw-3-series-e36.html" },
+      { "name": "BimmerFest Forums", "url": "https://www.bimmerfest.com/threads/torque-settings-etc.260774/" }
+    ],
     "engine": [
-      { "component": "Cylinder Head Bolts (M50/M52)", "spec": "22 ft-lbs + 90° + 90°", "notes": "TTY bolts, replace each use" },
-      { "component": "Main Bearing Caps", "spec": "47 ft-lbs", "notes": "" },
-      { "component": "Connecting Rod Bolts", "spec": "38 ft-lbs", "notes": "" },
-      { "component": "Spark Plugs", "spec": "18-22 ft-lbs", "notes": "" },
-      { "component": "Valve Cover Bolts", "spec": "89 in-lbs", "notes": "Do not overtighten" },
-      { "component": "Oil Drain Plug", "spec": "18 ft-lbs", "notes": "Replace crush washer" },
-      { "component": "VANOS Unit Bolts", "spec": "10 ft-lbs", "notes": "" }
+      { "component": "Cylinder Head Bolts (M50/M52)", "spec": "22 ft-lbs (30 Nm) + 90° + 90°", "notes": "TTY bolts, replace each use. Wait 20-30 min between stages." },
+      { "component": "Main Bearing Caps (M50)", "spec": "15-18 ft-lbs (20-25 Nm) + 50°", "notes": "Angle-tighten method" },
+      { "component": "Connecting Rod Bolts (M50)", "spec": "17 ft-lbs (23 Nm) + 70°", "notes": "Angle-tighten method" },
+      { "component": "Flywheel Bolts", "spec": "77 ft-lbs (105 Nm)", "notes": "Use new bolts, apply Loctite" },
+      { "component": "Spark Plugs", "spec": "22-24 ft-lbs (30-33 Nm)", "notes": "" },
+      { "component": "Valve Cover Bolts", "spec": "89 in-lbs (10 Nm)", "notes": "Do not overtighten - plastic cover" },
+      { "component": "Oil Drain Plug", "spec": "18 ft-lbs (25 Nm)", "notes": "Replace crush washer" },
+      { "component": "Oil Filter Housing Bolts", "spec": "18 ft-lbs (25 Nm)", "notes": "" },
+      { "component": "VANOS Unit Bolts", "spec": "10 ft-lbs (14 Nm)", "notes": "" },
+      { "component": "Intake Manifold Bolts", "spec": "15 ft-lbs (20 Nm)", "notes": "" },
+      { "component": "Exhaust Manifold Nuts", "spec": "22-25 ft-lbs (30-34 Nm)", "notes": "" }
     ],
     "suspension": [
-      { "component": "Control Arm to Subframe", "spec": "57 ft-lbs", "notes": "Tighten with weight on wheels" },
-      { "component": "Strut Top Nut", "spec": "47 ft-lbs", "notes": "" },
-      { "component": "Wheel Lug Bolts", "spec": "80 ft-lbs", "notes": "Tighten in star pattern" },
-      { "component": "RTAB Bolts", "spec": "52 ft-lbs", "notes": "Tighten with weight on wheels" },
-      { "component": "Subframe Bolts", "spec": "57 ft-lbs", "notes": "" }
+      { "component": "Front Control Arm Bolts", "spec": "31-35 ft-lbs (42-48 Nm)", "notes": "" },
+      { "component": "Front Thrust Arm Ball Joint", "spec": "59 ft-lbs (80 Nm)", "notes": "" },
+      { "component": "Steering Knuckle Pinch Bolt", "spec": "60 ft-lbs (81 Nm)", "notes": "" },
+      { "component": "Strut Top Nut", "spec": "47 ft-lbs (64 Nm)", "notes": "" },
+      { "component": "Tie Rod End Nut", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
+      { "component": "Wheel Lug Bolts", "spec": "88-90 ft-lbs (120 Nm)", "notes": "Tighten in star pattern. BMW revised from 74 to 88 ft-lbs." },
+      { "component": "Rear Lower Control Arm to Subframe", "spec": "81 ft-lbs (110 Nm)", "notes": "" },
+      { "component": "Rear Lower Control Arm to Trailing Arm", "spec": "81 ft-lbs (110 Nm)", "notes": "Eccentric bolt" },
+      { "component": "Rear Upper Control Arm", "spec": "81 ft-lbs (110 Nm)", "notes": "" },
+      { "component": "Rear Shock to Trailing Arm", "spec": "74 ft-lbs (100 Nm)", "notes": "" },
+      { "component": "Subframe to Body", "spec": "57 ft-lbs (77 Nm)", "notes": "" },
+      { "component": "Sway Bar Bracket", "spec": "18 ft-lbs (24 Nm)", "notes": "" },
+      { "component": "Sway Bar End Links (M10)", "spec": "31 ft-lbs (42 Nm)", "notes": "" }
     ],
     "brakes": [
-      { "component": "Front Caliper Carrier", "spec": "81 ft-lbs", "notes": "" },
-      { "component": "Rear Caliper Carrier", "spec": "48 ft-lbs", "notes": "" },
-      { "component": "Wheel Speed Sensor", "spec": "7 ft-lbs", "notes": "" }
+      { "component": "Front Caliper Carrier", "spec": "81 ft-lbs (110 Nm)", "notes": "" },
+      { "component": "Rear Caliper Carrier", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
+      { "component": "Caliper Guide Pins", "spec": "22 ft-lbs (30 Nm)", "notes": "" },
+      { "component": "Brake Rotor Set Screw", "spec": "12 ft-lbs (16 Nm)", "notes": "Use thread locker" },
+      { "component": "Brake Line Fittings", "spec": "11-13 ft-lbs (15-18 Nm)", "notes": "Do not overtighten" }
     ]
   },
   "diyGuides": [

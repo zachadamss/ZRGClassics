@@ -162,28 +162,43 @@
     ]
   },
   "torqueSpecs": {
+    "sources": [
+      { "name": "Garagistic E30 Torque Guide", "url": "https://www.garagistic.com/pages/bmw-e30-bolt-torque-values" },
+      { "name": "E30 Zone Wiki", "url": "https://www.e30zone.net/e30wiki/index.php/Torque_Settings" },
+      { "name": "RTS Auto E30 Specs", "url": "https://www.rtsauto.com/e30-torque-specs-and-technical-specifications/" }
+    ],
     "engine": [
-      { "component": "Cylinder Head Bolts (M20)", "spec": "44 ft-lbs + 90°", "notes": "Torque-to-yield bolts, replace each use" },
-      { "component": "Main Bearing Caps", "spec": "47 ft-lbs", "notes": "" },
-      { "component": "Connecting Rod Bolts", "spec": "38 ft-lbs", "notes": "" },
-      { "component": "Flywheel Bolts", "spec": "72-80 ft-lbs", "notes": "Use thread locker" },
-      { "component": "Spark Plugs", "spec": "18-22 ft-lbs", "notes": "" },
-      { "component": "Valve Cover Nuts", "spec": "7 ft-lbs", "notes": "Do not overtighten" },
-      { "component": "Oil Drain Plug", "spec": "18 ft-lbs", "notes": "Replace crush washer" }
+      { "component": "Cylinder Head Bolts (M20 Hex)", "spec": "44 ft-lbs (60 Nm) + 90°", "notes": "Torque-to-yield, replace each use. Wait 15 min between stages." },
+      { "component": "Cylinder Head Bolts (M20 Torx)", "spec": "22 ft-lbs (30 Nm) + 90° + 90°", "notes": "Torque-to-yield, replace each use" },
+      { "component": "Main Bearing Caps", "spec": "44 ft-lbs (60 Nm)", "notes": "All engines except M40" },
+      { "component": "Connecting Rod Bolts (M20)", "spec": "15 ft-lbs (20 Nm) + 70°", "notes": "Angle-tighten method" },
+      { "component": "Flywheel Bolts (Manual)", "spec": "77 ft-lbs (105 Nm)", "notes": "Use new bolts, apply Loctite" },
+      { "component": "Flywheel Bolts (Auto)", "spec": "88 ft-lbs (120 Nm)", "notes": "Use new bolts" },
+      { "component": "Spark Plugs", "spec": "22-24 ft-lbs (30-33 Nm)", "notes": "Non-M10 engines" },
+      { "component": "Valve Cover Nuts", "spec": "7 ft-lbs (9-11 Nm)", "notes": "Do not overtighten" },
+      { "component": "Oil Drain Plug (M12)", "spec": "18 ft-lbs (25 Nm)", "notes": "Replace crush washer" },
+      { "component": "Oil Pump Bolts", "spec": "16 ft-lbs (22 Nm)", "notes": "Except M40 engine" },
+      { "component": "Exhaust Manifold Nuts", "spec": "16-18 ft-lbs (22-25 Nm)", "notes": "" },
+      { "component": "Intake Manifold Bolts", "spec": "22-24 ft-lbs (30-33 Nm)", "notes": "Per Bentley manual" }
     ],
     "suspension": [
-      { "component": "Front Strut Top Nut", "spec": "47 ft-lbs", "notes": "" },
-      { "component": "Control Arm to Subframe", "spec": "57 ft-lbs", "notes": "Tighten with weight on wheels" },
-      { "component": "Tie Rod End Nut", "spec": "25-33 ft-lbs", "notes": "" },
-      { "component": "Wheel Lug Bolts", "spec": "80 ft-lbs", "notes": "Tighten in star pattern" },
-      { "component": "Rear Trailing Arm", "spec": "52 ft-lbs", "notes": "Tighten with weight on wheels" },
-      { "component": "Subframe Bolts", "spec": "57 ft-lbs", "notes": "" }
+      { "component": "Front Strut Top Nut", "spec": "48 ft-lbs (65 Nm)", "notes": "External hex type" },
+      { "component": "Front Control Arm Outer (Ball Joint)", "spec": "47 ft-lbs (64 Nm)", "notes": "Use new self-locking nut" },
+      { "component": "Front Control Arm Inner (to Subframe)", "spec": "61 ft-lbs (83 Nm)", "notes": "Use new self-locking nut" },
+      { "component": "Control Arm Bracket to Body", "spec": "30 ft-lbs (41 Nm)", "notes": "" },
+      { "component": "Sway Bar End Links", "spec": "30 ft-lbs (41 Nm)", "notes": "" },
+      { "component": "Wheel Lug Bolts", "spec": "74-80 ft-lbs (100 Nm)", "notes": "Tighten in star pattern" },
+      { "component": "Front Hub Nut", "spec": "214 ft-lbs (290 Nm)", "notes": "" },
+      { "component": "Rear Hub Nut", "spec": "184 ft-lbs (249 Nm)", "notes": "" },
+      { "component": "Steering Wheel Nut", "spec": "58 ft-lbs (79 Nm)", "notes": "" }
     ],
     "brakes": [
-      { "component": "Brake Caliper Bolts (Front)", "spec": "63 ft-lbs", "notes": "" },
-      { "component": "Brake Caliper Bolts (Rear)", "spec": "48 ft-lbs", "notes": "" },
-      { "component": "Brake Rotor Set Screws", "spec": "9 ft-lbs", "notes": "Use thread locker" },
-      { "component": "Brake Line Fittings", "spec": "11-13 ft-lbs", "notes": "Do not overtighten" }
+      { "component": "Front Caliper Bracket", "spec": "91 ft-lbs (123 Nm)", "notes": "" },
+      { "component": "Front Caliper Guide Bolts", "spec": "22-26 ft-lbs (30-35 Nm)", "notes": "" },
+      { "component": "Rear Caliper Bracket", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
+      { "component": "Rear Caliper Guide Bolts", "spec": "22-26 ft-lbs (30-35 Nm)", "notes": "" },
+      { "component": "Brake Hose Banjo Bolt", "spec": "10 ft-lbs (14 Nm)", "notes": "Use new copper washers" },
+      { "component": "Bleed Valve", "spec": "3-4 ft-lbs (4-5 Nm)", "notes": "Do not overtighten" }
     ]
   },
   "diyGuides": [

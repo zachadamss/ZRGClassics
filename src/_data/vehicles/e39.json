@@ -216,31 +216,44 @@
     ]
   },
   "torqueSpecs": {
+    "sources": [
+      { "name": "Bentley E39 Service Manual", "url": "https://www.bentleypublishers.com/bmw.html" },
+      { "name": "M5Board Torque Reference", "url": "https://www.m5board.com/threads/torque-specs-for-brake-job.206498/" },
+      { "name": "Bimmerforums E39 Technical", "url": "https://www.bimmerfest.com/threads/torque-settings-etc.260774/" }
+    ],
     "engine": [
-      { "component": "Cylinder Head Bolts (M52/M54)", "spec": "22 ft-lbs + 90° + 90° + 45°", "notes": "Torque-to-yield, new bolts required" },
-      { "component": "Main Bearing Caps (M52/M54)", "spec": "15 ft-lbs + 70°", "notes": "" },
-      { "component": "Connecting Rod Bolts", "spec": "15 ft-lbs + 70°", "notes": "" },
-      { "component": "Valve Cover Bolts", "spec": "9 ft-lbs", "notes": "Do not overtighten" },
-      { "component": "Spark Plugs", "spec": "18-22 ft-lbs", "notes": "" },
-      { "component": "Oil Drain Plug", "spec": "18 ft-lbs", "notes": "Replace crush washer" },
-      { "component": "Oil Filter Housing Bolts", "spec": "18 ft-lbs", "notes": "" },
-      { "component": "VANOS Solenoid", "spec": "11 ft-lbs", "notes": "" },
-      { "component": "DISA Valve Bolts", "spec": "7 ft-lbs", "notes": "" }
+      { "component": "Cylinder Head Bolts (M52/M54)", "spec": "30 ft-lbs (40 Nm) + 90° + 90°", "notes": "TTY bolts, replace each use" },
+      { "component": "Main Bearing Caps (M52/M54)", "spec": "15 ft-lbs (20 Nm) + 70°", "notes": "Angle-tighten method" },
+      { "component": "Connecting Rod Bolts", "spec": "15 ft-lbs (20 Nm) + 70°", "notes": "Angle-tighten method" },
+      { "component": "Flywheel Bolts (Manual)", "spec": "77 ft-lbs (105 Nm)", "notes": "Use new bolts" },
+      { "component": "Valve Cover Bolts", "spec": "9 ft-lbs (12 Nm)", "notes": "Do not overtighten" },
+      { "component": "Spark Plugs", "spec": "22 ft-lbs (30 Nm)", "notes": "" },
+      { "component": "Oil Drain Plug", "spec": "18 ft-lbs (25 Nm)", "notes": "Replace crush washer" },
+      { "component": "Oil Filter Housing Bolts", "spec": "18 ft-lbs (25 Nm)", "notes": "" },
+      { "component": "VANOS Solenoid", "spec": "11 ft-lbs (15 Nm)", "notes": "" },
+      { "component": "DISA Valve Bolts", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
+      { "component": "Intake Manifold Bolts", "spec": "11 ft-lbs (15 Nm)", "notes": "" }
     ],
     "suspension": [
-      { "component": "Control Arm to Subframe", "spec": "57 ft-lbs", "notes": "Tighten with weight on wheels" },
-      { "component": "Thrust Arm Bolts", "spec": "81 ft-lbs", "notes": "Tighten with weight on wheels" },
-      { "component": "Tie Rod End Nut", "spec": "48 ft-lbs", "notes": "" },
-      { "component": "Wheel Lug Bolts", "spec": "88 ft-lbs", "notes": "Tighten in star pattern" },
-      { "component": "Strut Top Nut", "spec": "18 ft-lbs", "notes": "Hold strut shaft" },
-      { "component": "Front Subframe Bolts", "spec": "74 ft-lbs", "notes": "" },
-      { "component": "Rear Subframe Bolts", "spec": "74 ft-lbs + 90°", "notes": "Stretch bolts" }
+      { "component": "Control Arm to Subframe", "spec": "57 ft-lbs (77 Nm)", "notes": "Tighten with weight on wheels" },
+      { "component": "Thrust Arm to Knuckle", "spec": "59 ft-lbs (80 Nm)", "notes": "" },
+      { "component": "Thrust Arm to Subframe", "spec": "74 ft-lbs (100 Nm)", "notes": "" },
+      { "component": "Steering Knuckle Pinch Bolt", "spec": "60 ft-lbs (81 Nm)", "notes": "" },
+      { "component": "Tie Rod End Nut", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
+      { "component": "Wheel Lug Bolts", "spec": "88 ft-lbs (120 Nm)", "notes": "Tighten in star pattern, 2-stage" },
+      { "component": "Strut Top Nut", "spec": "18 ft-lbs (24 Nm)", "notes": "Hold strut shaft" },
+      { "component": "Front Subframe Bolts", "spec": "74 ft-lbs (100 Nm)", "notes": "" },
+      { "component": "Rear Subframe Bolts", "spec": "74 ft-lbs (100 Nm) + 90°", "notes": "Stretch bolts, replace" },
+      { "component": "Sway Bar Bracket", "spec": "18 ft-lbs (24 Nm)", "notes": "" },
+      { "component": "Sway Bar End Links", "spec": "48 ft-lbs (65 Nm)", "notes": "" }
     ],
     "brakes": [
-      { "component": "Front Caliper Carrier", "spec": "81 ft-lbs", "notes": "" },
-      { "component": "Rear Caliper Carrier", "spec": "48 ft-lbs", "notes": "" },
-      { "component": "Brake Line Fittings", "spec": "13 ft-lbs", "notes": "Do not overtighten" },
-      { "component": "ABS Sensor Bolt", "spec": "7 ft-lbs", "notes": "" }
+      { "component": "Front Caliper Carrier", "spec": "81 ft-lbs (110 Nm)", "notes": "" },
+      { "component": "Rear Caliper Carrier", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
+      { "component": "Caliper Guide Pins (Slide Bolts)", "spec": "22 ft-lbs (30 Nm)", "notes": "7mm Allen" },
+      { "component": "Brake Rotor Set Screw", "spec": "12 ft-lbs (16 Nm)", "notes": "Use anti-seize on threads" },
+      { "component": "Brake Line Fittings", "spec": "13 ft-lbs (18 Nm)", "notes": "Do not overtighten" },
+      { "component": "ABS Sensor Bolt", "spec": "7 ft-lbs (10 Nm)", "notes": "" }
     ]
   },
   "diyGuides": [

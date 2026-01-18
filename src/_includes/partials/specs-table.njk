@@ -1,4 +1,15 @@
 <div class="specs-container">
+    {% if vehicle.torqueSpecs.sources %}
+    <div class="specs-sources">
+        <h3>Reference Sources</h3>
+        <ul class="sources-list">
+            {% for source in vehicle.torqueSpecs.sources %}
+            <li><a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.name }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
     {% if vehicle.torqueSpecs.engine %}
     <div class="specs-category">
         <h3>Engine</h3>

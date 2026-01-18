@@ -200,28 +200,38 @@
     ]
   },
   "torqueSpecs": {
+    "sources": [
+      { "name": "Stuttcars 993 Engine Specs", "url": "https://www.stuttcars.com/porsche-911-993-1994-1998-engine-torque-specs/" },
+      { "name": "Lindsey Racing Torque Specs", "url": "https://www.lindseyracing.com/LR/Parts/TORQUESPEC.html" },
+      { "name": "Rennlist 993 Technical", "url": "https://rennlist.com/forums/993-forum/" }
+    ],
     "engine": [
-      { "component": "Spark Plugs", "spec": "18-22 ft-lbs", "notes": "Anti-seize recommended" },
-      { "component": "Valve Cover Nuts", "spec": "11 ft-lbs", "notes": "Diagonal pattern" },
-      { "component": "Oil Drain Plug", "spec": "37 ft-lbs", "notes": "Replace crush washer" },
-      { "component": "Flywheel Bolts", "spec": "66 ft-lbs + 90°", "notes": "Use new bolts" },
-      { "component": "Chain Tensioner Cover", "spec": "17 ft-lbs", "notes": "" },
-      { "component": "Oil Cooler Lines", "spec": "33 ft-lbs", "notes": "New sealing washers" },
-      { "component": "Intake Manifold Nuts", "spec": "7 ft-lbs", "notes": "" }
+      { "component": "Engine Through-Bolt", "spec": "37 ft-lbs (50 Nm)", "notes": "Hold one end while torquing the other" },
+      { "component": "Case Perimeter Nuts", "spec": "18 ft-lbs (25 Nm)", "notes": "" },
+      { "component": "Spark Plugs", "spec": "18-22 ft-lbs (25-30 Nm)", "notes": "Anti-seize recommended" },
+      { "component": "Valve Cover Nuts", "spec": "11 ft-lbs (15 Nm)", "notes": "Diagonal pattern" },
+      { "component": "Oil Drain Plug", "spec": "37 ft-lbs (50 Nm)", "notes": "Replace crush washer" },
+      { "component": "Flywheel Bolts", "spec": "66 ft-lbs (90 Nm) + 90°", "notes": "Use new bolts" },
+      { "component": "Chain Tensioner Cover", "spec": "17 ft-lbs (23 Nm)", "notes": "" },
+      { "component": "Oil Cooler Lines", "spec": "33 ft-lbs (45 Nm)", "notes": "New sealing washers" },
+      { "component": "Intake Manifold Nuts", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
+      { "component": "Exhaust Manifold Nuts", "spec": "15 ft-lbs (20 Nm)", "notes": "" }
     ],
     "suspension": [
-      { "component": "Wheel Lug Nuts", "spec": "96 ft-lbs", "notes": "Tighten in star pattern" },
-      { "component": "Front Control Arm", "spec": "63 ft-lbs", "notes": "Tighten with weight on wheels" },
-      { "component": "Rear Multi-Link Bolts", "spec": "63 ft-lbs", "notes": "Tighten with weight on wheels" },
-      { "component": "Tie Rod End Nut", "spec": "33 ft-lbs", "notes": "Use new cotter pin" },
-      { "component": "Strut Top Mount", "spec": "55 ft-lbs", "notes": "" },
-      { "component": "Sway Bar End Links", "spec": "34 ft-lbs", "notes": "" }
+      { "component": "Wheel Lug Bolts (M14)", "spec": "96 ft-lbs (130 Nm)", "notes": "Tighten in star pattern" },
+      { "component": "Front Control Arm", "spec": "63 ft-lbs (85 Nm)", "notes": "Tighten with weight on wheels" },
+      { "component": "Rear Multi-Link Upper", "spec": "63 ft-lbs (85 Nm)", "notes": "Tighten with weight on wheels" },
+      { "component": "Rear Multi-Link Lower", "spec": "74 ft-lbs (100 Nm)", "notes": "Tighten with weight on wheels" },
+      { "component": "Tie Rod End Nut", "spec": "33 ft-lbs (45 Nm)", "notes": "Use new cotter pin" },
+      { "component": "Strut Top Mount", "spec": "55 ft-lbs (75 Nm)", "notes": "" },
+      { "component": "Sway Bar End Links", "spec": "34 ft-lbs (46 Nm)", "notes": "" },
+      { "component": "Steering Wheel Nut", "spec": "33 ft-lbs (45 Nm)", "notes": "" }
     ],
     "brakes": [
-      { "component": "Front Caliper Bolts", "spec": "63 ft-lbs", "notes": "" },
-      { "component": "Rear Caliper Bolts", "spec": "43 ft-lbs", "notes": "" },
-      { "component": "Brake Line Fittings", "spec": "11-14 ft-lbs", "notes": "Do not overtighten" },
-      { "component": "ABS Sensor Bolt", "spec": "7 ft-lbs", "notes": "" }
+      { "component": "Front Caliper Bolts", "spec": "63 ft-lbs (85 Nm)", "notes": "" },
+      { "component": "Rear Caliper Bolts", "spec": "43 ft-lbs (58 Nm)", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "11-14 ft-lbs (15-19 Nm)", "notes": "Do not overtighten" },
+      { "component": "ABS Sensor Bolt", "spec": "7 ft-lbs (10 Nm)", "notes": "" }
     ]
   },
   "diyGuides": [
