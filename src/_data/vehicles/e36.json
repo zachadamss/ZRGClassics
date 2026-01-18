@@ -65,7 +65,8 @@
           "partNumber": "17111728907",
           "price": "$120-200"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "vanos",
@@ -109,7 +110,8 @@
           "partNumber": "11361433513",
           "price": "$80-120"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "rtab",
@@ -154,7 +156,8 @@
           "partNumber": "33321090031",
           "price": "$150-250"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "window-regulator",
@@ -198,7 +201,8 @@
           "partNumber": "67628360977",
           "price": "$50-80"
         }
-      ]
+      ],
+      "difficulty": "Easy"
     },
     {
       "id": "oil-leaks",
@@ -248,7 +252,8 @@
           "partNumber": "12141748398",
           "price": "$10-20"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "control-arm-bushings",
@@ -298,7 +303,8 @@
           "partNumber": "31126758510",
           "price": "$30-50"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "ignition-system",
@@ -343,7 +349,8 @@
           "partNumber": "12121727583",
           "price": "$80-120"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     }
   ],
   "guides": [

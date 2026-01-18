@@ -57,7 +57,8 @@
           "partNumber": "11311725640",
           "price": "$80-150"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "vanos-issues",
@@ -97,7 +98,8 @@
           "partNumber": "11361433513",
           "price": "$80-120"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "cooling-system",
@@ -148,7 +150,8 @@
           "partNumber": "17111723333",
           "price": "$150-280"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "pixel-display",
@@ -188,7 +191,8 @@
           "partNumber": "Various aftermarket",
           "price": "$15-30"
         }
-      ]
+      ],
+      "difficulty": "Easy"
     },
     {
       "id": "rust-corrosion",
@@ -229,7 +233,8 @@
           "partNumber": "Various",
           "price": "$80-150"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "oil-leaks",
@@ -275,7 +280,8 @@
           "partNumber": "11131437237",
           "price": "$30-60"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "suspension-wear",
@@ -322,7 +328,8 @@
           "partNumber": "31331133674",
           "price": "$30-60"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "electrical-issues",
@@ -363,7 +370,8 @@
           "partNumber": "12631709557",
           "price": "$40-70"
         }
-      ]
+      ],
+      "difficulty": "Easy"
     }
   ],
   "guides": [

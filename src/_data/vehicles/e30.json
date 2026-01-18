@@ -58,7 +58,8 @@
           "partNumber": "11519070755",
           "price": "$50-80"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "rust-corrosion",
@@ -108,7 +109,8 @@
           "partNumber": "N/A",
           "price": "$50-100"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "electrical-gremlins",
@@ -158,7 +160,8 @@
           "partNumber": "61321377135",
           "price": "$50-90"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "suspension-bushings",
@@ -208,7 +211,8 @@
           "partNumber": "32111125186",
           "price": "$25-45"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "fuel-injection",
@@ -259,7 +263,8 @@
           "partNumber": "13411286064",
           "price": "$60-100"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "cooling-system",
@@ -309,7 +314,8 @@
           "partNumber": "Various",
           "price": "$80-150"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     }
   ],
   "guides": [

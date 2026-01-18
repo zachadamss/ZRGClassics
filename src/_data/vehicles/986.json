@@ -53,7 +53,8 @@
           "partNumber": "99610322571",
           "price": "$30-60"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "rms-leak",
@@ -97,7 +98,8 @@
           "partNumber": "98611691100",
           "price": "$400-700"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "coolant-pipes",
@@ -142,7 +144,8 @@
           "partNumber": "99610601501",
           "price": "$30-60"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "convertible-top",
@@ -188,7 +191,8 @@
           "partNumber": "Pentosin CHF 11S",
           "price": "$25-40"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "aos",
@@ -228,7 +232,8 @@
           "partNumber": "Various",
           "price": "$50-100"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "bore-scoring",
@@ -268,7 +273,8 @@
           "partNumber": "N/A",
           "price": "$5000-10000"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "window-regulator",
@@ -307,7 +313,8 @@
           "partNumber": "98654207604",
           "price": "$150-250"
         }
-      ]
+      ],
+      "difficulty": "Easy"
     }
   ],
   "guides": [

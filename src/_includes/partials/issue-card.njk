@@ -1,5 +1,10 @@
 <article class="issue-card" id="{{ issue.id }}">
-    <h3>{{ issue.title }}</h3>
+    <div class="issue-header">
+        <h3>{{ issue.title }}</h3>
+        {% if issue.difficulty %}
+        <span class="difficulty-badge difficulty-{{ issue.difficulty | lower }}">{{ issue.difficulty }}</span>
+        {% endif %}
+    </div>
     <p class="symptoms"><strong>Symptoms:</strong> {{ issue.symptoms }}</p>
     <p class="description">{{ issue.description }}</p>
 

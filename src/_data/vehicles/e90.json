@@ -56,7 +56,8 @@
           "partNumber": "11537549476",
           "price": "$80-150"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "oil-leaks",
@@ -101,7 +102,8 @@
           "partNumber": "11428637820",
           "price": "$15-30"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "hpfp-failure",
@@ -135,7 +137,8 @@
           "partNumber": "13517616170",
           "price": "$400-700"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "injector-issues",
@@ -175,7 +178,8 @@
           "partNumber": "Various",
           "price": "$30-60"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "vanos-issues",
@@ -215,7 +219,8 @@
           "partNumber": "11367516293",
           "price": "$100-180"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "wastegate-rattle",
@@ -254,7 +259,8 @@
           "partNumber": "11427573211",
           "price": "$80-150"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "carbon-buildup",
@@ -294,7 +300,8 @@
           "partNumber": "11617547242",
           "price": "$25-50"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "rod-bearings",
@@ -334,7 +341,8 @@
           "partNumber": "11247840093",
           "price": "$100-200"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "timing-chain",
@@ -374,7 +382,8 @@
           "partNumber": "Various",
           "price": "$150-300"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     }
   ],
   "guides": [

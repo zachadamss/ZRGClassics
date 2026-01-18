@@ -54,7 +54,8 @@
           "partNumber": "99310704900",
           "price": "$20-40"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "dual-mass-flywheel",
@@ -99,7 +100,8 @@
           "partNumber": "99311691100",
           "price": "$450-750"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "hydraulic-lifters",
@@ -139,7 +141,8 @@
           "partNumber": "Various",
           "price": "$600-1000"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "g50-transmission",
@@ -179,7 +182,8 @@
           "partNumber": "99342407500",
           "price": "$30-60"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "suspension-wear",
@@ -225,7 +229,8 @@
           "partNumber": "Various",
           "price": "$150-300 each"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "power-steering",
@@ -265,7 +270,8 @@
           "partNumber": "99334743104",
           "price": "$80-150"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "hvac-issues",
@@ -311,7 +317,8 @@
           "partNumber": "Various",
           "price": "$200-400"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "turbo-specific",
@@ -352,7 +359,8 @@
           "partNumber": "Various",
           "price": "$400-800"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     }
   ],
   "guides": [

@@ -60,7 +60,8 @@
           "partNumber": "11311265513",
           "price": "$30-50 each"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "timing-chain",
@@ -105,7 +106,8 @@
           "partNumber": "11311308652",
           "price": "$60-100"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "rust-corrosion",
@@ -151,7 +153,8 @@
           "partNumber": "Various",
           "price": "$100-250"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "oil-leaks",
@@ -191,7 +194,8 @@
           "partNumber": "11131730234",
           "price": "$30-60"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "electrical-issues",
@@ -237,7 +241,8 @@
           "partNumber": "Various",
           "price": "$20-40"
         }
-      ]
+      ],
+      "difficulty": "Easy"
     },
     {
       "id": "suspension-wear",
@@ -284,7 +289,8 @@
           "partNumber": "32111125186",
           "price": "$40-70"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "cooling-system",
@@ -330,7 +336,8 @@
           "partNumber": "17111712447",
           "price": "$150-250"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "fuel-injection",
@@ -376,7 +383,8 @@
           "partNumber": "13641730060",
           "price": "$40-80 each"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     }
   ],
   "guides": [

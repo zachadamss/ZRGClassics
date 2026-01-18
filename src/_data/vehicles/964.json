@@ -54,7 +54,8 @@
           "partNumber": "96410573900",
           "price": "$30-60"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "dual-mass-flywheel",
@@ -99,7 +100,8 @@
           "partNumber": "96411691100",
           "price": "$400-700"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "distributor-issues",
@@ -144,7 +146,8 @@
           "partNumber": "93060291800",
           "price": "$50-100"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "power-steering",
@@ -184,7 +187,8 @@
           "partNumber": "Various",
           "price": "$80-150"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "g50-transmission",
@@ -224,7 +228,8 @@
           "partNumber": "96442407500",
           "price": "$30-60"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "cylinder-head-studs",
@@ -264,7 +269,8 @@
           "partNumber": "96410421500",
           "price": "$200-400"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "ac-system",
@@ -305,7 +311,8 @@
           "partNumber": "Various",
           "price": "$100-200"
         }
-      ]
+      ],
+      "difficulty": "Easy"
     },
     {
       "id": "electrical-issues",
@@ -346,7 +353,8 @@
           "partNumber": "Various",
           "price": "$30-60"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     }
   ],
   "guides": [

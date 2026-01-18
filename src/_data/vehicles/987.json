@@ -49,7 +49,8 @@
           "partNumber": "LN Engineering",
           "price": "$80-120"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "bore-scoring",
@@ -84,7 +85,8 @@
           "partNumber": "LN Engineering",
           "price": "$800-1200/cyl"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "rms-leak",
@@ -119,7 +121,8 @@
           "partNumber": "99710322571",
           "price": "$30-60"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "aos-failure",
@@ -154,7 +157,8 @@
           "partNumber": "99710704453",
           "price": "$200-350"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "coolant-pipes",
@@ -194,7 +198,8 @@
           "partNumber": "99710601106",
           "price": "$120-200"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "convertible-top",
@@ -235,7 +240,8 @@
           "partNumber": "Various",
           "price": "$30-60"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "carbon-buildup",
@@ -275,7 +281,8 @@
           "partNumber": "9A111023500",
           "price": "$20-40"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "window-regulators",
@@ -310,7 +317,8 @@
           "partNumber": "98754207504",
           "price": "$150-250"
         }
-      ]
+      ],
+      "difficulty": "Easy"
     }
   ],
   "guides": [

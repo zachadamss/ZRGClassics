@@ -49,7 +49,8 @@
           "partNumber": "LN Engineering",
           "price": "$80-120"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "bore-scoring",
@@ -89,7 +90,8 @@
           "partNumber": "Various",
           "price": "$1500-2500"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "rms-leak",
@@ -129,7 +131,8 @@
           "partNumber": "99610322870",
           "price": "$20-40"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "aos",
@@ -164,7 +167,8 @@
           "partNumber": "99610702558",
           "price": "$200-350"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "coolant-system",
@@ -205,7 +209,8 @@
           "partNumber": "99610601157",
           "price": "$100-180"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "headlight-seals",
@@ -245,7 +250,8 @@
           "partNumber": "99663103214",
           "price": "$400-800"
         }
-      ]
+      ],
+      "difficulty": "Easy"
     },
     {
       "id": "suspension",
@@ -285,7 +291,8 @@
           "partNumber": "99634105000",
           "price": "$30-60"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     }
   ],
   "guides": [

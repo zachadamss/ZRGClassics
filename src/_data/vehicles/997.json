@@ -49,7 +49,8 @@
           "partNumber": "Flat Six Innovations",
           "price": "$1200-1500"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "bore-scoring",
@@ -84,7 +85,8 @@
           "partNumber": "LN Engineering",
           "price": "$800-1200/cyl"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "pdk",
@@ -124,7 +126,8 @@
           "partNumber": "9G132153300",
           "price": "$40-80"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "pasm",
@@ -169,7 +172,8 @@
           "partNumber": "Various",
           "price": "$300-500"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "coolant-pipes",
@@ -209,7 +213,8 @@
           "partNumber": "99710601106",
           "price": "$120-200"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "carbon-buildup",
@@ -249,7 +254,8 @@
           "partNumber": "9A111023500",
           "price": "$20-40"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "rms-leak",
@@ -283,7 +289,8 @@
           "partNumber": "99710322571",
           "price": "$30-60"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     }
   ],
   "guides": [

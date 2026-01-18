@@ -54,7 +54,8 @@
           "partNumber": "95110601100",
           "price": "$60-100"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "cis-fuel-injection",
@@ -101,7 +102,8 @@
           "partNumber": "Various Bosch",
           "price": "$40-80"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "clutch-cable",
@@ -136,7 +138,8 @@
           "partNumber": "94423721106",
           "price": "$40-80"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "rust",
@@ -177,7 +180,8 @@
           "partNumber": "Various",
           "price": "$80-150"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "electrical",
@@ -218,7 +222,8 @@
           "partNumber": "Various",
           "price": "$40-80"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "cooling-system",
@@ -264,7 +269,8 @@
           "partNumber": "Various",
           "price": "$150-300"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "transaxle",
@@ -309,7 +315,8 @@
           "partNumber": "Various",
           "price": "$30-50"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "suspension",
@@ -350,7 +357,8 @@
           "partNumber": "Various",
           "price": "$60-120"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     }
   ],
   "guides": [

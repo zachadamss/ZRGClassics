@@ -1195,13 +1195,71 @@ button:hover {
     border-left-color: var(--gulf-blue);
 }
 
+.issue-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+}
+
 .issue-card h3 {
     color: var(--primary-color);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0;
+    flex: 1;
 }
 
 [data-theme="dark"] .issue-card h3 {
     color: var(--gulf-blue);
+}
+
+.difficulty-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.difficulty-easy {
+    background-color: rgba(34, 197, 94, 0.15);
+    color: #16a34a;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+[data-theme="dark"] .difficulty-easy {
+    background-color: rgba(34, 197, 94, 0.2);
+    color: #4ade80;
+    border-color: rgba(34, 197, 94, 0.4);
+}
+
+.difficulty-moderate {
+    background-color: rgba(234, 179, 8, 0.15);
+    color: #ca8a04;
+    border: 1px solid rgba(234, 179, 8, 0.3);
+}
+
+[data-theme="dark"] .difficulty-moderate {
+    background-color: rgba(234, 179, 8, 0.2);
+    color: #facc15;
+    border-color: rgba(234, 179, 8, 0.4);
+}
+
+.difficulty-advanced {
+    background-color: rgba(239, 68, 68, 0.15);
+    color: #dc2626;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+[data-theme="dark"] .difficulty-advanced {
+    background-color: rgba(239, 68, 68, 0.2);
+    color: #f87171;
+    border-color: rgba(239, 68, 68, 0.4);
 }
 
 .issue-card .symptoms {
@@ -2853,18 +2911,46 @@ nav ul li.dropdown.touch-open .dropdown-menu {
    Print Styles
    ================================ */
 @media print {
+    /* Hide non-essential elements */
     header, footer, .template-controls, .invoice-actions,
-    .add-row-btn, .remove-row-btn, .no-print, #theme-toggle, .modal {
+    .add-row-btn, .remove-row-btn, .no-print, #theme-toggle, .modal,
+    .quick-links, .breadcrumb, .hamburger, .nav-overlay,
+    .hero-actions, .btn, .guide-card a, .supplier-link {
         display: none !important;
     }
 
+    /* Base print styles */
     body {
         background-color: #fff !important;
         color: #000 !important;
-        font-size: 12pt;
+        font-size: 11pt;
+        line-height: 1.5;
     }
 
-    main { padding: 0; }
+    * {
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a {
+        color: #000 !important;
+        text-decoration: none !important;
+    }
+
+    /* Show URLs after links for reference */
+    .issue-card .attribution a::after,
+    .supplier-item a::after {
+        content: " (" attr(href) ")";
+        font-size: 9pt;
+        color: #666;
+    }
+
+    main {
+        padding: 0 !important;
+        max-width: 100% !important;
+    }
+
+    /* Invoice print styles */
     .invoice-container { max-width: 100%; padding: 0; margin: 0; }
     .invoice-title { color: #000 !important; }
     .invoice-section { border: 1px solid #ccc; page-break-inside: avoid; }
@@ -2875,7 +2961,320 @@ nav ul li.dropdown.touch-open .dropdown-menu {
     .summary-total { border-top-color: #000 !important; }
     .summary-total span:last-child { color: #000 !important; }
 
-    @page { margin: 0.75in; }
+    /* Vehicle page print styles */
+    .vehicle-hero {
+        background: none !important;
+        color: #000 !important;
+        min-height: auto !important;
+        padding: 1rem 0 !important;
+        border-bottom: 2px solid #000;
+        margin-bottom: 1rem;
+    }
+
+    .vehicle-hero::before {
+        display: none !important;
+    }
+
+    .vehicle-hero h1 {
+        color: #000 !important;
+        font-size: 24pt !important;
+        margin-bottom: 0.5rem;
+    }
+
+    .vehicle-meta, .vehicle-engines {
+        color: #333 !important;
+    }
+
+    .engine-tag {
+        background: #f0f0f0 !important;
+        color: #000 !important;
+        border: 1px solid #ccc !important;
+        padding: 0.2rem 0.5rem !important;
+        font-size: 9pt !important;
+    }
+
+    /* Resource sections */
+    .resource-content {
+        padding: 0 !important;
+    }
+
+    .resource-section {
+        page-break-inside: avoid;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-title {
+        color: #000 !important;
+        font-size: 16pt !important;
+        border-bottom: 1px solid #000;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-subtitle {
+        color: #333 !important;
+        font-size: 10pt !important;
+    }
+
+    .section-divider {
+        display: none !important;
+    }
+
+    /* Issue cards for print */
+    .issue-card {
+        background: #fff !important;
+        border: 1px solid #ccc !important;
+        border-left: 4px solid #000 !important;
+        padding: 1rem !important;
+        margin-bottom: 1rem !important;
+        page-break-inside: avoid;
+    }
+
+    .issue-header {
+        margin-bottom: 0.5rem;
+    }
+
+    .issue-card h3 {
+        color: #000 !important;
+        font-size: 12pt !important;
+        margin-bottom: 0 !important;
+    }
+
+    .difficulty-badge {
+        border: 1px solid #000 !important;
+        background: transparent !important;
+        color: #000 !important;
+        font-size: 8pt !important;
+        padding: 0.15rem 0.5rem !important;
+    }
+
+    .difficulty-easy::before { content: "DIY: "; }
+    .difficulty-moderate::before { content: "DIY: "; }
+    .difficulty-advanced::before { content: "DIY: "; }
+
+    .issue-card .symptoms {
+        background: #f5f5f5 !important;
+        border-left: 3px solid #666 !important;
+        font-size: 10pt !important;
+        padding: 0.5rem !important;
+    }
+
+    .issue-card .description {
+        font-size: 10pt !important;
+        line-height: 1.6;
+    }
+
+    .issue-card .fix h4,
+    .repair-costs h4,
+    .parts-list h4 {
+        color: #000 !important;
+        font-size: 10pt !important;
+        margin-bottom: 0.25rem;
+    }
+
+    .issue-card .fix ul {
+        margin-left: 1.25rem;
+        font-size: 10pt;
+    }
+
+    .issue-card .fix li {
+        margin-bottom: 0.25rem;
+    }
+
+    /* Repair costs for print */
+    .repair-costs {
+        background: #f5f5f5 !important;
+        border: 1px solid #ccc !important;
+        padding: 0.75rem !important;
+    }
+
+    .cost-comparison {
+        gap: 1rem;
+    }
+
+    .cost-item {
+        background: #fff !important;
+        border: 1px solid #ccc !important;
+        padding: 0.5rem !important;
+    }
+
+    .cost-label {
+        color: #666 !important;
+        font-size: 8pt !important;
+    }
+
+    .cost-value {
+        color: #000 !important;
+        font-size: 11pt !important;
+    }
+
+    .cost-notes {
+        font-size: 9pt !important;
+        color: #333 !important;
+    }
+
+    /* Parts table for print */
+    .parts-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 9pt;
+    }
+
+    .parts-table th {
+        background: #f0f0f0 !important;
+        color: #000 !important;
+        border: 1px solid #ccc;
+        padding: 0.4rem;
+        text-align: left;
+    }
+
+    .parts-table td {
+        border: 1px solid #ccc;
+        padding: 0.4rem;
+    }
+
+    .parts-table .part-number {
+        font-family: monospace;
+        font-size: 8pt;
+    }
+
+    /* Torque specs for print */
+    .specs-container {
+        page-break-inside: avoid;
+    }
+
+    .specs-category {
+        margin-bottom: 1rem;
+    }
+
+    .specs-category h3 {
+        color: #000 !important;
+        font-size: 11pt !important;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 0.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .specs-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 9pt;
+    }
+
+    .specs-table th {
+        background: #f0f0f0 !important;
+        color: #000 !important;
+        border: 1px solid #ccc;
+        padding: 0.4rem;
+        text-align: left;
+    }
+
+    .specs-table td {
+        border: 1px solid #ccc;
+        padding: 0.4rem;
+    }
+
+    /* Supplier list for print */
+    .supplier-tabs {
+        display: none !important;
+    }
+
+    .supplier-content {
+        display: block !important;
+    }
+
+    .supplier-panel {
+        display: block !important;
+        margin-bottom: 1rem;
+    }
+
+    .supplier-panel::before {
+        content: attr(data-tab) " Suppliers";
+        display: block;
+        font-weight: bold;
+        font-size: 11pt;
+        margin-bottom: 0.5rem;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 0.25rem;
+    }
+
+    .supplier-item {
+        border: 1px solid #ccc !important;
+        background: #fff !important;
+        padding: 0.5rem !important;
+        margin-bottom: 0.5rem;
+    }
+
+    .supplier-name {
+        color: #000 !important;
+        font-size: 10pt !important;
+    }
+
+    .supplier-notes {
+        color: #333 !important;
+        font-size: 9pt !important;
+    }
+
+    /* Guide cards for print */
+    .guide-grid {
+        display: block;
+    }
+
+    .guide-card {
+        border: 1px solid #ccc !important;
+        background: #fff !important;
+        padding: 0.75rem !important;
+        margin-bottom: 0.75rem;
+        page-break-inside: avoid;
+    }
+
+    .guide-card h3 {
+        color: #000 !important;
+        font-size: 11pt !important;
+    }
+
+    .guide-description {
+        font-size: 9pt !important;
+        color: #333 !important;
+    }
+
+    .guide-meta {
+        font-size: 8pt !important;
+    }
+
+    .difficulty, .time-estimate {
+        background: #f0f0f0 !important;
+        color: #000 !important;
+        border: 1px solid #ccc !important;
+    }
+
+    /* Attribution / sources */
+    .attribution {
+        font-size: 9pt !important;
+        color: #666 !important;
+        border-top: 1px solid #ccc;
+        padding-top: 0.5rem;
+        margin-top: 0.75rem;
+    }
+
+    /* Print header with page title */
+    .vehicle-hero-content::after {
+        content: "Printed from ZRGClassics.com";
+        display: block;
+        font-size: 9pt;
+        color: #666;
+        margin-top: 0.5rem;
+    }
+
+    /* Page settings */
+    @page {
+        margin: 0.5in;
+        size: letter;
+    }
+
+    @page :first {
+        margin-top: 0.5in;
+    }
 }
 
 /* ================================

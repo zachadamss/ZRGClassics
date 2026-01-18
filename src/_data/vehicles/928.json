@@ -61,7 +61,8 @@
           "partNumber": "92810524006",
           "price": "$100-200"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "cam-tower-gaskets",
@@ -102,7 +103,8 @@
           "partNumber": "92810593300",
           "price": "$50-100"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "wiring-harness",
@@ -143,7 +145,8 @@
           "partNumber": "Various",
           "price": "$50-150"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "automatic-transmission",
@@ -184,7 +187,8 @@
           "partNumber": "92832590100",
           "price": "$30-60"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "cooling-system",
@@ -230,7 +234,8 @@
           "partNumber": "Various",
           "price": "$300-600"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "vacuum-system",
@@ -270,7 +275,8 @@
           "partNumber": "92857112101",
           "price": "$50-100"
         }
-      ]
+      ],
+      "difficulty": "Easy"
     },
     {
       "id": "weissach-axle",
@@ -311,7 +317,8 @@
           "partNumber": "92833104700",
           "price": "$80-150"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "popup-headlights",
@@ -351,7 +358,8 @@
           "partNumber": "92863120300",
           "price": "$40-80"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "instrument-cluster",
@@ -391,7 +399,8 @@
           "partNumber": "Various",
           "price": "$20-50"
         }
-      ]
+      ],
+      "difficulty": "Easy"
     },
     {
       "id": "ac-system",
@@ -432,7 +441,8 @@
           "partNumber": "Various",
           "price": "$100-200"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     }
   ],
   "guides": [

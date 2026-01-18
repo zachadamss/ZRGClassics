@@ -147,7 +147,9 @@
   - All 132 issues across 17 vehicles now include DIY and Shop cost estimates
   - Added OEM part numbers and price ranges for common replacement parts
   - Cost notes explain labor hours, considerations, and recommendations
-- [ ] Add difficulty ratings for DIY repairs
+- [x] **Add difficulty ratings for DIY repairs** - Easy/Moderate/Advanced badges on all 132 issues
+  - Ratings based on tool requirements, experience level, and complexity
+  - Color-coded badges (green/yellow/red) visible on issue cards
 - [x] Mobile navigation improvements (hamburger menu)
 - [x] Search functionality across all resources
 - [x] **Mobile Responsiveness Fixes** - Fixed vehicle page layout issues on mobile
@@ -159,7 +161,7 @@
 - [ ] Newsletter signup for launch notifications
 - [x] Add more vehicle platforms (E90, 987, 991, etc.) - Added E28, E34, E39, E90, 964, 987, 991, 993
 - [x] Add better navigation structure/home page for each brand to see all of the models, and then the same for each model to see all of the resources for that model.
-- [ ] Adjust color scheme to match color codes of vintage porsche racing in a very aesthetic, modern, and still timeless way.
+- [x] **Adjust color scheme to match vintage Porsche racing aesthetics** - Gulf livery inspired colors implemented throughout site
 - [x] Fix usability on mobile, does not work well, user menu is not fully visible and page is not resizing correctly.
 - [x] Fix mobile responsiveness for vehicle pages (quick-links, engine tags, search results)  
 
@@ -173,7 +175,7 @@
 - [x] **Porsche 928** - Add detailed common issues content (timing belt, V8 specific issues, electrical gremlins)
 
 ### Design & UX
-- [ ] Adjust color scheme to match vintage Porsche racing aesthetics (Gulf livery, Rothman's, Martini colors)
+- [x] Adjust color scheme to match vintage Porsche racing aesthetics (Gulf livery colors)
 - [ ] Add hero images to brand landing pages (BMW and Porsche index pages)
 - [ ] Add vehicle silhouette or icon graphics to resource cards
 - [ ] Improve typography hierarchy on resource pages
@@ -182,10 +184,14 @@
 - [x] Add search functionality across all resources
 - [x] Expand search to include torque specs, guides, DIY guides, and suppliers
 - [ ] Add "Related Issues" links between similar problems across platforms
-- [ ] Add print-friendly styling for resource pages (mechanics can print guides)
+- [x] **Add print-friendly styling for resource pages** - Comprehensive print CSS for mechanics
+  - Clean black/white layout optimized for printing
+  - Issue cards, torque specs, parts tables all print-ready
+  - URLs shown inline for reference sources
+  - Page break handling to avoid splitting content
 - [ ] Add "Report Issue" or "Suggest Edit" links for community contributions
 - [x] Add estimated repair costs to issue cards
-- [ ] Add difficulty ratings for DIY repairs (Easy/Moderate/Advanced)
+- [x] **Add difficulty ratings for DIY repairs** - Easy/Moderate/Advanced badges on all issues
 - [x] Add parts links or part numbers where applicable
 
 ### New Platforms to Add

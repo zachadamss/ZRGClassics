@@ -49,7 +49,8 @@
           "partNumber": "Various",
           "price": "$200-400"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "carbon-buildup",
@@ -89,7 +90,8 @@
           "partNumber": "9A111024900",
           "price": "$25-50"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "pdk-issues",
@@ -129,7 +131,8 @@
           "partNumber": "9G132153300",
           "price": "$40-80"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "pasm-failures",
@@ -174,7 +177,8 @@
           "partNumber": "Various",
           "price": "$350-550"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "oil-consumption",
@@ -214,7 +218,8 @@
           "partNumber": "99110722553",
           "price": "$20-40"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "turbo-specific",
@@ -254,7 +259,8 @@
           "partNumber": "Various",
           "price": "$100-200"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "convertible-top",
@@ -294,7 +300,8 @@
           "partNumber": "Various",
           "price": "$50-100"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "steering-column",
@@ -334,7 +341,8 @@
           "partNumber": "99136115500",
           "price": "$200-350"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     }
   ],
   "guides": [

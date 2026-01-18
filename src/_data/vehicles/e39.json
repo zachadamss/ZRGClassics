@@ -63,7 +63,8 @@
           "partNumber": "17117503249",
           "price": "$180-300"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "vanos-issues",
@@ -108,7 +109,8 @@
           "partNumber": "11361433513",
           "price": "$80-120"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "disa-valve",
@@ -148,7 +150,8 @@
           "partNumber": "Various aftermarket",
           "price": "$30-50"
         }
-      ]
+      ],
+      "difficulty": "Moderate"
     },
     {
       "id": "thrust-arm-bushings",
@@ -188,7 +191,8 @@
           "partNumber": "31126774826",
           "price": "$60-100"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "timing-chain-guides",
@@ -228,7 +232,8 @@
           "partNumber": "Various",
           "price": "$200-350"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "valley-pan-gasket",
@@ -268,7 +273,8 @@
           "partNumber": "Various",
           "price": "$20-40"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "oil-leaks",
@@ -309,7 +315,8 @@
           "partNumber": "11428637820",
           "price": "$15-30"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "suspension-wear",
@@ -355,7 +362,8 @@
           "partNumber": "32106774335",
           "price": "$50-80"
         }
-      ]
+      ],
+      "difficulty": "Advanced"
     },
     {
       "id": "pixels-final-stage",
@@ -395,7 +403,8 @@
           "partNumber": "64116923204",
           "price": "$80-150"
         }
-      ]
+      ],
+      "difficulty": "Easy"
     }
   ],
   "guides": [
