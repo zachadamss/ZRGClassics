@@ -10,6 +10,12 @@
 - [x] Updated About page with new mission
 - [x] Dark mode support on all new pages
 - [x] Search functionality with model and keyword filtering
+- [x] **Expanded Search** - Search now includes torque specs, guides, and suppliers
+  - 74 torque specifications indexed across all vehicles
+  - 32 guides (restoration + DIY) searchable
+  - 11 parts suppliers indexed
+  - Type filtering (Issues, Torque Specs, Guides, Suppliers)
+  - Styled result cards for each content type
 - [x] **11ty Migration** - Converted from static HTML to 11ty-powered static site
   - Nunjucks templating with layouts and partials
   - Data-driven vehicle pages from JSON files
@@ -145,6 +151,7 @@
 
 ### Features
 - [x] Add search functionality across all resources
+- [x] Expand search to include torque specs, guides, DIY guides, and suppliers
 - [ ] Add "Related Issues" links between similar problems across platforms
 - [ ] Add print-friendly styling for resource pages (mechanics can print guides)
 - [ ] Add "Report Issue" or "Suggest Edit" links for community contributions
