@@ -281,6 +281,129 @@ nav ul li.dropdown:hover .dropdown-menu {
     display: flex;
 }
 
+/* Nested Dropdown (Submenu) Styles */
+.dropdown-item.has-submenu {
+    position: relative;
+}
+
+.dropdown-item.has-submenu > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.submenu-arrow {
+    margin-left: 0.5rem;
+    font-size: 0.7em;
+    transition: transform 0.3s ease;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #004c53;
+    min-width: 180px;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    flex-direction: column;
+}
+
+.submenu li {
+    width: 100%;
+}
+
+.submenu li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+}
+
+.submenu li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Show submenu on hover (desktop) */
+.dropdown-item.has-submenu:hover .submenu {
+    display: flex;
+}
+
+.dropdown-item.has-submenu:hover .submenu-arrow {
+    transform: rotate(90deg);
+}
+
+/* Touch-open support for nested dropdowns */
+.dropdown-item.has-submenu.touch-open .submenu {
+    display: flex;
+}
+
+.dropdown-item.has-submenu.touch-open .submenu-arrow {
+    transform: rotate(90deg);
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+    padding: 1rem 2rem;
+    background-color: rgba(0, 76, 83, 0.05);
+    border-bottom: 1px solid rgba(0, 76, 83, 0.1);
+}
+
+[data-theme="dark"] .breadcrumb {
+    background-color: rgba(255, 140, 0, 0.05);
+    border-bottom-color: rgba(255, 140, 0, 0.1);
+}
+
+.breadcrumb-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.breadcrumb-list li {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-list li:not(:last-child)::after {
+    content: '›';
+    margin-left: 0.5rem;
+    color: #666;
+}
+
+[data-theme="dark"] .breadcrumb-list li:not(:last-child)::after {
+    color: #888;
+}
+
+.breadcrumb-list li a {
+    color: #004c53;
+    text-decoration: none;
+}
+
+.breadcrumb-list li a:hover {
+    text-decoration: underline;
+}
+
+[data-theme="dark"] .breadcrumb-list li a {
+    color: #ff8c00;
+}
+
+.breadcrumb-list li:last-child {
+    color: #666;
+    font-weight: 500;
+}
+
+[data-theme="dark"] .breadcrumb-list li:last-child {
+    color: #aaa;
+}
+
 /* Resource Cards */
 .resource-grid {
     display: grid;
@@ -1150,6 +1273,53 @@ nav ul li.dropdown.touch-open .dropdown-menu {
     .dropdown-menu li a {
         padding: 0.75rem 0;
         font-size: 1rem;
+    }
+
+    /* Mobile Nested Dropdown (Submenu) Styles */
+    .dropdown-item.has-submenu > a {
+        justify-content: flex-start;
+    }
+
+    .dropdown-item.has-submenu .submenu-arrow {
+        margin-left: auto;
+        transition: transform 0.3s ease;
+    }
+
+    .dropdown-item.has-submenu.open .submenu-arrow {
+        transform: rotate(90deg);
+    }
+
+    .submenu {
+        position: static;
+        box-shadow: none;
+        padding: 0;
+        padding-left: 1rem;
+        background-color: rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        margin-top: 0.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .dropdown-item.has-submenu:hover .submenu {
+        display: none;
+    }
+
+    .dropdown-item.has-submenu.open .submenu {
+        display: flex;
+    }
+
+    .submenu li a {
+        padding: 0.6rem 0;
+        font-size: 0.95rem;
+    }
+
+    /* Breadcrumb mobile adjustments */
+    .breadcrumb {
+        padding: 0.75rem 1rem;
+    }
+
+    .breadcrumb-list {
+        font-size: 0.9rem;
     }
 
     /* Theme toggle in mobile nav */

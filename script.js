@@ -70,6 +70,11 @@ function closeMobileNav() {
     document.querySelectorAll('.dropdown.open').forEach(dropdown => {
         dropdown.classList.remove('open');
     });
+
+    // Close all open nested submenus
+    document.querySelectorAll('.has-submenu.open').forEach(submenu => {
+        submenu.classList.remove('open');
+    });
 }
 
 // Toggle mobile nav
@@ -103,7 +108,7 @@ window.addEventListener('resize', () => {
 const dropdowns = document.querySelectorAll('.dropdown');
 
 dropdowns.forEach(dropdown => {
-    const link = dropdown.querySelector('a');
+    const link = dropdown.querySelector(':scope > a');
 
     link.addEventListener('click', (e) => {
         // Check if we're in mobile view
@@ -114,11 +119,43 @@ dropdowns.forEach(dropdown => {
             dropdowns.forEach(other => {
                 if (other !== dropdown && other.classList.contains('open')) {
                     other.classList.remove('open');
+                    // Also close nested submenus in other dropdowns
+                    other.querySelectorAll('.has-submenu.open').forEach(sub => {
+                        sub.classList.remove('open');
+                    });
                 }
             });
 
             // Toggle current dropdown
             dropdown.classList.toggle('open');
+        }
+    });
+});
+
+// ================================
+// Nested Dropdown (Submenu) Handling - Mobile
+// ================================
+const nestedDropdowns = document.querySelectorAll('.dropdown-item.has-submenu');
+
+nestedDropdowns.forEach(nestedDropdown => {
+    const link = nestedDropdown.querySelector(':scope > a');
+
+    link.addEventListener('click', (e) => {
+        // Only for mobile view
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            // Accordion behavior: close sibling submenus
+            const siblings = nestedDropdown.parentElement.querySelectorAll('.has-submenu.open');
+            siblings.forEach(sibling => {
+                if (sibling !== nestedDropdown) {
+                    sibling.classList.remove('open');
+                }
+            });
+
+            // Toggle current submenu
+            nestedDropdown.classList.toggle('open');
         }
     });
 });
@@ -134,7 +171,7 @@ document.addEventListener('touchstart', () => {
 }, { once: true });
 
 dropdowns.forEach(dropdown => {
-    const link = dropdown.querySelector('a');
+    const link = dropdown.querySelector(':scope > a');
 
     link.addEventListener('touchend', (e) => {
         // Only for desktop-width touch devices
@@ -154,11 +191,37 @@ dropdowns.forEach(dropdown => {
     });
 });
 
+// Touch handling for nested dropdowns on desktop
+nestedDropdowns.forEach(nestedDropdown => {
+    const link = nestedDropdown.querySelector(':scope > a');
+
+    link.addEventListener('touchend', (e) => {
+        // Only for desktop-width touch devices
+        if (window.innerWidth > 768 && touchDevice) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            // Close other touch-opened nested dropdowns
+            nestedDropdowns.forEach(other => {
+                if (other !== nestedDropdown) {
+                    other.classList.remove('touch-open');
+                }
+            });
+
+            // Toggle current nested dropdown
+            nestedDropdown.classList.toggle('touch-open');
+        }
+    });
+});
+
 // Close touch-opened dropdowns when clicking elsewhere
 document.addEventListener('click', (e) => {
     if (!e.target.closest('.dropdown')) {
         dropdowns.forEach(dropdown => {
             dropdown.classList.remove('touch-open');
+        });
+        nestedDropdowns.forEach(nestedDropdown => {
+            nestedDropdown.classList.remove('touch-open');
         });
     }
 });
