@@ -192,11 +192,16 @@
 
 ## Technical Debt
 
-- [ ] Add proper meta descriptions for SEO
-- [ ] Add Open Graph tags for social sharing
+- [x] **Add proper meta descriptions for SEO** - All pages now have unique, descriptive meta descriptions
+  - Static pages: Custom descriptions in frontmatter
+  - Vehicle pages: Auto-generated from vehicle data (model, years, features)
+- [x] **Add Open Graph tags for social sharing** - Full OG and Twitter Card support
+  - og:title, og:description, og:image, og:url, og:type, og:site_name, og:locale
+  - twitter:card, twitter:title, twitter:description, twitter:image, twitter:site
+  - Vehicle pages use hero images as OG images when available
 - [ ] Minify CSS/JS for production
-- [ ] Add sitemap.xml
-- [ ] Add robots.txt
+- [x] **Add sitemap.xml** - Auto-generated sitemap with all 27 pages, proper priorities and change frequencies
+- [x] **Add robots.txt** - Includes sitemap reference and crawl-delay
 - [x] Consider templating system to reduce HTML duplication (navigation in 18 files) - **DONE: 11ty migration**
 - [ ] Add favicon for all pages (some missing)
 - [ ] Optimize images for web (if adding photos)

@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {# Generate dynamic SEO data for vehicle pages #}
+    {% if vehicle and vehicles[vehicle] %}
+        {% set vehicleData = vehicles[vehicle] %}
+        {% set autoDescription = "Complete " + vehicleData.fullName + " (" + vehicleData.years + ") resource guide: common issues, repair costs, torque specs, parts suppliers, and DIY maintenance guides." %}
+        {% set autoKeywords = vehicleData.fullName + ", " + vehicleData.model + " common issues, " + vehicleData.model + " repair guide, " + vehicleData.model + " torque specs, " + vehicleData.brand + " maintenance" %}
+        {% set autoImage = vehicleData.heroImage %}
+    {% endif %}
+
+    <!-- Primary Meta Tags -->
     <title>{{ title }} - {{ site.name }}</title>
-    <link rel="stylesheet" href="{{ '/' if page.url != '/' else '' }}{{ 'styles.css' | url }}">
+    <meta name="title" content="{{ title }} - {{ site.name }}">
+    <meta name="description" content="{{ description | default(autoDescription) | default(site.description) }}">
+    <meta name="keywords" content="{{ keywords | default(autoKeywords) | default(site.keywords) }}">
+    <meta name="author" content="{{ site.name }}">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="{{ ogType | default('website') }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:title" content="{{ ogTitle | default(title) }} - {{ site.name }}">
+    <meta property="og:description" content="{{ ogDescription | default(description) | default(autoDescription) | default(site.description) }}">
+    <meta property="og:image" content="{{ site.url }}{{ ogImage | default(autoImage) | default(site.defaultImage) }}">
+    <meta property="og:site_name" content="{{ site.name }}">
+    <meta property="og:locale" content="{{ site.locale }}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="twitter:title" content="{{ ogTitle | default(title) }} - {{ site.name }}">
+    <meta property="twitter:description" content="{{ ogDescription | default(description) | default(autoDescription) | default(site.description) }}">
+    <meta property="twitter:image" content="{{ site.url }}{{ ogImage | default(autoImage) | default(site.defaultImage) }}">
+    {% if site.twitterHandle %}
+    <meta property="twitter:site" content="{{ site.twitterHandle }}">
+    {% endif %}
+
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ '/' if page.url != '/' else '' }}images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/' if page.url != '/' else '' }}images/favicon.ico">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{ '/' if page.url != '/' else '' }}{{ 'styles.css' | url }}">
 </head>
 <body>
     {% include "partials/header.njk" %}
