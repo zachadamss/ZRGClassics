@@ -66,6 +66,11 @@
           "price": "$120-200"
         }
       ],
+      "relatedIssues": [
+        { "vehicle": "e30", "brand": "BMW", "model": "E30", "issueId": "cooling-system" },
+        { "vehicle": "e46", "brand": "BMW", "model": "E46", "issueId": "cooling-system" },
+        { "vehicle": "e39", "brand": "BMW", "model": "E39", "issueId": "cooling-system" }
+      ],
       "difficulty": "Advanced"
     },
     {
@@ -110,6 +115,12 @@
           "partNumber": "11361433513",
           "price": "$80-120"
         }
+      ],
+      "relatedIssues": [
+        { "vehicle": "e34", "brand": "BMW", "model": "E34", "issueId": "vanos-issues" },
+        { "vehicle": "e46", "brand": "BMW", "model": "E46", "issueId": "vanos" },
+        { "vehicle": "e39", "brand": "BMW", "model": "E39", "issueId": "vanos-issues" },
+        { "vehicle": "e90", "brand": "BMW", "model": "E90", "issueId": "vanos-issues" }
       ],
       "difficulty": "Advanced"
     },
@@ -201,6 +212,11 @@
           "partNumber": "67628360977",
           "price": "$50-80"
         }
+      ],
+      "relatedIssues": [
+        { "vehicle": "e46", "brand": "BMW", "model": "E46", "issueId": "window-regulator" },
+        { "vehicle": "986", "brand": "Porsche", "model": "986 Boxster", "issueId": "window-regulator" },
+        { "vehicle": "987", "brand": "Porsche", "model": "987 Boxster", "issueId": "window-regulators" }
       ],
       "difficulty": "Easy"
     },

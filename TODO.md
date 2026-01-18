@@ -205,7 +205,13 @@
 ### Features
 - [x] Add search functionality across all resources
 - [x] Expand search to include torque specs, guides, DIY guides, and suppliers
-- [ ] Add "Related Issues" links between similar problems across platforms
+- [x] **Add "Related Issues" cross-references** - Links between similar problems across platforms
+  - VANOS issues linked across E34, E36, E39, E46, E90
+  - IMS bearing linked across 986, 987, 996, 997
+  - Timing belt linked across 924, 928, 944, E28, E30
+  - Window regulator linked across E36, E46, 986, 987
+  - Cooling system linked on E36 to related BMWs
+  - Pill-shaped link badges with hover effects
 - [x] **Add print-friendly styling for resource pages** - Comprehensive print CSS for mechanics
   - Clean black/white layout optimized for printing
   - Issue cards, torque specs, parts tables all print-ready

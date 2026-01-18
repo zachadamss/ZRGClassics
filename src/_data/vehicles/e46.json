@@ -57,6 +57,12 @@
           "url": "https://www.e46fanatics.com/forums/"
         }
       ],
+      "relatedIssues": [
+        { "vehicle": "e34", "brand": "BMW", "model": "E34", "issueId": "vanos-issues" },
+        { "vehicle": "e36", "brand": "BMW", "model": "E36", "issueId": "vanos" },
+        { "vehicle": "e39", "brand": "BMW", "model": "E39", "issueId": "vanos-issues" },
+        { "vehicle": "e90", "brand": "BMW", "model": "E90", "issueId": "vanos-issues" }
+      ],
       "difficulty": "Moderate"
     },
     {
@@ -214,6 +220,11 @@
           "name": "FCP Euro",
           "url": "https://www.fcpeuro.com/"
         }
+      ],
+      "relatedIssues": [
+        { "vehicle": "e36", "brand": "BMW", "model": "E36", "issueId": "window-regulator" },
+        { "vehicle": "986", "brand": "Porsche", "model": "986 Boxster", "issueId": "window-regulator" },
+        { "vehicle": "987", "brand": "Porsche", "model": "987 Boxster", "issueId": "window-regulators" }
       ],
       "difficulty": "Easy"
     },

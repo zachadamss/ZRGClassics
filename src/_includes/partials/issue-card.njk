@@ -60,6 +60,20 @@
     </div>
     {% endif %}
 
+    {% if issue.relatedIssues and issue.relatedIssues.length > 0 %}
+    <div class="related-issues">
+        <h4>Similar Issue On Other Models</h4>
+        <div class="related-issues-list">
+            {% for related in issue.relatedIssues %}
+            <a href="/resources/{{ related.brand | lower }}/{{ related.vehicle }}/#{{ related.issueId }}" class="related-issue-link">
+                <span class="related-brand">{{ related.brand }}</span>
+                <span class="related-model">{{ related.model }}</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+
     {% if issue.sources %}
     <div class="attribution">
         <p>Sources:

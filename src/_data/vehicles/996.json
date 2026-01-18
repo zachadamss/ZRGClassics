@@ -50,6 +50,11 @@
           "price": "$80-120"
         }
       ],
+      "relatedIssues": [
+        { "vehicle": "986", "brand": "Porsche", "model": "986 Boxster", "issueId": "ims-bearing" },
+        { "vehicle": "987", "brand": "Porsche", "model": "987 Boxster", "issueId": "ims-bearing" },
+        { "vehicle": "997", "brand": "Porsche", "model": "997 911", "issueId": "ims-bearing" }
+      ],
       "difficulty": "Advanced"
     },
     {

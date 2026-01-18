@@ -1461,6 +1461,74 @@ button:hover {
     font-size: 0.95rem;
 }
 
+/* Related Issues Section */
+.issue-card .related-issues {
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.issue-card .related-issues h4 {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.75rem;
+}
+
+.related-issues-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.related-issue-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.4rem 0.75rem;
+    background: var(--background-alt);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-full);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+
+.related-issue-link:hover {
+    background: var(--gulf-orange);
+    border-color: var(--gulf-orange);
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.related-issue-link .related-brand {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.related-issue-link .related-model {
+    color: var(--text-muted);
+}
+
+.related-issue-link:hover .related-brand,
+.related-issue-link:hover .related-model {
+    color: #fff;
+}
+
+[data-theme="dark"] .related-issue-link {
+    background: var(--navy-light);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .related-issue-link:hover {
+    background: var(--gulf-orange);
+    border-color: var(--gulf-orange);
+}
+
+/* Attribution/Sources */
 .issue-card .attribution {
     font-family: 'Inter', sans-serif;
     font-size: 0.8rem;

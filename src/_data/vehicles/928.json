@@ -62,6 +62,12 @@
           "price": "$100-200"
         }
       ],
+      "relatedIssues": [
+        { "vehicle": "924", "brand": "Porsche", "model": "924", "issueId": "timing-belt" },
+        { "vehicle": "944", "brand": "Porsche", "model": "944", "issueId": "timing-belt" },
+        { "vehicle": "e28", "brand": "BMW", "model": "E28", "issueId": "timing-belt" },
+        { "vehicle": "e30", "brand": "BMW", "model": "E30", "issueId": "timing-belt" }
+      ],
       "difficulty": "Advanced"
     },
     {

@@ -110,6 +110,12 @@
           "price": "$80-120"
         }
       ],
+      "relatedIssues": [
+        { "vehicle": "e34", "brand": "BMW", "model": "E34", "issueId": "vanos-issues" },
+        { "vehicle": "e36", "brand": "BMW", "model": "E36", "issueId": "vanos" },
+        { "vehicle": "e46", "brand": "BMW", "model": "E46", "issueId": "vanos" },
+        { "vehicle": "e90", "brand": "BMW", "model": "E90", "issueId": "vanos-issues" }
+      ],
       "difficulty": "Moderate"
     },
     {

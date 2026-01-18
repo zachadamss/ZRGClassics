@@ -50,6 +50,11 @@
           "price": "$80-120"
         }
       ],
+      "relatedIssues": [
+        { "vehicle": "986", "brand": "Porsche", "model": "986 Boxster", "issueId": "ims-bearing" },
+        { "vehicle": "996", "brand": "Porsche", "model": "996 911", "issueId": "ims-bearing" },
+        { "vehicle": "997", "brand": "Porsche", "model": "997 911", "issueId": "ims-bearing" }
+      ],
       "difficulty": "Advanced"
     },
     {
@@ -317,6 +322,11 @@
           "partNumber": "98754207504",
           "price": "$150-250"
         }
+      ],
+      "relatedIssues": [
+        { "vehicle": "e36", "brand": "BMW", "model": "E36", "issueId": "window-regulator" },
+        { "vehicle": "e46", "brand": "BMW", "model": "E46", "issueId": "window-regulator" },
+        { "vehicle": "986", "brand": "Porsche", "model": "986 Boxster", "issueId": "window-regulator" }
       ],
       "difficulty": "Easy"
     }
