@@ -1,0 +1,993 @@
+---
+layout: layouts/base.njk
+title: Build Cost Calculator
+description: "Estimate restoration and modification costs for vintage BMW and Porsche projects. Compare DIY vs shop costs, track parts and labor, export to PDF or spreadsheet."
+keywords: "restoration cost calculator, car build cost, BMW restoration cost, Porsche restoration cost, project car budget, DIY vs shop cost"
+extraScripts:
+  - tools/build-calculator.js
+---
+<main>
+    <div class="calculator-container">
+        <h1 class="calculator-title">Build Cost Calculator</h1>
+        <p class="calculator-subtitle">Estimate restoration and modification costs for your vintage German car project</p>
+
+        <!-- Project Setup -->
+        <section class="calc-section project-setup">
+            <h2>Project Setup</h2>
+            <div class="calc-row">
+                <div class="calc-col">
+                    <label for="project-name">Project Name</label>
+                    <input type="text" id="project-name" placeholder="My E30 Restoration">
+                </div>
+                <div class="calc-col">
+                    <label for="vehicle-select">Vehicle (Optional - Pre-fills estimates)</label>
+                    <select id="vehicle-select">
+                        <option value="">-- Select Vehicle --</option>
+                        <optgroup label="BMW">
+                            <option value="e28">E28 5-Series (1982-1988)</option>
+                            <option value="e30">E30 3-Series (1982-1994)</option>
+                            <option value="e34">E34 5-Series (1988-1996)</option>
+                            <option value="e36">E36 3-Series (1990-2000)</option>
+                            <option value="e39">E39 5-Series (1995-2003)</option>
+                            <option value="e46">E46 3-Series (1998-2006)</option>
+                            <option value="e90">E90 3-Series (2005-2013)</option>
+                        </optgroup>
+                        <optgroup label="Porsche">
+                            <option value="924">924 (1976-1988)</option>
+                            <option value="944">944 (1982-1991)</option>
+                            <option value="928">928 (1977-1995)</option>
+                            <option value="964">964 911 (1989-1994)</option>
+                            <option value="993">993 911 (1994-1998)</option>
+                            <option value="996">996 911 (1998-2005)</option>
+                            <option value="997">997 911 (2004-2012)</option>
+                            <option value="986">986 Boxster (1996-2004)</option>
+                            <option value="987">987 Boxster/Cayman (2005-2012)</option>
+                            <option value="991">991 911 (2012-2019)</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+            <div class="calc-row">
+                <div class="calc-col-third">
+                    <label for="cost-mode">Cost Mode</label>
+                    <select id="cost-mode">
+                        <option value="diy">DIY (Parts Only)</option>
+                        <option value="shop">Shop (Parts + Labor)</option>
+                    </select>
+                </div>
+                <div class="calc-col-third labor-rate-field">
+                    <label for="labor-rate">Shop Labor Rate ($/hr)</label>
+                    <input type="number" id="labor-rate" value="125" min="0" step="5">
+                </div>
+                <div class="calc-col-third">
+                    <label for="build-level">Build Level</label>
+                    <select id="build-level">
+                        <option value="budget">Budget (Used/Aftermarket)</option>
+                        <option value="standard" selected>Standard (Quality Aftermarket)</option>
+                        <option value="oem">OEM (Original Parts)</option>
+                        <option value="premium">Premium (OEM+ / Performance)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="calc-row vehicle-cost-row">
+                <div class="calc-col">
+                    <label for="vehicle-cost">Vehicle Purchase Price</label>
+                    <input type="number" id="vehicle-cost" value="0" min="0" step="100" placeholder="0">
+                </div>
+                <div class="calc-col-third vehicle-cost-toggle">
+                    <label>Include in Total</label>
+                    <div class="toggle-wrapper">
+                        <input type="checkbox" id="include-vehicle-cost" checked>
+                        <label for="include-vehicle-cost" class="toggle-label">Include vehicle cost in project total</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category Sections -->
+        <div id="categories-container">
+            <!-- Engine -->
+            <section class="calc-section category-section" data-category="engine">
+                <div class="category-header" onclick="toggleCategory('engine')">
+                    <h2><span class="toggle-icon">▼</span> Engine</h2>
+                    <span class="category-total" id="engine-total">$0</span>
+                </div>
+                <div class="category-content" id="engine-content">
+                    <table class="calc-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th class="cost-col">Parts Cost</th>
+                                <th class="hours-col shop-only">Labor Hours</th>
+                                <th class="total-col">Total</th>
+                                <th class="include-col">Include</th>
+                            </tr>
+                        </thead>
+                        <tbody id="engine-items">
+                            <tr data-item="engine-rebuild">
+                                <td>Engine Rebuild (machine work, bearings, rings, gaskets)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="40" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="head-gasket">
+                                <td>Head Gasket Set</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="12" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="timing-belt-chain">
+                                <td>Timing Belt/Chain Kit</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="6" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="valve-cover-gasket">
+                                <td>Valve Cover Gasket(s)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="2" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="oil-pan-gasket">
+                                <td>Oil Pan Gasket</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="4" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="water-pump">
+                                <td>Water Pump</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="3" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="alternator">
+                                <td>Alternator</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="1.5" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="starter">
+                                <td>Starter Motor</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="2" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="engine-mounts">
+                                <td>Engine Mounts</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="3" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="add-custom-btn" onclick="addCustomItem('engine')">+ Add Custom Item</button>
+                </div>
+            </section>
+
+            <!-- Transmission -->
+            <section class="calc-section category-section" data-category="transmission">
+                <div class="category-header" onclick="toggleCategory('transmission')">
+                    <h2><span class="toggle-icon">▼</span> Transmission</h2>
+                    <span class="category-total" id="transmission-total">$0</span>
+                </div>
+                <div class="category-content" id="transmission-content">
+                    <table class="calc-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th class="cost-col">Parts Cost</th>
+                                <th class="hours-col shop-only">Labor Hours</th>
+                                <th class="total-col">Total</th>
+                                <th class="include-col">Include</th>
+                            </tr>
+                        </thead>
+                        <tbody id="transmission-items">
+                            <tr data-item="trans-rebuild">
+                                <td>Transmission Rebuild/Replace</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="12" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="clutch-kit">
+                                <td>Clutch Kit (disc, pressure plate, bearing)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="8" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="flywheel">
+                                <td>Flywheel (resurface or replace)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="0" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="trans-mounts">
+                                <td>Transmission Mount(s)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="2" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="shifter-rebuild">
+                                <td>Shifter Rebuild Kit</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="2" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="driveshaft">
+                                <td>Driveshaft / Guibo / CV Joints</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="3" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="differential">
+                                <td>Differential Service/Rebuild</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="6" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="add-custom-btn" onclick="addCustomItem('transmission')">+ Add Custom Item</button>
+                </div>
+            </section>
+
+            <!-- Suspension -->
+            <section class="calc-section category-section" data-category="suspension">
+                <div class="category-header" onclick="toggleCategory('suspension')">
+                    <h2><span class="toggle-icon">▼</span> Suspension</h2>
+                    <span class="category-total" id="suspension-total">$0</span>
+                </div>
+                <div class="category-content" id="suspension-content">
+                    <table class="calc-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th class="cost-col">Parts Cost</th>
+                                <th class="hours-col shop-only">Labor Hours</th>
+                                <th class="total-col">Total</th>
+                                <th class="include-col">Include</th>
+                            </tr>
+                        </thead>
+                        <tbody id="suspension-items">
+                            <tr data-item="shocks-struts">
+                                <td>Shocks/Struts (all 4)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="4" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="springs">
+                                <td>Springs (set of 4)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="3" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="coilovers">
+                                <td>Coilover Kit (alternative to shocks+springs)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="5" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="control-arms">
+                                <td>Control Arms (front)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="4" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="bushings">
+                                <td>Bushing Kit (full suspension)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="10" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="sway-bars">
+                                <td>Sway Bars & End Links</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="2" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="wheel-bearings">
+                                <td>Wheel Bearings (all 4)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="4" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="subframe">
+                                <td>Subframe Bushings / Reinforcement</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="8" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="alignment">
+                                <td>Alignment</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="1.5" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="add-custom-btn" onclick="addCustomItem('suspension')">+ Add Custom Item</button>
+                </div>
+            </section>
+
+            <!-- Brakes -->
+            <section class="calc-section category-section" data-category="brakes">
+                <div class="category-header" onclick="toggleCategory('brakes')">
+                    <h2><span class="toggle-icon">▼</span> Brakes</h2>
+                    <span class="category-total" id="brakes-total">$0</span>
+                </div>
+                <div class="category-content" id="brakes-content">
+                    <table class="calc-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th class="cost-col">Parts Cost</th>
+                                <th class="hours-col shop-only">Labor Hours</th>
+                                <th class="total-col">Total</th>
+                                <th class="include-col">Include</th>
+                            </tr>
+                        </thead>
+                        <tbody id="brakes-items">
+                            <tr data-item="rotors-front">
+                                <td>Front Rotors (pair)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="1" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="rotors-rear">
+                                <td>Rear Rotors (pair)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="1" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="pads-front">
+                                <td>Front Brake Pads</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="0.5" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="pads-rear">
+                                <td>Rear Brake Pads</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="0.5" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="calipers">
+                                <td>Brake Calipers (rebuilt or new)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="2" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="brake-lines">
+                                <td>Stainless Brake Lines</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="2" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="master-cylinder">
+                                <td>Master Cylinder</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="2" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="brake-booster">
+                                <td>Brake Booster</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="2" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="parking-brake">
+                                <td>Parking Brake Shoes/Cables</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="2" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="brake-fluid-flush">
+                                <td>Brake Fluid Flush</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="1" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="add-custom-btn" onclick="addCustomItem('brakes')">+ Add Custom Item</button>
+                </div>
+            </section>
+
+            <!-- Interior -->
+            <section class="calc-section category-section" data-category="interior">
+                <div class="category-header" onclick="toggleCategory('interior')">
+                    <h2><span class="toggle-icon">▼</span> Interior</h2>
+                    <span class="category-total" id="interior-total">$0</span>
+                </div>
+                <div class="category-content" id="interior-content">
+                    <table class="calc-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th class="cost-col">Parts Cost</th>
+                                <th class="hours-col shop-only">Labor Hours</th>
+                                <th class="total-col">Total</th>
+                                <th class="include-col">Include</th>
+                            </tr>
+                        </thead>
+                        <tbody id="interior-items">
+                            <tr data-item="seats-recover">
+                                <td>Seat Recover/Reupholster (pair)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="8" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="carpet-kit">
+                                <td>Carpet Kit</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="6" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="headliner">
+                                <td>Headliner Replacement</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="4" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="door-panels">
+                                <td>Door Panel Restoration</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="4" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="dash">
+                                <td>Dashboard Repair/Replace</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="6" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="steering-wheel">
+                                <td>Steering Wheel (restore or replace)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="1" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="shift-knob-boot">
+                                <td>Shift Knob & Boot</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="0.5" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="gauges">
+                                <td>Gauge Cluster Rebuild</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="2" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="add-custom-btn" onclick="addCustomItem('interior')">+ Add Custom Item</button>
+                </div>
+            </section>
+
+            <!-- Body & Paint -->
+            <section class="calc-section category-section" data-category="body">
+                <div class="category-header" onclick="toggleCategory('body')">
+                    <h2><span class="toggle-icon">▼</span> Body & Paint</h2>
+                    <span class="category-total" id="body-total">$0</span>
+                </div>
+                <div class="category-content" id="body-content">
+                    <table class="calc-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th class="cost-col">Parts Cost</th>
+                                <th class="hours-col shop-only">Labor Hours</th>
+                                <th class="total-col">Total</th>
+                                <th class="include-col">Include</th>
+                            </tr>
+                        </thead>
+                        <tbody id="body-items">
+                            <tr data-item="rust-repair">
+                                <td>Rust Repair (moderate)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="20" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="floor-pans">
+                                <td>Floor Pan Replacement</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="30" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="fenders">
+                                <td>Fenders (pair)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="4" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="bumpers">
+                                <td>Bumpers (front & rear)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="4" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="paint-single-stage">
+                                <td>Paint Job (single stage)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="40" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="paint-show">
+                                <td>Paint Job (show quality)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="100" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="glass">
+                                <td>Windshield & Glass</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="3" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="trim">
+                                <td>Exterior Trim & Moldings</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="4" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="weatherstripping">
+                                <td>Weatherstripping Kit</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="6" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="add-custom-btn" onclick="addCustomItem('body')">+ Add Custom Item</button>
+                </div>
+            </section>
+
+            <!-- Electrical -->
+            <section class="calc-section category-section" data-category="electrical">
+                <div class="category-header" onclick="toggleCategory('electrical')">
+                    <h2><span class="toggle-icon">▼</span> Electrical</h2>
+                    <span class="category-total" id="electrical-total">$0</span>
+                </div>
+                <div class="category-content" id="electrical-content">
+                    <table class="calc-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th class="cost-col">Parts Cost</th>
+                                <th class="hours-col shop-only">Labor Hours</th>
+                                <th class="total-col">Total</th>
+                                <th class="include-col">Include</th>
+                            </tr>
+                        </thead>
+                        <tbody id="electrical-items">
+                            <tr data-item="wiring-harness">
+                                <td>Wiring Harness (new or rebuild)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="20" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="fuse-box">
+                                <td>Fuse Box Replacement</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="4" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="headlights">
+                                <td>Headlight Assembly (pair)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="2" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="taillights">
+                                <td>Taillight Assembly (pair)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="1" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="battery">
+                                <td>Battery</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="0.5" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="switches">
+                                <td>Switches & Relays</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="4" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="window-regulators">
+                                <td>Window Regulators/Motors</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="4" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="add-custom-btn" onclick="addCustomItem('electrical')">+ Add Custom Item</button>
+                </div>
+            </section>
+
+            <!-- Cooling -->
+            <section class="calc-section category-section" data-category="cooling">
+                <div class="category-header" onclick="toggleCategory('cooling')">
+                    <h2><span class="toggle-icon">▼</span> Cooling System</h2>
+                    <span class="category-total" id="cooling-total">$0</span>
+                </div>
+                <div class="category-content" id="cooling-content">
+                    <table class="calc-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th class="cost-col">Parts Cost</th>
+                                <th class="hours-col shop-only">Labor Hours</th>
+                                <th class="total-col">Total</th>
+                                <th class="include-col">Include</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cooling-items">
+                            <tr data-item="radiator">
+                                <td>Radiator</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="2" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="coolant-hoses">
+                                <td>Coolant Hoses (all)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="3" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="thermostat">
+                                <td>Thermostat & Housing</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="1" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="expansion-tank">
+                                <td>Expansion Tank</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="1" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="fan-clutch">
+                                <td>Fan / Fan Clutch</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="1.5" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="coolant-flush">
+                                <td>Coolant Flush & Fill</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="1" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="add-custom-btn" onclick="addCustomItem('cooling')">+ Add Custom Item</button>
+                </div>
+            </section>
+
+            <!-- Fuel System -->
+            <section class="calc-section category-section" data-category="fuel">
+                <div class="category-header" onclick="toggleCategory('fuel')">
+                    <h2><span class="toggle-icon">▼</span> Fuel System</h2>
+                    <span class="category-total" id="fuel-total">$0</span>
+                </div>
+                <div class="category-content" id="fuel-content">
+                    <table class="calc-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th class="cost-col">Parts Cost</th>
+                                <th class="hours-col shop-only">Labor Hours</th>
+                                <th class="total-col">Total</th>
+                                <th class="include-col">Include</th>
+                            </tr>
+                        </thead>
+                        <tbody id="fuel-items">
+                            <tr data-item="fuel-tank">
+                                <td>Fuel Tank (clean or replace)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="4" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="fuel-pump">
+                                <td>Fuel Pump</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="2" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="fuel-lines">
+                                <td>Fuel Lines</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="4" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="injectors">
+                                <td>Fuel Injectors (clean or replace)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="3" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="fuel-filter">
+                                <td>Fuel Filter</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="0.5" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="fuel-pressure-regulator">
+                                <td>Fuel Pressure Regulator</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="1" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="add-custom-btn" onclick="addCustomItem('fuel')">+ Add Custom Item</button>
+                </div>
+            </section>
+
+            <!-- Exhaust -->
+            <section class="calc-section category-section" data-category="exhaust">
+                <div class="category-header" onclick="toggleCategory('exhaust')">
+                    <h2><span class="toggle-icon">▼</span> Exhaust</h2>
+                    <span class="category-total" id="exhaust-total">$0</span>
+                </div>
+                <div class="category-content" id="exhaust-content">
+                    <table class="calc-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th class="cost-col">Parts Cost</th>
+                                <th class="hours-col shop-only">Labor Hours</th>
+                                <th class="total-col">Total</th>
+                                <th class="include-col">Include</th>
+                            </tr>
+                        </thead>
+                        <tbody id="exhaust-items">
+                            <tr data-item="exhaust-manifold">
+                                <td>Exhaust Manifold / Header</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="4" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="catalytic-converter">
+                                <td>Catalytic Converter</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="2" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="muffler">
+                                <td>Muffler / Silencer</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="1.5" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="exhaust-piping">
+                                <td>Exhaust Piping (mid-section)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="2" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="exhaust-hangers">
+                                <td>Exhaust Hangers & Gaskets</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="1" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="performance-exhaust">
+                                <td>Performance Exhaust System</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="3" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="add-custom-btn" onclick="addCustomItem('exhaust')">+ Add Custom Item</button>
+                </div>
+            </section>
+
+            <!-- Wheels & Tires -->
+            <section class="calc-section category-section" data-category="wheels">
+                <div class="category-header" onclick="toggleCategory('wheels')">
+                    <h2><span class="toggle-icon">▼</span> Wheels & Tires</h2>
+                    <span class="category-total" id="wheels-total">$0</span>
+                </div>
+                <div class="category-content" id="wheels-content">
+                    <table class="calc-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th class="cost-col">Parts Cost</th>
+                                <th class="hours-col shop-only">Labor Hours</th>
+                                <th class="total-col">Total</th>
+                                <th class="include-col">Include</th>
+                            </tr>
+                        </thead>
+                        <tbody id="wheels-items">
+                            <tr data-item="wheels">
+                                <td>Wheels (set of 4)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="1" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="tires">
+                                <td>Tires (set of 4)</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="1" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="wheel-refurb">
+                                <td>Wheel Refinish/Refurbish</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="0" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="lug-bolts">
+                                <td>Lug Bolts / Nuts</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="0" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                            <tr data-item="tpms">
+                                <td>TPMS Sensors</td>
+                                <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
+                                <td class="shop-only"><input type="number" class="labor-hours" value="1" min="0" step="0.5"></td>
+                                <td class="line-total">$0</td>
+                                <td><input type="checkbox" class="include-item"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="add-custom-btn" onclick="addCustomItem('wheels')">+ Add Custom Item</button>
+                </div>
+            </section>
+        </div>
+
+        <!-- Summary -->
+        <section class="calc-section summary-section">
+            <h2>Project Summary</h2>
+            <div class="summary-grid">
+                <div class="summary-categories">
+                    <div class="summary-line" data-cat="engine"><span>Engine:</span><span class="cat-sum">$0</span></div>
+                    <div class="summary-line" data-cat="transmission"><span>Transmission:</span><span class="cat-sum">$0</span></div>
+                    <div class="summary-line" data-cat="suspension"><span>Suspension:</span><span class="cat-sum">$0</span></div>
+                    <div class="summary-line" data-cat="brakes"><span>Brakes:</span><span class="cat-sum">$0</span></div>
+                    <div class="summary-line" data-cat="interior"><span>Interior:</span><span class="cat-sum">$0</span></div>
+                    <div class="summary-line" data-cat="body"><span>Body & Paint:</span><span class="cat-sum">$0</span></div>
+                    <div class="summary-line" data-cat="electrical"><span>Electrical:</span><span class="cat-sum">$0</span></div>
+                    <div class="summary-line" data-cat="cooling"><span>Cooling:</span><span class="cat-sum">$0</span></div>
+                    <div class="summary-line" data-cat="fuel"><span>Fuel System:</span><span class="cat-sum">$0</span></div>
+                    <div class="summary-line" data-cat="exhaust"><span>Exhaust:</span><span class="cat-sum">$0</span></div>
+                    <div class="summary-line" data-cat="wheels"><span>Wheels & Tires:</span><span class="cat-sum">$0</span></div>
+                </div>
+                <div class="summary-totals">
+                    <div class="summary-total-line vehicle-cost-line">
+                        <span>Vehicle Purchase:</span>
+                        <span id="vehicle-cost-display">$0</span>
+                    </div>
+                    <div class="summary-total-line">
+                        <span>Parts Total:</span>
+                        <span id="parts-total">$0</span>
+                    </div>
+                    <div class="summary-total-line shop-only">
+                        <span>Labor Total (<span id="labor-hours-total">0</span> hrs @ $<span id="labor-rate-display">125</span>/hr):</span>
+                        <span id="labor-total">$0</span>
+                    </div>
+                    <div class="summary-total-line grand-total">
+                        <span>PROJECT TOTAL:</span>
+                        <span id="grand-total">$0</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Actions -->
+        <div class="calc-actions">
+            <button type="button" id="clear-btn" class="btn-secondary">Clear All</button>
+            <button type="button" id="save-btn" class="btn-secondary">Save Project</button>
+            <button type="button" id="load-btn" class="btn-secondary">Load Project</button>
+            <div class="export-group">
+                <button type="button" id="export-csv-btn" class="btn-secondary">Export CSV</button>
+                <button type="button" id="export-json-btn" class="btn-secondary">Export JSON</button>
+            </div>
+            <button type="button" id="print-btn" class="btn-primary">Print Summary</button>
+        </div>
+    </div>
+
+    <!-- Load Project Modal -->
+    <div id="load-modal" class="modal">
+        <div class="modal-content">
+            <h3>Load Saved Project</h3>
+            <select id="saved-projects-list">
+                <option value="">-- Select Project --</option>
+            </select>
+            <div class="modal-actions">
+                <button type="button" id="cancel-load-btn" class="btn-secondary">Cancel</button>
+                <button type="button" id="delete-project-btn" class="btn-danger">Delete</button>
+                <button type="button" id="confirm-load-btn" class="btn-primary">Load</button>
+            </div>
+        </div>
+    </div>
+</main>

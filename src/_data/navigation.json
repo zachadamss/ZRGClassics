@@ -36,7 +36,13 @@
       ]
     },
     { "label": "Search", "url": "/search/" },
-    { "label": "Tools", "url": "/tools/invoice/" },
+    {
+      "label": "Tools",
+      "children": [
+        { "label": "Invoice Creator", "url": "/tools/invoice/" },
+        { "label": "Build Cost Calculator", "url": "/tools/build-calculator/" }
+      ]
+    },
     { "label": "Community", "url": "/community/forums/" },
     { "label": "Shop", "url": "/shop/" },
     { "label": "About", "url": "/about/" }

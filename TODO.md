@@ -2,10 +2,12 @@
 
 ## Current Status
 - 17 vehicle platforms with full content (BMW: E28, E30, E34, E36, E39, E46, E90 | Porsche: 924, 928, 944, 964, 986, 987, 991, 993, 996, 997)
+- 68 detailed DIY maintenance guides with step-by-step procedures
 - 132+ documented issues with repair costs, difficulty ratings, and parts
 - Search across all content types (issues, torque specs, guides, suppliers)
 - Related issues cross-references between similar problems
 - Invoice Creator tool live
+- Build Cost Calculator tool live
 - Mobile responsive, dark mode, print-friendly
 
 ---
@@ -18,11 +20,11 @@
   - Mileage tracking
   - Export/import service records
 
-- [ ] **Build Cost Calculator** - Estimate restoration and modification costs
-  - Parts cost estimation by category
-  - Labor hour estimates
-  - Project budgeting and tracking
-  - Compare DIY vs shop costs
+- [x] **Build Cost Calculator** - Estimate restoration and modification costs
+  - Parts cost estimation by category (11 categories)
+  - Labor hour estimates with configurable shop rate
+  - Project save/load and export (CSV, JSON)
+  - DIY vs Shop cost toggle
 
 - [ ] **Restoration Checklist** - Step-by-step restoration guides
   - System-by-system checklists (engine, suspension, interior, etc.)
@@ -55,7 +57,7 @@
 - [ ] Add hero images to brand landing pages (BMW and Porsche index pages)
 - [ ] Add vehicle silhouette or icon graphics to resource cards
 - [ ] Write actual restoration guide content for each vehicle
-- [ ] Write DIY maintenance guide content
+- [x] Write DIY maintenance guide content (68 guides across 17 vehicles)
 
 ---
 

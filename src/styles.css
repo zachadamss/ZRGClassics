@@ -5187,3 +5187,533 @@ nav ul li.dropdown.touch-open .dropdown-menu {
         max-width: 100%;
     }
 }
+
+/* ================================
+   Build Cost Calculator
+   ================================ */
+.calculator-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.calculator-title {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.calculator-subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+.calc-section {
+    background: var(--background-alt);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+}
+
+.calc-section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.calc-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.calc-row:last-child {
+    margin-bottom: 0;
+}
+
+.calc-col {
+    flex: 1;
+}
+
+.calc-col-third {
+    flex: 1;
+}
+
+.calc-section label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+    font-size: 0.875rem;
+    color: var(--text-color);
+}
+
+.calc-section input[type="text"],
+.calc-section input[type="number"],
+.calc-section select {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.calc-section input:focus,
+.calc-section select:focus {
+    outline: none;
+    border-color: var(--gulf-blue);
+    box-shadow: 0 0 0 3px rgba(125, 207, 234, 0.15);
+}
+
+/* Vehicle Cost Toggle */
+.vehicle-cost-row {
+    align-items: flex-end;
+}
+
+.vehicle-cost-toggle {
+    display: flex;
+    flex-direction: column;
+}
+
+.toggle-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 0;
+}
+
+.toggle-wrapper input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.toggle-label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    cursor: pointer;
+}
+
+/* Category Sections */
+.category-section {
+    padding: 0;
+    overflow: hidden;
+}
+
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    background: var(--background-alt);
+    transition: background-color 0.2s;
+}
+
+.category-header:hover {
+    background: var(--border-color);
+}
+
+.category-header h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.toggle-icon {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    transition: transform 0.2s;
+}
+
+.category-total {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--gulf-orange);
+}
+
+.category-content {
+    padding: 1rem 1.5rem;
+    background: var(--background-color);
+    border-top: 1px solid var(--border-color);
+}
+
+.category-content.collapsed {
+    display: none;
+}
+
+/* Calculator Table */
+.calc-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+}
+
+.calc-table th,
+.calc-table td {
+    padding: 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.calc-table th {
+    font-weight: 600;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.calc-table td:first-child {
+    width: 45%;
+}
+
+.calc-table .cost-col,
+.calc-table .hours-col,
+.calc-table .total-col {
+    width: 15%;
+    text-align: right;
+}
+
+.calc-table .include-col {
+    width: 8%;
+    text-align: center;
+}
+
+.calc-table input[type="number"] {
+    width: 100%;
+    padding: 0.4rem 0.5rem;
+    text-align: right;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.calc-table input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.calc-table input[type="text"] {
+    width: 100%;
+    padding: 0.4rem 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.calc-table .line-total {
+    font-weight: 600;
+    text-align: right;
+    color: var(--text-color);
+}
+
+.add-custom-btn {
+    margin-top: 0.75rem;
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: 1px dashed var(--border-color);
+    border-radius: var(--radius-sm);
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+}
+
+.add-custom-btn:hover {
+    border-color: var(--gulf-blue);
+    color: var(--gulf-blue);
+    background: rgba(125, 207, 234, 0.05);
+}
+
+/* Summary Section */
+.summary-section {
+    background: var(--navy);
+    color: white;
+    border: none;
+}
+
+[data-theme="dark"] .summary-section {
+    background: var(--navy-dark);
+}
+
+.summary-section h2 {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.summary-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.35rem 0;
+    font-size: 0.875rem;
+    color: rgba(255,255,255,0.8);
+}
+
+.summary-line .cat-sum {
+    font-weight: 600;
+    color: white;
+}
+
+.summary-totals {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.summary-total-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    color: rgba(255,255,255,0.9);
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.summary-total-line:first-child {
+    border-top: none;
+}
+
+.summary-total-line.grand-total {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gulf-orange);
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+    border-top: 2px solid rgba(255,255,255,0.3);
+}
+
+/* Calculator Actions */
+.calc-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.calc-actions .btn-secondary,
+.calc-actions .btn-primary {
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+    border: none;
+}
+
+.calc-actions .btn-secondary {
+    background: var(--background-alt);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+.calc-actions .btn-secondary:hover {
+    background: var(--border-color);
+}
+
+.calc-actions .btn-primary {
+    background: var(--gulf-orange);
+    color: white;
+}
+
+.calc-actions .btn-primary:hover {
+    background: var(--gulf-orange-dark);
+}
+
+.export-group {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    background: var(--background-color);
+    padding: 2rem;
+    border-radius: var(--radius-md);
+    max-width: 400px;
+    width: 90%;
+    box-shadow: var(--shadow-lg);
+}
+
+.modal-content h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.modal-content select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.modal-actions {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+}
+
+.modal-actions .btn-danger {
+    background: var(--danger-color);
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+}
+
+.modal-actions .btn-secondary,
+.modal-actions .btn-primary {
+    padding: 0.6rem 1rem;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}
+
+.modal-actions .btn-secondary {
+    background: var(--background-alt);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+.modal-actions .btn-primary {
+    background: var(--gulf-orange);
+    color: white;
+}
+
+/* Print Styles for Calculator */
+@media print {
+    .calculator-container {
+        padding: 0;
+    }
+
+    .project-setup,
+    .calc-actions,
+    .add-custom-btn,
+    .include-col,
+    .modal {
+        display: none !important;
+    }
+
+    .category-content {
+        display: block !important;
+    }
+
+    .category-content.collapsed {
+        display: block !important;
+    }
+
+    .calc-section {
+        break-inside: avoid;
+        border: 1px solid #ccc;
+        margin-bottom: 0.5rem;
+    }
+
+    .summary-section {
+        background: #1E3A5F !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .calc-table input {
+        border: none;
+        background: transparent;
+    }
+}
+
+/* Responsive Calculator */
+@media (max-width: 768px) {
+    .calc-row {
+        flex-direction: column;
+    }
+
+    .summary-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .summary-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .calc-table {
+        font-size: 0.8rem;
+    }
+
+    .calc-table th,
+    .calc-table td {
+        padding: 0.35rem 0.25rem;
+    }
+
+    .calc-table td:first-child {
+        width: auto;
+    }
+
+    .calc-table .cost-col,
+    .calc-table .hours-col,
+    .calc-table .total-col {
+        width: auto;
+    }
+
+    .calc-actions {
+        flex-direction: column;
+    }
+
+    .calc-actions button {
+        width: 100%;
+    }
+
+    .export-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .export-group button {
+        width: 100%;
+    }
+}

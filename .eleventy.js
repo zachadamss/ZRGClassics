@@ -6,6 +6,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/search.js");
   eleventyConfig.addPassthroughCopy("src/search-index.json");
   eleventyConfig.addPassthroughCopy("src/tools/invoice.js");
+  eleventyConfig.addPassthroughCopy("src/tools/build-calculator.js");
 
   // Watch for CSS changes
   eleventyConfig.addWatchTarget("src/styles.css");
