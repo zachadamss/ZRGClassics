@@ -21,6 +21,7 @@
   - Data-driven vehicle pages from JSON files
   - Automatic navigation generation from data
   - Build system with `npm run build` and `npm run serve`
+- [x] **Consolidated About & Contact pages** - Contact form moved to bottom of About page, removed separate Contact page from navigation
 
 ---
 
