@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop - ZRG Classics</title>
+    <title>Search Resources - ZRG Classics</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
     <!-- Header -->
@@ -62,44 +63,34 @@
     </header>
 
     <!-- Main Content -->
-    <main>
-        <!-- Classic Cars Section -->
-        <section class="shop-section">
-            <h2>German Classics For Sale</h2>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="images/CarSale1.jpg" alt="Classic Car 1">
-                    <h3>1992 Porsche 911 Turbo</h3>
-                    <p>$140,000</p>
-                    <button>View Listing</button>
-                </div>
-                <div class="product">
-                    <img src="images/CarSale2.jpg" alt="Classic Car 2">
-                    <h3>1988 Porsche 911 Reimagied By Singer</h3>
-                    <p>$550,000</p>
-                    <button>View Listing</button>
-                </div>
-            </div>
-        </section>
+    <main class="search-page">
+        <div class="search-container">
+            <h1>Search Resources</h1>
+            <p class="search-subtitle">Find common issues, symptoms, and solutions across all BMW and Porsche models</p>
 
-        <!-- Car Parts Section -->
-        <section class="shop-section">
-            <h2>Used Car Parts</h2>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="images/part1.jpg" alt="Car Part 1">
-                    <h3>Vintage Steering Wheel</h3>
-                    <p>$250</p>
-                    <button>Add to Cart</button>
-                </div>
-                <div class="product">
-                    <img src="images/part2.jpg" alt="Car Part 2">
-                    <h3>Classic Car Headlights</h3>
-                    <p>$150</p>
-                    <button>Add to Cart</button>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search by model, issue, or symptom (e.g., 'E30 timing belt' or 'overheating')" autocomplete="off">
+                <button id="search-btn" aria-label="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="search-filters">
+                <label class="filter-label">Filter by brand:</label>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="BMW">BMW</button>
+                    <button class="filter-btn" data-filter="Porsche">Porsche</button>
                 </div>
             </div>
-        </section>
+
+            <div id="search-results" class="search-results">
+                <p class="search-placeholder">Enter a search term to find related issues and solutions.</p>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -115,5 +106,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="search.js"></script>
 </body>
 </html>
