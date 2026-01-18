@@ -1,0 +1,223 @@
+{
+  "model": "E30",
+  "brand": "BMW",
+  "fullName": "BMW E30 3 Series",
+  "years": "1982-1994",
+  "engines": ["M10 1.8L I4", "M20 2.5L I6", "M42 1.8L I4", "S14 2.3L I4"],
+  "heroImage": "/images/vehicles/e30-hero.jpg",
+  "issues": [
+    {
+      "id": "timing-belt",
+      "title": "Timing Belt Failure (M20/M42 Engines)",
+      "symptoms": "Engine won't start, loud slapping noise before failure, visible belt wear or cracking",
+      "description": "The M20 (6-cylinder) and M42 (4-cylinder) engines in the E30 use timing belts rather than chains. These belts have a service interval of approximately 50,000 miles, but many recommend replacing them earlier. The M20 is an interference engine, meaning if the belt snaps, the pistons will contact the valves causing catastrophic engine damage.",
+      "fixes": [
+        "Replace timing belt every 50,000 miles or 4 years (whichever comes first)",
+        "Replace water pump and tensioner at the same time",
+        "Inspect and replace idler pulleys if worn",
+        "Always replace the front crankshaft seal during service"
+      ],
+      "sources": [
+        { "name": "R3VLimited", "url": "#" },
+        { "name": "Bimmerforums", "url": "#" }
+      ]
+    },
+    {
+      "id": "rust-corrosion",
+      "title": "Rust and Corrosion",
+      "symptoms": "Bubbling paint, visible rust holes, soft floor pans, rusty fenders and wheel arches",
+      "description": "E30s are notorious for rust, especially in areas with road salt. Common rust spots include the front fenders (behind the wheels), rear wheel arches, rocker panels, battery tray, and floor pans. The trunk floor and spare tire well are also vulnerable. Rust can compromise structural integrity if left untreated.",
+      "fixes": [
+        "Inspect and treat rust early - surface rust is much easier to fix",
+        "Replace fenders if rust is beyond repair (aftermarket available)",
+        "Weld in new metal for floor pan and structural rust",
+        "Apply rust prevention (POR-15, Fluid Film) to undercarriage",
+        "Keep drain holes clear to prevent water accumulation"
+      ],
+      "sources": [
+        { "name": "R3VLimited", "url": "#" },
+        { "name": "E30Zone", "url": "#" }
+      ]
+    },
+    {
+      "id": "electrical-gremlins",
+      "title": "Electrical Gremlins",
+      "symptoms": "Intermittent gauge failures, flickering lights, dead pixels in OBC, non-working windows/sunroof",
+      "description": "The E30's electrical system, while simpler than modern BMWs, suffers from age-related issues. Ground points corrode, causing erratic behavior. The instrument cluster capacitors fail, leading to dead gauges or pixels. Window and sunroof switches wear out. The check control panel and on-board computer (OBC) are known failure points.",
+      "fixes": [
+        "Clean and re-ground all chassis ground points",
+        "Replace instrument cluster capacitors (common DIY repair)",
+        "Rebuild or replace OBC units",
+        "Check and clean all fuse box connections",
+        "Replace worn window/sunroof switches"
+      ],
+      "sources": [
+        { "name": "E30Zone", "url": "#" },
+        { "name": "Bimmerforums", "url": "#" }
+      ]
+    },
+    {
+      "id": "suspension-bushings",
+      "title": "Suspension Bushing Wear",
+      "symptoms": "Clunking over bumps, vague steering, uneven tire wear, wandering at highway speeds",
+      "description": "After 30+ years, nearly all E30s have worn suspension bushings. The front control arm bushings, subframe mounts, rear trailing arm bushings, and sway bar end links all deteriorate with age. Worn bushings dramatically affect handling and can accelerate wear on other suspension components.",
+      "fixes": [
+        "Full suspension refresh with new bushings (OEM rubber or polyurethane)",
+        "Replace control arms with fresh bushings",
+        "Install new subframe mounts",
+        "Replace rear trailing arm bushings (notorious for wear)",
+        "Don't forget sway bar bushings and end links"
+      ],
+      "sources": [
+        { "name": "R3VLimited", "url": "#" },
+        { "name": "Ireland Engineering", "url": "#" }
+      ]
+    },
+    {
+      "id": "fuel-injection",
+      "title": "Fuel Injection Issues (Bosch Motronic)",
+      "symptoms": "Hard starting, rough idle, poor fuel economy, hesitation under acceleration, stalling",
+      "description": "E30s use Bosch Motronic or L-Jetronic fuel injection systems. Common failure points include the idle control valve (ICV), mass airflow sensor (AFM), coolant temperature sensor, and fuel injectors. Vacuum leaks from aged hoses also cause running issues. The fuel pump and filter should be checked if fuel delivery is suspected.",
+      "fixes": [
+        "Clean or replace the idle control valve (ICV)",
+        "Test and replace AFM (airflow meter) if faulty",
+        "Replace all vacuum hoses with new silicone lines",
+        "Replace coolant temperature sensor",
+        "Clean injectors or replace with new/rebuilt units",
+        "Replace fuel filter and check fuel pump pressure"
+      ],
+      "sources": [
+        { "name": "Bimmerforums", "url": "#" },
+        { "name": "BMW CCA", "url": "#" }
+      ]
+    },
+    {
+      "id": "cooling-system",
+      "title": "Cooling System Failures",
+      "symptoms": "Overheating, coolant leaks, heater not working, temperature gauge fluctuation",
+      "description": "While more robust than later BMW cooling systems, the E30's cooling components still fail with age. The water pump, thermostat, and radiator are common failure points. The heater core is known to leak, and the expansion tank can crack. On M20 engines, the head gasket can fail if overheating occurs.",
+      "fixes": [
+        "Replace water pump (do with timing belt service)",
+        "Install new thermostat (80°C or 88°C based on preference)",
+        "Replace radiator if original (plastic end tanks crack)",
+        "Flush system and use BMW-approved coolant",
+        "Replace heater core if leaking (labor-intensive job)"
+      ],
+      "sources": [
+        { "name": "R3VLimited", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "id": "m20-rebuild",
+      "title": "M20 Engine Rebuild Guide",
+      "description": "Complete teardown and rebuild of the M20 inline-6 engine, including machine work specifications and assembly tips.",
+      "difficulty": "Advanced",
+      "time": "40+ hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "suspension-refresh",
+      "title": "Full Suspension Refresh",
+      "description": "Step-by-step guide to replacing all bushings, shocks, and worn components for a factory-fresh ride.",
+      "difficulty": "Intermediate",
+      "time": "16-20 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "electrical-diagnosis",
+      "title": "Electrical System Troubleshooting",
+      "description": "Diagnosing and repairing common electrical issues including ground points, relays, and wiring repairs.",
+      "difficulty": "Intermediate",
+      "time": "Varies",
+      "status": "coming-soon"
+    },
+    {
+      "id": "rust-repair",
+      "title": "Rust Repair & Prevention",
+      "description": "Identifying rust-prone areas and techniques for cutting, welding, and preventing future corrosion.",
+      "difficulty": "Advanced",
+      "time": "Varies",
+      "status": "coming-soon"
+    }
+  ],
+  "suppliers": {
+    "oem": [
+      { "name": "BMW Parts", "url": "#", "notes": "Genuine BMW OEM parts" },
+      { "name": "FCP Euro", "url": "#", "notes": "Lifetime replacement guarantee" },
+      { "name": "Pelican Parts", "url": "#", "notes": "Extensive BMW catalog" }
+    ],
+    "aftermarket": [
+      { "name": "Ireland Engineering", "url": "#", "notes": "Performance upgrades & suspension" },
+      { "name": "Turner Motorsport", "url": "#", "notes": "Performance parts & accessories" },
+      { "name": "ECS Tuning", "url": "#", "notes": "Wide selection of parts" },
+      { "name": "Condor Speed Shop", "url": "#", "notes": "E30 specialists" }
+    ],
+    "used": [
+      { "name": "R3VLimited Classifieds", "url": "#", "notes": "E30-specific forum marketplace" },
+      { "name": "eBay Motors", "url": "#", "notes": "Used & NOS parts" },
+      { "name": "Car-Part.com", "url": "#", "notes": "Salvage yard inventory search" }
+    ]
+  },
+  "torqueSpecs": {
+    "engine": [
+      { "component": "Cylinder Head Bolts (M20)", "spec": "44 ft-lbs + 90°", "notes": "Torque-to-yield bolts, replace each use" },
+      { "component": "Main Bearing Caps", "spec": "47 ft-lbs", "notes": "" },
+      { "component": "Connecting Rod Bolts", "spec": "38 ft-lbs", "notes": "" },
+      { "component": "Flywheel Bolts", "spec": "72-80 ft-lbs", "notes": "Use thread locker" },
+      { "component": "Spark Plugs", "spec": "18-22 ft-lbs", "notes": "" },
+      { "component": "Valve Cover Nuts", "spec": "7 ft-lbs", "notes": "Do not overtighten" },
+      { "component": "Oil Drain Plug", "spec": "18 ft-lbs", "notes": "Replace crush washer" }
+    ],
+    "suspension": [
+      { "component": "Front Strut Top Nut", "spec": "47 ft-lbs", "notes": "" },
+      { "component": "Control Arm to Subframe", "spec": "57 ft-lbs", "notes": "Tighten with weight on wheels" },
+      { "component": "Tie Rod End Nut", "spec": "25-33 ft-lbs", "notes": "" },
+      { "component": "Wheel Lug Bolts", "spec": "80 ft-lbs", "notes": "Tighten in star pattern" },
+      { "component": "Rear Trailing Arm", "spec": "52 ft-lbs", "notes": "Tighten with weight on wheels" },
+      { "component": "Subframe Bolts", "spec": "57 ft-lbs", "notes": "" }
+    ],
+    "brakes": [
+      { "component": "Brake Caliper Bolts (Front)", "spec": "63 ft-lbs", "notes": "" },
+      { "component": "Brake Caliper Bolts (Rear)", "spec": "48 ft-lbs", "notes": "" },
+      { "component": "Brake Rotor Set Screws", "spec": "9 ft-lbs", "notes": "Use thread locker" },
+      { "component": "Brake Line Fittings", "spec": "11-13 ft-lbs", "notes": "Do not overtighten" }
+    ]
+  },
+  "diyGuides": [
+    {
+      "id": "oil-change",
+      "title": "Oil Change",
+      "description": "Complete guide to changing oil and filter on M20 and M42 engines.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "status": "coming-soon"
+    },
+    {
+      "id": "brake-pads",
+      "title": "Brake Pad Replacement",
+      "description": "Front and rear brake pad replacement with rotor inspection tips.",
+      "difficulty": "Easy",
+      "time": "1-2 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "timing-belt-diy",
+      "title": "Timing Belt Replacement",
+      "description": "Step-by-step timing belt, tensioner, and water pump replacement.",
+      "difficulty": "Intermediate",
+      "time": "4-6 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "valve-adjustment",
+      "title": "Valve Adjustment (M20)",
+      "description": "How to check and adjust valve clearances on the M20 engine.",
+      "difficulty": "Intermediate",
+      "time": "2-3 hours",
+      "status": "coming-soon"
+    }
+  ]
+}

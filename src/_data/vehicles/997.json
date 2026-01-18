@@ -1,0 +1,211 @@
+{
+  "model": "997",
+  "brand": "Porsche",
+  "fullName": "Porsche 997 911",
+  "years": "2004-2012",
+  "engines": ["3.6L Flat-6 M97 (997.1)", "3.8L Flat-6 M97 (997.1 S)", "3.6L Flat-6 9A1 (997.2)", "3.8L Flat-6 9A1 (997.2 S)"],
+  "heroImage": "/images/vehicles/997-hero.jpg",
+  "issues": [
+    {
+      "id": "ims-bearing",
+      "title": "IMS Bearing Failure (997.1 Only)",
+      "symptoms": "Metallic debris in oil, grinding noise, catastrophic engine failure, oil pressure light",
+      "description": "The early 997.1 (2005-2008) with the M97 engine carries over the IMS bearing concern from the 996. However, only the base Carrera and Carrera S are affected - the Turbo and GT3 use different engines. The 997.2 (2009+) uses the 9A1 engine with a completely different design and has NO IMS bearing.",
+      "fixes": [
+        "997.1: Proactive IMS bearing replacement with upgraded bearing",
+        "LN Engineering ceramic hybrid bearing upgrade",
+        "Regular oil analysis to detect early wear",
+        "997.2: No IMS bearing - this is not a concern",
+        "Always verify engine type when purchasing a 997"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "LN Engineering", "url": "#" }
+      ]
+    },
+    {
+      "id": "bore-scoring",
+      "title": "Bore Scoring (997.1 M97 Engine)",
+      "symptoms": "Ticking/knocking noise, smoke on cold start, oil consumption, low compression",
+      "description": "The M97 engine in the 997.1 can develop bore scoring similar to the M96 in the 996. Cylinder 6 is most commonly affected. The scoring damages cylinder walls, causing oil to bypass the piston rings. The 997.2 with the 9A1 engine does not have this problem.",
+      "fixes": [
+        "Borescope inspection (pre-purchase inspection must include this)",
+        "Minor scoring: monitor, use quality oil, don't overheat",
+        "Moderate scoring: cylinder sleeving repair",
+        "Severe scoring: engine rebuild or replacement",
+        "Prevention: proper warm-up, quality oil, avoid short trips"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Flat Six Innovations", "url": "#" }
+      ]
+    },
+    {
+      "id": "pdk",
+      "title": "PDK Transmission Issues (997.2)",
+      "symptoms": "Jerky low-speed shifts, shuddering during engagement, warning lights, harsh 1-2 shift",
+      "description": "The PDK (Porsche Doppelkupplung) dual-clutch transmission in the 997.2 can develop issues, particularly with the clutch packs and mechatronic unit. Some owners report jerky behavior at low speeds, especially when cold. The transmission is generally reliable but can be expensive to repair.",
+      "fixes": [
+        "Ensure latest software updates are installed",
+        "PDK fluid change (not technically required but beneficial)",
+        "Clutch adaptation reset via Porsche diagnostic tool",
+        "For severe issues: clutch pack replacement (expensive)",
+        "Mechatronic unit repair or replacement if electrical issues"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Planet-9", "url": "#" }
+      ]
+    },
+    {
+      "id": "pasm",
+      "title": "PASM Suspension Failures",
+      "symptoms": "PASM warning light, harsh ride, suspension not adjusting, clunking noises, uneven ride height",
+      "description": "PASM (Porsche Active Suspension Management) uses electronically adjustable dampers. The dampers can fail (usually leaking), and the PASM control module can have electrical issues. Failed dampers result in a rough ride and warning lights.",
+      "fixes": [
+        "Diagnose with PIWIS/Durametric to identify failed damper",
+        "Replace failed PASM damper (OEM or remanufactured)",
+        "Convert to quality coilovers if multiple failures",
+        "Check wiring and connectors before replacing dampers",
+        "PASM control module can be rebuilt if electrical issue"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    },
+    {
+      "id": "coolant-pipes",
+      "title": "Coolant Pipe and Water Pump Failures",
+      "symptoms": "Coolant loss, overheating, coolant smell, puddles under car, temperature warning",
+      "description": "Both 997.1 and 997.2 can suffer from coolant system issues. The plastic coolant pipes, water pump, and expansion tank all degrade with age and heat. While the 997.2 improved some areas, it's still recommended to replace plastic coolant pipes with aluminum as preventive maintenance.",
+      "fixes": [
+        "Replace plastic coolant pipes with aluminum upgrade kit",
+        "Replace water pump (consider with major service)",
+        "Replace expansion tank if original",
+        "Replace thermostat if over 60k miles",
+        "Flush and refill coolant every 4 years"
+      ],
+      "sources": [
+        { "name": "FCP Euro", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "carbon-buildup",
+      "title": "Direct Fuel Injection Carbon Buildup (997.2)",
+      "symptoms": "Rough idle, misfires, reduced power, poor fuel economy, check engine light",
+      "description": "The 997.2's 9A1 engine uses direct fuel injection (DFI), which doesn't wash the intake valves with fuel like port injection does. Over time, carbon deposits build up on the intake valves, causing running issues. This requires periodic cleaning, typically every 50,000-80,000 miles.",
+      "fixes": [
+        "Walnut shell blasting to clean intake valves",
+        "Chemical cleaning (less effective but less invasive)",
+        "Preventive: occasional Italian tune-ups (spirited driving)",
+        "Use quality fuel with good detergent additives",
+        "Some owners add catch can to reduce oil vapor deposits"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    },
+    {
+      "id": "rms-leak",
+      "title": "Rear Main Seal Leak (997.1)",
+      "symptoms": "Oil drips from transmission bell housing, burning oil smell, oil on clutch, clutch slippage",
+      "description": "The 997.1 with the M97 engine can develop rear main seal leaks similar to the 996. Oil leaks onto the clutch in manual transmission cars, causing slipping. The 997.2 with the 9A1 engine has a different seal design with fewer reported issues.",
+      "fixes": [
+        "Replace rear main seal (requires engine/trans separation)",
+        "Combine with IMS bearing replacement to save labor (997.1)",
+        "Replace clutch if contaminated with oil",
+        "Use updated seal design for longer life"
+      ],
+      "sources": [
+        { "name": "Pelican Parts", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "id": "ims-bearing",
+      "title": "IMS Bearing Replacement (997.1)",
+      "description": "Complete guide to replacing the IMS bearing on 997.1 cars.",
+      "difficulty": "Advanced",
+      "time": "10-14 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "coolant-pipes",
+      "title": "Coolant Pipe Upgrade",
+      "description": "Replace plastic coolant pipes with aluminum upgrade kit.",
+      "difficulty": "Intermediate",
+      "time": "4-6 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "carbon-cleaning",
+      "title": "Intake Valve Carbon Cleaning (997.2)",
+      "description": "Walnut shell blasting to remove carbon deposits from intake valves.",
+      "difficulty": "Advanced",
+      "time": "4-6 hours",
+      "status": "coming-soon"
+    }
+  ],
+  "suppliers": {
+    "oem": [
+      { "name": "Porsche Parts", "url": "#", "notes": "Genuine Porsche OEM" },
+      { "name": "FCP Euro", "url": "#", "notes": "Lifetime replacement guarantee" },
+      { "name": "Pelican Parts", "url": "#", "notes": "Extensive Porsche catalog" }
+    ],
+    "aftermarket": [
+      { "name": "LN Engineering", "url": "#", "notes": "IMS bearing specialists (997.1)" },
+      { "name": "Flat 6 Innovations", "url": "#", "notes": "Performance parts" }
+    ],
+    "used": [
+      { "name": "Rennlist Classifieds", "url": "#", "notes": "Forum marketplace" },
+      { "name": "eBay Motors", "url": "#", "notes": "Used & NOS parts" }
+    ]
+  },
+  "torqueSpecs": {
+    "engine": [
+      { "component": "Spark Plugs", "spec": "22 ft-lbs", "notes": "" },
+      { "component": "Oil Drain Plug", "spec": "37 ft-lbs", "notes": "Replace washer" },
+      { "component": "Intake Manifold Bolts", "spec": "7 ft-lbs", "notes": "" }
+    ],
+    "suspension": [
+      { "component": "Wheel Lug Nuts", "spec": "118 ft-lbs", "notes": "Center-lock wheels different" },
+      { "component": "Control Arm Bolts", "spec": "63 ft-lbs", "notes": "" },
+      { "component": "PASM Damper Top Nut", "spec": "44 ft-lbs", "notes": "" }
+    ],
+    "brakes": [
+      { "component": "Caliper Bolts", "spec": "63 ft-lbs", "notes": "" },
+      { "component": "PCCB Caliper Bolts", "spec": "74 ft-lbs", "notes": "Ceramic brake cars" }
+    ]
+  },
+  "diyGuides": [
+    {
+      "id": "oil-change",
+      "title": "Oil Change",
+      "description": "Flat-6 oil and filter change procedure for both 997.1 and 997.2.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "status": "coming-soon"
+    },
+    {
+      "id": "spark-plugs",
+      "title": "Spark Plug Replacement",
+      "description": "Replace spark plugs on the M97 or 9A1 engine.",
+      "difficulty": "Easy",
+      "time": "1 hour",
+      "status": "coming-soon"
+    },
+    {
+      "id": "brake-pads",
+      "title": "Brake Pad Replacement",
+      "description": "Front and rear brake pad replacement.",
+      "difficulty": "Easy",
+      "time": "1-2 hours",
+      "status": "coming-soon"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "zrg-classics",
+  "version": "1.0.0",
+  "description": "Resource Hub for Classic Porsche & BMW",
+  "main": ".eleventy.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "watch": "eleventy --watch"
+  },
+  "keywords": [
+    "porsche",
+    "bmw",
+    "classic-cars",
+    "resources"
+  ],
+  "author": "ZRG Classics",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

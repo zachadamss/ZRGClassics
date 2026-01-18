@@ -1,0 +1,246 @@
+{
+  "model": "944",
+  "brand": "Porsche",
+  "fullName": "Porsche 944",
+  "years": "1982-1991",
+  "engines": ["2.5L I4", "2.5L Turbo I4", "2.7L I4 (944S)", "3.0L I4 (944S2)"],
+  "heroImage": "/images/vehicles/944-hero.jpg",
+  "issues": [
+    {
+      "id": "timing-belt",
+      "title": "Timing Belt and Balance Shaft Belt Failure",
+      "symptoms": "Engine won't start, catastrophic engine noise, bent valves, snapped belt visible through timing cover inspection hole",
+      "description": "The 944's 2.5L (and 2.7L/3.0L in later S and S2 models) inline-4 is an interference engine that relies on timing and balance shaft belts. If either belt fails, the valves will contact the pistons, requiring an engine rebuild or replacement. This is the most critical maintenance item on the 944.",
+      "fixes": [
+        "Replace BOTH timing belt AND balance shaft belt every 30,000 miles or 4 years",
+        "Replace timing belt tensioner and rollers",
+        "Replace water pump (driven by timing belt)",
+        "Replace all timing belt area seals",
+        "Use only high-quality belts (OEM, Gates, Continental)",
+        "Never buy a 944 without documented timing belt history"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    },
+    {
+      "id": "water-pump",
+      "title": "Water Pump Failure",
+      "symptoms": "Coolant leak at front of engine, overheating, squealing noise from engine, play in water pump shaft",
+      "description": "The 944 water pump is driven by the timing belt and located behind the timing covers. When the pump bearings or seals fail, coolant leaks externally or, worse, internally into the timing belt area where it can contaminate and weaken the belt.",
+      "fixes": [
+        "ALWAYS replace water pump with timing belt service",
+        "Use OEM or quality metal-impeller pump",
+        "Replace thermostat at the same time",
+        "If pump failed between services, inspect timing belt for contamination",
+        "Pressure test cooling system after repair"
+      ],
+      "sources": [
+        { "name": "Pelican Parts", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "dme-relay",
+      "title": "DME Relay Failure",
+      "symptoms": "No-start condition, fuel pump doesn't prime, car dies while driving and won't restart, intermittent starting issues",
+      "description": "The DME (Digital Motor Electronics) relay is an infamous weak point on all 944s. This relay controls power to the fuel pump, fuel injectors, and engine management computer. The relay uses solder joints that crack over time from thermal cycling.",
+      "fixes": [
+        "Replace DME relay with new OEM unit",
+        "Avoid cheap aftermarket relays",
+        "Some owners re-solder the original relay as temporary fix",
+        "Carry a spare relay in the glove box",
+        "Clean relay socket contacts while relay is out"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "944Online", "url": "#" }
+      ]
+    },
+    {
+      "id": "clutch-hydraulics",
+      "title": "Clutch Hydraulic System Failure",
+      "symptoms": "Clutch pedal goes to floor, soft or spongy pedal, difficulty shifting, clutch won't disengage, fluid leak",
+      "description": "The 944 uses a hydraulic clutch system with a master cylinder at the pedal and a slave cylinder at the transaxle. Both cylinders use rubber seals that deteriorate over time, causing internal and external leaks.",
+      "fixes": [
+        "Replace clutch master cylinder",
+        "Replace clutch slave cylinder",
+        "Replace clutch hydraulic line if deteriorated",
+        "Bleed system thoroughly (use pressure bleeder for best results)",
+        "Use DOT 4 brake fluid"
+      ],
+      "sources": [
+        { "name": "Pelican Parts", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "torque-tube",
+      "title": "Torque Tube Bearing Wear",
+      "symptoms": "Vibration at certain speeds, humming or growling noise from center of car, vibration when accelerating or decelerating",
+      "description": "The 944 uses a torque tube to connect the front-mounted engine to the rear-mounted transaxle. The torque tube contains the driveshaft and uses a center support bearing that wears over time, causing vibrations and noise.",
+      "fixes": [
+        "Replace torque tube center support bearing",
+        "Inspect CV joints at both ends of the driveshaft",
+        "Replace flex disc (guibo) at engine end if cracked",
+        "Replace rear CV joint if worn",
+        "Have torque tube serviced by specialist if unfamiliar"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "944Online", "url": "#" }
+      ]
+    },
+    {
+      "id": "dashboard-crack",
+      "title": "Dashboard Cracking",
+      "symptoms": "Cracks appearing on dashboard surface, especially on top near windshield, warping, deteriorating texture",
+      "description": "The 944 dashboard is made of foam covered with vinyl and is extremely prone to cracking, especially in hot climates or when exposed to direct sunlight. UV exposure causes the vinyl to shrink and crack.",
+      "fixes": [
+        "Dashboard cover or cap (covers damage but changes appearance)",
+        "Professional dashboard restoration",
+        "Replacement with used dashboard",
+        "Custom dashboard replacement panels",
+        "Prevention: always use sunshade when parked"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "944Online", "url": "#" }
+      ]
+    },
+    {
+      "id": "power-steering",
+      "title": "Power Steering Rack Leaks",
+      "symptoms": "Power steering fluid leak, low fluid in reservoir, heavy steering when cold, whining from power steering pump",
+      "description": "The 944 power steering rack commonly develops leaks from the seals as they age. Leaks typically occur at the pinion seal, tie rod end seals, or pressure line connections.",
+      "fixes": [
+        "Rebuild steering rack with new seals",
+        "Replace steering rack with rebuilt or new unit",
+        "Replace power steering lines if leaking",
+        "Replace power steering pump if damaged",
+        "Replace tie rod ends while rack is out"
+      ],
+      "sources": [
+        { "name": "Pelican Parts", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "odometer-gears",
+      "title": "Odometer and Speedometer Gear Failure",
+      "symptoms": "Odometer stops working while speedometer works, intermittent odometer, trip meter stuck",
+      "description": "The 944 instrument cluster uses plastic gears to drive the odometer from the speedometer. These gears strip or crack with age, causing the odometer to stop functioning while the speedometer continues to work.",
+      "fixes": [
+        "Replace odometer gears with aftermarket repair kit (brass gears available)",
+        "Have instrument cluster professionally rebuilt",
+        "Replace entire cluster with functional used unit",
+        "This is a common DIY repair with proper instructions"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    },
+    {
+      "id": "engine-mounts",
+      "title": "Engine Mount Deterioration",
+      "symptoms": "Excessive engine vibration, engine moves visibly during acceleration/deceleration, clunking when shifting",
+      "description": "The 944 engine is mounted to the chassis with rubber mounts that deteriorate over time. When worn, the engine moves excessively, causing vibrations and clunking noises during load changes.",
+      "fixes": [
+        "Replace engine mounts with OEM rubber mounts",
+        "Consider polyurethane mounts for performance use",
+        "Replace transaxle mounts at the same time",
+        "Check and replace torque tube mounts if worn"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "944Online", "url": "#" }
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "id": "timing-belt-service",
+      "title": "Timing & Balance Shaft Belt Service",
+      "description": "Complete timing belt, balance shaft belt, water pump, and roller replacement.",
+      "difficulty": "Advanced",
+      "time": "8-12 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "clutch-replacement",
+      "title": "Clutch Replacement",
+      "description": "Full clutch disc, pressure plate, and throwout bearing replacement.",
+      "difficulty": "Advanced",
+      "time": "10-14 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "suspension-refresh",
+      "title": "Suspension Refresh",
+      "description": "Complete front and rear suspension overhaul.",
+      "difficulty": "Intermediate",
+      "time": "12-16 hours",
+      "status": "coming-soon"
+    }
+  ],
+  "suppliers": {
+    "oem": [
+      { "name": "Porsche Parts", "url": "#", "notes": "Genuine Porsche OEM" },
+      { "name": "Pelican Parts", "url": "#", "notes": "Extensive Porsche catalog" }
+    ],
+    "aftermarket": [
+      { "name": "Lindsey Racing", "url": "#", "notes": "Performance and OEM parts" },
+      { "name": "944 Online", "url": "#", "notes": "944-specific resources" }
+    ],
+    "used": [
+      { "name": "Rennlist Classifieds", "url": "#", "notes": "Forum marketplace" },
+      { "name": "eBay Motors", "url": "#", "notes": "Used & NOS parts" }
+    ]
+  },
+  "torqueSpecs": {
+    "engine": [
+      { "component": "Cylinder Head Bolts", "spec": "48 ft-lbs + 90°", "notes": "New bolts required" },
+      { "component": "Timing Belt Tensioner", "spec": "33 ft-lbs", "notes": "" },
+      { "component": "Balance Shaft Belt Tensioner", "spec": "15 ft-lbs", "notes": "" },
+      { "component": "Spark Plugs", "spec": "22 ft-lbs", "notes": "" },
+      { "component": "Oil Drain Plug", "spec": "22 ft-lbs", "notes": "Replace washer" }
+    ],
+    "suspension": [
+      { "component": "Strut Top Nut", "spec": "58 ft-lbs", "notes": "" },
+      { "component": "Control Arm Bolts", "spec": "63 ft-lbs", "notes": "" },
+      { "component": "Wheel Lug Nuts", "spec": "96 ft-lbs", "notes": "" }
+    ],
+    "brakes": [
+      { "component": "Caliper Bolts", "spec": "63 ft-lbs", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "11 ft-lbs", "notes": "" }
+    ]
+  },
+  "diyGuides": [
+    {
+      "id": "oil-change",
+      "title": "Oil Change",
+      "description": "Basic oil and filter change procedure.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "status": "coming-soon"
+    },
+    {
+      "id": "dme-relay",
+      "title": "DME Relay Replacement",
+      "description": "Replace the notorious DME relay before it leaves you stranded.",
+      "difficulty": "Easy",
+      "time": "15 min",
+      "status": "coming-soon"
+    },
+    {
+      "id": "brake-pads",
+      "title": "Brake Pad Replacement",
+      "description": "Front and rear brake pad replacement.",
+      "difficulty": "Easy",
+      "time": "1-2 hours",
+      "status": "coming-soon"
+    }
+  ]
+}

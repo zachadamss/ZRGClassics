@@ -1,0 +1,94 @@
+---
+layout: layouts/base.njk
+---
+{% set vehicleData = vehicles[vehicle] %}
+{% include "partials/breadcrumb.njk" %}
+
+<!-- Vehicle Hero -->
+<section class="vehicle-hero">
+    <div class="vehicle-hero-content">
+        <h1>{{ vehicleData.fullName }}</h1>
+        <div class="vehicle-meta">
+            <span class="vehicle-years">Years: {{ vehicleData.years }}</span>
+        </div>
+        <div class="vehicle-engines">
+            <span class="engines-label">Engines:</span>
+            {% for engine in vehicleData.engines %}
+            <span class="engine-tag">{{ engine }}</span>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Quick Links -->
+<nav class="quick-links">
+    <a href="#common-issues">Common Issues</a>
+    <a href="#restoration-guides">Guides</a>
+    <a href="#parts-suppliers">Parts</a>
+    <a href="#torque-specs">Specs</a>
+    <a href="#diy-guides">DIY</a>
+</nav>
+
+<main class="resource-content">
+    <!-- Common Issues Section -->
+    <section id="common-issues" class="resource-section">
+        <h2 class="section-title">Common Issues</h2>
+        <p class="section-subtitle">Known problems, symptoms, and solutions for the {{ vehicleData.model }} platform</p>
+
+        {% for issue in vehicleData.issues %}
+        {% include "partials/issue-card.njk" %}
+        {% endfor %}
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Restoration Guides Section -->
+    <section id="restoration-guides" class="resource-section">
+        <h2 class="section-title">Restoration Guides</h2>
+        <p class="section-subtitle">Comprehensive guides for rebuilding and restoring your {{ vehicleData.model }}</p>
+
+        <div class="guide-grid">
+            {% for guide in vehicleData.guides %}
+            {% include "partials/guide-card.njk" %}
+            {% endfor %}
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Parts & Suppliers Section -->
+    <section id="parts-suppliers" class="resource-section">
+        <h2 class="section-title">Parts & Suppliers</h2>
+        <p class="section-subtitle">Trusted sources for OEM, aftermarket, and used parts</p>
+
+        {% set vehicle = vehicleData %}
+        {% include "partials/supplier-list.njk" %}
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Torque Specs Section -->
+    <section id="torque-specs" class="resource-section">
+        <h2 class="section-title">Torque Specifications</h2>
+        <p class="section-subtitle">Factory torque values for common service items</p>
+
+        {% set vehicle = vehicleData %}
+        {% include "partials/specs-table.njk" %}
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- DIY Guides Section -->
+    <section id="diy-guides" class="resource-section">
+        <h2 class="section-title">DIY Maintenance Guides</h2>
+        <p class="section-subtitle">Step-by-step tutorials for common maintenance tasks</p>
+
+        <div class="guide-grid">
+            {% for guide in vehicleData.diyGuides %}
+            {% set diyGuide = guide %}
+            {% set vehicle = vehicleData %}
+            {% include "partials/guide-card.njk" %}
+            {% endfor %}
+        </div>
+    </section>
+</main>

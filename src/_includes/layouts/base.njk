@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - {{ site.name }}</title>
+    <link rel="stylesheet" href="{{ '/' if page.url != '/' else '' }}{{ 'styles.css' | url }}">
+    <link rel="icon" type="image/x-icon" href="{{ '/' if page.url != '/' else '' }}images/favicon.ico">
+</head>
+<body>
+    {% include "partials/header.njk" %}
+
+    {{ content | safe }}
+
+    {% include "partials/footer.njk" %}
+
+    <script src="{{ '/' if page.url != '/' else '' }}script.js"></script>
+    {% if extraScripts %}
+    {% for script in extraScripts %}
+    <script src="{{ '/' if page.url != '/' else '' }}{{ script }}"></script>
+    {% endfor %}
+    {% endif %}
+</body>
+</html>

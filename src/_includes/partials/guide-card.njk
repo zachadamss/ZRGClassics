@@ -1,0 +1,18 @@
+{% set currentGuide = diyGuide if diyGuide else guide %}
+<article class="guide-card{% if currentGuide.status == 'coming-soon' %} coming-soon{% endif %}">
+    <div class="guide-card-content">
+        <h3>{{ currentGuide.title }}</h3>
+        <p class="guide-description">{{ currentGuide.description }}</p>
+        <div class="guide-meta">
+            <span class="difficulty difficulty-{{ currentGuide.difficulty | lower }}">{{ currentGuide.difficulty }}</span>
+            <span class="time-estimate">{{ currentGuide.time }}</span>
+        </div>
+    </div>
+    {% if currentGuide.status == 'coming-soon' %}
+    <div class="guide-status">
+        <span class="coming-soon-badge">Coming Soon</span>
+    </div>
+    {% else %}
+    <a href="/guides/{{ vehicle.brand | lower }}/{{ vehicle.model | lower }}/{{ currentGuide.id }}/" class="guide-link">View Guide</a>
+    {% endif %}
+</article>

@@ -1,0 +1,214 @@
+{
+  "model": "996",
+  "brand": "Porsche",
+  "fullName": "Porsche 996 911",
+  "years": "1998-2005",
+  "engines": ["3.4L Flat-6 (M96)", "3.6L Flat-6 (M96)", "3.6L Twin-Turbo (Turbo)"],
+  "heroImage": "/images/vehicles/996-hero.jpg",
+  "issues": [
+    {
+      "id": "ims-bearing",
+      "title": "IMS Bearing Failure",
+      "symptoms": "Metallic debris in oil filter, grinding/knocking noise, sudden catastrophic engine failure, oil pressure warning",
+      "description": "The 996 shares the M96 engine with the Boxster, and thus the same IMS bearing concern. The intermediate shaft bearing can fail without warning, destroying the engine. The 1999-2001 cars with the dual-row bearing have a lower failure rate, while 2002-2005 cars with the single-row bearing are at higher risk. The 996 Turbo and GT3 use different engines and are NOT affected by IMS issues.",
+      "fixes": [
+        "Proactive IMS bearing replacement with upgraded bearing",
+        "LN Engineering ceramic hybrid bearing is the gold standard",
+        "Plain bearing conversion eliminates the bearing entirely",
+        "Regular oil analysis to detect bearing wear early",
+        "Change oil every 5,000 miles with quality synthetic",
+        "Consider when purchasing: get a PPI with IMS inspection"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "LN Engineering", "url": "#" }
+      ]
+    },
+    {
+      "id": "bore-scoring",
+      "title": "Bore Scoring / D-Chunk",
+      "symptoms": "Ticking/knocking noise (especially when cold), excessive oil consumption, smoke on startup, low compression on specific cylinders",
+      "description": "Bore scoring in the M96 engine is caused by debris damaging the cylinder walls, allowing oil past the piston rings. \"D-Chunk\" refers to a failure mode where a piece of the cylinder wall breaks away. Cylinders 5 and 6 are most commonly affected. This is distinct from IMS failure but equally serious.",
+      "fixes": [
+        "Borescope inspection before purchase and periodically",
+        "Minor scoring: monitor closely, use high-quality oil",
+        "Moderate scoring: cylinder sleeving repair",
+        "Severe scoring: engine rebuild or replacement",
+        "Prevention: warm up properly, don't let oil get low, regular changes"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Flat Six Innovations", "url": "#" }
+      ]
+    },
+    {
+      "id": "rms-leak",
+      "title": "Rear Main Seal (RMS) Leak",
+      "symptoms": "Oil drips from transmission area, oil on clutch causing slip, burning oil smell, visible oil around flywheel",
+      "description": "The rear main seal between the engine and transmission leaks on many M96 engines. On manual transmission cars, oil contaminates the clutch disc causing slipping. The repair requires separating the engine from the transmission.",
+      "fixes": [
+        "Replace rear main seal with updated Porsche part",
+        "Combine with IMS bearing replacement (same labor)",
+        "Replace clutch if contaminated with oil",
+        "Inspect flywheel for damage from oil contamination",
+        "Consider dual-mass flywheel replacement if original"
+      ],
+      "sources": [
+        { "name": "Pelican Parts", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "aos",
+      "title": "AOS (Air/Oil Separator) Failure",
+      "symptoms": "Rough idle, whistling noise, smoke from exhaust, oil consumption, check engine light for lean codes",
+      "description": "The Air/Oil Separator removes oil vapor from crankcase gases before they enter the intake. The AOS has an internal diaphragm that fails over time, causing vacuum leaks and allowing oil into the intake system.",
+      "fixes": [
+        "Replace AOS unit with OEM or upgraded aftermarket",
+        "Replace associated vacuum hoses while accessible",
+        "Clean MAF sensor and throttle body during service",
+        "Combine with other under-manifold repairs",
+        "Consider upgraded AOS designs that resist failure better"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "FCP Euro", "url": "#" }
+      ]
+    },
+    {
+      "id": "coolant-system",
+      "title": "Coolant System Failures",
+      "symptoms": "Overheating, coolant loss, steam from engine area, coolant smell, temperature warning",
+      "description": "The 996 uses plastic coolant pipes and a complex cooling system with dual radiators in the front. The plastic pipes under the intake manifold can crack with age, causing sudden coolant loss.",
+      "fixes": [
+        "Replace plastic coolant pipes with aluminum upgrade",
+        "Replace water pump (prone to bearing failure)",
+        "Replace thermostat if original",
+        "Replace expansion tank (cracks with age)",
+        "Flush system and replace coolant every 4 years",
+        "Inspect and replace coolant hoses as preventive maintenance"
+      ],
+      "sources": [
+        { "name": "Pelican Parts", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "headlight-seals",
+      "title": "Headlight Seal Failure (\"Fried Egg\" Headlights)",
+      "symptoms": "Condensation inside headlight, yellowed/cloudy appearance, reduced light output",
+      "description": "The 996's distinctive \"fried egg\" headlights are known for developing moisture inside the housing due to seal failure. This causes condensation, reduces light output, and can damage the bulbs and electronics.",
+      "fixes": [
+        "Reseal headlights (requires oven or heat gun to separate lenses)",
+        "Add small silica gel packets inside housing",
+        "Replace headlight assemblies if severely damaged",
+        "Check and clear drain holes in headlight housings",
+        "Aftermarket clear lens conversions available"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Planet-9", "url": "#" }
+      ]
+    },
+    {
+      "id": "suspension",
+      "title": "Suspension Wear",
+      "symptoms": "Clunking over bumps, poor handling, uneven tire wear, steering play, car sitting lower on one side",
+      "description": "The 996's suspension uses control arms, ball joints, and bushings that wear over time. Front control arm bushings and ball joints are common failure points. The rear spring perches can crack, causing the car to sit lower.",
+      "fixes": [
+        "Replace front control arms (bushings not serviceable separately)",
+        "Inspect and replace ball joints",
+        "Check rear spring perches for cracks",
+        "Replace worn sway bar end links and bushings",
+        "Get alignment after any suspension work"
+      ],
+      "sources": [
+        { "name": "FCP Euro", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "id": "ims-bearing",
+      "title": "IMS Bearing Replacement",
+      "description": "Complete guide to replacing the IMS bearing with upgraded unit.",
+      "difficulty": "Advanced",
+      "time": "10-14 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "coolant-pipes",
+      "title": "Coolant Pipe Upgrade",
+      "description": "Replace plastic coolant pipes with aluminum upgrade kit.",
+      "difficulty": "Intermediate",
+      "time": "4-6 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "headlight-reseal",
+      "title": "Headlight Reseal",
+      "description": "Remove moisture and reseal the headlight housings.",
+      "difficulty": "Intermediate",
+      "time": "4-6 hours",
+      "status": "coming-soon"
+    }
+  ],
+  "suppliers": {
+    "oem": [
+      { "name": "Porsche Parts", "url": "#", "notes": "Genuine Porsche OEM" },
+      { "name": "FCP Euro", "url": "#", "notes": "Lifetime replacement guarantee" },
+      { "name": "Pelican Parts", "url": "#", "notes": "Extensive Porsche catalog" }
+    ],
+    "aftermarket": [
+      { "name": "LN Engineering", "url": "#", "notes": "IMS bearing specialists" },
+      { "name": "Flat 6 Innovations", "url": "#", "notes": "986/996 performance parts" }
+    ],
+    "used": [
+      { "name": "Rennlist Classifieds", "url": "#", "notes": "Forum marketplace" },
+      { "name": "eBay Motors", "url": "#", "notes": "Used & NOS parts" }
+    ]
+  },
+  "torqueSpecs": {
+    "engine": [
+      { "component": "Spark Plugs", "spec": "22 ft-lbs", "notes": "" },
+      { "component": "Oil Drain Plug", "spec": "37 ft-lbs", "notes": "Replace washer" },
+      { "component": "Intake Manifold Bolts", "spec": "7 ft-lbs", "notes": "" }
+    ],
+    "suspension": [
+      { "component": "Wheel Lug Nuts", "spec": "96 ft-lbs", "notes": "" },
+      { "component": "Control Arm Bolts", "spec": "63 ft-lbs", "notes": "" },
+      { "component": "Strut Top Nut", "spec": "44 ft-lbs", "notes": "" }
+    ],
+    "brakes": [
+      { "component": "Caliper Bolts", "spec": "63 ft-lbs", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "11 ft-lbs", "notes": "" }
+    ]
+  },
+  "diyGuides": [
+    {
+      "id": "oil-change",
+      "title": "Oil Change",
+      "description": "Flat-6 oil and filter change procedure.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "status": "coming-soon"
+    },
+    {
+      "id": "spark-plugs",
+      "title": "Spark Plug Replacement",
+      "description": "Replace spark plugs on the M96 engine.",
+      "difficulty": "Easy",
+      "time": "1 hour",
+      "status": "coming-soon"
+    },
+    {
+      "id": "brake-pads",
+      "title": "Brake Pad Replacement",
+      "description": "Front and rear brake pad replacement.",
+      "difficulty": "Easy",
+      "time": "1-2 hours",
+      "status": "coming-soon"
+    }
+  ]
+}

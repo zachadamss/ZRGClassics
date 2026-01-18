@@ -1,0 +1,213 @@
+{
+  "model": "986",
+  "brand": "Porsche",
+  "fullName": "Porsche 986 Boxster",
+  "years": "1996-2004",
+  "engines": ["2.5L Flat-6 (M96)", "2.7L Flat-6 (M96)", "3.2L Flat-6 (S)"],
+  "heroImage": "/images/vehicles/986-hero.jpg",
+  "issues": [
+    {
+      "id": "ims-bearing",
+      "title": "IMS Bearing Failure",
+      "symptoms": "Metallic debris in oil, grinding noise from engine, sudden catastrophic engine failure, oil light flickering",
+      "description": "The Intermediate Shaft (IMS) bearing is the most feared issue on the M96 engine used in the 986 Boxster. The bearing supports the intermediate shaft that drives the camshafts. When it fails, metal debris circulates through the engine, causing catastrophic damage. Early cars (1997-1999) with the dual-row bearing are less prone, while 2000-2005 cars with the single-row bearing are at higher risk.",
+      "fixes": [
+        "Proactive IMS bearing replacement with upgraded bearing",
+        "LN Engineering ceramic hybrid bearing (most popular upgrade)",
+        "Plain bearing conversion (eliminates bearing entirely)",
+        "Regular oil analysis to detect early bearing wear",
+        "Use quality oil and change every 5,000 miles"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "LN Engineering", "url": "#" }
+      ]
+    },
+    {
+      "id": "rms-leak",
+      "title": "Rear Main Seal (RMS) Leak",
+      "symptoms": "Oil drips from bell housing area, oil on clutch (manual), burning oil smell, oil consumption",
+      "description": "The rear main seal on the M96 engine is known to leak, especially on higher mileage cars. Oil leaks onto the clutch causing slipping and requiring clutch replacement along with the seal. The RMS is located between the engine and transmission, so the job requires engine or transmission removal.",
+      "fixes": [
+        "Replace rear main seal (requires engine/trans separation)",
+        "Combine with IMS bearing and clutch if applicable",
+        "Use updated Porsche seal (improved design)",
+        "Inspect flywheel for oil contamination damage"
+      ],
+      "sources": [
+        { "name": "Pelican Parts", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "coolant-pipes",
+      "title": "Coolant Pipe Failure",
+      "symptoms": "Sudden coolant loss, overheating, coolant smell, puddle under car, white smoke from engine bay",
+      "description": "The 986 uses plastic coolant pipes that run under the intake manifold. These pipes become brittle with age and heat, eventually cracking and causing rapid coolant loss. Because the engine is mid-mounted, overheating can occur quickly without warning.",
+      "fixes": [
+        "Replace with updated OEM plastic pipes",
+        "Upgrade to aluminum coolant pipe kit (permanent fix)",
+        "Replace coolant tank and hoses at the same time",
+        "Consider replacing thermostat during service",
+        "This is a preventive maintenance item - don't wait for failure"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "FCP Euro", "url": "#" }
+      ]
+    },
+    {
+      "id": "convertible-top",
+      "title": "Convertible Top Issues",
+      "symptoms": "Top won't open/close, warning light on dash, hydraulic fluid leak, slow operation, top stops mid-cycle",
+      "description": "The 986 Boxster's convertible top mechanism is hydraulic and electrically controlled. Common failure points include the hydraulic pump, rams (cylinders), and the micro switches that sense top position.",
+      "fixes": [
+        "Check and refill hydraulic fluid (use correct Pentosin CHF 11S)",
+        "Replace hydraulic rams if leaking",
+        "Replace or repair hydraulic pump",
+        "Adjust or replace micro switches",
+        "Replace top transmission if cables are worn",
+        "Regular lubrication of moving parts prevents issues"
+      ],
+      "sources": [
+        { "name": "Planet-9", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    },
+    {
+      "id": "aos",
+      "title": "AOS (Air/Oil Separator) Failure",
+      "symptoms": "Rough idle, smoke from exhaust on startup, oil consumption, whistling noise, check engine light",
+      "description": "The Air/Oil Separator (AOS) is part of the crankcase ventilation system. It separates oil vapor from air before routing it back to the intake. When the AOS fails (usually the internal diaphragm), it can cause vacuum leaks, allow oil into the intake, and cause rough running.",
+      "fixes": [
+        "Replace AOS unit (OEM or aftermarket)",
+        "Consider upgraded AOS designs that are more durable",
+        "Replace vacuum lines while AOS is accessible",
+        "Check and clean throttle body during service",
+        "Combine with other under-intake repairs to save labor"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Flat 6 Innovations", "url": "#" }
+      ]
+    },
+    {
+      "id": "bore-scoring",
+      "title": "Bore Scoring / Cylinder Wear",
+      "symptoms": "Knocking noise from engine (cold or hot), increased oil consumption, smoke on startup, low compression",
+      "description": "Some M96 engines develop bore scoring - damage to the cylinder walls that allows oil to pass the piston rings. The cause is debated. Bore scoring can range from minor (cosmetic) to severe (engine rebuild required). It's more common on cars that sit for long periods or are driven short distances.",
+      "fixes": [
+        "Borescope inspection to assess cylinder condition",
+        "For minor scoring: monitor and use quality oil",
+        "For severe scoring: cylinder sleeve repair or engine rebuild",
+        "LN Engineering offers cylinder repair services",
+        "Prevention: regular driving, proper warm-up, quality oil"
+      ],
+      "sources": [
+        { "name": "LN Engineering", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "window-regulator",
+      "title": "Window Regulator Failure",
+      "symptoms": "Window drops into door, grinding noise, slow window operation, window off track",
+      "description": "Like many cars of this era, the 986 uses cable-driven window regulators with plastic components that fail. The cables can fray or the plastic guides can break, causing the window to drop or operate erratically.",
+      "fixes": [
+        "Replace window regulator assembly",
+        "Lubricate window tracks to reduce regulator strain",
+        "Check and adjust window alignment after replacement",
+        "Replace both sides if one fails (the other is likely close behind)"
+      ],
+      "sources": [
+        { "name": "Pelican Parts", "url": "#" },
+        { "name": "Planet-9", "url": "#" }
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "id": "ims-bearing",
+      "title": "IMS Bearing Replacement",
+      "description": "Complete guide to replacing the IMS bearing with upgraded unit.",
+      "difficulty": "Advanced",
+      "time": "8-12 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "coolant-pipes",
+      "title": "Coolant Pipe Upgrade",
+      "description": "Replace plastic coolant pipes with aluminum upgrade kit.",
+      "difficulty": "Intermediate",
+      "time": "4-6 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "aos-replacement",
+      "title": "AOS Replacement",
+      "description": "Air/Oil Separator replacement and vacuum line refresh.",
+      "difficulty": "Intermediate",
+      "time": "3-4 hours",
+      "status": "coming-soon"
+    }
+  ],
+  "suppliers": {
+    "oem": [
+      { "name": "Porsche Parts", "url": "#", "notes": "Genuine Porsche OEM" },
+      { "name": "FCP Euro", "url": "#", "notes": "Lifetime replacement guarantee" },
+      { "name": "Pelican Parts", "url": "#", "notes": "Extensive Porsche catalog" }
+    ],
+    "aftermarket": [
+      { "name": "LN Engineering", "url": "#", "notes": "IMS bearing specialists" },
+      { "name": "Flat 6 Innovations", "url": "#", "notes": "986/996 performance parts" }
+    ],
+    "used": [
+      { "name": "Rennlist Classifieds", "url": "#", "notes": "Forum marketplace" },
+      { "name": "Planet-9 Classifieds", "url": "#", "notes": "986/987 marketplace" },
+      { "name": "eBay Motors", "url": "#", "notes": "Used & NOS parts" }
+    ]
+  },
+  "torqueSpecs": {
+    "engine": [
+      { "component": "Spark Plugs", "spec": "22 ft-lbs", "notes": "" },
+      { "component": "Oil Drain Plug", "spec": "37 ft-lbs", "notes": "Replace washer" },
+      { "component": "IMS Bearing Flange", "spec": "See specific kit instructions", "notes": "" },
+      { "component": "Intake Manifold Bolts", "spec": "7 ft-lbs", "notes": "" }
+    ],
+    "suspension": [
+      { "component": "Wheel Lug Nuts", "spec": "96 ft-lbs", "notes": "" },
+      { "component": "Control Arm Bolts", "spec": "63 ft-lbs", "notes": "" },
+      { "component": "Strut Top Nut", "spec": "44 ft-lbs", "notes": "" }
+    ],
+    "brakes": [
+      { "component": "Caliper Bolts", "spec": "63 ft-lbs", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "11 ft-lbs", "notes": "" }
+    ]
+  },
+  "diyGuides": [
+    {
+      "id": "oil-change",
+      "title": "Oil Change",
+      "description": "Flat-6 oil and filter change procedure.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "status": "coming-soon"
+    },
+    {
+      "id": "convertible-top-lube",
+      "title": "Convertible Top Maintenance",
+      "description": "Keep your top working smoothly with regular lubrication.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "status": "coming-soon"
+    },
+    {
+      "id": "brake-pads",
+      "title": "Brake Pad Replacement",
+      "description": "Front and rear brake pad replacement.",
+      "difficulty": "Easy",
+      "time": "1-2 hours",
+      "status": "coming-soon"
+    }
+  ]
+}

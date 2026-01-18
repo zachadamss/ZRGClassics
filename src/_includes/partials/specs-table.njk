@@ -1,0 +1,73 @@
+<div class="specs-container">
+    {% if vehicle.torqueSpecs.engine %}
+    <div class="specs-category">
+        <h3>Engine</h3>
+        <table class="specs-table">
+            <thead>
+                <tr>
+                    <th>Component</th>
+                    <th>Torque Spec</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for spec in vehicle.torqueSpecs.engine %}
+                <tr>
+                    <td data-label="Component">{{ spec.component }}</td>
+                    <td data-label="Torque">{{ spec.spec }}</td>
+                    <td data-label="Notes">{{ spec.notes if spec.notes else '-' }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% endif %}
+
+    {% if vehicle.torqueSpecs.suspension %}
+    <div class="specs-category">
+        <h3>Suspension</h3>
+        <table class="specs-table">
+            <thead>
+                <tr>
+                    <th>Component</th>
+                    <th>Torque Spec</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for spec in vehicle.torqueSpecs.suspension %}
+                <tr>
+                    <td data-label="Component">{{ spec.component }}</td>
+                    <td data-label="Torque">{{ spec.spec }}</td>
+                    <td data-label="Notes">{{ spec.notes if spec.notes else '-' }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% endif %}
+
+    {% if vehicle.torqueSpecs.brakes %}
+    <div class="specs-category">
+        <h3>Brakes</h3>
+        <table class="specs-table">
+            <thead>
+                <tr>
+                    <th>Component</th>
+                    <th>Torque Spec</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for spec in vehicle.torqueSpecs.brakes %}
+                <tr>
+                    <td data-label="Component">{{ spec.component }}</td>
+                    <td data-label="Torque">{{ spec.spec }}</td>
+                    <td data-label="Notes">{{ spec.notes if spec.notes else '-' }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% endif %}
+</div>

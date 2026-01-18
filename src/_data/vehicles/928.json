@@ -1,0 +1,273 @@
+{
+  "model": "928",
+  "brand": "Porsche",
+  "fullName": "Porsche 928",
+  "years": "1977-1995",
+  "engines": ["4.5L V8 (M28)", "4.7L V8 (S)", "5.0L V8 (S4/GT)", "5.4L V8 (GTS)"],
+  "heroImage": "/images/vehicles/928-hero.jpg",
+  "issues": [
+    {
+      "id": "timing-belt",
+      "title": "Timing Belt Failure",
+      "symptoms": "Engine won't start, catastrophic engine noise, bent valves, visible belt damage through inspection hole",
+      "description": "The 928's V8 engine is an interference engine that uses a timing belt to drive the camshafts. Belt failure results in piston-to-valve contact and catastrophic engine damage. The 928 has a single belt that drives both camshafts via a complex path around multiple rollers.",
+      "fixes": [
+        "Replace timing belt every 30,000-40,000 miles or 4 years",
+        "Replace ALL timing belt rollers and tensioner",
+        "Replace water pump at the same time",
+        "Replace front camshaft and crankshaft seals",
+        "Inspect and replace belt cover gaskets",
+        "Use only high-quality OEM or premium belts",
+        "Budget 8-12 hours labor at a specialist shop"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "928 Specialists", "url": "#" }
+      ]
+    },
+    {
+      "id": "cam-tower-gaskets",
+      "title": "Cam Tower Gasket and Oil Leaks",
+      "symptoms": "Oil leaks at top of engine, burning oil smell, oil on exhaust manifolds, low oil level, smoke from engine bay",
+      "description": "The 928 V8 is notorious for oil leaks, primarily from the cam tower (cam cover) gaskets. These gaskets are located at the top of each cylinder bank and seal the camshaft area. They harden with age and heat, causing oil to leak onto the exhaust manifolds.",
+      "fixes": [
+        "Replace cam tower gaskets with updated Porsche gaskets",
+        "Replace valve cover gaskets at the same time",
+        "Inspect and replace cylinder head gaskets if leaking",
+        "Replace rear main seal if leaking (requires transmission removal)",
+        "Replace oil pan gasket if leaking",
+        "Replace all oil cooler lines and seals"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "928 International", "url": "#" }
+      ]
+    },
+    {
+      "id": "wiring-harness",
+      "title": "Engine Wiring Harness Deterioration",
+      "symptoms": "Random misfires, check engine light, running issues, no-start conditions, sensors not reading correctly",
+      "description": "The 928's engine wiring harness is routed through a hot area near the engine and uses insulation that becomes brittle and cracks with age and heat. This is especially problematic on S4 and later models with more complex engine management.",
+      "fixes": [
+        "Inspect harness for cracked or brittle insulation",
+        "Rewrap harness with proper heat-resistant tape or conduit",
+        "Repair individual broken wires with proper soldering",
+        "Replace entire engine wiring harness (rebuilt available)",
+        "Add heat shielding to protect new harness",
+        "Clean and protect all electrical connectors"
+      ],
+      "sources": [
+        { "name": "928 Specialists", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "automatic-transmission",
+      "title": "Automatic Transmission Issues",
+      "symptoms": "Harsh shifting, slipping, delayed engagement, no movement in gear, fluid leaks, overheating warning",
+      "description": "Most 928s were sold with automatic transmissions (Mercedes 4-speed or later Aisin-Warner 4-speed). These transmissions are generally robust but require proper maintenance and develop problems with age.",
+      "fixes": [
+        "Regular fluid and filter changes (every 30,000 miles)",
+        "Flush transmission cooler and lines",
+        "Replace transmission cooler if clogged or leaking",
+        "Rebuild or replace valve body for shift quality issues",
+        "Replace torque converter if shuddering",
+        "Full transmission rebuild for severe issues"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "928 International", "url": "#" }
+      ]
+    },
+    {
+      "id": "cooling-system",
+      "title": "Cooling System Failures",
+      "symptoms": "Overheating, coolant leaks, white smoke from tailpipe, heater not working, temperature gauge fluctuation",
+      "description": "The 928's V8 produces significant heat and relies on a complex cooling system. The water pump, driven by the timing belt, is a common failure point. The radiator's plastic end tanks crack with age.",
+      "fixes": [
+        "Replace water pump with every timing belt service",
+        "Replace thermostat with OEM temperature rating",
+        "Replace radiator if plastic tanks cracking or leaking",
+        "Replace all coolant hoses (including heater hoses)",
+        "Flush cooling system and use proper coolant",
+        "Check and clean electric cooling fan operation"
+      ],
+      "sources": [
+        { "name": "Pelican Parts", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "vacuum-system",
+      "title": "Vacuum System Deterioration",
+      "symptoms": "Climate control not working, doors won't lock, cruise control failure, rough idle, brake booster issues",
+      "description": "The 928 uses vacuum to power many systems including HVAC controls, door locks, cruise control, and brake booster. Over 25-45 years, the vacuum hoses become brittle and crack, causing leaks.",
+      "fixes": [
+        "Replace all vacuum hoses throughout the car",
+        "Check and replace vacuum reservoir if cracked",
+        "Replace vacuum check valves",
+        "Test vacuum actuators in doors and HVAC system",
+        "Replace brake booster check valve if brakes feel hard"
+      ],
+      "sources": [
+        { "name": "928 Specialists", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "weissach-axle",
+      "title": "Weissach Axle Suspension Wear (S4/GTS)",
+      "symptoms": "Rear-end wander, unpredictable handling at limit, clunking from rear, uneven rear tire wear",
+      "description": "Later 928 models (S4, GT, GTS) use the Weissach rear axle, a sophisticated multi-link suspension that provides passive rear-wheel steering for improved handling. The system uses multiple bushings and control arms that wear over time.",
+      "fixes": [
+        "Inspect all Weissach axle bushings for wear",
+        "Replace control arm bushings (polyurethane or OEM rubber)",
+        "Replace toe links and trailing arm bushings",
+        "Check wheel bearings for play",
+        "Rebuild or replace control arms if ball joints worn",
+        "Perform full rear alignment after suspension work"
+      ],
+      "sources": [
+        { "name": "928 International", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "popup-headlights",
+      "title": "Pop-Up Headlight Failure",
+      "symptoms": "Headlights stuck up or down, slow headlight operation, one headlight won't open, motor noise but no movement",
+      "description": "The 928's distinctive pop-up headlights are operated by electric motors driving cables and linkages. The motors can fail, the cables can break or stretch, and the plastic linkage components can crack.",
+      "fixes": [
+        "Lubricate headlight pivot points with white lithium grease",
+        "Replace headlight cables if stretched or frayed",
+        "Replace headlight motor if failed",
+        "Replace plastic linkage components if cracked",
+        "Adjust limit switches for proper open/close positions"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    },
+    {
+      "id": "instrument-cluster",
+      "title": "Instrument Cluster and Electronics",
+      "symptoms": "Dead or flickering gauges, inaccurate readings, warning lights stuck on, odometer failure, dim display",
+      "description": "The 928's instrument cluster is a complex electronic unit with multiple displays and warning systems. The circuit board develops solder cracks from thermal cycling. Capacitors fail with age. The LCD displays can fade or fail.",
+      "fixes": [
+        "Re-solder cracked connections on cluster circuit board",
+        "Replace failed capacitors",
+        "Replace LCD displays with new or NOS units",
+        "Replace odometer gears (brass upgrade kits available)",
+        "Have cluster professionally rebuilt by 928 specialist"
+      ],
+      "sources": [
+        { "name": "928 Specialists", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "ac-system",
+      "title": "Air Conditioning System Failures",
+      "symptoms": "No cold air, weak airflow, hot on one side and cold on the other, clicking from dashboard, refrigerant leaks",
+      "description": "The 928's automatic climate control system was advanced for its time but is now 25-45 years old. The compressor, condenser, and evaporator all wear out. The early R12 systems have been converted to R134a, often improperly.",
+      "fixes": [
+        "Properly convert R12 systems to R134a",
+        "Replace compressor if failed or worn",
+        "Replace condenser and receiver/drier if system was open",
+        "Repair or replace evaporator if leaking",
+        "Replace blend door servo motors",
+        "Check vacuum supply to HVAC system"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "928 International", "url": "#" }
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "id": "timing-belt-service",
+      "title": "Timing Belt Service",
+      "description": "Complete V8 timing belt, rollers, water pump, and seal replacement.",
+      "difficulty": "Advanced",
+      "time": "10-14 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "wiring-harness",
+      "title": "Engine Wiring Harness Repair",
+      "description": "Inspecting, repairing, or replacing the deteriorated engine harness.",
+      "difficulty": "Advanced",
+      "time": "8-16 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "vacuum-system",
+      "title": "Vacuum System Overhaul",
+      "description": "Complete vacuum line replacement and system diagnosis.",
+      "difficulty": "Intermediate",
+      "time": "6-10 hours",
+      "status": "coming-soon"
+    }
+  ],
+  "suppliers": {
+    "oem": [
+      { "name": "Porsche Parts", "url": "#", "notes": "Genuine Porsche OEM" },
+      { "name": "Pelican Parts", "url": "#", "notes": "Extensive Porsche catalog" }
+    ],
+    "aftermarket": [
+      { "name": "928 Specialists", "url": "#", "notes": "928-specific expertise" },
+      { "name": "928 International", "url": "#", "notes": "928 community resource" }
+    ],
+    "used": [
+      { "name": "Rennlist Classifieds", "url": "#", "notes": "Forum marketplace" },
+      { "name": "928 Forum Classifieds", "url": "#", "notes": "928-specific marketplace" },
+      { "name": "eBay Motors", "url": "#", "notes": "Used & NOS parts" }
+    ]
+  },
+  "torqueSpecs": {
+    "engine": [
+      { "component": "Cylinder Head Bolts", "spec": "Varies by year - see manual", "notes": "Complex procedure" },
+      { "component": "Timing Belt Tensioner", "spec": "33 ft-lbs", "notes": "" },
+      { "component": "Spark Plugs", "spec": "22 ft-lbs", "notes": "" },
+      { "component": "Cam Tower Bolts", "spec": "7 ft-lbs", "notes": "Tighten evenly" },
+      { "component": "Oil Drain Plug", "spec": "22 ft-lbs", "notes": "Replace washer" }
+    ],
+    "suspension": [
+      { "component": "Wheel Lug Nuts", "spec": "96 ft-lbs", "notes": "" },
+      { "component": "Control Arm Bolts", "spec": "63 ft-lbs", "notes": "" },
+      { "component": "Tie Rod Ends", "spec": "33 ft-lbs", "notes": "" }
+    ],
+    "brakes": [
+      { "component": "Caliper Bolts", "spec": "63 ft-lbs", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "11 ft-lbs", "notes": "" }
+    ]
+  },
+  "diyGuides": [
+    {
+      "id": "oil-change",
+      "title": "Oil Change",
+      "description": "V8 oil and filter change procedure.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "status": "coming-soon"
+    },
+    {
+      "id": "headlight-lubrication",
+      "title": "Pop-Up Headlight Lubrication",
+      "description": "Keep your pop-up headlights working smoothly.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "status": "coming-soon"
+    },
+    {
+      "id": "brake-pads",
+      "title": "Brake Pad Replacement",
+      "description": "Front and rear brake pad replacement.",
+      "difficulty": "Easy",
+      "time": "1-2 hours",
+      "status": "coming-soon"
+    }
+  ]
+}

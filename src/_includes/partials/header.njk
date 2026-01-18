@@ -1,0 +1,45 @@
+<!-- Header -->
+<header>
+    <div class="logo">
+        <a href="/"><img src="/images/logo.jpg" alt="ZRG Classics Logo"></a>
+    </div>
+    <nav>
+        <ul>
+            {% for item in navigation.main %}
+            {% if item.children %}
+            <li class="dropdown">
+                <a href="#">{{ item.label }}</a>
+                <ul class="dropdown-menu">
+                    {% for child in item.children %}
+                    {% if child.children %}
+                    <li class="dropdown-item has-submenu">
+                        <a href="{{ child.url }}">
+                            {{ child.label }} <span class="submenu-arrow">&#9656;</span>
+                        </a>
+                        <ul class="submenu">
+                            {% for subchild in child.children %}
+                            <li><a href="{{ subchild.url }}">{{ subchild.label }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    {% else %}
+                    <li><a href="{{ child.url }}">{{ child.label }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </li>
+            {% else %}
+            <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+            {% endif %}
+            {% endfor %}
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                🌓
+            </button>
+        </ul>
+    </nav>
+    <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+</header>

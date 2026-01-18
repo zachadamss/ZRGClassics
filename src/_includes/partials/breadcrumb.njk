@@ -1,0 +1,12 @@
+<!-- Breadcrumb -->
+<nav class="breadcrumb">
+    <ol class="breadcrumb-list">
+        {% for crumb in breadcrumbs %}
+        {% if loop.last %}
+        <li>{{ crumb.label }}</li>
+        {% else %}
+        <li><a href="{{ crumb.url }}">{{ crumb.label }}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ol>
+</nav>

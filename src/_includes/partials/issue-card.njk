@@ -1,0 +1,22 @@
+<article class="issue-card" id="{{ issue.id }}">
+    <h3>{{ issue.title }}</h3>
+    <p class="symptoms"><strong>Symptoms:</strong> {{ issue.symptoms }}</p>
+    <p class="description">{{ issue.description }}</p>
+    <div class="fix">
+        <h4>Common Fixes</h4>
+        <ul>
+            {% for fix in issue.fixes %}
+            <li>{{ fix }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% if issue.sources %}
+    <div class="attribution">
+        <p>Sources:
+            {% for source in issue.sources %}
+            <a href="{{ source.url }}">{{ source.name }}</a>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+        </p>
+    </div>
+    {% endif %}
+</article>

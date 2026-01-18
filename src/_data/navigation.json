@@ -1,0 +1,37 @@
+{
+  "main": [
+    { "label": "Home", "url": "/" },
+    {
+      "label": "Resources",
+      "children": [
+        {
+          "label": "BMW",
+          "url": "/resources/bmw/",
+          "children": [
+            { "label": "E30 (1982-1994)", "url": "/resources/bmw/e30/" },
+            { "label": "E36 (1990-2000)", "url": "/resources/bmw/e36/" },
+            { "label": "E46 (1999-2006)", "url": "/resources/bmw/e46/" }
+          ]
+        },
+        {
+          "label": "Porsche",
+          "url": "/resources/porsche/",
+          "children": [
+            { "label": "924 (1976-1988)", "url": "/resources/porsche/924/" },
+            { "label": "944 (1982-1991)", "url": "/resources/porsche/944/" },
+            { "label": "928 (1977-1995)", "url": "/resources/porsche/928/" },
+            { "label": "986 Boxster (1996-2004)", "url": "/resources/porsche/986/" },
+            { "label": "996 (1998-2005)", "url": "/resources/porsche/996/" },
+            { "label": "997 (2004-2012)", "url": "/resources/porsche/997/" }
+          ]
+        }
+      ]
+    },
+    { "label": "Search", "url": "/search/" },
+    { "label": "Tools", "url": "/tools/invoice/" },
+    { "label": "Community", "url": "/community/forums/" },
+    { "label": "Shop", "url": "/shop/" },
+    { "label": "About", "url": "/about/" },
+    { "label": "Contact", "url": "/contact/" }
+  ]
+}

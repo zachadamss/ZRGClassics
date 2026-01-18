@@ -1,0 +1,220 @@
+{
+  "model": "E36",
+  "brand": "BMW",
+  "fullName": "BMW E36 3 Series",
+  "years": "1990-2000",
+  "engines": ["M50 2.5L I6", "M52 2.8L I6", "M42 1.8L I4", "S50/S52 3.0L I6"],
+  "heroImage": "/images/vehicles/e36-hero.jpg",
+  "issues": [
+    {
+      "id": "cooling-system",
+      "title": "Cooling System Failures",
+      "symptoms": "Overheating, coolant leaks, temperature gauge pegged high, steam from engine bay, heater blowing cold",
+      "description": "The E36 cooling system is notoriously fragile and one of the most critical maintenance items. BMW used plastic components that become brittle with heat cycles and age. The expansion tank, thermostat housing, water pump impeller, and radiator end tanks are all prone to failure. A cooling system failure can quickly lead to head gasket damage or a warped head.",
+      "fixes": [
+        "Replace expansion tank every 60,000 miles or at first sign of cracking",
+        "Replace thermostat and housing (upgrade to aluminum housing available)",
+        "Install water pump with metal impeller (plastic impellers can shatter)",
+        "Replace radiator with aluminum or new OEM unit",
+        "Replace all coolant hoses during major service",
+        "Consider doing a full cooling system refresh preventatively"
+      ],
+      "sources": [
+        { "name": "Bimmerforums", "url": "#" },
+        { "name": "Turner Motorsport", "url": "#" }
+      ]
+    },
+    {
+      "id": "vanos",
+      "title": "VANOS System Issues (M50TU/M52)",
+      "symptoms": "Rough idle, loss of low-end torque, engine rattle at startup, hesitation between 2500-3500 RPM",
+      "description": "The E36 with M50TU and M52 engines uses BMW's Single VANOS variable valve timing system. The VANOS unit's seals harden and fail over time, leading to oil leaks and loss of proper valve timing. The VANOS piston seals and the oil supply line seals are the most common failure points.",
+      "fixes": [
+        "Replace VANOS seals with upgraded Viton seal kit",
+        "Replace VANOS oil line O-rings",
+        "Clean VANOS solenoid screen filter",
+        "For severe cases, rebuild or replace entire VANOS unit"
+      ],
+      "sources": [
+        { "name": "Beisan Systems", "url": "#" },
+        { "name": "Bimmerforums", "url": "#" }
+      ]
+    },
+    {
+      "id": "rtab",
+      "title": "Rear Trailing Arm Bushing (RTAB) Failure",
+      "symptoms": "Clunking from rear over bumps, vague rear-end feel, rear tire wear on inside edge, visible bushing deterioration",
+      "description": "The rear trailing arm bushings on the E36 are a well-known weak point. These bushings support the rear suspension and when they wear out, they allow excessive movement of the rear wheels. This affects handling, causes accelerated tire wear, and can make the car feel loose or unpredictable in corners.",
+      "fixes": [
+        "Replace with OEM rubber bushings (softer ride, will wear again)",
+        "Upgrade to polyurethane or Delrin bushings (longer lasting, slightly harsher)",
+        "Consider RTAB limiter kit to reduce deflection",
+        "Get an alignment after replacement",
+        "Check rear subframe mounts at the same time"
+      ],
+      "sources": [
+        { "name": "Turner Motorsport", "url": "#" },
+        { "name": "Bimmerforums", "url": "#" }
+      ]
+    },
+    {
+      "id": "window-regulator",
+      "title": "Window Regulator Failure",
+      "symptoms": "Window drops into door, grinding noise during operation, window moves slowly or crooked, clicking sounds",
+      "description": "E36 window regulators use plastic clips and guides that fail over time. When the clips break, the window can drop into the door panel. This is especially common on driver's side windows due to more frequent use.",
+      "fixes": [
+        "Replace entire window regulator assembly",
+        "Some owners replace just the plastic clips (temporary fix)",
+        "Lubricate window tracks to reduce strain on regulators",
+        "Replace both front regulators at the same time"
+      ],
+      "sources": [
+        { "name": "Pelican Parts", "url": "#" },
+        { "name": "ECS Tuning", "url": "#" }
+      ]
+    },
+    {
+      "id": "oil-leaks",
+      "title": "Oil Leaks",
+      "symptoms": "Oil spots under car, burning oil smell, visible oil on engine, low oil level between changes",
+      "description": "E36s are known for developing oil leaks from several common locations. The valve cover gasket, oil filter housing gasket (OFHG), oil pan gasket, and rear main seal are all common leak points. The OFHG is particularly notorious and can leak onto the serpentine belt.",
+      "fixes": [
+        "Replace valve cover gasket (easy DIY job)",
+        "Replace oil filter housing gasket (common and important)",
+        "Replace VANOS line O-rings (often done with OFHG)",
+        "Replace oil pan gasket (requires lifting engine slightly)",
+        "Rear main seal (labor-intensive, do with clutch replacement)"
+      ],
+      "sources": [
+        { "name": "Bimmerforums", "url": "#" },
+        { "name": "FCP Euro", "url": "#" }
+      ]
+    },
+    {
+      "id": "control-arm-bushings",
+      "title": "Control Arm Bushings",
+      "symptoms": "Steering wheel vibration, clunking over bumps, pulling to one side, uneven front tire wear",
+      "description": "The E36 front suspension uses control arms with pressed-in bushings that wear over time. The lower control arm bushings are the most common failure point. Worn bushings cause imprecise steering, vibration, and accelerated tire wear.",
+      "fixes": [
+        "Replace complete control arms (bushings are pressed in)",
+        "OEM bushings for stock feel, or polyurethane for performance",
+        "Consider M3 control arms for track use (different geometry)",
+        "Alignment is required after replacement",
+        "Inspect ball joints while control arms are out"
+      ],
+      "sources": [
+        { "name": "Turner Motorsport", "url": "#" },
+        { "name": "Bimmerforums", "url": "#" }
+      ]
+    },
+    {
+      "id": "ignition-system",
+      "title": "Ignition System Failures",
+      "symptoms": "Misfires, rough idle, poor fuel economy, check engine light, hesitation under load",
+      "description": "The E36's ignition system components wear out and can cause running issues. The ignition coils, spark plugs, plug wires (on earlier models), and crankshaft position sensor are common failure points.",
+      "fixes": [
+        "Replace spark plugs every 30,000-60,000 miles",
+        "Replace ignition coils if misfiring",
+        "Replace crankshaft position sensor (causes no-starts)",
+        "Check and replace camshaft position sensor if needed",
+        "Replace spark plug wires on earlier models"
+      ],
+      "sources": [
+        { "name": "Pelican Parts", "url": "#" },
+        { "name": "Bimmerforums", "url": "#" }
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "id": "cooling-refresh",
+      "title": "Complete Cooling System Refresh",
+      "description": "Replace all cooling system components including expansion tank, thermostat, water pump, hoses, and radiator.",
+      "difficulty": "Intermediate",
+      "time": "6-8 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "vanos-rebuild",
+      "title": "VANOS Seal Replacement",
+      "description": "Step-by-step guide to replacing VANOS seals and restoring proper valve timing.",
+      "difficulty": "Intermediate",
+      "time": "3-4 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "suspension-refresh",
+      "title": "Full Suspension Refresh",
+      "description": "Complete front and rear suspension overhaul including control arms, RTABs, and bushings.",
+      "difficulty": "Intermediate",
+      "time": "12-16 hours",
+      "status": "coming-soon"
+    }
+  ],
+  "suppliers": {
+    "oem": [
+      { "name": "BMW Parts", "url": "#", "notes": "Genuine BMW OEM parts" },
+      { "name": "FCP Euro", "url": "#", "notes": "Lifetime replacement guarantee" },
+      { "name": "Pelican Parts", "url": "#", "notes": "Extensive BMW catalog" }
+    ],
+    "aftermarket": [
+      { "name": "Turner Motorsport", "url": "#", "notes": "Performance parts & accessories" },
+      { "name": "ECS Tuning", "url": "#", "notes": "Wide selection of parts" },
+      { "name": "Bimmerworld", "url": "#", "notes": "Racing and performance parts" }
+    ],
+    "used": [
+      { "name": "Bimmerforums Classifieds", "url": "#", "notes": "Forum marketplace" },
+      { "name": "eBay Motors", "url": "#", "notes": "Used & NOS parts" },
+      { "name": "Car-Part.com", "url": "#", "notes": "Salvage yard inventory" }
+    ]
+  },
+  "torqueSpecs": {
+    "engine": [
+      { "component": "Cylinder Head Bolts (M50/M52)", "spec": "22 ft-lbs + 90° + 90°", "notes": "TTY bolts, replace each use" },
+      { "component": "Main Bearing Caps", "spec": "47 ft-lbs", "notes": "" },
+      { "component": "Connecting Rod Bolts", "spec": "38 ft-lbs", "notes": "" },
+      { "component": "Spark Plugs", "spec": "18-22 ft-lbs", "notes": "" },
+      { "component": "Valve Cover Bolts", "spec": "89 in-lbs", "notes": "Do not overtighten" },
+      { "component": "Oil Drain Plug", "spec": "18 ft-lbs", "notes": "Replace crush washer" },
+      { "component": "VANOS Unit Bolts", "spec": "10 ft-lbs", "notes": "" }
+    ],
+    "suspension": [
+      { "component": "Control Arm to Subframe", "spec": "57 ft-lbs", "notes": "Tighten with weight on wheels" },
+      { "component": "Strut Top Nut", "spec": "47 ft-lbs", "notes": "" },
+      { "component": "Wheel Lug Bolts", "spec": "80 ft-lbs", "notes": "Tighten in star pattern" },
+      { "component": "RTAB Bolts", "spec": "52 ft-lbs", "notes": "Tighten with weight on wheels" },
+      { "component": "Subframe Bolts", "spec": "57 ft-lbs", "notes": "" }
+    ],
+    "brakes": [
+      { "component": "Front Caliper Carrier", "spec": "81 ft-lbs", "notes": "" },
+      { "component": "Rear Caliper Carrier", "spec": "48 ft-lbs", "notes": "" },
+      { "component": "Wheel Speed Sensor", "spec": "7 ft-lbs", "notes": "" }
+    ]
+  },
+  "diyGuides": [
+    {
+      "id": "oil-change",
+      "title": "Oil Change",
+      "description": "Complete oil and filter change procedure for M50 and M52 engines.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "status": "coming-soon"
+    },
+    {
+      "id": "valve-cover-gasket",
+      "title": "Valve Cover Gasket",
+      "description": "Stop oil leaks with a new valve cover gasket - one of the easiest E36 repairs.",
+      "difficulty": "Easy",
+      "time": "1 hour",
+      "status": "coming-soon"
+    },
+    {
+      "id": "brake-pads",
+      "title": "Brake Pad Replacement",
+      "description": "Front and rear brake pad replacement with sensor reset.",
+      "difficulty": "Easy",
+      "time": "1-2 hours",
+      "status": "coming-soon"
+    }
+  ]
+}

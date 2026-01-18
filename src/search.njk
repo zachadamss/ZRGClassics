@@ -1,0 +1,38 @@
+---
+layout: layouts/base.njk
+title: Search
+extraScripts:
+  - search.js
+---
+<main class="search-page">
+    <div class="search-container">
+        <h1>Search Resources</h1>
+        <p class="search-subtitle">Find common issues, fixes, and information across all vehicle models</p>
+
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search for issues, symptoms, or fixes..." autocomplete="off">
+            <button id="search-btn" type="button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="M21 21l-4.35-4.35"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="search-filters">
+            <span class="filter-label">Filter by:</span>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="bmw">BMW</button>
+                <button class="filter-btn" data-filter="porsche">Porsche</button>
+            </div>
+        </div>
+
+        <div class="search-results" id="search-results">
+            <div class="search-placeholder">
+                <p>Enter a search term to find common issues, symptoms, and fixes across all vehicle models.</p>
+                <p><strong>Try searching for:</strong> timing belt, overheating, IMS bearing, VANOS, cooling system</p>
+            </div>
+        </div>
+    </div>
+</main>

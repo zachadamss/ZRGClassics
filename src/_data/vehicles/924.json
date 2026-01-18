@@ -1,0 +1,239 @@
+{
+  "model": "924",
+  "brand": "Porsche",
+  "fullName": "Porsche 924",
+  "years": "1976-1988",
+  "engines": ["2.0L I4 (Audi)", "2.5L I4 (924S)", "2.0L Turbo I4"],
+  "heroImage": "/images/vehicles/924-hero.jpg",
+  "issues": [
+    {
+      "id": "timing-belt",
+      "title": "Timing Belt Failure",
+      "symptoms": "Engine won't start, loud slapping noise, bent valves after failure, visible belt cracking or fraying",
+      "description": "The 924's Audi-derived 2.0L inline-4 (and later 2.5L in the 924S) uses a timing belt to drive the camshaft. This is an interference engine, meaning if the belt breaks, the pistons will contact the valves, causing severe engine damage. The 924 Turbo and 924S also require balance shaft belt replacement at the same interval.",
+      "fixes": [
+        "Replace timing belt every 30,000-40,000 miles or 4 years",
+        "Replace water pump at the same time (driven by timing belt)",
+        "Replace timing belt tensioner and idler rollers",
+        "On 924S/Turbo: replace balance shaft belt simultaneously",
+        "Inspect and replace front crankshaft and camshaft seals if leaking",
+        "Use OEM or high-quality belts (Gates, Continental)"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    },
+    {
+      "id": "cis-fuel-injection",
+      "title": "CIS Fuel Injection Problems",
+      "symptoms": "Hard starting (especially when cold or hot), rough idle, hesitation under acceleration, poor fuel economy, flooding, black smoke",
+      "description": "The 924 uses Bosch K-Jetronic Continuous Injection System (CIS), a mechanical fuel injection system that was advanced for its time but is now 40+ years old. The system relies on precise fuel pressures, a mechanical fuel distributor, and vacuum-controlled warm-up regulator.",
+      "fixes": [
+        "Test and set system pressures (control pressure, system pressure, residual pressure)",
+        "Replace warm-up regulator (WUR) if control pressure is incorrect",
+        "Clean or replace fuel injectors (rebuild kits available)",
+        "Replace fuel accumulator if car is hard to hot-start",
+        "Check fuel pump delivery volume and pressure",
+        "Inspect air flow sensor plate for smooth movement",
+        "Replace all rubber fuel lines (ethanol degrades old rubber)"
+      ],
+      "sources": [
+        { "name": "924Board", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    },
+    {
+      "id": "clutch-cable",
+      "title": "Clutch Cable and Clutch System Wear",
+      "symptoms": "Heavy clutch pedal, clutch slipping, difficulty shifting, clutch pedal sticks down, grinding when shifting",
+      "description": "The 924 uses a cable-operated clutch system running through the central tunnel to the rear-mounted transaxle. The clutch cable stretches with age and use, and the guide tube in the tunnel can wear, causing increased friction.",
+      "fixes": [
+        "Adjust clutch cable to restore proper free play",
+        "Replace clutch cable if stretched beyond adjustment or frayed",
+        "Lubricate cable guide tube if pedal feel is poor",
+        "When replacing clutch, always replace throwout bearing, pilot bearing, and clutch fork",
+        "Consider upgraded clutch kits for spirited driving"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "924Board", "url": "#" }
+      ]
+    },
+    {
+      "id": "rust",
+      "title": "Rust and Corrosion",
+      "symptoms": "Bubbling paint, visible rust holes, soft floors, leaking trunk or cabin, rusty battery box",
+      "description": "The 924 is prone to rust in several well-known areas. The front fenders rust behind the headlights and at the lower edges. The battery box corrodes from acid exposure. Door bottoms and rocker panels trap moisture. The rear hatch area around the seal is vulnerable.",
+      "fixes": [
+        "Inspect battery box regularly and neutralize acid",
+        "Check and clear all drain holes (doors, rocker panels, floor plugs)",
+        "Replace front fenders if rust is extensive (reproduction available)",
+        "Weld in repair panels for floor pan rust",
+        "Apply rust prevention coating (POR-15, Eastwood)",
+        "Treat cavity areas with rust prevention spray"
+      ],
+      "sources": [
+        { "name": "924Board", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "electrical",
+      "title": "Electrical System Issues",
+      "symptoms": "Intermittent no-start, dead gauges, flickering lights, non-functional windows/mirrors, fuel pump runs constantly",
+      "description": "The 924's electrical system suffers from 40+ years of age. The main culprits are the DME/fuel pump relay, corroded ground connections, and degraded wiring insulation. The combination relay on the fuse box controls multiple functions and commonly fails.",
+      "fixes": [
+        "Replace DME/fuel pump relay with new OEM unit",
+        "Clean and tighten all ground connections",
+        "Inspect and repair wiring under the hood (heat damage common)",
+        "Replace combination relay if multiple electrical functions affected",
+        "Repair or replace instrument cluster circuit board",
+        "Replace ignition switch if experiencing intermittent starting issues"
+      ],
+      "sources": [
+        { "name": "924Board", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    },
+    {
+      "id": "cooling-system",
+      "title": "Cooling System Failures",
+      "symptoms": "Overheating, coolant leaks, heater not working, temperature gauge fluctuation, steam from engine bay",
+      "description": "The 924's cooling system works hard, especially on turbocharged models. The water pump is driven by the timing belt and should be replaced with every belt service. The radiator's plastic end tanks become brittle with age.",
+      "fixes": [
+        "Replace water pump with every timing belt service",
+        "Replace thermostat (use OEM temperature rating)",
+        "Upgrade to aluminum or modern radiator if plastic tanks cracking",
+        "Replace all coolant hoses (including heater hoses)",
+        "Flush cooling system and use proper coolant",
+        "On turbo models: inspect turbo coolant lines and oil cooler"
+      ],
+      "sources": [
+        { "name": "Rennlist", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    },
+    {
+      "id": "transaxle",
+      "title": "Transaxle and Differential Issues",
+      "symptoms": "Grinding when shifting, popping out of gear, whining noise from rear, difficulty engaging reverse, oil leaks",
+      "description": "The 924 uses a rear-mounted transaxle that combines the transmission and differential. Common issues include worn synchros (especially 2nd gear), tired shift linkage, and differential wear. The transaxle mount deteriorates and affects shift quality.",
+      "fixes": [
+        "Change transaxle fluid regularly with correct GL-4 gear oil",
+        "Replace transaxle mount (donut) if shift quality is poor",
+        "Rebuild or replace shift linkage bushings",
+        "For synchro wear: rebuild transaxle or find quality replacement",
+        "Replace output shaft seals if leaking"
+      ],
+      "sources": [
+        { "name": "924Board", "url": "#" },
+        { "name": "Rennlist", "url": "#" }
+      ]
+    },
+    {
+      "id": "suspension",
+      "title": "Suspension and Steering Wear",
+      "symptoms": "Clunking over bumps, vague steering, uneven tire wear, wandering at highway speed, squeaking from front end",
+      "description": "After 35-45 years, nearly every 924 needs suspension attention. Common wear items include strut mounts, control arm bushings, tie rod ends, and ball joints. The steering rack can develop play and leak.",
+      "fixes": [
+        "Replace strut mounts (bearing and rubber mount)",
+        "Install new shocks/struts (Bilstein, Koni, KW available)",
+        "Replace all control arm bushings",
+        "Replace tie rod ends and check steering rack for play",
+        "Rebuild or replace steering rack if leaking or worn",
+        "Perform full alignment after suspension work"
+      ],
+      "sources": [
+        { "name": "924Board", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "id": "timing-belt-service",
+      "title": "Timing Belt Service",
+      "description": "Complete timing belt, water pump, and tensioner replacement guide.",
+      "difficulty": "Intermediate",
+      "time": "5-7 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "cis-tuning",
+      "title": "CIS Fuel Injection Tuning",
+      "description": "Diagnosing and tuning the K-Jetronic fuel injection system.",
+      "difficulty": "Advanced",
+      "time": "3-4 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "suspension-refresh",
+      "title": "Suspension Refresh",
+      "description": "Complete front and rear suspension overhaul.",
+      "difficulty": "Intermediate",
+      "time": "12-16 hours",
+      "status": "coming-soon"
+    }
+  ],
+  "suppliers": {
+    "oem": [
+      { "name": "Porsche Parts", "url": "#", "notes": "Genuine Porsche OEM" },
+      { "name": "Pelican Parts", "url": "#", "notes": "Extensive Porsche catalog" }
+    ],
+    "aftermarket": [
+      { "name": "924Board Store", "url": "#", "notes": "924-specific parts" },
+      { "name": "Lindsey Racing", "url": "#", "notes": "Performance and OEM parts" }
+    ],
+    "used": [
+      { "name": "Rennlist Classifieds", "url": "#", "notes": "Forum marketplace" },
+      { "name": "924Board Classifieds", "url": "#", "notes": "924-specific marketplace" },
+      { "name": "eBay Motors", "url": "#", "notes": "Used & NOS parts" }
+    ]
+  },
+  "torqueSpecs": {
+    "engine": [
+      { "component": "Cylinder Head Bolts", "spec": "54 ft-lbs + 90°", "notes": "Cold engine" },
+      { "component": "Timing Belt Tensioner", "spec": "33 ft-lbs", "notes": "" },
+      { "component": "Spark Plugs", "spec": "18-22 ft-lbs", "notes": "" },
+      { "component": "Valve Cover Nuts", "spec": "7 ft-lbs", "notes": "" },
+      { "component": "Oil Drain Plug", "spec": "22 ft-lbs", "notes": "Replace washer" }
+    ],
+    "suspension": [
+      { "component": "Strut Top Nut", "spec": "40 ft-lbs", "notes": "" },
+      { "component": "Control Arm Bolts", "spec": "65 ft-lbs", "notes": "" },
+      { "component": "Wheel Lug Nuts", "spec": "96 ft-lbs", "notes": "" },
+      { "component": "Tie Rod Ends", "spec": "33 ft-lbs", "notes": "" }
+    ],
+    "brakes": [
+      { "component": "Caliper Bolts", "spec": "48 ft-lbs", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "11 ft-lbs", "notes": "" }
+    ]
+  },
+  "diyGuides": [
+    {
+      "id": "oil-change",
+      "title": "Oil Change",
+      "description": "Basic oil and filter change procedure.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "status": "coming-soon"
+    },
+    {
+      "id": "clutch-adjustment",
+      "title": "Clutch Cable Adjustment",
+      "description": "Restore proper clutch pedal feel with cable adjustment.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "status": "coming-soon"
+    },
+    {
+      "id": "fuel-filter",
+      "title": "Fuel Filter Replacement",
+      "description": "Replace the fuel filter for better running.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "status": "coming-soon"
+    }
+  ]
+}

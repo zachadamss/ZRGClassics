@@ -1,0 +1,176 @@
+{
+  "model": "E46",
+  "brand": "BMW",
+  "fullName": "BMW E46 3 Series",
+  "years": "1999-2006",
+  "engines": ["M52TU 2.5L I6", "M54 3.0L I6", "S54 3.2L I6 (M3)"],
+  "heroImage": "/images/vehicles/e46-hero.jpg",
+  "issues": [
+    {
+      "id": "vanos",
+      "title": "VANOS System Failure",
+      "symptoms": "Rough idle, loss of power at low RPM, engine rattle on cold start, poor fuel economy",
+      "description": "The VANOS (Variable Nockenwellen Steuerung) system controls variable valve timing on BMW engines. On the E46, the VANOS seals are made of a rubber compound that degrades over time, causing oil leaks and loss of oil pressure to the VANOS unit. This results in improper valve timing and reduced engine performance.",
+      "fixes": [
+        "Replace VANOS seals with upgraded Viton seals",
+        "Replace VANOS solenoids if seals don't resolve issue",
+        "Full VANOS unit rebuild for severe cases"
+      ],
+      "sources": [
+        { "name": "Bimmerforums", "url": "#" },
+        { "name": "E46Fanatics", "url": "#" }
+      ]
+    },
+    {
+      "id": "cooling-system",
+      "title": "Cooling System Failures",
+      "symptoms": "Overheating, coolant leaks, temperature gauge fluctuation, steam from engine bay",
+      "description": "The E46 cooling system uses several plastic components that become brittle with age and heat cycles. The expansion tank, thermostat housing, and water pump impeller are particularly prone to failure. A complete cooling system failure can lead to catastrophic engine damage if the car overheats.",
+      "fixes": [
+        "Replace expansion tank (recommended every 60k miles)",
+        "Install aluminum thermostat housing",
+        "Replace water pump with metal impeller version",
+        "Replace all coolant hoses as preventive maintenance"
+      ],
+      "sources": [
+        { "name": "RealOEM", "url": "#" },
+        { "name": "Pelican Parts", "url": "#" }
+      ]
+    },
+    {
+      "id": "subframe-crack",
+      "title": "Rear Subframe Cracking",
+      "symptoms": "Clunking from rear on acceleration, visible cracks in trunk floor, misaligned rear wheels",
+      "description": "A well-documented issue on E46 models, particularly those with higher mileage or that have been driven hard. The rear subframe mounting points can crack the floor pan due to inadequate reinforcement from the factory. This is a serious structural issue that requires professional repair.",
+      "fixes": [
+        "Professional inspection of subframe mounting points",
+        "Subframe reinforcement plates (if caught early)",
+        "Full floor pan repair and subframe reinforcement for severe cases"
+      ],
+      "sources": [
+        { "name": "E46Fanatics", "url": "#" },
+        { "name": "BMW Technical Service Bulletins", "url": "#" }
+      ]
+    },
+    {
+      "id": "window-regulator",
+      "title": "Window Regulator Failure",
+      "symptoms": "Window drops into door, grinding noise when operating window, window operates slowly",
+      "description": "The window regulators on the E46 use plastic guides and cables that wear out over time. When the regulator fails, the window can drop suddenly into the door or stop working altogether. This usually affects driver-side windows first due to more frequent use.",
+      "fixes": [
+        "Replace window regulator assembly",
+        "Some owners replace just the plastic clips if caught early",
+        "Consider replacing both front regulators at the same time"
+      ],
+      "sources": [
+        { "name": "Bimmerforums", "url": "#" },
+        { "name": "FCP Euro", "url": "#" }
+      ]
+    },
+    {
+      "id": "control-arms",
+      "title": "Control Arm Bushing Wear",
+      "symptoms": "Vibration at highway speeds, wandering steering, clunking over bumps, uneven tire wear",
+      "description": "The front control arm bushings on the E46 wear out relatively quickly, especially on cars driven on rough roads. Worn bushings cause imprecise steering and can lead to accelerated tire wear. The E46 uses a multi-link front suspension that is sensitive to worn bushings.",
+      "fixes": [
+        "Replace control arms with new bushings (often sold as complete assemblies)",
+        "Consider upgraded polyurethane bushings for performance applications",
+        "Perform wheel alignment after replacement"
+      ],
+      "sources": [
+        { "name": "Tire Rack", "url": "#" },
+        { "name": "Turner Motorsport", "url": "#" }
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "id": "cooling-refresh",
+      "title": "Cooling System Overhaul",
+      "description": "Complete replacement of all cooling system components to prevent overheating disasters.",
+      "difficulty": "Intermediate",
+      "time": "5-7 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "subframe-reinforcement",
+      "title": "Subframe Inspection & Reinforcement",
+      "description": "How to inspect for subframe cracks and install reinforcement plates.",
+      "difficulty": "Advanced",
+      "time": "8-12 hours",
+      "status": "coming-soon"
+    },
+    {
+      "id": "vanos-rebuild",
+      "title": "VANOS Seal Replacement",
+      "description": "Restore proper valve timing with new VANOS seals.",
+      "difficulty": "Intermediate",
+      "time": "4-5 hours",
+      "status": "coming-soon"
+    }
+  ],
+  "suppliers": {
+    "oem": [
+      { "name": "BMW Parts", "url": "#", "notes": "Genuine BMW OEM parts" },
+      { "name": "FCP Euro", "url": "#", "notes": "Lifetime replacement guarantee" },
+      { "name": "Pelican Parts", "url": "#", "notes": "Extensive BMW catalog" }
+    ],
+    "aftermarket": [
+      { "name": "Turner Motorsport", "url": "#", "notes": "Performance parts & accessories" },
+      { "name": "ECS Tuning", "url": "#", "notes": "Wide selection of parts" },
+      { "name": "Bimmerworld", "url": "#", "notes": "Racing and performance parts" }
+    ],
+    "used": [
+      { "name": "E46Fanatics Classifieds", "url": "#", "notes": "Forum marketplace" },
+      { "name": "eBay Motors", "url": "#", "notes": "Used & NOS parts" },
+      { "name": "Car-Part.com", "url": "#", "notes": "Salvage yard inventory" }
+    ]
+  },
+  "torqueSpecs": {
+    "engine": [
+      { "component": "Cylinder Head Bolts", "spec": "22 ft-lbs + 90° + 90° + 90°", "notes": "TTY bolts, replace each use" },
+      { "component": "Main Bearing Caps", "spec": "15 ft-lbs + 70°", "notes": "" },
+      { "component": "Spark Plugs", "spec": "18-22 ft-lbs", "notes": "" },
+      { "component": "Valve Cover Bolts", "spec": "89 in-lbs", "notes": "" },
+      { "component": "Oil Drain Plug", "spec": "18 ft-lbs", "notes": "Replace crush washer" },
+      { "component": "VANOS Solenoid", "spec": "7 ft-lbs", "notes": "" }
+    ],
+    "suspension": [
+      { "component": "Control Arm to Subframe", "spec": "81 ft-lbs", "notes": "Tighten with weight on wheels" },
+      { "component": "Strut Top Nut", "spec": "47 ft-lbs", "notes": "" },
+      { "component": "Wheel Lug Bolts", "spec": "88 ft-lbs", "notes": "Tighten in star pattern" },
+      { "component": "Subframe Bolts", "spec": "74 ft-lbs", "notes": "" }
+    ],
+    "brakes": [
+      { "component": "Front Caliper Carrier", "spec": "81 ft-lbs", "notes": "" },
+      { "component": "Rear Caliper Carrier", "spec": "48 ft-lbs", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "11-13 ft-lbs", "notes": "" }
+    ]
+  },
+  "diyGuides": [
+    {
+      "id": "oil-change",
+      "title": "Oil Change",
+      "description": "Complete oil and filter change procedure for M54 engines.",
+      "difficulty": "Easy",
+      "time": "30 min",
+      "status": "coming-soon"
+    },
+    {
+      "id": "expansion-tank",
+      "title": "Expansion Tank Replacement",
+      "description": "Replace the plastic expansion tank before it cracks and leaves you stranded.",
+      "difficulty": "Easy",
+      "time": "1 hour",
+      "status": "coming-soon"
+    },
+    {
+      "id": "window-regulator",
+      "title": "Window Regulator Replacement",
+      "description": "Fix dropped windows with new regulator installation.",
+      "difficulty": "Easy",
+      "time": "1-2 hours",
+      "status": "coming-soon"
+    }
+  ]
+}

@@ -9,6 +9,12 @@
 - [x] Coming Soon pages for Tools/Community
 - [x] Updated About page with new mission
 - [x] Dark mode support on all new pages
+- [x] Search functionality with model and keyword filtering
+- [x] **11ty Migration** - Converted from static HTML to 11ty-powered static site
+  - Nunjucks templating with layouts and partials
+  - Data-driven vehicle pages from JSON files
+  - Automatic navigation generation from data
+  - Build system with `npm run build` and `npm run serve`
 
 ---
 
@@ -162,6 +168,50 @@
 - [ ] Minify CSS/JS for production
 - [ ] Add sitemap.xml
 - [ ] Add robots.txt
-- [ ] Consider templating system to reduce HTML duplication (navigation in 18 files)
+- [x] Consider templating system to reduce HTML duplication (navigation in 18 files) - **DONE: 11ty migration**
 - [ ] Add favicon for all pages (some missing)
 - [ ] Optimize images for web (if adding photos)
+
+---
+
+## Expanded Vehicle Page Sections (11ty Migration)
+
+Each vehicle page now has the following sections with placeholder/coming soon content:
+
+### Completed Structure
+- [x] **Vehicle Hero** - Model name, years, engine options
+- [x] **Quick Links** - Sticky navigation to page sections
+- [x] **Common Issues** - Existing content migrated
+- [x] **Restoration Guides** - Placeholder cards (coming soon)
+- [x] **Parts & Suppliers** - Tabbed OEM/Aftermarket/Used lists with placeholder entries
+- [x] **Torque Specifications** - Tables for Engine/Suspension/Brakes with common specs
+- [x] **DIY Guides** - Placeholder cards (coming soon)
+
+### Content Needed
+- [ ] Write actual restoration guide content for each vehicle
+- [ ] Add real supplier URLs and notes (currently placeholders)
+- [ ] Verify torque specs against factory service manuals
+- [ ] Write DIY maintenance guide content
+- [ ] Add hero images for each vehicle
+
+---
+
+## 11ty Development Notes
+
+**Commands:**
+- `npm run build` - Build site to `_site/`
+- `npm run serve` - Dev server at localhost:8080
+- `npm run watch` - Watch for changes
+
+**File Structure:**
+- `src/` - Source files (templates, data, assets)
+- `src/_data/` - Global data (site.json, navigation.json)
+- `src/_data/vehicles/` - Per-vehicle JSON data files
+- `src/_includes/` - Layouts and partials
+- `_site/` - Built output (gitignored)
+
+**Adding a New Vehicle:**
+1. Create `src/_data/vehicles/<model>.json` with vehicle data
+2. Create `src/resources/<brand>/<model>.njk` page template
+3. Add to `src/_data/navigation.json`
+4. Run `npm run build`

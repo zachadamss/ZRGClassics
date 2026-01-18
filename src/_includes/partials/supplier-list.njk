@@ -1,0 +1,57 @@
+<div class="supplier-section">
+    <div class="supplier-tabs">
+        <button class="supplier-tab active" data-tab="oem">OEM</button>
+        <button class="supplier-tab" data-tab="aftermarket">Aftermarket</button>
+        <button class="supplier-tab" data-tab="used">Used/NOS</button>
+    </div>
+
+    <div class="supplier-content">
+        <div class="supplier-list active" id="oem-suppliers">
+            {% for supplier in vehicle.suppliers.oem %}
+            <div class="supplier-item">
+                <a href="{{ supplier.url }}" class="supplier-name" target="_blank" rel="noopener">{{ supplier.name }}</a>
+                <span class="supplier-notes">{{ supplier.notes }}</span>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="supplier-list" id="aftermarket-suppliers">
+            {% for supplier in vehicle.suppliers.aftermarket %}
+            <div class="supplier-item">
+                <a href="{{ supplier.url }}" class="supplier-name" target="_blank" rel="noopener">{{ supplier.name }}</a>
+                <span class="supplier-notes">{{ supplier.notes }}</span>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="supplier-list" id="used-suppliers">
+            {% for supplier in vehicle.suppliers.used %}
+            <div class="supplier-item">
+                <a href="{{ supplier.url }}" class="supplier-name" target="_blank" rel="noopener">{{ supplier.name }}</a>
+                <span class="supplier-notes">{{ supplier.notes }}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const tabs = document.querySelectorAll('.supplier-tab');
+    const lists = document.querySelectorAll('.supplier-list');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            const targetId = this.dataset.tab + '-suppliers';
+
+            // Remove active from all tabs and lists
+            tabs.forEach(t => t.classList.remove('active'));
+            lists.forEach(l => l.classList.remove('active'));
+
+            // Add active to clicked tab and corresponding list
+            this.classList.add('active');
+            document.getElementById(targetId).classList.add('active');
+        });
+    });
+});
+</script>

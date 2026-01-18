@@ -1,0 +1,11 @@
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <p>&copy; {{ site.year }} {{ site.name }}. All rights reserved.</p>
+        <ul class="social-links">
+            {% for social in site.social %}
+            <li><a href="{{ social.url }}">{{ social.name }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</footer>
