@@ -120,6 +120,10 @@ create policy "Authors can update own threads"
   on public.forum_threads for update
   using (auth.uid() = author_id);
 
+create policy "Authors can delete own threads"
+  on public.forum_threads for delete
+  using (auth.uid() = author_id);
+
 -- ============================================
 -- 4. FORUM REPLIES
 -- ============================================
@@ -151,6 +155,10 @@ create policy "Authenticated users can create replies"
 
 create policy "Authors can update own replies"
   on public.forum_replies for update
+  using (auth.uid() = author_id);
+
+create policy "Authors can delete own replies"
+  on public.forum_replies for delete
   using (auth.uid() = author_id);
 
 -- ============================================
