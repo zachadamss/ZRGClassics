@@ -12,6 +12,9 @@
 - Production build with CSS/JS minification (~35% smaller)
 - Hero images for all 17 vehicles (Wikimedia Commons, CC licensed)
 - Image optimization pipeline (WebP + responsive sizes)
+- User authentication with Supabase (login, register, profiles)
+- Community Forums with categories, threads, replies, search
+- **My Garage** - Personal vehicle management with DB-synced restoration & maintenance tracking
 
 ---
 
@@ -65,6 +68,26 @@
   - Creates responsive sizes: 400, 800, 1200, 1920px
   - Run `npm run optimize:images` or included in `build:prod`
 
+- [x] **User Authentication** - Supabase Auth
+  - Login, register, forgot password flows
+  - User profiles with display name, location, bio
+  - Session management and protected routes
+
+- [x] **Community Forums** - Full forum system
+  - Categories organized by brand and topic
+  - Threaded discussions with replies
+  - Post counts, timestamps, search
+  - Author profiles and activity
+
+- [x] **My Garage** - Personal vehicle management
+  - Track up to 10 vehicles per user
+  - Detailed vehicle info (year, platform, VIN, mileage, purchase info)
+  - Per-vehicle restoration checklist with DB persistence
+  - Maintenance schedule with platform-specific presets
+  - Service history logging with costs, parts, notes
+  - "My Garage" nav link for authenticated users
+  - Database: 4 new tables with RLS policies
+
 ---
 
 ## Priority 1: Content
@@ -85,9 +108,10 @@
 
 ## Priority 3: Future / Requires Backend
 
-- [ ] **Community Forums** - Requires user auth
+- [x] User accounts and authentication (Supabase)
+- [x] **Community Forums** - Categories, threads, replies, search
+- [x] **My Garage** - Personal vehicle management with DB sync
 - [ ] **Parts Marketplace** - Requires user auth
-- [ ] User accounts and authentication
 
 ---
 
