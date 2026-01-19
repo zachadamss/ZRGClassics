@@ -22,19 +22,19 @@ keywords: "classic BMW, classic Porsche, E30, E36, E46, 911, Boxster, Cayman, 94
 <section class="stats-bar">
     <div class="stats-container">
         <div class="stat-item">
-            <span class="stat-number">{{ (vehicleList.bmw | length) + (vehicleList.porsche | length) }}</span>
+            <span class="stat-number">{{ stats.vehicles }}</span>
             <span class="stat-label">Vehicle Platforms</span>
         </div>
         <div class="stat-item">
-            <span class="stat-number">136</span>
+            <span class="stat-number">{{ stats.guides }}</span>
             <span class="stat-label">Guides</span>
         </div>
         <div class="stat-item">
-            <span class="stat-number">414</span>
+            <span class="stat-number">{{ stats.torqueSpecs }}</span>
             <span class="stat-label">Torque Specs</span>
         </div>
         <div class="stat-item">
-            <span class="stat-number">146</span>
+            <span class="stat-number">{{ stats.suppliers }}</span>
             <span class="stat-label">Parts Suppliers</span>
         </div>
     </div>
