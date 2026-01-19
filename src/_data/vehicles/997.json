@@ -403,43 +403,169 @@
   "suppliers": {
     "oem": [
       {
-        "name": "Porsche Parts",
-        "url": "https://parts.porsche.com/",
-        "notes": "Genuine Porsche OEM"
-      },
-      {
         "name": "FCP Euro",
-        "url": "https://www.fcpeuro.com/",
-        "notes": "Lifetime replacement guarantee"
+        "url": "https://www.fcpeuro.com/Porsche-parts",
+        "notes": "Industry-leading lifetime replacement guarantee on all parts - excellent 997 coverage",
+        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "shipping": "Free over $49",
+        "warranty": "Lifetime",
+        "featured": true
       },
       {
         "name": "Pelican Parts",
-        "url": "https://www.pelicanparts.com/",
-        "notes": "Extensive Porsche catalog"
+        "url": "https://www.pelicanparts.com/Porsche/catalog/997.htm",
+        "notes": "Comprehensive 997 parts catalog with tech articles for DIY repairs",
+        "specialties": ["OEM Parts", "Tech Articles", "DIY Support"],
+        "shipping": "Free over $99",
+        "featured": true
+      },
+      {
+        "name": "Porsche Parts",
+        "url": "https://parts.porsche.com/",
+        "notes": "Factory genuine Porsche parts direct from the manufacturer",
+        "specialties": ["Factory Original", "Genuine Porsche"],
+        "warranty": "Genuine OEM"
+      },
+      {
+        "name": "Sunset Porsche Parts",
+        "url": "https://www.sunsetporscheparts.com/",
+        "notes": "Porsche dealer parts department with competitive pricing",
+        "specialties": ["OEM Dealer", "New Genuine Parts"],
+        "shipping": "Fast shipping"
       }
     ],
-    "aftermarket": [
+    "performance": [
       {
         "name": "LN Engineering",
         "url": "https://lnengineering.com/",
-        "notes": "IMS bearing specialists (997.1)"
+        "notes": "IMS bearing solutions for 997.1 (997.2 has no IMS concern) - essential for early models",
+        "specialties": ["IMS Bearings", "Engine Components", "M97 Expert"],
+        "featured": true
       },
       {
-        "name": "Flat 6 Innovations",
-        "url": "https://flat6innovations.com/",
-        "notes": "Performance parts"
+        "name": "Fabspeed",
+        "url": "https://www.fabspeed.com/porsche/911/997/",
+        "notes": "Premium exhaust systems that unleash the 997's flat-six soundtrack",
+        "specialties": ["Exhaust Systems", "Performance Parts"],
+        "featured": true
+      },
+      {
+        "name": "Dundon Motorsports",
+        "url": "https://dundonmotorsports.com/",
+        "notes": "Premium race-inspired exhaust systems for 997 GT cars and street builds",
+        "specialties": ["Exhaust", "GT Parts", "Race Parts"]
+      },
+      {
+        "name": "Softronic",
+        "url": "https://www.softronic.us/",
+        "notes": "ECU tuning to maximize power from the 997's engine",
+        "specialties": ["ECU Tuning", "Performance Software"]
+      },
+      {
+        "name": "Elephant Racing",
+        "url": "https://www.elephantracing.com/",
+        "notes": "Premium suspension components for street or track performance",
+        "specialties": ["Suspension", "Handling Kits", "Track Parts"]
+      },
+      {
+        "name": "JRZ Suspension",
+        "url": "https://www.jrz-suspension.com/",
+        "notes": "Professional-grade dampers for serious track use",
+        "specialties": ["Coilovers", "Race Suspension"]
+      }
+    ],
+    "general": [
+      {
+        "name": "AutohausAZ",
+        "url": "https://www.autohausaz.com/porsche-911-parts",
+        "notes": "Large selection of replacement parts at competitive prices",
+        "specialties": ["Replacement Parts", "Maintenance Items"],
+        "shipping": "Free over $99"
+      },
+      {
+        "name": "ECS Tuning",
+        "url": "https://www.ecstuning.com/Porsche-997_911/",
+        "notes": "Wide selection of OEM and aftermarket parts with detailed fitment data",
+        "specialties": ["OEM Parts", "Aftermarket Options"],
+        "shipping": "Free over $99"
+      },
+      {
+        "name": "PartsGeek",
+        "url": "https://www.partsgeek.com/catalog/porsche/911.html",
+        "notes": "Budget-friendly replacement parts for common maintenance items",
+        "specialties": ["Budget Parts", "Fast Shipping"]
+      }
+    ],
+    "specialty": [
+      {
+        "name": "SharkWerks",
+        "url": "https://www.sharkwerks.com/",
+        "notes": "Performance shop with extensive 997 expertise - known for GT car builds",
+        "specialties": ["GT Models", "Engine Builds", "Performance"],
+        "featured": true
+      },
+      {
+        "name": "GMG Racing",
+        "url": "https://gmgracing.com/",
+        "notes": "Track-focused upgrades and complete race preparation for 997s",
+        "specialties": ["Track Parts", "Race Prep", "Full Builds"],
+        "featured": true
+      },
+      {
+        "name": "Numeric Racing",
+        "url": "https://numericracing.com/",
+        "notes": "Precision shifter assemblies that transform the 997 driving experience",
+        "specialties": ["Shifters", "Transmission Parts"]
+      },
+      {
+        "name": "Rennkit",
+        "url": "https://rennkit.com/",
+        "notes": "Known for LED lighting upgrades and OEM+ improvements for 997",
+        "specialties": ["LED Upgrades", "Lighting"]
       }
     ],
     "used": [
       {
-        "name": "Rennlist Classifieds",
-        "url": "https://rennlist.com/forums/parts-marketplace/",
-        "notes": "Forum marketplace"
+        "name": "Rennlist 997 Classifieds",
+        "url": "https://rennlist.com/forums/997-forum/",
+        "notes": "Active 997 community with dedicated marketplace - the first place to look",
+        "specialties": ["997 Community", "Vetted Sellers"],
+        "featured": true
+      },
+      {
+        "name": "6SpeedOnline Classifieds",
+        "url": "https://www.6speedonline.com/forums/parts-sale-wanted-911/",
+        "notes": "Large enthusiast community with active 997 marketplace",
+        "specialties": ["Forum Marketplace", "Wide Selection"]
       },
       {
         "name": "eBay Motors",
-        "url": "https://www.ebay.com/motors/",
-        "notes": "Used & NOS parts"
+        "url": "https://www.ebay.com/b/Parts-for-Porsche-911/6030/bn_574968",
+        "notes": "Global marketplace for used and NOS 997 parts",
+        "specialties": ["Used Parts", "NOS", "Global Sellers"]
+      },
+      {
+        "name": "Car-Part.com",
+        "url": "https://www.car-part.com/",
+        "notes": "Search nationwide salvage yard inventory - good for body panels and glass",
+        "specialties": ["Salvage Parts", "Body Panels"]
+      }
+    ],
+    "tools": [
+      {
+        "name": "LN Engineering 997 Torque Book",
+        "url": "https://lnengineering.com/997-torque-book-fastening-specifications-for-porsche-911-type-997-automobile.html",
+        "notes": "The definitive torque specification reference for all 997 work"
+      },
+      {
+        "name": "Pelican Parts Tech Articles",
+        "url": "https://www.pelicanparts.com/techarticles/Porsche-997/",
+        "notes": "Extensive library of 997 DIY articles with step-by-step instructions"
+      },
+      {
+        "name": "Durametric Diagnostic",
+        "url": "https://www.durametric.com/",
+        "notes": "Essential diagnostic software for 997 - dealer-level access to all modules"
       }
     ]
   },

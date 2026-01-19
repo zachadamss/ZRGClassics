@@ -837,53 +837,117 @@
   "suppliers": {
     "oem": [
       {
-        "name": "BMW Parts",
-        "url": "https://parts.bmwusa.com/",
-        "notes": "Genuine BMW OEM parts"
-      },
-      {
         "name": "FCP Euro",
-        "url": "https://www.fcpeuro.com/",
-        "notes": "Lifetime replacement guarantee"
+        "url": "https://www.fcpeuro.com/BMW-parts/3-series/E46",
+        "notes": "Lifetime replacement guarantee. Best for cooling systems, suspension bushings, and maintenance parts.",
+        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "shipping": "Free over $49",
+        "warranty": "Lifetime",
+        "featured": true
       },
       {
         "name": "Pelican Parts",
-        "url": "https://www.pelicanparts.com/",
-        "notes": "Extensive BMW catalog"
+        "url": "https://www.pelicanparts.com/BMW/catalog/3-Series_Main.htm",
+        "notes": "Huge E46 catalog with excellent DIY tech articles. Great for M3 parts.",
+        "specialties": ["Tech Articles", "M3 Parts"],
+        "shipping": "Free over $99"
+      },
+      {
+        "name": "BMW Parts Direct",
+        "url": "https://www.bmwpartsdirect.com/",
+        "notes": "Genuine BMW OEM parts from authorized dealers.",
+        "specialties": ["Genuine BMW", "Dealer Direct"]
       }
     ],
-    "aftermarket": [
+    "performance": [
       {
         "name": "Turner Motorsport",
-        "url": "https://www.turnermotorsport.com/",
-        "notes": "Performance parts & accessories"
+        "url": "https://www.turnermotorsport.com/BMW-E46-Parts",
+        "notes": "Race-proven E46 M3 parts. CSF radiators, suspension, and brakes.",
+        "specialties": ["M3 Parts", "Radiators", "Suspension"],
+        "featured": true
       },
+      {
+        "name": "BimmerWorld",
+        "url": "https://www.bimmerworld.com/BMW-Parts/E46-1999-2005/",
+        "notes": "Racing heritage with excellent track and street parts.",
+        "specialties": ["Track Parts", "Suspension", "Brakes"]
+      },
+      {
+        "name": "VAC Motorsports",
+        "url": "https://www.vacmotorsports.com/",
+        "notes": "S54 engine specialists. High-performance builds and components.",
+        "specialties": ["S54 Engines", "Performance Builds"]
+      },
+      {
+        "name": "Active Autowerke",
+        "url": "https://activeautowerke.com/",
+        "notes": "E46 M3 supercharger kits and performance exhaust systems.",
+        "specialties": ["Superchargers", "Exhaust", "M3"]
+      }
+    ],
+    "general": [
       {
         "name": "ECS Tuning",
-        "url": "https://www.ecstuning.com/",
-        "notes": "Wide selection of parts"
+        "url": "https://www.ecstuning.com/BMW-E46/",
+        "notes": "Massive E46 inventory including M3. Great for maintenance items.",
+        "specialties": ["Large Inventory", "Fast Shipping"],
+        "shipping": "Free over $49"
       },
       {
-        "name": "Bimmerworld",
-        "url": "https://www.bimmerworld.com/",
-        "notes": "Racing and performance parts"
+        "name": "AutohausAZ",
+        "url": "https://www.autohausaz.com/",
+        "notes": "Competitive prices on name brand parts.",
+        "specialties": ["Good Prices", "Name Brands"],
+        "shipping": "Free over $50"
+      }
+    ],
+    "specialty": [
+      {
+        "name": "Garagistic",
+        "url": "https://www.garagistic.com/",
+        "notes": "E46 subframe reinforcement kits and restoration parts.",
+        "specialties": ["Subframe Kits", "Restoration"],
+        "featured": true
+      },
+      {
+        "name": "Rogue Engineering",
+        "url": "https://www.rogueengineering.co/",
+        "notes": "E46 M3 exhaust and performance parts.",
+        "specialties": ["Exhaust", "M3 Parts"]
       }
     ],
     "used": [
       {
-        "name": "E46Fanatics Classifieds",
+        "name": "E46 Fanatics Classifieds",
         "url": "https://www.e46fanatics.com/forums/e46-parts-for-sale-wanted.43/",
-        "notes": "Forum marketplace"
+        "notes": "The largest E46 community marketplace with 580K+ members.",
+        "specialties": ["E46 Community", "M3 Parts"],
+        "featured": true
       },
       {
         "name": "eBay Motors",
-        "url": "https://www.ebay.com/motors/",
-        "notes": "Used & NOS parts"
+        "url": "https://www.ebay.com/b/BMW-E46/6030/bn_81442370",
+        "notes": "Large selection including M3 parts and OEM components.",
+        "specialties": ["NOS Parts", "M3 Parts"]
       },
       {
         "name": "Car-Part.com",
         "url": "https://www.car-part.com/",
-        "notes": "Salvage yard inventory"
+        "notes": "Search salvage yard inventory nationwide.",
+        "specialties": ["Salvage Yards", "Body Parts"]
+      }
+    ],
+    "tools": [
+      {
+        "name": "RealOEM",
+        "url": "https://www.realoem.com/bmw/enUS/select?product=P&archive=0&series=E46",
+        "notes": "Free BMW parts diagrams and part number lookup"
+      },
+      {
+        "name": "E46 Fanatics Wiki",
+        "url": "https://www.e46fanatics.com/wiki/",
+        "notes": "Comprehensive E46 technical wiki and guides"
       }
     ]
   },

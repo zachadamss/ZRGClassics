@@ -635,58 +635,146 @@
   "suppliers": {
     "oem": [
       {
-        "name": "BMW Parts",
-        "url": "https://parts.bmwusa.com/",
-        "notes": "Genuine BMW OEM parts"
+        "name": "FCP Euro",
+        "url": "https://www.fcpeuro.com/BMW-parts",
+        "notes": "Industry-leading lifetime replacement guarantee on all parts. Excellent E30 coverage with OE and OEM options.",
+        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "shipping": "Free over $49",
+        "warranty": "Lifetime",
+        "featured": true
       },
       {
-        "name": "FCP Euro",
-        "url": "https://www.fcpeuro.com/",
-        "notes": "Lifetime replacement guarantee"
+        "name": "BMW Parts Direct",
+        "url": "https://www.bmwpartsdirect.com/",
+        "notes": "Genuine BMW OEM parts direct from authorized dealers at discounted prices.",
+        "specialties": ["Genuine BMW", "Dealer Direct"]
       },
       {
         "name": "Pelican Parts",
-        "url": "https://www.pelicanparts.com/",
-        "notes": "Extensive BMW catalog"
+        "url": "https://www.pelicanparts.com/BMW/catalog/3-Series_Main.htm",
+        "notes": "Huge E30 catalog with OEM, OE, and quality aftermarket. Excellent DIY tech articles.",
+        "specialties": ["Tech Articles", "OE Parts"],
+        "shipping": "Free over $99"
+      },
+      {
+        "name": "BavAuto",
+        "url": "https://www.bavauto.com/",
+        "notes": "Quality OE and OEM BMW parts. Good prices on Genuine and equivalent parts.",
+        "specialties": ["OE Equivalent", "Good Prices"]
       }
     ],
-    "aftermarket": [
+    "performance": [
       {
         "name": "Ireland Engineering",
         "url": "https://www.iemotorsport.com/",
-        "notes": "Performance upgrades & suspension"
+        "notes": "The original E30 performance specialists since 1979. Suspension, engine, and chassis upgrades.",
+        "specialties": ["Suspension", "Engine", "E30 Experts"],
+        "featured": true
       },
       {
         "name": "Turner Motorsport",
-        "url": "https://www.turnermotorsport.com/",
-        "notes": "Performance parts & accessories"
-      },
-      {
-        "name": "ECS Tuning",
-        "url": "https://www.ecstuning.com/",
-        "notes": "Wide selection of parts"
+        "url": "https://www.turnermotorsport.com/BMW-E30-Parts",
+        "notes": "Race-proven performance parts. Custom E30 M20/24V intakes and suspension components.",
+        "specialties": ["Race Parts", "Intakes", "Suspension"]
       },
       {
         "name": "Condor Speed Shop",
         "url": "https://www.condorspeedshop.com/",
-        "notes": "E30 specialists"
+        "notes": "E30 specialists with unique restoration and performance parts. Excellent steering racks.",
+        "specialties": ["E30 Only", "Steering", "Restoration"]
+      },
+      {
+        "name": "Garagistic",
+        "url": "https://www.garagistic.com/",
+        "notes": "E30-focused performance and restoration parts. Quality engine mounts and chassis components.",
+        "specialties": ["Engine Mounts", "Chassis", "Restoration"]
+      }
+    ],
+    "general": [
+      {
+        "name": "ECS Tuning",
+        "url": "https://www.ecstuning.com/BMW-E30/",
+        "notes": "Wide selection of maintenance and upgrade parts. Now owns Turner and Pelican.",
+        "specialties": ["Large Inventory", "Fast Shipping"],
+        "shipping": "Free over $49"
+      },
+      {
+        "name": "BimmerWorld",
+        "url": "https://www.bimmerworld.com/BMW-Parts/E30-1984-1991/",
+        "notes": "BMW parts specialist with racing pedigree. Good selection of maintenance items.",
+        "specialties": ["Maintenance", "Quality Parts"]
+      },
+      {
+        "name": "AutohausAZ",
+        "url": "https://www.autohausaz.com/",
+        "notes": "Competitive prices on name brand parts. Good for bulk maintenance items.",
+        "specialties": ["Good Prices", "Name Brands"],
+        "shipping": "Free over $50"
+      }
+    ],
+    "specialty": [
+      {
+        "name": "Guten Parts",
+        "url": "https://www.gutenparts.com/",
+        "notes": "E30 community favorite run by enthusiasts. Specializes in hard-to-find and rare parts.",
+        "specialties": ["Rare Parts", "Community Owned"],
+        "featured": true
+      },
+      {
+        "name": "Blunt Tech",
+        "url": "https://blunttech.com/",
+        "notes": "Mom & pop E30 specialist known in the community. Call for hard-to-find items.",
+        "specialties": ["E30 Specialist", "Personal Service"]
+      },
+      {
+        "name": "Bavarian Autosport",
+        "url": "https://www.bavauto.com/",
+        "notes": "Long-standing BMW specialist with excellent E30 knowledge and parts selection.",
+        "specialties": ["BMW Specialist", "Tech Support"]
       }
     ],
     "used": [
       {
         "name": "R3VLimited Classifieds",
         "url": "https://www.r3vlimited.com/board/forumdisplay.php?f=3",
-        "notes": "E30-specific forum marketplace"
+        "notes": "The largest E30 community marketplace. Best place for used and rare E30 parts.",
+        "specialties": ["E30 Community", "Rare Parts"],
+        "featured": true
+      },
+      {
+        "name": "E30 Zone Classifieds",
+        "url": "https://www.e30zone.net/forum/for-sale/",
+        "notes": "UK-based E30 community marketplace. Good for European-spec parts.",
+        "specialties": ["UK/Euro Parts", "Community"]
       },
       {
         "name": "eBay Motors",
-        "url": "https://www.ebay.com/motors/",
-        "notes": "Used & NOS parts"
+        "url": "https://www.ebay.com/b/BMW-E30/6030/bn_79664762",
+        "notes": "Large selection of used, NOS, and reproduction E30 parts.",
+        "specialties": ["NOS Parts", "Wide Selection"]
       },
       {
         "name": "Car-Part.com",
         "url": "https://www.car-part.com/",
-        "notes": "Salvage yard inventory search"
+        "notes": "Search salvage yard inventory nationwide. Great for body panels and interior parts.",
+        "specialties": ["Salvage Yards", "Body Parts"]
+      }
+    ],
+    "tools": [
+      {
+        "name": "RealOEM",
+        "url": "https://www.realoem.com/bmw/enUS/select?product=P&archive=0&series=E30",
+        "notes": "Free BMW parts diagrams and part number lookup"
+      },
+      {
+        "name": "BMW Parts Price Comparison",
+        "url": "https://www.bmwpnpc.com/",
+        "notes": "Compare prices across multiple BMW parts vendors"
+      },
+      {
+        "name": "E30 Zone Wiki",
+        "url": "https://www.e30zone.net/e30wiki/",
+        "notes": "Comprehensive E30 technical wiki with part numbers and specs"
       }
     ]
   },

@@ -687,43 +687,125 @@
   "suppliers": {
     "oem": [
       {
-        "name": "Porsche Parts",
-        "url": "https://parts.porsche.com/",
-        "notes": "Genuine Porsche OEM"
+        "name": "Porsche Classic",
+        "url": "https://www.porsche.com/usa/accessoriesandservices/classic/",
+        "notes": "Factory parts for classic Porsches - many 924 parts still available through the Classic program",
+        "specialties": ["Factory Original", "Genuine Porsche"],
+        "warranty": "Genuine OEM",
+        "featured": true
       },
       {
         "name": "Pelican Parts",
-        "url": "https://www.pelicanparts.com/",
-        "notes": "Extensive Porsche catalog"
+        "url": "https://www.pelicanparts.com/Porsche/catalog_924.htm",
+        "notes": "Comprehensive 924 parts catalog with OEM and quality aftermarket options",
+        "specialties": ["OEM Parts", "Tech Articles", "924 Specialist"],
+        "shipping": "Free over $99",
+        "featured": true
+      },
+      {
+        "name": "Sunset Porsche Parts",
+        "url": "https://www.sunsetporscheparts.com/",
+        "notes": "Porsche dealer parts department with competitive pricing on genuine parts",
+        "specialties": ["OEM Dealer", "New Genuine Parts"],
+        "shipping": "Fast shipping"
       }
     ],
-    "aftermarket": [
-      {
-        "name": "924Board Store",
-        "url": "https://www.924board.org/",
-        "notes": "924-specific parts"
-      },
+    "performance": [
       {
         "name": "Lindsey Racing",
         "url": "https://www.lindseyracing.com/",
-        "notes": "Performance and OEM parts"
+        "notes": "Premier Porsche performance shop - extensive 944/924 turbo expertise and parts",
+        "specialties": ["Turbo Upgrades", "Engine Parts", "Performance"],
+        "featured": true
+      },
+      {
+        "name": "Paragon Products",
+        "url": "https://www.paragonproducts.com/",
+        "notes": "924/944 performance specialist with engine and suspension upgrades",
+        "specialties": ["Engine Builds", "Suspension"]
+      }
+    ],
+    "general": [
+      {
+        "name": "AutohausAZ",
+        "url": "https://www.autohausaz.com/porsche-924-parts",
+        "notes": "Large selection of replacement parts at competitive prices",
+        "specialties": ["Replacement Parts", "Maintenance Items"],
+        "shipping": "Free over $99"
+      },
+      {
+        "name": "FCP Euro",
+        "url": "https://www.fcpeuro.com/",
+        "notes": "Industry-leading lifetime replacement guarantee on all parts",
+        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "shipping": "Free over $49",
+        "warranty": "Lifetime"
+      }
+    ],
+    "specialty": [
+      {
+        "name": "924Board Store",
+        "url": "https://www.924board.org/",
+        "notes": "Community-driven store with 924-specific parts, gaskets, and hard-to-find items",
+        "specialties": ["924 Exclusive", "Rare Parts", "Community Resource"],
+        "featured": true
+      },
+      {
+        "name": "928 International",
+        "url": "https://www.928intl.com/",
+        "notes": "While focused on 928s, carries many shared transaxle parts for 924/944",
+        "specialties": ["Transaxle Parts", "Electrical"]
+      },
+      {
+        "name": "Porscheshop UK",
+        "url": "https://www.porscheshop.co.uk/",
+        "notes": "UK-based specialist with excellent 924/944 coverage",
+        "specialties": ["European Parts", "Rare Items"],
+        "shipping": "International"
       }
     ],
     "used": [
       {
-        "name": "Rennlist Classifieds",
-        "url": "https://rennlist.com/forums/parts-marketplace/",
-        "notes": "Forum marketplace"
+        "name": "924Board Classifieds",
+        "url": "https://www.924board.org/forum/viewforum.php?f=3",
+        "notes": "The go-to marketplace for used 924 parts - active enthusiast community",
+        "specialties": ["924 Exclusive", "Community Vetted"],
+        "featured": true
       },
       {
-        "name": "924Board Classifieds",
-        "url": "https://www.924board.org/",
-        "notes": "924-specific marketplace"
+        "name": "Rennlist Classifieds",
+        "url": "https://rennlist.com/forums/924-931-and-944-951-forum/",
+        "notes": "Large Porsche community marketplace with 924/944 section",
+        "specialties": ["Forum Marketplace", "Wide Selection"]
       },
       {
         "name": "eBay Motors",
-        "url": "https://www.ebay.com/motors/",
-        "notes": "Used & NOS parts"
+        "url": "https://www.ebay.com/b/Porsche-924-Parts/6030/bn_582131",
+        "notes": "Global marketplace for used and NOS 924 parts",
+        "specialties": ["Used Parts", "NOS", "Global Sellers"]
+      },
+      {
+        "name": "Car-Part.com",
+        "url": "https://www.car-part.com/",
+        "notes": "Search nationwide salvage yard inventory for 924 parts",
+        "specialties": ["Salvage Parts", "Low Cost"]
+      }
+    ],
+    "tools": [
+      {
+        "name": "RealOEM (via ETKA)",
+        "url": "https://www.realoem.com/",
+        "notes": "While BMW-focused, useful for cross-referencing shared components"
+      },
+      {
+        "name": "Porsche Parts Diagrams",
+        "url": "https://www.pelicanparts.com/Porsche/catalog_924.htm",
+        "notes": "Pelican's parts diagrams help identify correct part numbers"
+      },
+      {
+        "name": "924Board Technical Archive",
+        "url": "https://www.924board.org/forum/viewforum.php?f=2",
+        "notes": "Extensive DIY guides and technical discussions for 924 maintenance"
       }
     ]
   },

@@ -784,43 +784,138 @@
   "suppliers": {
     "oem": [
       {
-        "name": "Porsche Parts",
-        "url": "https://parts.porsche.com/",
-        "notes": "Genuine Porsche OEM"
+        "name": "Porsche Classic",
+        "url": "https://www.porsche.com/usa/accessoriesandservices/classic/",
+        "notes": "Factory parts program for classic Porsches - 928 parts availability continues to improve",
+        "specialties": ["Factory Original", "Genuine Porsche"],
+        "warranty": "Genuine OEM",
+        "featured": true
       },
       {
         "name": "Pelican Parts",
-        "url": "https://www.pelicanparts.com/",
-        "notes": "Extensive Porsche catalog"
+        "url": "https://www.pelicanparts.com/Porsche/catalog_928.htm",
+        "notes": "Comprehensive 928 parts catalog with detailed diagrams and tech articles",
+        "specialties": ["OEM Parts", "Tech Articles", "928 Coverage"],
+        "shipping": "Free over $99",
+        "featured": true
+      },
+      {
+        "name": "Sunset Porsche Parts",
+        "url": "https://www.sunsetporscheparts.com/",
+        "notes": "Porsche dealer parts with competitive pricing on genuine parts",
+        "specialties": ["OEM Dealer", "New Genuine Parts"],
+        "shipping": "Fast shipping"
       }
     ],
-    "aftermarket": [
+    "performance": [
+      {
+        "name": "928 Motorsports",
+        "url": "https://928motorsports.com/",
+        "notes": "Performance upgrades specifically designed for the 928 platform",
+        "specialties": ["Engine Upgrades", "Suspension", "Performance"],
+        "featured": true
+      },
+      {
+        "name": "Devek",
+        "url": "https://www.devek.us/",
+        "notes": "928 performance specialist known for engine and transmission work",
+        "specialties": ["Engine Builds", "Transmissions"]
+      },
+      {
+        "name": "Elephant Racing",
+        "url": "https://www.elephantracing.com/",
+        "notes": "Premium suspension upgrades - 928 kits available",
+        "specialties": ["Suspension", "Handling Kits"]
+      }
+    ],
+    "general": [
+      {
+        "name": "AutohausAZ",
+        "url": "https://www.autohausaz.com/porsche-928-parts",
+        "notes": "Large selection of replacement parts at competitive prices",
+        "specialties": ["Replacement Parts", "Maintenance Items"],
+        "shipping": "Free over $99"
+      },
+      {
+        "name": "FCP Euro",
+        "url": "https://www.fcpeuro.com/",
+        "notes": "Industry-leading lifetime replacement guarantee on all parts",
+        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "shipping": "Free over $49",
+        "warranty": "Lifetime"
+      }
+    ],
+    "specialty": [
+      {
+        "name": "928 International",
+        "url": "https://www.928intl.com/",
+        "notes": "Premier 928 specialist - comprehensive parts inventory including hard-to-find items",
+        "specialties": ["928 Exclusive", "Rare Parts", "Expertise"],
+        "featured": true
+      },
       {
         "name": "928 Specialists",
         "url": "https://928specialists.com/",
-        "notes": "928-specific expertise"
+        "notes": "Decades of 928 experience - parts, service, and restoration",
+        "specialties": ["928 Exclusive", "Full Service", "Restoration"],
+        "featured": true
       },
       {
-        "name": "928 International",
-        "url": "https://928.org/",
-        "notes": "928 community resource"
+        "name": "Only 928",
+        "url": "https://www.only928.com/",
+        "notes": "928-only specialists with parts and technical support",
+        "specialties": ["928 Exclusive", "Technical Support"]
+      },
+      {
+        "name": "928s R Us",
+        "url": "https://www.928s-r-us.com/",
+        "notes": "UK-based 928 specialist with international shipping",
+        "specialties": ["European Parts", "928 Exclusive"],
+        "shipping": "International"
       }
     ],
     "used": [
       {
-        "name": "Rennlist Classifieds",
-        "url": "https://rennlist.com/forums/parts-marketplace/",
-        "notes": "Forum marketplace"
-      },
-      {
         "name": "928 Forum Classifieds",
         "url": "https://928.org/forum/",
-        "notes": "928-specific marketplace"
+        "notes": "Dedicated 928 community marketplace - the first place to look for used parts",
+        "specialties": ["928 Exclusive", "Community Vetted"],
+        "featured": true
+      },
+      {
+        "name": "Rennlist 928 Classifieds",
+        "url": "https://rennlist.com/forums/928-forum/",
+        "notes": "Large Porsche community with active 928 section",
+        "specialties": ["Forum Marketplace", "Wide Selection"]
       },
       {
         "name": "eBay Motors",
-        "url": "https://www.ebay.com/motors/",
-        "notes": "Used & NOS parts"
+        "url": "https://www.ebay.com/b/Porsche-928-Parts/6030/bn_582140",
+        "notes": "Global marketplace for used and NOS 928 parts",
+        "specialties": ["Used Parts", "NOS", "Global Sellers"]
+      },
+      {
+        "name": "Car-Part.com",
+        "url": "https://www.car-part.com/",
+        "notes": "Search nationwide salvage yard inventory - 928s are getting rare",
+        "specialties": ["Salvage Parts", "Low Cost"]
+      }
+    ],
+    "tools": [
+      {
+        "name": "928 Spec Database",
+        "url": "https://www.928s.org/",
+        "notes": "Comprehensive 928 specifications, production numbers, and technical data"
+      },
+      {
+        "name": "Porsche Parts Diagrams",
+        "url": "https://www.pelicanparts.com/Porsche/catalog_928.htm",
+        "notes": "Pelican's parts diagrams help identify correct part numbers by year"
+      },
+      {
+        "name": "928 International Tech Library",
+        "url": "https://www.928intl.com/tech-library/",
+        "notes": "Extensive DIY guides and technical articles specific to the 928"
       }
     ]
   },

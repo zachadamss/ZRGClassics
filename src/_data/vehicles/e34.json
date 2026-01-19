@@ -927,53 +927,111 @@
   "suppliers": {
     "oem": [
       {
-        "name": "BMW Classic Parts",
-        "url": "https://www.bmw-classic-parts.com/",
-        "notes": "Genuine BMW OEM parts"
-      },
-      {
         "name": "FCP Euro",
-        "url": "https://www.fcpeuro.com/",
-        "notes": "Lifetime replacement guarantee"
+        "url": "https://www.fcpeuro.com/BMW-parts",
+        "notes": "Lifetime replacement guarantee. Excellent E34 coverage including M50/M30 engine parts.",
+        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "shipping": "Free over $49",
+        "warranty": "Lifetime",
+        "featured": true
       },
       {
         "name": "Pelican Parts",
-        "url": "https://www.pelicanparts.com/",
-        "notes": "Extensive BMW catalog"
+        "url": "https://www.pelicanparts.com/BMW/catalog/5-Series_Main.htm",
+        "notes": "Large E34 catalog with OEM and quality aftermarket. Excellent DIY tech articles.",
+        "specialties": ["Tech Articles", "OE Parts"],
+        "shipping": "Free over $99"
+      },
+      {
+        "name": "BMW Parts Direct",
+        "url": "https://www.bmwpartsdirect.com/",
+        "notes": "Genuine BMW OEM parts from authorized dealers.",
+        "specialties": ["Genuine BMW", "Dealer Direct"]
       }
     ],
-    "aftermarket": [
+    "performance": [
       {
         "name": "Turner Motorsport",
-        "url": "https://www.turnermotorsport.com/",
-        "notes": "Performance parts and accessories"
+        "url": "https://www.turnermotorsport.com/BMW-E34-Parts",
+        "notes": "Race-proven performance parts. Suspension, brakes, and engine upgrades.",
+        "specialties": ["Race Parts", "Suspension", "Brakes"],
+        "featured": true
       },
       {
         "name": "Ireland Engineering",
         "url": "https://www.iemotorsport.com/",
-        "notes": "Suspension and performance"
+        "notes": "Classic BMW performance specialists since 1979.",
+        "specialties": ["Suspension", "Engine", "Handling"]
       },
       {
         "name": "Beisan Systems",
         "url": "https://www.beisansystems.com/",
-        "notes": "VANOS repair specialists"
+        "notes": "VANOS repair specialists. DIY kits and tech articles for M50/M52 engines.",
+        "specialties": ["VANOS Repair", "DIY Kits"]
+      }
+    ],
+    "general": [
+      {
+        "name": "ECS Tuning",
+        "url": "https://www.ecstuning.com/BMW-E34/",
+        "notes": "Large inventory of maintenance and upgrade parts.",
+        "specialties": ["Large Inventory", "Fast Shipping"],
+        "shipping": "Free over $49"
+      },
+      {
+        "name": "BimmerWorld",
+        "url": "https://www.bimmerworld.com/BMW-Parts/E34-1989-1995/",
+        "notes": "BMW parts specialist with racing pedigree.",
+        "specialties": ["Maintenance", "Quality Parts"]
+      },
+      {
+        "name": "AutohausAZ",
+        "url": "https://www.autohausaz.com/",
+        "notes": "Competitive prices on name brand parts.",
+        "specialties": ["Good Prices", "Name Brands"],
+        "shipping": "Free over $50"
+      }
+    ],
+    "specialty": [
+      {
+        "name": "BMWE34.net",
+        "url": "http://www.bmwe34.net/",
+        "notes": "Dedicated E34 resource with parts sources and technical information.",
+        "specialties": ["E34 Specialist", "Tech Info"],
+        "featured": true
       }
     ],
     "used": [
       {
-        "name": "Bimmerforums Classifieds",
-        "url": "https://www.bimmerforums.com/forum/forumdisplay.php?35-E30-Classifieds",
-        "notes": "E34 community marketplace"
+        "name": "5Series.net Classifieds",
+        "url": "https://5series.net/forums/e34-classifieds/",
+        "notes": "E34 community marketplace with active listings.",
+        "specialties": ["E34 Community", "Rare Parts"],
+        "featured": true
       },
       {
         "name": "eBay Motors",
-        "url": "https://www.ebay.com/motors/",
-        "notes": "Used and NOS parts"
+        "url": "https://www.ebay.com/b/BMW-E34/6030/bn_81442364",
+        "notes": "Large selection of used, NOS, and reproduction E34 parts.",
+        "specialties": ["NOS Parts", "Wide Selection"]
       },
       {
         "name": "Car-Part.com",
         "url": "https://www.car-part.com/",
-        "notes": "Salvage yard inventory"
+        "notes": "Search salvage yard inventory nationwide.",
+        "specialties": ["Salvage Yards", "Body Parts"]
+      }
+    ],
+    "tools": [
+      {
+        "name": "RealOEM",
+        "url": "https://www.realoem.com/bmw/enUS/select?product=P&archive=0&series=E34",
+        "notes": "Free BMW parts diagrams and part number lookup"
+      },
+      {
+        "name": "Bentley Service Manual",
+        "url": "https://www.bentleypublishers.com/bmw.html",
+        "notes": "Official factory repair manual for E34"
       }
     ]
   },

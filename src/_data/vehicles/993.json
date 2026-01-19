@@ -708,56 +708,168 @@
       {
         "name": "Porsche Classic",
         "url": "https://www.porsche.com/usa/accessoriesandservices/classic/",
-        "notes": "Genuine Porsche OEM parts"
+        "notes": "Factory parts program for classic Porsches - the 993 is well-supported with many remanufactured parts",
+        "specialties": ["Factory Original", "Genuine Porsche", "Classic Program"],
+        "warranty": "Genuine OEM",
+        "featured": true
+      },
+      {
+        "name": "Pelican Parts",
+        "url": "https://www.pelicanparts.com/Porsche/catalog/993.htm",
+        "notes": "Comprehensive 993 parts catalog with excellent tech articles for DIY work",
+        "specialties": ["OEM Parts", "Tech Articles", "DIY Support"],
+        "shipping": "Free over $99",
+        "featured": true
       },
       {
         "name": "Sunset Porsche Parts",
         "url": "https://www.sunsetporscheparts.com/",
-        "notes": "OEM Porsche dealer"
+        "notes": "Porsche dealer parts department with competitive pricing on genuine parts",
+        "specialties": ["OEM Dealer", "New Genuine Parts"],
+        "shipping": "Fast shipping"
       },
       {
-        "name": "Pelican Parts",
-        "url": "https://www.pelicanparts.com/",
-        "notes": "Extensive Porsche catalog"
+        "name": "FCP Euro",
+        "url": "https://www.fcpeuro.com/Porsche-parts",
+        "notes": "Lifetime replacement guarantee on all parts - growing air-cooled coverage",
+        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "shipping": "Free over $49",
+        "warranty": "Lifetime"
       }
     ],
-    "aftermarket": [
+    "performance": [
       {
         "name": "Elephant Racing",
         "url": "https://www.elephantracing.com/",
-        "notes": "Suspension specialists"
-      },
-      {
-        "name": "LN Engineering",
-        "url": "https://lnengineering.com/",
-        "notes": "Engine components"
-      },
-      {
-        "name": "Wevo",
-        "url": "https://www.wevo-shop.com/",
-        "notes": "Shifter and drivetrain"
+        "notes": "The benchmark for 993 suspension upgrades - their kits transform handling",
+        "specialties": ["Suspension", "Handling Kits", "Track Parts"],
+        "featured": true
       },
       {
         "name": "FVD Brombacher",
         "url": "https://www.fvd.net/",
-        "notes": "Performance parts"
+        "notes": "Comprehensive performance catalog for air-cooled Porsches including exhausts and turbos",
+        "specialties": ["Exhaust", "Turbo Upgrades", "Performance"],
+        "featured": true
+      },
+      {
+        "name": "LN Engineering",
+        "url": "https://lnengineering.com/",
+        "notes": "Engine components and performance upgrades for the air-cooled flat-six",
+        "specialties": ["Engine Components", "Cylinders", "Performance"]
+      },
+      {
+        "name": "WEVO",
+        "url": "https://www.wevo-shop.com/",
+        "notes": "Precision shifter kits and drivetrain upgrades that transform the 993 driving experience",
+        "specialties": ["Shifters", "Drivetrain", "Transmission"],
+        "featured": true
+      },
+      {
+        "name": "B&B Exhaust",
+        "url": "https://www.bbexhaust.com/",
+        "notes": "Premium exhaust systems for the air-cooled 993",
+        "specialties": ["Exhaust Systems"]
+      }
+    ],
+    "general": [
+      {
+        "name": "AutohausAZ",
+        "url": "https://www.autohausaz.com/porsche-911-parts",
+        "notes": "Good selection of replacement parts at competitive prices",
+        "specialties": ["Replacement Parts", "Maintenance Items"],
+        "shipping": "Free over $99"
+      },
+      {
+        "name": "Design 911",
+        "url": "https://www.design911.com/",
+        "notes": "UK-based specialist with extensive air-cooled parts including 993",
+        "specialties": ["Air-Cooled Parts", "European"],
+        "shipping": "International"
+      },
+      {
+        "name": "Stoddard Authentic Porsche Parts",
+        "url": "https://www.stoddard.com/",
+        "notes": "Classic Porsche specialist with quality reproduction parts",
+        "specialties": ["Reproduction Parts", "Classic Porsche"]
+      }
+    ],
+    "specialty": [
+      {
+        "name": "Rennsport Systems",
+        "url": "https://www.rennsportsystems.com/",
+        "notes": "993 specialists with deep expertise in air-cooled Porsche builds and restoration",
+        "specialties": ["993 Builds", "Air-Cooled Expert"],
+        "featured": true
+      },
+      {
+        "name": "EBS Racing",
+        "url": "https://www.ebsracing.com/",
+        "notes": "Air-cooled performance specialist with 993 turbo expertise",
+        "specialties": ["Turbo Builds", "Performance"]
+      },
+      {
+        "name": "TPC Racing",
+        "url": "https://www.tpcracing.com/",
+        "notes": "Track-focused 993 preparation and performance parts",
+        "specialties": ["Track Prep", "Performance Parts"]
+      },
+      {
+        "name": "Numeric Racing",
+        "url": "https://numericracing.com/",
+        "notes": "Precision shifter assemblies for 993 G50 transmission",
+        "specialties": ["Shifters", "Transmission Parts"]
       }
     ],
     "used": [
       {
-        "name": "Rennlist Classifieds",
-        "url": "https://rennlist.com/forums/parts-marketplace/",
-        "notes": "Porsche community marketplace"
-      },
-      {
-        "name": "eBay Motors",
-        "url": "https://www.ebay.com/motors/",
-        "notes": "Used and NOS parts"
+        "name": "Rennlist 993 Classifieds",
+        "url": "https://rennlist.com/forums/993-parts-marketplace/",
+        "notes": "The premier marketplace for used 993 parts - active community of enthusiasts",
+        "specialties": ["993 Community", "Vetted Sellers"],
+        "featured": true
       },
       {
         "name": "The Parts Shop",
         "url": "https://www.thepartsshop.com/",
-        "notes": "Used Porsche parts"
+        "notes": "Used Porsche parts specialist with good 993 inventory",
+        "specialties": ["Used OEM Parts", "Quality Tested"],
+        "featured": true
+      },
+      {
+        "name": "eBay Motors",
+        "url": "https://www.ebay.com/b/Parts-for-Porsche-911/6030/bn_574968",
+        "notes": "Global marketplace for used and NOS 993 parts - patience finds good deals",
+        "specialties": ["Used Parts", "NOS", "Global Sellers"]
+      },
+      {
+        "name": "Pelican Parts Classifieds",
+        "url": "https://forums.pelicanparts.com/porsche-911-technical-forum/",
+        "notes": "Pelican's forum has an active classifieds section for air-cooled parts",
+        "specialties": ["Forum Marketplace", "Enthusiast Parts"]
+      },
+      {
+        "name": "Car-Part.com",
+        "url": "https://www.car-part.com/",
+        "notes": "Search salvage yards - 993s are getting rare but parts still surface",
+        "specialties": ["Salvage Parts", "Body Panels"]
+      }
+    ],
+    "tools": [
+      {
+        "name": "Pelican Parts Tech Articles",
+        "url": "https://www.pelicanparts.com/techarticles/Porsche-993-Carrera/",
+        "notes": "Extensive library of 993 DIY articles with detailed step-by-step instructions"
+      },
+      {
+        "name": "993 Torque Specifications",
+        "url": "https://www.pelicanparts.com/techarticles/Porsche-993-Carrera/BASICS-torque_spec_table/BASICS-torque_spec_table.htm",
+        "notes": "Complete torque specification reference for all 993 work"
+      },
+      {
+        "name": "Porsche 993 Technical Reference",
+        "url": "https://rennlist.com/forums/993-forum/",
+        "notes": "Rennlist's 993 forum has decades of technical discussions and DIY guides"
       }
     ]
   },

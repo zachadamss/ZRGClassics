@@ -826,43 +826,162 @@
   "suppliers": {
     "oem": [
       {
-        "name": "Porsche Parts",
-        "url": "https://parts.porsche.com/",
-        "notes": "Genuine Porsche OEM"
-      },
-      {
         "name": "FCP Euro",
-        "url": "https://www.fcpeuro.com/",
-        "notes": "Lifetime replacement guarantee"
+        "url": "https://www.fcpeuro.com/Porsche-parts",
+        "notes": "Industry-leading lifetime replacement guarantee on all parts - comprehensive 996 coverage",
+        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "shipping": "Free over $49",
+        "warranty": "Lifetime",
+        "featured": true
       },
       {
         "name": "Pelican Parts",
-        "url": "https://www.pelicanparts.com/",
-        "notes": "Extensive Porsche catalog"
+        "url": "https://www.pelicanparts.com/Porsche/catalog/996.htm",
+        "notes": "Comprehensive 996 parts catalog with extensive tech articles for every repair",
+        "specialties": ["OEM Parts", "Tech Articles", "DIY Support"],
+        "shipping": "Free over $99",
+        "featured": true
+      },
+      {
+        "name": "Porsche Parts",
+        "url": "https://parts.porsche.com/",
+        "notes": "Factory genuine Porsche parts direct from the manufacturer",
+        "specialties": ["Factory Original", "Genuine Porsche"],
+        "warranty": "Genuine OEM"
+      },
+      {
+        "name": "Sunset Porsche Parts",
+        "url": "https://www.sunsetporscheparts.com/",
+        "notes": "Porsche dealer parts department with competitive pricing",
+        "specialties": ["OEM Dealer", "New Genuine Parts"],
+        "shipping": "Fast shipping"
       }
     ],
-    "aftermarket": [
+    "performance": [
       {
         "name": "LN Engineering",
         "url": "https://lnengineering.com/",
-        "notes": "IMS bearing specialists"
+        "notes": "The definitive source for IMS bearing solutions - their retrofit bearings are essential for 996 ownership",
+        "specialties": ["IMS Bearings", "Engine Components", "M96 Expert"],
+        "featured": true
       },
       {
         "name": "Flat 6 Innovations",
         "url": "https://flat6innovations.com/",
-        "notes": "986/996 performance parts"
+        "notes": "996 performance specialist - IMS solutions, engine upgrades, and complete M96/M97 builds",
+        "specialties": ["IMS Solutions", "Performance Builds", "Engine Specialist"],
+        "featured": true
+      },
+      {
+        "name": "Fabspeed",
+        "url": "https://www.fabspeed.com/porsche/911/996/",
+        "notes": "Premium exhaust systems and performance parts that transform the 996's character",
+        "specialties": ["Exhaust Systems", "Performance Parts"]
+      },
+      {
+        "name": "Softronic",
+        "url": "https://www.softronic.us/",
+        "notes": "ECU tuning solutions to maximize M96 engine performance",
+        "specialties": ["ECU Tuning", "Performance Software"]
+      },
+      {
+        "name": "Elephant Racing",
+        "url": "https://www.elephantracing.com/",
+        "notes": "Premium suspension components for improved handling and track performance",
+        "specialties": ["Suspension", "Handling Kits", "Track Parts"]
+      }
+    ],
+    "general": [
+      {
+        "name": "AutohausAZ",
+        "url": "https://www.autohausaz.com/porsche-911-parts",
+        "notes": "Large selection of replacement parts at competitive prices",
+        "specialties": ["Replacement Parts", "Maintenance Items"],
+        "shipping": "Free over $99"
+      },
+      {
+        "name": "ECS Tuning",
+        "url": "https://www.ecstuning.com/Porsche-996_911/",
+        "notes": "Wide selection of OEM and aftermarket parts with detailed fitment data",
+        "specialties": ["OEM Parts", "Aftermarket Options"],
+        "shipping": "Free over $99"
+      },
+      {
+        "name": "PartsGeek",
+        "url": "https://www.partsgeek.com/catalog/porsche/911.html",
+        "notes": "Budget-friendly replacement parts for common maintenance items",
+        "specialties": ["Budget Parts", "Fast Shipping"]
+      }
+    ],
+    "specialty": [
+      {
+        "name": "Rennkit",
+        "url": "https://rennkit.com/",
+        "notes": "996 specialist known for LED lighting upgrades and OEM+ improvements",
+        "specialties": ["LED Upgrades", "Lighting", "996 Specialist"],
+        "featured": true
+      },
+      {
+        "name": "Numeric Racing",
+        "url": "https://numericracing.com/",
+        "notes": "Precision shifter assemblies that transform the 996 shifting experience",
+        "specialties": ["Shifters", "Transmission Parts"]
+      },
+      {
+        "name": "GMG Racing",
+        "url": "https://gmgracing.com/",
+        "notes": "Track-focused upgrades and complete race preparation",
+        "specialties": ["Track Parts", "Race Prep"]
+      },
+      {
+        "name": "SharkWerks",
+        "url": "https://www.sharkwerks.com/",
+        "notes": "Performance shop with expertise in 996 GT cars and engine builds",
+        "specialties": ["GT Models", "Engine Builds"]
       }
     ],
     "used": [
       {
-        "name": "Rennlist Classifieds",
-        "url": "https://rennlist.com/forums/parts-marketplace/",
-        "notes": "Forum marketplace"
+        "name": "Rennlist 996 Classifieds",
+        "url": "https://rennlist.com/forums/996-forum/",
+        "notes": "Active 996 community with dedicated marketplace - the first place to look",
+        "specialties": ["996 Community", "Vetted Sellers"],
+        "featured": true
+      },
+      {
+        "name": "6SpeedOnline Classifieds",
+        "url": "https://www.6speedonline.com/forums/parts-sale-wanted-911/",
+        "notes": "Large enthusiast community with active 996 marketplace",
+        "specialties": ["Forum Marketplace", "Wide Selection"]
       },
       {
         "name": "eBay Motors",
-        "url": "https://www.ebay.com/motors/",
-        "notes": "Used & NOS parts"
+        "url": "https://www.ebay.com/b/Parts-for-1999-Porsche-911/6030/bn_580605",
+        "notes": "Global marketplace for used and NOS 996 parts",
+        "specialties": ["Used Parts", "NOS", "Global Sellers"]
+      },
+      {
+        "name": "Car-Part.com",
+        "url": "https://www.car-part.com/",
+        "notes": "Search nationwide salvage yard inventory - good for body panels",
+        "specialties": ["Salvage Parts", "Body Panels"]
+      }
+    ],
+    "tools": [
+      {
+        "name": "LN Engineering 996 Torque Book",
+        "url": "https://lnengineering.com/996-torque-book-fastening-specifications-for-porsche-911-type-996-automobile.html",
+        "notes": "The definitive torque specification reference for all 996 work"
+      },
+      {
+        "name": "Pelican Parts Tech Articles",
+        "url": "https://www.pelicanparts.com/techarticles/Porsche-996-Carrera/",
+        "notes": "Extensive library of 996 DIY articles with step-by-step instructions and photos"
+      },
+      {
+        "name": "Durametric Diagnostic",
+        "url": "https://www.durframetracing.com/",
+        "notes": "Essential diagnostic software for 996 - reads all modules, not just engine"
       }
     ]
   },

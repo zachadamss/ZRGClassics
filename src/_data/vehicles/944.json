@@ -712,38 +712,115 @@
   "suppliers": {
     "oem": [
       {
-        "name": "Porsche Parts",
-        "url": "https://parts.porsche.com/",
-        "notes": "Genuine Porsche OEM"
+        "name": "Pelican Parts",
+        "url": "https://www.pelicanparts.com/944/944world.htm",
+        "notes": "World's largest 944 parts catalog with extensive tech articles and DIY guides.",
+        "specialties": ["Tech Articles", "OE Parts", "944 Experts"],
+        "shipping": "Free over $99",
+        "featured": true
       },
       {
-        "name": "Pelican Parts",
-        "url": "https://www.pelicanparts.com/",
-        "notes": "Extensive Porsche catalog"
+        "name": "FCP Euro",
+        "url": "https://www.fcpeuro.com/Porsche-parts/944",
+        "notes": "Lifetime replacement guarantee on all parts. Great for maintenance items.",
+        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "shipping": "Free over $49",
+        "warranty": "Lifetime"
+      },
+      {
+        "name": "Suncoast Porsche Parts",
+        "url": "https://www.suncoastparts.com/",
+        "notes": "Genuine Porsche parts at discounted prices from authorized dealer.",
+        "specialties": ["Genuine Porsche", "Dealer Discount"]
       }
     ],
-    "aftermarket": [
+    "performance": [
       {
         "name": "Lindsey Racing",
         "url": "https://www.lindseyracing.com/",
-        "notes": "Performance and OEM parts"
+        "notes": "944 performance specialists. Track parts, turbo upgrades, and suspension.",
+        "specialties": ["Track Parts", "Turbo", "Suspension"],
+        "featured": true
       },
       {
+        "name": "LN Engineering",
+        "url": "https://lnengineering.com/",
+        "notes": "Engine components and IMS solutions. Quality internal engine parts.",
+        "specialties": ["Engine Parts", "IMS", "Quality"]
+      },
+      {
+        "name": "Elephant Racing",
+        "url": "https://www.elephantracing.com/",
+        "notes": "Suspension specialists with excellent 944 coilover kits.",
+        "specialties": ["Suspension", "Coilovers", "Handling"]
+      }
+    ],
+    "general": [
+      {
+        "name": "Sierra Madre Collection",
+        "url": "https://sierramadrecollection.com/",
+        "notes": "Complete 944 parts inventory. Quality OE and aftermarket options.",
+        "specialties": ["Large Inventory", "Quality Parts"]
+      },
+      {
+        "name": "Stoddard Porsche Parts",
+        "url": "https://www.stoddard.com/watercooled-porsches-924-944-968-and-928/944.html",
+        "notes": "944 restoration and maintenance parts from vintage Porsche specialists.",
+        "specialties": ["Restoration", "Vintage Porsche"]
+      }
+    ],
+    "specialty": [
+      {
         "name": "944 Online",
-        "url": "https://www.944online.com/",
-        "notes": "944-specific resources"
+        "url": "https://944online.com/",
+        "notes": "944-specific parts specialist. Hard-to-find parts and tools.",
+        "specialties": ["944 Specialist", "Rare Parts", "Tools"],
+        "featured": true
+      },
+      {
+        "name": "Clarks Garage",
+        "url": "https://www.clarks-garage.com/",
+        "notes": "944 tech articles and parts. Essential DIY resource.",
+        "specialties": ["Tech Articles", "DIY Resource"]
+      },
+      {
+        "name": "Partsklassik",
+        "url": "https://www.partsklassik.com/",
+        "notes": "Rebuilt components and exchange parts. Factory-trained mechanic owned.",
+        "specialties": ["Rebuilt Parts", "Exchange"]
       }
     ],
     "used": [
       {
-        "name": "Rennlist Classifieds",
-        "url": "https://rennlist.com/forums/parts-marketplace/",
-        "notes": "Forum marketplace"
+        "name": "Rennlist 944 Classifieds",
+        "url": "https://rennlist.com/forums/924-931-944-951-968-forum/",
+        "notes": "Largest 944 community marketplace.",
+        "specialties": ["944 Community", "Rare Parts"],
+        "featured": true
+      },
+      {
+        "name": "Pelican Parts BBS",
+        "url": "https://forums.pelicanparts.com/porsche-924-944-968-technical-forum/",
+        "notes": "Active 944 forum with classifieds section.",
+        "specialties": ["Forum", "Tech Support"]
       },
       {
         "name": "eBay Motors",
-        "url": "https://www.ebay.com/motors/",
-        "notes": "Used & NOS parts"
+        "url": "https://www.ebay.com/b/Porsche-944/6030/bn_81449780",
+        "notes": "Large selection of used, NOS, and reproduction 944 parts.",
+        "specialties": ["NOS Parts", "Wide Selection"]
+      }
+    ],
+    "tools": [
+      {
+        "name": "Clarks Garage Technical",
+        "url": "https://www.clarks-garage.com/",
+        "notes": "Essential 944 shop manual and tech articles"
+      },
+      {
+        "name": "Lindsey Racing Torque Specs",
+        "url": "https://www.lindseyracing.com/LR/Parts/TORQUESPEC.html",
+        "notes": "944 torque specifications reference"
       }
     ]
   },

@@ -919,58 +919,123 @@
   "suppliers": {
     "oem": [
       {
-        "name": "BMW Parts",
-        "url": "https://parts.bmwusa.com/",
-        "notes": "Genuine BMW OEM parts"
-      },
-      {
         "name": "FCP Euro",
-        "url": "https://www.fcpeuro.com/",
-        "notes": "Lifetime replacement guarantee"
+        "url": "https://www.fcpeuro.com/BMW-parts/3-series/E90",
+        "notes": "Lifetime replacement guarantee. Essential for water pumps, turbos, and HPFP parts.",
+        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "shipping": "Free over $49",
+        "warranty": "Lifetime",
+        "featured": true
       },
       {
-        "name": "ECS Tuning",
-        "url": "https://www.ecstuning.com/",
-        "notes": "OEM and aftermarket"
+        "name": "Pelican Parts",
+        "url": "https://www.pelicanparts.com/BMW/catalog/3-Series_Main.htm",
+        "notes": "E90/E92 catalog with excellent DIY tech articles.",
+        "specialties": ["Tech Articles", "OE Parts"],
+        "shipping": "Free over $99"
+      },
+      {
+        "name": "BMW Parts Direct",
+        "url": "https://www.bmwpartsdirect.com/",
+        "notes": "Genuine BMW OEM parts from authorized dealers.",
+        "specialties": ["Genuine BMW", "Dealer Direct"]
       }
     ],
-    "aftermarket": [
-      {
-        "name": "Turner Motorsport",
-        "url": "https://www.turnermotorsport.com/",
-        "notes": "Performance parts"
-      },
-      {
-        "name": "BimmerWorld",
-        "url": "https://www.bimmerworld.com/",
-        "notes": "Track-focused parts"
-      },
+    "performance": [
       {
         "name": "Burger Motorsports",
         "url": "https://burgertuning.com/",
-        "notes": "N54/N55 performance"
+        "notes": "N54/N55 performance specialists. JB4 tuning, downpipes, and intakes.",
+        "specialties": ["N54/N55 Tuning", "JB4", "Intakes"],
+        "featured": true
       },
       {
         "name": "Pure Turbos",
         "url": "https://pureturbos.com/",
-        "notes": "Upgraded turbo units"
+        "notes": "Upgraded turbo units for N54 335i. Stage 1-3 options.",
+        "specialties": ["Upgraded Turbos", "N54", "Big Power"]
+      },
+      {
+        "name": "Turner Motorsport",
+        "url": "https://www.turnermotorsport.com/BMW-E90-Parts",
+        "notes": "Race-proven E90 M3 and 335i performance parts.",
+        "specialties": ["M3 Parts", "Suspension", "Brakes"]
+      },
+      {
+        "name": "BimmerWorld",
+        "url": "https://www.bimmerworld.com/BMW-Parts/E90-2006-2011/",
+        "notes": "Track-focused parts with racing pedigree.",
+        "specialties": ["Track Parts", "Suspension"]
+      },
+      {
+        "name": "Dinan",
+        "url": "https://www.dinanbmw.com/",
+        "notes": "Premium BMW performance with warranty-friendly software and hardware.",
+        "specialties": ["Software", "Exhaust", "Premium"]
+      }
+    ],
+    "general": [
+      {
+        "name": "ECS Tuning",
+        "url": "https://www.ecstuning.com/BMW-E90/",
+        "notes": "Large E90 inventory. Great for maintenance and N54/N55 parts.",
+        "specialties": ["Large Inventory", "Fast Shipping"],
+        "shipping": "Free over $49"
+      },
+      {
+        "name": "AutohausAZ",
+        "url": "https://www.autohausaz.com/",
+        "notes": "Competitive prices on name brand parts.",
+        "specialties": ["Good Prices", "Name Brands"],
+        "shipping": "Free over $50"
+      }
+    ],
+    "specialty": [
+      {
+        "name": "Vargas Turbo Technologies",
+        "url": "https://www.vtt-industries.com/",
+        "notes": "N54/N55 turbo specialists. Rebuild services and upgraded turbos.",
+        "specialties": ["Turbo Rebuilds", "N54/N55"],
+        "featured": true
+      },
+      {
+        "name": "MHD Flasher",
+        "url": "https://www.mhdtuning.com/",
+        "notes": "DIY N54/N55 ECU tuning via smartphone app.",
+        "specialties": ["ECU Tuning", "DIY Flashing"]
       }
     ],
     "used": [
       {
         "name": "E90Post Classifieds",
         "url": "https://www.e90post.com/forums/e90-e91-e92-e93-parts-sale-wanted.61/",
-        "notes": "E90 community marketplace"
+        "notes": "Largest E90 community marketplace.",
+        "specialties": ["E90 Community", "M3 Parts"],
+        "featured": true
       },
       {
         "name": "eBay Motors",
-        "url": "https://www.ebay.com/motors/",
-        "notes": "Used and aftermarket"
+        "url": "https://www.ebay.com/b/BMW-E90/6030/bn_81442372",
+        "notes": "Large selection including M3 and 335i performance parts.",
+        "specialties": ["NOS Parts", "Performance Parts"]
       },
       {
         "name": "Car-Part.com",
         "url": "https://www.car-part.com/",
-        "notes": "Salvage yard inventory"
+        "notes": "Search salvage yard inventory nationwide.",
+        "specialties": ["Salvage Yards", "Body Parts"]
+      }
+    ],
+    "tools": [
+      {
+        "name": "RealOEM",
+        "url": "https://www.realoem.com/bmw/enUS/select?product=P&archive=0&series=E90",
+        "notes": "Free BMW parts diagrams and part number lookup"
+      },
+      {
+        "name": "E90Post Wiki",
+        "url": "https://www.e90post.com/wiki/",
+        "notes": "E90 technical wiki and DIY guides"
       }
     ]
   },

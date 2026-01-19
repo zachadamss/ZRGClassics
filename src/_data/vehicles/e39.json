@@ -957,53 +957,123 @@
   "suppliers": {
     "oem": [
       {
-        "name": "BMW Parts",
-        "url": "https://parts.bmwusa.com/",
-        "notes": "Genuine BMW OEM parts"
-      },
-      {
         "name": "FCP Euro",
-        "url": "https://www.fcpeuro.com/",
-        "notes": "Lifetime replacement guarantee"
+        "url": "https://www.fcpeuro.com/BMW-parts/5-series/E39",
+        "notes": "Lifetime replacement guarantee. Cooling systems, suspension, and engine parts with excellent E39 coverage.",
+        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "shipping": "Free over $49",
+        "warranty": "Lifetime",
+        "featured": true
       },
       {
         "name": "Pelican Parts",
-        "url": "https://www.pelicanparts.com/",
-        "notes": "Extensive BMW catalog"
-      }
-    ],
-    "aftermarket": [
-      {
-        "name": "Turner Motorsport",
-        "url": "https://www.turnermotorsport.com/",
-        "notes": "Performance parts and upgrades"
+        "url": "https://www.pelicanparts.com/BMW/catalog/5-Series_Main.htm",
+        "notes": "Extensive E39 catalog with excellent DIY tech articles and guides.",
+        "specialties": ["Tech Articles", "OE Parts"],
+        "shipping": "Free over $99"
       },
       {
-        "name": "Beisan Systems",
-        "url": "https://www.beisansystems.com/",
-        "notes": "VANOS repair specialists"
+        "name": "BMW Parts Direct",
+        "url": "https://www.bmwpartsdirect.com/",
+        "notes": "Genuine BMW OEM parts from authorized dealers.",
+        "specialties": ["Genuine BMW", "Dealer Direct"]
+      }
+    ],
+    "performance": [
+      {
+        "name": "Turner Motorsport",
+        "url": "https://www.turnermotorsport.com/BMW-E39-Parts",
+        "notes": "Race-proven E39 M5 and 540i performance parts. Suspension and brakes.",
+        "specialties": ["M5 Parts", "Suspension", "Brakes"],
+        "featured": true
       },
       {
         "name": "Rogue Engineering",
         "url": "https://www.rogueengineering.co/",
-        "notes": "E39 performance specialists"
+        "notes": "E39 performance specialists. Exhaust systems and intake upgrades.",
+        "specialties": ["Exhaust", "Intakes", "Performance"]
+      },
+      {
+        "name": "Beisan Systems",
+        "url": "https://www.beisansystems.com/",
+        "notes": "VANOS repair specialists with DIY kits and technical information.",
+        "specialties": ["VANOS Repair", "DIY Kits"]
+      },
+      {
+        "name": "Dinan",
+        "url": "https://www.dinanbmw.com/",
+        "notes": "Premium BMW performance upgrades with warranty-friendly options.",
+        "specialties": ["Software", "Suspension", "Premium"]
+      }
+    ],
+    "general": [
+      {
+        "name": "ECS Tuning",
+        "url": "https://www.ecstuning.com/BMW-E39/",
+        "notes": "Large inventory of maintenance and upgrade parts.",
+        "specialties": ["Large Inventory", "Fast Shipping"],
+        "shipping": "Free over $49"
+      },
+      {
+        "name": "BimmerWorld",
+        "url": "https://www.bimmerworld.com/BMW-Parts/E39-1997-2003/",
+        "notes": "BMW parts specialist with racing pedigree.",
+        "specialties": ["Maintenance", "Quality Parts"]
+      },
+      {
+        "name": "AutohausAZ",
+        "url": "https://www.autohausaz.com/",
+        "notes": "Competitive prices on name brand parts.",
+        "specialties": ["Good Prices", "Name Brands"],
+        "shipping": "Free over $50"
+      }
+    ],
+    "specialty": [
+      {
+        "name": "E39Source",
+        "url": "https://www.e39source.com/",
+        "notes": "E39 enthusiast resource with parts recommendations and DIY guides.",
+        "specialties": ["E39 Specialist", "DIY Guides"],
+        "featured": true
       }
     ],
     "used": [
       {
-        "name": "Bimmerforums Classifieds",
-        "url": "https://www.bimmerforums.com/forum/forumdisplay.php?35-E30-Classifieds",
-        "notes": "E39 community marketplace"
+        "name": "M5Board Classifieds",
+        "url": "https://www.m5board.com/forums/e39-5-series-forum.33/",
+        "notes": "Premier E39 and M5 community marketplace.",
+        "specialties": ["M5 Community", "Rare Parts"],
+        "featured": true
+      },
+      {
+        "name": "5Series.net Classifieds",
+        "url": "https://5series.net/forums/e39-classifieds/",
+        "notes": "E39 community marketplace with active listings.",
+        "specialties": ["E39 Community", "Used Parts"]
       },
       {
         "name": "eBay Motors",
-        "url": "https://www.ebay.com/motors/",
-        "notes": "Used and NOS parts"
+        "url": "https://www.ebay.com/b/BMW-E39/6030/bn_81442368",
+        "notes": "Large selection of used, NOS, and M5 parts.",
+        "specialties": ["NOS Parts", "M5 Parts"]
       },
       {
         "name": "Car-Part.com",
         "url": "https://www.car-part.com/",
-        "notes": "Salvage yard inventory"
+        "notes": "Search salvage yard inventory nationwide.",
+        "specialties": ["Salvage Yards", "Body Parts"]
+      }
+    ],
+    "tools": [
+      {
+        "name": "RealOEM",
+        "url": "https://www.realoem.com/bmw/enUS/select?product=P&archive=0&series=E39",
+        "notes": "Free BMW parts diagrams and part number lookup"
+      },
+      {
+        "name": "E39Source DIY Library",
+        "url": "https://www.e39source.com/diy/",
+        "notes": "Comprehensive E39 DIY guides and tutorials"
       }
     ]
   },

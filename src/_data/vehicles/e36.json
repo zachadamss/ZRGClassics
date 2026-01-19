@@ -674,53 +674,123 @@
   "suppliers": {
     "oem": [
       {
-        "name": "BMW Parts",
-        "url": "https://parts.bmwusa.com/",
-        "notes": "Genuine BMW OEM parts"
-      },
-      {
         "name": "FCP Euro",
-        "url": "https://www.fcpeuro.com/",
-        "notes": "Lifetime replacement guarantee"
+        "url": "https://www.fcpeuro.com/BMW-parts/3-series/E36",
+        "notes": "Lifetime replacement guarantee. Excellent E36 coverage for cooling, suspension, and engine parts.",
+        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "shipping": "Free over $49",
+        "warranty": "Lifetime",
+        "featured": true
       },
       {
         "name": "Pelican Parts",
-        "url": "https://www.pelicanparts.com/",
-        "notes": "Extensive BMW catalog"
+        "url": "https://www.pelicanparts.com/BMW/catalog/3-Series_Main.htm",
+        "notes": "Huge E36 catalog with tech articles. Great resource for DIY repairs.",
+        "specialties": ["Tech Articles", "OE Parts"],
+        "shipping": "Free over $99"
+      },
+      {
+        "name": "BMW Parts Direct",
+        "url": "https://www.bmwpartsdirect.com/",
+        "notes": "Genuine BMW OEM parts from authorized dealers.",
+        "specialties": ["Genuine BMW", "Dealer Direct"]
       }
     ],
-    "aftermarket": [
+    "performance": [
       {
         "name": "Turner Motorsport",
-        "url": "https://www.turnermotorsport.com/",
-        "notes": "Performance parts & accessories"
+        "url": "https://www.turnermotorsport.com/BMW-E36-Parts",
+        "notes": "Race-proven E36 parts. Excellent monoball RTABs and suspension components.",
+        "specialties": ["Race Parts", "RTABs", "Suspension"],
+        "featured": true
       },
+      {
+        "name": "BimmerWorld",
+        "url": "https://www.bimmerworld.com/BMW-Parts/E36-1992-1998/",
+        "notes": "Racing heritage with quality street and track parts.",
+        "specialties": ["Track Parts", "Suspension", "Brakes"]
+      },
+      {
+        "name": "Garagistic",
+        "url": "https://www.garagistic.com/",
+        "notes": "E36-focused performance and restoration. Quality engine mounts and subframe reinforcement.",
+        "specialties": ["Engine Mounts", "Subframe", "Restoration"]
+      },
+      {
+        "name": "VAC Motorsports",
+        "url": "https://www.vacmotorsports.com/",
+        "notes": "High-performance BMW specialists. S50/S52 engine builds and performance parts.",
+        "specialties": ["Engine Builds", "S50/S52", "Performance"]
+      }
+    ],
+    "general": [
       {
         "name": "ECS Tuning",
-        "url": "https://www.ecstuning.com/",
-        "notes": "Wide selection of parts"
+        "url": "https://www.ecstuning.com/BMW-E36/",
+        "notes": "Massive E36 inventory. Great for maintenance and upgrade parts.",
+        "specialties": ["Large Inventory", "Fast Shipping"],
+        "shipping": "Free over $49"
       },
       {
-        "name": "Bimmerworld",
-        "url": "https://www.bimmerworld.com/",
-        "notes": "Racing and performance parts"
+        "name": "AutohausAZ",
+        "url": "https://www.autohausaz.com/",
+        "notes": "Competitive prices on name brand parts.",
+        "specialties": ["Good Prices", "Name Brands"],
+        "shipping": "Free over $50"
+      }
+    ],
+    "specialty": [
+      {
+        "name": "Condor Speed Shop",
+        "url": "https://www.condorspeedshop.com/",
+        "notes": "E30/E36 specialists with unique restoration and performance parts.",
+        "specialties": ["Restoration", "Steering", "Unique Parts"],
+        "featured": true
+      },
+      {
+        "name": "Rogue Engineering",
+        "url": "https://www.rogueengineering.co/",
+        "notes": "Performance exhaust and intake systems for E36.",
+        "specialties": ["Exhaust", "Intakes", "Performance"]
       }
     ],
     "used": [
       {
+        "name": "R3VLimited Classifieds",
+        "url": "https://www.r3vlimited.com/board/forumdisplay.php?f=3",
+        "notes": "Active E36 marketplace within the E30 community.",
+        "specialties": ["Community", "Rare Parts"],
+        "featured": true
+      },
+      {
         "name": "Bimmerforums Classifieds",
-        "url": "https://www.bimmerforums.com/forum/forumdisplay.php?35-E30-Classifieds",
-        "notes": "Forum marketplace"
+        "url": "https://www.bimmerforums.com/forum/forumdisplay.php?36-E36-Classifieds",
+        "notes": "E36 community marketplace.",
+        "specialties": ["E36 Community", "Used Parts"]
       },
       {
         "name": "eBay Motors",
-        "url": "https://www.ebay.com/motors/",
-        "notes": "Used & NOS parts"
+        "url": "https://www.ebay.com/b/BMW-E36/6030/bn_81442366",
+        "notes": "Large selection including M3 parts.",
+        "specialties": ["NOS Parts", "M3 Parts"]
       },
       {
         "name": "Car-Part.com",
         "url": "https://www.car-part.com/",
-        "notes": "Salvage yard inventory"
+        "notes": "Search salvage yard inventory nationwide.",
+        "specialties": ["Salvage Yards", "Body Parts"]
+      }
+    ],
+    "tools": [
+      {
+        "name": "RealOEM",
+        "url": "https://www.realoem.com/bmw/enUS/select?product=P&archive=0&series=E36",
+        "notes": "Free BMW parts diagrams and part number lookup"
+      },
+      {
+        "name": "Garagistic Torque Guide",
+        "url": "https://www.garagistic.com/pages/bmw-e36-bolt-torque-spec-guide",
+        "notes": "Comprehensive E36 torque specifications"
       }
     ]
   },

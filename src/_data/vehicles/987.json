@@ -437,58 +437,169 @@
   "suppliers": {
     "oem": [
       {
-        "name": "Porsche Parts",
-        "url": "https://parts.porsche.com/",
-        "notes": "Genuine Porsche OEM"
-      },
-      {
         "name": "FCP Euro",
-        "url": "https://www.fcpeuro.com/",
-        "notes": "Lifetime replacement guarantee"
+        "url": "https://www.fcpeuro.com/Porsche-parts",
+        "notes": "Industry-leading lifetime replacement guarantee on all parts - comprehensive 987 coverage",
+        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "shipping": "Free over $49",
+        "warranty": "Lifetime",
+        "featured": true
       },
       {
         "name": "Pelican Parts",
-        "url": "https://www.pelicanparts.com/",
-        "notes": "Extensive Porsche catalog"
+        "url": "https://www.pelicanparts.com/Porsche/catalog/987.htm",
+        "notes": "Comprehensive 987 parts catalog with detailed tech articles for DIY repairs",
+        "specialties": ["OEM Parts", "Tech Articles", "DIY Support"],
+        "shipping": "Free over $99",
+        "featured": true
+      },
+      {
+        "name": "Porsche Parts",
+        "url": "https://parts.porsche.com/",
+        "notes": "Factory genuine Porsche parts direct from the manufacturer",
+        "specialties": ["Factory Original", "Genuine Porsche"],
+        "warranty": "Genuine OEM"
+      },
+      {
+        "name": "Sunset Porsche Parts",
+        "url": "https://www.sunsetporscheparts.com/",
+        "notes": "Porsche dealer parts department with competitive pricing",
+        "specialties": ["OEM Dealer", "New Genuine Parts"],
+        "shipping": "Fast shipping"
       }
     ],
-    "aftermarket": [
+    "performance": [
       {
         "name": "LN Engineering",
         "url": "https://lnengineering.com/",
-        "notes": "IMS bearing specialists"
+        "notes": "IMS bearing solutions for 987.1 (987.2 has no IMS concern) - essential for early models",
+        "specialties": ["IMS Bearings", "Engine Components", "M97 Expert"],
+        "featured": true
       },
       {
         "name": "Flat 6 Innovations",
         "url": "https://flat6innovations.com/",
-        "notes": "Engine specialists"
+        "notes": "987 performance specialist with engine upgrades and IMS solutions for 987.1",
+        "specialties": ["IMS Solutions", "Performance Builds", "Engine Specialist"],
+        "featured": true
+      },
+      {
+        "name": "Fabspeed",
+        "url": "https://www.fabspeed.com/porsche/boxster/987/",
+        "notes": "Premium exhaust systems that unlock the flat-six sound",
+        "specialties": ["Exhaust Systems", "Performance Parts"]
       },
       {
         "name": "Softronic",
         "url": "https://www.softronic.us/",
-        "notes": "ECU tuning"
+        "notes": "ECU tuning to extract more power from the M97/MA1 engine",
+        "specialties": ["ECU Tuning", "Performance Software"]
       },
       {
-        "name": "Fabspeed",
-        "url": "https://www.fabspeed.com/",
-        "notes": "Exhaust and performance"
+        "name": "Elephant Racing",
+        "url": "https://www.elephantracing.com/",
+        "notes": "Premium suspension components for track or street performance",
+        "specialties": ["Suspension", "Handling Kits", "Track Parts"]
+      }
+    ],
+    "general": [
+      {
+        "name": "AutohausAZ",
+        "url": "https://www.autohausaz.com/porsche-boxster-parts",
+        "notes": "Large selection of replacement parts at competitive prices",
+        "specialties": ["Replacement Parts", "Maintenance Items"],
+        "shipping": "Free over $99"
+      },
+      {
+        "name": "ECS Tuning",
+        "url": "https://www.ecstuning.com/Porsche-987_Boxster/",
+        "notes": "Wide selection of OEM and aftermarket parts with detailed fitment data",
+        "specialties": ["OEM Parts", "Aftermarket Options"],
+        "shipping": "Free over $99"
+      },
+      {
+        "name": "PartsGeek",
+        "url": "https://www.partsgeek.com/catalog/porsche/boxster.html",
+        "notes": "Budget-friendly replacement parts for common maintenance items",
+        "specialties": ["Budget Parts", "Fast Shipping"]
+      }
+    ],
+    "specialty": [
+      {
+        "name": "Planet-9 Store",
+        "url": "https://www.planet-9.com/",
+        "notes": "Active Boxster/Cayman community with group buys and 987-specific parts",
+        "specialties": ["987 Community", "Group Buys", "Community Resource"],
+        "featured": true
+      },
+      {
+        "name": "Numeric Racing",
+        "url": "https://numericracing.com/",
+        "notes": "Precision shifter assemblies that transform the 987 driving experience",
+        "specialties": ["Shifters", "Transmission Parts"],
+        "featured": true
+      },
+      {
+        "name": "GMG Racing",
+        "url": "https://gmgracing.com/",
+        "notes": "Track-focused upgrades for the 987 Cayman S and Boxster S",
+        "specialties": ["Track Parts", "Race Prep"]
+      },
+      {
+        "name": "Bilt Racing Service",
+        "url": "https://www.biltracingservice.com/",
+        "notes": "987 specialists known for track builds and suspension setups",
+        "specialties": ["Track Builds", "Suspension"]
       }
     ],
     "used": [
       {
-        "name": "Rennlist Classifieds",
-        "url": "https://rennlist.com/forums/parts-marketplace/",
-        "notes": "Porsche community marketplace"
+        "name": "Planet-9 Classifieds",
+        "url": "https://www.planet-9.com/forums/987-boxster-cayman-marketplace.57/",
+        "notes": "The go-to marketplace for used 987 parts - active community with vetted sellers",
+        "specialties": ["987 Community", "Vetted Sellers"],
+        "featured": true
       },
       {
-        "name": "Planet-9 Classifieds",
-        "url": "https://www.planet-9.com/forums/981-boxster-cayman-marketplace.112/",
-        "notes": "Boxster/Cayman forum"
+        "name": "Rennlist Classifieds",
+        "url": "https://rennlist.com/forums/987-forum/",
+        "notes": "Large Porsche community marketplace with active 987 section",
+        "specialties": ["Forum Marketplace", "Wide Selection"]
+      },
+      {
+        "name": "6SpeedOnline Classifieds",
+        "url": "https://www.6speedonline.com/forums/parts-sale-wanted-boxster-cayman/",
+        "notes": "Large enthusiast community with Boxster/Cayman parts section",
+        "specialties": ["Forum Marketplace", "Enthusiast Parts"]
       },
       {
         "name": "eBay Motors",
-        "url": "https://www.ebay.com/motors/",
-        "notes": "Used and NOS parts"
+        "url": "https://www.ebay.com/b/Parts-for-Porsche-Boxster/6030/bn_574972",
+        "notes": "Global marketplace for used and NOS 987 parts",
+        "specialties": ["Used Parts", "NOS", "Global Sellers"]
+      },
+      {
+        "name": "Car-Part.com",
+        "url": "https://www.car-part.com/",
+        "notes": "Search nationwide salvage yard inventory for 987 parts",
+        "specialties": ["Salvage Parts", "Low Cost"]
+      }
+    ],
+    "tools": [
+      {
+        "name": "Pelican Parts Tech Articles",
+        "url": "https://www.pelicanparts.com/techarticles/Porsche-Boxster-987/",
+        "notes": "Extensive library of 987 DIY articles with step-by-step instructions"
+      },
+      {
+        "name": "LN Engineering Torque Specs",
+        "url": "https://lnengineering.com/",
+        "notes": "Torque specifications for M97 and MA1 engine work"
+      },
+      {
+        "name": "Durametric Diagnostic",
+        "url": "https://www.durametric.com/",
+        "notes": "Essential diagnostic software for 987 - dealer-level access to all modules"
       }
     ]
   },

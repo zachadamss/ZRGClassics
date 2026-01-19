@@ -449,58 +449,169 @@
   "suppliers": {
     "oem": [
       {
-        "name": "Porsche Parts",
-        "url": "https://parts.porsche.com/",
-        "notes": "Genuine Porsche OEM"
-      },
-      {
         "name": "FCP Euro",
-        "url": "https://www.fcpeuro.com/",
-        "notes": "Lifetime replacement guarantee"
+        "url": "https://www.fcpeuro.com/Porsche-parts",
+        "notes": "Industry-leading lifetime replacement guarantee - growing 991 coverage as parts become available",
+        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "shipping": "Free over $49",
+        "warranty": "Lifetime",
+        "featured": true
       },
       {
         "name": "Pelican Parts",
-        "url": "https://www.pelicanparts.com/",
-        "notes": "Extensive Porsche catalog"
+        "url": "https://www.pelicanparts.com/Porsche/catalog/991.htm",
+        "notes": "Comprehensive 991 parts catalog with emerging DIY tech articles",
+        "specialties": ["OEM Parts", "Tech Articles"],
+        "shipping": "Free over $99",
+        "featured": true
+      },
+      {
+        "name": "Porsche Parts",
+        "url": "https://parts.porsche.com/",
+        "notes": "Factory genuine Porsche parts - often the best source for 991-specific items",
+        "specialties": ["Factory Original", "Genuine Porsche"],
+        "warranty": "Genuine OEM"
+      },
+      {
+        "name": "Sunset Porsche Parts",
+        "url": "https://www.sunsetporscheparts.com/",
+        "notes": "Porsche dealer parts department with competitive OEM pricing",
+        "specialties": ["OEM Dealer", "New Genuine Parts"],
+        "shipping": "Fast shipping"
       }
     ],
-    "aftermarket": [
+    "performance": [
       {
         "name": "Fabspeed",
-        "url": "https://www.fabspeed.com/",
-        "notes": "Exhaust and performance"
+        "url": "https://www.fabspeed.com/porsche/911/991/",
+        "notes": "Premium exhaust systems that transform the 991's character without drone",
+        "specialties": ["Exhaust Systems", "Performance Parts"],
+        "featured": true
       },
       {
         "name": "Dundon Motorsports",
         "url": "https://dundonmotorsports.com/",
-        "notes": "Exhaust specialists"
+        "notes": "Race-inspired exhaust systems - especially popular for GT3 and GT3 RS",
+        "specialties": ["Exhaust", "GT Parts", "Race Quality"],
+        "featured": true
       },
       {
         "name": "Softronic",
         "url": "https://www.softronic.us/",
-        "notes": "ECU tuning"
+        "notes": "ECU tuning to extract more power from the 991's engine",
+        "specialties": ["ECU Tuning", "Performance Software"]
       },
       {
-        "name": "JRZ",
+        "name": "JRZ Suspension",
         "url": "https://www.jrz-suspension.com/",
-        "notes": "Suspension components"
+        "notes": "Professional-grade coilovers for track use - popular with HPDE enthusiasts",
+        "specialties": ["Coilovers", "Race Suspension"]
+      },
+      {
+        "name": "KW Suspensions",
+        "url": "https://www.kwsuspensions.com/",
+        "notes": "Premium coilover systems for street and track 991s",
+        "specialties": ["Coilovers", "Street/Track"]
+      },
+      {
+        "name": "AWE Tuning",
+        "url": "https://www.awe-tuning.com/porsche/991",
+        "notes": "Performance exhaust systems and intake upgrades",
+        "specialties": ["Exhaust", "Intakes"]
+      }
+    ],
+    "general": [
+      {
+        "name": "AutohausAZ",
+        "url": "https://www.autohausaz.com/porsche-911-parts",
+        "notes": "Growing selection of 991 replacement parts at competitive prices",
+        "specialties": ["Replacement Parts", "Maintenance Items"],
+        "shipping": "Free over $99"
+      },
+      {
+        "name": "ECS Tuning",
+        "url": "https://www.ecstuning.com/Porsche-991_911/",
+        "notes": "Wide selection of OEM and aftermarket parts with detailed fitment",
+        "specialties": ["OEM Parts", "Aftermarket Options"],
+        "shipping": "Free over $99"
+      },
+      {
+        "name": "PartsGeek",
+        "url": "https://www.partsgeek.com/catalog/porsche/911.html",
+        "notes": "Budget-friendly replacement parts for common maintenance",
+        "specialties": ["Budget Parts", "Fast Shipping"]
+      }
+    ],
+    "specialty": [
+      {
+        "name": "GMG Racing",
+        "url": "https://gmgracing.com/",
+        "notes": "Track-focused upgrades and complete race preparation - extensive 991 GT3 experience",
+        "specialties": ["Track Parts", "Race Prep", "GT Builds"],
+        "featured": true
+      },
+      {
+        "name": "SharkWerks",
+        "url": "https://www.sharkwerks.com/",
+        "notes": "Performance shop with deep 991 expertise - known for GT car work",
+        "specialties": ["GT Models", "Engine Work", "Full Builds"],
+        "featured": true
+      },
+      {
+        "name": "BBI Autosport",
+        "url": "https://bbiautosport.com/",
+        "notes": "Custom builds and track preparation for 991 GT cars",
+        "specialties": ["Custom Builds", "Turbo Conversions"]
+      },
+      {
+        "name": "Champion Motorsport",
+        "url": "https://www.championmotorsport.com/",
+        "notes": "Premium wheels and performance parts for the 991 platform",
+        "specialties": ["Wheels", "Performance Parts"]
       }
     ],
     "used": [
       {
-        "name": "Rennlist Classifieds",
-        "url": "https://rennlist.com/forums/parts-marketplace/",
-        "notes": "Porsche community marketplace"
+        "name": "Rennlist 991 Classifieds",
+        "url": "https://rennlist.com/forums/991-parts-marketplace/",
+        "notes": "Active 991 community marketplace - good selection of used OEM and aftermarket",
+        "specialties": ["991 Community", "Vetted Sellers"],
+        "featured": true
+      },
+      {
+        "name": "6SpeedOnline Classifieds",
+        "url": "https://www.6speedonline.com/forums/parts-sale-wanted-911/",
+        "notes": "Large enthusiast community with active 991 parts section",
+        "specialties": ["Forum Marketplace", "Enthusiast Parts"]
       },
       {
         "name": "eBay Motors",
-        "url": "https://www.ebay.com/motors/",
-        "notes": "Used and NOS parts"
+        "url": "https://www.ebay.com/b/Parts-for-Porsche-911/6030/bn_574968",
+        "notes": "Global marketplace for used and NOS 991 parts",
+        "specialties": ["Used Parts", "NOS", "Global Sellers"]
       },
       {
         "name": "Car-Part.com",
         "url": "https://www.car-part.com/",
-        "notes": "Salvage yard inventory"
+        "notes": "Search nationwide salvage yard inventory - good for body panels",
+        "specialties": ["Salvage Parts", "Body Panels"]
+      }
+    ],
+    "tools": [
+      {
+        "name": "Pelican Parts Tech Articles",
+        "url": "https://www.pelicanparts.com/techarticles/Porsche-991/",
+        "notes": "Growing library of 991 DIY articles with step-by-step instructions"
+      },
+      {
+        "name": "PIWIS/Durametric Diagnostic",
+        "url": "https://www.durametric.com/",
+        "notes": "Essential diagnostic software - the 991's complex systems require dealer-level tools"
+      },
+      {
+        "name": "991 Technical Forum",
+        "url": "https://rennlist.com/forums/991-general-forum/",
+        "notes": "Rennlist's 991 section has extensive DIY threads and technical discussions"
       }
     ]
   },

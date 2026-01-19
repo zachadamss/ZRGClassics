@@ -948,53 +948,110 @@
   "suppliers": {
     "oem": [
       {
-        "name": "BMW Classic Parts",
-        "url": "https://www.bmw-classic-parts.com/",
-        "notes": "Genuine BMW OEM and NLA parts"
+        "name": "FCP Euro",
+        "url": "https://www.fcpeuro.com/BMW-parts",
+        "notes": "Lifetime replacement guarantee on all parts. Excellent E28 coverage with OE quality options.",
+        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "shipping": "Free over $49",
+        "warranty": "Lifetime",
+        "featured": true
       },
       {
-        "name": "FCP Euro",
-        "url": "https://www.fcpeuro.com/",
-        "notes": "Lifetime replacement guarantee"
+        "name": "BMW Classic Parts",
+        "url": "https://www.bmw-classic-parts.com/",
+        "notes": "Genuine BMW OEM and NLA parts for classic BMWs. Source for discontinued items.",
+        "specialties": ["Genuine BMW", "NLA Parts"]
       },
       {
         "name": "Pelican Parts",
-        "url": "https://www.pelicanparts.com/",
-        "notes": "Extensive BMW catalog"
+        "url": "https://www.pelicanparts.com/BMW/catalog/5-Series_Main.htm",
+        "notes": "Extensive E28 catalog with OEM and quality aftermarket parts.",
+        "specialties": ["Tech Articles", "OE Parts"],
+        "shipping": "Free over $99"
       }
     ],
-    "aftermarket": [
+    "performance": [
       {
         "name": "Ireland Engineering",
         "url": "https://www.iemotorsport.com/",
-        "notes": "Suspension and performance parts"
+        "notes": "Classic BMW performance specialists. Suspension, engine, and chassis upgrades for E28.",
+        "specialties": ["Suspension", "Engine", "Handling"],
+        "featured": true
       },
       {
         "name": "Metric Mechanic",
         "url": "https://www.metricmechanic.com/",
-        "notes": "M30 engine specialists"
+        "notes": "M30 and Big Six engine specialists. Rebuilt engines and performance builds.",
+        "specialties": ["M30 Engines", "Rebuilds", "Performance"]
       },
       {
+        "name": "Turner Motorsport",
+        "url": "https://www.turnermotorsport.com/",
+        "notes": "BMW performance parts with race-proven reliability.",
+        "specialties": ["Race Parts", "Suspension"]
+      }
+    ],
+    "general": [
+      {
+        "name": "ECS Tuning",
+        "url": "https://www.ecstuning.com/BMW-E28/",
+        "notes": "Wide selection of maintenance and upgrade parts.",
+        "specialties": ["Large Inventory", "Fast Shipping"],
+        "shipping": "Free over $49"
+      },
+      {
+        "name": "BavAuto",
+        "url": "https://www.bavauto.com/",
+        "notes": "Quality OE and OEM BMW parts with competitive pricing.",
+        "specialties": ["OE Equivalent", "Good Prices"]
+      }
+    ],
+    "specialty": [
+      {
         "name": "Blunt Tech",
-        "url": "https://www.blunttech.com/",
-        "notes": "E28 restoration parts"
+        "url": "https://blunttech.com/",
+        "notes": "E28 restoration specialist. Hard-to-find parts and personal service.",
+        "specialties": ["E28 Specialist", "Rare Parts"],
+        "featured": true
+      },
+      {
+        "name": "Guten Parts",
+        "url": "https://www.gutenparts.com/",
+        "notes": "Community favorite for hard-to-find classic BMW parts.",
+        "specialties": ["Rare Parts", "Community Owned"]
       }
     ],
     "used": [
       {
-        "name": "Bimmerforums Classifieds",
-        "url": "https://www.bimmerforums.com/forum/forumdisplay.php?35-E30-Classifieds",
-        "notes": "E28 community marketplace"
+        "name": "MyE28.com Classifieds",
+        "url": "https://forums.mye28.com/viewforum.php?f=3",
+        "notes": "Premier E28 community marketplace. Best source for used E28 parts.",
+        "specialties": ["E28 Community", "Rare Parts"],
+        "featured": true
       },
       {
         "name": "eBay Motors",
-        "url": "https://www.ebay.com/motors/",
-        "notes": "Used and NOS parts"
+        "url": "https://www.ebay.com/b/BMW-E28/6030/bn_81442362",
+        "notes": "Large selection of used, NOS, and reproduction E28 parts.",
+        "specialties": ["NOS Parts", "Wide Selection"]
       },
       {
         "name": "Car-Part.com",
         "url": "https://www.car-part.com/",
-        "notes": "Salvage yard inventory search"
+        "notes": "Search salvage yard inventory nationwide.",
+        "specialties": ["Salvage Yards", "Body Parts"]
+      }
+    ],
+    "tools": [
+      {
+        "name": "RealOEM",
+        "url": "https://www.realoem.com/bmw/enUS/select?product=P&archive=0&series=E28",
+        "notes": "Free BMW parts diagrams and part number lookup"
+      },
+      {
+        "name": "MyE28.com Tech FAQ",
+        "url": "https://forums.mye28.com/viewforum.php?f=10",
+        "notes": "E28 technical information and part numbers"
       }
     ]
   },

@@ -680,53 +680,121 @@
   "suppliers": {
     "oem": [
       {
+        "name": "Pelican Parts",
+        "url": "https://www.pelicanparts.com/catalog/911_catalog_main.htm",
+        "notes": "Extensive 964 catalog with tech articles. The go-to resource for air-cooled 911 parts.",
+        "specialties": ["Tech Articles", "OE Parts", "Air-Cooled"],
+        "shipping": "Free over $99",
+        "featured": true
+      },
+      {
         "name": "Porsche Classic",
         "url": "https://www.porsche.com/usa/accessoriesandservices/classic/",
-        "notes": "Genuine Porsche OEM parts"
+        "notes": "Genuine Porsche OEM and remanufactured classic parts.",
+        "specialties": ["Genuine Porsche", "Classic OEM"]
       },
       {
-        "name": "Sunset Porsche Parts",
-        "url": "https://www.sunsetporscheparts.com/",
-        "notes": "OEM Porsche dealer"
+        "name": "Suncoast Porsche Parts",
+        "url": "https://www.suncoastparts.com/",
+        "notes": "Genuine Porsche parts at discounted prices.",
+        "specialties": ["Genuine Porsche", "Dealer Discount"]
       },
       {
-        "name": "Pelican Parts",
-        "url": "https://www.pelicanparts.com/",
-        "notes": "Extensive Porsche catalog"
+        "name": "FCP Euro",
+        "url": "https://www.fcpeuro.com/Porsche-parts",
+        "notes": "Lifetime replacement guarantee on all parts.",
+        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "shipping": "Free over $49",
+        "warranty": "Lifetime"
       }
     ],
-    "aftermarket": [
+    "performance": [
       {
         "name": "Elephant Racing",
         "url": "https://www.elephantracing.com/",
-        "notes": "Suspension specialists"
+        "notes": "964 suspension specialists. Track-proven coilovers and handling upgrades.",
+        "specialties": ["Suspension", "Coilovers", "Track"],
+        "featured": true
       },
       {
         "name": "Wevo",
         "url": "https://www.wevo-shop.com/",
-        "notes": "Shifters and drivetrain"
+        "notes": "Shifters and drivetrain upgrades. Excellent short shifter kits.",
+        "specialties": ["Shifters", "Drivetrain", "Mounts"]
       },
       {
         "name": "LN Engineering",
         "url": "https://lnengineering.com/",
-        "notes": "Engine components"
+        "notes": "Air-cooled engine components. Cylinders, pistons, and IMS solutions.",
+        "specialties": ["Engine Parts", "Cylinders", "Quality"]
+      },
+      {
+        "name": "Fabspeed",
+        "url": "https://fabspeed.com/",
+        "notes": "Performance exhaust systems and headers for 964.",
+        "specialties": ["Exhaust", "Headers", "Sound"]
+      }
+    ],
+    "general": [
+      {
+        "name": "Sierra Madre Collection",
+        "url": "https://sierramadrecollection.com/",
+        "notes": "Complete Porsche parts inventory. Quality parts for all 911 generations.",
+        "specialties": ["Large Inventory", "Quality Parts"]
+      },
+      {
+        "name": "Stoddard Porsche Parts",
+        "url": "https://www.stoddard.com/",
+        "notes": "Vintage Porsche specialists. Authentic and reproduction parts.",
+        "specialties": ["Restoration", "Authentic Parts"]
+      }
+    ],
+    "specialty": [
+      {
+        "name": "Rennsport Systems",
+        "url": "https://www.rennsportsystems.com/",
+        "notes": "Air-cooled 911 specialists. Engine rebuilds and performance builds.",
+        "specialties": ["Engine Rebuilds", "Air-Cooled"],
+        "featured": true
+      },
+      {
+        "name": "Aase Sales",
+        "url": "https://www.aaborsmotorsport.com/",
+        "notes": "Porsche restoration parts and trim.",
+        "specialties": ["Restoration", "Trim", "Interior"]
       }
     ],
     "used": [
       {
-        "name": "Rennlist Classifieds",
-        "url": "https://rennlist.com/forums/parts-marketplace/",
-        "notes": "Porsche community marketplace"
+        "name": "Rennlist 964 Classifieds",
+        "url": "https://rennlist.com/forums/964-forum/",
+        "notes": "Premier air-cooled 911 community marketplace.",
+        "specialties": ["964 Community", "Rare Parts"],
+        "featured": true
+      },
+      {
+        "name": "911UK Classifieds",
+        "url": "https://911uk.com/forums/classifieds/",
+        "notes": "UK-based 911 marketplace. Good for Euro-spec parts.",
+        "specialties": ["UK/Euro Parts", "Community"]
       },
       {
         "name": "eBay Motors",
-        "url": "https://www.ebay.com/motors/",
-        "notes": "Used and NOS parts"
+        "url": "https://www.ebay.com/b/Porsche-964/6030/bn_81449782",
+        "notes": "Large selection of used and NOS 964 parts.",
+        "specialties": ["NOS Parts", "Wide Selection"]
+      }
+    ],
+    "tools": [
+      {
+        "name": "Pelican Parts Tech Articles",
+        "url": "https://www.pelicanparts.com/techarticles/Porsche_911-964/porsche_911_964_tech.htm",
+        "notes": "Comprehensive 964 DIY tech articles"
       },
       {
-        "name": "The Parts Shop",
-        "url": "https://www.thepartsshop.com/",
-        "notes": "Used Porsche parts"
+        "name": "P101tv VIN Decoder",
+        "url": "http://p101tv.com/",
+        "notes": "Porsche VIN decoder and options codes"
       }
     ]
   },

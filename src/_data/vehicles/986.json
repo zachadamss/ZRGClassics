@@ -854,48 +854,156 @@
   "suppliers": {
     "oem": [
       {
-        "name": "Porsche Parts",
-        "url": "https://parts.porsche.com/",
-        "notes": "Genuine Porsche OEM"
-      },
-      {
         "name": "FCP Euro",
-        "url": "https://www.fcpeuro.com/",
-        "notes": "Lifetime replacement guarantee"
+        "url": "https://www.fcpeuro.com/Porsche-parts",
+        "notes": "Industry-leading lifetime replacement guarantee on all parts - excellent 986 coverage",
+        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "shipping": "Free over $49",
+        "warranty": "Lifetime",
+        "featured": true
       },
       {
         "name": "Pelican Parts",
-        "url": "https://www.pelicanparts.com/",
-        "notes": "Extensive Porsche catalog"
+        "url": "https://www.pelicanparts.com/Porsche/catalog/986.htm",
+        "notes": "Comprehensive 986 parts catalog with detailed tech articles for every repair",
+        "specialties": ["OEM Parts", "Tech Articles", "DIY Support"],
+        "shipping": "Free over $99",
+        "featured": true
+      },
+      {
+        "name": "Porsche Parts",
+        "url": "https://parts.porsche.com/",
+        "notes": "Factory genuine Porsche parts direct from the manufacturer",
+        "specialties": ["Factory Original", "Genuine Porsche"],
+        "warranty": "Genuine OEM"
+      },
+      {
+        "name": "Sunset Porsche Parts",
+        "url": "https://www.sunsetporscheparts.com/",
+        "notes": "Porsche dealer parts department with competitive pricing",
+        "specialties": ["OEM Dealer", "New Genuine Parts"],
+        "shipping": "Fast shipping"
       }
     ],
-    "aftermarket": [
+    "performance": [
       {
         "name": "LN Engineering",
         "url": "https://lnengineering.com/",
-        "notes": "IMS bearing specialists"
+        "notes": "The go-to for IMS bearing solutions - their retrofit bearings are essential for 986 ownership peace of mind",
+        "specialties": ["IMS Bearings", "Engine Components", "986/996 Specialist"],
+        "featured": true
       },
       {
         "name": "Flat 6 Innovations",
         "url": "https://flat6innovations.com/",
-        "notes": "986/996 performance parts"
+        "notes": "986/996 performance specialist - IMS solutions, engine upgrades, and complete builds",
+        "specialties": ["IMS Solutions", "Performance Builds", "M96 Expert"],
+        "featured": true
+      },
+      {
+        "name": "Fabspeed",
+        "url": "https://www.fabspeed.com/porsche/boxster/986/",
+        "notes": "Premium exhaust systems and performance parts for the 986 Boxster",
+        "specialties": ["Exhaust Systems", "Performance Parts"]
+      },
+      {
+        "name": "Softronic",
+        "url": "https://www.softronic.us/",
+        "notes": "ECU tuning solutions to extract more power from the M96 engine",
+        "specialties": ["ECU Tuning", "Performance Software"]
+      }
+    ],
+    "general": [
+      {
+        "name": "AutohausAZ",
+        "url": "https://www.autohausaz.com/porsche-boxster-parts",
+        "notes": "Large selection of replacement parts at competitive prices",
+        "specialties": ["Replacement Parts", "Maintenance Items"],
+        "shipping": "Free over $99"
+      },
+      {
+        "name": "ECS Tuning",
+        "url": "https://www.ecstuning.com/Porsche-986_Boxster/",
+        "notes": "Wide selection of OEM and aftermarket parts with detailed fitment data",
+        "specialties": ["OEM Parts", "Aftermarket Options"],
+        "shipping": "Free over $99"
+      },
+      {
+        "name": "PartsGeek",
+        "url": "https://www.partsgeek.com/catalog/porsche/boxster.html",
+        "notes": "Budget-friendly replacement parts for common maintenance items",
+        "specialties": ["Budget Parts", "Fast Shipping"]
+      }
+    ],
+    "specialty": [
+      {
+        "name": "986 Forum Store",
+        "url": "https://986forum.com/forums/986-forum-store.97/",
+        "notes": "Community-driven store with 986-specific parts and group buys",
+        "specialties": ["986 Exclusive", "Group Buys", "Community Resource"],
+        "featured": true
+      },
+      {
+        "name": "Numeric Racing",
+        "url": "https://numericracing.com/",
+        "notes": "Precision shifter assemblies and transmission upgrades for the 986",
+        "specialties": ["Shifters", "Transmission Parts"]
+      },
+      {
+        "name": "Hard Motorsport",
+        "url": "https://www.hardmotorsport.com/",
+        "notes": "Track-focused upgrades and safety equipment",
+        "specialties": ["Track Parts", "Safety Equipment"]
       }
     ],
     "used": [
       {
-        "name": "Rennlist Classifieds",
-        "url": "https://rennlist.com/forums/parts-marketplace/",
-        "notes": "Forum marketplace"
+        "name": "Planet-9 Classifieds",
+        "url": "https://www.planet-9.com/forums/986-boxster-marketplace.55/",
+        "notes": "Active Boxster/Cayman community marketplace - 986-specific section",
+        "specialties": ["986 Community", "Vetted Sellers"],
+        "featured": true
       },
       {
-        "name": "Planet-9 Classifieds",
-        "url": "https://www.planet-9.com/forums/981-boxster-cayman-marketplace.112/",
-        "notes": "986/987 marketplace"
+        "name": "Rennlist Classifieds",
+        "url": "https://rennlist.com/forums/986-forum/",
+        "notes": "Large Porsche community marketplace with active 986 section",
+        "specialties": ["Forum Marketplace", "Wide Selection"]
+      },
+      {
+        "name": "986 Forum Classifieds",
+        "url": "https://986forum.com/forums/marketplace.42/",
+        "notes": "Dedicated 986 community marketplace",
+        "specialties": ["986 Exclusive", "Community Vetted"]
       },
       {
         "name": "eBay Motors",
-        "url": "https://www.ebay.com/motors/",
-        "notes": "Used & NOS parts"
+        "url": "https://www.ebay.com/b/Parts-for-Porsche-Boxster/6030/bn_574972",
+        "notes": "Global marketplace for used and NOS 986 parts",
+        "specialties": ["Used Parts", "NOS", "Global Sellers"]
+      },
+      {
+        "name": "Car-Part.com",
+        "url": "https://www.car-part.com/",
+        "notes": "Search nationwide salvage yard inventory for 986 parts",
+        "specialties": ["Salvage Parts", "Low Cost"]
+      }
+    ],
+    "tools": [
+      {
+        "name": "RealOEM Porsche",
+        "url": "https://www.realoem.com/",
+        "notes": "Parts diagrams and part number lookup - useful for cross-referencing"
+      },
+      {
+        "name": "Pelican Parts Tech Articles",
+        "url": "https://www.pelicanparts.com/techarticles/Porsche-Boxster-986/",
+        "notes": "Extensive library of 986 DIY articles with step-by-step instructions"
+      },
+      {
+        "name": "LN Engineering 996 Torque Book",
+        "url": "https://lnengineering.com/996-torque-book-fastening-specifications-for-porsche-911-type-996-automobile.html",
+        "notes": "Comprehensive torque specifications - applies to 986 M96 engine"
       }
     ]
   },
