@@ -810,11 +810,11 @@
 
             return `
                 <tr>
-                    <td>${item.name}</td>
-                    <td>${item.intervalMiles ? item.intervalMiles.toLocaleString() : '-'}</td>
-                    <td>${item.intervalMonths || '-'}</td>
-                    <td>${lastService}</td>
-                    <td>${nextDue}</td>
+                    <td data-label="Item">${item.name}</td>
+                    <td data-label="Miles">${item.intervalMiles ? item.intervalMiles.toLocaleString() : '-'}</td>
+                    <td data-label="Months">${item.intervalMonths || '-'}</td>
+                    <td data-label="Last Service">${lastService}</td>
+                    <td data-label="Next Due">${nextDue}</td>
                     <td class="actions-cell">
                         <button type="button" class="btn-icon edit-maintenance" data-id="${item.id}" title="Edit">&#9998;</button>
                         <button type="button" class="btn-icon delete-maintenance" data-id="${item.id}" title="Delete">&times;</button>

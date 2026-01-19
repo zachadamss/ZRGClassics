@@ -184,7 +184,7 @@ const AuthUI = {
       `;
     } else {
       authLinks.innerHTML = `
-        <a href="/account/login/" class="btn btn-secondary btn-sm">Sign In</a>
+        <a href="/account/login/" class="btn btn-light btn-sm">Sign In</a>
         <a href="/account/register/" class="btn btn-primary btn-sm">Join</a>
       `;
     }

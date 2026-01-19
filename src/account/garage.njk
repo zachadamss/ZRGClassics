@@ -783,11 +783,11 @@ const RESTORATION_CHECKLIST = {{ restorationChecklist | dump | safe }};
 
       return `
         <tr>
-          <td>${escapeHtml(item.name)}</td>
-          <td>${item.intervalMiles ? item.intervalMiles.toLocaleString() : '-'}</td>
-          <td>${item.intervalMonths || '-'}</td>
-          <td>${lastService}</td>
-          <td>${nextDue}</td>
+          <td data-label="Item">${escapeHtml(item.name)}</td>
+          <td data-label="Miles">${item.intervalMiles ? item.intervalMiles.toLocaleString() : '-'}</td>
+          <td data-label="Months">${item.intervalMonths || '-'}</td>
+          <td data-label="Last Service">${lastService}</td>
+          <td data-label="Next Due">${nextDue}</td>
           <td class="actions-cell">
             <button type="button" class="btn-icon log-service" data-id="${item.id}" title="Log Service">&#10003;</button>
             <button type="button" class="btn-icon edit-maintenance" data-id="${item.id}" title="Edit">&#9998;</button>
