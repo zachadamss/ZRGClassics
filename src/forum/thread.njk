@@ -90,6 +90,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('category-link').textContent = currentThread.category.name;
     document.getElementById('category-link').href = `/forum/${currentThread.category.slug}/`;
 
+    // Check if current user is the author
+    const isThreadAuthor = user && currentThread.author?.id === user.id;
+
     // Render thread
     threadContainer.innerHTML = `
       <header class="thread-header">
@@ -113,8 +116,15 @@ document.addEventListener('DOMContentLoaded', async () => {
             <span>Member since ${Forum.formatDate(currentThread.author?.created_at)}</span>
           </div>
         </aside>
-        <div class="post-content">
-          ${Forum.nl2br(currentThread.content)}
+        <div class="post-body">
+          <div class="post-content">
+            ${Forum.nl2br(currentThread.content)}
+          </div>
+          ${isThreadAuthor ? `
+          <div class="post-actions">
+            <button class="btn-delete" onclick="deleteThread(${currentThread.id})">Delete Thread</button>
+          </div>
+          ` : ''}
         </div>
       </div>
     `;
@@ -147,8 +157,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         return;
       }
 
-      repliesList.innerHTML = result.replies.map(reply => `
-        <div class="post-card reply-post">
+      repliesList.innerHTML = result.replies.map(reply => {
+        const isReplyAuthor = user && reply.author?.id === user.id;
+        return `
+        <div class="post-card reply-post" data-reply-id="${reply.id}">
           <aside class="post-author">
             <div class="author-avatar">
               ${reply.author?.avatar_url ?
@@ -168,9 +180,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             <div class="post-content">
               ${Forum.nl2br(reply.content)}
             </div>
+            ${isReplyAuthor ? `
+            <div class="post-actions">
+              <button class="btn-delete" onclick="deleteReply(${reply.id})">Delete Reply</button>
+            </div>
+            ` : ''}
           </div>
         </div>
-      `).join('');
+      `}).join('');
 
       // Pagination
       if (result.totalPages > 1) {
@@ -206,7 +223,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       // Add reply to list
       const replyHtml = `
-        <div class="post-card reply-post new-reply">
+        <div class="post-card reply-post new-reply" data-reply-id="${reply.id}">
           <aside class="post-author">
             <div class="author-avatar">
               ${reply.author?.avatar_url ?
@@ -224,6 +241,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             </div>
             <div class="post-content">
               ${Forum.nl2br(reply.content)}
+            </div>
+            <div class="post-actions">
+              <button class="btn-delete" onclick="deleteReply(${reply.id})">Delete Reply</button>
             </div>
           </div>
         </div>
@@ -246,4 +266,38 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   });
 });
+
+// Delete thread function
+async function deleteThread(threadId) {
+  if (!confirm('Are you sure you want to delete this thread? This cannot be undone.')) {
+    return;
+  }
+
+  try {
+    await Forum.deleteThread(threadId);
+    // Redirect to forum index
+    const isLocal = window.location.hostname === 'localhost';
+    window.location.href = isLocal ? '/forum/' : '/forum/';
+  } catch (error) {
+    alert('Error deleting thread: ' + error.message);
+  }
+}
+
+// Delete reply function
+async function deleteReply(replyId) {
+  if (!confirm('Are you sure you want to delete this reply? This cannot be undone.')) {
+    return;
+  }
+
+  try {
+    await Forum.deleteReply(replyId);
+    // Remove from DOM
+    const replyElement = document.querySelector(`[data-reply-id="${replyId}"]`);
+    if (replyElement) {
+      replyElement.remove();
+    }
+  } catch (error) {
+    alert('Error deleting reply: ' + error.message);
+  }
+}
 </script>

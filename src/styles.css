@@ -8000,6 +8000,28 @@ nav ul li.dropdown.touch-open .dropdown-menu {
     color: var(--text-color);
 }
 
+.post-actions {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.btn-delete {
+    background: none;
+    border: 1px solid var(--danger-color);
+    color: var(--danger-color);
+    padding: 0.35rem 0.75rem;
+    font-size: 0.8rem;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-delete:hover {
+    background: var(--danger-color);
+    color: white;
+}
+
 /* Replies Section */
 .replies-section {
     margin-bottom: 2rem;
