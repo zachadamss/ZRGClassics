@@ -9,6 +9,7 @@
 - 4 tools: Invoice Creator, Build Cost Calculator, Maintenance Tracker, Restoration Checklist
 - Newsletter signup on homepage (Formspree-ready)
 - Mobile responsive, dark mode, print-friendly
+- Production build with CSS/JS minification (~35% smaller)
 
 ---
 
@@ -46,6 +47,12 @@
   - Each guide includes: parts lists with OEM numbers, aftermarket alternatives, costs, tools needed, step-by-step procedures, pro tips, warnings, reference links
   - Expandable card UI (click to expand inline)
 
+- [x] **CSS/JS Minification** - Production optimization
+  - CSS: 140KB → 99KB (29% smaller)
+  - JS: 129KB → 75KB (42% smaller)
+  - Uses clean-css and terser
+  - Run `npm run build:prod` for minified build
+
 ---
 
 ## Priority 1: Content
@@ -59,7 +66,7 @@
 
 ## Priority 2: Polish & Production
 
-- [ ] Minify CSS/JS for production
+- [x] Minify CSS/JS for production
 - [ ] Image optimization pipeline
 
 ---
@@ -80,6 +87,8 @@ npm run build        # Build site to _site/
 npm run serve        # Dev server at localhost:8080
 npm run build:search # Rebuild search index
 npm run build:all    # Rebuild search index and site
+npm run build:prod   # Production build (search + site + minify)
+npm run minify       # Minify CSS/JS in _site/
 ```
 
 **File Structure:**
