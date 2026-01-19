@@ -1,9 +1,10 @@
 # ZRG Classics - Project TODO
 
 ## Current Status
-- 17 vehicle platforms (BMW: E28, E30, E34, E36, E39, E46, E90 | Porsche: 924, 928, 944, 964, 986, 987, 991, 993, 996, 997)
-- 68 DIY maintenance guides with step-by-step procedures
+- 14 vehicle platforms (BMW: E28, E30, E34, E36, E39, E46, E90 | Porsche: 924, 928, 944, 964, 986, 987, 991, 993, 996, 997)
+- 136 guides (56 restoration + 80 DIY maintenance) with step-by-step procedures
 - 132+ documented issues with repair costs and difficulty ratings
+- 414 torque specs indexed
 - Full-text search across all content
 - 4 tools: Invoice Creator, Build Cost Calculator, Maintenance Tracker, Restoration Checklist
 - Mobile responsive, dark mode, print-friendly
@@ -19,15 +20,18 @@
   - Cost tracking, dates, and notes per item
   - Print and JSON export
 
+- [x] **Restoration Guides** - 56 comprehensive guides (4 per vehicle)
+  - Suspension Refresh - full rebuild procedures
+  - Rust Prevention & Repair - common problem areas
+  - Electrical Systems - wiring, relays, grounds
+  - Interior Restoration - seats, carpet, dashboard
+  - Each guide includes: parts lists with OEM numbers, aftermarket alternatives, costs, tools needed, step-by-step procedures, pro tips, warnings, reference links
+  - Expandable card UI (click to expand inline)
+
 ---
 
 ## Priority 1: Content
 
-- [ ] **Restoration Guide Content** - Write actual restoration guides (currently "coming soon")
-  - Engine rebuild guides per platform
-  - Suspension refresh guides
-  - Interior restoration guides
-  - Electrical system guides
 - [ ] **Add hero images** to vehicle pages
   - Location: `src/images/vehicles/{model}-hero.jpg`
   - Specs: JPEG, 1920x1080, under 500KB
