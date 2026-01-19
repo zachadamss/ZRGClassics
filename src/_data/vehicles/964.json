@@ -730,5 +730,45 @@
         "Too tight = burned valves; too loose = noisy, poor performance."
       ]
     }
-  ]
+  ],
+  "restorationItems": {
+    "engine": [
+      { "id": "964-valve-adjust", "name": "Perform valve adjustment", "description": "Air-cooled engines require periodic valve adjustment" },
+      { "id": "964-chain-tensioners", "name": "Replace chain tensioners", "description": "Original hydraulic tensioners fail" },
+      { "id": "964-heat-exchangers", "name": "Inspect/replace heat exchangers", "description": "Critical for cabin heat, can rust through" },
+      { "id": "964-oil-lines", "name": "Replace oil cooler lines", "description": "Rubber lines deteriorate and leak" },
+      { "id": "964-engine-reseal", "name": "Reseal engine case", "description": "Common oil leaks at case halves and covers" }
+    ],
+    "cooling": [
+      { "id": "964-oil-cooler", "name": "Service engine oil cooler", "description": "Front-mounted, clean fins for proper cooling" },
+      { "id": "964-fan-motor", "name": "Inspect/rebuild engine fan motor", "description": "Critical for air-cooled engine cooling" },
+      { "id": "964-thermo-flaps", "name": "Inspect thermostat flaps", "description": "Control airflow to engine" }
+    ],
+    "fuel": [
+      { "id": "964-fuel-lines", "name": "Replace rubber fuel lines", "description": "Deteriorate and can cause leaks or fire" },
+      { "id": "964-fuel-filter", "name": "Replace fuel filter", "description": "Under car near tank" },
+      { "id": "964-injectors", "name": "Clean/replace fuel injectors", "description": "CIS-E or DME depending on year" }
+    ],
+    "suspension": [
+      { "id": "964-shocks", "name": "Replace shocks/struts", "description": "Bilstein or Koni recommended" },
+      { "id": "964-control-arm-bushings", "name": "Replace control arm bushings", "description": "Front and rear" },
+      { "id": "964-cv-boots", "name": "Inspect CV boots and axles", "description": "Common leak/wear point" }
+    ],
+    "body": [
+      { "id": "964-whale-tail-mounts", "name": "Inspect whale tail mounts (if equipped)", "description": "Mounts can crack" },
+      { "id": "964-door-seals", "name": "Replace door and window seals", "description": "Reduce wind noise and water leaks" },
+      { "id": "964-targa-seals", "name": "Replace Targa top seals (if equipped)", "description": "Prevent leaks and wind noise" },
+      { "id": "964-rust-inspection", "name": "Inspect for hidden rust", "description": "Rocker panels, floor pans, battery box" }
+    ],
+    "interior": [
+      { "id": "964-seat-leather", "name": "Restore leather seats", "description": "Common wear on bolsters and stitching" },
+      { "id": "964-hvac-blower", "name": "Service HVAC blower motor", "description": "Common failure point" },
+      { "id": "964-sunroof-cables", "name": "Lubricate sunroof cables and tracks", "description": "Prevents binding and motor strain" }
+    ],
+    "electrical": [
+      { "id": "964-wiring-inspection", "name": "Inspect wiring for rodent damage", "description": "Biodegradable wire sheathing attracts mice" },
+      { "id": "964-dme-relay", "name": "Replace DME/fuel pump relay", "description": "Common cause of no-start" },
+      { "id": "964-alternator", "name": "Test/rebuild alternator", "description": "Check charging system output" }
+    ]
+  }
 }

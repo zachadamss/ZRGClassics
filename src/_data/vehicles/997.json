@@ -685,5 +685,43 @@
         "Some owners do this from underneath the car - personal preference."
       ]
     }
-  ]
+  ],
+  "restorationItems": {
+    "engine": [
+      { "id": "997-ims", "name": "Replace IMS bearing (997.1 only)", "description": "M97 engine only - 997.2 has no IMS" },
+      { "id": "997-rms", "name": "Replace rear main seal", "description": "Common leak - combine with IMS work" },
+      { "id": "997-aos", "name": "Replace AOS (Air/Oil Separator)", "description": "Causes rough idle and smoke" },
+      { "id": "997-bore-inspect", "name": "Borescope cylinder inspection (997.1)", "description": "Check for bore scoring on M97 engines" },
+      { "id": "997-dfi-injectors", "name": "Service direct fuel injectors (997.2)", "description": "Clean/replace if misfiring" }
+    ],
+    "cooling": [
+      { "id": "997-coolant-pipes", "name": "Replace coolant pipes with aluminum", "description": "Plastic pipes under intake fail" },
+      { "id": "997-expansion-tank", "name": "Replace expansion tank", "description": "Plastic cracks over time" },
+      { "id": "997-aux-fans", "name": "Test auxiliary cooling fans", "description": "Dual fans in front bumper" }
+    ],
+    "transmission": [
+      { "id": "997-pdk-service", "name": "PDK transmission service (997.2)", "description": "Fluid and filter change" },
+      { "id": "997-clutch", "name": "Replace clutch (manual)", "description": "Dual-mass flywheel inspection recommended" }
+    ],
+    "suspension": [
+      { "id": "997-pasm-shocks", "name": "Inspect/replace PASM shocks (if equipped)", "description": "Electronic dampers wear over time" },
+      { "id": "997-control-arms", "name": "Replace front control arms", "description": "Bushings wear causing clunks" },
+      { "id": "997-spring-perch", "name": "Inspect rear spring perches", "description": "Can crack on early cars" }
+    ],
+    "body": [
+      { "id": "997-headlight-seal", "name": "Reseal headlights", "description": "Bi-xenon housings prone to moisture" },
+      { "id": "997-pse-door-seals", "name": "Replace door seals", "description": "Wind noise when worn" },
+      { "id": "997-frunk-drain", "name": "Clear frunk and sunroof drains", "description": "Prevent water damage" }
+    ],
+    "interior": [
+      { "id": "997-seat-bolsters", "name": "Restore sport seat bolsters", "description": "Driver side wears on sport seats" },
+      { "id": "997-nav-update", "name": "Update PCM navigation (if applicable)", "description": "May require unit refurbishment" },
+      { "id": "997-hvac-actuators", "name": "Replace HVAC blend actuators", "description": "Common cause of clicking noise" }
+    ],
+    "electrical": [
+      { "id": "997-coil-packs", "name": "Replace ignition coil packs", "description": "Common cause of misfires" },
+      { "id": "997-battery", "name": "Replace battery (proper reset required)", "description": "Must register new battery in DME" },
+      { "id": "997-pse-pump", "name": "Service PSE pump", "description": "Powers spoiler, locks, and deck lid" }
+    ]
+  }
 }

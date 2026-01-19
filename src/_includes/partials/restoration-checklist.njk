@@ -1,0 +1,370 @@
+<section class="restoration-checklist" id="restoration-checklist">
+    <div class="checklist-header">
+        <h2>Restoration Checklist</h2>
+        <p>Track your {{ vehicle.fullName }} restoration progress. Your progress is saved automatically.</p>
+    </div>
+
+    <div class="checklist-progress">
+        <div class="progress-bar">
+            <div class="progress-fill" id="checklist-progress-fill"></div>
+        </div>
+        <span class="progress-text" id="checklist-progress-text">0% Complete</span>
+    </div>
+
+    <div class="checklist-actions">
+        <button type="button" class="btn btn-secondary" id="checklist-expand-all">Expand All</button>
+        <button type="button" class="btn btn-secondary" id="checklist-collapse-all">Collapse All</button>
+        <button type="button" class="btn btn-secondary" id="checklist-clear-all">Clear All</button>
+    </div>
+
+    <div class="checklist-categories" id="checklist-categories">
+        {% for category in restorationChecklist.categories %}
+        <div class="checklist-category" data-category="{{ category.id }}">
+            <div class="category-header">
+                <h3>
+                    <button type="button" class="category-toggle" aria-expanded="false">
+                        <span class="toggle-icon">+</span>
+                        {{ category.name }}
+                        <span class="category-count" data-category-count="{{ category.id }}">0/{{ category.items | length }}</span>
+                    </button>
+                </h3>
+            </div>
+            <div class="category-content" hidden>
+                {% for item in category.items %}
+                <div class="checklist-item" data-item-id="{{ item.id }}">
+                    <div class="item-main">
+                        <label class="item-checkbox">
+                            <input type="checkbox" class="item-complete" data-id="{{ item.id }}">
+                            <span class="item-name">{{ item.name }}</span>
+                        </label>
+                        <button type="button" class="item-expand-btn" aria-label="Expand details">
+                            <span class="expand-icon">&#9662;</span>
+                        </button>
+                    </div>
+                    {% if item.description %}
+                    <p class="item-description">{{ item.description }}</p>
+                    {% endif %}
+                    <div class="item-details" hidden>
+                        <div class="detail-row">
+                            <div class="detail-field">
+                                <label>Date Completed</label>
+                                <input type="date" class="item-date" data-id="{{ item.id }}">
+                            </div>
+                            <div class="detail-field">
+                                <label>Cost ($)</label>
+                                <input type="number" class="item-cost" data-id="{{ item.id }}" min="0" step="0.01" placeholder="0.00">
+                            </div>
+                        </div>
+                        <div class="detail-field full-width">
+                            <label>Notes</label>
+                            <textarea class="item-notes" data-id="{{ item.id }}" rows="2" placeholder="Parts used, tips, issues encountered..."></textarea>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+                {% if vehicle.restorationItems and vehicle.restorationItems[category.id] %}
+                <div class="vehicle-specific-items">
+                    <h4>{{ vehicle.fullName }} Specific</h4>
+                    {% for item in vehicle.restorationItems[category.id] %}
+                    <div class="checklist-item" data-item-id="{{ item.id }}">
+                        <div class="item-main">
+                            <label class="item-checkbox">
+                                <input type="checkbox" class="item-complete" data-id="{{ item.id }}">
+                                <span class="item-name">{{ item.name }}</span>
+                            </label>
+                            <button type="button" class="item-expand-btn" aria-label="Expand details">
+                                <span class="expand-icon">&#9662;</span>
+                            </button>
+                        </div>
+                        {% if item.description %}
+                        <p class="item-description">{{ item.description }}</p>
+                        {% endif %}
+                        <div class="item-details" hidden>
+                            <div class="detail-row">
+                                <div class="detail-field">
+                                    <label>Date Completed</label>
+                                    <input type="date" class="item-date" data-id="{{ item.id }}">
+                                </div>
+                                <div class="detail-field">
+                                    <label>Cost ($)</label>
+                                    <input type="number" class="item-cost" data-id="{{ item.id }}" min="0" step="0.01" placeholder="0.00">
+                                </div>
+                            </div>
+                            <div class="detail-field full-width">
+                                <label>Notes</label>
+                                <textarea class="item-notes" data-id="{{ item.id }}" rows="2" placeholder="Parts used, tips, issues encountered..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="checklist-summary">
+        <div class="summary-stats">
+            <div class="stat">
+                <span class="stat-value" id="total-completed">0</span>
+                <span class="stat-label">Completed</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value" id="total-remaining">0</span>
+                <span class="stat-label">Remaining</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value" id="total-cost">$0</span>
+                <span class="stat-label">Total Cost</span>
+            </div>
+        </div>
+        <div class="summary-actions">
+            <button type="button" class="btn btn-secondary" id="checklist-print">Print Checklist</button>
+            <button type="button" class="btn btn-secondary" id="checklist-export">Export Data</button>
+        </div>
+    </div>
+</section>
+
+<script>
+(function() {
+    const STORAGE_KEY = 'zrg-restoration-{{ vehicle.model | lower }}';
+    let checklistData = {};
+
+    function init() {
+        loadData();
+        bindEvents();
+        updateProgress();
+    }
+
+    function loadData() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                checklistData = JSON.parse(saved);
+                restoreState();
+            } catch (e) {
+                checklistData = {};
+            }
+        }
+    }
+
+    function saveData() {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(checklistData));
+    }
+
+    function restoreState() {
+        Object.keys(checklistData).forEach(itemId => {
+            const data = checklistData[itemId];
+            const item = document.querySelector(`[data-item-id="${itemId}"]`);
+            if (!item) return;
+
+            const checkbox = item.querySelector('.item-complete');
+            const dateInput = item.querySelector('.item-date');
+            const costInput = item.querySelector('.item-cost');
+            const notesInput = item.querySelector('.item-notes');
+
+            if (checkbox && data.completed) checkbox.checked = true;
+            if (dateInput && data.date) dateInput.value = data.date;
+            if (costInput && data.cost) costInput.value = data.cost;
+            if (notesInput && data.notes) notesInput.value = data.notes;
+
+            if (data.completed) {
+                item.classList.add('completed');
+            }
+        });
+    }
+
+    function bindEvents() {
+        // Checkbox changes
+        document.querySelectorAll('.item-complete').forEach(checkbox => {
+            checkbox.addEventListener('change', (e) => {
+                const itemId = e.target.dataset.id;
+                const item = e.target.closest('.checklist-item');
+
+                if (!checklistData[itemId]) {
+                    checklistData[itemId] = {};
+                }
+                checklistData[itemId].completed = e.target.checked;
+
+                if (e.target.checked) {
+                    item.classList.add('completed');
+                    // Auto-fill date if empty
+                    const dateInput = item.querySelector('.item-date');
+                    if (dateInput && !dateInput.value) {
+                        dateInput.value = new Date().toISOString().split('T')[0];
+                        checklistData[itemId].date = dateInput.value;
+                    }
+                } else {
+                    item.classList.remove('completed');
+                }
+
+                saveData();
+                updateProgress();
+            });
+        });
+
+        // Date changes
+        document.querySelectorAll('.item-date').forEach(input => {
+            input.addEventListener('change', (e) => {
+                const itemId = e.target.dataset.id;
+                if (!checklistData[itemId]) checklistData[itemId] = {};
+                checklistData[itemId].date = e.target.value;
+                saveData();
+            });
+        });
+
+        // Cost changes
+        document.querySelectorAll('.item-cost').forEach(input => {
+            input.addEventListener('change', (e) => {
+                const itemId = e.target.dataset.id;
+                if (!checklistData[itemId]) checklistData[itemId] = {};
+                checklistData[itemId].cost = parseFloat(e.target.value) || 0;
+                saveData();
+                updateProgress();
+            });
+        });
+
+        // Notes changes
+        document.querySelectorAll('.item-notes').forEach(input => {
+            input.addEventListener('change', (e) => {
+                const itemId = e.target.dataset.id;
+                if (!checklistData[itemId]) checklistData[itemId] = {};
+                checklistData[itemId].notes = e.target.value;
+                saveData();
+            });
+        });
+
+        // Category toggle
+        document.querySelectorAll('.category-toggle').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.closest('.checklist-category').querySelector('.category-content');
+                const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+
+                btn.setAttribute('aria-expanded', !isExpanded);
+                btn.querySelector('.toggle-icon').textContent = isExpanded ? '+' : '−';
+                content.hidden = isExpanded;
+            });
+        });
+
+        // Item expand
+        document.querySelectorAll('.item-expand-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const details = btn.closest('.checklist-item').querySelector('.item-details');
+                const isHidden = details.hidden;
+                details.hidden = !isHidden;
+                btn.querySelector('.expand-icon').style.transform = isHidden ? 'rotate(180deg)' : '';
+            });
+        });
+
+        // Expand/Collapse all
+        document.getElementById('checklist-expand-all').addEventListener('click', () => {
+            document.querySelectorAll('.category-toggle').forEach(btn => {
+                btn.setAttribute('aria-expanded', 'true');
+                btn.querySelector('.toggle-icon').textContent = '−';
+                btn.closest('.checklist-category').querySelector('.category-content').hidden = false;
+            });
+        });
+
+        document.getElementById('checklist-collapse-all').addEventListener('click', () => {
+            document.querySelectorAll('.category-toggle').forEach(btn => {
+                btn.setAttribute('aria-expanded', 'false');
+                btn.querySelector('.toggle-icon').textContent = '+';
+                btn.closest('.checklist-category').querySelector('.category-content').hidden = true;
+            });
+        });
+
+        // Clear all
+        document.getElementById('checklist-clear-all').addEventListener('click', () => {
+            if (confirm('Clear all progress? This cannot be undone.')) {
+                checklistData = {};
+                saveData();
+                document.querySelectorAll('.item-complete').forEach(cb => cb.checked = false);
+                document.querySelectorAll('.item-date').forEach(input => input.value = '');
+                document.querySelectorAll('.item-cost').forEach(input => input.value = '');
+                document.querySelectorAll('.item-notes').forEach(input => input.value = '');
+                document.querySelectorAll('.checklist-item').forEach(item => item.classList.remove('completed'));
+                updateProgress();
+            }
+        });
+
+        // Print
+        document.getElementById('checklist-print').addEventListener('click', () => {
+            window.print();
+        });
+
+        // Export
+        document.getElementById('checklist-export').addEventListener('click', exportData);
+    }
+
+    function updateProgress() {
+        const allItems = document.querySelectorAll('.checklist-item');
+        const completedItems = document.querySelectorAll('.item-complete:checked');
+        const total = allItems.length;
+        const completed = completedItems.length;
+        const percent = total > 0 ? Math.round((completed / total) * 100) : 0;
+
+        document.getElementById('checklist-progress-fill').style.width = percent + '%';
+        document.getElementById('checklist-progress-text').textContent = percent + '% Complete';
+        document.getElementById('total-completed').textContent = completed;
+        document.getElementById('total-remaining').textContent = total - completed;
+
+        // Calculate total cost
+        let totalCost = 0;
+        Object.values(checklistData).forEach(item => {
+            if (item.cost) totalCost += item.cost;
+        });
+        document.getElementById('total-cost').textContent = '$' + totalCost.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+
+        // Update category counts
+        document.querySelectorAll('.checklist-category').forEach(category => {
+            const categoryId = category.dataset.category;
+            const items = category.querySelectorAll('.item-complete');
+            const checked = category.querySelectorAll('.item-complete:checked');
+            const countEl = document.querySelector(`[data-category-count="${categoryId}"]`);
+            if (countEl) {
+                countEl.textContent = `${checked.length}/${items.length}`;
+            }
+        });
+    }
+
+    function exportData() {
+        const items = [];
+        document.querySelectorAll('.checklist-item').forEach(item => {
+            const itemId = item.dataset.itemId;
+            const name = item.querySelector('.item-name').textContent;
+            const data = checklistData[itemId] || {};
+
+            items.push({
+                id: itemId,
+                name: name,
+                completed: data.completed || false,
+                date: data.date || '',
+                cost: data.cost || 0,
+                notes: data.notes || ''
+            });
+        });
+
+        const exportObj = {
+            vehicle: '{{ vehicle.fullName }}',
+            exportDate: new Date().toISOString(),
+            items: items
+        };
+
+        const blob = new Blob([JSON.stringify(exportObj, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `{{ vehicle.model | lower }}-restoration-checklist.json`;
+        a.click();
+        URL.revokeObjectURL(url);
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>

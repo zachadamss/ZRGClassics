@@ -1,0 +1,193 @@
+{
+  "categories": [
+    {
+      "id": "engine",
+      "name": "Engine",
+      "items": [
+        { "id": "eng-compression", "name": "Compression test", "description": "Check all cylinders for even compression" },
+        { "id": "eng-leakdown", "name": "Leak-down test", "description": "Identify valve, ring, or head gasket issues" },
+        { "id": "eng-oil-leaks", "name": "Inspect for oil leaks", "description": "Valve cover, oil pan, rear main seal, front crank seal" },
+        { "id": "eng-valve-cover-gasket", "name": "Replace valve cover gasket", "description": "" },
+        { "id": "eng-oil-pan-gasket", "name": "Replace oil pan gasket", "description": "" },
+        { "id": "eng-timing-belt", "name": "Replace timing belt/chain", "description": "Include tensioner and guides" },
+        { "id": "eng-water-pump", "name": "Replace water pump", "description": "Often done with timing belt" },
+        { "id": "eng-spark-plugs", "name": "Replace spark plugs", "description": "" },
+        { "id": "eng-plug-wires", "name": "Replace spark plug wires", "description": "" },
+        { "id": "eng-distributor", "name": "Inspect/rebuild distributor", "description": "Cap, rotor, points if applicable" },
+        { "id": "eng-air-filter", "name": "Replace air filter", "description": "" },
+        { "id": "eng-pcv", "name": "Replace PCV valve", "description": "" },
+        { "id": "eng-motor-mounts", "name": "Inspect/replace motor mounts", "description": "" },
+        { "id": "eng-belts", "name": "Replace accessory belts", "description": "Alternator, power steering, A/C" },
+        { "id": "eng-hoses", "name": "Replace vacuum hoses", "description": "Inspect all rubber hoses for cracks" }
+      ]
+    },
+    {
+      "id": "cooling",
+      "name": "Cooling System",
+      "items": [
+        { "id": "cool-radiator", "name": "Inspect/replace radiator", "description": "Check for leaks and flow" },
+        { "id": "cool-hoses", "name": "Replace radiator hoses", "description": "Upper and lower" },
+        { "id": "cool-thermostat", "name": "Replace thermostat", "description": "And housing gasket" },
+        { "id": "cool-flush", "name": "Flush cooling system", "description": "Remove old coolant and debris" },
+        { "id": "cool-fan", "name": "Inspect cooling fan", "description": "Electric fan or clutch fan" },
+        { "id": "cool-expansion-tank", "name": "Replace expansion tank", "description": "Common failure point on BMWs" },
+        { "id": "cool-temp-sensors", "name": "Replace temp sensors", "description": "Gauge sender and ECU sensor" },
+        { "id": "cool-heater-core", "name": "Inspect heater core", "description": "Check for leaks and flow" },
+        { "id": "cool-heater-valve", "name": "Replace heater valve", "description": "" }
+      ]
+    },
+    {
+      "id": "fuel",
+      "name": "Fuel System",
+      "items": [
+        { "id": "fuel-filter", "name": "Replace fuel filter", "description": "" },
+        { "id": "fuel-pump", "name": "Test/replace fuel pump", "description": "Check pressure and flow" },
+        { "id": "fuel-injectors", "name": "Clean/replace fuel injectors", "description": "" },
+        { "id": "fuel-pressure-reg", "name": "Test fuel pressure regulator", "description": "" },
+        { "id": "fuel-lines", "name": "Inspect fuel lines", "description": "Check for cracks and leaks" },
+        { "id": "fuel-tank", "name": "Inspect/clean fuel tank", "description": "Check for rust and debris" },
+        { "id": "fuel-sender", "name": "Test fuel level sender", "description": "" },
+        { "id": "fuel-cap", "name": "Replace fuel cap", "description": "Ensure proper seal" }
+      ]
+    },
+    {
+      "id": "electrical",
+      "name": "Electrical",
+      "items": [
+        { "id": "elec-battery", "name": "Replace battery", "description": "Load test if keeping old" },
+        { "id": "elec-alternator", "name": "Test/rebuild alternator", "description": "Check output voltage" },
+        { "id": "elec-starter", "name": "Test/rebuild starter", "description": "" },
+        { "id": "elec-grounds", "name": "Clean ground connections", "description": "Battery, engine, chassis grounds" },
+        { "id": "elec-fuses", "name": "Inspect fuse box", "description": "Replace corroded fuses" },
+        { "id": "elec-relays", "name": "Test relays", "description": "Fuel pump, fan, main relay" },
+        { "id": "elec-headlights", "name": "Restore/replace headlights", "description": "" },
+        { "id": "elec-taillights", "name": "Inspect taillights", "description": "Replace bulbs and lenses" },
+        { "id": "elec-gauges", "name": "Test instrument cluster", "description": "All gauges and warning lights" },
+        { "id": "elec-switches", "name": "Test all switches", "description": "Lights, wipers, windows, locks" },
+        { "id": "elec-wiring", "name": "Inspect wiring harness", "description": "Look for chafed or brittle wires" }
+      ]
+    },
+    {
+      "id": "transmission",
+      "name": "Transmission & Drivetrain",
+      "items": [
+        { "id": "trans-fluid", "name": "Change transmission fluid", "description": "And filter if automatic" },
+        { "id": "trans-mounts", "name": "Replace transmission mount", "description": "" },
+        { "id": "trans-clutch", "name": "Inspect/replace clutch", "description": "Disc, pressure plate, throwout bearing" },
+        { "id": "trans-slave-cyl", "name": "Replace clutch slave cylinder", "description": "" },
+        { "id": "trans-master-cyl", "name": "Replace clutch master cylinder", "description": "" },
+        { "id": "trans-shifter", "name": "Rebuild shifter", "description": "Bushings and linkage" },
+        { "id": "trans-diff-fluid", "name": "Change differential fluid", "description": "" },
+        { "id": "trans-cv-boots", "name": "Inspect CV boots", "description": "Replace if cracked" },
+        { "id": "trans-cv-axles", "name": "Replace CV axles", "description": "If worn or clicking" },
+        { "id": "trans-driveshaft", "name": "Inspect driveshaft", "description": "U-joints and center bearing" },
+        { "id": "trans-flex-disc", "name": "Replace flex disc/guibo", "description": "Common wear item" }
+      ]
+    },
+    {
+      "id": "suspension",
+      "name": "Suspension",
+      "items": [
+        { "id": "susp-shocks-front", "name": "Replace front shocks/struts", "description": "" },
+        { "id": "susp-shocks-rear", "name": "Replace rear shocks", "description": "" },
+        { "id": "susp-springs", "name": "Inspect/replace springs", "description": "Check for sag or cracks" },
+        { "id": "susp-control-arms", "name": "Replace control arm bushings", "description": "Or complete arms" },
+        { "id": "susp-ball-joints", "name": "Replace ball joints", "description": "" },
+        { "id": "susp-tie-rods", "name": "Replace tie rod ends", "description": "Inner and outer" },
+        { "id": "susp-sway-bar", "name": "Replace sway bar bushings", "description": "And end links" },
+        { "id": "susp-subframe", "name": "Inspect subframe bushings", "description": "Replace if worn" },
+        { "id": "susp-alignment", "name": "Four-wheel alignment", "description": "After suspension work" },
+        { "id": "susp-wheel-bearings", "name": "Inspect wheel bearings", "description": "Replace if noisy or loose" }
+      ]
+    },
+    {
+      "id": "brakes",
+      "name": "Brakes",
+      "items": [
+        { "id": "brake-pads-front", "name": "Replace front brake pads", "description": "" },
+        { "id": "brake-pads-rear", "name": "Replace rear brake pads", "description": "" },
+        { "id": "brake-rotors-front", "name": "Replace/resurface front rotors", "description": "" },
+        { "id": "brake-rotors-rear", "name": "Replace/resurface rear rotors", "description": "" },
+        { "id": "brake-calipers", "name": "Rebuild/replace calipers", "description": "Check for seized pistons" },
+        { "id": "brake-lines", "name": "Replace brake lines", "description": "Rubber and hard lines" },
+        { "id": "brake-master", "name": "Rebuild/replace master cylinder", "description": "" },
+        { "id": "brake-booster", "name": "Test brake booster", "description": "Replace if weak" },
+        { "id": "brake-fluid", "name": "Flush brake fluid", "description": "DOT 4 recommended" },
+        { "id": "brake-parking", "name": "Adjust parking brake", "description": "Cables and shoes" },
+        { "id": "brake-abs", "name": "Test ABS system", "description": "If equipped" }
+      ]
+    },
+    {
+      "id": "steering",
+      "name": "Steering",
+      "items": [
+        { "id": "steer-rack", "name": "Inspect steering rack", "description": "Check for leaks and play" },
+        { "id": "steer-pump", "name": "Inspect power steering pump", "description": "Check for leaks and noise" },
+        { "id": "steer-fluid", "name": "Flush power steering fluid", "description": "" },
+        { "id": "steer-hoses", "name": "Replace power steering hoses", "description": "" },
+        { "id": "steer-column", "name": "Inspect steering column", "description": "U-joints and bushings" },
+        { "id": "steer-wheel", "name": "Restore steering wheel", "description": "Re-wrap or replace" }
+      ]
+    },
+    {
+      "id": "body",
+      "name": "Body & Exterior",
+      "items": [
+        { "id": "body-rust-repair", "name": "Rust repair", "description": "Floor pans, wheel wells, rockers" },
+        { "id": "body-dent-repair", "name": "Dent/damage repair", "description": "" },
+        { "id": "body-paint-prep", "name": "Paint preparation", "description": "Sanding, priming, blocking" },
+        { "id": "body-paint", "name": "Paint/respray", "description": "" },
+        { "id": "body-trim", "name": "Restore/replace trim", "description": "Chrome, rubber, badges" },
+        { "id": "body-bumpers", "name": "Restore bumpers", "description": "Rechrome or repaint" },
+        { "id": "body-glass", "name": "Replace glass", "description": "Windshield, windows" },
+        { "id": "body-seals", "name": "Replace window seals", "description": "Door and windshield" },
+        { "id": "body-door-seals", "name": "Replace door seals", "description": "" },
+        { "id": "body-mirrors", "name": "Restore mirrors", "description": "" },
+        { "id": "body-antenna", "name": "Replace antenna", "description": "" },
+        { "id": "body-wipers", "name": "Replace wiper arms/blades", "description": "" },
+        { "id": "body-sunroof", "name": "Service sunroof", "description": "Seals, drains, mechanism" }
+      ]
+    },
+    {
+      "id": "interior",
+      "name": "Interior",
+      "items": [
+        { "id": "int-seats", "name": "Restore/reupholster seats", "description": "" },
+        { "id": "int-carpet", "name": "Replace carpet", "description": "" },
+        { "id": "int-headliner", "name": "Replace headliner", "description": "" },
+        { "id": "int-door-panels", "name": "Restore door panels", "description": "" },
+        { "id": "int-dash", "name": "Restore dashboard", "description": "Repair cracks, recover" },
+        { "id": "int-console", "name": "Restore center console", "description": "" },
+        { "id": "int-shift-boot", "name": "Replace shift boot", "description": "" },
+        { "id": "int-pedals", "name": "Replace pedal covers", "description": "" },
+        { "id": "int-hvac", "name": "Service HVAC system", "description": "Blower motor, controls" },
+        { "id": "int-ac", "name": "Service A/C system", "description": "Recharge, check for leaks" },
+        { "id": "int-speakers", "name": "Replace speakers", "description": "" },
+        { "id": "int-stereo", "name": "Install/restore stereo", "description": "" }
+      ]
+    },
+    {
+      "id": "wheels",
+      "name": "Wheels & Tires",
+      "items": [
+        { "id": "wheel-tires", "name": "Replace tires", "description": "Match correct size and speed rating" },
+        { "id": "wheel-restore", "name": "Restore wheels", "description": "Refinish or powder coat" },
+        { "id": "wheel-balance", "name": "Balance wheels", "description": "" },
+        { "id": "wheel-spare", "name": "Check spare tire", "description": "And jack/tools" },
+        { "id": "wheel-lug-bolts", "name": "Replace lug bolts", "description": "If corroded or damaged" }
+      ]
+    },
+    {
+      "id": "final",
+      "name": "Final Steps",
+      "items": [
+        { "id": "final-fluids", "name": "Top off all fluids", "description": "Oil, coolant, brake, PS, washer" },
+        { "id": "final-torque", "name": "Verify all torque specs", "description": "Wheels, suspension, drivetrain" },
+        { "id": "final-test-drive", "name": "Test drive", "description": "Check for issues under load" },
+        { "id": "final-road-test", "name": "Extended road test", "description": "Highway and city driving" },
+        { "id": "final-detail", "name": "Full detail", "description": "Inside and out" },
+        { "id": "final-photos", "name": "Document with photos", "description": "Before, during, after" }
+      ]
+    }
+  ]
+}

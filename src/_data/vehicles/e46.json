@@ -740,5 +740,45 @@
         "Inspect the radiator end tanks for cracks while you have access - replace if questionable."
       ]
     }
-  ]
+  ],
+  "restorationItems": {
+    "engine": [
+      { "id": "e46-vanos", "name": "Rebuild VANOS unit with Viton seals", "description": "Causes rough idle and loss of low-end power" },
+      { "id": "e46-valve-cover", "name": "Replace valve cover gasket", "description": "Common oil leak - include grommets" },
+      { "id": "e46-oil-filter-housing", "name": "Replace oil filter housing gasket", "description": "Major leak source on M54" },
+      { "id": "e46-oil-separator", "name": "Replace CCV/oil separator", "description": "Causes vacuum leaks when failed" },
+      { "id": "e46-disa", "name": "Inspect/replace DISA valve", "description": "Flap can break and cause engine damage" }
+    ],
+    "cooling": [
+      { "id": "e46-expansion-tank", "name": "Replace expansion tank", "description": "Critical failure point - replace every 60k miles" },
+      { "id": "e46-thermostat-housing", "name": "Replace thermostat housing (aluminum)", "description": "Upgrade from brittle plastic" },
+      { "id": "e46-metal-impeller", "name": "Replace water pump (metal impeller)", "description": "Plastic impellers shatter" },
+      { "id": "e46-fan-clutch", "name": "Replace fan clutch", "description": "Left-hand thread - critical for cooling" },
+      { "id": "e46-aux-fan", "name": "Replace auxiliary electric fan", "description": "Common failure - causes A/C issues" }
+    ],
+    "suspension": [
+      { "id": "e46-rtabs", "name": "Replace rear trailing arm bushings", "description": "Critical for handling - causes rear shimmy" },
+      { "id": "e46-control-arm-bushings", "name": "Replace front control arm bushings", "description": "Use OEM or Meyle HD" },
+      { "id": "e46-subframe", "name": "Inspect/reinforce rear subframe (M3)", "description": "Subframe floor cracks on M3" },
+      { "id": "e46-thrust-rod", "name": "Replace front thrust rod bushings", "description": "Causes steering wander when worn" }
+    ],
+    "body": [
+      { "id": "e46-fender-rust", "name": "Address front fender rust", "description": "Common behind side markers" },
+      { "id": "e46-rocker-rust", "name": "Inspect/repair rocker panel rust", "description": "Check jacking points" },
+      { "id": "e46-trunk-rust", "name": "Inspect trunk floor for rust", "description": "Check spare tire well" },
+      { "id": "e46-sunroof-drains", "name": "Clear sunroof drain tubes", "description": "Clogged drains flood interior" }
+    ],
+    "interior": [
+      { "id": "e46-window-regulators", "name": "Replace window regulators", "description": "Cables fray and snap" },
+      { "id": "e46-door-handles", "name": "Replace interior door handles", "description": "Cables break inside handle" },
+      { "id": "e46-hvac-blower", "name": "Replace blower motor/final stage", "description": "Resistor causes fan speed issues" },
+      { "id": "e46-dash-pixels", "name": "Repair instrument cluster pixels", "description": "LCD pixels fade over time" }
+    ],
+    "electrical": [
+      { "id": "e46-abs-sensors", "name": "Replace ABS wheel speed sensors", "description": "Common cause of ABS light" },
+      { "id": "e46-alternator-bracket", "name": "Replace alternator bracket", "description": "Bracket bushing causes noise" },
+      { "id": "e46-headlight-wiring", "name": "Upgrade headlight wiring harness", "description": "Stock harness causes dim lights" },
+      { "id": "e46-key-fob", "name": "Refresh key fob battery and resync", "description": "EWS system maintenance" }
+    ]
+  }
 }

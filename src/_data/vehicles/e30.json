@@ -721,5 +721,37 @@
         "Squeeze the upper hose while filling to help push air out of the system"
       ]
     }
-  ]
+  ],
+  "restorationItems": {
+    "engine": [
+      { "id": "e30-afm", "name": "Rebuild/replace AFM (Air Flow Meter)", "description": "Common failure point on M20 engines" },
+      { "id": "e30-iac", "name": "Replace idle control valve", "description": "Causes rough idle and stalling" },
+      { "id": "e30-cps", "name": "Replace crankshaft position sensor", "description": "Common cause of no-start conditions" },
+      { "id": "e30-oil-cooler", "name": "Inspect oil cooler lines", "description": "M20 engines - check for leaks at banjo fittings" }
+    ],
+    "cooling": [
+      { "id": "e30-aux-fan", "name": "Test auxiliary cooling fan", "description": "Check fan switch and relay" },
+      { "id": "e30-fan-clutch", "name": "Replace mechanical fan clutch", "description": "Should resist spinning when cold" }
+    ],
+    "suspension": [
+      { "id": "e30-strut-mounts", "name": "Replace front strut mounts", "description": "Common wear item, causes clunking" },
+      { "id": "e30-rear-trailing", "name": "Replace rear trailing arm bushings", "description": "Critical for handling and tire wear" },
+      { "id": "e30-subframe", "name": "Inspect front subframe mounts", "description": "Check for cracks in mounting points" }
+    ],
+    "body": [
+      { "id": "e30-fender-rust", "name": "Repair front fender rust", "description": "Common behind front wheels" },
+      { "id": "e30-rocker-rust", "name": "Repair rocker panel rust", "description": "Check under side skirts if equipped" },
+      { "id": "e30-battery-rust", "name": "Repair battery tray rust", "description": "Common acid damage area" },
+      { "id": "e30-kidney-grilles", "name": "Restore/replace kidney grilles", "description": "" }
+    ],
+    "interior": [
+      { "id": "e30-dash-cracks", "name": "Repair dashboard cracks", "description": "Common on sun-exposed cars" },
+      { "id": "e30-door-cards", "name": "Repair door card sag", "description": "Reclue vinyl to backing" },
+      { "id": "e30-odometer", "name": "Repair odometer gears", "description": "Plastic gears commonly fail" }
+    ],
+    "electrical": [
+      { "id": "e30-check-panel", "name": "Repair check control panel", "description": "Replace bulbs and test sensors" },
+      { "id": "e30-obc", "name": "Repair onboard computer", "description": "If equipped - common display failures" }
+    ]
+  }
 }

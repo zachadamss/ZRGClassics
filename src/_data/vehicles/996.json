@@ -652,5 +652,41 @@
         "Consider upgrading to aluminum coolant pipes if not already done."
       ]
     }
-  ]
+  ],
+  "restorationItems": {
+    "engine": [
+      { "id": "996-ims", "name": "Replace IMS bearing (upgraded)", "description": "LN Engineering or equivalent ceramic hybrid bearing" },
+      { "id": "996-rms", "name": "Replace rear main seal", "description": "Common leak point on M96 engines" },
+      { "id": "996-aos", "name": "Replace AOS (Air/Oil Separator)", "description": "Diaphragm fails causing rough idle and smoke" },
+      { "id": "996-bore-inspect", "name": "Borescope inspection", "description": "Check for bore scoring on cylinders 5 and 6" },
+      { "id": "996-variocam", "name": "Inspect VarioCam solenoids", "description": "Clean or replace if causing timing faults" }
+    ],
+    "cooling": [
+      { "id": "996-coolant-pipes", "name": "Replace coolant pipes with aluminum", "description": "Plastic pipes under intake are failure-prone" },
+      { "id": "996-expansion-tank", "name": "Replace expansion tank", "description": "Plastic tank cracks with age" },
+      { "id": "996-aux-fan", "name": "Test auxiliary cooling fans", "description": "Dual fans in front bumper critical for cooling" }
+    ],
+    "suspension": [
+      { "id": "996-spring-perch", "name": "Inspect rear spring perches", "description": "Known to crack on early cars" },
+      { "id": "996-control-arms", "name": "Replace front control arms", "description": "Bushings not serviceable separately" },
+      { "id": "996-thrust-arm", "name": "Replace rear thrust arm bushings", "description": "Causes rear-end wandering when worn" }
+    ],
+    "body": [
+      { "id": "996-headlight-seal", "name": "Reseal headlights", "description": "\"Fried egg\" headlights prone to moisture intrusion" },
+      { "id": "996-bumper-mounts", "name": "Inspect bumper mounting points", "description": "Foam absorbers deteriorate" },
+      { "id": "996-frunk-drain", "name": "Clear frunk/trunk drains", "description": "Prevent water damage to electronics" },
+      { "id": "996-convertible-top", "name": "Service convertible top (Cab only)", "description": "Hydraulic cylinders and seals" }
+    ],
+    "interior": [
+      { "id": "996-sport-seats", "name": "Restore sport seat bolsters", "description": "Driver bolster wears on side-bolstered seats" },
+      { "id": "996-dash-sticky", "name": "Address sticky interior surfaces", "description": "Common on certain model years" },
+      { "id": "996-pdk-actuator", "name": "Service Tiptronic (if equipped)", "description": "Valve body and solenoid maintenance" }
+    ],
+    "electrical": [
+      { "id": "996-coil-packs", "name": "Replace ignition coil packs", "description": "Common failure causing misfires" },
+      { "id": "996-maf", "name": "Clean/replace MAF sensor", "description": "Dirty MAF causes running issues" },
+      { "id": "996-o2-sensors", "name": "Replace oxygen sensors", "description": "Pre and post-cat sensors" },
+      { "id": "996-pse-pump", "name": "Service PSE pump (if equipped)", "description": "Powers spoiler, locks, and convertible top" }
+    ]
+  }
 }

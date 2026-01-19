@@ -754,5 +754,43 @@
         "This is a good time to replace thermostat if original and over 60k miles."
       ]
     }
-  ]
+  ],
+  "restorationItems": {
+    "engine": [
+      { "id": "991-dfi-injectors", "name": "Service direct fuel injectors", "description": "Clean/replace if misfiring or rough idle" },
+      { "id": "991-oil-separator", "name": "Replace oil separator/AOS", "description": "Can cause smoke and rough running" },
+      { "id": "991-spark-plugs", "name": "Replace spark plugs", "description": "Iridium plugs every 60k miles" },
+      { "id": "991-air-filter", "name": "Replace air filter elements", "description": "Dual air filters - one per bank" }
+    ],
+    "cooling": [
+      { "id": "991-coolant-pipes", "name": "Inspect plastic coolant pipes", "description": "Replace with aluminum if showing age" },
+      { "id": "991-expansion-tank", "name": "Replace expansion tank", "description": "Plastic can crack" },
+      { "id": "991-thermostat", "name": "Replace thermostat", "description": "Preventive replacement at 60k+" }
+    ],
+    "transmission": [
+      { "id": "991-pdk-service", "name": "PDK transmission service", "description": "Fluid and filter change every 60k miles" },
+      { "id": "991-clutch", "name": "Inspect/replace clutch (manual)", "description": "Dual-mass flywheel check" },
+      { "id": "991-diff-fluid", "name": "Change differential fluid", "description": "Front and rear axle" }
+    ],
+    "suspension": [
+      { "id": "991-pasm-shocks", "name": "Inspect PASM shocks", "description": "Electronic dampers can leak" },
+      { "id": "991-control-arms", "name": "Replace front control arms", "description": "Bushings wear over time" },
+      { "id": "991-pdcc", "name": "Service PDCC system (if equipped)", "description": "Active anti-roll - check for leaks" }
+    ],
+    "body": [
+      { "id": "991-headlight-seal", "name": "Check headlight seals", "description": "LED units can develop condensation" },
+      { "id": "991-door-seals", "name": "Inspect door seals", "description": "Replace if wind noise present" },
+      { "id": "991-drain-tubes", "name": "Clear sunroof/frunk drains", "description": "Prevent water damage to electronics" }
+    ],
+    "interior": [
+      { "id": "991-seat-bolsters", "name": "Restore seat bolsters", "description": "Sport seats wear on driver side" },
+      { "id": "991-pcm-update", "name": "Update PCM software", "description": "Dealer or third-party updates available" },
+      { "id": "991-hvac-actuators", "name": "Replace HVAC blend actuators", "description": "Clicking noise indicates failure" }
+    ],
+    "electrical": [
+      { "id": "991-battery", "name": "Replace battery (register in DME)", "description": "Proper registration required" },
+      { "id": "991-coil-packs", "name": "Replace ignition coil packs", "description": "Common cause of misfires" },
+      { "id": "991-pse-pump", "name": "Service PSE pump", "description": "Powers spoiler and deck lid actuators" }
+    ]
+  }
 }

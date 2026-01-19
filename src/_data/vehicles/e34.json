@@ -778,5 +778,43 @@
         "Check all hoses for cracks or soft spots while the system is drained."
       ]
     }
-  ]
+  ],
+  "restorationItems": {
+    "engine": [
+      { "id": "e34-timing-guides", "name": "Replace timing chain guides (M60 V8)", "description": "Critical - Nikasil guides fail" },
+      { "id": "e34-vanos", "name": "Rebuild VANOS (M50TU)", "description": "Early VANOS system - seals fail" },
+      { "id": "e34-timing-belt", "name": "Replace timing belt (M20)", "description": "Interference engine - critical service" },
+      { "id": "e34-valve-cover", "name": "Replace valve cover gasket", "description": "Common oil leak source" },
+      { "id": "e34-oil-leaks", "name": "Address oil leaks", "description": "Oil pan, front/rear main seals" }
+    ],
+    "cooling": [
+      { "id": "e34-expansion-tank", "name": "Replace expansion tank", "description": "Plastic cracks with age" },
+      { "id": "e34-radiator", "name": "Replace radiator", "description": "Plastic end tanks fail" },
+      { "id": "e34-water-pump", "name": "Replace water pump", "description": "Metal impeller recommended" },
+      { "id": "e34-thermostat", "name": "Replace thermostat", "description": "Include housing" }
+    ],
+    "suspension": [
+      { "id": "e34-thrust-arms", "name": "Replace front thrust arm bushings", "description": "Critical for steering feel" },
+      { "id": "e34-shocks", "name": "Replace shocks and struts", "description": "Self-leveling rear common" },
+      { "id": "e34-control-arms", "name": "Replace control arm bushings", "description": "Affects handling" },
+      { "id": "e34-subframe", "name": "Inspect rear subframe bushings", "description": "Common wear item" }
+    ],
+    "body": [
+      { "id": "e34-rocker-rust", "name": "Inspect/repair rocker panels", "description": "Check jacking points" },
+      { "id": "e34-floor-rust", "name": "Inspect floor and trunk", "description": "Check spare tire well" },
+      { "id": "e34-door-seals", "name": "Replace door seals", "description": "Reduce wind noise" },
+      { "id": "e34-trim", "name": "Restore exterior trim", "description": "Chrome and rubber trim" }
+    ],
+    "interior": [
+      { "id": "e34-pixels", "name": "Repair instrument cluster pixels", "description": "LCD pixels fade" },
+      { "id": "e34-seats", "name": "Restore leather seats", "description": "Common bolster wear" },
+      { "id": "e34-dash", "name": "Address dashboard cracks", "description": "Sun damage common" },
+      { "id": "e34-hvac-flaps", "name": "Repair HVAC blend doors", "description": "Stepper motors fail" }
+    ],
+    "electrical": [
+      { "id": "e34-window-regulators", "name": "Replace window regulators", "description": "Common failure" },
+      { "id": "e34-abs", "name": "Service ABS system", "description": "ABS control unit issues" },
+      { "id": "e34-wiring", "name": "Inspect wiring harness", "description": "Check for brittle insulation" }
+    ]
+  }
 }

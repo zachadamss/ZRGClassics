@@ -780,5 +780,42 @@
         "Check all coolant hoses for cracks or soft spots while the system is apart."
       ]
     }
-  ]
+  ],
+  "restorationItems": {
+    "engine": [
+      { "id": "e36-vanos", "name": "Rebuild/replace VANOS unit (M50TU/M52)", "description": "Causes rough idle and loss of low-end power" },
+      { "id": "e36-valve-cover", "name": "Replace valve cover gasket", "description": "Common oil leak - include grommets" },
+      { "id": "e36-oil-filter-housing", "name": "Replace oil filter housing gasket", "description": "Major leak source" },
+      { "id": "e36-crank-sensor", "name": "Replace crankshaft position sensor", "description": "Common cause of no-start conditions" },
+      { "id": "e36-intake-boots", "name": "Replace intake boots and vacuum lines", "description": "Crack and cause rough running" }
+    ],
+    "cooling": [
+      { "id": "e36-expansion-tank", "name": "Replace expansion tank", "description": "Critical failure point - replace every 60k miles" },
+      { "id": "e36-thermostat-housing", "name": "Replace thermostat housing (aluminum)", "description": "Upgrade from brittle plastic OEM" },
+      { "id": "e36-metal-impeller", "name": "Replace water pump (metal impeller)", "description": "Plastic impellers shatter" },
+      { "id": "e36-fan-clutch", "name": "Replace fan clutch", "description": "Left-hand thread - affects cooling at idle" }
+    ],
+    "suspension": [
+      { "id": "e36-rtabs", "name": "Replace rear trailing arm bushings (RTABs)", "description": "Critical for handling - causes rear-end wobble" },
+      { "id": "e36-control-arm-bushings", "name": "Replace front control arm bushings", "description": "Use OEM or Lemforder" },
+      { "id": "e36-subframe-reinforce", "name": "Inspect/reinforce rear subframe (M3)", "description": "M3 subframe crack prevention" }
+    ],
+    "body": [
+      { "id": "e36-fender-rust", "name": "Address front fender rust", "description": "Common behind side markers and wheel arches" },
+      { "id": "e36-rocker-rust", "name": "Inspect/repair rocker panel rust", "description": "Check under side skirts" },
+      { "id": "e36-trunk-rust", "name": "Inspect trunk floor and spare tire well", "description": "Water leaks cause rust" },
+      { "id": "e36-sunroof-drains", "name": "Clear sunroof drain tubes", "description": "Prevent headliner and floor water damage" }
+    ],
+    "interior": [
+      { "id": "e36-door-panels", "name": "Restore door panel clips and map pockets", "description": "Clips break, pockets sag" },
+      { "id": "e36-window-regulators", "name": "Replace window regulators", "description": "Common failure point" },
+      { "id": "e36-dash-cracks", "name": "Address dashboard cracks", "description": "Common on sun-exposed cars" },
+      { "id": "e36-hvac-blower", "name": "Replace blower motor and final stage resistor", "description": "Common A/C blower issues" }
+    ],
+    "electrical": [
+      { "id": "e36-abs-sensors", "name": "Replace ABS wheel speed sensors", "description": "Common cause of ABS light" },
+      { "id": "e36-instrument-pixels", "name": "Repair instrument cluster pixels", "description": "LCD pixels fade over time" },
+      { "id": "e36-headlight-wiring", "name": "Upgrade headlight wiring harness", "description": "Stock harness causes dim headlights" }
+    ]
+  }
 }

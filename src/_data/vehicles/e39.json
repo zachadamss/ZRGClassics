@@ -813,5 +813,45 @@
         "Updated FSU designs have better heat dissipation - buy the latest revision."
       ]
     }
-  ]
+  ],
+  "restorationItems": {
+    "engine": [
+      { "id": "e39-vanos", "name": "Rebuild VANOS (M52/M54)", "description": "Viton seals for improved durability" },
+      { "id": "e39-timing-chain", "name": "Inspect timing chain guides (M62 V8)", "description": "Chain guide failure risk" },
+      { "id": "e39-valve-cover", "name": "Replace valve cover gasket", "description": "Common oil leak" },
+      { "id": "e39-oil-filter-housing", "name": "Replace oil filter housing gasket", "description": "Major leak source" },
+      { "id": "e39-ccv", "name": "Replace CCV/oil separator", "description": "Causes vacuum leaks when failed" }
+    ],
+    "cooling": [
+      { "id": "e39-expansion-tank", "name": "Replace expansion tank", "description": "Critical - replace every 60k miles" },
+      { "id": "e39-radiator", "name": "Replace radiator", "description": "Plastic end tanks crack" },
+      { "id": "e39-water-pump", "name": "Replace water pump", "description": "Metal impeller - Stewart or Graf" },
+      { "id": "e39-thermostat", "name": "Replace thermostat (aluminum housing)", "description": "Upgrade from plastic OEM" },
+      { "id": "e39-aux-pump", "name": "Replace auxiliary water pump", "description": "Electric pump on firewall" }
+    ],
+    "suspension": [
+      { "id": "e39-thrust-arms", "name": "Replace front thrust arm bushings", "description": "Critical for steering" },
+      { "id": "e39-control-arms", "name": "Replace front control arms", "description": "Ball joints wear" },
+      { "id": "e39-rear-subframe", "name": "Inspect rear subframe bushings", "description": "Causes rear-end noise" },
+      { "id": "e39-sway-bar", "name": "Replace sway bar end links", "description": "Common clunk source" }
+    ],
+    "body": [
+      { "id": "e39-rocker-rust", "name": "Inspect/repair rocker panels", "description": "Common rust area" },
+      { "id": "e39-jack-points", "name": "Reinforce jacking points", "description": "Floor rust around jacks" },
+      { "id": "e39-door-seals", "name": "Replace door seals", "description": "Wind noise when worn" },
+      { "id": "e39-headlight-lenses", "name": "Restore headlight lenses", "description": "Yellowing and hazing" }
+    ],
+    "interior": [
+      { "id": "e39-pixels", "name": "Repair instrument cluster pixels", "description": "Very common issue" },
+      { "id": "e39-fsu", "name": "Replace blower final stage (FSU)", "description": "Causes fan speed issues" },
+      { "id": "e39-door-panels", "name": "Restore door panel inserts", "description": "Wood trim delaminates" },
+      { "id": "e39-seats", "name": "Restore leather seats", "description": "Sport seat bolster wear" }
+    ],
+    "electrical": [
+      { "id": "e39-abs-module", "name": "Service ABS/DSC module", "description": "Common failure point" },
+      { "id": "e39-window-regulators", "name": "Replace window regulators", "description": "Cables fray" },
+      { "id": "e39-alternator-bracket", "name": "Replace alternator bracket bushing", "description": "Causes rattling noise" },
+      { "id": "e39-tail-lights", "name": "Replace tail light gaskets", "description": "Prevents trunk leaks" }
+    ]
+  }
 }

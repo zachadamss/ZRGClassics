@@ -784,5 +784,46 @@
         "Consider replacing the front crankshaft seal while you have access."
       ]
     }
-  ]
+  ],
+  "restorationItems": {
+    "engine": [
+      { "id": "e28-timing-belt", "name": "Replace timing belt (M20)", "description": "Critical - M20 is an interference engine" },
+      { "id": "e28-timing-chain", "name": "Inspect timing chain (M30)", "description": "M30 uses chain - inspect guides and tensioner" },
+      { "id": "e28-valve-adjust", "name": "Valve adjustment (M30/S38)", "description": "Mechanical lifters require periodic adjustment" },
+      { "id": "e28-head-gasket", "name": "Inspect head gasket", "description": "Common failure on high-mileage M20s" },
+      { "id": "e28-oil-leaks", "name": "Address oil leaks", "description": "Valve cover, oil pan, front and rear seals" }
+    ],
+    "cooling": [
+      { "id": "e28-radiator", "name": "Replace radiator", "description": "Original brass/copper - consider aluminum" },
+      { "id": "e28-water-pump", "name": "Replace water pump", "description": "Metal impeller - replace with timing belt" },
+      { "id": "e28-thermostat", "name": "Replace thermostat", "description": "Include housing gasket" },
+      { "id": "e28-hoses", "name": "Replace all coolant hoses", "description": "Rubber deteriorates with age" }
+    ],
+    "fuel": [
+      { "id": "e28-fuel-lines", "name": "Replace rubber fuel lines", "description": "Critical safety - check for deterioration" },
+      { "id": "e28-injectors", "name": "Service fuel injectors", "description": "Clean or replace" },
+      { "id": "e28-fuel-pump", "name": "Test fuel pump and pressure regulator", "description": "In-tank pump" }
+    ],
+    "suspension": [
+      { "id": "e28-shocks", "name": "Replace shocks and struts", "description": "Bilstein or Koni recommended" },
+      { "id": "e28-control-arms", "name": "Replace front control arm bushings", "description": "Affects handling and tire wear" },
+      { "id": "e28-subframe-bushings", "name": "Replace subframe bushings", "description": "Rear subframe bushings wear" }
+    ],
+    "body": [
+      { "id": "e28-rocker-rust", "name": "Inspect/repair rocker panels", "description": "Common rust area" },
+      { "id": "e28-floor-rust", "name": "Inspect floor pans", "description": "Check under carpets" },
+      { "id": "e28-fender-rust", "name": "Address fender rust", "description": "Around headlights and wheel wells" },
+      { "id": "e28-door-seals", "name": "Replace door and window seals", "description": "Reduce wind noise and leaks" }
+    ],
+    "interior": [
+      { "id": "e28-dash", "name": "Address dashboard cracks", "description": "Very common on sun-exposed cars" },
+      { "id": "e28-seats", "name": "Restore leather/cloth seats", "description": "Bolster wear and stitching" },
+      { "id": "e28-hvac", "name": "Service HVAC system", "description": "Blower motor and heater valve" }
+    ],
+    "electrical": [
+      { "id": "e28-alternator", "name": "Test/rebuild alternator", "description": "Check charging output" },
+      { "id": "e28-wiring", "name": "Inspect wiring harness", "description": "Check for brittle insulation" },
+      { "id": "e28-gauges", "name": "Repair instrument cluster", "description": "Common gauge failures" }
+    ]
+  }
 }

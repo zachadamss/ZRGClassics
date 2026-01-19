@@ -742,5 +742,45 @@
         "Check all pulleys for smooth rotation while the belt is off."
       ]
     }
-  ]
+  ],
+  "restorationItems": {
+    "engine": [
+      { "id": "993-valve-adjust", "name": "Perform valve adjustment", "description": "Last air-cooled 911 - hydraulic lifters on some variants" },
+      { "id": "993-chain-tensioners", "name": "Replace chain tensioners with updated parts", "description": "Original plastic guides fail" },
+      { "id": "993-heat-exchangers", "name": "Inspect/replace heat exchangers", "description": "Critical for cabin heat and emissions" },
+      { "id": "993-variocam", "name": "Inspect VarioCam system", "description": "Early variable valve timing - 993 specific" },
+      { "id": "993-engine-reseal", "name": "Reseal engine case and covers", "description": "Oil leaks at case halves, cam covers" }
+    ],
+    "cooling": [
+      { "id": "993-oil-cooler", "name": "Service front oil cooler", "description": "Clean fins, check for leaks" },
+      { "id": "993-aux-fan", "name": "Test auxiliary oil cooler fan", "description": "Critical for hot weather driving" },
+      { "id": "993-thermo-flaps", "name": "Inspect thermostat flaps", "description": "Control engine airflow" }
+    ],
+    "fuel": [
+      { "id": "993-fuel-lines", "name": "Replace rubber fuel lines", "description": "Critical safety item - check for deterioration" },
+      { "id": "993-injectors", "name": "Clean/replace fuel injectors", "description": "Motronic system" },
+      { "id": "993-fuel-pump", "name": "Test fuel pump and pressure", "description": "In-tank pump" }
+    ],
+    "suspension": [
+      { "id": "993-shocks", "name": "Replace shocks/struts", "description": "LSA available on some models" },
+      { "id": "993-thrust-arms", "name": "Replace rear thrust arm bushings", "description": "Affects rear end stability" },
+      { "id": "993-ball-joints", "name": "Replace ball joints", "description": "Front and rear" }
+    ],
+    "body": [
+      { "id": "993-bumper-shocks", "name": "Replace bumper shock absorbers", "description": "Accordion shocks wear out" },
+      { "id": "993-door-seals", "name": "Replace door and window seals", "description": "Reduce noise and leaks" },
+      { "id": "993-headlight-motors", "name": "Service pop-up headlight motors", "description": "Motors and gears wear" },
+      { "id": "993-rust-inspection", "name": "Inspect for hidden rust", "description": "Rocker panels, battery box, floor" }
+    ],
+    "interior": [
+      { "id": "993-seat-leather", "name": "Restore leather seats", "description": "Bolster and stitching wear" },
+      { "id": "993-hvac-blower", "name": "Service HVAC blower motor", "description": "Located under dash" },
+      { "id": "993-convertible-top", "name": "Service convertible/Targa top (if equipped)", "description": "Seals, hydraulics, cables" }
+    ],
+    "electrical": [
+      { "id": "993-wiring-harness", "name": "Inspect wiring harness", "description": "Biodegradable sheathing degrades" },
+      { "id": "993-dme-relay", "name": "Replace DME relay", "description": "Common no-start cause" },
+      { "id": "993-abs-module", "name": "Inspect ABS control module", "description": "Can fail with age" }
+    ]
+  }
 }

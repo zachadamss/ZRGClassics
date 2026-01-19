@@ -669,5 +669,41 @@
         "Replace coils if you're experiencing misfires."
       ]
     }
-  ]
+  ],
+  "restorationItems": {
+    "engine": [
+      { "id": "986-ims", "name": "Replace IMS bearing (upgraded)", "description": "LN Engineering ceramic hybrid bearing - most critical upgrade" },
+      { "id": "986-rms", "name": "Replace rear main seal", "description": "Common oil leak point, do with IMS" },
+      { "id": "986-aos", "name": "Replace AOS (Air/Oil Separator)", "description": "Causes rough idle and smoke when failed" },
+      { "id": "986-bore-inspect", "name": "Borescope cylinder inspection", "description": "Check for bore scoring, especially cylinders 5 and 6" },
+      { "id": "986-variocam", "name": "Inspect VarioCam solenoids", "description": "Clean or replace if causing codes" }
+    ],
+    "cooling": [
+      { "id": "986-coolant-pipes", "name": "Replace coolant pipes with aluminum", "description": "Plastic Y-pipe under intake manifold fails" },
+      { "id": "986-aux-fan", "name": "Test auxiliary cooling fan", "description": "Single fan in front bumper" },
+      { "id": "986-expansion-tank", "name": "Replace expansion tank", "description": "Plastic cracks with age" }
+    ],
+    "transmission": [
+      { "id": "986-shifter-cables", "name": "Replace shifter cables", "description": "Stretch and wear over time" },
+      { "id": "986-clutch-slave", "name": "Replace clutch slave cylinder", "description": "Internal design requires trans removal" }
+    ],
+    "suspension": [
+      { "id": "986-control-arms", "name": "Replace front control arms", "description": "Bushings not serviceable separately" },
+      { "id": "986-drop-links", "name": "Replace sway bar drop links", "description": "Common clunk source" }
+    ],
+    "body": [
+      { "id": "986-convertible-top", "name": "Service convertible top", "description": "Cables, seals, and hydraulic cylinders" },
+      { "id": "986-window-regulators", "name": "Inspect window regulators", "description": "Common failure on early cars" },
+      { "id": "986-drain-tubes", "name": "Clear convertible top drains", "description": "Prevent water intrusion into cabin" }
+    ],
+    "interior": [
+      { "id": "986-seat-bolsters", "name": "Restore seat bolsters", "description": "Driver side wears on sport seats" },
+      { "id": "986-hvac-blend", "name": "Replace HVAC blend door actuator", "description": "Common A/C or heat problem" }
+    ],
+    "electrical": [
+      { "id": "986-coil-packs", "name": "Replace ignition coil packs", "description": "Common cause of misfires" },
+      { "id": "986-maf", "name": "Clean/replace MAF sensor", "description": "Causes running issues when dirty" },
+      { "id": "986-o2-sensors", "name": "Replace oxygen sensors", "description": "Four total - pre and post-cat" }
+    ]
+  }
 }

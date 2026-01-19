@@ -713,5 +713,44 @@
         "A cracked belt can leave you stranded - replace proactively."
       ]
     }
-  ]
+  ],
+  "restorationItems": {
+    "engine": [
+      { "id": "987-ims", "name": "Replace IMS bearing (987.1 only)", "description": "M97 engine has IMS - 987.2 with 9A1 does not" },
+      { "id": "987-rms", "name": "Replace rear main seal", "description": "Common leak - combine with IMS work" },
+      { "id": "987-aos", "name": "Replace AOS (Air/Oil Separator)", "description": "Causes smoke and rough idle when failed" },
+      { "id": "987-bore-inspect", "name": "Borescope cylinder inspection (987.1)", "description": "Check for bore scoring on M97 engines" },
+      { "id": "987-dfi-injectors", "name": "Service direct fuel injectors (987.2)", "description": "Clean if misfiring" }
+    ],
+    "cooling": [
+      { "id": "987-coolant-pipes", "name": "Replace coolant pipes with aluminum", "description": "Plastic Y-pipe prone to failure" },
+      { "id": "987-aux-fan", "name": "Test auxiliary cooling fan", "description": "Front-mounted radiator fan" },
+      { "id": "987-expansion-tank", "name": "Replace expansion tank", "description": "Plastic cracks with age" }
+    ],
+    "transmission": [
+      { "id": "987-shifter-cables", "name": "Replace shifter cables", "description": "Stretch over time" },
+      { "id": "987-clutch-slave", "name": "Replace clutch slave cylinder", "description": "Internal design - trans removal required" },
+      { "id": "987-pdk-service", "name": "PDK service (987.2 PDK)", "description": "Fluid and filter change" }
+    ],
+    "suspension": [
+      { "id": "987-control-arms", "name": "Replace front control arms", "description": "Bushings not separately serviceable" },
+      { "id": "987-drop-links", "name": "Replace sway bar drop links", "description": "Common clunk source" },
+      { "id": "987-pasm-shocks", "name": "Inspect PASM shocks (if equipped)", "description": "Electronic dampers wear" }
+    ],
+    "body": [
+      { "id": "987-convertible-top", "name": "Service convertible top", "description": "Cables, seals, hydraulic cylinders" },
+      { "id": "987-window-regulators", "name": "Inspect window regulators", "description": "Can fail over time" },
+      { "id": "987-drain-tubes", "name": "Clear top drains", "description": "Prevent cabin water intrusion" }
+    ],
+    "interior": [
+      { "id": "987-seat-bolsters", "name": "Restore seat bolsters", "description": "Driver side wears on sport seats" },
+      { "id": "987-hvac-blend", "name": "Replace HVAC blend door actuator", "description": "Common A/C or heat issue" },
+      { "id": "987-shift-cables", "name": "Adjust/replace shift cables", "description": "Vague shifting when worn" }
+    ],
+    "electrical": [
+      { "id": "987-coil-packs", "name": "Replace ignition coil packs", "description": "Common cause of misfires" },
+      { "id": "987-maf", "name": "Clean/replace MAF sensor", "description": "Running issues when dirty" },
+      { "id": "987-o2-sensors", "name": "Replace oxygen sensors", "description": "Four total - pre and post-cat" }
+    ]
+  }
 }

@@ -812,5 +812,45 @@
         "Check the eccentric shaft sensor seal (N52) while you have access."
       ]
     }
-  ]
+  ],
+  "restorationItems": {
+    "engine": [
+      { "id": "e90-water-pump", "name": "Replace electric water pump", "description": "Proactive replacement at 80k miles" },
+      { "id": "e90-thermostat", "name": "Replace electronic thermostat", "description": "Replace with water pump" },
+      { "id": "e90-ofhg", "name": "Replace oil filter housing gasket", "description": "Common leak on N52/N54" },
+      { "id": "e90-valve-cover", "name": "Replace valve cover gasket", "description": "Oil leak source" },
+      { "id": "e90-timing-chain", "name": "Inspect/replace timing chain (N20/N54/N55)", "description": "Chain stretch and guide wear" },
+      { "id": "e90-rod-bearings", "name": "Replace rod bearings (S65 M3)", "description": "Critical M3 maintenance item" }
+    ],
+    "cooling": [
+      { "id": "e90-expansion-tank", "name": "Replace expansion tank", "description": "Plastic cracks" },
+      { "id": "e90-radiator", "name": "Replace radiator", "description": "Plastic end tanks fail" },
+      { "id": "e90-hoses", "name": "Replace coolant hoses", "description": "Multiple failure-prone hoses" }
+    ],
+    "fuel": [
+      { "id": "e90-hpfp", "name": "Replace high-pressure fuel pump (N54)", "description": "Common failure causing misfires" },
+      { "id": "e90-injectors", "name": "Service fuel injectors (N54/N55)", "description": "Direct injection - carbon buildup" },
+      { "id": "e90-walnut-blast", "name": "Intake valve cleaning (N54/N55)", "description": "Walnut blast to remove carbon" }
+    ],
+    "suspension": [
+      { "id": "e90-control-arms", "name": "Replace front control arms", "description": "Bushings and ball joints wear" },
+      { "id": "e90-rtabs", "name": "Replace rear trailing arm bushings", "description": "Causes rear-end instability" },
+      { "id": "e90-sway-bar", "name": "Replace sway bar end links", "description": "Common clunk source" }
+    ],
+    "body": [
+      { "id": "e90-rust-inspection", "name": "Inspect for rust", "description": "Rocker panels, wheel wells" },
+      { "id": "e90-door-seals", "name": "Replace door seals", "description": "Wind noise when worn" },
+      { "id": "e90-headlights", "name": "Restore headlight lenses", "description": "Yellowing and hazing" }
+    ],
+    "interior": [
+      { "id": "e90-idrive", "name": "Service iDrive system", "description": "Controller and screen issues" },
+      { "id": "e90-seats", "name": "Restore leather seats", "description": "Sport seat bolster wear" },
+      { "id": "e90-blend-door", "name": "Replace HVAC blend door actuator", "description": "Clicking noise indicates failure" }
+    ],
+    "electrical": [
+      { "id": "e90-battery", "name": "Replace battery (register in DME)", "description": "Proper registration required" },
+      { "id": "e90-coils", "name": "Replace ignition coils", "description": "Common cause of misfires" },
+      { "id": "e90-vanos-solenoid", "name": "Replace VANOS solenoids", "description": "Causes rough running and codes" }
+    ]
+  }
 }
