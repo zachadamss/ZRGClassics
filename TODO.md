@@ -12,7 +12,9 @@
 - Community Forums with categories, threads, replies, search
 - My Garage - Personal vehicle management with DB-synced restoration & maintenance tracking
 - Hero images for all 17 vehicles (optimized WebP + responsive sizes)
-- Mobile responsive, dark mode, print-friendly
+- Mobile responsive with touch-friendly UI (44px tap targets, card layouts, 480px breakpoint)
+- Dark mode with theme-aware button styling
+- Print-friendly layouts
 - Production build with CSS/JS minification
 
 ---
