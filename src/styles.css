@@ -7594,14 +7594,36 @@ nav ul li.dropdown.touch-open .dropdown-menu {
     font-size: 0.85rem;
 }
 
-.nav-auth .user-link {
-    color: var(--text-color);
+.nav-auth .nav-link {
+    color: var(--navy);
     text-decoration: none;
     font-weight: 500;
+    padding: 0.4rem 0.75rem;
+}
+
+.nav-auth .nav-link:hover {
+    color: var(--gulf-orange);
+}
+
+.nav-auth .user-link {
+    background: var(--gulf-blue);
+    color: var(--navy-dark);
+    border-radius: var(--radius-sm);
+    font-weight: 600;
 }
 
 .nav-auth .user-link:hover {
-    color: var(--gulf-orange);
+    background: var(--gulf-blue-dark);
+    color: white;
+}
+
+[data-theme="dark"] .nav-auth .nav-link {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .nav-auth .user-link {
+    background: var(--gulf-blue-dark);
+    color: white;
 }
 
 /* Mobile Auth Styles */
