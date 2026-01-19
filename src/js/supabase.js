@@ -176,10 +176,9 @@ const AuthUI = {
     if (!authLinks) return;
 
     if (user) {
-      const profile = await Auth.getProfile(user.id);
       authLinks.innerHTML = `
-        <a href="/account/dashboard/" class="nav-link user-link">
-          ${profile?.username || 'Account'}
+        <a href="/account/garage/" class="nav-link user-link">
+          My Garage
         </a>
         <button onclick="Auth.signOut()" class="btn btn-secondary btn-sm">Sign Out</button>
       `;

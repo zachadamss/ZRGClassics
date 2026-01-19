@@ -1,0 +1,1458 @@
+---
+layout: layouts/base.njk
+title: My Garage
+description: Manage your garage vehicles, track restoration progress, and log maintenance history.
+---
+
+<main class="garage-page">
+  <div class="container">
+    <!-- Header -->
+    <div class="garage-header">
+      <div class="garage-header-content">
+        <h1>My Garage</h1>
+        <p class="garage-subtitle">Welcome back, <span id="user-display-name">Member</span></p>
+      </div>
+      <button type="button" class="btn btn-secondary" id="edit-profile-btn">Edit Profile</button>
+    </div>
+
+    <!-- Vehicle Grid -->
+    <div class="garage-section">
+      <div class="section-header">
+        <h2>My Vehicles</h2>
+        <div class="section-header-actions">
+          <span class="vehicle-count"><span id="vehicle-count">0</span>/10 vehicles</span>
+          <button type="button" class="btn btn-primary" id="add-vehicle-btn">+ Add Vehicle</button>
+        </div>
+      </div>
+      <div class="vehicle-grid" id="vehicle-grid">
+        <div class="empty-state" id="empty-vehicles">
+          <p>No vehicles in your garage yet.</p>
+          <p>Click "Add Vehicle" to get started tracking your cars.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Selected Vehicle Detail -->
+    <div class="garage-section vehicle-detail-section" id="vehicle-detail" style="display: none;">
+      <div class="vehicle-detail-header">
+        <div class="vehicle-detail-info">
+          <h2 id="detail-vehicle-title">Vehicle Name</h2>
+          <span class="platform-badge" id="detail-platform-badge">E30</span>
+        </div>
+        <div class="vehicle-detail-actions">
+          <button type="button" class="btn btn-secondary" id="edit-vehicle-btn">Edit</button>
+          <button type="button" class="btn btn-danger" id="delete-vehicle-btn">Delete</button>
+        </div>
+      </div>
+
+      <!-- Vehicle Stats -->
+      <div class="vehicle-stats-row">
+        <div class="vehicle-stat-card">
+          <span class="stat-label">Current Mileage</span>
+          <span class="stat-value" id="detail-mileage">-</span>
+        </div>
+        <div class="vehicle-stat-card">
+          <span class="stat-label">Year</span>
+          <span class="stat-value" id="detail-year">-</span>
+        </div>
+        <div class="vehicle-stat-card">
+          <span class="stat-label">Color</span>
+          <span class="stat-value" id="detail-color">-</span>
+        </div>
+        <div class="vehicle-stat-card">
+          <span class="stat-label">Restoration</span>
+          <span class="stat-value" id="detail-restoration-progress">0%</span>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="vehicle-tabs">
+        <button type="button" class="tab-btn active" data-tab="details">Details</button>
+        <button type="button" class="tab-btn" data-tab="restoration">Restoration</button>
+        <button type="button" class="tab-btn" data-tab="maintenance">Maintenance</button>
+        <button type="button" class="tab-btn" data-tab="history">Service History</button>
+      </div>
+
+      <!-- Details Tab -->
+      <div class="tab-content active" id="tab-details">
+        <div class="details-grid">
+          <div class="detail-item">
+            <label>VIN</label>
+            <span id="detail-vin">-</span>
+          </div>
+          <div class="detail-item">
+            <label>Purchase Date</label>
+            <span id="detail-purchase-date">-</span>
+          </div>
+          <div class="detail-item">
+            <label>Purchase Price</label>
+            <span id="detail-purchase-price">-</span>
+          </div>
+          <div class="detail-item full-width">
+            <label>Notes</label>
+            <p id="detail-notes">-</p>
+          </div>
+        </div>
+        <div class="mileage-update-section">
+          <h4>Update Mileage</h4>
+          <div class="mileage-update-form">
+            <input type="number" id="update-mileage-input" placeholder="Enter current mileage">
+            <button type="button" class="btn btn-primary" id="update-mileage-btn">Update</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Restoration Tab -->
+      <div class="tab-content" id="tab-restoration">
+        <div class="restoration-header">
+          <div class="restoration-progress-display">
+            <div class="progress-bar">
+              <div class="progress-fill" id="restoration-progress-fill"></div>
+            </div>
+            <span class="progress-text" id="restoration-progress-text">0% Complete</span>
+          </div>
+          <div class="restoration-stats">
+            <span><strong id="restoration-completed">0</strong> completed</span>
+            <span><strong id="restoration-remaining">0</strong> remaining</span>
+            <span>Total: <strong id="restoration-total-cost">$0</strong></span>
+          </div>
+        </div>
+        <div class="restoration-actions">
+          <button type="button" class="btn btn-secondary" id="restoration-expand-all">Expand All</button>
+          <button type="button" class="btn btn-secondary" id="restoration-collapse-all">Collapse All</button>
+          <button type="button" class="btn btn-secondary btn-danger-text" id="restoration-clear-all">Clear All</button>
+        </div>
+        <div class="restoration-categories" id="restoration-categories">
+          <!-- Categories loaded dynamically -->
+        </div>
+      </div>
+
+      <!-- Maintenance Tab -->
+      <div class="tab-content" id="tab-maintenance">
+        <div class="maintenance-header">
+          <h3>Maintenance Schedule</h3>
+          <button type="button" class="btn btn-secondary" id="add-maintenance-btn">+ Add Item</button>
+        </div>
+        <div class="upcoming-maintenance" id="upcoming-maintenance">
+          <!-- Upcoming items loaded dynamically -->
+        </div>
+        <div class="maintenance-schedule-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Interval (Miles)</th>
+                <th>Interval (Months)</th>
+                <th>Last Service</th>
+                <th>Next Due</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="maintenance-schedule-tbody">
+              <!-- Schedule items loaded dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Service History Tab -->
+      <div class="tab-content" id="tab-history">
+        <div class="history-header">
+          <h3>Service History</h3>
+          <button type="button" class="btn btn-secondary" id="add-service-btn">+ Log Service</button>
+        </div>
+        <div class="service-history-list" id="service-history-list">
+          <!-- History items loaded dynamically -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Recent Forum Activity -->
+    <div class="garage-section">
+      <div class="section-header">
+        <h2>Recent Forum Activity</h2>
+        <a href="/forum/" class="btn btn-secondary">Browse Forums</a>
+      </div>
+      <div id="recent-threads" class="recent-threads-list">
+        <p class="empty-state">Loading...</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Add/Edit Vehicle Modal -->
+<div class="modal-overlay" id="vehicle-modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 id="vehicle-modal-title">Add Vehicle</h3>
+      <button type="button" class="modal-close" id="close-vehicle-modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label for="vehicle-nickname">Nickname</label>
+        <input type="text" id="vehicle-nickname" placeholder="e.g., Daily Driver, Project Car">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="vehicle-platform">Platform *</label>
+          <select id="vehicle-platform" required>
+            <option value="">Select a platform...</option>
+            <optgroup label="BMW">
+              <option value="e28">E28 5-Series (1982-1988)</option>
+              <option value="e30">E30 3-Series (1982-1994)</option>
+              <option value="e34">E34 5-Series (1988-1996)</option>
+              <option value="e36">E36 3-Series (1990-2000)</option>
+              <option value="e39">E39 5-Series (1995-2004)</option>
+              <option value="e46">E46 3-Series (1998-2006)</option>
+              <option value="e90">E90 3-Series (2005-2013)</option>
+            </optgroup>
+            <optgroup label="Porsche">
+              <option value="924">924 (1976-1988)</option>
+              <option value="928">928 (1977-1995)</option>
+              <option value="944">944 (1982-1991)</option>
+              <option value="964">964 911 (1989-1994)</option>
+              <option value="986">986 Boxster (1996-2004)</option>
+              <option value="987">987 Boxster/Cayman (2005-2012)</option>
+              <option value="991">991 911 (2011-2019)</option>
+              <option value="993">993 911 (1994-1998)</option>
+              <option value="996">996 911 (1997-2005)</option>
+              <option value="997">997 911 (2004-2012)</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="vehicle-year">Year</label>
+          <input type="number" id="vehicle-year" min="1976" max="2025" placeholder="e.g., 1988">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="vehicle-color">Color</label>
+          <input type="text" id="vehicle-color" placeholder="e.g., Alpine White">
+        </div>
+        <div class="form-group">
+          <label for="vehicle-mileage">Current Mileage</label>
+          <input type="number" id="vehicle-mileage" min="0" placeholder="e.g., 125000">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="vehicle-vin">VIN</label>
+        <input type="text" id="vehicle-vin" placeholder="e.g., WBAAB5401J8123456">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="vehicle-purchase-date">Purchase Date</label>
+          <input type="date" id="vehicle-purchase-date">
+        </div>
+        <div class="form-group">
+          <label for="vehicle-purchase-price">Purchase Price ($)</label>
+          <input type="number" id="vehicle-purchase-price" min="0" step="0.01" placeholder="e.g., 15000">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="vehicle-notes">Notes</label>
+        <textarea id="vehicle-notes" rows="3" placeholder="Any notes about this vehicle..."></textarea>
+      </div>
+      <input type="hidden" id="vehicle-edit-id">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" id="cancel-vehicle-modal">Cancel</button>
+      <button type="button" class="btn btn-primary" id="save-vehicle-btn">Save Vehicle</button>
+    </div>
+  </div>
+</div>
+
+<!-- Edit Profile Modal -->
+<div class="modal-overlay" id="profile-modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>Edit Profile</h3>
+      <button type="button" class="modal-close" id="close-profile-modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label for="profile-display-name">Display Name</label>
+        <input type="text" id="profile-display-name" maxlength="50">
+      </div>
+      <div class="form-group">
+        <label for="profile-location">Location</label>
+        <input type="text" id="profile-location" placeholder="City, State/Country" maxlength="100">
+      </div>
+      <div class="form-group">
+        <label for="profile-bio">Bio</label>
+        <textarea id="profile-bio" rows="3" maxlength="500" placeholder="Tell us about yourself..."></textarea>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" id="cancel-profile-modal">Cancel</button>
+      <button type="button" class="btn btn-primary" id="save-profile-btn">Save Profile</button>
+    </div>
+  </div>
+</div>
+
+<!-- Add/Edit Maintenance Modal -->
+<div class="modal-overlay" id="maintenance-modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 id="maintenance-modal-title">Add Maintenance Item</h3>
+      <button type="button" class="modal-close" id="close-maintenance-modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label for="maintenance-name">Item Name *</label>
+        <input type="text" id="maintenance-name" placeholder="e.g., Oil Change, Timing Belt" required>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="maintenance-interval-miles">Interval (Miles)</label>
+          <input type="number" id="maintenance-interval-miles" min="0" placeholder="e.g., 5000">
+        </div>
+        <div class="form-group">
+          <label for="maintenance-interval-months">Interval (Months)</label>
+          <input type="number" id="maintenance-interval-months" min="0" placeholder="e.g., 12">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="maintenance-last-mileage">Last Service Mileage</label>
+          <input type="number" id="maintenance-last-mileage" min="0" placeholder="e.g., 120000">
+        </div>
+        <div class="form-group">
+          <label for="maintenance-last-date">Last Service Date</label>
+          <input type="date" id="maintenance-last-date">
+        </div>
+      </div>
+      <input type="hidden" id="maintenance-edit-id">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" id="cancel-maintenance-modal">Cancel</button>
+      <button type="button" class="btn btn-primary" id="save-maintenance-btn">Save Item</button>
+    </div>
+  </div>
+</div>
+
+<!-- Add/Edit Service Record Modal -->
+<div class="modal-overlay" id="service-modal">
+  <div class="modal-content modal-wide">
+    <div class="modal-header">
+      <h3 id="service-modal-title">Log Service</h3>
+      <button type="button" class="modal-close" id="close-service-modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="service-item-select">Maintenance Item</label>
+          <select id="service-item-select">
+            <option value="">Select or enter custom...</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="service-item-custom">Custom Service Name</label>
+          <input type="text" id="service-item-custom" placeholder="e.g., Replaced water pump">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="service-date">Service Date *</label>
+          <input type="date" id="service-date" required>
+        </div>
+        <div class="form-group">
+          <label for="service-mileage">Mileage at Service</label>
+          <input type="number" id="service-mileage" min="0" placeholder="e.g., 125000">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="service-cost">Cost ($)</label>
+          <input type="number" id="service-cost" min="0" step="0.01" placeholder="e.g., 150.00">
+        </div>
+        <div class="form-group">
+          <label for="service-shop-type">Shop / DIY</label>
+          <select id="service-shop-type">
+            <option value="diy">DIY</option>
+            <option value="shop">Professional Shop</option>
+            <option value="dealer">Dealer</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="service-parts">Parts Used</label>
+        <input type="text" id="service-parts" placeholder="e.g., Mahle filter, Liqui Moly 0W-40">
+      </div>
+      <div class="form-group">
+        <label for="service-notes">Notes</label>
+        <textarea id="service-notes" rows="3" placeholder="Any additional notes..."></textarea>
+      </div>
+      <input type="hidden" id="service-edit-id">
+      <input type="hidden" id="service-linked-maintenance-id">
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" id="cancel-service-modal">Cancel</button>
+      <button type="button" class="btn btn-primary" id="save-service-btn">Save Record</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="/js/supabase.js"></script>
+<script src="/js/garage.js"></script>
+<script src="/js/forum.js"></script>
+<script>
+// Restoration checklist data (from restorationChecklist.json)
+const RESTORATION_CHECKLIST = {{ restorationChecklist | dump | safe }};
+
+(function() {
+  'use strict';
+
+  let currentUser = null;
+  let currentProfile = null;
+  let vehicles = [];
+  let selectedVehicleId = null;
+  let restorationData = {};
+  let maintenanceSchedule = [];
+  let serviceHistory = [];
+
+  // Initialize
+  async function init() {
+    currentUser = await AuthUI.requireAuth();
+    if (!currentUser) return;
+
+    currentProfile = await Auth.getProfile(currentUser.id);
+    document.getElementById('user-display-name').textContent =
+      currentProfile?.display_name || currentProfile?.username || 'Member';
+
+    await loadVehicles();
+    await loadRecentThreads();
+    bindEvents();
+  }
+
+  // Load vehicles
+  async function loadVehicles() {
+    try {
+      vehicles = await Garage.getVehicles();
+      renderVehicleGrid();
+      document.getElementById('vehicle-count').textContent = vehicles.length;
+    } catch (error) {
+      console.error('Error loading vehicles:', error);
+    }
+  }
+
+  // Render vehicle grid
+  function renderVehicleGrid() {
+    const grid = document.getElementById('vehicle-grid');
+    const emptyState = document.getElementById('empty-vehicles');
+
+    // Clear existing cards
+    grid.querySelectorAll('.vehicle-card').forEach(card => card.remove());
+
+    if (vehicles.length === 0) {
+      emptyState.style.display = 'block';
+      return;
+    }
+
+    emptyState.style.display = 'none';
+
+    vehicles.forEach(vehicle => {
+      const card = createVehicleCard(vehicle);
+      grid.appendChild(card);
+    });
+  }
+
+  // Create vehicle card
+  function createVehicleCard(vehicle) {
+    const card = document.createElement('div');
+    card.className = 'vehicle-card' + (vehicle.id === selectedVehicleId ? ' selected' : '');
+    card.dataset.id = vehicle.id;
+
+    const platformInfo = Garage.getPlatformInfo(vehicle.platform);
+    const displayName = vehicle.nickname ||
+      (vehicle.year ? `${vehicle.year} ${platformInfo.name}` : platformInfo.name);
+
+    card.innerHTML = `
+      <div class="vehicle-card-image">
+        ${vehicle.photo_url
+          ? `<img src="${vehicle.photo_url}" alt="${displayName}">`
+          : `<div class="vehicle-card-placeholder">${platformInfo.brand.charAt(0)}</div>`
+        }
+      </div>
+      <div class="vehicle-card-content">
+        <h3>${escapeHtml(displayName)}</h3>
+        <span class="platform-badge">${platformInfo.name}</span>
+        ${vehicle.mileage ? `<p class="vehicle-mileage">${vehicle.mileage.toLocaleString()} miles</p>` : ''}
+      </div>
+    `;
+
+    card.addEventListener('click', () => selectVehicle(vehicle.id));
+    return card;
+  }
+
+  // Select vehicle
+  async function selectVehicle(vehicleId) {
+    selectedVehicleId = vehicleId;
+
+    // Update card selection
+    document.querySelectorAll('.vehicle-card').forEach(card => {
+      card.classList.toggle('selected', card.dataset.id == vehicleId);
+    });
+
+    const vehicle = vehicles.find(v => v.id === vehicleId);
+    if (!vehicle) return;
+
+    // Show detail section
+    document.getElementById('vehicle-detail').style.display = 'block';
+
+    // Update header
+    const platformInfo = Garage.getPlatformInfo(vehicle.platform);
+    const displayName = vehicle.nickname ||
+      (vehicle.year ? `${vehicle.year} ${platformInfo.name}` : platformInfo.name);
+    document.getElementById('detail-vehicle-title').textContent = displayName;
+    document.getElementById('detail-platform-badge').textContent = platformInfo.name;
+
+    // Update stats
+    document.getElementById('detail-mileage').textContent =
+      vehicle.mileage ? vehicle.mileage.toLocaleString() + ' mi' : '-';
+    document.getElementById('detail-year').textContent = vehicle.year || '-';
+    document.getElementById('detail-color').textContent = vehicle.color || '-';
+
+    // Update details tab
+    document.getElementById('detail-vin').textContent = vehicle.vin || '-';
+    document.getElementById('detail-purchase-date').textContent =
+      vehicle.purchase_date ? Garage.formatDate(vehicle.purchase_date) : '-';
+    document.getElementById('detail-purchase-price').textContent =
+      vehicle.purchase_price ? '$' + parseFloat(vehicle.purchase_price).toLocaleString() : '-';
+    document.getElementById('detail-notes').textContent = vehicle.notes || '-';
+
+    // Load restoration, maintenance, and service data
+    await Promise.all([
+      loadRestorationData(vehicleId),
+      loadMaintenanceData(vehicleId),
+      loadServiceHistory(vehicleId)
+    ]);
+
+    // Scroll to detail
+    document.getElementById('vehicle-detail').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  // Load restoration data
+  async function loadRestorationData(vehicleId) {
+    try {
+      restorationData = await Garage.getRestorationItems(vehicleId);
+      renderRestorationChecklist();
+      updateRestorationProgress();
+    } catch (error) {
+      console.error('Error loading restoration data:', error);
+    }
+  }
+
+  // Render restoration checklist
+  function renderRestorationChecklist() {
+    const container = document.getElementById('restoration-categories');
+    container.innerHTML = '';
+
+    RESTORATION_CHECKLIST.categories.forEach(category => {
+      const categoryEl = document.createElement('div');
+      categoryEl.className = 'restoration-category';
+      categoryEl.dataset.category = category.id;
+
+      const completedInCategory = category.items.filter(item => restorationData[item.id]?.completed).length;
+
+      categoryEl.innerHTML = `
+        <div class="category-header">
+          <h4>
+            <button type="button" class="category-toggle" aria-expanded="false">
+              <span class="toggle-icon">+</span>
+              ${category.name}
+              <span class="category-count">${completedInCategory}/${category.items.length}</span>
+            </button>
+          </h4>
+        </div>
+        <div class="category-content" hidden>
+          ${category.items.map(item => createRestorationItemHtml(item)).join('')}
+        </div>
+      `;
+
+      container.appendChild(categoryEl);
+    });
+
+    // Bind category toggles
+    container.querySelectorAll('.category-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.closest('.restoration-category').querySelector('.category-content');
+        const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', !isExpanded);
+        btn.querySelector('.toggle-icon').textContent = isExpanded ? '+' : '-';
+        content.hidden = isExpanded;
+      });
+    });
+
+    // Bind item checkboxes and inputs
+    bindRestorationItemEvents();
+  }
+
+  // Create restoration item HTML
+  function createRestorationItemHtml(item) {
+    const data = restorationData[item.id] || {};
+    return `
+      <div class="restoration-item ${data.completed ? 'completed' : ''}" data-item-id="${item.id}">
+        <div class="item-main">
+          <label class="item-checkbox">
+            <input type="checkbox" class="item-complete" data-id="${item.id}" ${data.completed ? 'checked' : ''}>
+            <span class="item-name">${item.name}</span>
+          </label>
+          <button type="button" class="item-expand-btn" aria-label="Expand details">
+            <span class="expand-icon">&#9662;</span>
+          </button>
+        </div>
+        ${item.description ? `<p class="item-description">${item.description}</p>` : ''}
+        <div class="item-details" hidden>
+          <div class="detail-row">
+            <div class="detail-field">
+              <label>Date Completed</label>
+              <input type="date" class="item-date" data-id="${item.id}" value="${data.dateCompleted || ''}">
+            </div>
+            <div class="detail-field">
+              <label>Cost ($)</label>
+              <input type="number" class="item-cost" data-id="${item.id}" min="0" step="0.01" placeholder="0.00" value="${data.cost || ''}">
+            </div>
+          </div>
+          <div class="detail-field full-width">
+            <label>Notes</label>
+            <textarea class="item-notes" data-id="${item.id}" rows="2" placeholder="Parts used, tips, issues...">${data.notes || ''}</textarea>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  // Bind restoration item events
+  function bindRestorationItemEvents() {
+    const container = document.getElementById('restoration-categories');
+
+    // Checkbox changes
+    container.querySelectorAll('.item-complete').forEach(checkbox => {
+      checkbox.addEventListener('change', async (e) => {
+        const itemId = e.target.dataset.id;
+        const item = e.target.closest('.restoration-item');
+        const dateInput = item.querySelector('.item-date');
+
+        const data = {
+          completed: e.target.checked,
+          dateCompleted: dateInput.value || (e.target.checked ? new Date().toISOString().split('T')[0] : null),
+          cost: parseFloat(item.querySelector('.item-cost').value) || null,
+          notes: item.querySelector('.item-notes').value || null
+        };
+
+        if (e.target.checked && !dateInput.value) {
+          dateInput.value = new Date().toISOString().split('T')[0];
+          data.dateCompleted = dateInput.value;
+        }
+
+        item.classList.toggle('completed', e.target.checked);
+
+        try {
+          await Garage.updateRestorationItem(selectedVehicleId, itemId, data);
+          restorationData[itemId] = data;
+          updateRestorationProgress();
+        } catch (error) {
+          console.error('Error updating restoration item:', error);
+        }
+      });
+    });
+
+    // Other input changes (debounced)
+    let saveTimeout;
+    const saveItem = async (itemId, item) => {
+      const data = {
+        completed: item.querySelector('.item-complete').checked,
+        dateCompleted: item.querySelector('.item-date').value || null,
+        cost: parseFloat(item.querySelector('.item-cost').value) || null,
+        notes: item.querySelector('.item-notes').value || null
+      };
+
+      try {
+        await Garage.updateRestorationItem(selectedVehicleId, itemId, data);
+        restorationData[itemId] = data;
+        updateRestorationProgress();
+      } catch (error) {
+        console.error('Error updating restoration item:', error);
+      }
+    };
+
+    container.querySelectorAll('.item-date, .item-cost, .item-notes').forEach(input => {
+      input.addEventListener('change', (e) => {
+        const itemId = e.target.dataset.id;
+        const item = e.target.closest('.restoration-item');
+        clearTimeout(saveTimeout);
+        saveTimeout = setTimeout(() => saveItem(itemId, item), 500);
+      });
+    });
+
+    // Expand buttons
+    container.querySelectorAll('.item-expand-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const details = btn.closest('.restoration-item').querySelector('.item-details');
+        const isHidden = details.hidden;
+        details.hidden = !isHidden;
+        btn.querySelector('.expand-icon').style.transform = isHidden ? 'rotate(180deg)' : '';
+      });
+    });
+  }
+
+  // Update restoration progress
+  function updateRestorationProgress() {
+    let totalItems = 0;
+    let completedItems = 0;
+    let totalCost = 0;
+
+    RESTORATION_CHECKLIST.categories.forEach(category => {
+      totalItems += category.items.length;
+      category.items.forEach(item => {
+        if (restorationData[item.id]?.completed) {
+          completedItems++;
+        }
+        if (restorationData[item.id]?.cost) {
+          totalCost += restorationData[item.id].cost;
+        }
+      });
+    });
+
+    const percent = totalItems > 0 ? Math.round((completedItems / totalItems) * 100) : 0;
+
+    document.getElementById('restoration-progress-fill').style.width = percent + '%';
+    document.getElementById('restoration-progress-text').textContent = percent + '% Complete';
+    document.getElementById('restoration-completed').textContent = completedItems;
+    document.getElementById('restoration-remaining').textContent = totalItems - completedItems;
+    document.getElementById('restoration-total-cost').textContent = '$' + totalCost.toLocaleString();
+    document.getElementById('detail-restoration-progress').textContent = percent + '%';
+
+    // Update category counts
+    document.querySelectorAll('.restoration-category').forEach(catEl => {
+      const catId = catEl.dataset.category;
+      const category = RESTORATION_CHECKLIST.categories.find(c => c.id === catId);
+      if (category) {
+        const completed = category.items.filter(item => restorationData[item.id]?.completed).length;
+        catEl.querySelector('.category-count').textContent = `${completed}/${category.items.length}`;
+      }
+    });
+  }
+
+  // Load maintenance data
+  async function loadMaintenanceData(vehicleId) {
+    try {
+      maintenanceSchedule = await Garage.getMaintenanceSchedule(vehicleId);
+      renderMaintenanceSchedule();
+      renderUpcomingMaintenance();
+      populateServiceItemDropdown();
+    } catch (error) {
+      console.error('Error loading maintenance data:', error);
+    }
+  }
+
+  // Render maintenance schedule
+  function renderMaintenanceSchedule() {
+    const tbody = document.getElementById('maintenance-schedule-tbody');
+    const vehicle = vehicles.find(v => v.id === selectedVehicleId);
+
+    if (maintenanceSchedule.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="6" class="empty-state">No maintenance items. Click "+ Add Item" or initialize with platform defaults.</td></tr>';
+      return;
+    }
+
+    tbody.innerHTML = maintenanceSchedule.map(item => {
+      let lastService = '-';
+      if (item.lastServiceDate || item.lastServiceMileage) {
+        const parts = [];
+        if (item.lastServiceMileage) parts.push(`${item.lastServiceMileage.toLocaleString()} mi`);
+        if (item.lastServiceDate) parts.push(Garage.formatDate(item.lastServiceDate));
+        lastService = parts.join(' / ');
+      }
+
+      let nextDue = '-';
+      if (item.intervalMiles && item.lastServiceMileage !== null) {
+        const nextMiles = item.lastServiceMileage + item.intervalMiles;
+        nextDue = `${nextMiles.toLocaleString()} mi`;
+      }
+      if (item.intervalMonths && item.lastServiceDate) {
+        const lastDate = new Date(item.lastServiceDate);
+        const nextDate = new Date(lastDate);
+        nextDate.setMonth(nextDate.getMonth() + item.intervalMonths);
+        if (nextDue !== '-') nextDue += ' / ';
+        else nextDue = '';
+        nextDue += Garage.formatDate(nextDate.toISOString().split('T')[0]);
+      }
+
+      return `
+        <tr>
+          <td>${escapeHtml(item.name)}</td>
+          <td>${item.intervalMiles ? item.intervalMiles.toLocaleString() : '-'}</td>
+          <td>${item.intervalMonths || '-'}</td>
+          <td>${lastService}</td>
+          <td>${nextDue}</td>
+          <td class="actions-cell">
+            <button type="button" class="btn-icon log-service" data-id="${item.id}" title="Log Service">&#10003;</button>
+            <button type="button" class="btn-icon edit-maintenance" data-id="${item.id}" title="Edit">&#9998;</button>
+            <button type="button" class="btn-icon delete-maintenance" data-id="${item.id}" title="Delete">&times;</button>
+          </td>
+        </tr>
+      `;
+    }).join('');
+
+    // Bind actions
+    tbody.querySelectorAll('.log-service').forEach(btn => {
+      btn.addEventListener('click', () => openServiceModal(null, btn.dataset.id));
+    });
+    tbody.querySelectorAll('.edit-maintenance').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = maintenanceSchedule.find(i => i.id == btn.dataset.id);
+        if (item) openMaintenanceModal(item);
+      });
+    });
+    tbody.querySelectorAll('.delete-maintenance').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        if (confirm('Delete this maintenance item?')) {
+          try {
+            await Garage.deleteMaintenanceItem(btn.dataset.id);
+            await loadMaintenanceData(selectedVehicleId);
+          } catch (error) {
+            alert('Error deleting item: ' + error.message);
+          }
+        }
+      });
+    });
+  }
+
+  // Render upcoming maintenance
+  function renderUpcomingMaintenance() {
+    const container = document.getElementById('upcoming-maintenance');
+    const vehicle = vehicles.find(v => v.id === selectedVehicleId);
+    const upcoming = Garage.getUpcomingMaintenance(maintenanceSchedule, vehicle?.mileage);
+
+    const overdueOrSoon = upcoming.filter(u => u.status === 'overdue' || u.status === 'due-soon');
+
+    if (overdueOrSoon.length === 0) {
+      container.innerHTML = '<div class="empty-state">All maintenance up to date!</div>';
+      return;
+    }
+
+    container.innerHTML = `
+      <h4>Upcoming & Overdue</h4>
+      ${overdueOrSoon.map(item => {
+        let dueText = '';
+        if (item.milesDue !== null) {
+          if (item.milesDue < 0) {
+            dueText = `${Math.abs(item.milesDue).toLocaleString()} miles overdue`;
+          } else {
+            dueText = `${item.milesDue.toLocaleString()} miles remaining`;
+          }
+        }
+        if (item.daysDue !== null) {
+          if (dueText) dueText += ' / ';
+          if (item.daysDue < 0) {
+            dueText += `${Math.abs(item.daysDue)} days overdue`;
+          } else {
+            dueText += `${item.daysDue} days remaining`;
+          }
+        }
+
+        return `
+          <div class="upcoming-item ${item.status}">
+            <div class="upcoming-info">
+              <strong>${escapeHtml(item.name)}</strong>
+              <span>${dueText}</span>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm log-service-btn" data-id="${item.id}">Log Service</button>
+          </div>
+        `;
+      }).join('')}
+    `;
+
+    container.querySelectorAll('.log-service-btn').forEach(btn => {
+      btn.addEventListener('click', () => openServiceModal(null, btn.dataset.id));
+    });
+  }
+
+  // Load service history
+  async function loadServiceHistory(vehicleId) {
+    try {
+      serviceHistory = await Garage.getServiceHistory(vehicleId);
+      renderServiceHistory();
+    } catch (error) {
+      console.error('Error loading service history:', error);
+    }
+  }
+
+  // Render service history
+  function renderServiceHistory() {
+    const container = document.getElementById('service-history-list');
+
+    if (serviceHistory.length === 0) {
+      container.innerHTML = '<div class="empty-state">No service records yet. Click "+ Log Service" to add one.</div>';
+      return;
+    }
+
+    container.innerHTML = serviceHistory.map(record => `
+      <div class="service-record">
+        <div class="service-record-header">
+          <h4>${escapeHtml(record.serviceName)}</h4>
+          <span class="service-date">${Garage.formatDate(record.serviceDate)}</span>
+        </div>
+        <div class="service-record-details">
+          ${record.mileage ? `<span class="service-mileage">${record.mileage.toLocaleString()} miles</span>` : ''}
+          ${record.cost ? `<span class="service-cost">$${record.cost.toFixed(2)}</span>` : ''}
+          <span class="service-shop">${record.shopType === 'diy' ? 'DIY' : record.shopType === 'dealer' ? 'Dealer' : 'Shop'}</span>
+        </div>
+        ${record.partsUsed ? `<div class="service-parts"><strong>Parts:</strong> ${escapeHtml(record.partsUsed)}</div>` : ''}
+        ${record.notes ? `<div class="service-notes">${escapeHtml(record.notes)}</div>` : ''}
+        <div class="service-record-actions">
+          <button type="button" class="btn-icon edit-service" data-id="${record.id}" title="Edit">&#9998;</button>
+          <button type="button" class="btn-icon delete-service" data-id="${record.id}" title="Delete">&times;</button>
+        </div>
+      </div>
+    `).join('');
+
+    container.querySelectorAll('.edit-service').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const record = serviceHistory.find(r => r.id == btn.dataset.id);
+        if (record) openServiceModal(record);
+      });
+    });
+    container.querySelectorAll('.delete-service').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        if (confirm('Delete this service record?')) {
+          try {
+            await Garage.deleteServiceRecord(btn.dataset.id);
+            await loadServiceHistory(selectedVehicleId);
+          } catch (error) {
+            alert('Error deleting record: ' + error.message);
+          }
+        }
+      });
+    });
+  }
+
+  // Populate service item dropdown
+  function populateServiceItemDropdown() {
+    const select = document.getElementById('service-item-select');
+    select.innerHTML = '<option value="">Select or enter custom...</option>';
+    maintenanceSchedule.forEach(item => {
+      const option = document.createElement('option');
+      option.value = item.id;
+      option.textContent = item.name;
+      select.appendChild(option);
+    });
+  }
+
+  // Load recent threads
+  async function loadRecentThreads() {
+    try {
+      const isLocal = window.location.hostname === 'localhost';
+      const { data: threads, error } = await db
+        .from('forum_threads')
+        .select(`
+          id,
+          title,
+          slug,
+          created_at,
+          reply_count,
+          category:forum_categories(slug, name)
+        `)
+        .eq('author_id', currentUser.id)
+        .order('created_at', { ascending: false })
+        .limit(5);
+
+      const container = document.getElementById('recent-threads');
+
+      if (error) throw error;
+
+      if (!threads || threads.length === 0) {
+        container.innerHTML = '<p class="empty-state">You haven\'t started any threads yet. <a href="/forum/new/">Start your first discussion</a></p>';
+      } else {
+        container.innerHTML = threads.map(thread => {
+          const threadUrl = isLocal
+            ? `/forum/thread/?slug=${thread.category.slug}&id=${thread.id}`
+            : `/forum/${thread.category.slug}/${thread.id}/`;
+          return `
+            <div class="recent-thread">
+              <a href="${threadUrl}" class="recent-thread-title">${escapeHtml(thread.title)}</a>
+              <div class="recent-thread-meta">
+                <span>${thread.category.name}</span>
+                <span>${thread.reply_count} replies</span>
+                <span>${Forum.timeAgo(thread.created_at)}</span>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+    } catch (error) {
+      console.error('Error loading threads:', error);
+      document.getElementById('recent-threads').innerHTML = '<p class="empty-state">Unable to load recent threads</p>';
+    }
+  }
+
+  // Bind events
+  function bindEvents() {
+    // Add vehicle button
+    document.getElementById('add-vehicle-btn').addEventListener('click', () => openVehicleModal());
+
+    // Vehicle modal
+    document.getElementById('close-vehicle-modal').addEventListener('click', closeVehicleModal);
+    document.getElementById('cancel-vehicle-modal').addEventListener('click', closeVehicleModal);
+    document.getElementById('save-vehicle-btn').addEventListener('click', saveVehicle);
+    document.getElementById('vehicle-modal').addEventListener('click', (e) => {
+      if (e.target.classList.contains('modal-overlay')) closeVehicleModal();
+    });
+
+    // Edit/Delete vehicle
+    document.getElementById('edit-vehicle-btn').addEventListener('click', () => {
+      const vehicle = vehicles.find(v => v.id === selectedVehicleId);
+      if (vehicle) openVehicleModal(vehicle);
+    });
+    document.getElementById('delete-vehicle-btn').addEventListener('click', deleteSelectedVehicle);
+
+    // Update mileage
+    document.getElementById('update-mileage-btn').addEventListener('click', updateMileage);
+
+    // Profile modal
+    document.getElementById('edit-profile-btn').addEventListener('click', openProfileModal);
+    document.getElementById('close-profile-modal').addEventListener('click', closeProfileModal);
+    document.getElementById('cancel-profile-modal').addEventListener('click', closeProfileModal);
+    document.getElementById('save-profile-btn').addEventListener('click', saveProfile);
+    document.getElementById('profile-modal').addEventListener('click', (e) => {
+      if (e.target.classList.contains('modal-overlay')) closeProfileModal();
+    });
+
+    // Tabs
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+      });
+    });
+
+    // Restoration actions
+    document.getElementById('restoration-expand-all').addEventListener('click', () => {
+      document.querySelectorAll('.category-toggle').forEach(btn => {
+        btn.setAttribute('aria-expanded', 'true');
+        btn.querySelector('.toggle-icon').textContent = '-';
+        btn.closest('.restoration-category').querySelector('.category-content').hidden = false;
+      });
+    });
+    document.getElementById('restoration-collapse-all').addEventListener('click', () => {
+      document.querySelectorAll('.category-toggle').forEach(btn => {
+        btn.setAttribute('aria-expanded', 'false');
+        btn.querySelector('.toggle-icon').textContent = '+';
+        btn.closest('.restoration-category').querySelector('.category-content').hidden = true;
+      });
+    });
+    document.getElementById('restoration-clear-all').addEventListener('click', async () => {
+      if (confirm('Clear all restoration progress for this vehicle? This cannot be undone.')) {
+        try {
+          await Garage.clearRestoration(selectedVehicleId);
+          restorationData = {};
+          renderRestorationChecklist();
+          updateRestorationProgress();
+        } catch (error) {
+          alert('Error clearing restoration: ' + error.message);
+        }
+      }
+    });
+
+    // Maintenance modal
+    document.getElementById('add-maintenance-btn').addEventListener('click', () => openMaintenanceModal());
+    document.getElementById('close-maintenance-modal').addEventListener('click', closeMaintenanceModal);
+    document.getElementById('cancel-maintenance-modal').addEventListener('click', closeMaintenanceModal);
+    document.getElementById('save-maintenance-btn').addEventListener('click', saveMaintenanceItem);
+    document.getElementById('maintenance-modal').addEventListener('click', (e) => {
+      if (e.target.classList.contains('modal-overlay')) closeMaintenanceModal();
+    });
+
+    // Service modal
+    document.getElementById('add-service-btn').addEventListener('click', () => openServiceModal());
+    document.getElementById('close-service-modal').addEventListener('click', closeServiceModal);
+    document.getElementById('cancel-service-modal').addEventListener('click', closeServiceModal);
+    document.getElementById('save-service-btn').addEventListener('click', saveServiceRecord);
+    document.getElementById('service-modal').addEventListener('click', (e) => {
+      if (e.target.classList.contains('modal-overlay')) closeServiceModal();
+    });
+    document.getElementById('service-item-select').addEventListener('change', (e) => {
+      document.getElementById('service-item-custom').style.display = e.target.value === '' ? 'block' : 'none';
+    });
+  }
+
+  // Vehicle Modal Functions
+  function openVehicleModal(vehicle = null) {
+    const modal = document.getElementById('vehicle-modal');
+    const title = document.getElementById('vehicle-modal-title');
+
+    if (vehicle) {
+      title.textContent = 'Edit Vehicle';
+      document.getElementById('vehicle-nickname').value = vehicle.nickname || '';
+      document.getElementById('vehicle-platform').value = vehicle.platform;
+      document.getElementById('vehicle-year').value = vehicle.year || '';
+      document.getElementById('vehicle-color').value = vehicle.color || '';
+      document.getElementById('vehicle-mileage').value = vehicle.mileage || '';
+      document.getElementById('vehicle-vin').value = vehicle.vin || '';
+      document.getElementById('vehicle-purchase-date').value = vehicle.purchase_date || '';
+      document.getElementById('vehicle-purchase-price').value = vehicle.purchase_price || '';
+      document.getElementById('vehicle-notes').value = vehicle.notes || '';
+      document.getElementById('vehicle-edit-id').value = vehicle.id;
+    } else {
+      title.textContent = 'Add Vehicle';
+      document.getElementById('vehicle-nickname').value = '';
+      document.getElementById('vehicle-platform').value = '';
+      document.getElementById('vehicle-year').value = '';
+      document.getElementById('vehicle-color').value = '';
+      document.getElementById('vehicle-mileage').value = '';
+      document.getElementById('vehicle-vin').value = '';
+      document.getElementById('vehicle-purchase-date').value = '';
+      document.getElementById('vehicle-purchase-price').value = '';
+      document.getElementById('vehicle-notes').value = '';
+      document.getElementById('vehicle-edit-id').value = '';
+    }
+
+    modal.classList.add('active');
+  }
+
+  function closeVehicleModal() {
+    document.getElementById('vehicle-modal').classList.remove('active');
+  }
+
+  async function saveVehicle() {
+    const platform = document.getElementById('vehicle-platform').value;
+    if (!platform) {
+      alert('Please select a platform');
+      return;
+    }
+
+    const vehicleData = {
+      platform,
+      nickname: document.getElementById('vehicle-nickname').value.trim() || null,
+      year: document.getElementById('vehicle-year').value ? parseInt(document.getElementById('vehicle-year').value) : null,
+      color: document.getElementById('vehicle-color').value.trim() || null,
+      mileage: document.getElementById('vehicle-mileage').value ? parseInt(document.getElementById('vehicle-mileage').value) : null,
+      vin: document.getElementById('vehicle-vin').value.trim() || null,
+      purchaseDate: document.getElementById('vehicle-purchase-date').value || null,
+      purchasePrice: document.getElementById('vehicle-purchase-price').value ? parseFloat(document.getElementById('vehicle-purchase-price').value) : null,
+      notes: document.getElementById('vehicle-notes').value.trim() || null
+    };
+
+    const editId = document.getElementById('vehicle-edit-id').value;
+
+    try {
+      const saveBtn = document.getElementById('save-vehicle-btn');
+      saveBtn.disabled = true;
+      saveBtn.textContent = 'Saving...';
+
+      if (editId) {
+        await Garage.updateVehicle(editId, vehicleData);
+      } else {
+        const newVehicle = await Garage.addVehicle(vehicleData);
+        // Initialize maintenance schedule with platform defaults
+        await Garage.initializeMaintenanceSchedule(newVehicle.id, platform);
+      }
+
+      closeVehicleModal();
+      await loadVehicles();
+
+      if (editId) {
+        await selectVehicle(parseInt(editId));
+      }
+
+      saveBtn.disabled = false;
+      saveBtn.textContent = 'Save Vehicle';
+    } catch (error) {
+      alert('Error saving vehicle: ' + error.message);
+      document.getElementById('save-vehicle-btn').disabled = false;
+      document.getElementById('save-vehicle-btn').textContent = 'Save Vehicle';
+    }
+  }
+
+  async function deleteSelectedVehicle() {
+    const vehicle = vehicles.find(v => v.id === selectedVehicleId);
+    if (!vehicle) return;
+
+    if (!confirm(`Delete "${vehicle.nickname || 'this vehicle'}"? All restoration progress and service history will be lost.`)) {
+      return;
+    }
+
+    try {
+      await Garage.deleteVehicle(selectedVehicleId);
+      selectedVehicleId = null;
+      document.getElementById('vehicle-detail').style.display = 'none';
+      await loadVehicles();
+    } catch (error) {
+      alert('Error deleting vehicle: ' + error.message);
+    }
+  }
+
+  async function updateMileage() {
+    const input = document.getElementById('update-mileage-input');
+    const newMileage = parseInt(input.value);
+    if (!newMileage || newMileage < 0) {
+      alert('Please enter a valid mileage');
+      return;
+    }
+
+    try {
+      await Garage.updateVehicle(selectedVehicleId, { mileage: newMileage });
+      const vehicle = vehicles.find(v => v.id === selectedVehicleId);
+      if (vehicle) vehicle.mileage = newMileage;
+      document.getElementById('detail-mileage').textContent = newMileage.toLocaleString() + ' mi';
+      input.value = '';
+      renderVehicleGrid();
+      renderUpcomingMaintenance();
+    } catch (error) {
+      alert('Error updating mileage: ' + error.message);
+    }
+  }
+
+  // Profile Modal Functions
+  function openProfileModal() {
+    document.getElementById('profile-display-name').value = currentProfile?.display_name || '';
+    document.getElementById('profile-location').value = currentProfile?.location || '';
+    document.getElementById('profile-bio').value = currentProfile?.bio || '';
+    document.getElementById('profile-modal').classList.add('active');
+  }
+
+  function closeProfileModal() {
+    document.getElementById('profile-modal').classList.remove('active');
+  }
+
+  async function saveProfile() {
+    try {
+      const saveBtn = document.getElementById('save-profile-btn');
+      saveBtn.disabled = true;
+      saveBtn.textContent = 'Saving...';
+
+      currentProfile = await Auth.updateProfile(currentUser.id, {
+        display_name: document.getElementById('profile-display-name').value.trim() || null,
+        location: document.getElementById('profile-location').value.trim() || null,
+        bio: document.getElementById('profile-bio').value.trim() || null
+      });
+
+      document.getElementById('user-display-name').textContent =
+        currentProfile?.display_name || currentProfile?.username || 'Member';
+
+      closeProfileModal();
+      saveBtn.disabled = false;
+      saveBtn.textContent = 'Save Profile';
+    } catch (error) {
+      alert('Error saving profile: ' + error.message);
+      document.getElementById('save-profile-btn').disabled = false;
+      document.getElementById('save-profile-btn').textContent = 'Save Profile';
+    }
+  }
+
+  // Maintenance Modal Functions
+  function openMaintenanceModal(item = null) {
+    const modal = document.getElementById('maintenance-modal');
+    const title = document.getElementById('maintenance-modal-title');
+
+    if (item) {
+      title.textContent = 'Edit Maintenance Item';
+      document.getElementById('maintenance-name').value = item.name;
+      document.getElementById('maintenance-interval-miles').value = item.intervalMiles || '';
+      document.getElementById('maintenance-interval-months').value = item.intervalMonths || '';
+      document.getElementById('maintenance-last-mileage').value = item.lastServiceMileage || '';
+      document.getElementById('maintenance-last-date').value = item.lastServiceDate || '';
+      document.getElementById('maintenance-edit-id').value = item.id;
+    } else {
+      title.textContent = 'Add Maintenance Item';
+      document.getElementById('maintenance-name').value = '';
+      document.getElementById('maintenance-interval-miles').value = '';
+      document.getElementById('maintenance-interval-months').value = '';
+      document.getElementById('maintenance-last-mileage').value = '';
+      document.getElementById('maintenance-last-date').value = '';
+      document.getElementById('maintenance-edit-id').value = '';
+    }
+
+    modal.classList.add('active');
+  }
+
+  function closeMaintenanceModal() {
+    document.getElementById('maintenance-modal').classList.remove('active');
+  }
+
+  async function saveMaintenanceItem() {
+    const name = document.getElementById('maintenance-name').value.trim();
+    if (!name) {
+      alert('Please enter an item name');
+      return;
+    }
+
+    const intervalMiles = document.getElementById('maintenance-interval-miles').value;
+    const intervalMonths = document.getElementById('maintenance-interval-months').value;
+
+    if (!intervalMiles && !intervalMonths) {
+      alert('Please enter at least one interval (miles or months)');
+      return;
+    }
+
+    const itemData = {
+      name,
+      intervalMiles: intervalMiles ? parseInt(intervalMiles) : null,
+      intervalMonths: intervalMonths ? parseInt(intervalMonths) : null,
+      lastServiceMileage: document.getElementById('maintenance-last-mileage').value ?
+        parseInt(document.getElementById('maintenance-last-mileage').value) : null,
+      lastServiceDate: document.getElementById('maintenance-last-date').value || null
+    };
+
+    const editId = document.getElementById('maintenance-edit-id').value;
+
+    try {
+      const saveBtn = document.getElementById('save-maintenance-btn');
+      saveBtn.disabled = true;
+      saveBtn.textContent = 'Saving...';
+
+      if (editId) {
+        await Garage.updateMaintenanceItem(editId, itemData);
+      } else {
+        await Garage.addMaintenanceItem(selectedVehicleId, itemData);
+      }
+
+      closeMaintenanceModal();
+      await loadMaintenanceData(selectedVehicleId);
+
+      saveBtn.disabled = false;
+      saveBtn.textContent = 'Save Item';
+    } catch (error) {
+      alert('Error saving maintenance item: ' + error.message);
+      document.getElementById('save-maintenance-btn').disabled = false;
+      document.getElementById('save-maintenance-btn').textContent = 'Save Item';
+    }
+  }
+
+  // Service Modal Functions
+  function openServiceModal(record = null, linkedMaintenanceId = null) {
+    const modal = document.getElementById('service-modal');
+    const title = document.getElementById('service-modal-title');
+    const vehicle = vehicles.find(v => v.id === selectedVehicleId);
+
+    document.getElementById('service-item-custom').style.display = 'none';
+
+    if (record) {
+      title.textContent = 'Edit Service Record';
+      document.getElementById('service-item-select').value = record.maintenanceId || '';
+      document.getElementById('service-item-custom').value = record.maintenanceId ? '' : record.serviceName;
+      document.getElementById('service-item-custom').style.display = record.maintenanceId ? 'none' : 'block';
+      document.getElementById('service-date').value = record.serviceDate || '';
+      document.getElementById('service-mileage').value = record.mileage || '';
+      document.getElementById('service-cost').value = record.cost || '';
+      document.getElementById('service-shop-type').value = record.shopType || 'diy';
+      document.getElementById('service-parts').value = record.partsUsed || '';
+      document.getElementById('service-notes').value = record.notes || '';
+      document.getElementById('service-edit-id').value = record.id;
+      document.getElementById('service-linked-maintenance-id').value = record.maintenanceId || '';
+    } else {
+      title.textContent = 'Log Service';
+      document.getElementById('service-item-select').value = linkedMaintenanceId || '';
+      document.getElementById('service-item-custom').value = '';
+      document.getElementById('service-date').value = new Date().toISOString().split('T')[0];
+      document.getElementById('service-mileage').value = vehicle?.mileage || '';
+      document.getElementById('service-cost').value = '';
+      document.getElementById('service-shop-type').value = 'diy';
+      document.getElementById('service-parts').value = '';
+      document.getElementById('service-notes').value = '';
+      document.getElementById('service-edit-id').value = '';
+      document.getElementById('service-linked-maintenance-id').value = linkedMaintenanceId || '';
+    }
+
+    modal.classList.add('active');
+  }
+
+  function closeServiceModal() {
+    document.getElementById('service-modal').classList.remove('active');
+  }
+
+  async function saveServiceRecord() {
+    const itemSelect = document.getElementById('service-item-select').value;
+    const itemCustom = document.getElementById('service-item-custom').value.trim();
+    const serviceDate = document.getElementById('service-date').value;
+
+    if (!serviceDate) {
+      alert('Please enter a service date');
+      return;
+    }
+
+    let serviceName = '';
+    let maintenanceId = null;
+
+    if (itemSelect) {
+      maintenanceId = parseInt(itemSelect);
+      const maintenanceItem = maintenanceSchedule.find(i => i.id == itemSelect);
+      serviceName = maintenanceItem ? maintenanceItem.name : 'Unknown';
+    } else if (itemCustom) {
+      serviceName = itemCustom;
+    } else {
+      alert('Please select or enter a service name');
+      return;
+    }
+
+    const recordData = {
+      serviceName,
+      maintenanceId,
+      serviceDate,
+      mileage: document.getElementById('service-mileage').value ?
+        parseInt(document.getElementById('service-mileage').value) : null,
+      cost: document.getElementById('service-cost').value ?
+        parseFloat(document.getElementById('service-cost').value) : null,
+      shopType: document.getElementById('service-shop-type').value,
+      partsUsed: document.getElementById('service-parts').value.trim() || null,
+      notes: document.getElementById('service-notes').value.trim() || null
+    };
+
+    const editId = document.getElementById('service-edit-id').value;
+
+    try {
+      const saveBtn = document.getElementById('save-service-btn');
+      saveBtn.disabled = true;
+      saveBtn.textContent = 'Saving...';
+
+      if (editId) {
+        await Garage.updateServiceRecord(editId, recordData);
+      } else {
+        await Garage.addServiceRecord(selectedVehicleId, recordData);
+      }
+
+      closeServiceModal();
+
+      // Reload data
+      await Promise.all([
+        loadVehicles(),
+        loadMaintenanceData(selectedVehicleId),
+        loadServiceHistory(selectedVehicleId)
+      ]);
+
+      // Update mileage display if changed
+      const vehicle = vehicles.find(v => v.id === selectedVehicleId);
+      if (vehicle) {
+        document.getElementById('detail-mileage').textContent =
+          vehicle.mileage ? vehicle.mileage.toLocaleString() + ' mi' : '-';
+      }
+
+      saveBtn.disabled = false;
+      saveBtn.textContent = 'Save Record';
+    } catch (error) {
+      alert('Error saving service record: ' + error.message);
+      document.getElementById('save-service-btn').disabled = false;
+      document.getElementById('save-service-btn').textContent = 'Save Record';
+    }
+  }
+
+  // Helper: Escape HTML
+  function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  }
+
+  // Initialize
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>

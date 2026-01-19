@@ -11,6 +11,15 @@ keywords: "maintenance tracker, service history, car maintenance log, BMW mainte
         <p>Track service history and maintenance schedules for your vintage German cars</p>
     </div>
 
+    <!-- Logged-in user notice -->
+    <div class="garage-notice" id="garage-notice" style="display: none;">
+        <div class="notice-content">
+            <strong>Sync your data across devices!</strong>
+            <p>As a registered member, your vehicle maintenance is saved to your account in <a href="/account/garage/">My Garage</a>. This page uses local browser storage only.</p>
+        </div>
+        <a href="/account/garage/" class="btn btn-primary">Go to My Garage</a>
+    </div>
+
     <!-- Garage View -->
     <div class="tracker-section garage-section">
         <div class="section-header">
@@ -292,3 +301,14 @@ keywords: "maintenance tracker, service history, car maintenance log, BMW mainte
 </div>
 
 <script src="/tools/maintenance-tracker.js"></script>
+<script>
+// Show garage notice for logged-in users
+document.addEventListener('DOMContentLoaded', async () => {
+    if (typeof Auth !== 'undefined') {
+        const user = await Auth.getUser();
+        if (user) {
+            document.getElementById('garage-notice').style.display = 'flex';
+        }
+    }
+});
+</script>
