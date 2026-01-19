@@ -7,11 +7,29 @@
 - 414 torque specs indexed
 - Full-text search across all content
 - 4 tools: Invoice Creator, Build Cost Calculator, Maintenance Tracker, Restoration Checklist
+- Newsletter signup on homepage (Formspree-ready)
 - Mobile responsive, dark mode, print-friendly
 
 ---
 
+## Quick Actions (Manual Steps)
+
+- [ ] **Activate Newsletter Signup**
+  1. Sign up at [formspree.io](https://formspree.io) (free tier: 50 submissions/month)
+  2. Create a new form
+  3. Copy your form ID (e.g., `xyzabc123`)
+  4. Replace `YOUR_FORM_ID` in `src/index.njk` line 50
+  5. Commit and push
+
+---
+
 ## Completed
+
+- [x] **Newsletter Signup Form** - Homepage after stats bar
+  - Formspree integration (just needs form ID)
+  - "Free Updates" badge with orange accent
+  - Theme-aware design (light/dark mode)
+  - Mobile responsive
 
 - [x] **Restoration Checklist** - Embedded in each vehicle page
   - 12 system categories with 100+ common items
@@ -42,7 +60,6 @@
 ## Priority 2: Polish & Production
 
 - [ ] Minify CSS/JS for production
-- [ ] Newsletter signup form
 - [ ] Image optimization pipeline
 
 ---
