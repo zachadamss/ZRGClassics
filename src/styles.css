@@ -7576,6 +7576,47 @@ nav ul li.dropdown.touch-open .dropdown-menu {
     color: var(--gulf-orange);
 }
 
+/* Profile Edit Form (inline in dashboard) */
+.profile-edit-form {
+    margin-top: 1rem;
+}
+
+.profile-edit-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.profile-edit-form label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.profile-edit-form input,
+.profile-edit-form textarea {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.profile-edit-form input:focus,
+.profile-edit-form textarea:focus {
+    outline: none;
+    border-color: var(--gulf-blue);
+    box-shadow: 0 0 0 2px rgba(125, 207, 234, 0.2);
+}
+
+.profile-edit-form .form-actions {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: flex-end;
+    margin-top: 1.25rem;
+}
+
 /* Nav Auth Links */
 .nav-auth {
     display: flex;
