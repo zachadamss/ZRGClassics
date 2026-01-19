@@ -77,7 +77,8 @@ breadcrumbs:
             {% for key in frontEngine %}
             {% set vehicle = vehicles[key] %}
             <a href="/resources/porsche/{{ key }}/" class="vehicle-card">
-                <div class="vehicle-card-image" style="{% if vehicle.heroImage %}background-image: url('{{ vehicle.heroImage }}'){% endif %}">
+                <div class="vehicle-card-image">
+                    {% if vehicle.heroImage %}<img src="{{ vehicle.heroImage }}" alt="{{ vehicle.fullName }} {{ vehicle.years }}" loading="lazy">{% endif %}
                 </div>
                 <div class="vehicle-card-content">
                     <h4>{{ vehicle.model }}</h4>
@@ -99,7 +100,8 @@ breadcrumbs:
             {% for key in airCooled %}
             {% set vehicle = vehicles[key] %}
             <a href="/resources/porsche/{{ key }}/" class="vehicle-card">
-                <div class="vehicle-card-image" style="{% if vehicle.heroImage %}background-image: url('{{ vehicle.heroImage }}'){% endif %}">
+                <div class="vehicle-card-image">
+                    {% if vehicle.heroImage %}<img src="{{ vehicle.heroImage }}" alt="{{ vehicle.fullName }} {{ vehicle.years }}" loading="lazy">{% endif %}
                 </div>
                 <div class="vehicle-card-content">
                     <h4>{{ vehicle.model }}</h4>
@@ -121,7 +123,8 @@ breadcrumbs:
             {% for key in waterCooled911 %}
             {% set vehicle = vehicles[key] %}
             <a href="/resources/porsche/{{ key }}/" class="vehicle-card">
-                <div class="vehicle-card-image" style="{% if vehicle.heroImage %}background-image: url('{{ vehicle.heroImage }}'){% endif %}">
+                <div class="vehicle-card-image">
+                    {% if vehicle.heroImage %}<img src="{{ vehicle.heroImage }}" alt="{{ vehicle.fullName }} {{ vehicle.years }}" loading="lazy">{% endif %}
                 </div>
                 <div class="vehicle-card-content">
                     <h4>{{ vehicle.model }}</h4>
@@ -143,7 +146,8 @@ breadcrumbs:
             {% for key in midEngine %}
             {% set vehicle = vehicles[key] %}
             <a href="/resources/porsche/{{ key }}/" class="vehicle-card">
-                <div class="vehicle-card-image" style="{% if vehicle.heroImage %}background-image: url('{{ vehicle.heroImage }}'){% endif %}">
+                <div class="vehicle-card-image">
+                    {% if vehicle.heroImage %}<img src="{{ vehicle.heroImage }}" alt="{{ vehicle.fullName }} {{ vehicle.years }}" loading="lazy">{% endif %}
                 </div>
                 <div class="vehicle-card-content">
                     <h4>{{ vehicle.model }}</h4>

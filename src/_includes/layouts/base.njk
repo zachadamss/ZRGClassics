@@ -54,6 +54,86 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="/styles.css">
+
+    <!-- JSON-LD Structured Data -->
+    {# Organization Schema - Sitewide #}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "{{ site.name }}",
+        "url": "{{ site.url }}",
+        "logo": "{{ site.url }}/images/logo.jpg",
+        "description": "{{ site.description }}",
+        "sameAs": [
+            {% if site.social.facebook != "#" %}"{{ site.social.facebook }}",{% endif %}
+            {% if site.social.twitter != "#" %}"https://twitter.com/{{ site.twitterHandle | replace('@', '') }}",{% endif %}
+            {% if site.social.instagram != "#" %}"{{ site.social.instagram }}"{% endif %}
+        ]
+    }
+    </script>
+
+    {# WebSite Schema with SearchAction #}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "{{ site.name }}",
+        "url": "{{ site.url }}",
+        "description": "{{ site.description }}",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "{{ site.url }}/search/?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+    {# Breadcrumb Schema - If breadcrumbs defined #}
+    {% if breadcrumbs and breadcrumbs.length > 0 %}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {% for crumb in breadcrumbs %}
+            {
+                "@type": "ListItem",
+                "position": {{ loop.index }},
+                "name": "{{ crumb.label }}",
+                "item": "{% if crumb.url %}{{ site.url }}{{ crumb.url }}{% else %}{{ site.url }}{{ page.url }}{% endif %}"
+            }{% if not loop.last %},{% endif %}
+            {% endfor %}
+        ]
+    }
+    </script>
+    {% endif %}
+
+    {# FAQ Schema - For vehicle pages with issues #}
+    {% if vehicle and vehicles[vehicle] and vehicles[vehicle].issues and vehicles[vehicle].issues.length > 0 %}
+    {% set vData = vehicles[vehicle] %}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {% for issue in vData.issues %}{% if loop.index <= 10 %}
+            {
+                "@type": "Question",
+                "name": "What is the {{ issue.title }} issue on the {{ vData.fullName }}?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "{{ issue.description | replace('"', '\\"') | replace('\n', ' ') }} Symptoms include: {{ issue.symptoms | replace('"', '\\"') }}. Typical repair cost: DIY {{ issue.repairCosts.diy }}, Shop {{ issue.repairCosts.shop }}."
+                }
+            }{% if loop.index < 10 and not loop.last %},{% endif %}
+            {% endif %}{% endfor %}
+        ]
+    }
+    </script>
+    {% endif %}
 </head>
 <body>
     {% include "partials/header.njk" %}

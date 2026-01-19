@@ -71,7 +71,8 @@ breadcrumbs:
         {% for key in vehicleList.bmw %}
         {% set vehicle = vehicles[key] %}
         <a href="/resources/bmw/{{ key }}/" class="vehicle-card">
-            <div class="vehicle-card-image" style="{% if vehicle.heroImage %}background-image: url('{{ vehicle.heroImage }}'){% endif %}">
+            <div class="vehicle-card-image">
+                {% if vehicle.heroImage %}<img src="{{ vehicle.heroImage }}" alt="{{ vehicle.fullName }} {{ vehicle.years }}" loading="lazy">{% endif %}
             </div>
             <div class="vehicle-card-content">
                 <h4>{{ vehicle.model }}</h4>
