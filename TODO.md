@@ -11,6 +11,8 @@
 - User authentication with Supabase (login, register, password reset)
 - Community Forums with categories, threads, replies, search
 - My Garage - Personal vehicle management with DB-synced restoration & maintenance tracking
+- Community Resources for each vehicle (YouTube channels, forums, Facebook groups, websites)
+- Comprehensive Parts Suppliers with categorized listings (OEM, performance, general, specialty, used, tools)
 - Hero images for all 17 vehicles (optimized WebP + responsive sizes)
 - Mobile responsive with touch-friendly UI (44px tap targets, card layouts, 480px breakpoint)
 - Dark mode with theme-aware button styling
