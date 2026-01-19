@@ -143,6 +143,9 @@
     {% include "partials/footer.njk" %}
 
     <script src="/script.js"></script>
+    <!-- Supabase Auth (loads on all pages for nav state) -->
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="/js/supabase.js"></script>
     {% if extraScripts %}
     {% for script in extraScripts %}
     <script src="/{{ script }}"></script>
