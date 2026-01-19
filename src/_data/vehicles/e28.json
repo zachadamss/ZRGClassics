@@ -395,36 +395,554 @@
   ],
   "guides": [
     {
-      "id": "m30-rebuild",
-      "title": "M30 Engine Rebuild Guide",
-      "description": "Complete teardown and rebuild of the legendary M30 big-six engine with machine work specifications.",
-      "difficulty": "Advanced",
-      "time": "40+ hours",
-      "status": "coming-soon"
-    },
-    {
       "id": "suspension-refresh",
-      "title": "Front Suspension Overhaul",
-      "description": "Complete front suspension refresh including all bushings, ball joints, and steering components.",
+      "title": "Complete Suspension Refresh",
+      "description": "Full front and rear suspension rebuild for the E28's sophisticated multi-link design, addressing 40+ years of bushing deterioration and wear.",
       "difficulty": "Intermediate",
-      "time": "12-16 hours",
-      "status": "coming-soon"
+      "time": "14-18 hours",
+      "cost": "$600-1,200",
+      "interval": "One-time restoration for aged vehicles",
+      "laborHours": "12-16 hours shop time",
+      "parts": [
+        {
+          "name": "Front Control Arm Bushing Kit",
+          "oem": "31121139456, 31129059288",
+          "aftermarket": "Lemforder, Powerflex PFF5-301/302",
+          "cost": "$80-180"
+        },
+        {
+          "name": "Front Thrust Arm Bushing (Pair)",
+          "oem": "31121136532",
+          "aftermarket": "Lemforder, Meyle HD",
+          "cost": "$40-80"
+        },
+        {
+          "name": "Front Sway Bar Bushings",
+          "oem": "31351127414",
+          "aftermarket": "Lemforder, Powerflex",
+          "cost": "$20-40"
+        },
+        {
+          "name": "Front Sway Bar End Links (Pair)",
+          "oem": "31351127413",
+          "aftermarket": "Lemforder, Febi",
+          "cost": "$30-60"
+        },
+        {
+          "name": "Tie Rod Assembly (Left)",
+          "oem": "32111125186",
+          "aftermarket": "Lemforder 10734 01",
+          "cost": "$40-70"
+        },
+        {
+          "name": "Tie Rod Assembly (Right)",
+          "oem": "32111125187",
+          "aftermarket": "Lemforder 10735 01",
+          "cost": "$40-70"
+        },
+        {
+          "name": "Idler Arm",
+          "oem": "32111127441",
+          "aftermarket": "Lemforder, aftermarket",
+          "cost": "$60-120"
+        },
+        {
+          "name": "Strut Mount (Front Pair)",
+          "oem": "31331139438",
+          "aftermarket": "Lemforder 10123 02, Sachs",
+          "cost": "$50-100"
+        },
+        {
+          "name": "Rear Subframe Bushing Set",
+          "oem": "33311125896",
+          "aftermarket": "Lemforder, Powerflex PFR5-301",
+          "cost": "$80-160"
+        },
+        {
+          "name": "Rear Trailing Arm Bushing",
+          "oem": "33322283513",
+          "aftermarket": "Lemforder, Meyle",
+          "cost": "$30-60"
+        }
+      ],
+      "tools": [
+        "Floor jack and jack stands (4)",
+        "17mm, 19mm, 21mm sockets and wrenches",
+        "Ball joint separator/pickle fork",
+        "Tie rod end puller",
+        "Bushing press set (or hydraulic press)",
+        "Breaker bar (24+ inches)",
+        "Torque wrench (ft-lb range)",
+        "Penetrating oil (PB Blaster)",
+        "Dead blow hammer",
+        "Spring compressor",
+        "Alignment specs printout"
+      ],
+      "steps": [
+        "Raise vehicle and support on jack stands at all four corners - vehicle must be completely level.",
+        "Remove all wheels and photograph suspension geometry for reference.",
+        "Soak all suspension fasteners with penetrating oil - E28 bolts are often severely corroded.",
+        "Begin with steering components - remove tie rod end nuts (19mm) using tie rod puller.",
+        "Remove idler arm mounting bolts and extract idler arm from steering box side.",
+        "Remove center drag link if necessary for full steering overhaul.",
+        "For front suspension: remove sway bar end link nuts (17mm), then sway bar bracket bolts.",
+        "Remove lower control arm pivot bolt (21mm at frame) - may require heat for seized bolts.",
+        "Support control arm with jack, remove ball joint from steering knuckle (taper fit).",
+        "Remove control arm and press out old bushings using bushing press set.",
+        "Press new bushings into control arm - note orientation for eccentric bushings.",
+        "Remove thrust arm bolts at both ends and replace bushings similarly.",
+        "For struts: mark camber position, remove three 13mm upper mount nuts, remove pinch bolt.",
+        "With strut removed, use spring compressor to disassemble and replace mount/bearing.",
+        "For rear suspension: support trailing arm with jack before removing bolts.",
+        "Remove trailing arm pivot bolt and press new bushing into arm.",
+        "Lower rear subframe slightly to access and replace subframe bushings.",
+        "Reassemble all components - torque control arm to subframe 57-65 ft-lbs at ride height.",
+        "Torque tie rod end nuts to 25-33 ft-lbs, use new cotter pins.",
+        "Install wheels and lower vehicle - bounce corners to settle suspension.",
+        "Professional alignment is mandatory - E28 alignment is sensitive and requires experience."
+      ],
+      "tips": [
+        "E28 suspension bolts are often severely seized after 40 years - budget extra time for removal.",
+        "Heat from a propane torch often helps free stuck bolts - be careful near fuel lines.",
+        "The E28 uses an idler arm in the steering - don't overlook this wear item.",
+        "Polyurethane bushings last longer but transmit more NVH than rubber.",
+        "Mark eccentric bolt positions before removal to get close to original alignment.",
+        "Consider upgrading to Bilstein HD or Sport shocks while components are accessible."
+      ],
+      "warnings": [
+        "E28 ball joints are pressed tapers - never strike the joint directly, use proper puller.",
+        "Spring compressors can be lethal if improperly used - follow tool instructions exactly.",
+        "Heat-treated fasteners should be replaced with new hardware, not reused.",
+        "Rear subframe is heavy - ensure adequate support before loosening mounting bolts.",
+        "Never reuse cotter pins - always install new pins after torquing castle nuts."
+      ],
+      "references": [
+        {
+          "name": "MyE28.com Suspension Forum",
+          "url": "https://forums.mye28.com/viewforum.php?f=21"
+        },
+        {
+          "name": "Ireland Engineering E28 Suspension Parts",
+          "url": "https://www.iemotorsport.com/bmw/e28/"
+        },
+        {
+          "name": "Bimmerforums E28 Tech Section",
+          "url": "https://www.bimmerforums.com/forum/forumdisplay.php?21-E28-1982-1988"
+        }
+      ]
     },
     {
       "id": "rust-repair",
-      "title": "Rust Repair and Prevention",
-      "description": "Identifying common rust areas and proper repair techniques for structural and cosmetic rust.",
+      "title": "Rust Prevention and Repair",
+      "description": "Comprehensive guide to identifying, treating, and preventing rust on the E28, covering all known trouble spots from fenders to floor pans.",
       "difficulty": "Advanced",
-      "time": "Varies",
-      "status": "coming-soon"
+      "time": "10-40+ hours",
+      "cost": "$200-3,000+",
+      "interval": "Inspect annually, repair as discovered",
+      "laborHours": "Varies significantly by severity",
+      "parts": [
+        {
+          "name": "Front Fender (Left)",
+          "oem": "41351872063",
+          "aftermarket": "Aftermarket reproduction",
+          "cost": "$200-400"
+        },
+        {
+          "name": "Front Fender (Right)",
+          "oem": "41351872064",
+          "aftermarket": "Aftermarket reproduction",
+          "cost": "$200-400"
+        },
+        {
+          "name": "Rocker Panel (Left)",
+          "oem": "41101884485",
+          "aftermarket": "Klokkerholm, aftermarket",
+          "cost": "$100-250"
+        },
+        {
+          "name": "Rocker Panel (Right)",
+          "oem": "41101884486",
+          "aftermarket": "Klokkerholm, aftermarket",
+          "cost": "$100-250"
+        },
+        {
+          "name": "Floor Pan Repair Section",
+          "oem": "41101934765",
+          "aftermarket": "Universal sheet metal",
+          "cost": "$80-200"
+        },
+        {
+          "name": "Jack Point Repair Plate",
+          "oem": "—",
+          "aftermarket": "Fabricated or aftermarket",
+          "cost": "$30-80"
+        },
+        {
+          "name": "Rear Wheel Arch",
+          "oem": "41351872065/66",
+          "aftermarket": "Klokkerholm, aftermarket",
+          "cost": "$100-300"
+        },
+        {
+          "name": "Battery Tray",
+          "oem": "41141882977",
+          "aftermarket": "Fabricated or NOS",
+          "cost": "$50-150"
+        },
+        {
+          "name": "POR-15 Rust Preventive Coating",
+          "oem": "—",
+          "aftermarket": "POR-15 quart",
+          "cost": "$35-50"
+        },
+        {
+          "name": "Fluid Film Rust Preventive",
+          "oem": "—",
+          "aftermarket": "Fluid Film 11.75oz can",
+          "cost": "$12-18"
+        }
+      ],
+      "tools": [
+        "Angle grinder with cut-off and flap discs",
+        "MIG welder (180A minimum recommended)",
+        "Wire wheel and cup brush for drill",
+        "Spot weld cutter drill bit",
+        "Aviation snips (left, right, straight)",
+        "Body hammer and dolly set",
+        "Cleco fasteners and pliers",
+        "Sandpaper (60-320 grit assortment)",
+        "Inspection mirror and flashlight",
+        "Primer (epoxy and high-build)",
+        "Safety glasses and full-face respirator",
+        "Welding helmet and gloves",
+        "Fire extinguisher (ABC type)"
+      ],
+      "steps": [
+        "Perform thorough inspection of known E28 rust areas - this determines scope of work.",
+        "Key inspection points: rocker panels (tap with screwdriver), jack points, front fender lips, wheel arches, trunk floor, battery tray, windshield frame, door bottoms.",
+        "Remove interior carpets and check floor pans from inside - rust often hides under padding.",
+        "Check A-pillars at windshield base and behind kick panels - structural rust is critical.",
+        "For surface rust: wire brush to bare metal, treat with rust converter, prime and paint.",
+        "For rust-through: cut out affected metal at least 1 inch into clean metal all around.",
+        "Create cardboard template of cut section, transfer to new sheet metal.",
+        "Cut patch to fit with 1/8 inch gap for welding, dress edges smooth.",
+        "Use Clecos to temporarily hold patch in position during fit-up.",
+        "Tack weld corners, then stitch weld in 1-inch segments, letting each cool.",
+        "For large panels (rocker, fender): drill out spot welds on original, fit new panel.",
+        "Grind welds smooth and check for warping - planish if needed.",
+        "Treat all bare metal and weld areas with weld-through primer.",
+        "Apply POR-15 or similar to inaccessible areas and inner surfaces.",
+        "Seal all welded joints with automotive seam sealer.",
+        "Apply epoxy primer to repaired areas, then high-build primer.",
+        "Block sand primer (220-320 grit) until smooth.",
+        "Apply Fluid Film to all interior cavities, rocker interiors, and frame rails.",
+        "Touch up or full respray as needed to match original finish."
+      ],
+      "tips": [
+        "E28s rust from inside out - by the time you see bubbles, damage is extensive underneath.",
+        "Jack point rust is structural - a soft jack point means the rocker is compromised.",
+        "Battery tray rust is caused by acid - neutralize with baking soda before repair.",
+        "The E28 windshield frame rusts from trapped water - check behind trim carefully.",
+        "POR-15 must be topcoated - UV exposure causes chalking and failure.",
+        "Treat rocker panel interiors with Fluid Film annually after repair.",
+        "NOS fenders occasionally appear on eBay - monitor listings for good original panels."
+      ],
+      "warnings": [
+        "Always wear a P100 respirator when grinding rust - particles are hazardous.",
+        "Check for fuel lines and brake lines before cutting or welding any panels.",
+        "Have a fire extinguisher immediately accessible when welding near interior.",
+        "Structural rust near suspension mounts is a safety issue - consider professional repair.",
+        "Avoid mixing metals (aluminum patches on steel) as this accelerates corrosion.",
+        "Never grind or weld galvanized metal without proper ventilation - zinc fumes are toxic."
+      ],
+      "references": [
+        {
+          "name": "MyE28.com Rust Repair Registry",
+          "url": "https://forums.mye28.com/viewforum.php?f=29"
+        },
+        {
+          "name": "E28 Goodies Technical Articles",
+          "url": "https://www.e28goodies.com/"
+        },
+        {
+          "name": "Eastwood Welding and Metalwork Guide",
+          "url": "https://www.eastwood.com/welding-tips-and-training"
+        }
+      ]
     },
     {
       "id": "electrical-restoration",
       "title": "Electrical System Restoration",
-      "description": "Diagnosing and repairing common electrical issues, ground points, and instrument cluster restoration.",
+      "description": "Complete electrical system overhaul addressing the E28's aging wiring, corroded grounds, failing gauges, and deteriorated switches.",
       "difficulty": "Intermediate",
-      "time": "Varies",
-      "status": "coming-soon"
+      "time": "12-20 hours",
+      "cost": "$200-600",
+      "interval": "One-time restoration, then maintenance",
+      "laborHours": "10-16 hours shop time",
+      "parts": [
+        {
+          "name": "Main Relay (DME/LKM)",
+          "oem": "12631709557",
+          "aftermarket": "Bosch 0332014112",
+          "cost": "$40-70"
+        },
+        {
+          "name": "Fuel Pump Relay",
+          "oem": "12631735424",
+          "aftermarket": "Bosch, Stribel",
+          "cost": "$25-50"
+        },
+        {
+          "name": "Auxiliary Fan Relay",
+          "oem": "61311378636",
+          "aftermarket": "Bosch, aftermarket",
+          "cost": "$20-40"
+        },
+        {
+          "name": "Ground Point Ring Terminals (25 pack)",
+          "oem": "—",
+          "aftermarket": "Quality copper ring terminals",
+          "cost": "$10-20"
+        },
+        {
+          "name": "Headlight Switch",
+          "oem": "61311372043",
+          "aftermarket": "URO, aftermarket",
+          "cost": "$30-60"
+        },
+        {
+          "name": "Turn Signal/Wiper Stalk",
+          "oem": "61311368056",
+          "aftermarket": "Aftermarket, used OEM",
+          "cost": "$60-150"
+        },
+        {
+          "name": "Instrument Cluster Voltage Regulator",
+          "oem": "—",
+          "aftermarket": "Rebuilt units available",
+          "cost": "$40-80"
+        },
+        {
+          "name": "Instrument Cluster Capacitor Kit",
+          "oem": "—",
+          "aftermarket": "Electronic supply houses",
+          "cost": "$10-25"
+        },
+        {
+          "name": "Window Switch (Driver)",
+          "oem": "61311380575",
+          "aftermarket": "Aftermarket, used OEM",
+          "cost": "$40-80"
+        },
+        {
+          "name": "Fuse Box Contact Cleaner",
+          "oem": "—",
+          "aftermarket": "DeoxIT D5, CRC QD Contact",
+          "cost": "$10-20"
+        }
+      ],
+      "tools": [
+        "Multimeter with continuity function",
+        "Wire strippers and crimpers",
+        "Soldering iron and solder",
+        "Heat shrink tubing assortment",
+        "Dielectric grease",
+        "Contact cleaner spray",
+        "Small flathead screwdrivers",
+        "Trim removal tools",
+        "Wire brush (small brass)",
+        "Torx driver set (T15, T20, T25)",
+        "Test light",
+        "Wire loom and electrical tape"
+      ],
+      "steps": [
+        "Disconnect battery and let system discharge for 10 minutes.",
+        "Begin with ground point restoration - locate all chassis grounds (multiple locations).",
+        "E28 grounds: engine to firewall, battery to chassis, instrument cluster ground, tail light grounds.",
+        "Remove each ground connection, wire brush contact surface to bare metal.",
+        "Sand ring terminal or replace with new, apply dielectric grease, torque securely.",
+        "Clean fuse box contacts with contact cleaner - spray each socket, insert/remove fuses.",
+        "Inspect all fuses for corrosion or heat damage - replace suspect fuses.",
+        "Remove and test all relays - clean relay socket contacts thoroughly.",
+        "Replace main relay and fuel pump relay if original - common failure items.",
+        "For instrument cluster repair: remove cluster (4 screws), disconnect all connectors.",
+        "Open cluster housing and inspect circuit board for cracked solder joints.",
+        "Re-solder any cracked joints, especially around voltage regulator and gauge connections.",
+        "Replace electrolytic capacitors if gauges are erratic - match values exactly.",
+        "Clean all cluster connector pins with contact cleaner before reinstallation.",
+        "Test headlight switch operation - replace if contacts are worn or burnt.",
+        "Inspect wiring harness for brittle insulation - common behind dashboard and in engine bay.",
+        "Wrap damaged harness sections with quality electrical tape or wire loom.",
+        "Reconnect battery and test all systems systematically.",
+        "Drive test: verify all lights, signals, wipers, gauges, and accessories function."
+      ],
+      "tips": [
+        "E28 electrical issues are usually ground-related - always check grounds first.",
+        "The check control unit (OBC) often fails - rebuilders can repair these.",
+        "Dim headlights are often caused by corroded headlight switch contacts.",
+        "The fuel pump relay is a common no-start culprit - carry a spare.",
+        "Green corrosion on copper = moisture intrusion - find and fix the water leak.",
+        "Don't overlook the engine ground strap - it's critical and often forgotten."
+      ],
+      "warnings": [
+        "Always disconnect battery before electrical work - E28 wiring can short easily.",
+        "Never probe SRS (airbag) wiring if equipped - risk of deployment.",
+        "Dielectric grease on contacts only, not inside connectors - it insulates, not conducts.",
+        "Replace fuses with correct amperage only - higher amperage can cause fires.",
+        "Brittle wiring is a fire hazard - repair or replace deteriorated sections."
+      ],
+      "references": [
+        {
+          "name": "E28 Goodies Electrical Guides",
+          "url": "https://www.e28goodies.com/"
+        },
+        {
+          "name": "MyE28.com Electrical Forum",
+          "url": "https://forums.mye28.com/viewforum.php?f=20"
+        },
+        {
+          "name": "BMW E28 Wiring Diagrams",
+          "url": "https://www.bimmerforums.com/forum/showthread.php?1537393-E28-Wiring-Diagrams"
+        }
+      ]
+    },
+    {
+      "id": "interior-restoration",
+      "title": "Interior Restoration",
+      "description": "Complete interior refresh addressing the E28's common deterioration issues including cracked dashboards, worn leather, sagging headliners, and deteriorated trim.",
+      "difficulty": "Intermediate",
+      "time": "15-30 hours",
+      "cost": "$300-1,500",
+      "interval": "One-time restoration",
+      "laborHours": "12-24 hours shop time",
+      "parts": [
+        {
+          "name": "Dashboard Cover/Cap",
+          "oem": "—",
+          "aftermarket": "Coverlay, DashSkin",
+          "cost": "$150-300"
+        },
+        {
+          "name": "Headliner Fabric (4 yards)",
+          "oem": "—",
+          "aftermarket": "OEM-match foam-backed material",
+          "cost": "$50-100"
+        },
+        {
+          "name": "Headliner Adhesive",
+          "oem": "—",
+          "aftermarket": "3M Super 77, Permatex 27828",
+          "cost": "$15-30"
+        },
+        {
+          "name": "Door Panel Insert (Set)",
+          "oem": "51411889823/24/25/26",
+          "aftermarket": "Recovered or used OEM",
+          "cost": "$100-300"
+        },
+        {
+          "name": "Leather Dye/Refinisher Kit",
+          "oem": "—",
+          "aftermarket": "Leatherique, SEM Color Coat",
+          "cost": "$50-100"
+        },
+        {
+          "name": "Seat Foam Cushion (Driver)",
+          "oem": "52101884855",
+          "aftermarket": "Recovered foam, aftermarket",
+          "cost": "$100-200"
+        },
+        {
+          "name": "Window Regulator (Front)",
+          "oem": "51321889258/59",
+          "aftermarket": "Aftermarket, rebuilt",
+          "cost": "$60-120"
+        },
+        {
+          "name": "Shift Boot (Manual)",
+          "oem": "25111220455",
+          "aftermarket": "Leather replicas",
+          "cost": "$40-80"
+        },
+        {
+          "name": "Carpet Set",
+          "oem": "—",
+          "aftermarket": "German Molded, Stock Interiors",
+          "cost": "$300-600"
+        },
+        {
+          "name": "Door Seal Set (Complete)",
+          "oem": "51711884149",
+          "aftermarket": "URO, aftermarket",
+          "cost": "$150-300"
+        }
+      ],
+      "tools": [
+        "Trim removal tools (plastic pry set)",
+        "Phillips and flathead screwdrivers",
+        "Torx driver set (T20, T25, T30)",
+        "Heat gun",
+        "Adhesive scraper/putty knife",
+        "Sandpaper (180-320 grit)",
+        "Masking tape and paper",
+        "Spray gun or rattle cans",
+        "Microfiber cloths",
+        "Leather cleaner and conditioner",
+        "Upholstery needle and thread",
+        "Foam brush set"
+      ],
+      "steps": [
+        "Document everything with photos before disassembly - helps with reassembly.",
+        "Remove seats (4 bolts each) and all carpeting to access and clean floor pans.",
+        "For dashboard restoration: remove dashboard completely if cracked beyond repair.",
+        "Option 1: Install dashboard cover/cap over original for clean appearance.",
+        "Option 2: Remove and recover original with flocked vinyl for authentic look.",
+        "For headliner: remove sun visors, dome light, A-pillar trim, grab handles, and rear trim.",
+        "Remove headliner board through rear door opening - flex carefully.",
+        "Strip all old fabric and deteriorated foam backing with scraper and wire brush.",
+        "Apply adhesive spray in sections, press new fabric starting from center.",
+        "Work outward stretching fabric taut - no wrinkles or air pockets.",
+        "Cut openings for lights and accessories after adhesive cures.",
+        "For leather seats: clean thoroughly with leather cleaner first.",
+        "Address cracks and wear with leather filler, sand smooth when dry.",
+        "Apply leather dye/refinisher in thin coats - multiple light coats.",
+        "Condition all leather after refinishing with quality conditioner.",
+        "Replace worn seat foam - driver's bolster typically needs attention.",
+        "For door panels: remove and clean or replace fabric inserts.",
+        "Re-glue loose vinyl and repair cracked trim pieces.",
+        "Replace all window felts and door seals for tight weathersealing.",
+        "Clean and detail all interior plastics with appropriate cleaner.",
+        "Reinstall all components in reverse order of removal."
+      ],
+      "tips": [
+        "E28 dashboards crack severely - caps are easier than full recovery.",
+        "Headliner adhesive sets fast in heat - work in cool, shaded conditions.",
+        "Match leather dye color carefully - test on hidden area first.",
+        "The E28 center console wood trim can be refinished if veneer is intact.",
+        "Original seat patterns are available from upholstery suppliers.",
+        "Spray leather dye, don't brush - brushing leaves streaks."
+      ],
+      "warnings": [
+        "Work in well-ventilated area when using adhesives and dyes.",
+        "Headliner adhesive is highly flammable - no sparks or flames nearby.",
+        "Dashboard removal requires patience - many hidden fasteners.",
+        "Never pull on headliner fabric after positioning - it will stretch and distort.",
+        "Test all chemicals on hidden areas first - some plastics react badly."
+      ],
+      "references": [
+        {
+          "name": "MyE28.com Interior Restoration",
+          "url": "https://forums.mye28.com/viewforum.php?f=23"
+        },
+        {
+          "name": "Coverlay Dashboard Covers",
+          "url": "https://www.coverlay.com/"
+        },
+        {
+          "name": "Leatherique Restoration Products",
+          "url": "https://www.leatherique.com/"
+        }
+      ]
     }
   ],
   "suppliers": {

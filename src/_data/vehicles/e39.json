@@ -415,36 +415,543 @@
   ],
   "guides": [
     {
-      "id": "cooling-system-overhaul",
-      "title": "Complete Cooling System Overhaul",
-      "description": "Full cooling system refresh including radiator, water pump, hoses, thermostat, and expansion tank.",
-      "difficulty": "Intermediate",
-      "time": "4-6 hours",
-      "status": "coming-soon"
-    },
-    {
-      "id": "vanos-rebuild",
-      "title": "VANOS Seal Replacement",
-      "description": "Step-by-step guide to rebuilding the dual-VANOS system on M52TU and M54 engines.",
-      "difficulty": "Intermediate",
-      "time": "4-6 hours",
-      "status": "coming-soon"
-    },
-    {
       "id": "suspension-refresh",
-      "title": "Front Suspension Refresh",
-      "description": "Complete front suspension overhaul including control arms, thrust arms, and tie rods.",
+      "title": "Complete Suspension Refresh",
+      "description": "Full front and rear suspension rebuild addressing the E39's multi-link design including control arms, thrust arms, tie rods, and rear integral links for restored handling precision.",
       "difficulty": "Intermediate",
-      "time": "8-12 hours",
-      "status": "coming-soon"
+      "time": "12-18 hours",
+      "cost": "$700-1,400",
+      "interval": "Every 80,000-120,000 miles",
+      "laborHours": "10-14 hours shop time",
+      "parts": [
+        {
+          "name": "Front Lower Control Arm (Left)",
+          "oem": "31126758519",
+          "aftermarket": "Lemforder 27044 01, Meyle HD",
+          "cost": "$55-95"
+        },
+        {
+          "name": "Front Lower Control Arm (Right)",
+          "oem": "31126758520",
+          "aftermarket": "Lemforder 27045 01, Meyle HD",
+          "cost": "$55-95"
+        },
+        {
+          "name": "Front Thrust Arm (Tension Strut) Left",
+          "oem": "31126774825",
+          "aftermarket": "Lemforder 27064 01, Meyle HD",
+          "cost": "$55-95"
+        },
+        {
+          "name": "Front Thrust Arm (Tension Strut) Right",
+          "oem": "31126774826",
+          "aftermarket": "Lemforder 27065 01, Meyle HD",
+          "cost": "$55-95"
+        },
+        {
+          "name": "Tie Rod Assembly (Pair)",
+          "oem": "32106774335",
+          "aftermarket": "Lemforder, Meyle",
+          "cost": "$80-160"
+        },
+        {
+          "name": "Front Strut Mount (Pair)",
+          "oem": "31336752735",
+          "aftermarket": "Lemforder, Sachs",
+          "cost": "$60-120"
+        },
+        {
+          "name": "Front Sway Bar End Link (Pair)",
+          "oem": "31351095694",
+          "aftermarket": "Lemforder, Meyle",
+          "cost": "$30-60"
+        },
+        {
+          "name": "Rear Integral Link Set",
+          "oem": "33326767831, 33321094209",
+          "aftermarket": "Lemforder, Meyle HD",
+          "cost": "$200-400"
+        },
+        {
+          "name": "Rear Trailing Arm Bushing",
+          "oem": "33326770824",
+          "aftermarket": "Lemforder, Powerflex",
+          "cost": "$40-80"
+        },
+        {
+          "name": "Rear Subframe Bushing Set",
+          "oem": "33316770454",
+          "aftermarket": "Lemforder, Powerflex PFR5-4610",
+          "cost": "$80-160"
+        }
+      ],
+      "tools": [
+        "Floor jack and jack stands (4)",
+        "18mm, 19mm, 21mm sockets and wrenches",
+        "Ball joint separator/pickle fork",
+        "Tie rod end puller",
+        "Breaker bar (24+ inches)",
+        "Torque wrench (ft-lb range)",
+        "Penetrating oil (PB Blaster)",
+        "Dead blow hammer",
+        "Spring compressor",
+        "Bushing press set (for trailing arm bushings)",
+        "Alignment specs printout"
+      ],
+      "steps": [
+        "Raise vehicle and support on jack stands at all four corners - must be level.",
+        "Remove all wheels and photograph suspension for reference before disassembly.",
+        "Soak all suspension fasteners with penetrating oil - E39 bolts can be seized.",
+        "Begin with front suspension - remove sway bar end links (17mm nuts).",
+        "Remove tie rod end nut (19mm) and separate from steering knuckle using puller.",
+        "Remove lower control arm ball joint from knuckle - use separator tool.",
+        "Remove control arm bracket bolts from subframe (18mm) and remove arm.",
+        "Remove thrust arm bolts - 74 ft-lbs at subframe, 59 ft-lbs at knuckle.",
+        "For struts: mark camber position, remove three upper mount nuts (13mm), remove pinch bolt (60 ft-lbs).",
+        "Use spring compressor to disassemble strut and replace mount/bearing.",
+        "Install new front components - torque control arm to 57 ft-lbs at ride height.",
+        "Torque thrust arm to subframe 74 ft-lbs, to knuckle 59 ft-lbs.",
+        "Torque tie rod end to 48 ft-lbs.",
+        "For rear suspension: support trailing arm before removing bolts.",
+        "Remove and replace rear integral links - upper and lower camber arms.",
+        "Remove trailing arm bushing bolt and press new bushing into arm.",
+        "Lower rear subframe slightly to access and replace subframe bushings if needed.",
+        "Reassemble rear components - torque all at ride height.",
+        "Install wheels and lower vehicle - bounce corners to settle suspension.",
+        "Professional 4-wheel alignment is mandatory immediately after suspension work."
+      ],
+      "tips": [
+        "E39 thrust arm bushings are the most common cause of brake shimmy - replace early.",
+        "The E39 rear uses 'integral links' (upper and lower camber arms) that affect alignment.",
+        "Meyle HD bushings are stiffer and longer-lasting than OEM rubber.",
+        "Mark eccentric bolt positions before removal for close-to-stock alignment.",
+        "Consider upgrading to sport-spec shocks while suspension is apart."
+      ],
+      "warnings": [
+        "Thrust arm bushing failure causes dangerous brake shimmy - don't defer this repair.",
+        "Spring compressors are dangerous - follow tool instructions exactly.",
+        "Rear subframe is heavy - support adequately before loosening mounting bolts.",
+        "Never strike ball joints directly - use proper separator tools.",
+        "E39 rear subframe bolts are stretch bolts - replace with new hardware."
+      ],
+      "references": [
+        {
+          "name": "Bimmerforums E39 Suspension Guide",
+          "url": "https://www.bimmerforums.com/forum/forumdisplay.php?f=53"
+        },
+        {
+          "name": "Turner Motorsport E39 Parts",
+          "url": "https://www.turnermotorsport.com/BMW-E39-Parts"
+        },
+        {
+          "name": "FCP Euro E39 Suspension",
+          "url": "https://www.fcpeuro.com/BMW-E39"
+        }
+      ]
     },
     {
-      "id": "m62-timing-guides",
-      "title": "M62 Timing Chain Guide Replacement",
-      "description": "Comprehensive guide to replacing timing chain guides on the M62 V8.",
+      "id": "rust-repair",
+      "title": "Rust Prevention and Repair",
+      "description": "Comprehensive rust inspection and repair guide for the E39, covering rocker panels, wheel arches, jack points, trunk floor, and subframe mounting areas.",
       "difficulty": "Advanced",
-      "time": "16-24 hours",
-      "status": "coming-soon"
+      "time": "10-30+ hours",
+      "cost": "$200-2,000+",
+      "interval": "Inspect annually, repair as discovered",
+      "laborHours": "Varies by severity",
+      "parts": [
+        {
+          "name": "Front Fender (Left)",
+          "oem": "41358240405",
+          "aftermarket": "Aftermarket reproduction",
+          "cost": "$180-350"
+        },
+        {
+          "name": "Front Fender (Right)",
+          "oem": "41358240406",
+          "aftermarket": "Aftermarket reproduction",
+          "cost": "$180-350"
+        },
+        {
+          "name": "Rocker Panel (Left)",
+          "oem": "41218238249",
+          "aftermarket": "Klokkerholm, aftermarket",
+          "cost": "$100-220"
+        },
+        {
+          "name": "Rocker Panel (Right)",
+          "oem": "41218238250",
+          "aftermarket": "Klokkerholm, aftermarket",
+          "cost": "$100-220"
+        },
+        {
+          "name": "Rear Wheel Arch (Left)",
+          "oem": "41358195617",
+          "aftermarket": "Klokkerholm, aftermarket",
+          "cost": "$80-180"
+        },
+        {
+          "name": "Rear Wheel Arch (Right)",
+          "oem": "41358195618",
+          "aftermarket": "Klokkerholm, aftermarket",
+          "cost": "$80-180"
+        },
+        {
+          "name": "Trunk Floor Section",
+          "oem": "41128185101",
+          "aftermarket": "Fabricated or aftermarket",
+          "cost": "$120-280"
+        },
+        {
+          "name": "Jack Point Reinforcement",
+          "oem": "—",
+          "aftermarket": "Fabricated or aftermarket",
+          "cost": "$30-80"
+        },
+        {
+          "name": "POR-15 Rust Preventive",
+          "oem": "—",
+          "aftermarket": "POR-15 quart",
+          "cost": "$35-50"
+        },
+        {
+          "name": "Fluid Film Rust Preventive",
+          "oem": "—",
+          "aftermarket": "Fluid Film spray can",
+          "cost": "$12-18"
+        }
+      ],
+      "tools": [
+        "Angle grinder with cut-off and flap discs",
+        "MIG welder (180A minimum)",
+        "Wire wheel and cup brush for drill",
+        "Spot weld cutter drill bit",
+        "Aviation snips (left, right, straight)",
+        "Body hammer and dolly set",
+        "Cleco fasteners and pliers",
+        "Sandpaper (60-320 grit)",
+        "Inspection mirror and flashlight",
+        "Primer (epoxy and high-build)",
+        "Respirator (P100) and safety glasses",
+        "Welding helmet and gloves",
+        "Fire extinguisher"
+      ],
+      "steps": [
+        "Clean undercarriage thoroughly before inspection - use pressure washer.",
+        "Inspect known E39 rust areas: rocker panels (tap with screwdriver), jack points, front fender lips, rear wheel arches, trunk floor, battery tray.",
+        "Check rear subframe mounting points carefully - structural rust is safety-critical.",
+        "Remove interior carpets and check floor pans - rust often hides under padding.",
+        "Inspect behind front fender liners where mud accumulates.",
+        "For surface rust: wire brush to bare metal, apply rust converter, prime and paint.",
+        "For rust-through: mark damage, cut out 1 inch into clean metal all around.",
+        "Create cardboard template, transfer to new sheet metal, cut patch.",
+        "Use Clecos to hold patch during fit-up.",
+        "Tack weld corners, stitch weld in 1-inch segments, cool between passes.",
+        "For panel replacement: drill out spot welds, remove old panel, fit new.",
+        "Grind welds smooth, check for warping - planish if needed.",
+        "Treat all bare metal and welds with weld-through primer.",
+        "Apply POR-15 to inaccessible areas and inner surfaces.",
+        "Seal welded joints with automotive seam sealer.",
+        "Apply epoxy primer, then high-build primer.",
+        "Block sand primer smooth (220-320 grit).",
+        "Spray cavity wax into all hollow sections - rockers, frame rails, etc.",
+        "Touch up or respray as needed."
+      ],
+      "tips": [
+        "E39s are well-protected but northern salt-belt cars still rust heavily.",
+        "Jack point rust indicates rocker panel compromise - inspect thoroughly.",
+        "Trunk floor rust often originates from clogged drain plugs.",
+        "E39 Touring (wagon) has additional rust-prone areas around tailgate and rear quarters.",
+        "Annual Fluid Film application to inner fenders prevents future rust.",
+        "Check behind battery tray - acid accelerates corrosion in this area."
+      ],
+      "warnings": [
+        "Always wear P100 respirator when grinding rust - particles are hazardous.",
+        "Check for wiring and brake lines before cutting or welding.",
+        "Fire extinguisher must be immediately accessible during welding.",
+        "Rear subframe mount rust is a safety issue - professional repair if structural.",
+        "Never weld near fuel tank or lines without proper precautions."
+      ],
+      "references": [
+        {
+          "name": "Bimmerforums E39 Rust Discussion",
+          "url": "https://www.bimmerforums.com/forum/forumdisplay.php?f=53"
+        },
+        {
+          "name": "Eastwood Rust Repair Products",
+          "url": "https://www.eastwood.com/rust-repair"
+        },
+        {
+          "name": "POR-15 Application Guide",
+          "url": "https://www.por15.com/instructions"
+        }
+      ]
+    },
+    {
+      "id": "electrical-restoration",
+      "title": "Electrical System Restoration",
+      "description": "Complete electrical system overhaul covering the E39's common issues including pixel repair, blower motor final stage replacement, window regulators, and module refresh.",
+      "difficulty": "Intermediate",
+      "time": "10-16 hours",
+      "cost": "$200-700",
+      "interval": "Address as symptoms appear",
+      "laborHours": "8-12 hours shop time",
+      "parts": [
+        {
+          "name": "Instrument Cluster Pixel Ribbon",
+          "oem": "—",
+          "aftermarket": "BavAuto, aftermarket kits",
+          "cost": "$20-40"
+        },
+        {
+          "name": "Radio Pixel Ribbon",
+          "oem": "—",
+          "aftermarket": "BavAuto, aftermarket kits",
+          "cost": "$20-40"
+        },
+        {
+          "name": "HVAC Final Stage Unit (FSU)",
+          "oem": "64116923204",
+          "aftermarket": "URO, aftermarket upgraded",
+          "cost": "$80-150"
+        },
+        {
+          "name": "Window Regulator (Front Left)",
+          "oem": "51338252393",
+          "aftermarket": "URO, aftermarket",
+          "cost": "$60-110"
+        },
+        {
+          "name": "Window Regulator (Front Right)",
+          "oem": "51338252394",
+          "aftermarket": "URO, aftermarket",
+          "cost": "$60-110"
+        },
+        {
+          "name": "Main Relay (DME)",
+          "oem": "12631729004",
+          "aftermarket": "Bosch, aftermarket",
+          "cost": "$40-70"
+        },
+        {
+          "name": "Fuel Pump Relay",
+          "oem": "12631735424",
+          "aftermarket": "Bosch, Stribel",
+          "cost": "$25-50"
+        },
+        {
+          "name": "Tail Light Gasket Set",
+          "oem": "63216900473/74",
+          "aftermarket": "URO, aftermarket",
+          "cost": "$20-40"
+        },
+        {
+          "name": "Ground Point Ring Terminals",
+          "oem": "—",
+          "aftermarket": "Copper ring terminals (25 pack)",
+          "cost": "$10-20"
+        },
+        {
+          "name": "Contact Cleaner",
+          "oem": "—",
+          "aftermarket": "DeoxIT D5, CRC Contact",
+          "cost": "$10-20"
+        }
+      ],
+      "tools": [
+        "Torx driver set (T10, T15, T20, T25, T30)",
+        "Small flathead screwdriver",
+        "Trim removal tools",
+        "Soldering iron with fine tip",
+        "Solder and flux",
+        "Heat gun or hair dryer",
+        "Multimeter",
+        "Wire strippers and crimpers",
+        "Contact cleaner spray",
+        "Dielectric grease",
+        "Wire brush (small brass)"
+      ],
+      "steps": [
+        "Disconnect battery and wait 10 minutes before any electrical work.",
+        "Start with ground point restoration - locate all chassis grounds.",
+        "E39 grounds: engine to firewall, battery to chassis, cluster ground, tail light grounds.",
+        "Remove each ground, wire brush contact surface to bare metal, clean terminal.",
+        "Apply dielectric grease and torque securely.",
+        "For pixel repair: remove instrument cluster (4 T10 screws), disconnect connectors.",
+        "Open cluster housing, locate LCD ribbon cable on circuit board.",
+        "Apply flux, reflow solder with fine-tip iron, or install replacement ribbon.",
+        "Test cluster before reassembly by reconnecting temporarily.",
+        "For radio pixel repair: remove radio unit, similar ribbon procedure.",
+        "For FSU replacement: remove passenger footwell panel for access.",
+        "Disconnect FSU connector, remove 2 T20 screws, slide out old unit.",
+        "Apply thermal paste to new FSU, install and test all blower speeds.",
+        "For window regulator: remove door panel, peel vapor barrier carefully.",
+        "Support window glass with tape, remove regulator mounting bolts.",
+        "Install new regulator, test operation before reassembling door.",
+        "Replace tail light gaskets if trunk has water intrusion.",
+        "Clean fuse box contacts with contact cleaner, replace corroded fuses.",
+        "Reconnect battery and test all systems systematically."
+      ],
+      "tips": [
+        "E39 pixel failure is extremely common - straightforward repair with right ribbon.",
+        "FSU failure causes blower to only work on high - very common E39 issue.",
+        "Trunk water leaks are often from cracked tail light gaskets.",
+        "The E39 uses separate ribbons for cluster and radio displays.",
+        "Window regulator cables fray before breaking - listen for grinding sounds."
+      ],
+      "warnings": [
+        "Always disconnect battery before electrical work.",
+        "Don't probe airbag (SRS) wiring - risk of deployment.",
+        "Use minimal heat when soldering pixel ribbons - LCD is heat-sensitive.",
+        "Vapor barrier is critical for water sealing - handle carefully.",
+        "Apply dielectric grease only to contact surfaces, not inside connectors."
+      ],
+      "references": [
+        {
+          "name": "Bimmerforums E39 Electrical",
+          "url": "https://www.bimmerforums.com/forum/forumdisplay.php?f=53"
+        },
+        {
+          "name": "Pelican Parts E39 FSU Replacement",
+          "url": "https://www.pelicanparts.com/techarticles/BMW/"
+        },
+        {
+          "name": "BavAuto Pixel Repair Kits",
+          "url": "https://www.bavauto.com/"
+        }
+      ]
+    },
+    {
+      "id": "interior-restoration",
+      "title": "Interior Restoration",
+      "description": "Complete interior refresh addressing the E39's common wear items including leather care, headliner sag, wood trim restoration, and HVAC system maintenance.",
+      "difficulty": "Intermediate",
+      "time": "12-24 hours",
+      "cost": "$300-1,200",
+      "interval": "One-time restoration",
+      "laborHours": "10-20 hours shop time",
+      "parts": [
+        {
+          "name": "Leather Repair Kit",
+          "oem": "—",
+          "aftermarket": "Leatherique, Colourlock",
+          "cost": "$50-100"
+        },
+        {
+          "name": "Headliner Fabric (4 yards)",
+          "oem": "—",
+          "aftermarket": "OEM-match foam-backed",
+          "cost": "$50-100"
+        },
+        {
+          "name": "Headliner Adhesive",
+          "oem": "—",
+          "aftermarket": "3M Super 77, Permatex",
+          "cost": "$15-30"
+        },
+        {
+          "name": "Seat Foam (Driver Bolster)",
+          "oem": "52107896892",
+          "aftermarket": "Recovered or aftermarket",
+          "cost": "$80-180"
+        },
+        {
+          "name": "Shift Boot (Manual)",
+          "oem": "25117896886",
+          "aftermarket": "Redline Goods, leather",
+          "cost": "$30-70"
+        },
+        {
+          "name": "E-Brake Boot",
+          "oem": "34411162910",
+          "aftermarket": "Redline Goods, leather",
+          "cost": "$20-50"
+        },
+        {
+          "name": "Wood Trim Refinishing Kit",
+          "oem": "—",
+          "aftermarket": "2K clearcoat, touch-up supplies",
+          "cost": "$30-60"
+        },
+        {
+          "name": "Door Panel Clip Set",
+          "oem": "51418224768",
+          "aftermarket": "URO, aftermarket",
+          "cost": "$10-20"
+        },
+        {
+          "name": "Cabin Air Filter (Microfilter)",
+          "oem": "64319218706",
+          "aftermarket": "Mann CUK3139, Bosch",
+          "cost": "$20-40"
+        },
+        {
+          "name": "Door Seal Set",
+          "oem": "51728185001",
+          "aftermarket": "URO, aftermarket",
+          "cost": "$120-250"
+        }
+      ],
+      "tools": [
+        "Trim removal tools (plastic pry set)",
+        "Torx driver set (T15, T20, T25, T30)",
+        "Phillips and flathead screwdrivers",
+        "Heat gun",
+        "Adhesive scraper/putty knife",
+        "Sandpaper (180-2000 grit for wood)",
+        "Masking tape and paper",
+        "Spray gun or quality rattle cans",
+        "Microfiber cloths",
+        "Leather cleaner and conditioner"
+      ],
+      "steps": [
+        "Document everything with photos before disassembly.",
+        "Remove seats (4 bolts each) and all carpeting to access floor.",
+        "For leather: clean thoroughly with dedicated leather cleaner.",
+        "Fill leather cracks with repair compound, sand smooth when dry.",
+        "Apply leather dye in thin coats - multiple light coats for even coverage.",
+        "Condition all leather after dye cures.",
+        "For headliner: remove sun visors, dome light, A-pillar trim, grab handles, rear trim.",
+        "Remove headliner board through rear door opening - flex carefully.",
+        "Strip old fabric and deteriorated foam with scraper and brush.",
+        "Apply adhesive in sections, press new fabric from center outward.",
+        "Stretch fabric taut - no wrinkles. Let cure before trimming openings.",
+        "For wood trim: assess if lacquer is peeling or veneer delaminating.",
+        "If lacquer only: wet sand with 600-2000 grit, apply fresh 2K clearcoat.",
+        "If veneer loose: re-glue with wood glue, clamp until dry, then refinish.",
+        "Clean HVAC system - replace cabin filter, clean evaporator if accessible.",
+        "Replace worn shift and e-brake boots.",
+        "Replace door seals if wind noise present.",
+        "Clean and protect all interior plastics.",
+        "Reassemble in reverse order."
+      ],
+      "tips": [
+        "E39 wood trim is real veneer - can be refinished if not too damaged.",
+        "Sport seats have aggressive bolsters that wear faster than standard.",
+        "Headliner adhesive sets fast in heat - work in cool, shaded conditions.",
+        "Match leather dye color carefully - test on hidden area first.",
+        "The E39 has a dual-zone HVAC system - check both sides function properly."
+      ],
+      "warnings": [
+        "Headliner adhesive is flammable - no sparks or flames.",
+        "Work in well-ventilated area when using adhesives and dyes.",
+        "Don't pull headliner fabric after positioning - it will stretch.",
+        "Test all chemicals on hidden areas first.",
+        "Door panel clips break easily - have extras on hand."
+      ],
+      "references": [
+        {
+          "name": "Bimmerforums E39 Interior",
+          "url": "https://www.bimmerforums.com/forum/forumdisplay.php?f=53"
+        },
+        {
+          "name": "Leatherique Products",
+          "url": "https://www.leatherique.com/"
+        },
+        {
+          "name": "Redline Goods Interior",
+          "url": "https://www.redlinegoods.com/"
+        }
+      ]
     }
   ],
   "suppliers": {

@@ -347,36 +347,103 @@
   ],
   "guides": [
     {
-      "id": "coolant-pipe-upgrade",
-      "title": "Coolant Pipe Upgrade",
-      "description": "Replace plastic coolant pipes with aluminum upgrade for reliability.",
+      "id": "suspension-refresh",
+      "title": "Complete Suspension Refresh",
+      "description": "Full front and rear suspension rebuild for the 991's sophisticated multi-link design including PASM service considerations.",
       "difficulty": "Intermediate",
-      "time": "4-6 hours",
-      "status": "coming-soon"
+      "time": "12-16 hours",
+      "cost": "$800-1,600",
+      "interval": "Every 60,000-80,000 miles",
+      "laborHours": "10-14 hours shop time",
+      "parts": [
+        {"name": "Front Control Arm (Left)", "oem": "99134105314", "aftermarket": "Lemforder", "cost": "$130-220"},
+        {"name": "Front Control Arm (Right)", "oem": "99134105414", "aftermarket": "Lemforder", "cost": "$130-220"},
+        {"name": "Front Thrust Arm (Pair)", "oem": "99134105500", "aftermarket": "Lemforder", "cost": "$120-200"},
+        {"name": "Front Strut Mount (Pair)", "oem": "99134351900", "aftermarket": "Sachs", "cost": "$100-180"},
+        {"name": "Tie Rod End (Pair)", "oem": "99134713100", "aftermarket": "Lemforder", "cost": "$80-140"},
+        {"name": "Rear Control Arm Upper (Pair)", "oem": "99133105105", "aftermarket": "Lemforder", "cost": "$140-240"},
+        {"name": "Rear Control Arm Lower (Pair)", "oem": "99133105205", "aftermarket": "Lemforder", "cost": "$140-240"},
+        {"name": "PASM Damper (Front)", "oem": "99134305315", "aftermarket": "Remanufactured", "cost": "$350-1000"},
+        {"name": "PASM Damper (Rear)", "oem": "99133305316", "aftermarket": "Remanufactured", "cost": "$350-1000"},
+        {"name": "Sway Bar End Link (Pair)", "oem": "99134306901", "aftermarket": "Lemforder", "cost": "$50-100"}
+      ],
+      "tools": ["Floor jack and jack stands", "18mm, 19mm, 21mm sockets", "Ball joint separator", "Spring compressor", "Torque wrench", "Penetrating oil", "PIWIS diagnostic tool (for PASM)", "Alignment specs printout"],
+      "steps": ["Raise vehicle on jack stands at all four corners.", "Remove wheels and photograph suspension.", "For PASM cars: diagnose failed dampers before ordering parts.", "Soak all bolts with penetrating oil.", "Front: Remove sway bar links (48 ft-lbs), tie rod ends (48 ft-lbs).", "Remove control arm bolts (89 ft-lbs) and ball joint (56 ft-lbs).", "For struts: mark camber, remove upper mount nuts (23 ft-lbs), pinch bolt (65 ft-lbs).", "Use spring compressor to replace strut mount.", "Rear: Remove control arms (81 ft-lbs inner, 74 ft-lbs eccentric).", "Replace PASM dampers if leaking or failed.", "Install all new components with correct torque specs.", "Install wheels and lower vehicle.", "Professional alignment mandatory - 991 is very alignment-sensitive."],
+      "tips": ["The 991 uses electronic steering - sensitive to alignment.", "PASM dampers fail more often than conventional shocks.", "Remanufactured PASM units offer good value.", "991.2 turbo models have stiffer suspension - same procedure."],
+      "warnings": ["PASM requires PIWIS to calibrate after replacement.", "Spring compressors are dangerous.", "Rear-engine weight distribution amplifies issues.", "Center-lock wheel torque is 443 ft-lbs - different tool required."],
+      "references": [{"name": "Rennlist 991 Suspension", "url": "https://rennlist.com/forums/991-general-forum/"}, {"name": "Pelican Parts 991", "url": "https://www.pelicanparts.com/techarticles/"}]
     },
     {
-      "id": "walnut-blast",
-      "title": "Intake Valve Carbon Cleaning",
-      "description": "Walnut shell blasting procedure to remove carbon buildup.",
+      "id": "rust-repair",
+      "title": "Rust Prevention and Inspection",
+      "description": "Rust inspection guide for the 991, which is fully galvanized but still requires attention to water intrusion and cooling system components.",
       "difficulty": "Intermediate",
-      "time": "4-6 hours",
-      "status": "coming-soon"
+      "time": "4-12 hours",
+      "cost": "$100-800",
+      "interval": "Inspect annually",
+      "laborHours": "Varies by severity",
+      "parts": [
+        {"name": "Front Trunk Seal", "oem": "99156193100", "aftermarket": "URO", "cost": "$70-140"},
+        {"name": "Door Seal Set", "oem": "99153193101", "aftermarket": "URO", "cost": "$120-240"},
+        {"name": "Headlight Seal Kit", "oem": "Various", "aftermarket": "Butyl tape", "cost": "$30-80"},
+        {"name": "Coolant Transfer Pipe", "oem": "99110663701", "aftermarket": "Aluminum upgrade", "cost": "$100-300"},
+        {"name": "Rust Converter", "oem": "—", "aftermarket": "POR-15", "cost": "$20-40"},
+        {"name": "Cavity Wax", "oem": "—", "aftermarket": "Fluid Film", "cost": "$15-30"}
+      ],
+      "tools": ["Inspection mirror and flashlight", "Wire brush", "Compressed air", "Respirator"],
+      "steps": ["The 991 is fully galvanized - structural rust is rare.", "Clean undercarriage before inspection.", "Check front trunk for water - electronics located here.", "Clear sunroof and frunk drain tubes.", "Inspect coolant transfer pipe - known failure point.", "Check LED headlights for condensation (less common than HID).", "Examine rocker panels and door bottoms.", "Check wheel wells for debris damage.", "Surface rust: wire brush, convert, prime, topcoat.", "Apply cavity wax to hollow sections annually.", "Inspect all cooling system plastic for cracks."],
+      "tips": ["991s are well-protected - most issues are water intrusion.", "Coolant transfer pipe failure is main concern, not rust.", "LED headlights less prone to moisture than older HID.", "Annual Fluid Film application provides protection."],
+      "warnings": ["Water in frunk damages electronics.", "Coolant leak can cause overheating before rust.", "Always wear respirator when grinding."],
+      "references": [{"name": "Rennlist 991 Maintenance", "url": "https://rennlist.com/forums/991-general-forum/"}, {"name": "Planet-9 991 Forum", "url": "https://www.planet-9.com/"}]
     },
     {
-      "id": "pdk-service",
-      "title": "PDK Fluid Service",
-      "description": "PDK transmission fluid change procedure.",
+      "id": "electrical-restoration",
+      "title": "Electrical System Service",
+      "description": "Complete electrical service for the 991 covering ignition, PDK service, and common electronic issues.",
       "difficulty": "Intermediate",
-      "time": "2-3 hours",
-      "status": "coming-soon"
+      "time": "8-14 hours",
+      "cost": "$300-1,000",
+      "interval": "Address as symptoms appear",
+      "laborHours": "6-10 hours shop time",
+      "parts": [
+        {"name": "Ignition Coil Pack (Set of 6)", "oem": "99160210402", "aftermarket": "Bosch", "cost": "$180-350"},
+        {"name": "PDK Fluid (7L)", "oem": "Pentosin FFL-2", "aftermarket": "Pentosin", "cost": "$150-200"},
+        {"name": "PDK Filter", "oem": "9G132153300", "aftermarket": "OEM", "cost": "$40-80"},
+        {"name": "Wastegate Actuator (991.2)", "oem": "9A112180101", "aftermarket": "OEM", "cost": "$300-500"},
+        {"name": "PASM Module", "oem": "99161830100", "aftermarket": "Rebuilt", "cost": "$200-400"},
+        {"name": "Steering Column Lube", "oem": "Various", "aftermarket": "White lithium", "cost": "$15-30"},
+        {"name": "Battery (AGM)", "oem": "99961101501", "aftermarket": "Exide, Optima", "cost": "$300-500"}
+      ],
+      "tools": ["PIWIS or compatible diagnostic tool", "Torx driver set", "10mm socket", "Drain pan for PDK service", "Battery registration tool", "Contact cleaner", "Dielectric grease"],
+      "steps": ["Begin with full diagnostic scan - 991 requires PIWIS for many functions.", "For coils: open engine lid, disconnect and remove.", "991.2 turbo: inspect wastegate actuators for rattle.", "For PDK service: drain and fill with Pentosin FFL-2.", "Reset clutch adaptation via PIWIS after PDK service.", "For battery replacement: register new battery in DME.", "For steering column creak: lubricate steering column.", "Clean all ground points.", "Clear codes and verify repairs.", "Perform adaptations as required."],
+      "tips": ["991 requires PIWIS for many diagnostic functions.", "PDK fluid should be changed despite 'lifetime' claim.", "Battery registration mandatory or charging issues result.", "991.2 wastegate rattle is common - not always serious."],
+      "warnings": ["Battery must be registered in DME.", "PDK service requires proper fluid - no substitutes.", "PASM coding requires dealer-level tool.", "991.2 turbo components are more complex."],
+      "references": [{"name": "Rennlist 991 Electrical", "url": "https://rennlist.com/forums/991-general-forum/"}, {"name": "Planet-9 991 Technical", "url": "https://www.planet-9.com/"}]
     },
     {
-      "id": "pasm-replacement",
-      "title": "PASM Damper Replacement",
-      "description": "Replace failed PASM shock absorbers.",
+      "id": "interior-restoration",
+      "title": "Interior Restoration",
+      "description": "Complete interior refresh for the 991 covering leather care, PCM system, and common wear items.",
       "difficulty": "Intermediate",
-      "time": "3-4 hours",
-      "status": "coming-soon"
+      "time": "10-18 hours",
+      "cost": "$300-1,000",
+      "interval": "As needed",
+      "laborHours": "8-14 hours shop time",
+      "parts": [
+        {"name": "Leather Repair Kit", "oem": "—", "aftermarket": "Leatherique, Colourlock", "cost": "$50-100"},
+        {"name": "Steering Wheel Re-wrap", "oem": "—", "aftermarket": "Professional service", "cost": "$250-450"},
+        {"name": "Shift Knob (Manual)", "oem": "99142407504", "aftermarket": "Aftermarket", "cost": "$80-200"},
+        {"name": "Seat Foam (Driver)", "oem": "99152191203", "aftermarket": "Recovered", "cost": "$100-200"},
+        {"name": "Cabin Air Filter", "oem": "99157221901", "aftermarket": "Mann, Bosch", "cost": "$30-60"},
+        {"name": "Door Seal Set", "oem": "99153193101", "aftermarket": "URO", "cost": "$120-240"},
+        {"name": "HVAC Blend Actuator", "oem": "99157319100", "aftermarket": "VDO", "cost": "$70-140"},
+        {"name": "PCM Screen Protector", "oem": "—", "aftermarket": "Aftermarket", "cost": "$20-40"}
+      ],
+      "tools": ["Trim removal tools", "Torx driver set", "Microfiber cloths", "Leather cleaner and conditioner", "Interior detailing brushes", "PIWIS for PCM updates"],
+      "steps": ["Document condition with photos.", "Clean leather with dedicated cleaner.", "Fill cracks with leather filler, sand, dye.", "Condition all leather surfaces.", "Assess steering wheel - rewrap if worn.", "Replace worn boots and knobs.", "Replace cabin air filter.", "Clean HVAC vents with brushes.", "Address seat bolster wear.", "Replace door seals if wind noise present.", "Update PCM software if available.", "Apply UV protectant to exposed surfaces."],
+      "tips": ["991 uses high-quality leather that responds well to care.", "Sport Plus seats have more aggressive bolsters.", "PCM touch screen can benefit from protector.", "HVAC clicking indicates blend actuator failure."],
+      "warnings": ["Don't use silicone on leather.", "Steering wheel has airbag - disconnect battery.", "PCM updates require dealer or compatible tool."],
+      "references": [{"name": "Leatherique Products", "url": "https://www.leatherique.com/"}, {"name": "Rennlist 991 Interior", "url": "https://rennlist.com/forums/991-general-forum/"}]
     }
   ],
   "suppliers": {

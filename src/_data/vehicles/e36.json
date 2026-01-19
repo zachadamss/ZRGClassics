@@ -371,28 +371,304 @@
   ],
   "guides": [
     {
-      "id": "cooling-refresh",
-      "title": "Complete Cooling System Refresh",
-      "description": "Replace all cooling system components including expansion tank, thermostat, water pump, hoses, and radiator.",
-      "difficulty": "Intermediate",
-      "time": "6-8 hours",
-      "status": "coming-soon"
-    },
-    {
-      "id": "vanos-rebuild",
-      "title": "VANOS Seal Replacement",
-      "description": "Step-by-step guide to replacing VANOS seals and restoring proper valve timing.",
-      "difficulty": "Intermediate",
-      "time": "3-4 hours",
-      "status": "coming-soon"
-    },
-    {
       "id": "suspension-refresh",
       "title": "Full Suspension Refresh",
-      "description": "Complete front and rear suspension overhaul including control arms, RTABs, and bushings.",
+      "description": "Complete front and rear suspension overhaul for the E36 including control arms, RTABs (rear trailing arm bushings), subframe bushings, and all wear items. Restores precise handling and eliminates the notorious E36 rear-end instability.",
       "difficulty": "Intermediate",
       "time": "12-16 hours",
-      "status": "coming-soon"
+      "cost": "$600-1,200",
+      "parts": [
+        { "name": "Front Control Arm (pair)", "oem": "31121140957/958", "aftermarket": "Lemforder, Meyle HD", "cost": "$80-180" },
+        { "name": "Rear Trailing Arm Bushing - RTAB (pair)", "oem": "33321136311", "aftermarket": "Meyle HD, Powerflex", "cost": "$40-100" },
+        { "name": "Front Strut Mount (pair)", "oem": "31331092885", "aftermarket": "Lemforder, Sachs", "cost": "$50-100" },
+        { "name": "Rear Shock Mount (pair)", "oem": "33521092362", "aftermarket": "Febi, Meyle", "cost": "$30-60" },
+        { "name": "Front Strut/Shock (pair)", "oem": "31311091554", "aftermarket": "Bilstein B4/B6, Koni Yellow", "cost": "$150-350" },
+        { "name": "Rear Shock (pair)", "oem": "33521091421", "aftermarket": "Bilstein B4/B6, Koni Yellow", "cost": "$120-280" },
+        { "name": "Tie Rod End (pair)", "oem": "32111139315", "aftermarket": "Lemforder, Meyle", "cost": "$40-80" },
+        { "name": "Front Sway Bar End Link (pair)", "oem": "31351091764", "aftermarket": "Meyle HD, Lemforder", "cost": "$25-50" },
+        { "name": "Rear Subframe Bushing Kit", "oem": "33319059301", "aftermarket": "Powerflex, Condor", "cost": "$60-150" },
+        { "name": "Rear Sway Bar Bushing Kit", "oem": "33551094504", "aftermarket": "Powerflex, SuperPro", "cost": "$20-40" }
+      ],
+      "tools": [
+        "Ball joint separator or pickle fork",
+        "RTAB press tool (rent from AutoZone/O'Reilly)",
+        "Spring compressor for front struts",
+        "21mm and 22mm deep sockets",
+        "Torque wrench (ft-lb and Nm)",
+        "Floor jack and 4 jack stands",
+        "Breaker bar with 16mm, 18mm, 19mm sockets",
+        "Pry bar",
+        "Penetrating oil (PB Blaster)",
+        "Alignment pins or bolts for subframe"
+      ],
+      "steps": [
+        "Raise the vehicle and secure on four jack stands. Remove all four wheels.",
+        "FRONT SUSPENSION: Mark the position of the camber adjustment bolts before removal.",
+        "Remove the brake caliper (two 19mm bolts) and support with wire - never hang by the hose.",
+        "Remove the ABS sensor wire clip from the strut housing.",
+        "Remove the sway bar end link nut (16mm) from the strut.",
+        "Remove the tie rod end nut (18mm) and separate with ball joint separator.",
+        "Remove the two 21mm pinch bolts from the strut-to-knuckle connection.",
+        "In the engine bay, remove the three 13mm strut tower nuts.",
+        "Lower the strut assembly out through the wheel well.",
+        "Compress the spring and remove the 21mm strut shaft nut. Replace mount, bump stop, and strut.",
+        "Control arms: Remove the two 18mm bolts and replace entire arm (bushings are pressed in).",
+        "Reinstall components - torque strut tower nuts to 25 ft-lbs, pinch bolts to 81 ft-lbs.",
+        "REAR SUSPENSION - RTABs: This is the most critical E36 suspension repair.",
+        "Support the trailing arm with a jack. Remove the 19mm RTAB center bolt.",
+        "Use a RTAB press tool to remove the old bushing - this requires significant force.",
+        "Press in the new RTAB bushing with the tool. Proper tool rental is essential.",
+        "For subframe bushings: Support the subframe, remove mounting bolts, and press in new bushings.",
+        "Rear shocks: Remove the trunk liner to access upper mounts (two 13mm nuts).",
+        "Remove lower shock bolt (18mm) and swap shock. Torque upper to 16 ft-lbs, lower to 74 ft-lbs.",
+        "Replace sway bar bushings and end links.",
+        "Reinstall wheels and lower vehicle. CRITICAL: Get alignment within 50 miles."
+      ],
+      "tips": [
+        "The RTAB press tool is essential - do not attempt without it. Rent from any major auto parts store.",
+        "Meyle HD RTABs are pre-pressed in a sleeve for easier installation than OEM.",
+        "Mark eccentric bolt positions before removal to preserve approximate alignment.",
+        "The E36 M3 has different subframe mounting - use correct parts.",
+        "Powerflex bushings offer more precision but transmit more NVH.",
+        "If RTABs are severely worn, inspect the trailing arm mounting points for cracks."
+      ],
+      "warnings": [
+        "Worn RTABs cause dangerous rear-end instability at highway speeds - do not delay this repair.",
+        "Spring compressors are dangerous - follow all safety procedures and use quality tools.",
+        "Final torque all suspension bolts at ride height (weight on wheels).",
+        "E36 M3 subframe mounting points can crack - inspect before and after bushing replacement."
+      ],
+      "references": [
+        { "name": "Bimmerforums RTAB DIY", "url": "https://www.bimmerforums.com/forum/showthread.php?t=565837" },
+        { "name": "Turner Motorsport E36 Suspension", "url": "https://www.turnermotorsport.com/c-3359-e36-suspension.aspx" }
+      ]
+    },
+    {
+      "id": "rust-repair",
+      "title": "Rust Repair & Prevention",
+      "description": "E36-specific rust identification and repair. Common problem areas include front fenders, rocker panels, rear wheel arches, and trunk floor. Complete guide to cutting, welding, and protecting these areas.",
+      "difficulty": "Advanced",
+      "time": "15-50+ hours",
+      "cost": "$250-2,500+",
+      "parts": [
+        { "name": "Front Fender Lower Section (each)", "oem": "Discontinued", "aftermarket": "Klokkerholm, Blic", "cost": "$60-120" },
+        { "name": "Rocker Panel (each)", "oem": "Discontinued", "aftermarket": "Klokkerholm 0060561/562", "cost": "$80-150" },
+        { "name": "Rear Wheel Arch Inner (each)", "oem": "Discontinued", "aftermarket": "Klokkerholm", "cost": "$50-100" },
+        { "name": "Rear Quarter Lower Section", "oem": "Discontinued", "aftermarket": "Custom fabrication", "cost": "$100-200" },
+        { "name": "Jack Point Reinforcement", "oem": "Discontinued", "aftermarket": "GarageBoss, Condor", "cost": "$40-80" },
+        { "name": "Trunk Floor Patch", "oem": "Discontinued", "aftermarket": "Custom fabrication", "cost": "$80-150" },
+        { "name": "POR-15 Rust Preventive (quart)", "oem": "—", "aftermarket": "POR-15", "cost": "$40-50" },
+        { "name": "Weld-Through Primer", "oem": "—", "aftermarket": "3M, Eastwood", "cost": "$15-25" },
+        { "name": "Seam Sealer Cartridge", "oem": "—", "aftermarket": "3M 08308, Lord Fusor", "cost": "$20-35" },
+        { "name": "Cavity Wax Spray", "oem": "—", "aftermarket": "Fluid Film, Eastwood", "cost": "$15-25" }
+      ],
+      "tools": [
+        "MIG welder (180A recommended)",
+        "Angle grinder with cut-off and flap discs",
+        "Spot weld drill bit set",
+        "Body hammer and dolly set",
+        "Sheet metal shears",
+        "Drill with step bits",
+        "Wire wheel attachments",
+        "Rust converter (Ospho)",
+        "Cleco fasteners and pliers",
+        "Welding magnets and clamps",
+        "Fire extinguisher and safety gear"
+      ],
+      "steps": [
+        "INSPECTION: Remove fender liners, trunk carpet, and rear seat to fully inspect.",
+        "Common E36 rust areas: front fenders behind marker lights, rocker panels at jacking points, rear wheel arch lips, trunk floor corners, battery tray area.",
+        "Use a pick or screwdriver to test suspect areas - solid metal resists poking.",
+        "Document all rust with photos and mark areas requiring repair.",
+        "PREPARATION: Remove affected trim, lights, and glass as needed.",
+        "Grind away all paint and undercoating 3 inches beyond visible rust.",
+        "Wire wheel or sandblast to clean bare metal.",
+        "Treat any remaining surface rust with converter and allow 24 hours to cure.",
+        "CUTTING: Use spot weld drill to separate factory seams where possible.",
+        "Cut along body lines with cut-off wheel or plasma cutter.",
+        "Remove all rusted metal plus 1 inch of good metal.",
+        "PATCHING: Test-fit repair panels and trim to match contours.",
+        "Create lap joints (1/2 inch overlap) or butt joints depending on location.",
+        "Drill holes for plug welds where spot welds are being replaced.",
+        "WELDING: Apply weld-through primer to all bare mating surfaces.",
+        "Use Clecos to hold panels in position. Tack weld every 2 inches.",
+        "Stitch weld in 1-inch segments, allowing cooling between to prevent warping.",
+        "Grind welds smooth with flap disc.",
+        "FINISHING: Apply seam sealer to all welded joints.",
+        "Prime with epoxy primer, then apply undercoating or paint.",
+        "Spray cavity wax into all enclosed sections through drain holes."
+      ],
+      "tips": [
+        "The E36 rocker panels rust from the inside out - inspect jacking points carefully.",
+        "Convertible E36s have different rocker structure - use correct panels.",
+        "Clean the sunroof drain tubes - clogged drains cause A/B pillar rust.",
+        "European Klokkerholm panels are best quality; avoid cheap Chinese reproductions.",
+        "POR-15 is excellent but must be applied over prepared metal or converter.",
+        "Battery tray rust is common - inspect even if other areas look good."
+      ],
+      "warnings": [
+        "Welding near fuel lines is extremely dangerous - disconnect battery and drain tank.",
+        "The E36 subframe mounts can rust - this is a safety-critical repair requiring professional assessment.",
+        "Wear proper respiratory protection - old undercoating and paint contain harmful chemicals.",
+        "Always have a fire extinguisher within arm's reach when welding.",
+        "Rusty jack points can collapse under load - inspect before lifting."
+      ],
+      "references": [
+        { "name": "Bimmerforums Rust Repair Guide", "url": "https://www.bimmerforums.com/forum/showthread.php?t=1205941" },
+        { "name": "R3VLimited Welding Tips", "url": "https://www.r3vlimited.com/" }
+      ]
+    },
+    {
+      "id": "electrical-restoration",
+      "title": "Electrical System Restoration",
+      "description": "Complete electrical system diagnosis and repair for the E36. Covers ground point restoration, window regulator replacement, ABS sensor repair, and the infamous pixel repair for the instrument cluster.",
+      "difficulty": "Intermediate",
+      "time": "6-15 hours",
+      "cost": "$100-400",
+      "parts": [
+        { "name": "Ground Strap - Engine to Chassis", "oem": "12421742444", "aftermarket": "Custom braided", "cost": "$15-30" },
+        { "name": "Ground Strap - Transmission", "oem": "12421432227", "aftermarket": "Custom braided", "cost": "$15-25" },
+        { "name": "Window Regulator Front (each)", "oem": "51331977609/610", "aftermarket": "URO, MTC", "cost": "$40-80" },
+        { "name": "Window Regulator Rear (each)", "oem": "51358159835/836", "aftermarket": "URO, MTC", "cost": "$35-70" },
+        { "name": "Instrument Cluster Pixel Repair Ribbon", "oem": "—", "aftermarket": "BavAuto, eBay", "cost": "$15-40" },
+        { "name": "ABS Wheel Speed Sensor Front (each)", "oem": "34521163027", "aftermarket": "Bosch, ATE", "cost": "$25-50" },
+        { "name": "ABS Wheel Speed Sensor Rear (each)", "oem": "34521163028", "aftermarket": "Bosch, ATE", "cost": "$25-50" },
+        { "name": "Blower Motor Final Stage Resistor", "oem": "64116923204", "aftermarket": "ACM, URO", "cost": "$30-60" },
+        { "name": "E-Box Fan/Relay", "oem": "12631710700", "aftermarket": "Various", "cost": "$20-40" },
+        { "name": "Headlight Wiring Harness Upgrade", "oem": "—", "aftermarket": "Daniel Stern, Rally Lights", "cost": "$60-100" }
+      ],
+      "tools": [
+        "Multimeter with continuity tester",
+        "Soldering iron with fine tip",
+        "Wire strippers and crimpers",
+        "Heat shrink tubing assortment",
+        "Trim removal tools (plastic)",
+        "T20 and T25 Torx drivers",
+        "10mm socket for ground straps",
+        "Electrical contact cleaner",
+        "Dielectric grease",
+        "Heat gun"
+      ],
+      "steps": [
+        "GROUND RESTORATION: Disconnect the negative battery terminal.",
+        "Locate main grounds: engine-to-chassis (front left of engine), transmission-to-body, and battery-to-chassis.",
+        "Remove each strap, wire brush mounting points to bare metal, apply dielectric grease, and reinstall.",
+        "The E36 has an additional hidden ground behind the glovebox - access and clean.",
+        "WINDOW REGULATORS: Remove door panel (3 screws, lift up and out).",
+        "Peel back moisture barrier carefully - it will be reused.",
+        "Disconnect window motor connector. Remove the two 10mm bolts securing glass to regulator.",
+        "Support the glass with tape to the window frame.",
+        "Remove the three 10mm regulator mounting bolts and work regulator out of door.",
+        "Install new regulator, reconnect, and test before reassembly.",
+        "INSTRUMENT CLUSTER PIXELS: Remove cluster surround (2 screws) and cluster (4 screws).",
+        "Disconnect electrical connectors and remove cluster from vehicle.",
+        "Open the cluster case (small clips around edges).",
+        "Locate the failed ribbon cable connection at the LCD display.",
+        "Heat the old ribbon with a soldering iron to remove, clean area.",
+        "Apply new ribbon cable and heat with soldering iron to bond. Apply even pressure.",
+        "Reassemble and test before reinstalling in vehicle.",
+        "ABS SENSORS: Sensor is held by one T25 bolt. Disconnect electrical connector.",
+        "Remove bolt and gently twist sensor while pulling to extract from hub.",
+        "Clean mounting hole, apply anti-seize to new sensor, and install.",
+        "FINAL STAGE RESISTOR: Located behind glovebox on the blower motor housing.",
+        "Remove glovebox for access (3 screws). Unplug connector.",
+        "Remove two screws holding FSR. Install new unit with thermal paste on contact surface."
+      ],
+      "tips": [
+        "The pixel repair requires patience - practice on scrap electronics first.",
+        "ABS sensors seize in the hub - penetrating oil 24 hours before helps.",
+        "Upgraded headlight wiring dramatically improves light output.",
+        "The E36 convertible has different window regulator part numbers.",
+        "Final stage resistor failure causes fan to only work on high speed.",
+        "Check the X20 connector under the rear seat for water damage and corrosion."
+      ],
+      "warnings": [
+        "Always disconnect the battery before electrical work.",
+        "Window glass is heavy and can shatter - handle carefully and wear gloves.",
+        "The SRS (airbag) system can deploy unexpectedly - do not work near airbag components.",
+        "Pixel repair ribbon cables are delicate - don't overheat or they will fail."
+      ],
+      "references": [
+        { "name": "E36 Pixel Repair DIY", "url": "https://www.bimmerforums.com/forum/showthread.php?t=742859" },
+        { "name": "Window Regulator Replacement", "url": "https://www.pelicanparts.com/BMW/techarticles/E36-Window_Regulator/E36-Window_Regulator.htm" }
+      ]
+    },
+    {
+      "id": "interior-restoration",
+      "title": "Interior Restoration",
+      "description": "Complete E36 interior restoration guide covering seat repair, door panel restoration, headliner replacement, and center console refresh. Address the common wear items and return your interior to showroom condition.",
+      "difficulty": "Intermediate",
+      "time": "15-35 hours",
+      "cost": "$400-2,000",
+      "parts": [
+        { "name": "Front Seat Cover Set (pair)", "oem": "Discontinued", "aftermarket": "Lseat, Katzkin", "cost": "$350-1,000" },
+        { "name": "Rear Seat Cover Set", "oem": "Discontinued", "aftermarket": "Lseat, Custom", "cost": "$200-500" },
+        { "name": "Seat Foam Bottom Cushion (each)", "oem": "52101960245", "aftermarket": "Garagistic", "cost": "$80-150" },
+        { "name": "Headliner Fabric (with foam backing)", "oem": "Discontinued", "aftermarket": "Headliners Depot", "cost": "$50-100" },
+        { "name": "Door Panel Insert Vinyl (set)", "oem": "Discontinued", "aftermarket": "Katzkin, Custom", "cost": "$100-250" },
+        { "name": "Door Panel Clip Set", "oem": "51418224768", "aftermarket": "Various", "cost": "$10-20" },
+        { "name": "Dashboard Cap Cover", "oem": "Discontinued", "aftermarket": "Coverlay", "cost": "$150-250" },
+        { "name": "Center Console Lid Cover", "oem": "Discontinued", "aftermarket": "Various leather", "cost": "$40-80" },
+        { "name": "Shift Boot (manual)", "oem": "25111434106", "aftermarket": "Redline Goods", "cost": "$40-80" },
+        { "name": "Carpet Set (molded)", "oem": "Discontinued", "aftermarket": "GKN, Stock Interiors", "cost": "$200-450" }
+      ],
+      "tools": [
+        "Trim removal tools (plastic)",
+        "Hog ring pliers and hog rings",
+        "Spray adhesive (3M Super 77/90)",
+        "Heat gun",
+        "Steam cleaner or upholstery cleaner",
+        "Leather conditioner and dye",
+        "Sharp utility knife and scissors",
+        "Sewing supplies for minor repairs",
+        "T20 and T25 Torx drivers",
+        "10mm, 13mm sockets"
+      ],
+      "steps": [
+        "SEATS: Remove seats - 4 bolts each (13mm). Disconnect electrical connectors (power seats).",
+        "Remove seat covers by unhooking hog rings from frame with pliers.",
+        "Inspect foam cushions - replace if cracked, compressed, or broken down.",
+        "If re-covering, use old covers as pattern templates.",
+        "Install new foam, stretch new covers over, and secure with new hog rings.",
+        "For leather refresh: clean with dedicated leather cleaner, then apply conditioner.",
+        "For vinyl/leather dye: clean, prep with alcohol, and apply thin coats of dye.",
+        "DOOR PANELS: Remove door handle trim (one screw), then remove panel (3 screws, lift up).",
+        "Carefully peel moisture barrier - save for reuse.",
+        "The map pocket insert becomes brittle and cracks - replace insert or entire panel.",
+        "Clean panel and apply new vinyl or leather to inserts with spray adhesive.",
+        "Replace broken clips before reinstalling.",
+        "HEADLINER: Remove all trim around edges: sun visors, dome light, grab handles, A/B/C pillars.",
+        "Carefully lower the headliner board through the widest door opening.",
+        "Scrape off all old fabric and foam backing until surface is smooth.",
+        "Apply spray adhesive to both board and fabric. Wait until tacky.",
+        "Start from center, press fabric down and work outward to edges.",
+        "Wrap and glue edges. Cut openings for dome light, visors, etc.",
+        "Allow to cure 24 hours before reinstalling.",
+        "DASHBOARD: For cracks, fill with flexible filler and sand smooth.",
+        "Apply texture coat, then dye to match. Or install a Coverlay cap.",
+        "CARPET: Remove seats, console, kick panels, and sill plates.",
+        "Pull old carpet. Inspect floor for rust - repair before new carpet.",
+        "Apply sound deadening if desired. Test-fit new carpet and trim as needed."
+      ],
+      "tips": [
+        "E36 door panel clips are notoriously fragile - order extras.",
+        "The headliner board is very fragile - don't bend or it will break.",
+        "Lseat.com offers excellent pattern-matched E36 seat covers.",
+        "The M3 and standard E36 have different seat mounts and covers.",
+        "Use 3M Super 90 for headliner - it's stronger than 77.",
+        "Work in moderate temperatures for best adhesive performance.",
+        "Take photos during disassembly to help with reassembly."
+      ],
+      "warnings": [
+        "E36 airbag-equipped steering wheels require SRS precautions - disconnect battery and wait 10 minutes.",
+        "Power seat harnesses can short - always disconnect battery first.",
+        "The headliner board will break if bent too sharply - remove through door opening.",
+        "Some seat foams contain fire retardant - wear a mask when removing old foam."
+      ],
+      "references": [
+        { "name": "Bimmerforums Interior Restoration", "url": "https://www.bimmerforums.com/forum/showthread.php?t=1043522" },
+        { "name": "Lseat E36 Seat Covers", "url": "https://www.lseat.com/bmw-e36.html" }
+      ]
     }
   ],
   "suppliers": {

@@ -3217,6 +3217,226 @@ input:focus, textarea:focus, select:focus {
     font-weight: 700;
 }
 
+/* Guide Card - Expandable */
+.guide-card.expandable {
+    cursor: default;
+}
+
+.guide-card-header.clickable {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.guide-card-header.clickable:hover .guide-expand-icon {
+    color: var(--gulf-orange);
+}
+
+.guide-header-content {
+    flex: 1;
+}
+
+.guide-header-content h3 {
+    margin-bottom: 0.5rem;
+}
+
+.guide-expand-icon {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    transition: transform 0.3s ease, color 0.2s;
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+}
+
+.guide-card.expanded .guide-expand-icon {
+    transform: rotate(180deg);
+}
+
+.guide-details[hidden] {
+    display: none;
+}
+
+.guide-details {
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cost-estimate {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.cost-estimate::before {
+    content: '💰';
+    margin-right: 0.35rem;
+}
+
+/* Parts Table */
+.guide-parts {
+    margin-bottom: 1.25rem;
+}
+
+.guide-parts h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+}
+
+[data-theme="dark"] .guide-parts h4 {
+    color: var(--gulf-orange);
+}
+
+.parts-table-wrapper {
+    overflow-x: auto;
+    margin: 0 -0.5rem;
+    padding: 0 0.5rem;
+}
+
+.parts-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+}
+
+.parts-table th,
+.parts-table td {
+    padding: 0.6rem 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.parts-table th {
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    background: var(--background-alt);
+}
+
+.parts-table td {
+    color: var(--text-color);
+}
+
+.parts-table tr:last-child td {
+    border-bottom: none;
+}
+
+.parts-table tr:hover td {
+    background: var(--background-alt);
+}
+
+/* Warnings */
+.guide-warnings {
+    margin-bottom: 1.25rem;
+}
+
+.guide-warnings h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #DC2626;
+    margin-bottom: 0.75rem;
+}
+
+[data-theme="dark"] .guide-warnings h4 {
+    color: #FCA5A5;
+}
+
+.guide-warnings ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.guide-warnings li {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    background: rgba(220, 38, 38, 0.1);
+    border-left: 3px solid #DC2626;
+    border-radius: var(--radius-sm);
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .guide-warnings li {
+    background: rgba(220, 38, 38, 0.15);
+    border-left-color: #FCA5A5;
+}
+
+/* References */
+.guide-references {
+    margin-bottom: 0;
+}
+
+.guide-references h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+}
+
+[data-theme="dark"] .guide-references h4 {
+    color: var(--gulf-orange);
+}
+
+.guide-references ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.guide-references li a {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    background: var(--background-alt);
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--radius-full);
+    color: var(--gulf-blue);
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.guide-references li a:hover {
+    background: var(--gulf-blue);
+    color: #fff;
+}
+
+[data-theme="dark"] .guide-references li a {
+    color: var(--gulf-orange);
+}
+
+[data-theme="dark"] .guide-references li a:hover {
+    background: var(--gulf-orange);
+    color: var(--background-color);
+}
+
 /* ================================
    Supplier Section
    ================================ */

@@ -263,3 +263,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Export for use by invoice.js
 window.applyMobileLabels = applyMobileLabels;
+
+// ================================
+// Expandable Guide Cards
+// ================================
+document.addEventListener('DOMContentLoaded', () => {
+    const expandableHeaders = document.querySelectorAll('.guide-card-header.clickable');
+
+    expandableHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const card = header.closest('.guide-card');
+            const details = card.querySelector('.guide-details');
+            const isExpanded = header.getAttribute('aria-expanded') === 'true';
+
+            // Toggle expanded state
+            header.setAttribute('aria-expanded', !isExpanded);
+            card.classList.toggle('expanded');
+
+            // Toggle details visibility
+            if (details) {
+                details.hidden = isExpanded;
+            }
+        });
+
+        // Keyboard accessibility
+        header.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                header.click();
+            }
+        });
+    });
+});

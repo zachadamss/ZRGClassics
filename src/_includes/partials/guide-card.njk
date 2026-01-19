@@ -1,11 +1,19 @@
 {% set currentGuide = diyGuide if diyGuide else guide %}
-<article class="guide-card{% if currentGuide.status == 'coming-soon' %} coming-soon{% endif %}{% if currentGuide.steps %} has-content{% endif %}" id="guide-{{ currentGuide.id }}">
-    <div class="guide-card-header">
-        <h3>{{ currentGuide.title }}</h3>
-        <div class="guide-meta">
-            <span class="difficulty difficulty-{{ currentGuide.difficulty | lower }}">{{ currentGuide.difficulty }}</span>
-            <span class="time-estimate">{{ currentGuide.time }}</span>
+<article class="guide-card{% if currentGuide.status == 'coming-soon' %} coming-soon{% endif %}{% if currentGuide.steps %} has-content expandable{% endif %}" id="guide-{{ currentGuide.id }}">
+    <div class="guide-card-header{% if currentGuide.steps %} clickable{% endif %}" {% if currentGuide.steps %}role="button" tabindex="0" aria-expanded="false"{% endif %}>
+        <div class="guide-header-content">
+            <h3>{{ currentGuide.title }}</h3>
+            <div class="guide-meta">
+                <span class="difficulty difficulty-{{ currentGuide.difficulty | lower }}">{{ currentGuide.difficulty }}</span>
+                <span class="time-estimate">{{ currentGuide.time }}</span>
+                {% if currentGuide.cost %}
+                <span class="cost-estimate">{{ currentGuide.cost }}</span>
+                {% endif %}
+            </div>
         </div>
+        {% if currentGuide.steps %}
+        <span class="guide-expand-icon" aria-hidden="true">▼</span>
+        {% endif %}
     </div>
     <p class="guide-description">{{ currentGuide.description }}</p>
 
@@ -14,7 +22,7 @@
         <span class="coming-soon-badge">Coming Soon</span>
     </div>
     {% elif currentGuide.steps %}
-    <div class="guide-details">
+    <div class="guide-details" hidden>
         <div class="guide-info-grid">
             {% if currentGuide.interval %}
             <div class="guide-info-item">
@@ -28,7 +36,41 @@
                 <span class="guide-info-value">{{ currentGuide.cost }}</span>
             </div>
             {% endif %}
+            {% if currentGuide.laborHours %}
+            <div class="guide-info-item">
+                <span class="guide-info-label">Labor</span>
+                <span class="guide-info-value">{{ currentGuide.laborHours }}</span>
+            </div>
+            {% endif %}
         </div>
+
+        {% if currentGuide.parts and currentGuide.parts.length > 0 %}
+        <div class="guide-parts">
+            <h4>Parts List</h4>
+            <div class="parts-table-wrapper">
+                <table class="parts-table">
+                    <thead>
+                        <tr>
+                            <th>Part</th>
+                            <th>OEM Number</th>
+                            <th>Aftermarket</th>
+                            <th>Est. Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for part in currentGuide.parts %}
+                        <tr>
+                            <td>{{ part.name }}</td>
+                            <td>{{ part.oem if part.oem else "—" }}</td>
+                            <td>{{ part.aftermarket if part.aftermarket else "—" }}</td>
+                            <td>{{ part.cost if part.cost else "—" }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        {% endif %}
 
         {% if currentGuide.tools and currentGuide.tools.length > 0 %}
         <div class="guide-tools">
@@ -58,6 +100,28 @@
             <ul>
                 {% for tip in currentGuide.tips %}
                 <li>{{ tip }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        {% if currentGuide.warnings and currentGuide.warnings.length > 0 %}
+        <div class="guide-warnings">
+            <h4>⚠️ Warnings</h4>
+            <ul>
+                {% for warning in currentGuide.warnings %}
+                <li>{{ warning }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        {% if currentGuide.references and currentGuide.references.length > 0 %}
+        <div class="guide-references">
+            <h4>References</h4>
+            <ul>
+                {% for ref in currentGuide.references %}
+                <li><a href="{{ ref.url }}" target="_blank" rel="noopener">{{ ref.name }}</a></li>
                 {% endfor %}
             </ul>
         </div>

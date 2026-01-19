@@ -394,36 +394,526 @@
   ],
   "guides": [
     {
-      "id": "water-pump",
-      "title": "Water Pump and Thermostat Replacement",
-      "description": "Proactive replacement of the electric water pump and electronic thermostat.",
+      "id": "suspension-refresh",
+      "title": "Complete Suspension Refresh",
+      "description": "Full front and rear suspension rebuild for the E90's modern multi-link design including control arms, thrust arms, and rear trailing arm bushings to restore factory handling.",
       "difficulty": "Intermediate",
-      "time": "3-5 hours",
-      "status": "coming-soon"
+      "time": "10-14 hours",
+      "cost": "$600-1,200",
+      "interval": "Every 80,000-100,000 miles",
+      "laborHours": "8-12 hours shop time",
+      "parts": [
+        {
+          "name": "Front Lower Control Arm (Left)",
+          "oem": "31126770849",
+          "aftermarket": "Lemforder 35606 01, Meyle HD",
+          "cost": "$50-90"
+        },
+        {
+          "name": "Front Lower Control Arm (Right)",
+          "oem": "31126770850",
+          "aftermarket": "Lemforder 35607 01, Meyle HD",
+          "cost": "$50-90"
+        },
+        {
+          "name": "Front Thrust Arm (Tension Strut) Left",
+          "oem": "31126770851",
+          "aftermarket": "Lemforder 35608 01, Meyle HD",
+          "cost": "$50-85"
+        },
+        {
+          "name": "Front Thrust Arm (Tension Strut) Right",
+          "oem": "31126770852",
+          "aftermarket": "Lemforder 35609 01, Meyle HD",
+          "cost": "$50-85"
+        },
+        {
+          "name": "Tie Rod Assembly (Pair)",
+          "oem": "32106793457",
+          "aftermarket": "Lemforder, Meyle",
+          "cost": "$70-140"
+        },
+        {
+          "name": "Front Strut Mount (Pair)",
+          "oem": "31336760943",
+          "aftermarket": "Lemforder, Sachs",
+          "cost": "$60-120"
+        },
+        {
+          "name": "Front Sway Bar End Link (Pair)",
+          "oem": "31356765933",
+          "aftermarket": "Lemforder 35595 01, Meyle",
+          "cost": "$30-60"
+        },
+        {
+          "name": "Rear Trailing Arm Bushing (RTABs Pair)",
+          "oem": "33326770824",
+          "aftermarket": "Lemforder, Powerflex PFR5-3608",
+          "cost": "$60-120"
+        },
+        {
+          "name": "Rear Upper Control Arm (Camber)",
+          "oem": "33326767832",
+          "aftermarket": "Lemforder, SPC adjustable",
+          "cost": "$45-90"
+        },
+        {
+          "name": "Rear Lower Control Arm",
+          "oem": "33326763479",
+          "aftermarket": "Lemforder, Meyle",
+          "cost": "$35-70"
+        }
+      ],
+      "tools": [
+        "Floor jack and jack stands (4)",
+        "18mm, 19mm, 21mm sockets and wrenches",
+        "Ball joint separator",
+        "Tie rod end puller",
+        "Breaker bar",
+        "Torque wrench (ft-lb range)",
+        "Penetrating oil",
+        "RTAB press tool or hydraulic press",
+        "Spring compressor",
+        "Alignment specs printout"
+      ],
+      "steps": [
+        "Raise vehicle and support on jack stands at all four corners.",
+        "Remove all wheels and photograph suspension for reference.",
+        "Soak all suspension bolts with penetrating oil before removal.",
+        "Begin with front suspension - remove sway bar end links (44 ft-lbs torque spec).",
+        "Remove tie rod end nut (52 ft-lbs) and separate from knuckle using puller.",
+        "Remove lower control arm ball joint nut and separate from knuckle (122 ft-lbs).",
+        "Remove control arm bracket bolts from subframe (74 ft-lbs) and remove arm.",
+        "Remove thrust arm bolts - 74 ft-lbs at subframe, 122 ft-lbs at knuckle.",
+        "For struts: mark camber position, remove upper mount nuts (25 ft-lbs), remove pinch bolt (60 ft-lbs).",
+        "Use spring compressor to disassemble strut and replace mount/bearing.",
+        "Install new front components with correct torque specs.",
+        "For rear suspension: support trailing arm before removing bolts.",
+        "For RTAB replacement: remove trailing arm rear bolt, press out old bushings.",
+        "Press new RTABs into trailing arm - note orientation.",
+        "Remove and replace rear control arms as needed.",
+        "Reassemble all components - torque bushings at ride height.",
+        "Install wheels and lower vehicle - bounce corners to settle.",
+        "Professional 4-wheel alignment required immediately."
+      ],
+      "tips": [
+        "E90 RTABs are critical for rear-end stability - prioritize if worn.",
+        "The E90 uses similar suspension to E46 but with updated components.",
+        "Meyle HD bushings are recommended for longer service life.",
+        "Consider replacing both front thrust arms even if only one shows wear.",
+        "The E92 M3 uses a different rear subframe design - verify part compatibility."
+      ],
+      "warnings": [
+        "RTAB replacement requires a special press tool - don't attempt with hammers.",
+        "Worn RTABs cause dangerous rear-end instability - don't delay repairs.",
+        "Spring compressors are dangerous - follow tool instructions exactly.",
+        "Never strike ball joints directly - use proper separator tools.",
+        "M3 models have unique suspension components - verify correct parts."
+      ],
+      "references": [
+        {
+          "name": "E90Post Suspension DIY",
+          "url": "https://www.e90post.com/forums/forumdisplay.php?f=102"
+        },
+        {
+          "name": "Turner Motorsport E90 Parts",
+          "url": "https://www.turnermotorsport.com/BMW-E90-Parts"
+        },
+        {
+          "name": "FCP Euro E90 Suspension",
+          "url": "https://www.fcpeuro.com/BMW-E90"
+        }
+      ]
     },
     {
-      "id": "valve-cover",
-      "title": "Valve Cover and Gasket Replacement",
-      "description": "Replace leaking valve cover gasket or entire valve cover assembly.",
+      "id": "rust-repair",
+      "title": "Rust Prevention and Inspection",
+      "description": "Rust inspection guide for the E90, covering known problem areas and preventive treatments for this generally well-protected chassis.",
       "difficulty": "Intermediate",
-      "time": "2-4 hours",
-      "status": "coming-soon"
+      "time": "4-20+ hours",
+      "cost": "$100-1,500+",
+      "interval": "Inspect annually",
+      "laborHours": "Varies by severity",
+      "parts": [
+        {
+          "name": "Rocker Panel (Left)",
+          "oem": "41217152735",
+          "aftermarket": "Klokkerholm, aftermarket",
+          "cost": "$120-280"
+        },
+        {
+          "name": "Rocker Panel (Right)",
+          "oem": "41217152736",
+          "aftermarket": "Klokkerholm, aftermarket",
+          "cost": "$120-280"
+        },
+        {
+          "name": "Rear Wheel Arch (Left)",
+          "oem": "41357119211",
+          "aftermarket": "Aftermarket",
+          "cost": "$100-220"
+        },
+        {
+          "name": "Rear Wheel Arch (Right)",
+          "oem": "41357119212",
+          "aftermarket": "Aftermarket",
+          "cost": "$100-220"
+        },
+        {
+          "name": "Door Bottom Patch",
+          "oem": "—",
+          "aftermarket": "Fabricated",
+          "cost": "$30-80"
+        },
+        {
+          "name": "Jack Point Reinforcement",
+          "oem": "—",
+          "aftermarket": "Fabricated",
+          "cost": "$30-80"
+        },
+        {
+          "name": "Rust Converter",
+          "oem": "—",
+          "aftermarket": "POR-15, Eastwood",
+          "cost": "$20-40"
+        },
+        {
+          "name": "Cavity Wax",
+          "oem": "—",
+          "aftermarket": "Fluid Film, Eastwood",
+          "cost": "$15-30"
+        },
+        {
+          "name": "Epoxy Primer",
+          "oem": "—",
+          "aftermarket": "Eastwood, SPI",
+          "cost": "$30-60"
+        },
+        {
+          "name": "Seam Sealer",
+          "oem": "—",
+          "aftermarket": "3M, Eastwood",
+          "cost": "$15-25"
+        }
+      ],
+      "tools": [
+        "Inspection mirror and flashlight",
+        "Wire brush and wire wheel",
+        "Angle grinder with flap disc",
+        "MIG welder (if repairs needed)",
+        "Sandpaper (80-320 grit)",
+        "Primer and paint supplies",
+        "Safety glasses and respirator",
+        "Fire extinguisher",
+        "Spray wand for cavity wax"
+      ],
+      "steps": [
+        "E90s are well-protected but still require inspection, especially salt-belt cars.",
+        "Clean undercarriage thoroughly before inspection.",
+        "Inspect rocker panels by tapping with screwdriver - soft spots indicate rust.",
+        "Check jack points for rust perforation - common failure point.",
+        "Inspect rear wheel arches from inside trunk and behind liners.",
+        "Check door bottoms by opening fully and inspecting from below.",
+        "Examine front fender mounting lips where mud collects.",
+        "Look at subframe mounting areas for any corrosion.",
+        "For surface rust: wire brush to bare metal, apply rust converter.",
+        "Prime with epoxy primer, then topcoat.",
+        "For rust-through: cut out damaged metal, weld in patches.",
+        "Seal all repaired areas with seam sealer.",
+        "Apply cavity wax to all hollow sections - rockers, frame rails.",
+        "Treat inner fenders and underbody with rust preventive.",
+        "Check sunroof drains if equipped - clogs cause interior rust.",
+        "Ensure all drain plugs are clear in floor and trunk.",
+        "Document condition for future reference."
+      ],
+      "tips": [
+        "E90s are generally more rust-resistant than earlier BMWs due to better galvanization.",
+        "Most rust issues are from stone chips, salt, and debris rather than design flaws.",
+        "Annual Fluid Film application prevents most rust development.",
+        "Check behind plastic fender liners - they trap moisture.",
+        "Convertible E93 models may have additional rust points around top mechanism."
+      ],
+      "warnings": [
+        "Always wear respirator when grinding rust.",
+        "Check for brake lines and wiring before welding.",
+        "Fire extinguisher must be accessible during any welding.",
+        "Structural rust near suspension mounts requires professional attention.",
+        "Don't ignore small rust spots - they spread quickly."
+      ],
+      "references": [
+        {
+          "name": "E90Post Rust Discussion",
+          "url": "https://www.e90post.com/forums/"
+        },
+        {
+          "name": "Eastwood Rust Treatment",
+          "url": "https://www.eastwood.com/rust-repair"
+        },
+        {
+          "name": "Fluid Film Application",
+          "url": "https://www.fluid-film.com/"
+        }
+      ]
     },
     {
-      "id": "walnut-blast",
-      "title": "Intake Valve Walnut Blasting",
-      "description": "Remove carbon deposits from intake valves on direct injection engines.",
+      "id": "electrical-restoration",
+      "title": "Electrical System Service",
+      "description": "Complete electrical system service covering the E90's common issues including ignition coils, VANOS solenoids, battery registration, and module coding.",
       "difficulty": "Intermediate",
-      "time": "4-6 hours",
-      "status": "coming-soon"
+      "time": "8-14 hours",
+      "cost": "$300-800",
+      "interval": "Address as symptoms appear",
+      "laborHours": "6-10 hours shop time",
+      "parts": [
+        {
+          "name": "Ignition Coil (N52/N54/N55)",
+          "oem": "12138616153",
+          "aftermarket": "Bosch, Delphi",
+          "cost": "$30-50 each"
+        },
+        {
+          "name": "VANOS Solenoid (Pair)",
+          "oem": "11367585425",
+          "aftermarket": "Genuine BMW recommended",
+          "cost": "$150-300"
+        },
+        {
+          "name": "Battery (AGM)",
+          "oem": "61217604822",
+          "aftermarket": "Exide, Optima",
+          "cost": "$200-350"
+        },
+        {
+          "name": "Eccentric Shaft Sensor (N52)",
+          "oem": "11377524879",
+          "aftermarket": "Genuine BMW",
+          "cost": "$150-250"
+        },
+        {
+          "name": "Crankshaft Position Sensor",
+          "oem": "13627525015",
+          "aftermarket": "Bosch, VDO",
+          "cost": "$40-80"
+        },
+        {
+          "name": "Camshaft Position Sensor",
+          "oem": "13627525014",
+          "aftermarket": "Bosch, VDO",
+          "cost": "$40-80"
+        },
+        {
+          "name": "HVAC Blend Door Actuator",
+          "oem": "64119321034",
+          "aftermarket": "VDO, aftermarket",
+          "cost": "$60-120"
+        },
+        {
+          "name": "Window Regulator (Front)",
+          "oem": "51337140587/88",
+          "aftermarket": "URO, aftermarket",
+          "cost": "$70-130"
+        },
+        {
+          "name": "Charge Pipe (N54/N55)",
+          "oem": "11617563716",
+          "aftermarket": "BMS, aluminum upgrade",
+          "cost": "$80-200"
+        },
+        {
+          "name": "Fuel Injector Seal Kit",
+          "oem": "13647599877",
+          "aftermarket": "Aftermarket kit",
+          "cost": "$30-60"
+        }
+      ],
+      "tools": [
+        "ISTA/INPA diagnostic software or compatible tool",
+        "Torx driver set (T20, T25, T30)",
+        "10mm socket",
+        "Spark plug socket",
+        "Trim removal tools",
+        "Multimeter",
+        "Battery registration tool",
+        "Soldering iron (for module repair)",
+        "Contact cleaner",
+        "Dielectric grease"
+      ],
+      "steps": [
+        "Disconnect battery and wait 10 minutes before electrical work.",
+        "Start with diagnostic scan - E90s require proper software for full diagnosis.",
+        "For ignition coil replacement: remove engine cover, disconnect coil connectors.",
+        "Remove 10mm bolt, pull coils straight up, install new coils.",
+        "For VANOS solenoid replacement: locate solenoids on cylinder head.",
+        "Disconnect connector, remove mounting bolt, replace O-rings on new solenoid.",
+        "For battery replacement: note that E90 requires registration in DME.",
+        "Remove old battery, install new, register using ISTA or compatible tool.",
+        "Unregistered battery causes improper charging and reduced battery life.",
+        "For eccentric shaft sensor (N52): located on rear of cylinder head.",
+        "Remove electrical connector and sensor bolt, install new with fresh seal.",
+        "For blend door actuator: remove glovebox for access.",
+        "Disconnect actuator connector, remove mounting screws, install new.",
+        "Clean all electrical grounds and apply dielectric grease.",
+        "Clear fault codes and perform adaptation reset as needed.",
+        "Test all systems thoroughly after repairs."
+      ],
+      "tips": [
+        "E90 requires proper diagnostic software - generic OBD2 scanners miss many faults.",
+        "Battery MUST be registered after replacement or it will overcharge and fail early.",
+        "Ignition coil failure is common - misfires often traced to coils.",
+        "VANOS solenoids should be OEM - aftermarket quality varies significantly.",
+        "The N54 engine has many electrical components - systematic diagnosis is key."
+      ],
+      "warnings": [
+        "Always disconnect battery before electrical work.",
+        "Battery registration is mandatory - skipping causes charging system issues.",
+        "N54/N55 charge pipe can blow off under boost - upgrade to aluminum recommended.",
+        "Don't clear fault codes without documenting them first.",
+        "SRS (airbag) system requires special procedures - don't probe these circuits."
+      ],
+      "references": [
+        {
+          "name": "E90Post Electrical DIY",
+          "url": "https://www.e90post.com/forums/"
+        },
+        {
+          "name": "Bimmerpost Coding Guide",
+          "url": "https://www.bimmerpost.com/"
+        },
+        {
+          "name": "FCP Euro E90 Guides",
+          "url": "https://www.fcpeuro.com/page/diy"
+        }
+      ]
     },
     {
-      "id": "rod-bearing",
-      "title": "S65 Rod Bearing Replacement",
-      "description": "Preventive rod bearing service for the E9X M3 S65 V8.",
-      "difficulty": "Advanced",
-      "time": "12-16 hours",
-      "status": "coming-soon"
+      "id": "interior-restoration",
+      "title": "Interior Restoration",
+      "description": "Complete interior refresh for the E90 covering leather care, trim restoration, iDrive service, and common wear items.",
+      "difficulty": "Intermediate",
+      "time": "10-18 hours",
+      "cost": "$250-900",
+      "interval": "As needed for wear items",
+      "laborHours": "8-14 hours shop time",
+      "parts": [
+        {
+          "name": "Leather Repair Kit",
+          "oem": "—",
+          "aftermarket": "Leatherique, Colourlock",
+          "cost": "$50-100"
+        },
+        {
+          "name": "Headliner Fabric (3 yards)",
+          "oem": "—",
+          "aftermarket": "OEM-match foam-backed",
+          "cost": "$40-80"
+        },
+        {
+          "name": "Headliner Adhesive",
+          "oem": "—",
+          "aftermarket": "3M Super 77, Permatex",
+          "cost": "$15-25"
+        },
+        {
+          "name": "Aluminum Trim Wrap/Refinish",
+          "oem": "—",
+          "aftermarket": "3M vinyl, hydrodip",
+          "cost": "$30-100"
+        },
+        {
+          "name": "Shift Knob (Manual)",
+          "oem": "25117566267",
+          "aftermarket": "Aftermarket, BMW Performance",
+          "cost": "$50-150"
+        },
+        {
+          "name": "iDrive Controller (CCC/CIC)",
+          "oem": "65826944883",
+          "aftermarket": "Used OEM, rebuilt",
+          "cost": "$150-400"
+        },
+        {
+          "name": "Door Panel Clip Set",
+          "oem": "51417144334",
+          "aftermarket": "URO, aftermarket",
+          "cost": "$10-25"
+        },
+        {
+          "name": "Cabin Air Filter",
+          "oem": "64319142115",
+          "aftermarket": "Mann CUK2533, Bosch",
+          "cost": "$25-50"
+        },
+        {
+          "name": "Seat Foam (Driver Bolster)",
+          "oem": "52107122530",
+          "aftermarket": "Recovered, aftermarket",
+          "cost": "$80-180"
+        },
+        {
+          "name": "Door Seal Set",
+          "oem": "51727143847",
+          "aftermarket": "URO, aftermarket",
+          "cost": "$100-200"
+        }
+      ],
+      "tools": [
+        "Trim removal tools (plastic pry set)",
+        "Torx driver set (T15, T20, T25, T30)",
+        "Phillips and flathead screwdrivers",
+        "Heat gun",
+        "Adhesive scraper",
+        "Microfiber cloths",
+        "Leather cleaner and conditioner",
+        "Interior detailing brushes",
+        "ISTA diagnostic for iDrive coding"
+      ],
+      "steps": [
+        "Document all components with photos before disassembly.",
+        "Remove seats for access - 4 bolts each, disconnect electrical connectors.",
+        "For leather: clean with dedicated leather cleaner in small sections.",
+        "Address cracks with leather filler, sand smooth, apply dye.",
+        "Condition all leather surfaces after repair.",
+        "For headliner: remove sun visors, dome lights, A-pillar trim, grab handles.",
+        "Remove headliner board through rear door opening.",
+        "Strip old fabric and foam, apply new fabric from center outward.",
+        "For aluminum trim: options include re-brushing, vinyl wrap, or hydrodip.",
+        "If peeling, vinyl wrap provides durable finish without disassembly.",
+        "For iDrive: diagnose controller vs screen issues with proper scanner.",
+        "Controller rebuild services available for sticky buttons or failed scroll.",
+        "Replace cabin air filter - accessed behind glovebox.",
+        "Clean all HVAC vents with detailing brushes.",
+        "Replace door seals if wind noise present.",
+        "Apply UV protectant to dashboard and trim.",
+        "Reassemble in reverse order."
+      ],
+      "tips": [
+        "E90 aluminum trim peels and flakes - vinyl wrap is popular solution.",
+        "Sport seats have aggressive bolsters that wear faster.",
+        "iDrive controller failures are common - rebuilds available.",
+        "The E90 uses Dakota leather on most models - responds well to conditioning.",
+        "Check for sunroof drain clogs if headliner shows water stains."
+      ],
+      "warnings": [
+        "Headliner adhesive fumes are harmful - work in well-ventilated area.",
+        "E90 seats have side airbags - disconnect battery before removal.",
+        "Don't force trim clips - they break easily when cold.",
+        "iDrive coding requires proper software - incorrect coding causes issues.",
+        "Test all electrical after seat reinstallation - connectors can be fragile."
+      ],
+      "references": [
+        {
+          "name": "E90Post Interior DIY",
+          "url": "https://www.e90post.com/forums/"
+        },
+        {
+          "name": "Leatherique Guide",
+          "url": "https://www.leatherique.com/"
+        },
+        {
+          "name": "BimmerPost E90 Forum",
+          "url": "https://www.bimmerpost.com/"
+        }
+      ]
     }
   ],
   "suppliers": {

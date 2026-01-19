@@ -300,28 +300,104 @@
   ],
   "guides": [
     {
-      "id": "ims-bearing",
-      "title": "IMS Bearing Replacement (997.1)",
-      "description": "Complete guide to replacing the IMS bearing on 997.1 cars.",
-      "difficulty": "Advanced",
-      "time": "10-14 hours",
-      "status": "coming-soon"
-    },
-    {
-      "id": "coolant-pipes",
-      "title": "Coolant Pipe Upgrade",
-      "description": "Replace plastic coolant pipes with aluminum upgrade kit.",
+      "id": "suspension-refresh",
+      "title": "Complete Suspension Refresh",
+      "description": "Full front and rear suspension rebuild for the 997's MacPherson strut front and multi-link rear suspension, restoring the legendary 911 handling.",
       "difficulty": "Intermediate",
-      "time": "4-6 hours",
-      "status": "coming-soon"
+      "time": "12-16 hours",
+      "cost": "$700-1,400",
+      "interval": "Every 60,000-80,000 miles",
+      "laborHours": "10-14 hours shop time",
+      "parts": [
+        {"name": "Front Control Arm (Left)", "oem": "99734105310", "aftermarket": "Lemforder, URO", "cost": "$120-200"},
+        {"name": "Front Control Arm (Right)", "oem": "99734105410", "aftermarket": "Lemforder, URO", "cost": "$120-200"},
+        {"name": "Front Thrust Arm (Pair)", "oem": "99734105500", "aftermarket": "Lemforder", "cost": "$100-180"},
+        {"name": "Front Strut Mount (Pair)", "oem": "99734351900", "aftermarket": "Sachs, Lemforder", "cost": "$80-150"},
+        {"name": "Tie Rod End (Pair)", "oem": "99734713100", "aftermarket": "Lemforder", "cost": "$60-120"},
+        {"name": "Rear Control Arm Upper (Pair)", "oem": "99733105105", "aftermarket": "Lemforder", "cost": "$120-220"},
+        {"name": "Rear Control Arm Lower (Pair)", "oem": "99733105205", "aftermarket": "Lemforder", "cost": "$120-220"},
+        {"name": "Rear Thrust Arm (Pair)", "oem": "99733105600", "aftermarket": "Lemforder", "cost": "$80-160"},
+        {"name": "Rear Sway Bar End Link (Pair)", "oem": "99733306700", "aftermarket": "Lemforder", "cost": "$40-80"},
+        {"name": "Wheel Bearing (Each)", "oem": "99705302304", "aftermarket": "FAG, SKF", "cost": "$80-150"}
+      ],
+      "tools": ["Floor jack and jack stands", "18mm, 19mm, 21mm sockets", "Ball joint separator", "Tie rod puller", "Spring compressor", "Torque wrench", "Penetrating oil", "Alignment specs printout"],
+      "steps": ["Raise vehicle on jack stands at all four corners.", "Remove wheels and photograph suspension.", "Soak all bolts with penetrating oil.", "Front: Remove sway bar links, tie rod ends, control arm bolts.", "Separate ball joint from knuckle.", "For struts: mark camber, remove upper mount nuts and pinch bolt (65 ft-lbs).", "Replace strut mount/bearing using spring compressor.", "Install new front components - control arm to frame 89 ft-lbs.", "Rear: The 997's rear is critical for handling.", "Support trailing arm, remove control arms (81 ft-lbs inner).", "Replace thrust arms - affect toe settings.", "CRITICAL: Check rear spring perches for cracks.", "Install wheels and lower vehicle.", "Professional alignment mandatory."],
+      "tips": ["The 997 is rear-engine biased - suspension issues amplified.", "997.1 and 997.2 use similar suspension despite different engines.", "Cracked spring perches are a known safety issue.", "PASM dampers fail over time - consider replacement if leaking."],
+      "warnings": ["CRITICAL: Inspect rear spring perches for cracks.", "Spring compressors are dangerous.", "Rear-engine weight distribution amplifies issues.", "Incorrect alignment causes rear instability at speed."],
+      "references": [{"name": "Rennlist 997 Suspension", "url": "https://rennlist.com/forums/997-forum/"}, {"name": "Pelican Parts 997", "url": "https://www.pelicanparts.com/techarticles/"}, {"name": "Department 69 Torque Specs", "url": "https://www.department69.com/"}]
     },
     {
-      "id": "carbon-cleaning",
-      "title": "Intake Valve Carbon Cleaning (997.2)",
-      "description": "Walnut shell blasting to remove carbon deposits from intake valves.",
-      "difficulty": "Advanced",
-      "time": "4-6 hours",
-      "status": "coming-soon"
+      "id": "rust-repair",
+      "title": "Rust Prevention and Inspection",
+      "description": "Comprehensive rust inspection guide for the 997, which is galvanized but requires attention to water intrusion areas and drain systems.",
+      "difficulty": "Intermediate",
+      "time": "4-14 hours",
+      "cost": "$100-1,000",
+      "interval": "Inspect annually",
+      "laborHours": "Varies by severity",
+      "parts": [
+        {"name": "Front Trunk Seal", "oem": "99756193100", "aftermarket": "URO", "cost": "$60-120"},
+        {"name": "Door Seal Set", "oem": "99753193101", "aftermarket": "URO", "cost": "$100-200"},
+        {"name": "Headlight Seal Kit", "oem": "Various", "aftermarket": "Butyl tape", "cost": "$30-80"},
+        {"name": "Battery Box Repair", "oem": "—", "aftermarket": "Fabricated", "cost": "$100-250"},
+        {"name": "Rust Converter", "oem": "—", "aftermarket": "POR-15", "cost": "$20-40"},
+        {"name": "Cavity Wax", "oem": "—", "aftermarket": "Fluid Film", "cost": "$15-30"},
+        {"name": "Trunk Drain Tubes", "oem": "99756192900", "aftermarket": "Aftermarket", "cost": "$20-40"}
+      ],
+      "tools": ["Inspection mirror and flashlight", "Wire brush", "Compressed air", "Respirator", "Spray wand for cavity wax"],
+      "steps": ["The 997 is fully galvanized - most issues are water-related.", "Clean undercarriage before inspection.", "Check front trunk for water - DME and fuse box located here.", "Clear front trunk drain tubes.", "Inspect battery box for acid corrosion.", "Check headlights for moisture (bi-xenon prone to seal failure).", "Examine rocker panels and door bottoms.", "Check wheel wells and suspension mounts.", "Surface rust: wire brush, convert, prime, topcoat.", "Reseal headlights if moisture present.", "Apply cavity wax to hollow sections.", "Clear all drain tubes with compressed air."],
+      "tips": ["997s rarely have structural rust due to galvanization.", "Most corrosion from water intrusion and battery acid.", "Headlight seal failure extremely common.", "Annual Fluid Film prevents most issues."],
+      "warnings": ["Water in frunk destroys expensive electronics.", "Headlight moisture damages HID ballasts.", "Always wear respirator when grinding."],
+      "references": [{"name": "Rennlist 997 Maintenance", "url": "https://rennlist.com/forums/997-forum/"}, {"name": "Pelican Parts 997", "url": "https://www.pelicanparts.com/techarticles/"}]
+    },
+    {
+      "id": "electrical-restoration",
+      "title": "Electrical System Service",
+      "description": "Complete electrical service for the 997 covering ignition, sensors, headlight resealing, and common electrical issues.",
+      "difficulty": "Intermediate",
+      "time": "10-16 hours",
+      "cost": "$300-900",
+      "interval": "Address as symptoms appear",
+      "laborHours": "8-12 hours shop time",
+      "parts": [
+        {"name": "Ignition Coil Pack (Set of 6)", "oem": "99760210402", "aftermarket": "Bosch", "cost": "$150-300"},
+        {"name": "Mass Air Flow Sensor", "oem": "99760612400", "aftermarket": "Bosch", "cost": "$80-150"},
+        {"name": "Oxygen Sensor Set (4)", "oem": "99760612600/700", "aftermarket": "Bosch, NTK", "cost": "$300-500"},
+        {"name": "Headlight Seal Kit", "oem": "Various", "aftermarket": "Butyl tape", "cost": "$20-50"},
+        {"name": "PASM Damper", "oem": "99734305310", "aftermarket": "Remanufactured", "cost": "$300-900"},
+        {"name": "Window Regulator", "oem": "99754207504", "aftermarket": "URO", "cost": "$150-250"},
+        {"name": "VarioCam Solenoid", "oem": "99760530101", "aftermarket": "OEM only", "cost": "$100-180"}
+      ],
+      "tools": ["OBD2 scanner (Durametric/PIWIS)", "Torx driver set", "10mm socket", "Heat gun", "Butyl tape", "Multimeter", "Contact cleaner", "Dielectric grease"],
+      "steps": ["Begin with diagnostic scan for fault codes.", "Check front trunk for water intrusion.", "For headlight reseal: remove assembly (3 bolts).", "Heat headlight at 200°F for 15-20 min to soften sealant.", "Separate lens, clean old butyl, apply new sealant.", "For coils: open engine lid, disconnect and remove.", "Inspect spark plug wells for oil.", "For PASM: diagnose which damper failed, replace.", "For window regulator: remove door panel, support glass, swap.", "Clean all ground points.", "Clear codes and verify repairs."],
+      "tips": ["997 headlight condensation extremely common.", "997.1 vs 997.2 have different filter locations.", "VarioCam solenoid issues cause rough running - use OEM.", "PASM failures trigger warning light."],
+      "warnings": ["Water in frunk destroys DME.", "Be careful heating headlights.", "Never use carburetor cleaner on MAF.", "Always disconnect battery before electrical work."],
+      "references": [{"name": "Rennlist 997 Electrical", "url": "https://rennlist.com/forums/997-forum/"}, {"name": "Pelican Parts Headlight DIY", "url": "https://www.pelicanparts.com/techarticles/"}]
+    },
+    {
+      "id": "interior-restoration",
+      "title": "Interior Restoration",
+      "description": "Complete interior refresh for the 997 covering leather care, common wear items, and PCM system maintenance.",
+      "difficulty": "Intermediate",
+      "time": "10-20 hours",
+      "cost": "$300-1,200",
+      "interval": "As needed",
+      "laborHours": "8-16 hours shop time",
+      "parts": [
+        {"name": "Leather Repair Kit", "oem": "—", "aftermarket": "Leatherique, Colourlock", "cost": "$50-100"},
+        {"name": "Steering Wheel Re-wrap", "oem": "—", "aftermarket": "Professional service", "cost": "$200-400"},
+        {"name": "Shift Knob", "oem": "99742407504", "aftermarket": "Aftermarket, weighted", "cost": "$60-200"},
+        {"name": "E-Brake Boot", "oem": "99755298001", "aftermarket": "Leather replicas", "cost": "$30-60"},
+        {"name": "Seat Foam (Driver)", "oem": "99752191203", "aftermarket": "Recovered", "cost": "$100-200"},
+        {"name": "Cabin Air Filter", "oem": "99757221901", "aftermarket": "Mann, Bosch", "cost": "$25-50"},
+        {"name": "Door Seal Set", "oem": "99753193101", "aftermarket": "URO", "cost": "$100-200"},
+        {"name": "HVAC Blend Actuator", "oem": "99757319100", "aftermarket": "VDO", "cost": "$60-120"}
+      ],
+      "tools": ["Trim removal tools", "Torx driver set", "Microfiber cloths", "Leather cleaner and conditioner", "Interior detailing brushes"],
+      "steps": ["Document condition with photos.", "Clean leather thoroughly with dedicated cleaner.", "Fill cracks with leather filler, sand smooth, apply dye.", "Condition all leather surfaces.", "Assess steering wheel - rewrap if worn.", "Replace worn boots and knobs.", "Replace cabin air filter - in frunk under carpet.", "Clean HVAC vents with brushes.", "Address seat bolster wear with dye or foam replacement.", "Replace door seals if wind noise present.", "Apply UV protectant to exposed surfaces."],
+      "tips": ["Sport seats wear faster on driver bolster.", "Steering wheel often wears before seats.", "997 leather responds well to conditioning.", "HVAC clicking indicates blend actuator failure."],
+      "warnings": ["Don't use silicone on leather.", "Steering wheel has airbag - disconnect battery.", "Be careful with aged trim clips."],
+      "references": [{"name": "Leatherique Products", "url": "https://www.leatherique.com/"}, {"name": "Rennlist 997 Interior", "url": "https://rennlist.com/forums/997-forum/"}]
     }
   ],
   "suppliers": {

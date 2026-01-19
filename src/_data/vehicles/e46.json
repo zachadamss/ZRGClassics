@@ -290,28 +290,548 @@
   ],
   "guides": [
     {
-      "id": "cooling-refresh",
-      "title": "Cooling System Overhaul",
-      "description": "Complete replacement of all cooling system components to prevent overheating disasters.",
+      "id": "suspension-refresh",
+      "title": "Complete Suspension Refresh",
+      "description": "Full front and rear suspension rebuild addressing the E46's multi-link suspension wear points including control arms, RTABs, and subframe bushings.",
       "difficulty": "Intermediate",
-      "time": "5-7 hours",
-      "status": "coming-soon"
+      "time": "12-16 hours",
+      "cost": "$800-1,500",
+      "interval": "Every 80,000-120,000 miles",
+      "laborHours": "10-14 hours shop time",
+      "parts": [
+        {
+          "name": "Front Lower Control Arm (Left)",
+          "oem": "31126758519",
+          "aftermarket": "Lemforder 27044 01, Meyle HD 3160500013/HD",
+          "cost": "$60-100"
+        },
+        {
+          "name": "Front Lower Control Arm (Right)",
+          "oem": "31126758520",
+          "aftermarket": "Lemforder 27045 01, Meyle HD 3160500014/HD",
+          "cost": "$60-100"
+        },
+        {
+          "name": "Front Thrust Rod (Left)",
+          "oem": "31126774825",
+          "aftermarket": "Lemforder 27064 01, Meyle HD 3160500000/HD",
+          "cost": "$50-80"
+        },
+        {
+          "name": "Front Thrust Rod (Right)",
+          "oem": "31126774826",
+          "aftermarket": "Lemforder 27065 01, Meyle HD 3160500001/HD",
+          "cost": "$50-80"
+        },
+        {
+          "name": "Front Sway Bar End Link (Pair)",
+          "oem": "31356780847",
+          "aftermarket": "Lemforder 25404 02, Febi 18279",
+          "cost": "$30-60"
+        },
+        {
+          "name": "Rear Trailing Arm Bushing Set (RTABs)",
+          "oem": "33326770824 (x2)",
+          "aftermarket": "Lemforder, Powerflex PFR5-3608",
+          "cost": "$80-180"
+        },
+        {
+          "name": "Rear Upper Control Arm (Camber)",
+          "oem": "33326774796",
+          "aftermarket": "Lemforder 27093 01, SPC adjustable",
+          "cost": "$50-90"
+        },
+        {
+          "name": "Rear Lower Control Arm",
+          "oem": "33326779387",
+          "aftermarket": "Lemforder 27073 02, Meyle HD",
+          "cost": "$40-70"
+        },
+        {
+          "name": "Rear Subframe Bushing Set",
+          "oem": "33312283573 (x4)",
+          "aftermarket": "Powerflex PFR5-4610, Lemforder",
+          "cost": "$100-200"
+        },
+        {
+          "name": "Front Strut Mount (Pair)",
+          "oem": "31336760943",
+          "aftermarket": "Lemforder 31131, Sachs 802420",
+          "cost": "$80-150"
+        }
+      ],
+      "tools": [
+        "Floor jack and jack stands (4)",
+        "18mm, 21mm sockets for control arm bolts",
+        "16mm, 18mm wrenches",
+        "Ball joint separator or pickle fork",
+        "Breaker bar for seized bolts",
+        "Torque wrench (ft-lb range)",
+        "Penetrating oil (PB Blaster)",
+        "Pry bar",
+        "Spring compressor (for strut work)",
+        "RTAB press tool (rental) or hydraulic press",
+        "Alignment specs printout"
+      ],
+      "steps": [
+        "Raise vehicle and support on jack stands at all four corners - vehicle must be level.",
+        "Remove all four wheels and mark their positions for reinstallation.",
+        "Photograph suspension geometry before disassembly for reference.",
+        "Soak all suspension bolts with penetrating oil and let sit 15-30 minutes.",
+        "Start with front suspension - remove sway bar end links (16mm on stud, hold with Allen key).",
+        "Remove lower control arm ball joint nut (18mm) and separate from steering knuckle using separator.",
+        "Remove lower control arm bracket bolts from subframe (18mm) and remove arm.",
+        "Remove thrust rod bolts at both ends (18mm at subframe, 21mm at steering knuckle bracket).",
+        "Remove steering knuckle pinch bolt if replacing tie rod ends.",
+        "For strut removal, mark position, remove three upper nuts (13mm) and lower pinch bolt.",
+        "Install new front components - torque control arm bracket to subframe 44 ft-lbs, ball joint 66 ft-lbs.",
+        "Torque thrust rod bolts: subframe end 57 ft-lbs, knuckle bracket end 81 ft-lbs.",
+        "Install new sway bar end links - torque to 48 ft-lbs.",
+        "Move to rear suspension - support trailing arm with jack before removing anything.",
+        "For RTAB replacement: remove trailing arm rear bolt (21mm), press out old bushings with tool.",
+        "Press new RTABs into trailing arm - note orientation marks on bushings.",
+        "Remove and replace upper control arms (camber arms) - 57 ft-lbs at subframe, 81 ft-lbs at trailing arm.",
+        "Remove and replace lower control arms - 81 ft-lbs both ends. Torque at RIDE HEIGHT.",
+        "For subframe bushing replacement: support subframe, lower it to access bushings, press new ones in.",
+        "Reinstall all components, checking for correct torque on every fastener.",
+        "Install wheels and lower vehicle - bounce corners to settle suspension.",
+        "Perform professional 4-wheel alignment IMMEDIATELY - do not drive far without alignment."
+      ],
+      "tips": [
+        "The E46 multi-link rear is sensitive to worn bushings - imprecise handling often traces to RTABs.",
+        "Always torque rear control arms at ride height - not with suspension hanging.",
+        "Meyle HD bushings are stiffer than OEM and last longer but transmit more road noise.",
+        "Mark subframe position before lowering to make reinstallation alignment easier.",
+        "Replace subframe bushings while you have access - they're often overlooked.",
+        "Consider upgrading to SPC adjustable rear camber arms if chasing alignment specs."
+      ],
+      "warnings": [
+        "RTAB replacement requires a special press tool or a hydraulic press - do not attempt with hammers.",
+        "Worn RTABs can cause sudden rear-end instability - prioritize this repair if symptoms present.",
+        "Always support subframe before loosening bolts - it's heavy and can shift suddenly.",
+        "E46 M3 owners: inspect subframe mounting points for cracks before suspension work - if found, repair first."
+      ],
+      "references": [
+        {
+          "name": "E46Fanatics Suspension Torque Specs",
+          "url": "https://www.e46fanatics.com/threads/e46-complete-suspension-torque-specs.1054309/"
+        },
+        {
+          "name": "Turner Motorsport E46 Suspension Guide",
+          "url": "https://www.turnermotorsport.com/t-BMW-E46-Suspension-Guide"
+        },
+        {
+          "name": "Pelican Parts E46 Control Arm Replacement",
+          "url": "https://www.pelicanparts.com/techarticles/BMW-E46/101-BODY-Control_Arm_Bushing_Replacement/"
+        }
+      ]
     },
     {
-      "id": "subframe-reinforcement",
-      "title": "Subframe Inspection & Reinforcement",
-      "description": "How to inspect for subframe cracks and install reinforcement plates.",
-      "difficulty": "Advanced",
-      "time": "8-12 hours",
-      "status": "coming-soon"
+      "id": "rust-repair",
+      "title": "Rust Prevention and Repair",
+      "description": "Comprehensive rust inspection and repair guide addressing the E46's common problem areas including front fenders, rocker panels, trunk floor, and rear wheel arches.",
+      "difficulty": "Intermediate",
+      "time": "8-20 hours",
+      "cost": "$200-1,500",
+      "interval": "Inspect annually, repair as needed",
+      "laborHours": "Varies by severity",
+      "parts": [
+        {
+          "name": "Front Fender (Left)",
+          "oem": "41358240405 (sedan)",
+          "aftermarket": "Various aftermarket panels",
+          "cost": "$150-400"
+        },
+        {
+          "name": "Front Fender (Right)",
+          "oem": "41358240406 (sedan)",
+          "aftermarket": "Various aftermarket panels",
+          "cost": "$150-400"
+        },
+        {
+          "name": "Rocker Panel Repair Section (Left)",
+          "oem": "41218238249",
+          "aftermarket": "Sherman, aftermarket sections",
+          "cost": "$80-200"
+        },
+        {
+          "name": "Rocker Panel Repair Section (Right)",
+          "oem": "41218238250",
+          "aftermarket": "Sherman, aftermarket sections",
+          "cost": "$80-200"
+        },
+        {
+          "name": "Trunk Floor Pan",
+          "oem": "41128238251",
+          "aftermarket": "Aftermarket repair panels",
+          "cost": "$150-350"
+        },
+        {
+          "name": "Rear Wheel Arch (Left)",
+          "oem": "41348195613",
+          "aftermarket": "Klokkerholm, aftermarket",
+          "cost": "$100-250"
+        },
+        {
+          "name": "Rear Wheel Arch (Right)",
+          "oem": "41348195614",
+          "aftermarket": "Klokkerholm, aftermarket",
+          "cost": "$100-250"
+        },
+        {
+          "name": "Battery Tray",
+          "oem": "41148225861",
+          "aftermarket": "Aftermarket replacement",
+          "cost": "$60-150"
+        },
+        {
+          "name": "Rust Converter (Eastwood/POR-15)",
+          "oem": "—",
+          "aftermarket": "POR-15, Eastwood Rust Converter",
+          "cost": "$20-40"
+        },
+        {
+          "name": "Cavity Wax/Rust Preventive",
+          "oem": "—",
+          "aftermarket": "Fluid Film, Eastwood Internal Frame Coating",
+          "cost": "$15-30"
+        }
+      ],
+      "tools": [
+        "Wire brush and wire wheel for drill",
+        "Angle grinder with flap disc and cut-off wheel",
+        "MIG welder (for panel replacement)",
+        "Body hammer and dolly set",
+        "Drill and spot weld cutter",
+        "Aviation snips",
+        "Sandpaper (80, 120, 220, 320 grit)",
+        "Inspection mirror and flashlight",
+        "Primer (epoxy and high-build)",
+        "Spray gun or rattle cans",
+        "Safety glasses and respirator",
+        "Fire extinguisher"
+      ],
+      "steps": [
+        "Thoroughly wash and dry the entire undercarriage and wheel wells before inspection.",
+        "Inspect common E46 rust areas: behind front fender side markers, rocker panel jacking points, trunk floor spare tire well, battery tray, rear wheel arches inside trunk.",
+        "Use inspection mirror and flashlight to check inside rocker panels through drain holes.",
+        "Check sunroof drain tubes and clear any blockages - clogged drains cause interior rust.",
+        "For surface rust: wire brush affected area down to bare metal, extending 2 inches into clean metal.",
+        "Apply rust converter to any remaining pitting and let cure per product instructions.",
+        "For rust-through: mark the extent of damage, cut out affected metal 1 inch into clean metal.",
+        "Create cardboard template of needed patch, transfer to new sheet metal.",
+        "Cut patch panel leaving small gap for welding (1/8 inch).",
+        "Clamp patch in position and tack weld corners first, then fill in with stitch welds.",
+        "Grind welds flush and treat with weld-through primer on backside.",
+        "For front fender rust (behind side marker): remove fender for proper access and repair.",
+        "Address battery tray rust by removing battery, cleaning acid residue with baking soda solution.",
+        "Treat all repaired areas with epoxy primer, then high-build primer.",
+        "Block sand primer smooth (220-320 grit) and inspect for low spots.",
+        "Apply seam sealer to all welded joints before topcoat.",
+        "Spray interior cavities with rust preventive (Fluid Film or similar).",
+        "Apply undercoating to repaired underbody areas.",
+        "Touch up paint or full paint as required to complete repair."
+      ],
+      "tips": [
+        "E46 front fenders commonly rust behind the side marker lights - remove markers to inspect.",
+        "Trunk rust often originates from clogged drain plugs in the spare tire well - clear these regularly.",
+        "Battery acid accelerates rust in the battery tray - neutralize acid before repair.",
+        "Rocker panel jacking points rust from inside out - catch it early or full replacement is needed.",
+        "POR-15 works well but must be topcoated as it degrades in UV light.",
+        "Fluid Film applied annually to inner fenders and cavities prevents future rust."
+      ],
+      "warnings": [
+        "Always wear a proper respirator when grinding rust - it contains harmful particles.",
+        "Have a fire extinguisher ready when welding near interiors or fuel lines.",
+        "Check for wiring and brake lines before cutting or welding any body panels.",
+        "Extensive rust near subframe mounting points is a safety issue - may require professional repair.",
+        "Battery acid is corrosive - wear gloves and eye protection, neutralize with baking soda and water."
+      ],
+      "references": [
+        {
+          "name": "E46Fanatics Rust Repair Thread",
+          "url": "https://www.e46fanatics.com/threads/e46-rust-faq.901340/"
+        },
+        {
+          "name": "Pelican Parts E46 Rust Prevention",
+          "url": "https://www.pelicanparts.com/techarticles/BMW-E46/BODY-Rust_Prevention/"
+        },
+        {
+          "name": "Eastwood Rust Repair Products",
+          "url": "https://www.eastwood.com/rust-repair"
+        }
+      ]
     },
     {
-      "id": "vanos-rebuild",
-      "title": "VANOS Seal Replacement",
-      "description": "Restore proper valve timing with new VANOS seals.",
+      "id": "electrical-restoration",
+      "title": "Electrical System Restoration",
+      "description": "Complete electrical system restoration covering the E46's common electrical failures including pixel repair, window regulators, lighting upgrades, and module refresh.",
       "difficulty": "Intermediate",
-      "time": "4-5 hours",
-      "status": "coming-soon"
+      "time": "10-16 hours",
+      "cost": "$400-1,000",
+      "interval": "Address as symptoms appear",
+      "laborHours": "8-12 hours shop time",
+      "parts": [
+        {
+          "name": "Instrument Cluster Pixel Repair Ribbon",
+          "oem": "—",
+          "aftermarket": "BavAuto ribbon, various eBay kits",
+          "cost": "$20-50"
+        },
+        {
+          "name": "Window Regulator (Front Left)",
+          "oem": "51338252393",
+          "aftermarket": "URO 51338252393, various",
+          "cost": "$80-130"
+        },
+        {
+          "name": "Window Regulator (Front Right)",
+          "oem": "51338252394",
+          "aftermarket": "URO 51338252394, various",
+          "cost": "$80-130"
+        },
+        {
+          "name": "Blower Motor Final Stage Resistor",
+          "oem": "64116920365",
+          "aftermarket": "URO, Behr/Mahle 351321141",
+          "cost": "$40-80"
+        },
+        {
+          "name": "Blower Motor",
+          "oem": "64118372797",
+          "aftermarket": "Behr/Mahle, TYC 700164",
+          "cost": "$60-120"
+        },
+        {
+          "name": "ABS Wheel Speed Sensor (Front)",
+          "oem": "34526752681",
+          "aftermarket": "Bosch 0986594511, Delphi",
+          "cost": "$30-60"
+        },
+        {
+          "name": "ABS Wheel Speed Sensor (Rear)",
+          "oem": "34526752683",
+          "aftermarket": "Bosch 0986594521, Delphi",
+          "cost": "$30-60"
+        },
+        {
+          "name": "Interior Door Handle Cable (Left)",
+          "oem": "51218236597",
+          "aftermarket": "URO, aftermarket",
+          "cost": "$15-30"
+        },
+        {
+          "name": "Interior Door Handle Cable (Right)",
+          "oem": "51218236598",
+          "aftermarket": "URO, aftermarket",
+          "cost": "$15-30"
+        },
+        {
+          "name": "Key Fob Battery (CR2032)",
+          "oem": "—",
+          "aftermarket": "Any quality CR2032",
+          "cost": "$3-5"
+        }
+      ],
+      "tools": [
+        "Torx driver set (T10, T15, T20, T25)",
+        "Small flathead screwdriver",
+        "Trim panel removal tools (plastic pry set)",
+        "Soldering iron with fine tip",
+        "Solder and flux",
+        "Heat gun or hair dryer",
+        "Multimeter",
+        "Wire strippers and crimpers",
+        "Electrical contact cleaner",
+        "Dielectric grease",
+        "INPA/ISTA diagnostic software (optional)"
+      ],
+      "steps": [
+        "Start with instrument cluster pixel repair - remove cluster (4 Torx screws, disconnect cables).",
+        "Disassemble cluster housing to access the LCD display ribbon cable.",
+        "Use heat gun to warm existing ribbon, carefully peel off failed ribbon.",
+        "Clean contact points with isopropyl alcohol and install new ribbon with heat gun.",
+        "Reinstall cluster and verify all pixels display correctly.",
+        "For window regulator replacement: remove door panel (Torx screws, plastic clips, armrest screws).",
+        "Disconnect window switch and speaker connectors.",
+        "Peel back vapor barrier carefully - you'll reuse it.",
+        "Lower window to access mounting bolts, then support glass with tape.",
+        "Remove regulator mounting bolts (10mm) and guide glass bolts, slide out old regulator.",
+        "Install new regulator in reverse order - torque mounting bolts to 89 in-lbs.",
+        "Test window operation before reinstalling door panel.",
+        "For blower motor final stage: remove glovebox (Torx screws), access behind blower motor.",
+        "Disconnect final stage connector and remove 2 screws, install new unit.",
+        "For ABS sensors: raise vehicle, remove wheel, disconnect sensor connector.",
+        "Remove sensor retaining bolt and pull sensor from hub - may require penetrating oil.",
+        "Clean sensor mounting hole, install new sensor and torque bolt to 7 ft-lbs.",
+        "Apply dielectric grease to all electrical connectors during reassembly.",
+        "Clear any fault codes with diagnostic tool and verify repairs.",
+        "Replace key fob battery - pry open case, replace CR2032, resync if needed."
+      ],
+      "tips": [
+        "E46 pixel failure is extremely common - repair is straightforward with the right ribbon.",
+        "Window regulator cables fray before breaking - listen for unusual sounds during operation.",
+        "Final stage resistor failure causes blower to only work on high - common failure mode.",
+        "ABS sensor failures often cause DSC/traction control lights as well as ABS light.",
+        "Door handle cables break inside the handle - you'll hear the click but door won't open.",
+        "Keep spare key fob batteries - weak battery causes intermittent key functions."
+      ],
+      "warnings": [
+        "Disconnect battery before any electrical work to prevent shorts and airbag deployment.",
+        "Be careful with the vapor barrier when removing door panels - it's critical for water sealing.",
+        "Don't force instrument cluster removal - the locking tabs are fragile.",
+        "When soldering pixel ribbon, use minimal heat - excess heat damages the LCD.",
+        "ABS sensors are magnetic - keep away from other sensors and metal debris."
+      ],
+      "references": [
+        {
+          "name": "E46Fanatics Pixel Repair Guide",
+          "url": "https://www.e46fanatics.com/threads/diy-e46-cluster-pixel-ribbon-replacement.1009521/"
+        },
+        {
+          "name": "Pelican Parts E46 Window Regulator",
+          "url": "https://www.pelicanparts.com/techarticles/BMW-E46/18-BODY-Window_Regulator/"
+        },
+        {
+          "name": "BMW E46 Blower Motor Replacement",
+          "url": "https://www.pelicanparts.com/techarticles/BMW-E46/39-HVAC-Blower_Motor/"
+        }
+      ]
+    },
+    {
+      "id": "interior-restoration",
+      "title": "Interior Restoration",
+      "description": "Complete interior refresh covering the E46's leather care, headliner repair, trim restoration, and climate control system servicing.",
+      "difficulty": "Intermediate",
+      "time": "12-20 hours",
+      "cost": "$300-800",
+      "interval": "As needed for wear items",
+      "laborHours": "10-16 hours shop time",
+      "parts": [
+        {
+          "name": "Leather Repair Kit",
+          "oem": "—",
+          "aftermarket": "Leatherique, Colourlock, Furniture Clinic",
+          "cost": "$50-100"
+        },
+        {
+          "name": "Headliner Fabric (3 yards)",
+          "oem": "—",
+          "aftermarket": "Match OEM color, foam-backed material",
+          "cost": "$40-80"
+        },
+        {
+          "name": "Headliner Adhesive",
+          "oem": "—",
+          "aftermarket": "3M Super 77, Permatex headliner adhesive",
+          "cost": "$15-25"
+        },
+        {
+          "name": "Interior Door Handle (Left)",
+          "oem": "51417067091 (black)",
+          "aftermarket": "URO, various colors available",
+          "cost": "$20-40"
+        },
+        {
+          "name": "Interior Door Handle (Right)",
+          "oem": "51417067092 (black)",
+          "aftermarket": "URO, various colors available",
+          "cost": "$20-40"
+        },
+        {
+          "name": "Dash Speaker Cover (Left)",
+          "oem": "51458221833",
+          "aftermarket": "Used or aftermarket",
+          "cost": "$30-60"
+        },
+        {
+          "name": "Dash Speaker Cover (Right)",
+          "oem": "51458221834",
+          "aftermarket": "Used or aftermarket",
+          "cost": "$30-60"
+        },
+        {
+          "name": "Shift Boot (Manual)",
+          "oem": "25117896886",
+          "aftermarket": "Redline Goods, various leather",
+          "cost": "$30-80"
+        },
+        {
+          "name": "E-Brake Boot",
+          "oem": "34411162910",
+          "aftermarket": "Redline Goods, various leather",
+          "cost": "$20-50"
+        },
+        {
+          "name": "Cabin Air Filter (Microfilter)",
+          "oem": "64319174370",
+          "aftermarket": "Mann CUK8430, Bosch 6057C",
+          "cost": "$20-40"
+        }
+      ],
+      "tools": [
+        "Trim panel removal tools (plastic)",
+        "Torx driver set (T15, T20, T25, T30)",
+        "Phillips and flathead screwdrivers",
+        "Heat gun",
+        "Adhesive spreader or brush",
+        "Masking tape and paper",
+        "Microfiber cloths",
+        "Leather cleaner and conditioner",
+        "Interior detailing brushes",
+        "Spray bottle",
+        "Razor blade (new, for trim removal)",
+        "Sunroof drain snake/compressed air"
+      ],
+      "steps": [
+        "Begin with thorough interior cleaning - vacuum all surfaces and crevices.",
+        "Clean leather with dedicated leather cleaner, working in small sections.",
+        "Address leather cracks with repair compound - clean, fill, texture, and color match.",
+        "Apply leather conditioner to all leather surfaces after cleaning.",
+        "For headliner repair: remove sun visors, dome light, A-pillar trim, and grab handles.",
+        "Remove headliner board by flexing it out through rear door opening.",
+        "Strip old fabric completely and remove old foam with scraper and brush.",
+        "Apply adhesive spray to headliner board in sections, press new fabric into place.",
+        "Work from center outward, stretching fabric taut to avoid wrinkles.",
+        "Wrap edges and cut openings for accessories once adhesive cures.",
+        "Reinstall headliner board and all removed components.",
+        "Replace door handle assemblies - remove door panel, disconnect old handle, install new.",
+        "Replace cracked dash speaker covers - pry out gently with trim tool.",
+        "Replace shift boot and e-brake boot - requires removing shift knob and console trim.",
+        "Clear sunroof drains with flexible wire or compressed air to prevent water intrusion.",
+        "Replace cabin air filter - located behind glovebox, accessible after removing filter cover.",
+        "Clean HVAC vents with detailing brushes and compressed air.",
+        "Apply UV protectant to dashboard and trim (avoid steering wheel grip area)."
+      ],
+      "tips": [
+        "E46 leather tends to crack on the driver's bolster - address early to prevent spreading.",
+        "Headliner sag is caused by foam deterioration - full replacement is the only permanent fix.",
+        "Always work in a shaded, cool area when reinstalling headliner - adhesive sets too fast in heat.",
+        "Door handle cables often break before the handle itself - replace together for longevity.",
+        "Sunroof drain blockage is the #1 cause of wet carpets and interior rust.",
+        "Condition leather every 3-4 months in dry climates to prevent cracking."
+      ],
+      "warnings": [
+        "Headliner adhesive is flammable and fumes are harmful - work in well-ventilated area.",
+        "Do not pull headliner fabric once positioned - it will stretch and distort.",
+        "Be careful removing trim clips - they become brittle with age and break easily.",
+        "Do not use silicone-based products on leather - they cause long-term damage.",
+        "Wear gloves when handling headliner adhesive - it's difficult to remove from skin."
+      ],
+      "references": [
+        {
+          "name": "E46Fanatics Interior Restoration Thread",
+          "url": "https://www.e46fanatics.com/threads/interior-restoration-faq.882091/"
+        },
+        {
+          "name": "Pelican Parts E46 Headliner Replacement",
+          "url": "https://www.pelicanparts.com/techarticles/BMW-E46/INT-Headliner/"
+        },
+        {
+          "name": "Leatherique Product Guide",
+          "url": "https://www.leatherique.com/leather-care-guide"
+        }
+      ]
     }
   ],
   "suppliers": {

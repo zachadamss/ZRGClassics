@@ -326,36 +326,310 @@
   ],
   "guides": [
     {
-      "id": "m20-rebuild",
-      "title": "M20 Engine Rebuild Guide",
-      "description": "Complete teardown and rebuild of the M20 inline-6 engine, including machine work specifications and assembly tips.",
-      "difficulty": "Advanced",
-      "time": "40+ hours",
-      "status": "coming-soon"
-    },
-    {
       "id": "suspension-refresh",
       "title": "Full Suspension Refresh",
-      "description": "Step-by-step guide to replacing all bushings, shocks, and worn components for a factory-fresh ride.",
+      "description": "Complete front and rear suspension overhaul including all bushings, shocks, struts, and steering components. Restores factory handling and eliminates clunks, wandering, and uneven tire wear.",
       "difficulty": "Intermediate",
       "time": "16-20 hours",
-      "status": "coming-soon"
-    },
-    {
-      "id": "electrical-diagnosis",
-      "title": "Electrical System Troubleshooting",
-      "description": "Diagnosing and repairing common electrical issues including ground points, relays, and wiring repairs.",
-      "difficulty": "Intermediate",
-      "time": "Varies",
-      "status": "coming-soon"
+      "cost": "$800-1,500",
+      "parts": [
+        { "name": "Front Strut Insert (pair)", "oem": "31311133386", "aftermarket": "Bilstein B4/B6, Koni Yellow", "cost": "$150-300" },
+        { "name": "Rear Shock Absorber (pair)", "oem": "33521132056", "aftermarket": "Bilstein B4/B6, Koni Yellow", "cost": "$120-250" },
+        { "name": "Front Control Arm Bushing Kit", "oem": "31129058817", "aftermarket": "Lemforder, Meyle HD", "cost": "$40-80" },
+        { "name": "Rear Trailing Arm Bushing Kit", "oem": "33321126476", "aftermarket": "Meyle HD, Powerflex", "cost": "$30-60" },
+        { "name": "Front Strut Mount (pair)", "oem": "31331139438", "aftermarket": "Lemforder, Febi", "cost": "$60-120" },
+        { "name": "Rear Subframe Bushing Kit", "oem": "33311129144", "aftermarket": "Meyle, Powerflex", "cost": "$40-100" },
+        { "name": "Tie Rod End (pair)", "oem": "32111125186", "aftermarket": "Lemforder, Meyle", "cost": "$50-90" },
+        { "name": "Front Sway Bar End Link (pair)", "oem": "31351130075", "aftermarket": "Meyle HD", "cost": "$30-60" },
+        { "name": "Front Sway Bar Bushing Kit", "oem": "31351129401", "aftermarket": "Powerflex, SuperPro", "cost": "$15-30" },
+        { "name": "Rear Sway Bar Bushing Kit", "oem": "33551129669", "aftermarket": "Powerflex, SuperPro", "cost": "$15-30" }
+      ],
+      "tools": [
+        "Ball joint separator or pickle fork",
+        "Spring compressor (for strut disassembly)",
+        "22mm strut nut socket (deep)",
+        "32mm axle nut socket",
+        "Bushing press kit or hydraulic press",
+        "Torque wrench (ft-lb and Nm)",
+        "Floor jack and jack stands (4 minimum)",
+        "Breaker bar with 18mm, 19mm, 21mm sockets",
+        "Pry bar",
+        "Penetrating oil (PB Blaster)",
+        "Wire brush and rust converter"
+      ],
+      "steps": [
+        "Raise the vehicle and secure on four jack stands. Remove all four wheels.",
+        "FRONT SUSPENSION: Remove the brake caliper (13mm bolts) and hang with wire - do not let it hang by the hose.",
+        "Remove the tie rod end nut (19mm) and separate using a ball joint separator. Count threads visible for alignment reference.",
+        "Remove the sway bar end link nuts (16mm) from the strut.",
+        "Remove the pinch bolt (16mm) holding the strut to the steering knuckle.",
+        "Remove the three 13mm nuts from the strut tower in the engine bay.",
+        "Lower the strut assembly out of the wheel well.",
+        "Use a spring compressor to safely compress the spring, then remove the 22mm strut nut.",
+        "Replace the strut insert, bump stop, dust boot, and strut mount. Torque strut nut to 47 ft-lbs.",
+        "Reinstall strut assembly - torque strut tower nuts to 16 ft-lbs, pinch bolt to 59 ft-lbs.",
+        "For control arm bushings: Remove the control arm (19mm bolts) and press out old bushings.",
+        "Press in new bushings using a bushing press or vise with appropriate receivers.",
+        "Reinstall control arm - torque to 57 ft-lbs. Note: Final torque at ride height.",
+        "REAR SUSPENSION: Remove the rear shock lower bolt (19mm) and upper nuts (13mm) in trunk.",
+        "Install new shocks - torque upper nuts to 16 ft-lbs, lower bolt to 57 ft-lbs.",
+        "For trailing arm bushings: Support the trailing arm and remove the pivot bolt (19mm).",
+        "Press out old bushings and press in new ones. Reinstall bolt and torque to 52 ft-lbs at ride height.",
+        "Replace subframe bushings by supporting the subframe, removing bolts, and pressing in new bushings.",
+        "Replace sway bar bushings and end links on both axles.",
+        "Reinstall wheels, lower vehicle, and torque lug nuts to 80 ft-lbs.",
+        "CRITICAL: Get a four-wheel alignment within 50 miles. Do not final-torque suspension bolts until at ride height."
+      ],
+      "tips": [
+        "Spray all bolts with penetrating oil 24 hours before starting to ease removal.",
+        "Take photos of the suspension geometry before disassembly for reference.",
+        "Lemforder and Meyle HD bushings are OEM-equivalent quality - avoid cheap alternatives.",
+        "Bilstein B6 (yellow) offers improved damping over stock without being too stiff for street use.",
+        "If the strut tower nuts are seized, use heat carefully - the tower is thin metal.",
+        "Powerflex polyurethane bushings last longer but transmit more NVH than rubber."
+      ],
+      "warnings": [
+        "Spring compressors are extremely dangerous if used incorrectly - follow all safety procedures.",
+        "Never work under a vehicle supported only by a jack - always use jack stands.",
+        "Suspension bolts must be final-torqued with the weight of the car on the wheels (ride height).",
+        "Worn strut mounts can cause clunking and affect handling - always inspect and replace if worn."
+      ],
+      "references": [
+        { "name": "R3VLimited Suspension Guide", "url": "https://www.r3vlimited.com/board/showthread.php?t=178331" },
+        { "name": "Bentley Service Manual", "url": "https://www.bentleypublishers.com/" }
+      ]
     },
     {
       "id": "rust-repair",
       "title": "Rust Repair & Prevention",
-      "description": "Identifying rust-prone areas and techniques for cutting, welding, and preventing future corrosion.",
+      "description": "E30-specific rust identification and repair guide. Covers the common rot spots including front fenders, rocker panels, rear wheel arches, and floor pans with techniques for cutting, welding, and long-term prevention.",
       "difficulty": "Advanced",
-      "time": "Varies",
-      "status": "coming-soon"
+      "time": "20-60+ hours",
+      "cost": "$300-3,000+",
+      "parts": [
+        { "name": "Front Fender Patch Panel (each)", "oem": "Discontinued", "aftermarket": "Klokkerholm 0054551/552", "cost": "$80-150" },
+        { "name": "Rocker Panel (each)", "oem": "Discontinued", "aftermarket": "Klokkerholm 0054561/562", "cost": "$100-200" },
+        { "name": "Rear Wheel Arch (each)", "oem": "Discontinued", "aftermarket": "Klokkerholm 0054583/584", "cost": "$60-120" },
+        { "name": "Front Floor Pan Section", "oem": "Discontinued", "aftermarket": "Klokkerholm 0054581", "cost": "$100-180" },
+        { "name": "Battery Tray", "oem": "41111884099", "aftermarket": "Aftermarket available", "cost": "$80-150" },
+        { "name": "Trunk Floor Repair Panel", "oem": "Discontinued", "aftermarket": "Custom fabrication", "cost": "$150-300" },
+        { "name": "POR-15 Rust Preventive (quart)", "oem": "—", "aftermarket": "POR-15", "cost": "$40-50" },
+        { "name": "Weld-Through Primer (spray)", "oem": "—", "aftermarket": "3M, Eastwood", "cost": "$15-25" },
+        { "name": "Seam Sealer (cartridge)", "oem": "—", "aftermarket": "3M 08308, Lord Fusor", "cost": "$20-35" },
+        { "name": "Cavity Wax (aerosol)", "oem": "—", "aftermarket": "Fluid Film, Eastwood", "cost": "$15-25" }
+      ],
+      "tools": [
+        "MIG welder (180A minimum recommended)",
+        "Angle grinder with cut-off wheels and flap discs",
+        "Spot weld drill bit set",
+        "Body hammer and dolly set",
+        "Sheet metal shears (straight and offset)",
+        "Drill with step bits",
+        "Wire wheel attachments",
+        "Rust converter (Ospho or equivalent)",
+        "Sandblaster (optional but helpful)",
+        "Cleco fasteners and pliers",
+        "Welding clamps",
+        "Safety equipment: auto-darkening helmet, gloves, fire extinguisher"
+      ],
+      "steps": [
+        "ASSESSMENT: Remove interior carpets, spare tire, and trunk liner to inspect floor pans.",
+        "Remove front fender liners and inspect the inner fender and frame rails.",
+        "Check common E30 rust areas: front fenders behind side markers, rocker panels at jacking points, rear wheel arches, battery tray, trunk floor.",
+        "Use a screwdriver to probe suspect areas - solid metal won't flex or puncture.",
+        "Mark all areas requiring repair and photograph for reference.",
+        "PREPARATION: Remove all paint and underseal around repair areas using a grinder with flap disc.",
+        "Grind or sandblast back to clean metal, extending 2-3 inches beyond the rust.",
+        "Treat any remaining surface rust with rust converter and allow to cure (24 hours).",
+        "For structural panels (floor, frame rails), support the body before cutting.",
+        "CUTTING: Use a spot weld drill to remove factory spot welds where possible - preserves surrounding metal.",
+        "For patch panels, cut along the factory seam lines using cut-off wheel or plasma cutter.",
+        "Cut 1 inch into good metal to ensure full rust removal.",
+        "FABRICATION: Test-fit patch panels and trim as needed for proper fit.",
+        "Create butt joints or lap joints depending on location and access.",
+        "Drill holes for plug welds if replacing spot welds.",
+        "WELDING: Apply weld-through primer to all bare metal surfaces.",
+        "Use Cleco fasteners to hold panels in position for tack welding.",
+        "Tack weld every 2-3 inches, then fill in with short stitch welds to prevent warping.",
+        "Allow metal to cool between welds - touch test with back of hand.",
+        "Grind welds smooth with flap disc.",
+        "SEALING: Apply seam sealer to all welded joints inside and out.",
+        "Coat repair area with POR-15 or epoxy primer for rust prevention.",
+        "Apply cavity wax inside all boxed sections through drain holes.",
+        "Reinstall trim, undercoating, and paint as needed."
+      ],
+      "tips": [
+        "Klokkerholm panels from Europe are the best quality reproduction panels available.",
+        "Remove the gas tank before any welding near the rear of the car.",
+        "Use a heat sink (wet rag or copper backing) to prevent warping thin panels.",
+        "Stitch welding in 1-inch segments with cooling time prevents heat distortion.",
+        "POR-15 must be applied over rust-free metal or rust converter for best results.",
+        "Cavity wax through factory drain holes protects inside of rockers and frame rails.",
+        "If the subframe mounting points are rusty, do not drive the car - this is a safety issue."
+      ],
+      "warnings": [
+        "Welding near fuel lines or the gas tank can cause fire or explosion - disconnect battery and remove fuel.",
+        "Structural rust in frame rails or subframe mounts requires professional assessment before repair.",
+        "Cutting into structural panels without proper support can cause body flex and misalignment.",
+        "Always have a fire extinguisher within reach when welding on a vehicle.",
+        "Wear proper respiratory protection when grinding rust - it can contain lead from old paint."
+      ],
+      "references": [
+        { "name": "R3VLimited Rust Repair Guide", "url": "https://www.r3vlimited.com/board/showthread.php?t=316133" },
+        { "name": "E30 Zone Structural Rust", "url": "https://www.e30zone.net/e30wiki/" }
+      ]
+    },
+    {
+      "id": "electrical-restoration",
+      "title": "Electrical System Restoration",
+      "description": "Comprehensive guide to diagnosing and restoring the E30's electrical system. Covers ground point restoration, relay replacement, fuse box rebuild, and common wiring repairs for reliable operation.",
+      "difficulty": "Intermediate",
+      "time": "8-20 hours",
+      "cost": "$100-400",
+      "parts": [
+        { "name": "Fuse Box Rebuild Kit", "oem": "—", "aftermarket": "E30 Zone, Garagistic", "cost": "$40-80" },
+        { "name": "Main Relay (DME/Fuel Pump)", "oem": "61361729004", "aftermarket": "Bosch 0332019150", "cost": "$25-45" },
+        { "name": "Headlight Relay (pair)", "oem": "61311378238", "aftermarket": "Bosch/Hella", "cost": "$20-40" },
+        { "name": "Ground Strap - Engine to Chassis", "oem": "12421742444", "aftermarket": "Custom braided", "cost": "$15-30" },
+        { "name": "Ground Strap - Battery to Body", "oem": "12421268097", "aftermarket": "Custom braided", "cost": "$10-20" },
+        { "name": "Fusible Link Wire Set", "oem": "Various", "aftermarket": "Garagistic", "cost": "$20-40" },
+        { "name": "Wiring Connector Repair Kit", "oem": "—", "aftermarket": "Various", "cost": "$30-60" },
+        { "name": "Instrument Cluster Bulb Kit", "oem": "Various", "aftermarket": "LED upgrade available", "cost": "$15-40" },
+        { "name": "Turn Signal/Hazard Relay", "oem": "61311365609", "aftermarket": "URO, MTC", "cost": "$15-25" },
+        { "name": "Ignition Switch", "oem": "61321377946", "aftermarket": "Febi, MTC", "cost": "$30-60" }
+      ],
+      "tools": [
+        "Multimeter with continuity tester",
+        "Wire strippers and crimpers",
+        "Soldering iron and rosin-core solder",
+        "Heat shrink tubing assortment",
+        "Test light (12V)",
+        "Electrical contact cleaner",
+        "Dielectric grease",
+        "Wire brush and sandpaper (180 grit)",
+        "Terminal extraction tools",
+        "Heat gun",
+        "Wiring diagrams (Bentley Manual)"
+      ],
+      "steps": [
+        "GROUND POINTS: Disconnect the battery negative terminal before starting any electrical work.",
+        "Locate the main ground points: engine to chassis (front left), battery to body (inner fender), and transmission to body.",
+        "Remove each ground strap and inspect - look for corrosion, frayed wires, or loose connections.",
+        "Clean mounting surfaces with wire brush until shiny bare metal.",
+        "Apply dielectric grease to prevent future corrosion, reinstall straps and torque securely.",
+        "The hidden ground behind the glovebox is critical - remove the glovebox to access and clean.",
+        "FUSE BOX: Remove the fuse box cover and inspect all fuses with a test light.",
+        "A fuse can look good but have an internal break - test with power applied.",
+        "Clean fuse contacts with electrical contact cleaner and a small brush.",
+        "Inspect the fusible links on the main power distribution - these are common failure points.",
+        "If the fuse box shows heat damage or melted plastic, rebuild or replace it.",
+        "RELAY TESTING: The E30 uses several critical relays - DME/fuel pump, headlights, turn signals, horn.",
+        "Test relays by swapping with known-good units or testing with multimeter.",
+        "The DME relay (under the hood, driver side) is the most common failure - replace preventatively.",
+        "Clean relay socket contacts with electrical contact cleaner.",
+        "WIRING REPAIRS: Inspect the engine harness for cracked insulation, especially near the exhaust.",
+        "Check the trunk wiring where it passes through the body - flex point causes breaks.",
+        "Repair damaged wires with proper splicing - solder and heat shrink, not just electrical tape.",
+        "The headlight wiring can melt from undersized stock wires - upgrade to heavier gauge if dim headlights.",
+        "INSTRUMENT CLUSTER: Remove the cluster and replace burned-out bulbs.",
+        "Clean the printed circuit board contacts with contact cleaner.",
+        "Check the odometer gears - broken gears are common and cause non-functioning odometer."
+      ],
+      "tips": [
+        "The DME relay is the most common cause of no-start conditions - always keep a spare.",
+        "When testing for voltage drops, 0.1V or less is acceptable on ground circuits.",
+        "Dielectric grease on connections prevents corrosion without affecting conductivity.",
+        "Consider upgrading to a relay-controlled headlight harness for significantly brighter lights.",
+        "The C101 connector (behind the glovebox) is notorious for intermittent connections.",
+        "Wrap repaired wiring with split loom tubing to protect from heat and abrasion."
+      ],
+      "warnings": [
+        "Always disconnect the battery before working on electrical systems.",
+        "Shorts can cause immediate fire - never bypass fuses or use higher-rated fuses than specified.",
+        "The fusible links protect against major shorts - if they blow repeatedly, find the root cause.",
+        "Aftermarket stereo installations are often done poorly and cause electrical issues."
+      ],
+      "references": [
+        { "name": "E30 Zone Electrical Guide", "url": "https://www.e30zone.net/e30wiki/" },
+        { "name": "R3VLimited Wiring Diagrams", "url": "https://www.r3vlimited.com/board/showthread.php?t=49987" }
+      ]
+    },
+    {
+      "id": "interior-restoration",
+      "title": "Interior Restoration",
+      "description": "Complete interior restoration guide for the E30 including seat reupholstery, dashboard repair, carpet replacement, and headliner restoration. Return your interior to factory-fresh condition.",
+      "difficulty": "Intermediate",
+      "time": "20-40 hours",
+      "cost": "$500-2,500",
+      "parts": [
+        { "name": "Front Seat Upholstery Kit (pair)", "oem": "Discontinued", "aftermarket": "Lseat, Katzkin, World Upholstery", "cost": "$400-1,200" },
+        { "name": "Seat Foam Cushion Set", "oem": "52101934156", "aftermarket": "Garagistic, Condor Speed Shop", "cost": "$100-200" },
+        { "name": "Carpet Set (molded)", "oem": "Discontinued", "aftermarket": "GKN, World Upholstery", "cost": "$200-500" },
+        { "name": "Headliner Fabric (with foam backing)", "oem": "Discontinued", "aftermarket": "Headliners Depot", "cost": "$60-120" },
+        { "name": "Dashboard Cap Cover", "oem": "Discontinued", "aftermarket": "Coverlay, DashMat", "cost": "$80-200" },
+        { "name": "Dashboard Crack Repair Kit", "oem": "—", "aftermarket": "SEM, Eastwood", "cost": "$40-80" },
+        { "name": "Door Panel Clip Set", "oem": "51411945017", "aftermarket": "Various", "cost": "$15-30" },
+        { "name": "Shift Boot (manual)", "oem": "25111220551", "aftermarket": "Various leather options", "cost": "$30-80" },
+        { "name": "E-Brake Boot", "oem": "34411162061", "aftermarket": "Various leather options", "cost": "$25-60" },
+        { "name": "Steering Wheel Re-wrap Kit", "oem": "—", "aftermarket": "Wheelskins, Redline Goods", "cost": "$50-150" }
+      ],
+      "tools": [
+        "Trim removal tools (plastic)",
+        "Hog ring pliers and hog rings",
+        "Upholstery needle and thread",
+        "Steam cleaner or extraction cleaner",
+        "Heat gun",
+        "Spray adhesive (3M Super 77 or 90)",
+        "Leather conditioner and dye",
+        "Interior cleaner",
+        "Foam brushes and rollers",
+        "Sharp utility knife and scissors",
+        "Sewing machine (for major upholstery)"
+      ],
+      "steps": [
+        "SEATS: Remove seats from vehicle - four 13mm bolts per seat, disconnect heated seat wiring if equipped.",
+        "Remove the seat covers by unclipping hog rings from the seat frame with pliers.",
+        "Inspect seat foam - collapsed or cracked foam should be replaced.",
+        "If recovering, use the old covers as templates for new material.",
+        "Install new foam, then stretch new covers over and secure with new hog rings.",
+        "For leather care only: clean with dedicated leather cleaner, then condition and protect.",
+        "CARPET: Remove seats, door sill plates, center console, and kick panels.",
+        "Pull up old carpet and inspect floor for rust - repair any rust before installing new carpet.",
+        "Clean and treat floor with sound deadening if desired.",
+        "Test-fit new molded carpet and trim where needed for pedals and transmission tunnel.",
+        "Secure carpet with adhesive at edges and under door sills.",
+        "HEADLINER: This is the most challenging interior repair - work carefully.",
+        "Remove all trim around the edges: sun visors, dome light, A/B/C pillar trim.",
+        "Carefully lower the headliner board through the door opening.",
+        "Remove old fabric and all foam backing - scrape and wire brush until smooth.",
+        "Apply spray adhesive to both the board and new fabric, wait until tacky.",
+        "Starting from the center, press fabric onto board working outward to edges.",
+        "Wrap fabric around edges and trim excess. Cut holes for dome light and visors.",
+        "Allow to cure 24 hours before reinstalling in the vehicle.",
+        "DASHBOARD: For cracks, clean the area thoroughly and fill with flexible filler.",
+        "Sand smooth, apply texture coat to match, then paint with interior dye.",
+        "Alternatively, install a dash cap cover for a quick solution.",
+        "Clean and condition all vinyl and plastic trim with appropriate products."
+      ],
+      "tips": [
+        "Work in a temperature-controlled environment - adhesives don't work well in cold or extreme heat.",
+        "Original E30 leather is very durable - often just needs thorough cleaning and conditioning.",
+        "Lseat.com offers excellent pattern-matched E30 seat covers at reasonable prices.",
+        "The headliner board is fragile - handle with care and don't bend it sharply.",
+        "Use 3M Super 90 for headliner work - it's stronger than Super 77.",
+        "Taking photos before disassembly helps with reassembly of trim pieces.",
+        "Condor Speed Shop offers complete interior restoration kits for E30s."
+      ],
+      "warnings": [
+        "Spray adhesive should only be used in well-ventilated areas - fumes are harmful.",
+        "The headliner board can break if flexed too much - remove carefully through the door.",
+        "Leather dye is permanent - test on a hidden area first.",
+        "Heated seats have electrical connections that can short if damaged - disconnect battery first."
+      ],
+      "references": [
+        { "name": "R3VLimited Interior Guide", "url": "https://www.r3vlimited.com/board/showthread.php?t=119899" },
+        { "name": "Lseat E30 Seat Covers", "url": "https://www.lseat.com/bmw-e30.html" }
+      ]
     }
   ],
   "suppliers": {

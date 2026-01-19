@@ -302,28 +302,525 @@
   ],
   "guides": [
     {
-      "id": "ims-bearing",
-      "title": "IMS Bearing Replacement",
-      "description": "Complete guide to replacing the IMS bearing with upgraded unit.",
-      "difficulty": "Advanced",
-      "time": "10-14 hours",
-      "status": "coming-soon"
+      "id": "suspension-refresh",
+      "title": "Complete Suspension Refresh",
+      "description": "Full front and rear suspension rebuild for the 996's MacPherson strut front and multi-link rear design, restoring the legendary 911 handling.",
+      "difficulty": "Intermediate",
+      "time": "12-16 hours",
+      "cost": "$700-1,400",
+      "interval": "Every 60,000-80,000 miles",
+      "laborHours": "10-14 hours shop time",
+      "parts": [
+        {
+          "name": "Front Control Arm (Left)",
+          "oem": "99634105314",
+          "aftermarket": "Lemforder, URO",
+          "cost": "$120-200"
+        },
+        {
+          "name": "Front Control Arm (Right)",
+          "oem": "99634105414",
+          "aftermarket": "Lemforder, URO",
+          "cost": "$120-200"
+        },
+        {
+          "name": "Front Strut Mount (Pair)",
+          "oem": "99634351900",
+          "aftermarket": "Sachs, Lemforder",
+          "cost": "$80-150"
+        },
+        {
+          "name": "Tie Rod End (Pair)",
+          "oem": "99634713100",
+          "aftermarket": "Lemforder, Meyle",
+          "cost": "$60-120"
+        },
+        {
+          "name": "Front Sway Bar End Link (Pair)",
+          "oem": "99634306901",
+          "aftermarket": "Lemforder, aftermarket",
+          "cost": "$40-80"
+        },
+        {
+          "name": "Rear Control Arm Upper (Pair)",
+          "oem": "99633105105",
+          "aftermarket": "Lemforder, aftermarket",
+          "cost": "$120-220"
+        },
+        {
+          "name": "Rear Control Arm Lower (Pair)",
+          "oem": "99633105205",
+          "aftermarket": "Lemforder, aftermarket",
+          "cost": "$120-220"
+        },
+        {
+          "name": "Rear Thrust Arm (Pair)",
+          "oem": "99633105600",
+          "aftermarket": "Lemforder, Powerflex",
+          "cost": "$80-160"
+        },
+        {
+          "name": "Rear Sway Bar End Link (Pair)",
+          "oem": "99633306700",
+          "aftermarket": "Lemforder, aftermarket",
+          "cost": "$40-80"
+        },
+        {
+          "name": "Wheel Bearing (Each)",
+          "oem": "99905302303",
+          "aftermarket": "FAG, SKF",
+          "cost": "$80-150"
+        }
+      ],
+      "tools": [
+        "Floor jack and jack stands",
+        "18mm, 19mm, 21mm sockets and wrenches",
+        "Ball joint separator",
+        "Tie rod end puller",
+        "Spring compressor",
+        "Torque wrench (ft-lb range)",
+        "Breaker bar",
+        "Penetrating oil",
+        "Press or bushing tools",
+        "Alignment specs printout"
+      ],
+      "steps": [
+        "Raise vehicle and support on jack stands at all four corners.",
+        "Remove all wheels and photograph suspension for reference.",
+        "Soak all suspension bolts with penetrating oil - let sit.",
+        "Begin with front suspension - remove sway bar end links.",
+        "Remove tie rod end nut and separate from knuckle using puller.",
+        "Remove control arm bolts at crossmember (48 ft-lbs spec).",
+        "Separate ball joint from steering knuckle.",
+        "For struts: mark camber position, remove upper mount nuts, remove strut pinch bolt (74 ft-lbs).",
+        "Use spring compressor to disassemble strut - replace mount/bearing.",
+        "Install new front components - torque to spec.",
+        "For rear suspension: the 996's rear is critical for handling.",
+        "Support rear suspension arm before removing bolts.",
+        "Remove and replace upper and lower control arms (63 ft-lbs).",
+        "Replace rear thrust arms - these affect toe settings.",
+        "Install new rear sway bar end links.",
+        "CRITICAL: Check rear spring perches for cracks (known issue).",
+        "Check wheel bearings for play - replace if worn.",
+        "Install wheels and lower vehicle.",
+        "Professional alignment is mandatory - the 996 is very alignment-sensitive."
+      ],
+      "tips": [
+        "The 996 shares suspension design with the 986 but is rear-engine biased.",
+        "Cracked rear spring perches are a known safety issue - inspect carefully.",
+        "Front control arm bushings are not serviceable - replace entire arm.",
+        "The rear suspension geometry is critical for 996 handling characteristics.",
+        "Consider polyurethane bushings for sharper track-day response."
+      ],
+      "warnings": [
+        "CRITICAL: Inspect rear spring perches for cracks before reassembly.",
+        "Spring compressors are dangerous - follow instructions exactly.",
+        "The 996's rear-engine weight distribution amplifies suspension issues.",
+        "Never strike ball joints directly - use proper separator tools.",
+        "Incorrect alignment causes the rear to feel unstable at speed."
+      ],
+      "references": [
+        {
+          "name": "Pelican Parts 996 Suspension",
+          "url": "https://www.pelicanparts.com/techarticles/Porsche-996/"
+        },
+        {
+          "name": "Rennlist 996 Forum",
+          "url": "https://rennlist.com/forums/996-forum/"
+        },
+        {
+          "name": "Lindsey Racing Tech Articles",
+          "url": "https://www.lindseyracing.com/"
+        }
+      ]
     },
     {
-      "id": "coolant-pipes",
-      "title": "Coolant Pipe Upgrade",
-      "description": "Replace plastic coolant pipes with aluminum upgrade kit.",
+      "id": "rust-repair",
+      "title": "Rust Prevention and Inspection",
+      "description": "Comprehensive rust inspection guide for the 996, which is galvanized but still requires attention in specific areas prone to water intrusion.",
       "difficulty": "Intermediate",
-      "time": "4-6 hours",
-      "status": "coming-soon"
+      "time": "4-16 hours",
+      "cost": "$100-1,000+",
+      "interval": "Inspect annually",
+      "laborHours": "Varies by severity",
+      "parts": [
+        {
+          "name": "Front Trunk Seal",
+          "oem": "99656193100",
+          "aftermarket": "URO, aftermarket",
+          "cost": "$60-120"
+        },
+        {
+          "name": "Door Seal Set",
+          "oem": "99653193101",
+          "aftermarket": "URO, aftermarket",
+          "cost": "$100-200"
+        },
+        {
+          "name": "Headlight Seal Kit",
+          "oem": "Various",
+          "aftermarket": "Aftermarket",
+          "cost": "$30-80"
+        },
+        {
+          "name": "Rocker Panel Repair Section",
+          "oem": "—",
+          "aftermarket": "Fabricated",
+          "cost": "$100-250"
+        },
+        {
+          "name": "Battery Box Repair",
+          "oem": "—",
+          "aftermarket": "Fabricated",
+          "cost": "$100-250"
+        },
+        {
+          "name": "Rust Converter",
+          "oem": "—",
+          "aftermarket": "POR-15, Eastwood",
+          "cost": "$20-40"
+        },
+        {
+          "name": "Cavity Wax",
+          "oem": "—",
+          "aftermarket": "Fluid Film, Eastwood",
+          "cost": "$15-30"
+        },
+        {
+          "name": "Epoxy Primer",
+          "oem": "—",
+          "aftermarket": "Eastwood, SPI",
+          "cost": "$30-60"
+        },
+        {
+          "name": "Seam Sealer",
+          "oem": "—",
+          "aftermarket": "3M, Eastwood",
+          "cost": "$15-25"
+        },
+        {
+          "name": "Trunk Drain Tubes",
+          "oem": "99756192900",
+          "aftermarket": "Aftermarket",
+          "cost": "$20-40"
+        }
+      ],
+      "tools": [
+        "Inspection mirror and flashlight",
+        "Wire brush and wire wheel",
+        "Angle grinder (if repairs needed)",
+        "Sandpaper (80-320 grit)",
+        "Primer and paint supplies",
+        "Safety glasses and respirator",
+        "Spray wand for cavity wax",
+        "Compressed air"
+      ],
+      "steps": [
+        "The 996 is fully galvanized but water intrusion causes most problems.",
+        "Clean exterior and undercarriage before inspection.",
+        "Inspect front trunk (frunk) for water intrusion - DME and fuse box are here.",
+        "Check front trunk drain tubes - clogs cause water to pool.",
+        "Inspect battery box area for acid corrosion.",
+        "Check headlights for moisture - \"fried egg\" lights are prone to seal failure.",
+        "Examine rocker panels by tapping with screwdriver.",
+        "Open doors and check door bottoms for rust at drain holes.",
+        "Inspect rear trunk area and engine bay seams.",
+        "Check wheel wells for damage from road debris.",
+        "Examine suspension mounting points for corrosion.",
+        "For surface rust: wire brush, rust converter, prime, topcoat.",
+        "For water intrusion: fix source (seals, drains) before treating rust.",
+        "Apply cavity wax to hollow sections.",
+        "Reseal headlights if moisture is present.",
+        "Clear all drain tubes with compressed air.",
+        "Test all seals by water test if necessary.",
+        "Document condition for future reference."
+      ],
+      "tips": [
+        "996s rarely have structural rust due to galvanization.",
+        "Most corrosion is caused by water intrusion and battery acid.",
+        "The frunk area contains expensive electronics - keep it dry.",
+        "Headlight seal failure is extremely common - reseal proactively.",
+        "Annual Fluid Film application provides excellent protection."
+      ],
+      "warnings": [
+        "Water in the frunk destroys DME, fuse box, and other electronics.",
+        "Battery acid causes severe corrosion in the frunk area.",
+        "Headlight moisture can damage HID ballasts (if equipped).",
+        "Always wear respirator when grinding rust.",
+        "Fire extinguisher required if welding."
+      ],
+      "references": [
+        {
+          "name": "Pelican Parts 996 Maintenance",
+          "url": "https://www.pelicanparts.com/techarticles/Porsche-996/"
+        },
+        {
+          "name": "Rennlist 996 Water Leak Guide",
+          "url": "https://rennlist.com/forums/996-forum/"
+        },
+        {
+          "name": "996 Registry Technical",
+          "url": "https://www.996registry.com/"
+        }
+      ]
     },
     {
-      "id": "headlight-reseal",
-      "title": "Headlight Reseal",
-      "description": "Remove moisture and reseal the headlight housings.",
+      "id": "electrical-restoration",
+      "title": "Electrical System Service",
+      "description": "Complete electrical system service for the 996 covering ignition, sensors, headlight resealing, and DME protection from water damage.",
       "difficulty": "Intermediate",
-      "time": "4-6 hours",
-      "status": "coming-soon"
+      "time": "10-16 hours",
+      "cost": "$300-900",
+      "interval": "Address as symptoms appear",
+      "laborHours": "8-12 hours shop time",
+      "parts": [
+        {
+          "name": "Ignition Coil Pack (Set of 6)",
+          "oem": "99660210101",
+          "aftermarket": "Bosch, aftermarket",
+          "cost": "$150-300"
+        },
+        {
+          "name": "Mass Air Flow Sensor",
+          "oem": "99660612300",
+          "aftermarket": "Bosch, VDO",
+          "cost": "$80-150"
+        },
+        {
+          "name": "Oxygen Sensor Set (4)",
+          "oem": "99660612600/700",
+          "aftermarket": "Bosch, NTK",
+          "cost": "$300-500"
+        },
+        {
+          "name": "Crankshaft Position Sensor",
+          "oem": "99660610601",
+          "aftermarket": "Bosch, VDO",
+          "cost": "$60-120"
+        },
+        {
+          "name": "Camshaft Position Sensor",
+          "oem": "99660610602",
+          "aftermarket": "Bosch, VDO",
+          "cost": "$60-120"
+        },
+        {
+          "name": "Headlight Seal Kit",
+          "oem": "Various",
+          "aftermarket": "Aftermarket butyl tape",
+          "cost": "$20-50"
+        },
+        {
+          "name": "Headlight Assembly (Each)",
+          "oem": "99663103214",
+          "aftermarket": "Aftermarket, used OEM",
+          "cost": "$300-600"
+        },
+        {
+          "name": "PSE (Central Locking) Pump",
+          "oem": "99656192100",
+          "aftermarket": "Rebuilt, aftermarket",
+          "cost": "$200-400"
+        },
+        {
+          "name": "Window Regulator",
+          "oem": "99654207504",
+          "aftermarket": "URO, aftermarket",
+          "cost": "$150-250"
+        },
+        {
+          "name": "VarioCam Solenoid",
+          "oem": "99660530101",
+          "aftermarket": "OEM only recommended",
+          "cost": "$100-180"
+        }
+      ],
+      "tools": [
+        "OBD2 scanner (Durametric or PIWIS preferred)",
+        "Torx driver set (T20, T25, T30)",
+        "10mm socket",
+        "Spark plug socket",
+        "Heat gun (for headlight reseal)",
+        "Multimeter",
+        "Butyl tape",
+        "Contact cleaner",
+        "Dielectric grease"
+      ],
+      "steps": [
+        "Begin with diagnostic scan to identify stored fault codes.",
+        "Check front trunk for water - this damages expensive electronics.",
+        "Clear frunk drain tubes if any water is present.",
+        "For headlight reseal: remove headlight assembly (3 bolts).",
+        "Heat the headlight in oven at 200°F for 15-20 minutes to soften sealant.",
+        "Carefully separate lens from housing, clean old butyl.",
+        "Apply new butyl sealant and press lens back into place.",
+        "Let cool completely before reinstalling.",
+        "For ignition coils: open engine lid, disconnect coil connectors.",
+        "Remove mounting bolts and pull coils, inspect wells for oil.",
+        "Install new coils with dielectric grease on boots.",
+        "For MAF sensor: located in air intake - clean with MAF cleaner only.",
+        "For O2 sensors: access from below, use O2 sensor socket and anti-seize.",
+        "For VarioCam issues: replace solenoids if causing timing codes.",
+        "For window regulator: remove door panel, support glass, swap regulator.",
+        "Clean all ground points with wire brush, apply dielectric grease.",
+        "Clear codes and verify repairs with diagnostic scan."
+      ],
+      "tips": [
+        "996 headlight condensation is extremely common - resealing works well.",
+        "The DME in the frunk is vulnerable to water - protect it.",
+        "VarioCam solenoid issues cause rough running - use OEM parts only.",
+        "Many 996 electrical issues trace to poor ground connections.",
+        "A proper Porsche scanner (Durametric, PIWIS) reveals far more than generic OBD2."
+      ],
+      "warnings": [
+        "Water in frunk destroys DME - a $2,000+ part.",
+        "Be careful heating headlights - too hot damages lens or housing.",
+        "Never use carburetor or brake cleaner on MAF sensor.",
+        "Always disconnect battery before electrical work.",
+        "Support window glass before removing regulator."
+      ],
+      "references": [
+        {
+          "name": "Pelican Parts 996 Electrical",
+          "url": "https://www.pelicanparts.com/techarticles/Porsche-996/"
+        },
+        {
+          "name": "Rennlist 996 Headlight DIY",
+          "url": "https://rennlist.com/forums/996-forum/"
+        },
+        {
+          "name": "996 Registry Tech Tips",
+          "url": "https://www.996registry.com/"
+        }
+      ]
+    },
+    {
+      "id": "interior-restoration",
+      "title": "Interior Restoration",
+      "description": "Complete interior refresh for the 996 covering leather care, common wear items, and addressing the infamous sticky interior surfaces.",
+      "difficulty": "Intermediate",
+      "time": "10-20 hours",
+      "cost": "$300-1,200",
+      "interval": "As needed for wear items",
+      "laborHours": "8-16 hours shop time",
+      "parts": [
+        {
+          "name": "Leather Repair Kit",
+          "oem": "—",
+          "aftermarket": "Leatherique, Colourlock",
+          "cost": "$50-100"
+        },
+        {
+          "name": "Steering Wheel Re-wrap",
+          "oem": "—",
+          "aftermarket": "Professional re-wrap service",
+          "cost": "$200-400"
+        },
+        {
+          "name": "Shift Knob (Manual)",
+          "oem": "99642407504",
+          "aftermarket": "Aftermarket, weighted",
+          "cost": "$60-200"
+        },
+        {
+          "name": "E-Brake Boot",
+          "oem": "99655298001",
+          "aftermarket": "Leather replicas",
+          "cost": "$30-60"
+        },
+        {
+          "name": "Center Console Sticky Fix Kit",
+          "oem": "—",
+          "aftermarket": "Trim wrap, repaint service",
+          "cost": "$50-200"
+        },
+        {
+          "name": "Door Panel Trim",
+          "oem": "Various",
+          "aftermarket": "Recovered, wrap",
+          "cost": "$100-300"
+        },
+        {
+          "name": "Carpet Set",
+          "oem": "—",
+          "aftermarket": "German Molded, aftermarket",
+          "cost": "$400-800"
+        },
+        {
+          "name": "Seat Foam (Driver)",
+          "oem": "99652191203",
+          "aftermarket": "Recovered",
+          "cost": "$100-200"
+        },
+        {
+          "name": "Cabin Air Filter",
+          "oem": "99657221901",
+          "aftermarket": "Mann, Bosch",
+          "cost": "$25-50"
+        },
+        {
+          "name": "Door Seal Set",
+          "oem": "99653193101",
+          "aftermarket": "URO, aftermarket",
+          "cost": "$100-200"
+        }
+      ],
+      "tools": [
+        "Trim removal tools (plastic pry set)",
+        "Torx driver set (T15, T20, T25, T30)",
+        "Phillips and flathead screwdrivers",
+        "Microfiber cloths",
+        "Leather cleaner and conditioner",
+        "Interior detailing brushes",
+        "Isopropyl alcohol (for sticky surfaces)",
+        "Heat gun (for vinyl work)"
+      ],
+      "steps": [
+        "Document condition with photos before starting.",
+        "For sticky interior surfaces (common on 996):",
+        "Clean sticky surfaces with isopropyl alcohol to remove residue.",
+        "Options: vinyl wrap, professional repaint, or replacement trim.",
+        "For leather: clean thoroughly with dedicated leather cleaner.",
+        "Fill cracks with leather filler, sand smooth, apply dye.",
+        "Condition all leather - seats, door panels, armrests.",
+        "For steering wheel: assess if rewrap or replacement is needed.",
+        "Sport steering wheels can be rewrapped professionally.",
+        "Replace worn shift knob and e-brake boot.",
+        "Clean HVAC vents with detailing brushes.",
+        "Replace cabin air filter - located in frunk under carpet.",
+        "Address seat bolster wear with dye or foam replacement.",
+        "Inspect and replace door seals if worn or leaking.",
+        "Apply UV protectant to all plastic and vinyl surfaces.",
+        "Test all interior functions before completing."
+      ],
+      "tips": [
+        "The 996's sticky interior surfaces are a known issue - multiple solutions exist.",
+        "Vinyl wrap is a popular sticky surface fix - covers and protects.",
+        "Sport seats have aggressive bolsters that wear on driver side.",
+        "Steering wheel leather often wears before seats - consider rewrap.",
+        "996 leather responds well to proper conditioning."
+      ],
+      "warnings": [
+        "Don't use silicone-based products on leather.",
+        "Sticky surface removal can damage paint underneath.",
+        "Be careful with trim clips - they become brittle.",
+        "Steering wheel airbag - disconnect battery before removal.",
+        "Test isopropyl alcohol on hidden area first."
+      ],
+      "references": [
+        {
+          "name": "Rennlist 996 Interior",
+          "url": "https://rennlist.com/forums/996-forum/"
+        },
+        {
+          "name": "Pelican Parts 996 Interior",
+          "url": "https://www.pelicanparts.com/techarticles/Porsche-996/"
+        },
+        {
+          "name": "Leatherique Products",
+          "url": "https://www.leatherique.com/"
+        }
+      ]
     }
   ],
   "suppliers": {

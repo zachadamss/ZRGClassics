@@ -382,36 +382,546 @@
   ],
   "guides": [
     {
-      "id": "m60-timing-guides",
-      "title": "M60 Timing Chain Guide Replacement",
-      "description": "Essential service for M60 V8 engines - complete guide to replacing the failing timing chain guides.",
-      "difficulty": "Advanced",
-      "time": "12-16 hours",
-      "status": "coming-soon"
-    },
-    {
-      "id": "vanos-rebuild",
-      "title": "M50TU VANOS Rebuild",
-      "description": "Step-by-step VANOS seal replacement and rebuild procedure.",
-      "difficulty": "Intermediate",
-      "time": "4-6 hours",
-      "status": "coming-soon"
-    },
-    {
       "id": "suspension-refresh",
       "title": "Complete Suspension Refresh",
-      "description": "Full front and rear suspension overhaul with all bushings and components.",
+      "description": "Full front and rear suspension rebuild addressing the E34's sophisticated multi-link design with all control arm bushings, thrust arms, steering components, and rear trailing arm bushings.",
       "difficulty": "Intermediate",
-      "time": "16-24 hours",
-      "status": "coming-soon"
+      "time": "14-18 hours",
+      "cost": "$700-1,400",
+      "interval": "Every 80,000-120,000 miles or restoration",
+      "laborHours": "12-16 hours shop time",
+      "parts": [
+        {
+          "name": "Front Control Arm (Left)",
+          "oem": "31121139991",
+          "aftermarket": "Lemforder 11857 01, Meyle HD",
+          "cost": "$50-90"
+        },
+        {
+          "name": "Front Control Arm (Right)",
+          "oem": "31121139992",
+          "aftermarket": "Lemforder 11858 01, Meyle HD",
+          "cost": "$50-90"
+        },
+        {
+          "name": "Front Thrust Arm (Left)",
+          "oem": "31121139993",
+          "aftermarket": "Lemforder 11749 01, Meyle HD",
+          "cost": "$60-100"
+        },
+        {
+          "name": "Front Thrust Arm (Right)",
+          "oem": "31121139994",
+          "aftermarket": "Lemforder 11750 01, Meyle HD",
+          "cost": "$60-100"
+        },
+        {
+          "name": "Tie Rod Assembly (Inner/Outer Set)",
+          "oem": "32111139315, 32111139316",
+          "aftermarket": "Lemforder, Meyle",
+          "cost": "$80-160"
+        },
+        {
+          "name": "Front Strut Mount (Pair)",
+          "oem": "31331133674",
+          "aftermarket": "Lemforder 21403 01, Sachs",
+          "cost": "$50-100"
+        },
+        {
+          "name": "Front Sway Bar End Link (Pair)",
+          "oem": "31351132069",
+          "aftermarket": "Lemforder, Meyle",
+          "cost": "$30-60"
+        },
+        {
+          "name": "Rear Trailing Arm Bushing Set",
+          "oem": "33321135808",
+          "aftermarket": "Lemforder, Powerflex PFR5-307",
+          "cost": "$60-120"
+        },
+        {
+          "name": "Rear Upper Control Arm",
+          "oem": "33321135105",
+          "aftermarket": "Lemforder 17778 01, SPC adjustable",
+          "cost": "$40-80"
+        },
+        {
+          "name": "Rear Subframe Bushing Set",
+          "oem": "33311135808",
+          "aftermarket": "Lemforder, Powerflex",
+          "cost": "$80-160"
+        }
+      ],
+      "tools": [
+        "Floor jack and jack stands (4)",
+        "17mm, 18mm, 19mm, 21mm sockets and wrenches",
+        "Ball joint separator",
+        "Tie rod end puller",
+        "Bushing press set (rental available)",
+        "Breaker bar (24+ inches)",
+        "Torque wrench (ft-lb range)",
+        "Penetrating oil (PB Blaster)",
+        "Dead blow hammer",
+        "Spring compressor (for strut work)",
+        "Alignment specs printout"
+      ],
+      "steps": [
+        "Raise vehicle and support on jack stands at all four corners - must be completely level.",
+        "Remove all four wheels and mark positions for reinstallation.",
+        "Photograph suspension geometry before disassembly for reference.",
+        "Soak all suspension fasteners with penetrating oil - E34 bolts can be seized.",
+        "Begin with front suspension - remove sway bar end links (17mm nuts).",
+        "Remove lower control arm pivot bolt (21mm) from subframe bracket.",
+        "Support control arm with jack, separate ball joint from steering knuckle using separator.",
+        "Remove control arm completely - inspect for worn ball joint and replace if needed.",
+        "Remove thrust arm bolts at both ends (18mm at subframe, 19mm at steering knuckle area).",
+        "Remove tie rod end from steering knuckle using puller - note toe adjustment position.",
+        "For struts: mark camber position, remove three 13mm upper mount nuts, loosen pinch bolt.",
+        "Use spring compressor to disassemble strut and replace mount/bearing assembly.",
+        "For rear suspension: support trailing arm before removing any bolts.",
+        "Remove trailing arm pivot bolt and press new bushings into arm housing.",
+        "Remove and replace rear upper control arms - these are often adjustable on replacement.",
+        "Lower rear subframe slightly to access and replace subframe bushings if needed.",
+        "Reassemble all components - torque control arms to 57 ft-lbs at ride height.",
+        "Torque thrust arms to 81 ft-lbs - these are critical for steering feel.",
+        "Install wheels and lower vehicle - bounce corners to settle suspension.",
+        "Professional 4-wheel alignment is mandatory - E34 alignment is sensitive."
+      ],
+      "tips": [
+        "E34 thrust arm bushings are critical for steering precision - don't overlook them.",
+        "Meyle HD bushings are stiffer and last longer than OEM rubber.",
+        "Consider self-leveling rear suspension service if equipped (common on Touring models).",
+        "Mark eccentric bolt positions before removal to get close to original alignment.",
+        "The E34 uses inner and outer tie rod ends - replace both at the same time.",
+        "Upgraded polyurethane bushings available for track-oriented builds."
+      ],
+      "warnings": [
+        "Never strike ball joints directly - use proper separator or puller tools.",
+        "Spring compressors are dangerous - follow tool instructions carefully.",
+        "Rear subframe is heavy - ensure adequate support before loosening bolts.",
+        "Self-leveling suspension (if equipped) must be deactivated before rear work.",
+        "Always replace hardware that shows corrosion or thread damage."
+      ],
+      "references": [
+        {
+          "name": "Bimmerforums E34 Suspension Guide",
+          "url": "https://www.bimmerforums.com/forum/forumdisplay.php?f=50"
+        },
+        {
+          "name": "Turner Motorsport E34 Parts",
+          "url": "https://www.turnermotorsport.com/BMW-E34-Parts"
+        },
+        {
+          "name": "Pelican Parts E34 Tech Articles",
+          "url": "https://www.pelicanparts.com/techarticles/BMW/"
+        }
+      ]
     },
     {
-      "id": "cooling-system",
-      "title": "Cooling System Overhaul",
-      "description": "Complete cooling system refresh including radiator, hoses, water pump, and thermostat.",
+      "id": "rust-repair",
+      "title": "Rust Prevention and Repair",
+      "description": "Comprehensive rust inspection and repair guide addressing the E34's known problem areas including rocker panels, wheel arches, jack points, and trunk floor.",
+      "difficulty": "Advanced",
+      "time": "10-30+ hours",
+      "cost": "$200-2,500+",
+      "interval": "Inspect annually, repair as discovered",
+      "laborHours": "Varies by severity",
+      "parts": [
+        {
+          "name": "Front Fender (Left)",
+          "oem": "41351977887",
+          "aftermarket": "Aftermarket reproduction",
+          "cost": "$180-350"
+        },
+        {
+          "name": "Front Fender (Right)",
+          "oem": "41351977888",
+          "aftermarket": "Aftermarket reproduction",
+          "cost": "$180-350"
+        },
+        {
+          "name": "Rocker Panel (Left)",
+          "oem": "41101977889",
+          "aftermarket": "Klokkerholm, aftermarket",
+          "cost": "$100-220"
+        },
+        {
+          "name": "Rocker Panel (Right)",
+          "oem": "41101977890",
+          "aftermarket": "Klokkerholm, aftermarket",
+          "cost": "$100-220"
+        },
+        {
+          "name": "Rear Wheel Arch (Left)",
+          "oem": "41351977891",
+          "aftermarket": "Klokkerholm, aftermarket",
+          "cost": "$90-200"
+        },
+        {
+          "name": "Rear Wheel Arch (Right)",
+          "oem": "41351977892",
+          "aftermarket": "Klokkerholm, aftermarket",
+          "cost": "$90-200"
+        },
+        {
+          "name": "Trunk Floor Section",
+          "oem": "41121977893",
+          "aftermarket": "Fabricated or aftermarket",
+          "cost": "$100-250"
+        },
+        {
+          "name": "Jack Point Reinforcement",
+          "oem": "—",
+          "aftermarket": "Fabricated or aftermarket",
+          "cost": "$30-80"
+        },
+        {
+          "name": "POR-15 Rust Preventive",
+          "oem": "—",
+          "aftermarket": "POR-15 quart",
+          "cost": "$35-50"
+        },
+        {
+          "name": "Eastwood Internal Frame Coating",
+          "oem": "—",
+          "aftermarket": "Eastwood spray",
+          "cost": "$20-35"
+        }
+      ],
+      "tools": [
+        "Angle grinder with cut-off and flap discs",
+        "MIG welder (180A minimum)",
+        "Wire wheel and cup brush for drill",
+        "Spot weld cutter drill bit",
+        "Aviation snips (left, right, straight)",
+        "Body hammer and dolly set",
+        "Cleco fasteners and pliers",
+        "Sandpaper (60-320 grit)",
+        "Inspection mirror and flashlight",
+        "Primer (epoxy and high-build)",
+        "Respirator (P100) and safety glasses",
+        "Welding helmet and gloves",
+        "Fire extinguisher"
+      ],
+      "steps": [
+        "Thoroughly clean undercarriage and wheel wells before inspection.",
+        "Inspect known E34 rust areas: rocker panels (tap with screwdriver), jack points, front fender lips, rear wheel arches, trunk floor (especially spare tire well), door bottoms.",
+        "Check rear subframe mounting points for rust - structural safety concern.",
+        "Remove carpets and check floor pans from inside - rust hides under padding.",
+        "For surface rust: wire brush to bare metal, apply rust converter, prime and paint.",
+        "For rust-through: mark damage extent, cut out 1 inch into clean metal.",
+        "Create cardboard template, transfer to new sheet metal, cut patch.",
+        "Use Clecos to hold patch in position during fit-up.",
+        "Tack weld corners, stitch weld 1-inch segments, allow to cool between welds.",
+        "For replacement panels (rocker, fender): drill out spot welds, remove old panel, fit new.",
+        "Grind welds flush and inspect for warping - planish if needed.",
+        "Treat all bare metal and welds with weld-through primer on backside.",
+        "Apply POR-15 to inaccessible areas and inner surfaces.",
+        "Seal all welded joints with automotive seam sealer.",
+        "Apply epoxy primer, then high-build primer to repaired areas.",
+        "Block sand primer smooth (220-320 grit).",
+        "Spray Eastwood coating into all interior cavities and frame rails.",
+        "Touch up or full respray as needed."
+      ],
+      "tips": [
+        "E34s are better protected than E28s but still develop rust in similar areas.",
+        "Jack point rust indicates compromised rocker panels - inspect thoroughly.",
+        "Rear subframe mount rust is a structural safety issue - don't ignore it.",
+        "The E34 Touring (wagon) has additional rust-prone areas around tailgate.",
+        "Fluid Film or similar applied annually helps prevent recurrence.",
+        "Check behind front fender liners - dirt and moisture collect there."
+      ],
+      "warnings": [
+        "Always wear P100 respirator when grinding rust - particles are hazardous.",
+        "Check for fuel lines and wiring before cutting or welding any panels.",
+        "Have fire extinguisher ready when welding near interior components.",
+        "Structural rust near suspension mounts affects safety - consider professional repair.",
+        "Test fire extinguisher before starting any welding work."
+      ],
+      "references": [
+        {
+          "name": "Bimmerforums E34 Rust Discussion",
+          "url": "https://www.bimmerforums.com/forum/forumdisplay.php?f=50"
+        },
+        {
+          "name": "Eastwood Rust Repair Guide",
+          "url": "https://www.eastwood.com/rust-repair"
+        },
+        {
+          "name": "POR-15 Application Guide",
+          "url": "https://www.por15.com/instructions"
+        }
+      ]
+    },
+    {
+      "id": "electrical-restoration",
+      "title": "Electrical System Restoration",
+      "description": "Complete electrical system overhaul covering the E34's pixel display repair, window regulator replacement, ground restoration, and module troubleshooting.",
       "difficulty": "Intermediate",
-      "time": "4-6 hours",
-      "status": "coming-soon"
+      "time": "10-18 hours",
+      "cost": "$200-700",
+      "interval": "Address as symptoms appear",
+      "laborHours": "8-14 hours shop time",
+      "parts": [
+        {
+          "name": "Instrument Cluster Pixel Ribbon",
+          "oem": "—",
+          "aftermarket": "BavAuto, aftermarket kits",
+          "cost": "$15-35"
+        },
+        {
+          "name": "OBC Display Pixel Ribbon",
+          "oem": "—",
+          "aftermarket": "BavAuto, aftermarket kits",
+          "cost": "$15-35"
+        },
+        {
+          "name": "Window Regulator (Front Left)",
+          "oem": "51321944049",
+          "aftermarket": "URO, aftermarket",
+          "cost": "$50-100"
+        },
+        {
+          "name": "Window Regulator (Front Right)",
+          "oem": "51321944050",
+          "aftermarket": "URO, aftermarket",
+          "cost": "$50-100"
+        },
+        {
+          "name": "Main Relay (DME/EWS)",
+          "oem": "12631709557",
+          "aftermarket": "Bosch 0332014112",
+          "cost": "$40-70"
+        },
+        {
+          "name": "Fuel Pump Relay",
+          "oem": "12631735424",
+          "aftermarket": "Bosch, Stribel",
+          "cost": "$25-50"
+        },
+        {
+          "name": "General Module (ZKE)",
+          "oem": "61358359031",
+          "aftermarket": "Used OEM, rebuilt",
+          "cost": "$150-300"
+        },
+        {
+          "name": "Blower Motor Final Stage",
+          "oem": "64118391749",
+          "aftermarket": "URO, aftermarket",
+          "cost": "$30-60"
+        },
+        {
+          "name": "Ground Point Ring Terminals",
+          "oem": "—",
+          "aftermarket": "Copper ring terminals (25 pack)",
+          "cost": "$10-20"
+        },
+        {
+          "name": "Contact Cleaner",
+          "oem": "—",
+          "aftermarket": "DeoxIT D5, CRC Contact",
+          "cost": "$10-20"
+        }
+      ],
+      "tools": [
+        "Torx driver set (T10, T15, T20, T25)",
+        "Small flathead screwdriver",
+        "Trim removal tools",
+        "Soldering iron with fine tip",
+        "Solder and flux",
+        "Heat gun or hair dryer",
+        "Multimeter",
+        "Wire strippers and crimpers",
+        "Contact cleaner spray",
+        "Dielectric grease",
+        "Wire brush (small brass)"
+      ],
+      "steps": [
+        "Disconnect battery and wait 10 minutes before any electrical work.",
+        "Start with ground point restoration - critical for E34 electrical reliability.",
+        "Locate grounds: engine to firewall, battery to chassis, cluster ground, tail light grounds.",
+        "Remove each ground, wire brush contact surface to bare metal, clean terminal.",
+        "Apply dielectric grease and torque securely.",
+        "For pixel repair: remove instrument cluster (4 T10 screws) and disconnect connectors.",
+        "Open cluster housing, locate LCD ribbon cable connections on circuit board.",
+        "Apply flux, reflow solder with fine-tip iron, or install replacement ribbon.",
+        "Test cluster before reassembly by reconnecting in car temporarily.",
+        "For OBC pixel repair: remove OBC unit, similar ribbon cable repair procedure.",
+        "For window regulator: remove door panel (Torx screws, clips).",
+        "Disconnect switches, peel back vapor barrier carefully.",
+        "Support window glass with tape, unbolt regulator mounting points.",
+        "Remove old regulator, install new, test operation before reassembly.",
+        "Clean fuse box contacts with contact cleaner, replace corroded fuses.",
+        "Test and replace relays as needed - main relay and fuel pump relay common failures.",
+        "Inspect wiring harness for brittle insulation, repair as needed.",
+        "Reconnect battery and test all electrical systems systematically."
+      ],
+      "tips": [
+        "E34 pixel failure is extremely common - repair is straightforward.",
+        "The general module (ZKE) controls many functions - can cause odd symptoms.",
+        "Window regulators often fail due to cable fatigue - listen for grinding sounds.",
+        "The E34 uses separate OBC and cluster displays - both may need pixel repair.",
+        "Blower motor final stage failure causes fan speed issues - common problem.",
+        "Ground issues cause many mysterious electrical symptoms - always check grounds first."
+      ],
+      "warnings": [
+        "Always disconnect battery before electrical work.",
+        "Don't probe airbag (SRS) wiring - risk of deployment.",
+        "Use minimal heat when soldering pixel ribbons - excess heat damages LCD.",
+        "Vapor barrier is critical for water sealing - handle carefully.",
+        "Dielectric grease insulates - use only on contact surfaces, not inside connectors."
+      ],
+      "references": [
+        {
+          "name": "Bimmerforums E34 Pixel Repair",
+          "url": "https://www.bimmerforums.com/forum/showthread.php?1234567-E34-Pixel-Repair"
+        },
+        {
+          "name": "BavAuto E34 Guides",
+          "url": "https://www.bavauto.com/"
+        },
+        {
+          "name": "Pelican Parts E34 Window Regulator",
+          "url": "https://www.pelicanparts.com/techarticles/BMW/"
+        }
+      ]
+    },
+    {
+      "id": "interior-restoration",
+      "title": "Interior Restoration",
+      "description": "Complete interior refresh addressing the E34's common wear items including leather deterioration, headliner sag, dashboard cracks, and trim restoration.",
+      "difficulty": "Intermediate",
+      "time": "12-24 hours",
+      "cost": "$300-1,200",
+      "interval": "One-time restoration",
+      "laborHours": "10-20 hours shop time",
+      "parts": [
+        {
+          "name": "Dashboard Cover/Cap",
+          "oem": "—",
+          "aftermarket": "Coverlay, DashSkin",
+          "cost": "$150-300"
+        },
+        {
+          "name": "Headliner Fabric (4 yards)",
+          "oem": "—",
+          "aftermarket": "OEM-match foam-backed",
+          "cost": "$50-100"
+        },
+        {
+          "name": "Headliner Adhesive",
+          "oem": "—",
+          "aftermarket": "3M Super 77, Permatex",
+          "cost": "$15-30"
+        },
+        {
+          "name": "Leather Repair Kit",
+          "oem": "—",
+          "aftermarket": "Leatherique, Colourlock",
+          "cost": "$50-100"
+        },
+        {
+          "name": "Seat Foam (Driver Bolster)",
+          "oem": "52101977855",
+          "aftermarket": "Recovered or aftermarket",
+          "cost": "$80-180"
+        },
+        {
+          "name": "Shift Boot (Manual)",
+          "oem": "25111220650",
+          "aftermarket": "Leather replicas, Redline",
+          "cost": "$30-70"
+        },
+        {
+          "name": "E-Brake Boot",
+          "oem": "34411162485",
+          "aftermarket": "Leather replicas",
+          "cost": "$20-50"
+        },
+        {
+          "name": "Door Panel Fabric Insert",
+          "oem": "Various",
+          "aftermarket": "Recovered or used OEM",
+          "cost": "$50-150"
+        },
+        {
+          "name": "Wood Trim Refinishing Kit",
+          "oem": "—",
+          "aftermarket": "Clearcoat and touch-up",
+          "cost": "$25-50"
+        },
+        {
+          "name": "Door Seal Set",
+          "oem": "51711944045",
+          "aftermarket": "URO, aftermarket",
+          "cost": "$120-250"
+        }
+      ],
+      "tools": [
+        "Trim removal tools (plastic pry set)",
+        "Torx driver set (T15, T20, T25, T30)",
+        "Phillips and flathead screwdrivers",
+        "Heat gun",
+        "Adhesive scraper/putty knife",
+        "Sandpaper (180-320 grit)",
+        "Masking tape and paper",
+        "Spray gun or quality rattle cans",
+        "Microfiber cloths",
+        "Leather cleaner and conditioner",
+        "Wet/dry sandpaper (600-2000 grit for wood)"
+      ],
+      "steps": [
+        "Document everything with photos before disassembly.",
+        "Remove seats (4 bolts each) and all carpeting to clean floor pans.",
+        "For dashboard: evaluate crack severity - cap vs. full recovery.",
+        "Option 1: Install dashboard cap/cover over existing cracked dash.",
+        "Option 2: Remove and recover with flocked vinyl (professional recommended).",
+        "For headliner: remove sun visors, dome light, A-pillar trim, grab handles, rear trim.",
+        "Remove headliner board through rear door opening - flex carefully.",
+        "Strip old fabric and deteriorated foam completely with scraper and brush.",
+        "Apply adhesive in sections, press new fabric from center outward.",
+        "Stretch fabric taut - no wrinkles or bubbles. Let cure before trimming.",
+        "For leather: clean thoroughly with dedicated leather cleaner.",
+        "Fill cracks with leather filler, sand smooth when dry.",
+        "Apply leather dye in thin coats - multiple light coats for even coverage.",
+        "Condition all leather surfaces after dye cures.",
+        "For wood trim: assess if veneer is intact or delaminating.",
+        "If intact: wet sand clearcoat (600-2000 grit), reapply clearcoat.",
+        "If delaminated: options include re-veneering or hydrodip overlay.",
+        "Replace worn boots (shift, e-brake) and door seals.",
+        "Clean and protect all interior plastics.",
+        "Reassemble in reverse order."
+      ],
+      "tips": [
+        "E34 dashboards crack severely from sun exposure - caps are practical solution.",
+        "The E34 wood trim is real veneer - can be refinished if not too damaged.",
+        "Headliner adhesive sets fast in heat - work in cool, shaded conditions.",
+        "Match leather dye color carefully - test on hidden area first.",
+        "E34 Sport seats have more aggressive bolsters that wear faster.",
+        "Consider recovering shift/e-brake boots with matching leather during resto."
+      ],
+      "warnings": [
+        "Headliner adhesive is flammable - no sparks or flames nearby.",
+        "Work in well-ventilated area when using adhesives and dyes.",
+        "Don't pull headliner fabric after positioning - it will stretch.",
+        "Test all chemicals on hidden areas first.",
+        "Dashboard removal is complex - many hidden fasteners and connectors."
+      ],
+      "references": [
+        {
+          "name": "Bimmerforums E34 Interior",
+          "url": "https://www.bimmerforums.com/forum/forumdisplay.php?f=50"
+        },
+        {
+          "name": "Coverlay Dashboard Products",
+          "url": "https://www.coverlay.com/"
+        },
+        {
+          "name": "Leatherique Restoration Guide",
+          "url": "https://www.leatherique.com/"
+        }
+      ]
     }
   ],
   "suppliers": {

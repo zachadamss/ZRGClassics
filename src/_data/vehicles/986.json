@@ -329,28 +329,526 @@
   ],
   "guides": [
     {
-      "id": "ims-bearing",
-      "title": "IMS Bearing Replacement",
-      "description": "Complete guide to replacing the IMS bearing with upgraded unit.",
-      "difficulty": "Advanced",
-      "time": "8-12 hours",
-      "status": "coming-soon"
+      "id": "suspension-refresh",
+      "title": "Complete Suspension Refresh",
+      "description": "Full front and rear suspension rebuild for the 986 Boxster's MacPherson strut front and multi-link rear, restoring factory handling precision.",
+      "difficulty": "Intermediate",
+      "time": "10-14 hours",
+      "cost": "$600-1,200",
+      "interval": "Every 60,000-80,000 miles",
+      "laborHours": "8-12 hours shop time",
+      "parts": [
+        {
+          "name": "Front Control Arm (Left)",
+          "oem": "99634105314",
+          "aftermarket": "Lemforder, URO",
+          "cost": "$120-200"
+        },
+        {
+          "name": "Front Control Arm (Right)",
+          "oem": "99634105414",
+          "aftermarket": "Lemforder, URO",
+          "cost": "$120-200"
+        },
+        {
+          "name": "Front Strut Mount (Pair)",
+          "oem": "99634351900",
+          "aftermarket": "Sachs, Lemforder",
+          "cost": "$80-150"
+        },
+        {
+          "name": "Tie Rod End (Pair)",
+          "oem": "99634713100",
+          "aftermarket": "Lemforder, Meyle",
+          "cost": "$60-120"
+        },
+        {
+          "name": "Front Sway Bar End Link (Pair)",
+          "oem": "99634306901",
+          "aftermarket": "Lemforder, aftermarket",
+          "cost": "$40-80"
+        },
+        {
+          "name": "Rear Control Arm Upper (Pair)",
+          "oem": "98633105101",
+          "aftermarket": "Lemforder, aftermarket",
+          "cost": "$100-180"
+        },
+        {
+          "name": "Rear Control Arm Lower (Pair)",
+          "oem": "98633105201",
+          "aftermarket": "Lemforder, aftermarket",
+          "cost": "$100-180"
+        },
+        {
+          "name": "Rear Trailing Arm Bushing Set",
+          "oem": "99633105500",
+          "aftermarket": "Powerflex, aftermarket",
+          "cost": "$60-120"
+        },
+        {
+          "name": "Rear Sway Bar End Link (Pair)",
+          "oem": "99633306700",
+          "aftermarket": "Lemforder, aftermarket",
+          "cost": "$40-80"
+        },
+        {
+          "name": "Wheel Bearing (Each)",
+          "oem": "99905302303",
+          "aftermarket": "FAG, SKF",
+          "cost": "$80-150"
+        }
+      ],
+      "tools": [
+        "Floor jack and jack stands",
+        "18mm, 19mm, 21mm sockets and wrenches",
+        "Ball joint separator",
+        "Tie rod end puller",
+        "Spring compressor",
+        "Torque wrench (ft-lb range)",
+        "Breaker bar",
+        "Penetrating oil",
+        "Press or bushing installation tools",
+        "Alignment specs printout"
+      ],
+      "steps": [
+        "Raise vehicle and support on jack stands at all four corners.",
+        "Remove all wheels and photograph suspension for reference.",
+        "Soak all suspension bolts with penetrating oil - let sit 15 minutes.",
+        "Begin with front suspension - remove sway bar end links.",
+        "Remove tie rod end nut (52 ft-lbs spec) and separate from knuckle using puller.",
+        "Remove control arm bolts at crossmember (48 ft-lbs spec).",
+        "Remove ball joint from steering knuckle - may require separator.",
+        "For struts: mark camber position, remove upper mount nuts, remove strut pinch bolt (74 ft-lbs).",
+        "Use spring compressor to disassemble strut - replace mount/bearing.",
+        "Install new front components - torque control arm to crossmember 48 ft-lbs.",
+        "Torque tie rod end to 52 ft-lbs with new cotter pin if castle nut.",
+        "For rear suspension: support rear trailing arm before removing bolts.",
+        "Remove upper and lower control arm bolts (63 ft-lbs spec).",
+        "Press new bushings into trailing arm if replacing.",
+        "Install new control arms - torque at ride height.",
+        "Replace rear sway bar end links.",
+        "Check wheel bearings for play - replace if worn.",
+        "Install wheels and lower vehicle - bounce corners to settle.",
+        "Professional alignment mandatory - the 986 is sensitive to alignment."
+      ],
+      "tips": [
+        "The 986 uses non-serviceable control arm bushings - replace entire arm.",
+        "Front control arm ball joints are integrated - no separate replacement.",
+        "Check spring perches for cracks (common issue) while components are accessible.",
+        "Consider upgraded polyurethane bushings for sharper handling.",
+        "The mid-engine layout means rear suspension is more critical for stability."
+      ],
+      "warnings": [
+        "Spring compressors can be lethal if improperly used - follow instructions exactly.",
+        "Never strike ball joints directly - use proper separator tools.",
+        "The 986 is sensitive to alignment - incorrect specs cause poor handling.",
+        "Support the rear suspension properly - the engine is behind it.",
+        "Check for cracked spring perches before reassembly - safety item."
+      ],
+      "references": [
+        {
+          "name": "Pelican Parts 986 Suspension Guide",
+          "url": "https://www.pelicanparts.com/techarticles/Porsche-Boxster-986/"
+        },
+        {
+          "name": "Planet-9 Suspension DIY",
+          "url": "https://www.planet-9.com/"
+        },
+        {
+          "name": "Rennlist 986 Forum",
+          "url": "https://rennlist.com/forums/986-forum/"
+        }
+      ]
     },
     {
-      "id": "coolant-pipes",
-      "title": "Coolant Pipe Upgrade",
-      "description": "Replace plastic coolant pipes with aluminum upgrade kit.",
+      "id": "rust-repair",
+      "title": "Rust Prevention and Inspection",
+      "description": "Comprehensive rust inspection guide for the 986 Boxster, which is generally rust-resistant but still requires attention in specific areas.",
       "difficulty": "Intermediate",
-      "time": "4-6 hours",
-      "status": "coming-soon"
+      "time": "4-16 hours",
+      "cost": "$100-1,000+",
+      "interval": "Inspect annually",
+      "laborHours": "Varies by severity",
+      "parts": [
+        {
+          "name": "Rocker Panel Repair Section",
+          "oem": "—",
+          "aftermarket": "Fabricated or aftermarket",
+          "cost": "$100-250"
+        },
+        {
+          "name": "Floor Pan Repair Section",
+          "oem": "—",
+          "aftermarket": "Fabricated",
+          "cost": "$80-200"
+        },
+        {
+          "name": "Door Bottom Patch",
+          "oem": "—",
+          "aftermarket": "Fabricated",
+          "cost": "$40-100"
+        },
+        {
+          "name": "Battery Box",
+          "oem": "99661118303",
+          "aftermarket": "Fabricated",
+          "cost": "$100-250"
+        },
+        {
+          "name": "Rust Converter",
+          "oem": "—",
+          "aftermarket": "POR-15, Eastwood",
+          "cost": "$20-40"
+        },
+        {
+          "name": "Cavity Wax",
+          "oem": "—",
+          "aftermarket": "Fluid Film, Eastwood",
+          "cost": "$15-30"
+        },
+        {
+          "name": "Epoxy Primer",
+          "oem": "—",
+          "aftermarket": "Eastwood, SPI",
+          "cost": "$30-60"
+        },
+        {
+          "name": "Seam Sealer",
+          "oem": "—",
+          "aftermarket": "3M, Eastwood",
+          "cost": "$15-25"
+        },
+        {
+          "name": "Convertible Top Drain Tubes",
+          "oem": "99656172100",
+          "aftermarket": "Aftermarket",
+          "cost": "$30-60"
+        },
+        {
+          "name": "Trunk Seal",
+          "oem": "98656193100",
+          "aftermarket": "URO, aftermarket",
+          "cost": "$60-120"
+        }
+      ],
+      "tools": [
+        "Inspection mirror and flashlight",
+        "Wire brush and wire wheel",
+        "Angle grinder with flap disc (if repairs needed)",
+        "Sandpaper (80-320 grit)",
+        "Primer and paint supplies",
+        "Safety glasses and respirator",
+        "Spray wand for cavity wax",
+        "Compressed air for drain clearing"
+      ],
+      "steps": [
+        "The 986 is galvanized and generally rust-resistant, but inspection is important.",
+        "Clean undercarriage thoroughly before inspection.",
+        "Inspect the front trunk area (frunk) for water intrusion - check drain tubes.",
+        "Check battery box area in front trunk - acid causes accelerated corrosion.",
+        "Inspect rocker panels by tapping with screwdriver - soft spots indicate rust.",
+        "Check door bottoms by opening doors fully and looking at drain holes.",
+        "Examine convertible top drain tubes - clogs cause interior water damage.",
+        "Open rear trunk and check around spare tire well for water accumulation.",
+        "Inspect engine compartment seams for corrosion from salt/debris.",
+        "Check suspension mounting points for any corrosion.",
+        "For surface rust: wire brush to bare metal, apply rust converter.",
+        "Prime with epoxy primer, then topcoat.",
+        "For rust-through (rare): cut and weld patch panels.",
+        "Apply cavity wax to all hollow sections - rocker interiors, frame rails.",
+        "Clear all drain holes and tubes with compressed air.",
+        "Ensure trunk seals are intact - water leaks cause electrical problems.",
+        "Document condition for future reference."
+      ],
+      "tips": [
+        "986s are generally rust-free due to galvanization - most issues are drain-related.",
+        "Front trunk water leaks damage the DME (engine computer) - a serious problem.",
+        "Convertible top drains clog with debris - clear them regularly.",
+        "Battery acid in the frunk causes the most common corrosion issues.",
+        "Annual Fluid Film application provides excellent protection."
+      ],
+      "warnings": [
+        "Water in the front trunk can destroy expensive electronics.",
+        "Don't ignore clogged drains - water damage is expensive to repair.",
+        "Battery acid is corrosive - neutralize with baking soda solution.",
+        "Always wear respirator when grinding rust.",
+        "Fire extinguisher must be accessible if welding."
+      ],
+      "references": [
+        {
+          "name": "Pelican Parts 986 Maintenance",
+          "url": "https://www.pelicanparts.com/techarticles/Porsche-Boxster-986/"
+        },
+        {
+          "name": "Planet-9 Water Leak Solutions",
+          "url": "https://www.planet-9.com/"
+        },
+        {
+          "name": "986 Forum Technical",
+          "url": "https://986forum.com/"
+        }
+      ]
     },
     {
-      "id": "aos-replacement",
-      "title": "AOS Replacement",
-      "description": "Air/Oil Separator replacement and vacuum line refresh.",
+      "id": "electrical-restoration",
+      "title": "Electrical System Service",
+      "description": "Complete electrical system service covering the 986's common issues including ignition coils, sensors, convertible top electronics, and DME protection.",
       "difficulty": "Intermediate",
-      "time": "3-4 hours",
-      "status": "coming-soon"
+      "time": "8-14 hours",
+      "cost": "$300-800",
+      "interval": "Address as symptoms appear",
+      "laborHours": "6-10 hours shop time",
+      "parts": [
+        {
+          "name": "Ignition Coil Pack (Set of 6)",
+          "oem": "99660210101",
+          "aftermarket": "Bosch, aftermarket",
+          "cost": "$150-300"
+        },
+        {
+          "name": "Mass Air Flow Sensor",
+          "oem": "99660612300",
+          "aftermarket": "Bosch, VDO",
+          "cost": "$80-150"
+        },
+        {
+          "name": "Oxygen Sensor (Pre-Cat)",
+          "oem": "99660612600",
+          "aftermarket": "Bosch, NTK",
+          "cost": "$100-200"
+        },
+        {
+          "name": "Oxygen Sensor (Post-Cat)",
+          "oem": "99660612700",
+          "aftermarket": "Bosch, NTK",
+          "cost": "$80-150"
+        },
+        {
+          "name": "Crankshaft Position Sensor",
+          "oem": "99660610601",
+          "aftermarket": "Bosch, VDO",
+          "cost": "$60-120"
+        },
+        {
+          "name": "Camshaft Position Sensor",
+          "oem": "99660610602",
+          "aftermarket": "Bosch, VDO",
+          "cost": "$60-120"
+        },
+        {
+          "name": "Window Regulator (Left)",
+          "oem": "98654207504",
+          "aftermarket": "URO, aftermarket",
+          "cost": "$150-250"
+        },
+        {
+          "name": "Window Regulator (Right)",
+          "oem": "98654207604",
+          "aftermarket": "URO, aftermarket",
+          "cost": "$150-250"
+        },
+        {
+          "name": "Convertible Top Microswitch",
+          "oem": "Various",
+          "aftermarket": "Aftermarket",
+          "cost": "$30-60"
+        },
+        {
+          "name": "Central Locking Pump",
+          "oem": "99656192100",
+          "aftermarket": "Rebuilt, aftermarket",
+          "cost": "$200-400"
+        }
+      ],
+      "tools": [
+        "OBD2 scanner (Durametric or PIWIS preferred)",
+        "Torx driver set (T20, T25, T30)",
+        "10mm socket",
+        "Spark plug socket",
+        "Multimeter",
+        "Trim removal tools",
+        "Contact cleaner",
+        "Dielectric grease",
+        "Wire brush"
+      ],
+      "steps": [
+        "Begin with diagnostic scan to identify stored fault codes.",
+        "Check for water intrusion in front trunk - the DME lives there.",
+        "Clear front trunk drains if water is present.",
+        "For ignition coil replacement: open engine lid for access.",
+        "Disconnect coil electrical connectors, remove mounting bolts.",
+        "Remove coils and inspect spark plug wells for oil (valve cover gasket leak).",
+        "Install new coils, apply dielectric grease to boots.",
+        "For MAF sensor: located in air intake tube - two screws to remove.",
+        "Clean MAF element with MAF-specific cleaner only - no contact.",
+        "For O2 sensors: access from below on exhaust pipes.",
+        "Use O2 sensor socket and penetrating oil - threads can be seized.",
+        "Apply anti-seize to new sensor threads.",
+        "For window regulator: remove door panel and vapor barrier.",
+        "Support glass with tape, unbolt regulator, install new unit.",
+        "For convertible top issues: check hydraulic fluid level first.",
+        "Inspect microswitches at pivot points - common failure item.",
+        "Clean all ground points with wire brush, apply dielectric grease.",
+        "Clear fault codes and verify repairs."
+      ],
+      "tips": [
+        "Many 986 electrical issues trace to water damage in the front trunk.",
+        "The DME (engine computer) is located in the frunk - protect it from water.",
+        "Frameless windows require precise adjustment after regulator replacement.",
+        "Convertible top issues are often just low hydraulic fluid.",
+        "A Durametric or PIWIS scanner provides far more diagnostic info than generic OBD2."
+      ],
+      "warnings": [
+        "Water in the frunk can destroy the DME - several thousand dollars to replace.",
+        "Never use brake cleaner or carburetor cleaner on MAF sensors.",
+        "Convertible top microswitches can cause top to stop mid-cycle - dangerous.",
+        "Always disconnect battery before electrical work.",
+        "Support window glass before removing regulator - it will fall."
+      ],
+      "references": [
+        {
+          "name": "Pelican Parts 986 Electrical",
+          "url": "https://www.pelicanparts.com/techarticles/Porsche-Boxster-986/"
+        },
+        {
+          "name": "986 Forum DIY",
+          "url": "https://986forum.com/"
+        },
+        {
+          "name": "Rennlist 986 Technical",
+          "url": "https://rennlist.com/forums/986-forum/"
+        }
+      ]
+    },
+    {
+      "id": "interior-restoration",
+      "title": "Interior Restoration",
+      "description": "Complete interior refresh for the 986 Boxster covering leather care, convertible top maintenance, and common wear items.",
+      "difficulty": "Intermediate",
+      "time": "10-18 hours",
+      "cost": "$300-1,000",
+      "interval": "As needed for wear items",
+      "laborHours": "8-14 hours shop time",
+      "parts": [
+        {
+          "name": "Leather Repair Kit",
+          "oem": "—",
+          "aftermarket": "Leatherique, Colourlock",
+          "cost": "$50-100"
+        },
+        {
+          "name": "Convertible Top Fabric",
+          "oem": "98656191900",
+          "aftermarket": "German canvas, Haartz Stayfast",
+          "cost": "$300-600"
+        },
+        {
+          "name": "Convertible Top Hydraulic Fluid",
+          "oem": "Pentosin CHF 11S",
+          "aftermarket": "Pentosin",
+          "cost": "$25-40"
+        },
+        {
+          "name": "Rear Window (Plastic)",
+          "oem": "98656190501",
+          "aftermarket": "Aftermarket",
+          "cost": "$150-300"
+        },
+        {
+          "name": "Shift Knob (Manual)",
+          "oem": "99642407504",
+          "aftermarket": "Aftermarket",
+          "cost": "$60-150"
+        },
+        {
+          "name": "E-Brake Boot",
+          "oem": "99655298001",
+          "aftermarket": "Leather replicas",
+          "cost": "$30-60"
+        },
+        {
+          "name": "Door Panel Clip Set",
+          "oem": "Various",
+          "aftermarket": "Aftermarket",
+          "cost": "$15-30"
+        },
+        {
+          "name": "Carpet Set",
+          "oem": "—",
+          "aftermarket": "German Molded, aftermarket",
+          "cost": "$300-600"
+        },
+        {
+          "name": "Seat Foam (Driver)",
+          "oem": "99652191103",
+          "aftermarket": "Recovered",
+          "cost": "$100-200"
+        },
+        {
+          "name": "Cabin Air Filter",
+          "oem": "99657221901",
+          "aftermarket": "Mann, Bosch",
+          "cost": "$20-40"
+        }
+      ],
+      "tools": [
+        "Trim removal tools (plastic pry set)",
+        "Torx driver set (T15, T20, T25, T30)",
+        "Phillips and flathead screwdrivers",
+        "Heat gun (for vinyl repair)",
+        "Microfiber cloths",
+        "Leather cleaner and conditioner",
+        "Convertible top cleaner and protectant",
+        "Interior detailing brushes"
+      ],
+      "steps": [
+        "Document condition with photos before starting.",
+        "For leather: clean thoroughly with dedicated leather cleaner.",
+        "Address leather cracks with filler, sand smooth, apply dye.",
+        "Condition all leather surfaces - seats, door panels, dash.",
+        "For convertible top fabric: clean with top-specific cleaner.",
+        "Inspect for tears, worn spots, or separation at seams.",
+        "Treat fabric with protectant to prevent UV damage.",
+        "Check rear window for cloudiness or cracks (especially 1997-2002).",
+        "Replace rear window if cracked - heat gun removal from track.",
+        "Inspect and service convertible top mechanism - lubricate pivots.",
+        "Check hydraulic fluid level in reservoir (rear of car).",
+        "For worn shift/e-brake boots: pry out old boot, press new one in.",
+        "Replace cabin air filter - located behind frunk carpet.",
+        "Clean HVAC vents with detailing brushes.",
+        "Address any sticky interior surfaces with appropriate cleaner.",
+        "Apply UV protectant to all exposed surfaces.",
+        "Test all interior functions: windows, mirrors, locks, top."
+      ],
+      "tips": [
+        "The 986's leather responds well to proper conditioning.",
+        "Early plastic rear windows crack easily - glass upgrade available.",
+        "Convertible top hydraulic fluid level is often overlooked - check it.",
+        "Lubricate top mechanism pivot points every 6 months.",
+        "Sport seats have aggressive bolsters that wear faster on driver side."
+      ],
+      "warnings": [
+        "Never operate convertible top when wet or below freezing.",
+        "Use only top-specific cleaners - household products can damage fabric.",
+        "Don't use silicone-based products on leather.",
+        "Be careful with trim clips - they become brittle with age.",
+        "Rear window removal requires care to avoid damaging the track."
+      ],
+      "references": [
+        {
+          "name": "Pelican Parts 986 Interior",
+          "url": "https://www.pelicanparts.com/techarticles/Porsche-Boxster-986/"
+        },
+        {
+          "name": "Leatherique Products",
+          "url": "https://www.leatherique.com/"
+        },
+        {
+          "name": "Planet-9 Convertible Top Guide",
+          "url": "https://www.planet-9.com/"
+        }
+      ]
     }
   ],
   "suppliers": {
