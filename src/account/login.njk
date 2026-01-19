@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Check if already logged in
   const user = await Auth.getUser();
   if (user) {
-    const returnUrl = new URLSearchParams(window.location.search).get('return') || '/account/dashboard/';
+    const returnUrl = new URLSearchParams(window.location.search).get('return') || '/account/garage/';
     window.location.href = returnUrl;
     return;
   }
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     try {
       await Auth.signIn(email, password);
-      const returnUrl = new URLSearchParams(window.location.search).get('return') || '/account/dashboard/';
+      const returnUrl = new URLSearchParams(window.location.search).get('return') || '/account/garage/';
       window.location.href = returnUrl;
     } catch (error) {
       AuthUI.showError(form, error.message);
