@@ -10,6 +10,8 @@
 - Newsletter signup on homepage (Formspree-ready)
 - Mobile responsive, dark mode, print-friendly
 - Production build with CSS/JS minification (~35% smaller)
+- Hero images for all 17 vehicles (Wikimedia Commons, CC licensed)
+- Image optimization pipeline (WebP + responsive sizes)
 
 ---
 
@@ -53,13 +55,23 @@
   - Uses clean-css and terser
   - Run `npm run build:prod` for minified build
 
+- [x] **Hero Images** - All 17 vehicle platforms
+  - BMW: E28 M5, E30 M3, E34 M5, E36 M3, E39 M5, E46 M3/CSL, E90 M3
+  - Porsche: 924 Turbo, 928 GTS, 944 Turbo, 964, 993, 996 GT3, 997 GT2 RS, 991 GT3 RS, 986 Boxster S, 987 Cayman S
+  - Sourced from Wikimedia Commons (Creative Commons licensed)
+
+- [x] **Image Optimization Pipeline** - @11ty/eleventy-img
+  - Generates WebP versions (20-60% smaller than JPEG)
+  - Creates responsive sizes: 400, 800, 1200, 1920px
+  - Run `npm run optimize:images` or included in `build:prod`
+
 ---
 
 ## Priority 1: Content
 
-- [ ] **Add hero images** to vehicle pages
-  - Location: `src/images/vehicles/{model}-hero.jpg`
-  - Specs: JPEG, 1920x1080, under 500KB
+- [x] **Add hero images** to vehicle pages
+  - All 17 vehicles have hero images from Wikimedia Commons
+  - Images optimized to WebP + multiple sizes (400, 800, 1200, 1920)
 - [ ] **Add inline images** to resource pages (engine bays, problem areas, step photos)
 
 ---
@@ -67,7 +79,7 @@
 ## Priority 2: Polish & Production
 
 - [x] Minify CSS/JS for production
-- [ ] Image optimization pipeline
+- [x] Image optimization pipeline
 
 ---
 
@@ -83,12 +95,13 @@
 
 **Commands:**
 ```
-npm run build        # Build site to _site/
-npm run serve        # Dev server at localhost:8080
-npm run build:search # Rebuild search index
-npm run build:all    # Rebuild search index and site
-npm run build:prod   # Production build (search + site + minify)
-npm run minify       # Minify CSS/JS in _site/
+npm run build          # Build site to _site/
+npm run serve          # Dev server at localhost:8080
+npm run build:search   # Rebuild search index
+npm run build:all      # Rebuild search index and site
+npm run optimize:images # Optimize hero images (WebP + sizes)
+npm run minify         # Minify CSS/JS in _site/
+npm run build:prod     # Full production build (all of the above)
 ```
 
 **File Structure:**
