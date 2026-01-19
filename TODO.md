@@ -1,7 +1,7 @@
 # ZRG Classics - Project TODO
 
 ## Current Status
-- 14 vehicle platforms (BMW: E28, E30, E34, E36, E39, E46, E90 | Porsche: 924, 928, 944, 964, 986, 987, 991, 993, 996, 997)
+- 17 vehicle platforms (BMW: E28, E30, E34, E36, E39, E46, E90 | Porsche: 924, 928, 944, 964, 986, 987, 991, 993, 996, 997)
 - 136 guides (56 restoration + 80 DIY maintenance) with step-by-step procedures
 - 132+ documented issues with repair costs and difficulty ratings
 - 414 torque specs indexed
@@ -36,7 +36,7 @@
 
 - [x] **Restoration Checklist** - Embedded in each vehicle page
   - 12 system categories with 100+ common items
-  - Vehicle-specific restoration items for all 14 vehicles
+  - Vehicle-specific restoration items for all 17 vehicles
   - Progress tracking with localStorage per vehicle
   - Cost tracking, dates, and notes per item
   - Print and JSON export
