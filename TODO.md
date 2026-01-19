@@ -4,7 +4,7 @@
 - 17 vehicle platforms (BMW: E28, E30, E34, E36, E39, E46, E90 | Porsche: 924, 928, 944, 964, 986, 987, 991, 993, 996, 997)
 - 136 guides (56 restoration + 80 DIY maintenance) with step-by-step procedures
 - 132+ documented issues with repair costs and difficulty ratings
-- 414 torque specs indexed
+- 465 torque specs indexed
 - Full-text search across all content
 - 4 tools: Invoice Creator, Build Cost Calculator, Maintenance Tracker, Restoration Checklist
 - Newsletter signup on homepage (Formspree-ready)
