@@ -5,21 +5,23 @@
 - 68 DIY maintenance guides with step-by-step procedures
 - 132+ documented issues with repair costs and difficulty ratings
 - Full-text search across all content
-- 3 tools: Invoice Creator, Build Cost Calculator, Maintenance Tracker
+- 4 tools: Invoice Creator, Build Cost Calculator, Maintenance Tracker, Restoration Checklist
 - Mobile responsive, dark mode, print-friendly
 
 ---
 
-## Priority 1: Next Up
+## Completed
 
-- [ ] **Restoration Checklist Tool** - Step-by-step restoration guides
-  - System-by-system checklists (engine, suspension, interior, etc.)
-  - Progress tracking with localStorage
-  - Printable export
+- [x] **Restoration Checklist** - Embedded in each vehicle page
+  - 12 system categories with 100+ common items
+  - Vehicle-specific restoration items for all 14 vehicles
+  - Progress tracking with localStorage per vehicle
+  - Cost tracking, dates, and notes per item
+  - Print and JSON export
 
 ---
 
-## Priority 2: Content & Polish
+## Priority 1: Content & Polish
 
 - [ ] Add hero images to vehicle pages
   - Location: `src/images/vehicles/{model}-hero.jpg`
