@@ -21,14 +21,25 @@
 
 ---
 
-## Priority 1: Content & Polish
+## Priority 1: Content
 
-- [ ] Add hero images to vehicle pages
+- [ ] **Restoration Guide Content** - Write actual restoration guides (currently "coming soon")
+  - Engine rebuild guides per platform
+  - Suspension refresh guides
+  - Interior restoration guides
+  - Electrical system guides
+- [ ] **Add hero images** to vehicle pages
   - Location: `src/images/vehicles/{model}-hero.jpg`
   - Specs: JPEG, 1920x1080, under 500KB
-- [ ] Add images to resource pages (engine bays, problem areas)
+- [ ] **Add inline images** to resource pages (engine bays, problem areas, step photos)
+
+---
+
+## Priority 2: Polish & Production
+
 - [ ] Minify CSS/JS for production
 - [ ] Newsletter signup form
+- [ ] Image optimization pipeline
 
 ---
 
