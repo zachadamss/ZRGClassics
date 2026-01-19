@@ -605,6 +605,99 @@ main {
     letter-spacing: 0.08em;
 }
 
+/* Newsletter Section */
+.newsletter-section {
+    background: var(--background-alt);
+    padding: 3.5rem 2rem;
+    text-align: center;
+    border-top: 3px solid var(--gulf-orange);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.newsletter-container {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.newsletter-badge {
+    display: inline-block;
+    background: rgba(242, 101, 34, 0.15);
+    color: var(--gulf-orange);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--radius-full);
+    margin-bottom: 1rem;
+    border: 1px solid rgba(242, 101, 34, 0.3);
+}
+
+.newsletter-content h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.newsletter-content > p {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    margin-bottom: 1.75rem;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.newsletter-input-group {
+    display: flex;
+    width: 100%;
+    max-width: 480px;
+    gap: 0.75rem;
+}
+
+.newsletter-section .newsletter-input,
+.newsletter-section .newsletter-input:focus,
+.newsletter-section .newsletter-input:active {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-full);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 0;
+}
+
+.newsletter-section .newsletter-input::placeholder {
+    color: var(--text-muted);
+}
+
+.newsletter-section .newsletter-input:focus {
+    outline: none;
+    border-color: var(--gulf-orange);
+    box-shadow: 0 0 0 3px rgba(242, 101, 34, 0.15);
+}
+
+.newsletter-btn {
+    padding: 1rem 2rem;
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.newsletter-note {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    margin: 0;
+}
+
 /* Quick Search Section */
 .quick-search-section {
     background: var(--background);
@@ -4675,6 +4768,29 @@ nav ul li.dropdown.touch-open .dropdown-menu {
 
     .stat-label {
         font-size: 0.85rem;
+    }
+
+    .newsletter-section {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .newsletter-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .newsletter-input-group {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .newsletter-section .newsletter-input {
+        width: 100%;
+        border-radius: var(--radius-lg);
+    }
+
+    .newsletter-btn {
+        width: 100%;
+        border-radius: var(--radius-lg);
     }
 
     .quick-search-section {
