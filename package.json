@@ -8,6 +8,7 @@
     "build:search": "node build-search-index.js",
     "build:all": "node build-search-index.js && eleventy",
     "serve": "eleventy --serve",
+    "serve:local": "npm run build && serve _site -c serve.json",
     "watch": "eleventy --watch",
     "minify:css": "cleancss -o _site/styles.css _site/styles.css",
     "minify:js": "terser _site/script.js -o _site/script.js -c -m && terser _site/search.js -o _site/search.js -c -m && terser _site/tools/invoice.js -o _site/tools/invoice.js -c -m && terser _site/tools/build-calculator.js -o _site/tools/build-calculator.js -c -m && terser _site/tools/maintenance-tracker.js -o _site/tools/maintenance-tracker.js -c -m",
@@ -26,6 +27,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "clean-css-cli": "^5.6.3",
+    "serve": "^14.2.5",
     "terser": "^5.46.0"
   },
   "dependencies": {

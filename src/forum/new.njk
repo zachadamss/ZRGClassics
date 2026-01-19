@@ -1,0 +1,105 @@
+---
+layout: layouts/base.njk
+title: New Thread
+description: Start a new discussion thread in the ZRG Classics forums.
+---
+
+<main class="forum-page">
+  <div class="container">
+    <div class="forum-header">
+      <h1>Start New Thread</h1>
+      <p class="forum-subtitle">Share your question, project, or discussion</p>
+    </div>
+
+    <div class="thread-form-container">
+      <form id="new-thread-form" class="thread-form">
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select id="category" name="category" required>
+            <option value="">Select a category...</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title" required maxlength="200"
+                 placeholder="Summarize your topic in a few words">
+          <small class="form-hint">Be specific and descriptive</small>
+        </div>
+
+        <div class="form-group">
+          <label for="content">Content</label>
+          <textarea id="content" name="content" required rows="12"
+                    placeholder="Describe your question, share details about your project, or start a discussion..."></textarea>
+          <small class="form-hint">Use clear paragraphs. You can share images by linking to them.</small>
+        </div>
+
+        <div class="form-actions">
+          <a href="/forum/" class="btn btn-secondary">Cancel</a>
+          <button type="submit" class="btn btn-primary">Post Thread</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="/js/supabase.js"></script>
+<script src="/js/forum.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', async () => {
+  // Require authentication
+  const user = await AuthUI.requireAuth();
+  if (!user) return;
+
+  const form = document.getElementById('new-thread-form');
+  const categorySelect = document.getElementById('category');
+
+  // Load categories
+  try {
+    const categories = await Forum.getCategories();
+    categorySelect.innerHTML = '<option value="">Select a category...</option>' +
+      categories.map(cat => `<option value="${cat.id}">${cat.name}</option>`).join('');
+
+    // Pre-select category from URL if provided
+    const urlParams = new URLSearchParams(window.location.search);
+    const preselect = urlParams.get('category');
+    if (preselect) {
+      const cat = categories.find(c => c.slug === preselect);
+      if (cat) categorySelect.value = cat.id;
+    }
+  } catch (error) {
+    console.error('Error loading categories:', error);
+  }
+
+  // Form submission
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const submitBtn = form.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Posting...';
+
+    const categoryId = parseInt(categorySelect.value);
+    const title = document.getElementById('title').value.trim();
+    const content = document.getElementById('content').value.trim();
+
+    try {
+      const thread = await Forum.createThread(categoryId, title, content);
+
+      // Get category slug for redirect
+      const { data: category } = await db
+        .from('forum_categories')
+        .select('slug')
+        .eq('id', categoryId)
+        .single();
+
+      window.location.href = `/forum/${category.slug}/${thread.id}/`;
+    } catch (error) {
+      AuthUI.showError(form, error.message);
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Post Thread';
+    }
+  });
+});
+</script>

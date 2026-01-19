@@ -1,0 +1,71 @@
+---
+layout: layouts/base.njk
+title: Sign In
+description: Sign in to your ZRG Classics account to access forums and community features.
+---
+
+<main class="auth-page">
+  <div class="auth-container">
+    <div class="auth-card">
+      <h1>Sign In</h1>
+      <p class="auth-subtitle">Welcome back to ZRG Classics</p>
+
+      <form id="login-form" class="auth-form">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required autocomplete="current-password">
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+      </form>
+
+      <div class="auth-links">
+        <a href="/account/forgot-password/">Forgot password?</a>
+        <span class="separator">|</span>
+        <a href="/account/register/">Create an account</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="/js/supabase.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', async () => {
+  // Check if already logged in
+  const user = await Auth.getUser();
+  if (user) {
+    const returnUrl = new URLSearchParams(window.location.search).get('return') || '/account/dashboard/';
+    window.location.href = returnUrl;
+    return;
+  }
+
+  const form = document.getElementById('login-form');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const submitBtn = form.querySelector('button[type="submit"]');
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Signing in...';
+
+    try {
+      await Auth.signIn(email, password);
+      const returnUrl = new URLSearchParams(window.location.search).get('return') || '/account/dashboard/';
+      window.location.href = returnUrl;
+    } catch (error) {
+      AuthUI.showError(form, error.message);
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Sign In';
+    }
+  });
+});
+</script>

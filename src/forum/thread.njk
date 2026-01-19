@@ -1,0 +1,243 @@
+---
+layout: layouts/base.njk
+title: Thread
+description: View thread discussion.
+---
+
+<main class="forum-page thread-page">
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="/forum/">Forums</a>
+      <span class="separator">/</span>
+      <a href="#" id="category-link">Loading...</a>
+      <span class="separator">/</span>
+      <span id="thread-title-crumb">Loading...</span>
+    </nav>
+
+    <article id="thread-content" class="thread-content">
+      <div class="loading">Loading thread...</div>
+    </article>
+
+    <section id="replies-section" class="replies-section" style="display: none;">
+      <h2>Replies</h2>
+      <div id="replies-list" class="replies-list"></div>
+      <div id="replies-pagination" class="pagination"></div>
+    </section>
+
+    <section id="reply-form-section" class="reply-form-section" style="display: none;">
+      <h2>Post a Reply</h2>
+      <form id="reply-form" class="reply-form">
+        <div class="form-group">
+          <textarea id="reply-content" name="content" required rows="6"
+                    placeholder="Write your reply..."></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Post Reply</button>
+        </div>
+      </form>
+    </section>
+
+    <div id="login-prompt" class="login-prompt" style="display: none;">
+      <p><a href="/account/login/">Sign in</a> or <a href="/account/register/">create an account</a> to reply to this thread.</p>
+    </div>
+  </div>
+</main>
+
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="/js/supabase.js"></script>
+<script src="/js/forum.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', async () => {
+  const threadContainer = document.getElementById('thread-content');
+  const repliesSection = document.getElementById('replies-section');
+  const repliesList = document.getElementById('replies-list');
+  const replyPagination = document.getElementById('replies-pagination');
+  const replyFormSection = document.getElementById('reply-form-section');
+  const loginPrompt = document.getElementById('login-prompt');
+  const replyForm = document.getElementById('reply-form');
+
+  // Get thread ID from URL
+  const pathParts = window.location.pathname.split('/').filter(p => p);
+  const categorySlug = pathParts[1];
+  const threadId = parseInt(pathParts[2]);
+
+  if (!threadId) {
+    threadContainer.innerHTML = '<p class="error">Thread not found</p>';
+    return;
+  }
+
+  const user = await Auth.getUser();
+  let currentThread = null;
+
+  try {
+    // Load thread
+    currentThread = await Forum.getThread(threadId);
+
+    if (!currentThread) {
+      threadContainer.innerHTML = '<p class="error">Thread not found</p>';
+      return;
+    }
+
+    // Update page
+    document.title = `${currentThread.title} - ZRG Classics Forums`;
+    document.getElementById('thread-title-crumb').textContent = currentThread.title.substring(0, 50) + (currentThread.title.length > 50 ? '...' : '');
+    document.getElementById('category-link').textContent = currentThread.category.name;
+    document.getElementById('category-link').href = `/forum/${currentThread.category.slug}/`;
+
+    // Render thread
+    threadContainer.innerHTML = `
+      <header class="thread-header">
+        <h1 class="thread-title">${Forum.sanitizeHtml(currentThread.title)}</h1>
+        <div class="thread-meta">
+          <span>Posted by <strong>${currentThread.author?.username || 'Unknown'}</strong></span>
+          <span>${Forum.formatDate(currentThread.created_at)}</span>
+          <span>${currentThread.view_count || 0} views</span>
+        </div>
+      </header>
+      <div class="post-card original-post">
+        <aside class="post-author">
+          <div class="author-avatar">
+            ${currentThread.author?.avatar_url ?
+              `<img src="${currentThread.author.avatar_url}" alt="${currentThread.author.username}">` :
+              `<span>${(currentThread.author?.username || '?').substring(0, 2).toUpperCase()}</span>`}
+          </div>
+          <div class="author-name">${currentThread.author?.username || 'Unknown'}</div>
+          <div class="author-stats">
+            <span>${currentThread.author?.post_count || 0} posts</span>
+            <span>Member since ${Forum.formatDate(currentThread.author?.created_at)}</span>
+          </div>
+        </aside>
+        <div class="post-content">
+          ${Forum.nl2br(currentThread.content)}
+        </div>
+      </div>
+    `;
+
+    // Load replies
+    if (currentThread.reply_count > 0) {
+      repliesSection.style.display = 'block';
+      await loadReplies(1);
+    }
+
+    // Show reply form or login prompt
+    if (user && !currentThread.is_locked) {
+      replyFormSection.style.display = 'block';
+    } else if (!user) {
+      loginPrompt.style.display = 'block';
+    }
+
+  } catch (error) {
+    console.error('Error:', error);
+    threadContainer.innerHTML = '<p class="error">Unable to load thread. Please try again later.</p>';
+  }
+
+  // Load replies with pagination
+  async function loadReplies(page) {
+    try {
+      const result = await Forum.getReplies(threadId, { page });
+
+      if (result.replies.length === 0) {
+        repliesList.innerHTML = '';
+        return;
+      }
+
+      repliesList.innerHTML = result.replies.map(reply => `
+        <div class="post-card reply-post">
+          <aside class="post-author">
+            <div class="author-avatar">
+              ${reply.author?.avatar_url ?
+                `<img src="${reply.author.avatar_url}" alt="${reply.author.username}">` :
+                `<span>${(reply.author?.username || '?').substring(0, 2).toUpperCase()}</span>`}
+            </div>
+            <div class="author-name">${reply.author?.username || 'Unknown'}</div>
+            <div class="author-stats">
+              <span>${reply.author?.post_count || 0} posts</span>
+            </div>
+          </aside>
+          <div class="post-body">
+            <div class="post-meta">
+              <span>${Forum.formatDate(reply.created_at)}</span>
+              ${reply.updated_at !== reply.created_at ? '<span class="edited">(edited)</span>' : ''}
+            </div>
+            <div class="post-content">
+              ${Forum.nl2br(reply.content)}
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      // Pagination
+      if (result.totalPages > 1) {
+        let html = '';
+        for (let i = 1; i <= result.totalPages; i++) {
+          html += `<button class="page-btn ${i === page ? 'active' : ''}" data-page="${i}">${i}</button>`;
+        }
+        replyPagination.innerHTML = html;
+
+        replyPagination.querySelectorAll('.page-btn').forEach(btn => {
+          btn.addEventListener('click', () => loadReplies(parseInt(btn.dataset.page)));
+        });
+      }
+    } catch (error) {
+      console.error('Error loading replies:', error);
+    }
+  }
+
+  // Reply form submission
+  replyForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const content = document.getElementById('reply-content').value.trim();
+    const submitBtn = replyForm.querySelector('button[type="submit"]');
+
+    if (!content) return;
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Posting...';
+
+    try {
+      const reply = await Forum.createReply(threadId, content);
+
+      // Add reply to list
+      const replyHtml = `
+        <div class="post-card reply-post new-reply">
+          <aside class="post-author">
+            <div class="author-avatar">
+              ${reply.author?.avatar_url ?
+                `<img src="${reply.author.avatar_url}" alt="${reply.author.username}">` :
+                `<span>${(reply.author?.username || '?').substring(0, 2).toUpperCase()}</span>`}
+            </div>
+            <div class="author-name">${reply.author?.username || 'Unknown'}</div>
+            <div class="author-stats">
+              <span>${reply.author?.post_count || 0} posts</span>
+            </div>
+          </aside>
+          <div class="post-body">
+            <div class="post-meta">
+              <span>${Forum.formatDate(reply.created_at)}</span>
+            </div>
+            <div class="post-content">
+              ${Forum.nl2br(reply.content)}
+            </div>
+          </div>
+        </div>
+      `;
+
+      repliesSection.style.display = 'block';
+      repliesList.insertAdjacentHTML('beforeend', replyHtml);
+
+      // Clear form
+      document.getElementById('reply-content').value = '';
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Post Reply';
+
+      // Scroll to new reply
+      repliesList.lastElementChild.scrollIntoView({ behavior: 'smooth' });
+    } catch (error) {
+      AuthUI.showError(replyForm, error.message);
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Post Reply';
+    }
+  });
+});
+</script>

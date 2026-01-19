@@ -32,6 +32,12 @@
             <li><a href="{{ item.url }}">{{ item.label }}</a></li>
             {% endif %}
             {% endfor %}
+            <li class="nav-auth">
+                <div class="auth-links">
+                    <a href="/account/login/" class="btn btn-secondary btn-sm">Sign In</a>
+                    <a href="/account/register/" class="btn btn-primary btn-sm">Join</a>
+                </div>
+            </li>
             <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
                 <span class="toggle-track">
                     <span class="toggle-thumb"></span>

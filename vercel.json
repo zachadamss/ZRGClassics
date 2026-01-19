@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/forum/:category/:threadId/",
+      "destination": "/forum/thread/"
+    },
+    {
+      "source": "/forum/:category/",
+      "destination": "/forum/category/"
+    }
+  ]
+}

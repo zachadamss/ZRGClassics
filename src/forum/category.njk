@@ -1,0 +1,146 @@
+---
+layout: layouts/base.njk
+title: Forum Category
+description: Browse threads in this forum category.
+---
+
+<main class="forum-page">
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="/forum/">Forums</a>
+      <span class="separator">/</span>
+      <span id="category-name">Loading...</span>
+    </nav>
+
+    <div class="forum-header">
+      <h1 id="page-title">Loading...</h1>
+      <p class="forum-subtitle" id="category-description"></p>
+      <div class="forum-actions">
+        <a href="#" class="btn btn-primary" id="new-thread-btn">Start New Thread</a>
+      </div>
+    </div>
+
+    <div id="thread-list" class="thread-list">
+      <div class="loading">Loading threads...</div>
+    </div>
+
+    <div id="pagination" class="pagination"></div>
+  </div>
+</main>
+
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="/js/supabase.js"></script>
+<script src="/js/forum.js"></script>
+<script>
+console.log('=== CATEGORY PAGE SCRIPT LOADED ===');
+document.addEventListener('DOMContentLoaded', async () => {
+  console.log('Category page DOMContentLoaded fired');
+  console.log('Supabase available:', typeof supabase !== 'undefined');
+  console.log('db available:', typeof db !== 'undefined');
+  console.log('Forum available:', typeof Forum !== 'undefined');
+  const container = document.getElementById('thread-list');
+  const paginationContainer = document.getElementById('pagination');
+  const newThreadBtn = document.getElementById('new-thread-btn');
+
+  // Get category slug from URL (supports both /forum/e30/ and /forum/category/?slug=e30)
+  const urlParams = new URLSearchParams(window.location.search);
+  let categorySlug = urlParams.get('slug');
+  if (!categorySlug) {
+    const pathParts = window.location.pathname.split('/').filter(p => p);
+    categorySlug = pathParts[1]; // /forum/{slug}/
+  }
+  console.log('Category slug:', categorySlug);
+
+  if (!categorySlug) {
+    window.location.href = '/forum/';
+    return;
+  }
+
+  // Check if user is logged in
+  const user = await Auth.getUser();
+  console.log('User:', user);
+
+  try {
+    // Load category info
+    console.log('Fetching category...');
+    const category = await Forum.getCategory(categorySlug);
+    console.log('Category result:', category);
+
+    if (!category) {
+      container.innerHTML = '<p class="error">Category not found</p>';
+      return;
+    }
+
+    document.getElementById('page-title').textContent = category.name;
+    document.getElementById('category-name').textContent = category.name;
+    document.getElementById('category-description').textContent = category.description || '';
+    document.title = `${category.name} - ZRG Classics Forums`;
+
+    // Update new thread button
+    newThreadBtn.href = `/forum/new/?category=${categorySlug}`;
+    if (!user) {
+      newThreadBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.location.href = `/account/login/?return=/forum/new/?category=${categorySlug}`;
+      });
+    }
+
+    // Load threads
+    await loadThreads(categorySlug, 1);
+  } catch (error) {
+    console.error('Error:', error);
+    container.innerHTML = '<p class="error">Unable to load forum. Please try again later.</p>';
+  }
+
+  async function loadThreads(slug, page) {
+    container.innerHTML = '<div class="loading">Loading threads...</div>';
+
+    try {
+      const result = await Forum.getThreads(slug, { page });
+
+      if (!result.threads || result.threads.length === 0) {
+        container.innerHTML = '<p class="empty-state">No threads yet. Be the first to start a discussion!</p>';
+        paginationContainer.innerHTML = '';
+        return;
+      }
+
+      container.innerHTML = result.threads.map(thread => `
+        <div class="thread-item ${thread.is_pinned ? 'thread-pinned' : ''}">
+          <div class="thread-info">
+            ${thread.is_pinned ? '<span class="pin-badge">Pinned</span>' : ''}
+            <a href="/forum/${categorySlug}/${thread.id}/" class="thread-title">${Forum.sanitizeHtml(thread.title)}</a>
+            <div class="thread-meta">
+              <span>by ${thread.author?.username || 'Unknown'}</span>
+              <span>${Forum.timeAgo(thread.created_at)}</span>
+              ${thread.last_reply_at && thread.last_reply_at !== thread.created_at ?
+                `<span>Last reply by ${thread.last_reply_author?.username || 'Unknown'} ${Forum.timeAgo(thread.last_reply_at)}</span>` : ''}
+            </div>
+          </div>
+          <div class="thread-stats">
+            <span>${thread.reply_count || 0} replies</span>
+            <span>${thread.view_count || 0} views</span>
+          </div>
+        </div>
+      `).join('');
+
+      // Render pagination
+      if (result.totalPages > 1) {
+        let paginationHtml = '';
+        for (let i = 1; i <= result.totalPages; i++) {
+          paginationHtml += `<button class="page-btn ${i === page ? 'active' : ''}" data-page="${i}">${i}</button>`;
+        }
+        paginationContainer.innerHTML = paginationHtml;
+
+        paginationContainer.querySelectorAll('.page-btn').forEach(btn => {
+          btn.addEventListener('click', () => loadThreads(slug, parseInt(btn.dataset.page)));
+        });
+      } else {
+        paginationContainer.innerHTML = '';
+      }
+    } catch (error) {
+      console.error('Error loading threads:', error);
+      container.innerHTML = '<p class="error">Unable to load threads. Please try again.</p>';
+    }
+  }
+});
+</script>

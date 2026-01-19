@@ -44,7 +44,7 @@
         { "label": "Maintenance Tracker", "url": "/tools/maintenance-tracker/" }
       ]
     },
-    { "label": "Community", "url": "/community/forums/" },
+    { "label": "Forum", "url": "/forum/" },
     { "label": "Shop", "url": "/shop/" },
     { "label": "About", "url": "/about/" }
   ]

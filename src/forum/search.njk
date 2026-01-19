@@ -1,0 +1,118 @@
+---
+layout: layouts/base.njk
+title: Search Forums
+description: Search the ZRG Classics community forums.
+---
+
+<main class="forum-page">
+  <div class="container">
+    <div class="forum-header">
+      <h1>Search Forums</h1>
+    </div>
+
+    <div class="forum-search forum-search-large">
+      <input type="text" id="search-input" placeholder="Search threads..." autocomplete="off">
+      <button type="button" id="search-btn" class="btn btn-primary">Search</button>
+    </div>
+
+    <div id="search-results" class="thread-list">
+      <p class="empty-state">Enter a search term to find threads</p>
+    </div>
+
+    <div id="pagination" class="pagination"></div>
+  </div>
+</main>
+
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="/js/supabase.js"></script>
+<script src="/js/forum.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', async () => {
+  const searchInput = document.getElementById('search-input');
+  const searchBtn = document.getElementById('search-btn');
+  const resultsContainer = document.getElementById('search-results');
+  const paginationContainer = document.getElementById('pagination');
+
+  let currentPage = 1;
+
+  // Check for query param
+  const urlParams = new URLSearchParams(window.location.search);
+  const initialQuery = urlParams.get('q');
+  if (initialQuery) {
+    searchInput.value = initialQuery;
+    performSearch(initialQuery);
+  }
+
+  searchBtn.addEventListener('click', () => {
+    performSearch(searchInput.value.trim());
+  });
+
+  searchInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      performSearch(searchInput.value.trim());
+    }
+  });
+
+  async function performSearch(query, page = 1) {
+    if (!query || query.length < 2) {
+      resultsContainer.innerHTML = '<p class="empty-state">Please enter at least 2 characters</p>';
+      return;
+    }
+
+    resultsContainer.innerHTML = '<p class="loading">Searching...</p>';
+    currentPage = page;
+
+    // Update URL
+    const newUrl = new URL(window.location);
+    newUrl.searchParams.set('q', query);
+    window.history.replaceState({}, '', newUrl);
+
+    try {
+      const results = await Forum.searchThreads(query, { page });
+
+      if (!results.threads || results.threads.length === 0) {
+        resultsContainer.innerHTML = `<p class="empty-state">No results found for "${Forum.sanitizeHtml(query)}"</p>`;
+        paginationContainer.innerHTML = '';
+        return;
+      }
+
+      resultsContainer.innerHTML = results.threads.map(thread => `
+        <div class="thread-item">
+          <div class="thread-info">
+            <a href="/forum/${thread.category.slug}/${thread.id}/" class="thread-title">${Forum.sanitizeHtml(thread.title)}</a>
+            <div class="thread-meta">
+              <span class="thread-category">${thread.category.name}</span>
+              <span>by ${thread.author?.username || 'Unknown'}</span>
+              <span>${Forum.timeAgo(thread.created_at)}</span>
+            </div>
+          </div>
+          <div class="thread-stats">
+            <span>${thread.reply_count || 0} replies</span>
+            <span>${thread.view_count || 0} views</span>
+          </div>
+        </div>
+      `).join('');
+
+      // Render pagination
+      if (results.totalPages > 1) {
+        let paginationHtml = '';
+        for (let i = 1; i <= results.totalPages; i++) {
+          paginationHtml += `<button class="page-btn ${i === page ? 'active' : ''}" data-page="${i}">${i}</button>`;
+        }
+        paginationContainer.innerHTML = paginationHtml;
+
+        paginationContainer.querySelectorAll('.page-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            performSearch(query, parseInt(btn.dataset.page));
+          });
+        });
+      } else {
+        paginationContainer.innerHTML = '';
+      }
+    } catch (error) {
+      console.error('Search error:', error);
+      resultsContainer.innerHTML = '<p class="error">An error occurred while searching. Please try again.</p>';
+    }
+  }
+});
+</script>

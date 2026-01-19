@@ -1,0 +1,129 @@
+---
+layout: layouts/base.njk
+title: Dashboard
+description: Your ZRG Classics dashboard - view your activity and manage your account.
+---
+
+<main class="dashboard-page">
+  <div class="container">
+    <div class="dashboard-header">
+      <h1>Dashboard</h1>
+      <p class="dashboard-subtitle">Welcome back, <span id="user-name">Member</span></p>
+    </div>
+
+    <div class="dashboard-grid">
+      <!-- Profile Card -->
+      <div class="dashboard-card">
+        <div class="card-header">
+          <h2>Your Profile</h2>
+          <a href="/account/profile/" class="btn btn-secondary btn-sm">Edit</a>
+        </div>
+        <div class="profile-summary">
+          <div class="avatar-placeholder" id="user-avatar">
+            <span id="avatar-initials">?</span>
+          </div>
+          <div class="profile-info">
+            <p><strong>Username:</strong> <span id="profile-username">-</span></p>
+            <p><strong>Member since:</strong> <span id="profile-joined">-</span></p>
+            <p><strong>Posts:</strong> <span id="profile-posts">0</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="dashboard-card">
+        <div class="card-header">
+          <h2>Quick Links</h2>
+        </div>
+        <ul class="quick-links">
+          <li><a href="/forum/">Browse Forums</a></li>
+          <li><a href="/forum/new/">Start New Thread</a></li>
+          <li><a href="/account/profile/">Edit Profile</a></li>
+        </ul>
+      </div>
+
+      <!-- Recent Activity -->
+      <div class="dashboard-card dashboard-card-wide">
+        <div class="card-header">
+          <h2>Your Recent Threads</h2>
+          <a href="/forum/my-threads/" class="btn btn-secondary btn-sm">View All</a>
+        </div>
+        <div id="recent-threads" class="recent-list">
+          <p class="empty-state">Loading...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script src="/js/supabase.js"></script>
+<script src="/js/forum.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', async () => {
+  // Require authentication
+  const user = await AuthUI.requireAuth();
+  if (!user) return;
+
+  // Load profile
+  const profile = await Auth.getProfile(user.id);
+
+  if (profile) {
+    document.getElementById('user-name').textContent = profile.display_name || profile.username;
+    document.getElementById('profile-username').textContent = profile.username;
+    document.getElementById('profile-posts').textContent = profile.post_count || 0;
+    document.getElementById('profile-joined').textContent = new Date(profile.created_at).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+
+    // Set avatar initials
+    const initials = (profile.display_name || profile.username).substring(0, 2).toUpperCase();
+    document.getElementById('avatar-initials').textContent = initials;
+
+    if (profile.avatar_url) {
+      document.getElementById('user-avatar').innerHTML = `<img src="${profile.avatar_url}" alt="${profile.username}">`;
+    }
+  }
+
+  // Load recent threads
+  try {
+    const { data: threads, error } = await db
+      .from('forum_threads')
+      .select(`
+        id,
+        title,
+        slug,
+        created_at,
+        reply_count,
+        category:forum_categories(slug, name)
+      `)
+      .eq('author_id', user.id)
+      .order('created_at', { ascending: false })
+      .limit(5);
+
+    const container = document.getElementById('recent-threads');
+
+    if (error) throw error;
+
+    if (!threads || threads.length === 0) {
+      container.innerHTML = '<p class="empty-state">You haven\'t started any threads yet. <a href="/forum/new/">Start your first discussion</a></p>';
+    } else {
+      container.innerHTML = threads.map(thread => `
+        <div class="recent-item">
+          <a href="/forum/${thread.category.slug}/${thread.id}/" class="recent-title">${Forum.sanitizeHtml(thread.title)}</a>
+          <div class="recent-meta">
+            <span>${thread.category.name}</span>
+            <span>${thread.reply_count} replies</span>
+            <span>${Forum.timeAgo(thread.created_at)}</span>
+          </div>
+        </div>
+      `).join('');
+    }
+  } catch (error) {
+    console.error('Error loading threads:', error);
+    document.getElementById('recent-threads').innerHTML = '<p class="empty-state">Unable to load recent threads</p>';
+  }
+});
+</script>
