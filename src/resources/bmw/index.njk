@@ -2,35 +2,113 @@
 layout: layouts/base.njk
 title: BMW Resources
 description: "Complete BMW resource guides for E28, E30, E34, E36, E39, E46, and E90 models. Find common issues, repair costs, torque specs, parts suppliers, and DIY maintenance guides."
-keywords: "BMW E30, BMW E36, BMW E46, BMW E90, BMW common issues, BMW repair guide, BMW torque specs, BMW parts"
+keywords: "BMW E30, BMW E36, BMW E46, BMW E90, BMW E28, BMW E34, BMW E39, BMW common issues, BMW repair guide, BMW torque specs, BMW parts"
 breadcrumbs:
   - { label: "Home", url: "/" }
   - { label: "BMW" }
 ---
-{% include "partials/breadcrumb.njk" %}
 
-<main class="resource-content">
-    <h1>BMW Resources</h1>
-    <p class="subtitle">Select your model for common issues, restoration guides, parts, and specifications</p>
+<!-- Hero Section -->
+<section class="brand-hero">
+    <div class="brand-hero-content">
+        <span class="hero-badge">BMW Resources</span>
+        <h1>The Ultimate <span class="highlight">Driving Machine</span></h1>
+        <p class="hero-subtitle">Comprehensive guides, verified specs, and trusted resources for BMW enthusiasts.</p>
+    </div>
+</section>
 
-    <div class="resource-grid" style="max-width: 100%;">
-        <div class="resource-card">
-            <h3>E30 3 Series</h3>
-            <p>1982-1994</p>
-            <p>M10, M20, M42, S14 engines</p>
-            <a href="/resources/bmw/e30/" class="btn">View Resources</a>
+<!-- Stats Bar -->
+<section class="stats-bar">
+    <div class="stats-container">
+        <div class="stat-item">
+            <span class="stat-number">7</span>
+            <span class="stat-label">Platforms</span>
         </div>
-        <div class="resource-card">
-            <h3>E36 3 Series</h3>
-            <p>1990-2000</p>
-            <p>M50, M52, M42, S50/S52 engines</p>
-            <a href="/resources/bmw/e36/" class="btn">View Resources</a>
+        <div class="stat-item">
+            <span class="stat-number">{{ vehicles.e30.issues | length + vehicles.e36.issues | length + vehicles.e46.issues | length + vehicles.e28.issues | length + vehicles.e34.issues | length + vehicles.e39.issues | length + vehicles.e90.issues | length }}+</span>
+            <span class="stat-label">Issues Documented</span>
         </div>
-        <div class="resource-card">
-            <h3>E46 3 Series</h3>
-            <p>1999-2006</p>
-            <p>M52TU, M54, S54 engines</p>
-            <a href="/resources/bmw/e46/" class="btn">View Resources</a>
+        <div class="stat-item">
+            <span class="stat-number">28</span>
+            <span class="stat-label">Restoration Guides</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">{{ vehicles.e30.diyGuides | length + vehicles.e36.diyGuides | length + vehicles.e46.diyGuides | length + vehicles.e28.diyGuides | length + vehicles.e34.diyGuides | length + vehicles.e39.diyGuides | length + vehicles.e90.diyGuides | length }}+</span>
+            <span class="stat-label">DIY Guides</span>
         </div>
     </div>
-</main>
+</section>
+
+<!-- Quick Search Section -->
+<section class="quick-search-section">
+    <div class="quick-search-container">
+        <h2>What are you working on?</h2>
+        <p>Search across all BMW models for issues, specs, guides, and suppliers</p>
+        <form class="home-search-form" action="/search/" method="get">
+            <input type="hidden" name="brand" value="BMW">
+            <input type="text" name="q" placeholder="Try 'VANOS', 'cooling system', 'subframe'..." class="home-search-input">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+        <div class="popular-searches">
+            <span>Popular:</span>
+            <a href="/search/?q=vanos">VANOS</a>
+            <a href="/search/?q=cooling+system">Cooling System</a>
+            <a href="/search/?q=subframe">Subframe</a>
+            <a href="/search/?q=window+regulator">Window Regulator</a>
+            <a href="/search/?q=oil+leak">Oil Leaks</a>
+        </div>
+    </div>
+</section>
+
+<!-- Vehicle Platforms Section -->
+<section id="vehicles" class="vehicles-section">
+    <div class="section-header">
+        <h2>Select Your BMW</h2>
+        <p>Choose your model for common issues, restoration guides, torque specs, and parts suppliers</p>
+    </div>
+
+    <div class="vehicle-grid">
+        {% for key in vehicleList.bmw %}
+        {% set vehicle = vehicles[key] %}
+        <a href="/resources/bmw/{{ key }}/" class="vehicle-card">
+            <div class="vehicle-card-image" style="{% if vehicle.heroImage %}background-image: url('{{ vehicle.heroImage }}'){% endif %}">
+            </div>
+            <div class="vehicle-card-content">
+                <h4>{{ vehicle.model }}</h4>
+                <span class="vehicle-years">{{ vehicle.years }}</span>
+                <span class="vehicle-name">{{ vehicle.fullName | replace("BMW ", "") }}</span>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section">
+    <div class="section-header">
+        <h2>What You'll Find</h2>
+        <p>Everything you need to keep your BMW on the road</p>
+    </div>
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">🔧</div>
+            <h3>Common Issues</h3>
+            <p>Detailed documentation of known problems with symptoms, causes, and proven fixes for each platform.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">📐</div>
+            <h3>Torque Specs</h3>
+            <p>Factory-verified torque specifications for engine, suspension, brakes, and drivetrain components.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">📋</div>
+            <h3>Restoration Guides</h3>
+            <p>Comprehensive guides for suspension refresh, rust repair, electrical systems, and interior restoration.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🛒</div>
+            <h3>Parts Suppliers</h3>
+            <p>Curated lists of trusted OEM, aftermarket, and used parts suppliers for each model.</p>
+        </div>
+    </div>
+</section>

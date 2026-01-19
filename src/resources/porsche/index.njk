@@ -2,53 +2,186 @@
 layout: layouts/base.njk
 title: Porsche Resources
 description: "Complete Porsche resource guides for 911 (964, 993, 996, 997, 991), Boxster (986, 987), Cayman, 924, 928, and 944 models. Find common issues, repair costs, torque specs, and parts suppliers."
-keywords: "Porsche 911, Porsche Boxster, Porsche Cayman, Porsche 944, Porsche common issues, Porsche repair guide, Porsche torque specs"
+keywords: "Porsche 911, Porsche Boxster, Porsche Cayman, Porsche 944, Porsche 964, Porsche 993, Porsche 996, Porsche 997, Porsche common issues, Porsche repair guide, Porsche torque specs"
 breadcrumbs:
   - { label: "Home", url: "/" }
   - { label: "Porsche" }
 ---
-{% include "partials/breadcrumb.njk" %}
 
-<main class="resource-content">
-    <h1>Porsche Resources</h1>
-    <p class="subtitle">Select your model for common issues, restoration guides, parts, and specifications</p>
+<!-- Hero Section -->
+<section class="brand-hero">
+    <div class="brand-hero-content">
+        <span class="hero-badge">Porsche Resources</span>
+        <h1>There Is No <span class="highlight">Substitute</span></h1>
+        <p class="hero-subtitle">Comprehensive guides, verified specs, and trusted resources for Porsche enthusiasts.</p>
+    </div>
+</section>
 
-    <div class="resource-grid" style="max-width: 100%;">
-        <div class="resource-card">
-            <h3>924</h3>
-            <p>1976-1988</p>
-            <p>2.0L I4, 2.5L I4, 2.0L Turbo</p>
-            <a href="/resources/porsche/924/" class="btn">View Resources</a>
+<!-- Stats Bar -->
+<section class="stats-bar">
+    <div class="stats-container">
+        <div class="stat-item">
+            <span class="stat-number">10</span>
+            <span class="stat-label">Platforms</span>
         </div>
-        <div class="resource-card">
-            <h3>944</h3>
-            <p>1982-1991</p>
-            <p>2.5L I4, 2.5L Turbo, 2.7L, 3.0L</p>
-            <a href="/resources/porsche/944/" class="btn">View Resources</a>
+        <div class="stat-item">
+            <span class="stat-number">{{ vehicles['924'].issues | length + vehicles['928'].issues | length + vehicles['944'].issues | length + vehicles['964'].issues | length + vehicles['986'].issues | length + vehicles['987'].issues | length + vehicles['991'].issues | length + vehicles['993'].issues | length + vehicles['996'].issues | length + vehicles['997'].issues | length }}+</span>
+            <span class="stat-label">Issues Documented</span>
         </div>
-        <div class="resource-card">
-            <h3>928</h3>
-            <p>1977-1995</p>
-            <p>4.5L-5.4L V8</p>
-            <a href="/resources/porsche/928/" class="btn">View Resources</a>
+        <div class="stat-item">
+            <span class="stat-number">40</span>
+            <span class="stat-label">Restoration Guides</span>
         </div>
-        <div class="resource-card">
-            <h3>986 Boxster</h3>
-            <p>1996-2004</p>
-            <p>2.5L-3.2L Flat-6</p>
-            <a href="/resources/porsche/986/" class="btn">View Resources</a>
-        </div>
-        <div class="resource-card">
-            <h3>996 911</h3>
-            <p>1998-2005</p>
-            <p>3.4L-3.6L Flat-6</p>
-            <a href="/resources/porsche/996/" class="btn">View Resources</a>
-        </div>
-        <div class="resource-card">
-            <h3>997 911</h3>
-            <p>2004-2012</p>
-            <p>3.6L-3.8L Flat-6</p>
-            <a href="/resources/porsche/997/" class="btn">View Resources</a>
+        <div class="stat-item">
+            <span class="stat-number">{{ vehicles['924'].diyGuides | length + vehicles['928'].diyGuides | length + vehicles['944'].diyGuides | length + vehicles['964'].diyGuides | length + vehicles['986'].diyGuides | length + vehicles['987'].diyGuides | length + vehicles['991'].diyGuides | length + vehicles['993'].diyGuides | length + vehicles['996'].diyGuides | length + vehicles['997'].diyGuides | length }}+</span>
+            <span class="stat-label">DIY Guides</span>
         </div>
     </div>
-</main>
+</section>
+
+<!-- Quick Search Section -->
+<section class="quick-search-section">
+    <div class="quick-search-container">
+        <h2>What are you working on?</h2>
+        <p>Search across all Porsche models for issues, specs, guides, and suppliers</p>
+        <form class="home-search-form" action="/search/" method="get">
+            <input type="hidden" name="brand" value="Porsche">
+            <input type="text" name="q" placeholder="Try 'IMS bearing', 'timing belt', 'RMS leak'..." class="home-search-input">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+        <div class="popular-searches">
+            <span>Popular:</span>
+            <a href="/search/?q=ims+bearing">IMS Bearing</a>
+            <a href="/search/?q=timing+belt">Timing Belt</a>
+            <a href="/search/?q=rms+leak">RMS Leak</a>
+            <a href="/search/?q=coolant+pipe">Coolant Pipes</a>
+            <a href="/search/?q=air+oil+separator">AOS</a>
+        </div>
+    </div>
+</section>
+
+<!-- Vehicle Platforms Section -->
+<section id="vehicles" class="vehicles-section">
+    <div class="section-header">
+        <h2>Select Your Porsche</h2>
+        <p>Choose your model for common issues, restoration guides, torque specs, and parts suppliers</p>
+    </div>
+
+    <!-- Front-Engine Models -->
+    <div class="brand-block">
+        <div class="brand-header">
+            <h3 class="brand-title">Front-Engine</h3>
+        </div>
+        <div class="vehicle-grid">
+            {% set frontEngine = ['924', '944', '928'] %}
+            {% for key in frontEngine %}
+            {% set vehicle = vehicles[key] %}
+            <a href="/resources/porsche/{{ key }}/" class="vehicle-card">
+                <div class="vehicle-card-image" style="{% if vehicle.heroImage %}background-image: url('{{ vehicle.heroImage }}'){% endif %}">
+                </div>
+                <div class="vehicle-card-content">
+                    <h4>{{ vehicle.model }}</h4>
+                    <span class="vehicle-years">{{ vehicle.years }}</span>
+                    <span class="vehicle-name">{{ vehicle.fullName | replace("Porsche ", "") }}</span>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Air-Cooled 911 -->
+    <div class="brand-block">
+        <div class="brand-header">
+            <h3 class="brand-title">Air-Cooled 911</h3>
+        </div>
+        <div class="vehicle-grid">
+            {% set airCooled = ['964', '993'] %}
+            {% for key in airCooled %}
+            {% set vehicle = vehicles[key] %}
+            <a href="/resources/porsche/{{ key }}/" class="vehicle-card">
+                <div class="vehicle-card-image" style="{% if vehicle.heroImage %}background-image: url('{{ vehicle.heroImage }}'){% endif %}">
+                </div>
+                <div class="vehicle-card-content">
+                    <h4>{{ vehicle.model }}</h4>
+                    <span class="vehicle-years">{{ vehicle.years }}</span>
+                    <span class="vehicle-name">{{ vehicle.fullName | replace("Porsche ", "") }}</span>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Water-Cooled 911 -->
+    <div class="brand-block">
+        <div class="brand-header">
+            <h3 class="brand-title">Water-Cooled 911</h3>
+        </div>
+        <div class="vehicle-grid">
+            {% set waterCooled911 = ['996', '997', '991'] %}
+            {% for key in waterCooled911 %}
+            {% set vehicle = vehicles[key] %}
+            <a href="/resources/porsche/{{ key }}/" class="vehicle-card">
+                <div class="vehicle-card-image" style="{% if vehicle.heroImage %}background-image: url('{{ vehicle.heroImage }}'){% endif %}">
+                </div>
+                <div class="vehicle-card-content">
+                    <h4>{{ vehicle.model }}</h4>
+                    <span class="vehicle-years">{{ vehicle.years }}</span>
+                    <span class="vehicle-name">{{ vehicle.fullName | replace("Porsche ", "") }}</span>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Boxster / Cayman -->
+    <div class="brand-block">
+        <div class="brand-header">
+            <h3 class="brand-title">Boxster / Cayman</h3>
+        </div>
+        <div class="vehicle-grid">
+            {% set midEngine = ['986', '987'] %}
+            {% for key in midEngine %}
+            {% set vehicle = vehicles[key] %}
+            <a href="/resources/porsche/{{ key }}/" class="vehicle-card">
+                <div class="vehicle-card-image" style="{% if vehicle.heroImage %}background-image: url('{{ vehicle.heroImage }}'){% endif %}">
+                </div>
+                <div class="vehicle-card-content">
+                    <h4>{{ vehicle.model }}</h4>
+                    <span class="vehicle-years">{{ vehicle.years }}</span>
+                    <span class="vehicle-name">{{ vehicle.fullName | replace("Porsche ", "") }}</span>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section">
+    <div class="section-header">
+        <h2>What You'll Find</h2>
+        <p>Everything you need to keep your Porsche on the road</p>
+    </div>
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">🔧</div>
+            <h3>Common Issues</h3>
+            <p>Detailed documentation of known problems with symptoms, causes, and proven fixes for each platform.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">📐</div>
+            <h3>Torque Specs</h3>
+            <p>Factory-verified torque specifications for engine, suspension, brakes, and drivetrain components.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">📋</div>
+            <h3>Restoration Guides</h3>
+            <p>Comprehensive guides for suspension refresh, rust repair, electrical systems, and interior restoration.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🛒</div>
+            <h3>Parts Suppliers</h3>
+            <p>Curated lists of trusted OEM, aftermarket, and used parts suppliers for each model.</p>
+        </div>
+    </div>
+</section>

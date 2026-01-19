@@ -560,6 +560,40 @@ main {
     flex-wrap: wrap;
 }
 
+/* Brand Hero (BMW/Porsche landing pages) */
+.brand-hero {
+    background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy-light) 100%);
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 3rem 2rem;
+}
+
+.brand-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+}
+
+.brand-hero h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+    color: #fff;
+    letter-spacing: -0.02em;
+}
+
+.brand-hero h1 .highlight {
+    color: var(--gulf-orange);
+}
+
 /* Stats Bar */
 .stats-bar {
     background: var(--navy-light);
@@ -4748,6 +4782,16 @@ nav ul li.dropdown.touch-open .dropdown-menu {
         max-width: 280px;
     }
 
+    /* Brand hero tablet */
+    .brand-hero {
+        min-height: 250px;
+        padding: 2rem 1.5rem;
+    }
+
+    .brand-hero h1 {
+        font-size: 2rem;
+    }
+
     .stats-bar {
         padding: 1.5rem 1rem;
     }
@@ -5457,6 +5501,17 @@ nav ul li.dropdown.touch-open .dropdown-menu {
     .hero-badge {
         font-size: 0.7rem;
         padding: 0.3rem 0.6rem;
+    }
+
+    /* Brand hero mobile */
+    .brand-hero {
+        min-height: 200px;
+        padding: 1.5rem 1rem;
+    }
+
+    .brand-hero h1 {
+        font-size: 1.5rem;
+        line-height: 1.3;
     }
 
     .stats-bar {
