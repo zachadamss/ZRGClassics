@@ -7,6 +7,7 @@ _site/
 # OS files
 .DS_Store
 Thumbs.db
+*.DS_Store
 
 # Editor files
 *.swp
@@ -17,3 +18,10 @@ Thumbs.db
 # Logs
 *.log
 npm-debug.log*
+
+# Generated files (should only exist in _site/)
+*.html
+!src/**/*.html
+
+# Claude Code
+.claude/
