@@ -104,11 +104,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         return;
       }
 
-      container.innerHTML = result.threads.map(thread => `
+      const isLocal = window.location.hostname === 'localhost';
+      container.innerHTML = result.threads.map(thread => {
+        const threadUrl = isLocal
+          ? `/forum/thread/?slug=${categorySlug}&id=${thread.id}`
+          : `/forum/${categorySlug}/${thread.id}/`;
+        return `
         <div class="thread-item ${thread.is_pinned ? 'thread-pinned' : ''}">
           <div class="thread-info">
             ${thread.is_pinned ? '<span class="pin-badge">Pinned</span>' : ''}
-            <a href="/forum/${categorySlug}/${thread.id}/" class="thread-title">${Forum.sanitizeHtml(thread.title)}</a>
+            <a href="${threadUrl}" class="thread-title">${Forum.sanitizeHtml(thread.title)}</a>
             <div class="thread-meta">
               <span>by ${thread.author?.username || 'Unknown'}</span>
               <span>${Forum.timeAgo(thread.created_at)}</span>
@@ -121,7 +126,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             <span>${thread.view_count || 0} views</span>
           </div>
         </div>
-      `).join('');
+      `}).join('');
 
       // Render pagination
       if (result.totalPages > 1) {

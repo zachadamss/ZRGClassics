@@ -94,7 +94,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         .eq('id', categoryId)
         .single();
 
-      window.location.href = `/forum/${category.slug}/${thread.id}/`;
+      // Use query param locally, clean URL on Vercel
+      const isLocal = window.location.hostname === 'localhost';
+      const threadUrl = isLocal
+        ? `/forum/thread/?slug=${category.slug}&id=${thread.id}`
+        : `/forum/${category.slug}/${thread.id}/`;
+      window.location.href = threadUrl;
     } catch (error) {
       AuthUI.showError(form, error.message);
       submitBtn.disabled = false;

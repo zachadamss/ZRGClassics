@@ -56,10 +56,16 @@ document.addEventListener('DOMContentLoaded', async () => {
   const loginPrompt = document.getElementById('login-prompt');
   const replyForm = document.getElementById('reply-form');
 
-  // Get thread ID from URL
-  const pathParts = window.location.pathname.split('/').filter(p => p);
-  const categorySlug = pathParts[1];
-  const threadId = parseInt(pathParts[2]);
+  // Get thread ID from URL (supports both /forum/e30/123/ and /forum/thread/?slug=e30&id=123)
+  const urlParams = new URLSearchParams(window.location.search);
+  let categorySlug = urlParams.get('slug');
+  let threadId = parseInt(urlParams.get('id'));
+
+  if (!threadId) {
+    const pathParts = window.location.pathname.split('/').filter(p => p);
+    categorySlug = pathParts[1];
+    threadId = parseInt(pathParts[2]);
+  }
 
   if (!threadId) {
     threadContainer.innerHTML = '<p class="error">Thread not found</p>';
