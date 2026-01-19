@@ -9,7 +9,6 @@ const SUPABASE_ANON_KEY = 'sb_publishable_OGi_cH30GtCUHKX2lVhRqw_hgWRdEnY';
 // Initialize Supabase client with auth options to prevent iframe errors
 let db;
 try {
-  console.log('Initializing Supabase...');
   const { createClient } = supabase;
   db = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
     auth: {
@@ -18,7 +17,6 @@ try {
       detectSessionInUrl: false
     }
   });
-  console.log('Supabase initialized successfully');
 } catch (error) {
   console.error('Failed to initialize Supabase:', error);
 }
