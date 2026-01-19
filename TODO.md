@@ -3,18 +3,17 @@
 ## Current Status
 - 17 vehicle platforms (BMW: E28, E30, E34, E36, E39, E46, E90 | Porsche: 924, 928, 944, 964, 986, 987, 991, 993, 996, 997)
 - 136 guides (56 restoration + 80 DIY maintenance) with step-by-step procedures
+- 17 comprehensive buyer's guides with inspection checklists and pricing
 - 132+ documented issues with repair costs and difficulty ratings
 - 465 torque specs indexed
 - Full-text search across all content
 - 4 tools: Invoice Creator, Build Cost Calculator, Maintenance Tracker, Restoration Checklist
-- Newsletter signup on homepage (Formspree-ready)
-- Mobile responsive, dark mode, print-friendly
-- Production build with CSS/JS minification (~35% smaller)
-- Hero images for all 17 vehicles (Wikimedia Commons, CC licensed)
-- Image optimization pipeline (WebP + responsive sizes)
-- User authentication with Supabase (login, register, profiles)
+- User authentication with Supabase (login, register, password reset)
 - Community Forums with categories, threads, replies, search
-- **My Garage** - Personal vehicle management with DB-synced restoration & maintenance tracking
+- My Garage - Personal vehicle management with DB-synced restoration & maintenance tracking
+- Hero images for all 17 vehicles (optimized WebP + responsive sizes)
+- Mobile responsive, dark mode, print-friendly
+- Production build with CSS/JS minification
 
 ---
 
@@ -29,94 +28,13 @@
 
 ---
 
-## Completed
+## Priority 1: Content
 
-- [x] **Newsletter Signup Form** - Homepage after stats bar
-  - Formspree integration (just needs form ID)
-  - "Free Updates" badge with orange accent
-  - Theme-aware design (light/dark mode)
-  - Mobile responsive
-
-- [x] **Restoration Checklist** - Embedded in each vehicle page
-  - 12 system categories with 100+ common items
-  - Vehicle-specific restoration items for all 17 vehicles
-  - Progress tracking with localStorage per vehicle
-  - Cost tracking, dates, and notes per item
-  - Print and JSON export
-
-- [x] **Restoration Guides** - 56 comprehensive guides (4 per vehicle)
-  - Suspension Refresh - full rebuild procedures
-  - Rust Prevention & Repair - common problem areas
-  - Electrical Systems - wiring, relays, grounds
-  - Interior Restoration - seats, carpet, dashboard
-  - Each guide includes: parts lists with OEM numbers, aftermarket alternatives, costs, tools needed, step-by-step procedures, pro tips, warnings, reference links
-  - Expandable card UI (click to expand inline)
-
-- [x] **CSS/JS Minification** - Production optimization
-  - CSS: 140KB → 99KB (29% smaller)
-  - JS: 129KB → 75KB (42% smaller)
-  - Uses clean-css and terser
-  - Run `npm run build:prod` for minified build
-
-- [x] **Hero Images** - All 17 vehicle platforms
-  - BMW: E28 M5, E30 M3, E34 M5, E36 M3, E39 M5, E46 M3/CSL, E90 M3
-  - Porsche: 924 Turbo, 928 GTS, 944 Turbo, 964, 993, 996 GT3, 997 GT2 RS, 991 GT3 RS, 986 Boxster S, 987 Cayman S
-  - Sourced from Wikimedia Commons (Creative Commons licensed)
-
-- [x] **Image Optimization Pipeline** - @11ty/eleventy-img
-  - Generates WebP versions (20-60% smaller than JPEG)
-  - Creates responsive sizes: 400, 800, 1200, 1920px
-  - Run `npm run optimize:images` or included in `build:prod`
-
-- [x] **User Authentication** - Supabase Auth
-  - Login, register, forgot password flows
-  - User profiles with display name, location, bio
-  - Session management and protected routes
-
-- [x] **Community Forums** - Full forum system
-  - Categories organized by brand and topic
-  - Threaded discussions with replies
-  - Post counts, timestamps, search
-  - Author profiles and activity
-
-- [x] **My Garage** - Personal vehicle management
-  - Track up to 10 vehicles per user
-  - Detailed vehicle info (year, platform, VIN, mileage, purchase info)
-  - Per-vehicle restoration checklist with DB persistence
-  - Maintenance schedule with platform-specific presets
-  - Service history logging with costs, parts, notes
-  - "My Garage" nav link for authenticated users
-  - Database: 4 new tables with RLS policies
-
----
-
-## Priority 1: Quick Wins
-
-- [ ] **Activate Newsletter Signup** (see Quick Actions above)
-  - Form is built and ready, just needs Formspree form ID
-  - Start building email list immediately
-
----
-
-## Priority 2: Content
-
-- [x] **Add hero images** to vehicle pages
-  - All 17 vehicles have hero images from Wikimedia Commons
-  - Images optimized to WebP + multiple sizes (400, 800, 1200, 1920)
 - [ ] **Add inline images** to resource pages (engine bays, problem areas, step photos)
-- [x] **Buyer's Guides** - Pre-purchase inspection guides for all 17 platforms
-  - Detailed overview and history for each model
-  - Model variants with desirability ratings
-  - Pre-purchase inspection checklist by category
-  - Pricing guide (Project, Driver, Excellent, Concours)
-  - Red flags and deal breakers
-  - What to look for (desirable options/features)
-  - Ownership costs (insurance, maintenance, repairs, fuel)
-  - Expert tips from enthusiast perspective
 
 ---
 
-## Priority 3: User Experience Enhancements
+## Priority 2: User Experience
 
 - [ ] **Vehicle Photo Upload** - Supabase Storage integration
   - Allow users to upload actual photos to their garage vehicles
@@ -125,7 +43,7 @@
 
 ---
 
-## Priority 4: Community Features
+## Priority 3: Community Features
 
 - [ ] **Build Journals** - Document restoration journeys
   - Dated entries with photos and costs
@@ -138,21 +56,6 @@
   - Categories by vehicle platform
   - Contact/messaging system
   - Sold/active/expired status
-
----
-
-## Priority 5: Polish & Production
-
-- [x] Minify CSS/JS for production
-- [x] Image optimization pipeline
-
----
-
-## Completed Backend Features
-
-- [x] User accounts and authentication (Supabase)
-- [x] **Community Forums** - Categories, threads, replies, search
-- [x] **My Garage** - Personal vehicle management with DB sync
 
 ---
 
