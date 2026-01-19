@@ -799,5 +799,208 @@
       { "id": "997-battery", "name": "Replace battery (proper reset required)", "description": "Must register new battery in DME" },
       { "id": "997-pse-pump", "name": "Service PSE pump", "description": "Powers spoiler, locks, and deck lid" }
     ]
+  },
+  "buyersGuide": {
+    "overview": "The Porsche 997 (2005-2012) is considered by many to be the best all-around 911 generation - modern enough to be reliable daily drivers yet traditional enough to maintain classic 911 character. The return to round headlights addressed 996 styling criticisms, while the drivetrain evolved from the M96/M97 to the improved 9A1 engine in 2009. The 997 offers exceptional performance (325-620 hp depending on variant) with better reliability than the 996. GT3, GT3 RS, and GT2 RS variants are among the most collectible modern Porsches.",
+    "quickFacts": {
+      "productionYears": "2005-2012",
+      "totalProduced": "~213,000 worldwide",
+      "priceRange": "$40,000 - $500,000+",
+      "bestYears": "2009-2012 (997.2 with improved DFI engine)"
+    },
+    "variants": [
+      {
+        "name": "Carrera / Carrera S (997.1)",
+        "years": "2005-2008",
+        "description": "First generation with 3.6L (325 hp) or 3.8L (355 hp). Still has IMS bearing (improved design). The S is the sweet spot.",
+        "desirability": "Medium"
+      },
+      {
+        "name": "Carrera / Carrera S (997.2)",
+        "years": "2009-2012",
+        "description": "Second generation with DFI (direct fuel injection) 3.6L (345 hp) or 3.8L (385 hp). No IMS bearing. PDK available.",
+        "desirability": "High"
+      },
+      {
+        "name": "Carrera 4 / Carrera 4S",
+        "years": "2005-2012",
+        "description": "All-wheel drive variants. Widebody styling on 4S. More stable in all conditions.",
+        "desirability": "High"
+      },
+      {
+        "name": "GT3 / GT3 RS",
+        "years": "2007-2012",
+        "description": "Track-focused with Mezger engine (435-450 hp). No IMS concerns. The RS adds aero and weight savings. Highly collectible.",
+        "desirability": "High"
+      },
+      {
+        "name": "Turbo / Turbo S",
+        "years": "2007-2012",
+        "description": "Twin-turbo with 480-530 hp. All-wheel drive standard. Mezger engine on 997.1, DFI on 997.2.",
+        "desirability": "High"
+      },
+      {
+        "name": "GT2 / GT2 RS",
+        "years": "2008-2012",
+        "description": "Rear-wheel drive Turbo with 530-620 hp. The most extreme 997. GT2 RS is legendary.",
+        "desirability": "High"
+      }
+    ],
+    "inspectionPoints": [
+      {
+        "category": "Engine (997.1 IMS)",
+        "items": [
+          {
+            "check": "IMS Bearing Status (997.1 only)",
+            "detail": "997.1 still has IMS bearing but improved design. Failure is less common but still possible. Check if retrofitted.",
+            "costIfBad": "$2,500-4,000 for retrofit"
+          },
+          {
+            "check": "Bore Scoring (997.1)",
+            "detail": "M97 engine can develop cylinder bore scoring. Check for knocking, smoke, or oil consumption.",
+            "costIfBad": "$15,000-25,000"
+          },
+          {
+            "check": "D-Chunk Failure (997.1)",
+            "detail": "Early 997.1 engines can suffer from crankcase cooling duct failure.",
+            "costIfBad": "Engine replacement if severe"
+          }
+        ]
+      },
+      {
+        "category": "Engine (997.2 DFI)",
+        "items": [
+          {
+            "check": "Carbon Buildup",
+            "detail": "DFI engines can develop intake valve carbon buildup. May need walnut blasting at high mileage.",
+            "costIfBad": "$500-1,000"
+          },
+          {
+            "check": "Direct Injector Condition",
+            "detail": "DFI injectors can fail causing rough running. Usually diagnosed with scan tool.",
+            "costIfBad": "$800-1,500"
+          },
+          {
+            "check": "Oil Consumption",
+            "detail": "Some oil consumption is normal. Monitor level between services.",
+            "costIfBad": "Monitor and maintain"
+          }
+        ]
+      },
+      {
+        "category": "Transmission",
+        "items": [
+          {
+            "check": "Manual Transmission",
+            "detail": "Test all gears. G97 6-speed is robust and well-regarded.",
+            "costIfBad": "$2,000-4,000"
+          },
+          {
+            "check": "PDK (997.2)",
+            "detail": "Check for smooth operation and proper clutch wear. PDK requires fluid service.",
+            "costIfBad": "$1,500-5,000"
+          },
+          {
+            "check": "Clutch",
+            "detail": "Manual car clutch engagement should be smooth. Dual-mass flywheel is expensive.",
+            "costIfBad": "$3,000-5,000"
+          }
+        ]
+      },
+      {
+        "category": "Suspension & Brakes",
+        "items": [
+          {
+            "check": "PASM Shocks",
+            "detail": "If equipped, test in all modes. Shocks can develop leaks.",
+            "costIfBad": "$2,000-4,000"
+          },
+          {
+            "check": "Control Arm Bushings",
+            "detail": "Check for clunking and worn bushings. Common wear item.",
+            "costIfBad": "$600-1,500"
+          },
+          {
+            "check": "PCCB Brakes (if equipped)",
+            "detail": "Ceramic brakes are expensive to replace. Check rotor condition.",
+            "costIfBad": "$10,000-20,000 for replacement"
+          }
+        ]
+      },
+      {
+        "category": "Electrical & Interior",
+        "items": [
+          {
+            "check": "PCM/Navigation",
+            "detail": "Check touchscreen function and navigation. Older units may need updates.",
+            "costIfBad": "$500-2,000"
+          },
+          {
+            "check": "Convertible Top (Cab)",
+            "detail": "Test full operation including automatic wind blocker if equipped.",
+            "costIfBad": "$1,000-3,000"
+          },
+          {
+            "check": "Sport Seat Bolsters",
+            "detail": "Driver side bolster wear is common on sport seats.",
+            "costIfBad": "$500-1,500"
+          }
+        ]
+      }
+    ],
+    "pricingGuide": {
+      "project": {
+        "price": "$30,000 - $50,000",
+        "description": "997.1 cars with known engine issues. Salvage or high-mileage with concerns."
+      },
+      "driver": {
+        "price": "$50,000 - $80,000",
+        "description": "Good 997.1 Carrera S or entry 997.2 examples. Excellent daily drivers."
+      },
+      "excellent": {
+        "price": "$80,000 - $150,000",
+        "description": "Well-maintained 997.2 Carrera S/4S, clean Turbos, or lower mileage GT3."
+      },
+      "concours": {
+        "price": "$150,000 - $600,000+",
+        "description": "GT3 RS, GT2, GT2 RS, or exceptional low-mileage examples."
+      }
+    },
+    "redFlags": [
+      "997.1 with unknown IMS status or bore scoring symptoms",
+      "Check engine light with multiple codes",
+      "PCCB brakes with visible damage or wear",
+      "PDK with shudder or rough engagement",
+      "Salvage title without clear documentation",
+      "GT3/RS with track damage or unknown racing history"
+    ],
+    "whatToLookFor": [
+      "997.2 for best reliability (no IMS concerns)",
+      "Carrera S or 4S for best all-around package",
+      "Manual transmission (purist choice) or PDK (faster, easier)",
+      "Complete service documentation",
+      "Sport Chrono Package",
+      "PASM adaptive suspension",
+      "GT3 for track use (Mezger engine, no IMS)",
+      "Lower mileage with consistent service history"
+    ],
+    "ownershipCosts": {
+      "insurance": "$1,500-3,500/year",
+      "annualMaintenance": "$2,000-4,000 for regular service",
+      "commonRepairs": "$1,000-3,000/year typical",
+      "fuel": "18-25 MPG"
+    },
+    "expertTips": [
+      "The 997.2 (2009+) is the safest buy with no IMS bearing concerns",
+      "997.1 Turbo and GT3 use Mezger engine with excellent reliability",
+      "PDK is faster but manual is more engaging - choose based on preference",
+      "The 997 Carrera S is one of the best all-around sports cars ever made",
+      "GT3 and GT3 RS values have appreciated significantly",
+      "Avoid PCCB brakes if possible - replacement costs are extreme",
+      "Budget for proper PPI by a Porsche specialist before purchase",
+      "Join Rennlist.com for excellent owner community and resources",
+      "The 997 can be a reliable daily driver with proper maintenance",
+      "Factory sport seats and Sport Chrono add resale value"
+    ]
   }
 }

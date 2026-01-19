@@ -1326,5 +1326,227 @@
       { "id": "e34-abs", "name": "Service ABS system", "description": "ABS control unit issues" },
       { "id": "e34-wiring", "name": "Inspect wiring harness", "description": "Check for brittle insulation" }
     ]
+  },
+  "buyersGuide": {
+    "overview": "The BMW E34 5 Series (1988-1996) represents the peak of BMW's over-engineering philosophy - a time when the company built cars to last decades rather than lease cycles. The E34 introduced multi-link rear suspension, available all-wheel drive (525ix), and the legendary M5 with its hand-built S38 engine. Build quality is exceptional, with thick paint, quality materials, and robust mechanicals. Today, E34s offer tremendous value - a comfortable, refined driving experience with genuine BMW character at affordable prices. The challenge is finding one that hasn't been neglected.",
+    "quickFacts": {
+      "productionYears": "1988-1996",
+      "totalProduced": "~1.33 million worldwide",
+      "priceRange": "$4,000 - $60,000+",
+      "bestYears": "1991-1995 (M50 engines, best reliability)"
+    },
+    "variants": [
+      {
+        "name": "525i",
+        "years": "1989-1995",
+        "description": "The volume model with the smooth M20 (early) or M50 (1991+) inline-six. The M50-powered cars are excellent daily drivers with 189 hp and strong reliability.",
+        "desirability": "Medium"
+      },
+      {
+        "name": "530i",
+        "years": "1994-1995",
+        "description": "Introduced the M60 V8 to the 5 Series in North America. 215 hp with smooth power delivery. Watch for Nikasil bore wear issues.",
+        "desirability": "Medium"
+      },
+      {
+        "name": "535i",
+        "years": "1988-1993",
+        "description": "The big-six M30 engine producing 208 hp. Torquey and reliable but less refined than the later M50. Great value proposition.",
+        "desirability": "Medium"
+      },
+      {
+        "name": "540i",
+        "years": "1994-1995",
+        "description": "Top non-M model with the 4.0L M60 V8 producing 282 hp. Effortless power and refinement. 6-speed manual available.",
+        "desirability": "High"
+      },
+      {
+        "name": "M5",
+        "years": "1991-1993",
+        "description": "The definitive super-sedan with the 3.6L S38B36 (1991) or 3.8L S38B38 (1993) producing 310-335 hp. Hand-built engine, aggressive styling. Values are strong and rising.",
+        "desirability": "High"
+      },
+      {
+        "name": "525iT Touring",
+        "years": "1992-1995",
+        "description": "The elegant wagon variant. Rare in North America and highly practical. Self-leveling rear suspension standard.",
+        "desirability": "High"
+      }
+    ],
+    "inspectionPoints": [
+      {
+        "category": "Rust (Critical)",
+        "items": [
+          {
+            "check": "Rocker Panels",
+            "detail": "Primary rust area on E34s. Check the entire length, especially around jacking points. Look for bubbling under paint.",
+            "costIfBad": "$1,500-4,000 per side"
+          },
+          {
+            "check": "Rear Wheel Arches",
+            "detail": "Check inside the trunk and outside the quarter panels. Sedans more prone than Tourings.",
+            "costIfBad": "$1,000-2,500 per side"
+          },
+          {
+            "check": "Floor Pans",
+            "detail": "Pull up carpets and check for rust, especially driver footwell and under rear seat.",
+            "costIfBad": "$1,000-3,000"
+          },
+          {
+            "check": "Spare Tire Well",
+            "detail": "Remove the spare and check for water damage and rust. Trunk seal leaks cause issues here.",
+            "costIfBad": "$500-1,500"
+          },
+          {
+            "check": "Front Subframe",
+            "detail": "Inspect subframe mounting points and the subframe itself. Structural rust is a safety concern.",
+            "costIfBad": "$2,000-5,000"
+          }
+        ]
+      },
+      {
+        "category": "Engine & Drivetrain",
+        "items": [
+          {
+            "check": "Nikasil Bore Wear (M60 V8)",
+            "detail": "530i and 540i V8 engines can suffer from sulfur damage to the Nikasil cylinder lining. Cold start issues and oil consumption indicate wear.",
+            "costIfBad": "$5,000-10,000 for engine replacement"
+          },
+          {
+            "check": "Timing Chain Guides (M50/M52)",
+            "detail": "Plastic timing chain guides can crack. Listen for rattle on cold startup. More common on high-mileage cars.",
+            "costIfBad": "$1,500-3,000"
+          },
+          {
+            "check": "VANOS Unit (M50TU)",
+            "detail": "Later M50TU engines have VANOS variable valve timing. Rattle on startup indicates worn seals.",
+            "costIfBad": "$400-800"
+          },
+          {
+            "check": "Oil Leaks",
+            "detail": "Valve cover gasket, oil filter housing gasket, and rear main seal are common leak points.",
+            "costIfBad": "$200-1,000"
+          },
+          {
+            "check": "Cooling System",
+            "detail": "E34s run warm. Check water pump, thermostat, and expansion tank for leaks or failures.",
+            "costIfBad": "$400-1,000"
+          },
+          {
+            "check": "Manual Transmission",
+            "detail": "Test all gears. Getrag 260 (M30) or ZF (V8) transmissions are robust but synchros can wear.",
+            "costIfBad": "$1,500-3,000"
+          }
+        ]
+      },
+      {
+        "category": "Suspension & Steering",
+        "items": [
+          {
+            "check": "Thrust Arm Bushings",
+            "detail": "E34's notorious wear item. Causes steering wander and clunking. Inspect for cracking.",
+            "costIfBad": "$400-700"
+          },
+          {
+            "check": "Rear Subframe Bushings",
+            "detail": "Check for deterioration - causes rear-end looseness and alignment issues.",
+            "costIfBad": "$400-800"
+          },
+          {
+            "check": "Steering Rack",
+            "detail": "Check for play at center and leaks from seals. Power steering pump can also fail.",
+            "costIfBad": "$600-1,200"
+          },
+          {
+            "check": "Self-Leveling Suspension",
+            "detail": "Touring models have self-leveling rear. Check for sag or leaking spheres.",
+            "costIfBad": "$800-1,500"
+          }
+        ]
+      },
+      {
+        "category": "Interior & Electrical",
+        "items": [
+          {
+            "check": "Pixel Fade",
+            "detail": "Instrument cluster and on-board computer LCD pixels commonly fail. Check all displays.",
+            "costIfBad": "$150-400 for repair"
+          },
+          {
+            "check": "Window Regulators",
+            "detail": "E34 window regulators have plastic parts that break. Test all windows multiple times.",
+            "costIfBad": "$150-300 each"
+          },
+          {
+            "check": "Climate Control",
+            "detail": "HVAC blend doors fail causing stuck temperature. Test heating and cooling.",
+            "costIfBad": "$500-1,500"
+          },
+          {
+            "check": "ABS System",
+            "detail": "ABS control modules can fail. Check for ABS light and pump operation.",
+            "costIfBad": "$500-1,200"
+          }
+        ]
+      }
+    ],
+    "pricingGuide": {
+      "project": {
+        "price": "$1,500 - $5,000",
+        "description": "Rusty or high-mileage cars needing significant work. Common in the Rust Belt. Budget carefully."
+      },
+      "driver": {
+        "price": "$5,000 - $12,000",
+        "description": "Running and driving with cosmetic wear or deferred maintenance. Great value for the experience."
+      },
+      "excellent": {
+        "price": "$12,000 - $25,000",
+        "description": "Well-maintained 540i 6-speed or clean 525i examples. Documented service history."
+      },
+      "concours": {
+        "price": "$25,000 - $70,000+",
+        "description": "M5 models or pristine low-mileage examples. Fully documented with original equipment."
+      }
+    },
+    "redFlags": [
+      "Nikasil bore wear symptoms on V8 models (hard cold starting, blue smoke, oil consumption)",
+      "Structural rust in subframe mounts or floor pans",
+      "Neglected cooling system with evidence of overheating",
+      "Missing service records on high-mileage cars",
+      "M5 with engine modifications or unknown history",
+      "Automatic transmission slipping or harsh shifting",
+      "Check engine light for VANOS or oxygen sensor codes",
+      "Excessive drivetrain vibration (center support bearing, guibo)"
+    ],
+    "whatToLookFor": [
+      "Manual transmission (5-speed or 6-speed on 540i)",
+      "Service records showing timing chain, cooling system maintenance",
+      "Sport package with M-Technic steering wheel and suspension",
+      "Working air conditioning and heating",
+      "Rust-free body panels and floor",
+      "540i with 6-speed manual (rare and desirable)",
+      "M5 with matching numbers and documentation",
+      "Touring (wagon) variants for practicality and rarity",
+      "Late production cars (1994-1995) for best refinement",
+      "Complete tool kit and original books"
+    ],
+    "ownershipCosts": {
+      "insurance": "$600-1,200/year (classic car insurance available)",
+      "annualMaintenance": "$1,200-2,500 for regular service",
+      "commonRepairs": "$500-1,500/year typical",
+      "fuel": "18-25 MPG depending on engine"
+    },
+    "expertTips": [
+      "The E34 is the best-built 5 Series BMW ever made - they were over-engineered for durability",
+      "M50-powered 525i models offer the best balance of reliability, performance, and running costs",
+      "540i V8 cars should be carefully vetted for Nikasil damage - check the engine code and casting date",
+      "Parts availability is excellent - many components are shared with E36 and E32",
+      "The thrust arm bushings are the Achilles heel - plan to replace them during your ownership",
+      "Touring (wagon) models are becoming collectible - practical and rare in the US",
+      "M5 values have stabilized at strong levels - they're not likely to decrease significantly",
+      "Join the E34 community at bimmerforums.com for excellent technical support",
+      "Factory sport seats are far superior to standard seats - worth seeking out",
+      "A well-maintained E34 can exceed 300,000 miles without major engine work"
+    ]
   }
 }

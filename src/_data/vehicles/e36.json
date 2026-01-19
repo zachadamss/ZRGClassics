@@ -1093,5 +1093,221 @@
       { "id": "e36-instrument-pixels", "name": "Repair instrument cluster pixels", "description": "LCD pixels fade over time" },
       { "id": "e36-headlight-wiring", "name": "Upgrade headlight wiring harness", "description": "Stock harness causes dim headlights" }
     ]
+  },
+  "buyersGuide": {
+    "overview": "The BMW E36 3 Series (1992-1999) was a massive leap forward from the E30, bringing more power, refinement, and technology while maintaining the driver-focused character BMW was known for. The E36 introduced BMW to a broader audience and remains one of the most popular platforms for enthusiasts. With the M50 and M52 inline-sixes, plus the legendary S50/S52 in the M3, the E36 offers genuine performance at accessible prices. These cars are now 25-30+ years old, and examples range from thrashed drift missiles to preserved enthusiast cars. A careful inspection is essential.",
+    "quickFacts": {
+      "productionYears": "1992-1999",
+      "totalProduced": "~2.7 million worldwide",
+      "priceRange": "$5,000 - $80,000+",
+      "bestYears": "1996-1999 (OBD-II, refined production)"
+    },
+    "variants": [
+      {
+        "name": "318i / 318is / 318ti",
+        "years": "1992-1999",
+        "description": "Entry-level with the 1.8L M42 or 1.9L M44 four-cylinder. Light and nimble but underpowered. The 318ti is a hatchback with shorter wheelbase.",
+        "desirability": "Low"
+      },
+      {
+        "name": "325i / 325is",
+        "years": "1992-1995",
+        "description": "The sweet spot with the 2.5L M50 producing 189 hp. Excellent balance of performance and reliability. Replaced by the 328i in 1996.",
+        "desirability": "High"
+      },
+      {
+        "name": "328i / 328is",
+        "years": "1996-1999",
+        "description": "Upgraded to the 2.8L M52 with 190 hp. Smoother and more refined than the 325i. Available as sedan, coupe, or convertible.",
+        "desirability": "High"
+      },
+      {
+        "name": "323i / 323is",
+        "years": "1998-1999",
+        "description": "North American special with a 2.5L M52 producing 170 hp. Positioned between 318 and 328. Good value alternative.",
+        "desirability": "Medium"
+      },
+      {
+        "name": "M3",
+        "years": "1995-1999",
+        "description": "The iconic sports car with the 3.0L S50 (1995) or 3.2L S52 (1996-99) producing 240-240 hp. Aggressive styling, serious performance. Coupe, sedan, and convertible available.",
+        "desirability": "High"
+      }
+    ],
+    "inspectionPoints": [
+      {
+        "category": "Rust (Critical)",
+        "items": [
+          {
+            "check": "Front Fenders",
+            "detail": "Rust develops behind the side markers and around the wheel wells. Check under the fender liner.",
+            "costIfBad": "$400-1,000 per side"
+          },
+          {
+            "check": "Rocker Panels",
+            "detail": "Check under the side skirts if equipped. Jacking points are vulnerable. Poke for soft spots.",
+            "costIfBad": "$1,000-3,000 per side"
+          },
+          {
+            "check": "Rear Shock Towers",
+            "detail": "Inspect in the trunk where the rear shocks mount. Cracks and rust are common.",
+            "costIfBad": "$1,500-3,500"
+          },
+          {
+            "check": "Trunk Floor",
+            "detail": "Check the spare tire well and trunk floor for rust. Tail light gaskets leak water into trunk.",
+            "costIfBad": "$800-2,000"
+          },
+          {
+            "check": "Subframe Mounting Points",
+            "detail": "The rear subframe can tear out of the chassis on track-driven or M3 cars. Critical safety issue.",
+            "costIfBad": "$2,000-5,000+ for reinforcement"
+          }
+        ]
+      },
+      {
+        "category": "Engine & Drivetrain",
+        "items": [
+          {
+            "check": "VANOS Rattle (M50TU/M52/S50/S52)",
+            "detail": "Variable valve timing system develops rattle on startup. Seals and gaskets wear out.",
+            "costIfBad": "$300-800"
+          },
+          {
+            "check": "Cooling System",
+            "detail": "E36 cooling systems fail regularly. Check radiator, expansion tank, water pump, thermostat for age/leaks.",
+            "costIfBad": "$500-1,200 for full refresh"
+          },
+          {
+            "check": "Oil Leaks",
+            "detail": "Valve cover gasket, oil filter housing gasket, and VANOS seals are common leak points.",
+            "costIfBad": "$200-600"
+          },
+          {
+            "check": "Clutch (Manual)",
+            "detail": "Test clutch engagement. Should grab smoothly in mid-travel. Slipping indicates worn clutch.",
+            "costIfBad": "$800-1,500"
+          },
+          {
+            "check": "Differential Whine",
+            "detail": "Listen for whining from the rear end at highway speeds. LSD units can wear prematurely.",
+            "costIfBad": "$800-2,000"
+          },
+          {
+            "check": "S50/S52 Rod Bearings (M3)",
+            "detail": "M3 engines can suffer from rod bearing wear, especially with synthetic oil. Check records for bearing service.",
+            "costIfBad": "$2,000-4,000"
+          }
+        ]
+      },
+      {
+        "category": "Suspension & Steering",
+        "items": [
+          {
+            "check": "Control Arm Bushings",
+            "detail": "Front control arm bushings wear causing clunking and vague steering. Check for cracking.",
+            "costIfBad": "$300-600"
+          },
+          {
+            "check": "Rear Trailing Arm Bushings",
+            "detail": "Common wear item affecting handling and tire wear. Inspect for deterioration.",
+            "costIfBad": "$200-400"
+          },
+          {
+            "check": "Tie Rods and Ball Joints",
+            "detail": "Check for play by rocking the wheel. Worn components cause wandering steering.",
+            "costIfBad": "$200-400"
+          },
+          {
+            "check": "Strut Mounts",
+            "detail": "Worn mounts cause clunking over bumps. Inspect rubber for cracking.",
+            "costIfBad": "$200-400"
+          }
+        ]
+      },
+      {
+        "category": "Interior & Electrical",
+        "items": [
+          {
+            "check": "Window Regulators",
+            "detail": "Cables fray and break causing window failure. Test all windows multiple times.",
+            "costIfBad": "$150-300 each"
+          },
+          {
+            "check": "Pixel Fade",
+            "detail": "Instrument cluster LCD pixels fail over time. Check odometer and temp display.",
+            "costIfBad": "$100-250 for repair"
+          },
+          {
+            "check": "Sunroof Drains",
+            "detail": "Clogged drains cause water damage to headliner and floor. Check for dampness.",
+            "costIfBad": "$100-500 depending on damage"
+          },
+          {
+            "check": "Headlight Wiring",
+            "detail": "Stock headlight wiring causes dim lights. Check for melted connectors.",
+            "costIfBad": "$100-200 for harness upgrade"
+          }
+        ]
+      }
+    ],
+    "pricingGuide": {
+      "project": {
+        "price": "$2,000 - $6,000",
+        "description": "Rusty, high-mileage, or abused cars. Many have been drifted or tracked hard. Approach cautiously."
+      },
+      "driver": {
+        "price": "$6,000 - $15,000",
+        "description": "Running and driving with cosmetic wear or maintenance needs. Budget for cooling system refresh."
+      },
+      "excellent": {
+        "price": "$15,000 - $30,000",
+        "description": "Well-maintained 328is or clean M3 examples. Service history documented."
+      },
+      "concours": {
+        "price": "$30,000 - $80,000+",
+        "description": "Low-mileage M3 examples, especially sedans or rare colors. Lightweight (LTW) models command premium."
+      }
+    },
+    "redFlags": [
+      "Rear subframe cracks or reinforcement plates already welded (indicates track abuse)",
+      "Overheating history or evidence of head gasket repair",
+      "Drift car history (torn bushings, damaged body panels, welded differential)",
+      "Missing or bypassed emissions equipment",
+      "M3 without documentation or with extensive modifications",
+      "Rust in rear shock towers (structural issue)",
+      "Excessive engine noise indicating rod bearing wear (M3)",
+      "Salvage title without clear documentation of damage"
+    ],
+    "whatToLookFor": [
+      "Manual transmission (5-speed preferred)",
+      "Service records showing cooling system replacement",
+      "Factory limited-slip differential (M3 or Sport Package)",
+      "Sport package with upgraded suspension and steering",
+      "Coupe body style (most desirable after M3)",
+      "Rust-free southern or western U.S. cars",
+      "M3/4/5 package on non-M cars adds value",
+      "Complete tool kit and original equipment",
+      "1996+ cars for OBD-II diagnostics",
+      "Colors like Dakar Yellow, Estoril Blue, or Techno Violet add value"
+    ],
+    "ownershipCosts": {
+      "insurance": "$800-1,500/year (M3 higher)",
+      "annualMaintenance": "$1,000-2,000 for regular service",
+      "commonRepairs": "$500-1,500/year typical",
+      "fuel": "20-28 MPG depending on model"
+    },
+    "expertTips": [
+      "Plan for a complete cooling system refresh within the first year of ownership - it's not if, but when",
+      "The rear subframe issue is real on M3s and tracked cars - inspect carefully or plan for reinforcement",
+      "325is with factory LSD is the sweet spot for value - M3 handling characteristics at lower cost",
+      "Convert faded headlights to glass European units for a huge improvement in looks and lighting",
+      "The M3 sedan is rarer than the coupe and becoming collectible - prices are rising",
+      "VANOS rebuilds are not difficult DIY projects - don't pay premium prices for bad VANOS",
+      "E36 parts are abundant and affordable - these are excellent cars for learning to wrench",
+      "The 5-speed Getrag transmission is robust - automatic cars are less desirable",
+      "Join r3vlimited.com or bimmerforums.com for excellent E36 technical resources",
+      "A well-maintained E36 328is is one of the best driving experiences under $15,000"
+    ]
   }
 }

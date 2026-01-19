@@ -1185,5 +1185,202 @@
       { "id": "996-o2-sensors", "name": "Replace oxygen sensors", "description": "Pre and post-cat sensors" },
       { "id": "996-pse-pump", "name": "Service PSE pump (if equipped)", "description": "Powers spoiler, locks, and convertible top" }
     ]
+  },
+  "buyersGuide": {
+    "overview": "The Porsche 996 (1999-2005) was the first water-cooled 911 and represented a dramatic departure from the air-cooled cars. The new M96 flat-six offered more power (300-381 hp) with better efficiency and refinement. The 996 introduced the controversial 'fried egg' headlights but also brought significant advances in performance and technology. Values have historically been depressed due to the IMS bearing issue, but clean, well-maintained examples are now being recognized as excellent values. The GT3 and Turbo variants are particularly desirable.",
+    "quickFacts": {
+      "productionYears": "1999-2005",
+      "totalProduced": "~175,000 worldwide",
+      "priceRange": "$25,000 - $200,000+",
+      "bestYears": "2002-2005 (improved IMS bearing, refined production)"
+    },
+    "variants": [
+      {
+        "name": "Carrera / Carrera S",
+        "years": "1999-2005",
+        "description": "Base model with 3.4L (300 hp) or 3.6L (320 hp) M96 engine. The S adds widebody and larger engine.",
+        "desirability": "Medium"
+      },
+      {
+        "name": "Carrera 4 / Carrera 4S",
+        "years": "1999-2005",
+        "description": "All-wheel drive variants. More stable but heavier. 4S is widebody with AWD.",
+        "desirability": "Medium"
+      },
+      {
+        "name": "GT3",
+        "years": "1999-2005",
+        "description": "Track-focused with motorsport-derived M96/76 engine producing 360-381 hp. No IMS bearing concerns. Highly collectible.",
+        "desirability": "High"
+      },
+      {
+        "name": "Turbo / Turbo S",
+        "years": "2001-2005",
+        "description": "Twin-turbocharged with 415-444 hp using Mezger engine (no IMS issues). Widebody, AWD standard.",
+        "desirability": "High"
+      },
+      {
+        "name": "GT2",
+        "years": "2002-2005",
+        "description": "Rear-wheel drive Turbo with 462 hp. The ultimate 996 track weapon. Very rare.",
+        "desirability": "High"
+      },
+      {
+        "name": "Cabriolet / Targa",
+        "years": "1999-2005",
+        "description": "Open-top variants. Targa has full glass roof with opening panel.",
+        "desirability": "Medium"
+      }
+    ],
+    "inspectionPoints": [
+      {
+        "category": "Engine (Critical - IMS Bearing)",
+        "items": [
+          {
+            "check": "IMS Bearing Status",
+            "detail": "THE critical issue. Intermediate shaft bearing can fail catastrophically destroying the engine. Verify if upgraded to retrofit bearing or ask for oil analysis.",
+            "costIfBad": "$2,500-4,000 for retrofit / $20,000+ for engine if it fails"
+          },
+          {
+            "check": "RMS/IMS Oil Leak",
+            "detail": "Check for oil weeping around the rear main seal area. Can indicate IMS bearing issues.",
+            "costIfBad": "$1,500-3,000"
+          },
+          {
+            "check": "Bore Scoring",
+            "detail": "M96 engines can develop cylinder bore scoring. Check for knocking, oil consumption, or smoke.",
+            "costIfBad": "$15,000-25,000 for engine rebuild"
+          },
+          {
+            "check": "Coolant Pipes",
+            "detail": "Plastic coolant pipes under the intake can crack and leak. Common on higher-mileage cars.",
+            "costIfBad": "$400-800"
+          },
+          {
+            "check": "Oil Consumption",
+            "detail": "Some oil consumption is normal. Excessive consumption indicates bore scoring or other issues.",
+            "costIfBad": "Varies - monitor closely"
+          }
+        ]
+      },
+      {
+        "category": "Transmission & Drivetrain",
+        "items": [
+          {
+            "check": "Manual Transmission",
+            "detail": "Test all gears. G96 6-speed is robust. Check for synchro wear.",
+            "costIfBad": "$2,000-4,000"
+          },
+          {
+            "check": "Tiptronic",
+            "detail": "Check for smooth shifts and proper kickdown. Valve body can develop issues.",
+            "costIfBad": "$2,000-5,000"
+          },
+          {
+            "check": "Clutch",
+            "detail": "Test engagement. Dual-mass flywheel is expensive.",
+            "costIfBad": "$3,000-4,500"
+          },
+          {
+            "check": "AWD System (C4/C4S)",
+            "detail": "Test for proper engagement and any differential noise.",
+            "costIfBad": "$2,000-5,000"
+          }
+        ]
+      },
+      {
+        "category": "Suspension & Brakes",
+        "items": [
+          {
+            "check": "Control Arm Bushings",
+            "detail": "Front and rear bushings wear causing clunks and handling issues.",
+            "costIfBad": "$600-1,500"
+          },
+          {
+            "check": "PASM Shocks (if equipped)",
+            "detail": "Check damper operation in all modes if equipped with adaptive suspension.",
+            "costIfBad": "$2,000-4,000"
+          },
+          {
+            "check": "Brake Wear Sensors",
+            "detail": "Check for warnings and actual pad thickness.",
+            "costIfBad": "$500-1,500"
+          }
+        ]
+      },
+      {
+        "category": "Body & Electrical",
+        "items": [
+          {
+            "check": "Convertible Top (Cab)",
+            "detail": "Test full operation. Hydraulic cylinders can fail.",
+            "costIfBad": "$1,000-2,500"
+          },
+          {
+            "check": "Sticky Interior",
+            "detail": "Some 996 interiors develop sticky surfaces on buttons and trim.",
+            "costIfBad": "$500-2,000"
+          },
+          {
+            "check": "Coil Packs",
+            "detail": "Common failure causing misfires. Usually replaced in sets.",
+            "costIfBad": "$400-800"
+          }
+        ]
+      }
+    ],
+    "pricingGuide": {
+      "project": {
+        "price": "$18,000 - $35,000",
+        "description": "Cars with unknown IMS status or needing significant work. Risky purchase."
+      },
+      "driver": {
+        "price": "$35,000 - $55,000",
+        "description": "Good Carrera examples with known IMS status or retrofit. Excellent value."
+      },
+      "excellent": {
+        "price": "$55,000 - $100,000",
+        "description": "Well-maintained C4S, GT3, or clean Turbo examples."
+      },
+      "concours": {
+        "price": "$100,000 - $250,000+",
+        "description": "Low-mileage GT3, GT2, or exceptional Turbo models."
+      }
+    },
+    "redFlags": [
+      "Unknown IMS bearing status on M96 engines",
+      "Evidence of bore scoring (knocking, smoke, oil consumption)",
+      "Rear main seal leak (can indicate IMS failure starting)",
+      "Missing service records",
+      "Salvage or rebuilt title without clear documentation",
+      "Cars that have sat for extended periods"
+    ],
+    "whatToLookFor": [
+      "IMS bearing retrofit completed (for M96 cars)",
+      "GT3 or Turbo (Mezger engine has no IMS issues)",
+      "Complete service documentation",
+      "Manual transmission",
+      "Lower mileage or consistent maintenance on higher mileage",
+      "Sport Chrono and PASM options",
+      "GT3 for the best 996 driving experience"
+    ],
+    "ownershipCosts": {
+      "insurance": "$1,500-3,000/year",
+      "annualMaintenance": "$2,000-4,000 for regular service",
+      "commonRepairs": "$1,500-3,500/year typical",
+      "fuel": "18-24 MPG"
+    },
+    "expertTips": [
+      "The 996 offers tremendous value if you navigate the IMS issue correctly",
+      "GT3 and Turbo use the Mezger engine with NO IMS bearing concerns",
+      "The IMS bearing retrofit is worthwhile preventative maintenance",
+      "Oil analysis can help monitor IMS bearing condition",
+      "2002+ cars have a slightly improved IMS bearing design",
+      "The 996 drives exceptionally well - don't dismiss it for the headlights",
+      "Clean 996 Turbos are undervalued compared to 997 Turbos",
+      "Manual transmission cars are more desirable",
+      "Budget for proper PPI by a Porsche specialist",
+      "The 996 GT3 is one of the best driving Porsches ever made"
+    ]
   }
 }

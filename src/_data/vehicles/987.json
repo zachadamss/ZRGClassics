@@ -821,5 +821,188 @@
       { "id": "987-maf", "name": "Clean/replace MAF sensor", "description": "Running issues when dirty" },
       { "id": "987-o2-sensors", "name": "Replace oxygen sensors", "description": "Four total - pre and post-cat" }
     ]
+  },
+  "buyersGuide": {
+    "overview": "The Porsche 987 Boxster/Cayman (2005-2012) represents a significant evolution from the 986, with improved styling, more power, and the addition of the Cayman coupe variant. The mid-engine layout delivers exceptional handling, and many consider the Cayman one of the best-handling cars Porsche has ever made. Like the 997, the 987.1 (2005-2008) has IMS bearing concerns while the 987.2 (2009-2012) with DFI engines does not. The Cayman R and Boxster Spyder are particularly desirable.",
+    "quickFacts": {
+      "productionYears": "2005-2012",
+      "totalProduced": "~150,000 worldwide",
+      "priceRange": "$20,000 - $80,000+",
+      "bestYears": "2009-2012 (987.2 with DFI engine, no IMS)"
+    },
+    "variants": [
+      {
+        "name": "Boxster / Cayman",
+        "years": "2005-2012",
+        "description": "Base models with 2.7L (240-255 hp) or 2.9L (255 hp). Excellent entry point.",
+        "desirability": "Medium"
+      },
+      {
+        "name": "Boxster S / Cayman S",
+        "years": "2005-2012",
+        "description": "Performance models with 3.2L/3.4L (295-320 hp). Better brakes, LSD available.",
+        "desirability": "High"
+      },
+      {
+        "name": "Cayman R",
+        "years": "2011-2012",
+        "description": "Lightweight special with 330 hp, sport suspension, and bucket seats. The driver's choice.",
+        "desirability": "High"
+      },
+      {
+        "name": "Boxster Spyder",
+        "years": "2010-2012",
+        "description": "Lightweight roadster with manual top, 320 hp, and aggressive styling. Very desirable.",
+        "desirability": "High"
+      }
+    ],
+    "inspectionPoints": [
+      {
+        "category": "Engine (987.1)",
+        "items": [
+          {
+            "check": "IMS Bearing Status",
+            "detail": "987.1 (2005-2008) has improved IMS bearing but failure is still possible. Verify if retrofitted.",
+            "costIfBad": "$2,000-3,500 for retrofit"
+          },
+          {
+            "check": "Bore Scoring",
+            "detail": "M97 engine can develop bore scoring. Listen for knocking, check for smoke.",
+            "costIfBad": "$10,000-20,000"
+          },
+          {
+            "check": "Oil Consumption",
+            "detail": "Some consumption is normal. Excessive consumption indicates bore issues.",
+            "costIfBad": "Varies"
+          }
+        ]
+      },
+      {
+        "category": "Engine (987.2)",
+        "items": [
+          {
+            "check": "No IMS Concerns",
+            "detail": "987.2 (2009-2012) DFI engines have no IMS bearing. Major reliability improvement.",
+            "costIfBad": "N/A"
+          },
+          {
+            "check": "Carbon Buildup",
+            "detail": "DFI engines can develop intake valve carbon deposits at high mileage.",
+            "costIfBad": "$500-1,000 for cleaning"
+          },
+          {
+            "check": "Direct Injectors",
+            "detail": "DFI injectors can fail causing rough running.",
+            "costIfBad": "$800-1,500"
+          }
+        ]
+      },
+      {
+        "category": "Transmission",
+        "items": [
+          {
+            "check": "Manual Transmission",
+            "detail": "6-speed manual is robust and engaging. Test all gears.",
+            "costIfBad": "$2,000-4,000"
+          },
+          {
+            "check": "PDK (987.2)",
+            "detail": "Dual-clutch is fast and smooth. Check for shudder or harsh engagement.",
+            "costIfBad": "$2,000-5,000"
+          },
+          {
+            "check": "Clutch",
+            "detail": "Manual clutch should engage smoothly. Mid-engine makes replacement easier.",
+            "costIfBad": "$1,500-2,500"
+          }
+        ]
+      },
+      {
+        "category": "Body & Convertible",
+        "items": [
+          {
+            "check": "Convertible Top (Boxster)",
+            "detail": "Test operation. Hydraulics and cables can fail.",
+            "costIfBad": "$1,000-2,500"
+          },
+          {
+            "check": "Manual Top (Spyder)",
+            "detail": "Spyder has manual top. Check fabric and frame condition.",
+            "costIfBad": "$500-1,500"
+          },
+          {
+            "check": "Window Regulators",
+            "detail": "Test both windows. Less problematic than 986 but can fail.",
+            "costIfBad": "$300-600"
+          }
+        ]
+      },
+      {
+        "category": "Suspension",
+        "items": [
+          {
+            "check": "PASM Shocks",
+            "detail": "If equipped, test in all modes. Shocks can develop leaks.",
+            "costIfBad": "$2,000-4,000"
+          },
+          {
+            "check": "Control Arm Bushings",
+            "detail": "Common wear item causing clunks and handling issues.",
+            "costIfBad": "$400-800"
+          }
+        ]
+      }
+    ],
+    "pricingGuide": {
+      "project": {
+        "price": "$15,000 - $25,000",
+        "description": "987.1 cars with unknown IMS status or significant issues."
+      },
+      "driver": {
+        "price": "$25,000 - $40,000",
+        "description": "Good 987.1 S or entry 987.2 examples. Daily driver ready."
+      },
+      "excellent": {
+        "price": "$40,000 - $60,000",
+        "description": "Well-maintained 987.2 S, Cayman R, or Boxster Spyder."
+      },
+      "concours": {
+        "price": "$60,000 - $100,000+",
+        "description": "Low-mileage Cayman R or Spyder with documentation."
+      }
+    },
+    "redFlags": [
+      "987.1 with unknown IMS status",
+      "Evidence of bore scoring",
+      "PDK with shudder or rough engagement",
+      "Water damage from clogged drains",
+      "Salvage title without documentation",
+      "Heavy track use on street car (Cayman)"
+    ],
+    "whatToLookFor": [
+      "987.2 (2009+) for no IMS concerns",
+      "Cayman S or Boxster S for best performance",
+      "Manual transmission for engagement",
+      "Complete service documentation",
+      "PASM adaptive suspension",
+      "Sport Chrono Package",
+      "Cayman R or Boxster Spyder for collector potential"
+    ],
+    "ownershipCosts": {
+      "insurance": "$1,000-2,000/year",
+      "annualMaintenance": "$1,500-3,000 for regular service",
+      "commonRepairs": "$800-2,000/year typical",
+      "fuel": "20-27 MPG"
+    },
+    "expertTips": [
+      "The 987.2 is the safest buy with no IMS bearing concerns",
+      "The Cayman is often considered the best-handling Porsche",
+      "Cayman R and Boxster Spyder are appreciating classics",
+      "Manual transmission is more engaging but PDK is faster",
+      "987 parts are more affordable than 911 parts",
+      "The mid-engine layout makes certain maintenance easier",
+      "Join Rennlist.com for excellent owner community",
+      "Budget for consumables but enjoy lower running costs than 911"
+    ]
   }
 }

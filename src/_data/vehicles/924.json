@@ -966,5 +966,190 @@
         "Inspect plug wires for cracks while replacing plugs."
       ]
     }
-  ]
+  ],
+  "buyersGuide": {
+    "overview": "The Porsche 924 (1976-1988) was Porsche's entry-level sports car and introduced the front-engine, rear-transaxle layout that would define the 944 and 968. Originally developed as a joint project with Volkswagen/Audi, the 924 used an Audi-derived inline-four engine that, while not as powerful as purists wanted, provided excellent balance and handling. The 924 Turbo (931) added significant performance and the 924S used the 944's 2.5L engine. Today, the 924 offers genuine Porsche ownership at accessible prices, though finding well-maintained examples requires patience.",
+    "quickFacts": {
+      "productionYears": "1976-1988",
+      "totalProduced": "~150,000 worldwide",
+      "priceRange": "$5,000 - $35,000+",
+      "bestYears": "1986-1988 924S (944 engine)"
+    },
+    "variants": [
+      {
+        "name": "924 (Audi engine)",
+        "years": "1976-1985",
+        "description": "Base model with 2.0L Audi-derived engine producing 95-110 hp. Adequate but not exciting. Fuel injection improved later cars.",
+        "desirability": "Low"
+      },
+      {
+        "name": "924 Turbo (931)",
+        "years": "1979-1982",
+        "description": "Turbocharged 2.0L producing 170-177 hp with distinctive hood scoop and wider fenders. Genuine sports car performance.",
+        "desirability": "High"
+      },
+      {
+        "name": "924 Carrera GT / GTR / GTS",
+        "years": "1980-1981",
+        "description": "Homologation specials with 210-375 hp. Extremely rare and valuable - most were racing cars.",
+        "desirability": "High"
+      },
+      {
+        "name": "924S",
+        "years": "1986-1988",
+        "description": "Updated with the 944's 2.5L engine producing 147-160 hp. The best of both worlds - 924 looks with 944 power.",
+        "desirability": "High"
+      }
+    ],
+    "inspectionPoints": [
+      {
+        "category": "Engine (Critical)",
+        "items": [
+          {
+            "check": "Timing Belt (924S only)",
+            "detail": "The 924S uses the 944's 2.5L engine with timing belt - same maintenance requirements as 944.",
+            "costIfBad": "$1,500-3,000 for service"
+          },
+          {
+            "check": "Timing Chain (Audi engine)",
+            "detail": "Audi-derived engine uses a timing chain. Listen for rattle indicating chain stretch.",
+            "costIfBad": "$800-1,500"
+          },
+          {
+            "check": "Head Gasket",
+            "detail": "Early 924s can develop head gasket issues. Check for coolant in oil or overheating.",
+            "costIfBad": "$800-1,500"
+          },
+          {
+            "check": "Turbo Condition (931)",
+            "detail": "Check for shaft play, oil smoke, and boost leaks. Turbo rebuilds are expensive.",
+            "costIfBad": "$1,500-3,000"
+          },
+          {
+            "check": "Oil Leaks",
+            "detail": "Check valve cover, rear main seal, and oil pan. Common with age.",
+            "costIfBad": "$200-600"
+          }
+        ]
+      },
+      {
+        "category": "Clutch & Transaxle",
+        "items": [
+          {
+            "check": "Clutch Condition",
+            "detail": "Test clutch engagement - should be smooth and grab mid-pedal.",
+            "costIfBad": "$1,200-2,000"
+          },
+          {
+            "check": "Torque Tube Flex Disc",
+            "detail": "Rubber flex disc connecting engine to torque tube wears out. Check for cracks.",
+            "costIfBad": "$150-300"
+          },
+          {
+            "check": "Transaxle",
+            "detail": "Test all gears. Listen for grinding or difficulty engaging. 924 transaxles are robust.",
+            "costIfBad": "$1,500-3,000"
+          }
+        ]
+      },
+      {
+        "category": "Body & Rust",
+        "items": [
+          {
+            "check": "Rocker Panels",
+            "detail": "Primary rust area. Check inside and out for rust-through.",
+            "costIfBad": "$800-2,000 per side"
+          },
+          {
+            "check": "Floor Pans",
+            "detail": "Check under carpets for rust, especially driver's footwell.",
+            "costIfBad": "$800-2,000"
+          },
+          {
+            "check": "Hatch Area",
+            "detail": "Hatch struts mount to fiberglass - check for cracks. Inspect rear quarters.",
+            "costIfBad": "$300-800"
+          },
+          {
+            "check": "Battery Box",
+            "detail": "Located in the engine bay - acid damage is common.",
+            "costIfBad": "$300-600"
+          }
+        ]
+      },
+      {
+        "category": "Electrical",
+        "items": [
+          {
+            "check": "DME Relay",
+            "detail": "Common failure point causing no-start. Easy and cheap to replace.",
+            "costIfBad": "$30-60"
+          },
+          {
+            "check": "CIS System (early cars)",
+            "detail": "Continuous Injection System can be finicky. Check fuel distributor operation.",
+            "costIfBad": "$300-800"
+          },
+          {
+            "check": "Wiring Condition",
+            "detail": "Check for brittle insulation, especially in engine bay.",
+            "costIfBad": "$200-600"
+          }
+        ]
+      }
+    ],
+    "pricingGuide": {
+      "project": {
+        "price": "$2,000 - $6,000",
+        "description": "Non-running or rusty cars. Base 924s are cheap but require work."
+      },
+      "driver": {
+        "price": "$6,000 - $15,000",
+        "description": "Running and driving examples. 924S models command higher prices."
+      },
+      "excellent": {
+        "price": "$15,000 - $25,000",
+        "description": "Well-maintained 924 Turbo or pristine 924S examples."
+      },
+      "concours": {
+        "price": "$25,000 - $50,000+",
+        "description": "Low-mileage Turbo or rare Carrera GT/GTS variants. Museum quality."
+      }
+    },
+    "redFlags": [
+      "Severe rust in structural areas (rockers, floor pans)",
+      "Unknown timing belt history on 924S models",
+      "Turbo cars with shaft play or excessive smoke",
+      "Non-functional CIS fuel injection",
+      "Evidence of overheating or head gasket failure",
+      "Missing or heavily modified emissions equipment",
+      "Amateur electrical modifications"
+    ],
+    "whatToLookFor": [
+      "924S models with 944 engine for best value",
+      "924 Turbo for performance enthusiasts",
+      "Documented service history",
+      "Rust-free body",
+      "Working air conditioning",
+      "Manual transmission (all 924s)",
+      "Original interior in good condition",
+      "Complete tool kit"
+    ],
+    "ownershipCosts": {
+      "insurance": "$400-800/year (classic car insurance available)",
+      "annualMaintenance": "$800-1,500 for regular service",
+      "commonRepairs": "$400-1,000/year typical",
+      "fuel": "24-30 MPG"
+    },
+    "expertTips": [
+      "The 924S is the smart buy - 944 reliability with lower prices",
+      "Base 924s are plentiful and cheap but the Audi engine is underwhelming",
+      "924 Turbo parts availability is more limited than 944 Turbo",
+      "The 924 chassis is essentially the same as the 944 - excellent handling",
+      "Many 924-specific parts are becoming hard to find",
+      "Consider the 924 as a stepping stone to a 944 if budget is tight",
+      "Rennlist.com and 924Board.org have excellent technical resources",
+      "These cars are mechanically simple compared to modern Porsches"
+    ]
+  }
 }

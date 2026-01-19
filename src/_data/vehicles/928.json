@@ -1071,5 +1071,217 @@
         "Consider replacing all vacuum lines as preventive maintenance."
       ]
     }
-  ]
+  ],
+  "buyersGuide": {
+    "overview": "The Porsche 928 (1978-1995) was Porsche's ambitious grand touring car, designed to replace the 911 (it didn't). With its front-mounted V8, rear transaxle, and sophisticated rear suspension, the 928 offered continent-crushing performance and luxury. The water-cooled aluminum V8 grew from 4.5L to 5.4L over production, eventually producing 345 hp in the final GTS. The 928 is a complex, sophisticated machine that rewards knowledgeable owners but can punish those who neglect maintenance. Prices have risen significantly as enthusiasts recognize the 928's unique character.",
+    "quickFacts": {
+      "productionYears": "1978-1995",
+      "totalProduced": "~61,000 worldwide",
+      "priceRange": "$15,000 - $150,000+",
+      "bestYears": "1990-1995 GTS (most powerful, best refined)"
+    },
+    "variants": [
+      {
+        "name": "928 / 928S",
+        "years": "1978-1986",
+        "description": "Early cars with 4.5L (219 hp) or 4.7L (288 hp) V8. Good cars but less refined than later models.",
+        "desirability": "Low"
+      },
+      {
+        "name": "928 S4",
+        "years": "1987-1991",
+        "description": "The first major update with 5.0L V8 producing 316 hp. Improved interior and technology. The sweet spot for value.",
+        "desirability": "High"
+      },
+      {
+        "name": "928 GT",
+        "years": "1989-1991",
+        "description": "Sport-oriented model with manual transmission standard, sport suspension, and 326 hp. Rarer than S4.",
+        "desirability": "High"
+      },
+      {
+        "name": "928 GTS",
+        "years": "1992-1995",
+        "description": "The ultimate 928 with 5.4L V8 producing 345 hp, widebody styling, and all the refinements. The most valuable 928.",
+        "desirability": "High"
+      }
+    ],
+    "inspectionPoints": [
+      {
+        "category": "Engine (Critical)",
+        "items": [
+          {
+            "check": "Timing Belt Service",
+            "detail": "The 928 V8 uses a timing belt that must be replaced every 60,000 miles. Belt failure destroys the engine.",
+            "costIfBad": "$2,500-4,000 for service / Engine if it breaks"
+          },
+          {
+            "check": "Water Pump",
+            "detail": "Should be replaced with timing belt service. 928 water pumps are expensive.",
+            "costIfBad": "$600-1,000 for pump alone"
+          },
+          {
+            "check": "Oil Leaks",
+            "detail": "Check cam covers, timing cover, rear main seal, and oil cooler lines. V8 has many potential leak points.",
+            "costIfBad": "$500-2,000 depending on location"
+          },
+          {
+            "check": "Coolant Crossover Pipes",
+            "detail": "Coolant pipes under the intake manifold corrode and leak. Common failure point.",
+            "costIfBad": "$800-1,500"
+          },
+          {
+            "check": "Head Gaskets",
+            "detail": "Not common failures but serious when they occur. Check for coolant in oil.",
+            "costIfBad": "$3,000-6,000"
+          }
+        ]
+      },
+      {
+        "category": "Transmission & Drivetrain",
+        "items": [
+          {
+            "check": "Automatic Transmission",
+            "detail": "Most 928s are automatic. Check for smooth shifting and proper fluid condition.",
+            "costIfBad": "$3,000-6,000 for rebuild"
+          },
+          {
+            "check": "Manual Transmission (GT)",
+            "detail": "GT and some GTS models have 5-speed manual. Test all gears for smooth engagement.",
+            "costIfBad": "$2,000-4,000"
+          },
+          {
+            "check": "Torque Tube",
+            "detail": "The tube connecting engine to transaxle contains the driveshaft. Check for vibration.",
+            "costIfBad": "$1,000-2,500"
+          },
+          {
+            "check": "CV Joints / Axles",
+            "detail": "Rear CV joints wear over time. Listen for clicking in turns.",
+            "costIfBad": "$500-1,000"
+          }
+        ]
+      },
+      {
+        "category": "Suspension & Steering",
+        "items": [
+          {
+            "check": "Weissach Rear Suspension",
+            "detail": "The 928's sophisticated rear suspension has many bushings and links that wear.",
+            "costIfBad": "$1,000-2,500 for full rebuild"
+          },
+          {
+            "check": "Power Steering System",
+            "detail": "Check for leaks from pump, rack, and lines. The system operates at high pressure.",
+            "costIfBad": "$500-1,500"
+          },
+          {
+            "check": "Front Control Arms",
+            "detail": "Bushings and ball joints wear causing poor handling and tire wear.",
+            "costIfBad": "$600-1,200"
+          }
+        ]
+      },
+      {
+        "category": "Electrical & Systems",
+        "items": [
+          {
+            "check": "Vacuum System",
+            "detail": "The 928 uses vacuum for HVAC, door locks, and cruise control. Leaks cause multiple failures.",
+            "costIfBad": "$300-800"
+          },
+          {
+            "check": "Climate Control",
+            "detail": "HVAC system is complex with vacuum and electrical components. Test all functions.",
+            "costIfBad": "$500-2,000"
+          },
+          {
+            "check": "Instrument Cluster",
+            "detail": "Check for working gauges and proper speedometer/tachometer operation.",
+            "costIfBad": "$400-1,000"
+          },
+          {
+            "check": "Power Seat Motors",
+            "detail": "Electric seats can fail. Test all adjustments including memory function.",
+            "costIfBad": "$300-800"
+          }
+        ]
+      },
+      {
+        "category": "Body & Interior",
+        "items": [
+          {
+            "check": "Rust",
+            "detail": "Check rocker panels, door bottoms, and around sunroof if equipped. Later cars rust less.",
+            "costIfBad": "$1,000-5,000+"
+          },
+          {
+            "check": "Leather Condition",
+            "detail": "Interior leather can crack and wear. Check seats, door panels, and dashboard.",
+            "costIfBad": "$1,000-4,000"
+          },
+          {
+            "check": "Headlight Covers",
+            "detail": "Pop-up headlight covers can crack or discolor. Check operation and condition.",
+            "costIfBad": "$500-1,500"
+          }
+        ]
+      }
+    ],
+    "pricingGuide": {
+      "project": {
+        "price": "$8,000 - $20,000",
+        "description": "Non-running or cars with unknown timing belt history. 928 projects can become money pits."
+      },
+      "driver": {
+        "price": "$20,000 - $45,000",
+        "description": "Running and driving S4 or GT examples with some needs. Budget for maintenance."
+      },
+      "excellent": {
+        "price": "$45,000 - $80,000",
+        "description": "Well-maintained GTS or pristine S4/GT with full service documentation."
+      },
+      "concours": {
+        "price": "$80,000 - $175,000+",
+        "description": "Low-mileage GTS manual or exceptional early cars. Prices continue rising."
+      }
+    },
+    "redFlags": [
+      "Unknown timing belt service history - budget for immediate replacement",
+      "Overheating issues or evidence of head gasket failure",
+      "Non-functional vacuum systems (door locks, HVAC not working)",
+      "Automatic transmission slipping or harsh shifting",
+      "Severe oil leaks from multiple locations",
+      "Rodent damage to wiring (biodegradable wire coating)",
+      "Cars that have sat for extended periods without maintenance"
+    ],
+    "whatToLookFor": [
+      "Documented timing belt service within last 60,000 miles",
+      "GTS for ultimate performance and value retention",
+      "Manual transmission (rare but most desirable)",
+      "Service records from Porsche specialists",
+      "Working air conditioning and climate control",
+      "Complete vacuum system operation",
+      "Rust-free body panels",
+      "Factory tool kit and books"
+    ],
+    "ownershipCosts": {
+      "insurance": "$800-1,500/year (classic car insurance available)",
+      "annualMaintenance": "$2,000-4,000 for regular service",
+      "commonRepairs": "$1,000-3,000/year typical",
+      "fuel": "16-22 MPG"
+    },
+    "expertTips": [
+      "The 928 is not a cheap car to own - budget accordingly for proper maintenance",
+      "Timing belt service is critical - never skip or delay this maintenance",
+      "The S4 offers the best balance of performance and value",
+      "GTS prices have risen dramatically - they are genuine collectibles now",
+      "Manual transmission cars are extremely rare and command significant premiums",
+      "Find a Porsche specialist or independent shop that knows 928s well",
+      "Join the 928 Owners Club for excellent technical resources and community support",
+      "Parts availability is good but prices are higher than 944",
+      "A well-maintained 928 is one of the most capable GT cars ever made",
+      "These cars were over-engineered and can exceed 300,000 miles with proper care"
+    ]
+  }
 }

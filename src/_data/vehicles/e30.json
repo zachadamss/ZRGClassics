@@ -1027,5 +1027,242 @@
       { "id": "e30-check-panel", "name": "Repair check control panel", "description": "Replace bulbs and test sensors" },
       { "id": "e30-obc", "name": "Repair onboard computer", "description": "If equipped - common display failures" }
     ]
+  },
+  "buyersGuide": {
+    "overview": "The BMW E30 3 Series (1982-1994) represents the golden era of BMW engineering - a time when the company built driver-focused cars with exceptional balance, communicative steering, and an analog driving experience that modern BMWs struggle to replicate. The E30 was the car that established BMW's reputation in North America and remains one of the most sought-after classic BMWs. Whether you want a practical classic daily driver, a weekend canyon carver, or a track day weapon, the E30 delivers. However, these cars are now 30-40+ years old, and rust, deferred maintenance, and questionable modifications are common. A thorough pre-purchase inspection is essential.",
+    "quickFacts": {
+      "productionYears": "1982-1994",
+      "totalProduced": "~2.34 million worldwide",
+      "priceRange": "$8,000 - $100,000+",
+      "bestYears": "1988-1991 (post-facelift, best build quality)"
+    },
+    "variants": [
+      {
+        "name": "325i / 325is",
+        "years": "1987-1991",
+        "description": "The sweet spot of the E30 range. The 2.5L M20B25 engine produces 168 hp and offers the best balance of performance, reliability, and parts availability. The 'is' denotes the sport package with limited-slip differential, sport seats, and firmer suspension.",
+        "desirability": "High"
+      },
+      {
+        "name": "325e / 325es",
+        "years": "1984-1988",
+        "description": "The 'eta' engine prioritizes fuel economy with a 2.7L low-revving motor producing 121 hp. Great for relaxed cruising but lacks the sporting character of the 'i' models. Can be converted to 'i' spec.",
+        "desirability": "Medium"
+      },
+      {
+        "name": "318i / 318is",
+        "years": "1984-1991",
+        "description": "Entry-level E30 with the M10 (early) or M42 (1991) four-cylinder. The 1991 318is with the M42 is particularly desirable - rev-happy engine in the lightest E30 chassis. Earlier M10 cars are basic but charming.",
+        "desirability": "Medium"
+      },
+      {
+        "name": "M3",
+        "years": "1988-1991",
+        "description": "The legendary homologation special with the S14 2.3L four-cylinder producing 192 hp. Wider fenders, aggressive aerodynamics, and motorsport DNA. Values have skyrocketed - expect $50,000-$150,000+ for clean examples.",
+        "desirability": "High"
+      },
+      {
+        "name": "325ix",
+        "years": "1988-1991",
+        "description": "All-wheel-drive variant with a sophisticated viscous-coupling system. Great for snowy climates but adds complexity and weight. Unique drivetrain components can be expensive to repair.",
+        "desirability": "Medium"
+      },
+      {
+        "name": "Convertible",
+        "years": "1987-1993",
+        "description": "Open-top E30 built by Baur (early) or fully by BMW (later). Heavier and less rigid than coupes/sedans but offers top-down driving enjoyment. Check carefully for rust and top mechanism issues.",
+        "desirability": "Medium"
+      }
+    ],
+    "inspectionPoints": [
+      {
+        "category": "Rust (Critical)",
+        "items": [
+          {
+            "check": "Front Fenders Behind Wheels",
+            "detail": "Peel back the fender liner and inspect with a flashlight. Look for bubbling, flaking, or holes. This is the #1 rust area on E30s.",
+            "costIfBad": "$500-2,000 per side for repair"
+          },
+          {
+            "check": "Rocker Panels / Sills",
+            "detail": "Jack up the car and inspect the pinch welds and rocker panels. Poke with a screwdriver - solid metal won't flex. Check under side skirts if equipped.",
+            "costIfBad": "$1,000-3,000+ for proper repair"
+          },
+          {
+            "check": "Rear Wheel Arches",
+            "detail": "Common rust area, especially on sedans. Check both inside the trunk and outside the quarter panels.",
+            "costIfBad": "$800-2,500 per side"
+          },
+          {
+            "check": "Battery Tray",
+            "detail": "In the trunk, inspect the battery tray and surrounding area. Battery acid accelerates rust here. Check floor underneath.",
+            "costIfBad": "$400-1,200"
+          },
+          {
+            "check": "Floor Pans",
+            "detail": "Pull back the carpets and check the driver and passenger floor pans. Look for rust-through or patched areas.",
+            "costIfBad": "$1,000-4,000+"
+          },
+          {
+            "check": "Subframe Mounting Points",
+            "detail": "Critical structural area. Any rust here is a safety issue. Check both front and rear subframe mounts.",
+            "costIfBad": "$2,000-5,000+ (major repair)"
+          }
+        ]
+      },
+      {
+        "category": "Engine & Drivetrain",
+        "items": [
+          {
+            "check": "Timing Belt Service History",
+            "detail": "M20 and M42 engines use timing belts that must be replaced every 50,000 miles. Ask for records - if unknown, budget for immediate replacement.",
+            "costIfBad": "$500-900 for service"
+          },
+          {
+            "check": "Head Gasket (M20)",
+            "detail": "Look for coolant in the oil (milky residue on dipstick/oil cap) or oil in coolant. Check for overheating history. M20s are known for head gasket failures.",
+            "costIfBad": "$1,200-2,500"
+          },
+          {
+            "check": "Oil Leaks",
+            "detail": "Inspect valve cover gasket, oil pan gasket, rear main seal, and front crank seal. Some seepage is normal on older cars, but active drips indicate needed repairs.",
+            "costIfBad": "$200-800 depending on location"
+          },
+          {
+            "check": "Clutch Condition (Manual)",
+            "detail": "Test the clutch engagement point - should be smooth and grab in the middle of pedal travel. Slipping under load indicates worn clutch.",
+            "costIfBad": "$800-1,500"
+          },
+          {
+            "check": "Transmission Synchros",
+            "detail": "Test all gears, especially 2nd gear. Grinding or difficulty engaging indicates worn synchros. Getrag 260 transmissions are robust but not indestructible.",
+            "costIfBad": "$1,500-3,000 for rebuild"
+          }
+        ]
+      },
+      {
+        "category": "Suspension & Steering",
+        "items": [
+          {
+            "check": "Control Arm Bushings",
+            "detail": "Jack up the front end and check for play in the control arms. Worn bushings cause clunking and vague steering.",
+            "costIfBad": "$300-600"
+          },
+          {
+            "check": "Rear Trailing Arm Bushings",
+            "detail": "The most commonly worn rear suspension component. Causes diagonal tire wear and poor handling. Check for cracking or deformation.",
+            "costIfBad": "$200-500"
+          },
+          {
+            "check": "Steering Rack",
+            "detail": "Check for play in the steering wheel with the car stationary. Listen for clunks when turning lock-to-lock. Inspect boots for tears.",
+            "costIfBad": "$400-900 for rebuild/replacement"
+          },
+          {
+            "check": "Strut Mounts",
+            "detail": "Bad strut mounts cause clunking over bumps and wandering steering. Bounce each corner and listen for noises.",
+            "costIfBad": "$200-400"
+          }
+        ]
+      },
+      {
+        "category": "Electrical",
+        "items": [
+          {
+            "check": "Ground Points",
+            "detail": "E30 electrical gremlins are often traced to corroded grounds. Check that all accessories work - windows, sunroof, gauges, lights.",
+            "costIfBad": "$100-300 for diagnosis and repair"
+          },
+          {
+            "check": "Instrument Cluster",
+            "detail": "Look for dead pixels, non-working gauges, or flickering lights. Capacitor failure is common and affects multiple gauges.",
+            "costIfBad": "$100-300 for repair"
+          },
+          {
+            "check": "Odometer Function",
+            "detail": "Plastic odometer gears commonly break. A non-working odometer makes true mileage unverifiable.",
+            "costIfBad": "$50-150 for gear replacement"
+          }
+        ]
+      },
+      {
+        "category": "Cooling System",
+        "items": [
+          {
+            "check": "Radiator Condition",
+            "detail": "Check for coolant stains, cracked plastic end tanks, or bent fins. Original radiators are often 30+ years old.",
+            "costIfBad": "$200-400"
+          },
+          {
+            "check": "Water Pump Weep Hole",
+            "detail": "Look underneath the water pump for coolant residue. A weeping pump is about to fail.",
+            "costIfBad": "$200-400 (do with timing belt)"
+          },
+          {
+            "check": "Heater Core",
+            "detail": "Check for wet carpet on the passenger side or sweet coolant smell inside. Heater core replacement is labor-intensive.",
+            "costIfBad": "$500-1,000"
+          }
+        ]
+      }
+    ],
+    "pricingGuide": {
+      "project": {
+        "price": "$3,000 - $8,000",
+        "description": "Non-running or heavily rusted cars needing major work. Only for experienced builders with welding skills. Budget 2-3x purchase price for restoration."
+      },
+      "driver": {
+        "price": "$8,000 - $18,000",
+        "description": "Running and driving with some issues - cosmetic flaws, minor rust, deferred maintenance. Can be enjoyed while improving over time."
+      },
+      "excellent": {
+        "price": "$18,000 - $35,000",
+        "description": "Well-maintained examples with documented history, minimal rust, good cosmetics. May have tasteful modifications or be mostly stock."
+      },
+      "concours": {
+        "price": "$35,000 - $100,000+",
+        "description": "Museum-quality cars, often M3s or rare variants. Fully documented, low miles, completely original or professionally restored."
+      }
+    },
+    "redFlags": [
+      "Structural rust in subframe mounting points, shock towers, or frame rails - walk away or budget for professional restoration",
+      "Unknown timing belt service history on M20/M42 engines - assume it needs immediate replacement",
+      "Signs of previous flood damage - musty interior smell, water lines in trunk, corroded electrical connectors",
+      "Salvage or rebuilt title without clear explanation of the damage",
+      "Excessive modifications with poor workmanship - cut wiring, mismatched parts, amateur body work",
+      "Seller unwilling to allow pre-purchase inspection by an independent mechanic",
+      "Oil in coolant or coolant in oil - indicates head gasket failure or worse",
+      "M3 cars without proper documentation or with suspiciously low prices"
+    ],
+    "whatToLookFor": [
+      "Documented service history, especially timing belt records",
+      "Limited-slip differential (standard on 'is' models, optional on others)",
+      "Sport seats with manual adjustment and better bolstering",
+      "Factory air conditioning (works well when properly maintained)",
+      "5-speed manual transmission (preferred over automatic)",
+      "Original tool kit and first aid kit in trunk",
+      "Matching VIN tags on body panels (indicates no accident repair)",
+      "Original paint in good condition (single-stage paint holds up well)",
+      "Rust-free California, Arizona, or southern cars",
+      "Factory options like heated seats, on-board computer, or cruise control"
+    ],
+    "ownershipCosts": {
+      "insurance": "$800-1,500/year (classic car insurance available)",
+      "annualMaintenance": "$1,000-2,500 for regular service",
+      "commonRepairs": "$500-2,000/year depending on condition",
+      "fuel": "22-28 MPG depending on driving style"
+    },
+    "expertTips": [
+      "Join R3VLimited.com before buying - the community can help verify cars and identify red flags",
+      "Budget for a full suspension refresh on any E30 - bushings wear out and transform the driving experience when replaced",
+      "The 'is' package (325is, 318is) adds significant value - limited-slip diff and sport suspension are expensive to add later",
+      "Convertibles rust more due to water intrusion - inspect very carefully around the top mechanism and rear quarters",
+      "Early 1984-1986 cars have different bumpers and trim that are harder to find - later facelift parts (1988+) are more available",
+      "The M20 engine is extremely robust when maintained - 300,000+ mile examples exist with proper care",
+      "Consider a pre-purchase inspection by an E30 specialist - generic mechanics may miss model-specific issues",
+      "Beware of 'M3 clone' cars - legitimate conversions are rare and expensive, most are poorly done",
+      "Factor in the cost of period-correct replacement parts - many items are discontinued and expensive",
+      "An E30 in solid mechanical condition with rust is often a better buy than a rust-free car with a tired drivetrain - metal work is harder than mechanical repairs"
+    ]
   }
 }

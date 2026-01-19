@@ -1360,5 +1360,232 @@
       { "id": "e39-alternator-bracket", "name": "Replace alternator bracket bushing", "description": "Causes rattling noise" },
       { "id": "e39-tail-lights", "name": "Replace tail light gaskets", "description": "Prevents trunk leaks" }
     ]
+  },
+  "buyersGuide": {
+    "overview": "The BMW E39 5 Series (1997-2003) is widely considered the best 5 Series ever made and one of the greatest sports sedans in automotive history. It combined sophisticated engineering, exceptional build quality, and a perfect balance of performance and comfort. The E39 M5 with its 4.9L S62 V8 producing 394 hp became an instant legend. Today, E39s offer incredible value - a refined, capable, and genuinely enjoyable driving experience at depreciated prices. However, these are complex German cars now 20+ years old, and maintenance costs can escalate quickly on neglected examples.",
+    "quickFacts": {
+      "productionYears": "1997-2003",
+      "totalProduced": "~1.47 million worldwide",
+      "priceRange": "$5,000 - $100,000+",
+      "bestYears": "2001-2003 (most refined, facelift models)"
+    },
+    "variants": [
+      {
+        "name": "525i",
+        "years": "2001-2003",
+        "description": "Entry-level with the 2.5L M54 inline-six producing 184 hp. Smooth and efficient but feels underpowered in the heavy E39 chassis.",
+        "desirability": "Low"
+      },
+      {
+        "name": "528i",
+        "years": "1997-2000",
+        "description": "The volume model with the 2.8L M52 producing 190 hp. Adequate performance, excellent reliability.",
+        "desirability": "Medium"
+      },
+      {
+        "name": "530i",
+        "years": "2001-2003",
+        "description": "Upgraded to the 3.0L M54 with 225 hp. The sweet spot of the inline-six range - enough power without V8 complexity.",
+        "desirability": "High"
+      },
+      {
+        "name": "540i",
+        "years": "1997-2003",
+        "description": "The V8 model with the 4.4L M62 producing 282-290 hp. Effortless power and refinement. 6-speed manual available.",
+        "desirability": "High"
+      },
+      {
+        "name": "M5",
+        "years": "2000-2003",
+        "description": "The legendary super-sedan with the hand-built 4.9L S62 V8 producing 394 hp. 6-speed manual only. Aggressive styling, race-car performance. Highly collectible.",
+        "desirability": "High"
+      },
+      {
+        "name": "Touring (Wagon)",
+        "years": "1999-2003",
+        "description": "The practical estate version. Available with inline-six engines. Rare in North America and sought after by enthusiasts.",
+        "desirability": "High"
+      }
+    ],
+    "inspectionPoints": [
+      {
+        "category": "Rust (Critical)",
+        "items": [
+          {
+            "check": "Rocker Panels",
+            "detail": "Check the entire length, especially around jacking points. Rust develops from inside out.",
+            "costIfBad": "$1,500-4,000 per side"
+          },
+          {
+            "check": "Rear Wheel Arches",
+            "detail": "Sedans rust in the rear quarter panels. Check inside the trunk and outside.",
+            "costIfBad": "$1,000-3,000 per side"
+          },
+          {
+            "check": "Floor Pans",
+            "detail": "Check under the driver and passenger carpets, especially around the jacking points.",
+            "costIfBad": "$1,000-3,000"
+          },
+          {
+            "check": "Front Subframe Area",
+            "detail": "Inspect subframe mounting points for corrosion. Water collects in this area.",
+            "costIfBad": "$2,000-5,000"
+          }
+        ]
+      },
+      {
+        "category": "Engine & Drivetrain",
+        "items": [
+          {
+            "check": "Cooling System",
+            "detail": "E39 cooling systems fail with age. Check water pump, thermostat, expansion tank, and radiator.",
+            "costIfBad": "$600-1,500 for complete refresh"
+          },
+          {
+            "check": "VANOS Seals (M52/M54)",
+            "detail": "Variable valve timing seals wear causing rough idle and reduced power. Listen for rattle.",
+            "costIfBad": "$300-600"
+          },
+          {
+            "check": "Timing Chain Guides (M62 V8)",
+            "detail": "V8 timing chain guides are made of plastic and fail. Listen for rattle on startup. Major repair.",
+            "costIfBad": "$3,000-5,000"
+          },
+          {
+            "check": "Valley Pan Gasket (M62 V8)",
+            "detail": "The valley pan gasket under the intake manifold leaks coolant into the V. Watch for low coolant.",
+            "costIfBad": "$800-1,500"
+          },
+          {
+            "check": "VANOS (S62 M5)",
+            "detail": "M5's S62 VANOS system is complex and expensive to repair. Check for proper operation.",
+            "costIfBad": "$2,000-4,000"
+          },
+          {
+            "check": "Rod Bearings (S62 M5)",
+            "detail": "M5 engines can suffer rod bearing wear, especially with synthetic oil and track use.",
+            "costIfBad": "$3,000-6,000"
+          },
+          {
+            "check": "Transmission",
+            "detail": "Manual transmissions are reliable. Automatics can develop torque converter issues.",
+            "costIfBad": "$1,500-4,000"
+          }
+        ]
+      },
+      {
+        "category": "Suspension & Steering",
+        "items": [
+          {
+            "check": "Thrust Arm Bushings",
+            "detail": "Primary wear item. Causes clunking and steering wander. Check for cracking.",
+            "costIfBad": "$400-700"
+          },
+          {
+            "check": "Tie Rod Ends",
+            "detail": "Check for play by grabbing the wheel and rocking. Worn ends cause vague steering.",
+            "costIfBad": "$200-400"
+          },
+          {
+            "check": "Rear Subframe Bushings",
+            "detail": "Large rubber bushings deteriorate causing handling issues and noise.",
+            "costIfBad": "$500-900"
+          },
+          {
+            "check": "Self-Leveling Suspension",
+            "detail": "Touring models have self-leveling rear. Check for sag or leaking accumulators.",
+            "costIfBad": "$800-1,500"
+          }
+        ]
+      },
+      {
+        "category": "Interior & Electrical",
+        "items": [
+          {
+            "check": "Pixel Fade",
+            "detail": "Instrument cluster, radio display, and climate control all suffer from pixel failure.",
+            "costIfBad": "$150-400 each"
+          },
+          {
+            "check": "Window Regulators",
+            "detail": "Cables fray and snap. Test all windows multiple times up and down.",
+            "costIfBad": "$150-300 each"
+          },
+          {
+            "check": "DSC/ABS Module",
+            "detail": "The integrated ABS/DSC module can fail causing warning lights and reduced braking.",
+            "costIfBad": "$1,000-2,000"
+          },
+          {
+            "check": "Final Stage Unit (FSU)",
+            "detail": "Blower motor resistor fails causing climate control fan issues.",
+            "costIfBad": "$100-200"
+          },
+          {
+            "check": "Navigation System",
+            "detail": "If equipped, check that the navigation and CD functions work. Parts are expensive.",
+            "costIfBad": "$500-1,500"
+          }
+        ]
+      }
+    ],
+    "pricingGuide": {
+      "project": {
+        "price": "$2,000 - $6,000",
+        "description": "High-mileage, rusty, or neglected cars. Common in the Rust Belt. Can become money pits."
+      },
+      "driver": {
+        "price": "$6,000 - $15,000",
+        "description": "Running and driving with cosmetic wear or maintenance needs. Budget for cooling system and suspension."
+      },
+      "excellent": {
+        "price": "$15,000 - $30,000",
+        "description": "Well-maintained 540i 6-speed or clean 530i examples. Full service documentation."
+      },
+      "concours": {
+        "price": "$30,000 - $100,000+",
+        "description": "M5 with documented history, low miles, and proper maintenance. Prices have stabilized at strong levels."
+      }
+    },
+    "redFlags": [
+      "Timing chain rattle on V8 models - indicates imminent and expensive failure",
+      "Low coolant without visible leak - check for valley pan gasket failure on V8",
+      "M5 without rod bearing service documentation",
+      "Persistent check engine light or limp mode",
+      "Severe rust in subframe mounting points",
+      "Clunking steering with excessive play - multiple suspension components worn",
+      "Non-functional DSC/ABS system",
+      "Automatic transmission slipping or delayed engagement"
+    ],
+    "whatToLookFor": [
+      "6-speed manual transmission (especially on 540i and M5)",
+      "Service records showing cooling system replacement",
+      "M Sport package with sport seats and suspension",
+      "530i as the sweet spot of reliability and performance",
+      "540i with M Sport package for near-M5 experience",
+      "Documented timing chain service on V8 models",
+      "Rust-free southern or western U.S. examples",
+      "Touring (wagon) for practicality and rarity",
+      "Working navigation and premium sound system",
+      "Complete tool kit and owner's documents"
+    ],
+    "ownershipCosts": {
+      "insurance": "$800-2,000/year (M5 higher)",
+      "annualMaintenance": "$1,500-3,000 for regular service",
+      "commonRepairs": "$800-2,000/year typical (V8 higher)",
+      "fuel": "17-24 MPG depending on model"
+    },
+    "expertTips": [
+      "The E39 is genuinely one of the best cars BMW has ever made - the hype is real",
+      "The 530i with manual transmission is the sweet spot for reliability and running costs",
+      "540i timing chain guides WILL fail eventually - budget for this major service",
+      "M5 rod bearing service should be done every 60,000-80,000 miles as preventative maintenance",
+      "Cooling system components should be replaced proactively - failure leads to overheating",
+      "The automatic transmission is decent but the 6-speed manual transforms the driving experience",
+      "Pixel repair is easy DIY - don't let dead pixels deter you from an otherwise good car",
+      "Touring models are rare in the US and command premiums - worth seeking if you need the space",
+      "Parts availability is excellent - FCP Euro offers lifetime warranty on many components",
+      "A well-maintained E39 with proper cooling system care can easily exceed 250,000 miles"
+    ]
   }
 }

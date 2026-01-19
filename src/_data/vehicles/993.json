@@ -1088,5 +1088,210 @@
       { "id": "993-dme-relay", "name": "Replace DME relay", "description": "Common no-start cause" },
       { "id": "993-abs-module", "name": "Inspect ABS control module", "description": "Can fail with age" }
     ]
+  },
+  "buyersGuide": {
+    "overview": "The Porsche 993 (1995-1998) is the last of the air-cooled 911s and represents the pinnacle of the classic 911 design. With its completely redesigned multilink rear suspension, the 993 finally tamed the 911's notorious handling quirks while maintaining the visceral air-cooled experience. The Varioram-equipped 3.6L engine produces 272-282 hp in naturally aspirated form, while the twin-turbo models make 400-450 hp. The 993 has become the most collectible modern 911, with prices far exceeding those of newer water-cooled models.",
+    "quickFacts": {
+      "productionYears": "1995-1998",
+      "totalProduced": "~68,000 worldwide",
+      "priceRange": "$70,000 - $400,000+",
+      "bestYears": "1997-1998 (Varioram, most refined)"
+    },
+    "variants": [
+      {
+        "name": "Carrera / Carrera S",
+        "years": "1995-1998",
+        "description": "Rear-wheel drive with 272-282 hp. The S adds widebody styling and larger wheels. Pure driving experience.",
+        "desirability": "High"
+      },
+      {
+        "name": "Carrera 4 / Carrera 4S",
+        "years": "1995-1998",
+        "description": "All-wheel drive variants. More stable but heavier. The 4S combines AWD with widebody.",
+        "desirability": "High"
+      },
+      {
+        "name": "Targa",
+        "years": "1996-1998",
+        "description": "Glass-roof variant with sliding glass panel. Unique styling but complex mechanism.",
+        "desirability": "Medium"
+      },
+      {
+        "name": "Turbo / Turbo S",
+        "years": "1996-1998",
+        "description": "Twin-turbocharged with 400-450 hp. The last air-cooled Turbo. Turbo S is extremely rare and valuable.",
+        "desirability": "High"
+      },
+      {
+        "name": "GT2",
+        "years": "1996-1998",
+        "description": "Rear-wheel drive Turbo with 430+ hp. Widebody, no driver aids. The ultimate air-cooled 911.",
+        "desirability": "High"
+      },
+      {
+        "name": "Cabriolet",
+        "years": "1995-1998",
+        "description": "Full convertible variant. Adds weight and reduces rigidity but popular.",
+        "desirability": "Medium"
+      }
+    ],
+    "inspectionPoints": [
+      {
+        "category": "Engine (Critical)",
+        "items": [
+          {
+            "check": "Oil Leaks",
+            "detail": "Check chain housings, cam covers, and case halves. Air-cooled engines weep oil but should not drip heavily.",
+            "costIfBad": "$1,000-5,000 depending on location"
+          },
+          {
+            "check": "Compression and Leak-down",
+            "detail": "Critical test for air-cooled engines. Should show healthy, even compression across cylinders.",
+            "costIfBad": "Engine rebuild $20,000-40,000"
+          },
+          {
+            "check": "Timing Chain Tensioners",
+            "detail": "Listen for chain rattle on cold start. Tensioners should be updated to latest design.",
+            "costIfBad": "$2,000-4,000"
+          },
+          {
+            "check": "Varioram System",
+            "detail": "1996+ cars have Varioram. Check for proper operation - engine should have strong mid-range pull.",
+            "costIfBad": "$500-1,500"
+          },
+          {
+            "check": "Turbo Condition (Turbo/GT2)",
+            "detail": "Check for shaft play, boost leaks, and proper boost control. Twin K24 turbos are expensive.",
+            "costIfBad": "$5,000-10,000"
+          }
+        ]
+      },
+      {
+        "category": "Transmission & Drivetrain",
+        "items": [
+          {
+            "check": "G50 Manual Transmission",
+            "detail": "Test all gears including reverse. Check for popping out of gear. Synchros can wear.",
+            "costIfBad": "$2,000-5,000 for rebuild"
+          },
+          {
+            "check": "Tiptronic (if equipped)",
+            "detail": "Check for smooth shifting and proper kickdown. Valve body issues can develop.",
+            "costIfBad": "$2,000-5,000"
+          },
+          {
+            "check": "Clutch",
+            "detail": "Should engage smoothly mid-pedal. Dual-mass flywheel is expensive to replace.",
+            "costIfBad": "$3,000-5,000"
+          },
+          {
+            "check": "Limited-Slip Differential",
+            "detail": "Test for proper engagement in turns. LSD is desirable option.",
+            "costIfBad": "$1,500-3,000"
+          }
+        ]
+      },
+      {
+        "category": "Suspension & Body",
+        "items": [
+          {
+            "check": "Multilink Rear Suspension",
+            "detail": "The 993's sophisticated rear suspension has many bushings and joints that wear.",
+            "costIfBad": "$1,500-3,500"
+          },
+          {
+            "check": "Front Struts and Bushings",
+            "detail": "Check for leaking struts and worn bushings causing clunks.",
+            "costIfBad": "$1,000-2,000"
+          },
+          {
+            "check": "Rust Inspection",
+            "detail": "Check rockers, floor pans, and battery area. Less common but still possible.",
+            "costIfBad": "$2,000-10,000+"
+          },
+          {
+            "check": "Targa Mechanism",
+            "detail": "If Targa, check glass roof operation and seals for leaks.",
+            "costIfBad": "$1,000-3,000"
+          }
+        ]
+      },
+      {
+        "category": "Electrical",
+        "items": [
+          {
+            "check": "Wiring Condition",
+            "detail": "Biodegradable wire sheathing attracts rodents. Check for damage throughout car.",
+            "costIfBad": "$1,000-5,000"
+          },
+          {
+            "check": "DME Relay",
+            "detail": "Common failure point causing no-start. Easy and cheap fix.",
+            "costIfBad": "$50-100"
+          },
+          {
+            "check": "Climate Control",
+            "detail": "HVAC system is complex. Test all functions.",
+            "costIfBad": "$500-2,000"
+          }
+        ]
+      }
+    ],
+    "pricingGuide": {
+      "project": {
+        "price": "$50,000 - $80,000",
+        "description": "Cars needing engine work or with significant issues. Still valuable due to air-cooled status."
+      },
+      "driver": {
+        "price": "$80,000 - $120,000",
+        "description": "Running and driving Carrera or Carrera 4 with some needs."
+      },
+      "excellent": {
+        "price": "$120,000 - $180,000",
+        "description": "Well-maintained widebody (S or 4S) with documentation."
+      },
+      "concours": {
+        "price": "$180,000 - $500,000+",
+        "description": "Turbo, Turbo S, GT2, or exceptional low-mileage examples. Prices are strong."
+      }
+    },
+    "redFlags": [
+      "Oil smoke indicating worn engine",
+      "Unknown compression/leak-down test results",
+      "Timing chain rattle",
+      "Structural rust",
+      "Evidence of accident damage",
+      "Turbo models with boost control issues",
+      "Missing service documentation",
+      "Rodent damage to wiring"
+    ],
+    "whatToLookFor": [
+      "Manual transmission",
+      "Complete service documentation",
+      "Recent compression/leak-down test with good results",
+      "Widebody (S or 4S) for best looks and value",
+      "Dry-climate car without rust",
+      "Original paint and interior",
+      "Sport seats and limited-slip differential",
+      "Complete tool kit and documentation"
+    ],
+    "ownershipCosts": {
+      "insurance": "$2,000-4,000/year",
+      "annualMaintenance": "$3,000-6,000 for regular service",
+      "commonRepairs": "$2,000-5,000/year typical",
+      "fuel": "16-22 MPG"
+    },
+    "expertTips": [
+      "The 993 is the most collectible modern 911 - prices reflect this",
+      "Carrera S and 4S widebody cars command significant premiums",
+      "Varioram engines (1997-98) have better mid-range power",
+      "Manual transmissions are strongly preferred over Tiptronic",
+      "Turbo and GT2 prices have reached supercar levels",
+      "Budget for proper pre-purchase inspection by a specialist",
+      "Join Rennlist.com for excellent technical resources",
+      "Parts availability is good but prices are high",
+      "A well-maintained 993 is an appreciating asset",
+      "These are the last air-cooled 911s - that matters to collectors"
+    ]
   }
 }

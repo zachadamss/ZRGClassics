@@ -1056,5 +1056,209 @@
       { "id": "964-dme-relay", "name": "Replace DME/fuel pump relay", "description": "Common cause of no-start" },
       { "id": "964-alternator", "name": "Test/rebuild alternator", "description": "Check charging system output" }
     ]
+  },
+  "buyersGuide": {
+    "overview": "The Porsche 964 (1989-1994) represents the first significant modernization of the 911 platform. While maintaining the classic air-cooled flat-six and rear-engine layout, the 964 added coil-spring suspension, power steering, ABS brakes, and available all-wheel drive (Carrera 4). The 3.6L engine produced 247-315 hp depending on variant. The 964 is often considered the last of the 'classic' 911s while offering more refinement than earlier models. Values have risen significantly as the air-cooled market has matured, making careful selection essential.",
+    "quickFacts": {
+      "productionYears": "1989-1994",
+      "totalProduced": "~63,000 worldwide",
+      "priceRange": "$50,000 - $200,000+",
+      "bestYears": "1992-1994 (refined production, fewer early issues)"
+    },
+    "variants": [
+      {
+        "name": "Carrera 2",
+        "years": "1990-1994",
+        "description": "Rear-wheel drive variant with 247 hp. Lighter and more pure driving experience than C4. The driver's choice.",
+        "desirability": "High"
+      },
+      {
+        "name": "Carrera 4",
+        "years": "1989-1994",
+        "description": "All-wheel drive with sophisticated viscous coupling. Heavier but more stable. First year of 964 production.",
+        "desirability": "Medium"
+      },
+      {
+        "name": "RS / RS America",
+        "years": "1992-1994",
+        "description": "Lightweight homologation specials. European RS had 260 hp, RS America was a stripped Carrera 2. Both are collectible.",
+        "desirability": "High"
+      },
+      {
+        "name": "Turbo (965)",
+        "years": "1991-1994",
+        "description": "The iconic widebody with 3.3L (320 hp) or 3.6L (355 hp) turbocharged flat-six. Serious performance and serious maintenance.",
+        "desirability": "High"
+      },
+      {
+        "name": "Targa / Cabriolet",
+        "years": "1990-1994",
+        "description": "Open-top variants. Targa has removable roof panel, Cabriolet is full convertible. Less rigid but popular.",
+        "desirability": "Medium"
+      }
+    ],
+    "inspectionPoints": [
+      {
+        "category": "Engine (Critical)",
+        "items": [
+          {
+            "check": "Oil Leaks",
+            "detail": "Air-cooled 911s leak oil - some is normal. Check chain housings, valve covers, and case halves for excessive leaks.",
+            "costIfBad": "$1,000-4,000 depending on location"
+          },
+          {
+            "check": "Timing Chain Tensioners",
+            "detail": "The dual-row timing chains have spring-loaded tensioners. Listen for chain rattle on cold start.",
+            "costIfBad": "$2,000-4,000"
+          },
+          {
+            "check": "Compression and Leak-down",
+            "detail": "Have a compression and leak-down test performed. Should be within 5% across cylinders.",
+            "costIfBad": "Engine rebuild $15,000-30,000"
+          },
+          {
+            "check": "DME and Fuel Injection",
+            "detail": "Check for smooth idle and proper fuel mixture. The Bosch Motronic system is reliable but sensors fail.",
+            "costIfBad": "$500-2,000"
+          },
+          {
+            "check": "Turbo System (965)",
+            "detail": "Check for shaft play, boost leaks, and wastegate operation. K26/K27 turbos are expensive to rebuild.",
+            "costIfBad": "$3,000-6,000"
+          }
+        ]
+      },
+      {
+        "category": "Transmission & Drivetrain",
+        "items": [
+          {
+            "check": "G50 Transmission",
+            "detail": "Test all gears. The G50 5-speed is robust but synchros can wear. Check for popping out of gear.",
+            "costIfBad": "$2,000-5,000 for rebuild"
+          },
+          {
+            "check": "Clutch",
+            "detail": "Test engagement - should be smooth and grab mid-travel. Clutch replacement is labor-intensive.",
+            "costIfBad": "$2,000-3,500"
+          },
+          {
+            "check": "CV Joints",
+            "detail": "Listen for clicking in turns. Check boot condition for tears.",
+            "costIfBad": "$500-1,000"
+          },
+          {
+            "check": "AWD System (C4)",
+            "detail": "Test for proper engagement. Check for differential noise. System adds complexity.",
+            "costIfBad": "$2,000-5,000"
+          }
+        ]
+      },
+      {
+        "category": "Suspension & Steering",
+        "items": [
+          {
+            "check": "Coilover Condition",
+            "detail": "964 introduced coil springs. Check for leaking shocks and worn bushings.",
+            "costIfBad": "$1,500-3,000"
+          },
+          {
+            "check": "Power Steering",
+            "detail": "Check for leaks from pump, rack, and lines. Listen for whining indicating low fluid.",
+            "costIfBad": "$800-2,000"
+          },
+          {
+            "check": "Control Arm Bushings",
+            "detail": "Front and rear bushings wear. Check for play and cracking.",
+            "costIfBad": "$600-1,500"
+          },
+          {
+            "check": "Wheel Bearings",
+            "detail": "Jack up each corner and check for play. Listen for grinding while driving.",
+            "costIfBad": "$400-800 per corner"
+          }
+        ]
+      },
+      {
+        "category": "Body & Electrical",
+        "items": [
+          {
+            "check": "Rust Inspection",
+            "detail": "Check rocker panels, floor pans (especially under battery), and around windshield. Earlier cars rust more.",
+            "costIfBad": "$2,000-10,000+"
+          },
+          {
+            "check": "Wiring Condition",
+            "detail": "964 uses biodegradable wire sheathing that rodents love. Check for damage.",
+            "costIfBad": "$1,000-5,000"
+          },
+          {
+            "check": "Targa/Cabrio Seals",
+            "detail": "Check for leaks and proper seal condition on open-top models.",
+            "costIfBad": "$500-1,500"
+          },
+          {
+            "check": "HVAC System",
+            "detail": "Climate control can be complex. Test all functions including A/C.",
+            "costIfBad": "$500-2,000"
+          }
+        ]
+      }
+    ],
+    "pricingGuide": {
+      "project": {
+        "price": "$35,000 - $60,000",
+        "description": "Cars needing engine work or with significant issues. Still valuable due to air-cooled premiums."
+      },
+      "driver": {
+        "price": "$60,000 - $90,000",
+        "description": "Running and driving with some needs. Good entry point for air-cooled ownership."
+      },
+      "excellent": {
+        "price": "$90,000 - $140,000",
+        "description": "Well-maintained Carrera 2 or C4 with documentation. Clean examples."
+      },
+      "concours": {
+        "price": "$140,000 - $250,000+",
+        "description": "RS, RS America, or exceptional Turbo models. Low miles, fully documented."
+      }
+    },
+    "redFlags": [
+      "Oil smoke indicating worn engine internals",
+      "Timing chain rattle on cold start",
+      "Unknown service history",
+      "Evidence of water damage or flooding",
+      "Structural rust in rockers or shock towers",
+      "Turbo models with boost control issues",
+      "Heavy modifications without documentation",
+      "Salvage or rebuilt title"
+    ],
+    "whatToLookFor": [
+      "Carrera 2 manual for purest driving experience",
+      "Complete service records from Porsche specialists",
+      "Recent major service (clutch, timing chains if needed)",
+      "Rust-free body, especially dry-climate cars",
+      "Original paint and interior",
+      "Sport seats option",
+      "Limited-slip differential",
+      "Books, tools, and documentation"
+    ],
+    "ownershipCosts": {
+      "insurance": "$1,500-3,000/year",
+      "annualMaintenance": "$2,000-5,000 for regular service",
+      "commonRepairs": "$1,500-4,000/year typical",
+      "fuel": "16-22 MPG"
+    },
+    "expertTips": [
+      "The 964 is the most affordable air-cooled 911 entry point currently",
+      "Carrera 2 is preferred by drivers, C4 is more forgiving in bad weather",
+      "Oil leaks are normal - excessive leaks are not. Learn the difference.",
+      "Find a Porsche specialist or independent shop that knows air-cooled cars",
+      "Factor in the cost of a pre-purchase inspection by an expert",
+      "RS America values have skyrocketed - verify authenticity carefully",
+      "The G50 transmission is robust and parts are available",
+      "Join Rennlist.com and Pelican Parts forums for excellent technical support",
+      "Budget for consumables like motor mounts and suspension bushings",
+      "A well-maintained 964 will last indefinitely with proper care"
+    ]
   }
 }

@@ -859,5 +859,225 @@
       { "id": "991-coil-packs", "name": "Replace ignition coil packs", "description": "Common cause of misfires" },
       { "id": "991-pse-pump", "name": "Service PSE pump", "description": "Powers spoiler and deck lid actuators" }
     ]
+  },
+  "buyersGuide": {
+    "overview": "The Porsche 991 (2012-2019) represents the modern evolution of the 911, with increased dimensions, improved technology, and the introduction of turbocharged engines across the range in 991.2. The 991 offers exceptional performance (350-700 hp depending on variant), modern amenities, and excellent reliability. While the naturally aspirated 991.1 engines are praised by purists, the turbocharged 991.2 offers more everyday power. GT3, GT3 RS, and GT2 RS variants continue to set benchmarks for track performance.",
+    "quickFacts": {
+      "productionYears": "2012-2019",
+      "totalProduced": "~217,000 worldwide",
+      "priceRange": "$60,000 - $400,000+",
+      "bestYears": "2017-2019 (991.2 refined, proven reliability)"
+    },
+    "variants": [
+      {
+        "name": "Carrera / Carrera S (991.1)",
+        "years": "2012-2016",
+        "description": "Naturally aspirated with 3.4L (350 hp) or 3.8L (400 hp). Purist choice with high-revving character.",
+        "desirability": "High"
+      },
+      {
+        "name": "Carrera / Carrera S (991.2)",
+        "years": "2017-2019",
+        "description": "Turbocharged 3.0L producing 370-420 hp. More power everywhere but different character.",
+        "desirability": "High"
+      },
+      {
+        "name": "Carrera 4 / 4S",
+        "years": "2012-2019",
+        "description": "All-wheel drive variants. Widebody styling standard on 4S. More stable in all conditions.",
+        "desirability": "High"
+      },
+      {
+        "name": "GT3 / GT3 RS",
+        "years": "2014-2019",
+        "description": "Track-focused with naturally aspirated 4.0L producing 475-520 hp. PDK or manual available. Exceptional drivers' cars.",
+        "desirability": "High"
+      },
+      {
+        "name": "Turbo / Turbo S",
+        "years": "2014-2019",
+        "description": "Twin-turbo with 520-580 hp. AWD standard. Incredible straight-line performance with daily usability.",
+        "desirability": "High"
+      },
+      {
+        "name": "GT2 RS",
+        "years": "2018-2019",
+        "description": "The ultimate 991 with 700 hp from twin-turbo 3.8L. Rear-wheel drive, track weapon. Highly collectible.",
+        "desirability": "High"
+      },
+      {
+        "name": "Targa 4 / 4S",
+        "years": "2014-2019",
+        "description": "Distinctive power-operated Targa top with AWD. Elegant and practical.",
+        "desirability": "High"
+      }
+    ],
+    "inspectionPoints": [
+      {
+        "category": "Engine",
+        "items": [
+          {
+            "check": "Oil Consumption",
+            "detail": "991 engines can consume some oil, especially when driven hard. Monitor levels.",
+            "costIfBad": "Monitor and maintain"
+          },
+          {
+            "check": "Turbo Condition (991.2/Turbo)",
+            "detail": "Check for boost leaks, wastegate operation, and proper boost pressure.",
+            "costIfBad": "$3,000-8,000"
+          },
+          {
+            "check": "Coolant System",
+            "detail": "Check expansion tank and radiators for leaks. Overheating is engine-critical.",
+            "costIfBad": "$500-1,500"
+          },
+          {
+            "check": "Engine Mounts",
+            "detail": "Can wear on higher-mileage cars causing vibration.",
+            "costIfBad": "$600-1,200"
+          }
+        ]
+      },
+      {
+        "category": "Transmission",
+        "items": [
+          {
+            "check": "PDK Operation",
+            "detail": "Most 991s have PDK. Check for smooth operation, proper clutch wear indication.",
+            "costIfBad": "$2,000-6,000"
+          },
+          {
+            "check": "Manual Transmission",
+            "detail": "If equipped, test all gears. Check for synchro wear on high-mileage cars.",
+            "costIfBad": "$2,000-4,000"
+          },
+          {
+            "check": "PDK Fluid Service",
+            "detail": "Verify PDK fluid has been serviced at proper intervals.",
+            "costIfBad": "$500-800 for service"
+          }
+        ]
+      },
+      {
+        "category": "Suspension & Brakes",
+        "items": [
+          {
+            "check": "PASM Shocks",
+            "detail": "Most 991s have PASM. Test in all modes for proper damping.",
+            "costIfBad": "$3,000-6,000"
+          },
+          {
+            "check": "PCCB Brakes",
+            "detail": "If equipped with ceramic brakes, check rotor condition carefully. Extremely expensive to replace.",
+            "costIfBad": "$15,000-25,000"
+          },
+          {
+            "check": "Control Arm Bushings",
+            "detail": "Can wear on track-driven or high-mileage cars.",
+            "costIfBad": "$800-1,500"
+          },
+          {
+            "check": "Rear Axle Steering (if equipped)",
+            "detail": "Test for proper operation. Complex system.",
+            "costIfBad": "$2,000-4,000"
+          }
+        ]
+      },
+      {
+        "category": "Electrical & Technology",
+        "items": [
+          {
+            "check": "PCM System",
+            "detail": "Test navigation, connectivity, and all infotainment functions.",
+            "costIfBad": "$1,000-3,000"
+          },
+          {
+            "check": "Sport Chrono",
+            "detail": "If equipped, verify all modes function including launch control.",
+            "costIfBad": "$500-1,500"
+          },
+          {
+            "check": "Convertible/Targa Top",
+            "detail": "Test full operation. Targa mechanism is complex.",
+            "costIfBad": "$2,000-5,000"
+          }
+        ]
+      },
+      {
+        "category": "Body",
+        "items": [
+          {
+            "check": "Paint Condition",
+            "detail": "Check for rock chips, especially on front fascia. Clear bra recommended.",
+            "costIfBad": "$500-3,000"
+          },
+          {
+            "check": "Wheel Condition",
+            "detail": "Check for curb rash. Factory wheels are expensive to replace.",
+            "costIfBad": "$500-2,000 per wheel"
+          },
+          {
+            "check": "Accident History",
+            "detail": "Check panels for consistent gaps and paint matching.",
+            "costIfBad": "Varies significantly"
+          }
+        ]
+      }
+    ],
+    "pricingGuide": {
+      "project": {
+        "price": "$50,000 - $70,000",
+        "description": "Higher-mileage base Carreras or cars with service needs."
+      },
+      "driver": {
+        "price": "$70,000 - $100,000",
+        "description": "Good Carrera S or 4S examples with reasonable miles."
+      },
+      "excellent": {
+        "price": "$100,000 - $180,000",
+        "description": "Well-maintained GT3, Turbo, or low-mileage GTS examples."
+      },
+      "concours": {
+        "price": "$180,000 - $450,000+",
+        "description": "GT3 RS, GT2 RS, or exceptional low-mileage special editions."
+      }
+    },
+    "redFlags": [
+      "PCCB brakes with visible damage or excessive wear",
+      "Evidence of track abuse without proper maintenance",
+      "Salvage or rebuilt title",
+      "PDK with shudder or transmission codes",
+      "Missing service documentation",
+      "Aftermarket tune without supporting modifications",
+      "GT cars with questionable racing history"
+    ],
+    "whatToLookFor": [
+      "Carrera S or GTS for best all-around package",
+      "991.1 for naturally aspirated character",
+      "991.2 for more everyday power",
+      "GT3 manual for ultimate driver engagement",
+      "Complete Porsche service documentation",
+      "Sport Chrono and PASM as standard equipment",
+      "Avoid PCCB unless budget allows for replacement",
+      "Factory CPO warranty if still applicable"
+    ],
+    "ownershipCosts": {
+      "insurance": "$2,000-4,000/year",
+      "annualMaintenance": "$1,500-3,500 for regular service",
+      "commonRepairs": "$1,000-2,500/year typical",
+      "fuel": "19-25 MPG"
+    },
+    "expertTips": [
+      "The 991 is one of the most refined and capable 911s ever made",
+      "991.1 naturally aspirated engines are preferred by purists",
+      "991.2 turbo engines offer better everyday performance",
+      "GT3 with manual transmission is the enthusiast's choice",
+      "Avoid PCCB ceramic brakes if you can't afford replacement",
+      "PDK is faster but manual is more engaging",
+      "Factory CPO warranty provides excellent peace of mind",
+      "Budget for proper maintenance - these are complex cars",
+      "The 991 is reliable with proper care",
+      "GT2 RS and GT3 RS are appreciating collectibles"
+    ]
   }
 }

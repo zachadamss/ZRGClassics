@@ -1343,5 +1343,216 @@
       { "id": "e28-wiring", "name": "Inspect wiring harness", "description": "Check for brittle insulation" },
       { "id": "e28-gauges", "name": "Repair instrument cluster", "description": "Common gauge failures" }
     ]
+  },
+  "buyersGuide": {
+    "overview": "The BMW E28 5 Series (1981-1988) represents BMW's executive sedan during the brand's golden age. Larger and more luxurious than the E30, the E28 offered sophisticated engineering with the M30 inline-six engine, independent suspension, and an elegant Claus Luthe design. The range-topping M5 introduced the world to the super-sedan concept. Today, the E28 offers classic BMW character at more accessible prices than the E30, though finding a rust-free example is increasingly challenging. These cars reward owners who appreciate analog driving dynamics, straightforward maintenance, and understated elegance.",
+    "quickFacts": {
+      "productionYears": "1981-1988",
+      "totalProduced": "~722,000 worldwide",
+      "priceRange": "$5,000 - $80,000+",
+      "bestYears": "1985-1988 (improved electronics and refinement)"
+    },
+    "variants": [
+      {
+        "name": "528e",
+        "years": "1982-1988",
+        "description": "Economy-focused model with the 2.7L M20 'eta' engine producing 121 hp. Prioritizes fuel economy over performance. Can be upgraded to 'i' spec with intake/exhaust work.",
+        "desirability": "Low"
+      },
+      {
+        "name": "533i",
+        "years": "1983-1984",
+        "description": "Early big-six model with the 3.2L M30B32 producing 181 hp. Replaced by the 535i but shares most components.",
+        "desirability": "Medium"
+      },
+      {
+        "name": "535i / 535is",
+        "years": "1985-1988",
+        "description": "The sweet spot of the range with the 3.4L M30B34 producing 182-208 hp. Excellent balance of performance and reliability. The 'is' adds sport suspension and limited-slip differential.",
+        "desirability": "High"
+      },
+      {
+        "name": "M5",
+        "years": "1988 (US)",
+        "description": "The original super-sedan with the hand-built S38 3.5L inline-six producing 256 hp. Only 1,239 sold in North America. Appreciating classic with motorsport DNA.",
+        "desirability": "High"
+      },
+      {
+        "name": "524td",
+        "years": "1985-1986",
+        "description": "Turbodiesel variant with the M21 2.4L engine. Rare in North America. Unique character but parts availability is limited.",
+        "desirability": "Low"
+      }
+    ],
+    "inspectionPoints": [
+      {
+        "category": "Rust (Critical)",
+        "items": [
+          {
+            "check": "Rocker Panels / Sills",
+            "detail": "The E28's primary rust area. Inspect carefully along the entire length, especially around jacking points. Poke with a screwdriver.",
+            "costIfBad": "$1,500-4,000 for proper repair"
+          },
+          {
+            "check": "Front Fenders",
+            "detail": "Check behind the headlights and around the wheel arches. Bubbling paint indicates rust starting underneath.",
+            "costIfBad": "$600-1,500 per side"
+          },
+          {
+            "check": "Floor Pans",
+            "detail": "Pull back carpets and inspect driver and passenger floors. Check under the rear seat as well.",
+            "costIfBad": "$1,000-3,000"
+          },
+          {
+            "check": "Trunk Floor",
+            "detail": "Remove trunk mat and check the entire floor including spare tire well. Battery acid damage is common.",
+            "costIfBad": "$800-2,000"
+          },
+          {
+            "check": "Strut Towers",
+            "detail": "Check from under the hood for cracks or rust around the strut mounting points. Structural concern.",
+            "costIfBad": "$1,500-3,000 (major repair)"
+          }
+        ]
+      },
+      {
+        "category": "Engine & Drivetrain",
+        "items": [
+          {
+            "check": "Timing Belt (M20)",
+            "detail": "528e uses the M20 timing belt engine - requires replacement every 50,000 miles.",
+            "costIfBad": "$500-900"
+          },
+          {
+            "check": "Timing Chain (M30)",
+            "detail": "535i uses the M30 with a timing chain. Listen for chain rattle on startup - indicates tensioner or guide wear.",
+            "costIfBad": "$1,000-2,000"
+          },
+          {
+            "check": "Oil Leaks",
+            "detail": "M30 engines commonly leak from valve cover, oil pan, and rear main seal. Check underneath for drips.",
+            "costIfBad": "$300-1,200 depending on location"
+          },
+          {
+            "check": "Cooling System",
+            "detail": "Check for coolant leaks from water pump, hoses, and heater core. M30 engines run hot if cooling system is neglected.",
+            "costIfBad": "$400-1,500"
+          },
+          {
+            "check": "Transmission (Manual)",
+            "detail": "Test all gears. Getrag 260 5-speed is robust. Check for grinding in 2nd gear.",
+            "costIfBad": "$1,500-3,000 for rebuild"
+          }
+        ]
+      },
+      {
+        "category": "Suspension & Steering",
+        "items": [
+          {
+            "check": "Front Control Arms",
+            "detail": "Check for worn bushings by grasping the wheel and rocking. Clunking indicates replacement needed.",
+            "costIfBad": "$400-800"
+          },
+          {
+            "check": "Rear Subframe Bushings",
+            "detail": "Worn bushings cause vague rear end handling. Inspect for cracking or deterioration.",
+            "costIfBad": "$300-600"
+          },
+          {
+            "check": "Steering Box / Rack",
+            "detail": "Early cars have a steering box, later cars have a rack. Check for play and leaks.",
+            "costIfBad": "$500-1,200"
+          },
+          {
+            "check": "Shocks and Struts",
+            "detail": "Bounce each corner - should settle in one bounce. Leaking shocks need replacement.",
+            "costIfBad": "$600-1,200"
+          }
+        ]
+      },
+      {
+        "category": "Electrical",
+        "items": [
+          {
+            "check": "Service Indicator Lights",
+            "detail": "Check if the service indicator (SI) board functions properly. These are often bypassed.",
+            "costIfBad": "$200-400"
+          },
+          {
+            "check": "Instrument Cluster",
+            "detail": "Verify all gauges work properly. Check for dead pixels on digital displays if equipped.",
+            "costIfBad": "$200-500"
+          },
+          {
+            "check": "Power Windows/Sunroof",
+            "detail": "Test all windows and sunroof. Motors and switches commonly fail with age.",
+            "costIfBad": "$200-600"
+          },
+          {
+            "check": "Climate Control",
+            "detail": "Check heater and A/C operation. Climate control panels can fail.",
+            "costIfBad": "$300-800"
+          }
+        ]
+      }
+    ],
+    "pricingGuide": {
+      "project": {
+        "price": "$2,000 - $6,000",
+        "description": "Rusty or non-running cars needing significant work. Common on East Coast and Midwest cars. Budget 2x purchase for restoration."
+      },
+      "driver": {
+        "price": "$6,000 - $15,000",
+        "description": "Running and driving with cosmetic flaws or deferred maintenance. Good starting point for an enjoyable classic."
+      },
+      "excellent": {
+        "price": "$15,000 - $30,000",
+        "description": "Well-maintained 535i/535is examples with good history. Minor flaws acceptable at this level."
+      },
+      "concours": {
+        "price": "$30,000 - $80,000+",
+        "description": "M5 models or exceptional 535is examples. Fully documented, low miles, original or properly restored."
+      }
+    },
+    "redFlags": [
+      "Structural rust in shock towers, subframe mounts, or frame rails",
+      "M30 engine with severe oil consumption (burning more than 1 quart per 1,000 miles)",
+      "Unknown timing belt history on 528e models",
+      "Missing or bypassed emissions equipment (illegal in many states)",
+      "Signs of overheating - warped head, blown head gasket",
+      "M5 without documentation or at suspiciously low prices",
+      "Extensive amateur wiring modifications",
+      "Automatic transmission that slips or shifts harshly"
+    ],
+    "whatToLookFor": [
+      "5-speed manual transmission (strongly preferred)",
+      "Limited-slip differential ('is' models or M5)",
+      "Sport seats with better bolstering",
+      "Factory air conditioning in working condition",
+      "Service records showing regular maintenance",
+      "Rust-free southern or western U.S. cars",
+      "Original paint and body panels (check VIN stickers)",
+      "Complete tool kit in trunk",
+      "M5 or 535is for best driving experience",
+      "Late production (1987-1988) for best refinement"
+    ],
+    "ownershipCosts": {
+      "insurance": "$600-1,200/year (classic car insurance available)",
+      "annualMaintenance": "$1,000-2,000 for regular service",
+      "commonRepairs": "$500-1,500/year typical",
+      "fuel": "18-24 MPG depending on model"
+    },
+    "expertTips": [
+      "The E28 is overshadowed by the E30, making it more affordable while offering more space and comfort",
+      "The M30 engine is one of BMW's most reliable - 300,000+ miles is achievable with proper care",
+      "535is models are rare and undervalued - the combination of sport suspension and LSD is excellent",
+      "Early cars (1982-1984) have more electrical issues than later models",
+      "The M5's S38 engine requires more specialized knowledge - factor in maintenance costs",
+      "European-spec bumpers and headlights dramatically improve appearance if legal in your area",
+      "Parts availability is good through specialists like Pelican Parts and BavAuto",
+      "The Getrag 260 5-speed can handle significant power increases for mild engine builds",
+      "Check the rear shock mounts - they can crack and separate from the body",
+      "Join the E28 community on mye28.com for excellent technical resources"
+    ]
   }
 }

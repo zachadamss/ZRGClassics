@@ -25,6 +25,7 @@ layout: layouts/base.njk
 
 <!-- Quick Links -->
 <nav class="quick-links">
+    <a href="#buyers-guide">Buyer's Guide</a>
     <a href="#common-issues">Common Issues</a>
     <a href="#restoration-guides">Guides</a>
     <a href="#parts-suppliers">Parts</a>
@@ -34,6 +35,12 @@ layout: layouts/base.njk
 </nav>
 
 <main class="resource-content">
+    <!-- Buyer's Guide Section -->
+    {% set vehicle = vehicleData %}
+    {% include "partials/buyers-guide.njk" %}
+
+    <div class="section-divider"></div>
+
     <!-- Common Issues Section -->
     <section id="common-issues" class="resource-section">
         <h2 class="section-title">Common Issues</h2>

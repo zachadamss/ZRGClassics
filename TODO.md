@@ -90,28 +90,69 @@
 
 ---
 
-## Priority 1: Content
+## Priority 1: Quick Wins
+
+- [ ] **Activate Newsletter Signup** (see Quick Actions above)
+  - Form is built and ready, just needs Formspree form ID
+  - Start building email list immediately
+
+---
+
+## Priority 2: Content
 
 - [x] **Add hero images** to vehicle pages
   - All 17 vehicles have hero images from Wikimedia Commons
   - Images optimized to WebP + multiple sizes (400, 800, 1200, 1920)
 - [ ] **Add inline images** to resource pages (engine bays, problem areas, step photos)
+- [x] **Buyer's Guides** - Pre-purchase inspection guides for all 17 platforms
+  - Detailed overview and history for each model
+  - Model variants with desirability ratings
+  - Pre-purchase inspection checklist by category
+  - Pricing guide (Project, Driver, Excellent, Concours)
+  - Red flags and deal breakers
+  - What to look for (desirable options/features)
+  - Ownership costs (insurance, maintenance, repairs, fuel)
+  - Expert tips from enthusiast perspective
 
 ---
 
-## Priority 2: Polish & Production
+## Priority 3: User Experience Enhancements
+
+- [ ] **Vehicle Photo Upload** - Supabase Storage integration
+  - Allow users to upload actual photos to their garage vehicles
+  - Replace text-based photo_url with file upload
+  - Image compression and thumbnail generation
+
+---
+
+## Priority 4: Community Features
+
+- [ ] **Build Journals** - Document restoration journeys
+  - Dated entries with photos and costs
+  - Tie into existing garage vehicles
+  - Shareable/public option
+  - Progress timeline visualization
+
+- [ ] **Parts Marketplace** - User-to-user classifieds
+  - Listings with photos and pricing
+  - Categories by vehicle platform
+  - Contact/messaging system
+  - Sold/active/expired status
+
+---
+
+## Priority 5: Polish & Production
 
 - [x] Minify CSS/JS for production
 - [x] Image optimization pipeline
 
 ---
 
-## Priority 3: Future / Requires Backend
+## Completed Backend Features
 
 - [x] User accounts and authentication (Supabase)
 - [x] **Community Forums** - Categories, threads, replies, search
 - [x] **My Garage** - Personal vehicle management with DB sync
-- [ ] **Parts Marketplace** - Requires user auth
 
 ---
 

@@ -1067,5 +1067,246 @@
         "Both timing belt AND balance shaft belt must be replaced together."
       ]
     }
-  ]
+  ],
+  "buyersGuide": {
+    "overview": "The Porsche 944 (1982-1991) is widely considered one of the best sports cars of its era and remains one of the most accessible Porsches to own today. With its front-engine, rear-transaxle layout delivering near-perfect 50/50 weight distribution, the 944 offers exceptional handling that rivals much more expensive cars. The 944 Turbo (951) brought serious performance, while the S2 and Turbo S represented the pinnacle of the line. These cars are mechanically robust but require regular maintenance, especially timing belt service. A well-maintained 944 is a genuine driver's car that punches far above its price point.",
+    "quickFacts": {
+      "productionYears": "1982-1991",
+      "totalProduced": "~163,000 worldwide",
+      "priceRange": "$8,000 - $60,000+",
+      "bestYears": "1987-1991 (improved interior, larger engine/turbo)"
+    },
+    "variants": [
+      {
+        "name": "944 (2.5L)",
+        "years": "1982-1988",
+        "description": "The base model with 2.5L inline-four producing 143-150 hp. Lightweight and balanced. 1987+ cars received interior upgrades.",
+        "desirability": "Medium"
+      },
+      {
+        "name": "944S",
+        "years": "1987-1988",
+        "description": "Upgraded with the 2.5L 16-valve engine producing 188 hp from the 968. Revvier and more powerful than the base 944.",
+        "desirability": "High"
+      },
+      {
+        "name": "944S2",
+        "years": "1989-1991",
+        "description": "Top naturally aspirated model with 3.0L 16-valve engine producing 208 hp. Nearly Turbo performance without the complexity.",
+        "desirability": "High"
+      },
+      {
+        "name": "944 Turbo (951)",
+        "years": "1986-1991",
+        "description": "Turbocharged 2.5L producing 217-247 hp. Serious performance with widebody styling. The Turbo S (1988) made 247 hp.",
+        "desirability": "High"
+      },
+      {
+        "name": "944 Cabriolet",
+        "years": "1989-1991",
+        "description": "Convertible version available with S2 or Turbo engines. Adds weight and reduces rigidity but offers open-air driving.",
+        "desirability": "Medium"
+      }
+    ],
+    "inspectionPoints": [
+      {
+        "category": "Engine (Critical)",
+        "items": [
+          {
+            "check": "Timing Belt Service History",
+            "detail": "THE most critical item. The 944 is an interference engine - belt failure causes catastrophic damage. Belts must be replaced every 30,000 miles or 4 years.",
+            "costIfBad": "$1,500-3,000 for service / $5,000-15,000 if it breaks"
+          },
+          {
+            "check": "Balance Shaft Belt",
+            "detail": "Must be replaced with the timing belt. Balance shaft failure can damage the engine.",
+            "costIfBad": "Included with timing belt service"
+          },
+          {
+            "check": "Water Pump",
+            "detail": "Should be replaced with timing belt service. Water pump is driven by the timing belt.",
+            "costIfBad": "$200-400 for part"
+          },
+          {
+            "check": "Timing Belt Rollers",
+            "detail": "Tensioner and idler rollers must be replaced with the belt. Bearing failure causes belt failure.",
+            "costIfBad": "$150-300 for parts"
+          },
+          {
+            "check": "Oil Leaks",
+            "detail": "Check the front crank seal, cam seals, and rear main seal. Common leak points with age.",
+            "costIfBad": "$300-800 depending on location"
+          },
+          {
+            "check": "Turbo Condition (951)",
+            "detail": "Check for shaft play, oil smoke, and boost leaks. Listen for turbo whine or grinding.",
+            "costIfBad": "$1,500-3,000 for rebuild or replacement"
+          }
+        ]
+      },
+      {
+        "category": "Clutch & Transaxle",
+        "items": [
+          {
+            "check": "Clutch Condition",
+            "detail": "Test clutch engagement - should be smooth and grab mid-pedal. 944 clutches are robust but wear eventually.",
+            "costIfBad": "$1,500-2,500 (includes torque tube removal)"
+          },
+          {
+            "check": "Torque Tube Flex Disc",
+            "detail": "The rubber flex disc connecting engine to torque tube wears out. Check for cracks or chunks missing.",
+            "costIfBad": "$200-400"
+          },
+          {
+            "check": "Transaxle Operation",
+            "detail": "Test all gears including reverse. Listen for grinding or difficulty engaging.",
+            "costIfBad": "$2,000-4,000 for rebuild"
+          },
+          {
+            "check": "CV Boots",
+            "detail": "Inspect rear CV boots for cracks or tears. Grease loss leads to CV joint failure.",
+            "costIfBad": "$300-600"
+          }
+        ]
+      },
+      {
+        "category": "Suspension & Steering",
+        "items": [
+          {
+            "check": "Control Arm Bushings",
+            "detail": "Front A-arm bushings wear causing clunking and poor handling. Check for cracking.",
+            "costIfBad": "$300-600"
+          },
+          {
+            "check": "Rear Trailing Arm Bushings",
+            "detail": "Semi-trailing arm rear suspension has large bushings that wear over time.",
+            "costIfBad": "$300-500"
+          },
+          {
+            "check": "Tie Rods",
+            "detail": "Check for play in the steering. Worn tie rods cause wander and uneven tire wear.",
+            "costIfBad": "$150-300"
+          },
+          {
+            "check": "Struts/Shocks",
+            "detail": "Bounce each corner - should settle in one bounce. Original units are long past due.",
+            "costIfBad": "$600-1,200"
+          }
+        ]
+      },
+      {
+        "category": "Body & Interior",
+        "items": [
+          {
+            "check": "Hatch Strut Mounts",
+            "detail": "The hatch struts mount to fiberglass which can crack. Check for damage around mounting points.",
+            "costIfBad": "$300-600"
+          },
+          {
+            "check": "Dash Cracks",
+            "detail": "Dashboard cracking is nearly universal. Check severity - repair or covers available.",
+            "costIfBad": "$200-800 depending on solution"
+          },
+          {
+            "check": "Door Panel Sagging",
+            "detail": "Door panel vinyl separates from backing. Common on all 944s.",
+            "costIfBad": "$100-300 for reglue or replacement"
+          },
+          {
+            "check": "Rust",
+            "detail": "Check rocker panels, floor pans, battery box, and around the windshield. Earlier cars rust more.",
+            "costIfBad": "$500-3,000+ depending on severity"
+          },
+          {
+            "check": "Sunroof Operation",
+            "detail": "Power sunroof motors and cables can fail. Test operation and check for leaks.",
+            "costIfBad": "$300-600"
+          }
+        ]
+      },
+      {
+        "category": "Electrical",
+        "items": [
+          {
+            "check": "DME Relay",
+            "detail": "Common failure point causing no-start conditions. Simple and cheap to replace.",
+            "costIfBad": "$30-60"
+          },
+          {
+            "check": "Wiring Condition",
+            "detail": "Check for brittle insulation, especially in the engine bay and around the battery.",
+            "costIfBad": "$200-800"
+          },
+          {
+            "check": "Instrument Cluster",
+            "detail": "Check that all gauges and warning lights function properly.",
+            "costIfBad": "$200-500"
+          },
+          {
+            "check": "Power Windows",
+            "detail": "Window regulators and motors can fail. Test all windows.",
+            "costIfBad": "$200-400 each"
+          }
+        ]
+      }
+    ],
+    "pricingGuide": {
+      "project": {
+        "price": "$3,000 - $8,000",
+        "description": "Non-running or cars with known timing belt failure risk. Only for experienced enthusiasts who can do their own work."
+      },
+      "driver": {
+        "price": "$8,000 - $18,000",
+        "description": "Running and driving with recent timing belt service. May have cosmetic wear or minor issues."
+      },
+      "excellent": {
+        "price": "$18,000 - $35,000",
+        "description": "Well-maintained Turbo or S2 examples with full service history. Good cosmetics and mechanical condition."
+      },
+      "concours": {
+        "price": "$35,000 - $70,000+",
+        "description": "Low-mileage Turbo S or pristine S2 examples. Fully documented, original or properly restored."
+      }
+    },
+    "redFlags": [
+      "Unknown timing belt service history - assume the worst and budget accordingly",
+      "Evidence of timing belt failure (bent valves, compression loss)",
+      "Turbo cars with excessive oil smoke or shaft play",
+      "Severe clutch shudder or slippage",
+      "Structural rust in floor pans or shock towers",
+      "Evidence of overheating (warped head, milky oil)",
+      "Heavily modified cars without documentation",
+      "Missing service records on high-mileage examples"
+    ],
+    "whatToLookFor": [
+      "Documented timing belt service within last 30,000 miles or 4 years",
+      "Service records showing regular maintenance",
+      "Turbo or S2 for best performance value",
+      "Manual transmission (all 944s are manual - no automatics)",
+      "Factory LSD (limited-slip differential)",
+      "Clean interior without severe dash cracking",
+      "Rust-free body, especially southern or western cars",
+      "Original paint in good condition",
+      "1987+ cars for improved interior quality",
+      "Complete tool kit in the hatch"
+    ],
+    "ownershipCosts": {
+      "insurance": "$600-1,200/year (classic car insurance available)",
+      "annualMaintenance": "$1,000-2,500 for regular service",
+      "commonRepairs": "$500-1,500/year typical",
+      "fuel": "22-28 MPG depending on driving style"
+    },
+    "expertTips": [
+      "The timing belt is the single most important maintenance item - never skip or delay this service",
+      "The 944 S2 offers nearly Turbo performance without the turbo complexity - consider it for a driver",
+      "Turbo models have different suspension geometry - don't interchange parts with NA cars",
+      "The torque tube design means clutch replacement is a major job - factor this into purchase decisions",
+      "Original Fuchs wheels are desirable and expensive - their presence adds value",
+      "The 944 chassis is one of the best-handling platforms ever made - properly set up, it's magic",
+      "Parts availability is excellent through specialists like Pelican Parts and 944Online",
+      "Join Rennlist.com for excellent technical resources and a supportive community",
+      "Consider a pre-purchase inspection by a Porsche specialist - generic mechanics miss 944-specific issues",
+      "A well-maintained 944 will provide years of reliable service - these are tough cars"
+    ]
+  }
 }

@@ -1203,5 +1203,173 @@
       { "id": "986-maf", "name": "Clean/replace MAF sensor", "description": "Causes running issues when dirty" },
       { "id": "986-o2-sensors", "name": "Replace oxygen sensors", "description": "Four total - pre and post-cat" }
     ]
+  },
+  "buyersGuide": {
+    "overview": "The Porsche 986 Boxster (1997-2004) was Porsche's entry-level sports car that helped save the company in the late 1990s. With its mid-engine layout, the Boxster offers exceptional handling balance that even the 911 can't match. The M96 flat-six shares components with the 996, meaning it also shares the IMS bearing concern. However, a well-maintained 986 represents one of the best sports car values available today - genuine Porsche driving dynamics at accessible prices.",
+    "quickFacts": {
+      "productionYears": "1997-2004",
+      "totalProduced": "~164,000 worldwide",
+      "priceRange": "$10,000 - $40,000+",
+      "bestYears": "2003-2004 (most refined, improved IMS bearing)"
+    },
+    "variants": [
+      {
+        "name": "Boxster (Base)",
+        "years": "1997-2004",
+        "description": "Entry model with 2.5L (1997-99) or 2.7L (2000-04) producing 201-228 hp. Excellent handling, adequate power.",
+        "desirability": "Medium"
+      },
+      {
+        "name": "Boxster S",
+        "years": "2000-2004",
+        "description": "Performance model with 3.2L producing 250-258 hp. Better brakes, larger wheels, more power. The one to have.",
+        "desirability": "High"
+      }
+    ],
+    "inspectionPoints": [
+      {
+        "category": "Engine (Critical)",
+        "items": [
+          {
+            "check": "IMS Bearing Status",
+            "detail": "THE critical concern. Intermediate shaft bearing can fail catastrophically. Check if upgraded or get oil analysis.",
+            "costIfBad": "$2,000-3,500 for retrofit / Engine if it fails"
+          },
+          {
+            "check": "RMS Leak",
+            "detail": "Rear main seal leak can indicate starting IMS bearing failure. Check for oil at bell housing.",
+            "costIfBad": "$1,500-2,500"
+          },
+          {
+            "check": "Bore Scoring",
+            "detail": "M96 engines can develop cylinder bore scoring. Listen for knocking, check for smoke and oil consumption.",
+            "costIfBad": "$10,000-20,000 for engine rebuild"
+          },
+          {
+            "check": "Coolant System",
+            "detail": "Check expansion tank for cracks, radiators for leaks. Overheating destroys engines.",
+            "costIfBad": "$500-1,500"
+          }
+        ]
+      },
+      {
+        "category": "Convertible Top & Body",
+        "items": [
+          {
+            "check": "Convertible Top Operation",
+            "detail": "Test full operation multiple times. Check hydraulic cylinders and cables.",
+            "costIfBad": "$1,000-2,500"
+          },
+          {
+            "check": "Window Regulators",
+            "detail": "Common failure. Test both windows multiple times up and down.",
+            "costIfBad": "$300-600 each"
+          },
+          {
+            "check": "Rear Window Clarity",
+            "detail": "Plastic rear window yellows and scratches. Check visibility.",
+            "costIfBad": "$300-600"
+          },
+          {
+            "check": "Drain Tubes",
+            "detail": "Clogged drains cause water in cabin. Check carpets for moisture.",
+            "costIfBad": "$100-500"
+          }
+        ]
+      },
+      {
+        "category": "Transmission",
+        "items": [
+          {
+            "check": "Manual Transmission",
+            "detail": "Test all gears. G86 5-speed is robust. Check for synchro wear.",
+            "costIfBad": "$1,500-3,000"
+          },
+          {
+            "check": "Tiptronic",
+            "detail": "Check for smooth shifts. Less desirable but functional.",
+            "costIfBad": "$2,000-4,000"
+          },
+          {
+            "check": "Clutch",
+            "detail": "Should engage smoothly mid-travel. Mid-engine car makes clutch replacement easier than 911.",
+            "costIfBad": "$1,500-2,500"
+          }
+        ]
+      },
+      {
+        "category": "Suspension & Electrical",
+        "items": [
+          {
+            "check": "Control Arm Bushings",
+            "detail": "Wear causes clunking and vague handling. Common wear item.",
+            "costIfBad": "$400-800"
+          },
+          {
+            "check": "Coil Packs",
+            "detail": "Common failure causing misfires. Usually replaced in sets.",
+            "costIfBad": "$300-600"
+          },
+          {
+            "check": "MAF Sensor",
+            "detail": "Dirty MAF causes running issues. Can often be cleaned.",
+            "costIfBad": "$100-300"
+          }
+        ]
+      }
+    ],
+    "pricingGuide": {
+      "project": {
+        "price": "$6,000 - $12,000",
+        "description": "Cars with unknown IMS status, high mileage, or significant issues."
+      },
+      "driver": {
+        "price": "$12,000 - $22,000",
+        "description": "Good running examples with known IMS status. Budget for maintenance."
+      },
+      "excellent": {
+        "price": "$22,000 - $35,000",
+        "description": "Well-maintained Boxster S with IMS retrofit and documentation."
+      },
+      "concours": {
+        "price": "$35,000 - $50,000+",
+        "description": "Low-mileage Boxster S with complete history. Anniversary editions."
+      }
+    },
+    "redFlags": [
+      "Unknown IMS bearing status",
+      "Evidence of bore scoring (knocking, smoke, oil consumption)",
+      "RMS leak (potential IMS indicator)",
+      "Water damage from clogged drains",
+      "Non-functional convertible top",
+      "Missing service records",
+      "Salvage title without documentation"
+    ],
+    "whatToLookFor": [
+      "IMS bearing retrofit completed",
+      "Boxster S for better performance",
+      "Manual transmission",
+      "Complete service documentation",
+      "2003-2004 model years (best IMS design)",
+      "Sport package with improved suspension",
+      "Dry-climate car (less rust, better soft top)"
+    ],
+    "ownershipCosts": {
+      "insurance": "$800-1,500/year",
+      "annualMaintenance": "$1,500-3,000 for regular service",
+      "commonRepairs": "$1,000-2,500/year typical",
+      "fuel": "20-26 MPG"
+    },
+    "expertTips": [
+      "The 986 Boxster is one of the best sports car values available today",
+      "Mid-engine layout means better handling balance than the 911",
+      "IMS bearing retrofit is worthwhile insurance - factor it into purchase",
+      "Boxster S is worth the premium over the base model",
+      "Oil analysis before purchase can indicate IMS bearing health",
+      "Maintenance costs are similar to a Japanese sports car when DIY",
+      "Join Rennlist.com for excellent technical resources",
+      "The convertible top is simple and reliable when maintained",
+      "Budget for consumables like water pump and soft top maintenance"
+    ]
   }
 }
