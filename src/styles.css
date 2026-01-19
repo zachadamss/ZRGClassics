@@ -3135,6 +3135,118 @@ input:focus, textarea:focus, select:focus {
 }
 
 /* ================================
+   Community Resources
+   ================================ */
+.community-resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.resource-category {
+    background-color: var(--background-alt);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+}
+
+[data-theme="dark"] .resource-category {
+    background-color: var(--background-alt);
+    border-color: var(--border-color);
+}
+
+.resource-category-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+[data-theme="dark"] .resource-category-title {
+    color: var(--gulf-blue);
+}
+
+.resource-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--gulf-orange);
+    flex-shrink: 0;
+}
+
+.resource-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.resource-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.875rem 1rem;
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.resource-item:hover {
+    border-color: var(--gulf-blue);
+    transform: translateX(4px);
+    box-shadow: var(--shadow-sm);
+}
+
+[data-theme="dark"] .resource-item {
+    background-color: var(--navy-dark);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .resource-item:hover {
+    border-color: var(--gulf-orange);
+}
+
+.resource-item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    min-width: 0;
+}
+
+.resource-name {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 0.95rem;
+}
+
+[data-theme="dark"] .resource-name {
+    color: var(--gulf-blue-light);
+}
+
+.resource-description {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+.external-link-icon {
+    width: 16px;
+    height: 16px;
+    color: var(--text-muted);
+    flex-shrink: 0;
+    transition: color 0.2s;
+}
+
+.resource-item:hover .external-link-icon {
+    color: var(--gulf-orange);
+}
+
+/* ================================
    Guide Cards
    ================================ */
 .guide-grid {

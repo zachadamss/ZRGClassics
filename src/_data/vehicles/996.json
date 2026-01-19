@@ -1382,5 +1382,65 @@
       "Budget for proper PPI by a Porsche specialist",
       "The 996 GT3 is one of the best driving Porsches ever made"
     ]
+  },
+  "communityResources": {
+    "youtube": [
+      {
+        "name": "Niners Unplugged",
+        "url": "https://www.youtube.com/@NinersUnplugged",
+        "description": "996 project cars and owner stories"
+      },
+      {
+        "name": "Channel P101tv",
+        "url": "https://www.youtube.com/@P101tv",
+        "description": "Independent Porsche content"
+      },
+      {
+        "name": "SavageGeese",
+        "url": "https://www.youtube.com/@SavageGeese",
+        "description": "Detailed car reviews including 996 models"
+      }
+    ],
+    "forums": [
+      {
+        "name": "Rennlist 996 Forum",
+        "url": "https://rennlist.com/forums/996-forum/",
+        "description": "The most active 996 community"
+      },
+      {
+        "name": "911UK 996 Forum",
+        "url": "https://911uk.com/forums/996-1997-2005.17/",
+        "description": "UK-based 996 discussion including IMS topics"
+      },
+      {
+        "name": "6SpeedOnline 996 Forum",
+        "url": "https://www.6speedonline.com/forums/996-11/",
+        "description": "C2, C2S, C4, C4S, Targa discussion"
+      },
+      {
+        "name": "Carpokes 997/996 Forum",
+        "url": "https://www.carpokes.com/",
+        "description": "Water-cooled 911 community"
+      }
+    ],
+    "facebook": [
+      {
+        "name": "Porsche 996 Owners",
+        "url": "https://www.facebook.com/groups/porsche996owners",
+        "description": "Active 996 enthusiast community"
+      },
+      {
+        "name": "996 Turbo Owners",
+        "url": "https://www.facebook.com/groups/996turbo",
+        "description": "Dedicated 996 Turbo discussion"
+      }
+    ],
+    "websites": [
+      {
+        "name": "P101tv Resources",
+        "url": "http://p101tv.com/",
+        "description": "VIN decoder, options codes, and Porsche guides"
+      }
+    ]
   }
 }

@@ -1587,5 +1587,65 @@
       "Parts availability is excellent - FCP Euro offers lifetime warranty on many components",
       "A well-maintained E39 with proper cooling system care can easily exceed 250,000 miles"
     ]
+  },
+  "communityResources": {
+    "youtube": [
+      {
+        "name": "E39Source",
+        "url": "https://www.youtube.com/@E39Source",
+        "description": "500+ videos dedicated to E39 maintenance and tutorials"
+      },
+      {
+        "name": "M539 Restorations",
+        "url": "https://www.youtube.com/@M539Restorations",
+        "description": "BMW repairs and restorations with extensive E39 content"
+      },
+      {
+        "name": "BMW Group Classic",
+        "url": "https://www.youtube.com/@BMWGroupClassic",
+        "description": "Official heritage channel featuring classic BMWs"
+      }
+    ],
+    "forums": [
+      {
+        "name": "M5Board",
+        "url": "https://www.m5board.com/",
+        "description": "The best E39 M5 forum community"
+      },
+      {
+        "name": "5Series.net",
+        "url": "https://5series.net/forums/",
+        "description": "Leading 5 Series community for E39 discussion"
+      },
+      {
+        "name": "BimmerBoard E39 Forum",
+        "url": "http://www.bimmerboard.com/forums/e39/",
+        "description": "Technical how-to articles and expert advice"
+      },
+      {
+        "name": "5Post E39 Forum",
+        "url": "https://e39.5post.com/forums/",
+        "description": "Active E39 discussion community"
+      }
+    ],
+    "facebook": [
+      {
+        "name": "BMW E39 5 Series Owners",
+        "url": "https://www.facebook.com/groups/bmwe39owners",
+        "description": "Large E39 enthusiast community"
+      },
+      {
+        "name": "E39 M5 Owners",
+        "url": "https://www.facebook.com/groups/e39m5owners",
+        "description": "Dedicated E39 M5 discussion group"
+      }
+    ],
+    "websites": [
+      {
+        "name": "E39Source Website",
+        "url": "https://www.e39source.com/",
+        "description": "Comprehensive E39 guides and parts resources"
+      }
+    ]
   }
 }

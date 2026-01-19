@@ -1308,5 +1308,75 @@
       "Consider a pre-purchase inspection by a Porsche specialist - generic mechanics miss 944-specific issues",
       "A well-maintained 944 will provide years of reliable service - these are tough cars"
     ]
+  },
+  "communityResources": {
+    "youtube": [
+      {
+        "name": "NC944er",
+        "url": "https://www.youtube.com/@NC944er",
+        "description": "Amazing 944 DIY tutorials with professional quality"
+      },
+      {
+        "name": "European AutoCraft Studios",
+        "url": "https://www.youtube.com/@EuropeanAutoCraftStudios",
+        "description": "944 Turbo rebuild series and tech content"
+      },
+      {
+        "name": "Channel P101tv",
+        "url": "https://www.youtube.com/@P101tv",
+        "description": "Independent Porsche channel with 944 content"
+      }
+    ],
+    "forums": [
+      {
+        "name": "Rennlist 944 Forum",
+        "url": "https://rennlist.com/forums/924-931-944-951-968-forum/",
+        "description": "Extensive 944 technical discussion and guides"
+      },
+      {
+        "name": "Pelican Parts 944 Forum",
+        "url": "https://forums.pelicanparts.com/porsche-924-944-968-technical-forum/",
+        "description": "Technical forum for water-cooled Porsches"
+      },
+      {
+        "name": "TIPEC 944 Forum",
+        "url": "https://forums.tipec.net/viewforum.php?f=25",
+        "description": "Porsche Enthusiasts Club 944 section"
+      },
+      {
+        "name": "944 Spec Forum",
+        "url": "https://community.drivenasa.com/forum/30-944-spec/",
+        "description": "Racing-focused 944 community"
+      }
+    ],
+    "facebook": [
+      {
+        "name": "No Snob Porsche 944 Squad",
+        "url": "https://www.facebook.com/groups/944squad",
+        "description": "Welcoming 944 community for all enthusiasts"
+      },
+      {
+        "name": "Porsche 944 Turbo",
+        "url": "https://www.facebook.com/groups/porsche944turbo",
+        "description": "Dedicated 944 Turbo discussion"
+      },
+      {
+        "name": "Edredas Porsche 944 Group",
+        "url": "https://www.facebook.com/groups/edredas944",
+        "description": "DIY-focused 944 community"
+      }
+    ],
+    "websites": [
+      {
+        "name": "944Online",
+        "url": "https://www.944online.com/",
+        "description": "944 parts and restoration resources"
+      },
+      {
+        "name": "Porsche Cars History",
+        "url": "https://porschecarshistory.com/",
+        "description": "944 magazine articles and history"
+      }
+    ]
   }
 }

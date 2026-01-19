@@ -1260,5 +1260,65 @@
       "Budget for consumables like motor mounts and suspension bushings",
       "A well-maintained 964 will last indefinitely with proper care"
     ]
+  },
+  "communityResources": {
+    "youtube": [
+      {
+        "name": "PCA YouTube",
+        "url": "https://www.youtube.com/@PorscheClubAmerica",
+        "description": "Porsche Club of America buyer guides and tech tips"
+      },
+      {
+        "name": "Channel P101tv",
+        "url": "https://www.youtube.com/@P101tv",
+        "description": "Independent Porsche channel with 964 content"
+      },
+      {
+        "name": "SavageGeese",
+        "url": "https://www.youtube.com/@SavageGeese",
+        "description": "Detailed reviews including air-cooled Porsches"
+      }
+    ],
+    "forums": [
+      {
+        "name": "Rennlist 964 Forum",
+        "url": "https://rennlist.com/forums/964-forum/",
+        "description": "The most active air-cooled 911 community"
+      },
+      {
+        "name": "911UK 964 Forum",
+        "url": "https://911uk.com/forums/964-1989-1993.19/",
+        "description": "UK-based 964 discussion and classifieds"
+      },
+      {
+        "name": "Pelican Parts 911 Forum",
+        "url": "https://forums.pelicanparts.com/porsche-911-technical-forum/",
+        "description": "Air-cooled 911 technical discussion"
+      },
+      {
+        "name": "Carpokes 993/964 Forum",
+        "url": "https://www.carpokes.com/",
+        "description": "Air-cooled 911 community"
+      }
+    ],
+    "facebook": [
+      {
+        "name": "Porsche 964 Owners",
+        "url": "https://www.facebook.com/groups/porsche964owners",
+        "description": "Active 964 enthusiast community"
+      },
+      {
+        "name": "Air-Cooled Porsche 911",
+        "url": "https://www.facebook.com/groups/aircooled911",
+        "description": "All air-cooled 911 generations"
+      }
+    ],
+    "websites": [
+      {
+        "name": "P101tv Resources",
+        "url": "http://p101tv.com/",
+        "description": "Porsche VIN decoder, options codes, and guides"
+      }
+    ]
   }
 }

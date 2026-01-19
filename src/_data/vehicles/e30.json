@@ -1264,5 +1264,65 @@
       "Factor in the cost of period-correct replacement parts - many items are discontinued and expensive",
       "An E30 in solid mechanical condition with rust is often a better buy than a rust-free car with a tired drivetrain - metal work is harder than mechanical repairs"
     ]
+  },
+  "communityResources": {
+    "youtube": [
+      {
+        "name": "Restore It",
+        "url": "https://www.youtube.com/@RestoreIt",
+        "description": "E30 325i restoration with 60M+ views and detailed weekly updates"
+      },
+      {
+        "name": "M539 Restorations",
+        "url": "https://www.youtube.com/@M539Restorations",
+        "description": "BMW repairs and restorations from experienced enthusiast"
+      },
+      {
+        "name": "BMW Group Classic",
+        "url": "https://www.youtube.com/@BMWGroupClassic",
+        "description": "Official heritage channel featuring classic BMWs"
+      }
+    ],
+    "forums": [
+      {
+        "name": "R3VLimited",
+        "url": "https://www.r3vlimited.com/board/",
+        "description": "The most active E30 forum with extensive technical archives"
+      },
+      {
+        "name": "E30 Zone",
+        "url": "https://www.e30zone.net/",
+        "description": "UK's largest E30 community with comprehensive wiki"
+      },
+      {
+        "name": "BimmerBoard E30 Forum",
+        "url": "http://www.bimmerboard.com/forums/e30/",
+        "description": "Technical how-to articles and expert advice"
+      },
+      {
+        "name": "SpecE30",
+        "url": "http://spece30.com/",
+        "description": "Racing-focused community for E30 track enthusiasts"
+      }
+    ],
+    "facebook": [
+      {
+        "name": "BMW E30 Owners",
+        "url": "https://www.facebook.com/groups/bmwe30owners",
+        "description": "Large international E30 community"
+      },
+      {
+        "name": "E30 Zone Facebook",
+        "url": "https://www.facebook.com/groups/e30zone",
+        "description": "Official E30 Zone forum group"
+      }
+    ],
+    "websites": [
+      {
+        "name": "E30 Zone Wiki",
+        "url": "https://www.e30zone.net/e30wiki/",
+        "description": "Comprehensive E30 technical wiki and guides"
+      }
+    ]
   }
 }

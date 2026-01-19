@@ -1309,5 +1309,65 @@
       "Join r3vlimited.com or bimmerforums.com for excellent E36 technical resources",
       "A well-maintained E36 328is is one of the best driving experiences under $15,000"
     ]
+  },
+  "communityResources": {
+    "youtube": [
+      {
+        "name": "Adam LZ",
+        "url": "https://www.youtube.com/@AdamLZ",
+        "description": "Drifting and E36 builds with millions of subscribers"
+      },
+      {
+        "name": "M539 Restorations",
+        "url": "https://www.youtube.com/@M539Restorations",
+        "description": "BMW repairs and restorations including E36 content"
+      },
+      {
+        "name": "Restore It",
+        "url": "https://www.youtube.com/@RestoreIt",
+        "description": "Detailed BMW restoration tutorials"
+      }
+    ],
+    "forums": [
+      {
+        "name": "BimmerFest E36 Forum",
+        "url": "https://www.bimmerfest.com/forums/e36-1991-1999.97/",
+        "description": "Award-winning E36 discussion and resources"
+      },
+      {
+        "name": "Bimmer Forums",
+        "url": "https://www.bimmerforums.com/forum/",
+        "description": "Technical how-to and maintenance guides"
+      },
+      {
+        "name": "3Series.org",
+        "url": "https://www.3series.org/",
+        "description": "BMW 3 Series and M3 community"
+      },
+      {
+        "name": "BMW Werkz",
+        "url": "https://www.bimmerwerkz.com/forums/3-series-e36.18/",
+        "description": "E36 discussion and tech talk"
+      }
+    ],
+    "facebook": [
+      {
+        "name": "BMW E36 Owners",
+        "url": "https://www.facebook.com/groups/bmwe36owners",
+        "description": "Large international E36 community"
+      },
+      {
+        "name": "E36 M3 Owners",
+        "url": "https://www.facebook.com/groups/e36m3owners",
+        "description": "Dedicated E36 M3 enthusiast group"
+      }
+    ],
+    "websites": [
+      {
+        "name": "BMW E36 Blog",
+        "url": "https://bmwe36blog.com/",
+        "description": "E36 guides, forum, and resources"
+      }
+    ]
   }
 }

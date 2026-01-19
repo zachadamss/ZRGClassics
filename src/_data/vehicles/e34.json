@@ -1548,5 +1548,65 @@
       "Factory sport seats are far superior to standard seats - worth seeking out",
       "A well-maintained E34 can exceed 300,000 miles without major engine work"
     ]
+  },
+  "communityResources": {
+    "youtube": [
+      {
+        "name": "M539 Restorations",
+        "url": "https://www.youtube.com/@M539Restorations",
+        "description": "BMW repairs and restorations with E34 content"
+      },
+      {
+        "name": "E39Source",
+        "url": "https://www.youtube.com/@E39Source",
+        "description": "BMW tutorials covering E34 and E39 platforms"
+      },
+      {
+        "name": "BMW Group Classic",
+        "url": "https://www.youtube.com/@BMWGroupClassic",
+        "description": "Official heritage channel with classic E34 features"
+      }
+    ],
+    "forums": [
+      {
+        "name": "5Series.net",
+        "url": "https://5series.net/forums/",
+        "description": "Leading E34 and 5 Series community"
+      },
+      {
+        "name": "M5Board",
+        "url": "https://www.m5board.com/",
+        "description": "E34 M5 performance and technical discussion"
+      },
+      {
+        "name": "BimmerFest E34 Forum",
+        "url": "https://www.bimmerfest.com/forums/e34-1989-1995.102/",
+        "description": "Dedicated E34 section with active community"
+      },
+      {
+        "name": "BMW5Series.org",
+        "url": "https://www.bmw5series.org/forums/bmw-5-series-e34.215/",
+        "description": "E34 discussion and technical resources"
+      }
+    ],
+    "facebook": [
+      {
+        "name": "BMW E34 Owners",
+        "url": "https://www.facebook.com/groups/bmwe34owners",
+        "description": "International E34 enthusiast community"
+      },
+      {
+        "name": "BMW E34 5 Series",
+        "url": "https://www.facebook.com/groups/bmwe345series",
+        "description": "Active E34 discussion and marketplace"
+      }
+    ],
+    "websites": [
+      {
+        "name": "BMWE34.net",
+        "url": "http://www.bmwe34.net/",
+        "description": "Dedicated E34 tuning and repair resource"
+      }
+    ]
   }
 }

@@ -1151,5 +1151,60 @@
       "Rennlist.com and 924Board.org have excellent technical resources",
       "These cars are mechanically simple compared to modern Porsches"
     ]
+  },
+  "communityResources": {
+    "youtube": [
+      {
+        "name": "Channel P101tv",
+        "url": "https://www.youtube.com/@P101tv",
+        "description": "Independent Porsche channel with technical content"
+      },
+      {
+        "name": "SavageGeese",
+        "url": "https://www.youtube.com/@SavageGeese",
+        "description": "Detailed car reviews including classic Porsches"
+      }
+    ],
+    "forums": [
+      {
+        "name": "Porsche 924 Owners Club",
+        "url": "https://porsche924.co.uk/forum/",
+        "description": "Dedicated 924 community with 1,500+ members"
+      },
+      {
+        "name": "Rennlist 924/944/968 Forum",
+        "url": "https://rennlist.com/forums/924-931-944-951-968-forum/",
+        "description": "Technical discussion and how-to guides"
+      },
+      {
+        "name": "Pelican Parts 924/944/968 Forum",
+        "url": "https://forums.pelicanparts.com/porsche-924-944-968-technical-forum/",
+        "description": "Technical forum for water-cooled front-engine Porsches"
+      },
+      {
+        "name": "TIPEC 924/944/968 Forum",
+        "url": "https://forums.tipec.net/viewforum.php?f=25",
+        "description": "Porsche Enthusiasts Club discussion"
+      }
+    ],
+    "facebook": [
+      {
+        "name": "Porsche 924 Owners",
+        "url": "https://www.facebook.com/groups/porsche924owners",
+        "description": "Active 924 enthusiast community"
+      },
+      {
+        "name": "Porsche 924/944/968 Club",
+        "url": "https://www.facebook.com/groups/924944968club",
+        "description": "Front-engine Porsche community"
+      }
+    ],
+    "websites": [
+      {
+        "name": "Channel P101tv Resources",
+        "url": "http://p101tv.com/",
+        "description": "Porsche video community and resource directory"
+      }
+    ]
   }
 }

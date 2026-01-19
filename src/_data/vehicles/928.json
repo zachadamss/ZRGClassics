@@ -1283,5 +1283,65 @@
       "A well-maintained 928 is one of the most capable GT cars ever made",
       "These cars were over-engineered and can exceed 300,000 miles with proper care"
     ]
+  },
+  "communityResources": {
+    "youtube": [
+      {
+        "name": "Channel P101tv",
+        "url": "https://www.youtube.com/@P101tv",
+        "description": "Independent Porsche channel with 928 content"
+      },
+      {
+        "name": "edredas",
+        "url": "https://www.youtube.com/@edredas",
+        "description": "Porsche DIY content including 928s"
+      },
+      {
+        "name": "Barn Find Hunter",
+        "url": "https://www.youtube.com/@HagertyDriversFoundation",
+        "description": "Classic car hunting including Porsches"
+      }
+    ],
+    "forums": [
+      {
+        "name": "928 Owners Club",
+        "url": "https://www.928oc.org/forum/",
+        "description": "Premier 928 community with 3,100+ cars in registry"
+      },
+      {
+        "name": "Rennlist 928 Forum",
+        "url": "https://rennlist.com/forums/928-forum/",
+        "description": "Active 928 discussion and technical resources"
+      },
+      {
+        "name": "Pelican Parts 928 Forum",
+        "url": "https://forums.pelicanparts.com/porsche-928-technical-forum/",
+        "description": "Technical forum for 928 owners"
+      },
+      {
+        "name": "Planet-9 928 Section",
+        "url": "https://www.planet-9.com/forums/",
+        "description": "928 discussion and market tracking"
+      }
+    ],
+    "facebook": [
+      {
+        "name": "Porsche 928 Owners",
+        "url": "https://www.facebook.com/groups/porsche928owners",
+        "description": "Active 928 enthusiast community"
+      },
+      {
+        "name": "928 Owners Club",
+        "url": "https://www.facebook.com/groups/928ownersclub",
+        "description": "Official 928 OC Facebook group"
+      }
+    ],
+    "websites": [
+      {
+        "name": "928 Owners Club",
+        "url": "https://www.928oc.org/",
+        "description": "Official club with registry and resources"
+      }
+    ]
   }
 }

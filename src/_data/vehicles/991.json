@@ -1079,5 +1079,65 @@
       "The 991 is reliable with proper care",
       "GT2 RS and GT3 RS are appreciating collectibles"
     ]
+  },
+  "communityResources": {
+    "youtube": [
+      {
+        "name": "Matt Farah / The Smoking Tire",
+        "url": "https://www.youtube.com/@TheSmokingTire",
+        "description": "911 content and One Take reviews"
+      },
+      {
+        "name": "Carfection",
+        "url": "https://www.youtube.com/@Carfection",
+        "description": "High-quality Porsche features and reviews"
+      },
+      {
+        "name": "Channel P101tv",
+        "url": "https://www.youtube.com/@P101tv",
+        "description": "Independent Porsche content"
+      }
+    ],
+    "forums": [
+      {
+        "name": "Rennlist 991 Forum",
+        "url": "https://rennlist.com/forums/991/",
+        "description": "The largest 991 owner community"
+      },
+      {
+        "name": "911UK 991 Forum",
+        "url": "https://911uk.com/forums/991-2011-2019.35/",
+        "description": "UK-based 991 discussion and classifieds"
+      },
+      {
+        "name": "6SpeedOnline 991 Forum",
+        "url": "https://www.6speedonline.com/forums/991/",
+        "description": "911 tips, guides, and technical help"
+      },
+      {
+        "name": "Planet-9 911 Section",
+        "url": "https://www.planet-9.com/forums/",
+        "description": "All-Porsche community with 991 content"
+      }
+    ],
+    "facebook": [
+      {
+        "name": "Porsche 991 Owners",
+        "url": "https://www.facebook.com/groups/porsche991owners",
+        "description": "Active 991 enthusiast community"
+      },
+      {
+        "name": "991 GT3 Owners",
+        "url": "https://www.facebook.com/groups/991gt3owners",
+        "description": "Dedicated 991 GT3 discussion"
+      }
+    ],
+    "websites": [
+      {
+        "name": "Porsche Club of America",
+        "url": "https://www.pca.org/",
+        "description": "Official Porsche club with events and resources"
+      }
+    ]
   }
 }

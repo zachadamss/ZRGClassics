@@ -1554,5 +1554,60 @@
       "Check the rear shock mounts - they can crack and separate from the body",
       "Join the E28 community on mye28.com for excellent technical resources"
     ]
+  },
+  "communityResources": {
+    "youtube": [
+      {
+        "name": "M539 Restorations",
+        "url": "https://www.youtube.com/@M539Restorations",
+        "description": "BMW repairs, revivals, and restorations from an experienced owner"
+      },
+      {
+        "name": "BMW Group Classic",
+        "url": "https://www.youtube.com/@BMWGroupClassic",
+        "description": "Official BMW heritage channel with classic features"
+      }
+    ],
+    "forums": [
+      {
+        "name": "MyE28.com",
+        "url": "https://forums.mye28.com/",
+        "description": "The premier E28 community with tech FAQ and troubleshooting"
+      },
+      {
+        "name": "BimmerBoard E28 Forum",
+        "url": "http://www.bimmerboard.com/forums/e28/",
+        "description": "Technical articles and expert advice"
+      },
+      {
+        "name": "5Series.net",
+        "url": "https://5series.net/forums/",
+        "description": "E28 and older 5 Series discussion"
+      },
+      {
+        "name": "M5Board",
+        "url": "https://www.m5board.com/",
+        "description": "M5 performance, specs, and technical discussion"
+      }
+    ],
+    "facebook": [
+      {
+        "name": "BMW E28 Group",
+        "url": "https://www.facebook.com/groups/bmwe28",
+        "description": "Active international E28 community with 10k+ members"
+      },
+      {
+        "name": "BMW E28 Society UK",
+        "url": "https://www.facebook.com/groups/bmwe28societyuk",
+        "description": "UK-based E28 enthusiasts and events"
+      }
+    ],
+    "websites": [
+      {
+        "name": "Rod's Automobile Pages",
+        "url": "http://www.unofficialbmw.com/",
+        "description": "Classic E28 DIY reference site"
+      }
+    ]
   }
 }

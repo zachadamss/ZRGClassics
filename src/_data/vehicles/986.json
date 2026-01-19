@@ -1371,5 +1371,60 @@
       "The convertible top is simple and reliable when maintained",
       "Budget for consumables like water pump and soft top maintenance"
     ]
+  },
+  "communityResources": {
+    "youtube": [
+      {
+        "name": "Casey Putsch",
+        "url": "https://www.youtube.com/@CaseyPutsch",
+        "description": "986 Boxster content and automotive education"
+      },
+      {
+        "name": "Channel P101tv",
+        "url": "https://www.youtube.com/@P101tv",
+        "description": "Independent Porsche channel"
+      }
+    ],
+    "forums": [
+      {
+        "name": "986 Forum",
+        "url": "http://986forum.com/",
+        "description": "Dedicated Boxster and Cayman community"
+      },
+      {
+        "name": "Rennlist 986 Forum",
+        "url": "https://rennlist.com/forums/boxster-and-boxster-s-986-forum-67/",
+        "description": "Boxster discussion and DIY guides"
+      },
+      {
+        "name": "BoXa.net",
+        "url": "https://www.boxa.net/",
+        "description": "Porsche Boxster forum with maintenance tips"
+      },
+      {
+        "name": "Planet-9 986 Section",
+        "url": "https://www.planet-9.com/forums/986-boxster-general-discussion-1997-2004.148/",
+        "description": "986 discussion and track events"
+      }
+    ],
+    "facebook": [
+      {
+        "name": "Porsche 986 Boxster Owners",
+        "url": "https://www.facebook.com/groups/porsche986boxster",
+        "description": "Active 986 Boxster community"
+      },
+      {
+        "name": "Porsche Boxster Community",
+        "url": "https://www.facebook.com/groups/porscheboxster",
+        "description": "All-generation Boxster enthusiasts"
+      }
+    ],
+    "websites": [
+      {
+        "name": "986 Forum Wiki",
+        "url": "http://986forum.com/wiki/",
+        "description": "986 technical wiki and catalogs"
+      }
+    ]
   }
 }

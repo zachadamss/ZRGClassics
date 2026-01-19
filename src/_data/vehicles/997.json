@@ -1002,5 +1002,65 @@
       "The 997 can be a reliable daily driver with proper maintenance",
       "Factory sport seats and Sport Chrono add resale value"
     ]
+  },
+  "communityResources": {
+    "youtube": [
+      {
+        "name": "Rolling Slow Media",
+        "url": "https://www.youtube.com/@RollingSlowMedia",
+        "description": "997 owner content and Porsche reviews"
+      },
+      {
+        "name": "Channel P101tv",
+        "url": "https://www.youtube.com/@P101tv",
+        "description": "Independent Porsche channel"
+      },
+      {
+        "name": "SavageGeese",
+        "url": "https://www.youtube.com/@SavageGeese",
+        "description": "Detailed reviews including 997 models"
+      }
+    ],
+    "forums": [
+      {
+        "name": "Rennlist 997 Forum",
+        "url": "https://rennlist.com/forums/997-forum-113/",
+        "description": "The most active 997 community"
+      },
+      {
+        "name": "911UK 997 Forum",
+        "url": "https://911uk.com/forums/997-2004-2012.16/",
+        "description": "UK-based 997 discussion and classifieds"
+      },
+      {
+        "name": "6SpeedOnline 997 Forum",
+        "url": "https://www.6speedonline.com/forums/997-31/",
+        "description": "C2, C2S, C4, C4S, GTS, Targa discussion"
+      },
+      {
+        "name": "Planet-9 911 Section",
+        "url": "https://www.planet-9.com/forums/",
+        "description": "All-Porsche community"
+      }
+    ],
+    "facebook": [
+      {
+        "name": "Porsche 997 Owners",
+        "url": "https://www.facebook.com/groups/porsche997owners",
+        "description": "Active 997 enthusiast community"
+      },
+      {
+        "name": "997 GT3 Owners",
+        "url": "https://www.facebook.com/groups/997gt3owners",
+        "description": "Dedicated GT3 and GT3 RS discussion"
+      }
+    ],
+    "websites": [
+      {
+        "name": "911UK 997 FAQ",
+        "url": "https://911uk.com/forums/997-faq.40/",
+        "description": "997 frequently asked questions and documents"
+      }
+    ]
   }
 }

@@ -1293,5 +1293,65 @@
       "A well-maintained 993 is an appreciating asset",
       "These are the last air-cooled 911s - that matters to collectors"
     ]
+  },
+  "communityResources": {
+    "youtube": [
+      {
+        "name": "Franny",
+        "url": "https://www.youtube.com/@Franny",
+        "description": "Excellent 993 detailed content without filler"
+      },
+      {
+        "name": "PCA YouTube",
+        "url": "https://www.youtube.com/@PorscheClubAmerica",
+        "description": "Porsche Club buyer guides and tech tips"
+      },
+      {
+        "name": "Channel P101tv",
+        "url": "https://www.youtube.com/@P101tv",
+        "description": "Independent Porsche channel with 993 content"
+      }
+    ],
+    "forums": [
+      {
+        "name": "Rennlist 993 Forum",
+        "url": "https://rennlist.com/forums/993-forum/",
+        "description": "Premier air-cooled 911 community"
+      },
+      {
+        "name": "911UK 993 Forum",
+        "url": "https://911uk.com/forums/993-1993-1998.18/",
+        "description": "UK-based 993 discussion and classifieds"
+      },
+      {
+        "name": "Carpokes 993/964 Forum",
+        "url": "https://www.carpokes.com/",
+        "description": "Air-cooled 911 community"
+      },
+      {
+        "name": "Pelican Parts 911 Forum",
+        "url": "https://forums.pelicanparts.com/porsche-911-technical-forum/",
+        "description": "Technical discussion for air-cooled 911s"
+      }
+    ],
+    "facebook": [
+      {
+        "name": "Porsche 993 Owners",
+        "url": "https://www.facebook.com/groups/porsche993owners",
+        "description": "Active 993 enthusiast community"
+      },
+      {
+        "name": "Air-Cooled Porsche 911",
+        "url": "https://www.facebook.com/groups/aircooled911",
+        "description": "All air-cooled 911 generations"
+      }
+    ],
+    "websites": [
+      {
+        "name": "911UK 993 FAQ",
+        "url": "https://911uk.com/forums/993-faq.37/",
+        "description": "993 frequently asked questions and documents"
+      }
+    ]
   }
 }

@@ -1004,5 +1004,60 @@
       "Join Rennlist.com for excellent owner community",
       "Budget for consumables but enjoy lower running costs than 911"
     ]
+  },
+  "communityResources": {
+    "youtube": [
+      {
+        "name": "Channel P101tv",
+        "url": "https://www.youtube.com/@P101tv",
+        "description": "Independent Porsche channel with Boxster/Cayman content"
+      },
+      {
+        "name": "SavageGeese",
+        "url": "https://www.youtube.com/@SavageGeese",
+        "description": "Detailed reviews including 987 models"
+      }
+    ],
+    "forums": [
+      {
+        "name": "Planet-9",
+        "url": "https://www.planet-9.com/forums/",
+        "description": "Premier Cayman and Boxster community"
+      },
+      {
+        "name": "Rennlist 987 Forum",
+        "url": "https://rennlist.com/forums/987-forum-125/",
+        "description": "Cayman/Boxster discussion and DIY guides"
+      },
+      {
+        "name": "BoXa.net 987 Section",
+        "url": "https://www.boxa.net/forum/66-987/",
+        "description": "987 Boxster and Spyder discussion"
+      },
+      {
+        "name": "CaymanOC",
+        "url": "https://www.caymanoc.com/",
+        "description": "Dedicated Cayman owner community"
+      }
+    ],
+    "facebook": [
+      {
+        "name": "Porsche 987 Owners",
+        "url": "https://www.facebook.com/groups/porsche987owners",
+        "description": "Active 987 Boxster/Cayman community"
+      },
+      {
+        "name": "Porsche Cayman Owners",
+        "url": "https://www.facebook.com/groups/porschecayman",
+        "description": "All-generation Cayman enthusiasts"
+      }
+    ],
+    "websites": [
+      {
+        "name": "Planet-9 Wiki",
+        "url": "https://www.planet-9.com/wiki/",
+        "description": "987 technical wiki and resources"
+      }
+    ]
   }
 }

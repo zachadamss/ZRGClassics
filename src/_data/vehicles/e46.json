@@ -1527,5 +1527,65 @@
       "A well-maintained E46 can exceed 250,000 miles - these are robust cars",
       "Join bimmerforums.com for excellent E46 technical resources and buyer advice"
     ]
+  },
+  "communityResources": {
+    "youtube": [
+      {
+        "name": "ShopLifeTV",
+        "url": "https://www.youtube.com/@ShopLifeTV",
+        "description": "E46 builds, tutorials, and product reviews"
+      },
+      {
+        "name": "The50sKid",
+        "url": "https://www.youtube.com/@The50sKid",
+        "description": "Quality E46 DIY videos with methodical approach"
+      },
+      {
+        "name": "50sKid",
+        "url": "https://www.youtube.com/@50sKid",
+        "description": "E46 maintenance and repair tutorials"
+      }
+    ],
+    "forums": [
+      {
+        "name": "E46 Fanatics",
+        "url": "https://www.e46fanatics.com/",
+        "description": "Largest E46 community with 582K+ members"
+      },
+      {
+        "name": "BimmerBoard E46 Forum",
+        "url": "http://bimmerboard.com/forums/e46/",
+        "description": "Technical articles and expert advice"
+      },
+      {
+        "name": "E46Zone",
+        "url": "https://www.e46zone.com/forum/",
+        "description": "Free forum with DIY guides and photo sharing"
+      },
+      {
+        "name": "3Series.org",
+        "url": "https://www.3series.org/",
+        "description": "BMW 3 Series and M3 community"
+      }
+    ],
+    "facebook": [
+      {
+        "name": "BMW E46 Fanatics",
+        "url": "https://www.facebook.com/groups/e46fanatics",
+        "description": "Large international E46 community"
+      },
+      {
+        "name": "E46 M3 Owners",
+        "url": "https://www.facebook.com/groups/e46m3owners",
+        "description": "Dedicated E46 M3 discussion group"
+      }
+    ],
+    "websites": [
+      {
+        "name": "E46 Fanatics Wiki",
+        "url": "https://www.e46fanatics.com/wiki/",
+        "description": "Comprehensive E46 technical wiki"
+      }
+    ]
   }
 }

@@ -1583,5 +1583,65 @@
       "DCT in the M3 is excellent when maintained but manual is more engaging",
       "E90 suspension components are wear items - budget for bushings and control arms"
     ]
+  },
+  "communityResources": {
+    "youtube": [
+      {
+        "name": "E39Source",
+        "url": "https://www.youtube.com/@E39Source",
+        "description": "BMW tutorials covering multiple generations"
+      },
+      {
+        "name": "M539 Restorations",
+        "url": "https://www.youtube.com/@M539Restorations",
+        "description": "BMW repairs and restorations"
+      },
+      {
+        "name": "Restore It",
+        "url": "https://www.youtube.com/@RestoreIt",
+        "description": "BMW restoration and maintenance tutorials"
+      }
+    ],
+    "forums": [
+      {
+        "name": "E90Post",
+        "url": "https://www.e90post.com/forums/",
+        "description": "Largest dedicated E90/E92/E93 community"
+      },
+      {
+        "name": "BimmerPost",
+        "url": "https://www.bimmerpost.com/",
+        "description": "Comprehensive BMW forum covering all models"
+      },
+      {
+        "name": "BimmerBoard E90 Forum",
+        "url": "http://www.bimmerboard.com/forums/e90/",
+        "description": "Technical how-to articles and expert advice"
+      },
+      {
+        "name": "BimmerFest E9X Forum",
+        "url": "https://www.bimmerfest.com/forums/e90-e91-e92-e93-2006-2012.99/",
+        "description": "E9X discussion with active community"
+      }
+    ],
+    "facebook": [
+      {
+        "name": "BMW E90 Owners",
+        "url": "https://www.facebook.com/groups/bmwe90owners",
+        "description": "Large E90 enthusiast community"
+      },
+      {
+        "name": "E9X M3 Owners",
+        "url": "https://www.facebook.com/groups/e9xm3owners",
+        "description": "Dedicated E9X M3 discussion group"
+      }
+    ],
+    "websites": [
+      {
+        "name": "E90Post Wiki",
+        "url": "https://www.e90post.com/wiki/",
+        "description": "E90 technical wiki and DIY guides"
+      }
+    ]
   }
 }

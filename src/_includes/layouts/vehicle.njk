@@ -31,6 +31,7 @@ layout: layouts/base.njk
     <a href="#parts-suppliers">Parts</a>
     <a href="#torque-specs">Specs</a>
     <a href="#diy-guides">DIY</a>
+    <a href="#community-resources">Community</a>
     <a href="#restoration-checklist">Checklist</a>
 </nav>
 
@@ -104,6 +105,14 @@ layout: layouts/base.njk
     </section>
 
     <div class="section-divider"></div>
+
+    <!-- Community Resources Section -->
+    {% if vehicleData.communityResources %}
+    {% set vehicle = vehicleData %}
+    {% include "partials/community-resources.njk" %}
+
+    <div class="section-divider"></div>
+    {% endif %}
 
     <!-- Restoration Checklist Section -->
     {% set vehicle = vehicleData %}
