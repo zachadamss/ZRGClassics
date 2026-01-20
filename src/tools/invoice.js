@@ -37,6 +37,12 @@
     }
 
     function showLoginRequired() {
+        // Hide the saved invoices sidebar
+        const sidebar = document.getElementById('invoice-list-panel');
+        if (sidebar) {
+            sidebar.style.display = 'none';
+        }
+
         const container = document.querySelector('.invoice-container');
         container.innerHTML = `
             <div class="auth-required">
