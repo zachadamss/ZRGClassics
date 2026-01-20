@@ -41,10 +41,8 @@
     {% endif %}
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.ico">
+    <link rel="icon" href="/images/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="/images/logo.jpg">
     <meta name="theme-color" content="#1B263B">
 
     <!-- Fonts -->
@@ -139,7 +137,9 @@
 <body>
     {% include "partials/header.njk" %}
 
-    {{ content | safe }}
+    <div id="main-content">
+        {{ content | safe }}
+    </div>
 
     {% include "partials/footer.njk" %}
 
