@@ -284,10 +284,10 @@ function showLoginRequired() {
             <div class="auth-icon">🔐</div>
             <h2>Login Required</h2>
             <p>You need to be logged in to use the Maintenance Tracker.</p>
-            <p>Your service history is saved to your account so you can access it from anywhere.</p>
+            <p>Sign up is completely free and your service history is saved to your account so you can access it from anywhere.</p>
             <div class="auth-actions">
                 <a href="/account/login/?redirect=/tools/maintenance-tracker/" class="btn btn-primary">Log In</a>
-                <a href="/account/register/?redirect=/tools/maintenance-tracker/" class="btn btn-secondary">Create Account</a>
+                <a href="/account/register/?redirect=/tools/maintenance-tracker/" class="btn btn-secondary">Create Free Account</a>
             </div>
         </div>
     `;

@@ -396,16 +396,16 @@ async function checkAuth() {
 }
 
 function showLoginRequired() {
-    const container = document.querySelector('.checklist-container');
+    const container = document.querySelector('.restoration-checklist');
     container.innerHTML = `
         <div class="auth-required">
             <div class="auth-icon">🔐</div>
             <h2>Login Required</h2>
             <p>You need to be logged in to use the Restoration Checklist.</p>
-            <p>Your progress is saved to your account so you can access it from anywhere.</p>
+            <p>Sign up is completely free and your progress is saved to your account so you can access it from anywhere.</p>
             <div class="auth-actions">
                 <a href="/account/login/?redirect=/tools/restoration-checklist/" class="btn btn-primary">Log In</a>
-                <a href="/account/register/?redirect=/tools/restoration-checklist/" class="btn btn-secondary">Create Account</a>
+                <a href="/account/register/?redirect=/tools/restoration-checklist/" class="btn btn-secondary">Create Free Account</a>
             </div>
         </div>
     `;

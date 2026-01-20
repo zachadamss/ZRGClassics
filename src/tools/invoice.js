@@ -43,10 +43,10 @@
                 <div class="auth-icon">🔐</div>
                 <h2>Login Required</h2>
                 <p>You need to be logged in to use the Invoice Creator.</p>
-                <p>Your invoices and templates are saved to your account.</p>
+                <p>Sign up is completely free and your invoices and templates are saved to your account.</p>
                 <div class="auth-actions">
                     <a href="/account/login/?redirect=/tools/invoice/" class="btn btn-primary">Log In</a>
-                    <a href="/account/register/?redirect=/tools/invoice/" class="btn btn-secondary">Create Account</a>
+                    <a href="/account/register/?redirect=/tools/invoice/" class="btn btn-secondary">Create Free Account</a>
                 </div>
             </div>
         `;
