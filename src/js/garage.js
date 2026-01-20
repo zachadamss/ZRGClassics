@@ -898,6 +898,338 @@ const Garage = {
     });
 
     return results;
+  },
+
+  // ============================================
+  // INVOICE TEMPLATES
+  // ============================================
+
+  /**
+   * Get all invoice templates for the current user
+   */
+  async getInvoiceTemplates() {
+    const user = await Auth.getUser();
+    if (!user) throw new Error('Must be logged in');
+
+    const { data, error } = await db
+      .from('invoice_templates')
+      .select('*')
+      .eq('user_id', user.id)
+      .order('name');
+
+    if (error) throw error;
+    return data || [];
+  },
+
+  /**
+   * Get a single invoice template
+   */
+  async getInvoiceTemplate(templateId) {
+    const user = await Auth.getUser();
+    if (!user) throw new Error('Must be logged in');
+
+    const { data, error } = await db
+      .from('invoice_templates')
+      .select('*')
+      .eq('id', templateId)
+      .eq('user_id', user.id)
+      .single();
+
+    if (error) throw error;
+    return data;
+  },
+
+  /**
+   * Add a new invoice template
+   */
+  async addInvoiceTemplate(templateData) {
+    const user = await Auth.getUser();
+    if (!user) throw new Error('Must be logged in');
+
+    // If setting as default, unset other defaults first
+    if (templateData.isDefault) {
+      await db
+        .from('invoice_templates')
+        .update({ is_default: false })
+        .eq('user_id', user.id);
+    }
+
+    const { data, error } = await db
+      .from('invoice_templates')
+      .insert({
+        user_id: user.id,
+        name: templateData.name,
+        shop_name: templateData.shopName || null,
+        shop_address: templateData.shopAddress || null,
+        shop_phone: templateData.shopPhone || null,
+        shop_email: templateData.shopEmail || null,
+        default_tax_rate: templateData.taxRate || 8.25,
+        default_labor_rate: templateData.laborRate || 85.00,
+        default_notes: templateData.notes || null,
+        is_default: templateData.isDefault || false
+      })
+      .select()
+      .single();
+
+    if (error) throw error;
+    return data;
+  },
+
+  /**
+   * Update an invoice template
+   */
+  async updateInvoiceTemplate(templateId, updates) {
+    const user = await Auth.getUser();
+    if (!user) throw new Error('Must be logged in');
+
+    // If setting as default, unset other defaults first
+    if (updates.isDefault) {
+      await db
+        .from('invoice_templates')
+        .update({ is_default: false })
+        .eq('user_id', user.id);
+    }
+
+    const updateData = { updated_at: new Date().toISOString() };
+    if (updates.name !== undefined) updateData.name = updates.name;
+    if (updates.shopName !== undefined) updateData.shop_name = updates.shopName;
+    if (updates.shopAddress !== undefined) updateData.shop_address = updates.shopAddress;
+    if (updates.shopPhone !== undefined) updateData.shop_phone = updates.shopPhone;
+    if (updates.shopEmail !== undefined) updateData.shop_email = updates.shopEmail;
+    if (updates.taxRate !== undefined) updateData.default_tax_rate = updates.taxRate;
+    if (updates.laborRate !== undefined) updateData.default_labor_rate = updates.laborRate;
+    if (updates.notes !== undefined) updateData.default_notes = updates.notes;
+    if (updates.isDefault !== undefined) updateData.is_default = updates.isDefault;
+
+    const { data, error } = await db
+      .from('invoice_templates')
+      .update(updateData)
+      .eq('id', templateId)
+      .eq('user_id', user.id)
+      .select()
+      .single();
+
+    if (error) throw error;
+    return data;
+  },
+
+  /**
+   * Delete an invoice template
+   */
+  async deleteInvoiceTemplate(templateId) {
+    const user = await Auth.getUser();
+    if (!user) throw new Error('Must be logged in');
+
+    const { error } = await db
+      .from('invoice_templates')
+      .delete()
+      .eq('id', templateId)
+      .eq('user_id', user.id);
+
+    if (error) throw error;
+  },
+
+  /**
+   * Get default invoice template
+   */
+  async getDefaultInvoiceTemplate() {
+    const user = await Auth.getUser();
+    if (!user) throw new Error('Must be logged in');
+
+    const { data, error } = await db
+      .from('invoice_templates')
+      .select('*')
+      .eq('user_id', user.id)
+      .eq('is_default', true)
+      .single();
+
+    if (error && error.code !== 'PGRST116') throw error; // PGRST116 = no rows
+    return data || null;
+  },
+
+  // ============================================
+  // INVOICES
+  // ============================================
+
+  /**
+   * Get all invoices for the current user
+   */
+  async getInvoices(options = {}) {
+    const user = await Auth.getUser();
+    if (!user) throw new Error('Must be logged in');
+
+    let query = db
+      .from('invoices')
+      .select('*')
+      .eq('user_id', user.id);
+
+    if (options.status) {
+      query = query.eq('status', options.status);
+    }
+
+    if (options.limit) {
+      query = query.limit(options.limit);
+    }
+
+    query = query.order('invoice_date', { ascending: false });
+
+    const { data, error } = await query;
+
+    if (error) throw error;
+    return data || [];
+  },
+
+  /**
+   * Get a single invoice
+   */
+  async getInvoice(invoiceId) {
+    const user = await Auth.getUser();
+    if (!user) throw new Error('Must be logged in');
+
+    const { data, error } = await db
+      .from('invoices')
+      .select('*')
+      .eq('id', invoiceId)
+      .eq('user_id', user.id)
+      .single();
+
+    if (error) throw error;
+    return data;
+  },
+
+  /**
+   * Generate next invoice number
+   */
+  async generateInvoiceNumber() {
+    const user = await Auth.getUser();
+    if (!user) throw new Error('Must be logged in');
+
+    const now = new Date();
+    const year = now.getFullYear().toString().slice(-2);
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+
+    // Get count of invoices this month
+    const startOfMonth = `${now.getFullYear()}-${month}-01`;
+    const { count, error } = await db
+      .from('invoices')
+      .select('*', { count: 'exact', head: true })
+      .eq('user_id', user.id)
+      .gte('created_at', startOfMonth);
+
+    if (error) throw error;
+
+    const sequence = String((count || 0) + 1).padStart(3, '0');
+    return `INV-${year}${month}-${sequence}`;
+  },
+
+  /**
+   * Save an invoice
+   */
+  async saveInvoice(invoiceData, invoiceId = null) {
+    const user = await Auth.getUser();
+    if (!user) throw new Error('Must be logged in');
+
+    const record = {
+      user_id: user.id,
+      invoice_number: invoiceData.invoiceNumber,
+      invoice_date: invoiceData.invoiceDate,
+      status: invoiceData.status || 'draft',
+      shop_name: invoiceData.shopName || null,
+      shop_address: invoiceData.shopAddress || null,
+      shop_phone: invoiceData.shopPhone || null,
+      shop_email: invoiceData.shopEmail || null,
+      customer_name: invoiceData.customerName || null,
+      customer_address: invoiceData.customerAddress || null,
+      customer_phone: invoiceData.customerPhone || null,
+      customer_email: invoiceData.customerEmail || null,
+      vehicle_year: invoiceData.vehicleYear || null,
+      vehicle_make: invoiceData.vehicleMake || null,
+      vehicle_model: invoiceData.vehicleModel || null,
+      vehicle_vin: invoiceData.vehicleVin || null,
+      vehicle_mileage: invoiceData.vehicleMileage || null,
+      parts: invoiceData.parts || [],
+      labor: invoiceData.labor || [],
+      parts_subtotal: invoiceData.partsSubtotal || 0,
+      labor_subtotal: invoiceData.laborSubtotal || 0,
+      tax_rate: invoiceData.taxRate || 0,
+      tax_amount: invoiceData.taxAmount || 0,
+      grand_total: invoiceData.grandTotal || 0,
+      notes: invoiceData.notes || null
+    };
+
+    let data, error;
+
+    if (invoiceId) {
+      // Update existing invoice
+      ({ data, error } = await db
+        .from('invoices')
+        .update(record)
+        .eq('id', invoiceId)
+        .eq('user_id', user.id)
+        .select()
+        .single());
+    } else {
+      // Create new invoice
+      ({ data, error } = await db
+        .from('invoices')
+        .insert(record)
+        .select()
+        .single());
+    }
+
+    if (error) throw error;
+    return data;
+  },
+
+  /**
+   * Delete an invoice
+   */
+  async deleteInvoice(invoiceId) {
+    const user = await Auth.getUser();
+    if (!user) throw new Error('Must be logged in');
+
+    const { error } = await db
+      .from('invoices')
+      .delete()
+      .eq('id', invoiceId)
+      .eq('user_id', user.id);
+
+    if (error) throw error;
+  },
+
+  /**
+   * Get invoice stats for dashboard
+   */
+  async getInvoiceStats() {
+    const user = await Auth.getUser();
+    if (!user) throw new Error('Must be logged in');
+
+    const now = new Date();
+    const startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1).toISOString();
+
+    const { data, error } = await db
+      .from('invoices')
+      .select('grand_total, status, created_at')
+      .eq('user_id', user.id);
+
+    if (error) throw error;
+
+    const stats = {
+      totalInvoices: data.length,
+      thisMonth: 0,
+      thisMonthTotal: 0,
+      allTimeTotal: 0
+    };
+
+    data.forEach(inv => {
+      stats.allTimeTotal += parseFloat(inv.grand_total) || 0;
+      if (inv.created_at >= startOfMonth) {
+        stats.thisMonth++;
+        stats.thisMonthTotal += parseFloat(inv.grand_total) || 0;
+      }
+    });
+
+    return stats;
   }
 };
 

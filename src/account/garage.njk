@@ -177,6 +177,34 @@ description: Manage your garage vehicles, track restoration progress, and log ma
       </div>
     </div>
 
+    <!-- Invoices Section -->
+    <div class="garage-section invoices-section">
+      <div class="section-header">
+        <h2>Invoices</h2>
+        <a href="/tools/invoice/" class="btn btn-primary">+ New Invoice</a>
+      </div>
+      <div class="invoices-stats" id="invoices-stats">
+        <div class="invoice-stat-card">
+          <span class="stat-value" id="invoices-total-count">0</span>
+          <span class="stat-label">Total Invoices</span>
+        </div>
+        <div class="invoice-stat-card">
+          <span class="stat-value" id="invoices-this-month">0</span>
+          <span class="stat-label">This Month</span>
+        </div>
+        <div class="invoice-stat-card">
+          <span class="stat-value" id="invoices-month-total">$0</span>
+          <span class="stat-label">Month Total</span>
+        </div>
+      </div>
+      <div class="recent-invoices" id="recent-invoices">
+        <h4>Recent Invoices</h4>
+        <div class="recent-invoices-list" id="recent-invoices-list">
+          <p class="empty-state">No invoices yet</p>
+        </div>
+      </div>
+    </div>
+
     <!-- Recent Forum Activity -->
     <div class="garage-section">
       <div class="section-header">
@@ -341,8 +369,48 @@ const RESTORATION_CATEGORIES = {
       currentProfile?.display_name || currentProfile?.username || 'Member';
 
     await loadVehicles();
+    await loadInvoices();
     await loadRecentThreads();
     bindEvents();
+  }
+
+  // Load invoices
+  async function loadInvoices() {
+    try {
+      // Load stats
+      const stats = await Garage.getInvoiceStats();
+      document.getElementById('invoices-total-count').textContent = stats.totalInvoices;
+      document.getElementById('invoices-this-month').textContent = stats.thisMonth;
+      document.getElementById('invoices-month-total').textContent = '$' + stats.thisMonthTotal.toFixed(2);
+
+      // Load recent invoices
+      const invoices = await Garage.getInvoices({ limit: 5 });
+      renderRecentInvoices(invoices);
+    } catch (error) {
+      console.error('Error loading invoices:', error);
+    }
+  }
+
+  function renderRecentInvoices(invoices) {
+    const container = document.getElementById('recent-invoices-list');
+
+    if (invoices.length === 0) {
+      container.innerHTML = '<p class="empty-state">No invoices yet. <a href="/tools/invoice/">Create your first invoice</a></p>';
+      return;
+    }
+
+    container.innerHTML = invoices.map(invoice => `
+      <a href="/tools/invoice/?edit=${invoice.id}" class="recent-invoice-item">
+        <div class="invoice-item-info">
+          <span class="invoice-item-number">${invoice.invoice_number}</span>
+          <span class="invoice-item-customer">${invoice.customer_name || 'No customer'}</span>
+        </div>
+        <div class="invoice-item-meta">
+          <span class="invoice-item-date">${Garage.formatDate(invoice.invoice_date)}</span>
+          <span class="invoice-item-total">$${parseFloat(invoice.grand_total).toFixed(2)}</span>
+        </div>
+      </a>
+    `).join('');
   }
 
   // Load vehicles

@@ -1,110 +1,537 @@
-// Invoice Creator - ZRG Classics
-// Pure JavaScript, no dependencies
+/**
+ * Invoice Creator - ZRG Classics
+ * Uses Supabase for persistence, requires authentication
+ */
 
 (function() {
     'use strict';
 
-    const STORAGE_KEY = 'invoiceTemplates';
+    // State
+    let currentUser = null;
+    let templates = [];
+    let savedInvoices = [];
+    let currentInvoiceId = null;
+    let defaultLaborRate = 85.00;
 
-    // DOM Elements
-    const form = document.getElementById('invoice-form');
-    const partsBody = document.getElementById('parts-body');
-    const laborBody = document.getElementById('labor-body');
-    const templateSelect = document.getElementById('template-select');
-    const templateModal = document.getElementById('template-modal');
-    const templateNameInput = document.getElementById('template-name');
+    // DOM Elements (set after DOM ready)
+    let form, partsBody, laborBody, templateSelect, templateModal, templateNameInput;
+    let invoiceListPanel, invoiceListBody;
 
-    // Initialize on DOM ready
-    document.addEventListener('DOMContentLoaded', init);
+    // ============================================
+    // Authentication
+    // ============================================
 
-    function init() {
-        generateInvoiceNumber();
-        setTodayDate();
-        loadTemplateList();
+    async function checkAuth() {
+        try {
+            currentUser = await Auth.getUser();
+            if (!currentUser) {
+                showLoginRequired();
+                return false;
+            }
+            return true;
+        } catch (error) {
+            console.error('Auth check failed:', error);
+            showLoginRequired();
+            return false;
+        }
+    }
+
+    function showLoginRequired() {
+        const container = document.querySelector('.invoice-container');
+        container.innerHTML = `
+            <div class="auth-required">
+                <div class="auth-icon">🔐</div>
+                <h2>Login Required</h2>
+                <p>You need to be logged in to use the Invoice Creator.</p>
+                <p>Your invoices and templates are saved to your account.</p>
+                <div class="auth-actions">
+                    <a href="/account/login/?redirect=/tools/invoice/" class="btn btn-primary">Log In</a>
+                    <a href="/account/register/?redirect=/tools/invoice/" class="btn btn-secondary">Create Account</a>
+                </div>
+            </div>
+        `;
+    }
+
+    // ============================================
+    // Initialization
+    // ============================================
+
+    async function init() {
+        const isAuthenticated = await checkAuth();
+        if (!isAuthenticated) return;
+
+        // Get DOM elements
+        form = document.getElementById('invoice-form');
+        partsBody = document.getElementById('parts-body');
+        laborBody = document.getElementById('labor-body');
+        templateSelect = document.getElementById('template-select');
+        templateModal = document.getElementById('template-modal');
+        templateNameInput = document.getElementById('template-name');
+        invoiceListPanel = document.getElementById('invoice-list-panel');
+        invoiceListBody = document.getElementById('invoice-list-body');
+
+        // Check for edit parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const editId = urlParams.get('edit');
+
+        await loadTemplates();
+        await loadSavedInvoices();
+
+        if (editId) {
+            await loadInvoiceForEdit(editId);
+        } else {
+            await initializeNewInvoice();
+        }
+
         attachEventListeners();
         calculateTotals();
     }
 
-    function attachEventListeners() {
-        // Form input changes trigger recalculation
-        form.addEventListener('input', handleFormInput);
+    async function initializeNewInvoice() {
+        currentInvoiceId = null;
 
-        // Template controls
-        document.getElementById('save-template-btn').addEventListener('click', openSaveModal);
-        document.getElementById('load-template-btn').addEventListener('click', loadSelectedTemplate);
-        document.getElementById('delete-template-btn').addEventListener('click', deleteSelectedTemplate);
-
-        // Modal controls
-        document.getElementById('cancel-template-btn').addEventListener('click', closeSaveModal);
-        document.getElementById('confirm-save-btn').addEventListener('click', saveTemplate);
-
-        // Action buttons
-        document.getElementById('clear-btn').addEventListener('click', clearForm);
-        document.getElementById('print-btn').addEventListener('click', printInvoice);
-
-        // Close modal on outside click
-        templateModal.addEventListener('click', function(e) {
-            if (e.target === templateModal) {
-                closeSaveModal();
-            }
-        });
-
-        // Tax rate display sync
-        document.getElementById('tax-rate').addEventListener('input', function() {
-            document.getElementById('tax-rate-display').textContent = this.value || '0';
-        });
-    }
-
-    function handleFormInput(e) {
-        const target = e.target;
-
-        // Recalculate if it's a numeric input in parts or labor
-        if (target.classList.contains('qty-input') ||
-            target.classList.contains('price-input') ||
-            target.classList.contains('hours-input') ||
-            target.classList.contains('rate-input') ||
-            target.id === 'tax-rate') {
-            calculateTotals();
+        // Generate invoice number
+        try {
+            const invoiceNumber = await Garage.generateInvoiceNumber();
+            document.getElementById('invoice-number').value = invoiceNumber;
+        } catch (error) {
+            console.error('Failed to generate invoice number:', error);
+            generateLocalInvoiceNumber();
         }
+
+        setTodayDate();
+
+        // Load default template if exists
+        try {
+            const defaultTemplate = await Garage.getDefaultInvoiceTemplate();
+            if (defaultTemplate) {
+                applyTemplate(defaultTemplate);
+            }
+        } catch (error) {
+            console.error('Failed to load default template:', error);
+        }
+
+        updateFormTitle('New Invoice');
     }
 
-    // Generate invoice number based on date and random suffix
-    function generateInvoiceNumber() {
+    function generateLocalInvoiceNumber() {
         const now = new Date();
         const year = now.getFullYear().toString().slice(-2);
         const month = String(now.getMonth() + 1).padStart(2, '0');
         const day = String(now.getDate()).padStart(2, '0');
         const random = Math.floor(Math.random() * 1000).toString().padStart(3, '0');
-
         document.getElementById('invoice-number').value = `INV-${year}${month}${day}-${random}`;
     }
 
-    // Set today's date as default
     function setTodayDate() {
         const today = new Date().toISOString().split('T')[0];
         document.getElementById('invoice-date').value = today;
     }
 
-    // Add a new part row
-    window.addPartRow = function() {
+    function updateFormTitle(title) {
+        const titleEl = document.querySelector('.invoice-title');
+        if (titleEl) titleEl.textContent = title;
+    }
+
+    // ============================================
+    // Template Management
+    // ============================================
+
+    async function loadTemplates() {
+        try {
+            templates = await Garage.getInvoiceTemplates();
+            renderTemplateDropdown();
+        } catch (error) {
+            console.error('Failed to load templates:', error);
+            templates = [];
+        }
+    }
+
+    function renderTemplateDropdown() {
+        templateSelect.innerHTML = '<option value="">-- Select Template --</option>';
+        templates.forEach(template => {
+            const option = document.createElement('option');
+            option.value = template.id;
+            option.textContent = template.name + (template.is_default ? ' (Default)' : '');
+            templateSelect.appendChild(option);
+        });
+    }
+
+    function applyTemplate(template) {
+        document.getElementById('shop-name').value = template.shop_name || '';
+        document.getElementById('shop-address').value = template.shop_address || '';
+        document.getElementById('shop-phone').value = template.shop_phone || '';
+        document.getElementById('shop-email').value = template.shop_email || '';
+        document.getElementById('tax-rate').value = template.default_tax_rate || 8.25;
+        document.getElementById('tax-rate-display').textContent = template.default_tax_rate || 8.25;
+        document.getElementById('invoice-notes').value = template.default_notes || '';
+        defaultLaborRate = template.default_labor_rate || 85.00;
+
+        // Update all existing labor rows with template's rate
+        const laborRows = laborBody.querySelectorAll('.labor-row');
+        laborRows.forEach(row => {
+            const rateInput = row.querySelector('.rate-input');
+            if (rateInput) {
+                rateInput.value = defaultLaborRate.toFixed(2);
+            }
+        });
+
+        calculateTotals();
+    }
+
+    async function loadSelectedTemplate() {
+        const templateId = templateSelect.value;
+        if (!templateId) {
+            alert('Please select a template to load.');
+            return;
+        }
+
+        const template = templates.find(t => t.id === templateId);
+        if (template) {
+            applyTemplate(template);
+        }
+    }
+
+    function openSaveTemplateModal() {
+        templateNameInput.value = document.getElementById('shop-name').value || '';
+        document.getElementById('template-default').checked = false;
+
+        // Populate labor rate from current default or first labor row
+        const firstLaborRow = laborBody.querySelector('.labor-row');
+        const currentRate = firstLaborRow ?
+            parseFloat(firstLaborRow.querySelector('.rate-input').value) || defaultLaborRate :
+            defaultLaborRate;
+        document.getElementById('template-labor-rate').value = currentRate.toFixed(2);
+
+        templateModal.classList.add('active');
+        templateNameInput.focus();
+    }
+
+    function closeSaveTemplateModal() {
+        templateModal.classList.remove('active');
+    }
+
+    async function saveTemplate() {
+        const name = templateNameInput.value.trim();
+        if (!name) {
+            alert('Please enter a template name.');
+            return;
+        }
+
+        const isDefault = document.getElementById('template-default').checked;
+
+        const templateData = {
+            name,
+            shopName: document.getElementById('shop-name').value,
+            shopAddress: document.getElementById('shop-address').value,
+            shopPhone: document.getElementById('shop-phone').value,
+            shopEmail: document.getElementById('shop-email').value,
+            taxRate: parseFloat(document.getElementById('tax-rate').value) || 8.25,
+            laborRate: parseFloat(document.getElementById('template-labor-rate').value) || 85.00,
+            notes: document.getElementById('invoice-notes').value,
+            isDefault
+        };
+
+        try {
+            // Check if template with this name exists
+            const existing = templates.find(t => t.name.toLowerCase() === name.toLowerCase());
+            if (existing) {
+                if (!confirm(`Template "${name}" already exists. Overwrite?`)) {
+                    return;
+                }
+                await Garage.updateInvoiceTemplate(existing.id, templateData);
+            } else {
+                await Garage.addInvoiceTemplate(templateData);
+            }
+
+            // Update the default labor rate for new rows
+            defaultLaborRate = templateData.laborRate;
+
+            await loadTemplates();
+            closeSaveTemplateModal();
+
+            // Select the saved template
+            const saved = templates.find(t => t.name === name);
+            if (saved) templateSelect.value = saved.id;
+
+            showSaveIndicator('Template saved');
+        } catch (error) {
+            console.error('Failed to save template:', error);
+            alert('Failed to save template: ' + error.message);
+        }
+    }
+
+    async function deleteSelectedTemplate() {
+        const templateId = templateSelect.value;
+        if (!templateId) {
+            alert('Please select a template to delete.');
+            return;
+        }
+
+        const template = templates.find(t => t.id === templateId);
+        if (!confirm(`Are you sure you want to delete template "${template?.name}"?`)) {
+            return;
+        }
+
+        try {
+            await Garage.deleteInvoiceTemplate(templateId);
+            await loadTemplates();
+            showSaveIndicator('Template deleted');
+        } catch (error) {
+            console.error('Failed to delete template:', error);
+            alert('Failed to delete template: ' + error.message);
+        }
+    }
+
+    // ============================================
+    // Invoice Management
+    // ============================================
+
+    async function loadSavedInvoices() {
+        try {
+            savedInvoices = await Garage.getInvoices({ limit: 20 });
+            renderInvoiceList();
+        } catch (error) {
+            console.error('Failed to load invoices:', error);
+            savedInvoices = [];
+        }
+    }
+
+    function renderInvoiceList() {
+        if (!invoiceListBody) return;
+
+        if (savedInvoices.length === 0) {
+            invoiceListBody.innerHTML = '<div class="empty-state">No saved invoices yet</div>';
+            return;
+        }
+
+        invoiceListBody.innerHTML = savedInvoices.map(invoice => `
+            <div class="invoice-list-item ${invoice.id === currentInvoiceId ? 'active' : ''}" data-id="${invoice.id}">
+                <div class="invoice-list-info">
+                    <span class="invoice-list-number">${invoice.invoice_number}</span>
+                    <span class="invoice-list-customer">${invoice.customer_name || 'No customer'}</span>
+                    <span class="invoice-list-date">${formatDate(invoice.invoice_date)}</span>
+                </div>
+                <div class="invoice-list-total">$${parseFloat(invoice.grand_total).toFixed(2)}</div>
+                <div class="invoice-list-actions">
+                    <button type="button" class="btn-icon edit-invoice" title="Edit">&#9998;</button>
+                    <button type="button" class="btn-icon delete-invoice" title="Delete">&times;</button>
+                </div>
+            </div>
+        `).join('');
+
+        // Attach event listeners
+        invoiceListBody.querySelectorAll('.invoice-list-item').forEach(item => {
+            item.querySelector('.edit-invoice').addEventListener('click', (e) => {
+                e.stopPropagation();
+                loadInvoiceForEdit(item.dataset.id);
+            });
+            item.querySelector('.delete-invoice').addEventListener('click', (e) => {
+                e.stopPropagation();
+                deleteInvoice(item.dataset.id);
+            });
+        });
+    }
+
+    async function loadInvoiceForEdit(invoiceId) {
+        try {
+            const invoice = await Garage.getInvoice(invoiceId);
+            if (!invoice) {
+                alert('Invoice not found');
+                return;
+            }
+
+            currentInvoiceId = invoiceId;
+
+            // Populate form
+            document.getElementById('invoice-number').value = invoice.invoice_number;
+            document.getElementById('invoice-date').value = invoice.invoice_date;
+            document.getElementById('tax-rate').value = invoice.tax_rate;
+            document.getElementById('tax-rate-display').textContent = invoice.tax_rate;
+
+            document.getElementById('shop-name').value = invoice.shop_name || '';
+            document.getElementById('shop-address').value = invoice.shop_address || '';
+            document.getElementById('shop-phone').value = invoice.shop_phone || '';
+            document.getElementById('shop-email').value = invoice.shop_email || '';
+
+            document.getElementById('customer-name').value = invoice.customer_name || '';
+            document.getElementById('customer-address').value = invoice.customer_address || '';
+            document.getElementById('customer-phone').value = invoice.customer_phone || '';
+            document.getElementById('customer-email').value = invoice.customer_email || '';
+
+            document.getElementById('vehicle-year').value = invoice.vehicle_year || '';
+            document.getElementById('vehicle-make').value = invoice.vehicle_make || '';
+            document.getElementById('vehicle-model').value = invoice.vehicle_model || '';
+            document.getElementById('vehicle-vin').value = invoice.vehicle_vin || '';
+            document.getElementById('vehicle-mileage').value = invoice.vehicle_mileage || '';
+
+            document.getElementById('invoice-notes').value = invoice.notes || '';
+
+            // Populate parts
+            const parts = invoice.parts || [];
+            partsBody.innerHTML = '';
+            if (parts.length === 0) {
+                addPartRow();
+            } else {
+                parts.forEach(part => {
+                    addPartRow(part);
+                });
+            }
+
+            // Populate labor
+            const labor = invoice.labor || [];
+            laborBody.innerHTML = '';
+            if (labor.length === 0) {
+                addLaborRow();
+            } else {
+                labor.forEach(item => {
+                    addLaborRow(item);
+                });
+            }
+
+            calculateTotals();
+            updateFormTitle(`Edit Invoice: ${invoice.invoice_number}`);
+            renderInvoiceList(); // Update active state
+
+            // Update URL without reload
+            window.history.replaceState({}, '', `/tools/invoice/?edit=${invoiceId}`);
+        } catch (error) {
+            console.error('Failed to load invoice:', error);
+            alert('Failed to load invoice');
+        }
+    }
+
+    function getFormData() {
+        // Collect parts
+        const parts = [];
+        partsBody.querySelectorAll('.part-row').forEach(row => {
+            const name = row.querySelector('[name="partName[]"]').value.trim();
+            const number = row.querySelector('[name="partNumber[]"]').value.trim();
+            const qty = parseFloat(row.querySelector('.qty-input').value) || 0;
+            const price = parseFloat(row.querySelector('.price-input').value) || 0;
+            if (name || number || qty > 0 || price > 0) {
+                parts.push({ name, number, qty, price, total: qty * price });
+            }
+        });
+
+        // Collect labor
+        const labor = [];
+        laborBody.querySelectorAll('.labor-row').forEach(row => {
+            const desc = row.querySelector('[name="laborDesc[]"]').value.trim();
+            const hours = parseFloat(row.querySelector('.hours-input').value) || 0;
+            const rate = parseFloat(row.querySelector('.rate-input').value) || 0;
+            if (desc || hours > 0) {
+                labor.push({ description: desc, hours, rate, total: hours * rate });
+            }
+        });
+
+        const partsSubtotal = parts.reduce((sum, p) => sum + p.total, 0);
+        const laborSubtotal = labor.reduce((sum, l) => sum + l.total, 0);
+        const taxRate = parseFloat(document.getElementById('tax-rate').value) || 0;
+        const taxAmount = partsSubtotal * (taxRate / 100);
+        const grandTotal = partsSubtotal + laborSubtotal + taxAmount;
+
+        return {
+            invoiceNumber: document.getElementById('invoice-number').value,
+            invoiceDate: document.getElementById('invoice-date').value,
+            status: 'final',
+            shopName: document.getElementById('shop-name').value,
+            shopAddress: document.getElementById('shop-address').value,
+            shopPhone: document.getElementById('shop-phone').value,
+            shopEmail: document.getElementById('shop-email').value,
+            customerName: document.getElementById('customer-name').value,
+            customerAddress: document.getElementById('customer-address').value,
+            customerPhone: document.getElementById('customer-phone').value,
+            customerEmail: document.getElementById('customer-email').value,
+            vehicleYear: document.getElementById('vehicle-year').value ? parseInt(document.getElementById('vehicle-year').value) : null,
+            vehicleMake: document.getElementById('vehicle-make').value,
+            vehicleModel: document.getElementById('vehicle-model').value,
+            vehicleVin: document.getElementById('vehicle-vin').value,
+            vehicleMileage: document.getElementById('vehicle-mileage').value ? parseInt(document.getElementById('vehicle-mileage').value) : null,
+            parts,
+            labor,
+            partsSubtotal,
+            laborSubtotal,
+            taxRate,
+            taxAmount,
+            grandTotal,
+            notes: document.getElementById('invoice-notes').value
+        };
+    }
+
+    async function saveInvoice() {
+        const data = getFormData();
+
+        if (!data.invoiceNumber || !data.invoiceDate) {
+            alert('Invoice number and date are required');
+            return;
+        }
+
+        // Check for duplicate invoice number
+        const duplicate = savedInvoices.find(inv =>
+            inv.invoice_number === data.invoiceNumber && inv.id !== currentInvoiceId
+        );
+        if (duplicate) {
+            alert(`Invoice number "${data.invoiceNumber}" already exists. Please use a different number.`);
+            document.getElementById('invoice-number').focus();
+            return;
+        }
+
+        try {
+            const saved = await Garage.saveInvoice(data, currentInvoiceId);
+            currentInvoiceId = saved.id;
+            await loadSavedInvoices();
+            updateFormTitle(`Edit Invoice: ${saved.invoice_number}`);
+            window.history.replaceState({}, '', `/tools/invoice/?edit=${saved.id}`);
+            showSaveIndicator('Invoice saved');
+        } catch (error) {
+            console.error('Failed to save invoice:', error);
+            alert('Failed to save invoice: ' + error.message);
+        }
+    }
+
+    async function deleteInvoice(invoiceId) {
+        const invoice = savedInvoices.find(i => i.id === invoiceId);
+        if (!confirm(`Delete invoice ${invoice?.invoice_number}?`)) {
+            return;
+        }
+
+        try {
+            await Garage.deleteInvoice(invoiceId);
+
+            // If we deleted the current invoice, start a new one
+            if (invoiceId === currentInvoiceId) {
+                await initializeNewInvoice();
+                clearFormFields();
+            }
+
+            await loadSavedInvoices();
+            showSaveIndicator('Invoice deleted');
+        } catch (error) {
+            console.error('Failed to delete invoice:', error);
+            alert('Failed to delete invoice');
+        }
+    }
+
+    // ============================================
+    // Parts & Labor Row Management
+    // ============================================
+
+    window.addPartRow = function(data = null) {
         const newRow = document.createElement('tr');
         newRow.className = 'part-row';
         newRow.innerHTML = `
-            <td><input type="text" name="partName[]" placeholder="Part description"></td>
-            <td><input type="text" name="partNumber[]" placeholder="ABC123"></td>
-            <td><input type="number" name="partQty[]" value="1" min="1" class="qty-input"></td>
-            <td><input type="number" name="partPrice[]" value="0.00" step="0.01" min="0" class="price-input"></td>
-            <td class="line-total">$0.00</td>
+            <td data-label="Part Name"><input type="text" name="partName[]" placeholder="Part description" value="${data?.name || ''}"></td>
+            <td data-label="Part #"><input type="text" name="partNumber[]" placeholder="ABC123" value="${data?.number || ''}"></td>
+            <td data-label="Qty"><input type="number" name="partQty[]" value="${data?.qty || 1}" min="1" class="qty-input"></td>
+            <td data-label="Price"><input type="number" name="partPrice[]" value="${(data?.price || 0).toFixed(2)}" step="0.01" min="0" class="price-input"></td>
+            <td data-label="Total" class="line-total">$${(data?.total || 0).toFixed(2)}</td>
             <td class="no-print"><button type="button" class="remove-row-btn" onclick="removePartRow(this)">×</button></td>
         `;
         partsBody.appendChild(newRow);
-        // Apply mobile labels for responsive display
-        if (window.applyMobileLabels) {
-            window.applyMobileLabels();
-        }
+        calculateTotals();
     };
 
-    // Remove a part row
     window.removePartRow = function(btn) {
         const rows = partsBody.querySelectorAll('.part-row');
         if (rows.length > 1) {
@@ -113,26 +540,22 @@
         }
     };
 
-    // Add a new labor row
-    window.addLaborRow = function() {
+    window.addLaborRow = function(data = null) {
         const newRow = document.createElement('tr');
         newRow.className = 'labor-row';
+        const rate = data?.rate || defaultLaborRate;
+        const hours = data?.hours || 1;
         newRow.innerHTML = `
-            <td><input type="text" name="laborDesc[]" placeholder="Labor description"></td>
-            <td><input type="number" name="laborHours[]" value="1" step="0.25" min="0" class="hours-input"></td>
-            <td><input type="number" name="laborRate[]" value="85.00" step="0.01" min="0" class="rate-input"></td>
-            <td class="line-total">$85.00</td>
+            <td data-label="Description"><input type="text" name="laborDesc[]" placeholder="Labor description" value="${data?.description || ''}"></td>
+            <td data-label="Hours"><input type="number" name="laborHours[]" value="${hours}" step="0.25" min="0" class="hours-input"></td>
+            <td data-label="Rate"><input type="number" name="laborRate[]" value="${rate.toFixed(2)}" step="0.01" min="0" class="rate-input"></td>
+            <td data-label="Total" class="line-total">$${(hours * rate).toFixed(2)}</td>
             <td class="no-print"><button type="button" class="remove-row-btn" onclick="removeLaborRow(this)">×</button></td>
         `;
         laborBody.appendChild(newRow);
         calculateTotals();
-        // Apply mobile labels for responsive display
-        if (window.applyMobileLabels) {
-            window.applyMobileLabels();
-        }
     };
 
-    // Remove a labor row
     window.removeLaborRow = function(btn) {
         const rows = laborBody.querySelectorAll('.labor-row');
         if (rows.length > 1) {
@@ -141,14 +564,16 @@
         }
     };
 
-    // Calculate all totals
+    // ============================================
+    // Calculations
+    // ============================================
+
     function calculateTotals() {
         let partsTotal = 0;
         let laborTotal = 0;
 
         // Calculate parts
-        const partRows = partsBody.querySelectorAll('.part-row');
-        partRows.forEach(row => {
+        partsBody.querySelectorAll('.part-row').forEach(row => {
             const qty = parseFloat(row.querySelector('.qty-input').value) || 0;
             const price = parseFloat(row.querySelector('.price-input').value) || 0;
             const lineTotal = qty * price;
@@ -157,8 +582,7 @@
         });
 
         // Calculate labor
-        const laborRows = laborBody.querySelectorAll('.labor-row');
-        laborRows.forEach(row => {
+        laborBody.querySelectorAll('.labor-row').forEach(row => {
             const hours = parseFloat(row.querySelector('.hours-input').value) || 0;
             const rate = parseFloat(row.querySelector('.rate-input').value) || 0;
             const lineTotal = hours * rate;
@@ -180,177 +604,136 @@
         document.getElementById('grand-total').textContent = formatCurrency(grandTotal);
     }
 
-    // Format number as currency
     function formatCurrency(amount) {
         return '$' + amount.toFixed(2);
     }
 
-    // Template Management
-    function getTemplates() {
-        try {
-            const data = localStorage.getItem(STORAGE_KEY);
-            return data ? JSON.parse(data) : {};
-        } catch (e) {
-            console.error('Error reading templates:', e);
-            return {};
-        }
+    function formatDate(dateStr) {
+        if (!dateStr) return '';
+        const date = new Date(dateStr + 'T00:00:00');
+        return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
     }
 
-    function saveTemplates(templates) {
-        try {
-            localStorage.setItem(STORAGE_KEY, JSON.stringify(templates));
-        } catch (e) {
-            console.error('Error saving templates:', e);
-            alert('Failed to save template. localStorage may be full or disabled.');
-        }
+    // ============================================
+    // Form Actions
+    // ============================================
+
+    function clearFormFields() {
+        // Reset parts table
+        partsBody.innerHTML = '';
+        addPartRow();
+
+        // Reset labor table
+        laborBody.innerHTML = '';
+        addLaborRow();
+
+        // Clear customer and vehicle
+        document.getElementById('customer-name').value = '';
+        document.getElementById('customer-address').value = '';
+        document.getElementById('customer-phone').value = '';
+        document.getElementById('customer-email').value = '';
+        document.getElementById('vehicle-year').value = '';
+        document.getElementById('vehicle-make').value = '';
+        document.getElementById('vehicle-model').value = '';
+        document.getElementById('vehicle-vin').value = '';
+        document.getElementById('vehicle-mileage').value = '';
+
+        calculateTotals();
     }
 
-    function loadTemplateList() {
-        const templates = getTemplates();
-        const names = Object.keys(templates);
-
-        // Clear existing options except the default
-        templateSelect.innerHTML = '<option value="">-- Select Template --</option>';
-
-        names.forEach(name => {
-            const option = document.createElement('option');
-            option.value = name;
-            option.textContent = name;
-            templateSelect.appendChild(option);
-        });
-    }
-
-    function openSaveModal() {
-        templateNameInput.value = document.getElementById('shop-name').value || '';
-        templateModal.classList.add('active');
-        templateNameInput.focus();
-    }
-
-    function closeSaveModal() {
-        templateModal.classList.remove('active');
-    }
-
-    function saveTemplate() {
-        const name = templateNameInput.value.trim();
-        if (!name) {
-            alert('Please enter a template name.');
-            return;
-        }
-
-        const templates = getTemplates();
-
-        // Check if overwriting
-        if (templates[name]) {
-            if (!confirm(`Template "${name}" already exists. Overwrite?`)) {
+    async function startNewInvoice() {
+        if (currentInvoiceId) {
+            if (!confirm('Start a new invoice? Make sure your current invoice is saved.')) {
                 return;
             }
         }
 
-        templates[name] = {
-            shopName: document.getElementById('shop-name').value,
-            shopAddress: document.getElementById('shop-address').value,
-            shopPhone: document.getElementById('shop-phone').value,
-            shopEmail: document.getElementById('shop-email').value,
-            taxRate: document.getElementById('tax-rate').value,
-            notes: document.getElementById('invoice-notes').value
-        };
-
-        saveTemplates(templates);
-        loadTemplateList();
-        closeSaveModal();
-
-        // Select the newly saved template
-        templateSelect.value = name;
+        window.history.replaceState({}, '', '/tools/invoice/');
+        await initializeNewInvoice();
+        clearFormFields();
+        renderInvoiceList();
     }
 
-    function loadSelectedTemplate() {
-        const name = templateSelect.value;
-        if (!name) {
-            alert('Please select a template to load.');
-            return;
-        }
-
-        const templates = getTemplates();
-        const template = templates[name];
-
-        if (!template) {
-            alert('Template not found.');
-            return;
-        }
-
-        document.getElementById('shop-name').value = template.shopName || '';
-        document.getElementById('shop-address').value = template.shopAddress || '';
-        document.getElementById('shop-phone').value = template.shopPhone || '';
-        document.getElementById('shop-email').value = template.shopEmail || '';
-        document.getElementById('tax-rate').value = template.taxRate || '8.25';
-        document.getElementById('tax-rate-display').textContent = template.taxRate || '8.25';
-        document.getElementById('invoice-notes').value = template.notes || '';
-
-        calculateTotals();
-    }
-
-    function deleteSelectedTemplate() {
-        const name = templateSelect.value;
-        if (!name) {
-            alert('Please select a template to delete.');
-            return;
-        }
-
-        if (!confirm(`Are you sure you want to delete template "${name}"?`)) {
-            return;
-        }
-
-        const templates = getTemplates();
-        delete templates[name];
-        saveTemplates(templates);
-        loadTemplateList();
-    }
-
-    // Clear the entire form
-    function clearForm() {
-        if (!confirm('Clear all form data? This cannot be undone.')) {
-            return;
-        }
-
-        form.reset();
-
-        // Reset parts table to one row
-        partsBody.innerHTML = `
-            <tr class="part-row">
-                <td><input type="text" name="partName[]" placeholder="Part description"></td>
-                <td><input type="text" name="partNumber[]" placeholder="ABC123"></td>
-                <td><input type="number" name="partQty[]" value="1" min="1" class="qty-input"></td>
-                <td><input type="number" name="partPrice[]" value="0.00" step="0.01" min="0" class="price-input"></td>
-                <td class="line-total">$0.00</td>
-                <td class="no-print"><button type="button" class="remove-row-btn" onclick="removePartRow(this)">×</button></td>
-            </tr>
-        `;
-
-        // Reset labor table to one row
-        laborBody.innerHTML = `
-            <tr class="labor-row">
-                <td><input type="text" name="laborDesc[]" placeholder="Labor description"></td>
-                <td><input type="number" name="laborHours[]" value="1" step="0.25" min="0" class="hours-input"></td>
-                <td><input type="number" name="laborRate[]" value="85.00" step="0.01" min="0" class="rate-input"></td>
-                <td class="line-total">$85.00</td>
-                <td class="no-print"><button type="button" class="remove-row-btn" onclick="removeLaborRow(this)">×</button></td>
-            </tr>
-        `;
-
-        generateInvoiceNumber();
-        setTodayDate();
-        document.getElementById('tax-rate').value = '8.25';
-        document.getElementById('tax-rate-display').textContent = '8.25';
-        calculateTotals();
-        // Apply mobile labels for responsive display
-        if (window.applyMobileLabels) {
-            window.applyMobileLabels();
-        }
-    }
-
-    // Print the invoice
     function printInvoice() {
         window.print();
+    }
+
+    function showSaveIndicator(message) {
+        const indicator = document.getElementById('save-indicator');
+        if (indicator) {
+            indicator.textContent = message;
+            indicator.classList.add('show');
+            setTimeout(() => indicator.classList.remove('show'), 2000);
+        }
+    }
+
+    // ============================================
+    // Event Listeners
+    // ============================================
+
+    function attachEventListeners() {
+        // Form input changes trigger recalculation
+        form.addEventListener('input', handleFormInput);
+
+        // Template controls
+        document.getElementById('save-template-btn').addEventListener('click', openSaveTemplateModal);
+        document.getElementById('delete-template-btn').addEventListener('click', deleteSelectedTemplate);
+
+        // Auto-load template on dropdown change
+        templateSelect.addEventListener('change', function() {
+            if (this.value) {
+                loadSelectedTemplate();
+            }
+        });
+
+        // Modal controls
+        document.getElementById('cancel-template-btn').addEventListener('click', closeSaveTemplateModal);
+        document.getElementById('confirm-save-btn').addEventListener('click', saveTemplate);
+
+        // Action buttons
+        document.getElementById('new-invoice-btn').addEventListener('click', startNewInvoice);
+        document.getElementById('save-invoice-btn').addEventListener('click', saveInvoice);
+        document.getElementById('print-btn').addEventListener('click', printInvoice);
+
+        // Close modal on outside click
+        templateModal.addEventListener('click', function(e) {
+            if (e.target === templateModal) {
+                closeSaveTemplateModal();
+            }
+        });
+
+        // Tax rate display sync
+        document.getElementById('tax-rate').addEventListener('input', function() {
+            document.getElementById('tax-rate-display').textContent = this.value || '0';
+        });
+
+        // Toggle invoice list panel
+        const toggleBtn = document.getElementById('toggle-invoice-list');
+        if (toggleBtn) {
+            toggleBtn.addEventListener('click', () => {
+                invoiceListPanel.classList.toggle('collapsed');
+            });
+        }
+    }
+
+    function handleFormInput(e) {
+        const target = e.target;
+
+        // Recalculate if it's a numeric input in parts or labor
+        if (target.classList.contains('qty-input') ||
+            target.classList.contains('price-input') ||
+            target.classList.contains('hours-input') ||
+            target.classList.contains('rate-input') ||
+            target.id === 'tax-rate') {
+            calculateTotals();
+        }
+    }
+
+    // Initialize on DOM ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
     }
 
 })();
