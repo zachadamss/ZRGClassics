@@ -37,14 +37,9 @@
     }
 
     function showLoginRequired() {
-        // Hide the saved invoices sidebar
-        const sidebar = document.getElementById('invoice-list-panel');
-        if (sidebar) {
-            sidebar.style.display = 'none';
-        }
-
-        const container = document.querySelector('.invoice-container');
-        container.innerHTML = `
+        // Replace the entire page layout with centered auth message
+        const pageLayout = document.querySelector('.invoice-page-layout');
+        pageLayout.innerHTML = `
             <div class="auth-required">
                 <div class="auth-icon">🔐</div>
                 <h2>Login Required</h2>
@@ -56,6 +51,11 @@
                 </div>
             </div>
         `;
+        // Override layout styles for centering
+        pageLayout.style.display = 'flex';
+        pageLayout.style.justifyContent = 'center';
+        pageLayout.style.alignItems = 'center';
+        pageLayout.style.minHeight = '60vh';
     }
 
     // ============================================
