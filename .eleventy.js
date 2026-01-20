@@ -8,6 +8,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/tools/invoice.js");
   eleventyConfig.addPassthroughCopy("src/tools/build-calculator.js");
   eleventyConfig.addPassthroughCopy("src/tools/maintenance-tracker.js");
+  eleventyConfig.addPassthroughCopy("src/tools/restoration-checklist.js");
   eleventyConfig.addPassthroughCopy("src/js");
 
   // Watch for CSS changes

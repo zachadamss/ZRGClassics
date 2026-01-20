@@ -195,38 +195,80 @@ const Garage = {
     (data || []).forEach(item => {
       itemsMap[item.item_id] = {
         id: item.id,
-        completed: item.completed,
+        status: item.status || (item.completed ? 'complete' : 'not-started'),
         dateCompleted: item.date_completed,
-        cost: item.cost ? parseFloat(item.cost) : null,
-        notes: item.notes
+        estimatedCost: item.estimated_cost ? parseFloat(item.estimated_cost) : 0,
+        actualCost: item.actual_cost ? parseFloat(item.actual_cost) : 0,
+        notes: item.notes,
+        category: item.category,
+        itemName: item.item_name
       };
     });
     return itemsMap;
   },
 
   /**
-   * Update or create a restoration item
+   * Update or create a restoration item (extended schema)
    */
   async updateRestorationItem(vehicleId, itemId, data) {
     const user = await Auth.getUser();
     if (!user) throw new Error('Must be logged in');
 
+    const upsertData = {
+      garage_vehicle_id: vehicleId,
+      user_id: user.id,
+      item_id: itemId,
+      status: data.status || 'not-started',
+      completed: data.status === 'complete',
+      date_completed: data.status === 'complete' ? (data.dateCompleted || new Date().toISOString()) : null,
+      estimated_cost: data.estimatedCost || 0,
+      actual_cost: data.actualCost || 0,
+      notes: data.notes || null,
+      category: data.category || null,
+      item_name: data.itemName || null,
+      updated_at: new Date().toISOString()
+    };
+
     const { data: result, error } = await db
       .from('garage_restoration_items')
-      .upsert({
-        garage_vehicle_id: vehicleId,
-        user_id: user.id,
-        item_id: itemId,
-        completed: data.completed || false,
-        date_completed: data.dateCompleted || null,
-        cost: data.cost || null,
-        notes: data.notes || null,
-        updated_at: new Date().toISOString()
-      }, {
+      .upsert(upsertData, {
         onConflict: 'garage_vehicle_id,item_id'
       })
       .select()
       .single();
+
+    if (error) throw error;
+    return result;
+  },
+
+  /**
+   * Bulk update restoration items for a vehicle
+   */
+  async bulkUpdateRestorationItems(vehicleId, items) {
+    const user = await Auth.getUser();
+    if (!user) throw new Error('Must be logged in');
+
+    const upsertData = items.map(item => ({
+      garage_vehicle_id: vehicleId,
+      user_id: user.id,
+      item_id: item.itemId,
+      status: item.status || 'not-started',
+      completed: item.status === 'complete',
+      date_completed: item.status === 'complete' ? (item.dateCompleted || new Date().toISOString()) : null,
+      estimated_cost: item.estimatedCost || 0,
+      actual_cost: item.actualCost || 0,
+      notes: item.notes || null,
+      category: item.category || null,
+      item_name: item.itemName || null,
+      updated_at: new Date().toISOString()
+    }));
+
+    const { data: result, error } = await db
+      .from('garage_restoration_items')
+      .upsert(upsertData, {
+        onConflict: 'garage_vehicle_id,item_id'
+      })
+      .select();
 
     if (error) throw error;
     return result;
@@ -254,13 +296,19 @@ const Garage = {
   async getRestorationProgress(vehicleId) {
     const items = await this.getRestorationItems(vehicleId);
     const values = Object.values(items);
-    const completed = values.filter(i => i.completed).length;
-    const totalCost = values.reduce((sum, i) => sum + (i.cost || 0), 0);
+    const completed = values.filter(i => i.status === 'complete').length;
+    const inProgress = values.filter(i => i.status === 'in-progress').length;
+    const skipped = values.filter(i => i.status === 'skipped').length;
+    const totalEstimated = values.reduce((sum, i) => sum + (i.estimatedCost || 0), 0);
+    const totalActual = values.reduce((sum, i) => sum + (i.actualCost || 0), 0);
 
     return {
       completedCount: completed,
+      inProgressCount: inProgress,
+      skippedCount: skipped,
       trackedCount: values.length,
-      totalCost
+      totalEstimated,
+      totalActual
     };
   },
 

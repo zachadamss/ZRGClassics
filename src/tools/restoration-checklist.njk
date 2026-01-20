@@ -1,0 +1,138 @@
+---
+layout: layouts/base.njk
+title: Restoration Checklist
+description: "Step-by-step restoration checklists for vintage BMW and Porsche. Track progress, costs, and notes organized by system. Vehicle-specific items for E30, 944, and more."
+keywords: "restoration checklist, car restoration guide, BMW restoration, Porsche restoration, project car checklist, restoration tracker"
+extraScripts:
+  - js/garage.js
+  - tools/restoration-checklist.js
+---
+
+<main class="restoration-checklist">
+    <div class="checklist-container">
+        <header class="checklist-header">
+            <h1>Restoration Checklist</h1>
+            <p class="checklist-subtitle">Track your restoration progress with vehicle-specific checklists organized by system</p>
+        </header>
+
+        <!-- Project Setup -->
+        <section class="checklist-section project-setup" id="project-setup">
+            <h2>Select Vehicle</h2>
+            <p class="setup-description">Choose a vehicle from your garage to track restoration progress. Your progress is automatically saved to your account.</p>
+            <div class="setup-row">
+                <div class="setup-col setup-col-full">
+                    <label for="vehicle-select">Vehicle</label>
+                    <select id="vehicle-select">
+                        <option value="">Select your vehicle...</option>
+                        <!-- Options populated by JavaScript -->
+                    </select>
+                </div>
+            </div>
+            <div class="setup-actions">
+                <button type="button" class="btn btn-primary" id="start-project-btn" disabled>Start Checklist</button>
+                <a href="/account/garage/" class="btn btn-secondary">Manage Garage</a>
+            </div>
+        </section>
+
+        <!-- Progress Summary (hidden until project started) -->
+        <section class="checklist-section progress-summary" id="progress-summary" style="display: none;">
+            <h2>Progress Summary</h2>
+            <div class="summary-grid">
+                <div class="summary-card">
+                    <div class="summary-label">Overall Progress</div>
+                    <div class="summary-value" id="overall-progress">0%</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-label">Items Complete</div>
+                    <div class="summary-value"><span id="items-complete">0</span> / <span id="items-total">0</span></div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-label">Estimated Budget</div>
+                    <div class="summary-value">$<span id="estimated-total">0</span></div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-label">Actual Spent</div>
+                    <div class="summary-value">$<span id="actual-total">0</span></div>
+                </div>
+            </div>
+            <div class="summary-actions">
+                <button type="button" class="btn btn-secondary" id="print-btn">Print</button>
+                <button type="button" class="btn btn-secondary" id="export-btn">Export</button>
+                <button type="button" class="btn btn-secondary btn-danger-outline" id="reset-btn">Reset Progress</button>
+            </div>
+        </section>
+
+        <!-- Checklist Categories (hidden until project started) -->
+        <section class="checklist-section checklist-categories" id="checklist-categories" style="display: none;">
+            <div class="category-filters">
+                <button type="button" class="filter-btn active" data-filter="all">All</button>
+                <button type="button" class="filter-btn" data-filter="not-started">Not Started</button>
+                <button type="button" class="filter-btn" data-filter="in-progress">In Progress</button>
+                <button type="button" class="filter-btn" data-filter="complete">Complete</button>
+            </div>
+            <div id="checklist-content">
+                <!-- Checklist items will be rendered here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Add Custom Item Modal -->
+        <div class="modal-overlay" id="add-item-modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Add Custom Item</h3>
+                    <button type="button" class="modal-close" id="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="custom-item-name">Item Name</label>
+                        <input type="text" id="custom-item-name" placeholder="e.g., Replace heater core">
+                    </div>
+                    <div class="form-group">
+                        <label for="custom-item-category">Category</label>
+                        <select id="custom-item-category">
+                            <option value="engine">Engine & Drivetrain</option>
+                            <option value="cooling">Cooling System</option>
+                            <option value="fuel">Fuel System</option>
+                            <option value="exhaust">Exhaust</option>
+                            <option value="suspension">Suspension & Steering</option>
+                            <option value="brakes">Brakes</option>
+                            <option value="electrical">Electrical</option>
+                            <option value="interior">Interior</option>
+                            <option value="body">Body & Paint</option>
+                            <option value="glass">Glass & Trim</option>
+                            <option value="seals">Weatherstripping & Seals</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="custom-item-estimate">Estimated Cost ($)</label>
+                        <input type="number" id="custom-item-estimate" min="0" step="10" placeholder="0">
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-primary" id="save-custom-item">Add Item</button>
+                        <button type="button" class="btn btn-secondary" id="cancel-custom-item">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Export Modal -->
+        <div class="modal-overlay" id="export-modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Export Checklist</h3>
+                    <button type="button" class="modal-close" id="close-export-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Choose your export format:</p>
+                    <div class="export-options">
+                        <button type="button" class="btn btn-primary" id="export-json">Export as JSON</button>
+                        <button type="button" class="btn btn-secondary" id="export-csv">Export as CSV</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

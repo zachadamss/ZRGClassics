@@ -7861,6 +7861,651 @@ nav ul li.dropdown.touch-open .dropdown-menu {
     color: var(--navy-dark);
 }
 
+/* ================================
+   Restoration Checklist
+   ================================ */
+.restoration-checklist {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.checklist-container {
+    background: var(--background-color);
+}
+
+.checklist-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.checklist-header h1 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+[data-theme="dark"] .checklist-header h1 {
+    color: var(--gulf-blue);
+}
+
+.checklist-subtitle {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.checklist-section {
+    background: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.checklist-section h2 {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--gulf-orange);
+}
+
+[data-theme="dark"] .checklist-section h2 {
+    color: var(--gulf-blue);
+}
+
+/* Project Setup */
+.setup-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.setup-col label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.setup-col input,
+.setup-col select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.setup-col input:focus,
+.setup-col select:focus {
+    outline: none;
+    border-color: var(--gulf-blue);
+}
+
+.setup-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Progress Summary */
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.summary-card {
+    background: var(--background-alt);
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    text-align: center;
+}
+
+.summary-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.summary-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .summary-value {
+    color: var(--gulf-blue);
+}
+
+.progress-bar {
+    height: 8px;
+    background: var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--gulf-blue), var(--gulf-orange));
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.summary-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Category Filters */
+.category-filters {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.category-filters .filter-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-full);
+    background: var(--background-color);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.85rem;
+}
+
+.category-filters .filter-btn:hover {
+    border-color: var(--gulf-blue);
+}
+
+.category-filters .filter-btn.active {
+    background: var(--gulf-blue);
+    color: var(--navy-dark);
+    border-color: var(--gulf-blue);
+}
+
+/* Checklist Category */
+.checklist-category {
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    background: var(--background-alt);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.category-header:hover {
+    background: var(--border-color);
+}
+
+.category-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex: 1;
+}
+
+.category-icon {
+    font-size: 1.25rem;
+}
+
+.category-title h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.category-progress {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    background: var(--background-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius-sm);
+}
+
+.category-progress-bar {
+    flex: 1;
+    max-width: 150px;
+    height: 6px;
+    background: var(--border-color);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.category-progress-fill {
+    height: 100%;
+    background: var(--gulf-blue);
+    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+.category-toggle {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+}
+
+.category-items {
+    padding: 0.5rem;
+}
+
+/* Checklist Item */
+.checklist-item {
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    margin-bottom: 0.5rem;
+    background: var(--background-color);
+    transition: border-color 0.2s;
+}
+
+.checklist-item.status-complete {
+    border-color: var(--success-color);
+    background: rgba(34, 165, 89, 0.05);
+}
+
+.checklist-item.status-in-progress {
+    border-color: var(--gulf-orange);
+    background: rgba(242, 101, 34, 0.05);
+}
+
+.checklist-item.status-skipped {
+    opacity: 0.6;
+}
+
+.item-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+}
+
+.item-status {
+    flex-shrink: 0;
+}
+
+.status-select {
+    padding: 0.35rem 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    background: var(--background-color);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.item-name {
+    flex: 1;
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+.vehicle-specific-badge,
+.custom-badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    padding: 0.15rem 0.4rem;
+    border-radius: var(--radius-sm);
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
+.vehicle-specific-badge {
+    background: var(--gulf-blue);
+    color: var(--navy-dark);
+}
+
+.custom-badge {
+    background: var(--gulf-orange);
+    color: #fff;
+}
+
+.item-toggle {
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+}
+
+.item-toggle:hover {
+    color: var(--gulf-blue);
+}
+
+/* Item Details */
+.item-details {
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+    background: var(--background-alt);
+}
+
+.item-costs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cost-field label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 0.25rem;
+}
+
+.cost-input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    background: var(--background-color);
+}
+
+.cost-input-wrapper .currency {
+    padding: 0.5rem;
+    background: var(--background-alt);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.cost-input-wrapper input {
+    flex: 1;
+    border: none;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    background: transparent;
+    color: var(--text-color);
+}
+
+.cost-input-wrapper input:focus {
+    outline: none;
+}
+
+.item-notes label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 0.25rem;
+}
+
+.notes-input {
+    width: 100%;
+    min-height: 80px;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    font-family: inherit;
+    resize: vertical;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.notes-input:focus {
+    outline: none;
+    border-color: var(--gulf-blue);
+}
+
+/* Add Item Button */
+.add-item-btn {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px dashed var(--border-color);
+    border-radius: var(--radius-md);
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+}
+
+.add-item-btn:hover {
+    border-color: var(--gulf-blue);
+    color: var(--gulf-blue);
+}
+
+/* Delete Button */
+.btn-danger {
+    background: var(--danger-color);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+}
+
+.btn-danger:hover {
+    background: #c82333;
+}
+
+/* Restoration Checklist Responsive */
+@media (max-width: 768px) {
+    .restoration-checklist {
+        padding: 1rem;
+    }
+
+    .setup-row {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .category-header {
+        flex-wrap: wrap;
+    }
+
+    .category-progress-bar {
+        order: 3;
+        max-width: 100%;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .item-header {
+        flex-wrap: wrap;
+    }
+
+    .item-status {
+        order: 1;
+    }
+
+    .item-name {
+        order: 3;
+        flex-basis: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .item-toggle {
+        order: 2;
+        margin-left: auto;
+    }
+
+    .item-costs {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .setup-actions {
+        flex-direction: column;
+    }
+
+    .summary-actions {
+        flex-direction: column;
+    }
+
+    .category-filters {
+        justify-content: center;
+    }
+}
+
+/* Auth Required Screen */
+.auth-required {
+    text-align: center;
+    padding: 4rem 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.auth-required .auth-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.auth-required h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+[data-theme="dark"] .auth-required h2 {
+    color: var(--gulf-blue);
+}
+
+.auth-required p {
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+}
+
+.auth-required .auth-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* Setup Description */
+.setup-description {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.setup-col-full {
+    grid-column: 1 / -1;
+}
+
+/* Save Indicator */
+.save-indicator {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--navy);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-md);
+    font-size: 0.9rem;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 1000;
+}
+
+.save-indicator.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Button Danger Outline */
+.btn-danger-outline {
+    background: transparent;
+    color: var(--danger-color);
+    border: 1px solid var(--danger-color);
+}
+
+.btn-danger-outline:hover {
+    background: var(--danger-color);
+    color: #fff;
+}
+
+/* Restoration Checklist Print Styles */
+@media print {
+    .restoration-checklist {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .project-setup,
+    .summary-actions,
+    .add-item-btn,
+    .modal-overlay,
+    .filter-btn,
+    .category-filters,
+    .item-toggle,
+    .btn {
+        display: none !important;
+    }
+
+    .checklist-section {
+        box-shadow: none;
+        border: 1px solid #ccc;
+        page-break-inside: avoid;
+    }
+
+    .checklist-category {
+        page-break-inside: avoid;
+    }
+
+    .category-items {
+        display: block !important;
+    }
+
+    .item-details {
+        display: block !important;
+    }
+
+    .checklist-item {
+        border: 1px solid #ccc;
+        margin-bottom: 0.5rem;
+    }
+
+    .checklist-item.status-complete .item-name::before {
+        content: "[COMPLETE] ";
+        font-weight: bold;
+    }
+
+    .checklist-item.status-in-progress .item-name::before {
+        content: "[IN PROGRESS] ";
+        font-weight: bold;
+    }
+
+    .checklist-item.status-skipped .item-name::before {
+        content: "[SKIPPED] ";
+        font-weight: bold;
+    }
+
+    .status-select {
+        display: none;
+    }
+}
+
 /* Print Styles */
 @media print {
     .maintenance-tracker {
