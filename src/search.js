@@ -11,12 +11,6 @@ async function loadSearchIndex() {
     try {
         const response = await fetch('/search-index.json');
         searchIndex = await response.json();
-        console.log('Search index loaded:',
-            searchIndex.issues.length, 'issues,',
-            searchIndex.torqueSpecs.length, 'torque specs,',
-            searchIndex.guides.length, 'guides,',
-            searchIndex.suppliers.length, 'suppliers'
-        );
     } catch (error) {
         console.error('Failed to load search index:', error);
     }

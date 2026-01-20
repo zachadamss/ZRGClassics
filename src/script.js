@@ -1,5 +1,3 @@
-console.log("Website is running!");
-
 // ================================
 // Dark Mode Toggle
 // ================================

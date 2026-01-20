@@ -376,6 +376,14 @@ let savedItems = {};
 let isSaving = false;
 let pendingSaves = [];
 
+// Helper: Escape HTML to prevent XSS
+function escapeHtml(text) {
+    if (text == null) return '';
+    const div = document.createElement('div');
+    div.textContent = String(text);
+    return div.innerHTML;
+}
+
 // ============================================
 // Authentication Check
 // ============================================
@@ -462,13 +470,13 @@ function createVehicleCard(vehicle) {
 
     card.innerHTML = `
         <div class="vehicle-card-header">
-            <h3>${displayInfo.name}</h3>
-            <span class="platform-badge${displayInfo.isCustom ? ' custom' : ''}">${displayInfo.badge}</span>
+            <h3>${escapeHtml(displayInfo.name)}</h3>
+            <span class="platform-badge${displayInfo.isCustom ? ' custom' : ''}">${escapeHtml(displayInfo.badge)}</span>
         </div>
         <div class="vehicle-card-body">
             <div class="vehicle-stat">
                 <span class="stat-label">Year</span>
-                <span class="stat-value">${vehicle.year || '-'}</span>
+                <span class="stat-value">${escapeHtml(vehicle.year) || '-'}</span>
             </div>
             <div class="vehicle-stat">
                 <span class="stat-label">Mileage</span>
@@ -490,20 +498,21 @@ function createVehicleCard(vehicle) {
 
 async function loadVehicleRestorationStatus(vehicleId, card) {
     try {
-        const checklist = await Garage.getRestorationChecklist(vehicleId);
+        const savedItems = await Garage.getRestorationItems(vehicleId);
         const statusEl = card.querySelector('.vehicle-card-status');
         statusEl.classList.remove('status-loading');
 
-        if (checklist && checklist.items) {
-            const items = Object.values(checklist.items).flat();
-            const total = items.length;
+        const items = Object.values(savedItems);
+        const total = items.length;
+
+        if (total === 0) {
+            statusEl.className = 'vehicle-card-status status-new';
+            statusEl.textContent = 'Not started';
+        } else {
             const complete = items.filter(i => i.status === 'complete').length;
             const inProgress = items.filter(i => i.status === 'in-progress').length;
 
-            if (total === 0) {
-                statusEl.className = 'vehicle-card-status status-new';
-                statusEl.textContent = 'Not started';
-            } else if (complete === total) {
+            if (complete === total) {
                 statusEl.className = 'vehicle-card-status status-ok';
                 statusEl.textContent = 'Restoration complete!';
             } else if (inProgress > 0 || complete > 0) {
@@ -514,9 +523,6 @@ async function loadVehicleRestorationStatus(vehicleId, card) {
                 statusEl.className = 'vehicle-card-status status-new';
                 statusEl.textContent = 'Not started';
             }
-        } else {
-            statusEl.className = 'vehicle-card-status status-new';
-            statusEl.textContent = 'Not started';
         }
     } catch (error) {
         console.error('Failed to load restoration status:', error);

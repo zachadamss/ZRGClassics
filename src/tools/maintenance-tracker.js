@@ -258,6 +258,14 @@ let currentVehicle = null;
 let maintenanceSchedule = [];
 let serviceHistory = [];
 
+// Helper: Escape HTML to prevent XSS
+function escapeHtml(text) {
+    if (text == null) return '';
+    const div = document.createElement('div');
+    div.textContent = String(text);
+    return div.innerHTML;
+}
+
 // ============================================
 // Authentication
 // ============================================
@@ -348,13 +356,13 @@ function createVehicleCard(vehicle) {
 
     card.innerHTML = `
         <div class="vehicle-card-header">
-            <h3>${displayInfo.name}</h3>
-            <span class="platform-badge${displayInfo.isCustom ? ' custom' : ''}">${displayInfo.badge}</span>
+            <h3>${escapeHtml(displayInfo.name)}</h3>
+            <span class="platform-badge${displayInfo.isCustom ? ' custom' : ''}">${escapeHtml(displayInfo.badge)}</span>
         </div>
         <div class="vehicle-card-body">
             <div class="vehicle-stat">
                 <span class="stat-label">Year</span>
-                <span class="stat-value">${vehicle.year || '-'}</span>
+                <span class="stat-value">${escapeHtml(vehicle.year) || '-'}</span>
             </div>
             <div class="vehicle-stat">
                 <span class="stat-label">Mileage</span>
@@ -552,7 +560,7 @@ function renderUpcomingMaintenance() {
         return `
             <div class="upcoming-item ${item.status}">
                 <div class="upcoming-info">
-                    <h4>${item.name}</h4>
+                    <h4>${escapeHtml(item.name)}</h4>
                     <p>${dueText}</p>
                 </div>
                 <button type="button" class="btn btn-primary btn-sm log-service-btn" data-id="${item.id}">Log Service</button>
@@ -609,7 +617,7 @@ function renderMaintenanceSchedule() {
 
         return `
             <tr>
-                <td data-label="Item">${item.name}</td>
+                <td data-label="Item">${escapeHtml(item.name)}</td>
                 <td data-label="Miles">${item.intervalMiles ? item.intervalMiles.toLocaleString() : '-'}</td>
                 <td data-label="Months">${item.intervalMonths || '-'}</td>
                 <td data-label="Last Service">${lastService}</td>
@@ -659,7 +667,7 @@ function renderServiceHistory() {
     list.innerHTML = sorted.map(record => `
         <div class="history-item">
             <div class="history-header">
-                <h4>${record.serviceName}</h4>
+                <h4>${escapeHtml(record.serviceName)}</h4>
                 <span class="history-date">${formatDate(record.serviceDate)}</span>
             </div>
             <div class="history-details">
@@ -667,8 +675,8 @@ function renderServiceHistory() {
                 <span class="history-cost">${record.cost ? '$' + parseFloat(record.cost).toFixed(2) : ''}</span>
                 <span class="history-shop">${record.shopType === 'diy' ? 'DIY' : record.shopType === 'dealer' ? 'Dealer' : 'Shop'}</span>
             </div>
-            ${record.partsUsed ? `<div class="history-parts"><strong>Parts:</strong> ${record.partsUsed}</div>` : ''}
-            ${record.notes ? `<div class="history-notes">${record.notes}</div>` : ''}
+            ${record.partsUsed ? `<div class="history-parts"><strong>Parts:</strong> ${escapeHtml(record.partsUsed)}</div>` : ''}
+            ${record.notes ? `<div class="history-notes">${escapeHtml(record.notes)}</div>` : ''}
             <div class="history-actions">
                 <button type="button" class="btn-icon edit-service" data-id="${record.id}" title="Edit">&#9998;</button>
                 <button type="button" class="btn-icon delete-service" data-id="${record.id}" title="Delete">&times;</button>

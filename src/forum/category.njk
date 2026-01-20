@@ -32,12 +32,7 @@ description: Browse threads in this forum category.
 <script src="/js/supabase.js"></script>
 <script src="/js/forum.js"></script>
 <script>
-console.log('=== CATEGORY PAGE SCRIPT LOADED ===');
 document.addEventListener('DOMContentLoaded', async () => {
-  console.log('Category page DOMContentLoaded fired');
-  console.log('Supabase available:', typeof supabase !== 'undefined');
-  console.log('db available:', typeof db !== 'undefined');
-  console.log('Forum available:', typeof Forum !== 'undefined');
   const container = document.getElementById('thread-list');
   const paginationContainer = document.getElementById('pagination');
   const newThreadBtn = document.getElementById('new-thread-btn');
@@ -49,7 +44,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     const pathParts = window.location.pathname.split('/').filter(p => p);
     categorySlug = pathParts[1]; // /forum/{slug}/
   }
-  console.log('Category slug:', categorySlug);
 
   if (!categorySlug) {
     window.location.href = '/forum/';
@@ -58,13 +52,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Check if user is logged in
   const user = await Auth.getUser();
-  console.log('User:', user);
 
   try {
     // Load category info
-    console.log('Fetching category...');
     const category = await Forum.getCategory(categorySlug);
-    console.log('Category result:', category);
 
     if (!category) {
       container.innerHTML = '<p class="error">Category not found</p>';
