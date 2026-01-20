@@ -418,65 +418,114 @@ function showLoginRequired() {
 async function loadGarageVehicles() {
     try {
         garageVehicles = await Garage.getVehicles();
-        populateVehicleSelect();
+        renderVehicleCards();
     } catch (error) {
         console.error('Failed to load garage vehicles:', error);
         garageVehicles = [];
-        populateVehicleSelect();
+        renderVehicleCards();
     }
 }
 
-function populateVehicleSelect() {
-    const select = document.getElementById('vehicle-select');
-    if (!select) return;
+function renderVehicleCards() {
+    const grid = document.getElementById('garage-grid');
+    const emptyState = document.getElementById('empty-garage');
 
-    // Clear existing options except the placeholder
-    select.innerHTML = '<option value="">Select your vehicle...</option>';
+    if (!grid) return;
 
-    // Add garage vehicles if any
-    if (garageVehicles.length > 0) {
-        const garageGroup = document.createElement('optgroup');
-        garageGroup.label = 'My Garage';
+    // Clear existing cards (except empty state)
+    grid.querySelectorAll('.vehicle-card').forEach(card => card.remove());
 
-        garageVehicles.forEach(vehicle => {
-            const option = document.createElement('option');
-            option.value = `garage:${vehicle.id}`;
-            const platformInfo = Garage.getPlatformInfo(vehicle.platform);
-            const displayName = vehicle.nickname
-                ? `${vehicle.nickname} (${platformInfo.name})`
-                : `${vehicle.year || ''} ${platformInfo.fullName}`.trim();
-            option.textContent = displayName;
-            option.dataset.platform = vehicle.platform;
-            garageGroup.appendChild(option);
-        });
-
-        select.appendChild(garageGroup);
+    if (garageVehicles.length === 0) {
+        emptyState.style.display = 'block';
+        emptyState.innerHTML = `
+            <p>No vehicles in your garage yet.</p>
+            <p>Add a vehicle to start tracking your restoration progress.</p>
+            <a href="/account/garage/" class="btn btn-secondary">Go to My Garage</a>
+        `;
+        return;
     }
 
-    // Add all platform options
-    const bmwGroup = document.createElement('optgroup');
-    bmwGroup.label = 'BMW (Select Platform)';
-    const bmwPlatforms = ['e28', 'e30', 'e34', 'e36', 'e39', 'e46', 'e90'];
-    bmwPlatforms.forEach(platform => {
-        const option = document.createElement('option');
-        option.value = `platform:${platform}`;
-        const info = Garage.PLATFORMS[platform];
-        option.textContent = `${info.name} (${info.years})`;
-        bmwGroup.appendChild(option);
-    });
-    select.appendChild(bmwGroup);
+    emptyState.style.display = 'none';
 
-    const porscheGroup = document.createElement('optgroup');
-    porscheGroup.label = 'Porsche (Select Platform)';
-    const porschePlatforms = ['924', '928', '944', '964', '986', '987', '991', '993', '996', '997'];
-    porschePlatforms.forEach(platform => {
-        const option = document.createElement('option');
-        option.value = `platform:${platform}`;
-        const info = Garage.PLATFORMS[platform];
-        option.textContent = `${info.name} (${info.years})`;
-        porscheGroup.appendChild(option);
+    garageVehicles.forEach(vehicle => {
+        const card = createVehicleCard(vehicle);
+        grid.appendChild(card);
     });
-    select.appendChild(porscheGroup);
+}
+
+function createVehicleCard(vehicle) {
+    const card = document.createElement('div');
+    card.className = 'vehicle-card';
+    card.dataset.id = vehicle.id;
+
+    const platformInfo = Garage.getPlatformInfo(vehicle.platform);
+    const displayName = vehicle.nickname || `${vehicle.year || ''} ${platformInfo.fullName}`.trim();
+
+    card.innerHTML = `
+        <div class="vehicle-card-header">
+            <h3>${displayName}</h3>
+            <span class="platform-badge">${platformInfo.name}</span>
+        </div>
+        <div class="vehicle-card-body">
+            <div class="vehicle-stat">
+                <span class="stat-label">Year</span>
+                <span class="stat-value">${vehicle.year || '-'}</span>
+            </div>
+            <div class="vehicle-stat">
+                <span class="stat-label">Mileage</span>
+                <span class="stat-value">${vehicle.mileage ? vehicle.mileage.toLocaleString() : '-'}</span>
+            </div>
+        </div>
+        <div class="vehicle-card-status status-loading">
+            Loading status...
+        </div>
+    `;
+
+    card.addEventListener('click', () => startProject(`garage:${vehicle.id}`));
+
+    // Load restoration status asynchronously
+    loadVehicleRestorationStatus(vehicle.id, card);
+
+    return card;
+}
+
+async function loadVehicleRestorationStatus(vehicleId, card) {
+    try {
+        const checklist = await Garage.getRestorationChecklist(vehicleId);
+        const statusEl = card.querySelector('.vehicle-card-status');
+        statusEl.classList.remove('status-loading');
+
+        if (checklist && checklist.items) {
+            const items = Object.values(checklist.items).flat();
+            const total = items.length;
+            const complete = items.filter(i => i.status === 'complete').length;
+            const inProgress = items.filter(i => i.status === 'in-progress').length;
+
+            if (total === 0) {
+                statusEl.className = 'vehicle-card-status status-new';
+                statusEl.textContent = 'Not started';
+            } else if (complete === total) {
+                statusEl.className = 'vehicle-card-status status-ok';
+                statusEl.textContent = 'Restoration complete!';
+            } else if (inProgress > 0 || complete > 0) {
+                const percent = Math.round((complete / total) * 100);
+                statusEl.className = 'vehicle-card-status status-due-soon';
+                statusEl.textContent = `${percent}% complete`;
+            } else {
+                statusEl.className = 'vehicle-card-status status-new';
+                statusEl.textContent = 'Not started';
+            }
+        } else {
+            statusEl.className = 'vehicle-card-status status-new';
+            statusEl.textContent = 'Not started';
+        }
+    } catch (error) {
+        console.error('Failed to load restoration status:', error);
+        const statusEl = card.querySelector('.vehicle-card-status');
+        statusEl.classList.remove('status-loading');
+        statusEl.className = 'vehicle-card-status status-new';
+        statusEl.textContent = 'Click to start';
+    }
 }
 
 // ============================================
@@ -1038,17 +1087,34 @@ async function startProject(vehicleValue) {
 }
 
 function showProjectUI() {
-    document.getElementById('project-setup').style.display = 'none';
+    document.getElementById('garage-section').style.display = 'none';
     document.getElementById('progress-summary').style.display = 'block';
     document.getElementById('checklist-categories').style.display = 'block';
+    document.getElementById('export-section').style.display = 'block';
 
-    // Update header with vehicle name
-    const header = document.querySelector('.checklist-header h1');
-    if (header && currentVehicle) {
-        header.textContent = `${currentVehicle.name} Restoration`;
+    // Update vehicle name display
+    const vehicleNameEl = document.getElementById('current-vehicle-name');
+    if (vehicleNameEl && currentVehicle) {
+        vehicleNameEl.textContent = `${currentVehicle.name} Restoration`;
     }
 
     renderChecklist();
+}
+
+function showGarageView() {
+    document.getElementById('garage-section').style.display = 'block';
+    document.getElementById('progress-summary').style.display = 'none';
+    document.getElementById('checklist-categories').style.display = 'none';
+    document.getElementById('export-section').style.display = 'none';
+
+    // Reset header
+    const header = document.querySelector('.tracker-header h1');
+    if (header) {
+        header.textContent = 'Restoration Checklist';
+    }
+
+    // Refresh vehicle cards to show updated status
+    renderVehicleCards();
 }
 
 async function resetProject() {
@@ -1079,20 +1145,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Load garage vehicles
     await loadGarageVehicles();
 
-    const vehicleSelect = document.getElementById('vehicle-select');
-    const startBtn = document.getElementById('start-project-btn');
-
-    // Enable start button when vehicle is selected
-    vehicleSelect.addEventListener('change', () => {
-        startBtn.disabled = !vehicleSelect.value;
-    });
-
-    // Start project
-    startBtn.addEventListener('click', () => {
-        if (vehicleSelect.value) {
-            startProject(vehicleSelect.value);
-        }
-    });
+    // Back to garage button
+    document.getElementById('back-to-garage')?.addEventListener('click', showGarageView);
 
     // Filter buttons
     document.querySelectorAll('.filter-btn').forEach(btn => {
@@ -1103,25 +1157,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     });
 
-    // Export button
-    document.getElementById('export-btn')?.addEventListener('click', () => {
-        document.getElementById('export-modal').style.display = 'flex';
-    });
-
-    // Export modal buttons
-    document.getElementById('export-json')?.addEventListener('click', () => {
-        exportToJSON();
-        document.getElementById('export-modal').style.display = 'none';
-    });
-
-    document.getElementById('export-csv')?.addEventListener('click', () => {
-        exportToCSV();
-        document.getElementById('export-modal').style.display = 'none';
-    });
-
-    document.getElementById('close-export-modal')?.addEventListener('click', () => {
-        document.getElementById('export-modal').style.display = 'none';
-    });
+    // Export buttons
+    document.getElementById('export-json')?.addEventListener('click', exportToJSON);
+    document.getElementById('export-csv')?.addEventListener('click', exportToCSV);
 
     // Print button
     document.getElementById('print-btn')?.addEventListener('click', printChecklist);

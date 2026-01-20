@@ -408,9 +408,10 @@ async function loadVehicleMaintenanceStatus(vehicleId, card) {
 async function showVehicleDetail(vehicle) {
     currentVehicle = vehicle;
 
-    // Hide garage, show detail
+    // Hide garage, show detail and export
     document.querySelector('.garage-section').style.display = 'none';
     document.getElementById('vehicle-detail').style.display = 'block';
+    document.getElementById('export-section').style.display = 'block';
 
     const platformInfo = Garage.getPlatformInfo(vehicle.platform);
     const displayName = vehicle.nickname || `${vehicle.year || ''} ${platformInfo.fullName}`.trim();
@@ -447,6 +448,7 @@ function showGarageView() {
     currentVehicle = null;
     document.querySelector('.garage-section').style.display = 'block';
     document.getElementById('vehicle-detail').style.display = 'none';
+    document.getElementById('export-section').style.display = 'none';
     loadGarageVehicles();
 }
 
