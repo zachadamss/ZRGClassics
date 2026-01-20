@@ -9834,6 +9834,128 @@ nav ul li.dropdown.touch-open .dropdown-menu {
     border-radius: var(--radius-full);
 }
 
+/* Maintenance Summary (My Garage) */
+.maintenance-summary {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.maintenance-status-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 450px;
+    margin: 0 auto 1.5rem;
+}
+
+.maintenance-summary .status-card {
+    background: var(--background-alt);
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    border-top: 3px solid var(--success-color);
+}
+
+.maintenance-summary .status-card.overdue {
+    border-top-color: var(--danger-color);
+}
+
+.maintenance-summary .status-card.due-soon {
+    border-top-color: var(--warning-color);
+}
+
+.maintenance-summary .status-card.ok {
+    border-top-color: var(--success-color);
+}
+
+.maintenance-summary .status-number {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.maintenance-summary .status-card.overdue .status-number {
+    color: var(--danger-color);
+}
+
+.maintenance-summary .status-card.due-soon .status-number {
+    color: var(--warning-color);
+}
+
+.maintenance-summary .status-card.ok .status-number {
+    color: var(--success-color);
+}
+
+.maintenance-summary .status-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.maintenance-recent {
+    text-align: left;
+    max-width: 450px;
+    margin: 0 auto 1.5rem;
+}
+
+.maintenance-recent h4 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-color);
+}
+
+.recent-services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.recent-service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    background: var(--background-alt);
+    border-radius: var(--radius-sm);
+}
+
+.recent-service-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+}
+
+.recent-service-name {
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.recent-service-date {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.recent-service-mileage {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.maintenance-cta {
+    margin: 2rem 0;
+}
+
+.maintenance-cta .btn-lg {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
+
+.maintenance-cta-note {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: 0.75rem;
+}
+
 /* Maintenance Tab */
 .maintenance-header {
     display: flex;

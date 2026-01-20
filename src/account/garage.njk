@@ -70,7 +70,6 @@ description: Manage your garage vehicles, track restoration progress, and log ma
         <button type="button" class="tab-btn active" data-tab="details">Details</button>
         <button type="button" class="tab-btn" data-tab="restoration">Restoration</button>
         <button type="button" class="tab-btn" data-tab="maintenance">Maintenance</button>
-        <button type="button" class="tab-btn" data-tab="history">Service History</button>
       </div>
 
       <!-- Details Tab -->
@@ -147,42 +146,33 @@ description: Manage your garage vehicles, track restoration progress, and log ma
         </div>
       </div>
 
-      <!-- Maintenance Tab -->
+      <!-- Maintenance Tab (Summary) -->
       <div class="tab-content" id="tab-maintenance">
-        <div class="maintenance-header">
-          <h3>Maintenance Schedule</h3>
-          <button type="button" class="btn btn-secondary" id="add-maintenance-btn">+ Add Item</button>
-        </div>
-        <div class="upcoming-maintenance" id="upcoming-maintenance">
-          <!-- Upcoming items loaded dynamically -->
-        </div>
-        <div class="maintenance-schedule-table">
-          <table>
-            <thead>
-              <tr>
-                <th>Item</th>
-                <th>Interval (Miles)</th>
-                <th>Interval (Months)</th>
-                <th>Last Service</th>
-                <th>Next Due</th>
-                <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody id="maintenance-schedule-tbody">
-              <!-- Schedule items loaded dynamically -->
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <!-- Service History Tab -->
-      <div class="tab-content" id="tab-history">
-        <div class="history-header">
-          <h3>Service History</h3>
-          <button type="button" class="btn btn-secondary" id="add-service-btn">+ Log Service</button>
-        </div>
-        <div class="service-history-list" id="service-history-list">
-          <!-- History items loaded dynamically -->
+        <div class="maintenance-summary">
+          <div class="maintenance-status-cards">
+            <div class="status-card overdue">
+              <span class="status-number" id="maint-overdue-count">0</span>
+              <span class="status-label">Overdue</span>
+            </div>
+            <div class="status-card due-soon">
+              <span class="status-number" id="maint-due-soon-count">0</span>
+              <span class="status-label">Due Soon</span>
+            </div>
+            <div class="status-card ok">
+              <span class="status-number" id="maint-ok-count">0</span>
+              <span class="status-label">Up to Date</span>
+            </div>
+          </div>
+          <div class="maintenance-recent">
+            <h4>Recent Services</h4>
+            <div id="recent-services-list" class="recent-services-list">
+              <p class="empty-state">No service records yet</p>
+            </div>
+          </div>
+          <div class="maintenance-cta">
+            <a href="#" class="btn btn-primary btn-lg" id="open-maintenance-tracker">Open Full Tracker</a>
+            <p class="maintenance-cta-note">View schedules, log services, and track all maintenance</p>
+          </div>
         </div>
       </div>
     </div>
@@ -306,109 +296,6 @@ description: Manage your garage vehicles, track restoration progress, and log ma
     <div class="modal-footer">
       <button type="button" class="btn btn-secondary" id="cancel-profile-modal">Cancel</button>
       <button type="button" class="btn btn-primary" id="save-profile-btn">Save Profile</button>
-    </div>
-  </div>
-</div>
-
-<!-- Add/Edit Maintenance Modal -->
-<div class="modal-overlay" id="maintenance-modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h3 id="maintenance-modal-title">Add Maintenance Item</h3>
-      <button type="button" class="modal-close" id="close-maintenance-modal">&times;</button>
-    </div>
-    <div class="modal-body">
-      <div class="form-group">
-        <label for="maintenance-name">Item Name *</label>
-        <input type="text" id="maintenance-name" placeholder="e.g., Oil Change, Timing Belt" required>
-      </div>
-      <div class="form-row">
-        <div class="form-group">
-          <label for="maintenance-interval-miles">Interval (Miles)</label>
-          <input type="number" id="maintenance-interval-miles" min="0" placeholder="e.g., 5000">
-        </div>
-        <div class="form-group">
-          <label for="maintenance-interval-months">Interval (Months)</label>
-          <input type="number" id="maintenance-interval-months" min="0" placeholder="e.g., 12">
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group">
-          <label for="maintenance-last-mileage">Last Service Mileage</label>
-          <input type="number" id="maintenance-last-mileage" min="0" placeholder="e.g., 120000">
-        </div>
-        <div class="form-group">
-          <label for="maintenance-last-date">Last Service Date</label>
-          <input type="date" id="maintenance-last-date">
-        </div>
-      </div>
-      <input type="hidden" id="maintenance-edit-id">
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" id="cancel-maintenance-modal">Cancel</button>
-      <button type="button" class="btn btn-primary" id="save-maintenance-btn">Save Item</button>
-    </div>
-  </div>
-</div>
-
-<!-- Add/Edit Service Record Modal -->
-<div class="modal-overlay" id="service-modal">
-  <div class="modal-content modal-wide">
-    <div class="modal-header">
-      <h3 id="service-modal-title">Log Service</h3>
-      <button type="button" class="modal-close" id="close-service-modal">&times;</button>
-    </div>
-    <div class="modal-body">
-      <div class="form-row">
-        <div class="form-group">
-          <label for="service-item-select">Maintenance Item</label>
-          <select id="service-item-select">
-            <option value="">Select or enter custom...</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="service-item-custom">Custom Service Name</label>
-          <input type="text" id="service-item-custom" placeholder="e.g., Replaced water pump">
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group">
-          <label for="service-date">Service Date *</label>
-          <input type="date" id="service-date" required>
-        </div>
-        <div class="form-group">
-          <label for="service-mileage">Mileage at Service</label>
-          <input type="number" id="service-mileage" min="0" placeholder="e.g., 125000">
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group">
-          <label for="service-cost">Cost ($)</label>
-          <input type="number" id="service-cost" min="0" step="0.01" placeholder="e.g., 150.00">
-        </div>
-        <div class="form-group">
-          <label for="service-shop-type">Shop / DIY</label>
-          <select id="service-shop-type">
-            <option value="diy">DIY</option>
-            <option value="shop">Professional Shop</option>
-            <option value="dealer">Dealer</option>
-          </select>
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="service-parts">Parts Used</label>
-        <input type="text" id="service-parts" placeholder="e.g., Mahle filter, Liqui Moly 0W-40">
-      </div>
-      <div class="form-group">
-        <label for="service-notes">Notes</label>
-        <textarea id="service-notes" rows="3" placeholder="Any additional notes..."></textarea>
-      </div>
-      <input type="hidden" id="service-edit-id">
-      <input type="hidden" id="service-linked-maintenance-id">
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" id="cancel-service-modal">Cancel</button>
-      <button type="button" class="btn btn-primary" id="save-service-btn">Save Record</button>
     </div>
   </div>
 </div>
@@ -661,210 +548,71 @@ const RESTORATION_CATEGORIES = {
     container.innerHTML = html;
   }
 
-  // Load maintenance data
+  // Load maintenance data for summary display
   async function loadMaintenanceData(vehicleId) {
     try {
       maintenanceSchedule = await Garage.getMaintenanceSchedule(vehicleId);
-      renderMaintenanceSchedule();
-      renderUpcomingMaintenance();
-      populateServiceItemDropdown();
+      const vehicle = vehicles.find(v => v.id === selectedVehicleId);
+
+      // Calculate status counts using Garage helper
+      const upcoming = Garage.getUpcomingMaintenance(maintenanceSchedule, vehicle?.mileage);
+
+      let overdueCount = 0;
+      let dueSoonCount = 0;
+      let okCount = 0;
+
+      upcoming.forEach(item => {
+        if (item.status === 'overdue') overdueCount++;
+        else if (item.status === 'due-soon') dueSoonCount++;
+        else okCount++;
+      });
+
+      // Update status cards
+      document.getElementById('maint-overdue-count').textContent = overdueCount;
+      document.getElementById('maint-due-soon-count').textContent = dueSoonCount;
+      document.getElementById('maint-ok-count').textContent = okCount;
+
+      // Update link to full tracker
+      const trackerLink = document.getElementById('open-maintenance-tracker');
+      if (trackerLink) {
+        trackerLink.href = `/tools/maintenance-tracker/?vehicle=${vehicleId}`;
+      }
     } catch (error) {
       console.error('Error loading maintenance data:', error);
     }
   }
 
-  // Render maintenance schedule
-  function renderMaintenanceSchedule() {
-    const tbody = document.getElementById('maintenance-schedule-tbody');
-    const vehicle = vehicles.find(v => v.id === selectedVehicleId);
-
-    if (maintenanceSchedule.length === 0) {
-      tbody.innerHTML = '<tr><td colspan="6" class="empty-state">No maintenance items. Click "+ Add Item" or initialize with platform defaults.</td></tr>';
-      return;
-    }
-
-    tbody.innerHTML = maintenanceSchedule.map(item => {
-      let lastService = '-';
-      if (item.lastServiceDate || item.lastServiceMileage) {
-        const parts = [];
-        if (item.lastServiceMileage) parts.push(`${item.lastServiceMileage.toLocaleString()} mi`);
-        if (item.lastServiceDate) parts.push(Garage.formatDate(item.lastServiceDate));
-        lastService = parts.join(' / ');
-      }
-
-      let nextDue = '-';
-      if (item.intervalMiles && item.lastServiceMileage !== null) {
-        const nextMiles = item.lastServiceMileage + item.intervalMiles;
-        nextDue = `${nextMiles.toLocaleString()} mi`;
-      }
-      if (item.intervalMonths && item.lastServiceDate) {
-        const lastDate = new Date(item.lastServiceDate);
-        const nextDate = new Date(lastDate);
-        nextDate.setMonth(nextDate.getMonth() + item.intervalMonths);
-        if (nextDue !== '-') nextDue += ' / ';
-        else nextDue = '';
-        nextDue += Garage.formatDate(nextDate.toISOString().split('T')[0]);
-      }
-
-      return `
-        <tr>
-          <td data-label="Item">${escapeHtml(item.name)}</td>
-          <td data-label="Miles">${item.intervalMiles ? item.intervalMiles.toLocaleString() : '-'}</td>
-          <td data-label="Months">${item.intervalMonths || '-'}</td>
-          <td data-label="Last Service">${lastService}</td>
-          <td data-label="Next Due">${nextDue}</td>
-          <td class="actions-cell">
-            <button type="button" class="btn-icon log-service" data-id="${item.id}" title="Log Service">&#10003;</button>
-            <button type="button" class="btn-icon edit-maintenance" data-id="${item.id}" title="Edit">&#9998;</button>
-            <button type="button" class="btn-icon delete-maintenance" data-id="${item.id}" title="Delete">&times;</button>
-          </td>
-        </tr>
-      `;
-    }).join('');
-
-    // Bind actions
-    tbody.querySelectorAll('.log-service').forEach(btn => {
-      btn.addEventListener('click', () => openServiceModal(null, btn.dataset.id));
-    });
-    tbody.querySelectorAll('.edit-maintenance').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const item = maintenanceSchedule.find(i => i.id == btn.dataset.id);
-        if (item) openMaintenanceModal(item);
-      });
-    });
-    tbody.querySelectorAll('.delete-maintenance').forEach(btn => {
-      btn.addEventListener('click', async () => {
-        if (confirm('Delete this maintenance item?')) {
-          try {
-            await Garage.deleteMaintenanceItem(btn.dataset.id);
-            await loadMaintenanceData(selectedVehicleId);
-          } catch (error) {
-            alert('Error deleting item: ' + error.message);
-          }
-        }
-      });
-    });
-  }
-
-  // Render upcoming maintenance
-  function renderUpcomingMaintenance() {
-    const container = document.getElementById('upcoming-maintenance');
-    const vehicle = vehicles.find(v => v.id === selectedVehicleId);
-    const upcoming = Garage.getUpcomingMaintenance(maintenanceSchedule, vehicle?.mileage);
-
-    const overdueOrSoon = upcoming.filter(u => u.status === 'overdue' || u.status === 'due-soon');
-
-    if (overdueOrSoon.length === 0) {
-      container.innerHTML = '<div class="empty-state">All maintenance up to date!</div>';
-      return;
-    }
-
-    container.innerHTML = `
-      <h4>Upcoming & Overdue</h4>
-      ${overdueOrSoon.map(item => {
-        let dueText = '';
-        if (item.milesDue !== null) {
-          if (item.milesDue < 0) {
-            dueText = `${Math.abs(item.milesDue).toLocaleString()} miles overdue`;
-          } else {
-            dueText = `${item.milesDue.toLocaleString()} miles remaining`;
-          }
-        }
-        if (item.daysDue !== null) {
-          if (dueText) dueText += ' / ';
-          if (item.daysDue < 0) {
-            dueText += `${Math.abs(item.daysDue)} days overdue`;
-          } else {
-            dueText += `${item.daysDue} days remaining`;
-          }
-        }
-
-        return `
-          <div class="upcoming-item ${item.status}">
-            <div class="upcoming-info">
-              <strong>${escapeHtml(item.name)}</strong>
-              <span>${dueText}</span>
-            </div>
-            <button type="button" class="btn btn-primary btn-sm log-service-btn" data-id="${item.id}">Log Service</button>
-          </div>
-        `;
-      }).join('')}
-    `;
-
-    container.querySelectorAll('.log-service-btn').forEach(btn => {
-      btn.addEventListener('click', () => openServiceModal(null, btn.dataset.id));
-    });
-  }
-
-  // Load service history
+  // Load service history for summary display
   async function loadServiceHistory(vehicleId) {
     try {
       serviceHistory = await Garage.getServiceHistory(vehicleId);
-      renderServiceHistory();
+      renderRecentServices();
     } catch (error) {
       console.error('Error loading service history:', error);
     }
   }
 
-  // Render service history
-  function renderServiceHistory() {
-    const container = document.getElementById('service-history-list');
+  // Render recent services (summary view)
+  function renderRecentServices() {
+    const container = document.getElementById('recent-services-list');
 
     if (serviceHistory.length === 0) {
-      container.innerHTML = '<div class="empty-state">No service records yet. Click "+ Log Service" to add one.</div>';
+      container.innerHTML = '<p class="empty-state">No service records yet</p>';
       return;
     }
 
-    container.innerHTML = serviceHistory.map(record => `
-      <div class="service-record">
-        <div class="service-record-header">
-          <h4>${escapeHtml(record.serviceName)}</h4>
-          <span class="service-date">${Garage.formatDate(record.serviceDate)}</span>
+    // Show last 5 services
+    const recentServices = serviceHistory.slice(0, 5);
+
+    container.innerHTML = recentServices.map(record => `
+      <div class="recent-service-item">
+        <div class="recent-service-info">
+          <span class="recent-service-name">${escapeHtml(record.serviceName)}</span>
+          <span class="recent-service-date">${Garage.formatDate(record.serviceDate)}</span>
         </div>
-        <div class="service-record-details">
-          ${record.mileage ? `<span class="service-mileage">${record.mileage.toLocaleString()} miles</span>` : ''}
-          ${record.cost ? `<span class="service-cost">$${record.cost.toFixed(2)}</span>` : ''}
-          <span class="service-shop">${record.shopType === 'diy' ? 'DIY' : record.shopType === 'dealer' ? 'Dealer' : 'Shop'}</span>
-        </div>
-        ${record.partsUsed ? `<div class="service-parts"><strong>Parts:</strong> ${escapeHtml(record.partsUsed)}</div>` : ''}
-        ${record.notes ? `<div class="service-notes">${escapeHtml(record.notes)}</div>` : ''}
-        <div class="service-record-actions">
-          <button type="button" class="btn-icon edit-service" data-id="${record.id}" title="Edit">&#9998;</button>
-          <button type="button" class="btn-icon delete-service" data-id="${record.id}" title="Delete">&times;</button>
-        </div>
+        ${record.mileage ? `<span class="recent-service-mileage">${record.mileage.toLocaleString()} mi</span>` : ''}
       </div>
     `).join('');
-
-    container.querySelectorAll('.edit-service').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const record = serviceHistory.find(r => r.id == btn.dataset.id);
-        if (record) openServiceModal(record);
-      });
-    });
-    container.querySelectorAll('.delete-service').forEach(btn => {
-      btn.addEventListener('click', async () => {
-        if (confirm('Delete this service record?')) {
-          try {
-            await Garage.deleteServiceRecord(btn.dataset.id);
-            await loadServiceHistory(selectedVehicleId);
-          } catch (error) {
-            alert('Error deleting record: ' + error.message);
-          }
-        }
-      });
-    });
-  }
-
-  // Populate service item dropdown
-  function populateServiceItemDropdown() {
-    const select = document.getElementById('service-item-select');
-    select.innerHTML = '<option value="">Select or enter custom...</option>';
-    maintenanceSchedule.forEach(item => {
-      const option = document.createElement('option');
-      option.value = item.id;
-      option.textContent = item.name;
-      select.appendChild(option);
-    });
   }
 
   // Load recent threads
@@ -956,28 +704,7 @@ const RESTORATION_CATEGORIES = {
       });
     });
 
-    // Restoration checklist link is set dynamically when vehicle is selected
-
-    // Maintenance modal
-    document.getElementById('add-maintenance-btn').addEventListener('click', () => openMaintenanceModal());
-    document.getElementById('close-maintenance-modal').addEventListener('click', closeMaintenanceModal);
-    document.getElementById('cancel-maintenance-modal').addEventListener('click', closeMaintenanceModal);
-    document.getElementById('save-maintenance-btn').addEventListener('click', saveMaintenanceItem);
-    document.getElementById('maintenance-modal').addEventListener('click', (e) => {
-      if (e.target.classList.contains('modal-overlay')) closeMaintenanceModal();
-    });
-
-    // Service modal
-    document.getElementById('add-service-btn').addEventListener('click', () => openServiceModal());
-    document.getElementById('close-service-modal').addEventListener('click', closeServiceModal);
-    document.getElementById('cancel-service-modal').addEventListener('click', closeServiceModal);
-    document.getElementById('save-service-btn').addEventListener('click', saveServiceRecord);
-    document.getElementById('service-modal').addEventListener('click', (e) => {
-      if (e.target.classList.contains('modal-overlay')) closeServiceModal();
-    });
-    document.getElementById('service-item-select').addEventListener('change', (e) => {
-      document.getElementById('service-item-custom').style.display = e.target.value === '' ? 'block' : 'none';
-    });
+    // Restoration and maintenance links are set dynamically when vehicle is selected
   }
 
   // Vehicle Modal Functions
@@ -1141,202 +868,6 @@ const RESTORATION_CATEGORIES = {
       alert('Error saving profile: ' + error.message);
       document.getElementById('save-profile-btn').disabled = false;
       document.getElementById('save-profile-btn').textContent = 'Save Profile';
-    }
-  }
-
-  // Maintenance Modal Functions
-  function openMaintenanceModal(item = null) {
-    const modal = document.getElementById('maintenance-modal');
-    const title = document.getElementById('maintenance-modal-title');
-
-    if (item) {
-      title.textContent = 'Edit Maintenance Item';
-      document.getElementById('maintenance-name').value = item.name;
-      document.getElementById('maintenance-interval-miles').value = item.intervalMiles || '';
-      document.getElementById('maintenance-interval-months').value = item.intervalMonths || '';
-      document.getElementById('maintenance-last-mileage').value = item.lastServiceMileage || '';
-      document.getElementById('maintenance-last-date').value = item.lastServiceDate || '';
-      document.getElementById('maintenance-edit-id').value = item.id;
-    } else {
-      title.textContent = 'Add Maintenance Item';
-      document.getElementById('maintenance-name').value = '';
-      document.getElementById('maintenance-interval-miles').value = '';
-      document.getElementById('maintenance-interval-months').value = '';
-      document.getElementById('maintenance-last-mileage').value = '';
-      document.getElementById('maintenance-last-date').value = '';
-      document.getElementById('maintenance-edit-id').value = '';
-    }
-
-    modal.classList.add('active');
-  }
-
-  function closeMaintenanceModal() {
-    document.getElementById('maintenance-modal').classList.remove('active');
-  }
-
-  async function saveMaintenanceItem() {
-    const name = document.getElementById('maintenance-name').value.trim();
-    if (!name) {
-      alert('Please enter an item name');
-      return;
-    }
-
-    const intervalMiles = document.getElementById('maintenance-interval-miles').value;
-    const intervalMonths = document.getElementById('maintenance-interval-months').value;
-
-    if (!intervalMiles && !intervalMonths) {
-      alert('Please enter at least one interval (miles or months)');
-      return;
-    }
-
-    const itemData = {
-      name,
-      intervalMiles: intervalMiles ? parseInt(intervalMiles) : null,
-      intervalMonths: intervalMonths ? parseInt(intervalMonths) : null,
-      lastServiceMileage: document.getElementById('maintenance-last-mileage').value ?
-        parseInt(document.getElementById('maintenance-last-mileage').value) : null,
-      lastServiceDate: document.getElementById('maintenance-last-date').value || null
-    };
-
-    const editId = document.getElementById('maintenance-edit-id').value;
-
-    try {
-      const saveBtn = document.getElementById('save-maintenance-btn');
-      saveBtn.disabled = true;
-      saveBtn.textContent = 'Saving...';
-
-      if (editId) {
-        await Garage.updateMaintenanceItem(editId, itemData);
-      } else {
-        await Garage.addMaintenanceItem(selectedVehicleId, itemData);
-      }
-
-      closeMaintenanceModal();
-      await loadMaintenanceData(selectedVehicleId);
-
-      saveBtn.disabled = false;
-      saveBtn.textContent = 'Save Item';
-    } catch (error) {
-      alert('Error saving maintenance item: ' + error.message);
-      document.getElementById('save-maintenance-btn').disabled = false;
-      document.getElementById('save-maintenance-btn').textContent = 'Save Item';
-    }
-  }
-
-  // Service Modal Functions
-  function openServiceModal(record = null, linkedMaintenanceId = null) {
-    const modal = document.getElementById('service-modal');
-    const title = document.getElementById('service-modal-title');
-    const vehicle = vehicles.find(v => v.id === selectedVehicleId);
-
-    document.getElementById('service-item-custom').style.display = 'none';
-
-    if (record) {
-      title.textContent = 'Edit Service Record';
-      document.getElementById('service-item-select').value = record.maintenanceId || '';
-      document.getElementById('service-item-custom').value = record.maintenanceId ? '' : record.serviceName;
-      document.getElementById('service-item-custom').style.display = record.maintenanceId ? 'none' : 'block';
-      document.getElementById('service-date').value = record.serviceDate || '';
-      document.getElementById('service-mileage').value = record.mileage || '';
-      document.getElementById('service-cost').value = record.cost || '';
-      document.getElementById('service-shop-type').value = record.shopType || 'diy';
-      document.getElementById('service-parts').value = record.partsUsed || '';
-      document.getElementById('service-notes').value = record.notes || '';
-      document.getElementById('service-edit-id').value = record.id;
-      document.getElementById('service-linked-maintenance-id').value = record.maintenanceId || '';
-    } else {
-      title.textContent = 'Log Service';
-      document.getElementById('service-item-select').value = linkedMaintenanceId || '';
-      document.getElementById('service-item-custom').value = '';
-      document.getElementById('service-date').value = new Date().toISOString().split('T')[0];
-      document.getElementById('service-mileage').value = vehicle?.mileage || '';
-      document.getElementById('service-cost').value = '';
-      document.getElementById('service-shop-type').value = 'diy';
-      document.getElementById('service-parts').value = '';
-      document.getElementById('service-notes').value = '';
-      document.getElementById('service-edit-id').value = '';
-      document.getElementById('service-linked-maintenance-id').value = linkedMaintenanceId || '';
-    }
-
-    modal.classList.add('active');
-  }
-
-  function closeServiceModal() {
-    document.getElementById('service-modal').classList.remove('active');
-  }
-
-  async function saveServiceRecord() {
-    const itemSelect = document.getElementById('service-item-select').value;
-    const itemCustom = document.getElementById('service-item-custom').value.trim();
-    const serviceDate = document.getElementById('service-date').value;
-
-    if (!serviceDate) {
-      alert('Please enter a service date');
-      return;
-    }
-
-    let serviceName = '';
-    let maintenanceId = null;
-
-    if (itemSelect) {
-      maintenanceId = parseInt(itemSelect);
-      const maintenanceItem = maintenanceSchedule.find(i => i.id == itemSelect);
-      serviceName = maintenanceItem ? maintenanceItem.name : 'Unknown';
-    } else if (itemCustom) {
-      serviceName = itemCustom;
-    } else {
-      alert('Please select or enter a service name');
-      return;
-    }
-
-    const recordData = {
-      serviceName,
-      maintenanceId,
-      serviceDate,
-      mileage: document.getElementById('service-mileage').value ?
-        parseInt(document.getElementById('service-mileage').value) : null,
-      cost: document.getElementById('service-cost').value ?
-        parseFloat(document.getElementById('service-cost').value) : null,
-      shopType: document.getElementById('service-shop-type').value,
-      partsUsed: document.getElementById('service-parts').value.trim() || null,
-      notes: document.getElementById('service-notes').value.trim() || null
-    };
-
-    const editId = document.getElementById('service-edit-id').value;
-
-    try {
-      const saveBtn = document.getElementById('save-service-btn');
-      saveBtn.disabled = true;
-      saveBtn.textContent = 'Saving...';
-
-      if (editId) {
-        await Garage.updateServiceRecord(editId, recordData);
-      } else {
-        await Garage.addServiceRecord(selectedVehicleId, recordData);
-      }
-
-      closeServiceModal();
-
-      // Reload data
-      await Promise.all([
-        loadVehicles(),
-        loadMaintenanceData(selectedVehicleId),
-        loadServiceHistory(selectedVehicleId)
-      ]);
-
-      // Update mileage display if changed
-      const vehicle = vehicles.find(v => v.id === selectedVehicleId);
-      if (vehicle) {
-        document.getElementById('detail-mileage').textContent =
-          vehicle.mileage ? vehicle.mileage.toLocaleString() + ' mi' : '-';
-      }
-
-      saveBtn.disabled = false;
-      saveBtn.textContent = 'Save Record';
-    } catch (error) {
-      alert('Error saving service record: ' + error.message);
-      document.getElementById('save-service-btn').disabled = false;
-      document.getElementById('save-service-btn').textContent = 'Save Record';
     }
   }
 

@@ -3,6 +3,9 @@ layout: layouts/base.njk
 title: Maintenance Tracker
 description: "Track service history and maintenance schedules for your vintage BMW and Porsche. Vehicle-specific presets, mileage and date-based reminders, export to JSON and CSV."
 keywords: "maintenance tracker, service history, car maintenance log, BMW maintenance, Porsche maintenance, vehicle service tracker"
+extraScripts:
+  - js/garage.js
+  - tools/maintenance-tracker.js
 ---
 
 <div class="maintenance-tracker">
@@ -11,20 +14,11 @@ keywords: "maintenance tracker, service history, car maintenance log, BMW mainte
         <p>Track service history and maintenance schedules for your vintage German cars</p>
     </div>
 
-    <!-- Logged-in user notice -->
-    <div class="garage-notice" id="garage-notice" style="display: none;">
-        <div class="notice-content">
-            <strong>Sync your data across devices!</strong>
-            <p>As a registered member, your vehicle maintenance is saved to your account in <a href="/account/garage/">My Garage</a>. This page uses local browser storage only.</p>
-        </div>
-        <a href="/account/garage/" class="btn btn-primary">Go to My Garage</a>
-    </div>
-
     <!-- Garage View -->
     <div class="tracker-section garage-section">
         <div class="section-header">
-            <h2>My Garage</h2>
-            <button type="button" class="btn btn-primary" id="add-vehicle-btn">+ Add Vehicle</button>
+            <h2>Select Vehicle</h2>
+            <a href="/account/garage/" class="btn btn-secondary">Manage Garage</a>
         </div>
         <div class="garage-grid" id="garage-grid">
             <!-- Vehicle cards will be inserted here -->
@@ -35,85 +29,13 @@ keywords: "maintenance tracker, service history, car maintenance log, BMW mainte
         </div>
     </div>
 
-    <!-- Add/Edit Vehicle Modal -->
-    <div class="modal-overlay" id="vehicle-modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 id="vehicle-modal-title">Add Vehicle</h3>
-                <button type="button" class="modal-close" id="close-vehicle-modal">&times;</button>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <label for="vehicle-name">Vehicle Name</label>
-                    <input type="text" id="vehicle-name" placeholder="e.g., My E30 M3, Daily 996">
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="vehicle-platform">Platform</label>
-                        <select id="vehicle-platform">
-                            <option value="">Select a platform...</option>
-                            <optgroup label="BMW">
-                                <option value="e28">E28 5-Series (1982-1988)</option>
-                                <option value="e30">E30 3-Series (1982-1994)</option>
-                                <option value="e34">E34 5-Series (1988-1996)</option>
-                                <option value="e36">E36 3-Series (1990-2000)</option>
-                                <option value="e39">E39 5-Series (1995-2004)</option>
-                                <option value="e46">E46 3-Series (1998-2006)</option>
-                                <option value="e90">E90 3-Series (2005-2013)</option>
-                            </optgroup>
-                            <optgroup label="Porsche">
-                                <option value="924">924 (1976-1988)</option>
-                                <option value="928">928 (1977-1995)</option>
-                                <option value="944">944 (1982-1991)</option>
-                                <option value="964">964 911 (1989-1994)</option>
-                                <option value="986">986 Boxster (1996-2004)</option>
-                                <option value="987">987 Boxster/Cayman (2005-2012)</option>
-                                <option value="991">991 911 (2011-2019)</option>
-                                <option value="993">993 911 (1994-1998)</option>
-                                <option value="996">996 911 (1997-2005)</option>
-                                <option value="997">997 911 (2004-2012)</option>
-                            </optgroup>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="vehicle-year">Year</label>
-                        <input type="number" id="vehicle-year" min="1976" max="2025" placeholder="e.g., 1995">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="vehicle-mileage">Current Mileage</label>
-                        <input type="number" id="vehicle-mileage" min="0" placeholder="e.g., 125000">
-                    </div>
-                    <div class="form-group">
-                        <label for="vehicle-purchase-date">Purchase Date</label>
-                        <input type="date" id="vehicle-purchase-date">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="vehicle-vin">VIN (optional)</label>
-                    <input type="text" id="vehicle-vin" placeholder="e.g., WBAAB5401J8123456">
-                </div>
-                <input type="hidden" id="vehicle-edit-id">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" id="cancel-vehicle">Cancel</button>
-                <button type="button" class="btn btn-primary" id="save-vehicle">Save Vehicle</button>
-            </div>
-        </div>
-    </div>
-
     <!-- Vehicle Detail View -->
     <div class="tracker-section vehicle-detail-section" id="vehicle-detail" style="display: none;">
         <div class="section-header">
-            <button type="button" class="btn btn-secondary" id="back-to-garage">&larr; Back to Garage</button>
+            <button type="button" class="btn btn-secondary" id="back-to-garage">&larr; Back</button>
             <div class="vehicle-info">
                 <h2 id="detail-vehicle-name">Vehicle Name</h2>
                 <span class="vehicle-platform-badge" id="detail-vehicle-platform">E30</span>
-            </div>
-            <div class="vehicle-actions">
-                <button type="button" class="btn btn-secondary" id="edit-vehicle-btn">Edit</button>
-                <button type="button" class="btn btn-danger" id="delete-vehicle-btn">Delete</button>
             </div>
         </div>
 
@@ -289,26 +211,11 @@ keywords: "maintenance tracker, service history, car maintenance log, BMW mainte
 
     <!-- Export Actions -->
     <div class="tracker-section export-section">
-        <h3>Data Management</h3>
+        <h3>Export</h3>
         <div class="export-buttons">
-            <button type="button" class="btn btn-secondary" id="export-json">Export Backup (JSON)</button>
-            <button type="button" class="btn btn-secondary" id="export-csv">Export to CSV</button>
-            <button type="button" class="btn btn-secondary" id="import-json">Import Backup</button>
-            <button type="button" class="btn btn-secondary" id="print-records">Print Records</button>
+            <button type="button" class="btn btn-secondary" id="export-json">Export JSON</button>
+            <button type="button" class="btn btn-secondary" id="export-csv">Export CSV</button>
+            <button type="button" class="btn btn-secondary" id="print-records">Print</button>
         </div>
-        <input type="file" id="import-file" accept=".json" style="display: none;">
     </div>
 </div>
-
-<script src="/tools/maintenance-tracker.js"></script>
-<script>
-// Show garage notice for logged-in users
-document.addEventListener('DOMContentLoaded', async () => {
-    if (typeof Auth !== 'undefined') {
-        const user = await Auth.getUser();
-        if (user) {
-            document.getElementById('garage-notice').style.display = 'flex';
-        }
-    }
-});
-</script>
