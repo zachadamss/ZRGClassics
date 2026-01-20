@@ -428,6 +428,26 @@ footer .social-links a:hover {
     color: var(--gulf-blue);
 }
 
+footer .footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+footer .footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+footer .footer-links a:hover {
+    color: #fff;
+}
+
 /* ================================
    Main Content
    ================================ */
@@ -1777,6 +1797,97 @@ button:hover {
     text-align: center;
     color: var(--text-muted);
     margin-bottom: 2rem;
+}
+
+/* ================================
+   Legal Pages (Privacy, Terms)
+   ================================ */
+.legal-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.legal-content h1 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+[data-theme="dark"] .legal-content h1 {
+    color: var(--gulf-blue);
+}
+
+.legal-updated {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.legal-section {
+    margin-bottom: 2.5rem;
+}
+
+.legal-section h2 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--gulf-orange);
+}
+
+[data-theme="dark"] .legal-section h2 {
+    color: var(--gulf-blue);
+    border-bottom-color: var(--gulf-blue);
+}
+
+.legal-section h3 {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    margin: 1.5rem 0 0.75rem;
+}
+
+.legal-section p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.legal-section ul {
+    color: var(--text-secondary);
+    margin: 0.5rem 0 1rem 1.5rem;
+    line-height: 1.7;
+}
+
+.legal-section li {
+    margin-bottom: 0.5rem;
+}
+
+.legal-section a {
+    color: var(--gulf-orange);
+}
+
+.legal-section a:hover {
+    text-decoration: underline;
+}
+
+[data-theme="dark"] .legal-section a {
+    color: var(--gulf-blue);
+}
+
+.legal-section strong {
+    color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+    .legal-content {
+        padding: 2rem 1rem;
+    }
+
+    .legal-section h2 {
+        font-size: 1.25rem;
+    }
 }
 
 /* ================================
@@ -12292,5 +12403,169 @@ nav ul li.dropdown.touch-open .dropdown-menu {
     /* Header actions spacing */
     .header-actions {
         gap: 0.75rem;
+    }
+}
+
+/* ================================
+   404 Error Page
+   ================================ */
+.error-page {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.error-content {
+    text-align: center;
+    max-width: 600px;
+}
+
+.error-code {
+    font-size: 8rem;
+    font-weight: 700;
+    color: var(--gulf-orange);
+    margin: 0;
+    line-height: 1;
+    text-shadow: 2px 2px 0 var(--border-color);
+}
+
+.error-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+.error-message {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.error-suggestions {
+    margin: 2rem 0;
+}
+
+.error-suggestions h3 {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.error-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.error-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: var(--background-alt);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.2s ease;
+    min-width: 100px;
+}
+
+.error-link:hover {
+    background: var(--gulf-blue);
+    border-color: var(--gulf-blue);
+    color: var(--navy-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.error-link .link-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.error-link .link-text {
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.error-search {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.error-search p {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.error-search-form {
+    display: flex;
+    gap: 0.5rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.error-search-form input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    background: var(--background-color);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.error-search-form input:focus {
+    outline: none;
+    border-color: var(--gulf-blue);
+    box-shadow: 0 0 0 3px rgba(125, 207, 234, 0.2);
+}
+
+.error-search-form button {
+    padding: 0.75rem 1.5rem;
+    background: var(--gulf-orange);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.error-search-form button:hover {
+    background: var(--gulf-orange-dark);
+}
+
+@media (max-width: 480px) {
+    .error-code {
+        font-size: 5rem;
+    }
+
+    .error-title {
+        font-size: 1.5rem;
+    }
+
+    .error-links {
+        gap: 0.75rem;
+    }
+
+    .error-link {
+        padding: 0.75rem 1rem;
+        min-width: 80px;
+    }
+
+    .error-search-form {
+        flex-direction: column;
+    }
+
+    .error-search-form button {
+        width: 100%;
     }
 }

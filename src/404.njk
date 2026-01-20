@@ -1,0 +1,43 @@
+---
+layout: layouts/base.njk
+title: Page Not Found
+description: "The page you're looking for doesn't exist. Find what you need at ZRG Classics."
+permalink: /404.html
+---
+<main class="error-page">
+    <div class="error-content">
+        <h1 class="error-code">404</h1>
+        <h2 class="error-title">Page Not Found</h2>
+        <p class="error-message">The page you're looking for doesn't exist or has been moved.</p>
+
+        <div class="error-suggestions">
+            <h3>Try one of these instead:</h3>
+            <div class="error-links">
+                <a href="/" class="error-link">
+                    <span class="link-icon">🏠</span>
+                    <span class="link-text">Home</span>
+                </a>
+                <a href="/search/" class="error-link">
+                    <span class="link-icon">🔍</span>
+                    <span class="link-text">Search</span>
+                </a>
+                <a href="/vehicles/" class="error-link">
+                    <span class="link-icon">🚗</span>
+                    <span class="link-text">Vehicles</span>
+                </a>
+                <a href="/tools/" class="error-link">
+                    <span class="link-icon">🔧</span>
+                    <span class="link-text">Tools</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="error-search">
+            <p>Or search for what you need:</p>
+            <form action="/search/" method="get" class="error-search-form">
+                <input type="text" name="q" placeholder="Search ZRG Classics..." aria-label="Search">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</main>
