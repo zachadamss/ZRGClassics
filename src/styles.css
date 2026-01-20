@@ -3520,13 +3520,27 @@ input:focus, textarea:focus, select:focus {
 .vehicle-hero.has-hero-image {
     position: relative;
     min-height: 350px;
-    background-image: var(--hero-image);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+}
+
+.vehicle-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.vehicle-hero-bg picture,
+.vehicle-hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .vehicle-hero.has-hero-image .vehicle-hero-overlay {

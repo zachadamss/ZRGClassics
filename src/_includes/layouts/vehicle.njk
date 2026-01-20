@@ -5,8 +5,14 @@ layout: layouts/base.njk
 {% include "partials/breadcrumb.njk" %}
 
 <!-- Vehicle Hero -->
-<section class="vehicle-hero{% if vehicleData.heroImage %} has-hero-image{% endif %}"{% if vehicleData.heroImage %} style="--hero-image: url('{{ vehicleData.heroImage }}')"{% endif %}>
+<section class="vehicle-hero{% if vehicleData.heroImage %} has-hero-image{% endif %}">
     {% if vehicleData.heroImage %}
+    <div class="vehicle-hero-bg">
+        {% set imgSrc = vehicleData.heroImage %}
+        {% set imgAlt = vehicleData.fullName %}
+        {% set imgLoading = "eager" %}
+        {% include "partials/responsive-image.njk" %}
+    </div>
     <div class="vehicle-hero-overlay"></div>
     {% endif %}
     <div class="vehicle-hero-content">

@@ -78,7 +78,11 @@ breadcrumbs:
             {% set vehicle = vehicles[key] %}
             <a href="/resources/porsche/{{ key }}/" class="vehicle-card">
                 <div class="vehicle-card-image">
-                    {% if vehicle.heroImage %}<img src="{{ vehicle.heroImage }}" alt="{{ vehicle.fullName }} {{ vehicle.years }}" loading="lazy">{% endif %}
+                    {% if vehicle.heroImage %}
+                    {% set imgSrc = vehicle.heroImage %}
+                    {% set imgAlt = vehicle.fullName + " " + vehicle.years %}
+                    {% include "partials/responsive-image.njk" %}
+                    {% endif %}
                 </div>
                 <div class="vehicle-card-content">
                     <h4>{{ vehicle.model }}</h4>
@@ -101,7 +105,11 @@ breadcrumbs:
             {% set vehicle = vehicles[key] %}
             <a href="/resources/porsche/{{ key }}/" class="vehicle-card">
                 <div class="vehicle-card-image">
-                    {% if vehicle.heroImage %}<img src="{{ vehicle.heroImage }}" alt="{{ vehicle.fullName }} {{ vehicle.years }}" loading="lazy">{% endif %}
+                    {% if vehicle.heroImage %}
+                    {% set imgSrc = vehicle.heroImage %}
+                    {% set imgAlt = vehicle.fullName + " " + vehicle.years %}
+                    {% include "partials/responsive-image.njk" %}
+                    {% endif %}
                 </div>
                 <div class="vehicle-card-content">
                     <h4>{{ vehicle.model }}</h4>
@@ -124,7 +132,11 @@ breadcrumbs:
             {% set vehicle = vehicles[key] %}
             <a href="/resources/porsche/{{ key }}/" class="vehicle-card">
                 <div class="vehicle-card-image">
-                    {% if vehicle.heroImage %}<img src="{{ vehicle.heroImage }}" alt="{{ vehicle.fullName }} {{ vehicle.years }}" loading="lazy">{% endif %}
+                    {% if vehicle.heroImage %}
+                    {% set imgSrc = vehicle.heroImage %}
+                    {% set imgAlt = vehicle.fullName + " " + vehicle.years %}
+                    {% include "partials/responsive-image.njk" %}
+                    {% endif %}
                 </div>
                 <div class="vehicle-card-content">
                     <h4>{{ vehicle.model }}</h4>
@@ -147,7 +159,11 @@ breadcrumbs:
             {% set vehicle = vehicles[key] %}
             <a href="/resources/porsche/{{ key }}/" class="vehicle-card">
                 <div class="vehicle-card-image">
-                    {% if vehicle.heroImage %}<img src="{{ vehicle.heroImage }}" alt="{{ vehicle.fullName }} {{ vehicle.years }}" loading="lazy">{% endif %}
+                    {% if vehicle.heroImage %}
+                    {% set imgSrc = vehicle.heroImage %}
+                    {% set imgAlt = vehicle.fullName + " " + vehicle.years %}
+                    {% include "partials/responsive-image.njk" %}
+                    {% endif %}
                 </div>
                 <div class="vehicle-card-content">
                     <h4>{{ vehicle.model }}</h4>
