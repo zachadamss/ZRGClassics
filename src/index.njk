@@ -96,11 +96,7 @@ keywords: "classic BMW, classic Porsche, E30, E36, E46, 911, Boxster, Cayman, 94
             {% set vehicle = vehicles[key] %}
             <a href="/resources/bmw/{{ key }}/" class="vehicle-card">
                 <div class="vehicle-card-image">
-                    {% if vehicle.heroImage %}
-                    {% set imgSrc = vehicle.heroImage %}
-                    {% set imgAlt = vehicle.fullName + " " + vehicle.years %}
-                    {% include "partials/responsive-image.njk" %}
-                    {% endif %}
+                    {% if vehicle.heroImage %}<img src="{{ vehicle.heroImage }}" alt="{{ vehicle.fullName }} {{ vehicle.years }}" loading="lazy">{% endif %}
                 </div>
                 <div class="vehicle-card-content">
                     <h4>{{ vehicle.model }}</h4>
@@ -123,11 +119,7 @@ keywords: "classic BMW, classic Porsche, E30, E36, E46, 911, Boxster, Cayman, 94
             {% set vehicle = vehicles[key] %}
             <a href="/resources/porsche/{{ key }}/" class="vehicle-card">
                 <div class="vehicle-card-image">
-                    {% if vehicle.heroImage %}
-                    {% set imgSrc = vehicle.heroImage %}
-                    {% set imgAlt = vehicle.fullName + " " + vehicle.years %}
-                    {% include "partials/responsive-image.njk" %}
-                    {% endif %}
+                    {% if vehicle.heroImage %}<img src="{{ vehicle.heroImage }}" alt="{{ vehicle.fullName }} {{ vehicle.years }}" loading="lazy">{% endif %}
                 </div>
                 <div class="vehicle-card-content">
                     <h4>{{ vehicle.model }}</h4>
