@@ -9686,6 +9686,154 @@ nav ul li.dropdown.touch-open .dropdown-menu {
     grid-column: 1 / -1;
 }
 
+/* Restoration Summary (My Garage) */
+.restoration-summary {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.restoration-summary .restoration-header {
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.restoration-summary .progress-bar.large {
+    height: 12px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.restoration-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto 1.5rem;
+}
+
+.restoration-stat {
+    background: var(--background-alt);
+    padding: 1rem;
+    border-radius: var(--radius-md);
+}
+
+.restoration-stat .stat-number {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .restoration-stat .stat-number {
+    color: var(--gulf-blue);
+}
+
+.restoration-stat .stat-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.restoration-costs {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: var(--background-alt);
+    border-radius: var(--radius-md);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.restoration-costs .cost-item {
+    text-align: center;
+}
+
+.restoration-costs .cost-label {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 0.25rem;
+}
+
+.restoration-costs .cost-value {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.restoration-cta {
+    margin: 2rem 0;
+}
+
+.restoration-cta .btn-lg {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
+
+.restoration-cta-note {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: 0.75rem;
+}
+
+.restoration-category-summary {
+    text-align: left;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.restoration-category-summary h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.category-progress-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.category-progress-item {
+    background: var(--background-alt);
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-md);
+}
+
+.category-progress-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.category-progress-header .category-name {
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.category-progress-header .category-count {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.progress-bar.small {
+    height: 6px;
+    background: var(--border-color);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.progress-bar.small .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--gulf-blue), var(--gulf-orange));
+    border-radius: var(--radius-full);
+}
+
 /* Maintenance Tab */
 .maintenance-header {
     display: flex;

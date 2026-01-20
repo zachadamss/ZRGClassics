@@ -104,26 +104,46 @@ description: Manage your garage vehicles, track restoration progress, and log ma
 
       <!-- Restoration Tab -->
       <div class="tab-content" id="tab-restoration">
-        <div class="restoration-header">
-          <div class="restoration-progress-display">
-            <div class="progress-bar">
-              <div class="progress-fill" id="restoration-progress-fill"></div>
+        <div class="restoration-summary">
+          <div class="restoration-header">
+            <div class="restoration-progress-display">
+              <div class="progress-bar large">
+                <div class="progress-fill" id="restoration-progress-fill"></div>
+              </div>
+              <span class="progress-text" id="restoration-progress-text">0% Complete</span>
             </div>
-            <span class="progress-text" id="restoration-progress-text">0% Complete</span>
           </div>
-          <div class="restoration-stats">
-            <span><strong id="restoration-completed">0</strong> completed</span>
-            <span><strong id="restoration-remaining">0</strong> remaining</span>
-            <span>Total: <strong id="restoration-total-cost">$0</strong></span>
+          <div class="restoration-stats-grid">
+            <div class="restoration-stat">
+              <span class="stat-number" id="restoration-completed">0</span>
+              <span class="stat-label">Complete</span>
+            </div>
+            <div class="restoration-stat">
+              <span class="stat-number" id="restoration-in-progress">0</span>
+              <span class="stat-label">In Progress</span>
+            </div>
+            <div class="restoration-stat">
+              <span class="stat-number" id="restoration-remaining">0</span>
+              <span class="stat-label">Remaining</span>
+            </div>
+          </div>
+          <div class="restoration-costs">
+            <div class="cost-item">
+              <span class="cost-label">Estimated Budget</span>
+              <span class="cost-value" id="restoration-estimated">$0</span>
+            </div>
+            <div class="cost-item">
+              <span class="cost-label">Actual Spent</span>
+              <span class="cost-value" id="restoration-actual">$0</span>
+            </div>
+          </div>
+          <div class="restoration-cta">
+            <a href="#" class="btn btn-primary btn-lg" id="open-restoration-checklist">Open Full Checklist</a>
+            <p class="restoration-cta-note">Track detailed progress, costs, and notes for each restoration item</p>
           </div>
         </div>
-        <div class="restoration-actions">
-          <button type="button" class="btn btn-secondary" id="restoration-expand-all">Expand All</button>
-          <button type="button" class="btn btn-secondary" id="restoration-collapse-all">Collapse All</button>
-          <button type="button" class="btn btn-secondary btn-danger-text" id="restoration-clear-all">Clear All</button>
-        </div>
-        <div class="restoration-categories" id="restoration-categories">
-          <!-- Categories loaded dynamically -->
+        <div class="restoration-category-summary" id="restoration-category-summary">
+          <!-- Category progress bars loaded dynamically -->
         </div>
       </div>
 
@@ -398,8 +418,20 @@ description: Manage your garage vehicles, track restoration progress, and log ma
 <script src="/js/garage.js"></script>
 <script src="/js/forum.js"></script>
 <script>
-// Restoration checklist data (from restorationChecklist.json)
-const RESTORATION_CHECKLIST = {{ restorationChecklist | dump | safe }};
+// Restoration categories for summary display
+const RESTORATION_CATEGORIES = {
+  engine: 'Engine & Drivetrain',
+  cooling: 'Cooling System',
+  fuel: 'Fuel System',
+  exhaust: 'Exhaust',
+  suspension: 'Suspension & Steering',
+  brakes: 'Brakes',
+  electrical: 'Electrical',
+  interior: 'Interior',
+  body: 'Body & Paint',
+  glass: 'Glass & Trim',
+  seals: 'Weatherstripping & Seals'
+};
 
 (function() {
   'use strict';
@@ -537,203 +569,96 @@ const RESTORATION_CHECKLIST = {{ restorationChecklist | dump | safe }};
   async function loadRestorationData(vehicleId) {
     try {
       restorationData = await Garage.getRestorationItems(vehicleId);
-      renderRestorationChecklist();
-      updateRestorationProgress();
+      updateRestorationSummary();
+
+      // Update link to full checklist
+      const checklistLink = document.getElementById('open-restoration-checklist');
+      if (checklistLink) {
+        checklistLink.href = `/tools/restoration-checklist/?vehicle=${vehicleId}`;
+      }
     } catch (error) {
       console.error('Error loading restoration data:', error);
     }
   }
 
-  // Render restoration checklist
-  function renderRestorationChecklist() {
-    const container = document.getElementById('restoration-categories');
-    container.innerHTML = '';
+  // Update restoration summary display
+  function updateRestorationSummary() {
+    const items = Object.values(restorationData);
 
-    RESTORATION_CHECKLIST.categories.forEach(category => {
-      const categoryEl = document.createElement('div');
-      categoryEl.className = 'restoration-category';
-      categoryEl.dataset.category = category.id;
+    // Count by status
+    const completed = items.filter(i => i.status === 'complete').length;
+    const inProgress = items.filter(i => i.status === 'in-progress').length;
+    const remaining = items.filter(i => i.status === 'not-started').length;
+    const total = items.length;
 
-      const completedInCategory = category.items.filter(item => restorationData[item.id]?.completed).length;
+    // Calculate costs
+    const estimatedTotal = items.reduce((sum, i) => sum + (i.estimatedCost || 0), 0);
+    const actualTotal = items.reduce((sum, i) => sum + (i.actualCost || 0), 0);
 
-      categoryEl.innerHTML = `
-        <div class="category-header">
-          <h4>
-            <button type="button" class="category-toggle" aria-expanded="false">
-              <span class="toggle-icon">+</span>
-              ${category.name}
-              <span class="category-count">${completedInCategory}/${category.items.length}</span>
-            </button>
-          </h4>
-        </div>
-        <div class="category-content" hidden>
-          ${category.items.map(item => createRestorationItemHtml(item)).join('')}
-        </div>
-      `;
+    // Calculate percent (completed out of non-skipped items)
+    const trackable = items.filter(i => i.status !== 'skipped').length;
+    const percent = trackable > 0 ? Math.round((completed / trackable) * 100) : 0;
 
-      container.appendChild(categoryEl);
-    });
-
-    // Bind category toggles
-    container.querySelectorAll('.category-toggle').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const content = btn.closest('.restoration-category').querySelector('.category-content');
-        const isExpanded = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', !isExpanded);
-        btn.querySelector('.toggle-icon').textContent = isExpanded ? '+' : '-';
-        content.hidden = isExpanded;
-      });
-    });
-
-    // Bind item checkboxes and inputs
-    bindRestorationItemEvents();
-  }
-
-  // Create restoration item HTML
-  function createRestorationItemHtml(item) {
-    const data = restorationData[item.id] || {};
-    return `
-      <div class="restoration-item ${data.completed ? 'completed' : ''}" data-item-id="${item.id}">
-        <div class="item-main">
-          <label class="item-checkbox">
-            <input type="checkbox" class="item-complete" data-id="${item.id}" ${data.completed ? 'checked' : ''}>
-            <span class="item-name">${item.name}</span>
-          </label>
-          <button type="button" class="item-expand-btn" aria-label="Expand details">
-            <span class="expand-icon">&#9662;</span>
-          </button>
-        </div>
-        ${item.description ? `<p class="item-description">${item.description}</p>` : ''}
-        <div class="item-details" hidden>
-          <div class="detail-row">
-            <div class="detail-field">
-              <label>Date Completed</label>
-              <input type="date" class="item-date" data-id="${item.id}" value="${data.dateCompleted || ''}">
-            </div>
-            <div class="detail-field">
-              <label>Cost ($)</label>
-              <input type="number" class="item-cost" data-id="${item.id}" min="0" step="0.01" placeholder="0.00" value="${data.cost || ''}">
-            </div>
-          </div>
-          <div class="detail-field full-width">
-            <label>Notes</label>
-            <textarea class="item-notes" data-id="${item.id}" rows="2" placeholder="Parts used, tips, issues...">${data.notes || ''}</textarea>
-          </div>
-        </div>
-      </div>
-    `;
-  }
-
-  // Bind restoration item events
-  function bindRestorationItemEvents() {
-    const container = document.getElementById('restoration-categories');
-
-    // Checkbox changes
-    container.querySelectorAll('.item-complete').forEach(checkbox => {
-      checkbox.addEventListener('change', async (e) => {
-        const itemId = e.target.dataset.id;
-        const item = e.target.closest('.restoration-item');
-        const dateInput = item.querySelector('.item-date');
-
-        const data = {
-          completed: e.target.checked,
-          dateCompleted: dateInput.value || (e.target.checked ? new Date().toISOString().split('T')[0] : null),
-          cost: parseFloat(item.querySelector('.item-cost').value) || null,
-          notes: item.querySelector('.item-notes').value || null
-        };
-
-        if (e.target.checked && !dateInput.value) {
-          dateInput.value = new Date().toISOString().split('T')[0];
-          data.dateCompleted = dateInput.value;
-        }
-
-        item.classList.toggle('completed', e.target.checked);
-
-        try {
-          await Garage.updateRestorationItem(selectedVehicleId, itemId, data);
-          restorationData[itemId] = data;
-          updateRestorationProgress();
-        } catch (error) {
-          console.error('Error updating restoration item:', error);
-        }
-      });
-    });
-
-    // Other input changes (debounced)
-    let saveTimeout;
-    const saveItem = async (itemId, item) => {
-      const data = {
-        completed: item.querySelector('.item-complete').checked,
-        dateCompleted: item.querySelector('.item-date').value || null,
-        cost: parseFloat(item.querySelector('.item-cost').value) || null,
-        notes: item.querySelector('.item-notes').value || null
-      };
-
-      try {
-        await Garage.updateRestorationItem(selectedVehicleId, itemId, data);
-        restorationData[itemId] = data;
-        updateRestorationProgress();
-      } catch (error) {
-        console.error('Error updating restoration item:', error);
-      }
-    };
-
-    container.querySelectorAll('.item-date, .item-cost, .item-notes').forEach(input => {
-      input.addEventListener('change', (e) => {
-        const itemId = e.target.dataset.id;
-        const item = e.target.closest('.restoration-item');
-        clearTimeout(saveTimeout);
-        saveTimeout = setTimeout(() => saveItem(itemId, item), 500);
-      });
-    });
-
-    // Expand buttons
-    container.querySelectorAll('.item-expand-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const details = btn.closest('.restoration-item').querySelector('.item-details');
-        const isHidden = details.hidden;
-        details.hidden = !isHidden;
-        btn.querySelector('.expand-icon').style.transform = isHidden ? 'rotate(180deg)' : '';
-      });
-    });
-  }
-
-  // Update restoration progress
-  function updateRestorationProgress() {
-    let totalItems = 0;
-    let completedItems = 0;
-    let totalCost = 0;
-
-    RESTORATION_CHECKLIST.categories.forEach(category => {
-      totalItems += category.items.length;
-      category.items.forEach(item => {
-        if (restorationData[item.id]?.completed) {
-          completedItems++;
-        }
-        if (restorationData[item.id]?.cost) {
-          totalCost += restorationData[item.id].cost;
-        }
-      });
-    });
-
-    const percent = totalItems > 0 ? Math.round((completedItems / totalItems) * 100) : 0;
-
+    // Update UI
     document.getElementById('restoration-progress-fill').style.width = percent + '%';
     document.getElementById('restoration-progress-text').textContent = percent + '% Complete';
-    document.getElementById('restoration-completed').textContent = completedItems;
-    document.getElementById('restoration-remaining').textContent = totalItems - completedItems;
-    document.getElementById('restoration-total-cost').textContent = '$' + totalCost.toLocaleString();
+    document.getElementById('restoration-completed').textContent = completed;
+    document.getElementById('restoration-in-progress').textContent = inProgress;
+    document.getElementById('restoration-remaining').textContent = remaining;
+    document.getElementById('restoration-estimated').textContent = '$' + estimatedTotal.toLocaleString();
+    document.getElementById('restoration-actual').textContent = '$' + actualTotal.toLocaleString();
     document.getElementById('detail-restoration-progress').textContent = percent + '%';
 
-    // Update category counts
-    document.querySelectorAll('.restoration-category').forEach(catEl => {
-      const catId = catEl.dataset.category;
-      const category = RESTORATION_CHECKLIST.categories.find(c => c.id === catId);
-      if (category) {
-        const completed = category.items.filter(item => restorationData[item.id]?.completed).length;
-        catEl.querySelector('.category-count').textContent = `${completed}/${category.items.length}`;
+    // Render category summary
+    renderCategorySummary();
+  }
+
+  // Render category-level progress
+  function renderCategorySummary() {
+    const container = document.getElementById('restoration-category-summary');
+    if (!container) return;
+
+    // Group items by category
+    const categoryStats = {};
+    Object.entries(restorationData).forEach(([itemId, item]) => {
+      const cat = item.category || 'other';
+      if (!categoryStats[cat]) {
+        categoryStats[cat] = { total: 0, completed: 0 };
+      }
+      categoryStats[cat].total++;
+      if (item.status === 'complete') {
+        categoryStats[cat].completed++;
       }
     });
+
+    // Only show if there's data
+    if (Object.keys(categoryStats).length === 0) {
+      container.innerHTML = '<p class="empty-state">No restoration items tracked yet. Open the full checklist to get started.</p>';
+      return;
+    }
+
+    // Render progress bars for each category
+    let html = '<h4>Progress by Category</h4><div class="category-progress-list">';
+
+    Object.entries(categoryStats).forEach(([catId, stats]) => {
+      const catName = RESTORATION_CATEGORIES[catId] || catId;
+      const percent = stats.total > 0 ? Math.round((stats.completed / stats.total) * 100) : 0;
+
+      html += `
+        <div class="category-progress-item">
+          <div class="category-progress-header">
+            <span class="category-name">${catName}</span>
+            <span class="category-count">${stats.completed}/${stats.total}</span>
+          </div>
+          <div class="progress-bar small">
+            <div class="progress-fill" style="width: ${percent}%"></div>
+          </div>
+        </div>
+      `;
+    });
+
+    html += '</div>';
+    container.innerHTML = html;
   }
 
   // Load maintenance data
@@ -1031,33 +956,7 @@ const RESTORATION_CHECKLIST = {{ restorationChecklist | dump | safe }};
       });
     });
 
-    // Restoration actions
-    document.getElementById('restoration-expand-all').addEventListener('click', () => {
-      document.querySelectorAll('.category-toggle').forEach(btn => {
-        btn.setAttribute('aria-expanded', 'true');
-        btn.querySelector('.toggle-icon').textContent = '-';
-        btn.closest('.restoration-category').querySelector('.category-content').hidden = false;
-      });
-    });
-    document.getElementById('restoration-collapse-all').addEventListener('click', () => {
-      document.querySelectorAll('.category-toggle').forEach(btn => {
-        btn.setAttribute('aria-expanded', 'false');
-        btn.querySelector('.toggle-icon').textContent = '+';
-        btn.closest('.restoration-category').querySelector('.category-content').hidden = true;
-      });
-    });
-    document.getElementById('restoration-clear-all').addEventListener('click', async () => {
-      if (confirm('Clear all restoration progress for this vehicle? This cannot be undone.')) {
-        try {
-          await Garage.clearRestoration(selectedVehicleId);
-          restorationData = {};
-          renderRestorationChecklist();
-          updateRestorationProgress();
-        } catch (error) {
-          alert('Error clearing restoration: ' + error.message);
-        }
-      }
-    });
+    // Restoration checklist link is set dynamically when vehicle is selected
 
     // Maintenance modal
     document.getElementById('add-maintenance-btn').addEventListener('click', () => openMaintenanceModal());
