@@ -458,13 +458,12 @@ function createVehicleCard(vehicle) {
     card.className = 'vehicle-card';
     card.dataset.id = vehicle.id;
 
-    const platformInfo = Garage.getPlatformInfo(vehicle.platform);
-    const displayName = vehicle.nickname || `${vehicle.year || ''} ${platformInfo.fullName}`.trim();
+    const displayInfo = Garage.getVehicleDisplayInfo(vehicle);
 
     card.innerHTML = `
         <div class="vehicle-card-header">
-            <h3>${displayName}</h3>
-            <span class="platform-badge">${platformInfo.name}</span>
+            <h3>${displayInfo.name}</h3>
+            <span class="platform-badge${displayInfo.isCustom ? ' custom' : ''}">${displayInfo.badge}</span>
         </div>
         <div class="vehicle-card-body">
             <div class="vehicle-stat">
@@ -534,7 +533,8 @@ async function loadVehicleRestorationStatus(vehicleId, card) {
 
 function buildChecklistItems(platform) {
     const items = {};
-    const specifics = VEHICLE_SPECIFICS[platform]?.additions || {};
+    // For custom vehicles (null platform), use empty specifics (base items only)
+    const specifics = platform ? (VEHICLE_SPECIFICS[platform]?.additions || {}) : {};
 
     // Start with base items for each category
     for (const [category, baseItems] of Object.entries(BASE_ITEMS)) {
@@ -548,7 +548,7 @@ function buildChecklistItems(platform) {
             custom: false
         }));
 
-        // Add vehicle-specific items
+        // Add vehicle-specific items (only for platform vehicles)
         if (specifics[category]) {
             const startIndex = items[category].length;
             specifics[category].forEach((item, index) => {
@@ -1030,11 +1030,15 @@ async function startProject(vehicleValue) {
             return;
         }
 
+        const displayInfo = Garage.getVehicleDisplayInfo(vehicle);
         currentVehicle = {
             type: 'garage',
             id: vehicle.id,
             platform: vehicle.platform,
-            name: vehicle.nickname || `${vehicle.year || ''} ${Garage.getPlatformInfo(vehicle.platform).fullName}`.trim()
+            make: vehicle.make,
+            model: vehicle.model,
+            name: displayInfo.name,
+            isCustom: displayInfo.isCustom
         };
     } else {
         // Platform-only selection - prompt to add to garage
@@ -1057,7 +1061,8 @@ async function startProject(vehicleValue) {
                         type: 'garage',
                         id: newVehicle.id,
                         platform: id,
-                        name: newVehicle.nickname
+                        name: newVehicle.nickname,
+                        isCustom: false
                     };
 
                     garageVehicles.push(newVehicle);
@@ -1076,7 +1081,7 @@ async function startProject(vehicleValue) {
         }
     }
 
-    // Build checklist for the platform
+    // Build checklist for the platform (or generic for custom vehicles)
     checklistItems = buildChecklistItems(currentVehicle.platform);
 
     // Load any saved progress

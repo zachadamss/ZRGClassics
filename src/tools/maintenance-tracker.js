@@ -344,13 +344,12 @@ function createVehicleCard(vehicle) {
     card.className = 'vehicle-card';
     card.dataset.id = vehicle.id;
 
-    const platformInfo = Garage.getPlatformInfo(vehicle.platform);
-    const displayName = vehicle.nickname || `${vehicle.year || ''} ${platformInfo.fullName}`.trim();
+    const displayInfo = Garage.getVehicleDisplayInfo(vehicle);
 
     card.innerHTML = `
         <div class="vehicle-card-header">
-            <h3>${displayName}</h3>
-            <span class="platform-badge">${platformInfo.name}</span>
+            <h3>${displayInfo.name}</h3>
+            <span class="platform-badge${displayInfo.isCustom ? ' custom' : ''}">${displayInfo.badge}</span>
         </div>
         <div class="vehicle-card-body">
             <div class="vehicle-stat">
@@ -413,11 +412,12 @@ async function showVehicleDetail(vehicle) {
     document.getElementById('vehicle-detail').style.display = 'block';
     document.getElementById('export-section').style.display = 'block';
 
-    const platformInfo = Garage.getPlatformInfo(vehicle.platform);
-    const displayName = vehicle.nickname || `${vehicle.year || ''} ${platformInfo.fullName}`.trim();
+    const displayInfo = Garage.getVehicleDisplayInfo(vehicle);
 
-    document.getElementById('detail-vehicle-name').textContent = displayName;
-    document.getElementById('detail-vehicle-platform').textContent = platformInfo.name;
+    document.getElementById('detail-vehicle-name').textContent = displayInfo.name;
+    const platformBadge = document.getElementById('detail-vehicle-platform');
+    platformBadge.textContent = displayInfo.badge;
+    platformBadge.classList.toggle('custom', displayInfo.isCustom);
     document.getElementById('current-mileage-display').textContent = vehicle.mileage ? vehicle.mileage.toLocaleString() : '0';
     document.getElementById('update-mileage').value = '';
 
@@ -705,13 +705,17 @@ function renderServiceHistory() {
 async function initializeSchedule() {
     if (!currentVehicle) return;
 
-    const presets = MAINTENANCE_PRESETS[currentVehicle.platform];
-    if (!presets) {
-        alert('No presets available for this platform. Add items manually.');
+    // Use Garage.getMaintenancePresets which handles both platform and custom vehicles
+    const presets = Garage.getMaintenancePresets(currentVehicle.platform);
+    if (!presets || presets.length === 0) {
+        alert('No presets available. Add items manually.');
         return;
     }
 
-    if (!confirm(`Initialize maintenance schedule with ${presets.length} preset items for ${Garage.getPlatformInfo(currentVehicle.platform).name}?`)) {
+    const displayInfo = Garage.getVehicleDisplayInfo(currentVehicle);
+    const presetsLabel = displayInfo.isCustom ? 'generic' : displayInfo.badge;
+
+    if (!confirm(`Initialize maintenance schedule with ${presets.length} ${presetsLabel} preset items?`)) {
         return;
     }
 

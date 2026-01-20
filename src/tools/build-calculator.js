@@ -379,7 +379,8 @@
 
     function handleVehicleChange() {
         const vehicle = document.getElementById('vehicle-select').value;
-        if (!vehicle) return;
+        // For empty selection or 'custom', don't apply any estimates
+        if (!vehicle || vehicle === 'custom') return;
 
         const buildLevel = document.getElementById('build-level').value;
         applyVehicleEstimates(vehicle, buildLevel);
@@ -387,7 +388,8 @@
 
     function handleBuildLevelChange() {
         const vehicle = document.getElementById('vehicle-select').value;
-        if (!vehicle) return;
+        // For empty selection or 'custom', don't apply any estimates
+        if (!vehicle || vehicle === 'custom') return;
 
         const buildLevel = document.getElementById('build-level').value;
         applyVehicleEstimates(vehicle, buildLevel);

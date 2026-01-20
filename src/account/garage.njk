@@ -230,37 +230,54 @@ description: Manage your garage vehicles, track restoration progress, and log ma
         <label for="vehicle-nickname">Nickname</label>
         <input type="text" id="vehicle-nickname" placeholder="e.g., Daily Driver, Project Car">
       </div>
-      <div class="form-row">
+      <div class="form-group">
+        <label for="vehicle-platform">Platform</label>
+        <select id="vehicle-platform">
+          <option value="">Select a platform...</option>
+          <optgroup label="BMW">
+            <option value="e28">E28 5-Series (1982-1988)</option>
+            <option value="e30">E30 3-Series (1982-1994)</option>
+            <option value="e34">E34 5-Series (1988-1996)</option>
+            <option value="e36">E36 3-Series (1990-2000)</option>
+            <option value="e39">E39 5-Series (1995-2004)</option>
+            <option value="e46">E46 3-Series (1998-2006)</option>
+            <option value="e90">E90 3-Series (2005-2013)</option>
+          </optgroup>
+          <optgroup label="Porsche">
+            <option value="924">924 (1976-1988)</option>
+            <option value="928">928 (1977-1995)</option>
+            <option value="944">944 (1982-1991)</option>
+            <option value="964">964 911 (1989-1994)</option>
+            <option value="986">986 Boxster (1996-2004)</option>
+            <option value="987">987 Boxster/Cayman (2005-2012)</option>
+            <option value="991">991 911 (2011-2019)</option>
+            <option value="993">993 911 (1994-1998)</option>
+            <option value="996">996 911 (1997-2005)</option>
+            <option value="997">997 911 (2004-2012)</option>
+          </optgroup>
+          <optgroup label="Other">
+            <option value="custom">Custom Vehicle</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="form-row custom-vehicle-fields" id="custom-vehicle-fields" style="display: none;">
         <div class="form-group">
-          <label for="vehicle-platform">Platform *</label>
-          <select id="vehicle-platform" required>
-            <option value="">Select a platform...</option>
-            <optgroup label="BMW">
-              <option value="e28">E28 5-Series (1982-1988)</option>
-              <option value="e30">E30 3-Series (1982-1994)</option>
-              <option value="e34">E34 5-Series (1988-1996)</option>
-              <option value="e36">E36 3-Series (1990-2000)</option>
-              <option value="e39">E39 5-Series (1995-2004)</option>
-              <option value="e46">E46 3-Series (1998-2006)</option>
-              <option value="e90">E90 3-Series (2005-2013)</option>
-            </optgroup>
-            <optgroup label="Porsche">
-              <option value="924">924 (1976-1988)</option>
-              <option value="928">928 (1977-1995)</option>
-              <option value="944">944 (1982-1991)</option>
-              <option value="964">964 911 (1989-1994)</option>
-              <option value="986">986 Boxster (1996-2004)</option>
-              <option value="987">987 Boxster/Cayman (2005-2012)</option>
-              <option value="991">991 911 (2011-2019)</option>
-              <option value="993">993 911 (1994-1998)</option>
-              <option value="996">996 911 (1997-2005)</option>
-              <option value="997">997 911 (2004-2012)</option>
-            </optgroup>
-          </select>
+          <label for="vehicle-make">Make *</label>
+          <input type="text" id="vehicle-make" placeholder="e.g., Mercedes-Benz">
         </div>
         <div class="form-group">
+          <label for="vehicle-model">Model *</label>
+          <input type="text" id="vehicle-model" placeholder="e.g., 300E">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
           <label for="vehicle-year">Year</label>
-          <input type="number" id="vehicle-year" min="1976" max="2025" placeholder="e.g., 1988">
+          <input type="number" id="vehicle-year" min="1900" max="2030" placeholder="e.g., 1988">
+        </div>
+        <div class="form-group platform-year-info" id="platform-year-info" style="display: none;">
+          <label>&nbsp;</label>
+          <span class="platform-years-hint" id="platform-years-hint"></span>
         </div>
       </div>
       <div class="form-row">
@@ -451,20 +468,24 @@ const RESTORATION_CATEGORIES = {
     card.className = 'vehicle-card' + (vehicle.id === selectedVehicleId ? ' selected' : '');
     card.dataset.id = vehicle.id;
 
+    const displayInfo = Garage.getVehicleDisplayInfo(vehicle);
     const platformInfo = Garage.getPlatformInfo(vehicle.platform);
-    const displayName = vehicle.nickname ||
-      (vehicle.year ? `${vehicle.year} ${platformInfo.name}` : platformInfo.name);
+
+    // For placeholder, use first letter of make (custom) or brand (platform)
+    const placeholderLetter = displayInfo.isCustom
+      ? (vehicle.make || 'C').charAt(0).toUpperCase()
+      : platformInfo.brand.charAt(0);
 
     card.innerHTML = `
       <div class="vehicle-card-image">
         ${vehicle.photo_url
-          ? `<img src="${vehicle.photo_url}" alt="${displayName}">`
-          : `<div class="vehicle-card-placeholder">${platformInfo.brand.charAt(0)}</div>`
+          ? `<img src="${vehicle.photo_url}" alt="${displayInfo.name}">`
+          : `<div class="vehicle-card-placeholder">${placeholderLetter}</div>`
         }
       </div>
       <div class="vehicle-card-content">
-        <h3>${escapeHtml(displayName)}</h3>
-        <span class="platform-badge">${platformInfo.name}</span>
+        <h3>${escapeHtml(displayInfo.name)}</h3>
+        <span class="platform-badge${displayInfo.isCustom ? ' custom' : ''}">${escapeHtml(displayInfo.badge)}</span>
         ${vehicle.mileage ? `<p class="vehicle-mileage">${vehicle.mileage.toLocaleString()} miles</p>` : ''}
       </div>
     `;
@@ -488,12 +509,12 @@ const RESTORATION_CATEGORIES = {
     // Show detail section
     document.getElementById('vehicle-detail').style.display = 'block';
 
-    // Update header
-    const platformInfo = Garage.getPlatformInfo(vehicle.platform);
-    const displayName = vehicle.nickname ||
-      (vehicle.year ? `${vehicle.year} ${platformInfo.name}` : platformInfo.name);
-    document.getElementById('detail-vehicle-title').textContent = displayName;
-    document.getElementById('detail-platform-badge').textContent = platformInfo.name;
+    // Update header using display info helper
+    const displayInfo = Garage.getVehicleDisplayInfo(vehicle);
+    document.getElementById('detail-vehicle-title').textContent = displayInfo.name;
+    const platformBadge = document.getElementById('detail-platform-badge');
+    platformBadge.textContent = displayInfo.badge;
+    platformBadge.classList.toggle('custom', displayInfo.isCustom);
 
     // Update stats
     document.getElementById('detail-mileage').textContent =
@@ -735,6 +756,9 @@ const RESTORATION_CATEGORIES = {
     // Add vehicle button
     document.getElementById('add-vehicle-btn').addEventListener('click', () => openVehicleModal());
 
+    // Platform change - show/hide custom fields
+    document.getElementById('vehicle-platform').addEventListener('change', handlePlatformChange);
+
     // Vehicle modal
     document.getElementById('close-vehicle-modal').addEventListener('click', closeVehicleModal);
     document.getElementById('cancel-vehicle-modal').addEventListener('click', closeVehicleModal);
@@ -775,15 +799,59 @@ const RESTORATION_CATEGORIES = {
     // Restoration and maintenance links are set dynamically when vehicle is selected
   }
 
+  // Handle platform dropdown change
+  function handlePlatformChange() {
+    const platform = document.getElementById('vehicle-platform').value;
+    const customFields = document.getElementById('custom-vehicle-fields');
+    const platformYearInfo = document.getElementById('platform-year-info');
+    const platformYearsHint = document.getElementById('platform-years-hint');
+
+    if (platform === 'custom') {
+      customFields.style.display = 'flex';
+      platformYearInfo.style.display = 'none';
+    } else if (platform && Garage.PLATFORMS[platform]) {
+      customFields.style.display = 'none';
+      platformYearInfo.style.display = 'block';
+      platformYearsHint.textContent = `Production: ${Garage.PLATFORMS[platform].years}`;
+      document.getElementById('vehicle-make').value = '';
+      document.getElementById('vehicle-model').value = '';
+    } else {
+      customFields.style.display = 'none';
+      platformYearInfo.style.display = 'none';
+      document.getElementById('vehicle-make').value = '';
+      document.getElementById('vehicle-model').value = '';
+    }
+  }
+
   // Vehicle Modal Functions
   function openVehicleModal(vehicle = null) {
     const modal = document.getElementById('vehicle-modal');
     const title = document.getElementById('vehicle-modal-title');
+    const customFields = document.getElementById('custom-vehicle-fields');
+    const platformYearInfo = document.getElementById('platform-year-info');
 
     if (vehicle) {
       title.textContent = 'Edit Vehicle';
       document.getElementById('vehicle-nickname').value = vehicle.nickname || '';
-      document.getElementById('vehicle-platform').value = vehicle.platform;
+
+      // Determine if this is a custom vehicle (has make/model but no platform, or platform not in our list)
+      const isCustom = !vehicle.platform || !Garage.PLATFORMS[vehicle.platform];
+
+      if (isCustom) {
+        document.getElementById('vehicle-platform').value = 'custom';
+        document.getElementById('vehicle-make').value = vehicle.make || '';
+        document.getElementById('vehicle-model').value = vehicle.model || '';
+        customFields.style.display = 'flex';
+        platformYearInfo.style.display = 'none';
+      } else {
+        document.getElementById('vehicle-platform').value = vehicle.platform;
+        document.getElementById('vehicle-make').value = '';
+        document.getElementById('vehicle-model').value = '';
+        customFields.style.display = 'none';
+        platformYearInfo.style.display = 'block';
+        document.getElementById('platform-years-hint').textContent = `Production: ${Garage.PLATFORMS[vehicle.platform].years}`;
+      }
+
       document.getElementById('vehicle-year').value = vehicle.year || '';
       document.getElementById('vehicle-color').value = vehicle.color || '';
       document.getElementById('vehicle-mileage').value = vehicle.mileage || '';
@@ -796,6 +864,8 @@ const RESTORATION_CATEGORIES = {
       title.textContent = 'Add Vehicle';
       document.getElementById('vehicle-nickname').value = '';
       document.getElementById('vehicle-platform').value = '';
+      document.getElementById('vehicle-make').value = '';
+      document.getElementById('vehicle-model').value = '';
       document.getElementById('vehicle-year').value = '';
       document.getElementById('vehicle-color').value = '';
       document.getElementById('vehicle-mileage').value = '';
@@ -804,6 +874,8 @@ const RESTORATION_CATEGORIES = {
       document.getElementById('vehicle-purchase-price').value = '';
       document.getElementById('vehicle-notes').value = '';
       document.getElementById('vehicle-edit-id').value = '';
+      customFields.style.display = 'none';
+      platformYearInfo.style.display = 'none';
     }
 
     modal.classList.add('active');
@@ -814,14 +886,26 @@ const RESTORATION_CATEGORIES = {
   }
 
   async function saveVehicle() {
-    const platform = document.getElementById('vehicle-platform').value;
-    if (!platform) {
-      alert('Please select a platform');
+    const platformSelect = document.getElementById('vehicle-platform').value;
+    const isCustom = platformSelect === 'custom';
+    const make = document.getElementById('vehicle-make').value.trim();
+    const model = document.getElementById('vehicle-model').value.trim();
+
+    // Validation
+    if (!platformSelect) {
+      alert('Please select a platform or choose "Custom Vehicle"');
+      return;
+    }
+
+    if (isCustom && (!make || !model)) {
+      alert('Please enter both make and model for custom vehicles');
       return;
     }
 
     const vehicleData = {
-      platform,
+      platform: isCustom ? null : platformSelect,
+      make: isCustom ? make : null,
+      model: isCustom ? model : null,
       nickname: document.getElementById('vehicle-nickname').value.trim() || null,
       year: document.getElementById('vehicle-year').value ? parseInt(document.getElementById('vehicle-year').value) : null,
       color: document.getElementById('vehicle-color').value.trim() || null,
@@ -843,8 +927,8 @@ const RESTORATION_CATEGORIES = {
         await Garage.updateVehicle(editId, vehicleData);
       } else {
         const newVehicle = await Garage.addVehicle(vehicleData);
-        // Initialize maintenance schedule with platform defaults
-        await Garage.initializeMaintenanceSchedule(newVehicle.id, platform);
+        // Initialize maintenance schedule with platform defaults (or generic for custom)
+        await Garage.initializeMaintenanceSchedule(newVehicle.id, vehicleData.platform);
       }
 
       closeVehicleModal();

@@ -102,7 +102,9 @@ const Garage = {
       .from('garage_vehicles')
       .insert({
         user_id: user.id,
-        platform: vehicleData.platform,
+        platform: vehicleData.platform || null,
+        make: vehicleData.make || null,
+        model: vehicleData.model || null,
         year: vehicleData.year || null,
         nickname: vehicleData.nickname || null,
         color: vehicleData.color || null,
@@ -133,6 +135,8 @@ const Garage = {
 
     // Map camelCase to snake_case
     if (updates.platform !== undefined) updateData.platform = updates.platform;
+    if (updates.make !== undefined) updateData.make = updates.make;
+    if (updates.model !== undefined) updateData.model = updates.model;
     if (updates.year !== undefined) updateData.year = updates.year;
     if (updates.nickname !== undefined) updateData.nickname = updates.nickname;
     if (updates.color !== undefined) updateData.color = updates.color;
@@ -602,11 +606,34 @@ const Garage = {
    */
   getPlatformInfo(platformCode) {
     return this.PLATFORMS[platformCode] || {
-      name: platformCode,
-      fullName: platformCode,
-      brand: 'Unknown',
+      name: platformCode || 'Custom',
+      fullName: platformCode || 'Custom Vehicle',
+      brand: 'Custom',
       years: ''
     };
+  },
+
+  /**
+   * Get display info for a vehicle (handles both platform and custom vehicles)
+   */
+  getVehicleDisplayInfo(vehicle) {
+    if (vehicle.platform && this.PLATFORMS[vehicle.platform]) {
+      // Platform-based vehicle
+      const platformInfo = this.PLATFORMS[vehicle.platform];
+      return {
+        name: vehicle.nickname || `${vehicle.year || ''} ${platformInfo.fullName}`.trim(),
+        badge: platformInfo.name,
+        isCustom: false
+      };
+    } else {
+      // Custom vehicle
+      const yearMakeModel = [vehicle.year, vehicle.make, vehicle.model].filter(Boolean).join(' ');
+      return {
+        name: vehicle.nickname || yearMakeModel || 'Custom Vehicle',
+        badge: yearMakeModel || 'Custom',
+        isCustom: true
+      };
+    }
   },
 
   /**
@@ -828,7 +855,25 @@ const Garage = {
       ]
     };
 
-    return PRESETS[platform] || [];
+    // Generic presets for custom vehicles
+    const GENERIC_PRESETS = [
+      { name: 'Oil Change', intervalMiles: 5000, intervalMonths: 6 },
+      { name: 'Oil Filter', intervalMiles: 5000, intervalMonths: 6 },
+      { name: 'Air Filter', intervalMiles: 15000, intervalMonths: 24 },
+      { name: 'Fuel Filter', intervalMiles: 30000, intervalMonths: 36 },
+      { name: 'Spark Plugs', intervalMiles: 30000, intervalMonths: 36 },
+      { name: 'Coolant Flush', intervalMiles: 30000, intervalMonths: 24 },
+      { name: 'Brake Fluid Flush', intervalMiles: 30000, intervalMonths: 24 },
+      { name: 'Transmission Fluid', intervalMiles: 60000, intervalMonths: 72 },
+      { name: 'Brake Pads Inspection', intervalMiles: 15000, intervalMonths: 12 },
+      { name: 'Tire Rotation', intervalMiles: 7500, intervalMonths: 12 }
+    ];
+
+    // Return platform-specific presets or generic presets for custom vehicles
+    if (!platform) {
+      return GENERIC_PRESETS;
+    }
+    return PRESETS[platform] || GENERIC_PRESETS;
   },
 
   /**
