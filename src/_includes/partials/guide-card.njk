@@ -88,7 +88,23 @@
             <h4>Procedure</h4>
             <ol>
                 {% for step in currentGuide.steps %}
-                <li>{{ step }}</li>
+                <li>
+                    {% if step.text %}
+                    {# Object format with optional image #}
+                    {{ step.text }}
+                    {% if step.image %}
+                    <figure class="step-image">
+                        <img src="{{ step.image }}" alt="{{ step.caption or 'Step illustration' }}" loading="lazy">
+                        {% if step.caption %}
+                        <figcaption>{{ step.caption }}</figcaption>
+                        {% endif %}
+                    </figure>
+                    {% endif %}
+                    {% else %}
+                    {# Simple string format #}
+                    {{ step }}
+                    {% endif %}
+                </li>
                 {% endfor %}
             </ol>
         </div>
