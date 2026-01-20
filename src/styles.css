@@ -2872,6 +2872,58 @@ input:focus, textarea:focus, select:focus {
     }
 }
 
+/* Invoice Print Styles */
+@media print {
+    .invoice-list-panel,
+    .template-controls,
+    .invoice-actions,
+    .add-row-btn,
+    .remove-row-btn,
+    .save-indicator,
+    .invoice-header-row .save-indicator,
+    .print-hidden {
+        display: none !important;
+    }
+
+    .invoice-page-layout {
+        display: block;
+    }
+
+    .invoice-container {
+        max-width: 100%;
+        box-shadow: none;
+        border: none;
+    }
+
+    /* Hide empty form fields */
+    .invoice-section input:placeholder-shown,
+    .invoice-section textarea:placeholder-shown {
+        display: none;
+    }
+
+    /* Hide labels for empty fields */
+    .invoice-section input:placeholder-shown + label,
+    .invoice-section label:has(+ input:placeholder-shown) {
+        display: none;
+    }
+
+    /* Style filled inputs to look like text */
+    .invoice-section input:not(:placeholder-shown),
+    .invoice-section textarea:not(:placeholder-shown),
+    .invoice-section select {
+        border: none;
+        background: transparent;
+        padding: 0;
+        font-size: inherit;
+    }
+
+    /* Hide entire empty rows in parts/labor tables */
+    .part-row:has(input[name="partName[]"]:placeholder-shown),
+    .labor-row:has(input[name="laborDesc[]"]:placeholder-shown) {
+        display: none;
+    }
+}
+
 /* ================================
    Search Page Styles
    ================================ */

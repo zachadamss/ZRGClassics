@@ -655,7 +655,47 @@
     }
 
     function printInvoice() {
+        // Prepare for printing - hide empty fields
+        const emptyElements = [];
+
+        // Hide empty input fields and their labels
+        document.querySelectorAll('.invoice-section input, .invoice-section textarea').forEach(input => {
+            if (!input.value || input.value.trim() === '') {
+                input.classList.add('print-hidden');
+                emptyElements.push(input);
+
+                // Also hide the label
+                const label = input.previousElementSibling;
+                if (label && label.tagName === 'LABEL') {
+                    label.classList.add('print-hidden');
+                    emptyElements.push(label);
+                }
+            }
+        });
+
+        // Hide empty part rows (only name field empty)
+        document.querySelectorAll('.part-row').forEach(row => {
+            const nameInput = row.querySelector('[name="partName[]"]');
+            if (nameInput && !nameInput.value.trim()) {
+                row.classList.add('print-hidden');
+                emptyElements.push(row);
+            }
+        });
+
+        // Hide empty labor rows (only description field empty)
+        document.querySelectorAll('.labor-row').forEach(row => {
+            const descInput = row.querySelector('[name="laborDesc[]"]');
+            if (descInput && !descInput.value.trim()) {
+                row.classList.add('print-hidden');
+                emptyElements.push(row);
+            }
+        });
+
+        // Print
         window.print();
+
+        // Restore hidden elements after print
+        emptyElements.forEach(el => el.classList.remove('print-hidden'));
     }
 
     function showSaveIndicator(message) {
