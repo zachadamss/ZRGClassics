@@ -1,4 +1,4 @@
-<article class="issue-card" id="{{ issue.id }}">
+<article class="issue-card{% if issue.difficulty %} difficulty-level-{{ issue.difficulty | lower }}{% endif %}" id="{{ issue.id }}">
     <div class="issue-header">
         <h3>{{ issue.title }}</h3>
         {% if issue.difficulty %}

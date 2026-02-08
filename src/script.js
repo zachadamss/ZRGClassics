@@ -411,3 +411,103 @@ document.addEventListener('DOMContentLoaded', () => {
 
     observer.observe(statsBar);
 })();
+
+// ================================
+// Quick Links — Sticky Positioning & Active Highlighting
+// ================================
+// Dynamically measures the header height so the quick-links bar sits
+// directly beneath it without overlap. Also uses IntersectionObserver
+// to highlight the active section link and add a .stuck shadow.
+// Gracefully no-ops on non-vehicle pages where quick-links is absent.
+(function() {
+    const quickLinksNav = document.querySelector('nav.quick-links');
+    if (!quickLinksNav) return;
+
+    const header = document.querySelector('header');
+
+    // --- Sticky positioning: measure header and set top dynamically ---
+    function syncStickyOffsets() {
+        const headerHeight = header ? header.offsetHeight : 0;
+        quickLinksNav.style.top = headerHeight + 'px';
+    }
+
+    // Sync on load and on resize (header height can change at breakpoints)
+    syncStickyOffsets();
+    window.addEventListener('resize', syncStickyOffsets);
+
+    // --- Stuck shadow via sentinel ---
+    const sentinel = document.createElement('div');
+    sentinel.style.height = '1px';
+    sentinel.style.width = '100%';
+    sentinel.style.pointerEvents = 'none';
+    sentinel.setAttribute('aria-hidden', 'true');
+    quickLinksNav.parentNode.insertBefore(sentinel, quickLinksNav);
+
+    const stuckObserver = new IntersectionObserver(([entry]) => {
+        quickLinksNav.classList.toggle('stuck', !entry.isIntersecting);
+    }, {
+        rootMargin: '-' + (header ? header.offsetHeight : 0) + 'px 0px 0px 0px',
+        threshold: 0
+    });
+    stuckObserver.observe(sentinel);
+
+    // --- Active section highlighting ---
+    const links = quickLinksNav.querySelectorAll('a[href^="#"]');
+    if (!links.length) return;
+
+    const linkMap = {};
+    links.forEach(link => {
+        const id = link.getAttribute('href').slice(1);
+        linkMap[id] = link;
+    });
+
+    const sections = [];
+    Object.keys(linkMap).forEach(id => {
+        const section = document.getElementById(id);
+        if (section) sections.push(section);
+    });
+    if (!sections.length) return;
+
+    let currentActive = null;
+
+    function setActive(id) {
+        if (currentActive === id) return;
+        if (currentActive && linkMap[currentActive]) {
+            linkMap[currentActive].classList.remove('active');
+        }
+        if (id && linkMap[id]) {
+            linkMap[id].classList.add('active');
+        }
+        currentActive = id;
+    }
+
+    const visibleSections = new Map();
+
+    // rootMargin top offset accounts for header + quick-links combined height
+    const combinedHeight = (header ? header.offsetHeight : 0) + quickLinksNav.offsetHeight;
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                visibleSections.set(entry.target.id, true);
+            } else {
+                visibleSections.delete(entry.target.id);
+            }
+        });
+
+        if (visibleSections.size === 0) return;
+
+        // Activate the topmost visible section (document order)
+        for (const section of sections) {
+            if (visibleSections.has(section.id)) {
+                setActive(section.id);
+                return;
+            }
+        }
+    }, {
+        rootMargin: '-' + combinedHeight + 'px 0px -40% 0px',
+        threshold: 0
+    });
+
+    sections.forEach(section => sectionObserver.observe(section));
+})();

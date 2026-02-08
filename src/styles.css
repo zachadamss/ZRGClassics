@@ -135,7 +135,10 @@
     .hero-badge,
     .home-hero h1,
     .hero-subtitle,
-    .hero-actions {
+    .hero-actions,
+    .vehicle-hero h1,
+    .vehicle-meta,
+    .vehicle-engines {
         animation: none !important;
         opacity: 1 !important;
         transform: none !important;
@@ -2109,12 +2112,28 @@ button:hover {
     padding: 1.75rem;
     margin-bottom: 1.5rem;
     text-align: left;
-    transition: box-shadow 0.2s, border-color 0.2s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    /* Left color stripe — overridden by difficulty-specific classes below */
+    border-left: 4px solid var(--border-color);
 }
 
 .issue-card:hover {
-    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
     border-color: var(--gulf-orange-muted);
+}
+
+/* Difficulty-based left stripe colors for quick visual scanning */
+.issue-card.difficulty-level-easy {
+    border-left-color: #22c55e;
+}
+
+.issue-card.difficulty-level-moderate {
+    border-left-color: #eab308;
+}
+
+.issue-card.difficulty-level-advanced {
+    border-left-color: #ef4444;
 }
 
 [data-theme="dark"] .issue-card:hover {
@@ -3784,6 +3803,10 @@ input:focus, textarea:focus, select:focus {
     color: #fff;
     letter-spacing: -0.02em;
     line-height: 1.2;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    /* Staggered entrance: title first */
+    animation: fadeInUp 0.7s ease-out both;
+    animation-delay: 0.1s;
 }
 
 .vehicle-meta {
@@ -3793,6 +3816,9 @@ input:focus, textarea:focus, select:focus {
     margin-bottom: 1.25rem;
     opacity: 0.9;
     letter-spacing: 0.02em;
+    /* Staggered entrance: meta second */
+    animation: fadeInUp 0.7s ease-out both;
+    animation-delay: 0.3s;
 }
 
 .vehicle-meta .vehicle-years {
@@ -3805,6 +3831,9 @@ input:focus, textarea:focus, select:focus {
     justify-content: center;
     gap: 0.5rem;
     align-items: center;
+    /* Staggered entrance: engines last */
+    animation: fadeInUp 0.7s ease-out both;
+    animation-delay: 0.5s;
 }
 
 .engines-label {
@@ -3844,9 +3873,16 @@ input:focus, textarea:focus, select:focus {
     padding: 1rem 2rem;
     background-color: var(--background-alt);
     border-bottom: 1px solid var(--border-color);
+    /* Sticky below header — top value set dynamically by JS to match actual header height */
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 99;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Shadow when quick-links is scrolled under content */
+.quick-links.stuck {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .quick-links a {
@@ -3860,10 +3896,17 @@ input:focus, textarea:focus, select:focus {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    transition: all 0.2s;
+    transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.quick-links a:hover,
+.quick-links a:hover {
+    background-color: var(--gulf-blue);
+    color: var(--navy);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(125, 207, 234, 0.3);
+}
+
+/* Active state — set by JS IntersectionObserver based on scroll position */
 .quick-links a.active {
     background-color: var(--gulf-blue);
     color: var(--navy);
@@ -3874,7 +3917,13 @@ input:focus, textarea:focus, select:focus {
     border-color: var(--gulf-blue);
 }
 
-[data-theme="dark"] .quick-links a:hover,
+[data-theme="dark"] .quick-links a:hover {
+    background-color: var(--gulf-orange);
+    border-color: var(--gulf-orange);
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(242, 101, 34, 0.3);
+}
+
 [data-theme="dark"] .quick-links a.active {
     background-color: var(--gulf-orange);
     border-color: var(--gulf-orange);
@@ -3895,11 +3944,17 @@ input:focus, textarea:focus, select:focus {
     font-weight: 700;
     margin-bottom: 0.75rem;
     padding-bottom: 0.75rem;
-    border-bottom: 3px solid var(--gulf-orange);
+    border-bottom: 3px solid transparent;
     letter-spacing: -0.01em;
     position: relative;
+    /* Gradient underline that fades out to the right */
+    background-image: linear-gradient(90deg, var(--gulf-orange), var(--gulf-blue), transparent);
+    background-size: 100% 3px;
+    background-position: bottom left;
+    background-repeat: no-repeat;
 }
 
+/* Accent dot on the left end of the underline */
 .section-title::after {
     content: '';
     position: absolute;
@@ -3907,7 +3962,8 @@ input:focus, textarea:focus, select:focus {
     left: 0;
     width: 60px;
     height: 3px;
-    background-color: var(--gulf-blue);
+    background-color: var(--gulf-orange);
+    border-radius: 2px;
 }
 
 [data-theme="dark"] .section-title {
@@ -3993,13 +4049,13 @@ input:focus, textarea:focus, select:focus {
     border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
     text-decoration: none;
-    transition: all 0.2s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .resource-item:hover {
     border-color: var(--gulf-blue);
-    transform: translateX(4px);
-    box-shadow: var(--shadow-sm);
+    transform: translateX(6px);
+    box-shadow: var(--shadow-md);
 }
 
 [data-theme="dark"] .resource-item {
@@ -4039,11 +4095,12 @@ input:focus, textarea:focus, select:focus {
     height: 16px;
     color: var(--text-muted);
     flex-shrink: 0;
-    transition: color 0.2s;
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .resource-item:hover .external-link-icon {
     color: var(--gulf-orange);
+    transform: translate(2px, -2px);
 }
 
 /* ================================
@@ -4062,11 +4119,12 @@ input:focus, textarea:focus, select:focus {
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    transition: all 0.2s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .guide-card:hover {
-    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
     border-color: var(--gulf-blue-muted);
 }
 
@@ -4853,12 +4911,15 @@ input:focus, textarea:focus, select:focus {
     border-radius: var(--radius-md);
     padding: 1.25rem;
     text-align: center;
-    transition: all 0.2s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Top accent bar — color overridden by tier-specific classes */
+    border-top-width: 4px;
+    position: relative;
 }
 
 .pricing-tier:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
 }
 
 .pricing-tier h4 {
@@ -4893,6 +4954,7 @@ input:focus, textarea:focus, select:focus {
 
 .tier-project {
     border-color: var(--danger-color);
+    background: linear-gradient(180deg, rgba(220, 53, 69, 0.06) 0%, transparent 40%);
 }
 
 .tier-project h4 {
@@ -4901,6 +4963,7 @@ input:focus, textarea:focus, select:focus {
 
 .tier-driver {
     border-color: var(--warning-color);
+    background: linear-gradient(180deg, rgba(245, 166, 35, 0.06) 0%, transparent 40%);
 }
 
 .tier-driver h4 {
@@ -4909,6 +4972,7 @@ input:focus, textarea:focus, select:focus {
 
 .tier-excellent {
     border-color: var(--success-color);
+    background: linear-gradient(180deg, rgba(34, 165, 89, 0.06) 0%, transparent 40%);
 }
 
 .tier-excellent h4 {
@@ -4917,7 +4981,7 @@ input:focus, textarea:focus, select:focus {
 
 .tier-concours {
     border-color: var(--gulf-orange);
-    background: linear-gradient(135deg, rgba(242, 101, 34, 0.05) 0%, transparent 100%);
+    background: linear-gradient(180deg, rgba(242, 101, 34, 0.08) 0%, transparent 40%);
 }
 
 .tier-concours h4 {
@@ -5186,12 +5250,18 @@ input:focus, textarea:focus, select:focus {
     padding: 1.25rem;
     display: flex;
     flex-direction: column;
-    transition: all 0.2s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, opacity 0.3s ease;
 }
 
 .supplier-card:hover {
+    transform: translateY(-4px);
     border-color: var(--gulf-blue);
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Smooth fade for filter show/hide — JS toggles display:none, this handles visual */
+.supplier-card[style*="display: none"] {
+    opacity: 0;
 }
 
 [data-theme="dark"] .supplier-card {
@@ -5626,12 +5696,33 @@ input:focus, textarea:focus, select:focus {
     border-bottom: 1px solid var(--border-color);
 }
 
+/* Zebra striping for readability on long spec lists */
+.specs-table tbody tr:nth-child(even) td {
+    background-color: var(--background-alt);
+}
+
 .specs-table tr:last-child td {
     border-bottom: none;
 }
 
 .specs-table tr:hover td {
-    background-color: var(--background-alt);
+    background-color: rgba(125, 207, 234, 0.1);
+}
+
+[data-theme="dark"] .specs-table tr:hover td {
+    background-color: rgba(125, 207, 234, 0.08);
+}
+
+/* Monospace font for spec values — easier to scan numbers */
+.specs-table td:nth-child(2) {
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--gulf-orange-dark);
+}
+
+[data-theme="dark"] .specs-table td:nth-child(2) {
+    color: var(--gulf-orange);
 }
 
 /* ================================
