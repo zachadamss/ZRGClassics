@@ -293,3 +293,121 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// ================================
+// Sticky Header — Shadow on Scroll
+// ================================
+// Adds a deeper shadow when the user scrolls down, giving the sticky
+// header a more grounded feel. Removed when scrolled back to top.
+(function() {
+    const header = document.querySelector('header');
+    if (!header) return;
+
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            requestAnimationFrame(() => {
+                header.classList.toggle('scrolled', window.scrollY > 10);
+                ticking = false;
+            });
+            ticking = true;
+        }
+    }, { passive: true });
+})();
+
+// ================================
+// Scroll-Triggered Animations
+// ================================
+// Uses IntersectionObserver to add .is-visible to elements with
+// .animate-on-scroll when they enter the viewport. Each element
+// animates once and is then unobserved to save resources.
+// Respects prefers-reduced-motion — skips all animations if set.
+(function() {
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion) return;
+
+    const targets = document.querySelectorAll('.animate-on-scroll');
+    if (!targets.length) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target); // Animate once only
+            }
+        });
+    }, {
+        threshold: 0.15,     // Trigger when 15% of element is visible
+        rootMargin: '0px 0px -40px 0px'  // Slight offset so animation feels natural
+    });
+
+    targets.forEach(el => observer.observe(el));
+})();
+
+// ================================
+// Stats Counter Animation
+// ================================
+// Animates stat numbers from 0 to their final value when the stats
+// bar scrolls into view. Uses requestAnimationFrame for smooth 60fps
+// counting. Only runs once per page load.
+(function() {
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion) return;
+
+    const statsBar = document.querySelector('.stats-bar');
+    if (!statsBar) return;
+
+    const statNumbers = statsBar.querySelectorAll('.stat-number');
+    if (!statNumbers.length) return;
+
+    // Parse the final values and store them before zeroing out
+    const targets = [];
+    statNumbers.forEach(el => {
+        const text = el.textContent.trim();
+        const num = parseInt(text.replace(/[^0-9]/g, ''), 10);
+        const suffix = text.replace(/[0-9]/g, ''); // Preserve '+' or other suffixes
+        if (!isNaN(num)) {
+            targets.push({ el, num, suffix });
+            el.textContent = '0' + suffix; // Start at zero
+        }
+    });
+
+    let animated = false;
+
+    function animateCounters() {
+        if (animated) return;
+        animated = true;
+
+        const duration = 1200; // ms — total count-up duration
+        const startTime = performance.now();
+
+        function tick(now) {
+            const elapsed = now - startTime;
+            // Ease-out curve: fast start, gentle finish
+            const progress = Math.min(elapsed / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3);
+
+            targets.forEach(({ el, num, suffix }) => {
+                el.textContent = Math.round(eased * num) + suffix;
+            });
+
+            if (progress < 1) {
+                requestAnimationFrame(tick);
+            }
+        }
+
+        requestAnimationFrame(tick);
+    }
+
+    // Observe the stats bar and trigger counting when visible
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounters();
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.3 });
+
+    observer.observe(statsBar);
+})();

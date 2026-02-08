@@ -73,6 +73,76 @@
 }
 
 /* ================================
+   Animation Keyframes & Utilities
+   ================================ */
+
+/* Fade in from below — used for hero elements, scroll-reveal, cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade in with no movement — used for subtle reveals */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Scale up from slightly smaller — used for stats, badges */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Scroll-triggered animation: elements start invisible, animate when .is-visible is added */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger delays for child elements animated by scroll observer */
+.animate-on-scroll.stagger-1 { transition-delay: 0.1s; }
+.animate-on-scroll.stagger-2 { transition-delay: 0.2s; }
+.animate-on-scroll.stagger-3 { transition-delay: 0.3s; }
+.animate-on-scroll.stagger-4 { transition-delay: 0.4s; }
+.animate-on-scroll.stagger-5 { transition-delay: 0.5s; }
+
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .animate-on-scroll {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+    .hero-badge,
+    .home-hero h1,
+    .hero-subtitle,
+    .hero-actions {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
+
+/* ================================
    Base Styles
    ================================ */
 * {
@@ -176,6 +246,16 @@ header {
     background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
     color: #fff;
     box-shadow: var(--shadow-md);
+    /* Sticky header — stays visible on scroll */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Enhanced shadow when page is scrolled — toggled by JS */
+header.scrolled {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
 }
 
 [data-theme="dark"] header {
@@ -224,7 +304,7 @@ nav ul li.dropdown > a::after {
 }
 
 .dropdown-menu {
-    display: none;
+    /* Animated dropdown: use opacity + visibility instead of display:none */
     position: absolute;
     top: 100%;
     left: 0;
@@ -234,8 +314,15 @@ nav ul li.dropdown > a::after {
     border-radius: 0 0 var(--radius-md) var(--radius-md);
     box-shadow: var(--shadow-lg);
     z-index: 1000;
+    display: flex;
     flex-direction: column;
     gap: 0;
+    /* Start hidden, animate in on hover */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4px);
+    transition: opacity 0.25s ease, visibility 0.25s ease, transform 0.25s ease;
+    pointer-events: none;
 }
 
 [data-theme="dark"] .dropdown-menu {
@@ -257,8 +344,11 @@ nav ul li.dropdown > a::after {
     background-color: rgba(125, 207, 234, 0.2);
 }
 
-nav ul li.dropdown:hover .dropdown-menu {
-    display: flex;
+nav ul li.dropdown:hover > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 /* Nested Dropdown (Submenu) */
@@ -575,6 +665,9 @@ main {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     margin-bottom: 1.5rem;
+    /* Staggered entrance: badge appears first */
+    animation: fadeInUp 0.7s ease-out both;
+    animation-delay: 0.1s;
 }
 
 .home-hero h1 {
@@ -585,6 +678,10 @@ main {
     margin-bottom: 1.5rem;
     color: #fff;
     letter-spacing: -0.02em;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    /* Staggered entrance: heading appears second */
+    animation: fadeInUp 0.7s ease-out both;
+    animation-delay: 0.3s;
 }
 
 .home-hero h1 .highlight {
@@ -601,6 +698,9 @@ main {
     margin-left: auto;
     margin-right: auto;
     line-height: 1.7;
+    /* Staggered entrance: subtitle appears third */
+    animation: fadeInUp 0.7s ease-out both;
+    animation-delay: 0.5s;
 }
 
 .hero-actions {
@@ -608,6 +708,9 @@ main {
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
+    /* Staggered entrance: buttons appear last */
+    animation: fadeInUp 0.7s ease-out both;
+    animation-delay: 0.7s;
 }
 
 /* Brand Hero (BMW/Porsche landing pages) */
@@ -647,8 +750,19 @@ main {
 /* Stats Bar */
 .stats-bar {
     background: var(--navy-light);
-    border-bottom: 3px solid var(--gulf-orange);
     padding: 1.5rem 2rem;
+    position: relative;
+}
+
+/* Gradient divider line replacing solid border */
+.stats-bar::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--gulf-orange), transparent);
 }
 
 [data-theme="dark"] .stats-bar {
@@ -694,8 +808,28 @@ main {
     background: var(--background-alt);
     padding: 3.5rem 2rem;
     text-align: center;
-    border-top: 3px solid var(--gulf-orange);
-    border-bottom: 1px solid var(--border-color);
+    position: relative;
+}
+
+/* Gradient divider lines on newsletter section — top and bottom */
+.newsletter-section::before,
+.newsletter-section::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--gulf-orange), transparent);
+}
+
+.newsletter-section::before {
+    top: 0;
+}
+
+.newsletter-section::after {
+    bottom: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-color), transparent);
 }
 
 .newsletter-container {
@@ -948,12 +1082,13 @@ main {
     border-radius: var(--radius-lg);
     overflow: hidden;
     text-decoration: none;
-    transition: all 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     border: 1px solid var(--border-color);
 }
 
 .vehicle-card:hover {
-    box-shadow: var(--shadow-hover);
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
     border-color: var(--gulf-orange-muted);
 }
 
@@ -978,6 +1113,12 @@ main {
     height: 100%;
     object-fit: cover;
     z-index: 0;
+    transition: transform 0.4s ease;
+}
+
+/* Zoom image on card hover */
+.vehicle-card:hover .vehicle-card-image img {
+    transform: scale(1.08);
 }
 
 .vehicle-badge {
@@ -1033,18 +1174,25 @@ main {
     background: var(--background-alt);
     border-radius: var(--radius-lg);
     border: 1px solid var(--border-color);
-    transition: all 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .feature-card:hover {
+    transform: translateY(-6px);
     border-color: var(--gulf-orange-muted);
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-lg);
 }
 
 .feature-icon {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Scale icon on card hover for visual feedback */
+.feature-card:hover .feature-icon {
+    transform: scale(1.15);
 }
 
 .feature-card h3 {
@@ -1115,16 +1263,16 @@ main {
     margin-bottom: 1rem;
     text-decoration: none;
     color: #fff;
-    transition: all 0.2s;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .tools-section .tool-item:not(.coming-soon):hover {
     background: rgba(255, 255, 255, 0.12);
     border-color: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
     color: #fff;
-    transform: none;
+    transform: translateX(4px);
 }
 
 .tools-section .tool-item.coming-soon {
@@ -1308,9 +1456,11 @@ a.community-item:hover {
     text-decoration: none;
     border-radius: var(--radius-full);
     font-weight: 600;
-    transition: all 0.2s;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
     border: none;
     cursor: pointer;
+    /* Subtle base shadow so hover shadow doesn't appear from nothing */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .btn:hover {
@@ -1318,6 +1468,18 @@ a.community-item:hover {
     color: #fff;
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
+}
+
+/* Press feedback: button snaps down on click */
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Keyboard accessibility: visible focus ring */
+.btn:focus-visible {
+    outline: 2px solid var(--gulf-blue);
+    outline-offset: 2px;
 }
 
 .btn-primary {
@@ -1329,7 +1491,7 @@ a.community-item:hover {
     cursor: pointer;
     font-size: 1rem;
     font-weight: 600;
-    transition: all 0.2s;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .btn-primary:hover {
@@ -1346,11 +1508,13 @@ a.community-item:hover {
     cursor: pointer;
     font-size: 1rem;
     font-weight: 600;
-    transition: all 0.2s;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .btn-secondary:hover {
     background-color: var(--navy-light);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
 }
 
 [data-theme="dark"] .btn-secondary {
@@ -5524,8 +5688,11 @@ input:focus, textarea:focus, select:focus {
     opacity: 1;
 }
 
-nav ul li.dropdown.touch-open .dropdown-menu {
-    display: flex;
+nav ul li.dropdown.touch-open > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 /* ================================
