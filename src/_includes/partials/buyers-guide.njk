@@ -96,7 +96,7 @@
     {% if vehicle.buyersGuide.pricingGuide %}
     <div class="buyers-guide-pricing">
         <h3>Pricing Guide</h3>
-        <p class="pricing-disclaimer">Prices as of 2024. Values vary by location, options, and market conditions.</p>
+        <p class="pricing-disclaimer">Prices as of {{ site.year }}. Values vary by location, options, and market conditions.</p>
         <div class="pricing-tiers">
             {% if vehicle.buyersGuide.pricingGuide.project %}
             <div class="pricing-tier tier-project">

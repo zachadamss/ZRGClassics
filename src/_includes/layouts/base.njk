@@ -65,9 +65,10 @@
         "logo": "{{ site.url }}/images/logo.jpg",
         "description": "{{ site.description }}",
         "sameAs": [
-            {% if site.social.facebook %}"{{ site.social.facebook }}",{% endif %}
-            {% if site.social.twitter %}"https://twitter.com/{{ site.twitterHandle | replace('@', '') }}",{% endif %}
-            {% if site.social.instagram %}"{{ site.social.instagram }}"{% endif %}
+            {%- set comma = joiner(", ") -%}
+            {%- if site.social.facebook %}{{ comma() }}"{{ site.social.facebook }}"{% endif -%}
+            {%- if site.social.twitter %}{{ comma() }}"https://twitter.com/{{ site.twitterHandle | replace('@', '') }}"{% endif -%}
+            {%- if site.social.instagram %}{{ comma() }}"{{ site.social.instagram }}"{% endif -%}
         ]
     }
     </script>

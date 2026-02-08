@@ -254,18 +254,17 @@ function applyMobileLabels() {
     }
 }
 
-// Apply labels on page load if invoice tables exist
-document.addEventListener('DOMContentLoaded', () => {
-    applyMobileLabels();
-});
-
 // Export for use by invoice.js
 window.applyMobileLabels = applyMobileLabels;
 
 // ================================
-// Expandable Guide Cards
+// DOMContentLoaded — Page-load Initialization
 // ================================
 document.addEventListener('DOMContentLoaded', () => {
+    // Apply mobile labels to invoice tables if present
+    applyMobileLabels();
+
+    // Expandable guide cards
     const expandableHeaders = document.querySelectorAll('.guide-card-header.clickable');
 
     expandableHeaders.forEach(header => {
@@ -426,9 +425,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('header');
 
     // --- Sticky positioning: measure header and set top dynamically ---
+    // Only applies on desktop (>768px); on mobile the CSS media query
+    // sets position: relative / top: auto, so we clear the inline style.
     function syncStickyOffsets() {
-        const headerHeight = header ? header.offsetHeight : 0;
-        quickLinksNav.style.top = headerHeight + 'px';
+        if (window.innerWidth > 768) {
+            const headerHeight = header ? header.offsetHeight : 0;
+            quickLinksNav.style.top = headerHeight + 'px';
+        } else {
+            quickLinksNav.style.top = '';
+        }
     }
 
     // Sync on load and on resize (header height can change at breakpoints)

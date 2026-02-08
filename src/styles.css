@@ -1000,7 +1000,7 @@ main {
     padding: 0.25rem 0.75rem;
     background: var(--background-alt);
     border-radius: var(--radius-full);
-    transition: all 0.2s;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 .popular-searches a:hover {
@@ -1361,7 +1361,7 @@ main {
     margin-bottom: 1rem;
     text-decoration: none;
     color: var(--text-primary);
-    transition: all 0.2s;
+    transition: border-color 0.2s, box-shadow 0.2s;
     border: 1px solid var(--border-color);
 }
 
@@ -1539,7 +1539,7 @@ a.community-item:hover {
     cursor: pointer;
     font-size: 1rem;
     font-weight: 600;
-    transition: all 0.2s;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 .btn-light:hover {
@@ -1892,7 +1892,7 @@ button:hover {
     border-radius: var(--radius-lg);
     padding: 1.5rem;
     text-align: center;
-    transition: all 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
 }
 
 .resource-card:hover {
@@ -2304,7 +2304,7 @@ button:hover {
     border-radius: var(--radius-full);
     text-decoration: none;
     font-size: 0.85rem;
-    transition: all 0.2s ease;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
 .related-issue-link:hover {
@@ -2605,7 +2605,7 @@ button:hover {
     text-align: center;
     background-color: var(--background-color);
     border-radius: var(--radius-lg);
-    transition: all 0.3s;
+    transition: box-shadow 0.3s, transform 0.3s;
 }
 
 .product:hover {
@@ -2746,7 +2746,7 @@ input:focus, textarea:focus, select:focus {
     background: var(--background-alt);
     border-radius: var(--radius-md);
     cursor: pointer;
-    transition: all 0.2s;
+    transition: border-color 0.2s;
     border: 2px solid transparent;
 }
 
@@ -3383,7 +3383,7 @@ input:focus, textarea:focus, select:focus {
     cursor: pointer;
     font-size: 0.9rem;
     font-weight: 500;
-    transition: all 0.2s;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 }
 
 .filter-btn:hover {
@@ -3422,7 +3422,7 @@ input:focus, textarea:focus, select:focus {
     border-radius: var(--radius-sm);
     cursor: pointer;
     font-size: 0.85rem;
-    transition: all 0.2s;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
     color: var(--text-color);
 }
 
@@ -3531,7 +3531,7 @@ input:focus, textarea:focus, select:focus {
     border-radius: var(--radius-lg);
     padding: 1.25rem;
     margin-bottom: 1rem;
-    transition: all 0.2s;
+    transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
 }
 
 .search-result-card:hover {
@@ -4208,7 +4208,7 @@ input:focus, textarea:focus, select:focus {
     border-radius: var(--radius-full);
     font-weight: 500;
     text-align: center;
-    transition: all 0.2s;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 .guide-link:hover {
@@ -4583,7 +4583,7 @@ input:focus, textarea:focus, select:focus {
     border-radius: var(--radius-full);
     color: var(--gulf-blue);
     text-decoration: none;
-    transition: all 0.2s;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 .guide-references li a:hover {
@@ -4708,7 +4708,7 @@ input:focus, textarea:focus, select:focus {
     border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
     padding: 1.25rem;
-    transition: all 0.2s;
+    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 .variant-card:hover {
@@ -5205,7 +5205,7 @@ input:focus, textarea:focus, select:focus {
     font-size: 0.9rem;
     font-weight: 500;
     color: var(--text-muted);
-    transition: all 0.2s;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 }
 
 .supplier-category-btn svg {
@@ -5478,7 +5478,7 @@ input:focus, textarea:focus, select:focus {
     border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
     text-decoration: none;
-    transition: all 0.2s;
+    transition: border-color 0.2s, transform 0.2s;
 }
 
 .tool-item:hover {
@@ -5532,7 +5532,7 @@ input:focus, textarea:focus, select:focus {
     font-size: 1rem;
     font-weight: 500;
     color: var(--text-muted);
-    transition: all 0.2s;
+    transition: color 0.2s, border-bottom-color 0.2s;
 }
 
 .supplier-tab:hover {
@@ -5746,7 +5746,7 @@ input:focus, textarea:focus, select:focus {
     height: 3px;
     background-color: #fff;
     border-radius: 2px;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .hamburger.active .hamburger-line:nth-child(1) {
@@ -7938,7 +7938,7 @@ nav ul li.dropdown.touch-open > .dropdown-menu {
     color: var(--text-muted);
     cursor: pointer;
     font-size: 0.85rem;
-    transition: all 0.2s;
+    transition: border-color 0.2s, color 0.2s, background-color 0.2s;
 }
 
 .add-custom-btn:hover {
@@ -8031,7 +8031,7 @@ nav ul li.dropdown.touch-open > .dropdown-menu {
     border-radius: var(--radius-sm);
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: background-color 0.2s;
     font-size: 0.9rem;
     border: none;
 }
@@ -8219,7 +8219,7 @@ nav ul li.dropdown.touch-open > .dropdown-menu {
     border: 2px solid transparent;
     padding: 1.25rem;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .vehicle-card:hover {
@@ -8397,7 +8397,7 @@ nav ul li.dropdown.touch-open > .dropdown-menu {
     color: var(--text-muted);
     font-weight: 500;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: color 0.2s ease, border-bottom-color 0.2s ease;
     margin-bottom: -2px;
 }
 
@@ -8821,7 +8821,7 @@ nav ul li.dropdown.touch-open > .dropdown-menu {
     background: var(--background-color);
     color: var(--text-color);
     cursor: pointer;
-    transition: all 0.2s;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
     font-size: 0.85rem;
 }
 
@@ -9074,7 +9074,7 @@ nav ul li.dropdown.touch-open > .dropdown-menu {
     background: transparent;
     color: var(--text-muted);
     cursor: pointer;
-    transition: all 0.2s;
+    transition: border-color 0.2s, color 0.2s;
     font-size: 0.9rem;
 }
 
@@ -10807,7 +10807,7 @@ nav ul li.dropdown.touch-open > .dropdown-menu {
     text-decoration: none;
     color: var(--text-color);
     border: 1px solid transparent;
-    transition: all 0.2s;
+    transition: border-color 0.2s, transform 0.2s;
 }
 
 .recent-invoice-item:hover {
@@ -11209,33 +11209,6 @@ nav ul li.dropdown.touch-open > .dropdown-menu {
 
 .profile-info strong {
     color: var(--text-color);
-}
-
-.quick-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.quick-links li {
-    padding: 0.75rem 0;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.quick-links li:last-child {
-    border-bottom: none;
-}
-
-.quick-links a {
-    color: var(--text-color);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.quick-links a:hover {
-    color: var(--gulf-orange);
 }
 
 .recent-list {
@@ -11775,7 +11748,7 @@ nav ul li.dropdown.touch-open > .dropdown-menu {
     font-size: 0.8rem;
     border-radius: var(--radius-sm);
     cursor: pointer;
-    transition: all 0.2s;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 .btn-delete:hover {
@@ -11908,7 +11881,7 @@ nav ul li.dropdown.touch-open > .dropdown-menu {
     background: var(--background-color);
     color: var(--text-color);
     cursor: pointer;
-    transition: all 0.2s;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 }
 
 .page-btn:hover {
@@ -12775,7 +12748,7 @@ nav ul li.dropdown.touch-open > .dropdown-menu {
     border-radius: var(--radius-md);
     text-decoration: none;
     color: var(--text-color);
-    transition: all 0.2s ease;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
     min-width: 100px;
 }
 
