@@ -35,6 +35,13 @@ description: Join the ZRG Classics community. Create an account to participate i
           <input type="password" id="confirm-password" name="confirm-password" required autocomplete="new-password">
         </div>
 
+        <div class="form-group form-checkbox">
+          <label>
+            <input type="checkbox" id="newsletter-optin" name="newsletter-optin" checked>
+            <span>Subscribe to the ZRG Classics newsletter for restoration tips, guides, and project updates</span>
+          </label>
+        </div>
+
         <button type="submit" class="btn btn-primary btn-block">Create Account</button>
       </form>
 
@@ -49,12 +56,23 @@ description: Join the ZRG Classics community. Create an account to participate i
 <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
 <script src="/js/supabase.js"></script>
 <script>
+// TODO: Replace with your actual ConvertKit credentials
+const CONVERTKIT_FORM_ID = 'YOUR_CONVERTKIT_FORM_ID';
+const CONVERTKIT_API_KEY = 'YOUR_CONVERTKIT_API_KEY';
+
 document.addEventListener('DOMContentLoaded', async () => {
   // Check if already logged in
   const user = await Auth.getUser();
   if (user) {
     window.location.href = '/account/garage/';
     return;
+  }
+
+  // Pre-fill email if passed from homepage newsletter signup
+  const params = new URLSearchParams(window.location.search);
+  const prefillEmail = params.get('email');
+  if (prefillEmail) {
+    document.getElementById('email').value = prefillEmail;
   }
 
   const form = document.getElementById('register-form');
@@ -66,6 +84,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
     const confirmPassword = document.getElementById('confirm-password').value;
+    const newsletterOptIn = document.getElementById('newsletter-optin').checked;
     const submitBtn = form.querySelector('button[type="submit"]');
 
     // Validate passwords match
@@ -79,6 +98,20 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     try {
       await Auth.signUp(email, password, username);
+
+      // Fire-and-forget newsletter subscription
+      if (newsletterOptIn) {
+        fetch(`https://api.convertkit.com/v3/forms/${CONVERTKIT_FORM_ID}/subscribe`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            api_key: CONVERTKIT_API_KEY,
+            email: email,
+            first_name: username
+          })
+        }).catch(err => console.warn('Newsletter signup failed (non-blocking):', err));
+      }
+
       // Show success message
       form.innerHTML = `
         <div class="alert alert-success">

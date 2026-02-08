@@ -782,6 +782,13 @@ main {
     margin: 0;
 }
 
+.newsletter-success {
+    color: var(--gulf-blue);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
 /* Quick Search Section */
 .quick-search-section {
     background: var(--background);
@@ -1589,6 +1596,26 @@ button:hover {
     font-size: 0.8rem;
     color: var(--text-muted);
     margin-top: 0.5rem;
+}
+
+.form-checkbox label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-weight: 400;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.form-checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    margin-top: 2px;
+    accent-color: var(--gulf-blue);
+    cursor: pointer;
 }
 
 [data-theme="dark"] .modal > .modal-content > h3 {

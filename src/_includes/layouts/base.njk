@@ -65,9 +65,9 @@
         "logo": "{{ site.url }}/images/logo.jpg",
         "description": "{{ site.description }}",
         "sameAs": [
-            {% if site.social.facebook != "#" %}"{{ site.social.facebook }}",{% endif %}
-            {% if site.social.twitter != "#" %}"https://twitter.com/{{ site.twitterHandle | replace('@', '') }}",{% endif %}
-            {% if site.social.instagram != "#" %}"{{ site.social.instagram }}"{% endif %}
+            {% if site.social.facebook %}"{{ site.social.facebook }}",{% endif %}
+            {% if site.social.twitter %}"https://twitter.com/{{ site.twitterHandle | replace('@', '') }}",{% endif %}
+            {% if site.social.instagram %}"{{ site.social.instagram }}"{% endif %}
         ]
     }
     </script>
@@ -133,6 +133,15 @@
     }
     </script>
     {% endif %}
+
+    <!-- TODO: Replace GA_MEASUREMENT_ID with your actual Google Analytics 4 measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
 </head>
 <body>
     {% include "partials/header.njk" %}

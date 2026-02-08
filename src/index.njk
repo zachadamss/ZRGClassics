@@ -47,16 +47,23 @@ keywords: "classic BMW, classic Porsche, E30, E36, E46, 911, Boxster, Cayman, 94
             <span class="newsletter-badge">Free Updates</span>
             <h2>Stay in the Loop</h2>
             <p>Get notified when we add new guides, cover new vehicles, or find deals on parts and tools.</p>
-            <form class="newsletter-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <form id="newsletter-form" class="newsletter-form">
                 <div class="newsletter-input-group">
-                    <input type="email" name="email" placeholder="your@email.com" required class="newsletter-input" aria-label="Email address">
-                    <button type="submit" class="btn btn-primary newsletter-btn">Subscribe</button>
+                    <input type="email" id="newsletter-email" placeholder="your@email.com" required class="newsletter-input" aria-label="Email address">
+                    <button type="submit" class="btn btn-primary newsletter-btn">Sign Up Free</button>
                 </div>
                 <p class="newsletter-note">No spam, unsubscribe anytime. We only email when there's something worth sharing.</p>
             </form>
         </div>
     </div>
 </section>
+<script>
+document.getElementById('newsletter-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = document.getElementById('newsletter-email').value;
+    window.location.href = '/account/register/?email=' + encodeURIComponent(email);
+});
+</script>
 
 <!-- Quick Search Section -->
 <section class="quick-search-section">

@@ -7,10 +7,13 @@
             <li><a href="/terms/">Terms of Service</a></li>
             <li><a href="/about/">About</a></li>
         </ul>
+        {% set hasSocial = site.social.facebook or site.social.twitter or site.social.instagram %}
+        {% if hasSocial %}
         <ul class="social-links">
-            {% for social in site.social %}
-            <li><a href="{{ social.url }}">{{ social.name }}</a></li>
-            {% endfor %}
+            {% if site.social.facebook %}<li><a href="{{ site.social.facebook }}">Facebook</a></li>{% endif %}
+            {% if site.social.twitter %}<li><a href="{{ site.social.twitter }}">Twitter</a></li>{% endif %}
+            {% if site.social.instagram %}<li><a href="{{ site.social.instagram }}">Instagram</a></li>{% endif %}
         </ul>
+        {% endif %}
     </div>
 </footer>

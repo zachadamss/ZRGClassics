@@ -23,12 +23,25 @@
 
 ## Quick Actions (Manual Steps)
 
-- [ ] **Activate Newsletter Signup**
-  1. Sign up at [formspree.io](https://formspree.io) (free tier: 50 submissions/month)
-  2. Create a new form
-  3. Copy your form ID (e.g., `xyzabc123`)
-  4. Replace `YOUR_FORM_ID` in `src/index.njk` line 50
-  5. Commit and push
+- [ ] **Activate ConvertKit Newsletter**
+  1. Sign up at [ConvertKit (Kit)](https://convertkit.com)
+  2. Create a form and copy your Form ID and public API key
+  3. Replace `YOUR_CONVERTKIT_FORM_ID` and `YOUR_CONVERTKIT_API_KEY` in:
+     - `src/index.njk` (homepage newsletter)
+     - `src/account/register.njk` (registration opt-in)
+
+- [ ] **Activate Contact Form**
+  1. Sign up at [Formspree](https://formspree.io) (free tier: 50 submissions/month)
+  2. Create a new form and copy the form ID
+  3. Replace `YOUR_FORMSPREE_FORM_ID` in `src/about.njk`
+
+- [ ] **Activate Google Analytics**
+  1. Set up a GA4 property at [Google Analytics](https://analytics.google.com)
+  2. Replace `GA_MEASUREMENT_ID` in `src/_includes/layouts/base.njk`
+
+- [ ] **Add Social Media Links**
+  1. Add URLs to `src/_data/site.json` under `social.facebook`, `social.twitter`, `social.instagram`
+  2. Footer icons will appear automatically when URLs are populated
 
 ---
 
