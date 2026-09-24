@@ -2,6 +2,7 @@
   "model": "E36",
   "brand": "BMW",
   "fullName": "BMW E36 3 Series",
+  "series": "3 Series",
   "years": "1990-2000",
   "engines": [
     "M50 2.5L I6",
@@ -10,6 +11,11 @@
     "S50/S52 3.0L I6"
   ],
   "heroImage": "/images/vehicles/e36-hero.jpg",
+  "photoCredit": {
+    "text": "",
+    "url": "",
+    "license": ""
+  },
   "issues": [
     {
       "id": "cooling-system",
@@ -1102,6 +1108,7 @@
       }
     ],
     "pricingGuide": {
+      "asOf": "January 2026",
       "project": {
         "price": "$2,000 - $6,000",
         "description": "Rusty, high-mileage, or abused cars. Many have been drifted or tracked hard. Approach cautiously."

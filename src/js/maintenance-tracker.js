@@ -253,7 +253,6 @@ const MAINTENANCE_PRESETS = {
 
 // State
 let currentUser = null;
-let garageVehicles = [];
 let currentVehicle = null;
 let maintenanceSchedule = [];
 let serviceHistory = [];
@@ -292,13 +291,11 @@ function showLoginRequired() {
     const container = document.querySelector('.maintenance-tracker');
     container.innerHTML = `
         <div class="auth-required">
-            <div class="auth-icon">🔐</div>
-            <h2>Login Required</h2>
-            <p>You need to be logged in to use the Maintenance Tracker.</p>
-            <p>Sign up is completely free and your service history is saved to your account so you can access it from anywhere.</p>
+            <h2>Sign in to open your garage</h2>
+            <p>The maintenance tracker saves to your account, so your service log is the same on your phone in the garage and on your laptop later. Accounts are free.</p>
             <div class="auth-actions">
-                <a href="/account/login/?redirect=/tools/maintenance-tracker/" class="btn btn-primary">Log In</a>
-                <a href="/account/register/?redirect=/tools/maintenance-tracker/" class="btn btn-secondary">Create Free Account</a>
+                <a href="/account/login/?return=${encodeURIComponent(location.pathname + location.search)}" class="btn btn-primary">Sign In</a>
+                <a href="/account/register/" class="btn btn-secondary">Create an Account</a>
             </div>
         </div>
     `;
@@ -308,124 +305,43 @@ function showLoginRequired() {
 // Vehicle Loading
 // ============================================
 
-async function loadGarageVehicles() {
+// The tracker always works on one garage car, passed as ?vehicle=<id>.
+// Picking a car happens in My Garage, so anything else goes back there.
+async function loadVehicleFromUrl() {
+    const vehicleId = new URLSearchParams(window.location.search).get('vehicle');
+    if (!vehicleId) {
+        window.location.replace('/account/garage/');
+        return null;
+    }
     try {
-        garageVehicles = await Garage.getVehicles();
-        renderGarage();
+        return await Garage.getVehicle(vehicleId);
     } catch (error) {
-        console.error('Failed to load garage vehicles:', error);
-        garageVehicles = [];
-        renderGarage();
+        console.error('Failed to load vehicle:', error);
+        return null;
     }
 }
 
-// ============================================
-// Rendering
-// ============================================
-
-function renderGarage() {
-    const grid = document.getElementById('garage-grid');
-    const emptyState = document.getElementById('empty-garage');
-
-    if (!grid) return;
-
-    // Clear existing cards (except empty state)
-    grid.querySelectorAll('.vehicle-card').forEach(card => card.remove());
-
-    if (garageVehicles.length === 0) {
-        emptyState.style.display = 'block';
-        emptyState.innerHTML = `
-            <p>No vehicles in your garage yet.</p>
-            <p>Add a vehicle to start tracking maintenance.</p>
-            <a href="/account/garage/" class="btn btn-secondary">Go to My Garage</a>
-        `;
-        return;
-    }
-
-    emptyState.style.display = 'none';
-
-    garageVehicles.forEach(vehicle => {
-        const card = createVehicleCard(vehicle);
-        grid.appendChild(card);
-    });
-}
-
-function createVehicleCard(vehicle) {
-    const card = document.createElement('div');
-    card.className = 'vehicle-card';
-    card.dataset.id = vehicle.id;
-
-    const displayInfo = Garage.getVehicleDisplayInfo(vehicle);
-
-    card.innerHTML = `
-        <div class="vehicle-card-header">
-            <h3>${escapeHtml(displayInfo.name)}</h3>
-            <span class="platform-badge${displayInfo.isCustom ? ' custom' : ''}">${escapeHtml(displayInfo.badge)}</span>
-        </div>
-        <div class="vehicle-card-body">
-            <div class="vehicle-stat">
-                <span class="stat-label">Year</span>
-                <span class="stat-value">${escapeHtml(vehicle.year) || '-'}</span>
-            </div>
-            <div class="vehicle-stat">
-                <span class="stat-label">Mileage</span>
-                <span class="stat-value">${vehicle.mileage ? vehicle.mileage.toLocaleString() : '-'}</span>
-            </div>
-        </div>
-        <div class="vehicle-card-status status-loading">
-            Loading status...
-        </div>
+function showVehicleNotFound() {
+    const loading = document.getElementById('tool-loading');
+    if (!loading) return;
+    loading.innerHTML = `
+        <p>I couldn't find that car in your garage.</p>
+        <a href="/account/garage/" class="btn btn-primary">Back to My Garage</a>
     `;
-
-    card.addEventListener('click', () => showVehicleDetail(vehicle));
-
-    // Load maintenance status asynchronously
-    loadVehicleMaintenanceStatus(vehicle.id, card);
-
-    return card;
-}
-
-async function loadVehicleMaintenanceStatus(vehicleId, card) {
-    try {
-        const schedule = await Garage.getMaintenanceSchedule(vehicleId);
-        const vehicle = garageVehicles.find(v => String(v.id) === String(vehicleId));
-        const upcoming = calculateUpcomingMaintenance(schedule, vehicle?.mileage || 0);
-
-        const overdueCount = upcoming.filter(u => u.status === 'overdue').length;
-        const dueSoonCount = upcoming.filter(u => u.status === 'due-soon').length;
-
-        const statusEl = card.querySelector('.vehicle-card-status');
-        statusEl.classList.remove('status-loading');
-
-        if (overdueCount > 0) {
-            statusEl.className = 'vehicle-card-status status-overdue';
-            statusEl.textContent = `${overdueCount} overdue`;
-        } else if (dueSoonCount > 0) {
-            statusEl.className = 'vehicle-card-status status-due-soon';
-            statusEl.textContent = `${dueSoonCount} due soon`;
-        } else if (schedule.length > 0) {
-            statusEl.className = 'vehicle-card-status status-ok';
-            statusEl.textContent = 'All up to date';
-        } else {
-            statusEl.className = 'vehicle-card-status status-ok';
-            statusEl.textContent = 'No schedule set';
-        }
-    } catch (error) {
-        console.error('Failed to load maintenance status:', error);
-    }
 }
 
 async function showVehicleDetail(vehicle) {
     currentVehicle = vehicle;
 
-    // Hide garage, show detail and export
-    document.querySelector('.garage-section').style.display = 'none';
+    document.getElementById('tool-loading')?.remove();
     document.getElementById('vehicle-detail').style.display = 'block';
     document.getElementById('export-section').style.display = 'block';
 
     const displayInfo = Garage.getVehicleDisplayInfo(vehicle);
 
     document.getElementById('detail-vehicle-name').textContent = displayInfo.name;
+    document.getElementById('crumb-vehicle-name').textContent = `${displayInfo.name} · Maintenance`;
+    document.title = `${displayInfo.name} Maintenance - ZRG Classics`;
     const platformBadge = document.getElementById('detail-vehicle-platform');
     platformBadge.textContent = displayInfo.badge;
     platformBadge.classList.toggle('custom', displayInfo.isCustom);
@@ -453,14 +369,6 @@ async function loadMaintenanceData() {
     } catch (error) {
         console.error('Failed to load maintenance data:', error);
     }
-}
-
-function showGarageView() {
-    currentVehicle = null;
-    document.querySelector('.garage-section').style.display = 'block';
-    document.getElementById('vehicle-detail').style.display = 'none';
-    document.getElementById('export-section').style.display = 'none';
-    loadGarageVehicles();
 }
 
 function switchTab(tabName) {
@@ -1034,9 +942,6 @@ function formatDate(dateStr) {
 // ============================================
 
 function bindEvents() {
-    // Back to garage
-    document.getElementById('back-to-garage')?.addEventListener('click', showGarageView);
-
     // Update mileage
     document.getElementById('update-mileage-btn')?.addEventListener('click', updateMileage);
     document.getElementById('update-mileage')?.addEventListener('keypress', (e) => {
@@ -1086,15 +991,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (!isAuthenticated) return;
 
     bindEvents();
-    await loadGarageVehicles();
 
-    // Check for vehicle param
-    const urlParams = new URLSearchParams(window.location.search);
-    const vehicleId = urlParams.get('vehicle');
-    if (vehicleId) {
-        const vehicle = garageVehicles.find(v => String(v.id) === String(vehicleId));
-        if (vehicle) {
-            showVehicleDetail(vehicle);
-        }
+    const vehicle = await loadVehicleFromUrl();
+    if (vehicle) {
+        showVehicleDetail(vehicle);
+    } else {
+        showVehicleNotFound();
     }
 });

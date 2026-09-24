@@ -2,6 +2,7 @@
   "model": "993",
   "brand": "Porsche",
   "fullName": "Porsche 993 911",
+  "series": "911",
   "years": "1994-1998",
   "engines": [
     "3.6L Flat-6 M64/05",
@@ -9,6 +10,11 @@
     "3.6L Twin-Turbo M64/60"
   ],
   "heroImage": "/images/vehicles/993-hero.jpg",
+  "photoCredit": {
+    "text": "",
+    "url": "",
+    "license": ""
+  },
   "issues": [
     {
       "id": "oil-leaks",
@@ -1170,6 +1176,7 @@
       }
     ],
     "pricingGuide": {
+      "asOf": "January 2026",
       "project": {
         "price": "$50,000 - $80,000",
         "description": "Cars needing engine work or with significant issues. Still valuable due to air-cooled status."

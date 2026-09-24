@@ -2,6 +2,7 @@
   "model": "E90",
   "brand": "BMW",
   "fullName": "BMW E90/E91/E92/E93 3 Series",
+  "series": "3 Series · E90–E93",
   "years": "2005-2013",
   "engines": [
     "N52 3.0L I6",
@@ -12,6 +13,11 @@
     "S65 4.0L V8 (M3)"
   ],
   "heroImage": "/images/vehicles/e90-hero.jpg",
+  "photoCredit": {
+    "text": "",
+    "url": "",
+    "license": ""
+  },
   "issues": [
     {
       "id": "water-pump-thermostat",
@@ -1097,6 +1103,7 @@
       }
     ],
     "pricingGuide": {
+      "asOf": "January 2026",
       "project": {
         "price": "$5,000 - $10,000",
         "description": "High-mileage cars with deferred maintenance or known issues. N54 cars often need turbos."

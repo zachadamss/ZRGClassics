@@ -2,6 +2,7 @@
   "model": "E30",
   "brand": "BMW",
   "fullName": "BMW E30 3 Series",
+  "series": "3 Series",
   "years": "1982-1994",
   "engines": [
     "M10 1.8L I4",
@@ -10,6 +11,11 @@
     "S14 2.3L I4"
   ],
   "heroImage": "/images/vehicles/e30-hero.jpg",
+  "photoCredit": {
+    "text": "",
+    "url": "",
+    "license": ""
+  },
   "issues": [
     {
       "id": "timing-belt",
@@ -1100,6 +1106,7 @@
       }
     ],
     "pricingGuide": {
+      "asOf": "January 2026",
       "project": {
         "price": "$3,000 - $8,000",
         "description": "Non-running or heavily rusted cars needing major work. Only for experienced builders with welding skills. Budget 2-3x purchase price for restoration."

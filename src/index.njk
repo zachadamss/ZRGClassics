@@ -1,266 +1,148 @@
 ---
 layout: layouts/base.njk
-title: Home
-description: "ZRG Classics - Your complete resource hub for classic Porsche and BMW vehicles. Find common issues, repair guides, torque specs, parts suppliers, and DIY maintenance guides for E30, E36, E46, 911, Boxster, and more."
-keywords: "classic BMW, classic Porsche, E30, E36, E46, 911, Boxster, Cayman, 944, 928, repair guide, restoration, parts suppliers"
+title: Classic BMW & Porsche Repair, Specs, and Buyer's Guides
+description: "Known problems, real repair costs, torque specs, parts sources, and buyer's guides for classic BMWs and Porsches, from the E28 and 924 to the E90 and 991."
+extraScripts:
+  - js/newsletter.js
 ---
 
-<!-- Hero Section -->
+<!-- Hero -->
 <section class="home-hero">
+    <div class="home-hero-media">
+        {% picture "/images/hero-bg.jpg", "", "100vw", { loading: "eager", fetchpriority: "high" } %}
+    </div>
     <div class="home-hero-content">
-        <span class="hero-badge">The Resource Hub for Enthusiasts</span>
-        <h1>Keep Your <span class="highlight">Classic German</span> Machine on the Road</h1>
-        <p class="hero-subtitle">Comprehensive guides, verified specs, and trusted resources for BMW and Porsche owners who do it right.</p>
-        <div class="hero-actions">
-            <a href="/search/" class="btn btn-primary">Search All Resources</a>
-            <a href="#vehicles" class="btn btn-secondary">Browse Vehicles</a>
-        </div>
-    </div>
-</section>
-
-<!-- Stats Bar -->
-<section class="stats-bar">
-    <div class="stats-container">
-        <div class="stat-item">
-            <span class="stat-number">{{ stats.vehicles }}</span>
-            <span class="stat-label">Vehicle Platforms</span>
-        </div>
-        <div class="stat-item">
-            <span class="stat-number">{{ stats.guides }}</span>
-            <span class="stat-label">Guides</span>
-        </div>
-        <div class="stat-item">
-            <span class="stat-number">{{ stats.torqueSpecs }}</span>
-            <span class="stat-label">Torque Specs</span>
-        </div>
-        <div class="stat-item">
-            <span class="stat-number">{{ stats.suppliers }}</span>
-            <span class="stat-label">Parts Suppliers</span>
-        </div>
-    </div>
-</section>
-
-<!-- Newsletter Signup -->
-<section class="newsletter-section">
-    <div class="newsletter-container">
-        <div class="newsletter-content animate-on-scroll">
-            <span class="newsletter-badge">Free Updates</span>
-            <h2>Stay in the Loop</h2>
-            <p>Get notified when we add new guides, cover new vehicles, or find deals on parts and tools.</p>
-            <form id="newsletter-form" class="newsletter-form">
-                <div class="newsletter-input-group">
-                    <input type="email" id="newsletter-email" placeholder="your@email.com" required class="newsletter-input" aria-label="Email address">
-                    <button type="submit" class="btn btn-primary newsletter-btn">Sign Up Free</button>
-                </div>
-                <p class="newsletter-note">No spam, unsubscribe anytime. We only email when there's something worth sharing.</p>
-            </form>
-        </div>
-    </div>
-</section>
-<script>
-document.getElementById('newsletter-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    const email = document.getElementById('newsletter-email').value;
-    window.location.href = '/account/register/?email=' + encodeURIComponent(email);
-});
-</script>
-
-<!-- Quick Search Section -->
-<section class="quick-search-section">
-    <div class="quick-search-container animate-on-scroll">
-        <h2>What are you working on?</h2>
-        <p>Search across all vehicles for issues, specs, guides, and suppliers</p>
-        <form class="home-search-form" action="/search/" method="get">
-            <input type="text" name="q" placeholder="Try 'VANOS', 'IMS bearing', 'cooling system'..." class="home-search-input">
+        <h1>Old BMWs and Porsches, <span class="highlight">kept on the road.</span></h1>
+        <p class="hero-subtitle">What breaks, what it costs to fix, the torque spec, and where to buy the part. {{ stats.vehicles }} cars from the E28 to the 991, written for anyone with a floor jack and a free Saturday.</p>
+        <form class="hero-search" action="/search/" method="get" role="search">
+            <label for="hero-search-input" class="visually-hidden">Search issues, guides, specs, and parts</label>
+            <input type="search" id="hero-search-input" name="q" placeholder="VANOS, IMS bearing, rear subframe…" autocomplete="off">
             <button type="submit" class="btn btn-primary">Search</button>
         </form>
-        <div class="popular-searches">
-            <span>Popular:</span>
+        <p class="hero-popular">
+            <span>People look up:</span>
             <a href="/search/?q=vanos">VANOS</a>
-            <a href="/search/?q=ims+bearing">IMS Bearing</a>
-            <a href="/search/?q=cooling">Cooling System</a>
+            <a href="/search/?q=ims+bearing">IMS bearing</a>
+            <a href="/search/?q=cooling">Cooling system</a>
             <a href="/search/?q=subframe">Subframe</a>
-            <a href="/search/?q=timing+belt">Timing Belt</a>
-        </div>
+            <a href="/search/?q=timing+belt">Timing belt</a>
+        </p>
     </div>
 </section>
 
-<!-- Vehicle Platforms Section -->
+<!-- Stats -->
+<section class="stats-bar" aria-label="What's on the site">
+    <dl class="stats-container">
+        <div class="stat-item"><dt class="stat-label">Cars covered</dt><dd class="stat-number">{{ stats.vehicles }}</dd></div>
+        <div class="stat-item"><dt class="stat-label">Known issues</dt><dd class="stat-number">{{ stats.issues }}</dd></div>
+        <div class="stat-item"><dt class="stat-label">Guides</dt><dd class="stat-number">{{ stats.guides }}</dd></div>
+        <div class="stat-item"><dt class="stat-label">Torque specs</dt><dd class="stat-number">{{ stats.torqueSpecs }}</dd></div>
+    </dl>
+</section>
+
+<!-- Cars -->
 <section id="vehicles" class="vehicles-section">
-    <div class="section-header animate-on-scroll">
-        <h2>Vehicle Platforms</h2>
-        <p>Select your vehicle for common issues, repair costs, torque specs, and parts suppliers</p>
+    <div class="section-header">
+        <h2>Pick your car</h2>
+        <p>Every page has the known problems, repair costs, guides, torque specs, parts sources, and a buyer's guide.</p>
     </div>
 
-    <!-- BMW Vehicles -->
+    {% asyncEach brand in [["bmw", "BMW"], ["porsche", "Porsche"]] %}
     <div class="brand-block">
         <div class="brand-header">
-            <h3 class="brand-title">BMW</h3>
-            <a href="/resources/bmw/" class="brand-link">View All BMW →</a>
+            <h3 class="brand-title">{{ brand[1] }}</h3>
+            <a href="/resources/{{ brand[0] }}/" class="brand-link">All {{ brand[1] }} →</a>
         </div>
-        <div class="vehicle-grid">
-            {% for key in vehicleList.bmw %}
-            {% set vehicle = vehicles[key] %}
-            <a href="/resources/bmw/{{ key }}/" class="vehicle-card">
-                <div class="vehicle-card-image">
-                    {% if vehicle.heroImage %}<img src="{{ vehicle.heroImage }}" alt="{{ vehicle.fullName }} {{ vehicle.years }}" loading="lazy">{% endif %}
-                </div>
-                <div class="vehicle-card-content">
-                    <h4>{{ vehicle.model }}</h4>
-                    <span class="vehicle-years">{{ vehicle.years }}</span>
-                    <span class="vehicle-name">{{ vehicle.fullName | replace("BMW ", "") }}</span>
-                </div>
-            </a>
-            {% endfor %}
-        </div>
+        {% set brandKey = brand[0] %}
+        {% include "partials/vehicle-grid.njk" %}
     </div>
-
-    <!-- Porsche Vehicles -->
-    <div class="brand-block">
-        <div class="brand-header">
-            <h3 class="brand-title">Porsche</h3>
-            <a href="/resources/porsche/" class="brand-link">View All Porsche →</a>
-        </div>
-        <div class="vehicle-grid">
-            {% for key in vehicleList.porsche %}
-            {% set vehicle = vehicles[key] %}
-            <a href="/resources/porsche/{{ key }}/" class="vehicle-card">
-                <div class="vehicle-card-image">
-                    {% if vehicle.heroImage %}<img src="{{ vehicle.heroImage }}" alt="{{ vehicle.fullName }} {{ vehicle.years }}" loading="lazy">{% endif %}
-                </div>
-                <div class="vehicle-card-content">
-                    <h4>{{ vehicle.model }}</h4>
-                    <span class="vehicle-years">{{ vehicle.years }}</span>
-                    <span class="vehicle-name">{{ vehicle.fullName | replace("Porsche ", "") }}</span>
-                </div>
-            </a>
-            {% endfor %}
-        </div>
-    </div>
+    {% endeach %}
 </section>
 
-<!-- Features Section -->
+<!-- What's on a car page -->
 <section class="features-section">
-    <div class="section-header animate-on-scroll">
-        <h2>Everything You Need</h2>
-        <p>Built by enthusiasts, for enthusiasts</p>
+    <div class="section-header">
+        <h2>What's on every car page</h2>
+        <p>Written for people who do their own work, or want to know what the shop is talking about.</p>
     </div>
     <div class="features-grid">
-        <div class="feature-card animate-on-scroll stagger-1">
-            <div class="feature-icon">🔧</div>
-            <h3>Common Issues</h3>
-            <p>Detailed documentation of known problems with symptoms, causes, and proven fixes. Know what to look for before it becomes expensive.</p>
+        <div class="feature-card">
+            <span class="feature-icon">{% include "icons/alert.svg" %}</span>
+            <h3>Known problems and what they cost</h3>
+            <p>Symptoms, causes, and fixes for the failures each car is known for, with DIY and shop price ranges so you can budget before anything lets go.</p>
         </div>
-        <div class="feature-card animate-on-scroll stagger-2">
-            <div class="feature-icon">💰</div>
-            <h3>Repair Costs</h3>
-            <p>DIY vs shop cost estimates for every repair. Plan your budget with real-world pricing and labor hour estimates.</p>
+        <div class="feature-card">
+            <span class="feature-icon">{% include "icons/wrench.svg" %}</span>
+            <h3>Step-by-step guides</h3>
+            <p>Parts lists with part numbers, the tools you'll need, the order to do it in, and the warnings that save you a second trip to the parts store.</p>
         </div>
-        <div class="feature-card animate-on-scroll stagger-3">
-            <div class="feature-icon">📐</div>
-            <h3>Torque Specs</h3>
-            <p>Factory-verified torque specifications for engine, suspension, brakes, and drivetrain. No more guessing or searching forums.</p>
+        <div class="feature-card">
+            <span class="feature-icon">{% include "icons/gauge.svg" %}</span>
+            <h3>Torque specs, with sources</h3>
+            <p>Engine, suspension, brakes, and drivetrain values in one table, with the references they came from listed underneath.</p>
         </div>
-        <div class="feature-card animate-on-scroll stagger-1">
-            <div class="feature-icon">#</div>
-            <h3>OEM Part Numbers</h3>
-            <p>Genuine part numbers for common replacement items. Cross-reference with aftermarket alternatives to save money.</p>
-        </div>
-        <div class="feature-card animate-on-scroll stagger-2">
-            <div class="feature-icon">🛒</div>
-            <h3>Parts Suppliers</h3>
-            <p>Curated lists of trusted OEM, aftermarket, and used parts suppliers. Know where to buy quality parts.</p>
-        </div>
-        <div class="feature-card animate-on-scroll stagger-3">
-            <div class="feature-icon">🔍</div>
-            <h3>Powerful Search</h3>
-            <p>Search across all vehicles, issues, specs, and suppliers. Find exactly what you need in seconds.</p>
+        <div class="feature-card">
+            <span class="feature-icon">{% include "icons/book.svg" %}</span>
+            <h3>Buyer's guides</h3>
+            <p>Which version to buy, a printable pre-purchase checklist, red flags, and what a fair price looks like right now.</p>
         </div>
     </div>
 </section>
 
-<!-- Tools Section -->
+<!-- Tools & Garage -->
 <section class="tools-section">
     <div class="tools-container">
-        <div class="tools-content animate-on-scroll">
-            <span class="section-badge">Free Tools</span>
-            <h2>Tools for the Workshop</h2>
-            <p>Practical tools to help you work smarter. Built for home mechanics and professional shops alike.</p>
+        <div class="tools-content">
+            <h2>Your car, tracked</h2>
+            <p>Add your car to My Garage and you get a service schedule for that platform with intervals already filled in, a restoration tracker, and a log of every job. Free, and it syncs between your phone and your laptop.</p>
             <div class="tools-list">
-                <a href="/tools/maintenance-tracker/" class="tool-item">
-                    <div class="tool-icon">📊</div>
-                    <div class="tool-info">
-                        <h4>Maintenance Tracker</h4>
-                        <p>Track service history, set reminders, and never miss an interval again.</p>
-                    </div>
-                    <span class="tool-arrow">→</span>
+                <a href="/account/garage/" class="tool-item">
+                    <span class="tool-icon">{% include "icons/car.svg" %}</span>
+                    <span class="tool-info">
+                        <h3>My Garage</h3>
+                        <p>Maintenance tracker and restoration tracker for each car you own.</p>
+                    </span>
+                    <span class="tool-arrow" aria-hidden="true">{% include "icons/arrow-right.svg" %}</span>
                 </a>
                 <a href="/tools/build-calculator/" class="tool-item">
-                    <div class="tool-icon">🧮</div>
-                    <div class="tool-info">
-                        <h4>Build Cost Calculator</h4>
-                        <p>Estimate restoration and modification costs before you start your project.</p>
-                    </div>
-                    <span class="tool-arrow">→</span>
-                </a>
-                <a href="/tools/restoration-checklist/" class="tool-item">
-                    <div class="tool-icon">✅</div>
-                    <div class="tool-info">
-                        <h4>Restoration Checklist</h4>
-                        <p>Step-by-step checklists for full restorations, organized by system and priority.</p>
-                    </div>
-                    <span class="tool-arrow">→</span>
+                    <span class="tool-icon">{% include "icons/calculator.svg" %}</span>
+                    <span class="tool-info">
+                        <h3>Build Cost Calculator</h3>
+                        <p>Price out a restoration before you commit. No account needed.</p>
+                    </span>
+                    <span class="tool-arrow" aria-hidden="true">{% include "icons/arrow-right.svg" %}</span>
                 </a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Community Section -->
+<!-- Forum -->
 <section class="community-section">
     <div class="community-container">
-        <div class="community-content animate-on-scroll">
-            <span class="section-badge">Community</span>
-            <h2>Join the Community</h2>
-            <p>Connect with fellow enthusiasts, share knowledge, and discuss classic BMW and Porsche topics.</p>
-            <div class="community-list">
-                <a href="/forum/" class="community-item">
-                    <div class="community-icon">💬</div>
-                    <div class="community-info">
-                        <h4>Forums</h4>
-                        <p>Technical discussions, project threads, and expert advice from fellow enthusiasts.</p>
-                    </div>
-                    <span class="community-arrow">→</span>
-                </a>
-                <div class="community-item coming-soon">
-                    <div class="community-icon">🏪</div>
-                    <div class="community-info">
-                        <h4>Parts Marketplace</h4>
-                        <p>Buy and sell parts within a trusted community of enthusiasts.</p>
-                    </div>
-                    <span class="feature-badge">Coming Soon</span>
-                </div>
-                <div class="community-item coming-soon">
-                    <div class="community-icon">📅</div>
-                    <div class="community-info">
-                        <h4>Events</h4>
-                        <p>Car meets, tech sessions, and driving events near you.</p>
-                    </div>
-                    <span class="feature-badge">Coming Soon</span>
-                </div>
-            </div>
+        <div class="community-content">
+            <h2>Ask the forum</h2>
+            <p>A board for each car. Post the weird noise, the part you can't identify, or the build you're halfway through.</p>
+            <a href="/forum/" class="btn btn-primary">Go to the forum</a>
         </div>
     </div>
 </section>
 
-<!-- CTA Section -->
-<section class="cta-section">
-    <div class="cta-container animate-on-scroll">
-        <h2>Ready to dive in?</h2>
-        <p>Start with your vehicle and discover everything ZRG Classics has to offer.</p>
-        <div class="cta-buttons">
-            <a href="/resources/bmw/" class="btn btn-primary">BMW Resources</a>
-            <a href="/resources/porsche/" class="btn btn-primary">Porsche Resources</a>
+<!-- Newsletter -->
+<section class="newsletter-section" id="newsletter">
+    <div class="newsletter-container">
+        <div class="newsletter-content">
+            <h2>New guides by email</h2>
+            <p>When a new car or a new guide goes up, I'll send a short note. That's it.</p>
+            <form class="newsletter-form" data-newsletter-form>
+                <div class="newsletter-input-group">
+                    <label for="newsletter-email" class="visually-hidden">Email address</label>
+                    <input type="email" id="newsletter-email" placeholder="you@example.com" required class="newsletter-input" autocomplete="email">
+                    <button type="submit" class="btn btn-primary newsletter-btn">Sign me up</button>
+                </div>
+                <p class="newsletter-status" data-newsletter-status role="status" aria-live="polite"></p>
+                <p class="newsletter-note">Unsubscribe from any email. Want a garage too? <a href="/account/register/">Create a free account</a>.</p>
+            </form>
         </div>
     </div>
 </section>

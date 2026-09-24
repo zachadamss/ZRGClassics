@@ -2,6 +2,7 @@
   "model": "997",
   "brand": "Porsche",
   "fullName": "Porsche 997 911",
+  "series": "911",
   "years": "2004-2012",
   "engines": [
     "3.6L Flat-6 M97 (997.1)",
@@ -10,6 +11,11 @@
     "3.8L Flat-6 9A1 (997.2 S)"
   ],
   "heroImage": "/images/vehicles/997-hero.jpg",
+  "photoCredit": {
+    "text": "",
+    "url": "",
+    "license": ""
+  },
   "issues": [
     {
       "id": "ims-bearing",
@@ -1037,6 +1043,7 @@
       }
     ],
     "pricingGuide": {
+      "asOf": "January 2026",
       "project": {
         "price": "$30,000 - $50,000",
         "description": "997.1 cars with known engine issues. Salvage or high-mileage with concerns."

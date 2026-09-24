@@ -2,6 +2,7 @@
   "model": "986",
   "brand": "Porsche",
   "fullName": "Porsche 986 Boxster",
+  "series": "Boxster",
   "years": "1996-2004",
   "engines": [
     "2.5L Flat-6 (M96)",
@@ -9,6 +10,11 @@
     "3.2L Flat-6 (S)"
   ],
   "heroImage": "/images/vehicles/986-hero.jpg",
+  "photoCredit": {
+    "text": "",
+    "url": "",
+    "license": ""
+  },
   "issues": [
     {
       "id": "ims-bearing",
@@ -1025,6 +1031,7 @@
       }
     ],
     "pricingGuide": {
+      "asOf": "January 2026",
       "project": {
         "price": "$6,000 - $12,000",
         "description": "Cars with unknown IMS status, high mileage, or significant issues."

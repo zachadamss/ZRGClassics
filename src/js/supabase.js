@@ -218,7 +218,7 @@ const AuthUI = {
   async requireAuth() {
     const user = await Auth.getUser();
     if (!user) {
-      const returnUrl = encodeURIComponent(window.location.pathname);
+      const returnUrl = encodeURIComponent(window.location.pathname + window.location.search);
       window.location.href = `/account/login/?return=${returnUrl}`;
       return null;
     }

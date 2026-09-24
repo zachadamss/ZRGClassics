@@ -1,206 +1,156 @@
-<!-- Buyer's Guide Section -->
-<section id="buyers-guide" class="resource-section buyers-guide-section">
-    <h2 class="section-title">Buyer's Guide</h2>
-    <p class="section-subtitle">What to know before purchasing a {{ vehicle.model }}</p>
+{#- Full buyer's guide for one vehicle. Rendered on /resources/<brand>/<key>/buying/. -#}
+{% set bg = vehicle.buyersGuide %}
+<div class="buyers-guide">
+    {% if bg %}
 
-    {% if vehicle.buyersGuide %}
+    <section id="overview" class="resource-section buyers-guide-overview">
+        <h2 class="section-title">Overview</h2>
+        <p class="buyers-guide-lede">{{ bg.overview | safe }}</p>
 
-    <!-- Overview -->
-    <div class="buyers-guide-overview">
-        <h3>Overview</h3>
-        <p>{{ vehicle.buyersGuide.overview | safe }}</p>
-    </div>
+        {% if bg.quickFacts %}
+        <dl class="quick-facts-grid">
+            {% if bg.quickFacts.productionYears %}
+            <div class="quick-fact"><dt class="fact-label">Production</dt><dd class="fact-value">{{ bg.quickFacts.productionYears | range }}</dd></div>
+            {% endif %}
+            {% if bg.quickFacts.totalProduced %}
+            <div class="quick-fact"><dt class="fact-label">Built</dt><dd class="fact-value">{{ bg.quickFacts.totalProduced }}</dd></div>
+            {% endif %}
+            {% if bg.quickFacts.priceRange %}
+            <div class="quick-fact"><dt class="fact-label">Price range</dt><dd class="fact-value">{{ bg.quickFacts.priceRange | range }}</dd></div>
+            {% endif %}
+            {% if bg.quickFacts.bestYears %}
+            <div class="quick-fact"><dt class="fact-label">Best years</dt><dd class="fact-value">{{ bg.quickFacts.bestYears | range }}</dd></div>
+            {% endif %}
+        </dl>
+        {% endif %}
+    </section>
 
-    <!-- Quick Facts -->
-    {% if vehicle.buyersGuide.quickFacts %}
-    <div class="buyers-guide-quick-facts">
-        <h3>Quick Facts</h3>
-        <div class="quick-facts-grid">
-            {% if vehicle.buyersGuide.quickFacts.productionYears %}
-            <div class="quick-fact">
-                <span class="fact-label">Production</span>
-                <span class="fact-value">{{ vehicle.buyersGuide.quickFacts.productionYears }}</span>
+    {% if bg.pricingGuide %}
+    <section id="pricing" class="resource-section buyers-guide-pricing">
+        <h2 class="section-title">What to Pay</h2>
+        <p class="pricing-disclaimer">
+            {%- if bg.pricingGuide.asOf %}Prices checked {{ bg.pricingGuide.asOf }}. {% endif -%}
+            Rough US market ranges. Location, history, and options move these a lot.
+        </p>
+        <div class="pricing-tiers">
+            {% for tier in [["project", "Project"], ["driver", "Driver"], ["excellent", "Excellent"], ["concours", "Concours"]] %}
+            {% set t = bg.pricingGuide[tier[0]] %}
+            {% if t %}
+            <div class="pricing-tier tier-{{ tier[0] }}">
+                <h3>{{ tier[1] }}</h3>
+                <span class="price-range">{{ t.price | range }}</span>
+                <p>{{ t.description }}</p>
             </div>
             {% endif %}
-            {% if vehicle.buyersGuide.quickFacts.totalProduced %}
-            <div class="quick-fact">
-                <span class="fact-label">Total Produced</span>
-                <span class="fact-value">{{ vehicle.buyersGuide.quickFacts.totalProduced }}</span>
-            </div>
-            {% endif %}
-            {% if vehicle.buyersGuide.quickFacts.priceRange %}
-            <div class="quick-fact">
-                <span class="fact-label">Price Range</span>
-                <span class="fact-value">{{ vehicle.buyersGuide.quickFacts.priceRange }}</span>
-            </div>
-            {% endif %}
-            {% if vehicle.buyersGuide.quickFacts.bestYears %}
-            <div class="quick-fact">
-                <span class="fact-label">Best Years</span>
-                <span class="fact-value">{{ vehicle.buyersGuide.quickFacts.bestYears }}</span>
-            </div>
-            {% endif %}
-        </div>
-    </div>
-    {% endif %}
-
-    <!-- Model Variants -->
-    {% if vehicle.buyersGuide.variants and vehicle.buyersGuide.variants.length %}
-    <div class="buyers-guide-variants">
-        <h3>Model Variants</h3>
-        <div class="variants-list">
-            {% for variant in vehicle.buyersGuide.variants %}
-            <div class="variant-card">
-                <h4>{{ variant.name }}</h4>
-                <p class="variant-years">{{ variant.years }}</p>
-                <p class="variant-description">{{ variant.description }}</p>
-                {% if variant.desirability %}
-                <div class="variant-desirability">
-                    <span class="desirability-label">Desirability:</span>
-                    <span class="desirability-rating desirability-{{ variant.desirability | lower }}">{{ variant.desirability }}</span>
-                </div>
-                {% endif %}
-            </div>
             {% endfor %}
         </div>
-    </div>
+    </section>
     {% endif %}
 
-    <!-- Pre-Purchase Inspection Points -->
-    {% if vehicle.buyersGuide.inspectionPoints and vehicle.buyersGuide.inspectionPoints.length %}
-    <div class="buyers-guide-inspection">
-        <h3>Pre-Purchase Inspection Checklist</h3>
-        <p class="inspection-intro">Critical areas to examine before purchasing. Bring this checklist when viewing a {{ vehicle.model }}.</p>
+    {% if bg.variants and bg.variants.length %}
+    <section id="variants" class="resource-section buyers-guide-variants">
+        <h2 class="section-title">Which One to Buy</h2>
+        <div class="variants-list">
+            {% for variant in bg.variants %}
+            <article class="variant-card">
+                <h3>{{ variant.name }}</h3>
+                <p class="variant-years">{{ variant.years | range }}</p>
+                <p class="variant-description">{{ variant.description }}</p>
+                {% if variant.desirability %}
+                <p class="variant-desirability">
+                    <span class="desirability-label">Desirability</span>
+                    <span class="desirability-rating desirability-{{ variant.desirability | lower }}">{{ variant.desirability }}</span>
+                </p>
+                {% endif %}
+            </article>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+    {% if bg.redFlags and bg.redFlags.length %}
+    <section id="red-flags" class="resource-section buyers-guide-red-flags">
+        <h2 class="section-title">Walk Away If…</h2>
+        <ul class="red-flags-list">
+            {% for flag in bg.redFlags %}
+            <li>{{ flag }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+    {% endif %}
+
+    {% if bg.inspectionPoints and bg.inspectionPoints.length %}
+    <section id="inspection" class="resource-section buyers-guide-inspection">
+        <div class="inspection-header">
+            <div>
+                <h2 class="section-title">Pre-Purchase Inspection</h2>
+                <p class="section-subtitle">What I'd check on any {{ vehicle.model }} before buying, with a rough cost if it's bad. Print it and take it with you.</p>
+            </div>
+            <button type="button" class="btn btn-secondary no-print" data-print>Print checklist</button>
+        </div>
         <div class="inspection-categories">
-            {% for category in vehicle.buyersGuide.inspectionPoints %}
-            <div class="inspection-category">
-                <h4>{{ category.category }}</h4>
+            {% for category in bg.inspectionPoints %}
+            <details class="inspection-category"{% if loop.first %} open{% endif %}>
+                <summary>
+                    <span class="inspection-category-name">{{ category.category }}</span>
+                    <span class="inspection-category-count">{{ category.items | length }} checks</span>
+                </summary>
                 <ul class="inspection-list">
                     {% for item in category.items %}
                     <li>
                         <strong>{{ item.check }}</strong>
                         <span class="inspection-detail">{{ item.detail }}</span>
                         {% if item.costIfBad %}
-                        <span class="inspection-cost">If bad: {{ item.costIfBad }}</span>
+                        <span class="inspection-cost">If bad: {{ item.costIfBad | range }}</span>
                         {% endif %}
                     </li>
                     {% endfor %}
                 </ul>
-            </div>
+            </details>
             {% endfor %}
         </div>
-    </div>
+    </section>
     {% endif %}
 
-    <!-- Pricing Guide -->
-    {% if vehicle.buyersGuide.pricingGuide %}
-    <div class="buyers-guide-pricing">
-        <h3>Pricing Guide</h3>
-        <p class="pricing-disclaimer">Prices as of {{ site.year }}. Values vary by location, options, and market conditions.</p>
-        <div class="pricing-tiers">
-            {% if vehicle.buyersGuide.pricingGuide.project %}
-            <div class="pricing-tier tier-project">
-                <h4>Project Car</h4>
-                <span class="price-range">{{ vehicle.buyersGuide.pricingGuide.project.price }}</span>
-                <p>{{ vehicle.buyersGuide.pricingGuide.project.description }}</p>
-            </div>
-            {% endif %}
-            {% if vehicle.buyersGuide.pricingGuide.driver %}
-            <div class="pricing-tier tier-driver">
-                <h4>Driver Quality</h4>
-                <span class="price-range">{{ vehicle.buyersGuide.pricingGuide.driver.price }}</span>
-                <p>{{ vehicle.buyersGuide.pricingGuide.driver.description }}</p>
-            </div>
-            {% endif %}
-            {% if vehicle.buyersGuide.pricingGuide.excellent %}
-            <div class="pricing-tier tier-excellent">
-                <h4>Excellent</h4>
-                <span class="price-range">{{ vehicle.buyersGuide.pricingGuide.excellent.price }}</span>
-                <p>{{ vehicle.buyersGuide.pricingGuide.excellent.description }}</p>
-            </div>
-            {% endif %}
-            {% if vehicle.buyersGuide.pricingGuide.concours %}
-            <div class="pricing-tier tier-concours">
-                <h4>Concours / Collector</h4>
-                <span class="price-range">{{ vehicle.buyersGuide.pricingGuide.concours.price }}</span>
-                <p>{{ vehicle.buyersGuide.pricingGuide.concours.description }}</p>
-            </div>
-            {% endif %}
-        </div>
-    </div>
-    {% endif %}
-
-    <!-- Red Flags -->
-    {% if vehicle.buyersGuide.redFlags and vehicle.buyersGuide.redFlags.length %}
-    <div class="buyers-guide-red-flags">
-        <h3>Red Flags - Walk Away If...</h3>
-        <ul class="red-flags-list">
-            {% for flag in vehicle.buyersGuide.redFlags %}
-            <li>{{ flag }}</li>
-            {% endfor %}
-        </ul>
-    </div>
-    {% endif %}
-
-    <!-- What to Look For (Positive) -->
-    {% if vehicle.buyersGuide.whatToLookFor and vehicle.buyersGuide.whatToLookFor.length %}
-    <div class="buyers-guide-positives">
-        <h3>What to Look For</h3>
-        <p>Desirable features and options that add value:</p>
+    {% if bg.whatToLookFor and bg.whatToLookFor.length %}
+    <section class="resource-section buyers-guide-positives">
+        <h2 class="section-title">Worth Paying Extra For</h2>
         <ul class="positives-list">
-            {% for item in vehicle.buyersGuide.whatToLookFor %}
+            {% for item in bg.whatToLookFor %}
             <li>{{ item }}</li>
             {% endfor %}
         </ul>
-    </div>
+    </section>
     {% endif %}
 
-    <!-- Ownership Costs -->
-    {% if vehicle.buyersGuide.ownershipCosts %}
-    <div class="buyers-guide-costs">
-        <h3>Ownership Costs</h3>
-        <div class="costs-grid">
-            {% if vehicle.buyersGuide.ownershipCosts.insurance %}
+    {% if bg.ownershipCosts %}
+    <section id="ownership" class="resource-section buyers-guide-costs">
+        <h2 class="section-title">Running Costs</h2>
+        <dl class="costs-grid">
+            {% for cost in [["insurance", "Insurance"], ["annualMaintenance", "Annual maintenance"], ["commonRepairs", "Common repairs"], ["fuel", "Fuel economy"]] %}
+            {% if bg.ownershipCosts[cost[0]] %}
             <div class="cost-item">
-                <span class="cost-label">Insurance</span>
-                <span class="cost-value">{{ vehicle.buyersGuide.ownershipCosts.insurance }}</span>
+                <dt class="cost-label">{{ cost[1] }}</dt>
+                <dd class="cost-value">{{ bg.ownershipCosts[cost[0]] | range }}</dd>
             </div>
             {% endif %}
-            {% if vehicle.buyersGuide.ownershipCosts.annualMaintenance %}
-            <div class="cost-item">
-                <span class="cost-label">Annual Maintenance</span>
-                <span class="cost-value">{{ vehicle.buyersGuide.ownershipCosts.annualMaintenance }}</span>
-            </div>
-            {% endif %}
-            {% if vehicle.buyersGuide.ownershipCosts.commonRepairs %}
-            <div class="cost-item">
-                <span class="cost-label">Common Repairs</span>
-                <span class="cost-value">{{ vehicle.buyersGuide.ownershipCosts.commonRepairs }}</span>
-            </div>
-            {% endif %}
-            {% if vehicle.buyersGuide.ownershipCosts.fuel %}
-            <div class="cost-item">
-                <span class="cost-label">Fuel Economy</span>
-                <span class="cost-value">{{ vehicle.buyersGuide.ownershipCosts.fuel }}</span>
-            </div>
-            {% endif %}
-        </div>
-    </div>
+            {% endfor %}
+        </dl>
+    </section>
     {% endif %}
 
-    <!-- Expert Tips -->
-    {% if vehicle.buyersGuide.expertTips and vehicle.buyersGuide.expertTips.length %}
-    <div class="buyers-guide-tips">
-        <h3>Expert Tips</h3>
+    {% if bg.expertTips and bg.expertTips.length %}
+    <section class="resource-section buyers-guide-tips">
+        <h2 class="section-title">Before You Buy</h2>
         <ul class="tips-list">
-            {% for tip in vehicle.buyersGuide.expertTips %}
+            {% for tip in bg.expertTips %}
             <li>{{ tip }}</li>
             {% endfor %}
         </ul>
-    </div>
+    </section>
     {% endif %}
 
     {% else %}
-    <p class="no-guide-message">Buyer's guide coming soon for this model.</p>
+    <p class="no-guide-message">I haven't written the {{ vehicle.model }} buyer's guide yet.</p>
     {% endif %}
-</section>
+</div>

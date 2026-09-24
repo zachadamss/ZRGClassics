@@ -1,43 +1,27 @@
 ---
 layout: layouts/base.njk
 title: Page Not Found
-description: "The page you're looking for doesn't exist. Find what you need at ZRG Classics."
+description: "That page isn't here. Try search, or pick your car."
 permalink: /404.html
+robots: noindex
 ---
 <main class="error-page">
     <div class="error-content">
-        <h1 class="error-code">404</h1>
-        <h2 class="error-title">Page Not Found</h2>
-        <p class="error-message">The page you're looking for doesn't exist or has been moved.</p>
+        <p class="error-code">404</p>
+        <h1 class="error-title">That page isn't here.</h1>
+        <p class="error-message">It may have moved when I reorganized things, or the link has a typo. Search usually finds it.</p>
 
-        <div class="error-suggestions">
-            <h3>Try one of these instead:</h3>
-            <div class="error-links">
-                <a href="/" class="error-link">
-                    <span class="link-icon">🏠</span>
-                    <span class="link-text">Home</span>
-                </a>
-                <a href="/search/" class="error-link">
-                    <span class="link-icon">🔍</span>
-                    <span class="link-text">Search</span>
-                </a>
-                <a href="/vehicles/" class="error-link">
-                    <span class="link-icon">🚗</span>
-                    <span class="link-text">Vehicles</span>
-                </a>
-                <a href="/tools/" class="error-link">
-                    <span class="link-icon">🔧</span>
-                    <span class="link-text">Tools</span>
-                </a>
-            </div>
-        </div>
+        <form action="/search/" method="get" class="error-search-form" role="search">
+            <label for="error-search" class="visually-hidden">Search ZRG Classics</label>
+            <input type="search" id="error-search" name="q" placeholder="Search issues, guides, specs…">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
 
-        <div class="error-search">
-            <p>Or search for what you need:</p>
-            <form action="/search/" method="get" class="error-search-form">
-                <input type="text" name="q" placeholder="Search ZRG Classics..." aria-label="Search">
-                <button type="submit">Search</button>
-            </form>
+        <div class="error-links">
+            <a href="/" class="error-link">{% include "icons/home.svg" %}<span>Home</span></a>
+            <a href="/resources/" class="error-link">{% include "icons/car.svg" %}<span>All cars</span></a>
+            <a href="/tools/" class="error-link">{% include "icons/wrench.svg" %}<span>Tools</span></a>
+            <a href="/forum/" class="error-link">{% include "icons/chat.svg" %}<span>Forum</span></a>
         </div>
     </div>
 </main>

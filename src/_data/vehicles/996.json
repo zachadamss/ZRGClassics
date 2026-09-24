@@ -2,6 +2,7 @@
   "model": "996",
   "brand": "Porsche",
   "fullName": "Porsche 996 911",
+  "series": "911",
   "years": "1998-2005",
   "engines": [
     "3.4L Flat-6 (M96)",
@@ -9,6 +10,11 @@
     "3.6L Twin-Turbo (Turbo)"
   ],
   "heroImage": "/images/vehicles/996-hero.jpg",
+  "photoCredit": {
+    "text": "",
+    "url": "",
+    "license": ""
+  },
   "issues": [
     {
       "id": "ims-bearing",
@@ -1063,6 +1069,7 @@
       }
     ],
     "pricingGuide": {
+      "asOf": "January 2026",
       "project": {
         "price": "$18,000 - $35,000",
         "description": "Cars with unknown IMS status or needing significant work. Risky purchase."

@@ -1,45 +1,63 @@
 const fs = require('fs');
 const path = require('path');
 
+// Content counts for the homepage and brand pages, computed from the vehicle
+// data files so they never go stale.
 module.exports = function() {
   const vehicleDir = path.join(__dirname, 'vehicles');
   const files = fs.readdirSync(vehicleDir).filter(f => f.endsWith('.json'));
 
-  let totalGuides = 0;
-  let totalDiyGuides = 0;
-  let totalTorqueSpecs = 0;
-  let totalSuppliers = 0;
+  const empty = () => ({
+    vehicles: 0,
+    issues: 0,
+    restorationGuides: 0,
+    diyGuides: 0,
+    guides: 0,
+    torqueSpecs: 0,
+    suppliers: 0
+  });
+  const totals = empty();
+  const byBrand = { bmw: empty(), porsche: empty() };
+
+  // Suppliers can appear under several vehicles; count each name once.
+  const supplierNames = { all: new Set(), bmw: new Set(), porsche: new Set() };
 
   files.forEach(file => {
     const data = JSON.parse(fs.readFileSync(path.join(vehicleDir, file)));
+    const brand = byBrand[(data.brand || '').toLowerCase()];
 
-    // Count restoration guides
-    if (data.guides) totalGuides += data.guides.length;
+    const counts = {
+      vehicles: 1,
+      issues: (data.issues || []).length,
+      restorationGuides: (data.guides || []).length,
+      diyGuides: (data.diyGuides || []).length,
+      torqueSpecs: 0,
+      suppliers: 0
+    };
+    counts.guides = counts.restorationGuides + counts.diyGuides;
 
-    // Count DIY guides
-    if (data.diyGuides) totalDiyGuides += data.diyGuides.length;
+    // torqueSpecs holds arrays of specs per category plus metadata keys
+    Object.values(data.torqueSpecs || {}).forEach(category => {
+      if (Array.isArray(category)) counts.torqueSpecs += category.length;
+    });
 
-    // Count torque specs (skip 'sources' which is metadata)
-    if (data.torqueSpecs) {
-      Object.entries(data.torqueSpecs).forEach(([key, category]) => {
-        if (Array.isArray(category)) totalTorqueSpecs += category.length;
+    Object.values(data.suppliers || {}).forEach(list => {
+      if (!Array.isArray(list)) return;
+      list.forEach(s => {
+        supplierNames.all.add(s.name);
+        supplierNames[(data.brand || '').toLowerCase()]?.add(s.name);
       });
-    }
+    });
 
-    // Count suppliers
-    if (data.suppliers) {
-      if (data.suppliers.oem) totalSuppliers += data.suppliers.oem.length;
-      if (data.suppliers.aftermarket) totalSuppliers += data.suppliers.aftermarket.length;
-      if (data.suppliers.used) totalSuppliers += data.suppliers.used.length;
-    }
+    [totals, brand].forEach(target => {
+      if (!target) return;
+      Object.keys(counts).forEach(key => { target[key] += counts[key]; });
+    });
   });
 
-  return {
-    guides: totalGuides + totalDiyGuides,
-    restorationGuides: totalGuides,
-    diyGuides: totalDiyGuides,
-    torqueSpecs: totalTorqueSpecs,
-    suppliers: totalSuppliers,
-    vehicles: files.length
-  };
+  totals.suppliers = supplierNames.all.size;
+  byBrand.bmw.suppliers = supplierNames.bmw.size;
+  byBrand.porsche.suppliers = supplierNames.porsche.size;
+
+  return { ...totals, byBrand };
 };

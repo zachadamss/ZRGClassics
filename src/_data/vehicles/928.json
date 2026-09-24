@@ -2,6 +2,7 @@
   "model": "928",
   "brand": "Porsche",
   "fullName": "Porsche 928",
+  "series": "Transaxle V8",
   "years": "1977-1995",
   "engines": [
     "4.5L V8 (M28)",
@@ -10,6 +11,11 @@
     "5.4L V8 (GTS)"
   ],
   "heroImage": "/images/vehicles/928-hero.jpg",
+  "photoCredit": {
+    "text": "",
+    "url": "",
+    "license": ""
+  },
   "issues": [
     {
       "id": "timing-belt",
@@ -1128,6 +1134,7 @@
       }
     ],
     "pricingGuide": {
+      "asOf": "January 2026",
       "project": {
         "price": "$8,000 - $20,000",
         "description": "Non-running or cars with unknown timing belt history. 928 projects can become money pits."

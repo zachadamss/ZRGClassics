@@ -2,6 +2,7 @@
   "model": "964",
   "brand": "Porsche",
   "fullName": "Porsche 964 911",
+  "series": "911",
   "years": "1989-1994",
   "engines": [
     "3.6L Flat-6 M64/01",
@@ -9,6 +10,11 @@
     "3.3L Flat-6 Turbo (early)"
   ],
   "heroImage": "/images/vehicles/964-hero.jpg",
+  "photoCredit": {
+    "text": "",
+    "url": "",
+    "license": ""
+  },
   "issues": [
     {
       "id": "oil-leaks",
@@ -1079,6 +1085,7 @@
       }
     ],
     "pricingGuide": {
+      "asOf": "January 2026",
       "project": {
         "price": "$35,000 - $60,000",
         "description": "Cars needing engine work or with significant issues. Still valuable due to air-cooled premiums."

@@ -2,6 +2,7 @@
   "model": "E28",
   "brand": "BMW",
   "fullName": "BMW E28 5 Series",
+  "series": "5 Series",
   "years": "1982-1988",
   "engines": [
     "M20 2.7L I6",
@@ -11,6 +12,11 @@
     "S38 3.5L I6 (M5)"
   ],
   "heroImage": "/images/vehicles/e28-hero.jpg",
+  "photoCredit": {
+    "text": "",
+    "url": "",
+    "license": ""
+  },
   "issues": [
     {
       "id": "timing-belt",
@@ -1098,6 +1104,7 @@
       }
     ],
     "pricingGuide": {
+      "asOf": "January 2026",
       "project": {
         "price": "$2,000 - $6,000",
         "description": "Rusty or non-running cars needing significant work. Common on East Coast and Midwest cars. Budget 2x purchase for restoration."

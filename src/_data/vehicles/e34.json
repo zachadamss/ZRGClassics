@@ -2,6 +2,7 @@
   "model": "E34",
   "brand": "BMW",
   "fullName": "BMW E34 5 Series",
+  "series": "5 Series",
   "years": "1988-1996",
   "engines": [
     "M20 2.5L I6",
@@ -13,6 +14,11 @@
     "S38 3.6L I6 (M5)"
   ],
   "heroImage": "/images/vehicles/e34-hero.jpg",
+  "photoCredit": {
+    "text": "",
+    "url": "",
+    "license": ""
+  },
   "issues": [
     {
       "id": "timing-chain-guides",
@@ -1089,6 +1095,7 @@
       }
     ],
     "pricingGuide": {
+      "asOf": "January 2026",
       "project": {
         "price": "$1,500 - $5,000",
         "description": "Rusty or high-mileage cars needing significant work. Common in the Rust Belt. Budget carefully."

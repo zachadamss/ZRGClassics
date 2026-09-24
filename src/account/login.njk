@@ -2,6 +2,7 @@
 layout: layouts/base.njk
 title: Sign In
 description: Sign in to your ZRG Classics account to access forums and community features.
+robots: noindex
 ---
 
 <main class="auth-page">
@@ -34,12 +35,18 @@ description: Sign in to your ZRG Classics account to access forums and community
 </main>
 
 <script>
+// Only follow same-site paths from ?return= so the login page can't be used
+// to bounce people to another site after they sign in.
+function safeReturnUrl() {
+  const target = new URLSearchParams(window.location.search).get('return') || '';
+  return /^\/(?![\/\\])/.test(target) ? target : '/account/garage/';
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
   // Check if already logged in
   const user = await Auth.getUser();
   if (user) {
-    const returnUrl = new URLSearchParams(window.location.search).get('return') || '/account/garage/';
-    window.location.href = returnUrl;
+    window.location.href = safeReturnUrl();
     return;
   }
 
@@ -57,8 +64,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     try {
       await Auth.signIn(email, password);
-      const returnUrl = new URLSearchParams(window.location.search).get('return') || '/account/garage/';
-      window.location.href = returnUrl;
+      window.location.href = safeReturnUrl();
     } catch (error) {
       AuthUI.showError(form, error.message);
       submitBtn.disabled = false;

@@ -4,24 +4,26 @@
 <!-- Header -->
 <header>
     <div class="logo">
-        <a href="/"><img src="/images/logo.jpg" alt="ZRG Classics Logo"></a>
+        <a href="/" aria-label="ZRG Classics home">{% include "partials/logo.njk" %}</a>
     </div>
     <nav>
         <ul>
             {% for item in navigation.main %}
+            {% set isCurrent = (item.url == "/" and page.url == "/") or (item.url != "/" and page.url.startsWith(item.url)) %}
             {% if item.children %}
             <li class="dropdown">
-                <a href="#">{{ item.label }}</a>
+                <a href="{{ item.url }}" aria-haspopup="true"{% if isCurrent %} aria-current="page"{% endif %}>{{ item.label }}</a>
                 <ul class="dropdown-menu">
                     {% for child in item.children %}
-                    {% if child.children %}
+                    {% if child.brand %}
+                    {#- Car submenus come from vehicleList so order and years match everywhere -#}
                     <li class="dropdown-item has-submenu">
                         <a href="{{ child.url }}">
-                            {{ child.label }} <span class="submenu-arrow">&#9656;</span>
+                            {{ child.label }} <span class="submenu-arrow" aria-hidden="true">&#9656;</span>
                         </a>
                         <ul class="submenu">
-                            {% for subchild in child.children %}
-                            <li><a href="{{ subchild.url }}">{{ subchild.label }}</a></li>
+                            {% for key in vehicleList[child.brand] %}{% set v = vehicles[key] %}
+                            <li><a href="/resources/{{ child.brand }}/{{ key }}/">{{ v.fullName | replace(v.brand + " ", "") }} <span class="submenu-years">{{ v.years | range }}</span></a></li>
                             {% endfor %}
                         </ul>
                     </li>
@@ -32,7 +34,7 @@
                 </ul>
             </li>
             {% else %}
-            <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+            <li><a href="{{ item.url }}"{% if isCurrent %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
             {% endif %}
             {% endfor %}
             <li class="nav-auth">
@@ -42,7 +44,7 @@
                 </div>
             </li>
             <li class="nav-theme-toggle">
-                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
                     <span class="toggle-track">
                         <span class="toggle-thumb"></span>
                         <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">

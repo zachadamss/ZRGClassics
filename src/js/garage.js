@@ -7,28 +7,9 @@ const Garage = {
   // Maximum vehicles per user
   MAX_VEHICLES: 10,
 
-  // Platform info mapping
-  PLATFORMS: {
-    // BMW
-    e28: { name: 'E28 5-Series', fullName: 'BMW E28 5-Series', brand: 'BMW', years: '1982-1988' },
-    e30: { name: 'E30 3-Series', fullName: 'BMW E30 3-Series', brand: 'BMW', years: '1982-1994' },
-    e34: { name: 'E34 5-Series', fullName: 'BMW E34 5-Series', brand: 'BMW', years: '1988-1996' },
-    e36: { name: 'E36 3-Series', fullName: 'BMW E36 3-Series', brand: 'BMW', years: '1990-2000' },
-    e39: { name: 'E39 5-Series', fullName: 'BMW E39 5-Series', brand: 'BMW', years: '1995-2004' },
-    e46: { name: 'E46 3-Series', fullName: 'BMW E46 3-Series', brand: 'BMW', years: '1998-2006' },
-    e90: { name: 'E90 3-Series', fullName: 'BMW E90 3-Series', brand: 'BMW', years: '2005-2013' },
-    // Porsche
-    '924': { name: '924', fullName: 'Porsche 924', brand: 'Porsche', years: '1976-1988' },
-    '928': { name: '928', fullName: 'Porsche 928', brand: 'Porsche', years: '1977-1995' },
-    '944': { name: '944', fullName: 'Porsche 944', brand: 'Porsche', years: '1982-1991' },
-    '964': { name: '964 911', fullName: 'Porsche 964 911', brand: 'Porsche', years: '1989-1994' },
-    '986': { name: '986 Boxster', fullName: 'Porsche 986 Boxster', brand: 'Porsche', years: '1996-2004' },
-    '987': { name: '987 Boxster/Cayman', fullName: 'Porsche 987', brand: 'Porsche', years: '2005-2012' },
-    '991': { name: '991 911', fullName: 'Porsche 991 911', brand: 'Porsche', years: '2011-2019' },
-    '993': { name: '993 911', fullName: 'Porsche 993 911', brand: 'Porsche', years: '1994-1998' },
-    '996': { name: '996 911', fullName: 'Porsche 996 911', brand: 'Porsche', years: '1997-2005' },
-    '997': { name: '997 911', fullName: 'Porsche 997 911', brand: 'Porsche', years: '2004-2012' }
-  },
+  // Platform list comes from /js/platforms.js, which is generated from the
+  // vehicle data files so years and names always match the vehicle pages.
+  PLATFORMS: window.ZRG_PLATFORMS || {},
 
   // ============================================
   // VEHICLES

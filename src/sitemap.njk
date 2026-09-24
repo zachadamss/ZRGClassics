@@ -2,135 +2,16 @@
 permalink: /sitemap.xml
 eleventyExcludeFromCollections: true
 ---
+{#- Built from the page collection plus vehicle data, so new pages show up
+    automatically. Pages with robots: noindex are left out. -#}
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {# Homepage #}
+{%- for entry in collections.all %}
+{%- if entry.url and not entry.data.robots and not entry.url.endsWith('.xml') and not entry.url.endsWith('.txt') and not entry.url.endsWith('.json') and not entry.url.startsWith('/account/') and not entry.url.startsWith('/forum/thread') and not entry.url.startsWith('/forum/category') %}
     <url>
-        <loc>{{ site.url }}/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
+        <loc>{{ site.url }}{{ entry.url }}</loc>
+        <lastmod>{{ entry.date.toISOString().slice(0, 10) }}</lastmod>
     </url>
-
-    {# Main static pages #}
-    <url>
-        <loc>{{ site.url }}/about/</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>{{ site.url }}/search/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>{{ site.url }}/shop/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>{{ site.url }}/community/forums/</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-
-    {# Brand index pages #}
-    <url>
-        <loc>{{ site.url }}/resources/bmw/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>{{ site.url }}/resources/porsche/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    {# BMW vehicle pages #}
-    <url>
-        <loc>{{ site.url }}/resources/bmw/e28/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>{{ site.url }}/resources/bmw/e30/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>{{ site.url }}/resources/bmw/e34/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>{{ site.url }}/resources/bmw/e36/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>{{ site.url }}/resources/bmw/e39/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>{{ site.url }}/resources/bmw/e46/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>{{ site.url }}/resources/bmw/e90/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    {# Porsche vehicle pages #}
-    <url>
-        <loc>{{ site.url }}/resources/porsche/924/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>{{ site.url }}/resources/porsche/928/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>{{ site.url }}/resources/porsche/944/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>{{ site.url }}/resources/porsche/964/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>{{ site.url }}/resources/porsche/986/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>{{ site.url }}/resources/porsche/987/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>{{ site.url }}/resources/porsche/991/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>{{ site.url }}/resources/porsche/993/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>{{ site.url }}/resources/porsche/996/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>{{ site.url }}/resources/porsche/997/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
+{%- endif %}
+{%- endfor %}
 </urlset>

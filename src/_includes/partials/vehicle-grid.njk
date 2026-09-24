@@ -1,0 +1,21 @@
+{#- Card grid. Expects brandKey ("bmw" | "porsche"); optional gridKeys limits
+    it to a subset (e.g. one model family). -#}
+{% set gridList = gridKeys if gridKeys else vehicleList[brandKey] %}
+<ul class="vehicle-grid vehicle-grid--{{ brandKey }}" data-count="{{ gridList | length }}">
+    {#- asyncEach: the picture shortcode is async and plain for-loops drop its output -#}
+    {% asyncEach key in gridList %}
+    {% set v = vehicles[key] %}
+    <li>
+        <a href="/resources/{{ brandKey }}/{{ key }}/" class="vehicle-card">
+            <div class="vehicle-card-image">
+                {% if v.heroImage %}{% picture v.heroImage, "", "(min-width: 1200px) 280px, (min-width: 768px) 30vw, 90vw" %}{% endif %}
+            </div>
+            <div class="vehicle-card-content">
+                <h3 class="vehicle-card-model">{{ v.model }}</h3>
+                {% if v.series %}<span class="vehicle-card-series">{{ v.series }}</span>{% endif %}
+                <span class="vehicle-card-years">{{ v.years | range }}</span>
+            </div>
+        </a>
+    </li>
+    {% endeach %}
+</ul>

@@ -2,6 +2,7 @@
   "model": "E39",
   "brand": "BMW",
   "fullName": "BMW E39 5 Series",
+  "series": "5 Series",
   "years": "1995-2003",
   "engines": [
     "M52 2.5L I6",
@@ -12,6 +13,11 @@
     "S62 4.9L V8 (M5)"
   ],
   "heroImage": "/images/vehicles/e39-hero.jpg",
+  "photoCredit": {
+    "text": "",
+    "url": "",
+    "license": ""
+  },
   "issues": [
     {
       "id": "cooling-system",
@@ -1125,6 +1131,7 @@
       }
     ],
     "pricingGuide": {
+      "asOf": "January 2026",
       "project": {
         "price": "$2,000 - $6,000",
         "description": "High-mileage, rusty, or neglected cars. Common in the Rust Belt. Can become money pits."

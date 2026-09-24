@@ -2,6 +2,7 @@
 layout: layouts/base.njk
 title: Create Account
 description: Join the ZRG Classics community. Create an account to participate in forums and connect with other enthusiasts.
+robots: noindex
 ---
 
 <main class="auth-page">
@@ -53,10 +54,8 @@ description: Join the ZRG Classics community. Create an account to participate i
   </div>
 </main>
 
+<script src="/js/newsletter.js"></script>
 <script>
-const CONVERTKIT_FORM_ID = '9066084';
-const CONVERTKIT_API_KEY = '4xiJtJiidK2ENJURMRXjgw';
-
 document.addEventListener('DOMContentLoaded', async () => {
   // Check if already logged in
   const user = await Auth.getUser();
@@ -98,15 +97,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       // Fire-and-forget newsletter subscription
       if (newsletterOptIn) {
-        fetch(`https://api.convertkit.com/v3/forms/${CONVERTKIT_FORM_ID}/subscribe`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            api_key: CONVERTKIT_API_KEY,
-            email: email,
-            first_name: username
-          })
-        }).catch(err => console.warn('Newsletter signup failed (non-blocking):', err));
+        Newsletter.subscribe(email, username)
+          .catch(err => console.warn('Newsletter signup failed (non-blocking):', err));
       }
 
       // Show success message

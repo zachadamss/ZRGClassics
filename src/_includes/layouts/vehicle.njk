@@ -2,50 +2,48 @@
 layout: layouts/base.njk
 ---
 {% set vehicleData = vehicles[vehicle] %}
+{% set vehicleKey = vehicle %}
+{% set brandSlug = vehicleData.brand | lower %}
 {% include "partials/breadcrumb.njk" %}
 
-<!-- Vehicle Hero -->
-<section class="vehicle-hero{% if vehicleData.heroImage %} has-hero-image{% endif %}"{% if vehicleData.heroImage %} style="--hero-image: url('{{ vehicleData.heroImage }}')"{% endif %}>
-    {% if vehicleData.heroImage %}
-    <div class="vehicle-hero-overlay"></div>
-    {% endif %}
-    <div class="vehicle-hero-content">
-        <h1>{{ vehicleData.fullName }}</h1>
-        <div class="vehicle-meta">
-            <span class="vehicle-years">Years: {{ vehicleData.years }}</span>
-        </div>
-        <div class="vehicle-engines">
-            <span class="engines-label">Engines:</span>
-            {% for engine in vehicleData.engines %}
-            <span class="engine-tag">{{ engine }}</span>
-            {% endfor %}
-        </div>
-    </div>
-</section>
+{% include "partials/vehicle-hero.njk" %}
 
 <!-- Quick Links -->
-<nav class="quick-links">
-    <a href="#buyers-guide">Buyer's Guide</a>
+<nav class="quick-links" aria-label="On this page">
     <a href="#common-issues">Common Issues</a>
     <a href="#restoration-guides">Guides</a>
-    <a href="#parts-suppliers">Parts</a>
-    <a href="#torque-specs">Specs</a>
     <a href="#diy-guides">DIY</a>
-    <a href="#community-resources">Community</a>
-    <a href="#restoration-checklist">Checklist</a>
+    <a href="#torque-specs">Specs</a>
+    <a href="#parts-suppliers">Parts</a>
+    {% if vehicleData.communityResources %}<a href="#community-resources">Community</a>{% endif %}
+    {% if vehicleData.buyersGuide %}<a href="/resources/{{ brandSlug }}/{{ vehicleKey }}/buying/" class="quick-link-page">Buyer's Guide →</a>{% endif %}
 </nav>
 
 <main class="resource-content">
-    <!-- Buyer's Guide Section -->
-    {% set vehicle = vehicleData %}
-    {% include "partials/buyers-guide.njk" %}
-
-    <div class="section-divider"></div>
+    {% if vehicleData.buyersGuide %}
+    <!-- Buyer's guide teaser -->
+    <aside class="buying-teaser" aria-labelledby="buying-teaser-title">
+        <div class="buying-teaser-text">
+            <p class="eyebrow">Shopping for one?</p>
+            <h2 id="buying-teaser-title">{{ vehicleData.model }} Buyer's Guide</h2>
+            <p>Which versions to look for, what to check before you hand over money, and what a fair price looks like right now.</p>
+            <a href="/resources/{{ brandSlug }}/{{ vehicleKey }}/buying/" class="btn btn-primary">Read the buyer's guide</a>
+        </div>
+        {% set facts = vehicleData.buyersGuide.quickFacts %}
+        {% if facts %}
+        <dl class="buying-teaser-facts">
+            {% if facts.priceRange %}<div><dt>Price range</dt><dd>{{ facts.priceRange | range }}</dd></div>{% endif %}
+            {% if facts.bestYears %}<div><dt>Best years</dt><dd>{{ facts.bestYears | range }}</dd></div>{% endif %}
+            {% if facts.totalProduced %}<div><dt>Built</dt><dd>{{ facts.totalProduced }}</dd></div>{% endif %}
+        </dl>
+        {% endif %}
+    </aside>
+    {% endif %}
 
     <!-- Common Issues Section -->
     <section id="common-issues" class="resource-section">
         <h2 class="section-title">Common Issues</h2>
-        <p class="section-subtitle">Known problems, symptoms, and solutions for the {{ vehicleData.model }} platform</p>
+        <p class="section-subtitle">What goes wrong on the {{ vehicleData.model }}, how to spot it, and what it costs to fix.</p>
 
         {% for issue in vehicleData.issues %}
         {% include "partials/issue-card.njk" %}
@@ -57,7 +55,7 @@ layout: layouts/base.njk
     <!-- Restoration Guides Section -->
     <section id="restoration-guides" class="resource-section">
         <h2 class="section-title">Restoration Guides</h2>
-        <p class="section-subtitle">Comprehensive guides for rebuilding and restoring your {{ vehicleData.model }}</p>
+        <p class="section-subtitle">The bigger jobs: step-by-step, with parts lists, tools, and the mistakes to avoid.</p>
 
         <div class="guide-grid">
             {% for guide in vehicleData.guides %}
@@ -68,32 +66,10 @@ layout: layouts/base.njk
 
     <div class="section-divider"></div>
 
-    <!-- Parts & Suppliers Section -->
-    <section id="parts-suppliers" class="resource-section">
-        <h2 class="section-title">Parts & Suppliers</h2>
-        <p class="section-subtitle">Trusted sources for OEM, aftermarket, and used parts</p>
-
-        {% set vehicle = vehicleData %}
-        {% include "partials/supplier-list.njk" %}
-    </section>
-
-    <div class="section-divider"></div>
-
-    <!-- Torque Specs Section -->
-    <section id="torque-specs" class="resource-section">
-        <h2 class="section-title">Torque Specifications</h2>
-        <p class="section-subtitle">Factory torque values for common service items</p>
-
-        {% set vehicle = vehicleData %}
-        {% include "partials/specs-table.njk" %}
-    </section>
-
-    <div class="section-divider"></div>
-
     <!-- DIY Guides Section -->
     <section id="diy-guides" class="resource-section">
-        <h2 class="section-title">DIY Maintenance Guides</h2>
-        <p class="section-subtitle">Step-by-step tutorials for common maintenance tasks</p>
+        <h2 class="section-title">DIY Maintenance</h2>
+        <p class="section-subtitle">The routine work you can do on a Saturday with hand tools and jack stands.</p>
 
         <div class="guide-grid">
             {% for guide in vehicleData.diyGuides %}
@@ -106,15 +82,34 @@ layout: layouts/base.njk
 
     <div class="section-divider"></div>
 
-    <!-- Community Resources Section -->
-    {% if vehicleData.communityResources %}
-    {% set vehicle = vehicleData %}
-    {% include "partials/community-resources.njk" %}
+    <!-- Torque Specs Section -->
+    <section id="torque-specs" class="resource-section">
+        <h2 class="section-title">Torque Specs</h2>
+        <p class="section-subtitle">Values for common service jobs. Check the source listed for each table, and your own manual, before you torque anything critical.</p>
+
+        {% set vehicle = vehicleData %}
+        {% include "partials/specs-table.njk" %}
+    </section>
 
     <div class="section-divider"></div>
+
+    <!-- Parts & Suppliers Section -->
+    <section id="parts-suppliers" class="resource-section">
+        <h2 class="section-title">Parts &amp; Suppliers</h2>
+        <p class="section-subtitle">Where I'd shop for {{ vehicleData.model }} parts: genuine, performance, used, and the specialists.</p>
+
+        {% set vehicle = vehicleData %}
+        {% include "partials/supplier-list.njk" %}
+    </section>
+
+    <!-- Community Resources Section -->
+    {% if vehicleData.communityResources %}
+    <div class="section-divider"></div>
+    {% set vehicle = vehicleData %}
+    {% include "partials/community-resources.njk" %}
     {% endif %}
 
-    <!-- Restoration Checklist Section -->
+    <!-- Track this car in My Garage -->
     {% set vehicle = vehicleData %}
-    {% include "partials/restoration-checklist.njk" %}
+    {% include "partials/garage-cta.njk" %}
 </main>

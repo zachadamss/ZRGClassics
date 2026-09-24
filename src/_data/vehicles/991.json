@@ -2,6 +2,7 @@
   "model": "991",
   "brand": "Porsche",
   "fullName": "Porsche 991 911",
+  "series": "911",
   "years": "2012-2019",
   "engines": [
     "3.4L Flat-6 MA1 (991.1)",
@@ -10,6 +11,11 @@
     "4.0L Flat-6 MA1 (GT3)"
   ],
   "heroImage": "/images/vehicles/991-hero.jpg",
+  "photoCredit": {
+    "text": "",
+    "url": "",
+    "license": ""
+  },
   "issues": [
     {
       "id": "coolant-pipes",
@@ -1051,6 +1057,7 @@
       }
     ],
     "pricingGuide": {
+      "asOf": "January 2026",
       "project": {
         "price": "$50,000 - $70,000",
         "description": "Higher-mileage base Carreras or cars with service needs."

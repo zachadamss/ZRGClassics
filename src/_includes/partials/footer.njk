@@ -1,19 +1,50 @@
 <!-- Footer -->
-<footer>
-    <div class="footer-content">
-        <p>&copy; {{ site.year }} {{ site.name }}. All rights reserved.</p>
-        <ul class="footer-links">
-            <li><a href="/privacy/">Privacy Policy</a></li>
-            <li><a href="/terms/">Terms of Service</a></li>
-            <li><a href="/about/">About</a></li>
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            {% set logoId = "footer" %}<a href="/" class="footer-logo" aria-label="ZRG Classics home">{% include "partials/logo.njk" %}</a>
+            <p>{{ site.tagline }}</p>
+            {% set hasSocial = site.social.facebook or site.social.twitter or site.social.instagram %}
+            {% if hasSocial %}
+            <ul class="social-links">
+                {% if site.social.instagram %}<li><a href="{{ site.social.instagram }}" rel="me noopener">Instagram</a></li>{% endif %}
+                {% if site.social.facebook %}<li><a href="{{ site.social.facebook }}" rel="me noopener">Facebook</a></li>{% endif %}
+                {% if site.social.twitter %}<li><a href="{{ site.social.twitter }}" rel="me noopener">Twitter</a></li>{% endif %}
+            </ul>
+            {% endif %}
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer">
+            <div class="footer-col">
+                <h2>BMW</h2>
+                <ul>
+                    {% for key in vehicleList.bmw %}<li><a href="/resources/bmw/{{ key }}/">{{ vehicles[key].model }}</a></li>{% endfor %}
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h2>Porsche</h2>
+                <ul>
+                    {% for key in vehicleList.porsche %}<li><a href="/resources/porsche/{{ key }}/">{{ vehicles[key].model }}</a></li>{% endfor %}
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h2>Site</h2>
+                <ul>
+                    <li><a href="/search/">Search</a></li>
+                    <li><a href="/tools/">Tools</a></li>
+                    <li><a href="/account/garage/">My Garage</a></li>
+                    <li><a href="/forum/">Forum</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/about/#contact">Contact &amp; corrections</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="footer-legal">
+        <p>&copy; {{ site.year }} {{ site.name }}. Not affiliated with BMW AG or Dr. Ing. h.c. F. Porsche AG.</p>
+        <ul>
+            <li><a href="/privacy/">Privacy</a></li>
+            <li><a href="/terms/">Terms</a></li>
         </ul>
-        {% set hasSocial = site.social.facebook or site.social.twitter or site.social.instagram %}
-        {% if hasSocial %}
-        <ul class="social-links">
-            {% if site.social.facebook %}<li><a href="{{ site.social.facebook }}">Facebook</a></li>{% endif %}
-            {% if site.social.twitter %}<li><a href="{{ site.social.twitter }}">Twitter</a></li>{% endif %}
-            {% if site.social.instagram %}<li><a href="{{ site.social.instagram }}">Instagram</a></li>{% endif %}
-        </ul>
-        {% endif %}
     </div>
 </footer>

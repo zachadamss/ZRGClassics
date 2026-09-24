@@ -2,6 +2,7 @@
   "model": "924",
   "brand": "Porsche",
   "fullName": "Porsche 924",
+  "series": "Transaxle four",
   "years": "1976-1988",
   "engines": [
     "2.0L I4 (Audi)",
@@ -9,6 +10,11 @@
     "2.0L Turbo I4"
   ],
   "heroImage": "/images/vehicles/924-hero.jpg",
+  "photoCredit": {
+    "text": "",
+    "url": "",
+    "license": ""
+  },
   "issues": [
     {
       "id": "timing-belt",
@@ -998,6 +1004,7 @@
       }
     ],
     "pricingGuide": {
+      "asOf": "January 2026",
       "project": {
         "price": "$2,000 - $6,000",
         "description": "Non-running or rusty cars. Base 924s are cheap but require work."

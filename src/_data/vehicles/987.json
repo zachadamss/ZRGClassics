@@ -2,6 +2,7 @@
   "model": "987",
   "brand": "Porsche",
   "fullName": "Porsche 987 Boxster/Cayman",
+  "series": "Boxster & Cayman",
   "years": "2005-2012",
   "engines": [
     "2.7L Flat-6 M97/MA1",
@@ -10,6 +11,11 @@
     "3.4L Flat-6 M97/MA1 (S/R)"
   ],
   "heroImage": "/images/vehicles/987-hero.jpg",
+  "photoCredit": {
+    "text": "",
+    "url": "",
+    "license": ""
+  },
   "issues": [
     {
       "id": "ims-bearing",
@@ -1020,6 +1026,7 @@
       }
     ],
     "pricingGuide": {
+      "asOf": "January 2026",
       "project": {
         "price": "$15,000 - $25,000",
         "description": "987.1 cars with unknown IMS status or significant issues."

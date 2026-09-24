@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+title: All Cars
+description: "Every BMW and Porsche covered on ZRG Classics, from the E28 to the 991: common issues, repair costs, guides, torque specs, and buyer's guides."
+breadcrumbs:
+  - { label: "Home", url: "/" }
+  - { label: "Cars" }
+---
+{% include "partials/breadcrumb.njk" %}
+
+<main class="resource-content cars-index">
+    <div class="page-intro">
+        <h1>The Cars</h1>
+        <p class="page-lede">{{ stats.vehicles }} platforms so far. Each one has its known problems and what they cost to fix, step-by-step guides, torque specs, where to buy parts, and a buyer's guide.</p>
+    </div>
+
+    {% asyncEach brand in [["bmw", "BMW"], ["porsche", "Porsche"]] %}
+    <section class="brand-block">
+        <div class="brand-header">
+            <h2 class="brand-title">{{ brand[1] }}</h2>
+            <a href="/resources/{{ brand[0] }}/" class="brand-link">{{ brand[1] }} overview →</a>
+        </div>
+        {% set brandKey = brand[0] %}
+        {% include "partials/vehicle-grid.njk" %}
+    </section>
+    {% endeach %}
+</main>

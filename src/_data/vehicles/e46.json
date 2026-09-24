@@ -2,6 +2,7 @@
   "model": "E46",
   "brand": "BMW",
   "fullName": "BMW E46 3 Series",
+  "series": "3 Series",
   "years": "1999-2006",
   "engines": [
     "M52TU 2.5L I6",
@@ -9,6 +10,11 @@
     "S54 3.2L I6 (M3)"
   ],
   "heroImage": "/images/vehicles/e46-hero.jpg",
+  "photoCredit": {
+    "text": "",
+    "url": "",
+    "license": ""
+  },
   "issues": [
     {
       "id": "vanos",
@@ -1039,6 +1045,7 @@
       }
     ],
     "pricingGuide": {
+      "asOf": "January 2026",
       "project": {
         "price": "$2,000 - $6,000",
         "description": "High-mileage, rusty, or modified cars. Many have been drifted or poorly maintained."

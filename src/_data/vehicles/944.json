@@ -2,6 +2,7 @@
   "model": "944",
   "brand": "Porsche",
   "fullName": "Porsche 944",
+  "series": "Transaxle four",
   "years": "1982-1991",
   "engines": [
     "2.5L I4",
@@ -10,6 +11,11 @@
     "3.0L I4 (944S2)"
   ],
   "heroImage": "/images/vehicles/944-hero.jpg",
+  "photoCredit": {
+    "text": "",
+    "url": "",
+    "license": ""
+  },
   "issues": [
     {
       "id": "timing-belt",
@@ -1095,6 +1101,7 @@
       }
     ],
     "pricingGuide": {
+      "asOf": "January 2026",
       "project": {
         "price": "$3,000 - $8,000",
         "description": "Non-running or cars with known timing belt failure risk. Only for experienced enthusiasts who can do their own work."
