@@ -19,7 +19,7 @@ layout: layouts/base.njk
     {% if vehicleData.buyersGuide %}<a href="/resources/{{ brandSlug }}/{{ vehicleKey }}/buying/" class="quick-link-page">Buyer's Guide →</a>{% endif %}
 </nav>
 
-<main class="resource-content">
+<main class="resource-content" data-car-memory data-car-key="{{ vehicleKey }}" data-car-name="{{ vehicleData.fullName }}" data-car-url="/resources/{{ brandSlug }}/{{ vehicleKey }}/">
     {% include "partials/byline.njk" %}
 
     {% if vehicleData.buyersGuide %}
@@ -114,4 +114,8 @@ layout: layouts/base.njk
     <!-- Track this car in My Garage -->
     {% set vehicle = vehicleData %}
     {% include "partials/garage-cta.njk" %}
+
+    {% include "partials/newsletter-strip.njk" %}
 </main>
+<script src="/js/car-memory.js" defer></script>
+<script src="/js/copy-link.js" defer></script>

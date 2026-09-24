@@ -19,6 +19,17 @@ themeToggle.addEventListener('click', () => {
     syncThemeToggle();
 });
 
+// "/" jumps to search from anywhere (unless you're typing in a field)
+document.addEventListener('keydown', (e) => {
+    if (e.key !== '/' || e.ctrlKey || e.metaKey || e.altKey) return;
+    const t = e.target;
+    if (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName)) return;
+    const field = document.querySelector('.hm-search input[name="q"], #search-input');
+    e.preventDefault();
+    if (field) field.focus();
+    else window.location.href = '/search/';
+});
+
 // The header collapses to the menu button at this width (matches styles.css)
 const NAV_BREAKPOINT = 960;
 

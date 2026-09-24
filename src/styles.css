@@ -1092,7 +1092,6 @@ main {
     border: 0;
 }
 
-.eyebrow,
 .hero-eyebrow {
     font-family: var(--font-body);
     font-size: 0.8rem;
@@ -1100,6 +1099,17 @@ main {
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--accent-text);
+    margin: 0 0 var(--space-2);
+}
+
+/* Small section labels: mono, like the rest of the manual */
+.eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--link-blue);
     margin: 0 0 var(--space-2);
 }
 
@@ -3359,7 +3369,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .garage-cta .eyebrow {
-    color: var(--gulf-orange-light);
+    color: var(--gulf-blue);
 }
 
 .garage-cta h2 {
@@ -7007,14 +7017,17 @@ input:focus, textarea:focus, select:focus {
     transition: border-color 0.2s;
 }
 
+/* Status by lightness, like the rest of the site: done = ink, in progress = blue */
 .restoration-checklist .checklist-item.status-complete {
-    border-color: var(--success-color);
-    background: rgba(34, 165, 89, 0.05);
+    border-color: var(--text-color);
+    border-left-width: 4px;
+    background: var(--surface);
 }
 
 .restoration-checklist .checklist-item.status-in-progress {
-    border-color: var(--gulf-orange);
-    background: rgba(242, 101, 34, 0.05);
+    border-color: var(--link-blue);
+    border-left-width: 4px;
+    background: color-mix(in srgb, var(--link-blue) 6%, var(--surface));
 }
 
 .restoration-checklist .checklist-item.status-skipped {
@@ -11172,4 +11185,164 @@ input:focus, textarea:focus, select:focus {
 @media (max-width: 420px) {
     .hm-issue-parts td:last-child { white-space: nowrap; }
     .hm-actions .hm-btn { flex: 1 1 100%; }
+}
+
+/* ================================
+   Return-visit features
+   ================================ */
+
+/* Issue card: difficulty badge and "Copy link" share button */
+.issue-header-tools {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+.issue-card .copy-link-btn,
+.issue-card .copy-link-btn:hover {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    min-height: 32px;
+    padding: 0.25rem 0.65rem;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-full);
+    background: transparent;
+    color: var(--text-secondary);
+    font: 500 0.78rem var(--font-body);
+    cursor: pointer;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.issue-card .copy-link-btn:hover,
+.issue-card .copy-link-btn.is-copied {
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
+
+.issue-card .copy-link-btn:focus-visible {
+    outline: 2px solid var(--link-blue);
+    outline-offset: 2px;
+}
+
+/* The anchor target of a shared issue link gets a brief highlight */
+.issue-card:target {
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--link-blue) 35%, transparent), var(--shadow-md);
+    scroll-margin-top: 140px;
+}
+
+/* Newsletter strip at the end of car pages and buyer's guides */
+.newsletter-strip {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: var(--space-5) var(--space-6);
+    align-items: center;
+    margin-top: var(--space-6);
+    padding: var(--space-6);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+}
+
+.newsletter-strip .eyebrow {
+    margin: 0 0 0.4rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--link-blue);
+}
+
+.newsletter-strip h2 {
+    margin: 0 0 0.5rem;
+    font-size: var(--step-2);
+    line-height: 1.15;
+}
+
+.newsletter-strip-text p:last-child {
+    margin: 0;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.resource-content .newsletter-strip-form {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: 0;
+}
+
+.newsletter-strip-form label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.newsletter-strip-row {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.newsletter-strip-row input {
+    flex: 1;
+    min-width: 0;
+    min-height: 48px;
+    padding: 0 1rem;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-md);
+    background: var(--surface-sunk);
+    color: var(--text-color);
+    font: 1rem var(--font-body);
+}
+
+.newsletter-strip-row .btn {
+    border-radius: var(--radius-md);
+    white-space: nowrap;
+}
+
+.newsletter-strip .newsletter-status:empty { display: none; }
+.newsletter-strip .newsletter-status { margin: 0.5rem 0 0; font-size: 0.9rem; font-weight: 600; }
+.newsletter-strip .newsletter-status.is-success { color: var(--link-blue); }
+.newsletter-strip .newsletter-status.is-error { color: var(--accent-text); }
+
+@media (max-width: 768px) {
+    .newsletter-strip {
+        grid-template-columns: 1fr;
+        padding: var(--space-5);
+    }
+
+    .newsletter-strip-row {
+        flex-direction: column;
+    }
+}
+
+/* Homepage: "Pick up where you left off" */
+.hm-resume {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem 0.6rem;
+    margin: -0.4rem 0 0;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.hm-resume[hidden] {
+    display: none;
+}
+
+.hm .hm-resume a {
+    font-weight: 600;
+    color: var(--link-blue);
+    text-decoration: none;
+}
+
+.hm .hm-resume a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }

@@ -20,6 +20,21 @@
     });
   }
 
+  // "Pick up where you left off": the last car page read in this browser
+  // (saved by car-memory.js).
+  try {
+    const last = JSON.parse(localStorage.getItem('zrg:lastCar') || 'null');
+    const resume = document.querySelector('[data-resume]');
+    const select = document.querySelector('[data-car-select]');
+    const option = last && select && [...select.options].find(o => o.value === last.key);
+    if (resume && option) {
+      const link = resume.querySelector('[data-resume-link]');
+      link.href = option.dataset.url;
+      link.firstChild.textContent = `${last.name || option.textContent} `;
+      resume.hidden = false;
+    }
+  } catch (e) { /* no storage or bad data: skip */ }
+
   // Brand tabs: shown only on narrow screens, where the two lists stack.
   const tabList = document.querySelector('[data-brand-tabs]');
   if (!tabList) return;
