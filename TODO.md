@@ -22,7 +22,6 @@ Full record of the September 2026 design and copy review: `docs/site-review-2026
 
 ## Action Required (Manual Steps)
 
-- [ ] **Send the About page details** — name or handle, the cars you've owned, and why ZRG exists. The page is built with a marked spot for it (`src/about.njk`).
 - [ ] **Replace the placeholder vehicle photos** — drop real photos into `src/images/vehicles/` with the same filenames (landscape, at least 1920px wide) and fill each car's `photoCredit`.
 - [ ] **Review the flagged content** listed under "Needs owner review" in `docs/site-review-2026-09.md`, especially the 17 new signature guides, before they go live.
 - [ ] **Run `supabase-migration-security.sql` in the Supabase SQL Editor** — the site-side XSS fixes are deployed with the code, but the database hardening (username/avatar rules, protected forum columns, locked-thread replies) only takes effect once this is run

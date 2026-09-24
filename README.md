@@ -1,6 +1,6 @@
 # ZRG Classics
 
-A free resource hub for classic Porsche and BMW owners — live at [zrgclassics.com](https://zrgclassics.com).
+A free resource hub for classic Porsche and BMW owners — live at [zrgclassics.com](https://www.zrgclassics.com).
 
 ## Features
 
