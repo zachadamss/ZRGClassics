@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-ZRG Classics is a resource hub for classic Porsche & BMW enthusiasts. It's a static site built with **Eleventy (11ty) v2** using **Nunjucks** templates, **vanilla CSS/JS**, and **Supabase** for authentication and database features. Deployed on **Vercel** at zrgclassics.com.
+ZRG Classics is a resource hub for classic Porsche & BMW enthusiasts. It's a static site built with **Eleventy (11ty) v3** using **Nunjucks** templates, **vanilla CSS/JS**, and **Supabase** for authentication and database features. Deployed on **Vercel** at zrgclassics.com.
 
 ## Build & Development Commands
 
@@ -47,9 +47,11 @@ Client-side Supabase handles all dynamic features:
 - **Auth**: Login, register, password reset (`src/account/`, `src/js/supabase.js`)
 - **My Garage**: Vehicle storage and maintenance history (`src/account/garage.njk`, `src/js/garage.js`)
 - **Forums**: Categories, threads, replies (`src/forum/`, `src/js/forum.js`)
-- **Tools**: Invoice creator, build calculator, maintenance tracker, restoration checklist (`src/tools/`)
+- **Tools**: Build calculator, maintenance tracker, restoration checklist (`src/tools/`)
 
-Database schemas are in `supabase-schema*.sql` files at the project root.
+Database schemas are in `supabase-schema*.sql` files at the project root. `supabase-migration-security.sql` must be run after them (username/avatar constraints, triggers that protect system-managed columns like `is_pinned`/`post_count`, and a block on replies to locked threads).
+
+Any user- or database-supplied value inserted via `innerHTML` must go through `Forum.sanitizeHtml()` (or the tools' `escapeHtml()`), and user-supplied URLs through `Forum.safeUrl()`. The Supabase client library and `/js/supabase.js` are loaded once in `layouts/base.njk`; pages should not include them again.
 
 ### Styling
 

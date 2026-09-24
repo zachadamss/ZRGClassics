@@ -43,8 +43,6 @@ description: Start a new discussion thread in the ZRG Classics forums.
   </div>
 </main>
 
-<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
-<script src="/js/supabase.js"></script>
 <script src="/js/forum.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', async () => {
@@ -59,7 +57,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   try {
     const categories = await Forum.getCategories();
     categorySelect.innerHTML = '<option value="">Select a category...</option>' +
-      categories.map(cat => `<option value="${cat.id}">${cat.name}</option>`).join('');
+      categories.map(cat => `<option value="${Forum.sanitizeHtml(cat.id)}">${Forum.sanitizeHtml(cat.name)}</option>`).join('');
 
     // Pre-select category from URL if provided
     const urlParams = new URLSearchParams(window.location.search);

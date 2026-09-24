@@ -338,12 +338,24 @@ const Forum = {
   },
 
   /**
-   * Sanitize HTML to prevent XSS
+   * Escape text for safe insertion into HTML content and attribute values
    */
   sanitizeHtml(text) {
-    const div = document.createElement('div');
-    div.textContent = text;
-    return div.innerHTML;
+    if (text == null) return '';
+    return String(text)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  },
+
+  /**
+   * Return an escaped URL only if it uses http(s); otherwise an empty string
+   */
+  safeUrl(url) {
+    if (typeof url !== 'string' || !/^https?:\/\//i.test(url.trim())) return '';
+    return this.sanitizeHtml(url.trim());
   },
 
   /**

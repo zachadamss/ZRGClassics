@@ -43,8 +43,6 @@ description: View thread discussion.
   </div>
 </main>
 
-<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
-<script src="/js/supabase.js"></script>
 <script src="/js/forum.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', async () => {
@@ -98,7 +96,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       <header class="thread-header">
         <h1 class="thread-title">${Forum.sanitizeHtml(currentThread.title)}</h1>
         <div class="thread-meta">
-          <span>Posted by <strong>${currentThread.author?.username || 'Unknown'}</strong></span>
+          <span>Posted by <strong>${Forum.sanitizeHtml(currentThread.author?.username || 'Unknown')}</strong></span>
           <span>${Forum.formatDate(currentThread.created_at)}</span>
           <span>${currentThread.view_count || 0} views</span>
         </div>
@@ -106,11 +104,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       <div class="post-card original-post">
         <aside class="post-author">
           <div class="author-avatar">
-            ${currentThread.author?.avatar_url ?
-              `<img src="${currentThread.author.avatar_url}" alt="${currentThread.author.username}">` :
-              `<span>${(currentThread.author?.username || '?').substring(0, 2).toUpperCase()}</span>`}
+            ${Forum.safeUrl(currentThread.author?.avatar_url) ?
+              `<img src="${Forum.safeUrl(currentThread.author.avatar_url)}" alt="${Forum.sanitizeHtml(currentThread.author.username)}">` :
+              `<span>${Forum.sanitizeHtml((currentThread.author?.username || '?').substring(0, 2).toUpperCase())}</span>`}
           </div>
-          <div class="author-name">${currentThread.author?.username || 'Unknown'}</div>
+          <div class="author-name">${Forum.sanitizeHtml(currentThread.author?.username || 'Unknown')}</div>
           <div class="author-stats">
             <span>${currentThread.author?.post_count || 0} posts</span>
             <span>Member since ${Forum.formatDate(currentThread.author?.created_at)}</span>
@@ -163,11 +161,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         <div class="post-card reply-post" data-reply-id="${reply.id}">
           <aside class="post-author">
             <div class="author-avatar">
-              ${reply.author?.avatar_url ?
-                `<img src="${reply.author.avatar_url}" alt="${reply.author.username}">` :
-                `<span>${(reply.author?.username || '?').substring(0, 2).toUpperCase()}</span>`}
+              ${Forum.safeUrl(reply.author?.avatar_url) ?
+                `<img src="${Forum.safeUrl(reply.author.avatar_url)}" alt="${Forum.sanitizeHtml(reply.author.username)}">` :
+                `<span>${Forum.sanitizeHtml((reply.author?.username || '?').substring(0, 2).toUpperCase())}</span>`}
             </div>
-            <div class="author-name">${reply.author?.username || 'Unknown'}</div>
+            <div class="author-name">${Forum.sanitizeHtml(reply.author?.username || 'Unknown')}</div>
             <div class="author-stats">
               <span>${reply.author?.post_count || 0} posts</span>
             </div>
@@ -226,11 +224,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         <div class="post-card reply-post new-reply" data-reply-id="${reply.id}">
           <aside class="post-author">
             <div class="author-avatar">
-              ${reply.author?.avatar_url ?
-                `<img src="${reply.author.avatar_url}" alt="${reply.author.username}">` :
-                `<span>${(reply.author?.username || '?').substring(0, 2).toUpperCase()}</span>`}
+              ${Forum.safeUrl(reply.author?.avatar_url) ?
+                `<img src="${Forum.safeUrl(reply.author.avatar_url)}" alt="${Forum.sanitizeHtml(reply.author.username)}">` :
+                `<span>${Forum.sanitizeHtml((reply.author?.username || '?').substring(0, 2).toUpperCase())}</span>`}
             </div>
-            <div class="author-name">${reply.author?.username || 'Unknown'}</div>
+            <div class="author-name">${Forum.sanitizeHtml(reply.author?.username || 'Unknown')}</div>
             <div class="author-stats">
               <span>${reply.author?.post_count || 0} posts</span>
             </div>

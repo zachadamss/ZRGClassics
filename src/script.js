@@ -218,52 +218,9 @@ document.addEventListener('click', (e) => {
 });
 
 // ================================
-// Invoice Table Mobile Labels
-// ================================
-function applyMobileLabels() {
-    // Parts table labels
-    const partsTable = document.getElementById('parts-table');
-    if (partsTable) {
-        const partsRows = partsTable.querySelectorAll('tbody tr');
-        partsRows.forEach(row => {
-            const cells = row.querySelectorAll('td');
-            if (cells.length >= 5) {
-                cells[0].setAttribute('data-label', 'Part Name');
-                cells[1].setAttribute('data-label', 'Qty');
-                cells[2].setAttribute('data-label', 'Unit Price');
-                cells[3].setAttribute('data-label', 'Total');
-                // cells[4] is the remove button, no label needed
-            }
-        });
-    }
-
-    // Labor table labels
-    const laborTable = document.getElementById('labor-table');
-    if (laborTable) {
-        const laborRows = laborTable.querySelectorAll('tbody tr');
-        laborRows.forEach(row => {
-            const cells = row.querySelectorAll('td');
-            if (cells.length >= 5) {
-                cells[0].setAttribute('data-label', 'Description');
-                cells[1].setAttribute('data-label', 'Hours');
-                cells[2].setAttribute('data-label', 'Rate');
-                cells[3].setAttribute('data-label', 'Total');
-                // cells[4] is the remove button, no label needed
-            }
-        });
-    }
-}
-
-// Export for use by invoice.js
-window.applyMobileLabels = applyMobileLabels;
-
-// ================================
 // DOMContentLoaded — Page-load Initialization
 // ================================
 document.addEventListener('DOMContentLoaded', () => {
-    // Apply mobile labels to invoice tables if present
-    applyMobileLabels();
-
     // Expandable guide cards
     const expandableHeaders = document.querySelectorAll('.guide-card-header.clickable');
 

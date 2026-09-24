@@ -1,17 +1,42 @@
 # ZRG Classics
 
-A local website for selling classic cars and parts.
+A free resource hub for classic Porsche and BMW owners — live at [zrgclassics.com](https://zrgclassics.com).
 
 ## Features
-- Homepage
-- Shop page
-- About page
 
-## Installation
-1. Clone this repository.
-2. Run `npm install` to install dependencies.
-3. Run `npm run build` to build the site.
-4. Run `npm start` to serve locally.
+- **Vehicle resources** for 17 platforms (BMW E28–E90, Porsche 924–997): common issues with repair costs, step-by-step restoration and DIY guides, torque specs, buyer's guides, parts suppliers, and community links
+- **Site-wide search** across vehicles, issues, guides, specs, and suppliers
+- **Tools**: Restoration Checklist, Maintenance Tracker, and Build Cost Calculator
+- **My Garage**: save vehicles and track restoration progress and service history
+- **Community forums** with per-platform categories
+
+## Tech Stack
+
+- [Eleventy](https://www.11ty.dev/) v3 with Nunjucks templates
+- Vanilla CSS and JavaScript
+- [Supabase](https://supabase.com/) for authentication and the database
+- Deployed on [Vercel](https://vercel.com/)
+
+## Development
+
+Requires Node.js 18 or newer.
+
+```bash
+npm install
+npm run serve        # Dev server with live reload at http://localhost:8080
+npm run build:all    # Rebuild the search index and the site into _site/
+npm run build:prod   # Production build: search index, site, image optimization, minification
+```
+
+Rebuild the search index (`npm run build:search`) whenever vehicle data in `src/_data/vehicles/` changes.
+
+## Database Setup
+
+In the Supabase SQL Editor, run these files in order:
+
+1. `supabase-schema.sql` — profiles and forums
+2. `supabase-schema-garage.sql` — My Garage tables
+3. `supabase-migration-security.sql` — security hardening (safe to re-run)
 
 ## Adding Images to Guide Steps
 

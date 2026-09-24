@@ -23,8 +23,6 @@ description: Search the ZRG Classics community forums.
   </div>
 </main>
 
-<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
-<script src="/js/supabase.js"></script>
 <script src="/js/forum.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', async () => {
@@ -79,10 +77,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       resultsContainer.innerHTML = results.threads.map(thread => `
         <div class="thread-item">
           <div class="thread-info">
-            <a href="/forum/${thread.category.slug}/${thread.id}/" class="thread-title">${Forum.sanitizeHtml(thread.title)}</a>
+            <a href="/forum/${encodeURIComponent(thread.category.slug)}/${thread.id}/" class="thread-title">${Forum.sanitizeHtml(thread.title)}</a>
             <div class="thread-meta">
-              <span class="thread-category">${thread.category.name}</span>
-              <span>by ${thread.author?.username || 'Unknown'}</span>
+              <span class="thread-category">${Forum.sanitizeHtml(thread.category.name)}</span>
+              <span>by ${Forum.sanitizeHtml(thread.author?.username || 'Unknown')}</span>
               <span>${Forum.timeAgo(thread.created_at)}</span>
             </div>
           </div>

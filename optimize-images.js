@@ -1,4 +1,4 @@
-const Image = require("@11ty/eleventy-img");
+const { default: Image } = require("@11ty/eleventy-img");
 const path = require("path");
 const fs = require("fs");
 
@@ -15,6 +15,7 @@ async function optimizeHeroImages() {
   const files = fs.readdirSync(inputDir).filter(f => f.endsWith('-hero.jpg'));
 
   console.log(`Optimizing ${files.length} hero images...`);
+  let failures = 0;
 
   for (const file of files) {
     const inputPath = path.join(inputDir, file);
@@ -49,7 +50,14 @@ async function optimizeHeroImages() {
 
     } catch (err) {
       console.error(`  ✗ ${file}: ${err.message}`);
+      failures++;
     }
+  }
+
+  if (failures > 0) {
+    console.error(`Failed to optimize ${failures} image(s).`);
+    process.exitCode = 1;
+    return;
   }
 
   console.log("Done!");

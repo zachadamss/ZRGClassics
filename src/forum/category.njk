@@ -28,8 +28,6 @@ description: Browse threads in this forum category.
   </div>
 </main>
 
-<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
-<script src="/js/supabase.js"></script>
 <script src="/js/forum.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', async () => {
@@ -106,10 +104,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             ${thread.is_pinned ? '<span class="pin-badge">Pinned</span>' : ''}
             <a href="${threadUrl}" class="thread-title">${Forum.sanitizeHtml(thread.title)}</a>
             <div class="thread-meta">
-              <span>by ${thread.author?.username || 'Unknown'}</span>
+              <span>by ${Forum.sanitizeHtml(thread.author?.username || 'Unknown')}</span>
               <span>${Forum.timeAgo(thread.created_at)}</span>
               ${thread.last_reply_at && thread.last_reply_at !== thread.created_at ?
-                `<span>Last reply by ${thread.last_reply_author?.username || 'Unknown'} ${Forum.timeAgo(thread.last_reply_at)}</span>` : ''}
+                `<span>Last reply by ${Forum.sanitizeHtml(thread.last_reply_author?.username || 'Unknown')} ${Forum.timeAgo(thread.last_reply_at)}</span>` : ''}
             </div>
           </div>
           <div class="thread-stats">

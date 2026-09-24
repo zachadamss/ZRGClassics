@@ -5,7 +5,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/script.js");
   eleventyConfig.addPassthroughCopy("src/search.js");
   eleventyConfig.addPassthroughCopy("src/search-index.json");
-  eleventyConfig.addPassthroughCopy("src/tools/invoice.js");
   eleventyConfig.addPassthroughCopy("src/tools/build-calculator.js");
   eleventyConfig.addPassthroughCopy("src/tools/maintenance-tracker.js");
   eleventyConfig.addPassthroughCopy("src/tools/restoration-checklist.js");
