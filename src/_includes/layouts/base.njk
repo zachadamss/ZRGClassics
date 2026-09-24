@@ -20,7 +20,7 @@
     {# Generate dynamic SEO data for vehicle pages #}
     {% if vehicle and vehicles[vehicle] %}
         {% set vehicleData = vehicles[vehicle] %}
-        {% set autoDescription = "Complete " + vehicleData.fullName + " (" + vehicleData.years + ") resource guide: common issues, repair costs, torque specs, parts suppliers, and DIY maintenance guides." %}
+        {% set autoDescription = vehicleData.fullName + " (" + (vehicleData.years | range) + "): " + vehicleData.tagline + " Known problems and repair costs, step-by-step guides, torque specs, and where to buy parts." %}
         {% set autoImage = vehicleData.heroImage %}
     {% endif %}
 
