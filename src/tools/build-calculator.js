@@ -441,11 +441,11 @@
         const row = document.createElement('tr');
         row.dataset.item = `custom-${Date.now()}`;
         row.innerHTML = `
-            <td><input type="text" class="item-name" placeholder="Custom item description"></td>
-            <td><input type="number" class="parts-cost" value="0" min="0" step="10"></td>
-            <td class="shop-only"><input type="number" class="labor-hours" value="0" min="0" step="0.5"></td>
+            <td><input type="text" class="item-name" placeholder="Custom item description" aria-label="Custom item description"></td>
+            <td><input type="number" class="parts-cost" value="0" min="0" step="10" aria-label="Custom item: parts cost"></td>
+            <td class="shop-only"><input type="number" class="labor-hours" value="0" min="0" step="0.5" aria-label="Custom item: labor hours"></td>
             <td class="line-total">$0</td>
-            <td><input type="checkbox" class="include-item" checked></td>
+            <td><input type="checkbox" class="include-item" checked aria-label="Include custom item"></td>
         `;
 
         // Add event listeners

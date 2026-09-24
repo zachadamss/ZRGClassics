@@ -34,6 +34,8 @@ Full record of the September 2026 design and copy review: `docs/site-review-2026
   ```
 - [ ] **Retire the invoice tables** — the Invoice Creator is gone from the site; export anything worth keeping, then run the commented-out `drop table` lines at the bottom of `supabase-migration-security.sql`
 
+- [ ] **Click through the signed-in pages after the redesign** — My Garage, the maintenance tracker, and the restoration tracker picked up the new palette and fonts but couldn't be screenshot-tested without an account.
+
 ## Integrations
 
 - [x] **ConvertKit Newsletter** — Live (Form ID: 9066084, integrated into registration flow)
@@ -53,6 +55,8 @@ Full record of the September 2026 design and copy review: `docs/site-review-2026
 - [ ] **Add inline images** to resource pages (engine bays, problem areas, step photos)
 
 ---
+
+- [ ] **Once real photos exist, decide where they go on the homepage** — the homepage is photo-free by design (blueprint hero, typographic car index). Real, consistent photos could return as a hover preview in the car index or behind the "big jobs" rows.
 
 ## Priority 2: User Experience
 

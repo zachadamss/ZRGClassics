@@ -36,7 +36,7 @@ Design and copy review of zrgclassics.com, and the fixes that came out of it. Wo
 | D1 | Logo: SVG, transparent, Gulf palette | ✅ | Inline SVG lockup (`partials/logo.njk`, `logo-mark.njk`), 911 silhouette in Gulf livery; favicon.svg, apple-touch-icon, og-default.png generated from it. A professional logo can replace these files later. |
 | D2 | Replace emoji icons with a consistent SVG icon set | ✅ | `src/_includes/icons/*.svg` (14 line icons) on homepage, tools hub, 404. |
 | D3 | Lighten hero overlay so the car shows | ✅ | Homepage overlay is a left-to-right gradient; vehicle hero uses a bottom gradient. |
-| D4 | New heading font | ✅ | Archivo (expanded width) for display; Inter for body. |
+| D4 | New heading font | ✅ | Archivo (expanded width) for display; Inter for body. Body font later changed to IBM Plex Sans (see R2). |
 | D5 | Design tokens: type scale, spacing, fix undefined vars (`--text-primary`, `--background`, `--gulf-orange-rgb`) | ✅ | Tokens in `:root`: type scale `--step-*`, spacing `--space-*`, `--gutter`, content widths, fonts; undefined vars now defined. |
 | D6 | Deduplicate conflicting top-level selectors (37 found) | ✅ | 132 selectors scoped to their page (`.garage-page`, `.maintenance-tracker`, `.restoration-checklist`, `.calculator-container`, `.auth-page`, `.forum-page`, …); 90 dead classes removed; 12,046 → ~9,970 lines. |
 | D7 | Homepage order: vehicles higher, newsletter lower, search in hero | ✅ | Hero+search → stats → cars → what's on a car page → garage → forum → newsletter. |
@@ -156,6 +156,21 @@ Second pass over every vehicle file for accuracy and voice. All 137 issue descri
 
 **Voice**: every issue description, variant blurb, and buying tip is now in the first-person tech-editor voice; ALL-CAPS in guide steps changed to sentence case.
 
+## Redesign: "shop manual" (2026-09-24)
+
+The owner approved the homepage concept and asked for a photo-free homepage with its own voice instead of a generic template, carried through the site. Work is on branch `claude/brave-hopper-g4dtnl`.
+
+| ID | Item | Status | Notes |
+|----|------|--------|-------|
+| R1 | Palette: paper, ink, Gulf blue as a field, orange only for the main action | ✅ | New tokens (`--band`, `--surface-sunk`, `--border-strong`); decorative orange borders moved to ink or Gulf blue; headings in ink (warm white in dark mode). |
+| R2 | Type: self-hosted Archivo, IBM Plex Sans, IBM Plex Mono | ✅ | Replaces Google Fonts and Inter. Mono for chassis codes, prices, part numbers, torque values, labels. Two faces preloaded; ~230 KB total. |
+| R3 | Homepage rebuilt without photos | ✅ | Blueprint hero (the logo's 911 drawn as a line, three callouts) with a real job ticket; car-aware search; stats; chassis index (brand tabs on phones); a full real issue card; "the big jobs, priced" on a log-scale cost ruler; garage preview; who-writes-this stamp; "also in the shop"; newsletter. Content from `src/_data/home.js`. |
+| R4 | Header and footer | ✅ | Livery stripe, icon search and theme buttons, Join or My Garage pill, 960px collapse, clip-path drawer; footer with mono car lists. Home and Search left the text nav (logo and icon cover them). |
+| R5 | Site-wide details | ✅ | Numbered section titles; issue cards with neutral mono cost boxes and difficulty by lightness; part numbers formatted BMW/Porsche style; calmer supplier tags; mono table headers; About numbered; 404 "part not in the catalog". |
+| R6 | Search `?car=` | ✅ | Homepage search can target one car; car with no query goes straight to that car's page. |
+| R7 | Accessibility | ✅ | axe (WCAG 2 A/AA) clean on 16 pages, light and dark, 1440px and 390px. Calculator's 164 inputs labeled; skip link, filter buttons, dark-mode link buttons fixed. No sideways scroll from 320px up. |
+| R8 | Logged-in pages (garage, trackers) | 🟡 | Styled through the shared tokens but not screenshot-tested, since they need a signed-in session. Worth a click-through. |
+
 ## Needs owner review
 
 Much shorter now. What's left is judgment calls rather than likely errors:
@@ -175,3 +190,4 @@ Much shorter now. What's left is judgment calls rather than likely errors:
 - **2026-09-23**: site URL switched to `https://www.zrgclassics.com` (Vercel's primary domain) so canonical tags, sitemap, and social links stop pointing at a redirect; About page owner section and "Why ZRG" added.
 - **2026-09-24**: content review pass (accuracy + voice) on branch `content-review`; see "Content review pass" above.
 - **2026-09-24**: SEO pass (PR #6): search-style vehicle titles and tagline-based descriptions; JSON-LD rebuilt with valid encoding plus Article/TechArticle markup (author, car as subject); visible author byline with last-reviewed date; per-car `lastReviewed` drives sitemap `lastmod` and `dateModified`; internal search pages `noindex`; forum thread/category canonical set per URL in JS; hero alt text; Crawl-delay removed.
+- **2026-09-24**: "shop manual" redesign on `claude/brave-hopper-g4dtnl`: photo-free homepage, new header/footer, self-hosted fonts, site-wide palette and type pass, search `?car=` filter, accessibility fixes (see "Redesign" above).

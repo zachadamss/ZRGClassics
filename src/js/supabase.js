@@ -177,15 +177,13 @@ const AuthUI = {
 
     if (user) {
       authLinks.innerHTML = `
-        <a href="/account/garage/" class="nav-link user-link">
-          My Garage
-        </a>
-        <button onclick="Auth.signOut()" class="btn btn-secondary btn-sm">Sign Out</button>
+        <button type="button" onclick="Auth.signOut()" class="nav-text-link">Sign out</button>
+        <a href="/account/garage/" class="nav-pill">My Garage</a>
       `;
     } else {
       authLinks.innerHTML = `
-        <a href="/account/login/" class="btn btn-light btn-sm">Sign In</a>
-        <a href="/account/register/" class="btn btn-primary btn-sm">Join</a>
+        <a href="/account/login/" class="nav-text-link">Sign in</a>
+        <a href="/account/register/" class="nav-pill">Join free</a>
       `;
     }
   },

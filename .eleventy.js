@@ -28,6 +28,7 @@ async function pictureShortcode(src, alt, sizes = "100vw", attrs = {}) {
 module.exports = function(eleventyConfig) {
   // Passthrough copy for static assets
   eleventyConfig.addPassthroughCopy("src/images");
+  eleventyConfig.addPassthroughCopy("src/fonts");
   eleventyConfig.addPassthroughCopy("src/styles.css");
   eleventyConfig.addPassthroughCopy("src/script.js");
   eleventyConfig.addPassthroughCopy("src/search.js");
@@ -41,6 +42,23 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("range", value =>
     String(value || "").replace(/(\d[k+]?)\s*-\s*(\$?\d)/g, "$1–$2")
   );
+
+  // Prices: range dashes plus thousands separators. "$1500-3000" -> "$1,500–3,000"
+  eleventyConfig.addFilter("money", value =>
+    String(value || "")
+      .replace(/(\d[k+]?)\s*-\s*(\$?\d)/g, "$1–$2")
+      .replace(/\d{4,}/g, n => Number(n).toLocaleString("en-US"))
+  );
+
+  // OEM part numbers written the way the parts counter does:
+  // BMW "11311711081" -> "11 31 1 711 081", Porsche "96410519501" -> "964.105.195.01"
+  eleventyConfig.addFilter("partNumber", (value, brand) => {
+    const n = String(value || "");
+    if (!/^\d{11}$/.test(n)) return n;
+    if (brand === "bmw") return `${n.slice(0, 2)} ${n.slice(2, 4)} ${n.slice(4, 5)} ${n.slice(5, 8)} ${n.slice(8)}`;
+    if (brand === "porsche") return `${n.slice(0, 3)}.${n.slice(3, 6)}.${n.slice(6, 9)}.${n.slice(9)}`;
+    return n;
+  });
 
   // "2026-09-24" -> "September 2026"
   eleventyConfig.addFilter("readableDate", value => {

@@ -5,13 +5,22 @@
 // so the page never flashes the wrong theme. This only handles the toggle.
 const themeToggle = document.getElementById('theme-toggle');
 
+function syncThemeToggle() {
+    themeToggle.setAttribute('aria-pressed', document.documentElement.getAttribute('data-theme') === 'dark' ? 'true' : 'false');
+}
+syncThemeToggle();
+
 themeToggle.addEventListener('click', () => {
     const currentTheme = document.documentElement.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
     document.documentElement.setAttribute('data-theme', newTheme);
     try { localStorage.setItem('theme', newTheme); } catch (e) {}
+    syncThemeToggle();
 });
+
+// The header collapses to the menu button at this width (matches styles.css)
+const NAV_BREAKPOINT = 960;
 
 // ================================
 // Mobile Navigation
@@ -83,7 +92,7 @@ document.addEventListener('keydown', (e) => {
 
 // Close nav when window resizes to desktop
 window.addEventListener('resize', () => {
-    if (window.innerWidth > 768 && nav.classList.contains('active')) {
+    if (window.innerWidth > NAV_BREAKPOINT && nav.classList.contains('active')) {
         closeMobileNav();
     }
 });
@@ -98,7 +107,7 @@ dropdowns.forEach(dropdown => {
 
     link.addEventListener('click', (e) => {
         // Check if we're in mobile view
-        if (window.innerWidth <= 768) {
+        if (window.innerWidth <= NAV_BREAKPOINT) {
             e.preventDefault();
 
             // Close other open dropdowns
@@ -128,7 +137,7 @@ nestedDropdowns.forEach(nestedDropdown => {
 
     link.addEventListener('click', (e) => {
         // Only for mobile view
-        if (window.innerWidth <= 768) {
+        if (window.innerWidth <= NAV_BREAKPOINT) {
             e.preventDefault();
             e.stopPropagation();
 
@@ -161,7 +170,7 @@ dropdowns.forEach(dropdown => {
 
     link.addEventListener('touchend', (e) => {
         // Only for desktop-width touch devices
-        if (window.innerWidth > 768 && touchDevice) {
+        if (window.innerWidth > NAV_BREAKPOINT && touchDevice) {
             e.preventDefault();
 
             // Close other touch-opened dropdowns
@@ -183,7 +192,7 @@ nestedDropdowns.forEach(nestedDropdown => {
 
     link.addEventListener('touchend', (e) => {
         // Only for desktop-width touch devices
-        if (window.innerWidth > 768 && touchDevice) {
+        if (window.innerWidth > NAV_BREAKPOINT && touchDevice) {
             e.preventDefault();
             e.stopPropagation();
 
