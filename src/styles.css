@@ -304,6 +304,13 @@ a:hover {
     color: var(--gulf-blue-light);
 }
 
+/* Links inside running text are underlined so they don't rely on color alone */
+:where(#main-content) :where(p) > a:not([class]) {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
 /* ================================
    Site Header
    Paper bar with a Gulf livery stripe on top. Ink text; the only filled
@@ -796,6 +803,14 @@ a:hover {
 }
 
 @media (max-width: 400px) {
+    .site-header {
+        gap: var(--space-1);
+    }
+
+    .header-utils {
+        gap: 0;
+    }
+
     .header-utils .icon-btn {
         border-color: transparent;
     }
@@ -981,6 +996,31 @@ a:hover {
 
     .site-footer {
         margin-top: var(--space-8);
+    }
+}
+
+@media (max-width: 340px) {
+    .site-header .logo-mark {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .parts-table .part-number {
+        white-space: normal;
+    }
+
+    .parts-table th,
+    .specs-table th {
+        letter-spacing: 0.04em;
+    }
+}
+
+@media (max-width: 340px) {
+    .issue-card .parts-table th,
+    .issue-card .parts-table td {
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
     }
 }
 
@@ -1557,6 +1597,17 @@ main {
         max-width: 260px;
         scroll-snap-align: start;
     }
+}
+
+@media (max-width: 480px) {
+    /* .resource-content drops to 0.75rem side padding here; bleed to match */
+    .resource-content .vehicle-grid,
+    .resource-content .vehicle-grid[data-count] {
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
 
     .tool-cards {
         grid-template-columns: 1fr;
@@ -1907,7 +1958,7 @@ button:hover {
 }
 
 [data-theme="dark"] .modal > .modal-content > h3 {
-    color: var(--gulf-blue);
+    color: var(--text-color);
 }
 
 /* ================================
@@ -2043,7 +2094,7 @@ button:hover {
 }
 
 [data-theme="dark"] .resource-content h1 {
-    color: var(--gulf-blue);
+    color: var(--text-color);
 }
 
 .resource-content .subtitle {
@@ -2067,7 +2118,7 @@ button:hover {
 }
 
 [data-theme="dark"] .legal-content h1 {
-    color: var(--gulf-blue);
+    color: var(--text-color);
 }
 
 .legal-updated {
@@ -2091,7 +2142,7 @@ button:hover {
 }
 
 [data-theme="dark"] .legal-section h2 {
-    color: var(--gulf-blue);
+    color: var(--text-color);
     border-bottom-color: var(--gulf-blue);
 }
 
@@ -2119,6 +2170,8 @@ button:hover {
 
 .legal-section a {
     color: var(--link-blue);
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 .legal-section a:hover {
@@ -2196,7 +2249,7 @@ button:hover {
 }
 
 [data-theme="dark"] .issue-card h3 {
-    color: var(--gulf-blue);
+    color: var(--text-color);
 }
 
 .difficulty-badge {
@@ -2234,6 +2287,129 @@ button:hover {
     background-color: var(--gulf-blue);
     border-color: var(--gulf-blue);
     color: var(--ink);
+}
+
+.issue-card .symptoms {
+    font-family: var(--font-body);
+    font-style: italic;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
+    padding: 0.2rem 0 0.2rem 1rem;
+    border-left: 2px solid var(--border-strong);
+    line-height: 1.6;
+}
+
+.issue-card .symptoms strong {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+}
+
+.issue-card .description {
+    font-family: var(--font-body);
+    margin-bottom: 1.25rem;
+    line-height: 1.75;
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+.issue-card .fix h4,
+.issue-card .parts-list h4 {
+    font-family: var(--font-mono);
+    font-stretch: 100%;
+    color: var(--link-blue);
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 0.75rem;
+}
+
+.issue-card .fix ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.issue-card .fix li {
+    font-family: var(--font-body);
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Related Issues Section */
+.issue-card .related-issues {
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.issue-card .related-issues h4 {
+    font-family: var(--font-mono);
+    font-stretch: 100%;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 0.75rem;
+}
+
+.related-issues-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.related-issue-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.4rem 0.75rem;
+    background: transparent;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-full);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.related-issue-link:hover {
+    border-color: var(--text-color);
+}
+
+.related-issue-link .related-brand {
+    color: var(--text-muted);
+}
+
+.related-issue-link .related-model {
+    font-family: var(--font-display);
+    font-stretch: 125%;
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+/* Attribution/Sources */
+.issue-card .attribution {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.issue-card .attribution p {
+    margin: 0;
+}
+
+.issue-card .attribution a {
+    color: var(--link-blue);
+    font-weight: 500;
 }
 
 /* Repair Costs Section */
@@ -2304,12 +2480,6 @@ button:hover {
 
 .issue-card .parts-list h4 {
     margin: 0 0 0.75rem 0;
-    font-size: 0.9rem;
-    color: var(--primary-color);
-}
-
-[data-theme="dark"] .issue-card .parts-list h4 {
-    color: var(--gulf-blue);
 }
 
 .parts-table {
@@ -2409,7 +2579,7 @@ button:hover {
 }
 
 [data-theme="dark"] .coming-soon-container h1 {
-    color: var(--gulf-blue);
+    color: var(--text-color);
 }
 
 .coming-soon-container p {
@@ -2431,7 +2601,7 @@ button:hover {
 }
 
 [data-theme="dark"] .placeholder-content h2 {
-    color: var(--gulf-blue);
+    color: var(--text-color);
 }
 
 /* ================================
@@ -2466,7 +2636,7 @@ button:hover {
 }
 
 [data-theme="dark"] .product h3 {
-    color: var(--gulf-blue);
+    color: var(--text-color);
 }
 
 .product p {
@@ -2541,7 +2711,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 [data-theme="dark"] .search-container h1 {
-    color: var(--gulf-blue);
+    color: var(--text-color);
 }
 
 .search-subtitle {
@@ -2709,6 +2879,41 @@ input:focus, textarea:focus, select:focus {
     border-color: var(--text-color);
 }
 
+/* Car filter note (?car=) */
+.car-filter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1rem;
+    margin: 1rem 0 0;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-left: 3px solid var(--link-blue);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    font-size: 0.95rem;
+}
+
+.car-filter[hidden] {
+    display: none;
+}
+
+.car-filter strong {
+    font-family: var(--font-display);
+    font-stretch: 125%;
+    font-weight: 800;
+}
+
+.search-page .car-filter-clear,
+.search-page .car-filter-clear:hover {
+    padding: 0;
+    background: none;
+    color: var(--link-blue);
+    font: 600 0.95rem var(--font-body);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 /* Search Results */
 .search-results {
     min-height: 200px;
@@ -2736,7 +2941,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 [data-theme="dark"] .no-results h3 {
-    color: var(--gulf-blue);
+    color: var(--text-color);
 }
 
 .no-results ul {
@@ -3430,7 +3635,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 [data-theme="dark"] .resource-category-title {
-    color: var(--gulf-blue);
+    color: var(--text-color);
 }
 
 .resource-icon {
@@ -3554,7 +3759,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 [data-theme="dark"] .guide-card h3 {
-    color: var(--gulf-blue);
+    color: var(--text-color);
 }
 
 .guide-description {
@@ -4608,7 +4813,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 [data-theme="dark"] .supplier-tools-title {
-    color: var(--gulf-blue);
+    color: var(--text-color);
 }
 
 .supplier-tools .tools-list {
@@ -4734,7 +4939,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 [data-theme="dark"] .specs-category h3 {
-    color: var(--gulf-blue);
+    color: var(--text-color);
 }
 
 .specs-table {
@@ -5625,11 +5830,7 @@ input:focus, textarea:focus, select:focus {
     }
 
     .issue-card .repair-costs h4 {
-        font-size: 0.85rem;
-    }
-
-    .cost-comparison {
-        gap: 0.75rem;
+        font-size: 0.72rem;
     }
 
     .cost-item {
@@ -5654,10 +5855,6 @@ input:focus, textarea:focus, select:focus {
     }
 
     /* Mobile parts table */
-    .issue-card .parts-list h4 {
-        font-size: 0.85rem;
-    }
-
     .parts-table {
         font-size: 0.75rem;
     }
@@ -7108,7 +7305,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 [data-theme="dark"] .auth-required h2 {
-    color: var(--gulf-blue);
+    color: var(--text-color);
 }
 
 .auth-required p {
@@ -9247,7 +9444,19 @@ input:focus, textarea:focus, select:focus {
     font-size: clamp(5rem, 14vw, 8rem);
     line-height: 1;
     margin: 0;
-    color: var(--accent-strong);
+    color: transparent;
+    -webkit-text-stroke: 2px var(--link-blue);
+    letter-spacing: 0.02em;
+}
+
+.error-kicker {
+    margin: 0 0 var(--space-4);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--link-blue);
 }
 
 .error-title {
@@ -9388,8 +9597,7 @@ input:focus, textarea:focus, select:focus {
 
 .about-section h2 {
     font-size: var(--step-2);
-    color: var(--primary-color);
-    margin-bottom: var(--space-3);
+    margin-bottom: var(--space-4);
 }
 
 .about-section p {
@@ -10398,7 +10606,7 @@ input:focus, textarea:focus, select:focus {
     font-weight: 600;
 }
 
-.hm .hm-jobs-more a { color: var(--link-blue); }
+.hm .hm-jobs-more a { color: var(--link-blue); text-decoration: none; }
 
 /* --- 04 Garage --- */
 .hm-garage {
@@ -10617,7 +10825,7 @@ input:focus, textarea:focus, select:focus {
     font-weight: 600;
 }
 
-.hm .hm-links a { color: var(--link-blue); }
+.hm .hm-links a { color: var(--link-blue); text-decoration: none; }
 
 /* --- 06 More --- */
 .hm-more .hm-eyebrow {

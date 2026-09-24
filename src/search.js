@@ -6,6 +6,7 @@ let searchIndex = null;
 let searchIndexReady = null;
 let currentFilter = 'all';
 let currentTypeFilter = 'all';
+let currentCar = null; // e.g. 'e30', from ?car= (the homepage search sends it)
 
 // Load search index
 async function loadSearchIndex() {
@@ -70,6 +71,11 @@ function performSearch(query) {
     // Apply type filter
     if (currentTypeFilter !== 'all') {
         allResults = allResults.filter(result => result.type === currentTypeFilter);
+    }
+
+    // Apply car filter (results link to /resources/<brand>/<car>/)
+    if (currentCar) {
+        allResults = allResults.filter(result => (result.item.url || '').includes(`/${currentCar}/`));
     }
 
     return allResults;
@@ -403,6 +409,25 @@ function initSearch() {
         filterBtns.forEach(b => b.classList.remove('active'));
         brandBtn.classList.add('active');
         currentFilter = brandBtn.dataset.filter;
+    }
+
+    // ?car=e30 narrows results to one car until the visitor clears it
+    const carParam = (urlParams.get('car') || '').toLowerCase();
+    const carNote = document.getElementById('car-filter');
+    if (carNote && /^[a-z0-9]{2,4}$/.test(carParam)) {
+        currentCar = carParam;
+        carNote.querySelector('[data-car-name]').textContent = carParam.toUpperCase();
+        carNote.hidden = false;
+        carNote.querySelector('button').addEventListener('click', () => {
+            currentCar = null;
+            carNote.hidden = true;
+            const params = new URLSearchParams(window.location.search);
+            params.delete('car');
+            history.replaceState(null, '', `${window.location.pathname}${params.toString() ? '?' + params : ''}`);
+            if (searchInput.value.trim()) {
+                renderResults(performSearch(searchInput.value), searchInput.value);
+            }
+        });
     }
 
     const queryParam = urlParams.get('q');
