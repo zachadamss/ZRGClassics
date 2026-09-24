@@ -10,7 +10,6 @@
     "N54 3.0L Twin-Turbo I6",
     "N55 3.0L Turbo I6",
     "N46 2.0L I4",
-    "N20 2.0L Turbo I4",
     "S65 4.0L V8 (M3)"
   ],
   "heroImage": "/images/vehicles/e90-hero.jpg",
@@ -24,13 +23,13 @@
       "id": "water-pump-thermostat",
       "title": "Electric Water Pump and Thermostat Failure",
       "symptoms": "Overheating, coolant warning, reduced power mode, water pump whining, engine shut down",
-      "description": "The E90 generation was the first to use BMW's electric water pump and electronic thermostat. Both components have high failure rates, typically between 60,000-100,000 miles. When the water pump fails, there is no warning—the engine can overheat rapidly. The pump may also become noisy before complete failure. These are considered wear items requiring proactive replacement.",
+      "description": "The E90's sixes use an electric water pump and an electronically controlled thermostat, and both are wear items. Pumps typically fail somewhere between 60,000 and 100,000 miles, often with little warning: a warning light, then limp mode, then overheating if you keep driving. Some get noisy first. Replace the pump and thermostat together, and use a genuine or original-supplier pump.",
       "fixes": [
         "Proactive water pump replacement at 80,000 miles",
         "Replace thermostat at the same time",
-        "Use OEM or quality German-made parts (Pierburg/VDO)",
+        "Use oem or quality German-made parts (Pierburg/vdo)",
         "Don't ignore any coolant warning lights",
-        "Consider replacing when doing timing chain service (N20/N54/N55)"
+        "Consider replacing when doing timing chain service (N54/N55)"
       ],
       "sources": [
         { "name": "E90Post", "url": "https://www.e90post.com/forums/" },
@@ -39,7 +38,7 @@
       "repairCosts": {
         "diy": "$200-400",
         "shop": "$600-1200",
-        "notes": "Electric water pump on N52/N54. Thermostat often done together."
+        "notes": "Do the thermostat with the pump."
       },
       "parts": [
         { "name": "Electric Water Pump (N52)", "partNumber": "11517586925", "price": "$300-500" },
@@ -52,7 +51,7 @@
       "id": "oil-leaks",
       "title": "Oil Leaks (Valve Cover and Oil Filter Housing)",
       "symptoms": "Oil smell, visible oil on engine, oil spots under car, smoke from engine bay, low oil warning",
-      "description": "The E90's N52 and N5x engines develop oil leaks as they age. The valve cover gasket is a very common leak point due to the plastic valve cover warping from heat. The oil filter housing gasket (OFHG) is another common leak point that can drip oil onto hot exhaust components, creating fire risk and smoke.",
+      "description": "Two leaks show up on almost every N52, N54, and N55 eventually. The plastic valve cover warps and its gasket leaks, and the oil filter housing gasket drips onto the exhaust and the accessory belt. Burning oil smell or smoke from under the hood after a drive usually means one of these.",
       "fixes": [
         "Valve cover gasket replacement—consider replacing entire valve cover (plastic warps)",
         "Oil filter housing gasket—common leak, relatively accessible",
@@ -67,7 +66,7 @@
       "repairCosts": {
         "diy": "$100-300",
         "shop": "$300-700",
-        "notes": "Valve cover and oil filter housing gaskets common."
+        "notes": "Valve cover and oil filter housing are the common ones."
       },
       "parts": [
         { "name": "Valve Cover Gasket (N52)", "partNumber": "11127552281", "price": "$40-80" },
@@ -80,7 +79,7 @@
       "id": "hpfp-failure",
       "title": "High Pressure Fuel Pump Failure (N54/N55)",
       "symptoms": "Long crank time, rough idle, loss of power, engine stalling, check engine light, limp mode",
-      "description": "The N54 and early N55 engines use a mechanical high-pressure fuel pump (HPFP) driven by the intake camshaft. Early versions were prone to failure, causing drivability issues or complete stalling. BMW extended warranty coverage on early pumps. Later revisions improved reliability.",
+      "description": "The N54's high-pressure fuel pump, driven off the camshaft, was a known failure on early cars: long cranks, stumbling, limp mode, or stalling. BMW updated the pump and extended its warranty, which has now run out on almost every car. If you're buying an N54, ask whether the pump has been replaced with the updated version.",
       "fixes": [
         "Check for updated HPFP part number (several revisions exist)",
         "Replace with latest revision pump if experiencing issues",
@@ -94,7 +93,7 @@
       "repairCosts": {
         "diy": "$400-700",
         "shop": "$700-1200",
-        "notes": "N54 only. High pressure fuel pump failure causes rough running."
+        "notes": "Mostly N54. Check whether it has the updated pump."
       },
       "parts": [
         { "name": "High Pressure Fuel Pump", "partNumber": "13517616170", "price": "$400-700" }
@@ -105,7 +104,7 @@
       "id": "injector-issues",
       "title": "Fuel Injector Problems (N54/N55)",
       "symptoms": "Rough idle, misfires, check engine light, poor fuel economy, hesitation",
-      "description": "The direct injection N54 engine is known for fuel injector issues, including leaking and failure to atomize fuel properly. The piezoelectric injectors are expensive and can fail individually or multiple at once. Index 12 injectors are the latest revision with improved reliability. N55 injectors are generally more reliable but can still fail.",
+      "description": "The N54's piezo injectors can leak or spray badly, causing misfires, rough cold starts, and in bad cases fuel in the oil. They're expensive, and they can fail one at a time or several at once. Index 12 is the latest revision and the one to fit. The N55's solenoid injectors are more dependable.",
       "fixes": [
         "Replace failed injectors with latest index revision (Index 12 for N54)",
         "Replace all injectors at once if multiple failures (common on N54)",
@@ -120,7 +119,7 @@
       "repairCosts": {
         "diy": "$300-600",
         "shop": "$600-1200",
-        "notes": "N54 piezo injectors. Replace as set if multiple fail."
+        "notes": "Replace as a set if more than one has failed."
       },
       "parts": [
         { "name": "Fuel Injector (Index 12)", "partNumber": "13538616079", "price": "$80-120 each" },
@@ -132,13 +131,12 @@
       "id": "vanos-issues",
       "title": "VANOS Solenoid and System Issues",
       "symptoms": "Rough idle, loss of power, engine rattle, check engine light, fault codes for VANOS",
-      "description": "All E90 engines use VANOS variable valve timing. The VANOS solenoids can fail or become clogged with oil sludge, especially with extended oil change intervals. The N54 and N55 also have VANOS-related issues with the adjustment units themselves, including the bolts backing out and damaging components.",
+      "description": "Every E90 engine uses double VANOS, and the solenoids are the usual failure. They stick or clog with sludge, especially on cars run to long oil change intervals, which gives you a rough idle and cam timing codes. Cleaning or replacing the solenoids fixes most cases.",
       "fixes": [
         "Replace VANOS solenoids (relatively inexpensive service)",
         "Clean VANOS system if sludge buildup suspected",
         "Use quality oil and don't exceed oil change intervals",
-        "N54/N55: VANOS bolt recall—verify upgrade bolts installed",
-        "Timing chain tensioner service may be needed (N20)"
+        "N54/N55: VANOS bolt recall—verify upgrade bolts installed"
       ],
       "sources": [
         { "name": "Beisan Systems", "url": "https://www.beisansystems.com/" },
@@ -147,7 +145,7 @@
       "repairCosts": {
         "diy": "$100-200",
         "shop": "$250-500",
-        "notes": "Solenoid failures cause rough idle and codes."
+        "notes": "Solenoids cause rough idle and codes."
       },
       "parts": [
         { "name": "VANOS Solenoid (N52)", "partNumber": "11367585425", "price": "$100-180" },
@@ -165,11 +163,11 @@
       "id": "wastegate-rattle",
       "title": "Turbo Wastegate Rattle (N54)",
       "symptoms": "Rattling noise on cold start, rattle under load, metallic rattling from engine bay",
-      "description": "The N54's twin turbochargers develop wastegate rattle due to wear in the wastegate actuator mechanism. The rattle is typically worst on cold startup and may diminish when warm. While the turbos still function with this rattle, it indicates wear that will eventually require turbo replacement or rebuild.",
+      "description": "The N54's twin turbos develop a rattle from worn wastegate linkage, loudest on a cold start and at light throttle. At first it's mostly noise and the turbos keep working. If it's joined by boost problems or oil smoke, the turbos themselves are on the way out, and they're usually replaced as a pair.",
       "fixes": [
         "Wastegate actuator replacement or adjustment (temporary fix)",
         "Turbo rebuild with upgraded wastegate components",
-        "Turbo replacement (OEM or upgraded aftermarket units)",
+        "Turbo replacement (oem or upgraded aftermarket units)",
         "Upgraded pure turbos or Vargas units for performance builds"
       ],
       "sources": [
@@ -179,7 +177,7 @@
       "repairCosts": {
         "diy": "$800-1500",
         "shop": "$2000-4000",
-        "notes": "N54 turbos. Wastegate rattle common. Replacement often in pairs."
+        "notes": "Usually replaced in pairs when it gets to that point."
       },
       "parts": [
         { "name": "Turbocharger (each)", "partNumber": "11657649291", "price": "$600-1000" },
@@ -191,7 +189,7 @@
       "id": "carbon-buildup",
       "title": "Carbon Buildup on Intake Valves (Direct Injection Engines)",
       "symptoms": "Rough idle, misfires, reduced power, poor fuel economy, hesitation",
-      "description": "All direct injection engines (N54, N55, N20) are susceptible to carbon buildup on the intake valves. Because fuel is injected directly into the cylinder rather than onto the valves, there is no fuel washing the valves clean. Over time, carbon deposits accumulate, affecting airflow and performance. Walnut blasting is the standard solution.",
+      "description": "On the direct-injected N54 and N55, fuel goes straight into the cylinder, so nothing washes the back of the intake valves. Carbon builds up, restricts airflow, and causes rough running and misfires. Walnut blasting cleans it off, and the N54 typically needs it every 50,000 to 60,000 miles.",
       "fixes": [
         "Walnut shell blasting every 50,000-80,000 miles",
         "Chemical treatments (less effective but less invasive)",
@@ -206,7 +204,7 @@
       "repairCosts": {
         "diy": "$150-300",
         "shop": "$400-800",
-        "notes": "N54 direct injection. Walnut blasting required every 50-60k."
+        "notes": "Walnut blasting, usually every 50,000–60,000 miles on the N54."
       },
       "parts": [
         { "name": "Walnut Media", "price": "$30-50" },
@@ -218,7 +216,7 @@
       "id": "rod-bearings",
       "title": "Rod Bearing Wear (S65 M3)",
       "symptoms": "Knocking noise, engine rattle, low oil pressure, metal in oil",
-      "description": "The S65 V8 in the E90/E92/E93 M3 has a known rod bearing wear issue. The factory bearings can wear prematurely, especially with track use or aggressive driving. If caught early, bearings can be replaced. If ignored, bearing failure leads to catastrophic engine damage. Oil analysis is crucial for monitoring.",
+      "description": "The M3's S65 V8 wears its rod bearings early, especially with track use or hard revving before it's warm. Caught early, it's a bearing job. Ignored, it's an engine. Most owners replace them preventively, or at purchase if there's no record, and send oil samples in between.",
       "fixes": [
         "Regular oil analysis to catch bearing wear early (a must on an M3)",
         "Proactive rod bearing replacement (BE bearings recommended)",
@@ -233,7 +231,7 @@
       "repairCosts": {
         "diy": "$500-1000",
         "shop": "$2500-4500",
-        "notes": "S65 V8 (M3) only. Preventive replacement recommended."
+        "notes": "M3 only. Preventive replacement recommended."
       },
       "parts": [
         { "name": "Rod Bearing Set (ACL)", "price": "$150-300" },
@@ -243,13 +241,12 @@
     },
     {
       "id": "timing-chain",
-      "title": "Timing Chain and Guide Issues (N20/N54/N55)",
+      "title": "Timing Chain and Guide Issues (N54/N55)",
       "symptoms": "Timing chain rattle, rough running, check engine light, chain stretch codes, failure to start",
-      "description": "The N20 four-cylinder engine has documented timing chain stretch and guide wear issues, sometimes at relatively low mileage. The N54 and N55 six-cylinders can also have chain and guide wear at high mileage. Ignoring chain stretch can lead to jumped timing and engine damage.",
+      "description": "The N54 and N55 can stretch their timing chains and wear the guides at high mileage. A rattle on startup and cam correlation codes are the warnings. Left alone, the timing can jump.",
       "fixes": [
         "Monitor for timing chain stretch via diagnostic codes",
         "Replace chain, guides, and tensioner as a kit",
-        "N20: Known issue—may be covered under BMW's extended coverage",
         "Consider proactive replacement on high-mileage N54/N55",
         "Replace water pump and thermostat while apart"
       ],
@@ -260,7 +257,7 @@
       "repairCosts": {
         "diy": "$400-800",
         "shop": "$1500-3000",
-        "notes": "N54/N55 timing chain stretch. Often guides and tensioner too."
+        "notes": "Chain, guides, and tensioner are usually done together."
       },
       "parts": [
         { "name": "Timing Chain Kit", "price": "$300-500" },
@@ -316,7 +313,7 @@
         "Use spring compressor to disassemble strut and replace mount/bearing.",
         "Install new front components with correct torque specs.",
         "For rear suspension: support trailing arm before removing bolts.",
-        "For RTAB replacement: remove trailing arm rear bolt, press out old bushings.",
+        "For rtab replacement: remove trailing arm rear bolt, press out old bushings.",
         "Press new RTABs into trailing arm—note orientation.",
         "Remove and replace rear control arms as needed.",
         "Reassemble all components—torque bushings at ride height.",
@@ -331,7 +328,7 @@
         "The E92 M3 uses a different rear subframe design—verify part compatibility."
       ],
       "warnings": [
-        "RTAB replacement requires a special press tool—don't attempt with hammers.",
+        "rtab replacement requires a special press tool—don't attempt with hammers.",
         "Worn RTABs cause dangerous rear-end instability—don't delay repairs.",
         "Spring compressors are dangerous—follow tool instructions exactly.",
         "Never strike ball joints directly—use proper separator tools.",
@@ -455,7 +452,7 @@
         "For VANOS solenoid replacement: locate solenoids on cylinder head.",
         "Disconnect connector, remove mounting bolt, replace O-rings on new solenoid.",
         "For battery replacement: note that E90 requires registration in DME.",
-        "Remove old battery, install new, register using ISTA or compatible tool.",
+        "Remove old battery, install new, register using ista or compatible tool.",
         "Unregistered battery causes improper charging and reduced battery life.",
         "For eccentric shaft sensor (N52): located on rear of cylinder head.",
         "Remove electrical connector and sensor bolt, install new with fresh seal.",
@@ -467,9 +464,9 @@
       ],
       "tips": [
         "E90 requires proper diagnostic software—generic OBD2 scanners miss many faults.",
-        "Battery MUST be registered after replacement or it will overcharge and fail early.",
+        "Battery must be registered after replacement or it will overcharge and fail early.",
         "Ignition coil failure is common—misfires often traced to coils.",
-        "VANOS solenoids should be OEM—aftermarket quality varies significantly.",
+        "VANOS solenoids should be oem—aftermarket quality varies significantly.",
         "The N54 engine has many electrical components—systematic diagnosis is key."
       ],
       "warnings": [
@@ -841,14 +838,15 @@
         "Install the new filter element onto the center post.",
         "Lubricate the new O-ring with fresh oil and seat it in the cap groove.",
         "Reinstall the filter cap and torque to 25 ft-lbs (34 Nm).",
-        "Add oil: 6.5 quarts (N52), 7.0 quarts (N54/N55). Use 5W-30 BMW LL-01.",
+        "Add oil: 6.5 quarts (N52), 7.0 quarts (N54/N55). Use 5W-30 bmw ll-01.",
         "Start engine, check for leaks, shut off and verify level after 2 minutes."
       ],
       "tips": [
         "The E90 uses a cartridge filter—the housing stays on the engine.",
         "Always replace the O-ring to prevent leaks from the filter housing cap.",
         "N54/N55 turbo engines benefit from 0W-40 in extreme temperatures."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "brake-pads",
@@ -883,13 +881,14 @@
         "Install new wear sensor into the inner pad (sensors are typically one-time use).",
         "Pivot caliper down and reinstall guide pins to 22 ft-lbs (30 Nm).",
         "Reconnect wear sensor, reinstall wheel, torque lugs to 89 ft-lbs (120 Nm).",
-        "Reset brake pad wear indicator using ISTA or compatible diagnostic tool."
+        "Reset brake pad wear indicator using ista or compatible diagnostic tool."
       ],
       "tips": [
         "E90 electronic wear sensors are usually on front left and rear right.",
-        "After replacement, reset the CBS (Condition Based Service) brake indicator.",
+        "After replacement, reset the cbs (Condition Based Service) brake indicator.",
         "Bed new pads with 5-10 moderate stops from 30 mph before driving normally."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "spark-plugs",
@@ -926,9 +925,10 @@
       ],
       "tips": [
         "N54 uses 6 spark plugs; the N52 uses 6 spark plugs—one per cylinder.",
-        "Use NGK or Bosch OEM-equivalent plugs for best results.",
+        "Use ngk or Bosch oem-equivalent plugs for best results.",
         "Inspect ignition coils while replacing plugs—replace if cracked or worn."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "oil-filter-housing",
@@ -970,7 +970,8 @@
         "Oil dripping onto the exhaust can cause smoke and fire—don't delay this repair.",
         "Some kits include the oil cooler gaskets—inspect and replace if questionable.",
         "Check the eccentric shaft sensor seal (N52) while you have access."
-      ]
+      ],
+      "warnings": []
     }
   ],
   "restorationItems": {
@@ -979,7 +980,7 @@
       { "id": "e90-thermostat", "name": "Replace electronic thermostat", "description": "Replace with water pump" },
       { "id": "e90-ofhg", "name": "Replace oil filter housing gasket", "description": "Common leak on N52/N54" },
       { "id": "e90-valve-cover", "name": "Replace valve cover gasket", "description": "Oil leak source" },
-      { "id": "e90-timing-chain", "name": "Inspect/replace timing chain (N20/N54/N55)", "description": "Chain stretch and guide wear" },
+      { "id": "e90-timing-chain", "name": "Inspect/replace timing chain (N54/N55)", "description": "Chain stretch and guide wear" },
       { "id": "e90-rod-bearings", "name": "Replace rod bearings (S65 M3)", "description": "Key M3 maintenance item" }
     ],
     "cooling": [
@@ -1031,13 +1032,13 @@
       {
         "name": "335i",
         "years": "2007-2013",
-        "description": "The turbocharged model with N54 (2007-2010) or N55 (2011-2013) producing 300-300 hp. Serious performance potential but requires more maintenance.",
+        "description": "The turbocharged 335i: the twin-turbo N54 through 2010, then the single twin-scroll N55, both rated at 300 hp. Huge potential, but more maintenance than the 328i.",
         "desirability": "High"
       },
       {
         "name": "335is",
         "years": "2011-2013",
-        "description": "Special edition with N54 engine producing 320 hp, 7-speed DCT available, and M Sport styling. Limited production.",
+        "description": "The N54 with 320 hp, extra cooling, a seven-speed DCT option, and M Sport styling. Coupe and convertible only, and a limited run.",
         "desirability": "High"
       },
       {
@@ -1049,7 +1050,7 @@
       {
         "name": "328xi / 335xi",
         "years": "2007-2013",
-        "description": "All-wheel drive variants. xDrive system is sophisticated but adds weight and complexity.",
+        "description": "All-wheel drive (called xi, then xDrive). Great in bad weather, but heavier and more complex.",
         "desirability": "Medium"
       }
     ],
@@ -1195,16 +1196,16 @@
       "fuel": "18-26 MPG depending on model"
     },
     "expertTips": [
-      "The 328i with N52 engine is the most reliable option for daily driving",
-      "N54 335i is a tuner's dream but requires diligent maintenance",
-      "N55 335i (2011+) addressed many N54 reliability issues—prefer it for a driver",
-      "M3 rod bearing service is mandatory—verify completion or budget immediately",
-      "The M3's S65 V8 is one of the greatest engines BMW has ever made—worth the maintenance",
-      "Electric water pump failure can happen without warning—some owners replace preventatively",
-      "HPFP extended warranty only applies to original owner—factor this into used purchase",
-      "The 335is combines N54 power with 335i reliability updates—rare but desirable",
-      "DCT in the M3 is excellent when maintained but manual is more engaging",
-      "E90 suspension components are wear items—budget for bushings and control arms"
+      "The 328i with the N52 is the most dependable daily driver of the bunch.",
+      "The N54 335i is a tuner's dream if you keep up with its maintenance.",
+      "The N55 335i (2011 on) fixed many of the N54's problems. It's the better pick for a daily driver.",
+      "On an M3, rod bearings aren't optional. Confirm they've been done or budget for them right away.",
+      "The S65 V8 is one of the best engines BMW has built, and worth the upkeep.",
+      "Electric water pumps fail with little warning, so a lot of owners replace them preventively.",
+      "BMW's extended HPFP warranty has expired on almost every car. Ask whether the pump has been updated.",
+      "The 335is adds power and extra cooling to the N54. Rare and desirable.",
+      "The M3's DCT is excellent when maintained, but the manual is more engaging.",
+      "Budget for bushings and control arms. At this age they're due."
     ]
   },
   "communityResources": {

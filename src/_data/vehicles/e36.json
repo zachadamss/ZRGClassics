@@ -24,12 +24,12 @@
       "id": "cooling-system",
       "title": "Cooling System Failures",
       "symptoms": "Overheating, coolant leaks, temperature gauge pegged high, steam from engine bay, heater blowing cold",
-      "description": "The E36 cooling system is fragile, and keeping it healthy matters more than anything else on the car. BMW used plastic components that become brittle with heat cycles and age. The expansion tank, thermostat housing, water pump impeller, and radiator end tanks are all prone to failure. A cooling system failure can quickly lead to head gasket damage or a warped head.",
+      "description": "If you only fix one thing on an E36, make it the cooling system. BMW used plastic parts that go brittle with heat and age: the expansion tank, thermostat housing, water pump impeller, and radiator end tanks. When one lets go the engine overheats fast, and a warped head or blown head gasket follows. Replace them all together, before they fail.",
       "fixes": [
         "Replace expansion tank every 60,000 miles or at first sign of cracking",
         "Replace thermostat and housing (upgrade to aluminum housing available)",
         "Install water pump with metal impeller (plastic impellers can shatter)",
-        "Replace radiator with aluminum or new OEM unit",
+        "Replace radiator with aluminum or new oem unit",
         "Replace all coolant hoses during major service",
         "Consider doing a full cooling system refresh preventatively"
       ],
@@ -40,7 +40,7 @@
       "repairCosts": {
         "diy": "$250-400",
         "shop": "$600-1200",
-        "notes": "Full refresh recommended. Replace all plastic components together."
+        "notes": "Replace all the plastic parts at once."
       },
       "parts": [
         { "name": "Water Pump", "partNumber": "11517527799", "price": "$60-100" },
@@ -60,7 +60,7 @@
       "id": "vanos",
       "title": "VANOS System Issues (M50TU/M52)",
       "symptoms": "Rough idle, loss of low-end torque, engine rattle at startup, hesitation between 2500-3500 RPM",
-      "description": "The E36 with M50TU and M52 engines uses BMW's Single VANOS variable valve timing system. The VANOS unit's seals harden and fail over time, leading to oil leaks and loss of proper valve timing. The VANOS piston seals and the oil supply line seals are the most common failure points.",
+      "description": "The M50TU and M52 use single VANOS on the intake cam. The seals inside harden and leak with age, so cam timing stops adjusting properly: you'll feel a soft bottom end, a rougher idle, and sometimes a rattle. The piston seals and the oil supply line seals are the usual failures, and a seal kit fixes most cars.",
       "fixes": [
         "Replace VANOS seals with upgraded Viton seal kit",
         "Replace VANOS oil line O-rings",
@@ -74,7 +74,7 @@
       "repairCosts": {
         "diy": "$80-150",
         "shop": "$300-600",
-        "notes": "Single VANOS on M50TU/M52. Seal kit is most common fix."
+        "notes": "A seal kit is the usual fix."
       },
       "parts": [
         { "name": "VANOS Seal Kit (Beisan)", "partNumber": "BS030", "price": "$80-100" },
@@ -93,11 +93,11 @@
       "id": "rtab",
       "title": "Rear Trailing Arm Bushing (RTAB) Failure",
       "symptoms": "Clunking from rear over bumps, vague rear-end feel, rear tire wear on inside edge, visible bushing deterioration",
-      "description": "The rear trailing arm bushings on the E36 are a well-known weak point. These bushings support the rear suspension and when they wear out, they allow excessive movement of the rear wheels. This affects handling, causes accelerated tire wear, and can make the car feel loose or unpredictable in corners.",
+      "description": "The rear trailing arm bushings (RTABs) are the E36's best-known weak spot. When they wear, the rear wheels steer themselves over bumps and under power, and the car feels loose and unpredictable in corners. New bushings bring back the stability, but you need the press tool.",
       "fixes": [
-        "Replace with OEM rubber bushings (softer ride, will wear again)",
+        "Replace with oem rubber bushings (softer ride, will wear again)",
         "Upgrade to polyurethane or Delrin bushings (longer lasting, slightly harsher)",
-        "Consider RTAB limiter kit to reduce deflection",
+        "Consider rtab limiter kit to reduce deflection",
         "Get an alignment after replacement",
         "Check rear subframe mounts at the same time"
       ],
@@ -108,7 +108,7 @@
       "repairCosts": {
         "diy": "$100-200",
         "shop": "$400-700",
-        "notes": "Budget for alignment after replacement. Both sides recommended."
+        "notes": "Do both sides, then get an alignment."
       },
       "parts": [
         { "name": "RTAB Bushing (OEM)", "partNumber": "33326770824", "price": "$25-40" },
@@ -121,7 +121,7 @@
       "id": "window-regulator",
       "title": "Window Regulator Failure",
       "symptoms": "Window drops into door, grinding noise during operation, window moves slowly or crooked, clicking sounds",
-      "description": "E36 window regulators use plastic clips and guides that fail over time. When the clips break, the window can drop into the door panel. This is especially common on driver's side windows due to more frequent use.",
+      "description": "E36 window regulators use plastic clips and guides that break, and when they do the glass drops into the door. The driver's side goes first because it gets used the most. It's an easy afternoon DIY.",
       "fixes": [
         "Replace entire window regulator assembly",
         "Some owners replace just the plastic clips (temporary fix)",
@@ -135,7 +135,7 @@
       "repairCosts": {
         "diy": "$60-120",
         "shop": "$200-350",
-        "notes": "Per window. Common DIY job."
+        "notes": "Per window. Easy DIY."
       },
       "parts": [
         { "name": "Window Regulator (Front Left)", "partNumber": "51338201465", "price": "$60-100" },
@@ -153,9 +153,9 @@
       "id": "oil-leaks",
       "title": "Oil Leaks",
       "symptoms": "Oil spots under car, burning oil smell, visible oil on engine, low oil level between changes",
-      "description": "E36s are known for developing oil leaks from several common locations. The valve cover gasket, oil filter housing gasket (OFHG), oil pan gasket, and rear main seal are all common leak points. The OFHG is a particularly common culprit and can leak onto the serpentine belt.",
+      "description": "The usual leak points are the valve cover gasket, oil filter housing gasket, oil pan, and rear main seal. The oil filter housing gasket is the one to watch: it drips onto the accessory belt, and a soaked belt can fail.",
       "fixes": [
-        "Replace valve cover gasket (easy DIY job)",
+        "Replace valve cover gasket (easy diy job)",
         "Replace oil filter housing gasket (common and important)",
         "Replace VANOS line O-rings (often done with OFHG)",
         "Replace oil pan gasket (requires lifting engine slightly)",
@@ -168,7 +168,7 @@
       "repairCosts": {
         "diy": "$150-300",
         "shop": "$400-800",
-        "notes": "Valve cover gasket is easiest. Oil filter housing and pan require more labor."
+        "notes": "The valve cover is easy. The oil filter housing and pan take longer."
       },
       "parts": [
         { "name": "Valve Cover Gasket", "partNumber": "11129070531", "price": "$25-50" },
@@ -182,10 +182,10 @@
       "id": "control-arm-bushings",
       "title": "Control Arm Bushings",
       "symptoms": "Steering wheel vibration, clunking over bumps, pulling to one side, uneven front tire wear",
-      "description": "The E36 front suspension uses control arms with pressed-in bushings that wear over time. The lower control arm bushings are the most common failure point. Worn bushings cause imprecise steering, vibration, and accelerated tire wear.",
+      "description": "The front lower control arm bushings wear out and let the arm move, which you feel as vague steering, a shimmy under braking, and uneven tire wear. Replace them in pairs, and the ball joints too if they're original.",
       "fixes": [
         "Replace complete control arms (bushings are pressed in)",
-        "OEM bushings for stock feel, or polyurethane for performance",
+        "oem bushings for stock feel, or polyurethane for performance",
         "Consider M3 control arms for track use (different geometry)",
         "Alignment is required after replacement",
         "Inspect ball joints while control arms are out"
@@ -197,7 +197,7 @@
       "repairCosts": {
         "diy": "$150-300",
         "shop": "$400-700",
-        "notes": "Replace in pairs. Alignment required after."
+        "notes": "Replace in pairs, then align."
       },
       "parts": [
         { "name": "Control Arm (Lower Left)", "partNumber": "31121139991", "price": "$50-80" },
@@ -211,7 +211,7 @@
       "id": "ignition-system",
       "title": "Ignition System Failures",
       "symptoms": "Misfires, rough idle, poor fuel economy, check engine light, hesitation under load",
-      "description": "The E36's ignition system components wear out and can cause running issues. The ignition coils, spark plugs, plug wires (on earlier models), and crankshaft position sensor are common failure points.",
+      "description": "Coils, spark plugs, and the crankshaft position sensor are the usual causes of misfires and stalling on the six-cylinder cars. A failing crank sensor often shows up as a hot no-start.",
       "fixes": [
         "Replace spark plugs every 30,000-60,000 miles",
         "Replace ignition coils if misfiring",
@@ -226,7 +226,7 @@
       "repairCosts": {
         "diy": "$100-250",
         "shop": "$200-450",
-        "notes": "Replace all coils and plugs together for best results."
+        "notes": "Replace coils and plugs as a set."
       },
       "parts": [
         { "name": "Ignition Coil", "partNumber": "12131703228", "price": "$25-50" },
@@ -282,9 +282,9 @@
         "Control arms: Remove the two 18mm bolts and replace entire arm (bushings are pressed in).",
         "Reinstall components—torque strut tower nuts to 25 ft-lbs, pinch bolts to 81 ft-lbs.",
         "Rear suspension— RTABs: This is the E36 suspension repair that matters most.",
-        "Support the trailing arm with a jack. Remove the 19mm RTAB center bolt.",
-        "Use a RTAB press tool to remove the old bushing—this requires significant force.",
-        "Press in the new RTAB bushing with the proper tool. Most parts stores rent one.",
+        "Support the trailing arm with a jack. Remove the 19mm rtab center bolt.",
+        "Use a rtab press tool to remove the old bushing—this requires significant force.",
+        "Press in the new rtab bushing with the proper tool. Most parts stores rent one.",
         "For subframe bushings: Support the subframe, remove mounting bolts, and press in new bushings.",
         "Rear shocks: Remove the trunk liner to access upper mounts (two 13mm nuts).",
         "Remove lower shock bolt (18mm) and swap shock. Torque upper to 16 ft-lbs, lower to 74 ft-lbs.",
@@ -292,11 +292,11 @@
         "Reinstall the wheels and lower the car. Get an alignment within 50 miles."
       ],
       "tips": [
-        "Don't attempt this without the RTAB press tool. Most auto parts stores rent one.",
-        "Meyle HD RTABs are pre-pressed in a sleeve for easier installation than OEM.",
+        "Don't attempt this without the rtab press tool. Most auto parts stores rent one.",
+        "Meyle HD RTABs are pre-pressed in a sleeve for easier installation than oem.",
         "Mark eccentric bolt positions before removal to preserve approximate alignment.",
         "The E36 M3 has different subframe mounting—use correct parts.",
-        "Powerflex bushings offer more precision but transmit more NVH.",
+        "Powerflex bushings offer more precision but transmit more nvh.",
         "If RTABs are severely worn, inspect the trailing arm mounting points for cracks."
       ],
       "warnings": [
@@ -370,7 +370,7 @@
         "Convertible E36s have different rocker structure—use correct panels.",
         "Clean the sunroof drain tubes—clogged drains cause A/B pillar rust.",
         "European Klokkerholm panels are best quality; avoid cheap Chinese reproductions.",
-        "POR-15 is excellent but must be applied over prepared metal or converter.",
+        "por-15 is excellent but must be applied over prepared metal or converter.",
         "Battery tray rust is common—inspect even if other areas look good."
       ],
       "warnings": [
@@ -430,7 +430,7 @@
         "Instrument cluster pixels: Remove cluster surround (2 screws) and cluster (4 screws).",
         "Disconnect electrical connectors and remove cluster from vehicle.",
         "Open the cluster case (small clips around edges).",
-        "Locate the failed ribbon cable connection at the LCD display.",
+        "Locate the failed ribbon cable connection at the lcd display.",
         "Heat the old ribbon with a soldering iron to remove, clean area.",
         "Apply new ribbon cable and heat with soldering iron to bond. Apply even pressure.",
         "Reassemble and test before reinstalling in vehicle.",
@@ -439,7 +439,7 @@
         "Clean mounting hole, apply anti-seize to new sensor, and install.",
         "Final stage resistor: Located behind glovebox on the blower motor housing.",
         "Remove glovebox for access (3 screws). Unplug connector.",
-        "Remove two screws holding FSR. Install new unit with thermal paste on contact surface."
+        "Remove two screws holding fsr. Install new unit with thermal paste on contact surface."
       ],
       "tips": [
         "The pixel repair requires patience—practice on scrap electronics first.",
@@ -840,7 +840,8 @@
         "BMW E36s use a cartridge-style oil filter—never install the metal canister type.",
         "Always replace the O-ring on the filter housing cap to prevent leaks.",
         "The oil filter housing gasket is a common leak point—inspect while changing oil."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "valve-cover-gasket",
@@ -868,7 +869,7 @@
         "Clean the spark plug tube seal areas thoroughly.",
         "Install the new gasket onto the valve cover—it should snap into the groove.",
         "Install new spark plug tube seals (often included with gasket kit).",
-        "Apply a small dab of RTV at the corners where the timing cover meets the head (optional but recommended).",
+        "Apply a small dab of rtv at the corners where the timing cover meets the head (optional but recommended).",
         "Place valve cover back on the head, ensuring gasket is properly seated.",
         "Install bolts finger-tight, then torque to 89 in-lbs (10 Nm) in a spiral pattern from center outward.",
         "Reinstall oil cap, microfilter housing, and reconnect electrical connectors.",
@@ -878,7 +879,8 @@
         "Do not overtighten valve cover bolts—the plastic cover can crack.",
         "Replace the spark plug tube seals at the same time to prevent oil pooling around plugs.",
         "Check the grommets on the valve cover bolts—replace if cracked or deteriorated."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "brake-pads",
@@ -920,7 +922,8 @@
         "Open the brake fluid reservoir cap when compressing pistons to prevent pressure buildup.",
         "Clean rotors with brake cleaner to remove any oils before installing new pads.",
         "Bed in new pads with 5-10 moderate stops from 30 mph to transfer pad material to rotors."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "cooling-system-refresh",
@@ -943,7 +946,7 @@
       "steps": [
         "Allow engine to cool completely before beginning work.",
         "Remove the fan shroud upper clips and expansion tank cap.",
-        "Using a 32mm wrench and fan holding tool, remove the fan clutch (LEFT-HAND THREAD—turn clockwise to loosen).",
+        "Using a 32mm wrench and fan holding tool, remove the fan clutch (left-hand thread—turn clockwise to loosen).",
         "Remove the fan and shroud assembly together.",
         "Drain coolant by opening the drain plug on the lower passenger side of the radiator.",
         "Remove the expansion tank by disconnecting hoses and removing the mounting bolt.",
@@ -955,18 +958,19 @@
         "Install new water pump with new gasket and torque bolts to 7 ft-lbs (10 Nm).",
         "Install new thermostat (jiggle valve at 12 o'clock position) with new gasket.",
         "Install new expansion tank and connect all hoses.",
-        "Reinstall water pump pulley, fan clutch (LEFT-HAND THREAD—turn counter-clockwise to tighten), and shroud.",
+        "Reinstall water pump pulley, fan clutch (left-hand thread—turn counter-clockwise to tighten), and shroud.",
         "Close radiator drain and fill system with 50/50 BMW coolant mix.",
         "Bleed system: Run engine with heater on full hot, cap off, until thermostat opens and level stabilizes.",
         "Top off coolant and install expansion tank cap.",
         "Check for leaks after engine reaches operating temperature."
       ],
       "tips": [
-        "The fan clutch is LEFT-HAND THREADED—turn clockwise to remove.",
+        "The fan clutch is left-hand threaded—turn clockwise to remove.",
         "Use a water pump with a metal impeller—plastic impellers can shatter.",
         "Replace the thermostat housing with an aluminum version if the original plastic one shows any cracks.",
         "Check all coolant hoses for cracks or soft spots while the system is apart."
-      ]
+      ],
+      "warnings": []
     }
   ],
   "restorationItems": {
@@ -1018,7 +1022,7 @@
       {
         "name": "318i / 318is / 318ti",
         "years": "1992-1999",
-        "description": "Entry-level with the 1.8L M42 or 1.9L M44 four-cylinder. Light and nimble but underpowered. The 318ti is a hatchback with shorter wheelbase.",
+        "description": "The four-cylinder cars, with the 1.8L M42 or 1.9L M44. Light and nimble, if short on power. The 318ti is the hatchback, on a shorter wheelbase.",
         "desirability": "Low"
       },
       {
@@ -1030,13 +1034,13 @@
       {
         "name": "328i / 328is",
         "years": "1996-1999",
-        "description": "Upgraded to the 2.8L M52 with 190 hp. Smoother and more refined than the 325i. Available as sedan, coupe, or convertible.",
+        "description": "The 2.8L M52 with 190 hp. Smoother than the 325i, with more torque. Sedan, coupe, or convertible.",
         "desirability": "High"
       },
       {
         "name": "323i / 323is",
         "years": "1998-1999",
-        "description": "North American special with a 2.5L M52 producing 170 hp. Positioned between 318 and 328. Good value alternative.",
+        "description": "A 2.5L M52 with 170 hp, slotted between the 318 and the 328. Good value.",
         "desirability": "Medium"
       },
       {
@@ -1175,26 +1179,25 @@
       }
     },
     "redFlags": [
-      "Rear subframe cracks or reinforcement plates already welded (indicates track abuse)",
+      "Rear subframe cracks, or reinforcement plates already welded in (usually a sign of track use)",
       "Overheating history or evidence of head gasket repair",
-      "Drift car history (torn bushings, damaged body panels, welded differential)",
+      "Drift car history: torn bushings, damaged panels, a welded differential",
       "Missing or bypassed emissions equipment",
-      "M3 without documentation or with extensive modifications",
-      "Rust in rear shock towers (structural issue)",
-      "Excessive engine noise indicating rod bearing wear (M3)",
-      "Salvage title without clear documentation of damage"
+      "An M3 without documentation, or with heavy modifications",
+      "Rust in the rear shock towers (structural)",
+      "Knocking or low oil pressure. Get it checked before you buy.",
+      "A salvage title without clear documentation of the damage"
     ],
     "whatToLookFor": [
-      "Manual transmission (5-speed preferred)",
-      "Service records showing cooling system replacement",
-      "Factory limited-slip differential (M3 or Sport Package)",
-      "Sport package with upgraded suspension and steering",
-      "Coupe body style (most desirable after M3)",
-      "Rust-free southern or western U.S. cars",
-      "M3/4/5 package on non-M cars adds value",
-      "Complete tool kit and original equipment",
-      "1996+ cars for OBD-II diagnostics",
-      "Colors like Dakar Yellow, Estoril Blue, or Techno Violet add value"
+      "A manual transmission",
+      "Records of a cooling system refresh",
+      "A factory limited-slip differential (M3, or optional on others)",
+      "The sport package, with the firmer suspension",
+      "The coupe, the most desirable body after the M3",
+      "Rust-free cars from the South or West",
+      "The complete tool kit and original equipment",
+      "A 1996 or later car if you want OBD-II diagnostics",
+      "Colors like Dakar Yellow, Estoril Blue, or Techno Violet"
     ],
     "ownershipCosts": {
       "insurance": "$800-1,500/year (M3 higher)",
@@ -1203,16 +1206,16 @@
       "fuel": "20-28 MPG depending on model"
     },
     "expertTips": [
-      "Plan for a complete cooling system refresh within the first year of ownership—it's not if, but when",
-      "The rear subframe issue is real on M3s and tracked cars—inspect carefully or plan for reinforcement",
+      "Plan on a full cooling system refresh in your first year of ownership. It's not if, but when.",
+      "The rear subframe issue is real on M3s and track cars. Inspect carefully or plan on reinforcement.",
       "A 325is with the factory limited-slip is the best value: most of the handling for a fraction of M3 money",
-      "Convert faded headlights to glass European units for a huge improvement in looks and lighting",
-      "The M3 sedan is rarer than the coupe and becoming collectible—prices are rising",
-      "VANOS rebuilds are not difficult DIY projects—don't pay premium prices for bad VANOS",
-      "E36 parts are abundant and affordable—these are excellent cars for learning to wrench",
+      "European ellipsoid headlights are a popular upgrade for both looks and light output.",
+      "The M3 sedan is rarer than the coupe and values are rising.",
+      "A VANOS reseal is a manageable DIY job, so don't pay a premium to have one done badly.",
+      "Parts are cheap and everywhere. An E36 is a great car to learn to wrench on.",
       "The five-speed manual is tough. Automatic cars are worth noticeably less.",
-      "Join r3vlimited.com or bimmerforums.com for excellent E36 technical resources",
-      "A well-maintained E36 328is is one of the best driving experiences under $15,000"
+      "R3VLimited and Bimmerforums both have strong E36 sections.",
+      "A well-sorted 328is is one of the best-driving cars you can buy for the money."
     ]
   },
   "communityResources": {

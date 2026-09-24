@@ -24,10 +24,10 @@
       "id": "cooling-system",
       "title": "Cooling System Failures",
       "symptoms": "Overheating, coolant leaks, temperature warning, steam from hood, heater issues",
-      "description": "The E39 cooling system is known for failures. The expansion tank, radiator, thermostat housing, and water pump are all plastic components that become brittle with heat and age. The electric water pump (auxiliary) also fails. A cooling system failure at highway speed can destroy an engine in minutes—many E39 engines have been lost to overheating.",
+      "description": "More E39 engines have died from overheating than from anything else. The expansion tank, radiator end tanks, thermostat housing, and water pump impeller are all plastic, and they go brittle with heat and age. The auxiliary heater pump fails too. A burst tank at highway speed can cook an engine in minutes, so replace the plastic parts before they fail.",
       "fixes": [
         "Replace expansion tank every 60,000 miles preventatively",
-        "Install aluminum or quality OEM radiator",
+        "Install aluminum or quality oem radiator",
         "Replace water pump (Stewart or Graf metal impeller recommended)",
         "New thermostat and housing (aluminum housing upgrade available)",
         "Replace all coolant hoses including small bypass hoses",
@@ -41,7 +41,7 @@
       "repairCosts": {
         "diy": "$300-500",
         "shop": "$700-1400",
-        "notes": "V8 models add complexity. Full refresh strongly recommended."
+        "notes": "The V8 cars take longer. Replace it all at once."
       },
       "parts": [
         { "name": "Water Pump (M52/M54)", "partNumber": "11517527910", "price": "$80-150" },
@@ -55,7 +55,7 @@
       "id": "vanos-issues",
       "title": "VANOS System Problems (M52/M54)",
       "symptoms": "Loss of low-end torque, rough idle, engine hesitation, rattling noise, check engine light",
-      "description": "The dual-VANOS system on M52TU and M54 engines (1999+) adjusts both intake and exhaust cam timing. The seals within the VANOS unit deteriorate, causing loss of variable timing. Symptoms often appear gradually and are sometimes mistaken for other issues. The VANOS solenoids can also fail or become clogged with oil sludge.",
+      "description": "From 1999, the M52TU and M54 use double VANOS on both camshafts. The seals inside go hard, and the timing stops adjusting properly. It creeps up slowly, so owners often blame something else: a softer bottom end, a rough idle, worse fuel economy. The solenoids can also stick or clog with sludge.",
       "fixes": [
         "Replace VANOS seals (Beisan Systems or Dr. VANOS kits)",
         "Clean or replace VANOS solenoids",
@@ -70,7 +70,7 @@
       "repairCosts": {
         "diy": "$100-200",
         "shop": "$400-800",
-        "notes": "Double VANOS on M52TU/M54. Seals and solenoids common."
+        "notes": "Double VANOS. Seals and solenoids are the usual fixes."
       },
       "parts": [
         { "name": "VANOS Seal Kit (Beisan)", "partNumber": "BS032", "price": "$100-130" },
@@ -89,7 +89,7 @@
       "id": "disa-valve",
       "title": "DISA Valve Failure (M54)",
       "symptoms": "Rattling/flapping noise from intake, loss of power, check engine light, potential engine damage",
-      "description": "The M54 engine uses a DISA (Differentiated Intake System Adjustment) valve to vary intake runner length. The plastic flap inside can crack and potentially break off, being ingested into the engine and causing catastrophic damage. Early symptoms include a rattling or flapping noise from the intake area.",
+      "description": "The M54's DISA valve switches intake runner length for mid-range torque. Its plastic flap can crack or break off, and if it does, it can be pulled into the engine. A rattle or flapping sound from the intake at idle is the early warning. Pull it and check it. It takes minutes.",
       "fixes": [
         "Inspect DISA valve—if any cracks visible, replace immediately",
         "Replace with updated aluminum/stainless flap design",
@@ -104,7 +104,7 @@
       "repairCosts": {
         "diy": "$80-150",
         "shop": "$200-400",
-        "notes": "M54 engines. DISA flap can break and get ingested."
+        "notes": "The flap can break and get ingested. Check it early."
       },
       "parts": [
         { "name": "DISA Valve Assembly", "partNumber": "11617544805", "price": "$150-250" },
@@ -116,9 +116,9 @@
       "id": "thrust-arm-bushings",
       "title": "Front Thrust Arm Bushing Failure",
       "symptoms": "Vibration under braking, steering wheel shimmy, clunking over bumps, wandering steering",
-      "description": "The front thrust arm (tension strut) bushings are a known weak point on the E39. These bushings handle braking forces and wear out relatively quickly, especially with spirited driving. Worn thrust arm bushings cause a pronounced vibration or shimmy during braking and can affect tire wear and alignment.",
+      "description": "The front thrust arm bushings take the braking loads, and they wear quickly on an E39. When they go, the car shimmies under braking and wanders on the highway, and the tires wear unevenly. Most people replace the whole arm.",
       "fixes": [
-        "Replace thrust arm bushings (Lemforder OEM recommended)",
+        "Replace thrust arm bushings (Lemforder oem recommended)",
         "Consider complete thrust arm replacement if ball joint worn",
         "Upgraded polyurethane bushings available for firmer feel",
         "Always replace in pairs",
@@ -131,7 +131,7 @@
       "repairCosts": {
         "diy": "$150-300",
         "shop": "$400-700",
-        "notes": "Important for E39 handling. Replace with control arms."
+        "notes": "Usually done with the control arms."
       },
       "parts": [
         { "name": "Thrust Arm (Left)", "partNumber": "31126774825", "price": "$60-100" },
@@ -143,7 +143,7 @@
       "id": "timing-chain-guides",
       "title": "Timing Chain Guide Wear (M62 V8)",
       "symptoms": "Timing chain rattle on startup, rough running, check engine light, potential catastrophic failure",
-      "description": "The M62 V8 in the 540i uses timing chain guides that wear over time. Early M62 engines (1996-1998) used guides with plastic that would shed and clog the oil pickup. Later M62TU engines (1999-2003) improved the guides but they still wear. Chain guide failure can cause timing to jump and severe engine damage.",
+      "description": "The 540i's M62 V8 has plastic timing chain guides that wear and crack, and the early engines were worse for it. Pieces of guide end up in the oil pan, and a broken guide can let the chain jump. A rattle from the front of the engine at startup means it's time. It's a big job, but cheaper than a new engine.",
       "fixes": [
         "Replace timing chain guides and tensioners",
         "Use updated guide part numbers with improved material",
@@ -158,7 +158,7 @@
       "repairCosts": {
         "diy": "$500-1000",
         "shop": "$1500-3000",
-        "notes": "M62 V8 timing chain guide failure. Serious job."
+        "notes": "A serious job. Do it before it fails."
       },
       "parts": [
         { "name": "Timing Chain Guide Set (M62)", "price": "$300-500" },
@@ -170,7 +170,7 @@
       "id": "valley-pan-gasket",
       "title": "Valley Pan Gasket Leak (M62 V8)",
       "symptoms": "Coolant loss without visible external leak, overheating, white smoke from exhaust, coolant mixing with oil",
-      "description": "The M62 V8 has a valley pan between the cylinder banks that can leak coolant into the engine valley or oil system. The gasket degrades from heat and age. Because the leak is internal or into the valley, coolant loss may occur without visible external leaks. This can cause overheating or coolant contamination of oil.",
+      "description": "Under the M62's intake manifold, between the cylinder banks, the valley pan gasket and coolant passages can start to leak. Because it's hidden in the valley, you can lose coolant with nothing on the ground. If a V8 E39 keeps needing coolant and you can't find the leak, look here.",
       "fixes": [
         "Replace valley pan gasket",
         "Requires significant disassembly—often combined with timing guide job",
@@ -185,7 +185,7 @@
       "repairCosts": {
         "diy": "$200-400",
         "shop": "$500-1000",
-        "notes": "M62 V8 only. Leaks coolant into valley."
+        "notes": "V8 only. Hidden under the intake."
       },
       "parts": [
         { "name": "Valley Pan Gasket", "partNumber": "11141742042", "price": "$30-60" },
@@ -197,7 +197,7 @@
       "id": "oil-leaks",
       "title": "Oil Leaks",
       "symptoms": "Oil spots under car, oil smell, visible oil on engine, low oil level, smoke from engine bay",
-      "description": "E39s develop oil leaks from various locations as seals age. Common leak points include the valve cover gasket, oil filter housing gasket (M52/M54), oil pan gasket, VANOS solenoid seals, rear main seal, and power steering hoses. The M62 V8 leaks from additional locations including the valley pan and timing cover.",
+      "description": "The usual E39 leaks are the valve cover gasket, oil filter housing gasket on the sixes, oil pan, VANOS solenoid seals, and rear main seal, plus the power steering hoses. The V8 adds the timing covers and the valley.",
       "fixes": [
         "Valve cover gasket replacement (common service)",
         "Oil filter housing gasket (M52/M54), a common leak point",
@@ -213,7 +213,7 @@
       "repairCosts": {
         "diy": "$100-300",
         "shop": "$300-700",
-        "notes": "Valve cover and oil filter housing common."
+        "notes": "Valve cover and oil filter housing are the common ones."
       },
       "parts": [
         { "name": "Valve Cover Gasket (M54)", "partNumber": "11127512839", "price": "$30-60" },
@@ -225,7 +225,7 @@
       "id": "suspension-wear",
       "title": "Suspension Component Wear",
       "symptoms": "Clunking, poor handling, uneven tire wear, vague steering, rear end instability",
-      "description": "The E39's multi-link front and rear suspension uses numerous bushings that wear with age. Control arm bushings, thrust arm bushings, rear integral link bushings, and subframe mounts all deteriorate. Worn suspension significantly diminishes the refined handling the E39 is known for.",
+      "description": "The E39 uses aluminum MacPherson strut suspension up front and a multi-link rear, with a lot of bushings in between. Control arm and thrust arm bushings, rear integral link bushings, and subframe mounts all wear, and a worn E39 floats and wanders where a fresh one feels planted.",
       "fixes": [
         "Full front suspension refresh (control arms, thrust arms, tie rods)",
         "Rear suspension refresh (integral links, trailing arm bushings)",
@@ -241,7 +241,7 @@
       "repairCosts": {
         "diy": "$300-600",
         "shop": "$700-1200",
-        "notes": "Thrust arm and control arm bushings wear. Alignment required."
+        "notes": "Thrust arms and control arms first. Align afterward."
       },
       "parts": [
         { "name": "Thrust Arm Kit", "partNumber": "31126774826", "price": "$60-100" },
@@ -254,13 +254,13 @@
       "id": "pixels-final-stage",
       "title": "Pixel Failure and HVAC Final Stage Unit",
       "symptoms": "Missing pixels in radio/cluster, HVAC blower only works on high, intermittent blower operation",
-      "description": "Two common electrical issues: the pixel displays in the instrument cluster and radio fail due to ribbon cable connection issues. Additionally, the HVAC final stage unit (blower resistor) fails, causing the blower to only work on the highest speed setting. Both are relatively common age-related failures.",
+      "description": "Two classic E39 electrical faults. Missing pixels in the cluster or radio display are a failed ribbon cable. And if the blower only works on some speeds, or won't shut off, the HVAC final stage unit has failed. Both are cheap parts and easy DIY jobs.",
       "fixes": [
         "Pixel repair via ribbon cable resoldering or replacement",
         "Professional cluster and radio pixel repair services available",
-        "Replace final stage unit (FSU) for blower speed issues",
-        "Updated FSU designs available with improved reliability",
-        "Both are accessible DIY repairs with basic skills"
+        "Replace final stage unit (fsu) for blower speed issues",
+        "Updated fsu designs available with improved reliability",
+        "Both are accessible diy repairs with basic skills"
       ],
       "sources": [
         { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
@@ -269,7 +269,7 @@
       "repairCosts": {
         "diy": "$30-100",
         "shop": "$150-350",
-        "notes": "Pixel ribbon and final stage unit failures common."
+        "notes": "Both are common, cheap, and easy to fix."
       },
       "parts": [
         { "name": "Pixel Repair Ribbon", "price": "$20-40" },
@@ -338,7 +338,7 @@
       "tips": [
         "E39 thrust arm bushings are the most common cause of brake shimmy—replace early.",
         "The E39 rear uses 'integral links' (upper and lower camber arms) that affect alignment.",
-        "Meyle HD bushings are stiffer and longer-lasting than OEM rubber.",
+        "Meyle HD bushings are stiffer and longer-lasting than oem rubber.",
         "Mark eccentric bolt positions before removal for close-to-stock alignment.",
         "Consider upgrading to sport-spec shocks while suspension is apart."
       ],
@@ -405,7 +405,7 @@
         "For panel replacement: drill out spot welds, remove old panel, fit new.",
         "Grind welds smooth, check for warping—planish if needed.",
         "Treat all bare metal and welds with weld-through primer.",
-        "Apply POR-15 to inaccessible areas and inner surfaces.",
+        "Apply por-15 to inaccessible areas and inner surfaces.",
         "Seal welded joints with automotive seam sealer.",
         "Apply epoxy primer, then high-build primer.",
         "Block sand primer smooth (220-320 grit).",
@@ -474,13 +474,13 @@
         "Remove each ground, wire brush contact surface to bare metal, clean terminal.",
         "Apply dielectric grease and torque securely.",
         "For pixel repair: remove instrument cluster (4 T10 screws), disconnect connectors.",
-        "Open cluster housing, locate LCD ribbon cable on circuit board.",
+        "Open cluster housing, locate lcd ribbon cable on circuit board.",
         "Apply flux, reflow solder with fine-tip iron, or install replacement ribbon.",
         "Test cluster before reassembly by reconnecting temporarily.",
         "For radio pixel repair: remove radio unit, similar ribbon procedure.",
-        "For FSU replacement: remove passenger footwell panel for access.",
-        "Disconnect FSU connector, remove 2 T20 screws, slide out old unit.",
-        "Apply thermal paste to new FSU, install and test all blower speeds.",
+        "For fsu replacement: remove passenger footwell panel for access.",
+        "Disconnect fsu connector, remove 2 T20 screws, slide out old unit.",
+        "Apply thermal paste to new fsu, install and test all blower speeds.",
         "For window regulator: remove door panel, peel vapor barrier carefully.",
         "Support window glass with tape, remove regulator mounting bolts.",
         "Install new regulator, test operation before reassembling door.",
@@ -490,7 +490,7 @@
       ],
       "tips": [
         "E39 pixel failure is extremely common—straightforward repair with right ribbon.",
-        "FSU failure causes blower to only work on high—very common E39 issue.",
+        "fsu failure causes blower to only work on high—very common E39 issue.",
         "Trunk water leaks are often from cracked tail light gaskets.",
         "The E39 uses separate ribbons for cluster and radio displays.",
         "Window regulator cables fray before breaking—listen for grinding sounds."
@@ -498,7 +498,7 @@
       "warnings": [
         "Always disconnect battery before electrical work.",
         "Don't probe airbag (SRS) wiring—risk of deployment.",
-        "Use minimal heat when soldering pixel ribbons—LCD is heat-sensitive.",
+        "Use minimal heat when soldering pixel ribbons—lcd is heat-sensitive.",
         "The vapor barrier keeps water out of the door—handle carefully.",
         "Apply dielectric grease only to contact surfaces, not inside connectors."
       ],
@@ -861,14 +861,15 @@
         "M52/M54: Replace filter element and O-ring, lube O-ring with fresh oil.",
         "M62: Apply oil to new filter gasket, thread on hand-tight plus 3/4 turn.",
         "Add oil: 7.0 quarts (M52/M54), 8.0 quarts (M62 V8).",
-        "Use 5W-30 or 0W-40 synthetic oil meeting BMW LL-01 spec.",
+        "Use 5W-30 or 0W-40 synthetic oil meeting bmw ll-01 spec.",
         "Start engine, check for leaks, shut off and check level after 2 minutes."
       ],
       "tips": [
         "The E39 M52/M54 uses the same cartridge filter setup as the E46.",
         "M62 V8 requires more oil capacity—ensure you have enough before starting.",
         "Check the oil filter housing gasket for leaks on the I6 engines."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "brake-pads",
@@ -906,9 +907,10 @@
       ],
       "tips": [
         "E39 wear sensors are typically on front left and rear right.",
-        "After pad replacement, reset the brake pad wear indicator if equipped (CBS).",
+        "After pad replacement, reset the brake pad wear indicator if equipped (cbs).",
         "Bed new pads with moderate stops from 30 mph—avoid hard braking initially."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "expansion-tank",
@@ -946,7 +948,8 @@
         "The E39 expansion tank is a known failure point—don't wait for it to crack.",
         "Cracks usually appear at the seams or around the level sensor fitting.",
         "Consider doing a full cooling system refresh if you haven't recently."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "final-stage-unit",
@@ -963,24 +966,25 @@
         "New final stage unit"
       ],
       "steps": [
-        "The final stage unit (FSU) is located under the passenger side dashboard.",
+        "The final stage unit (fsu) is located under the passenger side dashboard.",
         "Remove the passenger footwell cover/trim panel for access.",
-        "Locate the FSU mounted to the blower motor housing—rectangular unit with fins.",
-        "Unplug the electrical connector from the FSU.",
-        "Remove the two T20 Torx screws holding the FSU in place.",
-        "Slide the old FSU out of the blower housing.",
-        "Apply a thin layer of thermal paste to the new FSU if not pre-applied.",
-        "Slide the new FSU into the housing, ensuring good contact with the housing for heat transfer.",
+        "Locate the fsu mounted to the blower motor housing—rectangular unit with fins.",
+        "Unplug the electrical connector from the fsu.",
+        "Remove the two T20 Torx screws holding the fsu in place.",
+        "Slide the old fsu out of the blower housing.",
+        "Apply a thin layer of thermal paste to the new fsu if not pre-applied.",
+        "Slide the new fsu into the housing, ensuring good contact with the housing for heat transfer.",
         "Reinstall the two T20 Torx mounting screws.",
         "Reconnect the electrical connector.",
         "Test blower operation on all speed settings before reassembling trim.",
         "Reinstall the footwell cover/trim panel."
       ],
       "tips": [
-        "Symptoms of FSU failure: blower only works on high speed or intermittently.",
-        "Thermal paste helps the FSU dissipate heat—don't skip this step.",
-        "Updated FSU designs have better heat dissipation—buy the latest revision."
-      ]
+        "Symptoms of fsu failure: blower only works on high speed or intermittently.",
+        "Thermal paste helps the fsu dissipate heat—don't skip this step.",
+        "Updated fsu designs have better heat dissipation—buy the latest revision."
+      ],
+      "warnings": []
     }
   ],
   "restorationItems": {
@@ -1035,13 +1039,13 @@
       {
         "name": "525i",
         "years": "2001-2003",
-        "description": "Entry-level with the 2.5L M54 inline-six producing 184 hp. Smooth and efficient but feels underpowered in the heavy E39 chassis.",
+        "description": "The 2.5L M54 with 184 hp. Smooth and economical, but it feels underpowered in a car this heavy.",
         "desirability": "Low"
       },
       {
         "name": "528i",
         "years": "1997-2000",
-        "description": "The volume model with the 2.8L M52 producing 190 hp. Adequate performance, excellent reliability.",
+        "description": "The 2.8L M52 with 190 hp. The volume model early on: adequate power and very dependable.",
         "desirability": "Medium"
       },
       {
@@ -1053,7 +1057,7 @@
       {
         "name": "540i",
         "years": "1997-2003",
-        "description": "The V8 model with the 4.4L M62 producing 282-290 hp. Effortless power and refinement. 6-speed manual available.",
+        "description": "The 4.4L M62 V8 with 282–290 hp, and a six-speed manual was available. Effortless and refined. Check the timing chain guide history.",
         "desirability": "High"
       },
       {
@@ -1065,7 +1069,7 @@
       {
         "name": "Touring (Wagon)",
         "years": "1999-2003",
-        "description": "The practical estate version. Available with inline-six engines. Rare in North America and sought after by enthusiasts.",
+        "description": "The wagon. In the US it came as the 528iT, 525iT, and V8 540iT (automatic only). Rare here, and wanted by people who know.",
         "desirability": "High"
       }
     ],
@@ -1191,21 +1195,21 @@
       }
     },
     "redFlags": [
-      "Timing chain rattle on V8 models—indicates imminent and expensive failure",
-      "Low coolant without visible leak—check for valley pan gasket failure on V8",
-      "M5 without rod bearing service documentation",
-      "Persistent check engine light or limp mode",
-      "Severe rust in subframe mounting points",
-      "Clunking steering with excessive play—multiple suspension components worn",
-      "Non-functional DSC/ABS system",
-      "Automatic transmission slipping or delayed engagement"
+      "Timing chain rattle on a V8. The guides are going, and it's an expensive job.",
+      "Low coolant with no visible leak on a V8. Check the valley pan.",
+      "An M5 without service records for its VANOS and timing chain",
+      "A persistent check engine light or limp mode",
+      "Serious rust at the subframe mounts",
+      "Clunky, loose steering. Several suspension parts are worn.",
+      "DSC or ABS faults",
+      "An automatic that slips or is slow to engage"
     ],
     "whatToLookFor": [
       "6-speed manual transmission (especially on 540i and M5)",
       "Service records showing cooling system replacement",
       "M Sport package with sport seats and suspension",
       "A 530i, the best balance of performance and running costs",
-      "540i with M Sport package for near-M5 experience",
+      "A 540i with the M Sport package, the closest thing to an M5 for much less",
       "Documented timing chain service on V8 models",
       "Rust-free southern or western U.S. examples",
       "Touring (wagon) for practicality and rarity",
@@ -1219,16 +1223,16 @@
       "fuel": "17-24 MPG depending on model"
     },
     "expertTips": [
-      "The E39 is genuinely one of the best cars BMW has ever made—the hype is real",
+      "The E39's reputation is earned. It really is that good.",
       "A manual 530i is the easiest E39 to own for the performance you get",
-      "540i timing chain guides WILL fail eventually—budget for this major service",
-      "M5 rod bearing service should be done every 60,000-80,000 miles as preventative maintenance",
-      "Cooling system components should be replaced proactively—failure leads to overheating",
-      "The automatic transmission is decent but the 6-speed manual transforms the driving experience",
-      "Pixel repair is easy DIY—don't let dead pixels deter you from an otherwise good car",
-      "Touring models are rare in the US and command premiums—worth seeking if you need the space",
-      "Parts availability is excellent—FCP Euro offers lifetime warranty on many components",
-      "A well-maintained E39 with proper cooling system care can easily exceed 250,000 miles"
+      "The 540i's timing chain guides will need doing eventually. Budget for it.",
+      "On an M5, ask for records of the VANOS and timing chain service. Rod bearings are worth checking on high-mileage cars.",
+      "Replace the cooling system parts before they fail. Overheating is what kills these engines.",
+      "The automatic is fine, but the six-speed manual makes it a different car.",
+      "Pixel repair is an easy DIY. Don't let dead pixels put you off an otherwise good car.",
+      "Tourings are rare in the US and sell at a premium. Worth it if you need the space.",
+      "Parts are easy to get, and FCP Euro's lifetime warranty covers a lot of them.",
+      "With a healthy cooling system, an E39 will easily pass 250,000 miles."
     ]
   },
   "communityResources": {

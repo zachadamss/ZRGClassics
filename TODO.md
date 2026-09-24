@@ -5,7 +5,7 @@
 - 153 guides (85 restoration, including one model-specific "signature" guide per car, + 68 DIY maintenance)
 - 17 buyer's guides on their own pages (`/resources/<brand>/<car>/buying/`) with printable inspection checklists and dated pricing
 - 137 documented issues with repair costs and difficulty ratings
-- 465 torque specs indexed
+- 464 torque specs indexed
 - Full-text search across all content, with brand filtering from the brand pages
 - My Garage: vehicles, maintenance tracker, and restoration tracker in one place; Build Cost Calculator as a public tool
 - User authentication with Supabase (login, register, password reset)
@@ -23,8 +23,8 @@ Full record of the September 2026 design and copy review: `docs/site-review-2026
 ## Action Required (Manual Steps)
 
 - [ ] **Replace the placeholder vehicle photos** — drop real photos into `src/images/vehicles/` with the same filenames (landscape, at least 1920px wide) and fill each car's `photoCredit`.
-- [ ] **Review the flagged content** listed under "Needs owner review" in `docs/site-review-2026-09.md`, especially the 17 new signature guides, before they go live.
-- [ ] **Run `supabase-migration-security.sql` in the Supabase SQL Editor** — the site-side XSS fixes are deployed with the code, but the database hardening (username/avatar rules, protected forum columns, locked-thread replies) only takes effect once this is run
+- [ ] **Review the short "Needs owner review" list** in `docs/site-review-2026-09.md` (mostly judgment calls after the Sept 24 content review).
+- [x] **Run `supabase-migration-security.sql` in the Supabase SQL Editor** (done, Sept 2026) — the site-side XSS fixes are deployed with the code, but the database hardening (username/avatar rules, protected forum columns, locked-thread replies) only takes effect once this is run
 - [ ] **Validate the new profile constraints** — after the migration, check for existing profiles that break the new rules, fix them, then enforce the rules on all rows:
   ```sql
   select id, username, avatar_url from public.profiles
@@ -64,9 +64,10 @@ Full record of the September 2026 design and copy review: `docs/site-review-2026
 
 ## Priority 3: Hardening & Maintenance
 
+- [ ] **Forum moderation UI** — pin, lock, and remove posts from the site instead of the Supabase dashboard (check how admin rights are modeled in the schema first)
+
 - [ ] **Content-Security-Policy header** — needs the inline `<script>` blocks in forum/account pages moved into `.js` files first so the policy can avoid `unsafe-inline`
 - [ ] **Self-host the Supabase client** (or add Subresource Integrity) instead of loading it from unpkg, so a CDN outage or compromise can't affect sign-in
-- [ ] **Forum moderation UI** — pinning, locking, and removing posts currently requires the Supabase dashboard
 
 ---
 
@@ -94,9 +95,8 @@ npm run build          # Build site to _site/
 npm run serve          # Dev server at localhost:8080
 npm run build:search   # Rebuild search index
 npm run build:all      # Rebuild search index and site
-npm run optimize:images # Optimize hero images (WebP + sizes)
 npm run minify         # Minify CSS/JS in _site/
-npm run build:prod     # Full production build (all of the above)
+npm run build:prod     # Search index, site (responsive images), minification
 ```
 
 **File Structure:**
@@ -111,7 +111,8 @@ src/
 ```
 
 **Adding a New Vehicle:**
-1. Create `src/_data/vehicles/<model>.json`
-2. Create `src/resources/<brand>/<model>.njk`
-3. Add to `src/_data/navigation.json`
-4. Run `npm run build:all`
+1. Create `src/_data/vehicles/<model>.json` (copy an existing file; include `series`, `tagline`, `photoCredit`, `pricingGuide.asOf`)
+2. Create `src/resources/<brand>/<model>.njk` (copy an existing one and change `vehicle`)
+3. Add the key to `src/_data/vehicleList.json`. Nav, footer, grids, sitemap, buyer's guide page, and garage platform list update automatically
+4. Add a hero photo at `src/images/vehicles/<model>-hero.jpg`
+5. Run `npm run build:all`

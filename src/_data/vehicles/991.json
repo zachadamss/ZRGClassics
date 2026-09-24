@@ -20,9 +20,9 @@
   "issues": [
     {
       "id": "coolant-pipes",
-      "title": "Coolant Pipe Failures",
+      "title": "Cooling System Leaks (Housings, Seals, and Radiators)",
       "symptoms": "Coolant loss, overheating warning, coolant puddles, sweet smell, temperature fluctuation",
-      "description": "The 991 continues to use plastic coolant pipes in the cooling system. These pipes run from the front radiators to the rear engine and are subjected to heat cycling and vibration. They can crack, especially at connection points, causing coolant loss. The coolant transfer pipe in particular is a known failure point.",
+      "description": "The 991's cooling system is a long circuit from the radiators in the nose to the engine at the back, with a lot of plastic housings, O-rings, and hose joints along the way. As it ages, the usual trouble is a seeping housing or joint, a tired expansion tank cap, or a leaking radiator rather than a dramatic pipe failure. Watch the coolant level and investigate any sweet smell or damp spots early.",
       "fixes": [
         "Replace plastic coolant pipes with aluminum upgrade",
         "Coolant transfer pipe replacement (common failure)",
@@ -37,7 +37,7 @@
       "repairCosts": {
         "diy": "$200-400",
         "shop": "$500-1000",
-        "notes": "Continues plastic pipe tradition. Aluminum upgrades available."
+        "notes": "Usually a housing, seal, or radiator. Find it early."
       },
       "parts": [
         { "name": "Coolant Transfer Pipe", "partNumber": "99110663701", "price": "$100-200" },
@@ -49,7 +49,7 @@
       "id": "carbon-buildup",
       "title": "Carbon Buildup on Intake Valves (DFI Engines)",
       "symptoms": "Rough idle, misfires, reduced power, poor fuel economy, hesitation under load",
-      "description": "All 991 engines use direct fuel injection (DFI), meaning fuel doesn't wash over the intake valves. Carbon deposits accumulate on the valve backs and intake ports, restricting airflow and affecting engine performance. This is a maintenance item requiring periodic walnut blasting, typically every 50,000-80,000 miles depending on driving style.",
+      "description": "Every 991 engine is direct-injected, so fuel doesn't wash the backs of the intake valves and some carbon builds up over time. Porsche's engines seem less prone to it than many direct-injected designs, and plenty of cars never need attention. If a high-mileage car idles roughly or feels down on power, walnut blasting cleans the valves.",
       "fixes": [
         "Walnut shell blasting (standard solution)",
         "Chemical treatments (less invasive but less effective)",
@@ -64,7 +64,7 @@
       "repairCosts": {
         "diy": "$200-400",
         "shop": "$500-1000",
-        "notes": "All 991 engines are DFI. Walnut blasting needed periodically."
+        "notes": "Mild on these engines. Walnut blasting if it's needed."
       },
       "parts": [
         { "name": "Walnut Media", "price": "$30-50" },
@@ -76,7 +76,7 @@
       "id": "pdk-issues",
       "title": "PDK Transmission Issues",
       "symptoms": "Harsh shifts, jerky low-speed operation, shuddering, warning lights, delayed engagement",
-      "description": "The PDK dual-clutch transmission is generally reliable but can develop issues. Low-speed jerkiness, especially when cold, is common and may be normal for the system. More serious issues include clutch pack wear, mechatronic unit failures, and software glitches. PDK fluid should be serviced despite Porsche's 'lifetime' fill claim.",
+      "description": "The PDK is generally reliable. Some low-speed jerkiness, especially cold, is normal behavior. The real problems are clutch wear, mechatronic unit failures, and software faults. Porsche's schedule calls for the PDK clutch fluid every 60,000 miles and the transmission fluid every 120,000 miles or 12 years. Many specialists change the transmission fluid at 60,000 too, and I'd follow them. Ask for proof on any car you're buying.",
       "fixes": [
         "PDK fluid change (recommended every 50,000-60,000 miles)",
         "Software updates to address shift quality",
@@ -91,7 +91,7 @@
       "repairCosts": {
         "diy": "$150-250",
         "shop": "$400-2000+",
-        "notes": "Fluid service recommended every 50-60k despite 'lifetime' fill."
+        "notes": "Clutch fluid at 60,000 miles; transmission fluid at 120,000 (many specialists say 60,000)."
       },
       "parts": [
         { "name": "PDK Fluid (7L)", "partNumber": "Pentosin FFL-2", "price": "$150-200" },
@@ -103,10 +103,10 @@
       "id": "pasm-failures",
       "title": "PASM Suspension Damper Failures",
       "symptoms": "PASM warning light, harsh ride, damper leaking, clunking noises, uneven handling",
-      "description": "PASM (Porsche Active Suspension Management) dampers use electronic valving to adjust stiffness. These dampers can fail, usually by leaking or developing electrical issues. A failed damper triggers a warning light and the system may default to a fixed setting. PASM dampers are expensive compared to conventional shocks.",
+      "description": "PASM dampers adjust their stiffness electronically. They fail by leaking or with electrical faults, which brings up a warning and can leave the system stuck in one setting. They cost a lot more than conventional shocks, though remanufactured units help.",
       "fixes": [
         "Diagnose with Porsche diagnostic tool (PIWIS)",
-        "Replace failed PASM damper (OEM or remanufactured)",
+        "Replace failed PASM damper (oem or remanufactured)",
         "Some owners convert to quality coilovers when multiple fail",
         "Check wiring and connectors before replacing damper",
         "Remanufactured dampers available at reduced cost"
@@ -118,7 +118,7 @@
       "repairCosts": {
         "diy": "$400-800",
         "shop": "$800-1500",
-        "notes": "Electronic dampers fail. Remanufactured available."
+        "notes": "Remanufactured dampers are available."
       },
       "parts": [
         { "name": "PASM Damper (Front)", "partNumber": "99134305315", "price": "$600-1000" },
@@ -131,7 +131,7 @@
       "id": "oil-consumption",
       "title": "Oil Consumption Concerns",
       "symptoms": "Low oil warnings, need to add oil between changes, blue smoke on startup, oil smell",
-      "description": "Some 991.1 models exhibit higher than expected oil consumption. Porsche's stated acceptable consumption is up to 1 quart per 1,000 miles, which many owners find excessive. Direct injection, high compression, and tight tolerances contribute. Tracking oil level is important, and the car should not be run low on oil.",
+      "description": "Some 991.1 engines use more oil than owners expect, and Porsche's published allowance is generous. It's usually not a sign of a failing engine, but it means you need to check the level regularly and never let it run low. A sudden increase is worth investigating.",
       "fixes": [
         "Monitor oil level regularly using on-board system",
         "Keep oil level in proper range (not overfilled)",
@@ -146,7 +146,7 @@
       "repairCosts": {
         "diy": "$50-100",
         "shop": "$100-500",
-        "notes": "991.1 may consume oil. Monitor and top up. Severe cases need diagnosis."
+        "notes": "Monitor and top up. A sudden change needs diagnosis."
       },
       "parts": [
         { "name": "Engine Oil (10L)", "partNumber": "Mobil 1 0W-40", "price": "$80-120" },
@@ -156,9 +156,9 @@
     },
     {
       "id": "turbo-specific",
-      "title": "Twin-Turbo Specific Issues (991.2)",
+      "title": "Turbo-Specific Issues (991.2 Carrera)",
       "symptoms": "Boost inconsistency, wastegate rattle, turbo whine, check engine light, reduced power",
-      "description": "The 991.2 moved to twin-turbo engines for all models. While generally reliable, the turbos can develop issues including wastegate rattle, actuator problems, and seal failures. Turbo feed and drain lines need monitoring. These engines are more complex than the naturally aspirated 991.1.",
+      "description": "The 991.2 Carreras moved to a twin-turbo 3.0L. The turbos are generally dependable, but wastegate rattle, actuator faults, and seal leaks do show up, and the feed and drain lines deserve a look at service time. It's a more complex engine than the naturally aspirated 991.1.",
       "fixes": [
         "Wastegate actuator adjustment or replacement",
         "Turbo oil line inspection and replacement",
@@ -173,7 +173,7 @@
       "repairCosts": {
         "diy": "$100-300",
         "shop": "$500-2000+",
-        "notes": "991.2 twin-turbo. Wastegate rattle and boost issues."
+        "notes": "Wastegate rattle and boost faults are the common ones."
       },
       "parts": [
         { "name": "Wastegate Actuator", "partNumber": "9A112180101", "price": "$300-500" },
@@ -185,7 +185,7 @@
       "id": "convertible-top",
       "title": "Convertible Top Issues (Cabriolet)",
       "symptoms": "Slow operation, error messages, hydraulic leaks, top doesn't complete cycle, fabric wear",
-      "description": "The 991 Cabriolet's power top system is complex and can develop age-related issues. Hydraulic pump wear, microswitch failures, and ram seal leaks cause operational problems. The fabric top can wear at stress points, and the rear window can develop issues. Proper operation and storage help longevity.",
+      "description": "The Cabriolet's top is hydraulic and complex. Pumps wear, microswitches fail, and ram seals leak, and the fabric wears at its stress points. Cycling it regularly and keeping the drains clear helps it last.",
       "fixes": [
         "Hydraulic system inspection and fluid top-off",
         "Hydraulic pump replacement if failing",
@@ -200,7 +200,7 @@
       "repairCosts": {
         "diy": "$100-400",
         "shop": "$500-1500",
-        "notes": "Cabriolet only. Complex hydraulic system."
+        "notes": "Cabriolet only."
       },
       "parts": [
         { "name": "Hydraulic Pump", "partNumber": "99156160901", "price": "$500-800" },
@@ -212,7 +212,7 @@
       "id": "steering-column",
       "title": "Electric Steering Column Issues",
       "symptoms": "Creaking noise, steering feel inconsistency, steering wheel off-center, warning lights",
-      "description": "The 991 uses an electric power steering system. While generally reliable, some owners report issues with the steering column producing creaking noises, especially when turning at low speeds. There can also be software-related issues affecting steering feel or causing warning messages.",
+      "description": "The 991 uses electric power steering. Some owners report creaks from the column at low speed, usually cured with lubrication, and occasional software-related warnings that a dealer update can fix.",
       "fixes": [
         "Steering column lubrication for creaking",
         "Software update for steering feel issues",
@@ -227,7 +227,7 @@
       "repairCosts": {
         "diy": "$50-150",
         "shop": "$200-500",
-        "notes": "Creaking from column. Lubrication often helps."
+        "notes": "Lubrication usually cures the creak."
       },
       "parts": [
         { "name": "Steering Column Lube", "price": "$15-30" },
@@ -329,7 +329,7 @@
         "Check front trunk for water—electronics located here.",
         "Clear sunroof and frunk drain tubes.",
         "Inspect coolant transfer pipe—known failure point.",
-        "Check LED headlights for condensation (less common than HID).",
+        "Check led headlights for condensation (less common than hid).",
         "Examine rocker panels and door bottoms.",
         "Check wheel wells for debris damage.",
         "Surface rust: wire brush, convert, prime, topcoat.",
@@ -339,7 +339,7 @@
       "tips": [
         "991s are well-protected—most issues are water intrusion.",
         "Coolant transfer pipe failure is main concern, not rust.",
-        "LED headlights less prone to moisture than older HID.",
+        "led headlights less prone to moisture than older hid.",
         "Annual Fluid Film application provides protection."
       ],
       "warnings": [
@@ -383,7 +383,7 @@
         "Begin with full diagnostic scan - 991 requires PIWIS for many functions.",
         "For coils: open engine lid, disconnect and remove.",
         "991.2 turbo: inspect wastegate actuators for rattle.",
-        "For PDK service: drain and fill with Pentosin FFL-2.",
+        "For PDK service: drain and fill with Pentosin ffl-2.",
         "Reset clutch adaptation via PIWIS after PDK service.",
         "For battery replacement: register new battery in DME.",
         "For steering column creak: lubricate steering column.",
@@ -393,7 +393,7 @@
       ],
       "tips": [
         "991 requires PIWIS for many diagnostic functions.",
-        "PDK fluid should be changed despite 'lifetime' claim.",
+        "Change the PDK fluids on schedule: clutch fluid every 60,000 miles, transmission fluid every 120,000 (many specialists say 60,000).",
         "Battery registration mandatory or charging issues result.",
         "991.2 wastegate rattle is common—not always serious."
       ],
@@ -446,19 +446,19 @@
         "Clean HVAC vents with brushes.",
         "Address seat bolster wear.",
         "Replace door seals if wind noise present.",
-        "Update PCM software if available.",
+        "Update pcm software if available.",
         "Apply UV protectant to exposed surfaces."
       ],
       "tips": [
         "991 uses high-quality leather that responds well to care.",
         "Sport Plus seats have more aggressive bolsters.",
-        "PCM touch screen can benefit from protector.",
+        "pcm touch screen can benefit from protector.",
         "HVAC clicking indicates blend actuator failure."
       ],
       "warnings": [
         "Don't use silicone on leather.",
         "Steering wheel has airbag—disconnect battery.",
-        "PCM updates require dealer or compatible tool."
+        "pcm updates require dealer or compatible tool."
       ],
       "references": [
         { "name": "Leatherique Products", "url": "https://www.leatherique.com/" },
@@ -484,7 +484,7 @@
         "Torque wrench"
       ],
       "steps": [
-        "Check the service history. Porsche specifies PDK fluid changes on a time and mileage schedule, and many cars miss it.",
+        "Check the service history. Porsche's schedule calls for the PDK clutch fluid every 60,000 miles and the transmission fluid every 120,000 miles or 12 years, and many cars miss both.",
         "Scan for transmission fault codes before changing anything.",
         "Raise the car level. The fill level is checked with the car level and at a set fluid temperature.",
         "Drain the old fluid and replace the filter and seals.",
@@ -494,7 +494,7 @@
         "Test drive and note whether shifts are smoother."
       ],
       "tips": [
-        "If the car doesn't have a record of a PDK service, budget for one at purchase.",
+        "If there's no record of a PDK service, budget for one at purchase. Many specialists change the transmission fluid at 60,000 miles rather than waiting for 120,000.",
         "Rough low-speed shifts after a battery disconnect often just need adaptation."
       ],
       "warnings": [
@@ -821,7 +821,8 @@
         "991.2 turbo models are especially important to use quality oil.",
         "Don't overfill—check level after running engine and letting it sit.",
         "Save some fresh oil in your trunk for top-ups on 991.1 cars."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "brake-pads",
@@ -863,10 +864,11 @@
       "tips": [
         "991 has electronic brake pad monitoring—sensors are single-use, replace with pads.",
         "After pad replacement, the warning may stay on until cleared with diagnostic tool.",
-        "PCCB (ceramic composite brakes) require dealer service—don't attempt DIY.",
+        "PCCB (ceramic composite brakes) require dealer service—don't attempt diy.",
         "Bed new pads properly: multiple moderate stops, then light driving to cool.",
         "Open fluid reservoir cap before compressing pistons to prevent overflow."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "spark-plugs",
@@ -904,11 +906,12 @@
       ],
       "tips": [
         "991.2 turbo models may have slightly different access—same basic procedure.",
-        "Use only OEM or equivalent quality plugs (NGK or Bosch).",
+        "Use only oem or equivalent quality plugs (ngk or Bosch).",
         "Never install plugs in a hot engine—severe risk of thread damage.",
         "If plug is hard to turn, stop and apply penetrating oil—don't force it.",
         "Check for any stored fault codes after completion if you have a scanner."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "coolant-flush",
@@ -949,7 +952,8 @@
         "A vacuum fill system makes this job much easier and faster.",
         "Inspect plastic coolant pipes while system is drained—replace if cracked.",
         "This is a good time to replace thermostat if original and over 60k miles."
-      ]
+      ],
+      "warnings": []
     }
   ],
   "restorationItems": {
@@ -1002,31 +1006,31 @@
       {
         "name": "Carrera / Carrera S (991.1)",
         "years": "2012-2016",
-        "description": "Naturally aspirated with 3.4L (350 hp) or 3.8L (400 hp). Purist choice with high-revving character.",
+        "description": "Naturally aspirated: a 3.4L with 350 hp or a 3.8L with 400 hp. The purist's choice, with a high-revving character.",
         "desirability": "High"
       },
       {
         "name": "Carrera / Carrera S (991.2)",
         "years": "2017-2019",
-        "description": "Turbocharged 3.0L producing 370-420 hp. More power everywhere but different character.",
+        "description": "Turbocharged 3.0L with 370–420 hp. More torque everywhere, and a different character.",
         "desirability": "High"
       },
       {
         "name": "Carrera 4 / 4S",
         "years": "2012-2019",
-        "description": "All-wheel drive variants. Widebody styling standard on 4S. More stable in all conditions.",
+        "description": "All-wheel drive, with the wider rear body. More planted in all conditions.",
         "desirability": "High"
       },
       {
         "name": "GT3 / GT3 RS",
         "years": "2014-2019",
-        "description": "Track-focused with naturally aspirated 4.0L producing 475-520 hp. PDK or manual available. Exceptional drivers' cars.",
+        "description": "The track-focused GT3s, with naturally aspirated engines making 475–520 hp. PDK only on the 991.1 GT3; a manual returned on the 991.2. Exceptional driver's cars.",
         "desirability": "High"
       },
       {
         "name": "Turbo / Turbo S",
         "years": "2014-2019",
-        "description": "Twin-turbo with 520-580 hp. AWD standard. Incredible straight-line performance with daily usability.",
+        "description": "Twin-turbo, 520–580 hp, and all-wheel drive. Staggering acceleration with everyday comfort.",
         "desirability": "High"
       },
       {
@@ -1038,7 +1042,7 @@
       {
         "name": "Targa 4 / 4S",
         "years": "2014-2019",
-        "description": "Distinctive power-operated Targa top with AWD. Elegant and practical.",
+        "description": "The power-operated Targa roof, with all-wheel drive only. Elegant, if heavier.",
         "desirability": "High"
       }
     ],
@@ -1132,7 +1136,7 @@
       "991.2 for more everyday power",
       "A manual GT3 if driving it is the whole point",
       "Complete Porsche service documentation",
-      "Sport Chrono and PASM as standard equipment",
+      "Sport Chrono and PASM (both options on many cars)",
       "Avoid PCCB unless budget allows for replacement",
       "Factory CPO warranty if still applicable"
     ],
@@ -1143,16 +1147,16 @@
       "fuel": "19-25 MPG"
     },
     "expertTips": [
-      "The 991 is one of the most refined and capable 911s ever made",
-      "991.1 naturally aspirated engines are preferred by purists",
-      "991.2 turbo engines offer better everyday performance",
-      "GT3 with manual transmission is the enthusiast's choice",
-      "Avoid PCCB ceramic brakes if you can't afford replacement",
-      "PDK is faster but manual is more engaging",
+      "The 991 is one of the most refined and capable 911s ever made.",
+      "Purists prefer the naturally aspirated 991.1.",
+      "The 991.2's turbo engines are quicker in everyday driving.",
+      "A manual GT3 is the enthusiast's pick.",
+      "Skip the ceramic brakes (PCCB) unless you can afford to replace them.",
+      "The PDK is quicker. The manual is more engaging.",
       "A Porsche CPO warranty is worth paying for on a car this complex",
-      "Budget for proper maintenance—these are complex cars",
-      "The 991 is reliable with proper care",
-      "GT2 RS and GT3 RS are appreciating collectibles"
+      "Budget for proper maintenance. These are complex cars.",
+      "Looked after properly, the 991 is a very dependable 911.",
+      "The GT2 RS and GT3 RS are already collector cars."
     ]
   },
   "communityResources": {

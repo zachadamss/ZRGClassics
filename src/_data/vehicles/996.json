@@ -21,14 +21,14 @@
       "id": "ims-bearing",
       "title": "IMS Bearing Failure",
       "symptoms": "Metallic debris in oil filter, grinding/knocking noise, sudden catastrophic engine failure, oil pressure warning",
-      "description": "The 996 shares the M96 engine with the Boxster, and thus the same IMS bearing concern. The intermediate shaft bearing can fail without warning, destroying the engine. The 1999-2001 cars with the dual-row bearing have a lower failure rate, while 2002-2005 cars with the single-row bearing are at higher risk. The 996 Turbo and GT3 use different engines and are NOT affected by IMS issues.",
+      "description": "The 996 Carrera shares the Boxster's M96 engine, and with it the intermediate shaft (IMS) bearing problem: the bearing can fail without warning and take the engine with it. Risk depends on the bearing. Cars built through the 2000 model year have the stronger dual-row bearing and a failure rate around 1%. From 2001 on, Porsche used a single-row bearing with a reported failure rate closer to 8%. The 996 Turbo, GT2, and GT3 use the Mezger engine and don't have an IMS problem at all.",
       "fixes": [
         "Proactive IMS bearing replacement with upgraded bearing",
         "LN Engineering ceramic hybrid bearing is the gold standard",
         "Plain bearing conversion eliminates the bearing entirely",
         "Regular oil analysis to detect bearing wear early",
         "Change oil every 5,000 miles with quality synthetic",
-        "Consider when purchasing: get a PPI with IMS inspection"
+        "Consider when purchasing: get a ppi with IMS inspection"
       ],
       "sources": [
         { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
@@ -54,7 +54,7 @@
       "id": "bore-scoring",
       "title": "Bore Scoring / D-Chunk",
       "symptoms": "Ticking/knocking noise (especially when cold), excessive oil consumption, smoke on startup, low compression on specific cylinders",
-      "description": "Bore scoring in the M96 engine is caused by debris damaging the cylinder walls, allowing oil past the piston rings. \"D-Chunk\" refers to a failure mode where a piece of the cylinder wall breaks away. Cylinders 5 and 6 are most commonly affected. This is distinct from IMS failure but equally serious.",
+      "description": "Some M96 engines score their cylinder walls, letting oil past the rings. The cause is still debated. Separately, some 3.4L engines suffer 'D-chunk,' where a piece of the cylinder liner cracks away. Both are major engine repairs and unrelated to the IMS bearing. A ticking cold start, rising oil consumption, and sooty tailpipes on one bank are the warnings, and a borescope confirms it.",
       "fixes": [
         "Borescope inspection before purchase and periodically",
         "Minor scoring: monitor closely, use high-quality oil",
@@ -69,7 +69,7 @@
       "repairCosts": {
         "diy": "N/A",
         "shop": "$5000-15000",
-        "notes": "D-chunk and bore scoring. Major engine repair."
+        "notes": "Major engine work: sleeving or a replacement engine."
       },
       "parts": [
         { "name": "Cylinder Sleeving", "brand": "LN Engineering", "price": "$800-1200/cyl" },
@@ -81,7 +81,7 @@
       "id": "rms-leak",
       "title": "Rear Main Seal (RMS) Leak",
       "symptoms": "Oil drips from transmission area, oil on clutch causing slip, burning oil smell, visible oil around flywheel",
-      "description": "The rear main seal between the engine and transmission leaks on many M96 engines. On manual transmission cars, oil contaminates the clutch disc causing slipping. The repair requires separating the engine from the transmission.",
+      "description": "The rear main seal between the engine and gearbox weeps on many M96 engines, and on manual cars enough oil can reach the clutch to make it slip. Replacing it means separating the engine and gearbox, so combine it with an IMS retrofit and a clutch.",
       "fixes": [
         "Replace rear main seal with updated Porsche part",
         "Combine with IMS bearing replacement (same labor)",
@@ -96,7 +96,7 @@
       "repairCosts": {
         "diy": "$400-800",
         "shop": "$1500-2500",
-        "notes": "Combine with IMS and clutch if needed."
+        "notes": "Combine it with the IMS and clutch."
       },
       "parts": [
         { "name": "Rear Main Seal", "partNumber": "99610322571", "price": "$30-60" },
@@ -108,9 +108,9 @@
       "id": "aos",
       "title": "AOS (Air/Oil Separator) Failure",
       "symptoms": "Rough idle, whistling noise, smoke from exhaust, oil consumption, check engine light for lean codes",
-      "description": "The Air/Oil Separator removes oil vapor from crankcase gases before they enter the intake. The AOS has an internal diaphragm that fails over time, causing vacuum leaks and allowing oil into the intake system.",
+      "description": "The air/oil separator removes oil from crankcase gases before they go back to the intake. When its diaphragm fails, oil gets pulled into the engine: a cloud of smoke on startup, rising oil consumption, and a rough idle from the vacuum leak.",
       "fixes": [
-        "Replace AOS unit with OEM or upgraded aftermarket",
+        "Replace AOS unit with oem or upgraded aftermarket",
         "Replace associated vacuum hoses while accessible",
         "Clean MAF sensor and throttle body during service",
         "Combine with other under-manifold repairs",
@@ -123,7 +123,7 @@
       "repairCosts": {
         "diy": "$200-400",
         "shop": "$400-800",
-        "notes": "Same as 986. Causes smoke from exhaust."
+        "notes": "Smoke on startup is the tell."
       },
       "parts": [
         { "name": "AOS Assembly", "partNumber": "99610702558", "price": "$200-350" }
@@ -134,7 +134,7 @@
       "id": "coolant-system",
       "title": "Coolant System Failures",
       "symptoms": "Overheating, coolant loss, steam from engine area, coolant smell, temperature warning",
-      "description": "The 996 uses plastic coolant pipes and a complex cooling system with dual radiators in the front. The plastic pipes under the intake manifold can crack with age, causing sudden coolant loss.",
+      "description": "Coolant has a long trip from the two radiators in the nose to the engine in the tail, through plastic pipes and fittings that age with heat. A cracked part can dump coolant quickly, so keep an eye on the level. Clean the radiators out too: leaves and debris collect in front of them and cause both overheating and corrosion.",
       "fixes": [
         "Replace plastic coolant pipes with aluminum upgrade",
         "Replace water pump (prone to bearing failure)",
@@ -150,7 +150,7 @@
       "repairCosts": {
         "diy": "$200-400",
         "shop": "$500-1000",
-        "notes": "Plastic to aluminum upgrade recommended."
+        "notes": "Aluminum replacements exist for the plastic parts that fail."
       },
       "parts": [
         { "name": "Coolant Pipe Kit", "price": "$150-300" },
@@ -162,7 +162,7 @@
       "id": "headlight-seals",
       "title": "Headlight Seal Failure (\"Fried Egg\" Headlights)",
       "symptoms": "Condensation inside headlight, yellowed/cloudy appearance, reduced light output",
-      "description": "The 996's distinctive \"fried egg\" headlights are known for developing moisture inside the housing due to seal failure. This causes condensation, reduces light output, and can damage the bulbs and electronics.",
+      "description": "The 'fried egg' headlight units lose their seals and let moisture in, which fogs the lenses, cuts light output, and can corrode the bulbs and connectors. Resealing works if it's caught early; badly corroded units need replacing.",
       "fixes": [
         "Reseal headlights (requires oven or heat gun to separate lenses)",
         "Add small silica gel packets inside housing",
@@ -177,7 +177,7 @@
       "repairCosts": {
         "diy": "$50-150",
         "shop": "$200-400",
-        "notes": "Moisture causes fogging. Reseal or replace."
+        "notes": "Reseal early or replace."
       },
       "parts": [
         { "name": "Headlight Seal Kit", "price": "$30-80" },
@@ -189,7 +189,7 @@
       "id": "suspension",
       "title": "Suspension Wear",
       "symptoms": "Clunking over bumps, poor handling, uneven tire wear, steering play, car sitting lower on one side",
-      "description": "The 996's suspension uses control arms, ball joints, and bushings that wear over time. Front control arm bushings and ball joints are common failure points. The rear spring perches can crack, causing the car to sit lower.",
+      "description": "Front control arm bushings and ball joints are the common wear items. At the rear, coil springs can crack at the bottom coil, which lowers that corner. A worn 996 feels vague where a fresh one feels like a proper 911.",
       "fixes": [
         "Replace front control arms (bushings not serviceable separately)",
         "Inspect and replace ball joints",
@@ -204,7 +204,7 @@
       "repairCosts": {
         "diy": "$300-600",
         "shop": "$700-1400",
-        "notes": "Control arms and bushings wear."
+        "notes": "Control arms and bushings first."
       },
       "parts": [
         { "name": "Control Arm (Front)", "partNumber": "99634105314", "price": "$150-250" },
@@ -349,7 +349,7 @@
       "warnings": [
         "Water in the frunk destroys DME, fuse box, and other electronics.",
         "Battery acid causes severe corrosion in the frunk area.",
-        "Headlight moisture can damage HID ballasts (if equipped).",
+        "Headlight moisture can damage hid ballasts (if equipped).",
         "Always wear respirator when grinding rust.",
         "Fire extinguisher required if welding."
       ],
@@ -413,7 +413,7 @@
       "tips": [
         "996 headlight condensation is extremely common—resealing works well.",
         "The DME in the frunk is vulnerable to water—protect it.",
-        "VarioCam solenoid issues cause rough running—use OEM parts only.",
+        "VarioCam solenoid issues cause rough running—use oem parts only.",
         "Many 996 electrical issues trace to poor ground connections.",
         "A proper Porsche scanner (Durametric, PIWIS) reveals far more than generic OBD2."
       ],
@@ -844,7 +844,8 @@
         "Frequent oil changes (5,000 miles) help protect the IMS bearing.",
         "Use quality synthetic oil meeting Porsche A40 specification.",
         "Consider oil analysis every few changes to monitor engine health."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "spark-plugs",
@@ -878,11 +879,12 @@
         "Start engine and verify smooth operation."
       ],
       "tips": [
-        "Use NGK or Bosch platinum/iridium plugs for best performance.",
+        "Use ngk or Bosch platinum/iridium plugs for best performance.",
         "The 996 uses individual coil-on-plug ignition—no plug wires.",
         "While coils are out, inspect boots for cracks or carbon tracking.",
         "Replace coils if experiencing misfires."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "brake-pads",
@@ -925,7 +927,8 @@
         "Open reservoir cap before compressing pistons to prevent overflow.",
         "Bed new pads with moderate stops—avoid hard braking initially.",
         "Wear sensors should be replaced with new pads."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "coolant-flush",
@@ -965,7 +968,8 @@
         "The 996's plastic coolant pipes can crack—inspect while draining.",
         "Air pockets can cause overheating—bleed the system thoroughly.",
         "Consider upgrading to aluminum coolant pipes if not already done."
-      ]
+      ],
+      "warnings": []
     }
   ],
   "restorationItems": {
@@ -1010,31 +1014,31 @@
       "productionYears": "1999-2005",
       "totalProduced": "~175,000 worldwide",
       "priceRange": "$25,000–$200,000+",
-      "bestYears": "2002-2005 (improved IMS bearing, refined production)"
+      "bestYears": "2002–2005 (3.6L, facelift). For IMS risk, 1999–2000 cars have the stronger dual-row bearing."
     },
     "variants": [
       {
         "name": "Carrera / Carrera S",
         "years": "1999-2005",
-        "description": "Base model with 3.4L (300 hp) or 3.6L (320 hp) M96 engine. The S adds widebody and larger engine.",
+        "description": "The Carrera, with a 3.4L (300 hp) and, from 2002, a 3.6L (320 hp). The Carrera S of 2002–05 adds the wide body.",
         "desirability": "Medium"
       },
       {
         "name": "Carrera 4 / Carrera 4S",
         "years": "1999-2005",
-        "description": "All-wheel drive variants. More stable but heavier. 4S is widebody with AWD.",
+        "description": "All-wheel drive. Heavier but more planted. The 4S pairs it with the wide body and Turbo brakes.",
         "desirability": "Medium"
       },
       {
         "name": "GT3",
         "years": "1999-2005",
-        "description": "Track-focused with motorsport-derived M96/76 engine producing 360-381 hp. No IMS bearing concerns. Highly collectible.",
+        "description": "The track-focused GT3, with the race-derived Mezger engine (360–381 hp) and no IMS problem. Highly collectible.",
         "desirability": "High"
       },
       {
         "name": "Turbo / Turbo S",
         "years": "2001-2005",
-        "description": "Twin-turbocharged with 415-444 hp using Mezger engine (no IMS issues). Widebody, AWD standard.",
+        "description": "Twin-turbo, 415–444 hp, all-wheel drive, and the Mezger engine, so no IMS worries. Huge performance for the money.",
         "desirability": "High"
       },
       {
@@ -1046,7 +1050,7 @@
       {
         "name": "Cabriolet / Targa",
         "years": "1999-2005",
-        "description": "Open-top variants. Targa has full glass roof with opening panel.",
+        "description": "The open cars: the Cabriolet with a folding top, and the Targa with a big sliding glass roof.",
         "desirability": "Medium"
       }
     ],
@@ -1133,7 +1137,7 @@
     "redFlags": [
       "Unknown IMS bearing status on M96 engines",
       "Evidence of bore scoring (knocking, smoke, oil consumption)",
-      "Rear main seal leak (can indicate IMS failure starting)",
+      "A rear main seal leak. Budget to fix it along with an IMS retrofit.",
       "Missing service records",
       "Salvage or rebuilt title without clear documentation",
       "Cars that have sat for extended periods"
@@ -1144,7 +1148,6 @@
       "Complete service documentation",
       "Manual transmission",
       "Lower mileage or consistent maintenance on higher mileage",
-      "Sport Chrono and PASM options",
       "GT3 for the best 996 driving experience"
     ],
     "ownershipCosts": {
@@ -1154,16 +1157,16 @@
       "fuel": "18-24 MPG"
     },
     "expertTips": [
-      "The 996 offers tremendous value if you navigate the IMS issue correctly",
-      "GT3 and Turbo use the Mezger engine with NO IMS bearing concerns",
-      "The IMS bearing retrofit is worthwhile preventative maintenance",
-      "Oil analysis can help monitor IMS bearing condition",
-      "2002+ cars have a slightly improved IMS bearing design",
-      "The 996 drives exceptionally well—don't dismiss it for the headlights",
-      "Clean 996 Turbos are undervalued compared to 997 Turbos",
-      "Manual transmission cars are more desirable",
-      "Budget for proper PPI by a Porsche specialist",
-      "The 996 GT3 is one of the best driving Porsches ever made"
+      "The 996 is a lot of 911 for the money, as long as you deal with the IMS question.",
+      "The GT3 and Turbo use the Mezger engine and don't have an IMS bearing problem.",
+      "An IMS retrofit is worthwhile preventive maintenance on a Carrera.",
+      "Regular oil analysis can help track the IMS bearing's condition.",
+      "Cars built through the 2000 model year have the stronger dual-row IMS bearing.",
+      "The 996 drives beautifully. Don't dismiss it over the headlights.",
+      "Clean 996 Turbos are good value next to 997 Turbos.",
+      "Manual cars are more desirable.",
+      "Budget for a pre-purchase inspection by a Porsche specialist.",
+      "The 996 GT3 is one of the best-driving Porsches ever made."
     ]
   },
   "communityResources": {

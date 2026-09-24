@@ -25,7 +25,7 @@
       "id": "timing-chain-guides",
       "title": "Timing Chain Guide Failure (M60 V8)",
       "symptoms": "Rattling on startup, chain noise, engine warning lights, catastrophic failure risk",
-      "description": "The M60 V8 engine in the 530i and 540i has timing chain guides made from a defective Nikasil-coated material that degrades and breaks apart. Broken guide pieces can jam the chain or clog the oil pickup, leading to catastrophic engine failure. This is considered a must-do service item on any M60-equipped E34.",
+      "description": "The M60 V8 in the 530i and 540i uses plastic timing chain guides that go brittle with age and heat. When they break, pieces can jam the chain or block the oil pickup, and the engine usually doesn't survive. On any M60 car without a record of new guides, treat this as due. It's a separate problem from the Nikasil bore coating on early M60s, which is covered in the buyer's guide.",
       "fixes": [
         "Replace timing chain guides with updated parts immediately",
         "Use the updated BMW guide part numbers with improved material",
@@ -40,7 +40,7 @@
       "repairCosts": {
         "diy": "$400-800",
         "shop": "$1200-2500",
-        "notes": "M60 V8 timing chain guide failure is serious. Service before failure."
+        "notes": "Serious if ignored. Do it before it fails, not after."
       },
       "parts": [
         { "name": "Timing Chain Guide Set (M60)", "partNumber": "11311703713", "price": "$200-400" },
@@ -53,7 +53,7 @@
       "id": "vanos-issues",
       "title": "VANOS Problems (M50TU Engine)",
       "symptoms": "Loss of low-end power, rough idle, rattling noise, check engine light, poor fuel economy",
-      "description": "The M50TU engine introduced BMW's first VANOS (variable valve timing) system. The VANOS unit uses oil pressure to adjust intake cam timing. Seals within the unit harden and fail with age, causing loss of variable timing function. The unit can also develop mechanical wear in the helical gear mechanism.",
+      "description": "The M50TU brought BMW's first VANOS, which uses oil pressure to vary intake cam timing. Its internal seals harden and leak with age, so the timing stops adjusting: you'll feel it as a soft bottom end and a rougher idle. The helical gear inside can also wear and rattle. A seal kit fixes most cars.",
       "fixes": [
         "Replace VANOS seals (rebuild kits available)",
         "Check and replace VANOS piston rings if worn",
@@ -68,7 +68,7 @@
       "repairCosts": {
         "diy": "$80-150",
         "shop": "$300-600",
-        "notes": "M50TU/M52 single VANOS. Seal replacement common fix."
+        "notes": "Single VANOS. A seal kit is the usual fix."
       },
       "parts": [
         { "name": "VANOS Seal Kit", "partNumber": "BS030", "price": "$80-100" },
@@ -86,10 +86,10 @@
       "id": "cooling-system",
       "title": "Cooling System Failures",
       "symptoms": "Overheating, coolant leaks, temperature warning, heater problems, expansion tank cracking",
-      "description": "The E34 cooling system uses plastic components that become brittle with age and heat cycles. The expansion tank, radiator end tanks, thermostat housing, and coolant hoses all fail. The water pump impeller can also degrade. Overheating can cause head gasket failure (especially M50) or head warping (M60).",
+      "description": "Like every BMW of this era, the E34 uses plastic cooling parts that go brittle: the expansion tank, radiator end tanks, thermostat housing, and hoses. Water pump impellers wear too. Overheat an M50 and you'll need a head gasket; overheat an M60 and you can warp the heads.",
       "fixes": [
         "Replace expansion tank (common failure point)",
-        "Install aluminum or quality OEM radiator",
+        "Install aluminum or quality oem radiator",
         "Replace water pump with metal impeller version",
         "New thermostat and housing",
         "Replace all coolant hoses (silicone upgrade available)",
@@ -102,7 +102,7 @@
       "repairCosts": {
         "diy": "$250-450",
         "shop": "$600-1200",
-        "notes": "Do it all at once. The V8 cars take longer."
+        "notes": "Replace it all at once. The V8 cars take longer."
       },
       "parts": [
         { "name": "Water Pump (M50)", "partNumber": "11517527799", "price": "$60-100" },
@@ -116,7 +116,7 @@
       "id": "pixel-display",
       "title": "Instrument Cluster Pixel Failure",
       "symptoms": "Missing pixels in odometer/OBC display, complete display failure, intermittent display",
-      "description": "The E34's digital displays use ribbon cables with connections that fail over time due to heat cycling. This affects the odometer, on-board computer (OBC), and check control displays. The issue is cosmetic but can make it difficult to read important information.",
+      "description": "Missing segments in the odometer, on-board computer, or check control display are almost always a failed ribbon cable, not a dead display. It's cosmetic, but it hides information you want. Replacing the ribbon is a common DIY job.",
       "fixes": [
         "Solder repair of ribbon cable connections",
         "Ribbon cable replacement with improved materials",
@@ -131,7 +131,7 @@
       "repairCosts": {
         "diy": "$20-60",
         "shop": "$150-300",
-        "notes": "OBC and cluster pixel failure. Ribbon replacement common DIY."
+        "notes": "Ribbon replacement is a common DIY job."
       },
       "parts": [
         { "name": "Pixel Repair Ribbon (Cluster)", "price": "$15-30" },
@@ -143,7 +143,7 @@
       "id": "rust-corrosion",
       "title": "Rust and Corrosion",
       "symptoms": "Bubbling paint, rust holes, deteriorated jack points, rusty wheel arches",
-      "description": "While better protected than the E28, E34s still develop rust in typical BMW problem areas. Front fenders behind wheels, rear wheel arches, rocker panels, jack points, and trunk floor are common. Northern cars with salt exposure are particularly vulnerable. Rust around the rear subframe mounting points is a structural concern.",
+      "description": "The E34 is better protected than the E28, but it still rusts in the usual BMW places: front fenders behind the wheels, rear arches, rockers, jack points, and the trunk floor. Salt-belt cars get it worst. Rust around the rear subframe mounts is structural, so check there carefully.",
       "fixes": [
         "Regular inspection of rust-prone areas",
         "Treat surface rust before it penetrates",
@@ -159,7 +159,7 @@
       "repairCosts": {
         "diy": "$200-800",
         "shop": "$800-3000",
-        "notes": "Rocker panels and wheel arches common."
+        "notes": "Rockers and wheel arches are the common ones."
       },
       "parts": [
         { "name": "Rocker Panel", "price": "$100-200" },
@@ -171,7 +171,7 @@
       "id": "oil-leaks",
       "title": "Oil Leaks",
       "symptoms": "Oil spots under car, burning oil smell, oil on engine components, low oil level",
-      "description": "Both inline-6 and V8 engines develop oil leaks as gaskets age. Common leak points include valve cover gaskets, oil pan gasket, oil filter housing gasket (M50/M60), VANOS line seals (M50TU), rear main seal, and timing cover gaskets. The M60 V8 also leaks from the valley pan gasket.",
+      "description": "Both the sixes and the V8s leak as they age. Check the valve cover gaskets, oil pan, oil filter housing, the VANOS oil line seals on M50TU engines, the rear main seal, and the timing covers. On the M60, add the valley pan gasket under the intake.",
       "fixes": [
         "Valve cover gasket replacement (common service)",
         "Oil filter housing gasket replacement",
@@ -187,7 +187,7 @@
       "repairCosts": {
         "diy": "$100-250",
         "shop": "$300-600",
-        "notes": "Valve cover and oil filter housing most common."
+        "notes": "Valve cover and oil filter housing are the common ones."
       },
       "parts": [
         { "name": "Valve Cover Gasket (M50)", "partNumber": "11129070531", "price": "$25-50" },
@@ -200,7 +200,7 @@
       "id": "suspension-wear",
       "title": "Suspension Component Wear",
       "symptoms": "Clunking over bumps, vague handling, uneven tire wear, wandering at highway speeds",
-      "description": "E34 suspension uses numerous rubber bushings that deteriorate with age. Control arm bushings, thrust arm bushings, rear trailing arm bushings, and subframe mounts all wear out. Ball joints, tie rod ends, and center support bearing also fail. Worn suspension dramatically affects the E34's refined handling.",
+      "description": "The E34 rides and steers beautifully on fresh bushings and vaguely on worn ones. The thrust arm bushings are the big one, followed by the control arm bushings, rear trailing arm bushings, and subframe mounts. Ball joints, tie rod ends, and the driveshaft center support bearing wear out too.",
       "fixes": [
         "Full suspension refresh recommended for 25+ year old cars",
         "Replace all control arm and thrust arm bushings",
@@ -230,7 +230,7 @@
       "id": "electrical-issues",
       "title": "Electrical Problems",
       "symptoms": "Flickering lights, intermittent accessories, dead windows, climate control issues, starting problems",
-      "description": "The E34's electrical system is more complex than earlier BMWs and suffers from age-related issues. Ground points corrode, the general module can fail, window regulators break, and the climate control system develops faults. The SRS (airbag) system can trigger warning lights due to connector issues.",
+      "description": "The E34 has far more electronics than the E28, and they're all 30 years old now. Grounds corrode, the general module can fail, window regulators break, and the climate control develops faults. An airbag warning light is more often a worn clockspring or a bad connector than a failed airbag.",
       "fixes": [
         "Clean and resecure all ground points",
         "Repair or replace general module (GM) if needed",
@@ -246,7 +246,7 @@
       "repairCosts": {
         "diy": "$50-200",
         "shop": "$150-400",
-        "notes": "Various relay issues and grounds."
+        "notes": "Grounds and relays first."
       },
       "parts": [
         { "name": "General Module (ZKE)", "partNumber": "61358359031", "price": "$150-300" },
@@ -314,7 +314,7 @@
       ],
       "tips": [
         "E34 thrust arm bushings make or break steering precision—don't overlook them.",
-        "Meyle HD bushings are stiffer and last longer than OEM rubber.",
+        "Meyle HD bushings are stiffer and last longer than oem rubber.",
         "Consider self-leveling rear suspension service if equipped (common on Touring models).",
         "Mark eccentric bolt positions before removal to get close to original alignment.",
         "The E34 uses inner and outer tie rod ends—replace both at the same time.",
@@ -382,7 +382,7 @@
         "For replacement panels (rocker, fender): drill out spot welds, remove old panel, fit new.",
         "Grind welds flush and inspect for warping—planish if needed.",
         "Treat all bare metal and welds with weld-through primer on backside.",
-        "Apply POR-15 to inaccessible areas and inner surfaces.",
+        "Apply por-15 to inaccessible areas and inner surfaces.",
         "Seal all welded joints with automotive seam sealer.",
         "Apply epoxy primer, then high-build primer to repaired areas.",
         "Block sand primer smooth (220-320 grit).",
@@ -451,10 +451,10 @@
         "Remove each ground, wire brush contact surface to bare metal, clean terminal.",
         "Apply dielectric grease and torque securely.",
         "For pixel repair: remove instrument cluster (4 T10 screws) and disconnect connectors.",
-        "Open cluster housing, locate LCD ribbon cable connections on circuit board.",
+        "Open cluster housing, locate lcd ribbon cable connections on circuit board.",
         "Apply flux, reflow solder with fine-tip iron, or install replacement ribbon.",
         "Test cluster before reassembly by reconnecting in car temporarily.",
-        "For OBC pixel repair: remove OBC unit, similar ribbon cable repair procedure.",
+        "For obc pixel repair: remove obc unit, similar ribbon cable repair procedure.",
         "For window regulator: remove door panel (Torx screws, clips).",
         "Disconnect switches, peel back vapor barrier carefully.",
         "Support window glass with tape, unbolt regulator mounting points.",
@@ -466,16 +466,16 @@
       ],
       "tips": [
         "E34 pixel failure is extremely common—repair is straightforward.",
-        "The general module (ZKE) controls many functions—can cause odd symptoms.",
+        "The general module (zke) controls many functions—can cause odd symptoms.",
         "Window regulators often fail due to cable fatigue—listen for grinding sounds.",
-        "The E34 uses separate OBC and cluster displays—both may need pixel repair.",
+        "The E34 uses separate obc and cluster displays—both may need pixel repair.",
         "Blower motor final stage failure causes fan speed issues—common problem.",
         "Ground issues cause many mysterious electrical symptoms—always check grounds first."
       ],
       "warnings": [
         "Always disconnect battery before electrical work.",
         "Don't probe airbag (SRS) wiring—risk of deployment.",
-        "Use minimal heat when soldering pixel ribbons—excess heat damages LCD.",
+        "Use minimal heat when soldering pixel ribbons—excess heat damages lcd.",
         "The vapor barrier keeps water out of the door—handle carefully.",
         "Dielectric grease insulates—use only on contact surfaces, not inside connectors."
       ],
@@ -835,7 +835,8 @@
         "M50 uses cartridge filter on top of engine; M60 and S38 use spin-on canister style.",
         "Use 5W-40 or 0W-40 synthetic for M50; 15W-40 or 20W-50 works well for M60 and S38.",
         "Check oil filter housing gasket (M50) for leaks while changing oil."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "brake-pads",
@@ -875,7 +876,8 @@
         "Open the brake fluid reservoir cap before compressing pistons.",
         "E34 wear sensors are typically on front left and rear right wheels.",
         "Consider replacing rotors if they're grooved or near minimum thickness."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "pixel-repair",
@@ -902,7 +904,7 @@
         "Carefully pull the cluster out and disconnect the electrical connectors from the rear.",
         "Remove the cluster to a clean work surface.",
         "Remove the clear lens and surround by releasing the clips around the edge.",
-        "Locate the LCD display ribbon cable connection on the circuit board.",
+        "Locate the lcd display ribbon cable connection on the circuit board.",
         "Inspect the ribbon cable—look for cracks or lifted traces at the solder joints.",
         "Apply flux to the ribbon cable connection and carefully reflow solder with iron.",
         "Alternatively, install a replacement ribbon cable using proper alignment.",
@@ -912,10 +914,11 @@
       ],
       "tips": [
         "Use a temperature-controlled soldering iron set to around 300°C.",
-        "Don't apply too much heat—you can damage the LCD if overheated.",
+        "Don't apply too much heat—you can damage the lcd if overheated.",
         "Replacement ribbon cables are inexpensive and often easier than resoldering.",
-        "Consider doing the OBC display ribbon at the same time if it has pixel issues."
-      ]
+        "Consider doing the obc display ribbon at the same time if it has pixel issues."
+      ],
+      "warnings": []
     },
     {
       "id": "coolant-flush",
@@ -955,12 +958,13 @@
         "Inspect the expansion tank for cracks—this is a common failure point.",
         "If the old coolant is rusty or contaminated, consider a block flush.",
         "Check all hoses for cracks or soft spots while the system is drained."
-      ]
+      ],
+      "warnings": []
     }
   ],
   "restorationItems": {
     "engine": [
-      { "id": "e34-timing-guides", "name": "Replace timing chain guides (M60 V8)", "description": "Nikasil-era guides fail" },
+      { "id": "e34-timing-guides", "name": "Replace timing chain guides (M60 V8)", "description": "M60 V8: plastic chain guides crack with age" },
       { "id": "e34-vanos", "name": "Rebuild VANOS (M50TU)", "description": "Early VANOS system—seals fail" },
       { "id": "e34-timing-belt", "name": "Replace timing belt (M20)", "description": "Interference engine—don't skip it" },
       { "id": "e34-valve-cover", "name": "Replace valve cover gasket", "description": "Common oil leak source" },
@@ -1008,37 +1012,37 @@
       {
         "name": "525i",
         "years": "1989-1995",
-        "description": "The volume model with the smooth M20 (early) or M50 (1991+) inline-six. The M50-powered cars are excellent daily drivers with 189 hp and strong reliability.",
+        "description": "The volume model, with the M20 six early on and the M50 from 1991. The M50 cars make 189 hp and are the easiest E34s to live with every day.",
         "desirability": "Medium"
       },
       {
         "name": "530i",
         "years": "1994-1995",
-        "description": "Introduced the M60 V8 to the 5 Series in North America. 215 hp with smooth power delivery. Watch for Nikasil bore wear issues.",
+        "description": "The first V8 5 Series in North America: a 3.0L M60 with 215 hp. Smooth, but check whether the engine has been done for Nikasil bore wear.",
         "desirability": "Medium"
       },
       {
         "name": "535i",
         "years": "1988-1993",
-        "description": "The big-six M30 engine producing 208 hp. Torquey and reliable but less refined than the later M50. Great value proposition.",
+        "description": "The big M30 six with 208 hp. Torquey and durable, if less refined than the later M50. Good value.",
         "desirability": "Medium"
       },
       {
         "name": "540i",
         "years": "1994-1995",
-        "description": "Top non-M model with the 4.0L M60 V8 producing 282 hp. Effortless power and refinement. 6-speed manual available.",
+        "description": "The 4.0L M60 V8 with 282 hp, and a six-speed manual was available. The one I'd want, once the timing chain guides and Nikasil question are sorted.",
         "desirability": "High"
       },
       {
         "name": "M5",
         "years": "1991-1993",
-        "description": "The definitive super-sedan with the 3.6L S38B36 (1991) or 3.8L S38B38 (1993) producing 310-335 hp. Hand-built engine, aggressive styling. Values are strong and rising.",
+        "description": "The 3.6L S38 with 310 hp in US cars (the 3.8L was European only). A hand-assembled engine and a proper M car. Values are strong.",
         "desirability": "High"
       },
       {
         "name": "525iT Touring",
         "years": "1992-1995",
-        "description": "The elegant wagon variant. Rare in North America and highly practical. Self-leveling rear suspension standard.",
+        "description": "The wagon, sold in the US as the 525iT and, late in production, the V8 530iT. Practical, rare here, and gaining a following. Self-leveling rear suspension came standard.",
         "desirability": "High"
       }
     ],
@@ -1191,16 +1195,16 @@
       "fuel": "18-25 MPG depending on engine"
     },
     "expertTips": [
-      "The E34 is the best-built 5 Series BMW ever made—they were over-engineered for durability",
-      "M50-powered 525i models offer the best balance of reliability, performance, and running costs",
-      "540i V8 cars should be carefully vetted for Nikasil damage—check the engine code and casting date",
-      "Parts availability is excellent—many components are shared with E36 and E32",
-      "The thrust arm bushings are the Achilles heel—plan to replace them during your ownership",
-      "Touring (wagon) models are becoming collectible—practical and rare in the US",
-      "M5 values have stabilized at strong levels—they're not likely to decrease significantly",
-      "Join the E34 community at bimmerforums.com for excellent technical support",
-      "Factory sport seats are far superior to standard seats—worth seeking out",
-      "A well-maintained E34 can exceed 300,000 miles without major engine work"
+      "Many people consider the E34 the best-built 5 Series. It was engineered to last.",
+      "An M50-powered 525i has the best balance of performance, durability, and running costs.",
+      "Vet any M60 V8 for Nikasil damage. Check the engine code and build date, and ask whether it has been replaced.",
+      "Parts are easy to get, and many are shared with the E32 and E36.",
+      "The thrust arm bushings are the weak spot. Plan on replacing them.",
+      "Touring models are getting collectible. Practical and rare in the US.",
+      "M5 values have been strong for years.",
+      "Bimmerforums has a deep E34 section for technical help.",
+      "The factory sport seats are much better than the standard ones and worth seeking out.",
+      "A well-maintained E34 can go past 300,000 miles without major engine work."
     ]
   },
   "communityResources": {

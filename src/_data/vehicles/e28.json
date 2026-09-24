@@ -23,7 +23,7 @@
       "id": "timing-belt",
       "title": "Timing Belt Failure (M20 Engine)",
       "symptoms": "Engine won't start, loud slapping noise before failure, visible belt wear or cracking",
-      "description": "E28s equipped with the M20 engine (528e) use a timing belt that requires regular replacement. The M20 is an interference engine—if the belt fails, pistons will strike valves causing major engine damage. Factory interval is 60,000 miles but many recommend 50,000 miles for safety. The tensioner and water pump should always be replaced at the same time.",
+      "description": "The 528e's M20 six runs a rubber timing belt, and it's an interference engine, so a failure means bent valves. BMW's interval was 60,000 miles. I'd do it at 50,000 or four years, and always replace the tensioner and water pump with it.",
       "fixes": [
         "Replace timing belt every 50,000 miles or 4 years (whichever comes first)",
         "Always replace tensioner and water pump during service",
@@ -38,7 +38,7 @@
       "repairCosts": {
         "diy": "$150-300",
         "shop": "$500-900",
-        "notes": "M30 has timing chain—less common issue. M20 requires belt service."
+        "notes": "Only the 528e (M20) has a belt. The M30 cars use a chain."
       },
       "parts": [
         { "name": "Timing Belt (M20)", "partNumber": "11311711081", "price": "$30-50" },
@@ -58,7 +58,7 @@
       "id": "timing-chain",
       "title": "Timing Chain and Guide Wear (M30 Engine)",
       "symptoms": "Rattling on startup, chain slap noise, timing drift, poor running",
-      "description": "The M30 big-six engines (533i, 535i, M5) use timing chains rather than belts. While chains last longer, the plastic chain guides and tensioner pads deteriorate over time, especially in high-mileage examples. Broken guide pieces can clog the oil pickup. The chain itself stretches with age, affecting timing accuracy.",
+      "description": "The M30 in the 533i and 535i uses a chain, which lasts, but the plastic guide rails and the tensioner don't. On a high-mile engine they crack, and broken pieces can end up blocking the oil pickup. A rattle at cold start is the warning. Replace the guides and tensioner, and the chain too if it's stretched.",
       "fixes": [
         "Replace timing chain guides and tensioner at 150,000+ miles or if noise present",
         "Use updated metal-backed guide rails where available",
@@ -73,7 +73,7 @@
       "repairCosts": {
         "diy": "$300-600",
         "shop": "$800-1500",
-        "notes": "M30 timing chain and guides. Less common failure than M20 belt."
+        "notes": "Less urgent than the M20 belt, but don't ignore a cold-start rattle."
       },
       "parts": [
         { "name": "Timing Chain Kit", "partNumber": "11311717597", "price": "$200-350" },
@@ -86,13 +86,13 @@
       "id": "rust-corrosion",
       "title": "Rust and Corrosion",
       "symptoms": "Bubbling paint, rust holes, soft floor pans, damaged fender lips, deteriorated jack points",
-      "description": "E28s are extremely rust-prone, particularly in areas with road salt. The worst spots are the front fenders behind the wheels, rocker panels, rear wheel arches, jack points, battery tray, and trunk floor. The windshield frame and A-pillars can also rust from the inside out. Structural rust can compromise safety.",
+      "description": "Rust is the E28's biggest enemy, and it's why clean ones are getting scarce. Check the front fenders behind the wheels, rockers, rear arches, jack points, battery tray, and trunk floor. Rust around the windshield frame and A-pillars often starts inside and shows up late. If it's reached the structure, walk away unless you're ready for real metalwork.",
       "fixes": [
         "Do a thorough rust inspection before you buy, including the hidden areas",
         "Treat surface rust immediately before it spreads",
         "Weld in repair panels for structural rust (jack points, floor pans)",
         "Replace fenders if rust is severe (reproduction panels available)",
-        "Apply rust prevention to undercarriage (POR-15, Fluid Film)",
+        "Apply rust prevention to undercarriage (por-15, Fluid Film)",
         "Keep all drain holes clear to prevent water accumulation"
       ],
       "sources": [
@@ -102,7 +102,7 @@
       "repairCosts": {
         "diy": "$200-1000",
         "shop": "$1000-5000+",
-        "notes": "Common on 40+ year old cars. Check floors and fenders."
+        "notes": "The price of the car is often decided here. Check the floors and fenders first."
       },
       "parts": [
         { "name": "Fender Patch Panel", "price": "$50-150" },
@@ -115,7 +115,7 @@
       "id": "oil-leaks",
       "title": "Oil Leaks (M30 Engine)",
       "symptoms": "Oil spots under car, burning oil smell, visible oil on engine, low oil level",
-      "description": "The M30 engine is known for oil leaks as gaskets age. Common leak points include the valve cover gasket, oil pan gasket, rear main seal, front crankshaft seal, oil filter housing gasket, and camshaft seal. While often dismissed as 'normal' for old BMWs, these leaks should be addressed to prevent oil starvation and fire risk.",
+      "description": "An M30 that doesn't leak is one that's been resealed recently. The usual suspects are the valve cover, oil pan, rear main seal, front crank seal, oil filter housing, and cam seal. Plenty of owners shrug these off as normal, but oil on a hot exhaust is a fire waiting to happen, so fix them.",
       "fixes": [
         "Replace valve cover gasket with quality BMW or Elring gasket",
         "Oil pan gasket replacement (requires subframe lowering)",
@@ -130,7 +130,7 @@
       "repairCosts": {
         "diy": "$100-300",
         "shop": "$300-700",
-        "notes": "Valve cover and oil pan gaskets common."
+        "notes": "Valve cover and oil pan gaskets are the common ones and the cheap ones."
       },
       "parts": [
         { "name": "Valve Cover Gasket", "partNumber": "11121730229", "price": "$30-60" },
@@ -142,7 +142,7 @@
       "id": "electrical-issues",
       "title": "Electrical System Problems",
       "symptoms": "Flickering lights, dead gauges, check control warnings, intermittent accessories, starting issues",
-      "description": "E28 electrical systems suffer from age-related degradation. Ground points corrode, causing erratic behavior. The instrument cluster uses early electronics that fail over time. The check control panel (OBC) is a common failure point. Window switches, sunroof motors, and the HVAC blower motor all wear out.",
+      "description": "Forty years of heat and vibration catch up with the wiring. Corroded grounds cause most of the strange behavior, from flickering gauges to intermittent no-starts. The check control panel and on-board computer fail, and window switches, sunroof motors, and the blower motor all wear out. Start with the grounds before you buy any parts.",
       "fixes": [
         "Clean and re-establish all ground points (multiple locations)",
         "Rebuild or replace instrument cluster (capacitor replacement common)",
@@ -158,7 +158,7 @@
       "repairCosts": {
         "diy": "$50-200",
         "shop": "$150-400",
-        "notes": "Ground connections and relays are common culprits."
+        "notes": "Grounds and relays first. They fix more than you'd think."
       },
       "parts": [
         { "name": "Main Relay", "partNumber": "12631709557", "price": "$40-70" },
@@ -171,7 +171,7 @@
       "id": "suspension-wear",
       "title": "Suspension Bushing and Component Wear",
       "symptoms": "Clunking over bumps, vague steering, uneven tire wear, wandering at speed, poor handling",
-      "description": "After 35+ years, all rubber suspension components in E28s need replacement. Control arm bushings, thrust arm bushings, subframe mounts, and steering components all deteriorate. The front end uses a complex multi-link design that requires careful attention. Worn bushings severely compromise the refined handling these cars are known for.",
+      "description": "At this age every rubber bushing on an E28 is tired. The front uses MacPherson struts with control arms and thrust arms; the rear is a semi-trailing arm design on a rubber-mounted subframe. Worn control arm and thrust arm bushings, subframe mounts, and steering joints turn a car known for its composure into one that wanders and clunks.",
       "fixes": [
         "Complete front suspension refresh with quality bushings",
         "Replace control arm and thrust arm bushings (polyurethane available)",
@@ -188,7 +188,7 @@
       "repairCosts": {
         "diy": "$300-600",
         "shop": "$700-1200",
-        "notes": "Full refresh common at this age."
+        "notes": "A full refresh at once is the way to go."
       },
       "parts": [
         { "name": "Front Control Arm Kit", "price": "$150-300" },
@@ -201,7 +201,7 @@
       "id": "cooling-system",
       "title": "Cooling System Failures",
       "symptoms": "Overheating, coolant leaks, temperature gauge fluctuation, heater not working",
-      "description": "The E28 cooling system components degrade with age. Radiators develop leaks at the plastic end tanks, water pumps fail, and thermostats stick. The auxiliary electric fan and its relay are failure points. Overheating an M30 can crack the head, while M20 head gaskets are vulnerable to overheating damage.",
+      "description": "Radiators crack at the plastic end tanks, water pumps weep, and thermostats stick. The auxiliary electric fan and its relay fail too, which you'll notice in traffic on a hot day. Don't let either engine overheat: an M30 can crack its head, and an M20 will lift its head gasket.",
       "fixes": [
         "Replace radiator if original (aluminum upgrade recommended)",
         "New water pump (metal impeller versions preferred)",
@@ -217,7 +217,7 @@
       "repairCosts": {
         "diy": "$200-400",
         "shop": "$500-1000",
-        "notes": "Full system refresh recommended on older cars."
+        "notes": "Refresh the whole system on any car without records."
       },
       "parts": [
         { "name": "Water Pump", "partNumber": "11511719836", "price": "$60-100" },
@@ -230,12 +230,12 @@
       "id": "fuel-injection",
       "title": "Fuel Injection Issues",
       "symptoms": "Hard starting, rough idle, hesitation, poor fuel economy, stalling",
-      "description": "Early E28s use Bosch L-Jetronic fuel injection, while later models use Motronic. Common failures include the airflow meter (AFM), idle control valve (ICV), coolant temperature sensor, and cold start injector. Vacuum leaks from deteriorated hoses cause running problems. Fuel injectors can clog or leak.",
+      "description": "Early E28s use Bosch L-Jetronic; later ones use Motronic. The usual failures are the airflow meter, idle control valve, coolant temperature sensor, and on L-Jetronic cars the cold start injector. Cracked vacuum hoses cause rough running on both, so check for leaks before you blame an expensive part.",
       "fixes": [
         "Clean or replace idle control valve (ICV)",
         "Test airflow meter (AFM) and replace if faulty",
         "Replace all vacuum hoses with silicone",
-        "New coolant temperature sensor for ECU",
+        "New coolant temperature sensor for ecu",
         "Clean fuel injectors (or replace with new/rebuilt)",
         "Check fuel pressure and replace pump/filter if low"
       ],
@@ -246,11 +246,10 @@
       "repairCosts": {
         "diy": "$100-400",
         "shop": "$300-700",
-        "notes": "L-Jetronic and Motronic systems. AFM and WUR common issues."
+        "notes": "Check for vacuum leaks before replacing sensors."
       },
       "parts": [
         { "name": "Air Flow Meter", "partNumber": "13621286615", "price": "$150-300" },
-        { "name": "Warm-Up Regulator", "price": "$200-400" },
         { "name": "Fuel Injector", "partNumber": "13641730060", "price": "$40-80 each" }
       ],
       "difficulty": "Moderate"
@@ -318,7 +317,7 @@
         "E28 suspension bolts are often severely seized after 40 years—budget extra time for removal.",
         "Heat from a propane torch often helps free stuck bolts—be careful near fuel lines.",
         "The E28 uses an idler arm in the steering—don't overlook this wear item.",
-        "Polyurethane bushings last longer but transmit more NVH than rubber.",
+        "Polyurethane bushings last longer but transmit more nvh than rubber.",
         "Mark eccentric bolt positions before removal to get close to original alignment.",
         "Consider upgrading to Bilstein HD or Sport shocks while components are accessible."
       ],
@@ -385,7 +384,7 @@
         "For large panels (rocker, fender): drill out spot welds on original, fit new panel.",
         "Grind welds smooth and check for warping—planish if needed.",
         "Treat all bare metal and weld areas with weld-through primer.",
-        "Apply POR-15 or similar to inaccessible areas and inner surfaces.",
+        "Apply por-15 or similar to inaccessible areas and inner surfaces.",
         "Seal all welded joints with automotive seam sealer.",
         "Apply epoxy primer to repaired areas, then high-build primer.",
         "Block sand primer (220-320 grit) until smooth.",
@@ -397,9 +396,9 @@
         "Jack point rust is structural—a soft jack point means the rocker is compromised.",
         "Battery tray rust is caused by acid—neutralize with baking soda before repair.",
         "The E28 windshield frame rusts from trapped water—check behind trim carefully.",
-        "POR-15 must be topcoated—UV exposure causes chalking and failure.",
+        "por-15 must be topcoated—UV exposure causes chalking and failure.",
         "Treat rocker panel interiors with Fluid Film annually after repair.",
-        "NOS fenders occasionally appear on eBay—monitor listings for good original panels."
+        "nos fenders occasionally appear on eBay—monitor listings for good original panels."
       ],
       "warnings": [
         "Always wear a P100 respirator when grinding rust—particles are hazardous.",
@@ -473,7 +472,7 @@
       ],
       "tips": [
         "E28 electrical issues are usually ground-related—always check grounds first.",
-        "The check control unit (OBC) often fails—rebuilders can repair these.",
+        "The check control unit (obc) often fails—rebuilders can repair these.",
         "Dim headlights are often caused by corroded headlight switch contacts.",
         "The fuel pump relay is a common no-start culprit—carry a spare.",
         "Green corrosion on copper = moisture intrusion—find and fix the water leak.",
@@ -605,7 +604,7 @@
         "Check the chain for stretch and the sprockets for hooked teeth. Replace the chain and sprockets together if either is worn.",
         "Fit new guide rails and the new tensioner.",
         "Confirm the cam and crank timing marks are still aligned before closing anything up.",
-        "Refit the covers with new gaskets and a thin bead of RTV at the joints, and install a new front crank seal.",
+        "Refit the covers with new gaskets and a thin bead of rtv at the joints, and install a new front crank seal.",
         "Refit the hub and damper. Torque to the value in the Torque Specs table on this page, or your workshop manual.",
         "Refill and bleed the cooling system, then start and listen for chain noise."
       ],
@@ -849,7 +848,8 @@
         "Classic M30 and M20 engines run best on conventional or high-zinc oil.",
         "Many E28 owners prefer 15W-40 diesel-rated oils for the higher zinc content.",
         "Check for oil leaks from the valve cover gasket while you're under the hood."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "brake-pads",
@@ -872,7 +872,7 @@
       "steps": [
         "Loosen lug bolts while the car is on the ground.",
         "Raise the car and support on jack stands, then remove wheel.",
-        "The E28 uses ATE sliding calipers—locate the two 13mm caliper bolts on the rear of the caliper bracket.",
+        "The E28 uses ate sliding calipers—locate the two 13mm caliper bolts on the rear of the caliper bracket.",
         "Remove the caliper bolts and lift the caliper off the rotor.",
         "Support the caliper with wire or bungee—never let it hang by the brake hose.",
         "Slide the old pads out of the caliper bracket.",
@@ -889,7 +889,8 @@
         "E28 front rotors are directional on some models—ensure correct side.",
         "The parking brake on E28 is cable-actuated drum inside the rear rotors.",
         "Bleed brakes if pedal feels soft after compressing pistons."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "valve-adjustment",
@@ -928,7 +929,8 @@
         "Slight drag on the feeler gauge is correct—not too tight, not too loose.",
         "Mark each valve as you adjust it to keep track of progress.",
         "Listen for ticking after adjustment—slight tick is normal, loud clatter means too loose."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "timing-belt",
@@ -950,7 +952,7 @@
       "steps": [
         "Disconnect the negative battery terminal.",
         "Drain the cooling system from the radiator drain cock.",
-        "Remove the fan clutch (LEFT-HAND THREAD) and fan shroud.",
+        "Remove the fan clutch (left-hand thread) and fan shroud.",
         "Remove the accessory drive belts by loosening the alternator and power steering pump.",
         "Remove the four bolts from the water pump pulley.",
         "Remove the upper and lower timing belt covers.",
@@ -972,7 +974,8 @@
         "Never rotate the engine backwards with the belt installed.",
         "Always replace the tensioner and water pump when doing the belt.",
         "Consider replacing the front crankshaft seal while you have access."
-      ]
+      ],
+      "warnings": []
     }
   ],
   "restorationItems": {
@@ -1028,13 +1031,13 @@
       {
         "name": "528e",
         "years": "1982-1988",
-        "description": "Economy-focused model with the 2.7L M20 'eta' engine producing 121 hp. Prioritizes fuel economy over performance. Can be upgraded to 'i' spec with intake/exhaust work.",
+        "description": "The economy model, with the low-revving 2.7L M20 'eta' six making 121 hp. Lots of torque, not much top end. It's the belt-driven engine, so check the timing belt history.",
         "desirability": "Low"
       },
       {
         "name": "533i",
         "years": "1983-1984",
-        "description": "Early big-six model with the 3.2L M30B32 producing 181 hp. Replaced by the 535i but shares most components.",
+        "description": "The first big-six car, with the 3.2L M30 making 181 hp. Replaced by the 535i after two years, and shares most of its parts.",
         "desirability": "Medium"
       },
       {
@@ -1046,13 +1049,13 @@
       {
         "name": "M5",
         "years": "1988 (US)",
-        "description": "The original fast sedan, with the hand-assembled S38 3.5L six making 256 hp. Only 1,239 came to North America, and values keep climbing.",
+        "description": "The original fast sedan, with the hand-assembled S38 3.5L six making 256 hp. BMW built 1,340 for North America, all sold as 1988 models, and values keep climbing.",
         "desirability": "High"
       },
       {
         "name": "524td",
         "years": "1985-1986",
-        "description": "Turbodiesel variant with the M21 2.4L engine. Rare in North America. Unique character but parts availability is limited.",
+        "description": "The M21 2.4L turbodiesel. Rare in North America, with a following of its own, but parts are harder to find.",
         "desirability": "Low"
       }
     ],
@@ -1204,16 +1207,16 @@
       "fuel": "18-24 MPG depending on model"
     },
     "expertTips": [
-      "The E28 is overshadowed by the E30, making it more affordable while offering more space and comfort",
-      "The M30 engine is one of BMW's most reliable - 300,000+ miles is achievable with proper care",
-      "535is models are rare and undervalued—the combination of sport suspension and LSD is excellent",
-      "Early cars (1982-1984) have more electrical issues than later models",
-      "The M5's S38 engine requires more specialized knowledge—factor in maintenance costs",
-      "European-spec bumpers and headlights dramatically improve appearance if legal in your area",
-      "Parts availability is good through specialists like Pelican Parts and BavAuto",
-      "The Getrag 260 5-speed can handle significant power increases for mild engine builds",
-      "Check the rear shock mounts—they can crack and separate from the body",
-      "Join the E28 community on mye28.com for excellent technical resources"
+      "The E30 gets the attention, which keeps E28 prices lower for more space and comfort.",
+      "The M30 is one of BMW's toughest engines. With regular maintenance, 300,000 miles is realistic.",
+      "A 535is, with the sport suspension and limited-slip differential, is the one I'd hunt for.",
+      "Early cars (1982–84) tend to have more electrical trouble than later ones.",
+      "The M5's S38 needs specialist knowledge. Budget for it before you buy.",
+      "European bumpers and headlights transform the look, if they're legal where you live.",
+      "Parts are still easy to get through specialists like Pelican Parts and Bavarian Autosport.",
+      "The Getrag 260 five-speed handles mild engine work without complaint.",
+      "Check the rear shock mounts. They can crack away from the body.",
+      "The community on MyE28.com is one of the best technical resources for these cars."
     ]
   },
   "communityResources": {
