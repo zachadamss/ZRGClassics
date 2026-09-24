@@ -15,13 +15,13 @@
         </div>
 
         <nav class="footer-nav" aria-label="Footer">
-            <div class="footer-col">
+            <div class="footer-col footer-col--cars">
                 <h2>BMW</h2>
                 <ul>
                     {% for key in vehicleList.bmw %}<li><a href="/resources/bmw/{{ key }}/">{{ vehicles[key].model }}</a></li>{% endfor %}
                 </ul>
             </div>
-            <div class="footer-col">
+            <div class="footer-col footer-col--cars">
                 <h2>Porsche</h2>
                 <ul>
                     {% for key in vehicleList.porsche %}<li><a href="/resources/porsche/{{ key }}/">{{ vehicles[key].model }}</a></li>{% endfor %}

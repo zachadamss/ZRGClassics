@@ -14,11 +14,11 @@
         <div class="cost-comparison">
             <div class="cost-item diy">
                 <span class="cost-label">DIY</span>
-                <span class="cost-value">{{ issue.repairCosts.diy }}</span>
+                <span class="cost-value">{{ issue.repairCosts.diy | money }}</span>
             </div>
             <div class="cost-item shop">
                 <span class="cost-label">Shop</span>
-                <span class="cost-value">{{ issue.repairCosts.shop }}</span>
+                <span class="cost-value">{{ issue.repairCosts.shop | money }}</span>
             </div>
         </div>
         {% if issue.repairCosts.notes %}
@@ -52,11 +52,11 @@
                 <tr>
                     <td data-label="Part">{{ part.name }}</td>
                     <td data-label="Part #" class="part-number">
-                        {%- if part.partNumber %}{{ part.partNumber }}
+                        {%- if part.partNumber %}{{ part.partNumber | partNumber(vehicleData.brand | lower) }}
                         {%- elif part.brand %}<span class="part-brand">{{ part.brand }}</span>
                         {%- else %}<span class="part-varies">Varies</span>{% endif -%}
                     </td>
-                    <td data-label="Price" class="part-price">{{ part.price }}</td>
+                    <td data-label="Price" class="part-price">{{ part.price | money }}</td>
                 </tr>
                 {% endfor %}
             </tbody>
