@@ -27,7 +27,7 @@ Design and copy review of zrgclassics.com, and the fixes that came out of it. Wo
 | T7 | Remove "Coming Soon" from nav/homepage; hide empty forum counts | ✅ | Shop out of nav (`noindex`, honest copy); Coming Soon cards removed; empty forum categories show "Start the first thread" instead of "0 threads · 0 posts". |
 | T8 | Newsletter form shouldn't force account creation | ✅ | `src/js/newsletter.js` subscribes in place via ConvertKit; registration reuses it. |
 | T9 | Model-specific signature guides instead of identical guide sets | 🟡 | 17 signature guides added, one per car (list below). Written conservatively (torque values point to the page's own table), but they need an owner read before going live. |
-| T10 | Real About page | 🟡 | Page rebuilt: what's here, sources, corrections policy, not-affiliated note, contact form with topic. The personal section is marked in `src/about.njk` and waits on owner details. |
+| T10 | Real About page | ✅ | Owner section written from Zach's details (cars owned, current garage, PNW independent mechanic) plus a "Why ZRG" section: *zurückgeben*, give back/restore, OEM+. |
 
 ## Design
 
@@ -146,3 +146,4 @@ Things I changed or added but couldn't verify well enough to call finished. Wort
 - **2026-09-23**: `3c7239a` structure, design system, garage merge, buyer's guide pages, image pipeline, SEO, and the fixes N1–N8, N10.
 - **2026-09-23**: `adc4386` vehicle data accuracy fixes (A1–A10, N11–N16), 17 signature guides, overviews/taglines, guide descriptions, filler and typography pass.
 - **2026-09-23**: `2ba1617` page copy (forum, account, calculator, Terms), About rebuild, CLAUDE.md/README/TODO updates.
+- **2026-09-23**: site URL switched to `https://www.zrgclassics.com` (Vercel's primary domain) so canonical tags, sitemap, and social links stop pointing at a redirect; About page owner section and "Why ZRG" added.
