@@ -72,7 +72,7 @@ Full record of the September 2026 design and copy review: `docs/site-review-2026
 ## Priority 3: Hardening & Maintenance
 
 - [ ] **Drop `'unsafe-inline'` from the CSP's `style-src`** — scripts are already strict; styles still allow inline `style="…"` attributes (progress-bar widths and a few `display:none` toggles). Moving those to classes or CSS custom properties set from JS would let the policy forbid inline styles too.
-- [ ] **Upgrade the vendored Supabase client now and then** — `src/js/vendor/README.md` has the steps.
+- [ ] **Upgrade the vendored Supabase client now and then** — `docs/vendored-scripts.md` has the steps.
 
 ---
 

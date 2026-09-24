@@ -62,7 +62,7 @@ Database schemas are in `supabase-schema*.sql` files at the project root. Run th
 
 The login page only follows same-site paths from `?return=` (`safeReturnUrl()`); keep it that way.
 
-Any user- or database-supplied value inserted via `innerHTML` must go through `Forum.sanitizeHtml()` (or the tools' `escapeHtml()`), and user-supplied URLs through `Forum.safeUrl()`. The Supabase client library (vendored at `src/js/vendor/supabase-js-<version>.js`, see the README there) and `/js/supabase.js` are loaded once in `layouts/base.njk`; pages should not include them again.
+Any user- or database-supplied value inserted via `innerHTML` must go through `Forum.sanitizeHtml()` (or the tools' `escapeHtml()`), and user-supplied URLs through `Forum.safeUrl()`. The Supabase client library (vendored at `src/js/vendor/supabase-js-<version>.js`; upgrade steps in `docs/vendored-scripts.md`) and `/js/supabase.js` are loaded once in `layouts/base.njk`; pages should not include them again.
 
 ### Content-Security-Policy
 

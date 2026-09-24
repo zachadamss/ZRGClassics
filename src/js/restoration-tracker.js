@@ -248,7 +248,7 @@ function renderChecklistItem(item, category) {
         <div class="checklist-item ${statusClass}" data-id="${item.id}" data-category="${category}">
             <div class="item-header">
                 <div class="item-status">
-                    <select class="status-select" data-id="${item.id}" data-category="${category}">
+                    <select class="status-select" data-id="${item.id}" data-category="${category}" aria-label="Status: ${escapeHtml(item.name)}">
                         <option value="not-started" ${item.status === 'not-started' ? 'selected' : ''}>Not Started</option>
                         <option value="in-progress" ${item.status === 'in-progress' ? 'selected' : ''}>In Progress</option>
                         <option value="complete" ${item.status === 'complete' ? 'selected' : ''}>Complete</option>

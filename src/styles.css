@@ -79,6 +79,7 @@
     --status-soon: var(--link-blue);
     --status-over: var(--accent-strong);
     --status-over-text: var(--accent-text);
+    --danger-text: #B42318;        /* destructive buttons, 5.9:1 on paper */
     --warning-color: #F5A623;
     --danger-color: #DC3545;
 
@@ -136,6 +137,7 @@
     --border-strong: #3A4D64;
     --band: #0A1420;
     --band-deep: #07101A;
+    --danger-text: #FF8A7A;
     --gulf-blue-muted: #5BA4C9;
     --gulf-orange-muted: #D9541A;
 
@@ -8773,8 +8775,8 @@ input:focus, textarea:focus, select:focus {
 
 .btn-delete {
     background: none;
-    border: 1px solid var(--danger-color);
-    color: var(--danger-color);
+    border: 1px solid var(--danger-text);
+    color: var(--danger-text);
     padding: 0.35rem 0.75rem;
     font-size: 0.8rem;
     border-radius: var(--radius-sm);
@@ -8783,8 +8785,8 @@ input:focus, textarea:focus, select:focus {
 }
 
 .btn-delete:hover {
-    background: var(--danger-color);
-    color: white;
+    background: var(--danger-text);
+    color: var(--background-color);
 }
 
 /* Replies Section */
