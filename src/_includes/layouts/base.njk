@@ -20,7 +20,7 @@
     {# Generate dynamic SEO data for vehicle pages #}
     {% if vehicle and vehicles[vehicle] %}
         {% set vehicleData = vehicles[vehicle] %}
-        {% set autoDescription = "Complete " + vehicleData.fullName + " (" + vehicleData.years + ") resource guide: common issues, repair costs, torque specs, parts suppliers, and DIY maintenance guides." %}
+        {% set autoDescription = vehicleData.fullName + " (" + (vehicleData.years | range) + "): " + vehicleData.tagline + " Known problems and repair costs, step-by-step guides, torque specs, and where to buy parts." %}
         {% set autoImage = vehicleData.heroImage %}
     {% endif %}
 
@@ -28,12 +28,14 @@
     <title>{{ title }} - {{ site.name }}</title>
     <meta name="title" content="{{ title }} - {{ site.name }}">
     <meta name="description" content="{{ description | default(autoDescription) | default(site.description) }}">
-    <meta name="author" content="{{ site.name }}">
+    <meta name="author" content="{{ site.author.name if vehicleData else site.name }}">
     <meta name="robots" content="{{ robots | default('index, follow') }}">
+    {%- if canonical != false %}
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    {%- endif %}
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="{{ ogType | default('website') }}">
+    <meta property="og:type" content="{{ ogType or ('article' if vehicleData else 'website') }}">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:title" content="{{ ogTitle | default(title) }} - {{ site.name }}">
     <meta property="og:description" content="{{ ogDescription | default(description) | default(autoDescription) | default(site.description) }}">
@@ -66,64 +68,83 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="/styles.css">
 
-    <!-- JSON-LD Structured Data -->
-    {# Organization Schema - Sitewide #}
+    <!-- JSON-LD Structured Data (values go through dump so they're valid JSON) -->
+    {%- set author = { "@type": "Person", "name": site.author.name, "url": site.url + site.author.url, "jobTitle": site.author.jobTitle, "homeLocation": { "@type": "Place", "name": site.author.homeLocation } } %}
+    {%- set publisher = { "@type": "Organization", "name": site.name, "url": site.url, "logo": { "@type": "ImageObject", "url": site.url + "/images/apple-touch-icon.png" } } %}
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "{{ site.name }}",
-        "url": "{{ site.url }}",
-        "logo": "{{ site.url }}/images/apple-touch-icon.png",
-        "description": "{{ site.description }}",
+        "name": {{ site.name | dump | safe }},
+        "url": {{ site.url | dump | safe }},
+        "logo": {{ (site.url + "/images/apple-touch-icon.png") | dump | safe }},
+        "description": {{ site.description | dump | safe }},
+        "founder": {{ author | dump | safe }},
         "sameAs": [
             {%- set comma = joiner(", ") -%}
-            {%- if site.social.facebook %}{{ comma() }}"{{ site.social.facebook }}"{% endif -%}
-            {%- if site.social.twitter %}{{ comma() }}"https://twitter.com/{{ site.twitterHandle | replace('@', '') }}"{% endif -%}
-            {%- if site.social.instagram %}{{ comma() }}"{{ site.social.instagram }}"{% endif -%}
+            {%- if site.social.facebook %}{{ comma() }}{{ site.social.facebook | dump | safe }}{% endif -%}
+            {%- if site.social.twitter %}{{ comma() }}{{ site.social.twitter | dump | safe }}{% endif -%}
+            {%- if site.social.instagram %}{{ comma() }}{{ site.social.instagram | dump | safe }}{% endif -%}
         ]
     }
     </script>
 
-    {# WebSite Schema with SearchAction #}
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "{{ site.name }}",
-        "url": "{{ site.url }}",
-        "description": "{{ site.description }}",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": "{{ site.url }}/search/?q={search_term_string}"
-            },
-            "query-input": "required name=search_term_string"
-        }
+        "name": {{ site.name | dump | safe }},
+        "url": {{ site.url | dump | safe }},
+        "description": {{ site.description | dump | safe }},
+        "publisher": {{ publisher | dump | safe }}
     }
     </script>
 
-    {# Breadcrumb Schema - If breadcrumbs defined #}
     {% if breadcrumbs and breadcrumbs.length > 0 %}
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-            {% for crumb in breadcrumbs %}
+            {%- for crumb in breadcrumbs %}
             {
                 "@type": "ListItem",
                 "position": {{ loop.index }},
-                "name": "{{ crumb.label }}",
-                "item": "{% if crumb.url %}{{ site.url }}{{ crumb.url }}{% else %}{{ site.url }}{{ page.url }}{% endif %}"
+                "name": {{ crumb.label | dump | safe }},
+                "item": {{ (site.url + (crumb.url if crumb.url else page.url)) | dump | safe }}
             }{% if not loop.last %},{% endif %}
-            {% endfor %}
+            {%- endfor %}
         ]
     }
     </script>
     {% endif %}
 
+    {#- Vehicle pages and buyer's guides: an article about the car, written by the owner -#}
+    {% if vehicleData %}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": {{ (schemaType or "TechArticle") | dump | safe }},
+        "headline": {{ title | dump | safe }},
+        "description": {{ (description or autoDescription) | dump | safe }},
+        "image": {{ (site.url + vehicleData.heroImage) | dump | safe }},
+        "url": {{ (site.url + page.url) | dump | safe }},
+        "mainEntityOfPage": {{ (site.url + page.url) | dump | safe }},
+        {%- if vehicleData.lastReviewed %}
+        "dateModified": {{ vehicleData.lastReviewed | dump | safe }},
+        {%- endif %}
+        "inLanguage": "en-US",
+        "author": {{ author | dump | safe }},
+        "publisher": {{ publisher | dump | safe }},
+        "about": {
+            "@type": "Car",
+            "name": {{ vehicleData.fullName | dump | safe }},
+            "brand": { "@type": "Brand", "name": {{ vehicleData.brand | dump | safe }} },
+            "model": {{ vehicleData.model | dump | safe }}
+        }
+    }
+    </script>
+    {% endif %}
 
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VB5BSWLP41"></script>

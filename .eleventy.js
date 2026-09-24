@@ -42,6 +42,12 @@ module.exports = function(eleventyConfig) {
     String(value || "").replace(/(\d[k+]?)\s*-\s*(\$?\d)/g, "$1–$2")
   );
 
+  // "2026-09-24" -> "September 2026"
+  eleventyConfig.addFilter("readableDate", value => {
+    const d = new Date(`${value}T12:00:00Z`);
+    return d.toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "UTC" });
+  });
+
   // Watch for CSS changes
   eleventyConfig.addWatchTarget("src/styles.css");
 

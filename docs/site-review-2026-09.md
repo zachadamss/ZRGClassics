@@ -174,3 +174,4 @@ Much shorter now. What's left is judgment calls rather than likely errors:
 - **2026-09-23**: `2ba1617` page copy (forum, account, calculator, Terms), About rebuild, CLAUDE.md/README/TODO updates.
 - **2026-09-23**: site URL switched to `https://www.zrgclassics.com` (Vercel's primary domain) so canonical tags, sitemap, and social links stop pointing at a redirect; About page owner section and "Why ZRG" added.
 - **2026-09-24**: content review pass (accuracy + voice) on branch `content-review`; see "Content review pass" above.
+- **2026-09-24**: SEO pass (PR #6): search-style vehicle titles and tagline-based descriptions; JSON-LD rebuilt with valid encoding plus Article/TechArticle markup (author, car as subject); visible author byline with last-reviewed date; per-car `lastReviewed` drives sitemap `lastmod` and `dateModified`; internal search pages `noindex`; forum thread/category canonical set per URL in JS; hero alt text; Crawl-delay removed.

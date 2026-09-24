@@ -338,6 +338,20 @@ const Forum = {
   },
 
   /**
+   * Thread and category pages are one template served for many URLs, so the
+   * build leaves out the canonical tag and this sets it to the real address.
+   */
+  setCanonical() {
+    let link = document.querySelector('link[rel="canonical"]');
+    if (!link) {
+      link = document.createElement('link');
+      link.rel = 'canonical';
+      document.head.appendChild(link);
+    }
+    link.href = window.location.origin + window.location.pathname + window.location.search;
+  },
+
+  /**
    * Escape text for safe insertion into HTML content and attribute values
    */
   sanitizeHtml(text) {

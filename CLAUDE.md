@@ -91,7 +91,7 @@ Also sets security headers (X-Frame-Options, CSP-adjacent headers, Permissions-P
 
 ## Vehicle Data Schema
 
-All vehicle JSON files follow a consistent structure with these top-level keys: `model`, `brand`, `fullName`, `series` (short card label), `tagline`, `years`, `engines`, `heroImage`, `photoCredit{text,url,license}`, `buyersGuide` (with `pricingGuide.asOf`), `issues[]`, `guides[]`, `diyGuides[]`, `torqueSpecs{}`, `suppliers{}`, `communityResources[]`. Issue parts use `partNumber` for real OEM numbers only; use `brand` for aftermarket makers and omit both when it varies. See any existing file (e.g., `src/_data/vehicles/e30.json`) as the canonical reference when adding new vehicles.
+All vehicle JSON files follow a consistent structure with these top-level keys: `model`, `brand`, `fullName`, `series` (short card label), `tagline`, `years`, `engines`, `heroImage`, `lastReviewed` (YYYY-MM-DD; bump it when you edit that car, it drives the byline, sitemap `lastmod`, and article `dateModified`), `photoCredit{text,url,license}`, `buyersGuide` (with `pricingGuide.asOf`), `issues[]`, `guides[]`, `diyGuides[]`, `torqueSpecs{}`, `suppliers{}`, `communityResources[]`. Issue parts use `partNumber` for real OEM numbers only; use `brand` for aftermarket makers and omit both when it varies. See any existing file (e.g., `src/_data/vehicles/e30.json`) as the canonical reference when adding new vehicles.
 
 ## Key Files
 
@@ -100,6 +100,13 @@ All vehicle JSON files follow a consistent structure with these top-level keys: 
 - `src/_data/stats.js` — content counts for the homepage and brand pages (`stats.byBrand`)
 - `src/script.js` — global JS (theme toggle, mobile nav, expandable cards, print buttons)
 - `docs/site-review-2026-09.md` — September 2026 design/copy review: every finding, its status, and what's waiting on the owner
+
+## SEO
+
+- `base.njk` emits JSON-LD: Organization (with the owner as `founder`), WebSite, BreadcrumbList, and a TechArticle (vehicle pages) or Article (buyer's guides, via `schemaType`) with the owner as author and the car as `about`. All JSON-LD values go through `| dump | safe`; never interpolate raw strings into JSON.
+- Front matter `robots:` sets the meta robots tag and drops the page from the sitemap; `canonical: false` omits the canonical tag (forum thread/category templates set it in JS with `Forum.setCanonical()`).
+- Vehicle titles follow "<fullName>: Common Problems, Repair Costs & Specs"; the meta description is built from the car's `tagline`.
+- HowTo and FAQ markup were left out on purpose (Google no longer shows those rich results for most sites).
 
 ## Voice
 

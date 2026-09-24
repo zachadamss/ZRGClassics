@@ -41,6 +41,7 @@ Full record of the September 2026 design and copy review: `docs/site-review-2026
 
 - [x] **Google Analytics** — Live (G-VB5BSWLP41)
 
+- [ ] **Submit the sitemap in Google Search Console** — `https://www.zrgclassics.com/sitemap.xml` (and Bing Webmaster Tools). Check the Rich Results Test on a vehicle page and a buyer's guide.
 - [ ] **Add Social Media Links** (optional, not blocking launch)
   1. Add URLs to `src/_data/site.json` under `social.facebook`, `social.twitter`, `social.instagram`
   2. Footer icons will appear automatically when URLs are populated

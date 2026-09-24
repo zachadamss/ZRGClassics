@@ -3,7 +3,7 @@
 <section class="vehicle-hero{% if vehicleData.heroImage %} has-hero-image{% endif %}{% if heroCompact %} vehicle-hero--compact{% endif %}">
     {% if vehicleData.heroImage %}
     <div class="vehicle-hero-media">
-        {% picture vehicleData.heroImage, "", "100vw", { loading: "eager", fetchpriority: "high" } %}
+        {% picture vehicleData.heroImage, vehicleData.fullName, "100vw", { loading: "eager", fetchpriority: "high" } %}
     </div>
     <div class="vehicle-hero-overlay"></div>
     {% endif %}

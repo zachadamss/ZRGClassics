@@ -20,6 +20,8 @@ layout: layouts/base.njk
 </nav>
 
 <main class="resource-content">
+    {% include "partials/byline.njk" %}
+
     {% if vehicleData.buyersGuide %}
     <!-- Buyer's guide teaser -->
     <aside class="buying-teaser" aria-labelledby="buying-teaser-title">

@@ -1,0 +1,6 @@
+{#- Author byline for vehicle and buyer's guide pages -#}
+<p class="byline">
+    Written by <a href="/about/">Zach</a>, an independent mechanic in the Pacific Northwest.
+    {%- if vehicleData.lastReviewed %} Last reviewed <time datetime="{{ vehicleData.lastReviewed }}">{{ vehicleData.lastReviewed | readableDate }}</time>.{% endif %}
+    <a href="/about/#contact">Spot a mistake? Tell me.</a>
+</p>

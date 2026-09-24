@@ -10036,3 +10036,15 @@ nav ul li.dropdown.touch-open > .dropdown-menu {
         grid-template-columns: 1fr;
     }
 }
+
+/* Author byline on vehicle and buyer's guide pages */
+.byline {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin: 0 0 var(--space-5);
+}
+
+.byline a {
+    color: var(--link-blue);
+    text-decoration: underline;
+}
