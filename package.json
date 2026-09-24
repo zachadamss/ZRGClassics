@@ -11,7 +11,7 @@
     "serve:local": "npm run build && serve _site",
     "watch": "eleventy --watch",
     "minify:css": "cleancss -o _site/styles.css _site/styles.css",
-    "minify:js": "for f in _site/script.js _site/search.js _site/tools/*.js _site/js/*.js; do terser \"$f\" -o \"$f\" -c -m || exit 1; done",
+    "minify:js": "for f in _site/script.js _site/search.js _site/tools/*.js _site/js/*.js _site/js/pages/*.js; do terser \"$f\" -o \"$f\" -c -m || exit 1; done",
     "minify": "npm run minify:css && npm run minify:js",
     "build:prod": "npm run build:all && npm run minify"
   },
