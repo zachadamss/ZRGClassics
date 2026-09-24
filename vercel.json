@@ -12,6 +12,10 @@
       ]
     }
   ],
+  "redirects": [
+    { "source": "/tools/invoice", "destination": "/", "permanent": true },
+    { "source": "/tools/invoice/", "destination": "/", "permanent": true }
+  ],
   "rewrites": [
     {
       "source": "/forum/:category/:threadId/",

@@ -41,8 +41,7 @@
       "children": [
         { "label": "Restoration Checklist", "url": "/tools/restoration-checklist/" },
         { "label": "Maintenance Tracker", "url": "/tools/maintenance-tracker/" },
-        { "label": "Build Cost Calculator", "url": "/tools/build-calculator/" },
-        { "label": "Invoice Creator", "url": "/tools/invoice/" }
+        { "label": "Build Cost Calculator", "url": "/tools/build-calculator/" }
       ]
     },
     { "label": "Community", "url": "/forum/" },

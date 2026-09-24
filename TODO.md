@@ -7,7 +7,7 @@
 - 132+ documented issues with repair costs and difficulty ratings
 - 465 torque specs indexed
 - Full-text search across all content
-- 4 tools: Invoice Creator, Build Cost Calculator, Maintenance Tracker, Restoration Checklist
+- 3 tools: Build Cost Calculator, Maintenance Tracker, Restoration Checklist
 - User authentication with Supabase (login, register, password reset)
 - Community Forums with categories, threads, replies, search
 - My Garage - Personal vehicle management with DB-synced restoration & maintenance tracking
@@ -21,7 +21,19 @@
 
 ---
 
-## Quick Actions (Manual Steps)
+## Action Required (Manual Steps)
+
+- [ ] **Run `supabase-migration-security.sql` in the Supabase SQL Editor** — the site-side XSS fixes are deployed with the code, but the database hardening (username/avatar rules, protected forum columns, locked-thread replies) only takes effect once this is run
+- [ ] **Validate the new profile constraints** — after the migration, check for existing profiles that break the new rules, fix them, then enforce the rules on all rows:
+  ```sql
+  select id, username, avatar_url from public.profiles
+  where username !~ '^[A-Za-z0-9_]{3,20}$' or (avatar_url is not null and avatar_url !~* '^https://');
+  alter table public.profiles validate constraint profiles_username_format;
+  alter table public.profiles validate constraint profiles_avatar_url_https;
+  ```
+- [ ] **Retire the invoice tables** — the Invoice Creator is gone from the site; export anything worth keeping, then run the commented-out `drop table` lines at the bottom of `supabase-migration-security.sql`
+
+## Integrations
 
 - [x] **ConvertKit Newsletter** — Live (Form ID: 9066084, integrated into registration flow)
 - [x] **Contact Form** — Live (Formspree endpoint on About page)
@@ -49,7 +61,15 @@
 
 ---
 
-## Priority 3: Community Features
+## Priority 3: Hardening & Maintenance
+
+- [ ] **Content-Security-Policy header** — needs the inline `<script>` blocks in forum/account pages moved into `.js` files first so the policy can avoid `unsafe-inline`
+- [ ] **Self-host the Supabase client** (or add Subresource Integrity) instead of loading it from unpkg, so a CDN outage or compromise can't affect sign-in
+- [ ] **Forum moderation UI** — pinning, locking, and removing posts currently requires the Supabase dashboard
+
+---
+
+## Priority 4: Community Features
 
 - [ ] **Build Journals** - Document restoration journeys
   - Dated entries with photos and costs
