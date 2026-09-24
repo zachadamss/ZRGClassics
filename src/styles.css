@@ -870,6 +870,8 @@ a:hover {
 }
 
 .site-footer .logo-glass { fill: var(--ink); }
+.site-footer .logo-wheel { fill: var(--band-text); }
+.site-footer .logo-rim { fill: var(--band-deep); }
 
 .site-footer .social-links {
     list-style: none;
@@ -966,6 +968,7 @@ a:hover {
 .logo-stripe { fill: var(--gulf-orange); }
 .logo-glass { fill: var(--text-color); }
 .logo-wheel { fill: var(--text-color); }
+.logo-rim { fill: var(--background-color); }
 
 .logo-word {
     font-family: var(--font-display);
