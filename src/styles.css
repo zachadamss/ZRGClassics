@@ -869,8 +869,7 @@ a:hover {
     color: #fff;
 }
 
-.site-footer .logo-wheel { fill: var(--band-text); }
-.site-footer .logo-rim { fill: var(--band-deep); }
+.site-footer .logo-wheel { fill: #2B3B51; }
 
 .site-footer .social-links {
     list-style: none;
@@ -967,8 +966,10 @@ a:hover {
 .logo-stripe { fill: var(--gulf-orange); }
 .logo-trim { fill: #07090C; }            /* black window surrounds and pillars */
 .logo-glass { fill: #3D5673; }
-.logo-wheel { fill: var(--text-color); }
-.logo-rim { fill: var(--background-color); }
+.logo-wheel { fill: #14243A; }            /* tires */
+.logo-rim { fill: #C9D3DE; }
+.logo-hub { fill: #14243A; }
+[data-theme="dark"] .logo-wheel { fill: #2B3B51; }  /* a shade off the dark header so the tires still show */
 
 .logo-word {
     font-family: var(--font-display);
