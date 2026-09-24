@@ -144,3 +144,5 @@ Things I changed or added but couldn't verify well enough to call finished. Wort
 
 - **2026-09-23**: `4672500` normalized vehicle JSON formatting (no content change) so later diffs are readable.
 - **2026-09-23**: `3c7239a` structure, design system, garage merge, buyer's guide pages, image pipeline, SEO, and the fixes N1–N8, N10.
+- **2026-09-23**: `adc4386` vehicle data accuracy fixes (A1–A10, N11–N16), 17 signature guides, overviews/taglines, guide descriptions, filler and typography pass.
+- **2026-09-23**: `2ba1617` page copy (forum, account, calculator, Terms), About rebuild, CLAUDE.md/README/TODO updates.
