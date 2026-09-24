@@ -112,7 +112,7 @@ All vehicle JSON files follow a consistent structure with these top-level keys: 
 
 - `base.njk` emits JSON-LD: Organization (with the owner as `founder`), WebSite, BreadcrumbList, and a TechArticle (vehicle pages) or Article (buyer's guides, via `schemaType`) with the owner as author and the car as `about`. All JSON-LD values go through `| dump | safe`; never interpolate raw strings into JSON.
 - Front matter `robots:` sets the meta robots tag and drops the page from the sitemap; `canonical: false` omits the canonical tag (forum thread/category templates set it in JS with `Forum.setCanonical()`).
-- Vehicle titles follow "<fullName>: Common Problems, Repair Costs & Specs"; the meta description is built from the car's `tagline`.
+- Vehicle titles follow "<fullName>: Common Problems, Repair Costs & Specs"; the meta description is the car's `tagline` plus a short fixed line, kept under ~160 characters so it isn't cut off in results. Keep new taglines short enough for that.
 - HowTo and FAQ markup were left out on purpose (Google no longer shows those rich results for most sites).
 
 ## Voice
