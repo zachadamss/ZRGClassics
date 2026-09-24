@@ -1,14 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-<style>.logo-body{fill:#7DCFEA}.logo-stripe{fill:#F26522}.logo-glass{fill:#1E3A5F}.logo-wheel{fill:#0D1B2A;stroke:#7DCFEA;stroke-width:1.6}</style>
+<style>.logo-body{fill:#7DCFEA}.logo-stripe{fill:#F26522}.logo-glass{fill:#1E3A5F}.logo-wheel{fill:#0D1B2A}.logo-rim{fill:#C9D3DE}</style>
 <rect width="64" height="64" rx="14" fill="#1E3A5F"/>
-<g transform="translate(5 21) scale(0.675)">
+<g transform="translate(4 21) scale(0.7)">
     <defs>
-        <clipPath id="logo-body-clip"><path d="M2 21v-2.8c0-1.7 1.4-2.4 4-3 6-1.6 14-6.7 21-9 3.5-1.1 7-1.4 11-1.3 3.5.1 6 .7 8 1.9l5.5 4.4c4.5.4 8.5 1 11.5 1.7 1.5-.7 3.5-.9 5-.1 4 .8 7.5 2 8.6 3.6.4.6.4 1.4.4 2.2V21h-7.8a6.2 6.2 0 0 0-12.4 0H23.2a6.2 6.2 0 0 0-12.4 0z"/></clipPath>
+        <clipPath id="logo-body-clip"><path d="M3.28 20.71C2.27 19.98 2 17.97 2.27 16.51C2.73 14.5 4.01 12.58 5.83 11.49C7.48 10.66 9.85 10.57 12.41 10.81C18.43 11.12 24.82 10.48 30.48 9.3C33.4 6.65 35.77 4.09 38.33 2.72C40.7 1.63 44.54 1.54 47.64 2.27C55.86 4.09 64.07 7.01 70.46 9.57C74.29 11.12 76.85 12.67 77.58 14.5C78.04 15.78 77.95 17.42 77.58 18.15C77.12 19.61 76.3 20.52 74.84 20.8L65.57 21.89A6.79 6.79 0 1 0 52.27 21.89L24.17 21.89A6.79 6.79 0 1 0 10.87 21.89L4.92 21.53C4.01 21.34 3.55 21.03 3.28 20.71Z"/></clipPath>
     </defs>
-    <path class="logo-body" d="M2 21v-2.8c0-1.7 1.4-2.4 4-3 6-1.6 14-6.7 21-9 3.5-1.1 7-1.4 11-1.3 3.5.1 6 .7 8 1.9l5.5 4.4c4.5.4 8.5 1 11.5 1.7 1.5-.7 3.5-.9 5-.1 4 .8 7.5 2 8.6 3.6.4.6.4 1.4.4 2.2V21h-7.8a6.2 6.2 0 0 0-12.4 0H23.2a6.2 6.2 0 0 0-12.4 0z"/>
-    <path class="logo-stripe" clip-path="url(#logo-body-clip)" d="M0 14.6h80v3H0z"/>
-    <path class="logo-glass" d="M22.5 12.6c3-2.6 7-4.8 11.5-5.4l3.2-.1v5.5zM39 12.6V7.1c2.8.1 4.8.7 6 1.5l4.2 4z"/>
-    <circle class="logo-wheel" cx="17" cy="21" r="4.8"/>
-    <circle class="logo-wheel" cx="63" cy="21" r="4.8"/>
+    <path class="logo-body" d="M3.28 20.71C2.27 19.98 2 17.97 2.27 16.51C2.73 14.5 4.01 12.58 5.83 11.49C7.48 10.66 9.85 10.57 12.41 10.81C18.43 11.12 24.82 10.48 30.48 9.3C33.4 6.65 35.77 4.09 38.33 2.72C40.7 1.63 44.54 1.54 47.64 2.27C55.86 4.09 64.07 7.01 70.46 9.57C74.29 11.12 76.85 12.67 77.58 14.5C78.04 15.78 77.95 17.42 77.58 18.15C77.12 19.61 76.3 20.52 74.84 20.8L65.57 21.89A6.79 6.79 0 1 0 52.27 21.89L24.17 21.89A6.79 6.79 0 1 0 10.87 21.89L4.92 21.53C4.01 21.34 3.55 21.03 3.28 20.71Z"/>
+    <path class="logo-stripe" clip-path="url(#logo-body-clip)" d="M0 14.13h80v1.64H0z"/>
+    <path class="logo-glass" d="M32.4 8.75C34.68 6.47 36.5 4.55 38.69 3.45C40.7 2.63 43.99 2.54 45.81 2.81L45.91 8.66ZM47.18 3C52.39 4 56.4 5.74 59.51 7.38C60.15 7.74 59.87 8.2 58.96 8.2L47.18 8.57Z"/>
+    <circle class="logo-wheel" cx="17.52" cy="20.52" r="5.5"/>
+    <circle class="logo-rim" cx="17.52" cy="20.52" r="3.3"/>
+    <circle class="logo-wheel" cx="17.52" cy="20.52" r="1.3"/>
+    <circle class="logo-wheel" cx="58.92" cy="20.52" r="5.5"/>
+    <circle class="logo-rim" cx="58.92" cy="20.52" r="3.3"/>
+    <circle class="logo-wheel" cx="58.92" cy="20.52" r="1.3"/>
 </g>
 </svg>
