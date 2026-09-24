@@ -34,7 +34,9 @@ Full record of the September 2026 design and copy review: `docs/site-review-2026
   ```
 - [ ] **Retire the invoice tables** — the Invoice Creator is gone from the site; export anything worth keeping, then run the commented-out `drop table` lines at the bottom of `supabase-migration-security.sql`
 
-- [ ] **Click through the signed-in pages after the redesign** — My Garage, the maintenance tracker, and the restoration tracker picked up the new palette and fonts but couldn't be screenshot-tested without an account.
+- [ ] **Run `supabase-migration-garage.sql`** — adds the My Garage columns the site writes (`make`/`model` for cars that aren't on the platform list, and status/budget/actual/category/name for restoration items). The repo's schema never had them; if the live database doesn't either, restoration saves and custom cars fail. Safe to run either way.
+- [ ] **Run `supabase-migration-moderation.sql`, then make yourself a moderator** — `update public.profiles set is_moderator = true where username = 'YOUR_USERNAME';` Pin, Lock, and Delete buttons then appear on every thread for you.
+- [ ] **Quick live check after deploying** — sign in, open a forum thread, and save a restoration item. The new Content-Security-Policy was tested page by page locally; if anything is blocked live, the browser console says "Refused to…" and names the host to add in `vercel.json`.
 
 ## Integrations
 
@@ -69,10 +71,8 @@ Full record of the September 2026 design and copy review: `docs/site-review-2026
 
 ## Priority 3: Hardening & Maintenance
 
-- [ ] **Forum moderation UI** — pin, lock, and remove posts from the site instead of the Supabase dashboard (check how admin rights are modeled in the schema first)
-
-- [ ] **Content-Security-Policy header** — needs the inline `<script>` blocks in forum/account pages moved into `.js` files first so the policy can avoid `unsafe-inline`
-- [ ] **Self-host the Supabase client** (or add Subresource Integrity) instead of loading it from unpkg, so a CDN outage or compromise can't affect sign-in
+- [ ] **Drop `'unsafe-inline'` from the CSP's `style-src`** — scripts are already strict; styles still allow inline `style="…"` attributes (progress-bar widths and a few `display:none` toggles). Moving those to classes or CSS custom properties set from JS would let the policy forbid inline styles too.
+- [ ] **Upgrade the vendored Supabase client now and then** — `src/js/vendor/README.md` has the steps.
 
 ---
 

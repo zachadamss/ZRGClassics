@@ -35,6 +35,62 @@
     }
   } catch (e) { /* no storage or bad data: skip */ }
 
+  // Signed-in visitors: one line about their own cars ("The Daily: timing belt
+  // is overdue"). The garage scripts load only when a sign-in session exists.
+  const garageStatus = document.querySelector('[data-garage-status]');
+  const hasSession = (() => {
+    try { return Object.keys(localStorage).some(k => /^sb-.+-auth-token$/.test(k)); } catch (e) { return false; }
+  })();
+
+  function loadScript(src) {
+    return new Promise((resolve, reject) => {
+      const s = document.createElement('script');
+      s.src = src; s.onload = resolve; s.onerror = reject;
+      document.body.appendChild(s);
+    });
+  }
+
+  async function showGarageStatus() {
+    const user = await Auth.getUser();
+    if (!user) return;
+    if (!window.Garage) {
+      await loadScript('/js/platforms.js');
+      await loadScript('/js/garage.js');
+    }
+    const cars = await Garage.getVehicles();
+    if (!cars.length) return;
+
+    let worst = null;
+    for (const car of cars) {
+      const upcoming = Garage.getUpcomingMaintenance(await Garage.getMaintenanceSchedule(car.id), car.mileage);
+      const top = upcoming.find(item => item.status !== 'ok');
+      if (top && (!worst || (top.status === 'overdue' && worst.item.status !== 'overdue'))) {
+        worst = { car, item: top, count: upcoming.filter(i => i.status === top.status).length };
+      }
+      if (worst && worst.item.status === 'overdue') break;
+    }
+
+    const text = garageStatus.querySelector('[data-garage-text]');
+    const link = garageStatus.querySelector('[data-garage-link]');
+    if (worst) {
+      const name = Garage.getVehicleDisplayInfo(worst.car).name;
+      const state = worst.item.status === 'overdue' ? 'overdue' : 'due soon';
+      text.textContent = worst.count > 1
+        ? `${name}: ${worst.count} services ${state}.`
+        : `${name}: ${worst.item.name.toLowerCase()} is ${state}.`;
+      link.href = `/account/garage/maintenance/?vehicle=${encodeURIComponent(worst.car.id)}`;
+      link.firstChild.textContent = 'Open maintenance ';
+      garageStatus.classList.toggle('is-overdue', worst.item.status === 'overdue');
+    } else {
+      text.textContent = cars.length === 1 ? 'Your car is caught up on maintenance.' : `All ${cars.length} of your cars are caught up on maintenance.`;
+    }
+    garageStatus.hidden = false;
+  }
+
+  if (garageStatus && hasSession && window.Auth) {
+    showGarageStatus().catch(err => console.warn('Garage status unavailable:', err.message));
+  }
+
   // Brand tabs: shown only on narrow screens, where the two lists stack.
   const tabList = document.querySelector('[data-brand-tabs]');
   if (!tabList) return;
