@@ -3,6 +3,7 @@
   "brand": "Porsche",
   "fullName": "Porsche 987 Boxster/Cayman",
   "series": "Boxster & Cayman",
+  "tagline": "Better than the 986 in almost every way, and the birth of the Cayman.",
   "years": "2005-2012",
   "engines": [
     "2.7L Flat-6 M97/MA1",
@@ -26,7 +27,7 @@
         "987.1: Proactive IMS bearing replacement highly recommended",
         "LN Engineering or IMS Retrofit single-row bearing upgrade",
         "Regular oil analysis to detect early bearing wear",
-        "987.2: No IMS bearing - not a concern on these models",
+        "987.2: No IMS bearing—not a concern on these models",
         "Always verify production date when purchasing a 987"
       ],
       "sources": [
@@ -36,11 +37,11 @@
       "repairCosts": {
         "diy": "$500-1000",
         "shop": "$2000-3500",
-        "notes": "987.1 only (M97). 987.2 has different design - no IMS concern."
+        "notes": "987.1 only (M97). 987.2 has different design—no IMS concern."
       },
       "parts": [
-        { "name": "IMS Bearing Retrofit", "partNumber": "LN Engineering", "price": "$400-600" },
-        { "name": "IMS Guardian", "partNumber": "LN Engineering", "price": "$80-120" }
+        { "name": "IMS Bearing Retrofit", "brand": "LN Engineering", "price": "$400-600" },
+        { "name": "IMS Guardian", "brand": "LN Engineering", "price": "$80-120" }
       ],
       "relatedIssues": [
         { "vehicle": "986", "brand": "Porsche", "model": "986 Boxster", "issueId": "ims-bearing" },
@@ -55,7 +56,7 @@
       "symptoms": "Ticking/knocking noise, smoke on cold start, excessive oil consumption, low compression",
       "description": "The M97 engine in the 987.1 can develop cylinder bore scoring, where the cylinder walls become damaged, allowing oil to bypass the piston rings. Cylinder 6 is most commonly affected due to cooling system design. The 987.2 with the MA1 engine has improved cooling and does not have this issue.",
       "fixes": [
-        "Borescope inspection essential for pre-purchase (987.1)",
+        "Borescope the cylinders before you buy (987.1)",
         "Minor scoring: monitor with oil analysis, use quality oil",
         "Moderate scoring: cylinder sleeving by specialists",
         "Severe scoring: engine rebuild or replacement",
@@ -71,7 +72,7 @@
         "notes": "987.1 M97 engine. Borescope inspection recommended."
       },
       "parts": [
-        { "name": "Cylinder Sleeving", "partNumber": "LN Engineering", "price": "$800-1200/cyl" }
+        { "name": "Cylinder Sleeving", "brand": "LN Engineering", "price": "$800-1200/cyl" }
       ],
       "difficulty": "Advanced"
     },
@@ -149,7 +150,7 @@
         "notes": "Same plastic pipe issues as 986. Aluminum upgrade available."
       },
       "parts": [
-        { "name": "Coolant Pipe Kit", "partNumber": "Various", "price": "$150-300" },
+        { "name": "Coolant Pipe Kit", "price": "$150-300" },
         { "name": "Water Pump", "partNumber": "99710601106", "price": "$120-200" }
       ],
       "difficulty": "Advanced"
@@ -178,13 +179,13 @@
       },
       "parts": [
         { "name": "Hydraulic Pump", "partNumber": "98756160901", "price": "$400-700" },
-        { "name": "Microswitch", "partNumber": "Various", "price": "$30-60" }
+        { "name": "Microswitch", "price": "$30-60" }
       ],
       "difficulty": "Moderate"
     },
     {
       "id": "carbon-buildup",
-      "title": "Carbon Buildup on Intake Valves (987.2 DFI)",
+      "title": "Carbon Buildup on Intake Valves (987.2 S Direct Injection)",
       "symptoms": "Rough idle, misfires, reduced power, hesitation, poor fuel economy",
       "description": "The 987.2 uses direct fuel injection (DFI) which doesn't wash the intake valves with fuel. Over time, carbon deposits accumulate on the intake valves, affecting airflow and combustion. This requires periodic cleaning via walnut shell blasting, typically every 50,000-80,000 miles.",
       "fixes": [
@@ -204,7 +205,7 @@
         "notes": "987.2 DFI engines. Walnut blasting every 50-80k miles."
       },
       "parts": [
-        { "name": "Walnut Media", "partNumber": "N/A", "price": "$30-50" },
+        { "name": "Walnut Media", "price": "$30-50" },
         { "name": "Intake Gaskets", "partNumber": "9A111023500", "price": "$20-40" }
       ],
       "difficulty": "Moderate"
@@ -245,7 +246,7 @@
     {
       "id": "suspension-refresh",
       "title": "Complete Suspension Refresh",
-      "description": "Full front and rear suspension rebuild for the 987 Boxster/Cayman's MacPherson strut front and multi-link rear suspension, restoring precise handling.",
+      "description": "Front struts, the multi-link rear, and every bushing in between. Keeps the 987's excellent chassis feeling tight.",
       "difficulty": "Intermediate",
       "time": "10-14 hours",
       "cost": "$600-1,200",
@@ -281,21 +282,21 @@
         "Separate ball joint from knuckle using separator tool.",
         "For struts: mark camber position, remove upper mount nuts and pinch bolt.",
         "Use spring compressor to replace strut mount/bearing.",
-        "Install new front components - torque control arm to 89 ft-lbs.",
+        "Install new front components—torque control arm to 89 ft-lbs.",
         "Rear: Support trailing arm before removing control arm bolts.",
-        "Replace upper and lower control arms - torque at ride height.",
+        "Replace upper and lower control arms—torque at ride height.",
         "Check for cracked spring perches (known issue).",
         "Install wheels and lower vehicle.",
         "Professional alignment mandatory."
       ],
       "tips": [
         "The 987 shares suspension with 997 but has mid-engine weight distribution.",
-        "Check spring perches for cracks - common issue.",
+        "Check spring perches for cracks—common issue.",
         "Cayman has fixed roof = stiffer chassis than Boxster.",
         "Consider PASM shock replacement if equipped and leaking."
       ],
       "warnings": [
-        "Spring compressors are dangerous - follow instructions.",
+        "Spring compressors are dangerous—follow instructions.",
         "Never strike ball joints directly.",
         "Mid-engine cars are sensitive to alignment.",
         "PASM shocks require diagnostic tool to calibrate."
@@ -309,7 +310,7 @@
     {
       "id": "rust-repair",
       "title": "Rust Prevention and Inspection",
-      "description": "Comprehensive rust inspection guide for the 987, which is fully galvanized but still requires attention to water intrusion and drain systems.",
+      "description": "A galvanized body, so this is mostly about water: clogged drains and leaks that end up in the wrong places.",
       "difficulty": "Intermediate",
       "time": "4-12 hours",
       "cost": "$100-800",
@@ -335,9 +336,9 @@
       "steps": [
         "The 987 is galvanized and generally rust-resistant.",
         "Clean undercarriage before inspection.",
-        "Check front trunk for water intrusion - DME and fuse box located here.",
+        "Check front trunk for water intrusion—DME and fuse box located here.",
         "Inspect battery box for acid corrosion.",
-        "Boxster: Check convertible top drains - clogs cause interior damage.",
+        "Boxster: Check convertible top drains—clogs cause interior damage.",
         "Examine door bottoms and rocker panels.",
         "Check wheel wells for debris damage.",
         "Surface rust: wire brush, convert, prime, topcoat.",
@@ -363,7 +364,7 @@
     {
       "id": "electrical-restoration",
       "title": "Electrical System Service",
-      "description": "Complete electrical service for the 987 covering ignition, sensors, and common electrical issues including window regulators and convertible top systems.",
+      "description": "Ignition, sensors, window regulators, and the convertible top systems on the Boxster.",
       "difficulty": "Intermediate",
       "time": "8-14 hours",
       "cost": "$300-800",
@@ -418,7 +419,7 @@
     {
       "id": "interior-restoration",
       "title": "Interior Restoration",
-      "description": "Complete interior refresh for the 987 Boxster/Cayman covering leather care, convertible top maintenance, and common wear items.",
+      "description": "Leather, the convertible top, and the common wear items.",
       "difficulty": "Intermediate",
       "time": "10-18 hours",
       "cost": "$300-1,000",
@@ -470,6 +471,45 @@
         { "name": "Leatherique Products", "url": "https://www.leatherique.com/" },
         { "name": "Planet-9 Interior", "url": "https://www.planet-9.com/" }
       ]
+    },
+    {
+      "id": "bore-scope-inspection",
+      "title": "Borescope Cylinder Inspection (987.1)",
+      "description": "Bore scoring is the 987.1's expensive failure, and you can check for it in an hour with an inexpensive borescope through the spark plug holes. Do it before you buy, and then yearly.",
+      "difficulty": "Easy",
+      "time": "1-2 hours",
+      "cost": "$30-100",
+      "parts": [
+        { "name": "New spark plugs (if due)", "cost": "$60-100" },
+        { "name": "USB or Wi-Fi borescope camera", "cost": "$30-80" }
+      ],
+      "tools": [
+        "Spark plug socket and extensions",
+        "Borescope camera",
+        "Torque wrench",
+        "Flashlight"
+      ],
+      "steps": [
+        "Let the engine cool completely.",
+        "Remove the engine cover panels to reach the coil packs.",
+        "Remove the coils and spark plugs from one bank.",
+        "Feed the borescope into each cylinder and rotate the camera slowly so you see the whole wall.",
+        "Healthy walls show a crosshatch pattern. Vertical lines or shiny, grooved bands are scoring.",
+        "Repeat on the other bank. Scoring can show up in any cylinder, so check every one.",
+        "Refit plugs and coils. Torque to the value in the Torque Specs table on this page, or your workshop manual.",
+        "If you see scoring, get a specialist to confirm before you buy or spend money on the car."
+      ],
+      "tips": [
+        "Save screenshots so you can compare year to year.",
+        "Oil consumption and a ticking cold start are other early signs."
+      ],
+      "warnings": [
+        "Don't drop anything into the cylinders. Cover the plug holes when you're not looking through them."
+      ],
+      "references": [
+        { "name": "Planet-9", "url": "https://www.planet-9.com/" },
+        { "name": "Rennlist forums", "url": "https://rennlist.com/forums/" }
+      ]
     }
   ],
   "suppliers": {
@@ -477,7 +517,7 @@
       {
         "name": "FCP Euro",
         "url": "https://www.fcpeuro.com/Porsche-parts",
-        "notes": "Industry-leading lifetime replacement guarantee on all parts - comprehensive 987 coverage",
+        "notes": "Lifetime replacement guarantee on everything they sell, with good 987 coverage",
         "specialties": [
           "Lifetime Warranty",
           "OE Quality"
@@ -489,7 +529,7 @@
       {
         "name": "Pelican Parts",
         "url": "https://www.pelicanparts.com/Porsche/catalog/987.htm",
-        "notes": "Comprehensive 987 parts catalog with detailed tech articles for DIY repairs",
+        "notes": "Deep 987 parts catalog with detailed tech articles for DIY repairs",
         "specialties": [
           "OEM Parts",
           "Tech Articles",
@@ -523,7 +563,7 @@
       {
         "name": "LN Engineering",
         "url": "https://lnengineering.com/",
-        "notes": "IMS bearing solutions for 987.1 (987.2 has no IMS concern) - essential for early models",
+        "notes": "IMS bearing retrofits for the 987.1 (the 987.2 doesn't have one)",
         "specialties": [
           "IMS Bearings",
           "Engine Components",
@@ -647,7 +687,7 @@
       {
         "name": "Planet-9 Classifieds",
         "url": "https://www.planet-9.com/forums/987-boxster-cayman-marketplace.57/",
-        "notes": "The go-to marketplace for used 987 parts - active community with vetted sellers",
+        "notes": "The go-to marketplace for used 987 parts—active community with vetted sellers",
         "specialties": [
           "987 Community",
           "Vetted Sellers"
@@ -699,11 +739,7 @@
         "notes": "Extensive library of 987 DIY articles with step-by-step instructions"
       },
       { "name": "LN Engineering Torque Specs", "url": "https://lnengineering.com/", "notes": "Torque specifications for M97 and MA1 engine work" },
-      {
-        "name": "Durametric Diagnostic",
-        "url": "https://www.durametric.com/",
-        "notes": "Essential diagnostic software for 987 - dealer-level access to all modules"
-      }
+      { "name": "Durametric Diagnostic", "url": "https://www.durametric.com/", "notes": "Diagnostic software for 987—dealer-level access to all modules" }
     ]
   },
   "torqueSpecs": {
@@ -748,7 +784,7 @@
     {
       "id": "oil-change",
       "title": "Oil Change",
-      "description": "Complete oil and filter change for M97 and MA1 engines.",
+      "description": "Oil and filter on the M97 and MA1 engines.",
       "difficulty": "Easy",
       "time": "30 min",
       "interval": "Every 5,000-7,500 miles",
@@ -762,11 +798,11 @@
         "Ramps or jack and jack stands"
       ],
       "steps": [
-        "Warm the engine for 2-3 minutes - warm oil drains better.",
+        "Warm the engine for 2-3 minutes—warm oil drains better.",
         "Drive onto ramps or raise and support the car safely.",
         "Locate the oil drain plug on the bottom of the engine.",
         "Position drain pan and remove the drain plug.",
-        "Allow oil to drain completely - at least 10 minutes.",
+        "Allow oil to drain completely—at least 10 minutes.",
         "987.1: Spin-on filter under the car. 987.2: Cartridge filter on top.",
         "Remove old filter. For 987.2, unscrew housing cap with 76mm tool.",
         "987.1: Cut open old filter and inspect for metal debris (IMS check).",
@@ -779,7 +815,7 @@
       ],
       "tips": [
         "987.1: Cut open filter and inspect for metal debris (IMS warning sign).",
-        "987.2 has no IMS concern - uses different engine design.",
+        "987.2 has no IMS concern—uses different engine design.",
         "Use quality synthetic oil meeting Porsche A40 specification.",
         "The 987.2 uses a top-mounted cartridge filter like BMW."
       ]
@@ -787,7 +823,7 @@
     {
       "id": "brake-pads",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement on the 987's Brembo calipers.",
+      "description": "Pads on the Brembo calipers, front and rear.",
       "difficulty": "Easy",
       "time": "1-2 hours",
       "interval": "Every 20,000-40,000 miles",
@@ -807,13 +843,13 @@
         "Remove wheel to access caliper.",
         "Disconnect brake pad wear sensor if equipped.",
         "Remove the two 7mm Allen caliper guide pin bolts.",
-        "Swing the caliper up and support it - don't let it hang by the hose.",
+        "Swing the caliper up and support it—don't let it hang by the hose.",
         "Remove the old pads from the caliper bracket.",
         "Inspect rotor for scoring, cracks, or minimum thickness.",
         "Clean pad contact surfaces with wire brush and brake cleaner.",
         "Open brake fluid reservoir, then compress caliper piston(s).",
         "Apply brake grease to pad backing plate contact points.",
-        "Install new pads - wear sensor slot goes on the inner pad.",
+        "Install new pads—wear sensor slot goes on the inner pad.",
         "Swing caliper down and reinstall guide pins to 22 ft-lbs (30 Nm).",
         "Reconnect wear sensor.",
         "Reinstall wheel and torque lugs to 96-118 ft-lbs.",
@@ -823,14 +859,14 @@
       "tips": [
         "S models have larger brakes than base models.",
         "Four-piston calipers require all pistons pushed back evenly.",
-        "Bed new pads with moderate stops - avoid hard braking initially.",
+        "Bed new pads with moderate stops—avoid hard braking initially.",
         "Wear sensors should be replaced with new pads."
       ]
     },
     {
       "id": "spark-plugs",
       "title": "Spark Plug Replacement",
-      "description": "Replace spark plugs on the M97 or MA1 flat-six engine.",
+      "description": "Plugs on the M97 or MA1.",
       "difficulty": "Easy",
       "time": "1 hour",
       "interval": "Every 30,000-40,000 miles",
@@ -846,12 +882,12 @@
       "steps": [
         "Allow engine to cool completely.",
         "Open the engine lid for access.",
-        "The 987 has 6 spark plugs - accessed from the top of the engine.",
+        "The 987 has 6 spark plugs—accessed from the top of the engine.",
         "Remove the coil packs by disconnecting connectors and removing bolts.",
         "Use compressed air to blow debris from the spark plug wells.",
         "Using spark plug socket and extension, remove each plug.",
         "Inspect old plugs for wear, fouling, or damage.",
-        "Check plug gap on new plugs - should be 0.7-0.8mm.",
+        "Check plug gap on new plugs—should be 0.7-0.8mm.",
         "Hand-thread new plugs to avoid cross-threading.",
         "Torque plugs to 22 ft-lbs (30 Nm).",
         "Apply dielectric grease to coil pack boots.",
@@ -868,7 +904,7 @@
     {
       "id": "serpentine-belt",
       "title": "Serpentine Belt Replacement",
-      "description": "Replace accessory drive belt and inspect tensioner.",
+      "description": "Replace the accessory belt and check the tensioner and idlers while it's off.",
       "difficulty": "Easy",
       "time": "1 hour",
       "interval": "Every 40,000-60,000 miles or if cracked",
@@ -887,7 +923,7 @@
         "Slip the old belt off the pulleys while holding tensioner back.",
         "Slowly release the tensioner.",
         "Inspect the old belt for cracks, glazing, or missing ribs.",
-        "Inspect the tensioner pulley - spin it by hand for roughness or play.",
+        "Inspect the tensioner pulley—spin it by hand for roughness or play.",
         "Route the new belt according to the diagram.",
         "Leave the tensioner pulley for last.",
         "Rotate the tensioner and slip the belt over the tensioner pulley.",
@@ -899,14 +935,14 @@
         "Take a photo of belt routing before removal.",
         "If the tensioner pulley is noisy, replace it with the belt.",
         "Check idler pulleys for smooth rotation while belt is off.",
-        "A cracked belt can leave you stranded - replace proactively."
+        "A cracked belt can leave you stranded—replace proactively."
       ]
     }
   ],
   "restorationItems": {
     "engine": [
       { "id": "987-ims", "name": "Replace IMS bearing (987.1 only)", "description": "M97 engine has IMS - 987.2 with 9A1 does not" },
-      { "id": "987-rms", "name": "Replace rear main seal", "description": "Common leak - combine with IMS work" },
+      { "id": "987-rms", "name": "Replace rear main seal", "description": "Common leak—combine with IMS work" },
       { "id": "987-aos", "name": "Replace AOS (Air/Oil Separator)", "description": "Causes smoke and rough idle when failed" },
       { "id": "987-bore-inspect", "name": "Borescope cylinder inspection (987.1)", "description": "Check for bore scoring on M97 engines" },
       { "id": "987-dfi-injectors", "name": "Service direct fuel injectors (987.2)", "description": "Clean if misfiring" }
@@ -918,7 +954,7 @@
     ],
     "transmission": [
       { "id": "987-shifter-cables", "name": "Replace shifter cables", "description": "Stretch over time" },
-      { "id": "987-clutch-slave", "name": "Replace clutch slave cylinder", "description": "Internal design - trans removal required" },
+      { "id": "987-clutch-slave", "name": "Replace clutch slave cylinder", "description": "Internal design—trans removal required" },
       { "id": "987-pdk-service", "name": "PDK service (987.2 PDK)", "description": "Fluid and filter change" }
     ],
     "suspension": [
@@ -939,16 +975,16 @@
     "electrical": [
       { "id": "987-coil-packs", "name": "Replace ignition coil packs", "description": "Common cause of misfires" },
       { "id": "987-maf", "name": "Clean/replace MAF sensor", "description": "Running issues when dirty" },
-      { "id": "987-o2-sensors", "name": "Replace oxygen sensors", "description": "Four total - pre and post-cat" }
+      { "id": "987-o2-sensors", "name": "Replace oxygen sensors", "description": "Four total—pre and post-cat" }
     ]
   },
   "buyersGuide": {
-    "overview": "The Porsche 987 Boxster/Cayman (2005-2012) represents a significant evolution from the 986, with improved styling, more power, and the addition of the Cayman coupe variant. The mid-engine layout delivers exceptional handling, and many consider the Cayman one of the best-handling cars Porsche has ever made. Like the 997, the 987.1 (2005-2008) has IMS bearing concerns while the 987.2 (2009-2012) with DFI engines does not. The Cayman R and Boxster Spyder are particularly desirable.",
+    "overview": "The 987 fixed most of what people disliked about the 986, and it added the Cayman, which may be the best-balanced Porsche of the 2000s. The dividing line is 2009. The 987.1 cars (2005–08) still carry the M96/M97's IMS bearing and bore-scoring risk. The 987.2 cars got a new engine family with no IMS bearing, and the S models got direct injection. If you can stretch to a 987.2, do it. If you can't, buy a 987.1 with a clean bore scope.",
     "quickFacts": {
       "productionYears": "2005-2012",
       "totalProduced": "~150,000 worldwide",
-      "priceRange": "$20,000 - $80,000+",
-      "bestYears": "2009-2012 (987.2 with DFI engine, no IMS)"
+      "priceRange": "$20,000–$80,000+",
+      "bestYears": "2009–2012 (987.2: no IMS bearing; direct injection on S models)"
     },
     "variants": [
       {
@@ -1004,7 +1040,7 @@
       {
         "category": "Transmission",
         "items": [
-          { "check": "Manual Transmission", "detail": "6-speed manual is robust and engaging. Test all gears.", "costIfBad": "$2,000-4,000" },
+          { "check": "Manual Transmission", "detail": "The six-speed manual is tough and feels great. Test every gear.", "costIfBad": "$2,000-4,000" },
           { "check": "PDK (987.2)", "detail": "Dual-clutch is fast and smooth. Check for shudder or harsh engagement.", "costIfBad": "$2,000-5,000" },
           { "check": "Clutch", "detail": "Manual clutch should engage smoothly. Mid-engine makes replacement easier.", "costIfBad": "$1,500-2,500" }
         ]
@@ -1028,19 +1064,19 @@
     "pricingGuide": {
       "asOf": "January 2026",
       "project": {
-        "price": "$15,000 - $25,000",
+        "price": "$15,000–$25,000",
         "description": "987.1 cars with unknown IMS status or significant issues."
       },
       "driver": {
-        "price": "$25,000 - $40,000",
+        "price": "$25,000–$40,000",
         "description": "Good 987.1 S or entry 987.2 examples. Daily driver ready."
       },
       "excellent": {
-        "price": "$40,000 - $60,000",
+        "price": "$40,000–$60,000",
         "description": "Well-maintained 987.2 S, Cayman R, or Boxster Spyder."
       },
       "concours": {
-        "price": "$60,000 - $100,000+",
+        "price": "$60,000–$100,000+",
         "description": "Low-mileage Cayman R or Spyder with documentation."
       }
     },
@@ -1084,7 +1120,7 @@
       { "name": "SavageGeese", "url": "https://www.youtube.com/@SavageGeese", "description": "Detailed reviews including 987 models" }
     ],
     "forums": [
-      { "name": "Planet-9", "url": "https://www.planet-9.com/forums/", "description": "Premier Cayman and Boxster community" },
+      { "name": "Planet-9", "url": "https://www.planet-9.com/forums/", "description": "The main Cayman and Boxster community" },
       { "name": "Rennlist 987 Forum", "url": "https://rennlist.com/forums/987-forum-125/", "description": "Cayman/Boxster discussion and DIY guides" },
       { "name": "BoXa.net 987 Section", "url": "https://www.boxa.net/forum/66-987/", "description": "987 Boxster and Spyder discussion" },
       { "name": "CaymanOC", "url": "https://www.caymanoc.com/", "description": "Dedicated Cayman owner community" }

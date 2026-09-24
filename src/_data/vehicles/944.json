@@ -3,6 +3,7 @@
   "brand": "Porsche",
   "fullName": "Porsche 944",
   "series": "Transaxle four",
+  "tagline": "Balance, a torquey four, and one belt job you can't skip.",
   "years": "1982-1991",
   "engines": [
     "2.5L I4",
@@ -37,7 +38,7 @@
       "repairCosts": {
         "diy": "$200-400",
         "shop": "$700-1200",
-        "notes": "BOTH timing and balance shaft belts required. Critical service."
+        "notes": "BOTH timing and balance shaft belts required. Don't skip it."
       },
       "parts": [
         { "name": "Timing Belt", "partNumber": "94410502504", "price": "$50-80" },
@@ -84,7 +85,7 @@
       "id": "dme-relay",
       "title": "DME Relay Failure",
       "symptoms": "No-start condition, fuel pump doesn't prime, car dies while driving and won't restart, intermittent starting issues",
-      "description": "The DME (Digital Motor Electronics) relay is an infamous weak point on all 944s. This relay controls power to the fuel pump, fuel injectors, and engine management computer. The relay uses solder joints that crack over time from thermal cycling.",
+      "description": "The DME (Digital Motor Electronics) relay is a well-known weak point on all 944s. This relay controls power to the fuel pump, fuel injectors, and engine management computer. The relay uses solder joints that crack over time from thermal cycling.",
       "fixes": [
         "Replace DME relay with new OEM unit",
         "Avoid cheap aftermarket relays",
@@ -99,7 +100,7 @@
       "repairCosts": {
         "diy": "$30-80",
         "shop": "$100-200",
-        "notes": "Infamous 944 failure. Carry a spare."
+        "notes": "The classic 944 failure. Carry a spare."
       },
       "parts": [
         { "name": "DME Relay", "partNumber": "92861530120", "price": "$30-60" }
@@ -182,8 +183,8 @@
         "notes": "All 944 dashes crack. Covers or professional restoration."
       },
       "parts": [
-        { "name": "Dashboard Cover", "partNumber": "Various aftermarket", "price": "$80-200" },
-        { "name": "Dashboard (Used)", "partNumber": "N/A", "price": "$200-500" }
+        { "name": "Dashboard Cover", "price": "$80-200" },
+        { "name": "Dashboard (Used)", "price": "$200-500" }
       ],
       "difficulty": "Easy"
     },
@@ -209,8 +210,8 @@
         "notes": "Rack seals and pump common failures."
       },
       "parts": [
-        { "name": "Steering Rack Seal Kit", "partNumber": "Various", "price": "$60-120" },
-        { "name": "Power Steering Pump", "partNumber": "Various", "price": "$200-400" }
+        { "name": "Steering Rack Seal Kit", "price": "$60-120" },
+        { "name": "Power Steering Pump", "price": "$200-400" }
       ],
       "difficulty": "Moderate"
     },
@@ -235,7 +236,7 @@
         "notes": "Plastic gears strip. Brass upgrade kits available."
       },
       "parts": [
-        { "name": "Odometer Gear Kit (Brass)", "partNumber": "Various aftermarket", "price": "$20-40" }
+        { "name": "Odometer Gear Kit (Brass)", "price": "$20-40" }
       ],
       "difficulty": "Easy"
     },
@@ -269,7 +270,7 @@
     {
       "id": "suspension-refresh",
       "title": "Complete Suspension Refresh",
-      "description": "Full front and rear suspension rebuild for the 944. Addresses worn struts, control arm bushings, tie rod ends, and rear torsion bar components on this popular front-engine sports car to restore factory handling.",
+      "description": "Struts, control arm bushings, tie rod ends, and the rear torsion bar components. The 944's handling is its best feature, so keep it sharp.",
       "difficulty": "Intermediate",
       "time": "12-16 hours",
       "cost": "$600-1,500",
@@ -303,7 +304,7 @@
         "Raise vehicle and support securely on jack stands under reinforced jacking points.",
         "Remove all four wheels and set aside.",
         "Document current ride height and alignment settings if possible.",
-        "Begin with front suspension - disconnect sway bar end links (18mm).",
+        "Begin with front suspension—disconnect sway bar end links (18mm).",
         "Remove tie rod end from steering knuckle using pickle fork.",
         "Remove ball joint from control arm or knuckle.",
         "Support the strut assembly before removing top mount bolts.",
@@ -316,9 +317,9 @@
         "For front control arms, press out old bushings using hydraulic press.",
         "Press in new bushings, ensuring proper orientation.",
         "For rear suspension, remove trailing arm mounting bolts.",
-        "The 944 uses rear torsion bars - note the index marks for reassembly.",
+        "The 944 uses rear torsion bars—note the index marks for reassembly.",
         "Replace trailing arm bushings using press.",
-        "Replace rear shock absorbers - accessible from wheel well.",
+        "Replace rear shock absorbers—accessible from wheel well.",
         "Reassemble everything in reverse order.",
         "Front control arm lock nut: 48 ft-lbs (65 Nm).",
         "Tie rod ends: 33 ft-lbs (45 Nm) with new cotter pins.",
@@ -329,17 +330,17 @@
       "tips": [
         "The 944 suspension is well-designed and responds well to fresh components.",
         "Bilstein B4s are excellent OEM-equivalent replacement shocks.",
-        "Note the torsion bar index marks before disassembly - critical for ride height.",
+        "Note the torsion bar index marks before disassembly—you need them to get the ride height back.",
         "Consider polyurethane bushings for more responsive handling.",
-        "The 944 Turbo and S2 have slightly different suspension - verify parts.",
-        "Check wheel bearings while suspension is apart - common wear items.",
+        "The 944 Turbo and S2 have slightly different suspension—verify parts.",
+        "Check wheel bearings while suspension is apart—common wear items.",
         "Koni adjustable shocks allow fine-tuning of handling characteristics."
       ],
       "warnings": [
-        "Spring compressors are dangerous - ensure they're properly rated and secured.",
-        "Torsion bars are under tension - improper handling can cause injury.",
+        "Spring compressors are dangerous—ensure they're properly rated and secured.",
+        "Torsion bars are under tension—improper handling can cause injury.",
         "The 944 is relatively light (2,800-3,000 lbs) but use appropriate jack stands.",
-        "Some fasteners may be corroded - use penetrating oil and patience.",
+        "Some fasteners may be corroded—use penetrating oil and patience.",
         "Always tighten suspension fasteners with weight on wheels for proper loading."
       ],
       "references": [
@@ -351,7 +352,7 @@
     {
       "id": "rust-repair",
       "title": "Rust Prevention and Repair",
-      "description": "Comprehensive guide to inspecting, preventing, and repairing rust on the 944. Covers common problem areas including door bottoms, rocker panels, floor pans, and rear hatch area critical to this galvanized but still vulnerable sports car.",
+      "description": "Door bottoms, rockers, floors, and the rear hatch area. Galvanized, but not rustproof.",
       "difficulty": "Intermediate to Advanced",
       "time": "8-40+ hours depending on severity",
       "cost": "$200-2,500+",
@@ -387,7 +388,7 @@
         "Raise vehicle and inspect all common rust locations systematically.",
         "The 944 has galvanized body panels but rust still develops at damage points.",
         "Check door bottoms by opening doors and looking at lower edges.",
-        "Inspect rocker panels - press firmly to detect hidden internal rust.",
+        "Inspect rocker panels—press firmly to detect hidden internal rust.",
         "Examine floor pans from inside with carpet removed and from below.",
         "Check rear hatch seal area for moisture damage and rust.",
         "Inspect battery tray area for acid damage.",
@@ -407,16 +408,16 @@
         "Apply cavity wax to all hollow sections for ongoing protection."
       ],
       "tips": [
-        "The 944 has galvanized body panels - better than the 924 but still ages.",
-        "Door bottoms are the most common rust area - check drain holes regularly.",
+        "The 944 has galvanized body panels—better than the 924 but still ages.",
+        "Door bottoms are the most common rust area—check drain holes regularly.",
         "Clear all drain holes in doors, rockers, and sunroof drains.",
         "Stone chips in wheel wells break galvanizing and start rust.",
         "Reproduction panels are available but quality varies.",
-        "The 944's value is increasing - quality repairs are worthwhile.",
+        "The 944's value is increasing—quality repairs are worthwhile.",
         "Cars from salt-road areas require extra diligence."
       ],
       "warnings": [
-        "Welding galvanized metal produces toxic zinc fumes - excellent ventilation required.",
+        "Welding galvanized metal produces toxic zinc fumes—excellent ventilation required.",
         "Extensive rust repair can exceed the vehicle's value on some cars.",
         "Welding near fuel lines and tank requires proper safety precautions.",
         "Improper structural repairs can affect crash safety.",
@@ -432,7 +433,7 @@
     {
       "id": "electrical-systems",
       "title": "Electrical System Restoration",
-      "description": "Complete guide to diagnosing and restoring the 944's electrical system. Covers the notorious DME relay, ground connections, gauge cluster repair, and wiring harness inspection critical to reliable operation of this sports car.",
+      "description": "The DME relay, grounds, the cluster, and the harness. When a 944 won't start, look here first.",
       "difficulty": "Intermediate",
       "time": "4-16 hours depending on scope",
       "cost": "$100-600",
@@ -464,16 +465,16 @@
         "Torx and Phillips screwdrivers"
       ],
       "steps": [
-        "Disconnect battery before any electrical work - negative terminal first.",
-        "Test battery condition - load test and check voltage (should be 12.6V resting).",
+        "Disconnect battery before any electrical work—negative terminal first.",
+        "Test battery condition—load test and check voltage (should be 12.6V resting).",
         "Clean and tighten all battery connections with terminal cleaner.",
-        "Test alternator output - should be 13.8-14.4V at idle.",
+        "Test alternator output—should be 13.8-14.4V at idle.",
         "Locate the central electric panel under the driver's side dash.",
-        "The DME relay is the #1 cause of no-start on 944s - test or replace.",
+        "The DME relay is the #1 cause of no-start on 944s—test or replace.",
         "DME relay is typically in position XI on the relay board.",
-        "Test fuel pump relay - listen for pump prime when key turns on.",
+        "Test fuel pump relay—listen for pump prime when key turns on.",
         "Check and clean all ground connections throughout the vehicle.",
-        "Main engine ground is on the transmission - clean and retorque.",
+        "Main engine ground is on the transmission—clean and retorque.",
         "Body grounds should be cleaned to bare metal and protected.",
         "Inspect wiring harness for heat damage near exhaust.",
         "Check wiring insulation for brittleness and cracking.",
@@ -482,16 +483,16 @@
         "Replace odometer gears with brass upgrade kit if odometer stuck.",
         "Test ignition switch if experiencing intermittent starting.",
         "Inspect and replace spark plug wires if cracked or corroded.",
-        "Test all lighting circuits - replace failed bulbs.",
+        "Test all lighting circuits—replace failed bulbs.",
         "Inspect and clean all multi-pin connectors.",
         "Apply dielectric grease to all cleaned connections.",
         "Reconnect battery and test all systems."
       ],
       "tips": [
-        "The 944's DME relay is infamous for failure - always carry a spare.",
-        "Re-soldering the DME relay is a common roadside repair - learn the technique.",
+        "The DME relay fails without warning. Keep a spare in the glovebox.",
+        "Re-soldering the DME relay is a common roadside repair—learn the technique.",
         "Ground connections deteriorate and cause many strange electrical issues.",
-        "The odometer gear failure is extremely common - brass upgrade lasts.",
+        "The odometer gear failure is extremely common—brass upgrade lasts.",
         "Heat damage to wiring is common near the exhaust manifold.",
         "The 944 Turbo has additional boost control electronics to check.",
         "Document any wiring changes with photographs for future reference."
@@ -500,8 +501,8 @@
         "Always disconnect battery before working on electrical systems.",
         "The 944 does not have airbags but always exercise caution.",
         "Incorrect relay replacement can damage the DME computer.",
-        "Brittle wiring can crack when handled - be gentle with harnesses.",
-        "Do not use excessive dielectric grease - it can attract dirt.",
+        "Brittle wiring can crack when handled—be gentle with harnesses.",
+        "Do not use excessive dielectric grease—it can attract dirt.",
         "Fuel system electrical work requires fire safety precautions."
       ],
       "references": [
@@ -513,7 +514,7 @@
     {
       "id": "interior-restoration",
       "title": "Interior Restoration",
-      "description": "Comprehensive interior restoration guide for the 944. Covers the notorious cracking dashboard, seat repair, carpet replacement, and door panel restoration to return this sports car's cabin to excellent condition.",
+      "description": "The cracking dashboard, seats, carpet, and door panels. The dash is the big one, and there are a few ways to fix it.",
       "difficulty": "Intermediate",
       "time": "14-36 hours for complete restoration",
       "cost": "$500-2,500+",
@@ -521,7 +522,7 @@
       "laborHours": "12-28 hours shop time",
       "parts": [
         { "name": "Dashboard Cover/Cap", "oem": "N/A", "aftermarket": "Various aftermarket", "cost": "$80-200" },
-        { "name": "Dashboard (Used, Uncracked)", "oem": "Various by year", "aftermarket": "N/A - used only", "cost": "$200-500" },
+        { "name": "Dashboard (Used, Uncracked)", "oem": "Various by year", "aftermarket": "N/A—used only", "cost": "$200-500" },
         { "name": "Seat Cover Kit (Per Seat)", "oem": "Various by color", "aftermarket": "Leatherique, aftermarket", "cost": "$250-600" },
         { "name": "Carpet Set", "oem": "Various by color", "aftermarket": "Autoloc, aftermarket", "cost": "$300-600" },
         { "name": "Door Panel Set", "oem": "Various", "aftermarket": "Used or refurbished", "cost": "$200-500" },
@@ -547,49 +548,95 @@
       "steps": [
         "Remove seats by unbolting from floor (4 bolts per seat).",
         "Disconnect electrical connectors if equipped with power seats.",
-        "Inspect seat fabric/leather/vinyl condition - clean thoroughly first.",
+        "Inspect seat fabric/leather/vinyl condition—clean thoroughly first.",
         "For worn seats: recover with new material or install seat covers.",
         "Many 944s have cloth seats that can be cleaned and protected.",
         "Remove hog rings to separate covers from foam if recovering.",
         "Replace foam cushions if compressed or deteriorated.",
         "Install new covers using hog rings at attachment points.",
         "Remove door panels by removing screws and popping plastic clips.",
-        "Door panel clips are very fragile - have spares ready.",
+        "Door panel clips are very fragile—have spares ready.",
         "Clean or replace door panel fabric/vinyl as needed.",
         "Remove old carpet by removing sill plates, console, and seat bases.",
         "Clean floor pan and treat any bare metal with rust preventive.",
         "Install new carpet kit, starting from rear and working forward.",
-        "ADDRESS THE DASHBOARD: This is the 944's Achilles heel.",
+        "Address the dashboard: This is the 944's Achilles heel.",
         "If dashboard is cracked, options include: cover/cap, used replacement, or living with it.",
         "Dashboard covers fit over existing cracked dashboard.",
         "Used uncracked dashboards are valuable and getting scarce.",
-        "Dashboard removal is major surgery - requires full disassembly.",
+        "Dashboard removal is major surgery—requires full disassembly.",
         "If keeping original, protect from sun with quality dashboard mat.",
         "Replace shift and e-brake boots if cracked or worn.",
         "Reassemble all interior components."
       ],
       "tips": [
-        "The 944 dashboard cracks are famous - every 944 will eventually crack if exposed to sun.",
+        "The 944 dashboard cracks are famous—every 944 will eventually crack if exposed to sun.",
         "Prevention is key: use a quality sunshade and park in shade when possible.",
         "Dashboard covers are a practical solution and available in matching colors.",
-        "Good used dashboards are becoming rare and expensive - preserve what you have.",
-        "Door panel clips are extremely fragile - order extras before starting.",
-        "Many 944s have cloth seats - these can be steam cleaned effectively.",
+        "Good used dashboards are becoming rare and expensive—preserve what you have.",
+        "Door panel clips are extremely fragile—order extras before starting.",
+        "Many 944s have cloth seats—these can be steam cleaned effectively.",
         "Consider Dynamat or similar sound deadening while carpet is out.",
-        "The 944 interior is comfortable and well-designed - worth restoring."
+        "The 944 interior is comfortable and well-designed—worth restoring."
       ],
       "warnings": [
-        "Dashboard removal is extremely labor intensive - consider carefully.",
+        "Dashboard removal is extremely labor intensive—consider carefully.",
         "Cracked dashboard can off-gas and damage windshield interior surface.",
-        "Fabric/leather dyes can stain surrounding surfaces - mask carefully.",
+        "Fabric/leather dyes can stain surrounding surfaces—mask carefully.",
         "Silicone-based products leave residue that interferes with future repairs.",
-        "Heat gun can damage vinyl if held too close - keep moving.",
-        "Door panel clips will break - don't start without spares on hand."
+        "Heat gun can damage vinyl if held too close—keep moving.",
+        "Door panel clips will break—don't start without spares on hand."
       ],
       "references": [
         { "name": "944 Online Interior", "url": "https://www.944online.com/" },
         { "name": "Pelican Parts 944 Interior", "url": "https://www.pelicanparts.com/Porsche/catalog_944.htm" },
         { "name": "Rennlist 944 Interior Forum", "url": "https://rennlist.com/forums/924-931-and-944-951-forum/" }
+      ]
+    },
+    {
+      "id": "timing-balance-belts",
+      "title": "Timing and Balance Shaft Belt Replacement",
+      "description": "The single most important job on a 944. There are two belts, the engine is an interference design, and tension matters as much as the belts themselves. Do the water pump and rollers at the same time.",
+      "difficulty": "Advanced",
+      "time": "6-10 hours",
+      "cost": "$300-600",
+      "parts": [
+        { "name": "Timing belt", "aftermarket": "Contitech, Gates", "cost": "$40-80" },
+        { "name": "Balance shaft belt", "aftermarket": "Contitech, Gates", "cost": "$25-50" },
+        { "name": "Tensioner rollers and idler", "cost": "$80-200" },
+        { "name": "Water pump", "cost": "$100-250" },
+        { "name": "Cam, balance shaft, and crank seals", "cost": "$30-60" }
+      ],
+      "tools": [
+        "Belt tension gauge (Porsche 9201 or a known-good equivalent)",
+        "Crank holding tool",
+        "Metric sockets and wrenches",
+        "Torque wrench",
+        "Drain pan"
+      ],
+      "steps": [
+        "Disconnect the battery and drain the coolant.",
+        "Remove the accessory belts, the crank pulley, and the timing covers.",
+        "Set the engine to TDC on cylinder 1 and confirm the cam and balance shaft marks.",
+        "Loosen the tensioners and remove both belts.",
+        "Replace the water pump, rollers, and tensioners, and any weeping seals.",
+        "Fit the timing belt first with the marks aligned, then the balance shaft belt with its marks aligned.",
+        "Set tension on both belts with the gauge per the workshop manual.",
+        "Rotate the engine two full turns by hand, recheck all marks, and recheck tension.",
+        "Reassemble, refill, and bleed the cooling system.",
+        "Recheck timing belt tension after about 1,500 miles. New belts stretch."
+      ],
+      "tips": [
+        "Most 944 belt failures come from wrong tension, not old belts.",
+        "Replace every 30,000 miles or four years, whichever comes first."
+      ],
+      "warnings": [
+        "A misaligned balance shaft belt makes the engine shake. Recheck the marks if it runs rough.",
+        "Never turn the engine backward with the belts fitted."
+      ],
+      "references": [
+        { "name": "Clark's Garage", "url": "https://www.clarks-garage.com/" },
+        { "name": "Rennlist forums", "url": "https://rennlist.com/forums/" }
       ]
     }
   ],
@@ -696,7 +743,7 @@
       {
         "name": "Clarks Garage",
         "url": "https://www.clarks-garage.com/",
-        "notes": "944 tech articles and parts. Essential DIY resource.",
+        "notes": "944 tech articles and parts. A go-to DIY resource.",
         "specialties": [
           "Tech Articles",
           "DIY Resource"
@@ -743,7 +790,7 @@
       }
     ],
     "tools": [
-      { "name": "Clarks Garage Technical", "url": "https://www.clarks-garage.com/", "notes": "Essential 944 shop manual and tech articles" },
+      { "name": "Clarks Garage Technical", "url": "https://www.clarks-garage.com/", "notes": "The 944 shop manual and tech articles" },
       { "name": "Lindsey Racing Torque Specs", "url": "https://www.lindseyracing.com/LR/Parts/TORQUESPEC.html", "notes": "944 torque specifications reference" }
     ]
   },
@@ -797,7 +844,7 @@
     {
       "id": "oil-change",
       "title": "Oil Change",
-      "description": "Complete oil and filter change procedure for all 944 engine variants.",
+      "description": "Oil and filter on every 944 engine.",
       "difficulty": "Easy",
       "time": "30 min",
       "interval": "Every 3,000-5,000 miles",
@@ -834,7 +881,7 @@
     {
       "id": "dme-relay",
       "title": "DME Relay Replacement",
-      "description": "Replace the notorious DME relay before it leaves you stranded.",
+      "description": "When the DME relay fails, the car cranks but won't start, usually far from home. Fifteen minutes to replace, so carry a spare.",
       "difficulty": "Easy",
       "time": "15 min",
       "interval": "Every 10 years or as needed",
@@ -847,11 +894,11 @@
       "steps": [
         "The DME relay is located in the central electric panel under the dash, driver's side.",
         "Remove the lower dash panel to access the fuse/relay panel.",
-        "Locate the DME relay - it's typically in position XI (11) on the relay board.",
+        "Locate the DME relay—it's typically in position XI (11) on the relay board.",
         "The DME relay is the larger relay that controls fuel pump and DME power.",
         "Note the orientation of the relay before removing.",
         "Gently pull the old relay straight out of its socket.",
-        "Inspect the relay socket contacts for corrosion - clean if needed.",
+        "Inspect the relay socket contacts for corrosion—clean if needed.",
         "Push the new relay firmly into the socket in the correct orientation.",
         "Turn key to ON and listen for fuel pump prime (2-3 seconds of pump noise).",
         "Start engine and verify it runs properly.",
@@ -862,13 +909,13 @@
         "The DME relay controls fuel pump, injectors, and DME computer power.",
         "If car dies while driving and won't restart, DME relay is the prime suspect.",
         "Some owners re-solder the original relay's cracked joints as a roadside repair.",
-        "Always carry a spare DME relay - this is the most common 944 failure."
+        "Always carry a spare DME relay—this is the most common 944 failure."
       ]
     },
     {
       "id": "brake-pads",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement with rotor inspection.",
+      "description": "Front and rear pads with a rotor check.",
       "difficulty": "Easy",
       "time": "1-2 hours",
       "interval": "Every 20,000-40,000 miles",
@@ -889,7 +936,7 @@
         "Remove wheel to access the caliper.",
         "Front calipers: Remove the two 7mm Allen caliper guide pin bolts.",
         "Rear calipers: Remove the caliper bracket bolts (varies by year).",
-        "Swing or remove the caliper and support it - don't let it hang by the hose.",
+        "Swing or remove the caliper and support it—don't let it hang by the hose.",
         "Remove the old pads from the caliper bracket.",
         "Inspect rotor for scoring, cracks, or minimum thickness.",
         "Clean pad contact areas in the bracket with wire brush.",
@@ -903,14 +950,14 @@
       ],
       "tips": [
         "The 944 uses solid front rotors on base models, vented on Turbo and S2.",
-        "Rear brakes on 944 are cable-operated parking brake - adjust cable after pad change.",
-        "Bed in new pads with gradual stops - avoid hard braking for first 100 miles."
+        "Rear brakes on 944 are cable-operated parking brake—adjust cable after pad change.",
+        "Bed in new pads with gradual stops—avoid hard braking for first 100 miles."
       ]
     },
     {
       "id": "timing-belt-inspection",
       "title": "Timing Belt Inspection",
-      "description": "Inspect timing and balance shaft belts through the inspection window.",
+      "description": "A quick check of the timing and balance shaft belts. On an interference engine, it's the most important fifteen minutes you'll spend on the car.",
       "difficulty": "Easy",
       "time": "15 min",
       "interval": "Every 5,000 miles or annually",
@@ -927,27 +974,27 @@
         "Using a flashlight, peer through the inspection window.",
         "Examine the visible portion of the timing belt for cracks, glazing, or fraying.",
         "Look for any separation between the belt's teeth and backing.",
-        "Check for oil contamination - belt should be dry.",
+        "Check for oil contamination—belt should be dry.",
         "If possible, rotate the engine (by hand at crank bolt) to inspect more of the belt.",
         "Reinstall the inspection cover.",
-        "Note: This is only a preliminary check - belts can fail with little visible warning.",
+        "Note: This is only a preliminary check—belts can fail with little visible warning.",
         "If any damage is visible, schedule immediate belt replacement.",
         "Even if belt looks good, replace at 30,000 mile intervals."
       ],
       "tips": [
-        "This is an interference engine - belt failure destroys valves and pistons.",
-        "Oil on the belt means water pump or seal failure - address immediately.",
+        "This is an interference engine—belt failure destroys valves and pistons.",
+        "Oil on the belt means water pump or seal failure—address immediately.",
         "Visual inspection does not replace scheduled belt changes.",
         "Both timing belt AND balance shaft belt must be replaced together."
       ]
     }
   ],
   "buyersGuide": {
-    "overview": "The Porsche 944 (1982-1991) is widely considered one of the best sports cars of its era and remains one of the most accessible Porsches to own today. With its front-engine, rear-transaxle layout delivering near-perfect 50/50 weight distribution, the 944 offers exceptional handling that rivals much more expensive cars. The 944 Turbo (951) brought serious performance, while the S2 and Turbo S represented the pinnacle of the line. These cars are mechanically robust but require regular maintenance, especially timing belt service. A well-maintained 944 is a genuine driver's car that punches far above its price point.",
+    "overview": "The 944 is the easiest way into a Porsche that genuinely handles: transaxle layout, near-perfect balance, and a torquey four that's happy to rev. The Turbo (951) is quick even by today's standards, and the S2's 3.0L is fast and dependable. Nearly everything comes back to one maintenance item, the timing and balance shaft belts. It's an interference engine, so if there's no record of the belts, water pump, and tensioners, budget for the job before you drive it hard.",
     "quickFacts": {
       "productionYears": "1982-1991",
       "totalProduced": "~163,000 worldwide",
-      "priceRange": "$8,000 - $60,000+",
+      "priceRange": "$8,000–$60,000+",
       "bestYears": "1987-1991 (improved interior, larger engine/turbo)"
     },
     "variants": [
@@ -984,11 +1031,11 @@
     ],
     "inspectionPoints": [
       {
-        "category": "Engine (Critical)",
+        "category": "Engine (check first)",
         "items": [
           {
             "check": "Timing Belt Service History",
-            "detail": "THE most critical item. The 944 is an interference engine - belt failure causes catastrophic damage. Belts must be replaced every 30,000 miles or 4 years.",
+            "detail": "The single most important check. The 944 is an interference engine—belt failure causes catastrophic damage. Belts must be replaced every 30,000 miles or 4 years.",
             "costIfBad": "$1,500-3,000 for service / $5,000-15,000 if it breaks"
           },
           {
@@ -1023,7 +1070,7 @@
         "items": [
           {
             "check": "Clutch Condition",
-            "detail": "Test clutch engagement - should be smooth and grab mid-pedal. 944 clutches are robust but wear eventually.",
+            "detail": "Test the clutch. It should engage smoothly around mid-pedal. They last well but do wear out.",
             "costIfBad": "$1,500-2,500 (includes torque tube removal)"
           },
           {
@@ -1053,11 +1100,7 @@
             "costIfBad": "$300-500"
           },
           { "check": "Tie Rods", "detail": "Check for play in the steering. Worn tie rods cause wander and uneven tire wear.", "costIfBad": "$150-300" },
-          {
-            "check": "Struts/Shocks",
-            "detail": "Bounce each corner - should settle in one bounce. Original units are long past due.",
-            "costIfBad": "$600-1,200"
-          }
+          { "check": "Struts/Shocks", "detail": "Bounce each corner—should settle in one bounce. Original units are long past due.", "costIfBad": "$600-1,200" }
         ]
       },
       {
@@ -1070,7 +1113,7 @@
           },
           {
             "check": "Dash Cracks",
-            "detail": "Dashboard cracking is nearly universal. Check severity - repair or covers available.",
+            "detail": "Dashboard cracking is nearly universal. Check severity—repair or covers available.",
             "costIfBad": "$200-800 depending on solution"
           },
           {
@@ -1103,24 +1146,24 @@
     "pricingGuide": {
       "asOf": "January 2026",
       "project": {
-        "price": "$3,000 - $8,000",
+        "price": "$3,000–$8,000",
         "description": "Non-running or cars with known timing belt failure risk. Only for experienced enthusiasts who can do their own work."
       },
       "driver": {
-        "price": "$8,000 - $18,000",
+        "price": "$8,000–$18,000",
         "description": "Running and driving with recent timing belt service. May have cosmetic wear or minor issues."
       },
       "excellent": {
-        "price": "$18,000 - $35,000",
+        "price": "$18,000–$35,000",
         "description": "Well-maintained Turbo or S2 examples with full service history. Good cosmetics and mechanical condition."
       },
       "concours": {
-        "price": "$35,000 - $70,000+",
+        "price": "$35,000–$70,000+",
         "description": "Low-mileage Turbo S or pristine S2 examples. Fully documented, original or properly restored."
       }
     },
     "redFlags": [
-      "Unknown timing belt service history - assume the worst and budget accordingly",
+      "Unknown timing belt service history—assume the worst and budget accordingly",
       "Evidence of timing belt failure (bent valves, compression loss)",
       "Turbo cars with excessive oil smoke or shaft play",
       "Severe clutch shudder or slippage",
@@ -1133,7 +1176,7 @@
       "Documented timing belt service within last 30,000 miles or 4 years",
       "Service records showing regular maintenance",
       "Turbo or S2 for best performance value",
-      "Manual transmission (all 944s are manual - no automatics)",
+      "Manual transmission (all 944s are manual—no automatics)",
       "Factory LSD (limited-slip differential)",
       "Clean interior without severe dash cracking",
       "Rust-free body, especially southern or western cars",
@@ -1148,16 +1191,16 @@
       "fuel": "22-28 MPG depending on driving style"
     },
     "expertTips": [
-      "The timing belt is the single most important maintenance item - never skip or delay this service",
-      "The 944 S2 offers nearly Turbo performance without the turbo complexity - consider it for a driver",
-      "Turbo models have different suspension geometry - don't interchange parts with NA cars",
-      "The torque tube design means clutch replacement is a major job - factor this into purchase decisions",
-      "Original Fuchs wheels are desirable and expensive - their presence adds value",
-      "The 944 chassis is one of the best-handling platforms ever made - properly set up, it's magic",
+      "The timing belt is the single most important maintenance item—never skip or delay this service",
+      "The 944 S2 offers nearly Turbo performance without the turbo complexity—consider it for a driver",
+      "Turbo models have different suspension geometry—don't interchange parts with NA cars",
+      "The torque tube design means clutch replacement is a major job—factor this into purchase decisions",
+      "Original Fuchs wheels are desirable and expensive—their presence adds value",
+      "The 944 chassis is one of the best-handling platforms ever made—properly set up, it's magic",
       "Parts availability is excellent through specialists like Pelican Parts and 944Online",
       "Join Rennlist.com for excellent technical resources and a supportive community",
-      "Consider a pre-purchase inspection by a Porsche specialist - generic mechanics miss 944-specific issues",
-      "A well-maintained 944 will provide years of reliable service - these are tough cars"
+      "Consider a pre-purchase inspection by a Porsche specialist—generic mechanics miss 944-specific issues",
+      "A well-maintained 944 will provide years of reliable service—these are tough cars"
     ]
   },
   "communityResources": {

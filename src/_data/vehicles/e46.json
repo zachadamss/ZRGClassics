@@ -3,10 +3,13 @@
   "brand": "BMW",
   "fullName": "BMW E46 3 Series",
   "series": "3 Series",
+  "tagline": "The easiest classic BMW to live with every day.",
   "years": "1999-2006",
   "engines": [
-    "M52TU 2.5L I6",
-    "M54 3.0L I6",
+    "M52TU 2.5L I6 (323i)",
+    "M52TU 2.8L I6 (328i)",
+    "M54 2.5L I6 (325i)",
+    "M54 3.0L I6 (330i)",
     "S54 3.2L I6 (M3)"
   ],
   "heroImage": "/images/vehicles/e46-hero.jpg",
@@ -95,7 +98,7 @@
         "notes": "DIY only for reinforcement plates on undamaged floors. Welding repairs require professional fabrication."
       },
       "parts": [
-        { "name": "Subframe Reinforcement Plates (Kit)", "partNumber": "Various aftermarket", "price": "$100-200" },
+        { "name": "Subframe Reinforcement Plates (Kit)", "price": "$100-200" },
         { "name": "Subframe Bushing Set", "partNumber": "33312283573", "price": "$80-150" },
         { "name": "Floor Pan Section (if needed)", "partNumber": "41118238251", "price": "$200-400" }
       ],
@@ -159,20 +162,129 @@
         { "name": "Thrust Arm (Left)", "partNumber": "31126774825", "price": "$50-80" },
         { "name": "Thrust Arm (Right)", "partNumber": "31126774826", "price": "$50-80" },
         { "name": "Control Arm Bushing (Lemförder)", "partNumber": "31126783376", "price": "$20-35" },
-        { "name": "Front Suspension Refresh Kit", "partNumber": "Various kits", "price": "$300-500" }
+        { "name": "Front Suspension Refresh Kit", "price": "$300-500" }
       ],
       "sources": [
         { "name": "Tire Rack", "url": "https://www.tirerack.com/" },
         { "name": "Turner Motorsport", "url": "https://www.turnermotorsport.com/" }
       ],
       "difficulty": "Moderate"
+    },
+    {
+      "id": "oil-filter-housing",
+      "title": "Oil Filter Housing Gasket Leak (M52TU/M54)",
+      "symptoms": "Burning oil smell after a drive, oil on the alternator and accessory belt, wet lower front of the engine",
+      "description": "The gasket between the oil filter housing and the block hardens with heat and age, and the leak runs straight onto the accessory belt. An oil-soaked belt can shred and get pulled in behind the crank pulley, taking out the front main seal on its way. That turns a $30 gasket into a much bigger bill, so fix it at the first sign of seepage.",
+      "fixes": [
+        "Replace the oil filter housing gasket and the oil cooler line O-rings at the same time",
+        "Replace the accessory belt if it has been sitting in oil",
+        "Degrease the area afterward so you can confirm the leak is gone"
+      ],
+      "repairCosts": {
+        "diy": "$30-60",
+        "shop": "$300-500",
+        "notes": "Two to three hours with the intake side cleared. Cheap insurance against a shredded belt."
+      },
+      "parts": [
+        { "name": "Oil Filter Housing Gasket Set", "brand": "Elring / Victor Reinz", "price": "$15-30" },
+        { "name": "Accessory Drive Belt", "price": "$25-40" }
+      ],
+      "sources": [
+        { "name": "E46Fanatics", "url": "https://www.e46fanatics.com/forums/" },
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" }
+      ],
+      "relatedIssues": [
+        { "vehicle": "e90", "brand": "BMW", "model": "E90", "issueId": "oil-leaks" }
+      ],
+      "difficulty": "Moderate"
+    },
+    {
+      "id": "disa-valve",
+      "title": "DISA Valve Failure (M54)",
+      "symptoms": "Rattle from the intake at idle, rough or hunting idle, a flat spot in the mid-range, lean codes",
+      "description": "The DISA valve switches intake runner length for more mid-range torque. Its flap pivots on a plastic pin that wears loose, so first it rattles, then it hurts drivability, and if the flap breaks off it can be pulled into the engine. It's a ten-minute job to remove and inspect, and rebuild kits exist if the body is sound.",
+      "fixes": [
+        "Remove the valve and check for play in the flap",
+        "Rebuild with an upgraded flap kit, or replace the valve",
+        "Replace the O-ring where it seats in the intake manifold"
+      ],
+      "repairCosts": {
+        "diy": "$40-200",
+        "shop": "$250-450",
+        "notes": "Rebuild kit at the low end, new valve at the high end."
+      },
+      "parts": [
+        { "name": "DISA Rebuild Kit", "price": "$40-60" },
+        { "name": "DISA Valve (complete)", "price": "$150-200" }
+      ],
+      "sources": [
+        { "name": "E46Fanatics", "url": "https://www.e46fanatics.com/forums/" }
+      ],
+      "relatedIssues": [
+        { "vehicle": "e39", "brand": "BMW", "model": "E39", "issueId": "disa-valve" }
+      ],
+      "difficulty": "Moderate"
+    },
+    {
+      "id": "rear-shock-mounts",
+      "title": "Rear Shock Mount Tear-Out",
+      "symptoms": "Clunk from the rear over bumps, shock top pushing up through the parcel shelf or trunk floor, cracked paint around the mount",
+      "description": "The sheet metal the rear shocks bolt into cracks over time. It's most common on coupes and M3s, and stiff aftermarket shocks speed it up. Caught early, reinforcement plates and new mounts solve it. Left alone, the mount tears through and it becomes a welding job.",
+      "fixes": [
+        "Inspect the shock towers from the trunk whenever the rear is apart",
+        "Fit reinforcement plates with new upper mounts",
+        "Weld in repair panels if the metal has already torn"
+      ],
+      "repairCosts": {
+        "diy": "$60-150",
+        "shop": "$300-1500+",
+        "notes": "Plates and mounts at the low end; welding at the high end."
+      },
+      "parts": [
+        { "name": "Rear Shock Mount Reinforcement Plates", "price": "$30-60" },
+        { "name": "Rear Upper Shock Mounts (pair)", "price": "$40-90" }
+      ],
+      "sources": [
+        { "name": "E46Fanatics", "url": "https://www.e46fanatics.com/forums/" }
+      ],
+      "relatedIssues": [],
+      "difficulty": "Advanced"
+    },
+    {
+      "id": "s54-rod-bearings-vanos",
+      "title": "Rod Bearings and VANOS Hardware (S54 M3)",
+      "symptoms": "Low oil pressure warning, knocking under load, VANOS fault codes, rough running or a rattle from the front of the head",
+      "description": "The M3's S54 has two known weak spots. The rod bearings run tight clearances and wear, and by the time you hear them it's usually too late, so many owners replace them preventively, or at purchase if there's no record. The double VANOS can loosen the small bolts on its exhaust hub and crack the tabs on its oil pump drive disc, which leads to timing faults. Upgraded bolts and a hardened disc fix it for good. Use the 10W-60 oil BMW specified and let it warm up before you rev it.",
+      "fixes": [
+        "Replace rod bearings (and bolts) preventively, or at purchase if undocumented",
+        "Install upgraded VANOS exhaust hub bolts and a hardened oil pump drive disc",
+        "Send a used oil sample for analysis to watch bearing wear"
+      ],
+      "repairCosts": {
+        "diy": "$400-900",
+        "shop": "$1500-3000",
+        "notes": "Rod bearings and VANOS hardware are often done together to share labor."
+      },
+      "parts": [
+        { "name": "Rod Bearing Set", "price": "$250-400" },
+        { "name": "Rod Bolts (set)", "price": "$100-200" },
+        { "name": "VANOS Bolt and Oil Pump Disc Kit", "price": "$150-250" }
+      ],
+      "sources": [
+        { "name": "M3Forum", "url": "https://www.m3forum.net/" },
+        { "name": "E46Fanatics", "url": "https://www.e46fanatics.com/forums/" }
+      ],
+      "relatedIssues": [
+        { "vehicle": "e90", "brand": "BMW", "model": "E90", "issueId": "rod-bearings" }
+      ],
+      "difficulty": "Advanced"
     }
   ],
   "guides": [
     {
       "id": "suspension-refresh",
       "title": "Complete Suspension Refresh",
-      "description": "Full front and rear suspension rebuild addressing the E46's multi-link suspension wear points including control arms, RTABs, and subframe bushings.",
+      "description": "Control arms, rear trailing arm bushings, and subframe bushings. The E46 still handles beautifully when these are fresh.",
       "difficulty": "Intermediate",
       "time": "12-16 hours",
       "cost": "$800-1,500",
@@ -204,42 +316,42 @@
         "Alignment specs printout"
       ],
       "steps": [
-        "Raise vehicle and support on jack stands at all four corners - vehicle must be level.",
+        "Raise vehicle and support on jack stands at all four corners—vehicle must be level.",
         "Remove all four wheels and mark their positions for reinstallation.",
         "Photograph suspension geometry before disassembly for reference.",
         "Soak all suspension bolts with penetrating oil and let sit 15-30 minutes.",
-        "Start with front suspension - remove sway bar end links (16mm on stud, hold with Allen key).",
+        "Start with front suspension—remove sway bar end links (16mm on stud, hold with Allen key).",
         "Remove lower control arm ball joint nut (18mm) and separate from steering knuckle using separator.",
         "Remove lower control arm bracket bolts from subframe (18mm) and remove arm.",
         "Remove thrust rod bolts at both ends (18mm at subframe, 21mm at steering knuckle bracket).",
         "Remove steering knuckle pinch bolt if replacing tie rod ends.",
         "For strut removal, mark position, remove three upper nuts (13mm) and lower pinch bolt.",
-        "Install new front components - torque control arm bracket to subframe 44 ft-lbs, ball joint 66 ft-lbs.",
+        "Install new front components—torque control arm bracket to subframe 44 ft-lbs, ball joint 66 ft-lbs.",
         "Torque thrust rod bolts: subframe end 57 ft-lbs, knuckle bracket end 81 ft-lbs.",
-        "Install new sway bar end links - torque to 48 ft-lbs.",
-        "Move to rear suspension - support trailing arm with jack before removing anything.",
+        "Install new sway bar end links—torque to 48 ft-lbs.",
+        "Move to rear suspension—support trailing arm with jack before removing anything.",
         "For RTAB replacement: remove trailing arm rear bolt (21mm), press out old bushings with tool.",
-        "Press new RTABs into trailing arm - note orientation marks on bushings.",
+        "Press new RTABs into trailing arm—note orientation marks on bushings.",
         "Remove and replace upper control arms (camber arms) - 57 ft-lbs at subframe, 81 ft-lbs at trailing arm.",
         "Remove and replace lower control arms - 81 ft-lbs both ends. Torque at RIDE HEIGHT.",
         "For subframe bushing replacement: support subframe, lower it to access bushings, press new ones in.",
         "Reinstall all components, checking for correct torque on every fastener.",
-        "Install wheels and lower vehicle - bounce corners to settle suspension.",
-        "Perform professional 4-wheel alignment IMMEDIATELY - do not drive far without alignment."
+        "Install wheels and lower vehicle—bounce corners to settle suspension.",
+        "Perform professional 4-wheel alignment IMMEDIATELY—do not drive far without alignment."
       ],
       "tips": [
-        "The E46 multi-link rear is sensitive to worn bushings - imprecise handling often traces to RTABs.",
-        "Always torque rear control arms at ride height - not with suspension hanging.",
+        "The E46 multi-link rear is sensitive to worn bushings—imprecise handling often traces to RTABs.",
+        "Always torque rear control arms at ride height—not with suspension hanging.",
         "Meyle HD bushings are stiffer than OEM and last longer but transmit more road noise.",
         "Mark subframe position before lowering to make reinstallation alignment easier.",
-        "Replace subframe bushings while you have access - they're often overlooked.",
+        "Replace subframe bushings while you have access—they're often overlooked.",
         "Consider upgrading to SPC adjustable rear camber arms if chasing alignment specs."
       ],
       "warnings": [
-        "RTAB replacement requires a special press tool or a hydraulic press - do not attempt with hammers.",
-        "Worn RTABs can cause sudden rear-end instability - prioritize this repair if symptoms present.",
-        "Always support subframe before loosening bolts - it's heavy and can shift suddenly.",
-        "E46 M3 owners: inspect subframe mounting points for cracks before suspension work - if found, repair first."
+        "RTAB replacement requires a special press tool or a hydraulic press—do not attempt with hammers.",
+        "Worn RTABs can cause sudden rear-end instability—prioritize this repair if symptoms present.",
+        "Always support subframe before loosening bolts—it's heavy and can shift suddenly.",
+        "E46 M3 owners: inspect subframe mounting points for cracks before suspension work—if found, repair first."
       ],
       "references": [
         { "name": "E46Fanatics Suspension Torque Specs", "url": "https://www.e46fanatics.com/threads/e46-complete-suspension-torque-specs.1054309/" },
@@ -253,7 +365,7 @@
     {
       "id": "rust-repair",
       "title": "Rust Prevention and Repair",
-      "description": "Comprehensive rust inspection and repair guide addressing the E46's common problem areas including front fenders, rocker panels, trunk floor, and rear wheel arches.",
+      "description": "Front fenders, rockers, the trunk floor, and rear arches. Less of a rust car than older BMWs, but not immune.",
       "difficulty": "Intermediate",
       "time": "8-20 hours",
       "cost": "$200-1,500",
@@ -289,7 +401,7 @@
         "Thoroughly wash and dry the entire undercarriage and wheel wells before inspection.",
         "Inspect common E46 rust areas: behind front fender side markers, rocker panel jacking points, trunk floor spare tire well, battery tray, rear wheel arches inside trunk.",
         "Use inspection mirror and flashlight to check inside rocker panels through drain holes.",
-        "Check sunroof drain tubes and clear any blockages - clogged drains cause interior rust.",
+        "Check sunroof drain tubes and clear any blockages—clogged drains cause interior rust.",
         "For surface rust: wire brush affected area down to bare metal, extending 2 inches into clean metal.",
         "Apply rust converter to any remaining pitting and let cure per product instructions.",
         "For rust-through: mark the extent of damage, cut out affected metal 1 inch into clean metal.",
@@ -307,19 +419,19 @@
         "Touch up paint or full paint as required to complete repair."
       ],
       "tips": [
-        "E46 front fenders commonly rust behind the side marker lights - remove markers to inspect.",
-        "Trunk rust often originates from clogged drain plugs in the spare tire well - clear these regularly.",
-        "Battery acid accelerates rust in the battery tray - neutralize acid before repair.",
-        "Rocker panel jacking points rust from inside out - catch it early or full replacement is needed.",
+        "E46 front fenders commonly rust behind the side marker lights—remove markers to inspect.",
+        "Trunk rust often originates from clogged drain plugs in the spare tire well—clear these regularly.",
+        "Battery acid accelerates rust in the battery tray—neutralize acid before repair.",
+        "Rocker panel jacking points rust from inside out—catch it early or full replacement is needed.",
         "POR-15 works well but must be topcoated as it degrades in UV light.",
         "Fluid Film applied annually to inner fenders and cavities prevents future rust."
       ],
       "warnings": [
-        "Always wear a proper respirator when grinding rust - it contains harmful particles.",
+        "Always wear a proper respirator when grinding rust—it contains harmful particles.",
         "Have a fire extinguisher ready when welding near interiors or fuel lines.",
         "Check for wiring and brake lines before cutting or welding any body panels.",
-        "Extensive rust near subframe mounting points is a safety issue - may require professional repair.",
-        "Battery acid is corrosive - wear gloves and eye protection, neutralize with baking soda and water."
+        "Extensive rust near subframe mounting points is a safety issue—may require professional repair.",
+        "Battery acid is corrosive—wear gloves and eye protection, neutralize with baking soda and water."
       ],
       "references": [
         { "name": "E46Fanatics Rust Repair Thread", "url": "https://www.e46fanatics.com/threads/e46-rust-faq.901340/" },
@@ -330,7 +442,7 @@
     {
       "id": "electrical-restoration",
       "title": "Electrical System Restoration",
-      "description": "Complete electrical system restoration covering the E46's common electrical failures including pixel repair, window regulators, lighting upgrades, and module refresh.",
+      "description": "Pixel repair, window regulators, lighting, and module faults. The usual E46 electrical problems and their fixes.",
       "difficulty": "Intermediate",
       "time": "10-16 hours",
       "cost": "$400-1,000",
@@ -362,41 +474,41 @@
         "INPA/ISTA diagnostic software (optional)"
       ],
       "steps": [
-        "Start with instrument cluster pixel repair - remove cluster (4 Torx screws, disconnect cables).",
+        "Start with instrument cluster pixel repair—remove cluster (4 Torx screws, disconnect cables).",
         "Disassemble cluster housing to access the LCD display ribbon cable.",
         "Use heat gun to warm existing ribbon, carefully peel off failed ribbon.",
         "Clean contact points with isopropyl alcohol and install new ribbon with heat gun.",
         "Reinstall cluster and verify all pixels display correctly.",
         "For window regulator replacement: remove door panel (Torx screws, plastic clips, armrest screws).",
         "Disconnect window switch and speaker connectors.",
-        "Peel back vapor barrier carefully - you'll reuse it.",
+        "Peel back vapor barrier carefully—you'll reuse it.",
         "Lower window to access mounting bolts, then support glass with tape.",
         "Remove regulator mounting bolts (10mm) and guide glass bolts, slide out old regulator.",
-        "Install new regulator in reverse order - torque mounting bolts to 89 in-lbs.",
+        "Install new regulator in reverse order—torque mounting bolts to 89 in-lbs.",
         "Test window operation before reinstalling door panel.",
         "For blower motor final stage: remove glovebox (Torx screws), access behind blower motor.",
         "Disconnect final stage connector and remove 2 screws, install new unit.",
         "For ABS sensors: raise vehicle, remove wheel, disconnect sensor connector.",
-        "Remove sensor retaining bolt and pull sensor from hub - may require penetrating oil.",
+        "Remove sensor retaining bolt and pull sensor from hub—may require penetrating oil.",
         "Clean sensor mounting hole, install new sensor and torque bolt to 7 ft-lbs.",
         "Apply dielectric grease to all electrical connectors during reassembly.",
         "Clear any fault codes with diagnostic tool and verify repairs.",
-        "Replace key fob battery - pry open case, replace CR2032, resync if needed."
+        "Replace key fob battery—pry open case, replace CR2032, resync if needed."
       ],
       "tips": [
-        "E46 pixel failure is extremely common - repair is straightforward with the right ribbon.",
-        "Window regulator cables fray before breaking - listen for unusual sounds during operation.",
-        "Final stage resistor failure causes blower to only work on high - common failure mode.",
+        "E46 pixel failure is extremely common—repair is straightforward with the right ribbon.",
+        "Window regulator cables fray before breaking—listen for unusual sounds during operation.",
+        "Final stage resistor failure causes blower to only work on high—common failure mode.",
         "ABS sensor failures often cause DSC/traction control lights as well as ABS light.",
-        "Door handle cables break inside the handle - you'll hear the click but door won't open.",
-        "Keep spare key fob batteries - weak battery causes intermittent key functions."
+        "Door handle cables break inside the handle—you'll hear the click but door won't open.",
+        "Keep spare key fob batteries—weak battery causes intermittent key functions."
       ],
       "warnings": [
         "Disconnect battery before any electrical work to prevent shorts and airbag deployment.",
-        "Be careful with the vapor barrier when removing door panels - it's critical for water sealing.",
-        "Don't force instrument cluster removal - the locking tabs are fragile.",
-        "When soldering pixel ribbon, use minimal heat - excess heat damages the LCD.",
-        "ABS sensors are magnetic - keep away from other sensors and metal debris."
+        "Be careful with the vapor barrier when removing door panels—it keeps water out.",
+        "Don't force instrument cluster removal—the locking tabs are fragile.",
+        "When soldering pixel ribbon, use minimal heat—excess heat damages the LCD.",
+        "ABS sensors are magnetic—keep away from other sensors and metal debris."
       ],
       "references": [
         { "name": "E46Fanatics Pixel Repair Guide", "url": "https://www.e46fanatics.com/threads/diy-e46-cluster-pixel-ribbon-replacement.1009521/" },
@@ -407,7 +519,7 @@
     {
       "id": "interior-restoration",
       "title": "Interior Restoration",
-      "description": "Complete interior refresh covering the E46's leather care, headliner repair, trim restoration, and climate control system servicing.",
+      "description": "Leather, headliner, trim, and climate control. The door card and headliner fabric are the first things to go.",
       "difficulty": "Intermediate",
       "time": "12-20 hours",
       "cost": "$300-800",
@@ -440,9 +552,9 @@
         "Sunroof drain snake/compressed air"
       ],
       "steps": [
-        "Begin with thorough interior cleaning - vacuum all surfaces and crevices.",
+        "Begin with thorough interior cleaning—vacuum all surfaces and crevices.",
         "Clean leather with dedicated leather cleaner, working in small sections.",
-        "Address leather cracks with repair compound - clean, fill, texture, and color match.",
+        "Address leather cracks with repair compound—clean, fill, texture, and color match.",
         "Apply leather conditioner to all leather surfaces after cleaning.",
         "For headliner repair: remove sun visors, dome light, A-pillar trim, and grab handles.",
         "Remove headliner board by flexing it out through rear door opening.",
@@ -451,33 +563,73 @@
         "Work from center outward, stretching fabric taut to avoid wrinkles.",
         "Wrap edges and cut openings for accessories once adhesive cures.",
         "Reinstall headliner board and all removed components.",
-        "Replace door handle assemblies - remove door panel, disconnect old handle, install new.",
-        "Replace cracked dash speaker covers - pry out gently with trim tool.",
-        "Replace shift boot and e-brake boot - requires removing shift knob and console trim.",
+        "Replace door handle assemblies—remove door panel, disconnect old handle, install new.",
+        "Replace cracked dash speaker covers—pry out gently with trim tool.",
+        "Replace shift boot and e-brake boot—requires removing shift knob and console trim.",
         "Clear sunroof drains with flexible wire or compressed air to prevent water intrusion.",
-        "Replace cabin air filter - located behind glovebox, accessible after removing filter cover.",
+        "Replace cabin air filter—located behind glovebox, accessible after removing filter cover.",
         "Clean HVAC vents with detailing brushes and compressed air.",
         "Apply UV protectant to dashboard and trim (avoid steering wheel grip area)."
       ],
       "tips": [
-        "E46 leather tends to crack on the driver's bolster - address early to prevent spreading.",
-        "Headliner sag is caused by foam deterioration - full replacement is the only permanent fix.",
-        "Always work in a shaded, cool area when reinstalling headliner - adhesive sets too fast in heat.",
-        "Door handle cables often break before the handle itself - replace together for longevity.",
+        "E46 leather tends to crack on the driver's bolster—address early to prevent spreading.",
+        "Headliner sag is caused by foam deterioration—full replacement is the only permanent fix.",
+        "Always work in a shaded, cool area when reinstalling headliner—adhesive sets too fast in heat.",
+        "Door handle cables often break before the handle itself—replace together for longevity.",
         "Sunroof drain blockage is the #1 cause of wet carpets and interior rust.",
         "Condition leather every 3-4 months in dry climates to prevent cracking."
       ],
       "warnings": [
-        "Headliner adhesive is flammable and fumes are harmful - work in well-ventilated area.",
-        "Do not pull headliner fabric once positioned - it will stretch and distort.",
-        "Be careful removing trim clips - they become brittle with age and break easily.",
-        "Do not use silicone-based products on leather - they cause long-term damage.",
-        "Wear gloves when handling headliner adhesive - it's difficult to remove from skin."
+        "Headliner adhesive is flammable and fumes are harmful—work in well-ventilated area.",
+        "Do not pull headliner fabric once positioned—it will stretch and distort.",
+        "Be careful removing trim clips—they become brittle with age and break easily.",
+        "Do not use silicone-based products on leather—they cause long-term damage.",
+        "Wear gloves when handling headliner adhesive—it's difficult to remove from skin."
       ],
       "references": [
         { "name": "E46Fanatics Interior Restoration Thread", "url": "https://www.e46fanatics.com/threads/interior-restoration-faq.882091/" },
         { "name": "Pelican Parts E46 Headliner Replacement", "url": "https://www.pelicanparts.com/techarticles/BMW-E46/INT-Headliner/" },
         { "name": "Leatherique Product Guide", "url": "https://www.leatherique.com/leather-care-guide" }
+      ]
+    },
+    {
+      "id": "subframe-inspection",
+      "title": "Rear Subframe Mount Inspection",
+      "description": "Before you buy an E46, or before you add power or track time to one, check the rear subframe mounting points. Cracks there are the most expensive E46 problem, and this is how to spot them early.",
+      "difficulty": "Intermediate",
+      "time": "1-2 hours",
+      "cost": "$0-50",
+      "parts": [
+        { "name": "Rear subframe bushings (if replacing)", "aftermarket": "Lemforder, Meyle", "cost": "$60-150" },
+        { "name": "Seam sealer and touch-up for inspection holes", "cost": "$10-20" }
+      ],
+      "tools": [
+        "Jack stands or a lift",
+        "Bright flashlight and inspection mirror",
+        "Borescope camera (inexpensive USB type works)",
+        "Screwdriver for trim",
+        "Wire brush"
+      ],
+      "steps": [
+        "Raise the rear of the car securely on stands or a lift.",
+        "Remove the rear wheels for better access to the mounting points.",
+        "Clean around the four subframe mounting points where they meet the body.",
+        "Look for cracked seam sealer, flaking paint, or rust lines radiating from the mounts. These are the first signs.",
+        "From inside the trunk, lift the carpet and check the floor above the mounts for ripples, cracks, or new welds.",
+        "Use a borescope through existing openings to see the inside of the floor where the mounts attach.",
+        "Rock the subframe with a pry bar and watch for movement at the body, not just at the bushings.",
+        "If you find cracks, stop driving the car hard and get a specialist to quote a reinforcement repair."
+      ],
+      "tips": [
+        "Reinforcement kits (plates welded to the floor) are the long-term fix, and should be done by a competent welder.",
+        "Worn subframe bushings can mimic a cracked floor. Check both."
+      ],
+      "warnings": [
+        "A torn subframe mount is a structural failure. Don't drive a car with visible cracks at the mounts."
+      ],
+      "references": [
+        { "name": "E46Fanatics", "url": "https://www.e46fanatics.com/forums/" },
+        { "name": "RealOEM parts diagrams", "url": "https://www.realoem.com/" }
       ]
     }
   ],
@@ -636,7 +788,7 @@
         "url": "https://www.realoem.com/bmw/enUS/select?product=P&archive=0&series=E46",
         "notes": "Free BMW parts diagrams and part number lookup"
       },
-      { "name": "E46 Fanatics Wiki", "url": "https://www.e46fanatics.com/wiki/", "notes": "Comprehensive E46 technical wiki and guides" }
+      { "name": "E46 Fanatics Wiki", "url": "https://www.e46fanatics.com/wiki/", "notes": "Detailed E46 technical wiki and guides" }
     ]
   },
   "torqueSpecs": {
@@ -653,7 +805,7 @@
       { "component": "Flywheel Bolts (Manual)", "spec": "77 ft-lbs (105 Nm)", "notes": "Use new bolts" },
       { "component": "Flex Plate Bolts (Auto)", "spec": "88 ft-lbs (121 Nm)", "notes": "Use new bolts" },
       { "component": "Spark Plugs", "spec": "22 ft-lbs (30 Nm)", "notes": "" },
-      { "component": "Valve Cover Bolts", "spec": "98 in-lbs (11 Nm)", "notes": "Do not overtighten - plastic cover" },
+      { "component": "Valve Cover Bolts", "spec": "98 in-lbs (11 Nm)", "notes": "Do not overtighten—plastic cover" },
       { "component": "Oil Drain Plug", "spec": "18 ft-lbs (25 Nm)", "notes": "Replace crush washer" },
       { "component": "Oil Filter Cap", "spec": "25 ft-lbs (34 Nm)", "notes": "" },
       { "component": "Oil Pan Bolts (8.8 grade)", "spec": "88 in-lbs (10 Nm)", "notes": "" },
@@ -693,7 +845,7 @@
     {
       "id": "oil-change",
       "title": "Oil Change",
-      "description": "Complete oil and filter change procedure for M54 engines.",
+      "description": "Oil and filter on the M54.",
       "difficulty": "Easy",
       "time": "30 min",
       "interval": "Every 7,500 miles or annually",
@@ -710,10 +862,10 @@
         "Warm the engine for 2-3 minutes to thin the oil for better drainage.",
         "Raise the front of the car safely and support on jack stands.",
         "Position drain pan under the oil pan and remove the 17mm drain plug.",
-        "Allow oil to drain completely - approximately 10 minutes.",
+        "Allow oil to drain completely—approximately 10 minutes.",
         "Replace the copper crush washer on the drain plug.",
         "Reinstall drain plug and torque to 18 ft-lbs (25 Nm).",
-        "The oil filter housing is on top of the engine near the front - remove the cap with 36mm socket.",
+        "The oil filter housing is on top of the engine near the front—remove the cap with 36mm socket.",
         "Pull out the old filter element and remove the old O-ring from the cap.",
         "Install the new filter element onto the center post in the cap.",
         "Lubricate the new O-ring with fresh oil and install it in the cap groove.",
@@ -723,7 +875,7 @@
         "Wait 2 minutes for oil to settle, then check dipstick and top off as needed."
       ],
       "tips": [
-        "The E46 uses a cartridge-style filter - the housing stays in place.",
+        "The E46 uses a cartridge-style filter—the housing stays in place.",
         "Always replace the O-ring to prevent leaks from the filter housing.",
         "Check the oil filter housing gasket for signs of leaking while you have access."
       ]
@@ -744,32 +896,32 @@
         "New coolant (1 gallon BMW blue)"
       ],
       "steps": [
-        "Allow the engine to cool completely - never open a hot cooling system.",
+        "Allow the engine to cool completely—never open a hot cooling system.",
         "Remove the expansion tank cap slowly to release any residual pressure.",
         "Place drain pan under the expansion tank area.",
         "Disconnect the coolant level sensor electrical connector on the tank.",
         "Use pliers to move hose clamps back, then carefully pull off the two coolant hoses.",
         "Remove the 10mm bolt holding the expansion tank mounting bracket.",
-        "Lift the expansion tank up and out - some coolant will spill.",
+        "Lift the expansion tank up and out—some coolant will spill.",
         "Clean the mounting area and inspect hoses for cracks or hardening.",
         "Install the new expansion tank and secure with the 10mm bolt.",
         "Reconnect both coolant hoses and slide clamps back into position.",
         "Reconnect the coolant level sensor connector.",
         "Fill the system with 50/50 BMW coolant mix through the expansion tank.",
         "Start the engine with the heater on full hot and cap off.",
-        "Top off coolant as the level drops and air escapes - continue until level stabilizes.",
+        "Top off coolant as the level drops and air escapes—continue until level stabilizes.",
         "Install the expansion tank cap and check for leaks."
       ],
       "tips": [
-        "Inspect the old tank carefully - cracks often start at the seams or sensor fitting.",
-        "This is a known failure point - replace preventively rather than waiting for failure.",
+        "Inspect the old tank carefully—cracks often start at the seams or sensor fitting.",
+        "This is a known failure point—replace preventively rather than waiting for failure.",
         "Consider doing a full cooling system refresh while you have coolant drained."
       ]
     },
     {
       "id": "brake-pads",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement with sensor reset procedure.",
+      "description": "Front and rear pads, including resetting the pad wear sensor.",
       "difficulty": "Easy",
       "time": "1-2 hours",
       "interval": "Every 25,000-50,000 miles",
@@ -790,13 +942,13 @@
         "Remove wheel and set aside.",
         "Disconnect the brake wear sensor connector if equipped.",
         "Remove the two 7mm Allen caliper guide pin bolts from the back of the caliper.",
-        "Pivot the caliper up and secure it - do not let it hang by the brake line.",
+        "Pivot the caliper up and secure it—do not let it hang by the brake line.",
         "Slide the old brake pads out of the caliper bracket.",
         "Inspect the rotor for deep grooves, cracks, or minimum thickness markings.",
         "Clean the caliper bracket pad contact areas with a wire brush.",
         "Open the brake fluid reservoir cap, then compress the caliper piston fully.",
         "Apply a thin layer of brake grease to the pad backing plate edges.",
-        "Install new pads - the wear sensor pad goes on the inner (piston) side.",
+        "Install new pads—the wear sensor pad goes on the inner (piston) side.",
         "Lower the caliper over the new pads and reinstall the guide pin bolts to 22 ft-lbs (30 Nm).",
         "Reconnect the wear sensor if equipped.",
         "Reinstall wheel and torque lug bolts to 87 ft-lbs (118 Nm) in a star pattern.",
@@ -804,15 +956,15 @@
         "Pump brake pedal firmly several times before driving to seat the pads."
       ],
       "tips": [
-        "Always replace pads in axle pairs - never replace just one side.",
-        "E46 wear sensors are on front left and rear right - reset the CBS if equipped.",
-        "Bed new pads with gradual stops - avoid heavy braking for the first 100 miles."
+        "Always replace pads in axle pairs—never replace just one side.",
+        "E46 wear sensors are on front left and rear right—reset the CBS if equipped.",
+        "Bed new pads with gradual stops—avoid heavy braking for the first 100 miles."
       ]
     },
     {
       "id": "cooling-system-refresh",
       "title": "Cooling System Refresh",
-      "description": "Complete cooling system overhaul including water pump, thermostat, and hoses.",
+      "description": "Water pump, thermostat, and hoses in one go. The E46 cooling system is the most common way these cars leave people on the shoulder.",
       "difficulty": "Intermediate",
       "time": "5-7 hours",
       "interval": "Every 60,000-80,000 miles",
@@ -831,7 +983,7 @@
       "steps": [
         "Ensure engine is completely cool before starting.",
         "Remove the intake snorkel and cabin filter housing cover for access.",
-        "Remove the fan clutch using 32mm wrench and holding tool (LEFT-HAND THREAD - clockwise to loosen).",
+        "Remove the fan clutch using 32mm wrench and holding tool (LEFT-HAND THREAD—clockwise to loosen).",
         "Remove the fan shroud clips and lift fan and shroud out together.",
         "Drain coolant from the radiator drain plug and expansion tank.",
         "Disconnect all hoses from the thermostat housing.",
@@ -841,38 +993,38 @@
         "Clean all gasket mating surfaces thoroughly.",
         "Install new water pump with new gasket and torque to 7 ft-lbs (10 Nm).",
         "Install the water pump pulley.",
-        "Install new thermostat in the housing with new gasket - jiggle valve at 12 o'clock.",
+        "Install new thermostat in the housing with new gasket—jiggle valve at 12 o'clock.",
         "Replace expansion tank (recommended) and all coolant hoses.",
-        "Reinstall fan clutch (LEFT-HAND THREAD - counter-clockwise to tighten).",
+        "Reinstall fan clutch (LEFT-HAND THREAD—counter-clockwise to tighten).",
         "Fill system with 50/50 BMW coolant through the expansion tank.",
         "Bleed the system by running engine with heater on max, cap off, until thermostat opens.",
         "Top off coolant, install cap, and check for leaks at operating temperature."
       ],
       "tips": [
-        "The fan clutch is LEFT-HAND THREADED - turn clockwise to remove, counter-clockwise to tighten.",
-        "Use a water pump with metal impeller - plastic impellers can fail catastrophically.",
+        "The fan clutch is LEFT-HAND THREADED—turn clockwise to remove, counter-clockwise to tighten.",
+        "Use a water pump with metal impeller—plastic impellers can fail catastrophically.",
         "Consider upgrading to an aluminum thermostat housing to prevent future cracks.",
-        "Inspect the radiator end tanks for cracks while you have access - replace if questionable."
+        "Inspect the radiator end tanks for cracks while you have access—replace if questionable."
       ]
     }
   ],
   "restorationItems": {
     "engine": [
       { "id": "e46-vanos", "name": "Rebuild VANOS unit with Viton seals", "description": "Causes rough idle and loss of low-end power" },
-      { "id": "e46-valve-cover", "name": "Replace valve cover gasket", "description": "Common oil leak - include grommets" },
+      { "id": "e46-valve-cover", "name": "Replace valve cover gasket", "description": "Common oil leak—include grommets" },
       { "id": "e46-oil-filter-housing", "name": "Replace oil filter housing gasket", "description": "Major leak source on M54" },
       { "id": "e46-oil-separator", "name": "Replace CCV/oil separator", "description": "Causes vacuum leaks when failed" },
       { "id": "e46-disa", "name": "Inspect/replace DISA valve", "description": "Flap can break and cause engine damage" }
     ],
     "cooling": [
-      { "id": "e46-expansion-tank", "name": "Replace expansion tank", "description": "Critical failure point - replace every 60k miles" },
+      { "id": "e46-expansion-tank", "name": "Replace expansion tank", "description": "Common failure—replace every 60k miles" },
       { "id": "e46-thermostat-housing", "name": "Replace thermostat housing (aluminum)", "description": "Upgrade from brittle plastic" },
       { "id": "e46-metal-impeller", "name": "Replace water pump (metal impeller)", "description": "Plastic impellers shatter" },
-      { "id": "e46-fan-clutch", "name": "Replace fan clutch", "description": "Left-hand thread - critical for cooling" },
-      { "id": "e46-aux-fan", "name": "Replace auxiliary electric fan", "description": "Common failure - causes A/C issues" }
+      { "id": "e46-fan-clutch", "name": "Replace fan clutch", "description": "Left-hand thread" },
+      { "id": "e46-aux-fan", "name": "Replace auxiliary electric fan", "description": "Common failure—causes A/C issues" }
     ],
     "suspension": [
-      { "id": "e46-rtabs", "name": "Replace rear trailing arm bushings", "description": "Critical for handling - causes rear shimmy" },
+      { "id": "e46-rtabs", "name": "Replace rear trailing arm bushings", "description": "Big effect on handling—causes rear shimmy" },
       { "id": "e46-control-arm-bushings", "name": "Replace front control arm bushings", "description": "Use OEM or Meyle HD" },
       { "id": "e46-subframe", "name": "Inspect/reinforce rear subframe (M3)", "description": "Subframe floor cracks on M3" },
       { "id": "e46-thrust-rod", "name": "Replace front thrust rod bushings", "description": "Causes steering wander when worn" }
@@ -897,18 +1049,18 @@
     ]
   },
   "buyersGuide": {
-    "overview": "The BMW E46 3 Series (1999-2006) is one of the most popular BMWs ever produced and remains a favorite among enthusiasts. It refined the E36 formula with better build quality, more sophisticated suspension, and improved safety. The E46 M3 with its 333 hp S54 inline-six became an icon of the early 2000s performance car scene. Today, E46s represent excellent value - they're modern enough for daily driving yet old enough to offer an engaging, analog driving experience. However, many E46s have been poorly maintained, modified, or abused, so careful inspection is essential.",
+    "overview": "The E46 is probably the easiest classic BMW to live with every day: safe and comfortable enough for a commute, with a smooth six, hydraulic steering, and a proper chassis. There are a lot of them, so you can afford to be picky. The known problems are well documented: the cooling system, VANOS seals, the oil filter housing gasket, and on some cars the rear subframe mounting points. Check that last one before anything else. On an M3, add rod bearings and the VANOS hardware to the list.",
     "quickFacts": {
       "productionYears": "1999-2006",
       "totalProduced": "~3.2 million worldwide",
-      "priceRange": "$5,000 - $80,000+",
+      "priceRange": "$5,000–$80,000+",
       "bestYears": "2003-2006 (post-facelift, most refined)"
     },
     "variants": [
       {
         "name": "323i / 325i",
         "years": "1999-2005",
-        "description": "The volume models with 2.5L M52/M54 inline-six producing 170-184 hp. The 325i is the sweet spot for daily driving - enough power without excessive running costs.",
+        "description": "The volume models, with 2.5L sixes making 170–184 hp. The 325i is the everyday pick: enough power, low running costs.",
         "desirability": "Medium"
       },
       {
@@ -932,7 +1084,7 @@
       {
         "name": "M3",
         "years": "2001-2006",
-        "description": "The legendary S54 3.2L inline-six producing 333 hp. Available as coupe and convertible. The CSL variant is ultra-rare and valuable.",
+        "description": "The 3.2L S54 with 333 hp and an 8,000 rpm redline. Coupe or convertible. The CSL was never sold in the US and is rare and expensive anywhere.",
         "desirability": "High"
       },
       {
@@ -944,7 +1096,7 @@
     ],
     "inspectionPoints": [
       {
-        "category": "Rust (Critical)",
+        "category": "Rust (check first)",
         "items": [
           {
             "check": "Front Fenders",
@@ -1012,7 +1164,7 @@
           { "check": "Tie Rods", "detail": "Check for play at the wheel. Worn tie rods cause steering wander.", "costIfBad": "$200-400" },
           {
             "check": "Struts and Shocks",
-            "detail": "Bounce each corner - should settle in one bounce. Leaking units need replacement.",
+            "detail": "Bounce each corner—should settle in one bounce. Leaking units need replacement.",
             "costIfBad": "$600-1,200"
           }
         ]
@@ -1020,11 +1172,7 @@
       {
         "category": "Interior & Electrical",
         "items": [
-          {
-            "check": "Window Regulators",
-            "detail": "Notorious failure point. Test all windows multiple times - cables fray and snap.",
-            "costIfBad": "$150-300 each"
-          },
+          { "check": "Window Regulators", "detail": "A common failure. Test all windows multiple times—cables fray and snap.", "costIfBad": "$150-300 each" },
           {
             "check": "Interior Door Handles",
             "detail": "Cables inside the handle break causing door to not open. Common on driver's side.",
@@ -1047,24 +1195,24 @@
     "pricingGuide": {
       "asOf": "January 2026",
       "project": {
-        "price": "$2,000 - $6,000",
+        "price": "$2,000–$6,000",
         "description": "High-mileage, rusty, or modified cars. Many have been drifted or poorly maintained."
       },
       "driver": {
-        "price": "$6,000 - $15,000",
+        "price": "$6,000–$15,000",
         "description": "Running and driving with cosmetic wear or maintenance needs. Budget for cooling system work."
       },
       "excellent": {
-        "price": "$15,000 - $35,000",
+        "price": "$15,000–$35,000",
         "description": "Well-maintained 330i ZHP or clean 325i examples. Service history documented."
       },
       "concours": {
-        "price": "$35,000 - $100,000+",
+        "price": "$35,000–$100,000+",
         "description": "Low-mileage M3 with documented maintenance, especially rare CSL variants."
       }
     },
     "redFlags": [
-      "M3 without rod bearing service documentation - this is a known failure point",
+      "M3 without rod bearing service documentation—this is a known failure point",
       "Subframe cracks or reinforcement welds on M3 (indicates track abuse)",
       "Overheating history or milky oil (head gasket failure)",
       "Rough idle with no explanation (VANOS failure)",
@@ -1092,15 +1240,15 @@
       "fuel": "20-28 MPG depending on model"
     },
     "expertTips": [
-      "The 330i ZHP is the sweet spot - nearly M3 performance without M3 running costs",
-      "Cooling system components should be replaced proactively - overheating kills these engines",
-      "M3 rod bearing service is mandatory - either verify it's been done or budget for it immediately",
-      "Window regulators are easy DIY repairs - don't let them deter you from an otherwise good car",
+      "The 330i ZHP is the one I'd look for: sharper than a regular 330i, without M3 running costs",
+      "Cooling system components should be replaced proactively—overheating kills these engines",
+      "M3 rod bearing service is mandatory—either verify it's been done or budget for it immediately",
+      "Window regulators are easy DIY repairs—don't let them deter you from an otherwise good car",
       "The E46 chassis is excellent for track use with proper preparation (subframe reinforcement)",
-      "Avoid high-mileage automatic transmission cars - the ZF 5HP19 can develop issues",
-      "The xi all-wheel drive models are heavier and less engaging - rear-wheel drive is preferred",
+      "Avoid high-mileage automatic transmission cars—the ZF 5HP19 can develop issues",
+      "The xi all-wheel drive models are heavier and less engaging—rear-wheel drive is preferred",
       "Parts availability is excellent and many components are shared with E39",
-      "A well-maintained E46 can exceed 250,000 miles - these are robust cars",
+      "A well-maintained E46 will pass 250,000 miles. They're durable cars.",
       "Join bimmerforums.com for excellent E46 technical resources and buyer advice"
     ]
   },
@@ -1121,7 +1269,7 @@
       { "name": "E46 M3 Owners", "url": "https://www.facebook.com/groups/e46m3owners", "description": "Dedicated E46 M3 discussion group" }
     ],
     "websites": [
-      { "name": "E46 Fanatics Wiki", "url": "https://www.e46fanatics.com/wiki/", "description": "Comprehensive E46 technical wiki" }
+      { "name": "E46 Fanatics Wiki", "url": "https://www.e46fanatics.com/wiki/", "description": "Detailed E46 technical wiki" }
     ]
   }
 }

@@ -3,6 +3,7 @@
   "brand": "BMW",
   "fullName": "BMW E90/E91/E92/E93 3 Series",
   "series": "3 Series · E90–E93",
+  "tagline": "Turbo power, big tuning potential, and a known list of weak spots.",
   "years": "2005-2013",
   "engines": [
     "N52 3.0L I6",
@@ -23,7 +24,7 @@
       "id": "water-pump-thermostat",
       "title": "Electric Water Pump and Thermostat Failure",
       "symptoms": "Overheating, coolant warning, reduced power mode, water pump whining, engine shut down",
-      "description": "The E90 generation was the first to use BMW's electric water pump and electronic thermostat. Both components have high failure rates, typically between 60,000-100,000 miles. When the water pump fails, there is no warning - the engine can overheat rapidly. The pump may also become noisy before complete failure. These are considered wear items requiring proactive replacement.",
+      "description": "The E90 generation was the first to use BMW's electric water pump and electronic thermostat. Both components have high failure rates, typically between 60,000-100,000 miles. When the water pump fails, there is no warning—the engine can overheat rapidly. The pump may also become noisy before complete failure. These are considered wear items requiring proactive replacement.",
       "fixes": [
         "Proactive water pump replacement at 80,000 miles",
         "Replace thermostat at the same time",
@@ -51,13 +52,13 @@
       "id": "oil-leaks",
       "title": "Oil Leaks (Valve Cover and Oil Filter Housing)",
       "symptoms": "Oil smell, visible oil on engine, oil spots under car, smoke from engine bay, low oil warning",
-      "description": "The E90's N52 and N5x engines develop oil leaks as they age. The valve cover gasket is a very common leak point due to the plastic valve cover warping from heat. The oil filter housing gasket (OFHG) is another notorious leak point that can drip oil onto hot exhaust components, creating fire risk and smoke.",
+      "description": "The E90's N52 and N5x engines develop oil leaks as they age. The valve cover gasket is a very common leak point due to the plastic valve cover warping from heat. The oil filter housing gasket (OFHG) is another common leak point that can drip oil onto hot exhaust components, creating fire risk and smoke.",
       "fixes": [
-        "Valve cover gasket replacement - consider replacing entire valve cover (plastic warps)",
-        "Oil filter housing gasket - common leak, relatively accessible",
+        "Valve cover gasket replacement—consider replacing entire valve cover (plastic warps)",
+        "Oil filter housing gasket—common leak, relatively accessible",
         "Oil cooler gasket (if equipped)",
         "Eccentric shaft sensor seal (N52)",
-        "Address oil leaks promptly - oil on exhaust is fire hazard"
+        "Address oil leaks promptly—oil on exhaust is fire hazard"
       ],
       "sources": [
         { "name": "FCP Euro", "url": "https://www.fcpeuro.com/" },
@@ -123,7 +124,7 @@
       },
       "parts": [
         { "name": "Fuel Injector (Index 12)", "partNumber": "13538616079", "price": "$80-120 each" },
-        { "name": "Injector Seal Kit", "partNumber": "Various", "price": "$30-60" }
+        { "name": "Injector Seal Kit", "price": "$30-60" }
       ],
       "difficulty": "Moderate"
     },
@@ -136,7 +137,7 @@
         "Replace VANOS solenoids (relatively inexpensive service)",
         "Clean VANOS system if sludge buildup suspected",
         "Use quality oil and don't exceed oil change intervals",
-        "N54/N55: VANOS bolt recall - verify upgrade bolts installed",
+        "N54/N55: VANOS bolt recall—verify upgrade bolts installed",
         "Timing chain tensioner service may be needed (N20)"
       ],
       "sources": [
@@ -208,7 +209,7 @@
         "notes": "N54 direct injection. Walnut blasting required every 50-60k."
       },
       "parts": [
-        { "name": "Walnut Media", "partNumber": "N/A", "price": "$30-50" },
+        { "name": "Walnut Media", "price": "$30-50" },
         { "name": "Intake Gaskets", "partNumber": "11617547242", "price": "$25-50" }
       ],
       "difficulty": "Advanced"
@@ -219,7 +220,7 @@
       "symptoms": "Knocking noise, engine rattle, low oil pressure, metal in oil",
       "description": "The S65 V8 in the E90/E92/E93 M3 has a known rod bearing wear issue. The factory bearings can wear prematurely, especially with track use or aggressive driving. If caught early, bearings can be replaced. If ignored, bearing failure leads to catastrophic engine damage. Oil analysis is crucial for monitoring.",
       "fixes": [
-        "Regular oil analysis to detect bearing wear early (essential for M3 owners)",
+        "Regular oil analysis to catch bearing wear early (a must on an M3)",
         "Proactive rod bearing replacement (BE bearings recommended)",
         "Use appropriate oil (10W-60 recommended for track use)",
         "Proper warm-up and cool-down procedures",
@@ -235,7 +236,7 @@
         "notes": "S65 V8 (M3) only. Preventive replacement recommended."
       },
       "parts": [
-        { "name": "Rod Bearing Set (ACL)", "partNumber": "Various aftermarket", "price": "$150-300" },
+        { "name": "Rod Bearing Set (ACL)", "price": "$150-300" },
         { "name": "Rod Bolts", "partNumber": "11247840093", "price": "$100-200" }
       ],
       "difficulty": "Advanced"
@@ -248,7 +249,7 @@
       "fixes": [
         "Monitor for timing chain stretch via diagnostic codes",
         "Replace chain, guides, and tensioner as a kit",
-        "N20: Known issue - may be covered under BMW's extended coverage",
+        "N20: Known issue—may be covered under BMW's extended coverage",
         "Consider proactive replacement on high-mileage N54/N55",
         "Replace water pump and thermostat while apart"
       ],
@@ -262,8 +263,8 @@
         "notes": "N54/N55 timing chain stretch. Often guides and tensioner too."
       },
       "parts": [
-        { "name": "Timing Chain Kit", "partNumber": "Various", "price": "$300-500" },
-        { "name": "Chain Guide Set", "partNumber": "Various", "price": "$150-300" }
+        { "name": "Timing Chain Kit", "price": "$300-500" },
+        { "name": "Chain Guide Set", "price": "$150-300" }
       ],
       "difficulty": "Advanced"
     }
@@ -272,7 +273,7 @@
     {
       "id": "suspension-refresh",
       "title": "Complete Suspension Refresh",
-      "description": "Full front and rear suspension rebuild for the E90's modern multi-link design including control arms, thrust arms, and rear trailing arm bushings to restore factory handling.",
+      "description": "Control arms, thrust arms, and the rear trailing arm bushings. At this age, most E90s are due.",
       "difficulty": "Intermediate",
       "time": "10-14 hours",
       "cost": "$600-1,200",
@@ -306,7 +307,7 @@
         "Raise vehicle and support on jack stands at all four corners.",
         "Remove all wheels and photograph suspension for reference.",
         "Soak all suspension bolts with penetrating oil before removal.",
-        "Begin with front suspension - remove sway bar end links (44 ft-lbs torque spec).",
+        "Begin with front suspension—remove sway bar end links (44 ft-lbs torque spec).",
         "Remove tie rod end nut (52 ft-lbs) and separate from knuckle using puller.",
         "Remove lower control arm ball joint nut and separate from knuckle (122 ft-lbs).",
         "Remove control arm bracket bolts from subframe (74 ft-lbs) and remove arm.",
@@ -316,25 +317,25 @@
         "Install new front components with correct torque specs.",
         "For rear suspension: support trailing arm before removing bolts.",
         "For RTAB replacement: remove trailing arm rear bolt, press out old bushings.",
-        "Press new RTABs into trailing arm - note orientation.",
+        "Press new RTABs into trailing arm—note orientation.",
         "Remove and replace rear control arms as needed.",
-        "Reassemble all components - torque bushings at ride height.",
-        "Install wheels and lower vehicle - bounce corners to settle.",
+        "Reassemble all components—torque bushings at ride height.",
+        "Install wheels and lower vehicle—bounce corners to settle.",
         "Professional 4-wheel alignment required immediately."
       ],
       "tips": [
-        "E90 RTABs are critical for rear-end stability - prioritize if worn.",
+        "E90 RTABs make a big difference to rear-end stability—prioritize if worn.",
         "The E90 uses similar suspension to E46 but with updated components.",
         "Meyle HD bushings are recommended for longer service life.",
         "Consider replacing both front thrust arms even if only one shows wear.",
-        "The E92 M3 uses a different rear subframe design - verify part compatibility."
+        "The E92 M3 uses a different rear subframe design—verify part compatibility."
       ],
       "warnings": [
-        "RTAB replacement requires a special press tool - don't attempt with hammers.",
-        "Worn RTABs cause dangerous rear-end instability - don't delay repairs.",
-        "Spring compressors are dangerous - follow tool instructions exactly.",
-        "Never strike ball joints directly - use proper separator tools.",
-        "M3 models have unique suspension components - verify correct parts."
+        "RTAB replacement requires a special press tool—don't attempt with hammers.",
+        "Worn RTABs cause dangerous rear-end instability—don't delay repairs.",
+        "Spring compressors are dangerous—follow tool instructions exactly.",
+        "Never strike ball joints directly—use proper separator tools.",
+        "M3 models have unique suspension components—verify correct parts."
       ],
       "references": [
         { "name": "E90Post Suspension DIY", "url": "https://www.e90post.com/forums/forumdisplay.php?f=102" },
@@ -345,7 +346,7 @@
     {
       "id": "rust-repair",
       "title": "Rust Prevention and Inspection",
-      "description": "Rust inspection guide for the E90, covering known problem areas and preventive treatments for this generally well-protected chassis.",
+      "description": "A well-protected chassis, but not a perfect one. Where to look and how to keep it clean underneath.",
       "difficulty": "Intermediate",
       "time": "4-20+ hours",
       "cost": "$100-1,500+",
@@ -377,8 +378,8 @@
       "steps": [
         "E90s are well-protected but still require inspection, especially salt-belt cars.",
         "Clean undercarriage thoroughly before inspection.",
-        "Inspect rocker panels by tapping with screwdriver - soft spots indicate rust.",
-        "Check jack points for rust perforation - common failure point.",
+        "Inspect rocker panels by tapping with screwdriver—soft spots indicate rust.",
+        "Check jack points for rust perforation—common failure point.",
         "Inspect rear wheel arches from inside trunk and behind liners.",
         "Check door bottoms by opening fully and inspecting from below.",
         "Examine front fender mounting lips where mud collects.",
@@ -387,9 +388,9 @@
         "Prime with epoxy primer, then topcoat.",
         "For rust-through: cut out damaged metal, weld in patches.",
         "Seal all repaired areas with seam sealer.",
-        "Apply cavity wax to all hollow sections - rockers, frame rails.",
+        "Apply cavity wax to all hollow sections—rockers, frame rails.",
         "Treat inner fenders and underbody with rust preventive.",
-        "Check sunroof drains if equipped - clogs cause interior rust.",
+        "Check sunroof drains if equipped—clogs cause interior rust.",
         "Ensure all drain plugs are clear in floor and trunk.",
         "Document condition for future reference."
       ],
@@ -397,7 +398,7 @@
         "E90s are generally more rust-resistant than earlier BMWs due to better galvanization.",
         "Most rust issues are from stone chips, salt, and debris rather than design flaws.",
         "Annual Fluid Film application prevents most rust development.",
-        "Check behind plastic fender liners - they trap moisture.",
+        "Check behind plastic fender liners—they trap moisture.",
         "Convertible E93 models may have additional rust points around top mechanism."
       ],
       "warnings": [
@@ -405,7 +406,7 @@
         "Check for brake lines and wiring before welding.",
         "Fire extinguisher must be accessible during any welding.",
         "Structural rust near suspension mounts requires professional attention.",
-        "Don't ignore small rust spots - they spread quickly."
+        "Don't ignore small rust spots—they spread quickly."
       ],
       "references": [
         { "name": "E90Post Rust Discussion", "url": "https://www.e90post.com/forums/" },
@@ -416,7 +417,7 @@
     {
       "id": "electrical-restoration",
       "title": "Electrical System Service",
-      "description": "Complete electrical system service covering the E90's common issues including ignition coils, VANOS solenoids, battery registration, and module coding.",
+      "description": "Ignition coils, VANOS solenoids, battery registration, and coding. Replace a battery on an E90 without registering it and you'll shorten its life.",
       "difficulty": "Intermediate",
       "time": "8-14 hours",
       "cost": "$300-800",
@@ -448,7 +449,7 @@
       ],
       "steps": [
         "Disconnect battery and wait 10 minutes before electrical work.",
-        "Start with diagnostic scan - E90s require proper software for full diagnosis.",
+        "Start with diagnostic scan—E90s require proper software for full diagnosis.",
         "For ignition coil replacement: remove engine cover, disconnect coil connectors.",
         "Remove 10mm bolt, pull coils straight up, install new coils.",
         "For VANOS solenoid replacement: locate solenoids on cylinder head.",
@@ -465,18 +466,18 @@
         "Test all systems thoroughly after repairs."
       ],
       "tips": [
-        "E90 requires proper diagnostic software - generic OBD2 scanners miss many faults.",
+        "E90 requires proper diagnostic software—generic OBD2 scanners miss many faults.",
         "Battery MUST be registered after replacement or it will overcharge and fail early.",
-        "Ignition coil failure is common - misfires often traced to coils.",
-        "VANOS solenoids should be OEM - aftermarket quality varies significantly.",
-        "The N54 engine has many electrical components - systematic diagnosis is key."
+        "Ignition coil failure is common—misfires often traced to coils.",
+        "VANOS solenoids should be OEM—aftermarket quality varies significantly.",
+        "The N54 engine has many electrical components—systematic diagnosis is key."
       ],
       "warnings": [
         "Always disconnect battery before electrical work.",
-        "Battery registration is mandatory - skipping causes charging system issues.",
-        "N54/N55 charge pipe can blow off under boost - upgrade to aluminum recommended.",
+        "Battery registration is mandatory—skipping causes charging system issues.",
+        "N54/N55 charge pipe can blow off under boost—upgrade to aluminum recommended.",
         "Don't clear fault codes without documenting them first.",
-        "SRS (airbag) system requires special procedures - don't probe these circuits."
+        "SRS (airbag) system requires special procedures—don't probe these circuits."
       ],
       "references": [
         { "name": "E90Post Electrical DIY", "url": "https://www.e90post.com/forums/" },
@@ -487,7 +488,7 @@
     {
       "id": "interior-restoration",
       "title": "Interior Restoration",
-      "description": "Complete interior refresh for the E90 covering leather care, trim restoration, iDrive service, and common wear items.",
+      "description": "Leather, trim, iDrive, and the common wear items.",
       "difficulty": "Intermediate",
       "time": "10-18 hours",
       "cost": "$250-900",
@@ -529,30 +530,74 @@
         "If peeling, vinyl wrap provides durable finish without disassembly.",
         "For iDrive: diagnose controller vs screen issues with proper scanner.",
         "Controller rebuild services available for sticky buttons or failed scroll.",
-        "Replace cabin air filter - accessed behind glovebox.",
+        "Replace cabin air filter—accessed behind glovebox.",
         "Clean all HVAC vents with detailing brushes.",
         "Replace door seals if wind noise present.",
         "Apply UV protectant to dashboard and trim.",
         "Reassemble in reverse order."
       ],
       "tips": [
-        "E90 aluminum trim peels and flakes - vinyl wrap is popular solution.",
+        "E90 aluminum trim peels and flakes—vinyl wrap is popular solution.",
         "Sport seats have aggressive bolsters that wear faster.",
-        "iDrive controller failures are common - rebuilds available.",
-        "The E90 uses Dakota leather on most models - responds well to conditioning.",
+        "iDrive controller failures are common—rebuilds available.",
+        "The E90 uses Dakota leather on most models—responds well to conditioning.",
         "Check for sunroof drain clogs if headliner shows water stains."
       ],
       "warnings": [
-        "Headliner adhesive fumes are harmful - work in well-ventilated area.",
-        "E90 seats have side airbags - disconnect battery before removal.",
-        "Don't force trim clips - they break easily when cold.",
-        "iDrive coding requires proper software - incorrect coding causes issues.",
-        "Test all electrical after seat reinstallation - connectors can be fragile."
+        "Headliner adhesive fumes are harmful—work in well-ventilated area.",
+        "E90 seats have side airbags—disconnect battery before removal.",
+        "Don't force trim clips—they break easily when cold.",
+        "iDrive coding requires proper software—incorrect coding causes issues.",
+        "Test all electrical after seat reinstallation—connectors can be fragile."
       ],
       "references": [
         { "name": "E90Post Interior DIY", "url": "https://www.e90post.com/forums/" },
         { "name": "Leatherique Guide", "url": "https://www.leatherique.com/" },
         { "name": "BimmerPost E90 Forum", "url": "https://www.bimmerpost.com/" }
+      ]
+    },
+    {
+      "id": "water-pump-thermostat",
+      "title": "Electric Water Pump and Thermostat (N52/N54/N55)",
+      "description": "The E90's electric water pump fails without warning, and the dash goes straight to limp mode. Do the pump and thermostat together, before it strands you.",
+      "difficulty": "Intermediate",
+      "time": "3-5 hours",
+      "cost": "$400-800",
+      "parts": [
+        { "name": "Electric water pump", "aftermarket": "Genuine BMW or Pierburg", "cost": "$300-550" },
+        { "name": "Thermostat", "aftermarket": "Genuine BMW or Wahler", "cost": "$60-120" },
+        { "name": "BMW coolant (and distilled water)", "cost": "$30-50" }
+      ],
+      "tools": [
+        "Jack stands",
+        "Torx and E-Torx sockets",
+        "10mm, 13mm sockets",
+        "Drain pan",
+        "Battery charger (for the bleeding procedure)"
+      ],
+      "steps": [
+        "Let the engine cool completely, then raise the front of the car.",
+        "Remove the under-engine splash shield and drain the coolant.",
+        "Remove the air intake components for access to the front of the engine.",
+        "Unplug and remove the thermostat and its hoses.",
+        "Unplug the water pump, then remove its bolts and pull it forward and down.",
+        "Install the new pump with new seals and plug it in. Torque to the value in the Torque Specs table on this page, or your workshop manual.",
+        "Install the new thermostat and reconnect the hoses.",
+        "Refill with the correct BMW coolant mix.",
+        "Connect a battery charger, set the heater to maximum, and turn the ignition on without starting the engine. Hold the accelerator to the floor for about 10 seconds to start the automatic bleed routine and let it run until it stops.",
+        "Check the coolant level and top up, then check for leaks."
+      ],
+      "tips": [
+        "Use genuine or original-supplier pumps. Cheap pumps are why some cars are on their third.",
+        "A pump that's making noise or throwing a code is nearly done."
+      ],
+      "warnings": [
+        "Don't open the cooling system hot.",
+        "Skip the bleed routine and air pockets can overheat the engine."
+      ],
+      "references": [
+        { "name": "E90Post", "url": "https://www.e90post.com/forums/" },
+        { "name": "RealOEM parts diagrams", "url": "https://www.realoem.com/" }
       ]
     }
   ],
@@ -561,7 +606,7 @@
       {
         "name": "FCP Euro",
         "url": "https://www.fcpeuro.com/BMW-parts/3-series/E90",
-        "notes": "Lifetime replacement guarantee. Essential for water pumps, turbos, and HPFP parts.",
+        "notes": "Lifetime replacement guarantee. Worth it for water pumps, turbos, and HPFP parts.",
         "specialties": [
           "Lifetime Warranty",
           "OE Quality"
@@ -770,7 +815,7 @@
     {
       "id": "oil-change",
       "title": "Oil Change",
-      "description": "Complete oil and filter change for N52, N54, and N55 engines.",
+      "description": "Oil and filter on the N52, N54, and N55.",
       "difficulty": "Easy",
       "time": "30 min",
       "interval": "Every 7,500-10,000 miles",
@@ -786,12 +831,12 @@
       "steps": [
         "Warm the engine for 2-3 minutes to thin the oil.",
         "Raise the front of the car and secure on jack stands, or use ramps.",
-        "Locate the oil drain plug on the oil pan - passenger side.",
+        "Locate the oil drain plug on the oil pan—passenger side.",
         "Position drain pan and remove the 17mm drain plug.",
         "Allow oil to drain completely - 10 minutes minimum.",
         "Replace the aluminum crush washer on the drain plug.",
         "Reinstall drain plug and torque to 18 ft-lbs (25 Nm).",
-        "The oil filter housing is on top of the engine - remove cap with 36mm socket.",
+        "The oil filter housing is on top of the engine—remove cap with 36mm socket.",
         "Lift out the old filter element and remove the O-ring from the cap.",
         "Install the new filter element onto the center post.",
         "Lubricate the new O-ring with fresh oil and seat it in the cap groove.",
@@ -800,7 +845,7 @@
         "Start engine, check for leaks, shut off and verify level after 2 minutes."
       ],
       "tips": [
-        "The E90 uses a cartridge filter - the housing stays on the engine.",
+        "The E90 uses a cartridge filter—the housing stays on the engine.",
         "Always replace the O-ring to prevent leaks from the filter housing cap.",
         "N54/N55 turbo engines benefit from 0W-40 in extreme temperatures."
       ]
@@ -808,7 +853,7 @@
     {
       "id": "brake-pads",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement with electronic sensor reset.",
+      "description": "Front and rear pads, including resetting the electronic wear sensor and the service interval.",
       "difficulty": "Easy",
       "time": "1-2 hours",
       "interval": "Every 25,000-50,000 miles",
@@ -828,13 +873,13 @@
         "Raise and support the car on jack stands, remove wheel.",
         "Disconnect the brake pad wear sensor connector and unclip from bracket.",
         "Remove the two 7mm Allen caliper guide pin bolts from behind the caliper.",
-        "Pivot the caliper up and secure - do not let it hang by the brake hose.",
+        "Pivot the caliper up and secure—do not let it hang by the brake hose.",
         "Remove the old pads from the caliper bracket.",
         "Inspect rotor for wear, grooves, or minimum thickness markings.",
         "Clean the pad contact surfaces with wire brush and brake cleaner.",
         "Open brake fluid reservoir cap, then compress caliper piston fully.",
         "Apply brake grease to the back of new pads and contact points.",
-        "Install new pads - the pad with wear sensor hole goes on the inner side.",
+        "Install new pads—the pad with wear sensor hole goes on the inner side.",
         "Install new wear sensor into the inner pad (sensors are typically one-time use).",
         "Pivot caliper down and reinstall guide pins to 22 ft-lbs (30 Nm).",
         "Reconnect wear sensor, reinstall wheel, torque lugs to 89 ft-lbs (120 Nm).",
@@ -849,7 +894,7 @@
     {
       "id": "spark-plugs",
       "title": "Spark Plug Replacement",
-      "description": "Spark plug replacement for all E90 engine variants.",
+      "description": "Plugs on every E90 engine. The turbo engines want them more often than you'd think, so check the interval.",
       "difficulty": "Easy",
       "time": "1-2 hours",
       "interval": "Every 60,000 miles (N52) or 45,000 miles (N54/N55)",
@@ -861,34 +906,34 @@
         "6\" extension",
         "Torque wrench",
         "Compressed air or vacuum",
-        "Anti-seize (optional - some plugs pre-applied)"
+        "Anti-seize (optional—some plugs pre-applied)"
       ],
       "steps": [
-        "Allow engine to cool completely - spark plugs can seize in hot aluminum.",
+        "Allow engine to cool completely—spark plugs can seize in hot aluminum.",
         "Remove the engine cover by pulling up on the four corners.",
         "Disconnect the electrical connector from each ignition coil.",
         "Remove the 10mm bolt or T30 screw holding each coil in place.",
         "Pull each ignition coil straight up and out of the spark plug well.",
         "Use compressed air or vacuum to clean debris from the spark plug wells.",
         "Using spark plug socket and extension, remove each spark plug.",
-        "Inspect old plugs for wear, fouling, or damage - note condition.",
+        "Inspect old plugs for wear, fouling, or damage—note condition.",
         "Gap new plugs if necessary (most modern plugs are pre-gapped).",
         "Thread new plugs in by hand to prevent cross-threading.",
-        "Torque spark plugs to 17 ft-lbs (23 Nm) - do not overtighten.",
+        "Torque spark plugs to 17 ft-lbs (23 Nm)—do not overtighten.",
         "Reinstall ignition coils and secure with bolt/screw.",
         "Reconnect coil electrical connectors until they click.",
         "Reinstall engine cover."
       ],
       "tips": [
-        "N54 uses 6 spark plugs; the N52 uses 6 spark plugs - one per cylinder.",
+        "N54 uses 6 spark plugs; the N52 uses 6 spark plugs—one per cylinder.",
         "Use NGK or Bosch OEM-equivalent plugs for best results.",
-        "Inspect ignition coils while replacing plugs - replace if cracked or worn."
+        "Inspect ignition coils while replacing plugs—replace if cracked or worn."
       ]
     },
     {
       "id": "oil-filter-housing",
       "title": "Oil Filter Housing Gasket",
-      "description": "Replace the notorious leaking oil filter housing gasket.",
+      "description": "The oil filter housing gasket leaks on almost every N52/N54/N55 eventually. Fix it before the oil finds the belts.",
       "difficulty": "Intermediate",
       "time": "2-3 hours",
       "interval": "As needed (common leak point)",
@@ -905,14 +950,14 @@
       ],
       "steps": [
         "Remove the engine cover and intake snorkel for access.",
-        "Drain some coolant - the oil cooler (if equipped) ties into the cooling system.",
+        "Drain some coolant—the oil cooler (if equipped) ties into the cooling system.",
         "Remove the oil filter cap and filter element.",
         "Disconnect any electrical connectors on or near the housing (oil pressure sensor).",
         "Remove the 3-4 E10 or E12 Torx bolts holding the filter housing to the block.",
-        "Carefully pry the housing off the block - it may stick from the old gasket.",
+        "Carefully pry the housing off the block—it may stick from the old gasket.",
         "Remove the old gasket and clean both mating surfaces thoroughly.",
         "Remove old O-rings from the oil cooler ports if equipped.",
-        "Install new gasket onto the housing - it should seat into the groove.",
+        "Install new gasket onto the housing—it should seat into the groove.",
         "Install new oil cooler O-rings if equipped.",
         "Position housing on block and hand-thread the mounting bolts.",
         "Torque mounting bolts to 18 ft-lbs (25 Nm) in a cross pattern.",
@@ -922,8 +967,8 @@
       ],
       "tips": [
         "The OFHG is one of the most common oil leaks on N52 and N54 engines.",
-        "Oil dripping onto the exhaust can cause smoke and fire - don't delay this repair.",
-        "Some kits include the oil cooler gaskets - inspect and replace if questionable.",
+        "Oil dripping onto the exhaust can cause smoke and fire—don't delay this repair.",
+        "Some kits include the oil cooler gaskets—inspect and replace if questionable.",
         "Check the eccentric shaft sensor seal (N52) while you have access."
       ]
     }
@@ -935,7 +980,7 @@
       { "id": "e90-ofhg", "name": "Replace oil filter housing gasket", "description": "Common leak on N52/N54" },
       { "id": "e90-valve-cover", "name": "Replace valve cover gasket", "description": "Oil leak source" },
       { "id": "e90-timing-chain", "name": "Inspect/replace timing chain (N20/N54/N55)", "description": "Chain stretch and guide wear" },
-      { "id": "e90-rod-bearings", "name": "Replace rod bearings (S65 M3)", "description": "Critical M3 maintenance item" }
+      { "id": "e90-rod-bearings", "name": "Replace rod bearings (S65 M3)", "description": "Key M3 maintenance item" }
     ],
     "cooling": [
       { "id": "e90-expansion-tank", "name": "Replace expansion tank", "description": "Plastic cracks" },
@@ -944,7 +989,7 @@
     ],
     "fuel": [
       { "id": "e90-hpfp", "name": "Replace high-pressure fuel pump (N54)", "description": "Common failure causing misfires" },
-      { "id": "e90-injectors", "name": "Service fuel injectors (N54/N55)", "description": "Direct injection - carbon buildup" },
+      { "id": "e90-injectors", "name": "Service fuel injectors (N54/N55)", "description": "Direct injection—carbon buildup" },
       { "id": "e90-walnut-blast", "name": "Intake valve cleaning (N54/N55)", "description": "Walnut blast to remove carbon" }
     ],
     "suspension": [
@@ -969,18 +1014,18 @@
     ]
   },
   "buyersGuide": {
-    "overview": "The BMW E90/E92/E93 3 Series (2006-2013) represents BMW's transition into the modern era with more technology, more power, and more complexity. The N52 and N54/N55 turbocharged inline-sixes offered impressive performance, while the E90 M3 with its screaming 4.0L V8 S65 engine became an instant classic. Build quality remained high, and these cars offer modern amenities with the last vestiges of hydraulic steering feel. However, the increased complexity means higher maintenance costs, and the turbocharged engines have known reliability concerns that must be addressed.",
+    "overview": "The E90 generation is where BMW went modern: turbocharged sixes, electric water pumps, and a lot more electronics. The 335i's N54 makes big power for the money and responds well to tuning, but it comes with a known list of fuel pump, injector, and wastegate problems. The naturally aspirated 328i is the dependable choice. The M3's 4.0L V8 is something special, and its rod bearings need attention. Buy on service records, not mileage.",
     "quickFacts": {
       "productionYears": "2006-2013",
       "totalProduced": "~3.0 million worldwide",
-      "priceRange": "$8,000 - $70,000+",
+      "priceRange": "$8,000–$70,000+",
       "bestYears": "2011-2013 (LCI facelift, refined engines)"
     },
     "variants": [
       {
         "name": "325i / 328i",
         "years": "2006-2013",
-        "description": "The naturally aspirated models with N52 3.0L inline-six producing 215-230 hp. Reliable and efficient. The 328i is the sweet spot for daily driving.",
+        "description": "The naturally aspirated N52 3.0L six with 215–230 hp. Dependable and efficient, and the 328i is the easy everyday choice.",
         "desirability": "Medium"
       },
       {
@@ -998,7 +1043,7 @@
       {
         "name": "M3 (E90/E92/E93)",
         "years": "2008-2013",
-        "description": "The legendary S65 4.0L V8 producing 414 hp and revving to 8,400 rpm. Available as sedan, coupe, and convertible. Manual and DCT options.",
+        "description": "The 4.0L S65 V8, 414 hp and an 8,400 rpm redline. Sedan, coupe, or convertible, with a six-speed manual or the DCT.",
         "desirability": "High"
       },
       {
@@ -1105,19 +1150,19 @@
     "pricingGuide": {
       "asOf": "January 2026",
       "project": {
-        "price": "$5,000 - $10,000",
+        "price": "$5,000–$10,000",
         "description": "High-mileage cars with deferred maintenance or known issues. N54 cars often need turbos."
       },
       "driver": {
-        "price": "$10,000 - $20,000",
+        "price": "$10,000–$20,000",
         "description": "Running well but with some wear. Budget for maintenance items. Many good 328i examples here."
       },
       "excellent": {
-        "price": "$20,000 - $40,000",
+        "price": "$20,000–$40,000",
         "description": "Well-maintained 335is or clean M3 examples with service history."
       },
       "concours": {
-        "price": "$40,000 - $80,000+",
+        "price": "$40,000–$80,000+",
         "description": "Low-mileage M3 with documented maintenance. Manual transmission and desirable colors command premium."
       }
     },
@@ -1139,7 +1184,7 @@
       "M Sport package for enhanced styling and suspension",
       "Coupe (E92) body style for best looks",
       "LCI facelift models (2011+) for refinements",
-      "Lower mileage examples - these are complex cars",
+      "Lower mileage examples—these are complex cars",
       "Colors like Le Mans Blue, Interlagos Blue, or Jerez Black M3",
       "Working iDrive and premium sound if equipped"
     ],
@@ -1152,14 +1197,14 @@
     "expertTips": [
       "The 328i with N52 engine is the most reliable option for daily driving",
       "N54 335i is a tuner's dream but requires diligent maintenance",
-      "N55 335i (2011+) addressed many N54 reliability issues - prefer it for a driver",
-      "M3 rod bearing service is mandatory - verify completion or budget immediately",
-      "The M3's S65 V8 is one of the greatest engines BMW has ever made - worth the maintenance",
-      "Electric water pump failure can happen without warning - some owners replace preventatively",
-      "HPFP extended warranty only applies to original owner - factor this into used purchase",
-      "The 335is combines N54 power with 335i reliability updates - rare but desirable",
+      "N55 335i (2011+) addressed many N54 reliability issues—prefer it for a driver",
+      "M3 rod bearing service is mandatory—verify completion or budget immediately",
+      "The M3's S65 V8 is one of the greatest engines BMW has ever made—worth the maintenance",
+      "Electric water pump failure can happen without warning—some owners replace preventatively",
+      "HPFP extended warranty only applies to original owner—factor this into used purchase",
+      "The 335is combines N54 power with 335i reliability updates—rare but desirable",
       "DCT in the M3 is excellent when maintained but manual is more engaging",
-      "E90 suspension components are wear items - budget for bushings and control arms"
+      "E90 suspension components are wear items—budget for bushings and control arms"
     ]
   },
   "communityResources": {
@@ -1170,7 +1215,7 @@
     ],
     "forums": [
       { "name": "E90Post", "url": "https://www.e90post.com/forums/", "description": "Largest dedicated E90/E92/E93 community" },
-      { "name": "BimmerPost", "url": "https://www.bimmerpost.com/", "description": "Comprehensive BMW forum covering all models" },
+      { "name": "BimmerPost", "url": "https://www.bimmerpost.com/", "description": "Big BMW forum covering every model" },
       { "name": "BimmerBoard E90 Forum", "url": "http://www.bimmerboard.com/forums/e90/", "description": "Technical how-to articles and expert advice" },
       {
         "name": "BimmerFest E9X Forum",

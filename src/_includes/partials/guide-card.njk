@@ -52,9 +52,9 @@
                     <thead>
                         <tr>
                             <th>Part</th>
-                            <th>OEM Number</th>
+                            <th>OEM part #</th>
                             <th>Aftermarket</th>
-                            <th>Est. Cost</th>
+                            <th>Typical cost</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -74,7 +74,7 @@
 
         {% if currentGuide.tools and currentGuide.tools.length > 0 %}
         <div class="guide-tools">
-            <h4>Tools Needed</h4>
+            <h4>Tools</h4>
             <ul>
                 {% for tool in currentGuide.tools %}
                 <li>{{ tool }}</li>
@@ -85,7 +85,7 @@
 
         {% if currentGuide.steps and currentGuide.steps.length > 0 %}
         <div class="guide-steps">
-            <h4>Procedure</h4>
+            <h4>Step by step</h4>
             <ol>
                 {% for step in currentGuide.steps %}
                 <li>
@@ -112,7 +112,7 @@
 
         {% if currentGuide.tips and currentGuide.tips.length > 0 %}
         <div class="guide-tips">
-            <h4>Pro Tips</h4>
+            <h4>Tips</h4>
             <ul>
                 {% for tip in currentGuide.tips %}
                 <li>{{ tip }}</li>
@@ -123,7 +123,7 @@
 
         {% if currentGuide.warnings and currentGuide.warnings.length > 0 %}
         <div class="guide-warnings">
-            <h4>⚠️ Warnings</h4>
+            <h4>Watch out</h4>
             <ul>
                 {% for warning in currentGuide.warnings %}
                 <li>{{ warning }}</li>

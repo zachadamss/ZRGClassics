@@ -3,6 +3,7 @@
   "brand": "Porsche",
   "fullName": "Porsche 996 911",
   "series": "911",
+  "tagline": "The black-sheep 911, and a lot of car for the money once it's sorted.",
   "years": "1998-2005",
   "engines": [
     "3.4L Flat-6 (M96)",
@@ -36,11 +37,11 @@
       "repairCosts": {
         "diy": "$500-1000",
         "shop": "$2000-3500",
-        "notes": "Same M96 engine as 986. Critical maintenance."
+        "notes": "Same M96 engine as 986. Don't skip it."
       },
       "parts": [
-        { "name": "IMS Bearing Retrofit", "partNumber": "LN Engineering", "price": "$400-600" },
-        { "name": "IMS Guardian", "partNumber": "LN Engineering", "price": "$80-120" }
+        { "name": "IMS Bearing Retrofit", "brand": "LN Engineering", "price": "$400-600" },
+        { "name": "IMS Guardian", "brand": "LN Engineering", "price": "$80-120" }
       ],
       "relatedIssues": [
         { "vehicle": "986", "brand": "Porsche", "model": "986 Boxster", "issueId": "ims-bearing" },
@@ -71,8 +72,8 @@
         "notes": "D-chunk and bore scoring. Major engine repair."
       },
       "parts": [
-        { "name": "Cylinder Sleeving", "partNumber": "LN Engineering", "price": "$800-1200/cyl" },
-        { "name": "Piston Set", "partNumber": "Various", "price": "$1500-2500" }
+        { "name": "Cylinder Sleeving", "brand": "LN Engineering", "price": "$800-1200/cyl" },
+        { "name": "Piston Set", "price": "$1500-2500" }
       ],
       "difficulty": "Advanced"
     },
@@ -152,7 +153,7 @@
         "notes": "Plastic to aluminum upgrade recommended."
       },
       "parts": [
-        { "name": "Coolant Pipe Kit", "partNumber": "Various", "price": "$150-300" },
+        { "name": "Coolant Pipe Kit", "price": "$150-300" },
         { "name": "Water Pump", "partNumber": "99610601157", "price": "$100-180" }
       ],
       "difficulty": "Advanced"
@@ -179,7 +180,7 @@
         "notes": "Moisture causes fogging. Reseal or replace."
       },
       "parts": [
-        { "name": "Headlight Seal Kit", "partNumber": "Various", "price": "$30-80" },
+        { "name": "Headlight Seal Kit", "price": "$30-80" },
         { "name": "Headlight Assembly", "partNumber": "99663103214", "price": "$400-800" }
       ],
       "difficulty": "Easy"
@@ -216,7 +217,7 @@
     {
       "id": "suspension-refresh",
       "title": "Complete Suspension Refresh",
-      "description": "Full front and rear suspension rebuild for the 996's MacPherson strut front and multi-link rear design, restoring the legendary 911 handling.",
+      "description": "Front struts, the multi-link rear, and every bushing in between. A worn 996 feels vague. A refreshed one feels like a 911.",
       "difficulty": "Intermediate",
       "time": "12-16 hours",
       "cost": "$700-1,400",
@@ -249,36 +250,36 @@
       "steps": [
         "Raise vehicle and support on jack stands at all four corners.",
         "Remove all wheels and photograph suspension for reference.",
-        "Soak all suspension bolts with penetrating oil - let sit.",
-        "Begin with front suspension - remove sway bar end links.",
+        "Soak all suspension bolts with penetrating oil—let sit.",
+        "Begin with front suspension—remove sway bar end links.",
         "Remove tie rod end nut and separate from knuckle using puller.",
         "Remove control arm bolts at crossmember (48 ft-lbs spec).",
         "Separate ball joint from steering knuckle.",
         "For struts: mark camber position, remove upper mount nuts, remove strut pinch bolt (74 ft-lbs).",
-        "Use spring compressor to disassemble strut - replace mount/bearing.",
-        "Install new front components - torque to spec.",
-        "For rear suspension: the 996's rear is critical for handling.",
+        "Use spring compressor to disassemble strut—replace mount/bearing.",
+        "Install new front components—torque to spec.",
+        "For rear suspension: the 996's rear geometry has a big effect on handling.",
         "Support rear suspension arm before removing bolts.",
         "Remove and replace upper and lower control arms (63 ft-lbs).",
-        "Replace rear thrust arms - these affect toe settings.",
+        "Replace rear thrust arms—these affect toe settings.",
         "Install new rear sway bar end links.",
-        "CRITICAL: Check rear spring perches for cracks (known issue).",
-        "Check wheel bearings for play - replace if worn.",
+        "Important: Check rear spring perches for cracks (known issue).",
+        "Check wheel bearings for play—replace if worn.",
         "Install wheels and lower vehicle.",
-        "Professional alignment is mandatory - the 996 is very alignment-sensitive."
+        "Professional alignment is mandatory—the 996 is very alignment-sensitive."
       ],
       "tips": [
         "The 996 shares suspension design with the 986 but is rear-engine biased.",
-        "Cracked rear spring perches are a known safety issue - inspect carefully.",
-        "Front control arm bushings are not serviceable - replace entire arm.",
-        "The rear suspension geometry is critical for 996 handling characteristics.",
+        "Cracked rear spring perches are a known safety issue—inspect carefully.",
+        "Front control arm bushings are not serviceable—replace entire arm.",
+        "The rear suspension geometry has a big effect on how a 996 handles.",
         "Consider polyurethane bushings for sharper track-day response."
       ],
       "warnings": [
-        "CRITICAL: Inspect rear spring perches for cracks before reassembly.",
-        "Spring compressors are dangerous - follow instructions exactly.",
+        "Important: Inspect rear spring perches for cracks before reassembly.",
+        "Spring compressors are dangerous—follow instructions exactly.",
         "The 996's rear-engine weight distribution amplifies suspension issues.",
-        "Never strike ball joints directly - use proper separator tools.",
+        "Never strike ball joints directly—use proper separator tools.",
         "Incorrect alignment causes the rear to feel unstable at speed."
       ],
       "references": [
@@ -290,7 +291,7 @@
     {
       "id": "rust-repair",
       "title": "Rust Prevention and Inspection",
-      "description": "Comprehensive rust inspection guide for the 996, which is galvanized but still requires attention in specific areas prone to water intrusion.",
+      "description": "A galvanized body, so this is mostly about water getting in where it shouldn't.",
       "difficulty": "Intermediate",
       "time": "4-16 hours",
       "cost": "$100-1,000+",
@@ -321,10 +322,10 @@
       "steps": [
         "The 996 is fully galvanized but water intrusion causes most problems.",
         "Clean exterior and undercarriage before inspection.",
-        "Inspect front trunk (frunk) for water intrusion - DME and fuse box are here.",
-        "Check front trunk drain tubes - clogs cause water to pool.",
+        "Inspect front trunk (frunk) for water intrusion—DME and fuse box are here.",
+        "Check front trunk drain tubes—clogs cause water to pool.",
         "Inspect battery box area for acid corrosion.",
-        "Check headlights for moisture - \"fried egg\" lights are prone to seal failure.",
+        "Check headlights for moisture—\"fried egg\" lights are prone to seal failure.",
         "Examine rocker panels by tapping with screwdriver.",
         "Open doors and check door bottoms for rust at drain holes.",
         "Inspect rear trunk area and engine bay seams.",
@@ -341,8 +342,8 @@
       "tips": [
         "996s rarely have structural rust due to galvanization.",
         "Most corrosion is caused by water intrusion and battery acid.",
-        "The frunk area contains expensive electronics - keep it dry.",
-        "Headlight seal failure is extremely common - reseal proactively.",
+        "The frunk area contains expensive electronics—keep it dry.",
+        "Headlight seal failure is extremely common—reseal proactively.",
         "Annual Fluid Film application provides excellent protection."
       ],
       "warnings": [
@@ -361,7 +362,7 @@
     {
       "id": "electrical-restoration",
       "title": "Electrical System Service",
-      "description": "Complete electrical system service for the 996 covering ignition, sensors, headlight resealing, and DME protection from water damage.",
+      "description": "Ignition, sensors, headlight resealing, and keeping water away from the DME.",
       "difficulty": "Intermediate",
       "time": "10-16 hours",
       "cost": "$300-900",
@@ -392,7 +393,7 @@
       ],
       "steps": [
         "Begin with diagnostic scan to identify stored fault codes.",
-        "Check front trunk for water - this damages expensive electronics.",
+        "Check front trunk for water—this damages expensive electronics.",
         "Clear frunk drain tubes if any water is present.",
         "For headlight reseal: remove headlight assembly (3 bolts).",
         "Heat the headlight in oven at 200°F for 15-20 minutes to soften sealant.",
@@ -402,7 +403,7 @@
         "For ignition coils: open engine lid, disconnect coil connectors.",
         "Remove mounting bolts and pull coils, inspect wells for oil.",
         "Install new coils with dielectric grease on boots.",
-        "For MAF sensor: located in air intake - clean with MAF cleaner only.",
+        "For MAF sensor: located in air intake—clean with MAF cleaner only.",
         "For O2 sensors: access from below, use O2 sensor socket and anti-seize.",
         "For VarioCam issues: replace solenoids if causing timing codes.",
         "For window regulator: remove door panel, support glass, swap regulator.",
@@ -410,15 +411,15 @@
         "Clear codes and verify repairs with diagnostic scan."
       ],
       "tips": [
-        "996 headlight condensation is extremely common - resealing works well.",
-        "The DME in the frunk is vulnerable to water - protect it.",
-        "VarioCam solenoid issues cause rough running - use OEM parts only.",
+        "996 headlight condensation is extremely common—resealing works well.",
+        "The DME in the frunk is vulnerable to water—protect it.",
+        "VarioCam solenoid issues cause rough running—use OEM parts only.",
         "Many 996 electrical issues trace to poor ground connections.",
         "A proper Porsche scanner (Durametric, PIWIS) reveals far more than generic OBD2."
       ],
       "warnings": [
-        "Water in frunk destroys DME - a $2,000+ part.",
-        "Be careful heating headlights - too hot damages lens or housing.",
+        "Water in frunk destroys DME—a $2,000+ part.",
+        "Be careful heating headlights—too hot damages lens or housing.",
         "Never use carburetor or brake cleaner on MAF sensor.",
         "Always disconnect battery before electrical work.",
         "Support window glass before removing regulator."
@@ -432,7 +433,7 @@
     {
       "id": "interior-restoration",
       "title": "Interior Restoration",
-      "description": "Complete interior refresh for the 996 covering leather care, common wear items, and addressing the infamous sticky interior surfaces.",
+      "description": "Leather, the common wear items, and what to do about the sticky soft-touch surfaces.",
       "difficulty": "Intermediate",
       "time": "10-20 hours",
       "cost": "$300-1,200",
@@ -467,35 +468,81 @@
         "Options: vinyl wrap, professional repaint, or replacement trim.",
         "For leather: clean thoroughly with dedicated leather cleaner.",
         "Fill cracks with leather filler, sand smooth, apply dye.",
-        "Condition all leather - seats, door panels, armrests.",
+        "Condition all leather—seats, door panels, armrests.",
         "For steering wheel: assess if rewrap or replacement is needed.",
         "Sport steering wheels can be rewrapped professionally.",
         "Replace worn shift knob and e-brake boot.",
         "Clean HVAC vents with detailing brushes.",
-        "Replace cabin air filter - located in frunk under carpet.",
+        "Replace cabin air filter—located in frunk under carpet.",
         "Address seat bolster wear with dye or foam replacement.",
         "Inspect and replace door seals if worn or leaking.",
         "Apply UV protectant to all plastic and vinyl surfaces.",
         "Test all interior functions before completing."
       ],
       "tips": [
-        "The 996's sticky interior surfaces are a known issue - multiple solutions exist.",
-        "Vinyl wrap is a popular sticky surface fix - covers and protects.",
+        "The 996's sticky interior surfaces are a known issue—multiple solutions exist.",
+        "Vinyl wrap is a popular sticky surface fix—covers and protects.",
         "Sport seats have aggressive bolsters that wear on driver side.",
-        "Steering wheel leather often wears before seats - consider rewrap.",
+        "Steering wheel leather often wears before seats—consider rewrap.",
         "996 leather responds well to proper conditioning."
       ],
       "warnings": [
         "Don't use silicone-based products on leather.",
         "Sticky surface removal can damage paint underneath.",
-        "Be careful with trim clips - they become brittle.",
-        "Steering wheel airbag - disconnect battery before removal.",
+        "Be careful with trim clips—they become brittle.",
+        "Steering wheel airbag—disconnect battery before removal.",
         "Test isopropyl alcohol on hidden area first."
       ],
       "references": [
         { "name": "Rennlist 996 Interior", "url": "https://rennlist.com/forums/996-forum/" },
         { "name": "Pelican Parts 996 Interior", "url": "https://www.pelicanparts.com/techarticles/Porsche-996/" },
         { "name": "Leatherique Products", "url": "https://www.leatherique.com/" }
+      ]
+    },
+    {
+      "id": "ims-retrofit",
+      "title": "IMS Bearing Retrofit (with Clutch and RMS)",
+      "description": "The same job as on a Boxster: replace the Carrera's intermediate shaft bearing with a stronger retrofit, and do the clutch and rear main seal while the transmission is out. GT3 and Turbo owners can skip this; their Mezger engines don't have the problem.",
+      "difficulty": "Advanced",
+      "time": "10-16 hours",
+      "cost": "$800-1,800",
+      "parts": [
+        { "name": "IMS retrofit bearing kit", "brand": "LN Engineering", "aftermarket": "LN Engineering", "cost": "$400-900" },
+        { "name": "Rear main seal (updated design)", "cost": "$30-60" },
+        { "name": "Clutch kit", "aftermarket": "Sachs, LUK", "cost": "$350-700" },
+        { "name": "IMS cover seals and bolts", "cost": "$30-60" }
+      ],
+      "tools": [
+        "Lift or tall jack stands",
+        "Transmission jack",
+        "Retrofit installation tool kit (rent or buy)",
+        "Cam locking tools",
+        "Torque wrench",
+        "Clean workspace"
+      ],
+      "steps": [
+        "Raise the car securely and remove the transmission.",
+        "Remove the clutch and flywheel.",
+        "Lock the camshafts and crankshaft with the correct tools before touching the IMS.",
+        "Remove the IMS cover and inspect the old bearing.",
+        "Remove the old bearing with the kit's tools and install the retrofit bearing per the kit instructions.",
+        "Refit the IMS cover with new seals.",
+        "Install a new rear main seal.",
+        "Install the flywheel and new clutch. Torque to the value in the Torque Specs table on this page, or your workshop manual.",
+        "Refit the transmission, remove the locking tools, and rotate the engine by hand before starting.",
+        "Change the oil and cut open the filter after the first few hundred miles."
+      ],
+      "tips": [
+        "Some engines use a bearing that can't be removed without splitting the case. Check your engine number with the kit maker before you order.",
+        "Consider replacing the dual-mass flywheel if it has play."
+      ],
+      "warnings": [
+        "If the cams aren't locked, the timing can jump when the IMS is disturbed.",
+        "Metal in the old filter means investigate before retrofitting."
+      ],
+      "references": [
+        { "name": "LN Engineering", "url": "https://lnengineering.com/" },
+        { "name": "Rennlist forums", "url": "https://rennlist.com/forums/" }
       ]
     }
   ],
@@ -504,7 +551,7 @@
       {
         "name": "FCP Euro",
         "url": "https://www.fcpeuro.com/Porsche-parts",
-        "notes": "Industry-leading lifetime replacement guarantee on all parts - comprehensive 996 coverage",
+        "notes": "Lifetime replacement guarantee on everything they sell, with good 996 coverage",
         "specialties": [
           "Lifetime Warranty",
           "OE Quality"
@@ -516,7 +563,7 @@
       {
         "name": "Pelican Parts",
         "url": "https://www.pelicanparts.com/Porsche/catalog/996.htm",
-        "notes": "Comprehensive 996 parts catalog with extensive tech articles for every repair",
+        "notes": "Deep 996 parts catalog with extensive tech articles for every repair",
         "specialties": [
           "OEM Parts",
           "Tech Articles",
@@ -550,7 +597,7 @@
       {
         "name": "LN Engineering",
         "url": "https://lnengineering.com/",
-        "notes": "The definitive source for IMS bearing solutions - their retrofit bearings are essential for 996 ownership",
+        "notes": "The IMS bearing specialists. Their retrofit bearing is the fix most 996 owners choose.",
         "specialties": [
           "IMS Bearings",
           "Engine Components",
@@ -561,7 +608,7 @@
       {
         "name": "Flat 6 Innovations",
         "url": "https://flat6innovations.com/",
-        "notes": "996 performance specialist - IMS solutions, engine upgrades, and complete M96/M97 builds",
+        "notes": "996 performance specialist—IMS solutions, engine upgrades, and complete M96/M97 builds",
         "specialties": [
           "IMS Solutions",
           "Performance Builds",
@@ -673,7 +720,7 @@
       {
         "name": "Rennlist 996 Classifieds",
         "url": "https://rennlist.com/forums/996-forum/",
-        "notes": "Active 996 community with dedicated marketplace - the first place to look",
+        "notes": "Active 996 community with dedicated marketplace—the first place to look",
         "specialties": [
           "996 Community",
           "Vetted Sellers"
@@ -702,7 +749,7 @@
       {
         "name": "Car-Part.com",
         "url": "https://www.car-part.com/",
-        "notes": "Search nationwide salvage yard inventory - good for body panels",
+        "notes": "Search nationwide salvage yard inventory—good for body panels",
         "specialties": [
           "Salvage Parts",
           "Body Panels"
@@ -720,11 +767,7 @@
         "url": "https://www.pelicanparts.com/techarticles/Porsche-996-Carrera/",
         "notes": "Extensive library of 996 DIY articles with step-by-step instructions and photos"
       },
-      {
-        "name": "Durametric Diagnostic",
-        "url": "https://www.durframetracing.com/",
-        "notes": "Essential diagnostic software for 996 - reads all modules, not just engine"
-      }
+      { "name": "Durametric Diagnostic", "url": "https://www.durframetracing.com/", "notes": "Diagnostic software for 996—reads all modules, not just engine" }
     ]
   },
   "torqueSpecs": {
@@ -767,10 +810,10 @@
     {
       "id": "oil-change",
       "title": "Oil Change",
-      "description": "Complete oil and filter change for the M96 water-cooled flat-six.",
+      "description": "Oil and filter on the M96. Short intervals and a magnetic drain plug are cheap IMS insurance.",
       "difficulty": "Easy",
       "time": "30 min",
-      "interval": "Every 5,000 miles (critical for IMS health)",
+      "interval": "Every 5,000 miles (cheap IMS insurance)",
       "cost": "$60-90",
       "tools": [
         "19mm socket for drain plug",
@@ -780,11 +823,11 @@
         "Ramps or jack and jack stands"
       ],
       "steps": [
-        "Warm the engine for 2-3 minutes - warm oil drains better.",
+        "Warm the engine for 2-3 minutes—warm oil drains better.",
         "Drive onto ramps or raise the car safely.",
         "Locate the oil drain plug on the bottom of the engine.",
         "Position drain pan and remove the 19mm drain plug.",
-        "Allow oil to drain completely - at least 10 minutes.",
+        "Allow oil to drain completely—at least 10 minutes.",
         "The spin-on oil filter is located under the car, accessible from below.",
         "Using filter wrench, remove the old filter.",
         "Inspect old filter for metallic debris (IMS bearing warning sign).",
@@ -797,7 +840,7 @@
         "Check level after 2 minutes and top off as needed."
       ],
       "tips": [
-        "CRITICAL: Cut open the old oil filter and inspect for metal debris - early IMS warning.",
+        "Important: Cut open the old oil filter and inspect for metal debris—early IMS warning.",
         "Frequent oil changes (5,000 miles) help protect the IMS bearing.",
         "Use quality synthetic oil meeting Porsche A40 specification.",
         "Consider oil analysis every few changes to monitor engine health."
@@ -806,7 +849,7 @@
     {
       "id": "spark-plugs",
       "title": "Spark Plug Replacement",
-      "description": "Replace spark plugs on the M96 flat-six engine.",
+      "description": "Plugs on the M96. Tight access, but doable in an hour.",
       "difficulty": "Easy",
       "time": "1 hour",
       "interval": "Every 30,000-40,000 miles",
@@ -822,12 +865,12 @@
       "steps": [
         "Allow engine to cool completely.",
         "Open the engine lid for access.",
-        "The M96 has 6 spark plugs - access from the top of the engine.",
+        "The M96 has 6 spark plugs—access from the top of the engine.",
         "Remove the coil packs by disconnecting the connectors and removing mounting bolts.",
         "Use compressed air to blow debris from the spark plug wells.",
         "Using spark plug socket and extension, remove each plug.",
         "Inspect old plugs for wear, fouling, or damage.",
-        "Check plug gap on new plugs - should be 0.7-0.8mm.",
+        "Check plug gap on new plugs—should be 0.7-0.8mm.",
         "Hand-thread new plugs to avoid cross-threading.",
         "Torque plugs to 18-22 ft-lbs (25-30 Nm).",
         "Apply dielectric grease to coil pack boots.",
@@ -836,7 +879,7 @@
       ],
       "tips": [
         "Use NGK or Bosch platinum/iridium plugs for best performance.",
-        "The 996 uses individual coil-on-plug ignition - no plug wires.",
+        "The 996 uses individual coil-on-plug ignition—no plug wires.",
         "While coils are out, inspect boots for cracks or carbon tracking.",
         "Replace coils if experiencing misfires."
       ]
@@ -844,7 +887,7 @@
     {
       "id": "brake-pads",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement on the 996's Brembo calipers.",
+      "description": "Pads on the Brembo calipers, front and rear.",
       "difficulty": "Easy",
       "time": "1-2 hours",
       "interval": "Every 20,000-40,000 miles",
@@ -864,13 +907,13 @@
         "Remove wheel to access caliper.",
         "Disconnect brake pad wear sensor if equipped (front left, rear right).",
         "Remove the two 7mm Allen caliper guide pin bolts.",
-        "Swing the caliper up and support it - don't let it hang by the hose.",
+        "Swing the caliper up and support it—don't let it hang by the hose.",
         "Remove the old pads from the caliper bracket.",
         "Inspect rotor for scoring, cracks, or minimum thickness.",
         "Clean pad contact surfaces with wire brush and brake cleaner.",
         "Open brake fluid reservoir, then compress caliper piston(s).",
         "Apply brake grease to pad backing plate contact points.",
-        "Install new pads - wear sensor slot goes on the inner pad.",
+        "Install new pads—wear sensor slot goes on the inner pad.",
         "Swing caliper down and reinstall guide pins to 22 ft-lbs (30 Nm).",
         "Reconnect wear sensor.",
         "Reinstall wheel and torque lugs to 96 ft-lbs (130 Nm).",
@@ -880,14 +923,14 @@
       "tips": [
         "The 996 uses four-piston front and rear calipers on most models.",
         "Open reservoir cap before compressing pistons to prevent overflow.",
-        "Bed new pads with moderate stops - avoid hard braking initially.",
+        "Bed new pads with moderate stops—avoid hard braking initially.",
         "Wear sensors should be replaced with new pads."
       ]
     },
     {
       "id": "coolant-flush",
       "title": "Coolant Flush and Fill",
-      "description": "Flush and refill the cooling system to prevent overheating.",
+      "description": "Flush and refill the cooling system, including bleeding it properly so the engine doesn't run hot.",
       "difficulty": "Intermediate",
       "time": "1-2 hours",
       "interval": "Every 4 years or 48,000 miles",
@@ -918,9 +961,9 @@
         "Recheck level after the engine cools."
       ],
       "tips": [
-        "Use only Porsche-approved coolant (G40 spec) - green or pink.",
-        "The 996's plastic coolant pipes can crack - inspect while draining.",
-        "Air pockets can cause overheating - bleed the system thoroughly.",
+        "Use only Porsche-approved coolant (G40 spec)—green or pink.",
+        "The 996's plastic coolant pipes can crack—inspect while draining.",
+        "Air pockets can cause overheating—bleed the system thoroughly.",
         "Consider upgrading to aluminum coolant pipes if not already done."
       ]
     }
@@ -936,7 +979,7 @@
     "cooling": [
       { "id": "996-coolant-pipes", "name": "Replace coolant pipes with aluminum", "description": "Plastic pipes under intake are failure-prone" },
       { "id": "996-expansion-tank", "name": "Replace expansion tank", "description": "Plastic tank cracks with age" },
-      { "id": "996-aux-fan", "name": "Test auxiliary cooling fans", "description": "Dual fans in front bumper critical for cooling" }
+      { "id": "996-aux-fan", "name": "Test auxiliary cooling fans", "description": "Dual fans in the front bumper do most of the cooling in traffic" }
     ],
     "suspension": [
       { "id": "996-spring-perch", "name": "Inspect rear spring perches", "description": "Known to crack on early cars" },
@@ -962,11 +1005,11 @@
     ]
   },
   "buyersGuide": {
-    "overview": "The Porsche 996 (1999-2005) was the first water-cooled 911 and represented a dramatic departure from the air-cooled cars. The new M96 flat-six offered more power (300-381 hp) with better efficiency and refinement. The 996 introduced the controversial 'fried egg' headlights but also brought significant advances in performance and technology. Values have historically been depressed due to the IMS bearing issue, but clean, well-maintained examples are now being recognized as excellent values. The GT3 and Turbo variants are particularly desirable.",
+    "overview": "The 996 was the first water-cooled 911, and for years its headlights and the IMS bearing made it the black sheep. That's what makes it interesting now. The GT3 and Turbo use the race-derived Mezger engine and don't have the IMS problem at all. The Carreras do, along with rear main seal leaks and bore scoring. With a documented IMS retrofit, a Carrera is a lot of 911 for the money. Without one, factor the retrofit into your offer.",
     "quickFacts": {
       "productionYears": "1999-2005",
       "totalProduced": "~175,000 worldwide",
-      "priceRange": "$25,000 - $200,000+",
+      "priceRange": "$25,000–$200,000+",
       "bestYears": "2002-2005 (improved IMS bearing, refined production)"
     },
     "variants": [
@@ -997,7 +1040,7 @@
       {
         "name": "GT2",
         "years": "2002-2005",
-        "description": "Rear-wheel drive Turbo with 462 hp. The ultimate 996 track weapon. Very rare.",
+        "description": "The rear-drive Turbo with 462 hp, built for the track. Rare and very fast.",
         "desirability": "High"
       },
       {
@@ -1009,11 +1052,11 @@
     ],
     "inspectionPoints": [
       {
-        "category": "Engine (Critical - IMS Bearing)",
+        "category": "Engine (check first: IMS bearing)",
         "items": [
           {
             "check": "IMS Bearing Status",
-            "detail": "THE critical issue. Intermediate shaft bearing can fail catastrophically destroying the engine. Verify if upgraded to retrofit bearing or ask for oil analysis.",
+            "detail": "The big one. Intermediate shaft bearing can fail catastrophically destroying the engine. Verify if upgraded to retrofit bearing or ask for oil analysis.",
             "costIfBad": "$2,500-4,000 for retrofit / $20,000+ for engine if it fails"
           },
           {
@@ -1034,14 +1077,14 @@
           {
             "check": "Oil Consumption",
             "detail": "Some oil consumption is normal. Excessive consumption indicates bore scoring or other issues.",
-            "costIfBad": "Varies - monitor closely"
+            "costIfBad": "Varies—monitor closely"
           }
         ]
       },
       {
         "category": "Transmission & Drivetrain",
         "items": [
-          { "check": "Manual Transmission", "detail": "Test all gears. G96 6-speed is robust. Check for synchro wear.", "costIfBad": "$2,000-4,000" },
+          { "check": "Manual Transmission", "detail": "Test every gear. The six-speed is tough, but check for synchro wear.", "costIfBad": "$2,000-4,000" },
           { "check": "Tiptronic", "detail": "Check for smooth shifts and proper kickdown. Valve body can develop issues.", "costIfBad": "$2,000-5,000" },
           { "check": "Clutch", "detail": "Test engagement. Dual-mass flywheel is expensive.", "costIfBad": "$3,000-4,500" },
           { "check": "AWD System (C4/C4S)", "detail": "Test for proper engagement and any differential noise.", "costIfBad": "$2,000-5,000" }
@@ -1071,19 +1114,19 @@
     "pricingGuide": {
       "asOf": "January 2026",
       "project": {
-        "price": "$18,000 - $35,000",
+        "price": "$18,000–$35,000",
         "description": "Cars with unknown IMS status or needing significant work. Risky purchase."
       },
       "driver": {
-        "price": "$35,000 - $55,000",
+        "price": "$35,000–$55,000",
         "description": "Good Carrera examples with known IMS status or retrofit. Excellent value."
       },
       "excellent": {
-        "price": "$55,000 - $100,000",
+        "price": "$55,000–$100,000",
         "description": "Well-maintained C4S, GT3, or clean Turbo examples."
       },
       "concours": {
-        "price": "$100,000 - $250,000+",
+        "price": "$100,000–$250,000+",
         "description": "Low-mileage GT3, GT2, or exceptional Turbo models."
       }
     },
@@ -1116,7 +1159,7 @@
       "The IMS bearing retrofit is worthwhile preventative maintenance",
       "Oil analysis can help monitor IMS bearing condition",
       "2002+ cars have a slightly improved IMS bearing design",
-      "The 996 drives exceptionally well - don't dismiss it for the headlights",
+      "The 996 drives exceptionally well—don't dismiss it for the headlights",
       "Clean 996 Turbos are undervalued compared to 997 Turbos",
       "Manual transmission cars are more desirable",
       "Budget for proper PPI by a Porsche specialist",

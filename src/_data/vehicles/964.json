@@ -3,6 +3,7 @@
   "brand": "Porsche",
   "fullName": "Porsche 964 911",
   "series": "911",
+  "tagline": "The 911 modernized underneath, still air-cooled on top.",
   "years": "1989-1994",
   "engines": [
     "3.6L Flat-6 M64/01",
@@ -20,11 +21,11 @@
       "id": "oil-leaks",
       "title": "Oil Leaks (Chain Housing and Case Seams)",
       "symptoms": "Oil spots under car, oil on engine surfaces, visible seepage, low oil level, burning oil smell",
-      "description": "The 964's M64 engine is notorious for oil leaks. The most common source is the chain housing gasket (timing chain cover), but oil also seeps from the case half seams, valve cover gaskets, oil cooler seals, and cam tower o-rings. While some seepage is considered normal for air-cooled engines, excessive leaks require attention.",
+      "description": "The 964's M64 engine is known for oil leaks. The most common source is the chain housing gasket (timing chain cover), but oil also seeps from the case half seams, valve cover gaskets, oil cooler seals, and cam tower o-rings. While some seepage is considered normal for air-cooled engines, excessive leaks require attention.",
       "fixes": [
-        "Chain housing (timing cover) gasket replacement - most common leak",
+        "Chain housing (timing cover) gasket replacement—most common leak",
         "Case seam resealing requires engine removal",
-        "Valve cover gaskets - relatively accessible",
+        "Valve cover gaskets—relatively accessible",
         "Oil cooler hose and fitting inspection",
         "Cam tower o-rings (requires cam housing removal)",
         "Use correct Porsche sealant for case seams"
@@ -68,7 +69,7 @@
       },
       "parts": [
         { "name": "Dual Mass Flywheel", "partNumber": "96411401200", "price": "$800-1200" },
-        { "name": "Single Mass Conversion", "partNumber": "Various", "price": "$600-1000" },
+        { "name": "Single Mass Conversion", "price": "$600-1000" },
         { "name": "Clutch Kit", "partNumber": "96411691100", "price": "$400-700" }
       ],
       "difficulty": "Advanced"
@@ -77,8 +78,9 @@
       "id": "distributor-issues",
       "title": "Distributor and Ignition Problems",
       "symptoms": "Hard starting, misfires, rough running, stalling, no spark",
-      "description": "The 964 uses twin distributors driven off the camshafts. The distributor caps, rotors, and internal components wear over time. The distributor drive gears (plastic in early cars) can strip. Moisture intrusion causes cap corrosion and misfires. The dual-distributor system is complex but essential for the engine's operation.",
+      "description": "The 964's twin-plug ignition runs a double distributor: two caps and rotors stacked on one unit, with a small internal belt driving the second rotor. That belt is the known weak spot. Heat and ozone inside the distributor wear it out, and when it breaks, half the plugs stop firing and the engine runs badly. The usual fix is a new belt plus a vent kit that lets the distributor breathe. Caps and rotors wear like any others, and moisture in the caps causes misfires.",
       "fixes": [
+        "Replace the internal distributor drive belt and fit a distributor vent kit",
         "Replace distributor caps and rotors (quality Bosch parts)",
         "Inspect and replace distributor drive gear if worn",
         "Check and clean all ignition connections",
@@ -95,7 +97,7 @@
         "notes": "DME trigger failure. Rebuilt units available."
       },
       "parts": [
-        { "name": "Distributor (Rebuilt)", "partNumber": "Various specialists", "price": "$300-600" },
+        { "name": "Distributor (Rebuilt)", "price": "$300-600" },
         { "name": "Rotor", "partNumber": "93060291600", "price": "$40-80" },
         { "name": "Distributor Cap", "partNumber": "93060291800", "price": "$50-100" }
       ],
@@ -124,7 +126,7 @@
       },
       "parts": [
         { "name": "Power Steering Pump", "partNumber": "96434704007", "price": "$300-500" },
-        { "name": "Steering Rack Seal Kit", "partNumber": "Various", "price": "$80-150" }
+        { "name": "Steering Rack Seal Kit", "price": "$80-150" }
       ],
       "difficulty": "Moderate"
     },
@@ -132,7 +134,7 @@
       "id": "g50-transmission",
       "title": "G50 Transmission Synchro Wear",
       "symptoms": "Grinding when shifting, difficulty engaging gears, blocked shifts, gear pop-out",
-      "description": "The 964 uses the Getrag G50 5-speed transmission. While generally robust, the synchros wear over time, especially second gear. Aggressive driving, improper fluid, and inadequate warm-up accelerate wear. A worn synchro will grind or block when trying to engage the affected gear.",
+      "description": "The 964 uses the Getrag G50 5-speed transmission. While generally tough, the synchros wear over time, especially second gear. Aggressive driving, improper fluid, and inadequate warm-up accelerate wear. A worn synchro will grind or block when trying to engage the affected gear.",
       "fixes": [
         "Regular transmission fluid changes (GL-4 or Swepco 201)",
         "Synchro replacement during transmission rebuild",
@@ -150,7 +152,7 @@
         "notes": "Synchros wear (especially 2nd). Use correct GL-4 fluid."
       },
       "parts": [
-        { "name": "GL-4 Gear Oil (Swepco 201)", "partNumber": "N/A", "price": "$40-80" },
+        { "name": "GL-4 Gear Oil (Swepco 201)", "price": "$40-80" },
         { "name": "Shift Coupler", "partNumber": "96442407500", "price": "$30-60" }
       ],
       "difficulty": "Advanced"
@@ -162,7 +164,7 @@
       "description": "The M64 engine can develop head stud issues, particularly the through-bolts that secure the heads to the case. These studs can pull out or stretch, especially if the engine has been overheated or has had incorrect torque applied. This is more common on Turbo models due to higher cylinder pressures.",
       "fixes": [
         "Head stud inspection during any engine work",
-        "Proper torque procedure critical for reassembly",
+        "Follow the torque procedure exactly on reassembly",
         "Helicoil repair for pulled threads (requires engine removal)",
         "Through-bolt style studs can be replaced with Dilavar studs",
         "Always use new hardware when reassembling"
@@ -177,7 +179,7 @@
         "notes": "Head stud failures on early 964. Requires engine removal."
       },
       "parts": [
-        { "name": "Head Stud Kit (Dilavar)", "partNumber": "Various aftermarket", "price": "$400-700" },
+        { "name": "Head Stud Kit (Dilavar)", "price": "$400-700" },
         { "name": "Head Gasket Set", "partNumber": "96410421500", "price": "$200-400" }
       ],
       "difficulty": "Advanced"
@@ -205,8 +207,8 @@
         "notes": "R12 to R134a conversion common."
       },
       "parts": [
-        { "name": "AC Compressor", "partNumber": "Various", "price": "$400-700" },
-        { "name": "R134a Conversion Kit", "partNumber": "Various", "price": "$100-200" }
+        { "name": "AC Compressor", "price": "$400-700" },
+        { "name": "R134a Conversion Kit", "price": "$100-200" }
       ],
       "difficulty": "Easy"
     },
@@ -234,7 +236,7 @@
       },
       "parts": [
         { "name": "DME Relay", "partNumber": "96461815100", "price": "$40-80" },
-        { "name": "Fuel Pump Relay", "partNumber": "Various", "price": "$30-60" }
+        { "name": "Fuel Pump Relay", "price": "$30-60" }
       ],
       "difficulty": "Moderate"
     }
@@ -243,7 +245,7 @@
     {
       "id": "suspension-refresh",
       "title": "Complete Suspension Refresh",
-      "description": "Full front and rear suspension rebuild for the 964, restoring proper handling to this torsion bar-equipped 911. Addresses worn bushings, shocks, and steering components common on 30+ year old examples.",
+      "description": "Bushings, dampers, and steering components on the first coil-sprung 911. Brings back the precision a 964 is supposed to have.",
       "difficulty": "Intermediate",
       "time": "12-16 hours",
       "cost": "$800-1,800",
@@ -258,8 +260,7 @@
         { "name": "Rear Trailing Arm Bushing (Each)", "oem": "96433114105", "aftermarket": "Elephant Racing, URO", "cost": "$40-80" },
         { "name": "Tie Rod End (Each)", "oem": "93034703202", "aftermarket": "Lemforder, Meyle", "cost": "$50-90" },
         { "name": "Sway Bar End Link (Front, Each)", "oem": "96434306902", "aftermarket": "URO, aftermarket", "cost": "$30-60" },
-        { "name": "Ball Joint (Each)", "oem": "96434153200", "aftermarket": "Lemforder, URO", "cost": "$60-100" },
-        { "name": "Spring Plate Bushing (Rear)", "oem": "91133353100", "aftermarket": "Elephant Racing", "cost": "$50-100" }
+        { "name": "Ball Joint (Each)", "oem": "96434153200", "aftermarket": "Lemforder, URO", "cost": "$60-100" }
       ],
       "tools": [
         "Floor jack and jack stands rated for vehicle weight",
@@ -276,40 +277,39 @@
       "steps": [
         "Raise vehicle and support securely on jack stands under reinforced jacking points.",
         "Remove all four wheels and set aside in safe location.",
-        "Begin with front suspension - disconnect sway bar end links (18mm).",
+        "Begin with front suspension—disconnect sway bar end links (18mm).",
         "Remove tie rod ends from steering knuckle using pickle fork.",
         "Support the strut assembly before disconnecting from knuckle.",
         "Remove strut pinch bolt and disconnect from knuckle.",
         "From above, remove the three 13mm nuts holding strut top mount.",
         "Remove strut assembly and replace with new unit or rebuild with new cartridge.",
-        "Mark and count turns on torsion bar adjusters for ride height reference.",
-        "Remove front control arms - note shim placement for camber settings.",
+        "Measure and record ride height at all four corners before you take anything apart.",
+        "Remove front control arms—note shim placement for camber settings.",
         "Press out old bushings and press in new ones, or replace entire arms.",
         "For rear suspension, remove trailing arm bolts and lower arms.",
-        "Replace trailing arm bushings using press - original bushings are rubber.",
-        "Spring plate bushings require removal of torsion bar cover plates.",
-        "Replace rear shock absorbers - access from wheel well opening.",
+        "Replace trailing arm bushings using press—original bushings are rubber.",
+        "Replace rear shock absorbers—access from wheel well opening.",
         "Reassemble in reverse order, torquing all fasteners to spec.",
-        "Front control arm bolts: 63 ft-lbs (85 Nm) - tighten with weight on wheels.",
+        "Front control arm bolts: 63 ft-lbs (85 Nm)—tighten with weight on wheels.",
         "Tie rod ends: 33 ft-lbs (45 Nm) with new cotter pins.",
         "Install wheels and torque lug bolts to 96 ft-lbs (130 Nm).",
         "Perform wheel alignment after completing all work."
       ],
       "tips": [
-        "The 964 uses torsion bars front and rear - handle with care and note settings.",
+        "Unlike earlier 911s, the 964 uses coil springs over the dampers at all four corners, so there are no torsion bars to index.",
         "Elephant Racing makes excellent polyurethane upgrades for street/track use.",
         "Original rubber bushings are adequate for street use with OEM handling feel.",
         "Mark all adjustment points and count turns for ride height reference.",
         "Consider Bilstein HD or Koni adjustables for improved handling.",
-        "Check CV boots while suspension is disassembled - common failure point.",
-        "The 964's power steering adds complexity - don't disturb hydraulic lines unless necessary."
+        "Check CV boots while suspension is disassembled—common failure point.",
+        "The 964's power steering adds complexity—don't disturb hydraulic lines unless necessary."
       ],
       "warnings": [
-        "Torsion bars are under significant tension - improper removal can cause injury.",
-        "The 964 weighs approximately 3,000 lbs - use appropriate jack stands.",
+        "Coil springs are under serious load. Only compress them with a proper strut spring compressor.",
+        "The 964 weighs approximately 3,000 lbs—use appropriate jack stands.",
         "Mark or photograph all adjustment settings before disassembly.",
         "Some fasteners may require heat due to corrosion on 30+ year old cars.",
-        "Power steering fluid can damage paint - protect body panels.",
+        "Power steering fluid can damage paint—protect body panels.",
         "Always tighten suspension fasteners with weight on wheels for proper bushing loading."
       ],
       "references": [
@@ -321,7 +321,7 @@
     {
       "id": "rust-repair",
       "title": "Rust Prevention and Repair",
-      "description": "Comprehensive guide to inspecting, preventing, and repairing rust on the 964. Covers common problem areas including rocker panels, floor pans, battery box, and suspension mounting points critical to this classic air-cooled 911.",
+      "description": "Rockers, floors, the battery box, and suspension mounting points. Galvanized, but worth checking properly at these prices.",
       "difficulty": "Intermediate to Advanced",
       "time": "8-40+ hours depending on severity",
       "cost": "$200-3,000+",
@@ -355,11 +355,11 @@
       "steps": [
         "Thoroughly clean undercarriage with pressure washer to expose rust areas.",
         "Raise vehicle and inspect all common rust locations systematically.",
-        "Check rocker panels by pressing firmly - soft spots indicate internal rust.",
-        "Inspect battery box area (front trunk) - acid damage is common here.",
+        "Check rocker panels by pressing firmly—soft spots indicate internal rust.",
+        "Inspect battery box area (front trunk)—acid damage is common here.",
         "Examine floor pans from inside with carpet removed and from below.",
-        "Check kidney areas where front fenders meet body - debris traps moisture.",
-        "Inspect jack point reinforcements - critical structural areas.",
+        "Check kidney areas where front fenders meet body—debris traps moisture.",
+        "Inspect jack point reinforcements—these are structural.",
         "Examine shock tower tops from inside engine compartment.",
         "For surface rust: sand to bare metal, treat with rust converter, prime and seal.",
         "For perforation rust: cut out affected area 1 inch beyond visible rust.",
@@ -375,19 +375,19 @@
         "Apply cavity wax to all hollow sections for ongoing protection."
       ],
       "tips": [
-        "The 964 is a unibody - structural rust must be properly repaired for safety.",
-        "Battery acid damage is common - inspect even if battery has been relocated.",
-        "Kidney area rust often starts invisibly and spreads - probe thoroughly.",
-        "Original factory underseal can trap moisture - remove damaged sections.",
+        "The 964 is a unibody—structural rust must be properly repaired for safety.",
+        "Battery acid damage is common—inspect even if battery has been relocated.",
+        "Kidney area rust often starts invisibly and spreads—probe thoroughly.",
+        "Original factory underseal can trap moisture—remove damaged sections.",
         "Quality reproduction panels are available from Restoration Design and others.",
-        "POR-15 requires proper surface preparation - follow instructions exactly.",
+        "POR-15 requires proper surface preparation—follow instructions exactly.",
         "Consider professional inspection before purchasing a 964 to assess rust severity.",
         "Cars from coastal or salt-road areas require extra diligence."
       ],
       "warnings": [
-        "Extensive rust repair can exceed the vehicle's value - assess carefully first.",
+        "Extensive rust repair can exceed the vehicle's value—assess carefully first.",
         "Welding near fuel lines and tank requires proper safety precautions.",
-        "Improper structural repairs can affect crash safety - consult professionals if unsure.",
+        "Improper structural repairs can affect crash safety—consult professionals if unsure.",
         "MIG welding thin body panels requires skill to avoid burn-through.",
         "Rust preventive coatings require proper ventilation and safety equipment.",
         "Disconnect battery and fuel system before any welding operations."
@@ -401,7 +401,7 @@
     {
       "id": "electrical-systems",
       "title": "Electrical System Restoration",
-      "description": "Complete guide to diagnosing and restoring the 964's electrical system. Covers the DME relay, fuel pump relay, ground connections, gauge cluster repair, and wiring harness inspection critical to reliable operation.",
+      "description": "The DME and fuel pump relays, grounds, the cluster, and the harness. The common 964 electrical faults in one place.",
       "difficulty": "Intermediate",
       "time": "4-16 hours depending on scope",
       "cost": "$150-800",
@@ -433,44 +433,44 @@
         "Torx and Phillips screwdrivers for interior panels"
       ],
       "steps": [
-        "Disconnect battery before any electrical work - negative terminal first.",
-        "Test battery condition - load test and check voltage (should be 12.6V resting).",
+        "Disconnect battery before any electrical work—negative terminal first.",
+        "Test battery condition—load test and check voltage (should be 12.6V resting).",
         "Clean and tighten all battery connections with terminal cleaner.",
-        "Test alternator output - should be 13.8-14.4V at idle.",
+        "Test alternator output—should be 13.8-14.4V at idle.",
         "Locate the relay panel in the front trunk area (fuse/relay carrier).",
-        "Identify DME relay position - pull and inspect for melted contacts.",
-        "Test DME relay with multimeter - replace if any doubt (common failure).",
-        "Inspect fuel pump relay - listen for click when key turns on.",
-        "Check and clean all ground connections - critical for proper operation.",
-        "Main engine ground is at transmission - clean and retorque.",
+        "Identify DME relay position—pull and inspect for melted contacts.",
+        "Test DME relay with multimeter—replace if any doubt (common failure).",
+        "Inspect fuel pump relay—listen for click when key turns on.",
+        "Check and clean all ground connections—most electrical faults start here.",
+        "Main engine ground is at transmission—clean and retorque.",
         "Secondary grounds on body should be cleaned to bare metal.",
         "Inspect wiring harness for rodent damage (common on stored cars).",
         "Check wiring in engine bay for heat damage and brittleness.",
         "For gauge cluster issues, remove cluster (Torx screws from behind wheel).",
         "Inspect and resolder cold solder joints on cluster circuit board.",
         "Replace failed capacitors in cluster (common cause of gauge failure).",
-        "Test all lighting circuits - replace failed bulbs.",
+        "Test all lighting circuits—replace failed bulbs.",
         "Inspect and clean multi-pin connectors throughout the vehicle.",
         "Apply dielectric grease to all cleaned connections.",
         "Reconnect battery and test all systems before closing up."
       ],
       "tips": [
         "The 964's DME relay is the most common cause of no-start conditions.",
-        "Keep a spare DME relay in the car - they can fail without warning.",
-        "Ground connections are critical - clean and protect with dielectric grease.",
+        "Keep a spare DME relay in the car—they can fail without warning.",
+        "Good grounds matter—clean and protect with dielectric grease.",
         "The gauge cluster capacitor kit is an inexpensive preventive repair.",
-        "Biodegradable wiring insulation attracts rodents - inspect stored cars carefully.",
-        "Consider upgrading to LED bulbs for instrument lighting - more reliable.",
-        "The 964 uses dual distributors - service both at the same time.",
+        "Biodegradable wiring insulation attracts rodents—inspect stored cars carefully.",
+        "Consider upgrading to LED bulbs for instrument lighting—more reliable.",
+        "The 964 uses dual distributors—service both at the same time.",
         "Document any wiring changes with photographs for future reference."
       ],
       "warnings": [
         "Always disconnect battery before working on electrical systems.",
-        "The 964 has airbags - wait 10 minutes after disconnecting battery before working near steering wheel.",
+        "The 964 has airbags—wait 10 minutes after disconnecting battery before working near steering wheel.",
         "Incorrect relay replacement can damage the DME computer.",
-        "Brittle wiring can crack when handled - be gentle with original harnesses.",
-        "Static electricity can damage electronic components - ground yourself.",
-        "Do not use excessive dielectric grease - it can attract dirt over time."
+        "Brittle wiring can crack when handled—be gentle with original harnesses.",
+        "Static electricity can damage electronic components—ground yourself.",
+        "Do not use excessive dielectric grease—it can attract dirt over time."
       ],
       "references": [
         { "name": "Pelican Parts 964 Electrical", "url": "https://www.pelicanparts.com/Porsche/catalog_911-64.htm" },
@@ -481,7 +481,7 @@
     {
       "id": "interior-restoration",
       "title": "Interior Restoration",
-      "description": "Comprehensive interior restoration guide for the 964. Covers leather seat repair, carpet replacement, door panel restoration, dashboard care, and HVAC system service to return the cabin to factory-fresh condition.",
+      "description": "Leather, carpet, door panels, dash, and HVAC. Originality matters on these cars, so repair before you replace.",
       "difficulty": "Intermediate",
       "time": "16-40 hours for complete restoration",
       "cost": "$500-3,000+",
@@ -515,47 +515,87 @@
       "steps": [
         "Remove seats by unbolting from floor (4 bolts per seat, 13mm).",
         "Disconnect any electrical connectors for power seats or seat sensors.",
-        "Inspect seat leather condition - clean with quality leather cleaner first.",
+        "Inspect seat leather condition—clean with quality leather cleaner first.",
         "For worn leather: apply Leatherique or similar conditioner system.",
         "For cracked/torn leather: professional reupholstery or cover kit replacement.",
         "Remove hog rings to separate leather from foam for cover replacement.",
         "Replace foam cushions if compressed or degraded.",
         "Install new covers using hog rings at attachment points.",
         "Remove door panels by removing screws behind handle pulls and popping clips.",
-        "Inspect door card backing - replace water barrier if damaged.",
+        "Inspect door card backing—replace water barrier if damaged.",
         "Clean or replace door panel fabric/leather as needed.",
         "Remove old carpet by removing sill plates and seat bases.",
         "Clean and treat floor pan with rust preventive if any bare metal.",
         "Install new carpet kit, starting from rear and working forward.",
         "Secure carpet with adhesive at edges and plastic retainers.",
-        "Clean dashboard with appropriate cleaner - avoid silicone products.",
+        "Clean dashboard with appropriate cleaner—avoid silicone products.",
         "Treat leather steering wheel with conditioner.",
         "Replace shift and e-brake boots if cracked or worn.",
-        "Service HVAC system - replace blower motor if noisy or weak.",
+        "Service HVAC system—replace blower motor if noisy or weak.",
         "Test all interior functions before final assembly."
       ],
       "tips": [
-        "The 964 interior is well-made - often cleaning and conditioning is sufficient.",
+        "The 964 interior is well-made—often cleaning and conditioning is sufficient.",
         "Leatherique's two-step system can revive severely dried leather.",
-        "Original colors may be difficult to match - consider full color change if needed.",
+        "Original colors may be difficult to match—consider full color change if needed.",
         "The 964 uses supple leather that responds well to conditioning.",
-        "Door panel clips are fragile - have extras on hand before removal.",
+        "Door panel clips are fragile—have extras on hand before removal.",
         "Steam cleaning is effective for carpet and fabric without chemicals.",
-        "Original floor mats are collectible - preserve if possible.",
-        "Sun visors often sag due to mirror weight - rebuild kits available."
+        "Original floor mats are collectible—preserve if possible.",
+        "Sun visors often sag due to mirror weight—rebuild kits available."
       ],
       "warnings": [
         "Airbag-equipped cars require care when removing steering wheel components.",
-        "Power seat wiring carries significant current - disconnect battery first.",
-        "Leather dyes can stain surrounding surfaces - mask carefully.",
+        "Power seat wiring carries significant current—disconnect battery first.",
+        "Leather dyes can stain surrounding surfaces—mask carefully.",
         "Silicone-based products leave residue that interferes with future repairs.",
-        "Heat gun can damage leather if held too close - keep moving.",
-        "Some adhesives require ventilation - work in well-ventilated area."
+        "Heat gun can damage leather if held too close—keep moving.",
+        "Some adhesives require ventilation—work in well-ventilated area."
       ],
       "references": [
         { "name": "Leatherique Leather Care", "url": "https://www.leatherique.com/" },
         { "name": "Pelican Parts 964 Interior", "url": "https://www.pelicanparts.com/Porsche/catalog_911-64.htm" },
         { "name": "Rennlist 964 Interior Forum", "url": "https://rennlist.com/forums/964-forum/" }
+      ]
+    },
+    {
+      "id": "distributor-belt-vent",
+      "title": "Distributor Belt and Vent Kit",
+      "description": "The 964's twin-plug distributor drives its second rotor with a small internal belt, and when that belt breaks the engine loses half its sparks. Replacing it and fitting a vent kit is cheap insurance.",
+      "difficulty": "Intermediate",
+      "time": "2-4 hours",
+      "cost": "$100-400",
+      "parts": [
+        { "name": "Distributor internal drive belt", "cost": "$30-80" },
+        { "name": "Distributor vent kit", "cost": "$50-150" },
+        { "name": "Distributor caps and rotors (both)", "aftermarket": "Bosch", "cost": "$80-200" }
+      ],
+      "tools": [
+        "Metric sockets and screwdrivers",
+        "Small picks",
+        "Marker for timing reference",
+        "Timing light"
+      ],
+      "steps": [
+        "Disconnect the battery.",
+        "Mark the distributor's position relative to the engine and note the plug lead order on both caps.",
+        "Remove both caps and the rotors.",
+        "Open the distributor to reach the internal belt. On many cars this is easiest with the distributor removed.",
+        "Inspect the belt for cracks and missing teeth, then replace it.",
+        "Fit the vent kit per its instructions so ozone and heat can escape.",
+        "Fit new rotors and caps, and reconnect the leads in the right order.",
+        "Refit the distributor to your marks, reconnect the battery, and check the timing with a light."
+      ],
+      "tips": [
+        "Some owners fit a broken-belt warning device. It's worth considering.",
+        "Replace caps and rotors on both sides at the same time."
+      ],
+      "warnings": [
+        "Getting the lead order wrong will cause misfires and backfires. Take a photo first."
+      ],
+      "references": [
+        { "name": "Rennlist forums", "url": "https://rennlist.com/forums/" },
+        { "name": "Pelican Parts tech articles", "url": "https://www.pelicanparts.com/techarticles/" }
       ]
     }
   ],
@@ -692,7 +732,7 @@
       {
         "name": "Rennlist 964 Classifieds",
         "url": "https://rennlist.com/forums/964-forum/",
-        "notes": "Premier air-cooled 911 community marketplace.",
+        "notes": "The main air-cooled 911 marketplace.",
         "specialties": [
           "964 Community",
           "Rare Parts"
@@ -722,7 +762,7 @@
       {
         "name": "Pelican Parts Tech Articles",
         "url": "https://www.pelicanparts.com/techarticles/Porsche_911-964/porsche_911_964_tech.htm",
-        "notes": "Comprehensive 964 DIY tech articles"
+        "notes": "Detailed 964 DIY tech articles"
       },
       { "name": "P101tv VIN Decoder", "url": "http://p101tv.com/", "notes": "Porsche VIN decoder and options codes" }
     ]
@@ -765,7 +805,7 @@
     {
       "id": "oil-change",
       "title": "Oil Change",
-      "description": "Complete oil and filter change procedure for the M64 air-cooled flat-six.",
+      "description": "Oil and filter on the M64, with the dry-sump checking procedure. Check the level hot, running, on level ground.",
       "difficulty": "Easy",
       "time": "45 min",
       "interval": "Every 3,000-5,000 miles",
@@ -778,13 +818,13 @@
         "Ramps or jack and jack stands"
       ],
       "steps": [
-        "Warm the engine for 2-3 minutes - oil flows better when warm.",
+        "Warm the engine for 2-3 minutes—oil flows better when warm.",
         "Drive onto ramps or raise and support the car safely.",
         "Locate the main oil drain plug on the bottom of the engine case.",
         "Position large drain pan and remove the 21mm drain plug.",
         "Allow oil to drain completely - 15-20 minutes for thorough drainage.",
         "The 964 has a spin-on oil filter located in the engine compartment.",
-        "Access the filter from the engine bay - it's on the left side of the engine.",
+        "Access the filter from the engine bay—it's on the left side of the engine.",
         "Using filter wrench, remove the old filter.",
         "Apply fresh oil to the new filter's gasket.",
         "Thread new filter on by hand until seated, then 3/4 turn more.",
@@ -804,7 +844,7 @@
     {
       "id": "brake-pads",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement on the 964's four-piston calipers.",
+      "description": "Pads on the four-piston calipers, front and rear.",
       "difficulty": "Easy",
       "time": "1-2 hours",
       "interval": "Every 20,000-35,000 miles",
@@ -823,7 +863,7 @@
         "Loosen lug bolts while the car is on the ground.",
         "Raise and support the car safely on jack stands.",
         "Remove wheel to access the caliper.",
-        "The 964 uses four-piston fixed calipers - pads slide out without removing caliper.",
+        "The 964 uses four-piston fixed calipers—pads slide out without removing caliper.",
         "Remove the pad retaining pins (cross pins through the caliper).",
         "Use a flathead screwdriver to push and slide the old pads out.",
         "Inspect rotor for scoring, cracks, or minimum thickness markings.",
@@ -840,13 +880,13 @@
         "Four-piston calipers require all pistons pushed back evenly.",
         "Open brake fluid reservoir before compressing pistons.",
         "Use quality pads from Pagid, Hawk, or Porsche OEM.",
-        "Bed new pads with gradual stops - avoid hard braking for 100 miles."
+        "Bed new pads with gradual stops—avoid hard braking for 100 miles."
       ]
     },
     {
       "id": "distributor-service",
       "title": "Distributor Cap and Rotor",
-      "description": "Replace distributor caps and rotors on both dual distributors.",
+      "description": "Caps and rotors on both distributors of the twin-plug M64. A failing distributor belt or vent is a known 964 weakness, so inspect them while you're there.",
       "difficulty": "Easy",
       "time": "1 hour",
       "interval": "Every 15,000-20,000 miles",
@@ -859,7 +899,7 @@
         "Dielectric grease"
       ],
       "steps": [
-        "The 964 has two distributors - one for each cylinder bank (1-3-5 and 2-4-6).",
+        "The 964 has two distributors—one for each cylinder bank (1-3-5 and 2-4-6).",
         "Locate both distributors at the rear of the engine, driven off the camshafts.",
         "Mark or photograph the spark plug wire positions before removal.",
         "Remove the spark plug wires by pulling on the boots, not the wires.",
@@ -868,7 +908,7 @@
         "Pull the old rotor straight off the distributor shaft.",
         "Remove the dust cover (if equipped) beneath the rotor.",
         "Install new dust cover.",
-        "Install new rotor - it only fits one way on the shaft.",
+        "Install new rotor—it only fits one way on the shaft.",
         "Install new distributor cap and secure with clips/screws.",
         "Apply dielectric grease to the inside of plug wire boots.",
         "Reconnect spark plug wires in the correct order.",
@@ -885,7 +925,7 @@
     {
       "id": "valve-adjustment",
       "title": "Valve Adjustment",
-      "description": "Check and adjust valve clearances on the M64 flat-six engine.",
+      "description": "Checking and setting valve clearances on the M64. Do it cold and take your time.",
       "difficulty": "Intermediate",
       "time": "2-3 hours",
       "interval": "Every 15,000 miles",
@@ -899,22 +939,22 @@
         "Flashlight"
       ],
       "steps": [
-        "Engine must be cold - valves expand when hot, changing clearances.",
+        "Engine must be cold—valves expand when hot, changing clearances.",
         "Remove the valve covers on both cylinder banks (six 10mm nuts each).",
         "Rotate engine to TDC on cylinder 1 using 24mm socket on crank pulley.",
         "At TDC #1, both lobes on cylinder 1 point away from the valves.",
         "Check intake clearance: 0.10mm (0.004in) cold.",
         "Check exhaust clearance: 0.10mm (0.004in) cold.",
         "To adjust: Loosen 13mm locknut, turn 8mm adjuster, retighten locknut.",
-        "Recheck clearance after tightening - locknut can shift adjustment.",
+        "Recheck clearance after tightening—locknut can shift adjustment.",
         "Rotate engine 120° to next firing order cylinder.",
-        "Firing order is 1-6-2-4-3-5 - adjust in this sequence.",
+        "Firing order is 1-6-2-4-3-5—adjust in this sequence.",
         "Check and adjust all 12 valves (6 intake, 6 exhaust).",
         "Clean valve cover mating surfaces and install new gaskets.",
         "Reinstall valve covers and torque to 11 ft-lbs (15 Nm)."
       ],
       "tips": [
-        "Slight drag on feeler gauge is correct - not too tight, not too loose.",
+        "Slight drag on feeler gauge is correct—not too tight, not too loose.",
         "Mark each valve as you adjust to track progress.",
         "Cylinder 1 is at the front right (passenger side, front).",
         "Too tight = burned valves; too loose = noisy, poor performance."
@@ -925,13 +965,13 @@
     "engine": [
       { "id": "964-valve-adjust", "name": "Perform valve adjustment", "description": "Air-cooled engines require periodic valve adjustment" },
       { "id": "964-chain-tensioners", "name": "Replace chain tensioners", "description": "Original hydraulic tensioners fail" },
-      { "id": "964-heat-exchangers", "name": "Inspect/replace heat exchangers", "description": "Critical for cabin heat, can rust through" },
+      { "id": "964-heat-exchangers", "name": "Inspect/replace heat exchangers", "description": "Important for cabin heat, can rust through" },
       { "id": "964-oil-lines", "name": "Replace oil cooler lines", "description": "Rubber lines deteriorate and leak" },
       { "id": "964-engine-reseal", "name": "Reseal engine case", "description": "Common oil leaks at case halves and covers" }
     ],
     "cooling": [
       { "id": "964-oil-cooler", "name": "Service engine oil cooler", "description": "Front-mounted, clean fins for proper cooling" },
-      { "id": "964-fan-motor", "name": "Inspect/rebuild engine fan motor", "description": "Critical for air-cooled engine cooling" },
+      { "id": "964-fan-motor", "name": "Inspect/rebuild engine fan motor", "description": "Important for air-cooled engine cooling" },
       { "id": "964-thermo-flaps", "name": "Inspect thermostat flaps", "description": "Control airflow to engine" }
     ],
     "fuel": [
@@ -962,11 +1002,11 @@
     ]
   },
   "buyersGuide": {
-    "overview": "The Porsche 964 (1989-1994) represents the first significant modernization of the 911 platform. While maintaining the classic air-cooled flat-six and rear-engine layout, the 964 added coil-spring suspension, power steering, ABS brakes, and available all-wheel drive (Carrera 4). The 3.6L engine produced 247-315 hp depending on variant. The 964 is often considered the last of the 'classic' 911s while offering more refinement than earlier models. Values have risen significantly as the air-cooled market has matured, making careful selection essential.",
+    "overview": "The 964 is where the 911 got modern underneath without losing what makes it a 911: coil springs, power steering, ABS, and the first Carrera 4, all wrapped around an air-cooled flat-six. Prices have climbed with the rest of the air-cooled market, which makes a thorough inspection non-negotiable. The known weak spots are oil leaks, the dual-mass flywheel, the twin-plug distributor, and head studs. Pay for a leak-down test and a specialist's eye before you commit.",
     "quickFacts": {
       "productionYears": "1989-1994",
       "totalProduced": "~63,000 worldwide",
-      "priceRange": "$50,000 - $200,000+",
+      "priceRange": "$50,000–$200,000+",
       "bestYears": "1992-1994 (refined production, fewer early issues)"
     },
     "variants": [
@@ -991,7 +1031,7 @@
       {
         "name": "Turbo (965)",
         "years": "1991-1994",
-        "description": "The iconic widebody with 3.3L (320 hp) or 3.6L (355 hp) turbocharged flat-six. Serious performance and serious maintenance.",
+        "description": "The widebody Turbo, with a 3.3L (320 hp) or later 3.6L (355 hp) flat-six. Seriously fast, and seriously expensive to maintain.",
         "desirability": "High"
       },
       {
@@ -1003,11 +1043,11 @@
     ],
     "inspectionPoints": [
       {
-        "category": "Engine (Critical)",
+        "category": "Engine (check first)",
         "items": [
           {
             "check": "Oil Leaks",
-            "detail": "Air-cooled 911s leak oil - some is normal. Check chain housings, valve covers, and case halves for excessive leaks.",
+            "detail": "Air-cooled 911s leak oil—some is normal. Check chain housings, valve covers, and case halves for excessive leaks.",
             "costIfBad": "$1,000-4,000 depending on location"
           },
           {
@@ -1037,12 +1077,12 @@
         "items": [
           {
             "check": "G50 Transmission",
-            "detail": "Test all gears. The G50 5-speed is robust but synchros can wear. Check for popping out of gear.",
+            "detail": "Test every gear. The G50 five-speed is tough, but synchros wear. Check that it doesn't pop out of gear.",
             "costIfBad": "$2,000-5,000 for rebuild"
           },
           {
             "check": "Clutch",
-            "detail": "Test engagement - should be smooth and grab mid-travel. Clutch replacement is labor-intensive.",
+            "detail": "Test engagement—should be smooth and grab mid-travel. Clutch replacement is labor-intensive.",
             "costIfBad": "$2,000-3,500"
           },
           { "check": "CV Joints", "detail": "Listen for clicking in turns. Check boot condition for tears.", "costIfBad": "$500-1,000" },
@@ -1087,19 +1127,19 @@
     "pricingGuide": {
       "asOf": "January 2026",
       "project": {
-        "price": "$35,000 - $60,000",
+        "price": "$35,000–$60,000",
         "description": "Cars needing engine work or with significant issues. Still valuable due to air-cooled premiums."
       },
       "driver": {
-        "price": "$60,000 - $90,000",
+        "price": "$60,000–$90,000",
         "description": "Running and driving with some needs. Good entry point for air-cooled ownership."
       },
       "excellent": {
-        "price": "$90,000 - $140,000",
+        "price": "$90,000–$140,000",
         "description": "Well-maintained Carrera 2 or C4 with documentation. Clean examples."
       },
       "concours": {
-        "price": "$140,000 - $250,000+",
+        "price": "$140,000–$250,000+",
         "description": "RS, RS America, or exceptional Turbo models. Low miles, fully documented."
       }
     },
@@ -1132,11 +1172,11 @@
     "expertTips": [
       "The 964 is the most affordable air-cooled 911 entry point currently",
       "Carrera 2 is preferred by drivers, C4 is more forgiving in bad weather",
-      "Oil leaks are normal - excessive leaks are not. Learn the difference.",
+      "Oil leaks are normal—excessive leaks are not. Learn the difference.",
       "Find a Porsche specialist or independent shop that knows air-cooled cars",
       "Factor in the cost of a pre-purchase inspection by an expert",
-      "RS America values have skyrocketed - verify authenticity carefully",
-      "The G50 transmission is robust and parts are available",
+      "RS America values have skyrocketed—verify authenticity carefully",
+      "The G50 gearbox is tough, and parts are easy to get",
       "Join Rennlist.com and Pelican Parts forums for excellent technical support",
       "Budget for consumables like motor mounts and suspension bushings",
       "A well-maintained 964 will last indefinitely with proper care"

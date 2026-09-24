@@ -3,6 +3,7 @@
   "brand": "Porsche",
   "fullName": "Porsche 986 Boxster",
   "series": "Boxster",
+  "tagline": "The mid-engined Porsche that helped keep the company going.",
   "years": "1996-2004",
   "engines": [
     "2.5L Flat-6 (M96)",
@@ -35,11 +36,11 @@
       "repairCosts": {
         "diy": "$500-1000",
         "shop": "$2000-3500",
-        "notes": "Critical preventive maintenance. Often combined with RMS and clutch."
+        "notes": "Preventive, and worth it. Often combined with RMS and clutch."
       },
       "parts": [
-        { "name": "IMS Bearing (Single Row Retrofit)", "partNumber": "LN Engineering", "price": "$400-600" },
-        { "name": "IMS Guardian/Magnetic Drain", "partNumber": "LN Engineering", "price": "$80-120" },
+        { "name": "IMS Bearing (Single Row Retrofit)", "brand": "LN Engineering", "price": "$400-600" },
+        { "name": "IMS Guardian/Magnetic Drain", "brand": "LN Engineering", "price": "$80-120" },
         { "name": "RMS (Rear Main Seal)", "partNumber": "99610322571", "price": "$30-60" }
       ],
       "relatedIssues": [
@@ -86,7 +87,7 @@
         "Upgrade to aluminum coolant pipe kit (permanent fix)",
         "Replace coolant tank and hoses at the same time",
         "Consider replacing thermostat during service",
-        "This is a preventive maintenance item - don't wait for failure"
+        "This is a preventive maintenance item—don't wait for failure"
       ],
       "sources": [
         { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
@@ -98,7 +99,7 @@
         "notes": "Replace with aluminum upgrade. Plastic pipes crack with age."
       },
       "parts": [
-        { "name": "Coolant Pipe Kit (Aluminum)", "partNumber": "Various aftermarket", "price": "$150-300" },
+        { "name": "Coolant Pipe Kit (Aluminum)", "price": "$150-300" },
         { "name": "Water Pump", "partNumber": "99610601157", "price": "$100-180" },
         { "name": "Thermostat", "partNumber": "99610601501", "price": "$30-60" }
       ],
@@ -128,7 +129,7 @@
       },
       "parts": [
         { "name": "Hydraulic Pump", "partNumber": "98656160901", "price": "$300-600" },
-        { "name": "Microswitch Set", "partNumber": "Various", "price": "$50-100" },
+        { "name": "Microswitch Set", "price": "$50-100" },
         { "name": "Hydraulic Fluid", "partNumber": "Pentosin CHF 11S", "price": "$25-40" }
       ],
       "difficulty": "Advanced"
@@ -156,7 +157,7 @@
       },
       "parts": [
         { "name": "AOS Assembly", "partNumber": "99610702558", "price": "$200-350" },
-        { "name": "AOS Hose Kit", "partNumber": "Various", "price": "$50-100" }
+        { "name": "AOS Hose Kit", "price": "$50-100" }
       ],
       "difficulty": "Moderate"
     },
@@ -164,7 +165,7 @@
       "id": "bore-scoring",
       "title": "Bore Scoring / Cylinder Wear",
       "symptoms": "Knocking noise from engine (cold or hot), increased oil consumption, smoke on startup, low compression",
-      "description": "Some M96 engines develop bore scoring - damage to the cylinder walls that allows oil to pass the piston rings. The cause is debated. Bore scoring can range from minor (cosmetic) to severe (engine rebuild required). It's more common on cars that sit for long periods or are driven short distances.",
+      "description": "Some M96 engines develop bore scoring—damage to the cylinder walls that allows oil to pass the piston rings. The cause is debated. Bore scoring can range from minor (cosmetic) to severe (engine rebuild required). It's more common on cars that sit for long periods or are driven short distances.",
       "fixes": [
         "Borescope inspection to assess cylinder condition",
         "For minor scoring: monitor and use quality oil",
@@ -182,8 +183,8 @@
         "notes": "Major engine work. Cylinder sleeving or replacement required."
       },
       "parts": [
-        { "name": "Cylinder Sleeving (per cyl)", "partNumber": "LN Engineering", "price": "$800-1200" },
-        { "name": "Used Engine", "partNumber": "N/A", "price": "$5000-10000" }
+        { "name": "Cylinder Sleeving (per cyl)", "brand": "LN Engineering", "price": "$800-1200" },
+        { "name": "Used Engine", "price": "$5000-10000" }
       ],
       "difficulty": "Advanced"
     },
@@ -223,7 +224,7 @@
     {
       "id": "suspension-refresh",
       "title": "Complete Suspension Refresh",
-      "description": "Full front and rear suspension rebuild for the 986 Boxster's MacPherson strut front and multi-link rear, restoring factory handling precision.",
+      "description": "Front struts, the multi-link rear, and every bushing in between. Restores the handling that makes a Boxster a Boxster.",
       "difficulty": "Intermediate",
       "time": "10-14 hours",
       "cost": "$600-1,200",
@@ -256,37 +257,37 @@
       "steps": [
         "Raise vehicle and support on jack stands at all four corners.",
         "Remove all wheels and photograph suspension for reference.",
-        "Soak all suspension bolts with penetrating oil - let sit 15 minutes.",
-        "Begin with front suspension - remove sway bar end links.",
+        "Soak all suspension bolts with penetrating oil—let sit 15 minutes.",
+        "Begin with front suspension—remove sway bar end links.",
         "Remove tie rod end nut (52 ft-lbs spec) and separate from knuckle using puller.",
         "Remove control arm bolts at crossmember (48 ft-lbs spec).",
-        "Remove ball joint from steering knuckle - may require separator.",
+        "Remove ball joint from steering knuckle—may require separator.",
         "For struts: mark camber position, remove upper mount nuts, remove strut pinch bolt (74 ft-lbs).",
-        "Use spring compressor to disassemble strut - replace mount/bearing.",
-        "Install new front components - torque control arm to crossmember 48 ft-lbs.",
+        "Use spring compressor to disassemble strut—replace mount/bearing.",
+        "Install new front components—torque control arm to crossmember 48 ft-lbs.",
         "Torque tie rod end to 52 ft-lbs with new cotter pin if castle nut.",
         "For rear suspension: support rear trailing arm before removing bolts.",
         "Remove upper and lower control arm bolts (63 ft-lbs spec).",
         "Press new bushings into trailing arm if replacing.",
-        "Install new control arms - torque at ride height.",
+        "Install new control arms—torque at ride height.",
         "Replace rear sway bar end links.",
-        "Check wheel bearings for play - replace if worn.",
-        "Install wheels and lower vehicle - bounce corners to settle.",
-        "Professional alignment mandatory - the 986 is sensitive to alignment."
+        "Check wheel bearings for play—replace if worn.",
+        "Install wheels and lower vehicle—bounce corners to settle.",
+        "Professional alignment mandatory—the 986 is sensitive to alignment."
       ],
       "tips": [
-        "The 986 uses non-serviceable control arm bushings - replace entire arm.",
-        "Front control arm ball joints are integrated - no separate replacement.",
+        "The 986 uses non-serviceable control arm bushings—replace entire arm.",
+        "Front control arm ball joints are integrated—no separate replacement.",
         "Check spring perches for cracks (common issue) while components are accessible.",
         "Consider upgraded polyurethane bushings for sharper handling.",
-        "The mid-engine layout means rear suspension is more critical for stability."
+        "The mid-engine layout means the rear suspension has more effect on stability."
       ],
       "warnings": [
-        "Spring compressors can be lethal if improperly used - follow instructions exactly.",
-        "Never strike ball joints directly - use proper separator tools.",
-        "The 986 is sensitive to alignment - incorrect specs cause poor handling.",
-        "Support the rear suspension properly - the engine is behind it.",
-        "Check for cracked spring perches before reassembly - safety item."
+        "Spring compressors can be lethal if improperly used—follow instructions exactly.",
+        "Never strike ball joints directly—use proper separator tools.",
+        "The 986 is sensitive to alignment—incorrect specs cause poor handling.",
+        "Support the rear suspension properly—the engine is behind it.",
+        "Check for cracked spring perches before reassembly—safety item."
       ],
       "references": [
         { "name": "Pelican Parts 986 Suspension Guide", "url": "https://www.pelicanparts.com/techarticles/Porsche-Boxster-986/" },
@@ -297,7 +298,7 @@
     {
       "id": "rust-repair",
       "title": "Rust Prevention and Inspection",
-      "description": "Comprehensive rust inspection guide for the 986 Boxster, which is generally rust-resistant but still requires attention in specific areas.",
+      "description": "The 986 is mostly rust-resistant, but clogged drains and water intrusion can still cause trouble. Where to look.",
       "difficulty": "Intermediate",
       "time": "4-16 hours",
       "cost": "$100-1,000+",
@@ -328,33 +329,33 @@
       "steps": [
         "The 986 is galvanized and generally rust-resistant, but inspection is important.",
         "Clean undercarriage thoroughly before inspection.",
-        "Inspect the front trunk area (frunk) for water intrusion - check drain tubes.",
-        "Check battery box area in front trunk - acid causes accelerated corrosion.",
-        "Inspect rocker panels by tapping with screwdriver - soft spots indicate rust.",
+        "Inspect the front trunk area (frunk) for water intrusion—check drain tubes.",
+        "Check battery box area in front trunk—acid causes accelerated corrosion.",
+        "Inspect rocker panels by tapping with screwdriver—soft spots indicate rust.",
         "Check door bottoms by opening doors fully and looking at drain holes.",
-        "Examine convertible top drain tubes - clogs cause interior water damage.",
+        "Examine convertible top drain tubes—clogs cause interior water damage.",
         "Open rear trunk and check around spare tire well for water accumulation.",
         "Inspect engine compartment seams for corrosion from salt/debris.",
         "Check suspension mounting points for any corrosion.",
         "For surface rust: wire brush to bare metal, apply rust converter.",
         "Prime with epoxy primer, then topcoat.",
         "For rust-through (rare): cut and weld patch panels.",
-        "Apply cavity wax to all hollow sections - rocker interiors, frame rails.",
+        "Apply cavity wax to all hollow sections—rocker interiors, frame rails.",
         "Clear all drain holes and tubes with compressed air.",
-        "Ensure trunk seals are intact - water leaks cause electrical problems.",
+        "Ensure trunk seals are intact—water leaks cause electrical problems.",
         "Document condition for future reference."
       ],
       "tips": [
-        "986s are generally rust-free due to galvanization - most issues are drain-related.",
-        "Front trunk water leaks damage the DME (engine computer) - a serious problem.",
-        "Convertible top drains clog with debris - clear them regularly.",
+        "986s are generally rust-free due to galvanization—most issues are drain-related.",
+        "Front trunk water leaks damage the DME (engine computer)—a serious problem.",
+        "Convertible top drains clog with debris—clear them regularly.",
         "Battery acid in the frunk causes the most common corrosion issues.",
         "Annual Fluid Film application provides excellent protection."
       ],
       "warnings": [
         "Water in the front trunk can destroy expensive electronics.",
-        "Don't ignore clogged drains - water damage is expensive to repair.",
-        "Battery acid is corrosive - neutralize with baking soda solution.",
+        "Don't ignore clogged drains—water damage is expensive to repair.",
+        "Battery acid is corrosive—neutralize with baking soda solution.",
         "Always wear respirator when grinding rust.",
         "Fire extinguisher must be accessible if welding."
       ],
@@ -367,7 +368,7 @@
     {
       "id": "electrical-restoration",
       "title": "Electrical System Service",
-      "description": "Complete electrical system service covering the 986's common issues including ignition coils, sensors, convertible top electronics, and DME protection.",
+      "description": "Coils, sensors, the top's electronics, and keeping water away from the DME.",
       "difficulty": "Intermediate",
       "time": "8-14 hours",
       "cost": "$300-800",
@@ -398,37 +399,37 @@
       ],
       "steps": [
         "Begin with diagnostic scan to identify stored fault codes.",
-        "Check for water intrusion in front trunk - the DME lives there.",
+        "Check for water intrusion in front trunk—the DME lives there.",
         "Clear front trunk drains if water is present.",
         "For ignition coil replacement: open engine lid for access.",
         "Disconnect coil electrical connectors, remove mounting bolts.",
         "Remove coils and inspect spark plug wells for oil (valve cover gasket leak).",
         "Install new coils, apply dielectric grease to boots.",
-        "For MAF sensor: located in air intake tube - two screws to remove.",
-        "Clean MAF element with MAF-specific cleaner only - no contact.",
+        "For MAF sensor: located in air intake tube—two screws to remove.",
+        "Clean MAF element with MAF-specific cleaner only—no contact.",
         "For O2 sensors: access from below on exhaust pipes.",
-        "Use O2 sensor socket and penetrating oil - threads can be seized.",
+        "Use O2 sensor socket and penetrating oil—threads can be seized.",
         "Apply anti-seize to new sensor threads.",
         "For window regulator: remove door panel and vapor barrier.",
         "Support glass with tape, unbolt regulator, install new unit.",
         "For convertible top issues: check hydraulic fluid level first.",
-        "Inspect microswitches at pivot points - common failure item.",
+        "Inspect microswitches at pivot points—common failure item.",
         "Clean all ground points with wire brush, apply dielectric grease.",
         "Clear fault codes and verify repairs."
       ],
       "tips": [
         "Many 986 electrical issues trace to water damage in the front trunk.",
-        "The DME (engine computer) is located in the frunk - protect it from water.",
+        "The DME (engine computer) is located in the frunk—protect it from water.",
         "Frameless windows require precise adjustment after regulator replacement.",
         "Convertible top issues are often just low hydraulic fluid.",
         "A Durametric or PIWIS scanner provides far more diagnostic info than generic OBD2."
       ],
       "warnings": [
-        "Water in the frunk can destroy the DME - several thousand dollars to replace.",
+        "Water in the frunk can destroy the DME—several thousand dollars to replace.",
         "Never use brake cleaner or carburetor cleaner on MAF sensors.",
-        "Convertible top microswitches can cause top to stop mid-cycle - dangerous.",
+        "Convertible top microswitches can cause top to stop mid-cycle—dangerous.",
         "Always disconnect battery before electrical work.",
-        "Support window glass before removing regulator - it will fall."
+        "Support window glass before removing regulator—it will fall."
       ],
       "references": [
         { "name": "Pelican Parts 986 Electrical", "url": "https://www.pelicanparts.com/techarticles/Porsche-Boxster-986/" },
@@ -439,7 +440,7 @@
     {
       "id": "interior-restoration",
       "title": "Interior Restoration",
-      "description": "Complete interior refresh for the 986 Boxster covering leather care, convertible top maintenance, and common wear items.",
+      "description": "Leather, the convertible top, and the common wear items.",
       "difficulty": "Intermediate",
       "time": "10-18 hours",
       "cost": "$300-1,000",
@@ -471,16 +472,16 @@
         "Document condition with photos before starting.",
         "For leather: clean thoroughly with dedicated leather cleaner.",
         "Address leather cracks with filler, sand smooth, apply dye.",
-        "Condition all leather surfaces - seats, door panels, dash.",
+        "Condition all leather surfaces—seats, door panels, dash.",
         "For convertible top fabric: clean with top-specific cleaner.",
         "Inspect for tears, worn spots, or separation at seams.",
         "Treat fabric with protectant to prevent UV damage.",
         "Check rear window for cloudiness or cracks (especially 1997-2002).",
-        "Replace rear window if cracked - heat gun removal from track.",
-        "Inspect and service convertible top mechanism - lubricate pivots.",
+        "Replace rear window if cracked—heat gun removal from track.",
+        "Inspect and service convertible top mechanism—lubricate pivots.",
         "Check hydraulic fluid level in reservoir (rear of car).",
         "For worn shift/e-brake boots: pry out old boot, press new one in.",
-        "Replace cabin air filter - located behind frunk carpet.",
+        "Replace cabin air filter—located behind frunk carpet.",
         "Clean HVAC vents with detailing brushes.",
         "Address any sticky interior surfaces with appropriate cleaner.",
         "Apply UV protectant to all exposed surfaces.",
@@ -488,22 +489,69 @@
       ],
       "tips": [
         "The 986's leather responds well to proper conditioning.",
-        "Early plastic rear windows crack easily - glass upgrade available.",
-        "Convertible top hydraulic fluid level is often overlooked - check it.",
+        "Early plastic rear windows crack easily—glass upgrade available.",
+        "Convertible top hydraulic fluid level is often overlooked—check it.",
         "Lubricate top mechanism pivot points every 6 months.",
         "Sport seats have aggressive bolsters that wear faster on driver side."
       ],
       "warnings": [
         "Never operate convertible top when wet or below freezing.",
-        "Use only top-specific cleaners - household products can damage fabric.",
+        "Use only top-specific cleaners—household products can damage fabric.",
         "Don't use silicone-based products on leather.",
-        "Be careful with trim clips - they become brittle with age.",
+        "Be careful with trim clips—they become brittle with age.",
         "Rear window removal requires care to avoid damaging the track."
       ],
       "references": [
         { "name": "Pelican Parts 986 Interior", "url": "https://www.pelicanparts.com/techarticles/Porsche-Boxster-986/" },
         { "name": "Leatherique Products", "url": "https://www.leatherique.com/" },
         { "name": "Planet-9 Convertible Top Guide", "url": "https://www.planet-9.com/" }
+      ]
+    },
+    {
+      "id": "ims-retrofit",
+      "title": "IMS Bearing Retrofit (with Clutch and RMS)",
+      "description": "The fix most 986 owners choose: replace the intermediate shaft bearing with a stronger retrofit, and do the clutch and rear main seal at the same time since the transmission is already out.",
+      "difficulty": "Advanced",
+      "time": "10-16 hours",
+      "cost": "$800-1,800",
+      "parts": [
+        { "name": "IMS retrofit bearing kit", "brand": "LN Engineering", "aftermarket": "LN Engineering", "cost": "$400-900" },
+        { "name": "Rear main seal (updated design)", "cost": "$30-60" },
+        { "name": "Clutch kit", "aftermarket": "Sachs, LUK", "cost": "$300-600" },
+        { "name": "IMS cover seals and bolts", "cost": "$30-60" }
+      ],
+      "tools": [
+        "Lift or tall jack stands",
+        "Transmission jack",
+        "Retrofit installation tool kit (rent or buy)",
+        "Cam locking tools",
+        "Torque wrench",
+        "Clean workspace"
+      ],
+      "steps": [
+        "Raise the car securely and remove the transmission.",
+        "Remove the clutch and flywheel.",
+        "Lock the camshafts and crankshaft with the correct tools before touching the IMS.",
+        "Remove the IMS cover and inspect the old bearing. Save it for inspection if you're curious about its condition.",
+        "Remove the old bearing with the kit's tools and install the retrofit bearing per the kit instructions.",
+        "Refit the IMS cover with new seals.",
+        "Install a new rear main seal.",
+        "Install the flywheel and new clutch. Torque to the value in the Torque Specs table on this page, or your workshop manual.",
+        "Refit the transmission, remove the locking tools, and rotate the engine by hand before starting.",
+        "Change the oil and cut open the filter after the first few hundred miles."
+      ],
+      "tips": [
+        "Some engines use a bearing that can't be removed without splitting the case. Check your engine number with the kit maker before you order.",
+        "An oil sample before and after the job tells you a lot about the engine's health."
+      ],
+      "warnings": [
+        "If the cams aren't locked, the timing can jump when the IMS is disturbed.",
+        "Metal in the old filter or on the magnetic plug means stop and investigate before retrofitting."
+      ],
+      "references": [
+        { "name": "LN Engineering", "url": "https://lnengineering.com/" },
+        { "name": "Rennlist forums", "url": "https://rennlist.com/forums/" },
+        { "name": "Planet-9", "url": "https://www.planet-9.com/" }
       ]
     }
   ],
@@ -512,7 +560,7 @@
       {
         "name": "FCP Euro",
         "url": "https://www.fcpeuro.com/Porsche-parts",
-        "notes": "Industry-leading lifetime replacement guarantee on all parts - excellent 986 coverage",
+        "notes": "Lifetime replacement guarantee on everything they sell—excellent 986 coverage",
         "specialties": [
           "Lifetime Warranty",
           "OE Quality"
@@ -524,7 +572,7 @@
       {
         "name": "Pelican Parts",
         "url": "https://www.pelicanparts.com/Porsche/catalog/986.htm",
-        "notes": "Comprehensive 986 parts catalog with detailed tech articles for every repair",
+        "notes": "Deep 986 parts catalog with detailed tech articles for every repair",
         "specialties": [
           "OEM Parts",
           "Tech Articles",
@@ -558,7 +606,7 @@
       {
         "name": "LN Engineering",
         "url": "https://lnengineering.com/",
-        "notes": "The go-to for IMS bearing solutions - their retrofit bearings are essential for 986 ownership peace of mind",
+        "notes": "The IMS bearing specialists. Their retrofit bearing is the fix most 986 owners choose.",
         "specialties": [
           "IMS Bearings",
           "Engine Components",
@@ -569,7 +617,7 @@
       {
         "name": "Flat 6 Innovations",
         "url": "https://flat6innovations.com/",
-        "notes": "986/996 performance specialist - IMS solutions, engine upgrades, and complete builds",
+        "notes": "986/996 performance specialist—IMS solutions, engine upgrades, and complete builds",
         "specialties": [
           "IMS Solutions",
           "Performance Builds",
@@ -708,7 +756,7 @@
       }
     ],
     "tools": [
-      { "name": "RealOEM Porsche", "url": "https://www.realoem.com/", "notes": "Parts diagrams and part number lookup - useful for cross-referencing" },
+      { "name": "RealOEM Porsche", "url": "https://www.realoem.com/", "notes": "Parts diagrams and part number lookup—useful for cross-referencing" },
       {
         "name": "Pelican Parts Tech Articles",
         "url": "https://www.pelicanparts.com/techarticles/Porsche-Boxster-986/",
@@ -717,7 +765,7 @@
       {
         "name": "LN Engineering 996 Torque Book",
         "url": "https://lnengineering.com/996-torque-book-fastening-specifications-for-porsche-911-type-996-automobile.html",
-        "notes": "Comprehensive torque specifications - applies to 986 M96 engine"
+        "notes": "Detailed torque specifications—applies to 986 M96 engine"
       }
     ]
   },
@@ -759,10 +807,10 @@
     {
       "id": "oil-change",
       "title": "Oil Change",
-      "description": "Complete oil and filter change for the M96 water-cooled flat-six.",
+      "description": "Oil and filter on the M96. Short oil change intervals are cheap insurance on this engine.",
       "difficulty": "Easy",
       "time": "30 min",
-      "interval": "Every 5,000 miles (critical for IMS health)",
+      "interval": "Every 5,000 miles (cheap IMS insurance)",
       "cost": "$50-80",
       "tools": [
         "19mm socket for drain plug",
@@ -772,14 +820,14 @@
         "Ramps or jack and jack stands"
       ],
       "steps": [
-        "Warm the engine for 2-3 minutes - warm oil drains better.",
+        "Warm the engine for 2-3 minutes—warm oil drains better.",
         "Drive onto ramps or raise and support the car safely.",
         "Locate the oil drain plug on the bottom of the engine.",
         "Position drain pan and remove the 19mm drain plug.",
-        "Allow oil to drain completely - at least 10 minutes.",
+        "Allow oil to drain completely—at least 10 minutes.",
         "The spin-on oil filter is located under the car near the oil pan.",
         "Using filter wrench, remove the old filter.",
-        "IMPORTANT: Cut open the old filter and inspect for metal debris (IMS warning).",
+        "Important: Cut open the old filter and inspect for metal debris (IMS warning).",
         "Apply fresh oil to the new filter's gasket.",
         "Thread new filter on by hand until seated, then 3/4 turn more.",
         "Replace the copper crush washer on the drain plug.",
@@ -789,7 +837,7 @@
         "Check level after 2 minutes and top off as needed."
       ],
       "tips": [
-        "CRITICAL: Cut open and inspect oil filter for metal debris - early IMS warning sign.",
+        "Important: Cut open and inspect oil filter for metal debris—early IMS warning sign.",
         "Frequent oil changes (every 5,000 miles) help protect the IMS bearing.",
         "Use quality synthetic oil meeting Porsche A40 specification.",
         "Consider periodic oil analysis to monitor engine wear."
@@ -798,7 +846,7 @@
     {
       "id": "convertible-top-lube",
       "title": "Convertible Top Maintenance",
-      "description": "Keep your Boxster top working smoothly with regular lubrication.",
+      "description": "Clean and lube the top's mechanism and seals so it keeps working and keeps the water out.",
       "difficulty": "Easy",
       "time": "30 min",
       "interval": "Every 6 months",
@@ -833,7 +881,7 @@
     {
       "id": "brake-pads",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement on the 986's Brembo calipers.",
+      "description": "Pads on the Brembo calipers, front and rear.",
       "difficulty": "Easy",
       "time": "1-2 hours",
       "interval": "Every 20,000-40,000 miles",
@@ -853,13 +901,13 @@
         "Remove wheel to access caliper.",
         "Disconnect brake pad wear sensor if equipped.",
         "Remove the two 7mm Allen caliper guide pin bolts.",
-        "Swing the caliper up and support it - don't let it hang by the hose.",
+        "Swing the caliper up and support it—don't let it hang by the hose.",
         "Remove the old pads from the caliper bracket.",
         "Inspect rotor for scoring, cracks, or minimum thickness.",
         "Clean pad contact surfaces with wire brush and brake cleaner.",
         "Open brake fluid reservoir, then compress caliper piston.",
         "Apply brake grease to pad backing plate contact points.",
-        "Install new pads - wear sensor slot goes on the inner pad.",
+        "Install new pads—wear sensor slot goes on the inner pad.",
         "Swing caliper down and reinstall guide pins to 22 ft-lbs (30 Nm).",
         "Reconnect wear sensor.",
         "Reinstall wheel and torque lugs to 96 ft-lbs (130 Nm).",
@@ -869,14 +917,14 @@
       "tips": [
         "The 986 uses Brembo four-piston calipers on S models.",
         "Open reservoir cap before compressing pistons.",
-        "Bed new pads with moderate stops - avoid hard braking initially.",
+        "Bed new pads with moderate stops—avoid hard braking initially.",
         "Consider upgrading to ceramic pads for less brake dust."
       ]
     },
     {
       "id": "spark-plugs",
       "title": "Spark Plug Replacement",
-      "description": "Replace spark plugs on the M96 flat-six engine.",
+      "description": "Plugs on the M96. Tight access, but doable in an hour.",
       "difficulty": "Easy",
       "time": "1 hour",
       "interval": "Every 30,000-40,000 miles",
@@ -892,12 +940,12 @@
       "steps": [
         "Allow engine to cool completely.",
         "Open the engine lid for access.",
-        "The M96 has 6 spark plugs - accessed from the top of the engine.",
+        "The M96 has 6 spark plugs—accessed from the top of the engine.",
         "Remove the coil packs by disconnecting connectors and removing bolts.",
         "Use compressed air to blow debris from the spark plug wells.",
         "Using spark plug socket and extension, remove each plug.",
         "Inspect old plugs for wear, fouling, or damage.",
-        "Check plug gap on new plugs - should be 0.7-0.8mm.",
+        "Check plug gap on new plugs—should be 0.7-0.8mm.",
         "Hand-thread new plugs to avoid cross-threading.",
         "Torque plugs to 18-22 ft-lbs (25-30 Nm).",
         "Apply dielectric grease to coil pack boots.",
@@ -906,7 +954,7 @@
       ],
       "tips": [
         "Use NGK or Bosch platinum/iridium plugs.",
-        "The 986 uses coil-on-plug ignition - no plug wires.",
+        "The 986 uses coil-on-plug ignition—no plug wires.",
         "Inspect coil boots for cracks while replacing plugs.",
         "Replace coils if you're experiencing misfires."
       ]
@@ -914,7 +962,7 @@
   ],
   "restorationItems": {
     "engine": [
-      { "id": "986-ims", "name": "Replace IMS bearing (upgraded)", "description": "LN Engineering ceramic hybrid bearing - most critical upgrade" },
+      { "id": "986-ims", "name": "Replace IMS bearing (upgraded)", "description": "LN Engineering ceramic hybrid bearing—the upgrade that matters most" },
       { "id": "986-rms", "name": "Replace rear main seal", "description": "Common oil leak point, do with IMS" },
       { "id": "986-aos", "name": "Replace AOS (Air/Oil Separator)", "description": "Causes rough idle and smoke when failed" },
       { "id": "986-bore-inspect", "name": "Borescope cylinder inspection", "description": "Check for bore scoring, especially cylinders 5 and 6" },
@@ -945,15 +993,15 @@
     "electrical": [
       { "id": "986-coil-packs", "name": "Replace ignition coil packs", "description": "Common cause of misfires" },
       { "id": "986-maf", "name": "Clean/replace MAF sensor", "description": "Causes running issues when dirty" },
-      { "id": "986-o2-sensors", "name": "Replace oxygen sensors", "description": "Four total - pre and post-cat" }
+      { "id": "986-o2-sensors", "name": "Replace oxygen sensors", "description": "Four total—pre and post-cat" }
     ]
   },
   "buyersGuide": {
-    "overview": "The Porsche 986 Boxster (1997-2004) was Porsche's entry-level sports car that helped save the company in the late 1990s. With its mid-engine layout, the Boxster offers exceptional handling balance that even the 911 can't match. The M96 flat-six shares components with the 996, meaning it also shares the IMS bearing concern. However, a well-maintained 986 represents one of the best sports car values available today - genuine Porsche driving dynamics at accessible prices.",
+    "overview": "The Boxster helped keep Porsche afloat in the late '90s, and it handles the way a mid-engined car should. Its M96 engine shares the 996's known problems: the intermediate shaft (IMS) bearing, rear main seal leaks, and bore scoring on some engines. That's also why they're so cheap. Buy one with IMS paperwork, or budget for the retrofit, and you'll have one of the best-handling cars you can get at this price.",
     "quickFacts": {
       "productionYears": "1997-2004",
       "totalProduced": "~164,000 worldwide",
-      "priceRange": "$10,000 - $40,000+",
+      "priceRange": "$10,000–$40,000+",
       "bestYears": "2003-2004 (most refined, improved IMS bearing)"
     },
     "variants": [
@@ -972,11 +1020,11 @@
     ],
     "inspectionPoints": [
       {
-        "category": "Engine (Critical)",
+        "category": "Engine (check first)",
         "items": [
           {
             "check": "IMS Bearing Status",
-            "detail": "THE critical concern. Intermediate shaft bearing can fail catastrophically. Check if upgraded or get oil analysis.",
+            "detail": "The big one. Intermediate shaft bearing can fail catastrophically. Check if upgraded or get oil analysis.",
             "costIfBad": "$2,000-3,500 for retrofit / Engine if it fails"
           },
           {
@@ -1012,7 +1060,7 @@
       {
         "category": "Transmission",
         "items": [
-          { "check": "Manual Transmission", "detail": "Test all gears. G86 5-speed is robust. Check for synchro wear.", "costIfBad": "$1,500-3,000" },
+          { "check": "Manual Transmission", "detail": "Test every gear. The five-speed is tough, but check for synchro wear.", "costIfBad": "$1,500-3,000" },
           { "check": "Tiptronic", "detail": "Check for smooth shifts. Less desirable but functional.", "costIfBad": "$2,000-4,000" },
           {
             "check": "Clutch",
@@ -1033,19 +1081,19 @@
     "pricingGuide": {
       "asOf": "January 2026",
       "project": {
-        "price": "$6,000 - $12,000",
+        "price": "$6,000–$12,000",
         "description": "Cars with unknown IMS status, high mileage, or significant issues."
       },
       "driver": {
-        "price": "$12,000 - $22,000",
+        "price": "$12,000–$22,000",
         "description": "Good running examples with known IMS status. Budget for maintenance."
       },
       "excellent": {
-        "price": "$22,000 - $35,000",
+        "price": "$22,000–$35,000",
         "description": "Well-maintained Boxster S with IMS retrofit and documentation."
       },
       "concours": {
-        "price": "$35,000 - $50,000+",
+        "price": "$35,000–$50,000+",
         "description": "Low-mileage Boxster S with complete history. Anniversary editions."
       }
     },
@@ -1076,7 +1124,7 @@
     "expertTips": [
       "The 986 Boxster is one of the best sports car values available today",
       "Mid-engine layout means better handling balance than the 911",
-      "IMS bearing retrofit is worthwhile insurance - factor it into purchase",
+      "IMS bearing retrofit is worthwhile insurance—factor it into purchase",
       "Boxster S is worth the premium over the base model",
       "Oil analysis before purchase can indicate IMS bearing health",
       "Maintenance costs are similar to a Japanese sports car when DIY",

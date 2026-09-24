@@ -3,6 +3,7 @@
   "brand": "Porsche",
   "fullName": "Porsche 997 911",
   "series": "911",
+  "tagline": "The 911 I'd recommend to most people.",
   "years": "2004-2012",
   "engines": [
     "3.6L Flat-6 M97 (997.1)",
@@ -21,12 +22,12 @@
       "id": "ims-bearing",
       "title": "IMS Bearing Failure (997.1 Only)",
       "symptoms": "Metallic debris in oil, grinding noise, catastrophic engine failure, oil pressure light",
-      "description": "The early 997.1 (2005-2008) with the M97 engine carries over the IMS bearing concern from the 996. However, only the base Carrera and Carrera S are affected - the Turbo and GT3 use different engines. The 997.2 (2009+) uses the 9A1 engine with a completely different design and has NO IMS bearing.",
+      "description": "The early 997.1 (2005-2008) with the M97 engine carries over the IMS bearing concern from the 996. However, only the base Carrera and Carrera S are affected—the Turbo and GT3 use different engines. The 997.2 (2009+) uses the 9A1 engine with a completely different design and has NO IMS bearing.",
       "fixes": [
         "997.1: Proactive IMS bearing replacement with upgraded bearing",
         "LN Engineering ceramic hybrid bearing upgrade",
         "Regular oil analysis to detect early wear",
-        "997.2: No IMS bearing - this is not a concern",
+        "997.2: No IMS bearing—this is not a concern",
         "Always verify engine type when purchasing a 997"
       ],
       "sources": [
@@ -39,8 +40,8 @@
         "notes": "997.1 only. 997.2 has different engine design."
       },
       "parts": [
-        { "name": "IMS Bearing Retrofit", "partNumber": "LN Engineering", "price": "$400-600" },
-        { "name": "IMS Solution Kit", "partNumber": "Flat Six Innovations", "price": "$1200-1500" }
+        { "name": "IMS Bearing Retrofit", "brand": "LN Engineering", "price": "$400-600" },
+        { "name": "IMS Solution Kit", "brand": "Flat Six Innovations", "price": "$1200-1500" }
       ],
       "relatedIssues": [
         { "vehicle": "986", "brand": "Porsche", "model": "986 Boxster", "issueId": "ims-bearing" },
@@ -71,7 +72,7 @@
         "notes": "997.1 M97 engine. Less common than 996 but still occurs."
       },
       "parts": [
-        { "name": "Cylinder Sleeving", "partNumber": "LN Engineering", "price": "$800-1200/cyl" }
+        { "name": "Cylinder Sleeving", "brand": "LN Engineering", "price": "$800-1200/cyl" }
       ],
       "difficulty": "Advanced"
     },
@@ -126,7 +127,7 @@
       "parts": [
         { "name": "PASM Damper (Front)", "partNumber": "99734305310", "price": "$500-900" },
         { "name": "PASM Damper (Rear)", "partNumber": "99733305310", "price": "$500-900" },
-        { "name": "Remanufactured PASM", "partNumber": "Various", "price": "$300-500" }
+        { "name": "Remanufactured PASM", "price": "$300-500" }
       ],
       "difficulty": "Moderate"
     },
@@ -152,7 +153,7 @@
         "notes": "Similar to 996/986. Aluminum upgrade recommended."
       },
       "parts": [
-        { "name": "Coolant Pipe Kit", "partNumber": "Various", "price": "$150-300" },
+        { "name": "Coolant Pipe Kit", "price": "$150-300" },
         { "name": "Water Pump", "partNumber": "99710601106", "price": "$120-200" }
       ],
       "difficulty": "Advanced"
@@ -179,7 +180,7 @@
         "notes": "997.2 DFI engines. Walnut blasting required."
       },
       "parts": [
-        { "name": "Walnut Media (bag)", "partNumber": "N/A", "price": "$30-50" },
+        { "name": "Walnut Media (bag)", "price": "$30-50" },
         { "name": "Intake Gaskets", "partNumber": "9A111023500", "price": "$20-40" }
       ],
       "difficulty": "Moderate"
@@ -214,7 +215,7 @@
     {
       "id": "suspension-refresh",
       "title": "Complete Suspension Refresh",
-      "description": "Full front and rear suspension rebuild for the 997's MacPherson strut front and multi-link rear suspension, restoring the legendary 911 handling.",
+      "description": "Front struts, the multi-link rear, and every bushing in between. Keeps a 997 feeling as tight as the day it left Stuttgart.",
       "difficulty": "Intermediate",
       "time": "12-16 hours",
       "cost": "$700-1,400",
@@ -250,22 +251,22 @@
         "Separate ball joint from knuckle.",
         "For struts: mark camber, remove upper mount nuts and pinch bolt (65 ft-lbs).",
         "Replace strut mount/bearing using spring compressor.",
-        "Install new front components - control arm to frame 89 ft-lbs.",
-        "Rear: The 997's rear is critical for handling.",
+        "Install new front components—control arm to frame 89 ft-lbs.",
+        "Rear: The 997's rear geometry has a big effect on handling.",
         "Support trailing arm, remove control arms (81 ft-lbs inner).",
-        "Replace thrust arms - affect toe settings.",
-        "CRITICAL: Check rear spring perches for cracks.",
+        "Replace thrust arms—affect toe settings.",
+        "Important: Check rear spring perches for cracks.",
         "Install wheels and lower vehicle.",
         "Professional alignment mandatory."
       ],
       "tips": [
-        "The 997 is rear-engine biased - suspension issues amplified.",
+        "The 997 is rear-engine biased—suspension issues amplified.",
         "997.1 and 997.2 use similar suspension despite different engines.",
         "Cracked spring perches are a known safety issue.",
-        "PASM dampers fail over time - consider replacement if leaking."
+        "PASM dampers fail over time—consider replacement if leaking."
       ],
       "warnings": [
-        "CRITICAL: Inspect rear spring perches for cracks.",
+        "Important: Inspect rear spring perches for cracks.",
         "Spring compressors are dangerous.",
         "Rear-engine weight distribution amplifies issues.",
         "Incorrect alignment causes rear instability at speed."
@@ -279,7 +280,7 @@
     {
       "id": "rust-repair",
       "title": "Rust Prevention and Inspection",
-      "description": "Comprehensive rust inspection guide for the 997, which is galvanized but requires attention to water intrusion areas and drain systems.",
+      "description": "A galvanized body, so this is about drains and water intrusion, not rot.",
       "difficulty": "Intermediate",
       "time": "4-14 hours",
       "cost": "$100-1,000",
@@ -302,9 +303,9 @@
         "Spray wand for cavity wax"
       ],
       "steps": [
-        "The 997 is fully galvanized - most issues are water-related.",
+        "The 997 is fully galvanized—most issues are water-related.",
         "Clean undercarriage before inspection.",
-        "Check front trunk for water - DME and fuse box located here.",
+        "Check front trunk for water—DME and fuse box located here.",
         "Clear front trunk drain tubes.",
         "Inspect battery box for acid corrosion.",
         "Check headlights for moisture (bi-xenon prone to seal failure).",
@@ -334,7 +335,7 @@
     {
       "id": "electrical-restoration",
       "title": "Electrical System Service",
-      "description": "Complete electrical service for the 997 covering ignition, sensors, headlight resealing, and common electrical issues.",
+      "description": "Ignition, sensors, headlight resealing, and the common electrical faults.",
       "difficulty": "Intermediate",
       "time": "10-16 hours",
       "cost": "$300-900",
@@ -375,7 +376,7 @@
       "tips": [
         "997 headlight condensation extremely common.",
         "997.1 vs 997.2 have different filter locations.",
-        "VarioCam solenoid issues cause rough running - use OEM.",
+        "VarioCam solenoid issues cause rough running—use OEM.",
         "PASM failures trigger warning light."
       ],
       "warnings": [
@@ -392,7 +393,7 @@
     {
       "id": "interior-restoration",
       "title": "Interior Restoration",
-      "description": "Complete interior refresh for the 997 covering leather care, common wear items, and PCM system maintenance.",
+      "description": "Leather, the common wear items, and the PCM system.",
       "difficulty": "Intermediate",
       "time": "10-20 hours",
       "cost": "$300-1,200",
@@ -420,9 +421,9 @@
         "Clean leather thoroughly with dedicated cleaner.",
         "Fill cracks with leather filler, sand smooth, apply dye.",
         "Condition all leather surfaces.",
-        "Assess steering wheel - rewrap if worn.",
+        "Assess steering wheel—rewrap if worn.",
         "Replace worn boots and knobs.",
-        "Replace cabin air filter - in frunk under carpet.",
+        "Replace cabin air filter—in frunk under carpet.",
         "Clean HVAC vents with brushes.",
         "Address seat bolster wear with dye or foam replacement.",
         "Replace door seals if wind noise present.",
@@ -436,12 +437,53 @@
       ],
       "warnings": [
         "Don't use silicone on leather.",
-        "Steering wheel has airbag - disconnect battery.",
+        "Steering wheel has airbag—disconnect battery.",
         "Be careful with aged trim clips."
       ],
       "references": [
         { "name": "Leatherique Products", "url": "https://www.leatherique.com/" },
         { "name": "Rennlist 997 Interior", "url": "https://rennlist.com/forums/997-forum/" }
+      ]
+    },
+    {
+      "id": "coolant-pipes",
+      "title": "Coolant Pipe Pinning (997 Turbo, GT2, and GT3)",
+      "description": "The Mezger engine in the 997.1 Turbo, GT2, and GT3 has coolant pipes glued into the crankcase, and the glue can let go, dumping coolant in seconds. Pinning or clamping the pipes stops it, for far less than the damage it prevents. Carrera owners can skip this one.",
+      "difficulty": "Advanced",
+      "time": "8-14 hours",
+      "cost": "$300-900",
+      "parts": [
+        { "name": "Coolant pipe pinning or clamping kit", "cost": "$100-400" },
+        { "name": "Porsche coolant", "cost": "$60-100" },
+        { "name": "O-rings and seals for disturbed fittings", "cost": "$20-60" }
+      ],
+      "tools": [
+        "Lift or tall jack stands",
+        "Drill and jig from the pinning kit",
+        "Drain pan",
+        "Coolant vacuum fill tool",
+        "Torque wrench"
+      ],
+      "steps": [
+        "Let the engine cool and drain the coolant.",
+        "Remove the components needed to reach the pipe joints on the engine, per the kit instructions.",
+        "Clean the pipe and housing around each joint.",
+        "Drill and pin, or fit the clamps, exactly as the kit's jig and instructions specify.",
+        "Refit everything you removed with new seals where needed.",
+        "Refill with a vacuum fill tool to avoid air pockets.",
+        "Run the engine to temperature, check for leaks, and recheck the level when cool."
+      ],
+      "tips": [
+        "Some specialists replace the pipes with welded or pinned versions during an engine-out service. It's the permanent fix.",
+        "Watch your coolant level weekly until the job is done."
+      ],
+      "warnings": [
+        "Drilling into the wrong spot can damage the engine. Follow the jig exactly or let a specialist do it.",
+        "If the low coolant light comes on, stop the car immediately."
+      ],
+      "references": [
+        { "name": "Rennlist forums", "url": "https://rennlist.com/forums/" },
+        { "name": "6speedonline", "url": "https://www.6speedonline.com/forums/" }
       ]
     }
   ],
@@ -450,7 +492,7 @@
       {
         "name": "FCP Euro",
         "url": "https://www.fcpeuro.com/Porsche-parts",
-        "notes": "Industry-leading lifetime replacement guarantee on all parts - excellent 997 coverage",
+        "notes": "Lifetime replacement guarantee on everything they sell—excellent 997 coverage",
         "specialties": [
           "Lifetime Warranty",
           "OE Quality"
@@ -462,7 +504,7 @@
       {
         "name": "Pelican Parts",
         "url": "https://www.pelicanparts.com/Porsche/catalog/997.htm",
-        "notes": "Comprehensive 997 parts catalog with tech articles for DIY repairs",
+        "notes": "Deep 997 parts catalog with tech articles for DIY repairs",
         "specialties": [
           "OEM Parts",
           "Tech Articles",
@@ -496,7 +538,7 @@
       {
         "name": "LN Engineering",
         "url": "https://lnengineering.com/",
-        "notes": "IMS bearing solutions for 997.1 (997.2 has no IMS concern) - essential for early models",
+        "notes": "IMS bearing retrofits for the 997.1 (the 997.2 doesn't have one)",
         "specialties": [
           "IMS Bearings",
           "Engine Components",
@@ -588,7 +630,7 @@
       {
         "name": "SharkWerks",
         "url": "https://www.sharkwerks.com/",
-        "notes": "Performance shop with extensive 997 expertise - known for GT car builds",
+        "notes": "Performance shop with extensive 997 expertise—known for GT car builds",
         "specialties": [
           "GT Models",
           "Engine Builds",
@@ -630,7 +672,7 @@
       {
         "name": "Rennlist 997 Classifieds",
         "url": "https://rennlist.com/forums/997-forum/",
-        "notes": "Active 997 community with dedicated marketplace - the first place to look",
+        "notes": "Active 997 community with dedicated marketplace—the first place to look",
         "specialties": [
           "997 Community",
           "Vetted Sellers"
@@ -659,7 +701,7 @@
       {
         "name": "Car-Part.com",
         "url": "https://www.car-part.com/",
-        "notes": "Search nationwide salvage yard inventory - good for body panels and glass",
+        "notes": "Search nationwide salvage yard inventory—good for body panels and glass",
         "specialties": [
           "Salvage Parts",
           "Body Panels"
@@ -677,11 +719,7 @@
         "url": "https://www.pelicanparts.com/techarticles/Porsche-997/",
         "notes": "Extensive library of 997 DIY articles with step-by-step instructions"
       },
-      {
-        "name": "Durametric Diagnostic",
-        "url": "https://www.durametric.com/",
-        "notes": "Essential diagnostic software for 997 - dealer-level access to all modules"
-      }
+      { "name": "Durametric Diagnostic", "url": "https://www.durametric.com/", "notes": "Diagnostic software for 997—dealer-level access to all modules" }
     ]
   },
   "torqueSpecs": {
@@ -734,10 +772,10 @@
     {
       "id": "oil-change",
       "title": "Oil Change",
-      "description": "Flat-6 oil and filter change procedure for both 997.1 and 997.2.",
+      "description": "Oil and filter on both the 997.1 and 997.2 engines.",
       "difficulty": "Easy",
       "time": "30 min",
-      "interval": "Every 5,000 miles (critical for 997.1 IMS health)",
+      "interval": "Every 5,000 miles (cheap IMS insurance on the 997.1)",
       "cost": "$60-90",
       "tools": [
         "19mm socket for drain plug",
@@ -748,33 +786,33 @@
         "Ramps or jack and jack stands"
       ],
       "steps": [
-        "Warm the engine for 2-3 minutes - warm oil drains more completely.",
+        "Warm the engine for 2-3 minutes—warm oil drains more completely.",
         "Drive onto ramps or safely raise and support the vehicle.",
         "Locate the oil drain plug on the bottom of the engine - 19mm socket.",
-        "Position drain pan and remove drain plug - oil capacity is approximately 9 quarts.",
+        "Position drain pan and remove drain plug—oil capacity is approximately 9 quarts.",
         "997.1: Remove spin-on oil filter using filter wrench (located on lower right of engine).",
         "997.2: Remove cartridge filter cap (76mm) and replace filter element.",
         "Allow oil to drain completely (10-15 minutes for thorough drain).",
-        "Install new drain plug washer and reinstall plug - torque to 37 ft-lbs (50 Nm).",
-        "997.1: Lubricate new filter gasket with oil and install - hand tight plus 3/4 turn.",
+        "Install new drain plug washer and reinstall plug—torque to 37 ft-lbs (50 Nm).",
+        "997.1: Lubricate new filter gasket with oil and install—hand tight plus 3/4 turn.",
         "997.2: Install new filter element and o-ring, torque cap to 19 ft-lbs (26 Nm).",
         "Lower vehicle and add approximately 8.5 quarts of 0W-40 full synthetic.",
         "Start engine and check for leaks around drain plug and filter.",
-        "Check oil level on the dashboard - add oil as needed to reach proper level.",
+        "Check oil level on the dashboard—add oil as needed to reach proper level.",
         "Reset oil service interval in instrument cluster."
       ],
       "tips": [
-        "CRITICAL for 997.1: Cut open and inspect oil filter for metal debris - this is an early IMS bearing warning sign.",
-        "997.2 has no IMS bearing concern - different engine design (9A1).",
+        "On a 997.1: cut open and inspect oil filter for metal debris—this is an early IMS bearing warning sign.",
+        "997.2 has no IMS bearing concern—different engine design (9A1).",
         "Use quality 0W-40 oil meeting Porsche A40 spec (Mobil 1, Motul, etc.).",
-        "Consider oil analysis for 997.1 cars - helps monitor IMS bearing health.",
-        "Don't overfill - these engines are sensitive to overfilling."
+        "Consider oil analysis for 997.1 cars—helps monitor IMS bearing health.",
+        "Don't overfill—these engines are sensitive to overfilling."
       ]
     },
     {
       "id": "brake-pads",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement on 997 with optional sensor replacement.",
+      "description": "Front and rear pads, and when to replace the wear sensors.",
       "difficulty": "Easy",
       "time": "1-2 hours",
       "interval": "Every 20,000-40,000 miles depending on driving style",
@@ -793,31 +831,31 @@
         "Raise and safely support vehicle on jack stands.",
         "Remove wheel bolts and wheel.",
         "Disconnect brake pad wear sensor connector if equipped.",
-        "Remove caliper guide pin bolts (7mm hex) - do not remove caliper bracket.",
-        "Swing caliper up and support it - do not let it hang by the brake hose.",
+        "Remove caliper guide pin bolts (7mm hex)—do not remove caliper bracket.",
+        "Swing caliper up and support it—do not let it hang by the brake hose.",
         "Remove old brake pads and anti-rattle clips.",
         "Clean caliper bracket and slide pins with brake cleaner and wire brush.",
         "Inspect rotors for wear, scoring, or minimum thickness.",
         "Front: Use brake piston tool to push piston back into caliper.",
-        "Rear: Use screw-in type retractor - piston must be rotated clockwise while pushing.",
+        "Rear: Use screw-in type retractor—piston must be rotated clockwise while pushing.",
         "Install new anti-rattle clips and apply thin film of brake lubricant to pad backing.",
         "Install new brake pads with wear sensor on inner pad (if equipped).",
         "Reinstall caliper and torque guide pins to 25 ft-lbs.",
-        "Connect wear sensor and reinstall wheel - torque bolts to 118 ft-lbs (160 Nm).",
+        "Connect wear sensor and reinstall wheel—torque bolts to 118 ft-lbs (160 Nm).",
         "Pump brake pedal several times before driving to seat pads."
       ],
       "tips": [
-        "Replace pads in axle pairs - never replace just one side.",
-        "Wear sensors are one-time use - replace if triggered or during pad change.",
+        "Replace pads in axle pairs—never replace just one side.",
+        "Wear sensors are one-time use—replace if triggered or during pad change.",
         "Bed in new pads properly: 10 moderate stops from 40 mph, then cool down.",
-        "PCCB (ceramic brake) cars have different procedure - do not attempt without proper training.",
+        "PCCB (ceramic brake) cars have different procedure—do not attempt without proper training.",
         "Open brake fluid reservoir cap before compressing pistons to prevent overflow."
       ]
     },
     {
       "id": "spark-plugs",
       "title": "Spark Plug Replacement",
-      "description": "Replace spark plugs on the M97 (997.1) or 9A1 (997.2) flat-six engine.",
+      "description": "Plugs on the M97 (997.1) or the DFI engine (997.2).",
       "difficulty": "Easy",
       "time": "1-1.5 hours",
       "interval": "Every 40,000 miles (997.1) or 60,000 miles (997.2)",
@@ -832,7 +870,7 @@
         "Compressed air or vacuum"
       ],
       "steps": [
-        "Allow engine to cool completely - spark plugs in aluminum heads must be replaced cold.",
+        "Allow engine to cool completely—spark plugs in aluminum heads must be replaced cold.",
         "Remove engine cover (if equipped) for better access.",
         "Disconnect electrical connector from each ignition coil.",
         "Remove coil pack mounting bolt (10mm) from each coil.",
@@ -842,23 +880,23 @@
         "Inspect removed plugs for wear pattern and electrode condition.",
         "Apply thin coat of anti-seize to new plug threads (avoid getting on electrode).",
         "Hand-thread new plugs to avoid cross-threading in aluminum heads.",
-        "Torque spark plugs to 22 ft-lbs (30 Nm) - do not overtighten.",
+        "Torque spark plugs to 22 ft-lbs (30 Nm)—do not overtighten.",
         "Apply dielectric grease inside coil boots to prevent sticking.",
         "Reinstall coil packs and torque mounting bolts to 7.5 ft-lbs (10 Nm).",
         "Reconnect coil electrical connectors until they click."
       ],
       "tips": [
-        "Use NGK or Bosch plugs - these engines are sensitive to plug brand and heat range.",
-        "997.1 uses different plugs than 997.2 - verify correct part number.",
-        "Never install plugs in a hot engine - risk of stripping aluminum threads.",
-        "Gap is preset from factory - do not adjust unless specified.",
+        "Use NGK or Bosch plugs—these engines are sensitive to plug brand and heat range.",
+        "997.1 uses different plugs than 997.2—verify correct part number.",
+        "Never install plugs in a hot engine—risk of stripping aluminum threads.",
+        "Gap is preset from factory—do not adjust unless specified.",
         "If a plug feels difficult to remove, apply penetrating oil and try again rather than forcing."
       ]
     },
     {
       "id": "serpentine-belt",
       "title": "Serpentine Belt Replacement",
-      "description": "Replace the accessory drive belt on the 997 flat-six engine.",
+      "description": "Replace the accessory drive belt and check the tensioner while it's off.",
       "difficulty": "Easy",
       "time": "30-45 min",
       "interval": "Every 40,000-60,000 miles or 4 years",
@@ -887,15 +925,15 @@
         "Replace tensioner and idler pulley if over 80,000 miles or showing wear.",
         "A squealing belt on startup usually indicates worn belt or tensioner.",
         "Always verify belt is fully seated in all pulley grooves before starting.",
-        "Keep hands clear when releasing tensioner - significant spring pressure.",
-        "Some owners do this from underneath the car - personal preference."
+        "Keep hands clear when releasing tensioner—significant spring pressure.",
+        "Some owners do this from underneath the car—personal preference."
       ]
     }
   ],
   "restorationItems": {
     "engine": [
       { "id": "997-ims", "name": "Replace IMS bearing (997.1 only)", "description": "M97 engine only - 997.2 has no IMS" },
-      { "id": "997-rms", "name": "Replace rear main seal", "description": "Common leak - combine with IMS work" },
+      { "id": "997-rms", "name": "Replace rear main seal", "description": "Common leak—combine with IMS work" },
       { "id": "997-aos", "name": "Replace AOS (Air/Oil Separator)", "description": "Causes rough idle and smoke" },
       { "id": "997-bore-inspect", "name": "Borescope cylinder inspection (997.1)", "description": "Check for bore scoring on M97 engines" },
       { "id": "997-dfi-injectors", "name": "Service direct fuel injectors (997.2)", "description": "Clean/replace if misfiring" }
@@ -931,18 +969,18 @@
     ]
   },
   "buyersGuide": {
-    "overview": "The Porsche 997 (2005-2012) is considered by many to be the best all-around 911 generation - modern enough to be reliable daily drivers yet traditional enough to maintain classic 911 character. The return to round headlights addressed 996 styling criticisms, while the drivetrain evolved from the M96/M97 to the improved 9A1 engine in 2009. The 997 offers exceptional performance (325-620 hp depending on variant) with better reliability than the 996. GT3, GT3 RS, and GT2 RS variants are among the most collectible modern Porsches.",
+    "overview": "The 997 is the 911 I'd recommend to most people: modern enough to use every day, traditional enough to still feel like a 911. The 2009 update (997.2) brought direct injection, PDK, and an engine without the intermediate shaft bearing, and it's the safer buy. A 997.1 with a clean bore scope and IMS paperwork is still a great car for less money. The GT3s, and the 997.1 Turbo, use the Mezger engine and live in their own market.",
     "quickFacts": {
       "productionYears": "2005-2012",
       "totalProduced": "~213,000 worldwide",
-      "priceRange": "$40,000 - $500,000+",
+      "priceRange": "$40,000–$500,000+",
       "bestYears": "2009-2012 (997.2 with improved DFI engine)"
     },
     "variants": [
       {
         "name": "Carrera / Carrera S (997.1)",
         "years": "2005-2008",
-        "description": "First generation with 3.6L (325 hp) or 3.8L (355 hp). Still has IMS bearing (improved design). The S is the sweet spot.",
+        "description": "The first generation, with a 3.6L (325 hp) or 3.8L (355 hp). It still has an IMS bearing, though a stronger design than the 996's. The S is the one I'd buy.",
         "desirability": "Medium"
       },
       {
@@ -972,7 +1010,7 @@
       {
         "name": "GT2 / GT2 RS",
         "years": "2008-2012",
-        "description": "Rear-wheel drive Turbo with 530-620 hp. The most extreme 997. GT2 RS is legendary.",
+        "description": "The rear-drive Turbo, with 530–620 hp. The most extreme 997, and the GT2 RS is one of the wildest 911s ever made.",
         "desirability": "High"
       }
     ],
@@ -1016,7 +1054,7 @@
       {
         "category": "Transmission",
         "items": [
-          { "check": "Manual Transmission", "detail": "Test all gears. G97 6-speed is robust and well-regarded.", "costIfBad": "$2,000-4,000" },
+          { "check": "Manual Transmission", "detail": "Test every gear. The six-speed manual is tough and well liked.", "costIfBad": "$2,000-4,000" },
           { "check": "PDK (997.2)", "detail": "Check for smooth operation and proper clutch wear. PDK requires fluid service.", "costIfBad": "$1,500-5,000" },
           { "check": "Clutch", "detail": "Manual car clutch engagement should be smooth. Dual-mass flywheel is expensive.", "costIfBad": "$3,000-5,000" }
         ]
@@ -1045,19 +1083,19 @@
     "pricingGuide": {
       "asOf": "January 2026",
       "project": {
-        "price": "$30,000 - $50,000",
+        "price": "$30,000–$50,000",
         "description": "997.1 cars with known engine issues. Salvage or high-mileage with concerns."
       },
       "driver": {
-        "price": "$50,000 - $80,000",
+        "price": "$50,000–$80,000",
         "description": "Good 997.1 Carrera S or entry 997.2 examples. Excellent daily drivers."
       },
       "excellent": {
-        "price": "$80,000 - $150,000",
+        "price": "$80,000–$150,000",
         "description": "Well-maintained 997.2 Carrera S/4S, clean Turbos, or lower mileage GT3."
       },
       "concours": {
-        "price": "$150,000 - $600,000+",
+        "price": "$150,000–$600,000+",
         "description": "GT3 RS, GT2, GT2 RS, or exceptional low-mileage examples."
       }
     },
@@ -1088,10 +1126,10 @@
     "expertTips": [
       "The 997.2 (2009+) is the safest buy with no IMS bearing concerns",
       "997.1 Turbo and GT3 use Mezger engine with excellent reliability",
-      "PDK is faster but manual is more engaging - choose based on preference",
+      "PDK is faster but manual is more engaging—choose based on preference",
       "The 997 Carrera S is one of the best all-around sports cars ever made",
       "GT3 and GT3 RS values have appreciated significantly",
-      "Avoid PCCB brakes if possible - replacement costs are extreme",
+      "Avoid PCCB brakes if possible—replacement costs are extreme",
       "Budget for proper PPI by a Porsche specialist before purchase",
       "Join Rennlist.com for excellent owner community and resources",
       "The 997 can be a reliable daily driver with proper maintenance",
