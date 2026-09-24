@@ -1,5 +1,6 @@
 ---
 layout: layouts/base.njk
+canonical: false
 title: Forum Category
 description: Browse threads in this forum category.
 ---
@@ -64,6 +65,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('category-name').textContent = category.name;
     document.getElementById('category-description').textContent = category.description || '';
     document.title = `${category.name} - ZRG Classics Forums`;
+    Forum.setCanonical();
 
     // Update new thread button
     newThreadBtn.href = `/forum/new/?category=${categorySlug}`;

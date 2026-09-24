@@ -5,6 +5,7 @@ pagination:
   size: 1
   alias: item
   addAllPagesToCollections: true
+schemaType: Article
 permalink: "/resources/{{ item.brand }}/{{ item.key }}/buying/"
 ---
 {% set vehicleData = vehicles[item.key] %}
@@ -26,6 +27,8 @@ permalink: "/resources/{{ item.brand }}/{{ item.key }}/buying/"
 </nav>
 
 <main class="resource-content">
+    {% include "partials/byline.njk" %}
+
     {% set vehicle = vehicleData %}
     {% include "partials/buyers-guide.njk" %}
 

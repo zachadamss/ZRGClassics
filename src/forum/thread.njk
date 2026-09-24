@@ -1,5 +1,6 @@
 ---
 layout: layouts/base.njk
+canonical: false
 title: Thread
 description: View thread discussion.
 ---
@@ -84,6 +85,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Update page
     document.title = `${currentThread.title} - ZRG Classics Forums`;
+    Forum.setCanonical();
     document.getElementById('thread-title-crumb').textContent = currentThread.title.substring(0, 50) + (currentThread.title.length > 50 ? '...' : '');
     document.getElementById('category-link').textContent = currentThread.category.name;
     document.getElementById('category-link').href = `/forum/${currentThread.category.slug}/`;

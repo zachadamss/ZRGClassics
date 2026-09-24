@@ -3,14 +3,19 @@ permalink: /sitemap.xml
 eleventyExcludeFromCollections: true
 ---
 {#- Built from the page collection plus vehicle data, so new pages show up
-    automatically. Pages with robots: noindex are left out. -#}
+    automatically. Pages with robots: noindex are left out. lastmod comes from
+    each car's lastReviewed date; file dates are reset on every deploy, so
+    other pages omit it rather than report a misleading date. -#}
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {%- for entry in collections.all %}
 {%- if entry.url and not entry.data.robots and not entry.url.endsWith('.xml') and not entry.url.endsWith('.txt') and not entry.url.endsWith('.json') and not entry.url.startsWith('/account/') and not entry.url.startsWith('/forum/thread') and not entry.url.startsWith('/forum/category') %}
     <url>
         <loc>{{ site.url }}{{ entry.url }}</loc>
-        <lastmod>{{ entry.date.toISOString().slice(0, 10) }}</lastmod>
+        {%- set v = vehicles[entry.data.vehicle] if entry.data.vehicle else null %}
+        {%- if v and v.lastReviewed %}
+        <lastmod>{{ v.lastReviewed }}</lastmod>
+        {%- endif %}
     </url>
 {%- endif %}
 {%- endfor %}

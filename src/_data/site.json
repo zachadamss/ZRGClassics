@@ -11,5 +11,11 @@
     "twitter": "",
     "instagram": "https://www.instagram.com/zrgclassics"
   },
-  "twitterHandle": "@zrgclassics"
+  "twitterHandle": "@zrgclassics",
+  "author": {
+    "name": "Zach",
+    "url": "/about/",
+    "jobTitle": "Independent mechanic",
+    "homeLocation": "Pacific Northwest"
+  }
 }
