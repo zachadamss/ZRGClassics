@@ -968,7 +968,7 @@ a:hover {
 .logo-wheel { fill: #14243A; }            /* tires */
 .logo-rim { fill: #C9D3DE; }
 .logo-hub { fill: #14243A; }
-.logo-hole { fill: #14243A; }            /* RS Cup wheel openings */
+.logo-hole { fill: #14243A; stroke: #14243A; stroke-width: 0.5; stroke-linejoin: round; }  /* RS Cup wheel openings, rounded corners */
 [data-theme="dark"] .logo-wheel { fill: #2B3B51; }  /* a shade off the dark header so the tires still show */
 
 .logo-word {
