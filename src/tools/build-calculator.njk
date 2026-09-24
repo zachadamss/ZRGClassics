@@ -90,7 +90,7 @@ extraScripts:
         <div id="categories-container">
             <!-- Engine -->
             <section class="calc-section category-section" data-category="engine">
-                <div class="category-header" onclick="toggleCategory('engine')">
+                <div class="category-header" data-toggle-category="engine" role="button" tabindex="0" aria-expanded="true" aria-controls="engine-content">
                     <h2><span class="toggle-icon">▼</span> Engine</h2>
                     <span class="category-total" id="engine-total">$0</span>
                 </div>
@@ -171,13 +171,13 @@ extraScripts:
                             </tr>
                         </tbody>
                     </table>
-                    <button type="button" class="add-custom-btn" onclick="addCustomItem('engine')">+ Add Custom Item</button>
+                    <button type="button" class="add-custom-btn" data-add-item="engine">+ Add Custom Item</button>
                 </div>
             </section>
 
             <!-- Transmission -->
             <section class="calc-section category-section" data-category="transmission">
-                <div class="category-header" onclick="toggleCategory('transmission')">
+                <div class="category-header" data-toggle-category="transmission" role="button" tabindex="0" aria-expanded="true" aria-controls="transmission-content">
                     <h2><span class="toggle-icon">▼</span> Transmission</h2>
                     <span class="category-total" id="transmission-total">$0</span>
                 </div>
@@ -244,13 +244,13 @@ extraScripts:
                             </tr>
                         </tbody>
                     </table>
-                    <button type="button" class="add-custom-btn" onclick="addCustomItem('transmission')">+ Add Custom Item</button>
+                    <button type="button" class="add-custom-btn" data-add-item="transmission">+ Add Custom Item</button>
                 </div>
             </section>
 
             <!-- Suspension -->
             <section class="calc-section category-section" data-category="suspension">
-                <div class="category-header" onclick="toggleCategory('suspension')">
+                <div class="category-header" data-toggle-category="suspension" role="button" tabindex="0" aria-expanded="true" aria-controls="suspension-content">
                     <h2><span class="toggle-icon">▼</span> Suspension</h2>
                     <span class="category-total" id="suspension-total">$0</span>
                 </div>
@@ -331,13 +331,13 @@ extraScripts:
                             </tr>
                         </tbody>
                     </table>
-                    <button type="button" class="add-custom-btn" onclick="addCustomItem('suspension')">+ Add Custom Item</button>
+                    <button type="button" class="add-custom-btn" data-add-item="suspension">+ Add Custom Item</button>
                 </div>
             </section>
 
             <!-- Brakes -->
             <section class="calc-section category-section" data-category="brakes">
-                <div class="category-header" onclick="toggleCategory('brakes')">
+                <div class="category-header" data-toggle-category="brakes" role="button" tabindex="0" aria-expanded="true" aria-controls="brakes-content">
                     <h2><span class="toggle-icon">▼</span> Brakes</h2>
                     <span class="category-total" id="brakes-total">$0</span>
                 </div>
@@ -425,13 +425,13 @@ extraScripts:
                             </tr>
                         </tbody>
                     </table>
-                    <button type="button" class="add-custom-btn" onclick="addCustomItem('brakes')">+ Add Custom Item</button>
+                    <button type="button" class="add-custom-btn" data-add-item="brakes">+ Add Custom Item</button>
                 </div>
             </section>
 
             <!-- Interior -->
             <section class="calc-section category-section" data-category="interior">
-                <div class="category-header" onclick="toggleCategory('interior')">
+                <div class="category-header" data-toggle-category="interior" role="button" tabindex="0" aria-expanded="true" aria-controls="interior-content">
                     <h2><span class="toggle-icon">▼</span> Interior</h2>
                     <span class="category-total" id="interior-total">$0</span>
                 </div>
@@ -505,13 +505,13 @@ extraScripts:
                             </tr>
                         </tbody>
                     </table>
-                    <button type="button" class="add-custom-btn" onclick="addCustomItem('interior')">+ Add Custom Item</button>
+                    <button type="button" class="add-custom-btn" data-add-item="interior">+ Add Custom Item</button>
                 </div>
             </section>
 
             <!-- Body & Paint -->
             <section class="calc-section category-section" data-category="body">
-                <div class="category-header" onclick="toggleCategory('body')">
+                <div class="category-header" data-toggle-category="body" role="button" tabindex="0" aria-expanded="true" aria-controls="body-content">
                     <h2><span class="toggle-icon">▼</span> Body & Paint</h2>
                     <span class="category-total" id="body-total">$0</span>
                 </div>
@@ -592,13 +592,13 @@ extraScripts:
                             </tr>
                         </tbody>
                     </table>
-                    <button type="button" class="add-custom-btn" onclick="addCustomItem('body')">+ Add Custom Item</button>
+                    <button type="button" class="add-custom-btn" data-add-item="body">+ Add Custom Item</button>
                 </div>
             </section>
 
             <!-- Electrical -->
             <section class="calc-section category-section" data-category="electrical">
-                <div class="category-header" onclick="toggleCategory('electrical')">
+                <div class="category-header" data-toggle-category="electrical" role="button" tabindex="0" aria-expanded="true" aria-controls="electrical-content">
                     <h2><span class="toggle-icon">▼</span> Electrical</h2>
                     <span class="category-total" id="electrical-total">$0</span>
                 </div>
@@ -665,13 +665,13 @@ extraScripts:
                             </tr>
                         </tbody>
                     </table>
-                    <button type="button" class="add-custom-btn" onclick="addCustomItem('electrical')">+ Add Custom Item</button>
+                    <button type="button" class="add-custom-btn" data-add-item="electrical">+ Add Custom Item</button>
                 </div>
             </section>
 
             <!-- Cooling -->
             <section class="calc-section category-section" data-category="cooling">
-                <div class="category-header" onclick="toggleCategory('cooling')">
+                <div class="category-header" data-toggle-category="cooling" role="button" tabindex="0" aria-expanded="true" aria-controls="cooling-content">
                     <h2><span class="toggle-icon">▼</span> Cooling System</h2>
                     <span class="category-total" id="cooling-total">$0</span>
                 </div>
@@ -731,13 +731,13 @@ extraScripts:
                             </tr>
                         </tbody>
                     </table>
-                    <button type="button" class="add-custom-btn" onclick="addCustomItem('cooling')">+ Add Custom Item</button>
+                    <button type="button" class="add-custom-btn" data-add-item="cooling">+ Add Custom Item</button>
                 </div>
             </section>
 
             <!-- Fuel System -->
             <section class="calc-section category-section" data-category="fuel">
-                <div class="category-header" onclick="toggleCategory('fuel')">
+                <div class="category-header" data-toggle-category="fuel" role="button" tabindex="0" aria-expanded="true" aria-controls="fuel-content">
                     <h2><span class="toggle-icon">▼</span> Fuel System</h2>
                     <span class="category-total" id="fuel-total">$0</span>
                 </div>
@@ -797,13 +797,13 @@ extraScripts:
                             </tr>
                         </tbody>
                     </table>
-                    <button type="button" class="add-custom-btn" onclick="addCustomItem('fuel')">+ Add Custom Item</button>
+                    <button type="button" class="add-custom-btn" data-add-item="fuel">+ Add Custom Item</button>
                 </div>
             </section>
 
             <!-- Exhaust -->
             <section class="calc-section category-section" data-category="exhaust">
-                <div class="category-header" onclick="toggleCategory('exhaust')">
+                <div class="category-header" data-toggle-category="exhaust" role="button" tabindex="0" aria-expanded="true" aria-controls="exhaust-content">
                     <h2><span class="toggle-icon">▼</span> Exhaust</h2>
                     <span class="category-total" id="exhaust-total">$0</span>
                 </div>
@@ -863,13 +863,13 @@ extraScripts:
                             </tr>
                         </tbody>
                     </table>
-                    <button type="button" class="add-custom-btn" onclick="addCustomItem('exhaust')">+ Add Custom Item</button>
+                    <button type="button" class="add-custom-btn" data-add-item="exhaust">+ Add Custom Item</button>
                 </div>
             </section>
 
             <!-- Wheels & Tires -->
             <section class="calc-section category-section" data-category="wheels">
-                <div class="category-header" onclick="toggleCategory('wheels')">
+                <div class="category-header" data-toggle-category="wheels" role="button" tabindex="0" aria-expanded="true" aria-controls="wheels-content">
                     <h2><span class="toggle-icon">▼</span> Wheels & Tires</h2>
                     <span class="category-total" id="wheels-total">$0</span>
                 </div>
@@ -922,7 +922,7 @@ extraScripts:
                             </tr>
                         </tbody>
                     </table>
-                    <button type="button" class="add-custom-btn" onclick="addCustomItem('wheels')">+ Add Custom Item</button>
+                    <button type="button" class="add-custom-btn" data-add-item="wheels">+ Add Custom Item</button>
                 </div>
             </section>
         </div>

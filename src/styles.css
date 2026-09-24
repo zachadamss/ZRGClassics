@@ -74,6 +74,11 @@
     --primary-color: var(--text-color);   /* headings */
     --accent-color: var(--gulf-orange);
     --success-color: #22A559;
+    /* Service status: told apart by lightness, orange only when something is overdue */
+    --status-ok: var(--border-strong);
+    --status-soon: var(--link-blue);
+    --status-over: var(--accent-strong);
+    --status-over-text: var(--accent-text);
     --warning-color: #F5A623;
     --danger-color: #DC3545;
 
@@ -1746,7 +1751,7 @@ a.btn-secondary:hover {
 }
 
 .btn-icon:hover {
-    color: var(--navy);
+    color: var(--text-color);
 }
 
 .btn-icon.delete-maintenance:hover,
@@ -1814,7 +1819,7 @@ button:hover {
 
 .modal-header h3 {
     margin: 0;
-    color: var(--navy);
+    color: var(--text-color);
 }
 
 .modal-close {
@@ -1828,7 +1833,7 @@ button:hover {
 }
 
 .modal-close:hover {
-    color: var(--navy);
+    color: var(--text-color);
 }
 
 .modal-body {
@@ -1942,7 +1947,7 @@ button:hover {
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
-    color: var(--navy);
+    color: var(--text-color);
     font-weight: 500;
     font-size: 0.9rem;
 }
@@ -2708,7 +2713,7 @@ input:focus, textarea:focus, select:focus {
 #search-btn {
     padding: 1rem 1.5rem;
     background-color: var(--gulf-blue);
-    color: var(--navy);
+    color: var(--text-color);
     border: none;
     border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
     cursor: pointer;
@@ -2770,7 +2775,7 @@ input:focus, textarea:focus, select:focus {
 
 .filter-btn.active {
     background-color: var(--gulf-blue);
-    color: var(--navy);
+    color: var(--text-color);
     border-color: var(--gulf-blue);
 }
 
@@ -3462,7 +3467,7 @@ input:focus, textarea:focus, select:focus {
 
 .quick-links a:hover {
     background-color: var(--gulf-blue);
-    color: var(--navy);
+    color: var(--text-color);
     transform: translateY(-1px);
     box-shadow: 0 2px 8px rgba(125, 207, 234, 0.3);
 }
@@ -3470,7 +3475,7 @@ input:focus, textarea:focus, select:focus {
 /* Active state — set by JS IntersectionObserver based on scroll position */
 .quick-links a.active {
     background-color: var(--gulf-blue);
-    color: var(--navy);
+    color: var(--text-color);
 }
 
 [data-theme="dark"] .quick-links a {
@@ -6359,7 +6364,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .tracker-header h1 {
-    color: var(--navy);
+    color: var(--text-color);
     margin-bottom: 0.5rem;
 }
 
@@ -6385,7 +6390,7 @@ input:focus, textarea:focus, select:focus {
 
 .garage-section .section-header h2 {
     margin: 0;
-    color: var(--navy);
+    color: var(--text-color);
 }
 
 /* Vehicle Card */
@@ -6425,22 +6430,22 @@ input:focus, textarea:focus, select:focus {
     display: block;
     font-size: 1rem;
     font-weight: 600;
-    color: var(--navy);
+    color: var(--text-color);
 }
 
 .status-ok {
-    background: rgba(34, 165, 89, 0.15);
-    color: var(--success-color);
+    background: var(--background-alt);
+    color: var(--text-secondary);
 }
 
 .status-due-soon {
-    background: rgba(245, 166, 35, 0.15);
-    color: var(--warning-color);
+    background: color-mix(in srgb, var(--link-blue) 12%, transparent);
+    color: var(--status-soon);
 }
 
 .status-overdue {
-    background: rgba(220, 53, 69, 0.15);
-    color: var(--danger-color);
+    background: color-mix(in srgb, var(--accent-strong) 12%, transparent);
+    color: var(--status-over-text);
 }
 
 /* Vehicle Detail View */
@@ -6461,7 +6466,7 @@ input:focus, textarea:focus, select:focus {
 
 .vehicle-detail-section .vehicle-info h2 {
     margin: 0;
-    color: var(--navy);
+    color: var(--text-color);
 }
 
 .vehicle-platform-badge {
@@ -6541,12 +6546,12 @@ input:focus, textarea:focus, select:focus {
 }
 
 .maintenance-tracker .tab-btn:hover {
-    color: var(--navy);
+    color: var(--text-color);
 }
 
 .maintenance-tracker .tab-btn.active {
-    color: var(--navy);
-    border-bottom-color: var(--gulf-orange);
+    color: var(--text-color);
+    border-bottom-color: var(--text-color);
 }
 
 .maintenance-tracker .tab-content {
@@ -6571,7 +6576,7 @@ input:focus, textarea:focus, select:focus {
 .schedule-header h3,
 .maintenance-tracker .history-header h3 {
     margin: 0;
-    color: var(--navy);
+    color: var(--text-color);
 }
 
 .upcoming-list {
@@ -6587,20 +6592,20 @@ input:focus, textarea:focus, select:focus {
     padding: 1rem;
     background: var(--background-alt);
     border-radius: var(--radius-md);
-    border-left: 4px solid var(--success-color);
+    border-left: 4px solid var(--status-ok);
 }
 
 .maintenance-tracker .upcoming-item.due-soon {
-    border-left-color: var(--warning-color);
+    border-left-color: var(--status-soon);
 }
 
 .maintenance-tracker .upcoming-item.overdue {
-    border-left-color: var(--danger-color);
+    border-left-color: var(--status-over);
 }
 
 .upcoming-info h4 {
     margin: 0 0 0.25rem 0;
-    color: var(--navy);
+    color: var(--text-color);
 }
 
 .upcoming-info p {
@@ -6610,12 +6615,12 @@ input:focus, textarea:focus, select:focus {
 }
 
 .maintenance-tracker .upcoming-item.overdue .upcoming-info p {
-    color: var(--danger-color);
+    color: var(--status-over-text);
     font-weight: 500;
 }
 
 .maintenance-tracker .upcoming-item.due-soon .upcoming-info p {
-    color: var(--warning-color);
+    color: var(--status-soon);
     font-weight: 500;
 }
 
@@ -6638,7 +6643,7 @@ input:focus, textarea:focus, select:focus {
 
 .schedule-table th {
     background: var(--background-alt);
-    color: var(--navy);
+    color: var(--text-color);
     font-weight: 600;
     font-size: 0.85rem;
     text-transform: uppercase;
@@ -6675,7 +6680,7 @@ input:focus, textarea:focus, select:focus {
 
 .history-item h4 {
     margin: 0;
-    color: var(--navy);
+    color: var(--text-color);
 }
 
 .history-date {
@@ -6729,7 +6734,7 @@ input:focus, textarea:focus, select:focus {
 
 .export-section h3 {
     margin: 0 0 1rem 0;
-    color: var(--navy);
+    color: var(--text-color);
 }
 
 .export-buttons {
@@ -6857,7 +6862,7 @@ input:focus, textarea:focus, select:focus {
 
 .summary-label {
     font-size: 0.8rem;
-    color: var(--navy);
+    color: var(--text-color);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 0.5rem;
@@ -7692,7 +7697,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .garage-page .vehicle-card {
-    background: var(--background-alt);
+    background: var(--surface);
     border-radius: var(--radius-md);
     overflow: hidden;
     cursor: pointer;
@@ -7706,7 +7711,8 @@ input:focus, textarea:focus, select:focus {
 }
 
 .garage-page .vehicle-card.selected {
-    border-color: var(--gulf-orange);
+    border-color: var(--text-color);
+    box-shadow: var(--shadow-md);
 }
 
 .garage-page .vehicle-card-image {
@@ -7725,8 +7731,11 @@ input:focus, textarea:focus, select:focus {
 }
 
 .vehicle-card-placeholder {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-family: var(--font-display);
+    font-stretch: 125%;
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
     color: var(--gulf-blue);
 }
 
@@ -7844,8 +7853,8 @@ input:focus, textarea:focus, select:focus {
 }
 
 .garage-page .tab-btn.active {
-    color: var(--accent-text);
-    border-bottom-color: var(--gulf-orange);
+    color: var(--text-color);
+    border-bottom-color: var(--text-color);
 }
 
 .garage-page .tab-content {
@@ -8056,6 +8065,7 @@ input:focus, textarea:focus, select:focus {
     border-top: 1px solid var(--border-color);
 }
 
+.restoration-category-summary h3,
 .restoration-category-summary h4 {
     font-size: 1rem;
     margin-bottom: 1rem;
@@ -8121,19 +8131,19 @@ input:focus, textarea:focus, select:focus {
     background: var(--background-alt);
     padding: 1rem;
     border-radius: var(--radius-md);
-    border-top: 3px solid var(--success-color);
+    border-top: 3px solid var(--status-ok);
 }
 
 .maintenance-summary .status-card.overdue {
-    border-top-color: var(--danger-color);
+    border-top-color: var(--status-over);
 }
 
 .maintenance-summary .status-card.due-soon {
-    border-top-color: var(--warning-color);
+    border-top-color: var(--status-soon);
 }
 
 .maintenance-summary .status-card.ok {
-    border-top-color: var(--success-color);
+    border-top-color: var(--status-ok);
 }
 
 .maintenance-summary .status-number {
@@ -8144,15 +8154,15 @@ input:focus, textarea:focus, select:focus {
 }
 
 .maintenance-summary .status-card.overdue .status-number {
-    color: var(--danger-color);
+    color: var(--status-over-text);
 }
 
 .maintenance-summary .status-card.due-soon .status-number {
-    color: var(--warning-color);
+    color: var(--status-soon);
 }
 
 .maintenance-summary .status-card.ok .status-number {
-    color: var(--success-color);
+    color: var(--text-color);
 }
 
 .maintenance-summary .status-label {
@@ -8239,12 +8249,12 @@ input:focus, textarea:focus, select:focus {
 }
 
 .garage-page .upcoming-item.due-soon {
-    border-left-color: var(--warning-color);
+    border-left-color: var(--status-soon);
 }
 
 .garage-page .upcoming-item.overdue {
-    border-left-color: var(--danger-color);
-    background: rgba(220, 53, 69, 0.05);
+    border-left-color: var(--status-over);
+    background: color-mix(in srgb, var(--accent-strong) 6%, var(--surface));
 }
 
 .garage-page .upcoming-item .upcoming-info strong {
@@ -8642,9 +8652,11 @@ input:focus, textarea:focus, select:focus {
 }
 
 .author-avatar span {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: white;
+    font-family: var(--font-display);
+    font-stretch: 115%;
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--ink);    /* 8.9:1 on Gulf blue */
 }
 
 .author-avatar img {
@@ -8691,9 +8703,59 @@ input:focus, textarea:focus, select:focus {
 }
 
 .post-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     margin-top: 1rem;
     padding-top: 0.75rem;
     border-top: 1px solid var(--border-color);
+}
+
+/* Moderator buttons (pin/lock) sit beside Delete */
+.forum-page .btn-mod,
+.forum-page .btn-mod:hover {
+    padding: 0.35rem 0.75rem;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-sm);
+    background: transparent;
+    color: var(--text-color);
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.forum-page .btn-mod:hover {
+    border-color: var(--text-color);
+}
+
+.thread-badges {
+    display: flex;
+    gap: 0.5rem;
+    margin: 0 0 0.5rem;
+}
+
+.thread-badge {
+    display: inline-block;
+    padding: 0.15rem 0.55rem;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.thread-badge--pinned { color: var(--accent-text); }
+.thread-badge--locked { color: var(--text-muted); }
+
+.locked-notice {
+    margin: 0 0 2rem;
+    padding: 1rem 1.25rem;
+    border: 1px dashed var(--border-strong);
+    border-radius: var(--radius-md);
+    color: var(--text-muted);
+    text-align: center;
 }
 
 .btn-delete {
@@ -8741,6 +8803,24 @@ input:focus, textarea:focus, select:focus {
 }
 
 /* Reply Form */
+.forum-page .reply-form {
+    max-width: none;
+    margin: 0;
+    padding: 1.25rem;
+    background: var(--surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+}
+
+.forum-page .reply-form .form-group {
+    margin-bottom: 0.75rem;
+}
+
+.forum-page .reply-form .form-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .reply-form-section h2 {
     font-size: 1.25rem;
     margin-bottom: 1rem;
@@ -8749,19 +8829,19 @@ input:focus, textarea:focus, select:focus {
 .reply-form textarea {
     width: 100%;
     padding: 1rem;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border-strong);
     border-radius: var(--radius-md);
     font-size: 1rem;
     font-family: inherit;
-    background: var(--background-color);
+    background: var(--surface-sunk);
     color: var(--text-color);
     resize: vertical;
 }
 
 .reply-form textarea:focus {
     outline: none;
-    border-color: var(--gulf-blue);
-    box-shadow: 0 0 0 3px rgba(125, 207, 234, 0.2);
+    border-color: var(--link-blue);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--link-blue) 20%, transparent);
 }
 
 .login-prompt {

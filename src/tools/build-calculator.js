@@ -430,11 +430,25 @@
         const icon = header.querySelector('.toggle-icon');
 
         content.classList.toggle('collapsed');
-        icon.textContent = content.classList.contains('collapsed') ? '▶' : '▼';
+        const collapsed = content.classList.contains('collapsed');
+        icon.textContent = collapsed ? '▶' : '▼';
+        header.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
     }
 
-    // Make toggleCategory globally available
-    window.toggleCategory = toggleCategory;
+    // Category headers and "Add Custom Item" buttons (no inline handlers, for the CSP)
+    document.addEventListener('click', (e) => {
+        const header = e.target.closest('[data-toggle-category]');
+        if (header) toggleCategory(header.dataset.toggleCategory);
+        const add = e.target.closest('[data-add-item]');
+        if (add) addCustomItem(add.dataset.addItem);
+    });
+    document.addEventListener('keydown', (e) => {
+        const header = e.target.closest('[data-toggle-category]');
+        if (header && (e.key === 'Enter' || e.key === ' ')) {
+            e.preventDefault();
+            toggleCategory(header.dataset.toggleCategory);
+        }
+    });
 
     function addCustomItem(category) {
         const tbody = document.getElementById(`${category}-items`);
@@ -465,8 +479,6 @@
         recalculateCategory(category);
     }
 
-    // Make addCustomItem globally available
-    window.addCustomItem = addCustomItem;
 
     function recalculateCategory(category) {
         const tbody = document.getElementById(`${category}-items`);

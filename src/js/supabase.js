@@ -177,7 +177,7 @@ const AuthUI = {
 
     if (user) {
       authLinks.innerHTML = `
-        <button type="button" onclick="Auth.signOut()" class="nav-text-link">Sign out</button>
+        <button type="button" data-action="sign-out" class="nav-text-link">Sign out</button>
         <a href="/account/garage/" class="nav-pill">My Garage</a>
       `;
     } else {
@@ -227,6 +227,11 @@ const AuthUI = {
 // Initialize auth state on page load
 document.addEventListener('DOMContentLoaded', () => {
   AuthUI.updateNav();
+});
+
+// Sign-out buttons are rendered into the nav, so listen on the document
+document.addEventListener('click', (e) => {
+  if (e.target.closest('[data-action="sign-out"]')) Auth.signOut();
 });
 
 // Export for use in other modules

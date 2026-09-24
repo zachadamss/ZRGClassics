@@ -474,7 +474,7 @@ function renderUpcomingMaintenance() {
                     <h4>${escapeHtml(item.name)}</h4>
                     <p>${dueText}</p>
                 </div>
-                <button type="button" class="btn btn-primary btn-sm log-service-btn" data-id="${item.id}">Log Service</button>
+                <button type="button" class="btn btn-secondary btn-sm log-service-btn" data-id="${item.id}">Log Service</button>
             </div>
         `;
     }).join('');
