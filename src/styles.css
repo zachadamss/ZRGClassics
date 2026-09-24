@@ -325,6 +325,7 @@ a:hover {
     gap: var(--space-6);
     min-height: 72px;
     padding: 6px max(var(--gutter), calc((100% - var(--content-wide)) / 2)) 0;
+    background: var(--background-color);
     background: color-mix(in srgb, var(--background-color) 92%, transparent);
     -webkit-backdrop-filter: saturate(1.4) blur(12px);
     backdrop-filter: saturate(1.4) blur(12px);

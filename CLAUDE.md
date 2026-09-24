@@ -44,7 +44,7 @@ Photos render through the async `{% picture src, alt, sizes, attrs %}` shortcode
 
 Search is pre-built at build time, not server-side:
 1. `build-search-index.js` reads all vehicle JSON files and produces `src/search-index.json`
-2. `src/search.js` loads this index in the browser for full-text filtering by brand, type, and keywords
+2. `src/search.js` loads this index in the browser for full-text filtering by brand, type, and keywords. URL parameters: `?q=` runs a search, `?brand=BMW|Porsche` presets the brand filter, `?car=e30` limits results to one car (the homepage search sends it)
 
 The search index must be rebuilt (`npm run build:search`) when vehicle data changes.
 
@@ -65,12 +65,17 @@ Any user- or database-supplied value inserted via `innerHTML` must go through `F
 
 ### Styling
 
-Single CSS file (`src/styles.css`, ~10K lines) using design tokens in `:root`:
-- Gulf Racing palette (Blue #7DCFEA, Orange #F26522, Navy #1E3A5F) for accents and dark surfaces. For text and buttons on light backgrounds use the AA-contrast tokens: `--accent-text`, `--accent-strong` (button fill), `--link-blue`, `--text-muted`, `--text-subtle`
-- Type: Archivo (`--font-display`, expanded width) for headings, Inter (`--font-body`); fluid scale `--step--1`…`--step-5`; spacing `--space-1`…`--space-9`, `--gutter`, `--content-wide`, `--content-reading`
+Single CSS file (`src/styles.css`, ~11K lines) using design tokens in `:root`. The look is a "shop manual": warm paper background, navy ink text, Gulf blue as a color field, monospace for codes and numbers.
+- Surfaces: `--background-color` (paper #F5F2EC), `--background-alt`, `--surface` (white cards), `--surface-sunk` (wells inside cards), `--band` / `--band-deep` (dark stats, garage, footer bands), `--border-color`, `--border-strong`. Text: `--text-color` (ink), `--text-secondary`, `--text-muted`, `--text-subtle`, `--link-blue`
+- Gulf palette (Blue #7DCFEA, Orange #F26522) is decorative: stripes, bands, the blueprint. Orange is saved for the one main action on a screen (`--accent-strong` button fill, white text 4.6:1) and a few meaningful marks (pinned threads, the 404). Don't use it for borders or decoration
+- Type (self-hosted in `src/fonts/`, preloaded in `base.njk`): Archivo (`--font-display`, expanded width) for headings, IBM Plex Sans (`--font-body`), IBM Plex Mono (`--font-mono`) for chassis codes, costs, part numbers, torque values, and small uppercase labels. Fluid scale `--step--1`…`--step-5`; spacing `--space-1`…`--space-9`, `--gutter`, `--content-wide`, `--content-reading`
+- `.section-title` headings are numbered automatically (01, 02…) with a CSS counter reset on `#main-content`
+- Difficulty is shown by lightness (easy = Gulf blue, moderate = link blue, advanced = ink), not red/yellow/green
+- The homepage has its own block at the end of `styles.css`, scoped to `.hm`. It is deliberately photo-free (the car photos are placeholders); its content comes from `src/_data/home.js`
+- The header collapses to the menu button at 960px (`NAV_BREAKPOINT` in `script.js` must match the CSS). The drawer is hidden with `clip-path`, not an off-screen transform, so it can't widen the page
 - Dark mode via `[data-theme="dark"]` on `<html>`. An inline script in `base.njk` applies the saved theme or `prefers-color-scheme` before first paint; `script.js` only handles the toggle
 - `<html>` starts as `no-js` and becomes `js`; scroll-reveal content stays visible without JS
-- Desktop-first `max-width` media queries at 1024px, 768px, and 480px
+- Desktop-first `max-width` media queries at 1024px, 768px, and 480px (plus 960px for the header). Check 320px too: nothing should scroll sideways
 - Page-specific rules are scoped to the page wrapper (`.garage-page`, `.maintenance-tracker`, `.restoration-checklist`, `.calculator-container`, `.auth-page`, `.forum-page`). Don't add unscoped rules for generic class names like `.section-header` or `.vehicle-card`
 - Don't use a `<header>` element for page intros; the global `header` rule styles the site header
 
@@ -98,6 +103,8 @@ All vehicle JSON files follow a consistent structure with these top-level keys: 
 - `src/_data/site.json` — site metadata (name, URL, social links)
 - `src/_data/navigation.json` — hierarchical menu structure
 - `src/_data/stats.js` — content counts for the homepage and brand pages (`stats.byBrand`)
+- `src/_data/home.js` — homepage content picked from the vehicle data: the hero job ticket, the featured issue, "the big jobs, priced" (with log-scale cost-ruler positions), and the chassis index. Change the picks at the top of the file; it throws if an issue id doesn't exist
+- `.eleventy.js` filters: `range` (en dashes), `money` (en dashes plus thousands separators, for prices), `partNumber(brand)` (11-digit OEM numbers written BMW `11 31 1 711 081` or Porsche `964.105.195.01` style), `readableDate`
 - `src/script.js` — global JS (theme toggle, mobile nav, expandable cards, print buttons)
 - `docs/site-review-2026-09.md` — September 2026 design/copy review: every finding, its status, and what's waiting on the owner
 
