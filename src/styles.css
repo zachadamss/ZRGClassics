@@ -1100,7 +1100,6 @@ main {
 
 /* Inline forms (search bars, newsletter) opt out of the boxed default form style */
 .home-search-form,
-.newsletter-form,
 .error-search-form {
     max-width: none;
     margin: 0;
@@ -1111,7 +1110,6 @@ main {
 }
 
 .home-search-form input,
-.newsletter-form input,
 .error-search-form input {
     width: auto;
     margin-bottom: 0;
@@ -1717,35 +1715,7 @@ a.btn-secondary:hover {
     color: var(--ink);
 }
 
-/* Light button - solid light background for dark contexts */
-.btn-light {
-    background-color: #ffffff;
-    color: #152B47;
-    border: none;
-    padding: 0.75rem 2rem;
-    border-radius: var(--radius-full);
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 600;
-    transition: background-color 0.2s, color 0.2s;
-}
-
-.btn-light:hover {
-    background-color: #A8E0F3;
-    color: #152B47;
-}
-
 /* Dark mode - use muted gulf blue instead of bright white */
-[data-theme="dark"] .btn-light {
-    background-color: var(--gulf-blue);
-    color: var(--ink);
-}
-
-[data-theme="dark"] .btn-light:hover {
-    background-color: var(--gulf-blue);
-    color: var(--navy-dark);
-}
-
 .btn-danger {
     background-color: var(--danger-color);
     color: #fff;
@@ -2096,12 +2066,6 @@ button:hover {
 
 [data-theme="dark"] .resource-content h1 {
     color: var(--text-color);
-}
-
-.resource-content .subtitle {
-    text-align: center;
-    color: var(--text-muted);
-    margin-bottom: 2rem;
 }
 
 /* ================================
@@ -2589,22 +2553,6 @@ button:hover {
 }
 
 /* Placeholder Content */
-.placeholder-content {
-    text-align: center;
-    padding: 3rem;
-    background-color: var(--background-alt);
-    border-radius: var(--radius-lg);
-    margin: 2rem 0;
-}
-
-.placeholder-content h2 {
-    color: var(--primary-color);
-}
-
-[data-theme="dark"] .placeholder-content h2 {
-    color: var(--text-color);
-}
-
 /* ================================
    Shop Section & Products
    ================================ */
@@ -7648,6 +7596,7 @@ input:focus, textarea:focus, select:focus {
     margin-bottom: 1rem;
 }
 
+.alert h2,
 .alert h3 {
     margin: 0 0 0.5rem 0;
     font-size: 1.1rem;
@@ -7946,7 +7895,7 @@ input:focus, textarea:focus, select:focus {
     border-radius: var(--radius-md);
 }
 
-.mileage-update-section h4 {
+.mileage-update-section h3 {
     margin: 0 0 1rem;
     font-size: 0.9rem;
     font-family: inherit;
@@ -8219,7 +8168,7 @@ input:focus, textarea:focus, select:focus {
     margin: 0 auto 1.5rem;
 }
 
-.maintenance-recent h4 {
+.maintenance-recent h3 {
     font-size: 1rem;
     margin-bottom: 0.75rem;
     color: var(--text-color);
