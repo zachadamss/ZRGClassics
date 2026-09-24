@@ -869,7 +869,6 @@ a:hover {
     color: #fff;
 }
 
-.site-footer .logo-glass { fill: var(--ink); }
 .site-footer .logo-wheel { fill: var(--band-text); }
 .site-footer .logo-rim { fill: var(--band-deep); }
 
@@ -966,7 +965,8 @@ a:hover {
 
 .logo-body { fill: var(--gulf-blue); }
 .logo-stripe { fill: var(--gulf-orange); }
-.logo-glass { fill: var(--text-color); }
+.logo-trim { fill: #07090C; }            /* black window surrounds and pillars */
+.logo-glass { fill: #3D5673; }
 .logo-wheel { fill: var(--text-color); }
 .logo-rim { fill: var(--background-color); }
 
