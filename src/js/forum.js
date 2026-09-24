@@ -249,6 +249,27 @@ const Forum = {
   },
 
   // ============================================
+  // MODERATION (see supabase-migration-moderation.sql)
+  // ============================================
+
+  /**
+   * Pin, unpin, lock, unlock, or delete any thread. The database checks
+   * that the caller is a moderator.
+   */
+  async moderateThread(threadId, action) {
+    const { error } = await db.rpc('moderate_thread', { p_thread_id: threadId, p_action: action });
+    if (error) throw error;
+  },
+
+  /**
+   * Delete any reply (moderators only)
+   */
+  async moderateDeleteReply(replyId) {
+    const { error } = await db.rpc('moderate_delete_reply', { p_reply_id: replyId });
+    if (error) throw error;
+  },
+
+  // ============================================
   // SEARCH
   // ============================================
 

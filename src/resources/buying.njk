@@ -26,11 +26,14 @@ permalink: "/resources/{{ item.brand }}/{{ item.key }}/buying/"
     <a href="/resources/{{ item.brand }}/{{ item.key }}/" class="quick-link-page">← {{ vehicleData.model }} home</a>
 </nav>
 
-<main class="resource-content">
+<main class="resource-content" data-car-memory data-car-key="{{ vehicleKey }}" data-car-name="{{ vehicleData.fullName }}" data-car-url="/resources/{{ item.brand }}/{{ item.key }}/">
     {% include "partials/byline.njk" %}
 
     {% set vehicle = vehicleData %}
     {% include "partials/buyers-guide.njk" %}
 
     {% include "partials/garage-cta.njk" %}
+
+    {% include "partials/newsletter-strip.njk" %}
 </main>
+<script src="/js/car-memory.js" defer></script>

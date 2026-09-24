@@ -52,16 +52,24 @@ The search index must be rebuilt (`npm run build:search`) when vehicle data chan
 
 Client-side Supabase handles all dynamic features:
 - **Auth**: Login, register, password reset (`src/account/`, `src/js/supabase.js`)
-- **My Garage**: the single home for tracking a car (`src/account/garage.njk`, `src/js/garage.js`). Its maintenance tracker (`/account/garage/maintenance/`, `src/js/maintenance-tracker.js`) and restoration tracker (`/account/garage/restoration/`, `src/js/restoration-tracker.js`) always load one car from `?vehicle=<id>`; the garage page accepts `?vehicle=<id>` and `?add=<platform>` deep links.
-- **Forums**: Categories, threads, replies (`src/forum/`, `src/js/forum.js`)
+- **My Garage**: the single home for tracking a car (`src/account/garage.njk`, page script `src/js/pages/garage-page.js`, data layer `src/js/garage.js`). Its maintenance tracker (`/account/garage/maintenance/`, `src/js/maintenance-tracker.js`) and restoration tracker (`/account/garage/restoration/`, `src/js/restoration-tracker.js`) always load one car from `?vehicle=<id>`; the garage page accepts `?vehicle=<id>` and `?add=<platform>` deep links.
+- **Forums**: Categories, threads, replies (`src/forum/`, `src/js/forum.js`, page scripts in `src/js/pages/forum-*.js`). Moderators (`profiles.is_moderator`) get Pin/Lock/Delete on every thread and Delete on every reply; those go through the `moderate_thread` / `moderate_delete_reply` RPCs from `supabase-migration-moderation.sql`, which check the flag server-side. Authors delete their own posts through normal RLS
+- **Restoration checklist**: the base and per-car items live in `src/js/restoration-checklist.js` (`window.RestorationChecklist`), shared by the tracker and My Garage so both compute progress against the full list. Saved items the base list doesn't know are the owner's custom items
 - **Tools**: the public Build Cost Calculator (`src/tools/`) and a `/tools/` hub
 - **Newsletter**: `src/js/newsletter.js` subscribes forms marked `data-newsletter-form` directly to ConvertKit
 
-Database schemas are in `supabase-schema*.sql` files at the project root. `supabase-migration-security.sql` must be run after them (username/avatar constraints, triggers that protect system-managed columns like `is_pinned`/`post_count`, and a block on replies to locked threads).
+Database schemas are in `supabase-schema*.sql` files at the project root. Run the migrations after them, in order: `supabase-migration-security.sql` (username/avatar constraints, triggers that protect system-managed columns like `is_pinned`/`post_count`, a block on replies to locked threads), `supabase-migration-garage.sql` (columns the garage code writes that the base schema lacked), `supabase-migration-moderation.sql`. All are idempotent. When code starts writing a new column, add it to a migration in the same change.
 
 The login page only follows same-site paths from `?return=` (`safeReturnUrl()`); keep it that way.
 
-Any user- or database-supplied value inserted via `innerHTML` must go through `Forum.sanitizeHtml()` (or the tools' `escapeHtml()`), and user-supplied URLs through `Forum.safeUrl()`. The Supabase client library and `/js/supabase.js` are loaded once in `layouts/base.njk`; pages should not include them again.
+Any user- or database-supplied value inserted via `innerHTML` must go through `Forum.sanitizeHtml()` (or the tools' `escapeHtml()`), and user-supplied URLs through `Forum.safeUrl()`. The Supabase client library (vendored at `src/js/vendor/supabase-js-<version>.js`; upgrade steps in `docs/vendored-scripts.md`) and `/js/supabase.js` are loaded once in `layouts/base.njk`; pages should not include them again.
+
+### Content-Security-Policy
+
+`vercel.json` sends a strict CSP: scripts only from this site and Google Tag Manager, no inline `<script>` blocks, no inline event handlers (`onclick=` etc., including in HTML built by JS), and network requests only to Supabase, ConvertKit, and Google Analytics. So:
+- Page JavaScript goes in a file (`src/js/pages/<page>.js`) listed in the page's `extraScripts` front matter; use `data-*` attributes plus `addEventListener` (often one delegated listener) instead of `onclick`
+- A new third-party service needs its host added to the matching CSP directive (`connect-src`, `script-src`, `form-action`, …) or the browser blocks it with a "Refused to…" console error
+- Inline `style="…"` is still allowed (`style-src 'unsafe-inline'`)
 
 ### Styling
 
@@ -105,7 +113,11 @@ All vehicle JSON files follow a consistent structure with these top-level keys: 
 - `src/_data/stats.js` — content counts for the homepage and brand pages (`stats.byBrand`)
 - `src/_data/home.js` — homepage content picked from the vehicle data: the hero job ticket, the featured issue, "the big jobs, priced" (with log-scale cost-ruler positions), and the chassis index. Change the picks at the top of the file; it throws if an issue id doesn't exist
 - `.eleventy.js` filters: `range` (en dashes), `money` (en dashes plus thousands separators, for prices), `partNumber(brand)` (11-digit OEM numbers written BMW `11 31 1 711 081` or Porsche `964.105.195.01` style), `readableDate`
-- `src/script.js` — global JS (theme toggle, mobile nav, expandable cards, print buttons)
+- `src/script.js` — global JS (theme toggle, mobile nav, expandable cards, print buttons, `/` to search)
+- `src/js/theme-init.js` — loaded synchronously in `<head>`: sets the theme before first paint (kept out of the page for the CSP)
+- `src/js/car-memory.js` — car pages and buyer's guides save the last car read to `localStorage` (`zrg:lastCar`); the homepage offers it back ("Pick up where you left off"). Signed-in visitors instead/also get a maintenance status line (`home.js` lazy-loads `garage.js` only when a Supabase session exists)
+- `src/js/copy-link.js` — "Copy link" buttons on issue cards (`data-copy-link="#issue-id"`)
+- `src/_includes/partials/newsletter-strip.njk` — newsletter sign-up at the end of car pages and buyer's guides
 - `docs/site-review-2026-09.md` — September 2026 design/copy review: every finding, its status, and what's waiting on the owner
 
 ## SEO

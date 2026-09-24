@@ -3,6 +3,9 @@ layout: layouts/base.njk
 canonical: false
 title: Thread
 description: "A thread on the ZRG Classics forum, where classic BMW and Porsche owners ask about problems, parts, and builds."
+extraScripts:
+  - js/forum.js
+  - js/pages/forum-thread.js
 ---
 
 <main class="forum-page thread-page">
@@ -19,285 +22,30 @@ description: "A thread on the ZRG Classics forum, where classic BMW and Porsche 
       <div class="loading">Loading thread...</div>
     </article>
 
-    <section id="replies-section" class="replies-section" style="display: none;">
+    <section id="replies-section" class="replies-section" hidden>
       <h2>Replies</h2>
       <div id="replies-list" class="replies-list"></div>
       <div id="replies-pagination" class="pagination"></div>
     </section>
 
-    <section id="reply-form-section" class="reply-form-section" style="display: none;">
-      <h2>Post a Reply</h2>
+    <p id="locked-notice" class="locked-notice" hidden>This thread is locked, so it's closed to new replies.</p>
+
+    <section id="reply-form-section" class="reply-form-section" hidden>
+      <h2>Post a reply</h2>
       <form id="reply-form" class="reply-form">
         <div class="form-group">
+          <label for="reply-content" class="visually-hidden">Your reply</label>
           <textarea id="reply-content" name="content" required rows="6"
-                    placeholder="Write your reply..."></textarea>
+                    placeholder="Write your reply…"></textarea>
         </div>
         <div class="form-actions">
-          <button type="submit" class="btn btn-primary">Post Reply</button>
+          <button type="submit" class="btn btn-primary">Post reply</button>
         </div>
       </form>
     </section>
 
-    <div id="login-prompt" class="login-prompt" style="display: none;">
+    <div id="login-prompt" class="login-prompt" hidden>
       <p><a href="/account/login/">Sign in</a> or <a href="/account/register/">create an account</a> to reply to this thread.</p>
     </div>
   </div>
 </main>
-
-<script src="/js/forum.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', async () => {
-  const threadContainer = document.getElementById('thread-content');
-  const repliesSection = document.getElementById('replies-section');
-  const repliesList = document.getElementById('replies-list');
-  const replyPagination = document.getElementById('replies-pagination');
-  const replyFormSection = document.getElementById('reply-form-section');
-  const loginPrompt = document.getElementById('login-prompt');
-  const replyForm = document.getElementById('reply-form');
-
-  // Get thread ID from URL (supports both /forum/e30/123/ and /forum/thread/?slug=e30&id=123)
-  const urlParams = new URLSearchParams(window.location.search);
-  let categorySlug = urlParams.get('slug');
-  let threadId = parseInt(urlParams.get('id'));
-
-  if (!threadId) {
-    const pathParts = window.location.pathname.split('/').filter(p => p);
-    categorySlug = pathParts[1];
-    threadId = parseInt(pathParts[2]);
-  }
-
-  if (!threadId) {
-    threadContainer.innerHTML = '<p class="error">Thread not found</p>';
-    return;
-  }
-
-  const user = await Auth.getUser();
-  let currentThread = null;
-
-  try {
-    // Load thread
-    currentThread = await Forum.getThread(threadId);
-
-    if (!currentThread) {
-      threadContainer.innerHTML = '<p class="error">Thread not found</p>';
-      return;
-    }
-
-    // Update page
-    document.title = `${currentThread.title} - ZRG Classics Forums`;
-    Forum.setCanonical();
-    document.getElementById('thread-title-crumb').textContent = currentThread.title.substring(0, 50) + (currentThread.title.length > 50 ? '...' : '');
-    document.getElementById('category-link').textContent = currentThread.category.name;
-    document.getElementById('category-link').href = `/forum/${currentThread.category.slug}/`;
-
-    // Check if current user is the author
-    const isThreadAuthor = user && currentThread.author?.id === user.id;
-
-    // Render thread
-    threadContainer.innerHTML = `
-      <header class="thread-header">
-        <h1 class="thread-title">${Forum.sanitizeHtml(currentThread.title)}</h1>
-        <div class="thread-meta">
-          <span>Posted by <strong>${Forum.sanitizeHtml(currentThread.author?.username || 'Unknown')}</strong></span>
-          <span>${Forum.formatDate(currentThread.created_at)}</span>
-          <span>${currentThread.view_count || 0} views</span>
-        </div>
-      </header>
-      <div class="post-card original-post">
-        <aside class="post-author">
-          <div class="author-avatar">
-            ${Forum.safeUrl(currentThread.author?.avatar_url) ?
-              `<img src="${Forum.safeUrl(currentThread.author.avatar_url)}" alt="${Forum.sanitizeHtml(currentThread.author.username)}">` :
-              `<span>${Forum.sanitizeHtml((currentThread.author?.username || '?').substring(0, 2).toUpperCase())}</span>`}
-          </div>
-          <div class="author-name">${Forum.sanitizeHtml(currentThread.author?.username || 'Unknown')}</div>
-          <div class="author-stats">
-            <span>${currentThread.author?.post_count || 0} posts</span>
-            <span>Member since ${Forum.formatDate(currentThread.author?.created_at)}</span>
-          </div>
-        </aside>
-        <div class="post-body">
-          <div class="post-content">
-            ${Forum.nl2br(currentThread.content)}
-          </div>
-          ${isThreadAuthor ? `
-          <div class="post-actions">
-            <button class="btn-delete" onclick="deleteThread(${currentThread.id})">Delete Thread</button>
-          </div>
-          ` : ''}
-        </div>
-      </div>
-    `;
-
-    // Load replies
-    if (currentThread.reply_count > 0) {
-      repliesSection.style.display = 'block';
-      await loadReplies(1);
-    }
-
-    // Show reply form or login prompt
-    if (user && !currentThread.is_locked) {
-      replyFormSection.style.display = 'block';
-    } else if (!user) {
-      loginPrompt.style.display = 'block';
-    }
-
-  } catch (error) {
-    console.error('Error:', error);
-    threadContainer.innerHTML = '<p class="error">Unable to load thread. Please try again later.</p>';
-  }
-
-  // Load replies with pagination
-  async function loadReplies(page) {
-    try {
-      const result = await Forum.getReplies(threadId, { page });
-
-      if (result.replies.length === 0) {
-        repliesList.innerHTML = '';
-        return;
-      }
-
-      repliesList.innerHTML = result.replies.map(reply => {
-        const isReplyAuthor = user && reply.author?.id === user.id;
-        return `
-        <div class="post-card reply-post" data-reply-id="${reply.id}">
-          <aside class="post-author">
-            <div class="author-avatar">
-              ${Forum.safeUrl(reply.author?.avatar_url) ?
-                `<img src="${Forum.safeUrl(reply.author.avatar_url)}" alt="${Forum.sanitizeHtml(reply.author.username)}">` :
-                `<span>${Forum.sanitizeHtml((reply.author?.username || '?').substring(0, 2).toUpperCase())}</span>`}
-            </div>
-            <div class="author-name">${Forum.sanitizeHtml(reply.author?.username || 'Unknown')}</div>
-            <div class="author-stats">
-              <span>${reply.author?.post_count || 0} posts</span>
-            </div>
-          </aside>
-          <div class="post-body">
-            <div class="post-meta">
-              <span>${Forum.formatDate(reply.created_at)}</span>
-              ${reply.updated_at !== reply.created_at ? '<span class="edited">(edited)</span>' : ''}
-            </div>
-            <div class="post-content">
-              ${Forum.nl2br(reply.content)}
-            </div>
-            ${isReplyAuthor ? `
-            <div class="post-actions">
-              <button class="btn-delete" onclick="deleteReply(${reply.id})">Delete Reply</button>
-            </div>
-            ` : ''}
-          </div>
-        </div>
-      `}).join('');
-
-      // Pagination
-      if (result.totalPages > 1) {
-        let html = '';
-        for (let i = 1; i <= result.totalPages; i++) {
-          html += `<button class="page-btn ${i === page ? 'active' : ''}" data-page="${i}">${i}</button>`;
-        }
-        replyPagination.innerHTML = html;
-
-        replyPagination.querySelectorAll('.page-btn').forEach(btn => {
-          btn.addEventListener('click', () => loadReplies(parseInt(btn.dataset.page)));
-        });
-      }
-    } catch (error) {
-      console.error('Error loading replies:', error);
-    }
-  }
-
-  // Reply form submission
-  replyForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    const content = document.getElementById('reply-content').value.trim();
-    const submitBtn = replyForm.querySelector('button[type="submit"]');
-
-    if (!content) return;
-
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Posting...';
-
-    try {
-      const reply = await Forum.createReply(threadId, content);
-
-      // Add reply to list
-      const replyHtml = `
-        <div class="post-card reply-post new-reply" data-reply-id="${reply.id}">
-          <aside class="post-author">
-            <div class="author-avatar">
-              ${Forum.safeUrl(reply.author?.avatar_url) ?
-                `<img src="${Forum.safeUrl(reply.author.avatar_url)}" alt="${Forum.sanitizeHtml(reply.author.username)}">` :
-                `<span>${Forum.sanitizeHtml((reply.author?.username || '?').substring(0, 2).toUpperCase())}</span>`}
-            </div>
-            <div class="author-name">${Forum.sanitizeHtml(reply.author?.username || 'Unknown')}</div>
-            <div class="author-stats">
-              <span>${reply.author?.post_count || 0} posts</span>
-            </div>
-          </aside>
-          <div class="post-body">
-            <div class="post-meta">
-              <span>${Forum.formatDate(reply.created_at)}</span>
-            </div>
-            <div class="post-content">
-              ${Forum.nl2br(reply.content)}
-            </div>
-            <div class="post-actions">
-              <button class="btn-delete" onclick="deleteReply(${reply.id})">Delete Reply</button>
-            </div>
-          </div>
-        </div>
-      `;
-
-      repliesSection.style.display = 'block';
-      repliesList.insertAdjacentHTML('beforeend', replyHtml);
-
-      // Clear form
-      document.getElementById('reply-content').value = '';
-      submitBtn.disabled = false;
-      submitBtn.textContent = 'Post Reply';
-
-      // Scroll to new reply
-      repliesList.lastElementChild.scrollIntoView({ behavior: 'smooth' });
-    } catch (error) {
-      AuthUI.showError(replyForm, error.message);
-      submitBtn.disabled = false;
-      submitBtn.textContent = 'Post Reply';
-    }
-  });
-});
-
-// Delete thread function
-async function deleteThread(threadId) {
-  if (!confirm('Are you sure you want to delete this thread? This cannot be undone.')) {
-    return;
-  }
-
-  try {
-    await Forum.deleteThread(threadId);
-    // Redirect to forum index
-    const isLocal = window.location.hostname === 'localhost';
-    window.location.href = isLocal ? '/forum/' : '/forum/';
-  } catch (error) {
-    alert('Error deleting thread: ' + error.message);
-  }
-}
-
-// Delete reply function
-async function deleteReply(replyId) {
-  if (!confirm('Are you sure you want to delete this reply? This cannot be undone.')) {
-    return;
-  }
-
-  try {
-    await Forum.deleteReply(replyId);
-    // Remove from DOM
-    const replyElement = document.querySelector(`[data-reply-id="${replyId}"]`);
-    if (replyElement) {
-      replyElement.remove();
-    }
-  } catch (error) {
-    alert('Error deleting reply: ' + error.message);
-  }
-}
-</script>

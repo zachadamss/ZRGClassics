@@ -37,7 +37,15 @@ In the Supabase SQL Editor, run these files in order:
 
 1. `supabase-schema.sql` — profiles and forums
 2. `supabase-schema-garage.sql` — My Garage tables
-3. `supabase-migration-security.sql` — security hardening (safe to re-run)
+3. `supabase-migration-security.sql` — security hardening
+4. `supabase-migration-garage.sql` — My Garage columns the site uses (custom cars, restoration status and costs)
+5. `supabase-migration-moderation.sql` — forum moderators (pin, lock, delete)
+
+All three migrations are safe to re-run. To make yourself a moderator after signing up:
+
+```sql
+update public.profiles set is_moderator = true where username = 'YOUR_USERNAME';
+```
 
 ## Adding Images to Guide Steps
 

@@ -1,0 +1,17 @@
+{#- Newsletter sign-up at the end of car pages and buyer's guides. Expects vehicleData. -#}
+<section class="newsletter-strip" aria-labelledby="newsletter-strip-title">
+    <div class="newsletter-strip-text">
+        <p class="eyebrow">Stay current</p>
+        <h2 id="newsletter-strip-title">Get an email when this page changes.</h2>
+        <p>I add issues, fix guides, and recheck prices as I learn more about the {{ vehicleData.model }} and the other cars here. When something goes up, I'll send a short note.</p>
+    </div>
+    <form class="newsletter-strip-form" data-newsletter-form>
+        <label for="newsletter-strip-email">Email address</label>
+        <div class="newsletter-strip-row">
+            <input type="email" id="newsletter-strip-email" placeholder="you@example.com" required autocomplete="email">
+            <button type="submit" class="btn btn-secondary">Sign me up</button>
+        </div>
+        <p class="newsletter-status" data-newsletter-status role="status" aria-live="polite"></p>
+    </form>
+</section>
+<script src="/js/newsletter.js" defer></script>

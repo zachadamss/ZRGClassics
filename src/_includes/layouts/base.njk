@@ -3,19 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-    // Runs before first paint: swap no-js for js, and apply the saved or
-    // system theme so dark-mode visitors don't get a white flash.
-    (function () {
-        var root = document.documentElement;
-        root.classList.remove('no-js');
-        root.classList.add('js');
-        var theme = null;
-        try { theme = localStorage.getItem('theme'); } catch (e) {}
-        if (!theme && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) theme = 'dark';
-        if (theme === 'dark') root.setAttribute('data-theme', 'dark');
-    })();
-    </script>
+    <script src="/js/theme-init.js"></script>
 
     {# Generate dynamic SEO data for vehicle pages #}
     {% if vehicle and vehicles[vehicle] %}
@@ -148,12 +136,7 @@
 
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VB5BSWLP41"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-VB5BSWLP41');
-    </script>
+    <script src="/js/analytics.js"></script>
 </head>
 <body>
     {% include "partials/header.njk" %}
@@ -166,7 +149,7 @@
 
     <script src="/script.js"></script>
     <!-- Supabase Auth (loads on all pages for nav state) -->
-    <script src="https://unpkg.com/@supabase/supabase-js@2.117.1"></script>
+    <script src="/js/vendor/supabase-js-2.117.1.js"></script>
     <script src="/js/supabase.js"></script>
     {% if extraScripts %}
     {% for script in extraScripts %}

@@ -74,6 +74,12 @@
     --primary-color: var(--text-color);   /* headings */
     --accent-color: var(--gulf-orange);
     --success-color: #22A559;
+    /* Service status: told apart by lightness, orange only when something is overdue */
+    --status-ok: var(--border-strong);
+    --status-soon: var(--link-blue);
+    --status-over: var(--accent-strong);
+    --status-over-text: var(--accent-text);
+    --danger-text: #B42318;        /* destructive buttons, 5.9:1 on paper */
     --warning-color: #F5A623;
     --danger-color: #DC3545;
 
@@ -131,6 +137,7 @@
     --border-strong: #3A4D64;
     --band: #0A1420;
     --band-deep: #07101A;
+    --danger-text: #FF8A7A;
     --gulf-blue-muted: #5BA4C9;
     --gulf-orange-muted: #D9541A;
 
@@ -1087,7 +1094,6 @@ main {
     border: 0;
 }
 
-.eyebrow,
 .hero-eyebrow {
     font-family: var(--font-body);
     font-size: 0.8rem;
@@ -1095,6 +1101,17 @@ main {
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--accent-text);
+    margin: 0 0 var(--space-2);
+}
+
+/* Small section labels: mono, like the rest of the manual */
+.eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--link-blue);
     margin: 0 0 var(--space-2);
 }
 
@@ -1746,7 +1763,7 @@ a.btn-secondary:hover {
 }
 
 .btn-icon:hover {
-    color: var(--navy);
+    color: var(--text-color);
 }
 
 .btn-icon.delete-maintenance:hover,
@@ -1814,7 +1831,7 @@ button:hover {
 
 .modal-header h3 {
     margin: 0;
-    color: var(--navy);
+    color: var(--text-color);
 }
 
 .modal-close {
@@ -1828,7 +1845,7 @@ button:hover {
 }
 
 .modal-close:hover {
-    color: var(--navy);
+    color: var(--text-color);
 }
 
 .modal-body {
@@ -1942,7 +1959,7 @@ button:hover {
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
-    color: var(--navy);
+    color: var(--text-color);
     font-weight: 500;
     font-size: 0.9rem;
 }
@@ -2708,7 +2725,7 @@ input:focus, textarea:focus, select:focus {
 #search-btn {
     padding: 1rem 1.5rem;
     background-color: var(--gulf-blue);
-    color: var(--navy);
+    color: var(--text-color);
     border: none;
     border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
     cursor: pointer;
@@ -2770,7 +2787,7 @@ input:focus, textarea:focus, select:focus {
 
 .filter-btn.active {
     background-color: var(--gulf-blue);
-    color: var(--navy);
+    color: var(--text-color);
     border-color: var(--gulf-blue);
 }
 
@@ -3354,7 +3371,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .garage-cta .eyebrow {
-    color: var(--gulf-orange-light);
+    color: var(--gulf-blue);
 }
 
 .garage-cta h2 {
@@ -3462,7 +3479,7 @@ input:focus, textarea:focus, select:focus {
 
 .quick-links a:hover {
     background-color: var(--gulf-blue);
-    color: var(--navy);
+    color: var(--text-color);
     transform: translateY(-1px);
     box-shadow: 0 2px 8px rgba(125, 207, 234, 0.3);
 }
@@ -3470,7 +3487,7 @@ input:focus, textarea:focus, select:focus {
 /* Active state — set by JS IntersectionObserver based on scroll position */
 .quick-links a.active {
     background-color: var(--gulf-blue);
-    color: var(--navy);
+    color: var(--text-color);
 }
 
 [data-theme="dark"] .quick-links a {
@@ -6359,7 +6376,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .tracker-header h1 {
-    color: var(--navy);
+    color: var(--text-color);
     margin-bottom: 0.5rem;
 }
 
@@ -6385,7 +6402,7 @@ input:focus, textarea:focus, select:focus {
 
 .garage-section .section-header h2 {
     margin: 0;
-    color: var(--navy);
+    color: var(--text-color);
 }
 
 /* Vehicle Card */
@@ -6425,22 +6442,22 @@ input:focus, textarea:focus, select:focus {
     display: block;
     font-size: 1rem;
     font-weight: 600;
-    color: var(--navy);
+    color: var(--text-color);
 }
 
 .status-ok {
-    background: rgba(34, 165, 89, 0.15);
-    color: var(--success-color);
+    background: var(--background-alt);
+    color: var(--text-secondary);
 }
 
 .status-due-soon {
-    background: rgba(245, 166, 35, 0.15);
-    color: var(--warning-color);
+    background: color-mix(in srgb, var(--link-blue) 12%, transparent);
+    color: var(--status-soon);
 }
 
 .status-overdue {
-    background: rgba(220, 53, 69, 0.15);
-    color: var(--danger-color);
+    background: color-mix(in srgb, var(--accent-strong) 12%, transparent);
+    color: var(--status-over-text);
 }
 
 /* Vehicle Detail View */
@@ -6461,7 +6478,7 @@ input:focus, textarea:focus, select:focus {
 
 .vehicle-detail-section .vehicle-info h2 {
     margin: 0;
-    color: var(--navy);
+    color: var(--text-color);
 }
 
 .vehicle-platform-badge {
@@ -6541,12 +6558,12 @@ input:focus, textarea:focus, select:focus {
 }
 
 .maintenance-tracker .tab-btn:hover {
-    color: var(--navy);
+    color: var(--text-color);
 }
 
 .maintenance-tracker .tab-btn.active {
-    color: var(--navy);
-    border-bottom-color: var(--gulf-orange);
+    color: var(--text-color);
+    border-bottom-color: var(--text-color);
 }
 
 .maintenance-tracker .tab-content {
@@ -6571,7 +6588,7 @@ input:focus, textarea:focus, select:focus {
 .schedule-header h3,
 .maintenance-tracker .history-header h3 {
     margin: 0;
-    color: var(--navy);
+    color: var(--text-color);
 }
 
 .upcoming-list {
@@ -6587,20 +6604,20 @@ input:focus, textarea:focus, select:focus {
     padding: 1rem;
     background: var(--background-alt);
     border-radius: var(--radius-md);
-    border-left: 4px solid var(--success-color);
+    border-left: 4px solid var(--status-ok);
 }
 
 .maintenance-tracker .upcoming-item.due-soon {
-    border-left-color: var(--warning-color);
+    border-left-color: var(--status-soon);
 }
 
 .maintenance-tracker .upcoming-item.overdue {
-    border-left-color: var(--danger-color);
+    border-left-color: var(--status-over);
 }
 
 .upcoming-info h4 {
     margin: 0 0 0.25rem 0;
-    color: var(--navy);
+    color: var(--text-color);
 }
 
 .upcoming-info p {
@@ -6610,12 +6627,12 @@ input:focus, textarea:focus, select:focus {
 }
 
 .maintenance-tracker .upcoming-item.overdue .upcoming-info p {
-    color: var(--danger-color);
+    color: var(--status-over-text);
     font-weight: 500;
 }
 
 .maintenance-tracker .upcoming-item.due-soon .upcoming-info p {
-    color: var(--warning-color);
+    color: var(--status-soon);
     font-weight: 500;
 }
 
@@ -6638,7 +6655,7 @@ input:focus, textarea:focus, select:focus {
 
 .schedule-table th {
     background: var(--background-alt);
-    color: var(--navy);
+    color: var(--text-color);
     font-weight: 600;
     font-size: 0.85rem;
     text-transform: uppercase;
@@ -6675,7 +6692,7 @@ input:focus, textarea:focus, select:focus {
 
 .history-item h4 {
     margin: 0;
-    color: var(--navy);
+    color: var(--text-color);
 }
 
 .history-date {
@@ -6729,7 +6746,7 @@ input:focus, textarea:focus, select:focus {
 
 .export-section h3 {
     margin: 0 0 1rem 0;
-    color: var(--navy);
+    color: var(--text-color);
 }
 
 .export-buttons {
@@ -6857,7 +6874,7 @@ input:focus, textarea:focus, select:focus {
 
 .summary-label {
     font-size: 0.8rem;
-    color: var(--navy);
+    color: var(--text-color);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 0.5rem;
@@ -7002,14 +7019,17 @@ input:focus, textarea:focus, select:focus {
     transition: border-color 0.2s;
 }
 
+/* Status by lightness, like the rest of the site: done = ink, in progress = blue */
 .restoration-checklist .checklist-item.status-complete {
-    border-color: var(--success-color);
-    background: rgba(34, 165, 89, 0.05);
+    border-color: var(--text-color);
+    border-left-width: 4px;
+    background: var(--surface);
 }
 
 .restoration-checklist .checklist-item.status-in-progress {
-    border-color: var(--gulf-orange);
-    background: rgba(242, 101, 34, 0.05);
+    border-color: var(--link-blue);
+    border-left-width: 4px;
+    background: color-mix(in srgb, var(--link-blue) 6%, var(--surface));
 }
 
 .restoration-checklist .checklist-item.status-skipped {
@@ -7692,7 +7712,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .garage-page .vehicle-card {
-    background: var(--background-alt);
+    background: var(--surface);
     border-radius: var(--radius-md);
     overflow: hidden;
     cursor: pointer;
@@ -7706,7 +7726,8 @@ input:focus, textarea:focus, select:focus {
 }
 
 .garage-page .vehicle-card.selected {
-    border-color: var(--gulf-orange);
+    border-color: var(--text-color);
+    box-shadow: var(--shadow-md);
 }
 
 .garage-page .vehicle-card-image {
@@ -7725,8 +7746,11 @@ input:focus, textarea:focus, select:focus {
 }
 
 .vehicle-card-placeholder {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-family: var(--font-display);
+    font-stretch: 125%;
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
     color: var(--gulf-blue);
 }
 
@@ -7844,8 +7868,8 @@ input:focus, textarea:focus, select:focus {
 }
 
 .garage-page .tab-btn.active {
-    color: var(--accent-text);
-    border-bottom-color: var(--gulf-orange);
+    color: var(--text-color);
+    border-bottom-color: var(--text-color);
 }
 
 .garage-page .tab-content {
@@ -8056,6 +8080,7 @@ input:focus, textarea:focus, select:focus {
     border-top: 1px solid var(--border-color);
 }
 
+.restoration-category-summary h3,
 .restoration-category-summary h4 {
     font-size: 1rem;
     margin-bottom: 1rem;
@@ -8121,19 +8146,19 @@ input:focus, textarea:focus, select:focus {
     background: var(--background-alt);
     padding: 1rem;
     border-radius: var(--radius-md);
-    border-top: 3px solid var(--success-color);
+    border-top: 3px solid var(--status-ok);
 }
 
 .maintenance-summary .status-card.overdue {
-    border-top-color: var(--danger-color);
+    border-top-color: var(--status-over);
 }
 
 .maintenance-summary .status-card.due-soon {
-    border-top-color: var(--warning-color);
+    border-top-color: var(--status-soon);
 }
 
 .maintenance-summary .status-card.ok {
-    border-top-color: var(--success-color);
+    border-top-color: var(--status-ok);
 }
 
 .maintenance-summary .status-number {
@@ -8144,15 +8169,15 @@ input:focus, textarea:focus, select:focus {
 }
 
 .maintenance-summary .status-card.overdue .status-number {
-    color: var(--danger-color);
+    color: var(--status-over-text);
 }
 
 .maintenance-summary .status-card.due-soon .status-number {
-    color: var(--warning-color);
+    color: var(--status-soon);
 }
 
 .maintenance-summary .status-card.ok .status-number {
-    color: var(--success-color);
+    color: var(--text-color);
 }
 
 .maintenance-summary .status-label {
@@ -8239,12 +8264,12 @@ input:focus, textarea:focus, select:focus {
 }
 
 .garage-page .upcoming-item.due-soon {
-    border-left-color: var(--warning-color);
+    border-left-color: var(--status-soon);
 }
 
 .garage-page .upcoming-item.overdue {
-    border-left-color: var(--danger-color);
-    background: rgba(220, 53, 69, 0.05);
+    border-left-color: var(--status-over);
+    background: color-mix(in srgb, var(--accent-strong) 6%, var(--surface));
 }
 
 .garage-page .upcoming-item .upcoming-info strong {
@@ -8642,9 +8667,11 @@ input:focus, textarea:focus, select:focus {
 }
 
 .author-avatar span {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: white;
+    font-family: var(--font-display);
+    font-stretch: 115%;
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--ink);    /* 8.9:1 on Gulf blue */
 }
 
 .author-avatar img {
@@ -8691,15 +8718,65 @@ input:focus, textarea:focus, select:focus {
 }
 
 .post-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     margin-top: 1rem;
     padding-top: 0.75rem;
     border-top: 1px solid var(--border-color);
 }
 
+/* Moderator buttons (pin/lock) sit beside Delete */
+.forum-page .btn-mod,
+.forum-page .btn-mod:hover {
+    padding: 0.35rem 0.75rem;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-sm);
+    background: transparent;
+    color: var(--text-color);
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.forum-page .btn-mod:hover {
+    border-color: var(--text-color);
+}
+
+.thread-badges {
+    display: flex;
+    gap: 0.5rem;
+    margin: 0 0 0.5rem;
+}
+
+.thread-badge {
+    display: inline-block;
+    padding: 0.15rem 0.55rem;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.thread-badge--pinned { color: var(--accent-text); }
+.thread-badge--locked { color: var(--text-muted); }
+
+.locked-notice {
+    margin: 0 0 2rem;
+    padding: 1rem 1.25rem;
+    border: 1px dashed var(--border-strong);
+    border-radius: var(--radius-md);
+    color: var(--text-muted);
+    text-align: center;
+}
+
 .btn-delete {
     background: none;
-    border: 1px solid var(--danger-color);
-    color: var(--danger-color);
+    border: 1px solid var(--danger-text);
+    color: var(--danger-text);
     padding: 0.35rem 0.75rem;
     font-size: 0.8rem;
     border-radius: var(--radius-sm);
@@ -8708,8 +8785,8 @@ input:focus, textarea:focus, select:focus {
 }
 
 .btn-delete:hover {
-    background: var(--danger-color);
-    color: white;
+    background: var(--danger-text);
+    color: var(--background-color);
 }
 
 /* Replies Section */
@@ -8741,6 +8818,24 @@ input:focus, textarea:focus, select:focus {
 }
 
 /* Reply Form */
+.forum-page .reply-form {
+    max-width: none;
+    margin: 0;
+    padding: 1.25rem;
+    background: var(--surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+}
+
+.forum-page .reply-form .form-group {
+    margin-bottom: 0.75rem;
+}
+
+.forum-page .reply-form .form-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .reply-form-section h2 {
     font-size: 1.25rem;
     margin-bottom: 1rem;
@@ -8749,19 +8844,19 @@ input:focus, textarea:focus, select:focus {
 .reply-form textarea {
     width: 100%;
     padding: 1rem;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border-strong);
     border-radius: var(--radius-md);
     font-size: 1rem;
     font-family: inherit;
-    background: var(--background-color);
+    background: var(--surface-sunk);
     color: var(--text-color);
     resize: vertical;
 }
 
 .reply-form textarea:focus {
     outline: none;
-    border-color: var(--gulf-blue);
-    box-shadow: 0 0 0 3px rgba(125, 207, 234, 0.2);
+    border-color: var(--link-blue);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--link-blue) 20%, transparent);
 }
 
 .login-prompt {
@@ -11092,4 +11187,179 @@ input:focus, textarea:focus, select:focus {
 @media (max-width: 420px) {
     .hm-issue-parts td:last-child { white-space: nowrap; }
     .hm-actions .hm-btn { flex: 1 1 100%; }
+}
+
+/* ================================
+   Return-visit features
+   ================================ */
+
+/* Issue card: difficulty badge and "Copy link" share button */
+.issue-header-tools {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+.issue-card .copy-link-btn,
+.issue-card .copy-link-btn:hover {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    min-height: 32px;
+    padding: 0.25rem 0.65rem;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-full);
+    background: transparent;
+    color: var(--text-secondary);
+    font: 500 0.78rem var(--font-body);
+    cursor: pointer;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.issue-card .copy-link-btn:hover,
+.issue-card .copy-link-btn.is-copied {
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
+
+.issue-card .copy-link-btn:focus-visible {
+    outline: 2px solid var(--link-blue);
+    outline-offset: 2px;
+}
+
+/* The anchor target of a shared issue link gets a brief highlight */
+.issue-card:target {
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--link-blue) 35%, transparent), var(--shadow-md);
+    scroll-margin-top: 140px;
+}
+
+/* Newsletter strip at the end of car pages and buyer's guides */
+.newsletter-strip {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: var(--space-5) var(--space-6);
+    align-items: center;
+    margin-top: var(--space-6);
+    padding: var(--space-6);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+}
+
+.newsletter-strip .eyebrow {
+    margin: 0 0 0.4rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--link-blue);
+}
+
+.newsletter-strip h2 {
+    margin: 0 0 0.5rem;
+    font-size: var(--step-2);
+    line-height: 1.15;
+}
+
+.newsletter-strip-text p:last-child {
+    margin: 0;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.resource-content .newsletter-strip-form {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: 0;
+}
+
+.newsletter-strip-form label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.newsletter-strip-row {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.newsletter-strip-row input {
+    flex: 1;
+    min-width: 0;
+    min-height: 48px;
+    padding: 0 1rem;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-md);
+    background: var(--surface-sunk);
+    color: var(--text-color);
+    font: 1rem var(--font-body);
+}
+
+.newsletter-strip-row .btn {
+    border-radius: var(--radius-md);
+    white-space: nowrap;
+}
+
+.newsletter-strip .newsletter-status:empty { display: none; }
+.newsletter-strip .newsletter-status { margin: 0.5rem 0 0; font-size: 0.9rem; font-weight: 600; }
+.newsletter-strip .newsletter-status.is-success { color: var(--link-blue); }
+.newsletter-strip .newsletter-status.is-error { color: var(--accent-text); }
+
+@media (max-width: 768px) {
+    .newsletter-strip {
+        grid-template-columns: 1fr;
+        padding: var(--space-5);
+    }
+
+    .newsletter-strip-row {
+        flex-direction: column;
+    }
+}
+
+/* Homepage: signed-in garage line */
+.hm .hm-garage-status {
+    padding: 0.6rem 0.9rem;
+    border: 1px solid var(--border-color);
+    border-left: 3px solid var(--status-ok);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    margin: 0;
+    color: var(--text-color);
+}
+
+.hm .hm-garage-status.is-overdue {
+    border-left-color: var(--status-over);
+}
+
+/* Homepage: "Pick up where you left off" */
+.hm-resume {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem 0.6rem;
+    margin: -0.4rem 0 0;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.hm-resume[hidden] {
+    display: none;
+}
+
+.hm .hm-resume a {
+    font-weight: 600;
+    color: var(--link-blue);
+    text-decoration: none;
+}
+
+.hm .hm-resume a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
