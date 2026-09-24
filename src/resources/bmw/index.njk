@@ -1,115 +1,67 @@
 ---
 layout: layouts/base.njk
-title: BMW Resources
-description: "Complete BMW resource guides for E28, E30, E34, E36, E39, E46, and E90 models. Find common issues, repair costs, torque specs, parts suppliers, and DIY maintenance guides."
-keywords: "BMW E30, BMW E36, BMW E46, BMW E90, BMW E28, BMW E34, BMW E39, BMW common issues, BMW repair guide, BMW torque specs, BMW parts"
+title: "Classic BMW: E28 to E90"
+description: "Known issues, repair costs, guides, torque specs, and buyer's guides for the BMW E28, E30, E34, E36, E39, E46, and E90."
 breadcrumbs:
   - { label: "Home", url: "/" }
   - { label: "BMW" }
 ---
-
-<!-- Hero Section -->
+{% set b = stats.byBrand.bmw %}
 <section class="brand-hero">
     <div class="brand-hero-content">
-        <span class="hero-badge">BMW Resources</span>
-        <h1>The Ultimate <span class="highlight">Driving Machine</span></h1>
-        <p class="hero-subtitle">Comprehensive guides, verified specs, and trusted resources for BMW enthusiasts.</p>
+        <p class="hero-eyebrow">BMW</p>
+        <h1>Seven BMWs, from the E28 to the E90.</h1>
+        <p class="hero-subtitle">Mostly straight-sixes, mostly rear-drive, and all worth keeping on the road. Here's what goes wrong on each one and what it costs to put right.</p>
     </div>
 </section>
 
-<!-- Stats Bar -->
-<section class="stats-bar">
-    <div class="stats-container">
-        <div class="stat-item">
-            <span class="stat-number">7</span>
-            <span class="stat-label">Platforms</span>
-        </div>
-        <div class="stat-item">
-            <span class="stat-number">{{ vehicles.e30.issues | length + vehicles.e36.issues | length + vehicles.e46.issues | length + vehicles.e28.issues | length + vehicles.e34.issues | length + vehicles.e39.issues | length + vehicles.e90.issues | length }}+</span>
-            <span class="stat-label">Issues Documented</span>
-        </div>
-        <div class="stat-item">
-            <span class="stat-number">28</span>
-            <span class="stat-label">Restoration Guides</span>
-        </div>
-        <div class="stat-item">
-            <span class="stat-number">{{ vehicles.e30.diyGuides | length + vehicles.e36.diyGuides | length + vehicles.e46.diyGuides | length + vehicles.e28.diyGuides | length + vehicles.e34.diyGuides | length + vehicles.e39.diyGuides | length + vehicles.e90.diyGuides | length }}+</span>
-            <span class="stat-label">DIY Guides</span>
-        </div>
-    </div>
+<section class="stats-bar" aria-label="BMW coverage">
+    <dl class="stats-container">
+        <div class="stat-item"><dt class="stat-label">Cars</dt><dd class="stat-number">{{ b.vehicles }}</dd></div>
+        <div class="stat-item"><dt class="stat-label">Known issues</dt><dd class="stat-number">{{ b.issues }}</dd></div>
+        <div class="stat-item"><dt class="stat-label">Guides</dt><dd class="stat-number">{{ b.guides }}</dd></div>
+        <div class="stat-item"><dt class="stat-label">Torque specs</dt><dd class="stat-number">{{ b.torqueSpecs }}</dd></div>
+    </dl>
 </section>
 
-<!-- Quick Search Section -->
+<section id="vehicles" class="vehicles-section">
+    <div class="brand-block">
+        <div class="brand-header">
+            <h2 class="brand-title">3 Series</h2>
+            <p class="brand-blurb">The E30 through the E90: the cars most of us started with.</p>
+        </div>
+        {% set brandKey = "bmw" %}{% set gridKeys = ["e30", "e36", "e46", "e90"] %}
+        {% include "partials/vehicle-grid.njk" %}
+    </div>
+
+    <div class="brand-block">
+        <div class="brand-header">
+            <h2 class="brand-title">5 Series</h2>
+            <p class="brand-blurb">E28, E34, and E39: big sixes, a few V8s, and the M5s.</p>
+        </div>
+        {% set brandKey = "bmw" %}{% set gridKeys = ["e28", "e34", "e39"] %}
+        {% include "partials/vehicle-grid.njk" %}
+    </div>
+    {% set gridKeys = null %}
+</section>
+
 <section class="quick-search-section">
     <div class="quick-search-container">
         <h2>What are you working on?</h2>
-        <p>Search across all BMW models for issues, specs, guides, and suppliers</p>
-        <form class="home-search-form" action="/search/" method="get">
+        <p>Search every BMW page for issues, guides, specs, and parts.</p>
+        <form class="home-search-form" action="/search/" method="get" role="search">
             <input type="hidden" name="brand" value="BMW">
-            <input type="text" name="q" placeholder="Try 'VANOS', 'cooling system', 'subframe'..." class="home-search-input">
+            <label for="brand-search" class="visually-hidden">Search BMW pages</label>
+            <input type="search" id="brand-search" name="q" placeholder="VANOS, cooling system, subframe…" class="home-search-input">
             <button type="submit" class="btn btn-primary">Search</button>
         </form>
-        <div class="popular-searches">
-            <span>Popular:</span>
-            <a href="/search/?q=vanos">VANOS</a>
-            <a href="/search/?q=cooling+system">Cooling System</a>
-            <a href="/search/?q=subframe">Subframe</a>
-            <a href="/search/?q=window+regulator">Window Regulator</a>
-            <a href="/search/?q=oil+leak">Oil Leaks</a>
-        </div>
-    </div>
-</section>
-
-<!-- Vehicle Platforms Section -->
-<section id="vehicles" class="vehicles-section">
-    <div class="section-header">
-        <h2>Select Your BMW</h2>
-        <p>Choose your model for common issues, restoration guides, torque specs, and parts suppliers</p>
-    </div>
-
-    <div class="vehicle-grid">
-        {% for key in vehicleList.bmw %}
-        {% set vehicle = vehicles[key] %}
-        <a href="/resources/bmw/{{ key }}/" class="vehicle-card">
-            <div class="vehicle-card-image">
-                {% if vehicle.heroImage %}<img src="{{ vehicle.heroImage }}" alt="{{ vehicle.fullName }} {{ vehicle.years }}" loading="lazy">{% endif %}
-            </div>
-            <div class="vehicle-card-content">
-                <h4>{{ vehicle.model }}</h4>
-                <span class="vehicle-years">{{ vehicle.years }}</span>
-                <span class="vehicle-name">{{ vehicle.fullName | replace("BMW ", "") }}</span>
-            </div>
-        </a>
-        {% endfor %}
-    </div>
-</section>
-
-<!-- Features Section -->
-<section class="features-section">
-    <div class="section-header">
-        <h2>What You'll Find</h2>
-        <p>Everything you need to keep your BMW on the road</p>
-    </div>
-    <div class="features-grid">
-        <div class="feature-card">
-            <div class="feature-icon">🔧</div>
-            <h3>Common Issues</h3>
-            <p>Detailed documentation of known problems with symptoms, causes, and proven fixes for each platform.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">📐</div>
-            <h3>Torque Specs</h3>
-            <p>Factory-verified torque specifications for engine, suspension, brakes, and drivetrain components.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">📋</div>
-            <h3>Restoration Guides</h3>
-            <p>Comprehensive guides for suspension refresh, rust repair, electrical systems, and interior restoration.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">🛒</div>
-            <h3>Parts Suppliers</h3>
-            <p>Curated lists of trusted OEM, aftermarket, and used parts suppliers for each model.</p>
-        </div>
+        <p class="popular-searches">
+            <span>People look up:</span>
+            <a href="/search/?q=vanos&amp;brand=BMW">VANOS</a>
+            <a href="/search/?q=cooling+system&amp;brand=BMW">Cooling system</a>
+            <a href="/search/?q=subframe&amp;brand=BMW">Rear subframe</a>
+            <a href="/search/?q=window+regulator&amp;brand=BMW">Window regulator</a>
+            <a href="/search/?q=oil+leak&amp;brand=BMW">Oil leaks</a>
+        </p>
     </div>
 </section>

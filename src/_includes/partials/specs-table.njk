@@ -1,7 +1,7 @@
 <div class="specs-container">
     {% if vehicle.torqueSpecs.sources %}
     <div class="specs-sources">
-        <h3>Reference Sources</h3>
+        <h3>Where these numbers come from</h3>
         <ul class="sources-list">
             {% for source in vehicle.torqueSpecs.sources %}
             <li><a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.name }}</a></li>

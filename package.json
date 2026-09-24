@@ -13,8 +13,7 @@
     "minify:css": "cleancss -o _site/styles.css _site/styles.css",
     "minify:js": "for f in _site/script.js _site/search.js _site/tools/*.js _site/js/*.js; do terser \"$f\" -o \"$f\" -c -m || exit 1; done",
     "minify": "npm run minify:css && npm run minify:js",
-    "optimize:images": "node optimize-images.js",
-    "build:prod": "npm run build:all && npm run optimize:images && npm run minify"
+    "build:prod": "npm run build:all && npm run minify"
   },
   "keywords": [
     "porsche",
@@ -34,6 +33,6 @@
     "@11ty/eleventy-img": "^7.0.0"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=22"
   }
 }

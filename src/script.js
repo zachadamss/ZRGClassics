@@ -1,21 +1,16 @@
 // ================================
 // Dark Mode Toggle
 // ================================
+// The initial theme is applied by an inline script in <head> (base.njk)
+// so the page never flashes the wrong theme. This only handles the toggle.
 const themeToggle = document.getElementById('theme-toggle');
 
-// Check for saved user preference
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme) {
-    document.documentElement.setAttribute('data-theme', savedTheme);
-}
-
-// Toggle theme on button click
 themeToggle.addEventListener('click', () => {
     const currentTheme = document.documentElement.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
     document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
+    try { localStorage.setItem('theme', newTheme); } catch (e) {}
 });
 
 // ================================
@@ -473,3 +468,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     sections.forEach(section => sectionObserver.observe(section));
 })();
+
+// ================================
+// Print buttons (e.g. buyer's guide inspection checklist)
+// Opens every collapsed <details> first so the printout is complete.
+// ================================
+document.querySelectorAll('[data-print]').forEach(button => {
+    button.addEventListener('click', () => {
+        document.querySelectorAll('details:not([open])').forEach(d => d.setAttribute('open', ''));
+        window.print();
+    });
+});

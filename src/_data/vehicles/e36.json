@@ -2,20 +2,29 @@
   "model": "E36",
   "brand": "BMW",
   "fullName": "BMW E36 3 Series",
+  "series": "3 Series",
+  "tagline": "The E30's more capable successor, finally getting the respect it deserves.",
   "years": "1990-2000",
   "engines": [
+    "M42 1.8L I4 (318i, 1992–95)",
+    "M44 1.9L I4 (318i/ti, 1996–99)",
     "M50 2.5L I6",
-    "M52 2.8L I6",
-    "M42 1.8L I4",
-    "S50/S52 3.0L I6"
+    "M52 2.5/2.8L I6",
+    "S50B30US 3.0L I6 (1995 US M3)",
+    "S52 3.2L I6 (1996–99 US M3)"
   ],
   "heroImage": "/images/vehicles/e36-hero.jpg",
+  "photoCredit": {
+    "text": "",
+    "url": "",
+    "license": ""
+  },
   "issues": [
     {
       "id": "cooling-system",
       "title": "Cooling System Failures",
       "symptoms": "Overheating, coolant leaks, temperature gauge pegged high, steam from engine bay, heater blowing cold",
-      "description": "The E36 cooling system is notoriously fragile and one of the most critical maintenance items. BMW used plastic components that become brittle with heat cycles and age. The expansion tank, thermostat housing, water pump impeller, and radiator end tanks are all prone to failure. A cooling system failure can quickly lead to head gasket damage or a warped head.",
+      "description": "The E36 cooling system is fragile, and keeping it healthy matters more than anything else on the car. BMW used plastic components that become brittle with heat cycles and age. The expansion tank, thermostat housing, water pump impeller, and radiator end tanks are all prone to failure. A cooling system failure can quickly lead to head gasket damage or a warped head.",
       "fixes": [
         "Replace expansion tank every 60,000 miles or at first sign of cracking",
         "Replace thermostat and housing (upgrade to aluminum housing available)",
@@ -25,14 +34,8 @@
         "Consider doing a full cooling system refresh preventatively"
       ],
       "sources": [
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        },
-        {
-          "name": "Turner Motorsport",
-          "url": "https://www.turnermotorsport.com/"
-        }
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
+        { "name": "Turner Motorsport", "url": "https://www.turnermotorsport.com/" }
       ],
       "repairCosts": {
         "diy": "$250-400",
@@ -40,31 +43,11 @@
         "notes": "Full refresh recommended. Replace all plastic components together."
       },
       "parts": [
-        {
-          "name": "Water Pump",
-          "partNumber": "11517527799",
-          "price": "$60-100"
-        },
-        {
-          "name": "Thermostat",
-          "partNumber": "11531733803",
-          "price": "$20-40"
-        },
-        {
-          "name": "Expansion Tank",
-          "partNumber": "17111723520",
-          "price": "$30-50"
-        },
-        {
-          "name": "Radiator Hose Kit",
-          "partNumber": "Various",
-          "price": "$80-150"
-        },
-        {
-          "name": "Radiator",
-          "partNumber": "17111728907",
-          "price": "$120-200"
-        }
+        { "name": "Water Pump", "partNumber": "11517527799", "price": "$60-100" },
+        { "name": "Thermostat", "partNumber": "11531733803", "price": "$20-40" },
+        { "name": "Expansion Tank", "partNumber": "17111723520", "price": "$30-50" },
+        { "name": "Radiator Hose Kit", "price": "$80-150" },
+        { "name": "Radiator", "partNumber": "17111728907", "price": "$120-200" }
       ],
       "relatedIssues": [
         { "vehicle": "e30", "brand": "BMW", "model": "E30", "issueId": "cooling-system" },
@@ -85,14 +68,8 @@
         "For severe cases, rebuild or replace entire VANOS unit"
       ],
       "sources": [
-        {
-          "name": "Beisan Systems",
-          "url": "https://www.beisansystems.com/"
-        },
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        }
+        { "name": "Beisan Systems", "url": "https://www.beisansystems.com/" },
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" }
       ],
       "repairCosts": {
         "diy": "$80-150",
@@ -100,21 +77,9 @@
         "notes": "Single VANOS on M50TU/M52. Seal kit is most common fix."
       },
       "parts": [
-        {
-          "name": "VANOS Seal Kit (Beisan)",
-          "partNumber": "BS030",
-          "price": "$80-100"
-        },
-        {
-          "name": "VANOS Piston",
-          "partNumber": "11361738403",
-          "price": "$100-150"
-        },
-        {
-          "name": "VANOS Solenoid",
-          "partNumber": "11361433513",
-          "price": "$80-120"
-        }
+        { "name": "VANOS Seal Kit (Beisan)", "partNumber": "BS030", "price": "$80-100" },
+        { "name": "VANOS Piston", "partNumber": "11361738403", "price": "$100-150" },
+        { "name": "VANOS Solenoid", "partNumber": "11361433513", "price": "$80-120" }
       ],
       "relatedIssues": [
         { "vehicle": "e34", "brand": "BMW", "model": "E34", "issueId": "vanos-issues" },
@@ -137,14 +102,8 @@
         "Check rear subframe mounts at the same time"
       ],
       "sources": [
-        {
-          "name": "Turner Motorsport",
-          "url": "https://www.turnermotorsport.com/"
-        },
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        }
+        { "name": "Turner Motorsport", "url": "https://www.turnermotorsport.com/" },
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" }
       ],
       "repairCosts": {
         "diy": "$100-200",
@@ -152,21 +111,9 @@
         "notes": "Budget for alignment after replacement. Both sides recommended."
       },
       "parts": [
-        {
-          "name": "RTAB Bushing (OEM)",
-          "partNumber": "33326770824",
-          "price": "$25-40"
-        },
-        {
-          "name": "RTAB Bushing (Poly)",
-          "partNumber": "Various aftermarket",
-          "price": "$60-100"
-        },
-        {
-          "name": "Trailing Arm",
-          "partNumber": "33321090031",
-          "price": "$150-250"
-        }
+        { "name": "RTAB Bushing (OEM)", "partNumber": "33326770824", "price": "$25-40" },
+        { "name": "RTAB Bushing (Poly)", "price": "$60-100" },
+        { "name": "Trailing Arm", "partNumber": "33321090031", "price": "$150-250" }
       ],
       "difficulty": "Moderate"
     },
@@ -182,14 +129,8 @@
         "Replace both front regulators at the same time"
       ],
       "sources": [
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        },
-        {
-          "name": "ECS Tuning",
-          "url": "https://www.ecstuning.com/"
-        }
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" },
+        { "name": "ECS Tuning", "url": "https://www.ecstuning.com/" }
       ],
       "repairCosts": {
         "diy": "$60-120",
@@ -197,21 +138,9 @@
         "notes": "Per window. Common DIY job."
       },
       "parts": [
-        {
-          "name": "Window Regulator (Front Left)",
-          "partNumber": "51338201465",
-          "price": "$60-100"
-        },
-        {
-          "name": "Window Regulator (Front Right)",
-          "partNumber": "51338201466",
-          "price": "$60-100"
-        },
-        {
-          "name": "Window Motor",
-          "partNumber": "67628360977",
-          "price": "$50-80"
-        }
+        { "name": "Window Regulator (Front Left)", "partNumber": "51338201465", "price": "$60-100" },
+        { "name": "Window Regulator (Front Right)", "partNumber": "51338201466", "price": "$60-100" },
+        { "name": "Window Motor", "partNumber": "67628360977", "price": "$50-80" }
       ],
       "relatedIssues": [
         { "vehicle": "e46", "brand": "BMW", "model": "E46", "issueId": "window-regulator" },
@@ -224,7 +153,7 @@
       "id": "oil-leaks",
       "title": "Oil Leaks",
       "symptoms": "Oil spots under car, burning oil smell, visible oil on engine, low oil level between changes",
-      "description": "E36s are known for developing oil leaks from several common locations. The valve cover gasket, oil filter housing gasket (OFHG), oil pan gasket, and rear main seal are all common leak points. The OFHG is particularly notorious and can leak onto the serpentine belt.",
+      "description": "E36s are known for developing oil leaks from several common locations. The valve cover gasket, oil filter housing gasket (OFHG), oil pan gasket, and rear main seal are all common leak points. The OFHG is a particularly common culprit and can leak onto the serpentine belt.",
       "fixes": [
         "Replace valve cover gasket (easy DIY job)",
         "Replace oil filter housing gasket (common and important)",
@@ -233,14 +162,8 @@
         "Rear main seal (labor-intensive, do with clutch replacement)"
       ],
       "sources": [
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        },
-        {
-          "name": "FCP Euro",
-          "url": "https://www.fcpeuro.com/"
-        }
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
+        { "name": "FCP Euro", "url": "https://www.fcpeuro.com/" }
       ],
       "repairCosts": {
         "diy": "$150-300",
@@ -248,26 +171,10 @@
         "notes": "Valve cover gasket is easiest. Oil filter housing and pan require more labor."
       },
       "parts": [
-        {
-          "name": "Valve Cover Gasket",
-          "partNumber": "11129070531",
-          "price": "$25-50"
-        },
-        {
-          "name": "Oil Filter Housing Gasket",
-          "partNumber": "11421719855",
-          "price": "$15-30"
-        },
-        {
-          "name": "Oil Pan Gasket",
-          "partNumber": "11131437237",
-          "price": "$30-60"
-        },
-        {
-          "name": "Cam Position Sensor Seal",
-          "partNumber": "12141748398",
-          "price": "$10-20"
-        }
+        { "name": "Valve Cover Gasket", "partNumber": "11129070531", "price": "$25-50" },
+        { "name": "Oil Filter Housing Gasket", "partNumber": "11421719855", "price": "$15-30" },
+        { "name": "Oil Pan Gasket", "partNumber": "11131437237", "price": "$30-60" },
+        { "name": "Cam Position Sensor Seal", "partNumber": "12141748398", "price": "$10-20" }
       ],
       "difficulty": "Advanced"
     },
@@ -284,14 +191,8 @@
         "Inspect ball joints while control arms are out"
       ],
       "sources": [
-        {
-          "name": "Turner Motorsport",
-          "url": "https://www.turnermotorsport.com/"
-        },
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        }
+        { "name": "Turner Motorsport", "url": "https://www.turnermotorsport.com/" },
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" }
       ],
       "repairCosts": {
         "diy": "$150-300",
@@ -299,26 +200,10 @@
         "notes": "Replace in pairs. Alignment required after."
       },
       "parts": [
-        {
-          "name": "Control Arm (Lower Left)",
-          "partNumber": "31121139991",
-          "price": "$50-80"
-        },
-        {
-          "name": "Control Arm (Lower Right)",
-          "partNumber": "31121139992",
-          "price": "$50-80"
-        },
-        {
-          "name": "Control Arm Bushing",
-          "partNumber": "31129069035",
-          "price": "$15-30"
-        },
-        {
-          "name": "Ball Joint",
-          "partNumber": "31126758510",
-          "price": "$30-50"
-        }
+        { "name": "Control Arm (Lower Left)", "partNumber": "31121139991", "price": "$50-80" },
+        { "name": "Control Arm (Lower Right)", "partNumber": "31121139992", "price": "$50-80" },
+        { "name": "Control Arm Bushing", "partNumber": "31129069035", "price": "$15-30" },
+        { "name": "Ball Joint", "partNumber": "31126758510", "price": "$30-50" }
       ],
       "difficulty": "Advanced"
     },
@@ -335,14 +220,8 @@
         "Replace spark plug wires on earlier models"
       ],
       "sources": [
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        },
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        }
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" },
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" }
       ],
       "repairCosts": {
         "diy": "$100-250",
@@ -350,21 +229,9 @@
         "notes": "Replace all coils and plugs together for best results."
       },
       "parts": [
-        {
-          "name": "Ignition Coil",
-          "partNumber": "12131703228",
-          "price": "$25-50"
-        },
-        {
-          "name": "Spark Plugs (NGK)",
-          "partNumber": "BKR6EQUP",
-          "price": "$8-15 each"
-        },
-        {
-          "name": "Spark Plug Wires (M50)",
-          "partNumber": "12121727583",
-          "price": "$80-120"
-        }
+        { "name": "Ignition Coil", "partNumber": "12131703228", "price": "$25-50" },
+        { "name": "Spark Plugs (NGK)", "partNumber": "BKR6EQUP", "price": "$8-15 each" },
+        { "name": "Spark Plug Wires (M50)", "partNumber": "12121727583", "price": "$80-120" }
       ],
       "difficulty": "Advanced"
     }
@@ -373,13 +240,13 @@
     {
       "id": "suspension-refresh",
       "title": "Full Suspension Refresh",
-      "description": "Complete front and rear suspension overhaul for the E36 including control arms, RTABs (rear trailing arm bushings), subframe bushings, and all wear items. Restores precise handling and eliminates the notorious E36 rear-end instability.",
+      "description": "Control arms, rear trailing arm bushings, subframe mounts, and everything that wears. It cures the loose, wandering rear end so many E36s have.",
       "difficulty": "Intermediate",
       "time": "12-16 hours",
       "cost": "$600-1,200",
       "parts": [
         { "name": "Front Control Arm (pair)", "oem": "31121140957/958", "aftermarket": "Lemforder, Meyle HD", "cost": "$80-180" },
-        { "name": "Rear Trailing Arm Bushing - RTAB (pair)", "oem": "33321136311", "aftermarket": "Meyle HD, Powerflex", "cost": "$40-100" },
+        { "name": "Rear Trailing Arm Bushing—RTAB (pair)", "oem": "33321136311", "aftermarket": "Meyle HD, Powerflex", "cost": "$40-100" },
         { "name": "Front Strut Mount (pair)", "oem": "31331092885", "aftermarket": "Lemforder, Sachs", "cost": "$50-100" },
         { "name": "Rear Shock Mount (pair)", "oem": "33521092362", "aftermarket": "Febi, Meyle", "cost": "$30-60" },
         { "name": "Front Strut/Shock (pair)", "oem": "31311091554", "aftermarket": "Bilstein B4/B6, Koni Yellow", "cost": "$150-350" },
@@ -403,8 +270,8 @@
       ],
       "steps": [
         "Raise the vehicle and secure on four jack stands. Remove all four wheels.",
-        "FRONT SUSPENSION: Mark the position of the camber adjustment bolts before removal.",
-        "Remove the brake caliper (two 19mm bolts) and support with wire - never hang by the hose.",
+        "Front suspension: Mark the position of the camber adjustment bolts before removal.",
+        "Remove the brake caliper (two 19mm bolts) and support with wire—never hang by the hose.",
         "Remove the ABS sensor wire clip from the strut housing.",
         "Remove the sway bar end link nut (16mm) from the strut.",
         "Remove the tie rod end nut (18mm) and separate with ball joint separator.",
@@ -413,30 +280,30 @@
         "Lower the strut assembly out through the wheel well.",
         "Compress the spring and remove the 21mm strut shaft nut. Replace mount, bump stop, and strut.",
         "Control arms: Remove the two 18mm bolts and replace entire arm (bushings are pressed in).",
-        "Reinstall components - torque strut tower nuts to 25 ft-lbs, pinch bolts to 81 ft-lbs.",
-        "REAR SUSPENSION - RTABs: This is the most critical E36 suspension repair.",
+        "Reinstall components—torque strut tower nuts to 25 ft-lbs, pinch bolts to 81 ft-lbs.",
+        "Rear suspension— RTABs: This is the E36 suspension repair that matters most.",
         "Support the trailing arm with a jack. Remove the 19mm RTAB center bolt.",
-        "Use a RTAB press tool to remove the old bushing - this requires significant force.",
-        "Press in the new RTAB bushing with the tool. Proper tool rental is essential.",
+        "Use a RTAB press tool to remove the old bushing—this requires significant force.",
+        "Press in the new RTAB bushing with the proper tool. Most parts stores rent one.",
         "For subframe bushings: Support the subframe, remove mounting bolts, and press in new bushings.",
         "Rear shocks: Remove the trunk liner to access upper mounts (two 13mm nuts).",
         "Remove lower shock bolt (18mm) and swap shock. Torque upper to 16 ft-lbs, lower to 74 ft-lbs.",
         "Replace sway bar bushings and end links.",
-        "Reinstall wheels and lower vehicle. CRITICAL: Get alignment within 50 miles."
+        "Reinstall the wheels and lower the car. Get an alignment within 50 miles."
       ],
       "tips": [
-        "The RTAB press tool is essential - do not attempt without it. Rent from any major auto parts store.",
+        "Don't attempt this without the RTAB press tool. Most auto parts stores rent one.",
         "Meyle HD RTABs are pre-pressed in a sleeve for easier installation than OEM.",
         "Mark eccentric bolt positions before removal to preserve approximate alignment.",
-        "The E36 M3 has different subframe mounting - use correct parts.",
+        "The E36 M3 has different subframe mounting—use correct parts.",
         "Powerflex bushings offer more precision but transmit more NVH.",
         "If RTABs are severely worn, inspect the trailing arm mounting points for cracks."
       ],
       "warnings": [
-        "Worn RTABs cause dangerous rear-end instability at highway speeds - do not delay this repair.",
-        "Spring compressors are dangerous - follow all safety procedures and use quality tools.",
+        "Worn RTABs cause dangerous rear-end instability at highway speeds—do not delay this repair.",
+        "Spring compressors are dangerous—follow all safety procedures and use quality tools.",
         "Final torque all suspension bolts at ride height (weight on wheels).",
-        "E36 M3 subframe mounting points can crack - inspect before and after bushing replacement."
+        "E36 M3 subframe mounting points can crack—inspect before and after bushing replacement."
       ],
       "references": [
         { "name": "Bimmerforums RTAB DIY", "url": "https://www.bimmerforums.com/forum/showthread.php?t=565837" },
@@ -446,7 +313,7 @@
     {
       "id": "rust-repair",
       "title": "Rust Repair & Prevention",
-      "description": "E36-specific rust identification and repair. Common problem areas include front fenders, rocker panels, rear wheel arches, and trunk floor. Complete guide to cutting, welding, and protecting these areas.",
+      "description": "Front fenders, rockers, rear arches, and the trunk floor. The E36 rusts less than the E30, but it still rusts.",
       "difficulty": "Advanced",
       "time": "15-50+ hours",
       "cost": "$250-2,500+",
@@ -476,42 +343,42 @@
         "Fire extinguisher and safety gear"
       ],
       "steps": [
-        "INSPECTION: Remove fender liners, trunk carpet, and rear seat to fully inspect.",
+        "Inspection: Remove fender liners, trunk carpet, and rear seat to fully inspect.",
         "Common E36 rust areas: front fenders behind marker lights, rocker panels at jacking points, rear wheel arch lips, trunk floor corners, battery tray area.",
-        "Use a pick or screwdriver to test suspect areas - solid metal resists poking.",
+        "Use a pick or screwdriver to test suspect areas—solid metal resists poking.",
         "Document all rust with photos and mark areas requiring repair.",
-        "PREPARATION: Remove affected trim, lights, and glass as needed.",
+        "Preparation: Remove affected trim, lights, and glass as needed.",
         "Grind away all paint and undercoating 3 inches beyond visible rust.",
         "Wire wheel or sandblast to clean bare metal.",
         "Treat any remaining surface rust with converter and allow 24 hours to cure.",
-        "CUTTING: Use spot weld drill to separate factory seams where possible.",
+        "Cutting: Use spot weld drill to separate factory seams where possible.",
         "Cut along body lines with cut-off wheel or plasma cutter.",
         "Remove all rusted metal plus 1 inch of good metal.",
-        "PATCHING: Test-fit repair panels and trim to match contours.",
+        "Patching: Test-fit repair panels and trim to match contours.",
         "Create lap joints (1/2 inch overlap) or butt joints depending on location.",
         "Drill holes for plug welds where spot welds are being replaced.",
-        "WELDING: Apply weld-through primer to all bare mating surfaces.",
+        "Welding: Apply weld-through primer to all bare mating surfaces.",
         "Use Clecos to hold panels in position. Tack weld every 2 inches.",
         "Stitch weld in 1-inch segments, allowing cooling between to prevent warping.",
         "Grind welds smooth with flap disc.",
-        "FINISHING: Apply seam sealer to all welded joints.",
+        "Finishing: Apply seam sealer to all welded joints.",
         "Prime with epoxy primer, then apply undercoating or paint.",
         "Spray cavity wax into all enclosed sections through drain holes."
       ],
       "tips": [
-        "The E36 rocker panels rust from the inside out - inspect jacking points carefully.",
-        "Convertible E36s have different rocker structure - use correct panels.",
-        "Clean the sunroof drain tubes - clogged drains cause A/B pillar rust.",
+        "The E36 rocker panels rust from the inside out—inspect jacking points carefully.",
+        "Convertible E36s have different rocker structure—use correct panels.",
+        "Clean the sunroof drain tubes—clogged drains cause A/B pillar rust.",
         "European Klokkerholm panels are best quality; avoid cheap Chinese reproductions.",
         "POR-15 is excellent but must be applied over prepared metal or converter.",
-        "Battery tray rust is common - inspect even if other areas look good."
+        "Battery tray rust is common—inspect even if other areas look good."
       ],
       "warnings": [
-        "Welding near fuel lines is extremely dangerous - disconnect battery and drain tank.",
-        "The E36 subframe mounts can rust - this is a safety-critical repair requiring professional assessment.",
-        "Wear proper respiratory protection - old undercoating and paint contain harmful chemicals.",
+        "Welding near fuel lines is extremely dangerous—disconnect battery and drain tank.",
+        "The E36 subframe mounts can rust—this is a safety-critical repair requiring professional assessment.",
+        "Wear proper respiratory protection—old undercoating and paint contain harmful chemicals.",
         "Always have a fire extinguisher within arm's reach when welding.",
-        "Rusty jack points can collapse under load - inspect before lifting."
+        "Rusty jack points can collapse under load—inspect before lifting."
       ],
       "references": [
         { "name": "Bimmerforums Rust Repair Guide", "url": "https://www.bimmerforums.com/forum/showthread.php?t=1205941" },
@@ -521,13 +388,13 @@
     {
       "id": "electrical-restoration",
       "title": "Electrical System Restoration",
-      "description": "Complete electrical system diagnosis and repair for the E36. Covers ground point restoration, window regulator replacement, ABS sensor repair, and the infamous pixel repair for the instrument cluster.",
+      "description": "Grounds, window regulators, ABS sensors, and the cluster display. The common E36 electrical faults and how to fix them.",
       "difficulty": "Intermediate",
       "time": "6-15 hours",
       "cost": "$100-400",
       "parts": [
-        { "name": "Ground Strap - Engine to Chassis", "oem": "12421742444", "aftermarket": "Custom braided", "cost": "$15-30" },
-        { "name": "Ground Strap - Transmission", "oem": "12421432227", "aftermarket": "Custom braided", "cost": "$15-25" },
+        { "name": "Ground Strap—Engine to Chassis", "oem": "12421742444", "aftermarket": "Custom braided", "cost": "$15-30" },
+        { "name": "Ground Strap—Transmission", "oem": "12421432227", "aftermarket": "Custom braided", "cost": "$15-25" },
         { "name": "Window Regulator Front (each)", "oem": "51331977609/610", "aftermarket": "URO, MTC", "cost": "$40-80" },
         { "name": "Window Regulator Rear (each)", "oem": "51358159835/836", "aftermarket": "URO, MTC", "cost": "$35-70" },
         { "name": "Instrument Cluster Pixel Repair Ribbon", "oem": "—", "aftermarket": "BavAuto, eBay", "cost": "$15-40" },
@@ -550,33 +417,33 @@
         "Heat gun"
       ],
       "steps": [
-        "GROUND RESTORATION: Disconnect the negative battery terminal.",
+        "Ground restoration: Disconnect the negative battery terminal.",
         "Locate main grounds: engine-to-chassis (front left of engine), transmission-to-body, and battery-to-chassis.",
         "Remove each strap, wire brush mounting points to bare metal, apply dielectric grease, and reinstall.",
-        "The E36 has an additional hidden ground behind the glovebox - access and clean.",
-        "WINDOW REGULATORS: Remove door panel (3 screws, lift up and out).",
-        "Peel back moisture barrier carefully - it will be reused.",
+        "The E36 has an additional hidden ground behind the glovebox—access and clean.",
+        "Window regulators: Remove door panel (3 screws, lift up and out).",
+        "Peel back moisture barrier carefully—it will be reused.",
         "Disconnect window motor connector. Remove the two 10mm bolts securing glass to regulator.",
         "Support the glass with tape to the window frame.",
         "Remove the three 10mm regulator mounting bolts and work regulator out of door.",
         "Install new regulator, reconnect, and test before reassembly.",
-        "INSTRUMENT CLUSTER PIXELS: Remove cluster surround (2 screws) and cluster (4 screws).",
+        "Instrument cluster pixels: Remove cluster surround (2 screws) and cluster (4 screws).",
         "Disconnect electrical connectors and remove cluster from vehicle.",
         "Open the cluster case (small clips around edges).",
         "Locate the failed ribbon cable connection at the LCD display.",
         "Heat the old ribbon with a soldering iron to remove, clean area.",
         "Apply new ribbon cable and heat with soldering iron to bond. Apply even pressure.",
         "Reassemble and test before reinstalling in vehicle.",
-        "ABS SENSORS: Sensor is held by one T25 bolt. Disconnect electrical connector.",
+        "ABS sensors: Sensor is held by one T25 bolt. Disconnect electrical connector.",
         "Remove bolt and gently twist sensor while pulling to extract from hub.",
         "Clean mounting hole, apply anti-seize to new sensor, and install.",
-        "FINAL STAGE RESISTOR: Located behind glovebox on the blower motor housing.",
+        "Final stage resistor: Located behind glovebox on the blower motor housing.",
         "Remove glovebox for access (3 screws). Unplug connector.",
         "Remove two screws holding FSR. Install new unit with thermal paste on contact surface."
       ],
       "tips": [
-        "The pixel repair requires patience - practice on scrap electronics first.",
-        "ABS sensors seize in the hub - penetrating oil 24 hours before helps.",
+        "The pixel repair requires patience—practice on scrap electronics first.",
+        "ABS sensors seize in the hub—penetrating oil 24 hours before helps.",
         "Upgraded headlight wiring dramatically improves light output.",
         "The E36 convertible has different window regulator part numbers.",
         "Final stage resistor failure causes fan to only work on high speed.",
@@ -584,9 +451,9 @@
       ],
       "warnings": [
         "Always disconnect the battery before electrical work.",
-        "Window glass is heavy and can shatter - handle carefully and wear gloves.",
-        "The SRS (airbag) system can deploy unexpectedly - do not work near airbag components.",
-        "Pixel repair ribbon cables are delicate - don't overheat or they will fail."
+        "Window glass is heavy and can shatter—handle carefully and wear gloves.",
+        "The SRS (airbag) system can deploy unexpectedly—do not work near airbag components.",
+        "Pixel repair ribbon cables are delicate—don't overheat or they will fail."
       ],
       "references": [
         { "name": "E36 Pixel Repair DIY", "url": "https://www.bimmerforums.com/forum/showthread.php?t=742859" },
@@ -596,7 +463,7 @@
     {
       "id": "interior-restoration",
       "title": "Interior Restoration",
-      "description": "Complete E36 interior restoration guide covering seat repair, door panel restoration, headliner replacement, and center console refresh. Address the common wear items and return your interior to showroom condition.",
+      "description": "Seats, door panels, headliner, and the center console, which on an E36 is usually the first thing to look tired.",
       "difficulty": "Intermediate",
       "time": "15-35 hours",
       "cost": "$400-2,000",
@@ -625,49 +492,94 @@
         "10mm, 13mm sockets"
       ],
       "steps": [
-        "SEATS: Remove seats - 4 bolts each (13mm). Disconnect electrical connectors (power seats).",
+        "Seats: Remove seats - 4 bolts each (13mm). Disconnect electrical connectors (power seats).",
         "Remove seat covers by unhooking hog rings from frame with pliers.",
-        "Inspect foam cushions - replace if cracked, compressed, or broken down.",
+        "Inspect foam cushions—replace if cracked, compressed, or broken down.",
         "If re-covering, use old covers as pattern templates.",
         "Install new foam, stretch new covers over, and secure with new hog rings.",
         "For leather refresh: clean with dedicated leather cleaner, then apply conditioner.",
         "For vinyl/leather dye: clean, prep with alcohol, and apply thin coats of dye.",
-        "DOOR PANELS: Remove door handle trim (one screw), then remove panel (3 screws, lift up).",
-        "Carefully peel moisture barrier - save for reuse.",
-        "The map pocket insert becomes brittle and cracks - replace insert or entire panel.",
+        "Door panels: Remove door handle trim (one screw), then remove panel (3 screws, lift up).",
+        "Carefully peel moisture barrier—save for reuse.",
+        "The map pocket insert becomes brittle and cracks—replace insert or entire panel.",
         "Clean panel and apply new vinyl or leather to inserts with spray adhesive.",
         "Replace broken clips before reinstalling.",
-        "HEADLINER: Remove all trim around edges: sun visors, dome light, grab handles, A/B/C pillars.",
+        "Headliner: Remove all trim around edges: sun visors, dome light, grab handles, A/B/C pillars.",
         "Carefully lower the headliner board through the widest door opening.",
         "Scrape off all old fabric and foam backing until surface is smooth.",
         "Apply spray adhesive to both board and fabric. Wait until tacky.",
         "Start from center, press fabric down and work outward to edges.",
         "Wrap and glue edges. Cut openings for dome light, visors, etc.",
         "Allow to cure 24 hours before reinstalling.",
-        "DASHBOARD: For cracks, fill with flexible filler and sand smooth.",
+        "Dashboard: For cracks, fill with flexible filler and sand smooth.",
         "Apply texture coat, then dye to match. Or install a Coverlay cap.",
-        "CARPET: Remove seats, console, kick panels, and sill plates.",
-        "Pull old carpet. Inspect floor for rust - repair before new carpet.",
+        "Carpet: Remove seats, console, kick panels, and sill plates.",
+        "Pull old carpet. Inspect floor for rust—repair before new carpet.",
         "Apply sound deadening if desired. Test-fit new carpet and trim as needed."
       ],
       "tips": [
-        "E36 door panel clips are notoriously fragile - order extras.",
-        "The headliner board is very fragile - don't bend or it will break.",
+        "E36 door panel clips are notoriously fragile—order extras.",
+        "The headliner board is very fragile—don't bend or it will break.",
         "Lseat.com offers excellent pattern-matched E36 seat covers.",
         "The M3 and standard E36 have different seat mounts and covers.",
-        "Use 3M Super 90 for headliner - it's stronger than 77.",
+        "Use 3M Super 90 for headliner—it's stronger than 77.",
         "Work in moderate temperatures for best adhesive performance.",
         "Take photos during disassembly to help with reassembly."
       ],
       "warnings": [
-        "E36 airbag-equipped steering wheels require SRS precautions - disconnect battery and wait 10 minutes.",
-        "Power seat harnesses can short - always disconnect battery first.",
-        "The headliner board will break if bent too sharply - remove through door opening.",
-        "Some seat foams contain fire retardant - wear a mask when removing old foam."
+        "E36 airbag-equipped steering wheels require SRS precautions—disconnect battery and wait 10 minutes.",
+        "Power seat harnesses can short—always disconnect battery first.",
+        "The headliner board will break if bent too sharply—remove through door opening.",
+        "Some seat foams contain fire retardant—wear a mask when removing old foam."
       ],
       "references": [
         { "name": "Bimmerforums Interior Restoration", "url": "https://www.bimmerforums.com/forum/showthread.php?t=1043522" },
         { "name": "Lseat E36 Seat Covers", "url": "https://www.lseat.com/bmw-e36.html" }
+      ]
+    },
+    {
+      "id": "window-regulator",
+      "title": "Window Regulator Replacement",
+      "description": "E36 window regulators fail constantly: the cable frays, the window drops into the door, or the motor spins and nothing moves. It's an afternoon job that saves a shop bill.",
+      "difficulty": "Intermediate",
+      "time": "2-3 hours",
+      "cost": "$60-120",
+      "parts": [
+        { "name": "Window regulator (front, side-specific)", "aftermarket": "Genuine, Meyle", "cost": "$50-100" },
+        { "name": "Door panel clips", "cost": "$10" },
+        { "name": "Vapor barrier adhesive (butyl)", "cost": "$10" }
+      ],
+      "tools": [
+        "Trim removal tools",
+        "10mm socket",
+        "Torx drivers",
+        "Painter's tape",
+        "Rags"
+      ],
+      "steps": [
+        "Disconnect the battery if you'll be working near the airbag or door wiring.",
+        "Remove the door panel: pull the trim covers, remove the screws, then pop the clips with a trim tool.",
+        "Unplug the window switch and door wiring, and set the panel aside.",
+        "Peel back the vapor barrier carefully so you can reuse it.",
+        "Tape the glass up in the frame so it can't fall.",
+        "Unbolt the glass from the regulator clamps.",
+        "Unplug the motor and unbolt the regulator, then work it out through the door opening.",
+        "Transfer the motor to the new regulator if it isn't supplied with one.",
+        "Install the new regulator, reattach the glass, and test before closing anything up.",
+        "Adjust the glass so it seals against the top of the frame and the rubber.",
+        "Reseal the vapor barrier and refit the door panel."
+      ],
+      "tips": [
+        "Buy a few spare door panel clips before you start. The old ones break.",
+        "Genuine regulators last longer than the cheapest aftermarket ones."
+      ],
+      "warnings": [
+        "Keep fingers out of the regulator when testing. It's powerful enough to hurt.",
+        "A torn vapor barrier lets water into the cabin."
+      ],
+      "references": [
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
+        { "name": "RealOEM parts diagrams", "url": "https://www.realoem.com/" }
       ]
     }
   ],
@@ -677,7 +589,10 @@
         "name": "FCP Euro",
         "url": "https://www.fcpeuro.com/BMW-parts/3-series/E36",
         "notes": "Lifetime replacement guarantee. Excellent E36 coverage for cooling, suspension, and engine parts.",
-        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "specialties": [
+          "Lifetime Warranty",
+          "OE Quality"
+        ],
         "shipping": "Free over $49",
         "warranty": "Lifetime",
         "featured": true
@@ -686,14 +601,20 @@
         "name": "Pelican Parts",
         "url": "https://www.pelicanparts.com/BMW/catalog/3-Series_Main.htm",
         "notes": "Huge E36 catalog with tech articles. Great resource for DIY repairs.",
-        "specialties": ["Tech Articles", "OE Parts"],
+        "specialties": [
+          "Tech Articles",
+          "OE Parts"
+        ],
         "shipping": "Free over $99"
       },
       {
         "name": "BMW Parts Direct",
         "url": "https://www.bmwpartsdirect.com/",
         "notes": "Genuine BMW OEM parts from authorized dealers.",
-        "specialties": ["Genuine BMW", "Dealer Direct"]
+        "specialties": [
+          "Genuine BMW",
+          "Dealer Direct"
+        ]
       }
     ],
     "performance": [
@@ -701,26 +622,42 @@
         "name": "Turner Motorsport",
         "url": "https://www.turnermotorsport.com/BMW-E36-Parts",
         "notes": "Race-proven E36 parts. Excellent monoball RTABs and suspension components.",
-        "specialties": ["Race Parts", "RTABs", "Suspension"],
+        "specialties": [
+          "Race Parts",
+          "RTABs",
+          "Suspension"
+        ],
         "featured": true
       },
       {
         "name": "BimmerWorld",
         "url": "https://www.bimmerworld.com/BMW-Parts/E36-1992-1998/",
         "notes": "Racing heritage with quality street and track parts.",
-        "specialties": ["Track Parts", "Suspension", "Brakes"]
+        "specialties": [
+          "Track Parts",
+          "Suspension",
+          "Brakes"
+        ]
       },
       {
         "name": "Garagistic",
         "url": "https://www.garagistic.com/",
         "notes": "E36-focused performance and restoration. Quality engine mounts and subframe reinforcement.",
-        "specialties": ["Engine Mounts", "Subframe", "Restoration"]
+        "specialties": [
+          "Engine Mounts",
+          "Subframe",
+          "Restoration"
+        ]
       },
       {
         "name": "VAC Motorsports",
         "url": "https://www.vacmotorsports.com/",
         "notes": "High-performance BMW specialists. S50/S52 engine builds and performance parts.",
-        "specialties": ["Engine Builds", "S50/S52", "Performance"]
+        "specialties": [
+          "Engine Builds",
+          "S50/S52",
+          "Performance"
+        ]
       }
     ],
     "general": [
@@ -728,14 +665,20 @@
         "name": "ECS Tuning",
         "url": "https://www.ecstuning.com/BMW-E36/",
         "notes": "Massive E36 inventory. Great for maintenance and upgrade parts.",
-        "specialties": ["Large Inventory", "Fast Shipping"],
+        "specialties": [
+          "Large Inventory",
+          "Fast Shipping"
+        ],
         "shipping": "Free over $49"
       },
       {
         "name": "AutohausAZ",
         "url": "https://www.autohausaz.com/",
         "notes": "Competitive prices on name brand parts.",
-        "specialties": ["Good Prices", "Name Brands"],
+        "specialties": [
+          "Good Prices",
+          "Name Brands"
+        ],
         "shipping": "Free over $50"
       }
     ],
@@ -744,14 +687,22 @@
         "name": "Condor Speed Shop",
         "url": "https://www.condorspeedshop.com/",
         "notes": "E30/E36 specialists with unique restoration and performance parts.",
-        "specialties": ["Restoration", "Steering", "Unique Parts"],
+        "specialties": [
+          "Restoration",
+          "Steering",
+          "Unique Parts"
+        ],
         "featured": true
       },
       {
         "name": "Rogue Engineering",
         "url": "https://www.rogueengineering.co/",
         "notes": "Performance exhaust and intake systems for E36.",
-        "specialties": ["Exhaust", "Intakes", "Performance"]
+        "specialties": [
+          "Exhaust",
+          "Intakes",
+          "Performance"
+        ]
       }
     ],
     "used": [
@@ -759,26 +710,38 @@
         "name": "R3VLimited Classifieds",
         "url": "https://www.r3vlimited.com/board/forumdisplay.php?f=3",
         "notes": "Active E36 marketplace within the E30 community.",
-        "specialties": ["Community", "Rare Parts"],
+        "specialties": [
+          "Community",
+          "Rare Parts"
+        ],
         "featured": true
       },
       {
         "name": "Bimmerforums Classifieds",
         "url": "https://www.bimmerforums.com/forum/forumdisplay.php?36-E36-Classifieds",
         "notes": "E36 community marketplace.",
-        "specialties": ["E36 Community", "Used Parts"]
+        "specialties": [
+          "E36 Community",
+          "Used Parts"
+        ]
       },
       {
         "name": "eBay Motors",
         "url": "https://www.ebay.com/b/BMW-E36/6030/bn_81442366",
         "notes": "Large selection including M3 parts.",
-        "specialties": ["NOS Parts", "M3 Parts"]
+        "specialties": [
+          "NOS Parts",
+          "M3 Parts"
+        ]
       },
       {
         "name": "Car-Part.com",
         "url": "https://www.car-part.com/",
         "notes": "Search salvage yard inventory nationwide.",
-        "specialties": ["Salvage Yards", "Body Parts"]
+        "specialties": [
+          "Salvage Yards",
+          "Body Parts"
+        ]
       }
     ],
     "tools": [
@@ -790,24 +753,15 @@
       {
         "name": "Garagistic Torque Guide",
         "url": "https://www.garagistic.com/pages/bmw-e36-bolt-torque-spec-guide",
-        "notes": "Comprehensive E36 torque specifications"
+        "notes": "Detailed E36 torque specifications"
       }
     ]
   },
   "torqueSpecs": {
     "sources": [
-      {
-        "name": "Garagistic E36 Torque Guide",
-        "url": "https://www.garagistic.com/pages/bmw-e36-bolt-torque-spec-guide"
-      },
-      {
-        "name": "Bentley Service Manual",
-        "url": "https://www.bentleypublishers.com/bmw/repair-information/bmw-3-series-e36.html"
-      },
-      {
-        "name": "BimmerFest Forums",
-        "url": "https://www.bimmerfest.com/threads/torque-settings-etc.260774/"
-      }
+      { "name": "Garagistic E36 Torque Guide", "url": "https://www.garagistic.com/pages/bmw-e36-bolt-torque-spec-guide" },
+      { "name": "Bentley Service Manual", "url": "https://www.bentleypublishers.com/bmw/repair-information/bmw-3-series-e36.html" },
+      { "name": "BimmerFest Forums", "url": "https://www.bimmerfest.com/threads/torque-settings-etc.260774/" }
     ],
     "engine": [
       {
@@ -815,157 +769,45 @@
         "spec": "22 ft-lbs (30 Nm) + 90° + 90°",
         "notes": "TTY bolts, replace each use. Wait 20-30 min between stages."
       },
-      {
-        "component": "Main Bearing Caps (M50)",
-        "spec": "15-18 ft-lbs (20-25 Nm) + 50°",
-        "notes": "Angle-tighten method"
-      },
-      {
-        "component": "Connecting Rod Bolts (M50)",
-        "spec": "17 ft-lbs (23 Nm) + 70°",
-        "notes": "Angle-tighten method"
-      },
-      {
-        "component": "Flywheel Bolts",
-        "spec": "77 ft-lbs (105 Nm)",
-        "notes": "Use new bolts, apply Loctite"
-      },
-      {
-        "component": "Spark Plugs",
-        "spec": "22-24 ft-lbs (30-33 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Valve Cover Bolts",
-        "spec": "89 in-lbs (10 Nm)",
-        "notes": "Do not overtighten - plastic cover"
-      },
-      {
-        "component": "Oil Drain Plug",
-        "spec": "18 ft-lbs (25 Nm)",
-        "notes": "Replace crush washer"
-      },
-      {
-        "component": "Oil Filter Housing Bolts",
-        "spec": "18 ft-lbs (25 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "VANOS Unit Bolts",
-        "spec": "10 ft-lbs (14 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Intake Manifold Bolts",
-        "spec": "15 ft-lbs (20 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Exhaust Manifold Nuts",
-        "spec": "22-25 ft-lbs (30-34 Nm)",
-        "notes": ""
-      }
+      { "component": "Main Bearing Caps (M50)", "spec": "15-18 ft-lbs (20-25 Nm) + 50°", "notes": "Angle-tighten method" },
+      { "component": "Connecting Rod Bolts (M50)", "spec": "17 ft-lbs (23 Nm) + 70°", "notes": "Angle-tighten method" },
+      { "component": "Flywheel Bolts", "spec": "77 ft-lbs (105 Nm)", "notes": "Use new bolts, apply Loctite" },
+      { "component": "Spark Plugs", "spec": "22-24 ft-lbs (30-33 Nm)", "notes": "" },
+      { "component": "Valve Cover Bolts", "spec": "89 in-lbs (10 Nm)", "notes": "Do not overtighten—plastic cover" },
+      { "component": "Oil Drain Plug", "spec": "18 ft-lbs (25 Nm)", "notes": "Replace crush washer" },
+      { "component": "Oil Filter Housing Bolts", "spec": "18 ft-lbs (25 Nm)", "notes": "" },
+      { "component": "VANOS Unit Bolts", "spec": "10 ft-lbs (14 Nm)", "notes": "" },
+      { "component": "Intake Manifold Bolts", "spec": "15 ft-lbs (20 Nm)", "notes": "" },
+      { "component": "Exhaust Manifold Nuts", "spec": "22-25 ft-lbs (30-34 Nm)", "notes": "" }
     ],
     "suspension": [
-      {
-        "component": "Front Control Arm Bolts",
-        "spec": "31-35 ft-lbs (42-48 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Front Thrust Arm Ball Joint",
-        "spec": "59 ft-lbs (80 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Steering Knuckle Pinch Bolt",
-        "spec": "60 ft-lbs (81 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Strut Top Nut",
-        "spec": "47 ft-lbs (64 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Tie Rod End Nut",
-        "spec": "48 ft-lbs (65 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Wheel Lug Bolts",
-        "spec": "88-90 ft-lbs (120 Nm)",
-        "notes": "Tighten in star pattern. BMW revised from 74 to 88 ft-lbs."
-      },
-      {
-        "component": "Rear Lower Control Arm to Subframe",
-        "spec": "81 ft-lbs (110 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Lower Control Arm to Trailing Arm",
-        "spec": "81 ft-lbs (110 Nm)",
-        "notes": "Eccentric bolt"
-      },
-      {
-        "component": "Rear Upper Control Arm",
-        "spec": "81 ft-lbs (110 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Shock to Trailing Arm",
-        "spec": "74 ft-lbs (100 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Subframe to Body",
-        "spec": "57 ft-lbs (77 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Sway Bar Bracket",
-        "spec": "18 ft-lbs (24 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Sway Bar End Links (M10)",
-        "spec": "31 ft-lbs (42 Nm)",
-        "notes": ""
-      }
+      { "component": "Front Control Arm Bolts", "spec": "31-35 ft-lbs (42-48 Nm)", "notes": "" },
+      { "component": "Front Thrust Arm Ball Joint", "spec": "59 ft-lbs (80 Nm)", "notes": "" },
+      { "component": "Steering Knuckle Pinch Bolt", "spec": "60 ft-lbs (81 Nm)", "notes": "" },
+      { "component": "Strut Top Nut", "spec": "47 ft-lbs (64 Nm)", "notes": "" },
+      { "component": "Tie Rod End Nut", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
+      { "component": "Wheel Lug Bolts", "spec": "88-90 ft-lbs (120 Nm)", "notes": "Tighten in star pattern. BMW revised from 74 to 88 ft-lbs." },
+      { "component": "Rear Lower Control Arm to Subframe", "spec": "81 ft-lbs (110 Nm)", "notes": "" },
+      { "component": "Rear Lower Control Arm to Trailing Arm", "spec": "81 ft-lbs (110 Nm)", "notes": "Eccentric bolt" },
+      { "component": "Rear Upper Control Arm", "spec": "81 ft-lbs (110 Nm)", "notes": "" },
+      { "component": "Rear Shock to Trailing Arm", "spec": "74 ft-lbs (100 Nm)", "notes": "" },
+      { "component": "Subframe to Body", "spec": "57 ft-lbs (77 Nm)", "notes": "" },
+      { "component": "Sway Bar Bracket", "spec": "18 ft-lbs (24 Nm)", "notes": "" },
+      { "component": "Sway Bar End Links (M10)", "spec": "31 ft-lbs (42 Nm)", "notes": "" }
     ],
     "brakes": [
-      {
-        "component": "Front Caliper Carrier",
-        "spec": "81 ft-lbs (110 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Caliper Carrier",
-        "spec": "48 ft-lbs (65 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Caliper Guide Pins",
-        "spec": "22 ft-lbs (30 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Brake Rotor Set Screw",
-        "spec": "12 ft-lbs (16 Nm)",
-        "notes": "Use thread locker"
-      },
-      {
-        "component": "Brake Line Fittings",
-        "spec": "11-13 ft-lbs (15-18 Nm)",
-        "notes": "Do not overtighten"
-      }
+      { "component": "Front Caliper Carrier", "spec": "81 ft-lbs (110 Nm)", "notes": "" },
+      { "component": "Rear Caliper Carrier", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
+      { "component": "Caliper Guide Pins", "spec": "22 ft-lbs (30 Nm)", "notes": "" },
+      { "component": "Brake Rotor Set Screw", "spec": "12 ft-lbs (16 Nm)", "notes": "Use thread locker" },
+      { "component": "Brake Line Fittings", "spec": "11-13 ft-lbs (15-18 Nm)", "notes": "Do not overtighten" }
     ]
   },
   "diyGuides": [
     {
       "id": "oil-change",
       "title": "Oil Change",
-      "description": "Complete oil and filter change procedure for M50 and M52 engines.",
+      "description": "Oil and filter on the M50 and M52.",
       "difficulty": "Easy",
       "time": "30 min",
       "interval": "Every 5,000-7,500 miles",
@@ -985,25 +827,25 @@
         "Position drain pan and remove the 17mm drain plug. Allow oil to drain completely (5-10 minutes).",
         "Replace the copper crush washer on the drain plug.",
         "Reinstall drain plug and torque to 18 ft-lbs (25 Nm).",
-        "The oil filter housing is on top of the engine - remove the cap with a 36mm socket or filter wrench.",
+        "The oil filter housing is on top of the engine—remove the cap with a 36mm socket or filter wrench.",
         "Remove the old filter element and O-ring from the cap.",
         "Install new filter element and lubricate the new O-ring with fresh oil.",
         "Reinstall filter cap and torque to 25 ft-lbs (34 Nm).",
         "Remove the oil fill cap and add 6.9 quarts (M50) or 6.5 quarts (M52) of 5W-40 or 0W-40 oil.",
-        "Check level with dipstick - add oil until it reaches the upper mark.",
+        "Check level with dipstick—add oil until it reaches the upper mark.",
         "Start engine and check for leaks around drain plug and filter housing.",
         "Recheck oil level after engine has run for a minute and settled."
       ],
       "tips": [
-        "BMW E36s use a cartridge-style oil filter - never install the metal canister type.",
+        "BMW E36s use a cartridge-style oil filter—never install the metal canister type.",
         "Always replace the O-ring on the filter housing cap to prevent leaks.",
-        "The oil filter housing gasket is a common leak point - inspect while changing oil."
+        "The oil filter housing gasket is a common leak point—inspect while changing oil."
       ]
     },
     {
       "id": "valve-cover-gasket",
       "title": "Valve Cover Gasket",
-      "description": "Stop oil leaks with a new valve cover gasket - one of the easiest E36 repairs.",
+      "description": "The classic E36 oil leak and one of the easiest fixes on the car. An hour and a gasket set.",
       "difficulty": "Easy",
       "time": "1 hour",
       "interval": "As needed (typically 80,000-120,000 miles)",
@@ -1021,10 +863,10 @@
         "Disconnect any electrical connectors on top of the valve cover (coil packs, etc).",
         "Remove the oil fill cap.",
         "Remove the 10mm valve cover bolts (15 bolts total) in a spiral pattern from outside to center.",
-        "Carefully lift the valve cover straight up - it may stick from the old gasket.",
+        "Carefully lift the valve cover straight up—it may stick from the old gasket.",
         "Clean all old gasket material from the valve cover and cylinder head mating surfaces.",
         "Clean the spark plug tube seal areas thoroughly.",
-        "Install the new gasket onto the valve cover - it should snap into the groove.",
+        "Install the new gasket onto the valve cover—it should snap into the groove.",
         "Install new spark plug tube seals (often included with gasket kit).",
         "Apply a small dab of RTV at the corners where the timing cover meets the head (optional but recommended).",
         "Place valve cover back on the head, ensuring gasket is properly seated.",
@@ -1033,15 +875,15 @@
         "Reconnect battery and start engine to check for leaks."
       ],
       "tips": [
-        "Do not overtighten valve cover bolts - the plastic cover can crack.",
+        "Do not overtighten valve cover bolts—the plastic cover can crack.",
         "Replace the spark plug tube seals at the same time to prevent oil pooling around plugs.",
-        "Check the grommets on the valve cover bolts - replace if cracked or deteriorated."
+        "Check the grommets on the valve cover bolts—replace if cracked or deteriorated."
       ]
     },
     {
       "id": "brake-pads",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement with rotor inspection.",
+      "description": "Front and rear pads with a rotor check.",
       "difficulty": "Easy",
       "time": "1-2 hours",
       "interval": "Every 25,000-50,000 miles",
@@ -1061,13 +903,13 @@
         "Remove wheel to access brake caliper.",
         "Disconnect brake pad wear sensor if equipped (front driver side, rear passenger side).",
         "Remove the two 7mm Allen caliper guide pin bolts from the rear of the caliper.",
-        "Swing the caliper up and support it - do not let it hang by the brake hose.",
+        "Swing the caliper up and support it—do not let it hang by the brake hose.",
         "Remove old brake pads from the caliper bracket.",
         "Inspect rotor for scoring, cracks, or minimum thickness. Replace if worn.",
         "Clean caliper bracket pad contact points with wire brush.",
         "Use piston tool or C-clamp to compress the caliper piston back into the housing.",
         "Apply brake grease to the pad backing plates where they contact the caliper bracket.",
-        "Install new pads into the bracket - the pad with the wear sensor slot goes on the inner side.",
+        "Install new pads into the bracket—the pad with the wear sensor slot goes on the inner side.",
         "Swing caliper back down over the new pads and reinstall guide pin bolts. Torque to 22 ft-lbs (30 Nm).",
         "Reinstall brake pad wear sensor.",
         "Reinstall wheel and torque lug bolts to 88 ft-lbs (120 Nm) in a star pattern.",
@@ -1083,7 +925,7 @@
     {
       "id": "cooling-system-refresh",
       "title": "Cooling System Refresh",
-      "description": "Replace expansion tank, thermostat, and water pump to prevent overheating failures.",
+      "description": "Expansion tank, thermostat, and water pump. On an E36 the plastic parts fail with age, not mileage, so do them together before they strand you.",
       "difficulty": "Intermediate",
       "time": "4-6 hours",
       "interval": "Every 60,000-80,000 miles",
@@ -1101,7 +943,7 @@
       "steps": [
         "Allow engine to cool completely before beginning work.",
         "Remove the fan shroud upper clips and expansion tank cap.",
-        "Using a 32mm wrench and fan holding tool, remove the fan clutch (LEFT-HAND THREAD - turn clockwise to loosen).",
+        "Using a 32mm wrench and fan holding tool, remove the fan clutch (LEFT-HAND THREAD—turn clockwise to loosen).",
         "Remove the fan and shroud assembly together.",
         "Drain coolant by opening the drain plug on the lower passenger side of the radiator.",
         "Remove the expansion tank by disconnecting hoses and removing the mounting bolt.",
@@ -1113,15 +955,15 @@
         "Install new water pump with new gasket and torque bolts to 7 ft-lbs (10 Nm).",
         "Install new thermostat (jiggle valve at 12 o'clock position) with new gasket.",
         "Install new expansion tank and connect all hoses.",
-        "Reinstall water pump pulley, fan clutch (LEFT-HAND THREAD - turn counter-clockwise to tighten), and shroud.",
+        "Reinstall water pump pulley, fan clutch (LEFT-HAND THREAD—turn counter-clockwise to tighten), and shroud.",
         "Close radiator drain and fill system with 50/50 BMW coolant mix.",
         "Bleed system: Run engine with heater on full hot, cap off, until thermostat opens and level stabilizes.",
         "Top off coolant and install expansion tank cap.",
         "Check for leaks after engine reaches operating temperature."
       ],
       "tips": [
-        "The fan clutch is LEFT-HAND THREADED - turn clockwise to remove.",
-        "Use a water pump with a metal impeller - plastic impellers can shatter.",
+        "The fan clutch is LEFT-HAND THREADED—turn clockwise to remove.",
+        "Use a water pump with a metal impeller—plastic impellers can shatter.",
         "Replace the thermostat housing with an aluminum version if the original plastic one shows any cracks.",
         "Check all coolant hoses for cracks or soft spots while the system is apart."
       ]
@@ -1130,19 +972,19 @@
   "restorationItems": {
     "engine": [
       { "id": "e36-vanos", "name": "Rebuild/replace VANOS unit (M50TU/M52)", "description": "Causes rough idle and loss of low-end power" },
-      { "id": "e36-valve-cover", "name": "Replace valve cover gasket", "description": "Common oil leak - include grommets" },
+      { "id": "e36-valve-cover", "name": "Replace valve cover gasket", "description": "Common oil leak—include grommets" },
       { "id": "e36-oil-filter-housing", "name": "Replace oil filter housing gasket", "description": "Major leak source" },
       { "id": "e36-crank-sensor", "name": "Replace crankshaft position sensor", "description": "Common cause of no-start conditions" },
       { "id": "e36-intake-boots", "name": "Replace intake boots and vacuum lines", "description": "Crack and cause rough running" }
     ],
     "cooling": [
-      { "id": "e36-expansion-tank", "name": "Replace expansion tank", "description": "Critical failure point - replace every 60k miles" },
+      { "id": "e36-expansion-tank", "name": "Replace expansion tank", "description": "Common failure—replace every 60k miles" },
       { "id": "e36-thermostat-housing", "name": "Replace thermostat housing (aluminum)", "description": "Upgrade from brittle plastic OEM" },
       { "id": "e36-metal-impeller", "name": "Replace water pump (metal impeller)", "description": "Plastic impellers shatter" },
-      { "id": "e36-fan-clutch", "name": "Replace fan clutch", "description": "Left-hand thread - affects cooling at idle" }
+      { "id": "e36-fan-clutch", "name": "Replace fan clutch", "description": "Left-hand thread—affects cooling at idle" }
     ],
     "suspension": [
-      { "id": "e36-rtabs", "name": "Replace rear trailing arm bushings (RTABs)", "description": "Critical for handling - causes rear-end wobble" },
+      { "id": "e36-rtabs", "name": "Replace rear trailing arm bushings (RTABs)", "description": "Big effect on handling—causes rear-end wobble" },
       { "id": "e36-control-arm-bushings", "name": "Replace front control arm bushings", "description": "Use OEM or Lemforder" },
       { "id": "e36-subframe-reinforce", "name": "Inspect/reinforce rear subframe (M3)", "description": "M3 subframe crack prevention" }
     ],
@@ -1165,11 +1007,11 @@
     ]
   },
   "buyersGuide": {
-    "overview": "The BMW E36 3 Series (1992-1999) was a massive leap forward from the E30, bringing more power, refinement, and technology while maintaining the driver-focused character BMW was known for. The E36 introduced BMW to a broader audience and remains one of the most popular platforms for enthusiasts. With the M50 and M52 inline-sixes, plus the legendary S50/S52 in the M3, the E36 offers genuine performance at accessible prices. These cars are now 25-30+ years old, and examples range from thrashed drift missiles to preserved enthusiast cars. A careful inspection is essential.",
+    "overview": "The E36 was a big step up from the E30: more power, more room, a multi-link rear end, and a much stiffer body. For years that made it the cheapest way into a quick rear-drive BMW, and a lot of them lived hard lives as drift and track cars. A clean, stock 328i or M3 is now worth seeking out. Plan on the cooling system, the rear trailing arm bushings, and the window regulators before you plan on anything fun.",
     "quickFacts": {
       "productionYears": "1992-1999",
       "totalProduced": "~2.7 million worldwide",
-      "priceRange": "$5,000 - $80,000+",
+      "priceRange": "$5,000–$80,000+",
       "bestYears": "1996-1999 (OBD-II, refined production)"
     },
     "variants": [
@@ -1182,7 +1024,7 @@
       {
         "name": "325i / 325is",
         "years": "1992-1995",
-        "description": "The sweet spot with the 2.5L M50 producing 189 hp. Excellent balance of performance and reliability. Replaced by the 328i in 1996.",
+        "description": "The 2.5L M50 with 189 hp: quick, smooth, and dependable. Replaced by the 328i in 1996.",
         "desirability": "High"
       },
       {
@@ -1200,13 +1042,13 @@
       {
         "name": "M3",
         "years": "1995-1999",
-        "description": "The iconic sports car with the 3.0L S50 (1995) or 3.2L S52 (1996-99) producing 240-240 hp. Aggressive styling, serious performance. Coupe, sedan, and convertible available.",
+        "description": "The US M3 got a 3.0L S50 in 1995 and a 3.2L S52 from 1996 to 1999, both rated at 240 hp. Tamer than the European cars, but cheaper to keep running and still quick. Coupe, sedan, and convertible.",
         "desirability": "High"
       }
     ],
     "inspectionPoints": [
       {
-        "category": "Rust (Critical)",
+        "category": "Rust (check first)",
         "items": [
           {
             "check": "Front Fenders",
@@ -1248,11 +1090,7 @@
             "detail": "E36 cooling systems fail regularly. Check radiator, expansion tank, water pump, thermostat for age/leaks.",
             "costIfBad": "$500-1,200 for full refresh"
           },
-          {
-            "check": "Oil Leaks",
-            "detail": "Valve cover gasket, oil filter housing gasket, and VANOS seals are common leak points.",
-            "costIfBad": "$200-600"
-          },
+          { "check": "Oil Leaks", "detail": "Valve cover gasket, oil filter housing gasket, and VANOS seals are common leak points.", "costIfBad": "$200-600" },
           {
             "check": "Clutch (Manual)",
             "detail": "Test clutch engagement. Should grab smoothly in mid-travel. Slipping indicates worn clutch.",
@@ -1288,11 +1126,7 @@
             "detail": "Check for play by rocking the wheel. Worn components cause wandering steering.",
             "costIfBad": "$200-400"
           },
-          {
-            "check": "Strut Mounts",
-            "detail": "Worn mounts cause clunking over bumps. Inspect rubber for cracking.",
-            "costIfBad": "$200-400"
-          }
+          { "check": "Strut Mounts", "detail": "Worn mounts cause clunking over bumps. Inspect rubber for cracking.", "costIfBad": "$200-400" }
         ]
       },
       {
@@ -1322,20 +1156,21 @@
       }
     ],
     "pricingGuide": {
+      "asOf": "January 2026",
       "project": {
-        "price": "$2,000 - $6,000",
+        "price": "$2,000–$6,000",
         "description": "Rusty, high-mileage, or abused cars. Many have been drifted or tracked hard. Approach cautiously."
       },
       "driver": {
-        "price": "$6,000 - $15,000",
+        "price": "$6,000–$15,000",
         "description": "Running and driving with cosmetic wear or maintenance needs. Budget for cooling system refresh."
       },
       "excellent": {
-        "price": "$15,000 - $30,000",
+        "price": "$15,000–$30,000",
         "description": "Well-maintained 328is or clean M3 examples. Service history documented."
       },
       "concours": {
-        "price": "$30,000 - $80,000+",
+        "price": "$30,000–$80,000+",
         "description": "Low-mileage M3 examples, especially sedans or rare colors. Lightweight (LTW) models command premium."
       }
     },
@@ -1368,35 +1203,23 @@
       "fuel": "20-28 MPG depending on model"
     },
     "expertTips": [
-      "Plan for a complete cooling system refresh within the first year of ownership - it's not if, but when",
-      "The rear subframe issue is real on M3s and tracked cars - inspect carefully or plan for reinforcement",
-      "325is with factory LSD is the sweet spot for value - M3 handling characteristics at lower cost",
+      "Plan for a complete cooling system refresh within the first year of ownership—it's not if, but when",
+      "The rear subframe issue is real on M3s and tracked cars—inspect carefully or plan for reinforcement",
+      "A 325is with the factory limited-slip is the best value: most of the handling for a fraction of M3 money",
       "Convert faded headlights to glass European units for a huge improvement in looks and lighting",
-      "The M3 sedan is rarer than the coupe and becoming collectible - prices are rising",
-      "VANOS rebuilds are not difficult DIY projects - don't pay premium prices for bad VANOS",
-      "E36 parts are abundant and affordable - these are excellent cars for learning to wrench",
-      "The 5-speed Getrag transmission is robust - automatic cars are less desirable",
+      "The M3 sedan is rarer than the coupe and becoming collectible—prices are rising",
+      "VANOS rebuilds are not difficult DIY projects—don't pay premium prices for bad VANOS",
+      "E36 parts are abundant and affordable—these are excellent cars for learning to wrench",
+      "The five-speed manual is tough. Automatic cars are worth noticeably less.",
       "Join r3vlimited.com or bimmerforums.com for excellent E36 technical resources",
       "A well-maintained E36 328is is one of the best driving experiences under $15,000"
     ]
   },
   "communityResources": {
     "youtube": [
-      {
-        "name": "Adam LZ",
-        "url": "https://www.youtube.com/@AdamLZ",
-        "description": "Drifting and E36 builds with millions of subscribers"
-      },
-      {
-        "name": "M539 Restorations",
-        "url": "https://www.youtube.com/@M539Restorations",
-        "description": "BMW repairs and restorations including E36 content"
-      },
-      {
-        "name": "Restore It",
-        "url": "https://www.youtube.com/@RestoreIt",
-        "description": "Detailed BMW restoration tutorials"
-      }
+      { "name": "Adam LZ", "url": "https://www.youtube.com/@AdamLZ", "description": "Drifting and E36 builds with millions of subscribers" },
+      { "name": "M539 Restorations", "url": "https://www.youtube.com/@M539Restorations", "description": "BMW repairs and restorations including E36 content" },
+      { "name": "Restore It", "url": "https://www.youtube.com/@RestoreIt", "description": "Detailed BMW restoration tutorials" }
     ],
     "forums": [
       {
@@ -1404,40 +1227,16 @@
         "url": "https://www.bimmerfest.com/forums/e36-1991-1999.97/",
         "description": "Award-winning E36 discussion and resources"
       },
-      {
-        "name": "Bimmer Forums",
-        "url": "https://www.bimmerforums.com/forum/",
-        "description": "Technical how-to and maintenance guides"
-      },
-      {
-        "name": "3Series.org",
-        "url": "https://www.3series.org/",
-        "description": "BMW 3 Series and M3 community"
-      },
-      {
-        "name": "BMW Werkz",
-        "url": "https://www.bimmerwerkz.com/forums/3-series-e36.18/",
-        "description": "E36 discussion and tech talk"
-      }
+      { "name": "Bimmer Forums", "url": "https://www.bimmerforums.com/forum/", "description": "Technical how-to and maintenance guides" },
+      { "name": "3Series.org", "url": "https://www.3series.org/", "description": "BMW 3 Series and M3 community" },
+      { "name": "BMW Werkz", "url": "https://www.bimmerwerkz.com/forums/3-series-e36.18/", "description": "E36 discussion and tech talk" }
     ],
     "facebook": [
-      {
-        "name": "BMW E36 Owners",
-        "url": "https://www.facebook.com/groups/bmwe36owners",
-        "description": "Large international E36 community"
-      },
-      {
-        "name": "E36 M3 Owners",
-        "url": "https://www.facebook.com/groups/e36m3owners",
-        "description": "Dedicated E36 M3 enthusiast group"
-      }
+      { "name": "BMW E36 Owners", "url": "https://www.facebook.com/groups/bmwe36owners", "description": "Large international E36 community" },
+      { "name": "E36 M3 Owners", "url": "https://www.facebook.com/groups/e36m3owners", "description": "Dedicated E36 M3 enthusiast group" }
     ],
     "websites": [
-      {
-        "name": "BMW E36 Blog",
-        "url": "https://bmwe36blog.com/",
-        "description": "E36 guides, forum, and resources"
-      }
+      { "name": "BMW E36 Blog", "url": "https://bmwe36blog.com/", "description": "E36 guides, forum, and resources" }
     ]
   }
 }

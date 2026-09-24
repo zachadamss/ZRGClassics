@@ -2,6 +2,8 @@
   "model": "E28",
   "brand": "BMW",
   "fullName": "BMW E28 5 Series",
+  "series": "5 Series",
+  "tagline": "The 5 Series that set the template, and the car that gave us the M5.",
   "years": "1982-1988",
   "engines": [
     "M20 2.7L I6",
@@ -11,12 +13,17 @@
     "S38 3.5L I6 (M5)"
   ],
   "heroImage": "/images/vehicles/e28-hero.jpg",
+  "photoCredit": {
+    "text": "",
+    "url": "",
+    "license": ""
+  },
   "issues": [
     {
       "id": "timing-belt",
       "title": "Timing Belt Failure (M20 Engine)",
       "symptoms": "Engine won't start, loud slapping noise before failure, visible belt wear or cracking",
-      "description": "E28s equipped with the M20 engine (528e) use a timing belt that requires regular replacement. The M20 is an interference engine - if the belt fails, pistons will strike valves causing major engine damage. Factory interval is 60,000 miles but many recommend 50,000 miles for safety. The tensioner and water pump should always be replaced at the same time.",
+      "description": "E28s equipped with the M20 engine (528e) use a timing belt that requires regular replacement. The M20 is an interference engine—if the belt fails, pistons will strike valves causing major engine damage. Factory interval is 60,000 miles but many recommend 50,000 miles for safety. The tensioner and water pump should always be replaced at the same time.",
       "fixes": [
         "Replace timing belt every 50,000 miles or 4 years (whichever comes first)",
         "Always replace tensioner and water pump during service",
@@ -25,41 +32,19 @@
         "Consider upgraded tensioner from later models"
       ],
       "sources": [
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        },
-        {
-          "name": "BMW CCA",
-          "url": "https://www.bmwcca.org/"
-        }
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
+        { "name": "BMW CCA", "url": "https://www.bmwcca.org/" }
       ],
       "repairCosts": {
         "diy": "$150-300",
         "shop": "$500-900",
-        "notes": "M30 has timing chain - less common issue. M20 requires belt service."
+        "notes": "M30 has timing chain—less common issue. M20 requires belt service."
       },
       "parts": [
-        {
-          "name": "Timing Belt (M20)",
-          "partNumber": "11311711081",
-          "price": "$30-50"
-        },
-        {
-          "name": "Timing Chain Kit (M30)",
-          "partNumber": "11311717597",
-          "price": "$200-350"
-        },
-        {
-          "name": "Tensioner",
-          "partNumber": "11311308652",
-          "price": "$40-70"
-        },
-        {
-          "name": "Guides (M30)",
-          "partNumber": "11311265513",
-          "price": "$30-50 each"
-        }
+        { "name": "Timing Belt (M20)", "partNumber": "11311711081", "price": "$30-50" },
+        { "name": "Timing Chain Kit (M30)", "partNumber": "11311717597", "price": "$200-350" },
+        { "name": "Tensioner", "partNumber": "11311308652", "price": "$40-70" },
+        { "name": "Guides (M30)", "partNumber": "11311265513", "price": "$30-50 each" }
       ],
       "relatedIssues": [
         { "vehicle": "e30", "brand": "BMW", "model": "E30", "issueId": "timing-belt" },
@@ -82,14 +67,8 @@
         "Inspect oil pan for guide debris during service"
       ],
       "sources": [
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        },
-        {
-          "name": "R3VLimited",
-          "url": "https://www.r3vlimited.com/"
-        }
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
+        { "name": "R3VLimited", "url": "https://www.r3vlimited.com/" }
       ],
       "repairCosts": {
         "diy": "$300-600",
@@ -97,21 +76,9 @@
         "notes": "M30 timing chain and guides. Less common failure than M20 belt."
       },
       "parts": [
-        {
-          "name": "Timing Chain Kit",
-          "partNumber": "11311717597",
-          "price": "$200-350"
-        },
-        {
-          "name": "Chain Guide Rails",
-          "partNumber": "11311265513",
-          "price": "$30-50 each"
-        },
-        {
-          "name": "Tensioner",
-          "partNumber": "11311308652",
-          "price": "$60-100"
-        }
+        { "name": "Timing Chain Kit", "partNumber": "11311717597", "price": "$200-350" },
+        { "name": "Chain Guide Rails", "partNumber": "11311265513", "price": "$30-50 each" },
+        { "name": "Tensioner", "partNumber": "11311308652", "price": "$60-100" }
       ],
       "difficulty": "Advanced"
     },
@@ -119,9 +86,9 @@
       "id": "rust-corrosion",
       "title": "Rust and Corrosion",
       "symptoms": "Bubbling paint, rust holes, soft floor pans, damaged fender lips, deteriorated jack points",
-      "description": "E28s are extremely rust-prone, particularly in areas with road salt. Critical areas include the front fenders behind the wheels, rocker panels, rear wheel arches, jack points, battery tray, and trunk floor. The windshield frame and A-pillars can also rust from the inside out. Structural rust can compromise safety.",
+      "description": "E28s are extremely rust-prone, particularly in areas with road salt. The worst spots are the front fenders behind the wheels, rocker panels, rear wheel arches, jack points, battery tray, and trunk floor. The windshield frame and A-pillars can also rust from the inside out. Structural rust can compromise safety.",
       "fixes": [
-        "Comprehensive rust inspection before purchase (check hidden areas)",
+        "Do a thorough rust inspection before you buy, including the hidden areas",
         "Treat surface rust immediately before it spreads",
         "Weld in repair panels for structural rust (jack points, floor pans)",
         "Replace fenders if rust is severe (reproduction panels available)",
@@ -129,14 +96,8 @@
         "Keep all drain holes clear to prevent water accumulation"
       ],
       "sources": [
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        },
-        {
-          "name": "R3VLimited",
-          "url": "https://www.r3vlimited.com/"
-        }
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
+        { "name": "R3VLimited", "url": "https://www.r3vlimited.com/" }
       ],
       "repairCosts": {
         "diy": "$200-1000",
@@ -144,21 +105,9 @@
         "notes": "Common on 40+ year old cars. Check floors and fenders."
       },
       "parts": [
-        {
-          "name": "Fender Patch Panel",
-          "partNumber": "Various",
-          "price": "$50-150"
-        },
-        {
-          "name": "Rocker Panel",
-          "partNumber": "Various",
-          "price": "$80-200"
-        },
-        {
-          "name": "Floor Pan Section",
-          "partNumber": "Various",
-          "price": "$100-250"
-        }
+        { "name": "Fender Patch Panel", "price": "$50-150" },
+        { "name": "Rocker Panel", "price": "$80-200" },
+        { "name": "Floor Pan Section", "price": "$100-250" }
       ],
       "difficulty": "Advanced"
     },
@@ -166,23 +115,17 @@
       "id": "oil-leaks",
       "title": "Oil Leaks (M30 Engine)",
       "symptoms": "Oil spots under car, burning oil smell, visible oil on engine, low oil level",
-      "description": "The M30 engine is notorious for oil leaks as gaskets age. Common leak points include the valve cover gasket, oil pan gasket, rear main seal, front crankshaft seal, oil filter housing gasket, and camshaft seal. While often dismissed as 'normal' for old BMWs, these leaks should be addressed to prevent oil starvation and fire risk.",
+      "description": "The M30 engine is known for oil leaks as gaskets age. Common leak points include the valve cover gasket, oil pan gasket, rear main seal, front crankshaft seal, oil filter housing gasket, and camshaft seal. While often dismissed as 'normal' for old BMWs, these leaks should be addressed to prevent oil starvation and fire risk.",
       "fixes": [
         "Replace valve cover gasket with quality BMW or Elring gasket",
         "Oil pan gasket replacement (requires subframe lowering)",
         "Rear main seal replacement (requires transmission removal)",
         "Replace all seals with quality German-made parts",
-        "Address leaks promptly - oil on exhaust is a fire hazard"
+        "Address leaks promptly—oil on exhaust is a fire hazard"
       ],
       "sources": [
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        },
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        }
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" }
       ],
       "repairCosts": {
         "diy": "$100-300",
@@ -190,16 +133,8 @@
         "notes": "Valve cover and oil pan gaskets common."
       },
       "parts": [
-        {
-          "name": "Valve Cover Gasket",
-          "partNumber": "11121730229",
-          "price": "$30-60"
-        },
-        {
-          "name": "Oil Pan Gasket",
-          "partNumber": "11131730234",
-          "price": "$30-60"
-        }
+        { "name": "Valve Cover Gasket", "partNumber": "11121730229", "price": "$30-60" },
+        { "name": "Oil Pan Gasket", "partNumber": "11131730234", "price": "$30-60" }
       ],
       "difficulty": "Advanced"
     },
@@ -217,14 +152,8 @@
         "Inspect and repair wiring harness if brittle"
       ],
       "sources": [
-        {
-          "name": "E28 Goodies",
-          "url": "https://www.e28goodies.com/"
-        },
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        }
+        { "name": "E28 Goodies", "url": "https://www.e28goodies.com/" },
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" }
       ],
       "repairCosts": {
         "diy": "$50-200",
@@ -232,21 +161,9 @@
         "notes": "Ground connections and relays are common culprits."
       },
       "parts": [
-        {
-          "name": "Main Relay",
-          "partNumber": "12631709557",
-          "price": "$40-70"
-        },
-        {
-          "name": "Fuel Pump Relay",
-          "partNumber": "12631735424",
-          "price": "$25-45"
-        },
-        {
-          "name": "Ground Point Kit",
-          "partNumber": "Various",
-          "price": "$20-40"
-        }
+        { "name": "Main Relay", "partNumber": "12631709557", "price": "$40-70" },
+        { "name": "Fuel Pump Relay", "partNumber": "12631735424", "price": "$25-45" },
+        { "name": "Ground Point Kit", "price": "$20-40" }
       ],
       "difficulty": "Easy"
     },
@@ -265,14 +182,8 @@
         "Alignment after any suspension work"
       ],
       "sources": [
-        {
-          "name": "Ireland Engineering",
-          "url": "https://www.iemotorsport.com/"
-        },
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        }
+        { "name": "Ireland Engineering", "url": "https://www.iemotorsport.com/" },
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" }
       ],
       "repairCosts": {
         "diy": "$300-600",
@@ -280,21 +191,9 @@
         "notes": "Full refresh common at this age."
       },
       "parts": [
-        {
-          "name": "Front Control Arm Kit",
-          "partNumber": "Various",
-          "price": "$150-300"
-        },
-        {
-          "name": "Strut Mount",
-          "partNumber": "31331139438",
-          "price": "$30-60"
-        },
-        {
-          "name": "Tie Rod Assembly",
-          "partNumber": "32111125186",
-          "price": "$40-70"
-        }
+        { "name": "Front Control Arm Kit", "price": "$150-300" },
+        { "name": "Strut Mount", "partNumber": "31331139438", "price": "$30-60" },
+        { "name": "Tie Rod Assembly", "partNumber": "32111125186", "price": "$40-70" }
       ],
       "difficulty": "Advanced"
     },
@@ -312,14 +211,8 @@
         "Flush system and use proper BMW coolant"
       ],
       "sources": [
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        },
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        }
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" },
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" }
       ],
       "repairCosts": {
         "diy": "$200-400",
@@ -327,21 +220,9 @@
         "notes": "Full system refresh recommended on older cars."
       },
       "parts": [
-        {
-          "name": "Water Pump",
-          "partNumber": "11511719836",
-          "price": "$60-100"
-        },
-        {
-          "name": "Thermostat",
-          "partNumber": "11531266763",
-          "price": "$20-35"
-        },
-        {
-          "name": "Radiator",
-          "partNumber": "17111712447",
-          "price": "$150-250"
-        }
+        { "name": "Water Pump", "partNumber": "11511719836", "price": "$60-100" },
+        { "name": "Thermostat", "partNumber": "11531266763", "price": "$20-35" },
+        { "name": "Radiator", "partNumber": "17111712447", "price": "$150-250" }
       ],
       "difficulty": "Advanced"
     },
@@ -359,14 +240,8 @@
         "Check fuel pressure and replace pump/filter if low"
       ],
       "sources": [
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        },
-        {
-          "name": "BMW CCA",
-          "url": "https://www.bmwcca.org/"
-        }
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
+        { "name": "BMW CCA", "url": "https://www.bmwcca.org/" }
       ],
       "repairCosts": {
         "diy": "$100-400",
@@ -374,21 +249,9 @@
         "notes": "L-Jetronic and Motronic systems. AFM and WUR common issues."
       },
       "parts": [
-        {
-          "name": "Air Flow Meter",
-          "partNumber": "13621286615",
-          "price": "$150-300"
-        },
-        {
-          "name": "Warm-Up Regulator",
-          "partNumber": "Various",
-          "price": "$200-400"
-        },
-        {
-          "name": "Fuel Injector",
-          "partNumber": "13641730060",
-          "price": "$40-80 each"
-        }
+        { "name": "Air Flow Meter", "partNumber": "13621286615", "price": "$150-300" },
+        { "name": "Warm-Up Regulator", "price": "$200-400" },
+        { "name": "Fuel Injector", "partNumber": "13641730060", "price": "$40-80 each" }
       ],
       "difficulty": "Moderate"
     }
@@ -397,73 +260,23 @@
     {
       "id": "suspension-refresh",
       "title": "Complete Suspension Refresh",
-      "description": "Full front and rear suspension rebuild for the E28's sophisticated multi-link design, addressing 40+ years of bushing deterioration and wear.",
+      "description": "Front struts, control arms, and the rear semi-trailing arm bushings on a car that's been soaking up bumps for 40 years. Do it all at once and the E28 steers like it should again.",
       "difficulty": "Intermediate",
       "time": "14-18 hours",
       "cost": "$600-1,200",
       "interval": "One-time restoration for aged vehicles",
       "laborHours": "12-16 hours shop time",
       "parts": [
-        {
-          "name": "Front Control Arm Bushing Kit",
-          "oem": "31121139456, 31129059288",
-          "aftermarket": "Lemforder, Powerflex PFF5-301/302",
-          "cost": "$80-180"
-        },
-        {
-          "name": "Front Thrust Arm Bushing (Pair)",
-          "oem": "31121136532",
-          "aftermarket": "Lemforder, Meyle HD",
-          "cost": "$40-80"
-        },
-        {
-          "name": "Front Sway Bar Bushings",
-          "oem": "31351127414",
-          "aftermarket": "Lemforder, Powerflex",
-          "cost": "$20-40"
-        },
-        {
-          "name": "Front Sway Bar End Links (Pair)",
-          "oem": "31351127413",
-          "aftermarket": "Lemforder, Febi",
-          "cost": "$30-60"
-        },
-        {
-          "name": "Tie Rod Assembly (Left)",
-          "oem": "32111125186",
-          "aftermarket": "Lemforder 10734 01",
-          "cost": "$40-70"
-        },
-        {
-          "name": "Tie Rod Assembly (Right)",
-          "oem": "32111125187",
-          "aftermarket": "Lemforder 10735 01",
-          "cost": "$40-70"
-        },
-        {
-          "name": "Idler Arm",
-          "oem": "32111127441",
-          "aftermarket": "Lemforder, aftermarket",
-          "cost": "$60-120"
-        },
-        {
-          "name": "Strut Mount (Front Pair)",
-          "oem": "31331139438",
-          "aftermarket": "Lemforder 10123 02, Sachs",
-          "cost": "$50-100"
-        },
-        {
-          "name": "Rear Subframe Bushing Set",
-          "oem": "33311125896",
-          "aftermarket": "Lemforder, Powerflex PFR5-301",
-          "cost": "$80-160"
-        },
-        {
-          "name": "Rear Trailing Arm Bushing",
-          "oem": "33322283513",
-          "aftermarket": "Lemforder, Meyle",
-          "cost": "$30-60"
-        }
+        { "name": "Front Control Arm Bushing Kit", "oem": "31121139456, 31129059288", "aftermarket": "Lemforder, Powerflex PFF5-301/302", "cost": "$80-180" },
+        { "name": "Front Thrust Arm Bushing (Pair)", "oem": "31121136532", "aftermarket": "Lemforder, Meyle HD", "cost": "$40-80" },
+        { "name": "Front Sway Bar Bushings", "oem": "31351127414", "aftermarket": "Lemforder, Powerflex", "cost": "$20-40" },
+        { "name": "Front Sway Bar End Links (Pair)", "oem": "31351127413", "aftermarket": "Lemforder, Febi", "cost": "$30-60" },
+        { "name": "Tie Rod Assembly (Left)", "oem": "32111125186", "aftermarket": "Lemforder 10734 01", "cost": "$40-70" },
+        { "name": "Tie Rod Assembly (Right)", "oem": "32111125187", "aftermarket": "Lemforder 10735 01", "cost": "$40-70" },
+        { "name": "Idler Arm", "oem": "32111127441", "aftermarket": "Lemforder, aftermarket", "cost": "$60-120" },
+        { "name": "Strut Mount (Front Pair)", "oem": "31331139438", "aftermarket": "Lemforder 10123 02, Sachs", "cost": "$50-100" },
+        { "name": "Rear Subframe Bushing Set", "oem": "33311125896", "aftermarket": "Lemforder, Powerflex PFR5-301", "cost": "$80-160" },
+        { "name": "Rear Trailing Arm Bushing", "oem": "33322283513", "aftermarket": "Lemforder, Meyle", "cost": "$30-60" }
       ],
       "tools": [
         "Floor jack and jack stands (4)",
@@ -479,128 +292,69 @@
         "Alignment specs printout"
       ],
       "steps": [
-        "Raise vehicle and support on jack stands at all four corners - vehicle must be completely level.",
+        "Raise vehicle and support on jack stands at all four corners—vehicle must be completely level.",
         "Remove all wheels and photograph suspension geometry for reference.",
-        "Soak all suspension fasteners with penetrating oil - E28 bolts are often severely corroded.",
-        "Begin with steering components - remove tie rod end nuts (19mm) using tie rod puller.",
+        "Soak all suspension fasteners with penetrating oil—E28 bolts are often severely corroded.",
+        "Begin with steering components—remove tie rod end nuts (19mm) using tie rod puller.",
         "Remove idler arm mounting bolts and extract idler arm from steering box side.",
         "Remove center drag link if necessary for full steering overhaul.",
         "For front suspension: remove sway bar end link nuts (17mm), then sway bar bracket bolts.",
-        "Remove lower control arm pivot bolt (21mm at frame) - may require heat for seized bolts.",
+        "Remove lower control arm pivot bolt (21mm at frame)—may require heat for seized bolts.",
         "Support control arm with jack, remove ball joint from steering knuckle (taper fit).",
         "Remove control arm and press out old bushings using bushing press set.",
-        "Press new bushings into control arm - note orientation for eccentric bushings.",
+        "Press new bushings into control arm—note orientation for eccentric bushings.",
         "Remove thrust arm bolts at both ends and replace bushings similarly.",
         "For struts: mark camber position, remove three 13mm upper mount nuts, remove pinch bolt.",
         "With strut removed, use spring compressor to disassemble and replace mount/bearing.",
         "For rear suspension: support trailing arm with jack before removing bolts.",
         "Remove trailing arm pivot bolt and press new bushing into arm.",
         "Lower rear subframe slightly to access and replace subframe bushings.",
-        "Reassemble all components - torque control arm to subframe 57-65 ft-lbs at ride height.",
+        "Reassemble all components—torque control arm to subframe 57-65 ft-lbs at ride height.",
         "Torque tie rod end nuts to 25-33 ft-lbs, use new cotter pins.",
-        "Install wheels and lower vehicle - bounce corners to settle suspension.",
-        "Professional alignment is mandatory - E28 alignment is sensitive and requires experience."
+        "Install wheels and lower vehicle—bounce corners to settle suspension.",
+        "Professional alignment is mandatory—E28 alignment is sensitive and requires experience."
       ],
       "tips": [
-        "E28 suspension bolts are often severely seized after 40 years - budget extra time for removal.",
-        "Heat from a propane torch often helps free stuck bolts - be careful near fuel lines.",
-        "The E28 uses an idler arm in the steering - don't overlook this wear item.",
+        "E28 suspension bolts are often severely seized after 40 years—budget extra time for removal.",
+        "Heat from a propane torch often helps free stuck bolts—be careful near fuel lines.",
+        "The E28 uses an idler arm in the steering—don't overlook this wear item.",
         "Polyurethane bushings last longer but transmit more NVH than rubber.",
         "Mark eccentric bolt positions before removal to get close to original alignment.",
         "Consider upgrading to Bilstein HD or Sport shocks while components are accessible."
       ],
       "warnings": [
-        "E28 ball joints are pressed tapers - never strike the joint directly, use proper puller.",
-        "Spring compressors can be lethal if improperly used - follow tool instructions exactly.",
+        "E28 ball joints are pressed tapers—never strike the joint directly, use proper puller.",
+        "Spring compressors can be lethal if improperly used—follow tool instructions exactly.",
         "Heat-treated fasteners should be replaced with new hardware, not reused.",
-        "Rear subframe is heavy - ensure adequate support before loosening mounting bolts.",
-        "Never reuse cotter pins - always install new pins after torquing castle nuts."
+        "Rear subframe is heavy—ensure adequate support before loosening mounting bolts.",
+        "Never reuse cotter pins—always install new pins after torquing castle nuts."
       ],
       "references": [
-        {
-          "name": "MyE28.com Suspension Forum",
-          "url": "https://forums.mye28.com/viewforum.php?f=21"
-        },
-        {
-          "name": "Ireland Engineering E28 Suspension Parts",
-          "url": "https://www.iemotorsport.com/bmw/e28/"
-        },
-        {
-          "name": "Bimmerforums E28 Tech Section",
-          "url": "https://www.bimmerforums.com/forum/forumdisplay.php?21-E28-1982-1988"
-        }
+        { "name": "MyE28.com Suspension Forum", "url": "https://forums.mye28.com/viewforum.php?f=21" },
+        { "name": "Ireland Engineering E28 Suspension Parts", "url": "https://www.iemotorsport.com/bmw/e28/" },
+        { "name": "Bimmerforums E28 Tech Section", "url": "https://www.bimmerforums.com/forum/forumdisplay.php?21-E28-1982-1988" }
       ]
     },
     {
       "id": "rust-repair",
       "title": "Rust Prevention and Repair",
-      "description": "Comprehensive guide to identifying, treating, and preventing rust on the E28, covering all known trouble spots from fenders to floor pans.",
+      "description": "Where E28s rot, from the front fenders to the floor pans, and how to cut it out, weld it up, and keep it from coming back.",
       "difficulty": "Advanced",
       "time": "10-40+ hours",
       "cost": "$200-3,000+",
       "interval": "Inspect annually, repair as discovered",
       "laborHours": "Varies significantly by severity",
       "parts": [
-        {
-          "name": "Front Fender (Left)",
-          "oem": "41351872063",
-          "aftermarket": "Aftermarket reproduction",
-          "cost": "$200-400"
-        },
-        {
-          "name": "Front Fender (Right)",
-          "oem": "41351872064",
-          "aftermarket": "Aftermarket reproduction",
-          "cost": "$200-400"
-        },
-        {
-          "name": "Rocker Panel (Left)",
-          "oem": "41101884485",
-          "aftermarket": "Klokkerholm, aftermarket",
-          "cost": "$100-250"
-        },
-        {
-          "name": "Rocker Panel (Right)",
-          "oem": "41101884486",
-          "aftermarket": "Klokkerholm, aftermarket",
-          "cost": "$100-250"
-        },
-        {
-          "name": "Floor Pan Repair Section",
-          "oem": "41101934765",
-          "aftermarket": "Universal sheet metal",
-          "cost": "$80-200"
-        },
-        {
-          "name": "Jack Point Repair Plate",
-          "oem": "—",
-          "aftermarket": "Fabricated or aftermarket",
-          "cost": "$30-80"
-        },
-        {
-          "name": "Rear Wheel Arch",
-          "oem": "41351872065/66",
-          "aftermarket": "Klokkerholm, aftermarket",
-          "cost": "$100-300"
-        },
-        {
-          "name": "Battery Tray",
-          "oem": "41141882977",
-          "aftermarket": "Fabricated or NOS",
-          "cost": "$50-150"
-        },
-        {
-          "name": "POR-15 Rust Preventive Coating",
-          "oem": "—",
-          "aftermarket": "POR-15 quart",
-          "cost": "$35-50"
-        },
-        {
-          "name": "Fluid Film Rust Preventive",
-          "oem": "—",
-          "aftermarket": "Fluid Film 11.75oz can",
-          "cost": "$12-18"
-        }
+        { "name": "Front Fender (Left)", "oem": "41351872063", "aftermarket": "Aftermarket reproduction", "cost": "$200-400" },
+        { "name": "Front Fender (Right)", "oem": "41351872064", "aftermarket": "Aftermarket reproduction", "cost": "$200-400" },
+        { "name": "Rocker Panel (Left)", "oem": "41101884485", "aftermarket": "Klokkerholm, aftermarket", "cost": "$100-250" },
+        { "name": "Rocker Panel (Right)", "oem": "41101884486", "aftermarket": "Klokkerholm, aftermarket", "cost": "$100-250" },
+        { "name": "Floor Pan Repair Section", "oem": "41101934765", "aftermarket": "Universal sheet metal", "cost": "$80-200" },
+        { "name": "Jack Point Repair Plate", "oem": "—", "aftermarket": "Fabricated or aftermarket", "cost": "$30-80" },
+        { "name": "Rear Wheel Arch", "oem": "41351872065/66", "aftermarket": "Klokkerholm, aftermarket", "cost": "$100-300" },
+        { "name": "Battery Tray", "oem": "41141882977", "aftermarket": "Fabricated or NOS", "cost": "$50-150" },
+        { "name": "POR-15 Rust Preventive Coating", "oem": "—", "aftermarket": "POR-15 quart", "cost": "$35-50" },
+        { "name": "Fluid Film Rust Preventive", "oem": "—", "aftermarket": "Fluid Film 11.75oz can", "cost": "$12-18" }
       ],
       "tools": [
         "Angle grinder with cut-off and flap discs",
@@ -618,10 +372,10 @@
         "Fire extinguisher (ABC type)"
       ],
       "steps": [
-        "Perform thorough inspection of known E28 rust areas - this determines scope of work.",
+        "Perform thorough inspection of known E28 rust areas—this determines scope of work.",
         "Key inspection points: rocker panels (tap with screwdriver), jack points, front fender lips, wheel arches, trunk floor, battery tray, windshield frame, door bottoms.",
-        "Remove interior carpets and check floor pans from inside - rust often hides under padding.",
-        "Check A-pillars at windshield base and behind kick panels - structural rust is critical.",
+        "Remove interior carpets and check floor pans from inside—rust often hides under padding.",
+        "Check A-pillars at windshield base and behind kick panels—rust here is structural.",
         "For surface rust: wire brush to bare metal, treat with rust converter, prime and paint.",
         "For rust-through: cut out affected metal at least 1 inch into clean metal all around.",
         "Create cardboard template of cut section, transfer to new sheet metal.",
@@ -629,7 +383,7 @@
         "Use Clecos to temporarily hold patch in position during fit-up.",
         "Tack weld corners, then stitch weld in 1-inch segments, letting each cool.",
         "For large panels (rocker, fender): drill out spot welds on original, fit new panel.",
-        "Grind welds smooth and check for warping - planish if needed.",
+        "Grind welds smooth and check for warping—planish if needed.",
         "Treat all bare metal and weld areas with weld-through primer.",
         "Apply POR-15 or similar to inaccessible areas and inner surfaces.",
         "Seal all welded joints with automotive seam sealer.",
@@ -639,107 +393,48 @@
         "Touch up or full respray as needed to match original finish."
       ],
       "tips": [
-        "E28s rust from inside out - by the time you see bubbles, damage is extensive underneath.",
-        "Jack point rust is structural - a soft jack point means the rocker is compromised.",
-        "Battery tray rust is caused by acid - neutralize with baking soda before repair.",
-        "The E28 windshield frame rusts from trapped water - check behind trim carefully.",
-        "POR-15 must be topcoated - UV exposure causes chalking and failure.",
+        "E28s rust from inside out—by the time you see bubbles, damage is extensive underneath.",
+        "Jack point rust is structural—a soft jack point means the rocker is compromised.",
+        "Battery tray rust is caused by acid—neutralize with baking soda before repair.",
+        "The E28 windshield frame rusts from trapped water—check behind trim carefully.",
+        "POR-15 must be topcoated—UV exposure causes chalking and failure.",
         "Treat rocker panel interiors with Fluid Film annually after repair.",
-        "NOS fenders occasionally appear on eBay - monitor listings for good original panels."
+        "NOS fenders occasionally appear on eBay—monitor listings for good original panels."
       ],
       "warnings": [
-        "Always wear a P100 respirator when grinding rust - particles are hazardous.",
+        "Always wear a P100 respirator when grinding rust—particles are hazardous.",
         "Check for fuel lines and brake lines before cutting or welding any panels.",
         "Have a fire extinguisher immediately accessible when welding near interior.",
-        "Structural rust near suspension mounts is a safety issue - consider professional repair.",
+        "Structural rust near suspension mounts is a safety issue—consider professional repair.",
         "Avoid mixing metals (aluminum patches on steel) as this accelerates corrosion.",
-        "Never grind or weld galvanized metal without proper ventilation - zinc fumes are toxic."
+        "Never grind or weld galvanized metal without proper ventilation—zinc fumes are toxic."
       ],
       "references": [
-        {
-          "name": "MyE28.com Rust Repair Registry",
-          "url": "https://forums.mye28.com/viewforum.php?f=29"
-        },
-        {
-          "name": "E28 Goodies Technical Articles",
-          "url": "https://www.e28goodies.com/"
-        },
-        {
-          "name": "Eastwood Welding and Metalwork Guide",
-          "url": "https://www.eastwood.com/welding-tips-and-training"
-        }
+        { "name": "MyE28.com Rust Repair Registry", "url": "https://forums.mye28.com/viewforum.php?f=29" },
+        { "name": "E28 Goodies Technical Articles", "url": "https://www.e28goodies.com/" },
+        { "name": "Eastwood Welding and Metalwork Guide", "url": "https://www.eastwood.com/welding-tips-and-training" }
       ]
     },
     {
       "id": "electrical-restoration",
       "title": "Electrical System Restoration",
-      "description": "Complete electrical system overhaul addressing the E28's aging wiring, corroded grounds, failing gauges, and deteriorated switches.",
+      "description": "Grounds, gauges, switches, and brittle wiring. Most E28 electrical gremlins come back to a handful of corroded connections, and this is how to find them.",
       "difficulty": "Intermediate",
       "time": "12-20 hours",
       "cost": "$200-600",
       "interval": "One-time restoration, then maintenance",
       "laborHours": "10-16 hours shop time",
       "parts": [
-        {
-          "name": "Main Relay (DME/LKM)",
-          "oem": "12631709557",
-          "aftermarket": "Bosch 0332014112",
-          "cost": "$40-70"
-        },
-        {
-          "name": "Fuel Pump Relay",
-          "oem": "12631735424",
-          "aftermarket": "Bosch, Stribel",
-          "cost": "$25-50"
-        },
-        {
-          "name": "Auxiliary Fan Relay",
-          "oem": "61311378636",
-          "aftermarket": "Bosch, aftermarket",
-          "cost": "$20-40"
-        },
-        {
-          "name": "Ground Point Ring Terminals (25 pack)",
-          "oem": "—",
-          "aftermarket": "Quality copper ring terminals",
-          "cost": "$10-20"
-        },
-        {
-          "name": "Headlight Switch",
-          "oem": "61311372043",
-          "aftermarket": "URO, aftermarket",
-          "cost": "$30-60"
-        },
-        {
-          "name": "Turn Signal/Wiper Stalk",
-          "oem": "61311368056",
-          "aftermarket": "Aftermarket, used OEM",
-          "cost": "$60-150"
-        },
-        {
-          "name": "Instrument Cluster Voltage Regulator",
-          "oem": "—",
-          "aftermarket": "Rebuilt units available",
-          "cost": "$40-80"
-        },
-        {
-          "name": "Instrument Cluster Capacitor Kit",
-          "oem": "—",
-          "aftermarket": "Electronic supply houses",
-          "cost": "$10-25"
-        },
-        {
-          "name": "Window Switch (Driver)",
-          "oem": "61311380575",
-          "aftermarket": "Aftermarket, used OEM",
-          "cost": "$40-80"
-        },
-        {
-          "name": "Fuse Box Contact Cleaner",
-          "oem": "—",
-          "aftermarket": "DeoxIT D5, CRC QD Contact",
-          "cost": "$10-20"
-        }
+        { "name": "Main Relay (DME/LKM)", "oem": "12631709557", "aftermarket": "Bosch 0332014112", "cost": "$40-70" },
+        { "name": "Fuel Pump Relay", "oem": "12631735424", "aftermarket": "Bosch, Stribel", "cost": "$25-50" },
+        { "name": "Auxiliary Fan Relay", "oem": "61311378636", "aftermarket": "Bosch, aftermarket", "cost": "$20-40" },
+        { "name": "Ground Point Ring Terminals (25 pack)", "oem": "—", "aftermarket": "Quality copper ring terminals", "cost": "$10-20" },
+        { "name": "Headlight Switch", "oem": "61311372043", "aftermarket": "URO, aftermarket", "cost": "$30-60" },
+        { "name": "Turn Signal/Wiper Stalk", "oem": "61311368056", "aftermarket": "Aftermarket, used OEM", "cost": "$60-150" },
+        { "name": "Instrument Cluster Voltage Regulator", "oem": "—", "aftermarket": "Rebuilt units available", "cost": "$40-80" },
+        { "name": "Instrument Cluster Capacitor Kit", "oem": "—", "aftermarket": "Electronic supply houses", "cost": "$10-25" },
+        { "name": "Window Switch (Driver)", "oem": "61311380575", "aftermarket": "Aftermarket, used OEM", "cost": "$40-80" },
+        { "name": "Fuse Box Contact Cleaner", "oem": "—", "aftermarket": "DeoxIT D5, CRC QD Contact", "cost": "$10-20" }
       ],
       "tools": [
         "Multimeter with continuity function",
@@ -757,125 +452,66 @@
       ],
       "steps": [
         "Disconnect battery and let system discharge for 10 minutes.",
-        "Begin with ground point restoration - locate all chassis grounds (multiple locations).",
+        "Begin with ground point restoration—locate all chassis grounds (multiple locations).",
         "E28 grounds: engine to firewall, battery to chassis, instrument cluster ground, tail light grounds.",
         "Remove each ground connection, wire brush contact surface to bare metal.",
         "Sand ring terminal or replace with new, apply dielectric grease, torque securely.",
-        "Clean fuse box contacts with contact cleaner - spray each socket, insert/remove fuses.",
-        "Inspect all fuses for corrosion or heat damage - replace suspect fuses.",
-        "Remove and test all relays - clean relay socket contacts thoroughly.",
-        "Replace main relay and fuel pump relay if original - common failure items.",
+        "Clean fuse box contacts with contact cleaner—spray each socket, insert/remove fuses.",
+        "Inspect all fuses for corrosion or heat damage—replace suspect fuses.",
+        "Remove and test all relays—clean relay socket contacts thoroughly.",
+        "Replace main relay and fuel pump relay if original—common failure items.",
         "For instrument cluster repair: remove cluster (4 screws), disconnect all connectors.",
         "Open cluster housing and inspect circuit board for cracked solder joints.",
         "Re-solder any cracked joints, especially around voltage regulator and gauge connections.",
-        "Replace electrolytic capacitors if gauges are erratic - match values exactly.",
+        "Replace electrolytic capacitors if gauges are erratic—match values exactly.",
         "Clean all cluster connector pins with contact cleaner before reinstallation.",
-        "Test headlight switch operation - replace if contacts are worn or burnt.",
-        "Inspect wiring harness for brittle insulation - common behind dashboard and in engine bay.",
+        "Test headlight switch operation—replace if contacts are worn or burnt.",
+        "Inspect wiring harness for brittle insulation—common behind dashboard and in engine bay.",
         "Wrap damaged harness sections with quality electrical tape or wire loom.",
         "Reconnect battery and test all systems systematically.",
         "Drive test: verify all lights, signals, wipers, gauges, and accessories function."
       ],
       "tips": [
-        "E28 electrical issues are usually ground-related - always check grounds first.",
-        "The check control unit (OBC) often fails - rebuilders can repair these.",
+        "E28 electrical issues are usually ground-related—always check grounds first.",
+        "The check control unit (OBC) often fails—rebuilders can repair these.",
         "Dim headlights are often caused by corroded headlight switch contacts.",
-        "The fuel pump relay is a common no-start culprit - carry a spare.",
-        "Green corrosion on copper = moisture intrusion - find and fix the water leak.",
-        "Don't overlook the engine ground strap - it's critical and often forgotten."
+        "The fuel pump relay is a common no-start culprit—carry a spare.",
+        "Green corrosion on copper = moisture intrusion—find and fix the water leak.",
+        "Don't overlook the engine ground strap—it matters and gets forgotten."
       ],
       "warnings": [
-        "Always disconnect battery before electrical work - E28 wiring can short easily.",
-        "Never probe SRS (airbag) wiring if equipped - risk of deployment.",
-        "Dielectric grease on contacts only, not inside connectors - it insulates, not conducts.",
-        "Replace fuses with correct amperage only - higher amperage can cause fires.",
-        "Brittle wiring is a fire hazard - repair or replace deteriorated sections."
+        "Always disconnect battery before electrical work—E28 wiring can short easily.",
+        "Never probe SRS (airbag) wiring if equipped—risk of deployment.",
+        "Dielectric grease on contacts only, not inside connectors—it insulates, not conducts.",
+        "Replace fuses with correct amperage only—higher amperage can cause fires.",
+        "Brittle wiring is a fire hazard—repair or replace deteriorated sections."
       ],
       "references": [
-        {
-          "name": "E28 Goodies Electrical Guides",
-          "url": "https://www.e28goodies.com/"
-        },
-        {
-          "name": "MyE28.com Electrical Forum",
-          "url": "https://forums.mye28.com/viewforum.php?f=20"
-        },
-        {
-          "name": "BMW E28 Wiring Diagrams",
-          "url": "https://www.bimmerforums.com/forum/showthread.php?1537393-E28-Wiring-Diagrams"
-        }
+        { "name": "E28 Goodies Electrical Guides", "url": "https://www.e28goodies.com/" },
+        { "name": "MyE28.com Electrical Forum", "url": "https://forums.mye28.com/viewforum.php?f=20" },
+        { "name": "BMW E28 Wiring Diagrams", "url": "https://www.bimmerforums.com/forum/showthread.php?1537393-E28-Wiring-Diagrams" }
       ]
     },
     {
       "id": "interior-restoration",
       "title": "Interior Restoration",
-      "description": "Complete interior refresh addressing the E28's common deterioration issues including cracked dashboards, worn leather, sagging headliners, and deteriorated trim.",
+      "description": "Cracked dashboards, tired leather, and a sagging headliner. What to fix, what to replace, and where to find the trim.",
       "difficulty": "Intermediate",
       "time": "15-30 hours",
       "cost": "$300-1,500",
       "interval": "One-time restoration",
       "laborHours": "12-24 hours shop time",
       "parts": [
-        {
-          "name": "Dashboard Cover/Cap",
-          "oem": "—",
-          "aftermarket": "Coverlay, DashSkin",
-          "cost": "$150-300"
-        },
-        {
-          "name": "Headliner Fabric (4 yards)",
-          "oem": "—",
-          "aftermarket": "OEM-match foam-backed material",
-          "cost": "$50-100"
-        },
-        {
-          "name": "Headliner Adhesive",
-          "oem": "—",
-          "aftermarket": "3M Super 77, Permatex 27828",
-          "cost": "$15-30"
-        },
-        {
-          "name": "Door Panel Insert (Set)",
-          "oem": "51411889823/24/25/26",
-          "aftermarket": "Recovered or used OEM",
-          "cost": "$100-300"
-        },
-        {
-          "name": "Leather Dye/Refinisher Kit",
-          "oem": "—",
-          "aftermarket": "Leatherique, SEM Color Coat",
-          "cost": "$50-100"
-        },
-        {
-          "name": "Seat Foam Cushion (Driver)",
-          "oem": "52101884855",
-          "aftermarket": "Recovered foam, aftermarket",
-          "cost": "$100-200"
-        },
-        {
-          "name": "Window Regulator (Front)",
-          "oem": "51321889258/59",
-          "aftermarket": "Aftermarket, rebuilt",
-          "cost": "$60-120"
-        },
-        {
-          "name": "Shift Boot (Manual)",
-          "oem": "25111220455",
-          "aftermarket": "Leather replicas",
-          "cost": "$40-80"
-        },
-        {
-          "name": "Carpet Set",
-          "oem": "—",
-          "aftermarket": "German Molded, Stock Interiors",
-          "cost": "$300-600"
-        },
-        {
-          "name": "Door Seal Set (Complete)",
-          "oem": "51711884149",
-          "aftermarket": "URO, aftermarket",
-          "cost": "$150-300"
-        }
+        { "name": "Dashboard Cover/Cap", "oem": "—", "aftermarket": "Coverlay, DashSkin", "cost": "$150-300" },
+        { "name": "Headliner Fabric (4 yards)", "oem": "—", "aftermarket": "OEM-match foam-backed material", "cost": "$50-100" },
+        { "name": "Headliner Adhesive", "oem": "—", "aftermarket": "3M Super 77, Permatex 27828", "cost": "$15-30" },
+        { "name": "Door Panel Insert (Set)", "oem": "51411889823/24/25/26", "aftermarket": "Recovered or used OEM", "cost": "$100-300" },
+        { "name": "Leather Dye/Refinisher Kit", "oem": "—", "aftermarket": "Leatherique, SEM Color Coat", "cost": "$50-100" },
+        { "name": "Seat Foam Cushion (Driver)", "oem": "52101884855", "aftermarket": "Recovered foam, aftermarket", "cost": "$100-200" },
+        { "name": "Window Regulator (Front)", "oem": "51321889258/59", "aftermarket": "Aftermarket, rebuilt", "cost": "$60-120" },
+        { "name": "Shift Boot (Manual)", "oem": "25111220455", "aftermarket": "Leather replicas", "cost": "$40-80" },
+        { "name": "Carpet Set", "oem": "—", "aftermarket": "German Molded, Stock Interiors", "cost": "$300-600" },
+        { "name": "Door Seal Set (Complete)", "oem": "51711884149", "aftermarket": "URO, aftermarket", "cost": "$150-300" }
       ],
       "tools": [
         "Trim removal tools (plastic pry set)",
@@ -892,22 +528,22 @@
         "Foam brush set"
       ],
       "steps": [
-        "Document everything with photos before disassembly - helps with reassembly.",
+        "Document everything with photos before disassembly—helps with reassembly.",
         "Remove seats (4 bolts each) and all carpeting to access and clean floor pans.",
         "For dashboard restoration: remove dashboard completely if cracked beyond repair.",
         "Option 1: Install dashboard cover/cap over original for clean appearance.",
         "Option 2: Remove and recover original with flocked vinyl for authentic look.",
         "For headliner: remove sun visors, dome light, A-pillar trim, grab handles, and rear trim.",
-        "Remove headliner board through rear door opening - flex carefully.",
+        "Remove headliner board through rear door opening—flex carefully.",
         "Strip all old fabric and deteriorated foam backing with scraper and wire brush.",
         "Apply adhesive spray in sections, press new fabric starting from center.",
-        "Work outward stretching fabric taut - no wrinkles or air pockets.",
+        "Work outward stretching fabric taut—no wrinkles or air pockets.",
         "Cut openings for lights and accessories after adhesive cures.",
         "For leather seats: clean thoroughly with leather cleaner first.",
         "Address cracks and wear with leather filler, sand smooth when dry.",
-        "Apply leather dye/refinisher in thin coats - multiple light coats.",
+        "Apply leather dye/refinisher in thin coats—multiple light coats.",
         "Condition all leather after refinishing with quality conditioner.",
-        "Replace worn seat foam - driver's bolster typically needs attention.",
+        "Replace worn seat foam—driver's bolster typically needs attention.",
         "For door panels: remove and clean or replace fabric inserts.",
         "Re-glue loose vinyl and repair cracked trim pieces.",
         "Replace all window felts and door seals for tight weathersealing.",
@@ -915,33 +551,76 @@
         "Reinstall all components in reverse order of removal."
       ],
       "tips": [
-        "E28 dashboards crack severely - caps are easier than full recovery.",
-        "Headliner adhesive sets fast in heat - work in cool, shaded conditions.",
-        "Match leather dye color carefully - test on hidden area first.",
+        "E28 dashboards crack severely—caps are easier than full recovery.",
+        "Headliner adhesive sets fast in heat—work in cool, shaded conditions.",
+        "Match leather dye color carefully—test on hidden area first.",
         "The E28 center console wood trim can be refinished if veneer is intact.",
         "Original seat patterns are available from upholstery suppliers.",
-        "Spray leather dye, don't brush - brushing leaves streaks."
+        "Spray leather dye, don't brush—brushing leaves streaks."
       ],
       "warnings": [
         "Work in well-ventilated area when using adhesives and dyes.",
-        "Headliner adhesive is highly flammable - no sparks or flames nearby.",
-        "Dashboard removal requires patience - many hidden fasteners.",
-        "Never pull on headliner fabric after positioning - it will stretch and distort.",
-        "Test all chemicals on hidden areas first - some plastics react badly."
+        "Headliner adhesive is highly flammable—no sparks or flames nearby.",
+        "Dashboard removal requires patience—many hidden fasteners.",
+        "Never pull on headliner fabric after positioning—it will stretch and distort.",
+        "Test all chemicals on hidden areas first—some plastics react badly."
       ],
       "references": [
-        {
-          "name": "MyE28.com Interior Restoration",
-          "url": "https://forums.mye28.com/viewforum.php?f=23"
-        },
-        {
-          "name": "Coverlay Dashboard Covers",
-          "url": "https://www.coverlay.com/"
-        },
-        {
-          "name": "Leatherique Restoration Products",
-          "url": "https://www.leatherique.com/"
-        }
+        { "name": "MyE28.com Interior Restoration", "url": "https://forums.mye28.com/viewforum.php?f=23" },
+        { "name": "Coverlay Dashboard Covers", "url": "https://www.coverlay.com/" },
+        { "name": "Leatherique Restoration Products", "url": "https://www.leatherique.com/" }
+      ]
+    },
+    {
+      "id": "m30-timing-chain",
+      "title": "Timing Chain Guide and Tensioner (M30)",
+      "description": "The M30's chain lasts, but its plastic guide rails and the tensioner don't. A rattle at cold start is the warning. This is the job that stops a broken guide from taking the chain with it.",
+      "difficulty": "Advanced",
+      "time": "8-12 hours",
+      "cost": "$250-500",
+      "parts": [
+        { "name": "Timing chain guide rail and tensioner rail", "aftermarket": "Febi, Elring", "cost": "$60-120" },
+        { "name": "Chain tensioner (piston and spring)", "aftermarket": "Febi", "cost": "$40-80" },
+        { "name": "Timing cover gasket set", "aftermarket": "Elring, Victor Reinz", "cost": "$40-70" },
+        { "name": "Front crankshaft seal", "aftermarket": "Elring, Corteco", "cost": "$10-20" },
+        { "name": "Timing chain (if stretched)", "aftermarket": "Iwis", "cost": "$60-120" }
+      ],
+      "tools": [
+        "Metric socket and wrench set",
+        "Torque wrench",
+        "Crank hub/vibration damper holding tool",
+        "TDC locking pin or a way to hold TDC",
+        "Gasket scraper",
+        "RTV sealant",
+        "Drain pan"
+      ],
+      "steps": [
+        "Disconnect the battery and drain the coolant.",
+        "Remove the fan and shroud, radiator, and accessory belts for access to the front of the engine.",
+        "Remove the valve cover and set the engine to TDC on cylinder 1. Confirm with the cam marks.",
+        "Remove the tensioner plug carefully. It's under spring pressure.",
+        "Hold the crank and remove the vibration damper and hub.",
+        "Remove the upper and lower timing covers. Note where each bolt came from, as lengths differ.",
+        "Inspect the guide and tensioner rails for cracks, missing pieces, and deep grooves. If pieces are missing, recover them from the oil pan.",
+        "Check the chain for stretch and the sprockets for hooked teeth. Replace the chain and sprockets together if either is worn.",
+        "Fit new guide rails and the new tensioner.",
+        "Confirm the cam and crank timing marks are still aligned before closing anything up.",
+        "Refit the covers with new gaskets and a thin bead of RTV at the joints, and install a new front crank seal.",
+        "Refit the hub and damper. Torque to the value in the Torque Specs table on this page, or your workshop manual.",
+        "Refill and bleed the cooling system, then start and listen for chain noise."
+      ],
+      "tips": [
+        "Photograph each stage before you disassemble it.",
+        "If you find guide pieces missing, drop the oil pan to recover them.",
+        "Do the water pump while the front is apart."
+      ],
+      "warnings": [
+        "Don't rotate the engine with the tensioner out and the chain slack.",
+        "Missing guide fragments can block the oil pickup."
+      ],
+      "references": [
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
+        { "name": "RealOEM parts diagrams", "url": "https://www.realoem.com/" }
       ]
     }
   ],
@@ -951,7 +630,10 @@
         "name": "FCP Euro",
         "url": "https://www.fcpeuro.com/BMW-parts",
         "notes": "Lifetime replacement guarantee on all parts. Excellent E28 coverage with OE quality options.",
-        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "specialties": [
+          "Lifetime Warranty",
+          "OE Quality"
+        ],
         "shipping": "Free over $49",
         "warranty": "Lifetime",
         "featured": true
@@ -960,13 +642,19 @@
         "name": "BMW Classic Parts",
         "url": "https://www.bmw-classic-parts.com/",
         "notes": "Genuine BMW OEM and NLA parts for classic BMWs. Source for discontinued items.",
-        "specialties": ["Genuine BMW", "NLA Parts"]
+        "specialties": [
+          "Genuine BMW",
+          "NLA Parts"
+        ]
       },
       {
         "name": "Pelican Parts",
         "url": "https://www.pelicanparts.com/BMW/catalog/5-Series_Main.htm",
         "notes": "Extensive E28 catalog with OEM and quality aftermarket parts.",
-        "specialties": ["Tech Articles", "OE Parts"],
+        "specialties": [
+          "Tech Articles",
+          "OE Parts"
+        ],
         "shipping": "Free over $99"
       }
     ],
@@ -975,20 +663,31 @@
         "name": "Ireland Engineering",
         "url": "https://www.iemotorsport.com/",
         "notes": "Classic BMW performance specialists. Suspension, engine, and chassis upgrades for E28.",
-        "specialties": ["Suspension", "Engine", "Handling"],
+        "specialties": [
+          "Suspension",
+          "Engine",
+          "Handling"
+        ],
         "featured": true
       },
       {
         "name": "Metric Mechanic",
         "url": "https://www.metricmechanic.com/",
         "notes": "M30 and Big Six engine specialists. Rebuilt engines and performance builds.",
-        "specialties": ["M30 Engines", "Rebuilds", "Performance"]
+        "specialties": [
+          "M30 Engines",
+          "Rebuilds",
+          "Performance"
+        ]
       },
       {
         "name": "Turner Motorsport",
         "url": "https://www.turnermotorsport.com/",
         "notes": "BMW performance parts with race-proven reliability.",
-        "specialties": ["Race Parts", "Suspension"]
+        "specialties": [
+          "Race Parts",
+          "Suspension"
+        ]
       }
     ],
     "general": [
@@ -996,14 +695,20 @@
         "name": "ECS Tuning",
         "url": "https://www.ecstuning.com/BMW-E28/",
         "notes": "Wide selection of maintenance and upgrade parts.",
-        "specialties": ["Large Inventory", "Fast Shipping"],
+        "specialties": [
+          "Large Inventory",
+          "Fast Shipping"
+        ],
         "shipping": "Free over $49"
       },
       {
         "name": "BavAuto",
         "url": "https://www.bavauto.com/",
         "notes": "Quality OE and OEM BMW parts with competitive pricing.",
-        "specialties": ["OE Equivalent", "Good Prices"]
+        "specialties": [
+          "OE Equivalent",
+          "Good Prices"
+        ]
       }
     ],
     "specialty": [
@@ -1011,35 +716,50 @@
         "name": "Blunt Tech",
         "url": "https://blunttech.com/",
         "notes": "E28 restoration specialist. Hard-to-find parts and personal service.",
-        "specialties": ["E28 Specialist", "Rare Parts"],
+        "specialties": [
+          "E28 Specialist",
+          "Rare Parts"
+        ],
         "featured": true
       },
       {
         "name": "Guten Parts",
         "url": "https://www.gutenparts.com/",
         "notes": "Community favorite for hard-to-find classic BMW parts.",
-        "specialties": ["Rare Parts", "Community Owned"]
+        "specialties": [
+          "Rare Parts",
+          "Community Owned"
+        ]
       }
     ],
     "used": [
       {
         "name": "MyE28.com Classifieds",
         "url": "https://forums.mye28.com/viewforum.php?f=3",
-        "notes": "Premier E28 community marketplace. Best source for used E28 parts.",
-        "specialties": ["E28 Community", "Rare Parts"],
+        "notes": "The main E28 marketplace. Best source for used E28 parts.",
+        "specialties": [
+          "E28 Community",
+          "Rare Parts"
+        ],
         "featured": true
       },
       {
         "name": "eBay Motors",
         "url": "https://www.ebay.com/b/BMW-E28/6030/bn_81442362",
         "notes": "Large selection of used, NOS, and reproduction E28 parts.",
-        "specialties": ["NOS Parts", "Wide Selection"]
+        "specialties": [
+          "NOS Parts",
+          "Wide Selection"
+        ]
       },
       {
         "name": "Car-Part.com",
         "url": "https://www.car-part.com/",
         "notes": "Search salvage yard inventory nationwide.",
-        "specialties": ["Salvage Yards", "Body Parts"]
+        "specialties": [
+          "Salvage Yards",
+          "Body Parts"
+        ]
       }
     ],
     "tools": [
@@ -1048,160 +768,55 @@
         "url": "https://www.realoem.com/bmw/enUS/select?product=P&archive=0&series=E28",
         "notes": "Free BMW parts diagrams and part number lookup"
       },
-      {
-        "name": "MyE28.com Tech FAQ",
-        "url": "https://forums.mye28.com/viewforum.php?f=10",
-        "notes": "E28 technical information and part numbers"
-      }
+      { "name": "MyE28.com Tech FAQ", "url": "https://forums.mye28.com/viewforum.php?f=10", "notes": "E28 technical information and part numbers" }
     ]
   },
   "torqueSpecs": {
     "sources": [
-      {
-        "name": "MyE28.com Forums",
-        "url": "https://forums.mye28.com/viewtopic.php?t=27805"
-      },
-      {
-        "name": "M30 Basics Torque Guide",
-        "url": "https://m30basics.wordpress.com/torques/"
-      },
-      {
-        "name": "Bentley E28 Service Manual",
-        "url": "https://www.bentleypublishers.com/bmw.html"
-      }
+      { "name": "MyE28.com Forums", "url": "https://forums.mye28.com/viewtopic.php?t=27805" },
+      { "name": "M30 Basics Torque Guide", "url": "https://m30basics.wordpress.com/torques/" },
+      { "name": "Bentley E28 Service Manual", "url": "https://www.bentleypublishers.com/bmw.html" }
     ],
     "engine": [
-      {
-        "component": "Cylinder Head Bolts (M30 pre-1988)",
-        "spec": "44 ft-lbs (60 Nm) + 33° + 25°",
-        "notes": "Wait 15 min, final angle at operating temp"
-      },
+      { "component": "Cylinder Head Bolts (M30 pre-1988)", "spec": "44 ft-lbs (60 Nm) + 33° + 25°", "notes": "Wait 15 min, final angle at operating temp" },
       {
         "component": "Cylinder Head Bolts (M30 1988+)",
         "spec": "44 ft-lbs (60 Nm) + 59 ft-lbs (80 Nm) + 35°",
         "notes": "Wait 15 min between stages, final at operating temp"
       },
-      {
-        "component": "Main Bearing Caps (M30)",
-        "spec": "44 ft-lbs (60 Nm)",
-        "notes": "Clean and lubricate threads"
-      },
-      {
-        "component": "Connecting Rod Bolts (M30)",
-        "spec": "41 ft-lbs (55 Nm)",
-        "notes": "Clean and lubricate threads"
-      },
-      {
-        "component": "Flywheel Bolts (Manual)",
-        "spec": "77 ft-lbs (105 Nm)",
-        "notes": "Use new bolts"
-      },
-      {
-        "component": "Flywheel Bolts (Auto)",
-        "spec": "88 ft-lbs (120 Nm)",
-        "notes": "Use new bolts"
-      },
-      {
-        "component": "Valve Cover Nuts",
-        "spec": "7 ft-lbs (10 Nm)",
-        "notes": "Do not overtighten"
-      },
-      {
-        "component": "Spark Plugs",
-        "spec": "18-22 ft-lbs (25-30 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Oil Drain Plug",
-        "spec": "18 ft-lbs (25 Nm)",
-        "notes": "Replace crush washer"
-      },
-      {
-        "component": "Oil Pump Sprocket Bolts",
-        "spec": "7 ft-lbs (10 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Exhaust Manifold Nuts",
-        "spec": "11 ft-lbs (15 Nm)",
-        "notes": "M6 bolts"
-      },
-      {
-        "component": "Vibration Damper Hub Bolt",
-        "spec": "325 ft-lbs (440 Nm)",
-        "notes": "Replace bolt each use"
-      }
+      { "component": "Main Bearing Caps (M30)", "spec": "44 ft-lbs (60 Nm)", "notes": "Clean and lubricate threads" },
+      { "component": "Connecting Rod Bolts (M30)", "spec": "41 ft-lbs (55 Nm)", "notes": "Clean and lubricate threads" },
+      { "component": "Flywheel Bolts (Manual)", "spec": "77 ft-lbs (105 Nm)", "notes": "Use new bolts" },
+      { "component": "Flywheel Bolts (Auto)", "spec": "88 ft-lbs (120 Nm)", "notes": "Use new bolts" },
+      { "component": "Valve Cover Nuts", "spec": "7 ft-lbs (10 Nm)", "notes": "Do not overtighten" },
+      { "component": "Spark Plugs", "spec": "18-22 ft-lbs (25-30 Nm)", "notes": "" },
+      { "component": "Oil Drain Plug", "spec": "18 ft-lbs (25 Nm)", "notes": "Replace crush washer" },
+      { "component": "Oil Pump Sprocket Bolts", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
+      { "component": "Exhaust Manifold Nuts", "spec": "11 ft-lbs (15 Nm)", "notes": "M6 bolts" },
+      { "component": "Vibration Damper Hub Bolt", "spec": "325 ft-lbs (440 Nm)", "notes": "Replace bolt each use" }
     ],
     "suspension": [
-      {
-        "component": "Control Arm to Subframe",
-        "spec": "57-65 ft-lbs (77-88 Nm)",
-        "notes": "Tighten with weight on wheels"
-      },
-      {
-        "component": "Thrust Arm Bolts",
-        "spec": "65 ft-lbs (88 Nm)",
-        "notes": "Tighten with weight on wheels"
-      },
-      {
-        "component": "Tie Rod End Nut",
-        "spec": "25-33 ft-lbs (34-45 Nm)",
-        "notes": "Use new cotter pin"
-      },
-      {
-        "component": "Wheel Lug Bolts",
-        "spec": "80 ft-lbs (108 Nm)",
-        "notes": "Tighten in star pattern"
-      },
-      {
-        "component": "Shock Absorber Top Nut",
-        "spec": "16-18 ft-lbs (22-24 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Subframe Bolts",
-        "spec": "65 ft-lbs (88 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Sway Bar End Links",
-        "spec": "16-18 ft-lbs (22-24 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Front Wheel Bearing Nut",
-        "spec": "22-24 ft-lbs (30-33 Nm)",
-        "notes": "While rotating wheel, then back off and retorque to spec"
-      }
+      { "component": "Control Arm to Subframe", "spec": "57-65 ft-lbs (77-88 Nm)", "notes": "Tighten with weight on wheels" },
+      { "component": "Thrust Arm Bolts", "spec": "65 ft-lbs (88 Nm)", "notes": "Tighten with weight on wheels" },
+      { "component": "Tie Rod End Nut", "spec": "25-33 ft-lbs (34-45 Nm)", "notes": "Use new cotter pin" },
+      { "component": "Wheel Lug Bolts", "spec": "80 ft-lbs (108 Nm)", "notes": "Tighten in star pattern" },
+      { "component": "Shock Absorber Top Nut", "spec": "16-18 ft-lbs (22-24 Nm)", "notes": "" },
+      { "component": "Subframe Bolts", "spec": "65 ft-lbs (88 Nm)", "notes": "" },
+      { "component": "Sway Bar End Links", "spec": "16-18 ft-lbs (22-24 Nm)", "notes": "" },
+      { "component": "Front Wheel Bearing Nut", "spec": "22-24 ft-lbs (30-33 Nm)", "notes": "While rotating wheel, then back off and retorque to spec" }
     ],
     "brakes": [
-      {
-        "component": "Front Caliper Bolts",
-        "spec": "58-72 ft-lbs (79-98 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Caliper Bolts",
-        "spec": "42-48 ft-lbs (57-65 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Brake Line Fittings",
-        "spec": "11-14 ft-lbs (15-19 Nm)",
-        "notes": "Do not overtighten"
-      },
-      {
-        "component": "Brake Rotor Set Screw",
-        "spec": "9 ft-lbs (12 Nm)",
-        "notes": "Use thread locker"
-      }
+      { "component": "Front Caliper Bolts", "spec": "58-72 ft-lbs (79-98 Nm)", "notes": "" },
+      { "component": "Rear Caliper Bolts", "spec": "42-48 ft-lbs (57-65 Nm)", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "11-14 ft-lbs (15-19 Nm)", "notes": "Do not overtighten" },
+      { "component": "Brake Rotor Set Screw", "spec": "9 ft-lbs (12 Nm)", "notes": "Use thread locker" }
     ]
   },
   "diyGuides": [
     {
       "id": "oil-change",
       "title": "Oil Change",
-      "description": "Complete guide to oil and filter change on M20 and M30 engines.",
+      "description": "Oil and filter on the M20 and M30. Twenty minutes of work, and the cheapest insurance these engines get.",
       "difficulty": "Easy",
       "time": "30 min",
       "interval": "Every 3,000-5,000 miles",
@@ -1219,11 +834,11 @@
         "Raise the front of the car and secure on jack stands.",
         "Locate the oil drain plug on the rear of the oil pan.",
         "Position drain pan and remove the 17mm drain plug.",
-        "Allow oil to drain completely - at least 10 minutes for older engines.",
+        "Allow oil to drain completely—at least 10 minutes for older engines.",
         "Replace the copper crush washer on the drain plug.",
         "Reinstall drain plug and torque to 18 ft-lbs (25 Nm).",
         "Locate the spin-on oil filter on the passenger side of the block (M30) or front of block (M20).",
-        "Using the oil filter wrench, remove the old filter - oil will drip.",
+        "Using the oil filter wrench, remove the old filter—oil will drip.",
         "Apply a thin film of fresh oil to the new filter's rubber gasket.",
         "Thread the new filter on by hand until the gasket contacts, then tighten 3/4 turn more.",
         "Lower the car and add 5.5 quarts (M30) or 4.5 quarts (M20) of 15W-40 or 20W-50 oil.",
@@ -1239,7 +854,7 @@
     {
       "id": "brake-pads",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement with rotor inspection.",
+      "description": "Pads front and rear, plus what to look for on the rotors while the wheels are off.",
       "difficulty": "Easy",
       "time": "1-2 hours",
       "interval": "Every 20,000-40,000 miles",
@@ -1257,21 +872,21 @@
       "steps": [
         "Loosen lug bolts while the car is on the ground.",
         "Raise the car and support on jack stands, then remove wheel.",
-        "The E28 uses ATE sliding calipers - locate the two 13mm caliper bolts on the rear of the caliper bracket.",
+        "The E28 uses ATE sliding calipers—locate the two 13mm caliper bolts on the rear of the caliper bracket.",
         "Remove the caliper bolts and lift the caliper off the rotor.",
-        "Support the caliper with wire or bungee - never let it hang by the brake hose.",
+        "Support the caliper with wire or bungee—never let it hang by the brake hose.",
         "Slide the old pads out of the caliper bracket.",
         "Inspect the rotor for scoring, cracks, or wear past the minimum thickness.",
         "Clean the pad contact areas in the bracket with a wire brush.",
         "Use a C-clamp to slowly compress the caliper piston back into its bore.",
         "Apply brake grease to the pad backing plate edges and any anti-rattle clips.",
-        "Install new pads into the bracket - anti-squeal shims go against the piston.",
+        "Install new pads into the bracket—anti-squeal shims go against the piston.",
         "Reinstall caliper and torque bolts to 58-72 ft-lbs (79-98 Nm) for front, 42-48 ft-lbs (57-65 Nm) for rear.",
         "Reinstall wheel and torque lug bolts to 80 ft-lbs (108 Nm).",
         "Pump brake pedal several times before driving to seat the pads."
       ],
       "tips": [
-        "E28 front rotors are directional on some models - ensure correct side.",
+        "E28 front rotors are directional on some models—ensure correct side.",
         "The parking brake on E28 is cable-actuated drum inside the rear rotors.",
         "Bleed brakes if pedal feels soft after compressing pistons."
       ]
@@ -1279,7 +894,7 @@
     {
       "id": "valve-adjustment",
       "title": "Valve Adjustment (M30)",
-      "description": "Checking and adjusting valve clearances on the M30 engine.",
+      "description": "The M30 has adjustable valves, and they tick when they drift. Set them cold with feeler gauges and it'll run smoother and quieter.",
       "difficulty": "Intermediate",
       "time": "2-3 hours",
       "interval": "Every 15,000 miles",
@@ -1294,31 +909,31 @@
         "New valve cover gasket"
       ],
       "steps": [
-        "Ensure the engine is cold - valves expand when hot, affecting clearances.",
+        "Ensure the engine is cold—valves expand when hot, affecting clearances.",
         "Remove the 10mm valve cover nuts and lift off the valve cover.",
-        "Locate the timing mark on the vibration damper - you'll need to rotate the engine.",
+        "Locate the timing mark on the vibration damper—you'll need to rotate the engine.",
         "Using a 32mm wrench on the crank bolt, rotate the engine clockwise to TDC cylinder 1.",
         "At TDC #1, both cam lobes on cylinder 1 should point up and away from the rocker arms.",
         "Using feeler gauges, check intake valve clearance: 0.30mm (0.012in) cold.",
         "Check exhaust valve clearance: 0.30mm (0.012in) cold.",
         "To adjust: Loosen the 13mm locknut, turn the adjuster screw with flathead, then retighten locknut.",
-        "Recheck clearance after tightening - the locknut can change the setting.",
+        "Recheck clearance after tightening—the locknut can change the setting.",
         "Rotate engine 120° to the next cylinder in firing order (1-5-3-6-2-4).",
         "Repeat measurement and adjustment for all 12 valves.",
         "Clean the valve cover mating surfaces and install new gasket.",
         "Reinstall valve cover and torque nuts to 7 ft-lbs (10 Nm)."
       ],
       "tips": [
-        "The M30 firing order is 1-5-3-6-2-4 - adjust valves in this sequence.",
-        "Slight drag on the feeler gauge is correct - not too tight, not too loose.",
+        "The M30 firing order is 1-5-3-6-2-4—adjust valves in this sequence.",
+        "Slight drag on the feeler gauge is correct—not too tight, not too loose.",
         "Mark each valve as you adjust it to keep track of progress.",
-        "Listen for ticking after adjustment - slight tick is normal, loud clatter means too loose."
+        "Listen for ticking after adjustment—slight tick is normal, loud clatter means too loose."
       ]
     },
     {
       "id": "timing-belt",
       "title": "Timing Belt Replacement (M20)",
-      "description": "Step-by-step timing belt, tensioner, and water pump replacement.",
+      "description": "Belt, tensioner, and water pump on the M20 in the 528e. It's an interference engine, so this one isn't optional.",
       "difficulty": "Intermediate",
       "time": "4-6 hours",
       "interval": "Every 50,000 miles or 4 years",
@@ -1339,21 +954,21 @@
         "Remove the accessory drive belts by loosening the alternator and power steering pump.",
         "Remove the four bolts from the water pump pulley.",
         "Remove the upper and lower timing belt covers.",
-        "Rotate engine to TDC on cylinder 1 - align timing marks on cam and crank sprockets.",
+        "Rotate engine to TDC on cylinder 1—align timing marks on cam and crank sprockets.",
         "Mark the belt rotation direction if reusing (not recommended).",
         "Loosen the timing belt tensioner and slide the belt off the sprockets.",
-        "Remove the water pump (3 bolts) if replacing - clean the mating surface.",
+        "Remove the water pump (3 bolts) if replacing—clean the mating surface.",
         "Install new water pump with new gasket.",
-        "Inspect tensioner pulley and idler - replace if any roughness when spun.",
+        "Inspect tensioner pulley and idler—replace if any roughness when spun.",
         "Install the new timing belt, starting at the crankshaft sprocket.",
-        "Route belt around tensioner, water pump, then cam sprocket - keep tension on the right side.",
+        "Route belt around tensioner, water pump, then cam sprocket—keep tension on the right side.",
         "Adjust tensioner to achieve proper belt tension (should deflect ~5mm with thumb pressure).",
         "Rotate engine two full revolutions by hand and recheck timing marks.",
         "Reinstall timing covers, water pump pulley, belts, fan, and shroud.",
         "Refill cooling system and bleed air."
       ],
       "tips": [
-        "The M20 is an interference engine - belt failure will bend valves.",
+        "The M20 is an interference engine—belt failure will bend valves.",
         "Never rotate the engine backwards with the belt installed.",
         "Always replace the tensioner and water pump when doing the belt.",
         "Consider replacing the front crankshaft seal while you have access."
@@ -1362,20 +977,20 @@
   ],
   "restorationItems": {
     "engine": [
-      { "id": "e28-timing-belt", "name": "Replace timing belt (M20)", "description": "Critical - M20 is an interference engine" },
-      { "id": "e28-timing-chain", "name": "Inspect timing chain (M30)", "description": "M30 uses chain - inspect guides and tensioner" },
+      { "id": "e28-timing-belt", "name": "Replace timing belt (M20)", "description": "M20 is an interference engine—don't skip it" },
+      { "id": "e28-timing-chain", "name": "Inspect timing chain (M30)", "description": "M30 uses chain—inspect guides and tensioner" },
       { "id": "e28-valve-adjust", "name": "Valve adjustment (M30/S38)", "description": "Mechanical lifters require periodic adjustment" },
       { "id": "e28-head-gasket", "name": "Inspect head gasket", "description": "Common failure on high-mileage M20s" },
       { "id": "e28-oil-leaks", "name": "Address oil leaks", "description": "Valve cover, oil pan, front and rear seals" }
     ],
     "cooling": [
-      { "id": "e28-radiator", "name": "Replace radiator", "description": "Original brass/copper - consider aluminum" },
-      { "id": "e28-water-pump", "name": "Replace water pump", "description": "Metal impeller - replace with timing belt" },
+      { "id": "e28-radiator", "name": "Replace radiator", "description": "Original brass/copper—consider aluminum" },
+      { "id": "e28-water-pump", "name": "Replace water pump", "description": "Metal impeller—replace with timing belt" },
       { "id": "e28-thermostat", "name": "Replace thermostat", "description": "Include housing gasket" },
       { "id": "e28-hoses", "name": "Replace all coolant hoses", "description": "Rubber deteriorates with age" }
     ],
     "fuel": [
-      { "id": "e28-fuel-lines", "name": "Replace rubber fuel lines", "description": "Critical safety - check for deterioration" },
+      { "id": "e28-fuel-lines", "name": "Replace rubber fuel lines", "description": "Safety item—check for deterioration" },
       { "id": "e28-injectors", "name": "Service fuel injectors", "description": "Clean or replace" },
       { "id": "e28-fuel-pump", "name": "Test fuel pump and pressure regulator", "description": "In-tank pump" }
     ],
@@ -1402,11 +1017,11 @@
     ]
   },
   "buyersGuide": {
-    "overview": "The BMW E28 5 Series (1981-1988) represents BMW's executive sedan during the brand's golden age. Larger and more luxurious than the E30, the E28 offered sophisticated engineering with the M30 inline-six engine, independent suspension, and an elegant Claus Luthe design. The range-topping M5 introduced the world to the super-sedan concept. Today, the E28 offers classic BMW character at more accessible prices than the E30, though finding a rust-free example is increasingly challenging. These cars reward owners who appreciate analog driving dynamics, straightforward maintenance, and understated elegance.",
+    "overview": "The E28 is the 5 Series that set the pattern: a proper four-door with a big six, rear-drive, and a dashboard angled toward the driver. The M30 in the 533i and 535i is about as durable as a BMW engine gets, and the M5 more or less invented the fast sedan. Parts are still findable and the mechanicals are simple enough to learn on. The catch is rust and forty-year-old electrics, and clean ones are getting hard to find. Buy the body first. Almost everything else can be fixed.",
     "quickFacts": {
       "productionYears": "1981-1988",
       "totalProduced": "~722,000 worldwide",
-      "priceRange": "$5,000 - $80,000+",
+      "priceRange": "$5,000–$80,000+",
       "bestYears": "1985-1988 (improved electronics and refinement)"
     },
     "variants": [
@@ -1425,13 +1040,13 @@
       {
         "name": "535i / 535is",
         "years": "1985-1988",
-        "description": "The sweet spot of the range with the 3.4L M30B34 producing 182-208 hp. Excellent balance of performance and reliability. The 'is' adds sport suspension and limited-slip differential.",
+        "description": "The one to buy: the 3.4L M30 with 182–208 hp, plenty of torque, and very little drama. The 'is' adds sport suspension and a limited-slip differential.",
         "desirability": "High"
       },
       {
         "name": "M5",
         "years": "1988 (US)",
-        "description": "The original super-sedan with the hand-built S38 3.5L inline-six producing 256 hp. Only 1,239 sold in North America. Appreciating classic with motorsport DNA.",
+        "description": "The original fast sedan, with the hand-assembled S38 3.5L six making 256 hp. Only 1,239 came to North America, and values keep climbing.",
         "desirability": "High"
       },
       {
@@ -1443,7 +1058,7 @@
     ],
     "inspectionPoints": [
       {
-        "category": "Rust (Critical)",
+        "category": "Rust (check first)",
         "items": [
           {
             "check": "Rocker Panels / Sills",
@@ -1475,14 +1090,10 @@
       {
         "category": "Engine & Drivetrain",
         "items": [
-          {
-            "check": "Timing Belt (M20)",
-            "detail": "528e uses the M20 timing belt engine - requires replacement every 50,000 miles.",
-            "costIfBad": "$500-900"
-          },
+          { "check": "Timing Belt (M20)", "detail": "528e uses the M20 timing belt engine—requires replacement every 50,000 miles.", "costIfBad": "$500-900" },
           {
             "check": "Timing Chain (M30)",
-            "detail": "535i uses the M30 with a timing chain. Listen for chain rattle on startup - indicates tensioner or guide wear.",
+            "detail": "535i uses the M30 with a timing chain. Listen for chain rattle on startup—indicates tensioner or guide wear.",
             "costIfBad": "$1,000-2,000"
           },
           {
@@ -1497,7 +1108,7 @@
           },
           {
             "check": "Transmission (Manual)",
-            "detail": "Test all gears. Getrag 260 5-speed is robust. Check for grinding in 2nd gear.",
+            "detail": "Test every gear. The Getrag 260 five-speed is tough, but check for grinding going into second.",
             "costIfBad": "$1,500-3,000 for rebuild"
           }
         ]
@@ -1522,7 +1133,7 @@
           },
           {
             "check": "Shocks and Struts",
-            "detail": "Bounce each corner - should settle in one bounce. Leaking shocks need replacement.",
+            "detail": "Bounce each corner—should settle in one bounce. Leaking shocks need replacement.",
             "costIfBad": "$600-1,200"
           }
         ]
@@ -1540,34 +1151,27 @@
             "detail": "Verify all gauges work properly. Check for dead pixels on digital displays if equipped.",
             "costIfBad": "$200-500"
           },
-          {
-            "check": "Power Windows/Sunroof",
-            "detail": "Test all windows and sunroof. Motors and switches commonly fail with age.",
-            "costIfBad": "$200-600"
-          },
-          {
-            "check": "Climate Control",
-            "detail": "Check heater and A/C operation. Climate control panels can fail.",
-            "costIfBad": "$300-800"
-          }
+          { "check": "Power Windows/Sunroof", "detail": "Test all windows and sunroof. Motors and switches commonly fail with age.", "costIfBad": "$200-600" },
+          { "check": "Climate Control", "detail": "Check heater and A/C operation. Climate control panels can fail.", "costIfBad": "$300-800" }
         ]
       }
     ],
     "pricingGuide": {
+      "asOf": "January 2026",
       "project": {
-        "price": "$2,000 - $6,000",
+        "price": "$2,000–$6,000",
         "description": "Rusty or non-running cars needing significant work. Common on East Coast and Midwest cars. Budget 2x purchase for restoration."
       },
       "driver": {
-        "price": "$6,000 - $15,000",
+        "price": "$6,000–$15,000",
         "description": "Running and driving with cosmetic flaws or deferred maintenance. Good starting point for an enjoyable classic."
       },
       "excellent": {
-        "price": "$15,000 - $30,000",
+        "price": "$15,000–$30,000",
         "description": "Well-maintained 535i/535is examples with good history. Minor flaws acceptable at this level."
       },
       "concours": {
-        "price": "$30,000 - $80,000+",
+        "price": "$30,000–$80,000+",
         "description": "M5 models or exceptional 535is examples. Fully documented, low miles, original or properly restored."
       }
     },
@@ -1576,7 +1180,7 @@
       "M30 engine with severe oil consumption (burning more than 1 quart per 1,000 miles)",
       "Unknown timing belt history on 528e models",
       "Missing or bypassed emissions equipment (illegal in many states)",
-      "Signs of overheating - warped head, blown head gasket",
+      "Signs of overheating—warped head, blown head gasket",
       "M5 without documentation or at suspiciously low prices",
       "Extensive amateur wiring modifications",
       "Automatic transmission that slips or shifts harshly"
@@ -1602,13 +1206,13 @@
     "expertTips": [
       "The E28 is overshadowed by the E30, making it more affordable while offering more space and comfort",
       "The M30 engine is one of BMW's most reliable - 300,000+ miles is achievable with proper care",
-      "535is models are rare and undervalued - the combination of sport suspension and LSD is excellent",
+      "535is models are rare and undervalued—the combination of sport suspension and LSD is excellent",
       "Early cars (1982-1984) have more electrical issues than later models",
-      "The M5's S38 engine requires more specialized knowledge - factor in maintenance costs",
+      "The M5's S38 engine requires more specialized knowledge—factor in maintenance costs",
       "European-spec bumpers and headlights dramatically improve appearance if legal in your area",
       "Parts availability is good through specialists like Pelican Parts and BavAuto",
       "The Getrag 260 5-speed can handle significant power increases for mild engine builds",
-      "Check the rear shock mounts - they can crack and separate from the body",
+      "Check the rear shock mounts—they can crack and separate from the body",
       "Join the E28 community on mye28.com for excellent technical resources"
     ]
   },
@@ -1619,52 +1223,20 @@
         "url": "https://www.youtube.com/@M539Restorations",
         "description": "BMW repairs, revivals, and restorations from an experienced owner"
       },
-      {
-        "name": "BMW Group Classic",
-        "url": "https://www.youtube.com/@BMWGroupClassic",
-        "description": "Official BMW heritage channel with classic features"
-      }
+      { "name": "BMW Group Classic", "url": "https://www.youtube.com/@BMWGroupClassic", "description": "Official BMW heritage channel with classic features" }
     ],
     "forums": [
-      {
-        "name": "MyE28.com",
-        "url": "https://forums.mye28.com/",
-        "description": "The premier E28 community with tech FAQ and troubleshooting"
-      },
-      {
-        "name": "BimmerBoard E28 Forum",
-        "url": "http://www.bimmerboard.com/forums/e28/",
-        "description": "Technical articles and expert advice"
-      },
-      {
-        "name": "5Series.net",
-        "url": "https://5series.net/forums/",
-        "description": "E28 and older 5 Series discussion"
-      },
-      {
-        "name": "M5Board",
-        "url": "https://www.m5board.com/",
-        "description": "M5 performance, specs, and technical discussion"
-      }
+      { "name": "MyE28.com", "url": "https://forums.mye28.com/", "description": "The premier E28 community with tech FAQ and troubleshooting" },
+      { "name": "BimmerBoard E28 Forum", "url": "http://www.bimmerboard.com/forums/e28/", "description": "Technical articles and expert advice" },
+      { "name": "5Series.net", "url": "https://5series.net/forums/", "description": "E28 and older 5 Series discussion" },
+      { "name": "M5Board", "url": "https://www.m5board.com/", "description": "M5 performance, specs, and technical discussion" }
     ],
     "facebook": [
-      {
-        "name": "BMW E28 Group",
-        "url": "https://www.facebook.com/groups/bmwe28",
-        "description": "Active international E28 community with 10k+ members"
-      },
-      {
-        "name": "BMW E28 Society UK",
-        "url": "https://www.facebook.com/groups/bmwe28societyuk",
-        "description": "UK-based E28 enthusiasts and events"
-      }
+      { "name": "BMW E28 Group", "url": "https://www.facebook.com/groups/bmwe28", "description": "Active international E28 community with 10k+ members" },
+      { "name": "BMW E28 Society UK", "url": "https://www.facebook.com/groups/bmwe28societyuk", "description": "UK-based E28 enthusiasts and events" }
     ],
     "websites": [
-      {
-        "name": "Rod's Automobile Pages",
-        "url": "http://www.unofficialbmw.com/",
-        "description": "Classic E28 DIY reference site"
-      }
+      { "name": "Rod's Automobile Pages", "url": "http://www.unofficialbmw.com/", "description": "Classic E28 DIY reference site" }
     ]
   }
 }

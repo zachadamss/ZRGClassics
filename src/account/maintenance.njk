@@ -1,38 +1,32 @@
 ---
 layout: layouts/base.njk
 title: Maintenance Tracker
-description: "Track service history and maintenance schedules for your vintage BMW and Porsche. Vehicle-specific presets, mileage and date-based reminders, export to JSON and CSV."
-keywords: "maintenance tracker, service history, car maintenance log, BMW maintenance, Porsche maintenance, vehicle service tracker"
+permalink: /account/garage/maintenance/
+description: "Service schedule and history for a car in your ZRG Classics garage: intervals by miles and months, what's due next, and a log of every job."
+robots: noindex
 extraScripts:
+  - js/platforms.js
   - js/garage.js
-  - tools/maintenance-tracker.js
+  - js/maintenance-tracker.js
 ---
 
-<div class="maintenance-tracker">
+<div class="maintenance-tracker garage-tool">
+    <nav class="garage-tool-crumbs" aria-label="Breadcrumb">
+        <a href="/account/garage/">My Garage</a>
+        <span aria-hidden="true">›</span>
+        <span id="crumb-vehicle-name">Maintenance</span>
+    </nav>
     <div class="tracker-header">
-        <h1>Maintenance Tracker</h1>
-        <p>Track service history and maintenance schedules for your vintage German cars</p>
+        <h1>Maintenance</h1>
+        <p>What's due, what's overdue, and every job you've logged.</p>
     </div>
 
-    <!-- Garage View -->
-    <div class="tracker-section garage-section">
-        <div class="section-header">
-            <h2>Select Vehicle</h2>
-            <a href="/account/garage/" class="btn btn-secondary">Manage Garage</a>
-        </div>
-        <div class="garage-grid" id="garage-grid">
-            <!-- Vehicle cards will be inserted here -->
-            <div class="empty-garage" id="empty-garage">
-                <p>No vehicles in your garage yet.</p>
-                <p>Click "Add Vehicle" to get started.</p>
-            </div>
-        </div>
-    </div>
+    <div class="garage-tool-loading" id="tool-loading">Loading your car…</div>
 
     <!-- Vehicle Detail View -->
     <div class="tracker-section vehicle-detail-section" id="vehicle-detail" style="display: none;">
         <div class="section-header">
-            <button type="button" class="btn btn-secondary" id="back-to-garage">&larr; Back</button>
+            <a href="/account/garage/" class="btn btn-secondary" id="back-to-garage">&larr; My Garage</a>
             <div class="vehicle-info">
                 <h2 id="detail-vehicle-name">Vehicle Name</h2>
                 <span class="vehicle-platform-badge" id="detail-vehicle-platform">E30</span>

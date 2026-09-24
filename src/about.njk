@@ -1,47 +1,73 @@
 ---
 layout: layouts/base.njk
 title: About
-description: "Learn about ZRG Classics - dedicated to preserving German automotive heritage. We provide comprehensive resources for classic Porsche and BMW enthusiasts, including repair guides, parts sourcing, and community support."
-keywords: "about ZRG Classics, classic car community, BMW enthusiasts, Porsche enthusiasts, German car restoration"
+description: "Who runs ZRG Classics, where the information comes from, and how to send a correction."
+breadcrumbs:
+  - { label: "Home", url: "/" }
+  - { label: "About" }
 ---
-<main class="resource-content">
-    <h1>About ZRG Classics</h1>
-    <p class="subtitle">Dedicated to preserving and maintaining German automotive heritage</p>
+{% include "partials/breadcrumb.njk" %}
 
-    <div class="placeholder-content">
-        <h2>Our Mission</h2>
-        <p>ZRG Classics is a resource hub for enthusiasts and owners of classic Porsche and BMW vehicles. We provide comprehensive information about common issues, restoration guides, parts suppliers, and maintenance procedures to help keep these automotive icons on the road.</p>
+<main class="resource-content about-page">
+    <div class="page-intro">
+        <h1>About ZRG Classics</h1>
+        <p class="page-lede">A reference for people who own, or are thinking about owning, an older BMW or Porsche: what breaks, what it costs to fix, and how to do the work yourself.</p>
     </div>
 
-    <div class="placeholder-content">
-        <h2>What We Offer</h2>
-        <ul style="text-align: left; max-width: 600px; margin: 0 auto;">
-            <li>Detailed common issues documentation with symptoms and fixes</li>
-            <li>Restoration guides for major components</li>
-            <li>Curated lists of OEM, aftermarket, and used parts suppliers</li>
-            <li>Torque specifications for common service procedures</li>
-            <li>Step-by-step DIY maintenance guides</li>
-            <li>Community forums and marketplace (coming soon)</li>
-        </ul>
-    </div>
+    {#- OWNER STORY: waiting on the owner's details (name or handle, the cars
+        they've owned, why ZRG exists). See docs/site-review-2026-09.md, T10.
+        Add a <section class="about-section"> here with an <h2> and a photo. -#}
 
-    <div class="section-divider"></div>
+    <section class="about-section">
+        <h2>What you'll find here</h2>
+        <p>Every car on the site gets the same treatment: the problems it's known for and what they cost to fix, step-by-step guides for the common jobs, torque specs, where to buy parts, and a buyer's guide with a printable inspection checklist. If you own one, <a href="/account/garage/">My Garage</a> will track its maintenance and restoration for you.</p>
+    </section>
 
-    <div class="placeholder-content" id="contact">
-        <h2>Contact Us</h2>
-        <p>Have information to contribute? Found an error? Want to suggest a new feature? Let us know!</p>
+    <section class="about-section">
+        <h2>Where the information comes from</h2>
+        <p>Workshop manuals, parts catalogs, owner forums, and specialist shops. Each issue lists its sources, and the torque tables say where their numbers came from. Repair costs and prices are rough US ranges that move with the market, so treat them as a starting point for a budget, not a quote.</p>
+        <p>None of this replaces your workshop manual or a good specialist. If something here disagrees with the manual for your exact car, trust the manual and <a href="#contact">tell me</a> so I can fix it.</p>
+    </section>
 
-        <form id="contact-form" action="https://formspree.io/f/mvzboeda" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <section class="about-section">
+        <h2>Corrections</h2>
+        <p>These cars have a lot of variations, and owners know them better than anyone. If you spot a wrong part number, a torque value that doesn't match your manual, or a problem I've missed, send it through the form below and I'll update the page.</p>
+    </section>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+    <section class="about-section">
+        <h2>Not affiliated</h2>
+        <p>ZRG Classics is an independent site. It isn't affiliated with or endorsed by BMW AG or Dr. Ing. h.c. F. Porsche AG. Model names are used only to identify the cars.</p>
+    </section>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+    <section class="about-section about-contact" id="contact">
+        <h2>Get in touch</h2>
+        <p>Corrections, questions, a car you'd like to see covered, or a guide you want to contribute.</p>
 
-            <button type="submit">Send</button>
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/mvzboeda" method="POST">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="topic">What's it about?</label>
+                <select id="topic" name="topic">
+                    <option>A correction</option>
+                    <option>A question</option>
+                    <option>A car or guide request</option>
+                    <option>Something else</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required placeholder="If it's a correction, tell me which car and which page."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
         </form>
-    </div>
+    </section>
 </main>

@@ -1,5 +1,5 @@
 /**
- * Restoration Checklist - Vehicle-specific restoration tracking
+ * Restoration Tracker (My Garage) - Vehicle-specific restoration tracking
  * Uses Supabase for persistence, requires authentication
  */
 
@@ -370,7 +370,6 @@ const VEHICLE_SPECIFICS = {
 
 let currentUser = null;
 let currentVehicle = null;
-let garageVehicles = [];
 let checklistItems = {};
 let savedItems = {};
 let isSaving = false;
@@ -410,130 +409,43 @@ function showLoginRequired() {
     const container = document.querySelector('.restoration-checklist');
     container.innerHTML = `
         <div class="auth-required">
-            <div class="auth-icon">🔐</div>
-            <h2>Login Required</h2>
-            <p>You need to be logged in to use the Restoration Checklist.</p>
-            <p>Sign up is completely free and your progress is saved to your account so you can access it from anywhere.</p>
+            <h2>Sign in to open your garage</h2>
+            <p>The restoration tracker saves to your account, so your checklist is the same on your phone in the garage and on your laptop later. Accounts are free.</p>
             <div class="auth-actions">
-                <a href="/account/login/?redirect=/tools/restoration-checklist/" class="btn btn-primary">Log In</a>
-                <a href="/account/register/?redirect=/tools/restoration-checklist/" class="btn btn-secondary">Create Free Account</a>
+                <a href="/account/login/?return=${encodeURIComponent(location.pathname + location.search)}" class="btn btn-primary">Sign In</a>
+                <a href="/account/register/" class="btn btn-secondary">Create an Account</a>
             </div>
         </div>
     `;
 }
 
 // ============================================
-// Garage Vehicle Loading
+// Vehicle Loading
 // ============================================
 
-async function loadGarageVehicles() {
+// The tracker always works on one garage car, passed as ?vehicle=<id>.
+// Picking a car happens in My Garage, so anything else goes back there.
+async function loadVehicleFromUrl() {
+    const vehicleId = new URLSearchParams(window.location.search).get('vehicle');
+    if (!vehicleId) {
+        window.location.replace('/account/garage/');
+        return null;
+    }
     try {
-        garageVehicles = await Garage.getVehicles();
-        renderVehicleCards();
+        return await Garage.getVehicle(vehicleId);
     } catch (error) {
-        console.error('Failed to load garage vehicles:', error);
-        garageVehicles = [];
-        renderVehicleCards();
+        console.error('Failed to load vehicle:', error);
+        return null;
     }
 }
 
-function renderVehicleCards() {
-    const grid = document.getElementById('garage-grid');
-    const emptyState = document.getElementById('empty-garage');
-
-    if (!grid) return;
-
-    // Clear existing cards (except empty state)
-    grid.querySelectorAll('.vehicle-card').forEach(card => card.remove());
-
-    if (garageVehicles.length === 0) {
-        emptyState.style.display = 'block';
-        emptyState.innerHTML = `
-            <p>No vehicles in your garage yet.</p>
-            <p>Add a vehicle to start tracking your restoration progress.</p>
-            <a href="/account/garage/" class="btn btn-secondary">Go to My Garage</a>
-        `;
-        return;
-    }
-
-    emptyState.style.display = 'none';
-
-    garageVehicles.forEach(vehicle => {
-        const card = createVehicleCard(vehicle);
-        grid.appendChild(card);
-    });
-}
-
-function createVehicleCard(vehicle) {
-    const card = document.createElement('div');
-    card.className = 'vehicle-card';
-    card.dataset.id = vehicle.id;
-
-    const displayInfo = Garage.getVehicleDisplayInfo(vehicle);
-
-    card.innerHTML = `
-        <div class="vehicle-card-header">
-            <h3>${escapeHtml(displayInfo.name)}</h3>
-            <span class="platform-badge${displayInfo.isCustom ? ' custom' : ''}">${escapeHtml(displayInfo.badge)}</span>
-        </div>
-        <div class="vehicle-card-body">
-            <div class="vehicle-stat">
-                <span class="stat-label">Year</span>
-                <span class="stat-value">${escapeHtml(vehicle.year) || '-'}</span>
-            </div>
-            <div class="vehicle-stat">
-                <span class="stat-label">Mileage</span>
-                <span class="stat-value">${vehicle.mileage ? vehicle.mileage.toLocaleString() : '-'}</span>
-            </div>
-        </div>
-        <div class="vehicle-card-status status-loading">
-            Loading status...
-        </div>
+function showVehicleNotFound() {
+    const loading = document.getElementById('tool-loading');
+    if (!loading) return;
+    loading.innerHTML = `
+        <p>I couldn't find that car in your garage.</p>
+        <a href="/account/garage/" class="btn btn-primary">Back to My Garage</a>
     `;
-
-    card.addEventListener('click', () => startProject(`garage:${vehicle.id}`));
-
-    // Load restoration status asynchronously
-    loadVehicleRestorationStatus(vehicle.id, card);
-
-    return card;
-}
-
-async function loadVehicleRestorationStatus(vehicleId, card) {
-    try {
-        const savedItems = await Garage.getRestorationItems(vehicleId);
-        const statusEl = card.querySelector('.vehicle-card-status');
-        statusEl.classList.remove('status-loading');
-
-        const items = Object.values(savedItems);
-        const total = items.length;
-
-        if (total === 0) {
-            statusEl.className = 'vehicle-card-status status-new';
-            statusEl.textContent = 'Not started';
-        } else {
-            const complete = items.filter(i => i.status === 'complete').length;
-            const inProgress = items.filter(i => i.status === 'in-progress').length;
-
-            if (complete === total) {
-                statusEl.className = 'vehicle-card-status status-ok';
-                statusEl.textContent = 'Restoration complete!';
-            } else if (inProgress > 0 || complete > 0) {
-                const percent = Math.round((complete / total) * 100);
-                statusEl.className = 'vehicle-card-status status-due-soon';
-                statusEl.textContent = `${percent}% complete`;
-            } else {
-                statusEl.className = 'vehicle-card-status status-new';
-                statusEl.textContent = 'Not started';
-            }
-        }
-    } catch (error) {
-        console.error('Failed to load restoration status:', error);
-        const statusEl = card.querySelector('.vehicle-card-status');
-        statusEl.classList.remove('status-loading');
-        statusEl.className = 'vehicle-card-status status-new';
-        statusEl.textContent = 'Click to start';
-    }
 }
 
 // ============================================
@@ -1027,68 +939,17 @@ function printChecklist() {
 // Project Management
 // ============================================
 
-async function startProject(vehicleValue) {
-    const [type, id] = vehicleValue.split(':');
-
-    if (type === 'garage') {
-        // Load from garage vehicle (use string comparison to handle UUID/int mismatch)
-        const vehicle = garageVehicles.find(v => String(v.id) === String(id));
-        if (!vehicle) {
-            console.error('Vehicle not found. Looking for ID:', id, 'Available vehicles:', garageVehicles.map(v => ({ id: v.id, type: typeof v.id })));
-            alert('Vehicle not found in your garage.');
-            return;
-        }
-
-        const displayInfo = Garage.getVehicleDisplayInfo(vehicle);
-        currentVehicle = {
-            type: 'garage',
-            id: vehicle.id,
-            platform: vehicle.platform,
-            make: vehicle.make,
-            model: vehicle.model,
-            name: displayInfo.name,
-            isCustom: displayInfo.isCustom
-        };
-    } else {
-        // Platform-only selection - prompt to add to garage
-        const platformInfo = Garage.getPlatformInfo(id);
-
-        if (garageVehicles.length === 0) {
-            const addToGarage = confirm(
-                `To save your restoration progress, you need to add this vehicle to your garage.\n\n` +
-                `Would you like to add a ${platformInfo.fullName} to your garage now?`
-            );
-
-            if (addToGarage) {
-                try {
-                    const newVehicle = await Garage.addVehicle({
-                        platform: id,
-                        nickname: `My ${platformInfo.name} Restoration`
-                    });
-
-                    currentVehicle = {
-                        type: 'garage',
-                        id: newVehicle.id,
-                        platform: id,
-                        name: newVehicle.nickname,
-                        isCustom: false
-                    };
-
-                    garageVehicles.push(newVehicle);
-                } catch (error) {
-                    console.error('Failed to add vehicle:', error);
-                    alert('Failed to add vehicle to garage. Please try again.');
-                    return;
-                }
-            } else {
-                return;
-            }
-        } else {
-            // Has garage vehicles but selected platform - warn them
-            alert('Please select a vehicle from your garage, or add this vehicle to your garage first.');
-            return;
-        }
-    }
+async function startProject(vehicle) {
+    const displayInfo = Garage.getVehicleDisplayInfo(vehicle);
+    currentVehicle = {
+        type: 'garage',
+        id: vehicle.id,
+        platform: vehicle.platform,
+        make: vehicle.make,
+        model: vehicle.model,
+        name: displayInfo.name,
+        isCustom: displayInfo.isCustom
+    };
 
     // Build checklist for the platform (or generic for custom vehicles)
     checklistItems = buildChecklistItems(currentVehicle.platform);
@@ -1101,7 +962,7 @@ async function startProject(vehicleValue) {
 }
 
 function showProjectUI() {
-    document.getElementById('garage-section').style.display = 'none';
+    document.getElementById('tool-loading')?.remove();
     document.getElementById('progress-summary').style.display = 'block';
     document.getElementById('checklist-categories').style.display = 'block';
     document.getElementById('export-section').style.display = 'block';
@@ -1111,24 +972,13 @@ function showProjectUI() {
     if (vehicleNameEl && currentVehicle) {
         vehicleNameEl.textContent = `${currentVehicle.name} Restoration`;
     }
-
-    renderChecklist();
-}
-
-function showGarageView() {
-    document.getElementById('garage-section').style.display = 'block';
-    document.getElementById('progress-summary').style.display = 'none';
-    document.getElementById('checklist-categories').style.display = 'none';
-    document.getElementById('export-section').style.display = 'none';
-
-    // Reset header
-    const header = document.querySelector('.tracker-header h1');
-    if (header) {
-        header.textContent = 'Restoration Checklist';
+    const crumb = document.getElementById('crumb-vehicle-name');
+    if (crumb && currentVehicle) {
+        crumb.textContent = `${currentVehicle.name} · Restoration`;
+        document.title = `${currentVehicle.name} Restoration - ZRG Classics`;
     }
 
-    // Refresh vehicle cards to show updated status
-    renderVehicleCards();
+    renderChecklist();
 }
 
 async function resetProject() {
@@ -1155,12 +1005,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Check authentication first
     const isAuthenticated = await checkAuth();
     if (!isAuthenticated) return;
-
-    // Load garage vehicles
-    await loadGarageVehicles();
-
-    // Back to garage button
-    document.getElementById('back-to-garage')?.addEventListener('click', showGarageView);
 
     // Filter buttons
     document.querySelectorAll('.filter-btn').forEach(btn => {
@@ -1232,17 +1076,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     });
 
-    // Check URL params for vehicle pre-selection
-    const urlParams = new URLSearchParams(window.location.search);
-    const vehicleId = urlParams.get('vehicle');
-    if (vehicleId) {
-        // Try to find and select this vehicle
-        const selectValue = `garage:${vehicleId}`;
-        if (vehicleSelect.querySelector(`option[value="${selectValue}"]`)) {
-            vehicleSelect.value = selectValue;
-            startBtn.disabled = false;
-            // Auto-start if coming from garage
-            startProject(selectValue);
-        }
+    const vehicle = await loadVehicleFromUrl();
+    if (vehicle) {
+        await startProject(vehicle);
+    } else {
+        showVehicleNotFound();
     }
 });

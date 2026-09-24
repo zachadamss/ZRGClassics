@@ -1,0 +1,10 @@
+---
+permalink: /js/platforms.js
+eleventyExcludeFromCollections: true
+---
+// Generated from src/_data/vehicles at build time. Don't edit _site/js/platforms.js.
+window.ZRG_PLATFORMS = {
+{%- for brand in ["bmw", "porsche"] %}{% for key in vehicleList[brand] %}{% set v = vehicles[key] %}
+  "{{ key }}": { name: {{ v.fullName | replace(v.brand + " ", "") | dump | safe }}, fullName: {{ v.fullName | dump | safe }}, brand: {{ v.brand | dump | safe }}, years: {{ v.years | dump | safe }} }{% if not loop.last or brand == "bmw" %},{% endif %}
+{%- endfor %}{% endfor %}
+};

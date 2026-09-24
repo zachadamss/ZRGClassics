@@ -1,0 +1,43 @@
+---
+layout: layouts/base.njk
+title: Tools
+description: "Free tools for classic BMW and Porsche owners: a build cost calculator, plus a maintenance tracker and restoration tracker that live in your garage."
+breadcrumbs:
+  - { label: "Home", url: "/" }
+  - { label: "Tools" }
+---
+{% include "partials/breadcrumb.njk" %}
+
+<main class="resource-content tools-hub">
+    <div class="page-intro">
+        <h1>Tools</h1>
+        <p class="page-lede">Free tools for planning the work and keeping track of it. The calculator works without an account. The two trackers save to My Garage, so the records stay with the car.</p>
+    </div>
+
+    <div class="tool-cards">
+        <a href="/tools/build-calculator/" class="tool-card">
+            <span class="tool-card-icon">{% include "icons/calculator.svg" %}</span>
+            <span class="tool-card-body">
+                <h2>Build Cost Calculator</h2>
+                <p>Price out a restoration or a build before you start: parts, labor, DIY versus shop. Prints or exports to CSV.</p>
+                <span class="tool-card-meta">No account needed</span>
+            </span>
+        </a>
+        <a href="/account/garage/" class="tool-card">
+            <span class="tool-card-icon">{% include "icons/wrench.svg" %}</span>
+            <span class="tool-card-body">
+                <h2>Maintenance Tracker</h2>
+                <p>A service schedule for your platform with intervals already filled in. Log every job and see what's due next by miles or months.</p>
+                <span class="tool-card-meta">In My Garage · free account</span>
+            </span>
+        </a>
+        <a href="/account/garage/" class="tool-card">
+            <span class="tool-card-icon">{% include "icons/checklist.svg" %}</span>
+            <span class="tool-card-body">
+                <h2>Restoration Tracker</h2>
+                <p>Every system on the car, item by item: not started, in progress, done. Budget versus what you've actually spent.</p>
+                <span class="tool-card-meta">In My Garage · free account</span>
+            </span>
+        </a>
+    </div>
+</main>

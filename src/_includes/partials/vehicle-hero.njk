@@ -1,0 +1,31 @@
+{#- Vehicle hero, shared by the vehicle page and its buyer's guide.
+    Expects vehicleData; optional heroEyebrow / heroCompact. -#}
+<section class="vehicle-hero{% if vehicleData.heroImage %} has-hero-image{% endif %}{% if heroCompact %} vehicle-hero--compact{% endif %}">
+    {% if vehicleData.heroImage %}
+    <div class="vehicle-hero-media">
+        {% picture vehicleData.heroImage, "", "100vw", { loading: "eager", fetchpriority: "high" } %}
+    </div>
+    <div class="vehicle-hero-overlay"></div>
+    {% endif %}
+    <div class="vehicle-hero-content">
+        {% if heroEyebrow %}<p class="vehicle-hero-eyebrow">{{ heroEyebrow }}</p>{% endif %}
+        <h1>{{ vehicleData.fullName }}</h1>
+        <p class="vehicle-hero-years">{{ vehicleData.years | range }}</p>
+        {% if vehicleData.tagline and not heroCompact %}
+        <p class="vehicle-hero-tagline">{{ vehicleData.tagline }}</p>
+        {% endif %}
+        {% if not heroCompact %}
+        <ul class="vehicle-engines" aria-label="Engines">
+            {% for engine in vehicleData.engines %}
+            <li class="engine-tag">{{ engine }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+    {% if vehicleData.photoCredit and vehicleData.photoCredit.text %}
+    <p class="photo-credit">Photo:
+        {% if vehicleData.photoCredit.url %}<a href="{{ vehicleData.photoCredit.url }}" rel="noopener">{{ vehicleData.photoCredit.text }}</a>{% else %}{{ vehicleData.photoCredit.text }}{% endif %}
+        {%- if vehicleData.photoCredit.license %} ({{ vehicleData.photoCredit.license }}){% endif %}
+    </p>
+    {% endif %}
+</section>

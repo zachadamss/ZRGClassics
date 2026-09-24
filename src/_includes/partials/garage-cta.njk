@@ -1,0 +1,12 @@
+{#- "Track this car" card at the end of a vehicle page. Expects vehicle + vehicleKey. -#}
+<section class="garage-cta" id="track-your-car" aria-labelledby="garage-cta-title">
+    <div class="garage-cta-text">
+        <p class="eyebrow">Own a {{ vehicle.model }}?</p>
+        <h2 id="garage-cta-title">Track it in My Garage</h2>
+        <p>Add your car and you get a {{ vehicle.model }} service schedule with intervals already filled in, a restoration tracker organized by system, and a log of every job and what it cost. It's free, and it's the same on your phone and your laptop.</p>
+    </div>
+    <div class="garage-cta-actions">
+        <a href="/account/garage/?add={{ vehicleKey }}" class="btn btn-primary">Add my {{ vehicle.model }}</a>
+        <a href="/tools/" class="btn btn-secondary">See all tools</a>
+    </div>
+</section>

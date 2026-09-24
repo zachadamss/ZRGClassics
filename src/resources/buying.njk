@@ -1,0 +1,33 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: vehiclePages
+  size: 1
+  alias: item
+  addAllPagesToCollections: true
+permalink: "/resources/{{ item.brand }}/{{ item.key }}/buying/"
+---
+{% set vehicleData = vehicles[item.key] %}
+{% set vehicleKey = item.key %}
+{% include "partials/breadcrumb.njk" %}
+
+{% set heroEyebrow = "Buyer's Guide" %}
+{% set heroCompact = true %}
+{% include "partials/vehicle-hero.njk" %}
+
+<nav class="quick-links" aria-label="On this page">
+    <a href="#overview">Overview</a>
+    <a href="#pricing">Prices</a>
+    <a href="#variants">Versions</a>
+    <a href="#red-flags">Red Flags</a>
+    <a href="#inspection">Inspection</a>
+    <a href="#ownership">Ownership</a>
+    <a href="/resources/{{ item.brand }}/{{ item.key }}/" class="quick-link-page">← {{ vehicleData.model }} home</a>
+</nav>
+
+<main class="resource-content">
+    {% set vehicle = vehicleData %}
+    {% include "partials/buyers-guide.njk" %}
+
+    {% include "partials/garage-cta.njk" %}
+</main>

@@ -44,14 +44,18 @@
                 <tr>
                     <th>Part</th>
                     <th>Part Number</th>
-                    <th>Est. Price</th>
+                    <th>Typical price</th>
                 </tr>
             </thead>
             <tbody>
                 {% for part in issue.parts %}
                 <tr>
                     <td data-label="Part">{{ part.name }}</td>
-                    <td data-label="Part #" class="part-number">{{ part.partNumber }}</td>
+                    <td data-label="Part #" class="part-number">
+                        {%- if part.partNumber %}{{ part.partNumber }}
+                        {%- elif part.brand %}<span class="part-brand">{{ part.brand }}</span>
+                        {%- else %}<span class="part-varies">Varies</span>{% endif -%}
+                    </td>
                     <td data-label="Price" class="part-price">{{ part.price }}</td>
                 </tr>
                 {% endfor %}
@@ -62,7 +66,7 @@
 
     {% if issue.relatedIssues and issue.relatedIssues.length > 0 %}
     <div class="related-issues">
-        <h4>Similar Issue On Other Models</h4>
+        <h4>Same problem on other cars</h4>
         <div class="related-issues-list">
             {% for related in issue.relatedIssues %}
             <a href="/resources/{{ related.brand | lower }}/{{ related.vehicle }}/#{{ related.issueId }}" class="related-issue-link">

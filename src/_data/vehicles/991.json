@@ -2,6 +2,8 @@
   "model": "991",
   "brand": "Porsche",
   "fullName": "Porsche 991 911",
+  "series": "911",
+  "tagline": "Big, fast, and sophisticated, with no IMS bearing to worry about.",
   "years": "2012-2019",
   "engines": [
     "3.4L Flat-6 MA1 (991.1)",
@@ -10,6 +12,11 @@
     "4.0L Flat-6 MA1 (GT3)"
   ],
   "heroImage": "/images/vehicles/991-hero.jpg",
+  "photoCredit": {
+    "text": "",
+    "url": "",
+    "license": ""
+  },
   "issues": [
     {
       "id": "coolant-pipes",
@@ -24,14 +31,8 @@
         "Flush and refill with proper coolant mix"
       ],
       "sources": [
-        {
-          "name": "FCP Euro",
-          "url": "https://www.fcpeuro.com/"
-        },
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        }
+        { "name": "FCP Euro", "url": "https://www.fcpeuro.com/" },
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$200-400",
@@ -39,16 +40,8 @@
         "notes": "Continues plastic pipe tradition. Aluminum upgrades available."
       },
       "parts": [
-        {
-          "name": "Coolant Transfer Pipe",
-          "partNumber": "99110663701",
-          "price": "$100-200"
-        },
-        {
-          "name": "Coolant Pipe Kit (Aluminum)",
-          "partNumber": "Various",
-          "price": "$200-400"
-        }
+        { "name": "Coolant Transfer Pipe", "partNumber": "99110663701", "price": "$100-200" },
+        { "name": "Coolant Pipe Kit (Aluminum)", "price": "$200-400" }
       ],
       "difficulty": "Advanced"
     },
@@ -65,14 +58,8 @@
         "Spirited driving helps but doesn't eliminate buildup"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "Planet-9",
-          "url": "https://www.planet-9.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "Planet-9", "url": "https://www.planet-9.com/" }
       ],
       "repairCosts": {
         "diy": "$200-400",
@@ -80,16 +67,8 @@
         "notes": "All 991 engines are DFI. Walnut blasting needed periodically."
       },
       "parts": [
-        {
-          "name": "Walnut Media",
-          "partNumber": "N/A",
-          "price": "$30-50"
-        },
-        {
-          "name": "Intake Gaskets",
-          "partNumber": "9A111024900",
-          "price": "$25-50"
-        }
+        { "name": "Walnut Media", "price": "$30-50" },
+        { "name": "Intake Gaskets", "partNumber": "9A111024900", "price": "$25-50" }
       ],
       "difficulty": "Moderate"
     },
@@ -106,14 +85,8 @@
         "Mechatronic unit repair for electronic issues"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "Planet-9",
-          "url": "https://www.planet-9.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "Planet-9", "url": "https://www.planet-9.com/" }
       ],
       "repairCosts": {
         "diy": "$150-250",
@@ -121,16 +94,8 @@
         "notes": "Fluid service recommended every 50-60k despite 'lifetime' fill."
       },
       "parts": [
-        {
-          "name": "PDK Fluid (7L)",
-          "partNumber": "Pentosin FFL-2",
-          "price": "$150-200"
-        },
-        {
-          "name": "PDK Filter",
-          "partNumber": "9G132153300",
-          "price": "$40-80"
-        }
+        { "name": "PDK Fluid (7L)", "partNumber": "Pentosin FFL-2", "price": "$150-200" },
+        { "name": "PDK Filter", "partNumber": "9G132153300", "price": "$40-80" }
       ],
       "difficulty": "Advanced"
     },
@@ -147,14 +112,8 @@
         "Remanufactured dampers available at reduced cost"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" }
       ],
       "repairCosts": {
         "diy": "$400-800",
@@ -162,21 +121,9 @@
         "notes": "Electronic dampers fail. Remanufactured available."
       },
       "parts": [
-        {
-          "name": "PASM Damper (Front)",
-          "partNumber": "99134305315",
-          "price": "$600-1000"
-        },
-        {
-          "name": "PASM Damper (Rear)",
-          "partNumber": "99133305316",
-          "price": "$600-1000"
-        },
-        {
-          "name": "PASM (Remanufactured)",
-          "partNumber": "Various",
-          "price": "$350-550"
-        }
+        { "name": "PASM Damper (Front)", "partNumber": "99134305315", "price": "$600-1000" },
+        { "name": "PASM Damper (Rear)", "partNumber": "99133305316", "price": "$600-1000" },
+        { "name": "PASM (Remanufactured)", "price": "$350-550" }
       ],
       "difficulty": "Moderate"
     },
@@ -193,14 +140,8 @@
         "Compression and leak-down test for diagnosis"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "Porsche Club of America",
-          "url": "https://www.pca.org/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "Porsche Club of America", "url": "https://www.pca.org/" }
       ],
       "repairCosts": {
         "diy": "$50-100",
@@ -208,16 +149,8 @@
         "notes": "991.1 may consume oil. Monitor and top up. Severe cases need diagnosis."
       },
       "parts": [
-        {
-          "name": "Engine Oil (10L)",
-          "partNumber": "Mobil 1 0W-40",
-          "price": "$80-120"
-        },
-        {
-          "name": "Oil Filter",
-          "partNumber": "99110722553",
-          "price": "$20-40"
-        }
+        { "name": "Engine Oil (10L)", "partNumber": "Mobil 1 0W-40", "price": "$80-120" },
+        { "name": "Oil Filter", "partNumber": "99110722553", "price": "$20-40" }
       ],
       "difficulty": "Moderate"
     },
@@ -234,14 +167,8 @@
         "Proper warm-up and cool-down for turbo longevity"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "6SpeedOnline",
-          "url": "https://www.6speedonline.com/forums/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "6SpeedOnline", "url": "https://www.6speedonline.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$100-300",
@@ -249,16 +176,8 @@
         "notes": "991.2 twin-turbo. Wastegate rattle and boost issues."
       },
       "parts": [
-        {
-          "name": "Wastegate Actuator",
-          "partNumber": "9A112180101",
-          "price": "$300-500"
-        },
-        {
-          "name": "Turbo Oil Line Kit",
-          "partNumber": "Various",
-          "price": "$100-200"
-        }
+        { "name": "Wastegate Actuator", "partNumber": "9A112180101", "price": "$300-500" },
+        { "name": "Turbo Oil Line Kit", "price": "$100-200" }
       ],
       "difficulty": "Advanced"
     },
@@ -275,14 +194,8 @@
         "System reset procedure after battery work"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" }
       ],
       "repairCosts": {
         "diy": "$100-400",
@@ -290,16 +203,8 @@
         "notes": "Cabriolet only. Complex hydraulic system."
       },
       "parts": [
-        {
-          "name": "Hydraulic Pump",
-          "partNumber": "99156160901",
-          "price": "$500-800"
-        },
-        {
-          "name": "Microswitch Kit",
-          "partNumber": "Various",
-          "price": "$50-100"
-        }
+        { "name": "Hydraulic Pump", "partNumber": "99156160901", "price": "$500-800" },
+        { "name": "Microswitch Kit", "price": "$50-100" }
       ],
       "difficulty": "Moderate"
     },
@@ -316,14 +221,8 @@
         "Full diagnosis with Porsche diagnostic tool"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "Planet-9",
-          "url": "https://www.planet-9.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "Planet-9", "url": "https://www.planet-9.com/" }
       ],
       "repairCosts": {
         "diy": "$50-150",
@@ -331,16 +230,8 @@
         "notes": "Creaking from column. Lubrication often helps."
       },
       "parts": [
-        {
-          "name": "Steering Column Lube",
-          "partNumber": "Various",
-          "price": "$15-30"
-        },
-        {
-          "name": "Steering Angle Sensor",
-          "partNumber": "99136115500",
-          "price": "$200-350"
-        }
+        { "name": "Steering Column Lube", "price": "$15-30" },
+        { "name": "Steering Angle Sensor", "partNumber": "99136115500", "price": "$200-350" }
       ],
       "difficulty": "Moderate"
     }
@@ -349,101 +240,271 @@
     {
       "id": "suspension-refresh",
       "title": "Complete Suspension Refresh",
-      "description": "Full front and rear suspension rebuild for the 991's sophisticated multi-link design including PASM service considerations.",
+      "description": "Bushings and joints on the 991's multi-link chassis, plus what to know if your car has PASM dampers.",
       "difficulty": "Intermediate",
       "time": "12-16 hours",
       "cost": "$800-1,600",
       "interval": "Every 60,000-80,000 miles",
       "laborHours": "10-14 hours shop time",
       "parts": [
-        {"name": "Front Control Arm (Left)", "oem": "99134105314", "aftermarket": "Lemforder", "cost": "$130-220"},
-        {"name": "Front Control Arm (Right)", "oem": "99134105414", "aftermarket": "Lemforder", "cost": "$130-220"},
-        {"name": "Front Thrust Arm (Pair)", "oem": "99134105500", "aftermarket": "Lemforder", "cost": "$120-200"},
-        {"name": "Front Strut Mount (Pair)", "oem": "99134351900", "aftermarket": "Sachs", "cost": "$100-180"},
-        {"name": "Tie Rod End (Pair)", "oem": "99134713100", "aftermarket": "Lemforder", "cost": "$80-140"},
-        {"name": "Rear Control Arm Upper (Pair)", "oem": "99133105105", "aftermarket": "Lemforder", "cost": "$140-240"},
-        {"name": "Rear Control Arm Lower (Pair)", "oem": "99133105205", "aftermarket": "Lemforder", "cost": "$140-240"},
-        {"name": "PASM Damper (Front)", "oem": "99134305315", "aftermarket": "Remanufactured", "cost": "$350-1000"},
-        {"name": "PASM Damper (Rear)", "oem": "99133305316", "aftermarket": "Remanufactured", "cost": "$350-1000"},
-        {"name": "Sway Bar End Link (Pair)", "oem": "99134306901", "aftermarket": "Lemforder", "cost": "$50-100"}
+        { "name": "Front Control Arm (Left)", "oem": "99134105314", "aftermarket": "Lemforder", "cost": "$130-220" },
+        { "name": "Front Control Arm (Right)", "oem": "99134105414", "aftermarket": "Lemforder", "cost": "$130-220" },
+        { "name": "Front Thrust Arm (Pair)", "oem": "99134105500", "aftermarket": "Lemforder", "cost": "$120-200" },
+        { "name": "Front Strut Mount (Pair)", "oem": "99134351900", "aftermarket": "Sachs", "cost": "$100-180" },
+        { "name": "Tie Rod End (Pair)", "oem": "99134713100", "aftermarket": "Lemforder", "cost": "$80-140" },
+        { "name": "Rear Control Arm Upper (Pair)", "oem": "99133105105", "aftermarket": "Lemforder", "cost": "$140-240" },
+        { "name": "Rear Control Arm Lower (Pair)", "oem": "99133105205", "aftermarket": "Lemforder", "cost": "$140-240" },
+        { "name": "PASM Damper (Front)", "oem": "99134305315", "aftermarket": "Remanufactured", "cost": "$350-1000" },
+        { "name": "PASM Damper (Rear)", "oem": "99133305316", "aftermarket": "Remanufactured", "cost": "$350-1000" },
+        { "name": "Sway Bar End Link (Pair)", "oem": "99134306901", "aftermarket": "Lemforder", "cost": "$50-100" }
       ],
-      "tools": ["Floor jack and jack stands", "18mm, 19mm, 21mm sockets", "Ball joint separator", "Spring compressor", "Torque wrench", "Penetrating oil", "PIWIS diagnostic tool (for PASM)", "Alignment specs printout"],
-      "steps": ["Raise vehicle on jack stands at all four corners.", "Remove wheels and photograph suspension.", "For PASM cars: diagnose failed dampers before ordering parts.", "Soak all bolts with penetrating oil.", "Front: Remove sway bar links (48 ft-lbs), tie rod ends (48 ft-lbs).", "Remove control arm bolts (89 ft-lbs) and ball joint (56 ft-lbs).", "For struts: mark camber, remove upper mount nuts (23 ft-lbs), pinch bolt (65 ft-lbs).", "Use spring compressor to replace strut mount.", "Rear: Remove control arms (81 ft-lbs inner, 74 ft-lbs eccentric).", "Replace PASM dampers if leaking or failed.", "Install all new components with correct torque specs.", "Install wheels and lower vehicle.", "Professional alignment mandatory - 991 is very alignment-sensitive."],
-      "tips": ["The 991 uses electronic steering - sensitive to alignment.", "PASM dampers fail more often than conventional shocks.", "Remanufactured PASM units offer good value.", "991.2 turbo models have stiffer suspension - same procedure."],
-      "warnings": ["PASM requires PIWIS to calibrate after replacement.", "Spring compressors are dangerous.", "Rear-engine weight distribution amplifies issues.", "Center-lock wheel torque is 443 ft-lbs - different tool required."],
-      "references": [{"name": "Rennlist 991 Suspension", "url": "https://rennlist.com/forums/991-general-forum/"}, {"name": "Pelican Parts 991", "url": "https://www.pelicanparts.com/techarticles/"}]
+      "tools": [
+        "Floor jack and jack stands",
+        "18mm, 19mm, 21mm sockets",
+        "Ball joint separator",
+        "Spring compressor",
+        "Torque wrench",
+        "Penetrating oil",
+        "PIWIS diagnostic tool (for PASM)",
+        "Alignment specs printout"
+      ],
+      "steps": [
+        "Raise vehicle on jack stands at all four corners.",
+        "Remove wheels and photograph suspension.",
+        "For PASM cars: diagnose failed dampers before ordering parts.",
+        "Soak all bolts with penetrating oil.",
+        "Front: Remove sway bar links (48 ft-lbs), tie rod ends (48 ft-lbs).",
+        "Remove control arm bolts (89 ft-lbs) and ball joint (56 ft-lbs).",
+        "For struts: mark camber, remove upper mount nuts (23 ft-lbs), pinch bolt (65 ft-lbs).",
+        "Use spring compressor to replace strut mount.",
+        "Rear: Remove control arms (81 ft-lbs inner, 74 ft-lbs eccentric).",
+        "Replace PASM dampers if leaking or failed.",
+        "Install all new components with correct torque specs.",
+        "Install wheels and lower vehicle.",
+        "Professional alignment mandatory - 991 is very alignment-sensitive."
+      ],
+      "tips": [
+        "The 991 uses electronic steering—sensitive to alignment.",
+        "PASM dampers fail more often than conventional shocks.",
+        "Remanufactured PASM units offer good value.",
+        "991.2 turbo models have stiffer suspension—same procedure."
+      ],
+      "warnings": [
+        "PASM requires PIWIS to calibrate after replacement.",
+        "Spring compressors are dangerous.",
+        "Rear-engine weight distribution amplifies issues.",
+        "Center-lock wheel torque is 443 ft-lbs—different tool required."
+      ],
+      "references": [
+        { "name": "Rennlist 991 Suspension", "url": "https://rennlist.com/forums/991-general-forum/" },
+        { "name": "Pelican Parts 991", "url": "https://www.pelicanparts.com/techarticles/" }
+      ]
     },
     {
       "id": "rust-repair",
       "title": "Rust Prevention and Inspection",
-      "description": "Rust inspection guide for the 991, which is fully galvanized but still requires attention to water intrusion and cooling system components.",
+      "description": "Rust isn't the 991's problem. This is about drains, water intrusion, and the cooling system parts underneath.",
       "difficulty": "Intermediate",
       "time": "4-12 hours",
       "cost": "$100-800",
       "interval": "Inspect annually",
       "laborHours": "Varies by severity",
       "parts": [
-        {"name": "Front Trunk Seal", "oem": "99156193100", "aftermarket": "URO", "cost": "$70-140"},
-        {"name": "Door Seal Set", "oem": "99153193101", "aftermarket": "URO", "cost": "$120-240"},
-        {"name": "Headlight Seal Kit", "oem": "Various", "aftermarket": "Butyl tape", "cost": "$30-80"},
-        {"name": "Coolant Transfer Pipe", "oem": "99110663701", "aftermarket": "Aluminum upgrade", "cost": "$100-300"},
-        {"name": "Rust Converter", "oem": "—", "aftermarket": "POR-15", "cost": "$20-40"},
-        {"name": "Cavity Wax", "oem": "—", "aftermarket": "Fluid Film", "cost": "$15-30"}
+        { "name": "Front Trunk Seal", "oem": "99156193100", "aftermarket": "URO", "cost": "$70-140" },
+        { "name": "Door Seal Set", "oem": "99153193101", "aftermarket": "URO", "cost": "$120-240" },
+        { "name": "Headlight Seal Kit", "oem": "Various", "aftermarket": "Butyl tape", "cost": "$30-80" },
+        { "name": "Coolant Transfer Pipe", "oem": "99110663701", "aftermarket": "Aluminum upgrade", "cost": "$100-300" },
+        { "name": "Rust Converter", "oem": "—", "aftermarket": "POR-15", "cost": "$20-40" },
+        { "name": "Cavity Wax", "oem": "—", "aftermarket": "Fluid Film", "cost": "$15-30" }
       ],
-      "tools": ["Inspection mirror and flashlight", "Wire brush", "Compressed air", "Respirator"],
-      "steps": ["The 991 is fully galvanized - structural rust is rare.", "Clean undercarriage before inspection.", "Check front trunk for water - electronics located here.", "Clear sunroof and frunk drain tubes.", "Inspect coolant transfer pipe - known failure point.", "Check LED headlights for condensation (less common than HID).", "Examine rocker panels and door bottoms.", "Check wheel wells for debris damage.", "Surface rust: wire brush, convert, prime, topcoat.", "Apply cavity wax to hollow sections annually.", "Inspect all cooling system plastic for cracks."],
-      "tips": ["991s are well-protected - most issues are water intrusion.", "Coolant transfer pipe failure is main concern, not rust.", "LED headlights less prone to moisture than older HID.", "Annual Fluid Film application provides protection."],
-      "warnings": ["Water in frunk damages electronics.", "Coolant leak can cause overheating before rust.", "Always wear respirator when grinding."],
-      "references": [{"name": "Rennlist 991 Maintenance", "url": "https://rennlist.com/forums/991-general-forum/"}, {"name": "Planet-9 991 Forum", "url": "https://www.planet-9.com/"}]
+      "tools": [
+        "Inspection mirror and flashlight",
+        "Wire brush",
+        "Compressed air",
+        "Respirator"
+      ],
+      "steps": [
+        "The 991 is fully galvanized—structural rust is rare.",
+        "Clean undercarriage before inspection.",
+        "Check front trunk for water—electronics located here.",
+        "Clear sunroof and frunk drain tubes.",
+        "Inspect coolant transfer pipe—known failure point.",
+        "Check LED headlights for condensation (less common than HID).",
+        "Examine rocker panels and door bottoms.",
+        "Check wheel wells for debris damage.",
+        "Surface rust: wire brush, convert, prime, topcoat.",
+        "Apply cavity wax to hollow sections annually.",
+        "Inspect all cooling system plastic for cracks."
+      ],
+      "tips": [
+        "991s are well-protected—most issues are water intrusion.",
+        "Coolant transfer pipe failure is main concern, not rust.",
+        "LED headlights less prone to moisture than older HID.",
+        "Annual Fluid Film application provides protection."
+      ],
+      "warnings": [
+        "Water in frunk damages electronics.",
+        "Coolant leak can cause overheating before rust.",
+        "Always wear respirator when grinding."
+      ],
+      "references": [
+        { "name": "Rennlist 991 Maintenance", "url": "https://rennlist.com/forums/991-general-forum/" },
+        { "name": "Planet-9 991 Forum", "url": "https://www.planet-9.com/" }
+      ]
     },
     {
       "id": "electrical-restoration",
       "title": "Electrical System Service",
-      "description": "Complete electrical service for the 991 covering ignition, PDK service, and common electronic issues.",
+      "description": "Ignition, PDK service, and the common electronic faults.",
       "difficulty": "Intermediate",
       "time": "8-14 hours",
       "cost": "$300-1,000",
       "interval": "Address as symptoms appear",
       "laborHours": "6-10 hours shop time",
       "parts": [
-        {"name": "Ignition Coil Pack (Set of 6)", "oem": "99160210402", "aftermarket": "Bosch", "cost": "$180-350"},
-        {"name": "PDK Fluid (7L)", "oem": "Pentosin FFL-2", "aftermarket": "Pentosin", "cost": "$150-200"},
-        {"name": "PDK Filter", "oem": "9G132153300", "aftermarket": "OEM", "cost": "$40-80"},
-        {"name": "Wastegate Actuator (991.2)", "oem": "9A112180101", "aftermarket": "OEM", "cost": "$300-500"},
-        {"name": "PASM Module", "oem": "99161830100", "aftermarket": "Rebuilt", "cost": "$200-400"},
-        {"name": "Steering Column Lube", "oem": "Various", "aftermarket": "White lithium", "cost": "$15-30"},
-        {"name": "Battery (AGM)", "oem": "99961101501", "aftermarket": "Exide, Optima", "cost": "$300-500"}
+        { "name": "Ignition Coil Pack (Set of 6)", "oem": "99160210402", "aftermarket": "Bosch", "cost": "$180-350" },
+        { "name": "PDK Fluid (7L)", "oem": "Pentosin FFL-2", "aftermarket": "Pentosin", "cost": "$150-200" },
+        { "name": "PDK Filter", "oem": "9G132153300", "aftermarket": "OEM", "cost": "$40-80" },
+        { "name": "Wastegate Actuator (991.2)", "oem": "9A112180101", "aftermarket": "OEM", "cost": "$300-500" },
+        { "name": "PASM Module", "oem": "99161830100", "aftermarket": "Rebuilt", "cost": "$200-400" },
+        { "name": "Steering Column Lube", "oem": "Various", "aftermarket": "White lithium", "cost": "$15-30" },
+        { "name": "Battery (AGM)", "oem": "99961101501", "aftermarket": "Exide, Optima", "cost": "$300-500" }
       ],
-      "tools": ["PIWIS or compatible diagnostic tool", "Torx driver set", "10mm socket", "Drain pan for PDK service", "Battery registration tool", "Contact cleaner", "Dielectric grease"],
-      "steps": ["Begin with full diagnostic scan - 991 requires PIWIS for many functions.", "For coils: open engine lid, disconnect and remove.", "991.2 turbo: inspect wastegate actuators for rattle.", "For PDK service: drain and fill with Pentosin FFL-2.", "Reset clutch adaptation via PIWIS after PDK service.", "For battery replacement: register new battery in DME.", "For steering column creak: lubricate steering column.", "Clean all ground points.", "Clear codes and verify repairs.", "Perform adaptations as required."],
-      "tips": ["991 requires PIWIS for many diagnostic functions.", "PDK fluid should be changed despite 'lifetime' claim.", "Battery registration mandatory or charging issues result.", "991.2 wastegate rattle is common - not always serious."],
-      "warnings": ["Battery must be registered in DME.", "PDK service requires proper fluid - no substitutes.", "PASM coding requires dealer-level tool.", "991.2 turbo components are more complex."],
-      "references": [{"name": "Rennlist 991 Electrical", "url": "https://rennlist.com/forums/991-general-forum/"}, {"name": "Planet-9 991 Technical", "url": "https://www.planet-9.com/"}]
+      "tools": [
+        "PIWIS or compatible diagnostic tool",
+        "Torx driver set",
+        "10mm socket",
+        "Drain pan for PDK service",
+        "Battery registration tool",
+        "Contact cleaner",
+        "Dielectric grease"
+      ],
+      "steps": [
+        "Begin with full diagnostic scan - 991 requires PIWIS for many functions.",
+        "For coils: open engine lid, disconnect and remove.",
+        "991.2 turbo: inspect wastegate actuators for rattle.",
+        "For PDK service: drain and fill with Pentosin FFL-2.",
+        "Reset clutch adaptation via PIWIS after PDK service.",
+        "For battery replacement: register new battery in DME.",
+        "For steering column creak: lubricate steering column.",
+        "Clean all ground points.",
+        "Clear codes and verify repairs.",
+        "Perform adaptations as required."
+      ],
+      "tips": [
+        "991 requires PIWIS for many diagnostic functions.",
+        "PDK fluid should be changed despite 'lifetime' claim.",
+        "Battery registration mandatory or charging issues result.",
+        "991.2 wastegate rattle is common—not always serious."
+      ],
+      "warnings": [
+        "Battery must be registered in DME.",
+        "PDK service requires proper fluid—no substitutes.",
+        "PASM coding requires dealer-level tool.",
+        "991.2 turbo components are more complex."
+      ],
+      "references": [
+        { "name": "Rennlist 991 Electrical", "url": "https://rennlist.com/forums/991-general-forum/" },
+        { "name": "Planet-9 991 Technical", "url": "https://www.planet-9.com/" }
+      ]
     },
     {
       "id": "interior-restoration",
       "title": "Interior Restoration",
-      "description": "Complete interior refresh for the 991 covering leather care, PCM system, and common wear items.",
+      "description": "Leather, the PCM infotainment system, and the common wear items.",
       "difficulty": "Intermediate",
       "time": "10-18 hours",
       "cost": "$300-1,000",
       "interval": "As needed",
       "laborHours": "8-14 hours shop time",
       "parts": [
-        {"name": "Leather Repair Kit", "oem": "—", "aftermarket": "Leatherique, Colourlock", "cost": "$50-100"},
-        {"name": "Steering Wheel Re-wrap", "oem": "—", "aftermarket": "Professional service", "cost": "$250-450"},
-        {"name": "Shift Knob (Manual)", "oem": "99142407504", "aftermarket": "Aftermarket", "cost": "$80-200"},
-        {"name": "Seat Foam (Driver)", "oem": "99152191203", "aftermarket": "Recovered", "cost": "$100-200"},
-        {"name": "Cabin Air Filter", "oem": "99157221901", "aftermarket": "Mann, Bosch", "cost": "$30-60"},
-        {"name": "Door Seal Set", "oem": "99153193101", "aftermarket": "URO", "cost": "$120-240"},
-        {"name": "HVAC Blend Actuator", "oem": "99157319100", "aftermarket": "VDO", "cost": "$70-140"},
-        {"name": "PCM Screen Protector", "oem": "—", "aftermarket": "Aftermarket", "cost": "$20-40"}
+        { "name": "Leather Repair Kit", "oem": "—", "aftermarket": "Leatherique, Colourlock", "cost": "$50-100" },
+        { "name": "Steering Wheel Re-wrap", "oem": "—", "aftermarket": "Professional service", "cost": "$250-450" },
+        { "name": "Shift Knob (Manual)", "oem": "99142407504", "aftermarket": "Aftermarket", "cost": "$80-200" },
+        { "name": "Seat Foam (Driver)", "oem": "99152191203", "aftermarket": "Recovered", "cost": "$100-200" },
+        { "name": "Cabin Air Filter", "oem": "99157221901", "aftermarket": "Mann, Bosch", "cost": "$30-60" },
+        { "name": "Door Seal Set", "oem": "99153193101", "aftermarket": "URO", "cost": "$120-240" },
+        { "name": "HVAC Blend Actuator", "oem": "99157319100", "aftermarket": "VDO", "cost": "$70-140" },
+        { "name": "PCM Screen Protector", "oem": "—", "aftermarket": "Aftermarket", "cost": "$20-40" }
       ],
-      "tools": ["Trim removal tools", "Torx driver set", "Microfiber cloths", "Leather cleaner and conditioner", "Interior detailing brushes", "PIWIS for PCM updates"],
-      "steps": ["Document condition with photos.", "Clean leather with dedicated cleaner.", "Fill cracks with leather filler, sand, dye.", "Condition all leather surfaces.", "Assess steering wheel - rewrap if worn.", "Replace worn boots and knobs.", "Replace cabin air filter.", "Clean HVAC vents with brushes.", "Address seat bolster wear.", "Replace door seals if wind noise present.", "Update PCM software if available.", "Apply UV protectant to exposed surfaces."],
-      "tips": ["991 uses high-quality leather that responds well to care.", "Sport Plus seats have more aggressive bolsters.", "PCM touch screen can benefit from protector.", "HVAC clicking indicates blend actuator failure."],
-      "warnings": ["Don't use silicone on leather.", "Steering wheel has airbag - disconnect battery.", "PCM updates require dealer or compatible tool."],
-      "references": [{"name": "Leatherique Products", "url": "https://www.leatherique.com/"}, {"name": "Rennlist 991 Interior", "url": "https://rennlist.com/forums/991-general-forum/"}]
+      "tools": [
+        "Trim removal tools",
+        "Torx driver set",
+        "Microfiber cloths",
+        "Leather cleaner and conditioner",
+        "Interior detailing brushes",
+        "PIWIS for PCM updates"
+      ],
+      "steps": [
+        "Document condition with photos.",
+        "Clean leather with dedicated cleaner.",
+        "Fill cracks with leather filler, sand, dye.",
+        "Condition all leather surfaces.",
+        "Assess steering wheel—rewrap if worn.",
+        "Replace worn boots and knobs.",
+        "Replace cabin air filter.",
+        "Clean HVAC vents with brushes.",
+        "Address seat bolster wear.",
+        "Replace door seals if wind noise present.",
+        "Update PCM software if available.",
+        "Apply UV protectant to exposed surfaces."
+      ],
+      "tips": [
+        "991 uses high-quality leather that responds well to care.",
+        "Sport Plus seats have more aggressive bolsters.",
+        "PCM touch screen can benefit from protector.",
+        "HVAC clicking indicates blend actuator failure."
+      ],
+      "warnings": [
+        "Don't use silicone on leather.",
+        "Steering wheel has airbag—disconnect battery.",
+        "PCM updates require dealer or compatible tool."
+      ],
+      "references": [
+        { "name": "Leatherique Products", "url": "https://www.leatherique.com/" },
+        { "name": "Rennlist 991 Interior", "url": "https://rennlist.com/forums/991-general-forum/" }
+      ]
+    },
+    {
+      "id": "pdk-service",
+      "title": "PDK Service Check and Adaptation",
+      "description": "A PDK that shifts roughly is often overdue for its fluid service or an adaptation reset, not a rebuild. How to check the history, what the service involves, and when to leave it to a specialist.",
+      "difficulty": "Advanced",
+      "time": "2-4 hours",
+      "cost": "$400-900",
+      "parts": [
+        { "name": "PDK transmission fluid", "aftermarket": "Genuine Porsche", "cost": "$150-300" },
+        { "name": "PDK clutch fluid", "aftermarket": "Genuine Porsche", "cost": "$60-120" },
+        { "name": "Filter and drain plug seals", "cost": "$40-80" }
+      ],
+      "tools": [
+        "Lift or level jack stands",
+        "Porsche-capable diagnostic tool (PIWIS or equivalent)",
+        "Fluid pump",
+        "Torque wrench"
+      ],
+      "steps": [
+        "Check the service history. Porsche specifies PDK fluid changes on a time and mileage schedule, and many cars miss it.",
+        "Scan for transmission fault codes before changing anything.",
+        "Raise the car level. The fill level is checked with the car level and at a set fluid temperature.",
+        "Drain the old fluid and replace the filter and seals.",
+        "Refill with the correct Porsche fluid using a pump.",
+        "Check the level at the specified temperature with the diagnostic tool, which reads it for you.",
+        "Run the clutch adaptation routine with the diagnostic tool.",
+        "Test drive and note whether shifts are smoother."
+      ],
+      "tips": [
+        "If the car doesn't have a record of a PDK service, budget for one at purchase.",
+        "Rough low-speed shifts after a battery disconnect often just need adaptation."
+      ],
+      "warnings": [
+        "The level check depends on temperature and needs a diagnostic tool. Without one, leave this to a specialist.",
+        "Only use Porsche-specified fluids."
+      ],
+      "references": [
+        { "name": "Rennlist forums", "url": "https://rennlist.com/forums/" },
+        { "name": "6speedonline", "url": "https://www.6speedonline.com/forums/" }
+      ]
     }
   ],
   "suppliers": {
@@ -451,8 +512,11 @@
       {
         "name": "FCP Euro",
         "url": "https://www.fcpeuro.com/Porsche-parts",
-        "notes": "Industry-leading lifetime replacement guarantee - growing 991 coverage as parts become available",
-        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "notes": "Lifetime replacement guarantee—growing 991 coverage as parts become available",
+        "specialties": [
+          "Lifetime Warranty",
+          "OE Quality"
+        ],
         "shipping": "Free over $49",
         "warranty": "Lifetime",
         "featured": true
@@ -460,23 +524,32 @@
       {
         "name": "Pelican Parts",
         "url": "https://www.pelicanparts.com/Porsche/catalog/991.htm",
-        "notes": "Comprehensive 991 parts catalog with emerging DIY tech articles",
-        "specialties": ["OEM Parts", "Tech Articles"],
+        "notes": "Deep 991 parts catalog with emerging DIY tech articles",
+        "specialties": [
+          "OEM Parts",
+          "Tech Articles"
+        ],
         "shipping": "Free over $99",
         "featured": true
       },
       {
         "name": "Porsche Parts",
         "url": "https://parts.porsche.com/",
-        "notes": "Factory genuine Porsche parts - often the best source for 991-specific items",
-        "specialties": ["Factory Original", "Genuine Porsche"],
+        "notes": "Factory genuine Porsche parts—often the best source for 991-specific items",
+        "specialties": [
+          "Factory Original",
+          "Genuine Porsche"
+        ],
         "warranty": "Genuine OEM"
       },
       {
         "name": "Sunset Porsche Parts",
         "url": "https://www.sunsetporscheparts.com/",
         "notes": "Porsche dealer parts department with competitive OEM pricing",
-        "specialties": ["OEM Dealer", "New Genuine Parts"],
+        "specialties": [
+          "OEM Dealer",
+          "New Genuine Parts"
+        ],
         "shipping": "Fast shipping"
       }
     ],
@@ -485,39 +558,58 @@
         "name": "Fabspeed",
         "url": "https://www.fabspeed.com/porsche/911/991/",
         "notes": "Premium exhaust systems that transform the 991's character without drone",
-        "specialties": ["Exhaust Systems", "Performance Parts"],
+        "specialties": [
+          "Exhaust Systems",
+          "Performance Parts"
+        ],
         "featured": true
       },
       {
         "name": "Dundon Motorsports",
         "url": "https://dundonmotorsports.com/",
-        "notes": "Race-inspired exhaust systems - especially popular for GT3 and GT3 RS",
-        "specialties": ["Exhaust", "GT Parts", "Race Quality"],
+        "notes": "Race-inspired exhaust systems—especially popular for GT3 and GT3 RS",
+        "specialties": [
+          "Exhaust",
+          "GT Parts",
+          "Race Quality"
+        ],
         "featured": true
       },
       {
         "name": "Softronic",
         "url": "https://www.softronic.us/",
         "notes": "ECU tuning to extract more power from the 991's engine",
-        "specialties": ["ECU Tuning", "Performance Software"]
+        "specialties": [
+          "ECU Tuning",
+          "Performance Software"
+        ]
       },
       {
         "name": "JRZ Suspension",
         "url": "https://www.jrz-suspension.com/",
-        "notes": "Professional-grade coilovers for track use - popular with HPDE enthusiasts",
-        "specialties": ["Coilovers", "Race Suspension"]
+        "notes": "Professional-grade coilovers for track use—popular with HPDE enthusiasts",
+        "specialties": [
+          "Coilovers",
+          "Race Suspension"
+        ]
       },
       {
         "name": "KW Suspensions",
         "url": "https://www.kwsuspensions.com/",
         "notes": "Premium coilover systems for street and track 991s",
-        "specialties": ["Coilovers", "Street/Track"]
+        "specialties": [
+          "Coilovers",
+          "Street/Track"
+        ]
       },
       {
         "name": "AWE Tuning",
         "url": "https://www.awe-tuning.com/porsche/991",
         "notes": "Performance exhaust systems and intake upgrades",
-        "specialties": ["Exhaust", "Intakes"]
+        "specialties": [
+          "Exhaust",
+          "Intakes"
+        ]
       }
     ],
     "general": [
@@ -525,76 +617,112 @@
         "name": "AutohausAZ",
         "url": "https://www.autohausaz.com/porsche-911-parts",
         "notes": "Growing selection of 991 replacement parts at competitive prices",
-        "specialties": ["Replacement Parts", "Maintenance Items"],
+        "specialties": [
+          "Replacement Parts",
+          "Maintenance Items"
+        ],
         "shipping": "Free over $99"
       },
       {
         "name": "ECS Tuning",
         "url": "https://www.ecstuning.com/Porsche-991_911/",
         "notes": "Wide selection of OEM and aftermarket parts with detailed fitment",
-        "specialties": ["OEM Parts", "Aftermarket Options"],
+        "specialties": [
+          "OEM Parts",
+          "Aftermarket Options"
+        ],
         "shipping": "Free over $99"
       },
       {
         "name": "PartsGeek",
         "url": "https://www.partsgeek.com/catalog/porsche/911.html",
         "notes": "Budget-friendly replacement parts for common maintenance",
-        "specialties": ["Budget Parts", "Fast Shipping"]
+        "specialties": [
+          "Budget Parts",
+          "Fast Shipping"
+        ]
       }
     ],
     "specialty": [
       {
         "name": "GMG Racing",
         "url": "https://gmgracing.com/",
-        "notes": "Track-focused upgrades and complete race preparation - extensive 991 GT3 experience",
-        "specialties": ["Track Parts", "Race Prep", "GT Builds"],
+        "notes": "Track-focused upgrades and complete race preparation—extensive 991 GT3 experience",
+        "specialties": [
+          "Track Parts",
+          "Race Prep",
+          "GT Builds"
+        ],
         "featured": true
       },
       {
         "name": "SharkWerks",
         "url": "https://www.sharkwerks.com/",
-        "notes": "Performance shop with deep 991 expertise - known for GT car work",
-        "specialties": ["GT Models", "Engine Work", "Full Builds"],
+        "notes": "Performance shop with deep 991 expertise—known for GT car work",
+        "specialties": [
+          "GT Models",
+          "Engine Work",
+          "Full Builds"
+        ],
         "featured": true
       },
       {
         "name": "BBI Autosport",
         "url": "https://bbiautosport.com/",
         "notes": "Custom builds and track preparation for 991 GT cars",
-        "specialties": ["Custom Builds", "Turbo Conversions"]
+        "specialties": [
+          "Custom Builds",
+          "Turbo Conversions"
+        ]
       },
       {
         "name": "Champion Motorsport",
         "url": "https://www.championmotorsport.com/",
         "notes": "Premium wheels and performance parts for the 991 platform",
-        "specialties": ["Wheels", "Performance Parts"]
+        "specialties": [
+          "Wheels",
+          "Performance Parts"
+        ]
       }
     ],
     "used": [
       {
         "name": "Rennlist 991 Classifieds",
         "url": "https://rennlist.com/forums/991-parts-marketplace/",
-        "notes": "Active 991 community marketplace - good selection of used OEM and aftermarket",
-        "specialties": ["991 Community", "Vetted Sellers"],
+        "notes": "Active 991 community marketplace—good selection of used OEM and aftermarket",
+        "specialties": [
+          "991 Community",
+          "Vetted Sellers"
+        ],
         "featured": true
       },
       {
         "name": "6SpeedOnline Classifieds",
         "url": "https://www.6speedonline.com/forums/parts-sale-wanted-911/",
         "notes": "Large enthusiast community with active 991 parts section",
-        "specialties": ["Forum Marketplace", "Enthusiast Parts"]
+        "specialties": [
+          "Forum Marketplace",
+          "Enthusiast Parts"
+        ]
       },
       {
         "name": "eBay Motors",
         "url": "https://www.ebay.com/b/Parts-for-Porsche-911/6030/bn_574968",
         "notes": "Global marketplace for used and NOS 991 parts",
-        "specialties": ["Used Parts", "NOS", "Global Sellers"]
+        "specialties": [
+          "Used Parts",
+          "NOS",
+          "Global Sellers"
+        ]
       },
       {
         "name": "Car-Part.com",
         "url": "https://www.car-part.com/",
-        "notes": "Search nationwide salvage yard inventory - good for body panels",
-        "specialties": ["Salvage Parts", "Body Panels"]
+        "notes": "Search nationwide salvage yard inventory—good for body panels",
+        "specialties": [
+          "Salvage Parts",
+          "Body Panels"
+        ]
       }
     ],
     "tools": [
@@ -606,7 +734,7 @@
       {
         "name": "PIWIS/Durametric Diagnostic",
         "url": "https://www.durametric.com/",
-        "notes": "Essential diagnostic software - the 991's complex systems require dealer-level tools"
+        "notes": "Diagnostic software—the 991's complex systems require dealer-level tools"
       },
       {
         "name": "991 Technical Forum",
@@ -617,156 +745,47 @@
   },
   "torqueSpecs": {
     "sources": [
-      {
-        "name": "Rennlist 991 Technical Forum",
-        "url": "https://rennlist.com/forums/991-gt3-gt3rs-and-911r/"
-      },
-      {
-        "name": "Porsche Workshop Manual",
-        "url": "https://www.bentleypublishers.com/porsche.html"
-      },
-      {
-        "name": "Planet-9 991 Forum",
-        "url": "https://www.planet-9.com/"
-      }
+      { "name": "Rennlist 991 Technical Forum", "url": "https://rennlist.com/forums/991-gt3-gt3rs-and-911r/" },
+      { "name": "Porsche Workshop Manual", "url": "https://www.bentleypublishers.com/porsche.html" },
+      { "name": "Planet-9 991 Forum", "url": "https://www.planet-9.com/" }
     ],
     "engine": [
-      {
-        "component": "Spark Plugs",
-        "spec": "22 ft-lbs (30 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Ignition Coil Bolts",
-        "spec": "7 ft-lbs (10 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Oil Drain Plug",
-        "spec": "37 ft-lbs (50 Nm)",
-        "notes": "Replace crush washer"
-      },
-      {
-        "component": "Oil Filter Housing Cap",
-        "spec": "19 ft-lbs (26 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Intake Manifold",
-        "spec": "7 ft-lbs (10 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Engine Mount Bolts (Top)",
-        "spec": "23 ft-lbs (31 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Engine Mount Thru-Bolt",
-        "spec": "63 ft-lbs (85 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Coolant Pipe Fittings",
-        "spec": "15 ft-lbs (20 Nm)",
-        "notes": "New o-rings"
-      },
-      {
-        "component": "Turbo Oil Lines (991.2)",
-        "spec": "15 ft-lbs (20 Nm)",
-        "notes": "Turbo models"
-      }
+      { "component": "Spark Plugs", "spec": "22 ft-lbs (30 Nm)", "notes": "" },
+      { "component": "Ignition Coil Bolts", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
+      { "component": "Oil Drain Plug", "spec": "37 ft-lbs (50 Nm)", "notes": "Replace crush washer" },
+      { "component": "Oil Filter Housing Cap", "spec": "19 ft-lbs (26 Nm)", "notes": "" },
+      { "component": "Intake Manifold", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
+      { "component": "Engine Mount Bolts (Top)", "spec": "23 ft-lbs (31 Nm)", "notes": "" },
+      { "component": "Engine Mount Thru-Bolt", "spec": "63 ft-lbs (85 Nm)", "notes": "" },
+      { "component": "Coolant Pipe Fittings", "spec": "15 ft-lbs (20 Nm)", "notes": "New o-rings" },
+      { "component": "Turbo Oil Lines (991.2)", "spec": "15 ft-lbs (20 Nm)", "notes": "Turbo models" }
     ],
     "suspension": [
-      {
-        "component": "Wheel Lug Bolts",
-        "spec": "118 ft-lbs (160 Nm)",
-        "notes": "Center-lock different (443 ft-lbs)"
-      },
-      {
-        "component": "Front Strut Pinch Bolt",
-        "spec": "65 ft-lbs (85 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Front Control Arm to Frame",
-        "spec": "89 ft-lbs (120 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Front Control Arm Ball Joint",
-        "spec": "56 ft-lbs (76 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Front Thrust Arm to Frame",
-        "spec": "118 ft-lbs (160 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "PASM Damper Top Nut",
-        "spec": "23 ft-lbs (31 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Tie Rod End Nut",
-        "spec": "48 ft-lbs (65 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Sway Bar End Links",
-        "spec": "48 ft-lbs (65 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Control Arm Eccentric",
-        "spec": "74 ft-lbs (100 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Upper Control Arm",
-        "spec": "81 ft-lbs (110 Nm)",
-        "notes": ""
-      }
+      { "component": "Wheel Lug Bolts", "spec": "118 ft-lbs (160 Nm)", "notes": "Center-lock different (443 ft-lbs)" },
+      { "component": "Front Strut Pinch Bolt", "spec": "65 ft-lbs (85 Nm)", "notes": "" },
+      { "component": "Front Control Arm to Frame", "spec": "89 ft-lbs (120 Nm)", "notes": "" },
+      { "component": "Front Control Arm Ball Joint", "spec": "56 ft-lbs (76 Nm)", "notes": "" },
+      { "component": "Front Thrust Arm to Frame", "spec": "118 ft-lbs (160 Nm)", "notes": "" },
+      { "component": "PASM Damper Top Nut", "spec": "23 ft-lbs (31 Nm)", "notes": "" },
+      { "component": "Tie Rod End Nut", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
+      { "component": "Sway Bar End Links", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
+      { "component": "Rear Control Arm Eccentric", "spec": "74 ft-lbs (100 Nm)", "notes": "" },
+      { "component": "Rear Upper Control Arm", "spec": "81 ft-lbs (110 Nm)", "notes": "" }
     ],
     "brakes": [
-      {
-        "component": "Front Caliper Bolts",
-        "spec": "63 ft-lbs (85 Nm)",
-        "notes": "Use new bolts"
-      },
-      {
-        "component": "Rear Caliper Bolts",
-        "spec": "63 ft-lbs (85 Nm)",
-        "notes": "Use new bolts"
-      },
-      {
-        "component": "PCCB Caliper Bolts",
-        "spec": "74 ft-lbs (100 Nm)",
-        "notes": "Ceramic brake cars"
-      },
-      {
-        "component": "Brake Rotor Screws",
-        "spec": "7 ft-lbs (10 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Brake Line Fittings",
-        "spec": "13 ft-lbs (18 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Wheel Speed Sensor",
-        "spec": "7 ft-lbs (10 Nm)",
-        "notes": ""
-      }
+      { "component": "Front Caliper Bolts", "spec": "63 ft-lbs (85 Nm)", "notes": "Use new bolts" },
+      { "component": "Rear Caliper Bolts", "spec": "63 ft-lbs (85 Nm)", "notes": "Use new bolts" },
+      { "component": "PCCB Caliper Bolts", "spec": "74 ft-lbs (100 Nm)", "notes": "Ceramic brake cars" },
+      { "component": "Brake Rotor Screws", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "13 ft-lbs (18 Nm)", "notes": "" },
+      { "component": "Wheel Speed Sensor", "spec": "7 ft-lbs (10 Nm)", "notes": "" }
     ]
   },
   "diyGuides": [
     {
       "id": "oil-change",
       "title": "Oil Change",
-      "description": "Complete oil and filter change for 991.1 and 991.2 engines.",
+      "description": "Oil and filter on the 991.1 and 991.2 engines.",
       "difficulty": "Easy",
       "time": "30 min",
       "interval": "Every 10,000 miles or 1 year (some owners prefer 5,000-7,500)",
@@ -783,31 +802,31 @@
         "Warm the engine for 2-3 minutes to thin the oil for better drainage.",
         "Drive onto ramps or raise vehicle and support on jack stands.",
         "Locate the oil drain plug on the bottom of the engine case - 19mm socket.",
-        "Position drain pan and remove drain plug - be careful of hot oil.",
+        "Position drain pan and remove drain plug—be careful of hot oil.",
         "While oil drains, locate the cartridge oil filter housing on top of engine.",
-        "Remove oil filter cap using 76mm cap wrench - turn counterclockwise.",
+        "Remove oil filter cap using 76mm cap wrench—turn counterclockwise.",
         "Pull out old filter element and discard. Clean housing interior.",
         "Allow oil to drain completely (15+ minutes for thorough drain).",
-        "Install new crush washer on drain plug and reinstall - torque to 37 ft-lbs (50 Nm).",
+        "Install new crush washer on drain plug and reinstall—torque to 37 ft-lbs (50 Nm).",
         "Install new filter element and replace o-ring on cap (lube with fresh oil).",
         "Reinstall filter cap and torque to 19 ft-lbs (26 Nm).",
         "Lower vehicle and add approximately 8.5-9 quarts of 0W-40 full synthetic.",
         "Start engine and check for leaks at drain plug and filter housing.",
-        "Check oil level using the dashboard display - add oil to proper level.",
+        "Check oil level using the dashboard display—add oil to proper level.",
         "Reset the service interval in the instrument cluster."
       ],
       "tips": [
-        "991.1 cars may consume oil - monitor level between changes and top up as needed.",
+        "991.1 cars may consume oil—monitor level between changes and top up as needed.",
         "Use only oils meeting Porsche A40 specification (Mobil 1, Motul 8100, etc.).",
         "991.2 turbo models are especially important to use quality oil.",
-        "Don't overfill - check level after running engine and letting it sit.",
+        "Don't overfill—check level after running engine and letting it sit.",
         "Save some fresh oil in your trunk for top-ups on 991.1 cars."
       ]
     },
     {
       "id": "brake-pads",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement with electronic sensor reset.",
+      "description": "Front and rear pads, including the electronic wear sensor reset.",
       "difficulty": "Easy",
       "time": "1-2 hours",
       "interval": "Every 20,000-40,000 miles depending on driving style",
@@ -828,23 +847,23 @@
         "Remove wheel bolts (19mm) and remove wheel.",
         "Disconnect the brake pad wear sensor connector from the caliper.",
         "Remove the two caliper guide pin bolts (7mm hex).",
-        "Swing the caliper upward and secure it - don't let it hang by the hose.",
+        "Swing the caliper upward and secure it—don't let it hang by the hose.",
         "Remove old brake pads and note wear sensor position.",
         "Clean caliper bracket slides and pad contact areas with brake cleaner.",
-        "Inspect rotor thickness and condition - replace if below minimum spec.",
+        "Inspect rotor thickness and condition—replace if below minimum spec.",
         "Front: Compress piston straight back into caliper using piston tool.",
-        "Rear: Rotate piston clockwise while pressing - requires screw-in tool.",
+        "Rear: Rotate piston clockwise while pressing—requires screw-in tool.",
         "Apply thin brake lubricant to pad backing plates and slide areas.",
         "Install new pads with wear sensor on inner pad (inboard side).",
-        "Swing caliper back down and reinstall guide pin bolts - torque to 25 ft-lbs.",
+        "Swing caliper back down and reinstall guide pin bolts—torque to 25 ft-lbs.",
         "Reconnect wear sensor connector.",
         "Reinstall wheel and torque bolts to 118 ft-lbs (160 Nm) in star pattern.",
         "Pump brake pedal multiple times to seat pads before driving."
       ],
       "tips": [
-        "991 has electronic brake pad monitoring - sensors are single-use, replace with pads.",
+        "991 has electronic brake pad monitoring—sensors are single-use, replace with pads.",
         "After pad replacement, the warning may stay on until cleared with diagnostic tool.",
-        "PCCB (ceramic composite brakes) require dealer service - don't attempt DIY.",
+        "PCCB (ceramic composite brakes) require dealer service—don't attempt DIY.",
         "Bed new pads properly: multiple moderate stops, then light driving to cool.",
         "Open fluid reservoir cap before compressing pistons to prevent overflow."
       ]
@@ -852,7 +871,7 @@
     {
       "id": "spark-plugs",
       "title": "Spark Plug Replacement",
-      "description": "Replace spark plugs on the 991 flat-six engine (NA and turbo).",
+      "description": "Plugs on the naturally aspirated and turbocharged engines. The turbo cars need them more often.",
       "difficulty": "Easy",
       "time": "1-2 hours",
       "interval": "Every 40,000-60,000 miles",
@@ -867,7 +886,7 @@
         "Compressed air"
       ],
       "steps": [
-        "Allow engine to cool completely - critical for aluminum cylinder heads.",
+        "Allow engine to cool completely—aluminum heads don't like being worked on hot.",
         "Remove any engine covers for better access to coil packs.",
         "Disconnect the electrical connector from each ignition coil by pressing the release tab.",
         "Remove the coil pack mounting bolt (10mm) from each of the six coils.",
@@ -878,23 +897,23 @@
         "Check spark plug gap on new plugs (should be factory preset).",
         "Apply a thin coating of anti-seize to new plug threads (keep off electrode).",
         "Thread new plugs in by hand first to prevent cross-threading.",
-        "Torque plugs to 22 ft-lbs (30 Nm) - do not overtighten.",
+        "Torque plugs to 22 ft-lbs (30 Nm)—do not overtighten.",
         "Apply dielectric grease to inside of coil pack boots.",
         "Reinstall coil packs and torque mounting bolts to 7 ft-lbs (10 Nm).",
         "Reconnect all coil pack connectors until they click."
       ],
       "tips": [
-        "991.2 turbo models may have slightly different access - same basic procedure.",
+        "991.2 turbo models may have slightly different access—same basic procedure.",
         "Use only OEM or equivalent quality plugs (NGK or Bosch).",
-        "Never install plugs in a hot engine - severe risk of thread damage.",
-        "If plug is hard to turn, stop and apply penetrating oil - don't force it.",
+        "Never install plugs in a hot engine—severe risk of thread damage.",
+        "If plug is hard to turn, stop and apply penetrating oil—don't force it.",
         "Check for any stored fault codes after completion if you have a scanner."
       ]
     },
     {
       "id": "coolant-flush",
       "title": "Coolant Flush",
-      "description": "Drain and refill cooling system with fresh coolant to prevent corrosion.",
+      "description": "Drain and refill the cooling system with fresh coolant to keep corrosion out of a very expensive engine.",
       "difficulty": "Moderate",
       "time": "1-2 hours",
       "interval": "Every 4 years or 40,000 miles",
@@ -908,16 +927,16 @@
         "Pliers"
       ],
       "steps": [
-        "Allow engine to cool completely - never open cooling system when hot.",
+        "Allow engine to cool completely—never open cooling system when hot.",
         "Locate the coolant drain on the radiator and position drain pan.",
         "Open the expansion tank cap to allow air in and speed draining.",
         "Open radiator drain and allow coolant to drain completely.",
-        "Inspect drained coolant color and condition - rust indicates problems.",
+        "Inspect drained coolant color and condition—rust indicates problems.",
         "Close drain and add distilled water to flush the system.",
         "Run engine to operating temperature with heater on max to circulate.",
         "Allow to cool, drain flush water, and repeat until water runs clear.",
         "Close all drains and prepare 50/50 coolant mix (or use pre-mixed).",
-        "Slowly fill system through expansion tank - this takes patience.",
+        "Slowly fill system through expansion tank—this takes patience.",
         "Start engine with expansion tank cap off to allow air to escape.",
         "Run engine to operating temperature and top off as air purges.",
         "Check for leaks at all connections and hoses.",
@@ -925,10 +944,10 @@
         "Check level again after driving and engine has cooled."
       ],
       "tips": [
-        "Use only Porsche-approved G40 or G48 coolant - mixing types causes problems.",
-        "The 991's long coolant runs make air purging challenging - take your time.",
+        "Use only Porsche-approved G40 or G48 coolant—mixing types causes problems.",
+        "The 991's long coolant runs make air purging challenging—take your time.",
         "A vacuum fill system makes this job much easier and faster.",
-        "Inspect plastic coolant pipes while system is drained - replace if cracked.",
+        "Inspect plastic coolant pipes while system is drained—replace if cracked.",
         "This is a good time to replace thermostat if original and over 60k miles."
       ]
     }
@@ -938,7 +957,7 @@
       { "id": "991-dfi-injectors", "name": "Service direct fuel injectors", "description": "Clean/replace if misfiring or rough idle" },
       { "id": "991-oil-separator", "name": "Replace oil separator/AOS", "description": "Can cause smoke and rough running" },
       { "id": "991-spark-plugs", "name": "Replace spark plugs", "description": "Iridium plugs every 60k miles" },
-      { "id": "991-air-filter", "name": "Replace air filter elements", "description": "Dual air filters - one per bank" }
+      { "id": "991-air-filter", "name": "Replace air filter elements", "description": "Dual air filters—one per bank" }
     ],
     "cooling": [
       { "id": "991-coolant-pipes", "name": "Inspect plastic coolant pipes", "description": "Replace with aluminum if showing age" },
@@ -953,7 +972,7 @@
     "suspension": [
       { "id": "991-pasm-shocks", "name": "Inspect PASM shocks", "description": "Electronic dampers can leak" },
       { "id": "991-control-arms", "name": "Replace front control arms", "description": "Bushings wear over time" },
-      { "id": "991-pdcc", "name": "Service PDCC system (if equipped)", "description": "Active anti-roll - check for leaks" }
+      { "id": "991-pdcc", "name": "Service PDCC system (if equipped)", "description": "Active anti-roll—check for leaks" }
     ],
     "body": [
       { "id": "991-headlight-seal", "name": "Check headlight seals", "description": "LED units can develop condensation" },
@@ -972,11 +991,11 @@
     ]
   },
   "buyersGuide": {
-    "overview": "The Porsche 991 (2012-2019) represents the modern evolution of the 911, with increased dimensions, improved technology, and the introduction of turbocharged engines across the range in 991.2. The 991 offers exceptional performance (350-700 hp depending on variant), modern amenities, and excellent reliability. While the naturally aspirated 991.1 engines are praised by purists, the turbocharged 991.2 offers more everyday power. GT3, GT3 RS, and GT2 RS variants continue to set benchmarks for track performance.",
+    "overview": "The 991 is a big, fast, sophisticated 911: longer and wider than the cars before it, with electric steering and, from the 991.2 on, turbocharged Carreras. Purists prefer the naturally aspirated 991.1 for its sound and throttle response; the 991.2 has more torque everywhere. There's no IMS bearing, and the common problems are minor next to older 911s, but it's still a modern Porsche, and PDK and PASM work isn't cheap. Service history matters more than mileage.",
     "quickFacts": {
       "productionYears": "2012-2019",
       "totalProduced": "~217,000 worldwide",
-      "priceRange": "$60,000 - $400,000+",
+      "priceRange": "$60,000–$400,000+",
       "bestYears": "2017-2019 (991.2 refined, proven reliability)"
     },
     "variants": [
@@ -1013,7 +1032,7 @@
       {
         "name": "GT2 RS",
         "years": "2018-2019",
-        "description": "The ultimate 991 with 700 hp from twin-turbo 3.8L. Rear-wheel drive, track weapon. Highly collectible.",
+        "description": "700 hp from a twin-turbo 3.8L, rear-wheel drive, and built for the track. Priced like the collectible it is.",
         "desirability": "High"
       },
       {
@@ -1037,119 +1056,64 @@
             "detail": "Check for boost leaks, wastegate operation, and proper boost pressure.",
             "costIfBad": "$3,000-8,000"
           },
-          {
-            "check": "Coolant System",
-            "detail": "Check expansion tank and radiators for leaks. Overheating is engine-critical.",
-            "costIfBad": "$500-1,500"
-          },
-          {
-            "check": "Engine Mounts",
-            "detail": "Can wear on higher-mileage cars causing vibration.",
-            "costIfBad": "$600-1,200"
-          }
+          { "check": "Coolant System", "detail": "Check expansion tank and radiators for leaks. Overheating can ruin the engine.", "costIfBad": "$500-1,500" },
+          { "check": "Engine Mounts", "detail": "Can wear on higher-mileage cars causing vibration.", "costIfBad": "$600-1,200" }
         ]
       },
       {
         "category": "Transmission",
         "items": [
-          {
-            "check": "PDK Operation",
-            "detail": "Most 991s have PDK. Check for smooth operation, proper clutch wear indication.",
-            "costIfBad": "$2,000-6,000"
-          },
-          {
-            "check": "Manual Transmission",
-            "detail": "If equipped, test all gears. Check for synchro wear on high-mileage cars.",
-            "costIfBad": "$2,000-4,000"
-          },
-          {
-            "check": "PDK Fluid Service",
-            "detail": "Verify PDK fluid has been serviced at proper intervals.",
-            "costIfBad": "$500-800 for service"
-          }
+          { "check": "PDK Operation", "detail": "Most 991s have PDK. Check for smooth operation, proper clutch wear indication.", "costIfBad": "$2,000-6,000" },
+          { "check": "Manual Transmission", "detail": "If equipped, test all gears. Check for synchro wear on high-mileage cars.", "costIfBad": "$2,000-4,000" },
+          { "check": "PDK Fluid Service", "detail": "Verify PDK fluid has been serviced at proper intervals.", "costIfBad": "$500-800 for service" }
         ]
       },
       {
         "category": "Suspension & Brakes",
         "items": [
-          {
-            "check": "PASM Shocks",
-            "detail": "Most 991s have PASM. Test in all modes for proper damping.",
-            "costIfBad": "$3,000-6,000"
-          },
+          { "check": "PASM Shocks", "detail": "Most 991s have PASM. Test in all modes for proper damping.", "costIfBad": "$3,000-6,000" },
           {
             "check": "PCCB Brakes",
             "detail": "If equipped with ceramic brakes, check rotor condition carefully. Extremely expensive to replace.",
             "costIfBad": "$15,000-25,000"
           },
-          {
-            "check": "Control Arm Bushings",
-            "detail": "Can wear on track-driven or high-mileage cars.",
-            "costIfBad": "$800-1,500"
-          },
-          {
-            "check": "Rear Axle Steering (if equipped)",
-            "detail": "Test for proper operation. Complex system.",
-            "costIfBad": "$2,000-4,000"
-          }
+          { "check": "Control Arm Bushings", "detail": "Can wear on track-driven or high-mileage cars.", "costIfBad": "$800-1,500" },
+          { "check": "Rear Axle Steering (if equipped)", "detail": "Test for proper operation. Complex system.", "costIfBad": "$2,000-4,000" }
         ]
       },
       {
         "category": "Electrical & Technology",
         "items": [
-          {
-            "check": "PCM System",
-            "detail": "Test navigation, connectivity, and all infotainment functions.",
-            "costIfBad": "$1,000-3,000"
-          },
-          {
-            "check": "Sport Chrono",
-            "detail": "If equipped, verify all modes function including launch control.",
-            "costIfBad": "$500-1,500"
-          },
-          {
-            "check": "Convertible/Targa Top",
-            "detail": "Test full operation. Targa mechanism is complex.",
-            "costIfBad": "$2,000-5,000"
-          }
+          { "check": "PCM System", "detail": "Test navigation, connectivity, and all infotainment functions.", "costIfBad": "$1,000-3,000" },
+          { "check": "Sport Chrono", "detail": "If equipped, verify all modes function including launch control.", "costIfBad": "$500-1,500" },
+          { "check": "Convertible/Targa Top", "detail": "Test full operation. Targa mechanism is complex.", "costIfBad": "$2,000-5,000" }
         ]
       },
       {
         "category": "Body",
         "items": [
-          {
-            "check": "Paint Condition",
-            "detail": "Check for rock chips, especially on front fascia. Clear bra recommended.",
-            "costIfBad": "$500-3,000"
-          },
-          {
-            "check": "Wheel Condition",
-            "detail": "Check for curb rash. Factory wheels are expensive to replace.",
-            "costIfBad": "$500-2,000 per wheel"
-          },
-          {
-            "check": "Accident History",
-            "detail": "Check panels for consistent gaps and paint matching.",
-            "costIfBad": "Varies significantly"
-          }
+          { "check": "Paint Condition", "detail": "Check for rock chips, especially on front fascia. Clear bra recommended.", "costIfBad": "$500-3,000" },
+          { "check": "Wheel Condition", "detail": "Check for curb rash. Factory wheels are expensive to replace.", "costIfBad": "$500-2,000 per wheel" },
+          { "check": "Accident History", "detail": "Check panels for consistent gaps and paint matching.", "costIfBad": "Varies significantly" }
         ]
       }
     ],
     "pricingGuide": {
+      "asOf": "January 2026",
       "project": {
-        "price": "$50,000 - $70,000",
+        "price": "$50,000–$70,000",
         "description": "Higher-mileage base Carreras or cars with service needs."
       },
       "driver": {
-        "price": "$70,000 - $100,000",
+        "price": "$70,000–$100,000",
         "description": "Good Carrera S or 4S examples with reasonable miles."
       },
       "excellent": {
-        "price": "$100,000 - $180,000",
+        "price": "$100,000–$180,000",
         "description": "Well-maintained GT3, Turbo, or low-mileage GTS examples."
       },
       "concours": {
-        "price": "$180,000 - $450,000+",
+        "price": "$180,000–$450,000+",
         "description": "GT3 RS, GT2 RS, or exceptional low-mileage special editions."
       }
     },
@@ -1166,7 +1130,7 @@
       "Carrera S or GTS for best all-around package",
       "991.1 for naturally aspirated character",
       "991.2 for more everyday power",
-      "GT3 manual for ultimate driver engagement",
+      "A manual GT3 if driving it is the whole point",
       "Complete Porsche service documentation",
       "Sport Chrono and PASM as standard equipment",
       "Avoid PCCB unless budget allows for replacement",
@@ -1185,70 +1149,30 @@
       "GT3 with manual transmission is the enthusiast's choice",
       "Avoid PCCB ceramic brakes if you can't afford replacement",
       "PDK is faster but manual is more engaging",
-      "Factory CPO warranty provides excellent peace of mind",
-      "Budget for proper maintenance - these are complex cars",
+      "A Porsche CPO warranty is worth paying for on a car this complex",
+      "Budget for proper maintenance—these are complex cars",
       "The 991 is reliable with proper care",
       "GT2 RS and GT3 RS are appreciating collectibles"
     ]
   },
   "communityResources": {
     "youtube": [
-      {
-        "name": "Matt Farah / The Smoking Tire",
-        "url": "https://www.youtube.com/@TheSmokingTire",
-        "description": "911 content and One Take reviews"
-      },
-      {
-        "name": "Carfection",
-        "url": "https://www.youtube.com/@Carfection",
-        "description": "High-quality Porsche features and reviews"
-      },
-      {
-        "name": "Channel P101tv",
-        "url": "https://www.youtube.com/@P101tv",
-        "description": "Independent Porsche content"
-      }
+      { "name": "Matt Farah / The Smoking Tire", "url": "https://www.youtube.com/@TheSmokingTire", "description": "911 content and One Take reviews" },
+      { "name": "Carfection", "url": "https://www.youtube.com/@Carfection", "description": "High-quality Porsche features and reviews" },
+      { "name": "Channel P101tv", "url": "https://www.youtube.com/@P101tv", "description": "Independent Porsche content" }
     ],
     "forums": [
-      {
-        "name": "Rennlist 991 Forum",
-        "url": "https://rennlist.com/forums/991/",
-        "description": "The largest 991 owner community"
-      },
-      {
-        "name": "911UK 991 Forum",
-        "url": "https://911uk.com/forums/991-2011-2019.35/",
-        "description": "UK-based 991 discussion and classifieds"
-      },
-      {
-        "name": "6SpeedOnline 991 Forum",
-        "url": "https://www.6speedonline.com/forums/991/",
-        "description": "911 tips, guides, and technical help"
-      },
-      {
-        "name": "Planet-9 911 Section",
-        "url": "https://www.planet-9.com/forums/",
-        "description": "All-Porsche community with 991 content"
-      }
+      { "name": "Rennlist 991 Forum", "url": "https://rennlist.com/forums/991/", "description": "The largest 991 owner community" },
+      { "name": "911UK 991 Forum", "url": "https://911uk.com/forums/991-2011-2019.35/", "description": "UK-based 991 discussion and classifieds" },
+      { "name": "6SpeedOnline 991 Forum", "url": "https://www.6speedonline.com/forums/991/", "description": "911 tips, guides, and technical help" },
+      { "name": "Planet-9 911 Section", "url": "https://www.planet-9.com/forums/", "description": "All-Porsche community with 991 content" }
     ],
     "facebook": [
-      {
-        "name": "Porsche 991 Owners",
-        "url": "https://www.facebook.com/groups/porsche991owners",
-        "description": "Active 991 enthusiast community"
-      },
-      {
-        "name": "991 GT3 Owners",
-        "url": "https://www.facebook.com/groups/991gt3owners",
-        "description": "Dedicated 991 GT3 discussion"
-      }
+      { "name": "Porsche 991 Owners", "url": "https://www.facebook.com/groups/porsche991owners", "description": "Active 991 enthusiast community" },
+      { "name": "991 GT3 Owners", "url": "https://www.facebook.com/groups/991gt3owners", "description": "Dedicated 991 GT3 discussion" }
     ],
     "websites": [
-      {
-        "name": "Porsche Club of America",
-        "url": "https://www.pca.org/",
-        "description": "Official Porsche club with events and resources"
-      }
+      { "name": "Porsche Club of America", "url": "https://www.pca.org/", "description": "Official Porsche club with events and resources" }
     ]
   }
 }

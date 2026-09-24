@@ -4,17 +4,65 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "X-XSS-Protection", "value": "1; mode=block" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
       ]
     }
   ],
   "redirects": [
-    { "source": "/tools/invoice", "destination": "/", "permanent": true },
-    { "source": "/tools/invoice/", "destination": "/", "permanent": true }
+    {
+      "source": "/tools/invoice",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/tools/invoice/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/tools/maintenance-tracker",
+      "destination": "/account/garage/maintenance/",
+      "permanent": true
+    },
+    {
+      "source": "/tools/maintenance-tracker/",
+      "destination": "/account/garage/maintenance/",
+      "permanent": true
+    },
+    {
+      "source": "/tools/restoration-checklist",
+      "destination": "/account/garage/restoration/",
+      "permanent": true
+    },
+    {
+      "source": "/tools/restoration-checklist/",
+      "destination": "/account/garage/restoration/",
+      "permanent": true
+    },
+    {
+      "source": "/community/forums/",
+      "destination": "/forum/",
+      "permanent": true
+    }
   ],
   "rewrites": [
     {

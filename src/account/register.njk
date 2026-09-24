@@ -2,13 +2,14 @@
 layout: layouts/base.njk
 title: Create Account
 description: Join the ZRG Classics community. Create an account to participate in forums and connect with other enthusiasts.
+robots: noindex
 ---
 
 <main class="auth-page">
   <div class="auth-container">
     <div class="auth-card">
       <h1>Join ZRG Classics</h1>
-      <p class="auth-subtitle">Create your free account</p>
+      <p class="auth-subtitle">Free, and it gets you My Garage, the trackers, and the forum.</p>
 
       <form id="register-form" class="auth-form">
         <div class="form-group">
@@ -38,7 +39,7 @@ description: Join the ZRG Classics community. Create an account to participate i
         <div class="form-group form-checkbox">
           <label>
             <input type="checkbox" id="newsletter-optin" name="newsletter-optin" checked>
-            <span>Subscribe to the ZRG Classics newsletter for restoration tips, guides, and project updates</span>
+            <span>Email me when new guides go up</span>
           </label>
         </div>
 
@@ -53,10 +54,8 @@ description: Join the ZRG Classics community. Create an account to participate i
   </div>
 </main>
 
+<script src="/js/newsletter.js"></script>
 <script>
-const CONVERTKIT_FORM_ID = '9066084';
-const CONVERTKIT_API_KEY = '4xiJtJiidK2ENJURMRXjgw';
-
 document.addEventListener('DOMContentLoaded', async () => {
   // Check if already logged in
   const user = await Auth.getUser();
@@ -91,22 +90,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     submitBtn.disabled = true;
-    submitBtn.textContent = 'Creating account...';
+    submitBtn.textContent = 'Creating account…';
 
     try {
       await Auth.signUp(email, password, username);
 
       // Fire-and-forget newsletter subscription
       if (newsletterOptIn) {
-        fetch(`https://api.convertkit.com/v3/forms/${CONVERTKIT_FORM_ID}/subscribe`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            api_key: CONVERTKIT_API_KEY,
-            email: email,
-            first_name: username
-          })
-        }).catch(err => console.warn('Newsletter signup failed (non-blocking):', err));
+        Newsletter.subscribe(email, username)
+          .catch(err => console.warn('Newsletter signup failed (non-blocking):', err));
       }
 
       // Show success message

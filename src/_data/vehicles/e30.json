@@ -2,20 +2,28 @@
   "model": "E30",
   "brand": "BMW",
   "fullName": "BMW E30 3 Series",
+  "series": "3 Series",
+  "tagline": "Light, simple, and the one everybody wishes they'd kept.",
   "years": "1982-1994",
   "engines": [
     "M10 1.8L I4",
     "M20 2.5L I6",
+    "M20 2.7L I6 (325e \"eta\")",
     "M42 1.8L I4",
-    "S14 2.3L I4"
+    "S14 2.3L I4 (M3)"
   ],
   "heroImage": "/images/vehicles/e30-hero.jpg",
+  "photoCredit": {
+    "text": "",
+    "url": "",
+    "license": ""
+  },
   "issues": [
     {
       "id": "timing-belt",
-      "title": "Timing Belt Failure (M20/M42 Engines)",
+      "title": "Timing Belt Failure (M20 Six)",
       "symptoms": "Engine won't start, loud slapping noise before failure, visible belt wear or cracking",
-      "description": "The M20 (6-cylinder) and M42 (4-cylinder) engines in the E30 use timing belts rather than chains. These belts have a service interval of approximately 50,000 miles, but many recommend replacing them earlier. The M20 is an interference engine, meaning if the belt snaps, the pistons will contact the valves causing catastrophic engine damage.",
+      "description": "The M20's weak point is its rubber timing belt. It's an interference engine, so a snapped belt means bent valves and, usually, a cylinder head job. Replace it every 50,000 miles or four years, whichever comes first, and do the water pump and tensioner at the same time. The four-cylinder cars are different: the M10 and M42 use timing chains, so there's no belt interval to track. On a high-mile M42, listen for chain rattle at cold start, which points to worn guides.",
       "fixes": [
         "Replace timing belt every 50,000 miles or 4 years (whichever comes first)",
         "Replace water pump and tensioner at the same time",
@@ -23,41 +31,18 @@
         "Always replace the front crankshaft seal during service"
       ],
       "sources": [
-        {
-          "name": "R3VLimited",
-          "url": "https://www.r3vlimited.com/"
-        },
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        }
+        { "name": "R3VLimited", "url": "https://www.r3vlimited.com/" },
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" }
       ],
       "repairCosts": {
         "diy": "$150-300",
         "shop": "$500-900",
-        "notes": "Critical maintenance. Replace water pump at same time."
+        "notes": "Don't skip it. Replace water pump at same time."
       },
       "parts": [
-        {
-          "name": "Timing Belt (M20)",
-          "partNumber": "11311711081",
-          "price": "$30-50"
-        },
-        {
-          "name": "Timing Belt (M42)",
-          "partNumber": "11311714670",
-          "price": "$25-45"
-        },
-        {
-          "name": "Tensioner",
-          "partNumber": "11311308652",
-          "price": "$40-70"
-        },
-        {
-          "name": "Water Pump",
-          "partNumber": "11519070755",
-          "price": "$50-80"
-        }
+        { "name": "Timing Belt (M20)", "partNumber": "11311711081", "price": "$30-50" },
+        { "name": "Tensioner", "partNumber": "11311308652", "price": "$40-70" },
+        { "name": "Water Pump", "partNumber": "11519070755", "price": "$50-80" }
       ],
       "relatedIssues": [
         { "vehicle": "e28", "brand": "BMW", "model": "E28", "issueId": "timing-belt" },
@@ -71,23 +56,17 @@
       "id": "rust-corrosion",
       "title": "Rust and Corrosion",
       "symptoms": "Bubbling paint, visible rust holes, soft floor pans, rusty fenders and wheel arches",
-      "description": "E30s are notorious for rust, especially in areas with road salt. Common rust spots include the front fenders (behind the wheels), rear wheel arches, rocker panels, battery tray, and floor pans. The trunk floor and spare tire well are also vulnerable. Rust can compromise structural integrity if left untreated.",
+      "description": "E30s are known for rust, especially in areas with road salt. Common rust spots include the front fenders (behind the wheels), rear wheel arches, rocker panels, battery tray, and floor pans. The trunk floor and spare tire well are also vulnerable. Rust can compromise structural integrity if left untreated.",
       "fixes": [
-        "Inspect and treat rust early - surface rust is much easier to fix",
+        "Inspect and treat rust early—surface rust is much easier to fix",
         "Replace fenders if rust is beyond repair (aftermarket available)",
         "Weld in new metal for floor pan and structural rust",
         "Apply rust prevention (POR-15, Fluid Film) to undercarriage",
         "Keep drain holes clear to prevent water accumulation"
       ],
       "sources": [
-        {
-          "name": "R3VLimited",
-          "url": "https://www.r3vlimited.com/"
-        },
-        {
-          "name": "E30Zone",
-          "url": "https://www.e30zone.net/"
-        }
+        { "name": "R3VLimited", "url": "https://www.r3vlimited.com/" },
+        { "name": "E30Zone", "url": "https://www.e30zone.net/" }
       ],
       "repairCosts": {
         "diy": "$200-1000",
@@ -95,26 +74,10 @@
         "notes": "Cost varies widely by extent. Fenders and floors most common."
       },
       "parts": [
-        {
-          "name": "Fender (Reproduction)",
-          "partNumber": "Various",
-          "price": "$150-300"
-        },
-        {
-          "name": "Rocker Panel",
-          "partNumber": "Various",
-          "price": "$100-200"
-        },
-        {
-          "name": "Battery Box Repair Panel",
-          "partNumber": "41111945025",
-          "price": "$80-150"
-        },
-        {
-          "name": "POR-15 Rust Treatment Kit",
-          "partNumber": "N/A",
-          "price": "$50-100"
-        }
+        { "name": "Fender (Reproduction)", "price": "$150-300" },
+        { "name": "Rocker Panel", "price": "$100-200" },
+        { "name": "Battery Box Repair Panel", "partNumber": "41111945025", "price": "$80-150" },
+        { "name": "POR-15 Rust Treatment Kit", "price": "$50-100" }
       ],
       "difficulty": "Advanced"
     },
@@ -131,14 +94,8 @@
         "Replace worn window/sunroof switches"
       ],
       "sources": [
-        {
-          "name": "E30Zone",
-          "url": "https://www.e30zone.net/"
-        },
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        }
+        { "name": "E30Zone", "url": "https://www.e30zone.net/" },
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" }
       ],
       "repairCosts": {
         "diy": "$50-200",
@@ -146,26 +103,10 @@
         "notes": "Often ground connection issues. Check grounds first."
       },
       "parts": [
-        {
-          "name": "Combination Relay",
-          "partNumber": "12631709557",
-          "price": "$40-70"
-        },
-        {
-          "name": "Fuel Pump Relay",
-          "partNumber": "12631735424",
-          "price": "$25-45"
-        },
-        {
-          "name": "Ground Strap Kit",
-          "partNumber": "Various",
-          "price": "$20-40"
-        },
-        {
-          "name": "Ignition Switch",
-          "partNumber": "61321377135",
-          "price": "$50-90"
-        }
+        { "name": "Combination Relay", "partNumber": "12631709557", "price": "$40-70" },
+        { "name": "Fuel Pump Relay", "partNumber": "12631735424", "price": "$25-45" },
+        { "name": "Ground Strap Kit", "price": "$20-40" },
+        { "name": "Ignition Switch", "partNumber": "61321377135", "price": "$50-90" }
       ],
       "difficulty": "Moderate"
     },
@@ -178,18 +119,12 @@
         "Full suspension refresh with new bushings (OEM rubber or polyurethane)",
         "Replace control arms with fresh bushings",
         "Install new subframe mounts",
-        "Replace rear trailing arm bushings (notorious for wear)",
+        "Replace the rear trailing arm bushings (a known wear item)",
         "Don't forget sway bar bushings and end links"
       ],
       "sources": [
-        {
-          "name": "R3VLimited",
-          "url": "https://www.r3vlimited.com/"
-        },
-        {
-          "name": "Ireland Engineering",
-          "url": "https://www.iemotorsport.com/"
-        }
+        { "name": "R3VLimited", "url": "https://www.r3vlimited.com/" },
+        { "name": "Ireland Engineering", "url": "https://www.iemotorsport.com/" }
       ],
       "repairCosts": {
         "diy": "$200-400",
@@ -197,26 +132,10 @@
         "notes": "Full refresh transforms handling. Common on 30+ year old cars."
       },
       "parts": [
-        {
-          "name": "Control Arm Bushing Set",
-          "partNumber": "31129058817",
-          "price": "$40-80"
-        },
-        {
-          "name": "Subframe Bushing",
-          "partNumber": "33311128437",
-          "price": "$30-50 each"
-        },
-        {
-          "name": "Strut Mount",
-          "partNumber": "31331139438",
-          "price": "$30-60"
-        },
-        {
-          "name": "Tie Rod End",
-          "partNumber": "32111125186",
-          "price": "$25-45"
-        }
+        { "name": "Control Arm Bushing Set", "partNumber": "31129058817", "price": "$40-80" },
+        { "name": "Subframe Bushing", "partNumber": "33311128437", "price": "$30-50 each" },
+        { "name": "Strut Mount", "partNumber": "31331139438", "price": "$30-60" },
+        { "name": "Tie Rod End", "partNumber": "32111125186", "price": "$25-45" }
       ],
       "difficulty": "Advanced"
     },
@@ -234,14 +153,8 @@
         "Replace fuel filter and check fuel pump pressure"
       ],
       "sources": [
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        },
-        {
-          "name": "BMW CCA",
-          "url": "https://www.bmwcca.org/"
-        }
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
+        { "name": "BMW CCA", "url": "https://www.bmwcca.org/" }
       ],
       "repairCosts": {
         "diy": "$100-400",
@@ -249,26 +162,10 @@
         "notes": "Motronic systems need proper diagnosis. AFM common failure."
       },
       "parts": [
-        {
-          "name": "Air Flow Meter (AFM)",
-          "partNumber": "13621286615",
-          "price": "$150-300"
-        },
-        {
-          "name": "Fuel Injector (each)",
-          "partNumber": "13641730060",
-          "price": "$40-80"
-        },
-        {
-          "name": "Fuel Pressure Regulator",
-          "partNumber": "13531715685",
-          "price": "$80-150"
-        },
-        {
-          "name": "Cold Start Valve",
-          "partNumber": "13411286064",
-          "price": "$60-100"
-        }
+        { "name": "Air Flow Meter (AFM)", "partNumber": "13621286615", "price": "$150-300" },
+        { "name": "Fuel Injector (each)", "partNumber": "13641730060", "price": "$40-80" },
+        { "name": "Fuel Pressure Regulator", "partNumber": "13531715685", "price": "$80-150" },
+        { "name": "Cold Start Valve", "partNumber": "13411286064", "price": "$60-100" }
       ],
       "difficulty": "Moderate"
     },
@@ -276,7 +173,7 @@
       "id": "cooling-system",
       "title": "Cooling System Failures",
       "symptoms": "Overheating, coolant leaks, heater not working, temperature gauge fluctuation",
-      "description": "While more robust than later BMW cooling systems, the E30's cooling components still fail with age. The water pump, thermostat, and radiator are common failure points. The heater core is known to leak, and the expansion tank can crack. On M20 engines, the head gasket can fail if overheating occurs.",
+      "description": "While tougher than later BMW cooling systems, the E30's cooling components still fail with age. The water pump, thermostat, and radiator are common failure points. The heater core is known to leak, and the expansion tank can crack. On M20 engines, the head gasket can fail if overheating occurs.",
       "fixes": [
         "Replace water pump (do with timing belt service)",
         "Install new thermostat (80°C or 88°C based on preference)",
@@ -285,14 +182,8 @@
         "Replace heater core if leaking (labor-intensive job)"
       ],
       "sources": [
-        {
-          "name": "R3VLimited",
-          "url": "https://www.r3vlimited.com/"
-        },
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        }
+        { "name": "R3VLimited", "url": "https://www.r3vlimited.com/" },
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" }
       ],
       "repairCosts": {
         "diy": "$150-300",
@@ -300,26 +191,10 @@
         "notes": "Replace all hoses and thermostat during water pump service."
       },
       "parts": [
-        {
-          "name": "Water Pump (M20)",
-          "partNumber": "11519070755",
-          "price": "$50-80"
-        },
-        {
-          "name": "Thermostat",
-          "partNumber": "11531266763",
-          "price": "$20-35"
-        },
-        {
-          "name": "Radiator (Manual)",
-          "partNumber": "17111712447",
-          "price": "$120-200"
-        },
-        {
-          "name": "Coolant Hose Kit",
-          "partNumber": "Various",
-          "price": "$80-150"
-        }
+        { "name": "Water Pump (M20)", "partNumber": "11519070755", "price": "$50-80" },
+        { "name": "Thermostat", "partNumber": "11531266763", "price": "$20-35" },
+        { "name": "Radiator (Manual)", "partNumber": "17111712447", "price": "$120-200" },
+        { "name": "Coolant Hose Kit", "price": "$80-150" }
       ],
       "difficulty": "Advanced"
     }
@@ -328,7 +203,7 @@
     {
       "id": "suspension-refresh",
       "title": "Full Suspension Refresh",
-      "description": "Complete front and rear suspension overhaul including all bushings, shocks, struts, and steering components. Restores factory handling and eliminates clunks, wandering, and uneven tire wear.",
+      "description": "Every bushing, strut, shock, and steering joint. If your E30 clunks, wanders, or eats tires unevenly, this is the weekend that fixes it.",
       "difficulty": "Intermediate",
       "time": "16-20 hours",
       "cost": "$800-1,500",
@@ -359,7 +234,7 @@
       ],
       "steps": [
         "Raise the vehicle and secure on four jack stands. Remove all four wheels.",
-        "FRONT SUSPENSION: Remove the brake caliper (13mm bolts) and hang with wire - do not let it hang by the hose.",
+        "Front suspension: Remove the brake caliper (13mm bolts) and hang with wire—do not let it hang by the hose.",
         "Remove the tie rod end nut (19mm) and separate using a ball joint separator. Count threads visible for alignment reference.",
         "Remove the sway bar end link nuts (16mm) from the strut.",
         "Remove the pinch bolt (16mm) holding the strut to the steering knuckle.",
@@ -367,32 +242,32 @@
         "Lower the strut assembly out of the wheel well.",
         "Use a spring compressor to safely compress the spring, then remove the 22mm strut nut.",
         "Replace the strut insert, bump stop, dust boot, and strut mount. Torque strut nut to 47 ft-lbs.",
-        "Reinstall strut assembly - torque strut tower nuts to 16 ft-lbs, pinch bolt to 59 ft-lbs.",
+        "Reinstall strut assembly—torque strut tower nuts to 16 ft-lbs, pinch bolt to 59 ft-lbs.",
         "For control arm bushings: Remove the control arm (19mm bolts) and press out old bushings.",
         "Press in new bushings using a bushing press or vise with appropriate receivers.",
-        "Reinstall control arm - torque to 57 ft-lbs. Note: Final torque at ride height.",
-        "REAR SUSPENSION: Remove the rear shock lower bolt (19mm) and upper nuts (13mm) in trunk.",
-        "Install new shocks - torque upper nuts to 16 ft-lbs, lower bolt to 57 ft-lbs.",
+        "Reinstall control arm—torque to 57 ft-lbs. Note: Final torque at ride height.",
+        "Rear suspension: Remove the rear shock lower bolt (19mm) and upper nuts (13mm) in trunk.",
+        "Install new shocks—torque upper nuts to 16 ft-lbs, lower bolt to 57 ft-lbs.",
         "For trailing arm bushings: Support the trailing arm and remove the pivot bolt (19mm).",
         "Press out old bushings and press in new ones. Reinstall bolt and torque to 52 ft-lbs at ride height.",
         "Replace subframe bushings by supporting the subframe, removing bolts, and pressing in new bushings.",
         "Replace sway bar bushings and end links on both axles.",
         "Reinstall wheels, lower vehicle, and torque lug nuts to 80 ft-lbs.",
-        "CRITICAL: Get a four-wheel alignment within 50 miles. Do not final-torque suspension bolts until at ride height."
+        "Important: Get a four-wheel alignment within 50 miles. Do not final-torque suspension bolts until at ride height."
       ],
       "tips": [
         "Spray all bolts with penetrating oil 24 hours before starting to ease removal.",
         "Take photos of the suspension geometry before disassembly for reference.",
-        "Lemforder and Meyle HD bushings are OEM-equivalent quality - avoid cheap alternatives.",
+        "Lemforder and Meyle HD bushings are OEM-equivalent quality—avoid cheap alternatives.",
         "Bilstein B6 (yellow) offers improved damping over stock without being too stiff for street use.",
-        "If the strut tower nuts are seized, use heat carefully - the tower is thin metal.",
+        "If the strut tower nuts are seized, use heat carefully—the tower is thin metal.",
         "Powerflex polyurethane bushings last longer but transmit more NVH than rubber."
       ],
       "warnings": [
-        "Spring compressors are extremely dangerous if used incorrectly - follow all safety procedures.",
-        "Never work under a vehicle supported only by a jack - always use jack stands.",
+        "Spring compressors are extremely dangerous if used incorrectly—follow all safety procedures.",
+        "Never work under a vehicle supported only by a jack—always use jack stands.",
         "Suspension bolts must be final-torqued with the weight of the car on the wheels (ride height).",
-        "Worn strut mounts can cause clunking and affect handling - always inspect and replace if worn."
+        "Worn strut mounts can cause clunking and affect handling—always inspect and replace if worn."
       ],
       "references": [
         { "name": "R3VLimited Suspension Guide", "url": "https://www.r3vlimited.com/board/showthread.php?t=178331" },
@@ -402,7 +277,7 @@
     {
       "id": "rust-repair",
       "title": "Rust Repair & Prevention",
-      "description": "E30-specific rust identification and repair guide. Covers the common rot spots including front fenders, rocker panels, rear wheel arches, and floor pans with techniques for cutting, welding, and long-term prevention.",
+      "description": "Front fenders, rockers, rear arches, and floors: where E30s rot and how to cut, weld, and protect the metal so it stays fixed.",
       "difficulty": "Advanced",
       "time": "20-60+ hours",
       "cost": "$300-3,000+",
@@ -433,27 +308,27 @@
         "Safety equipment: auto-darkening helmet, gloves, fire extinguisher"
       ],
       "steps": [
-        "ASSESSMENT: Remove interior carpets, spare tire, and trunk liner to inspect floor pans.",
+        "Assessment: Remove interior carpets, spare tire, and trunk liner to inspect floor pans.",
         "Remove front fender liners and inspect the inner fender and frame rails.",
         "Check common E30 rust areas: front fenders behind side markers, rocker panels at jacking points, rear wheel arches, battery tray, trunk floor.",
-        "Use a screwdriver to probe suspect areas - solid metal won't flex or puncture.",
+        "Use a screwdriver to probe suspect areas—solid metal won't flex or puncture.",
         "Mark all areas requiring repair and photograph for reference.",
-        "PREPARATION: Remove all paint and underseal around repair areas using a grinder with flap disc.",
+        "Preparation: Remove all paint and underseal around repair areas using a grinder with flap disc.",
         "Grind or sandblast back to clean metal, extending 2-3 inches beyond the rust.",
         "Treat any remaining surface rust with rust converter and allow to cure (24 hours).",
         "For structural panels (floor, frame rails), support the body before cutting.",
-        "CUTTING: Use a spot weld drill to remove factory spot welds where possible - preserves surrounding metal.",
+        "Cutting: Use a spot weld drill to remove factory spot welds where possible—preserves surrounding metal.",
         "For patch panels, cut along the factory seam lines using cut-off wheel or plasma cutter.",
         "Cut 1 inch into good metal to ensure full rust removal.",
-        "FABRICATION: Test-fit patch panels and trim as needed for proper fit.",
+        "Fabrication: Test-fit patch panels and trim as needed for proper fit.",
         "Create butt joints or lap joints depending on location and access.",
         "Drill holes for plug welds if replacing spot welds.",
-        "WELDING: Apply weld-through primer to all bare metal surfaces.",
+        "Welding: Apply weld-through primer to all bare metal surfaces.",
         "Use Cleco fasteners to hold panels in position for tack welding.",
         "Tack weld every 2-3 inches, then fill in with short stitch welds to prevent warping.",
-        "Allow metal to cool between welds - touch test with back of hand.",
+        "Allow metal to cool between welds—touch test with back of hand.",
         "Grind welds smooth with flap disc.",
-        "SEALING: Apply seam sealer to all welded joints inside and out.",
+        "Sealing: Apply seam sealer to all welded joints inside and out.",
         "Coat repair area with POR-15 or epoxy primer for rust prevention.",
         "Apply cavity wax inside all boxed sections through drain holes.",
         "Reinstall trim, undercoating, and paint as needed."
@@ -465,14 +340,14 @@
         "Stitch welding in 1-inch segments with cooling time prevents heat distortion.",
         "POR-15 must be applied over rust-free metal or rust converter for best results.",
         "Cavity wax through factory drain holes protects inside of rockers and frame rails.",
-        "If the subframe mounting points are rusty, do not drive the car - this is a safety issue."
+        "If the subframe mounting points are rusty, do not drive the car—this is a safety issue."
       ],
       "warnings": [
-        "Welding near fuel lines or the gas tank can cause fire or explosion - disconnect battery and remove fuel.",
+        "Welding near fuel lines or the gas tank can cause fire or explosion—disconnect battery and remove fuel.",
         "Structural rust in frame rails or subframe mounts requires professional assessment before repair.",
         "Cutting into structural panels without proper support can cause body flex and misalignment.",
         "Always have a fire extinguisher within reach when welding on a vehicle.",
-        "Wear proper respiratory protection when grinding rust - it can contain lead from old paint."
+        "Wear proper respiratory protection when grinding rust—it can contain lead from old paint."
       ],
       "references": [
         { "name": "R3VLimited Rust Repair Guide", "url": "https://www.r3vlimited.com/board/showthread.php?t=316133" },
@@ -482,7 +357,7 @@
     {
       "id": "electrical-restoration",
       "title": "Electrical System Restoration",
-      "description": "Comprehensive guide to diagnosing and restoring the E30's electrical system. Covers ground point restoration, relay replacement, fuse box rebuild, and common wiring repairs for reliable operation.",
+      "description": "Grounds, relays, the fuse box, and the usual wiring repairs. Most E30 electrical faults are old connections, not dead parts.",
       "difficulty": "Intermediate",
       "time": "8-20 hours",
       "cost": "$100-400",
@@ -490,8 +365,8 @@
         { "name": "Fuse Box Rebuild Kit", "oem": "—", "aftermarket": "E30 Zone, Garagistic", "cost": "$40-80" },
         { "name": "Main Relay (DME/Fuel Pump)", "oem": "61361729004", "aftermarket": "Bosch 0332019150", "cost": "$25-45" },
         { "name": "Headlight Relay (pair)", "oem": "61311378238", "aftermarket": "Bosch/Hella", "cost": "$20-40" },
-        { "name": "Ground Strap - Engine to Chassis", "oem": "12421742444", "aftermarket": "Custom braided", "cost": "$15-30" },
-        { "name": "Ground Strap - Battery to Body", "oem": "12421268097", "aftermarket": "Custom braided", "cost": "$10-20" },
+        { "name": "Ground Strap—Engine to Chassis", "oem": "12421742444", "aftermarket": "Custom braided", "cost": "$15-30" },
+        { "name": "Ground Strap—Battery to Body", "oem": "12421268097", "aftermarket": "Custom braided", "cost": "$10-20" },
         { "name": "Fusible Link Wire Set", "oem": "Various", "aftermarket": "Garagistic", "cost": "$20-40" },
         { "name": "Wiring Connector Repair Kit", "oem": "—", "aftermarket": "Various", "cost": "$30-60" },
         { "name": "Instrument Cluster Bulb Kit", "oem": "Various", "aftermarket": "LED upgrade available", "cost": "$15-40" },
@@ -512,41 +387,41 @@
         "Wiring diagrams (Bentley Manual)"
       ],
       "steps": [
-        "GROUND POINTS: Disconnect the battery negative terminal before starting any electrical work.",
+        "Ground points: Disconnect the battery negative terminal before starting any electrical work.",
         "Locate the main ground points: engine to chassis (front left), battery to body (inner fender), and transmission to body.",
-        "Remove each ground strap and inspect - look for corrosion, frayed wires, or loose connections.",
+        "Remove each ground strap and inspect—look for corrosion, frayed wires, or loose connections.",
         "Clean mounting surfaces with wire brush until shiny bare metal.",
         "Apply dielectric grease to prevent future corrosion, reinstall straps and torque securely.",
-        "The hidden ground behind the glovebox is critical - remove the glovebox to access and clean.",
-        "FUSE BOX: Remove the fuse box cover and inspect all fuses with a test light.",
-        "A fuse can look good but have an internal break - test with power applied.",
+        "The hidden ground behind the glovebox matters—remove the glovebox to access and clean.",
+        "Fuse box: Remove the fuse box cover and inspect all fuses with a test light.",
+        "A fuse can look good but have an internal break—test with power applied.",
         "Clean fuse contacts with electrical contact cleaner and a small brush.",
-        "Inspect the fusible links on the main power distribution - these are common failure points.",
+        "Inspect the fusible links on the main power distribution—these are common failure points.",
         "If the fuse box shows heat damage or melted plastic, rebuild or replace it.",
-        "RELAY TESTING: The E30 uses several critical relays - DME/fuel pump, headlights, turn signals, horn.",
+        "Relay testing: The E30 relies on several relays—DME/fuel pump, headlights, turn signals, horn.",
         "Test relays by swapping with known-good units or testing with multimeter.",
-        "The DME relay (under the hood, driver side) is the most common failure - replace preventatively.",
+        "The DME relay (under the hood, driver side) is the most common failure—replace preventatively.",
         "Clean relay socket contacts with electrical contact cleaner.",
-        "WIRING REPAIRS: Inspect the engine harness for cracked insulation, especially near the exhaust.",
-        "Check the trunk wiring where it passes through the body - flex point causes breaks.",
-        "Repair damaged wires with proper splicing - solder and heat shrink, not just electrical tape.",
-        "The headlight wiring can melt from undersized stock wires - upgrade to heavier gauge if dim headlights.",
-        "INSTRUMENT CLUSTER: Remove the cluster and replace burned-out bulbs.",
+        "Wiring repairs: Inspect the engine harness for cracked insulation, especially near the exhaust.",
+        "Check the trunk wiring where it passes through the body—flex point causes breaks.",
+        "Repair damaged wires with proper splicing—solder and heat shrink, not just electrical tape.",
+        "The headlight wiring can melt from undersized stock wires—upgrade to heavier gauge if dim headlights.",
+        "Instrument cluster: Remove the cluster and replace burned-out bulbs.",
         "Clean the printed circuit board contacts with contact cleaner.",
-        "Check the odometer gears - broken gears are common and cause non-functioning odometer."
+        "Check the odometer gears—broken gears are common and cause non-functioning odometer."
       ],
       "tips": [
-        "The DME relay is the most common cause of no-start conditions - always keep a spare.",
+        "The DME relay is the most common cause of no-start conditions—always keep a spare.",
         "When testing for voltage drops, 0.1V or less is acceptable on ground circuits.",
         "Dielectric grease on connections prevents corrosion without affecting conductivity.",
         "Consider upgrading to a relay-controlled headlight harness for significantly brighter lights.",
-        "The C101 connector (behind the glovebox) is notorious for intermittent connections.",
+        "The C101 connector behind the glovebox is a classic source of intermittent faults.",
         "Wrap repaired wiring with split loom tubing to protect from heat and abrasion."
       ],
       "warnings": [
         "Always disconnect the battery before working on electrical systems.",
-        "Shorts can cause immediate fire - never bypass fuses or use higher-rated fuses than specified.",
-        "The fusible links protect against major shorts - if they blow repeatedly, find the root cause.",
+        "Shorts can cause immediate fire—never bypass fuses or use higher-rated fuses than specified.",
+        "The fusible links protect against major shorts—if they blow repeatedly, find the root cause.",
         "Aftermarket stereo installations are often done poorly and cause electrical issues."
       ],
       "references": [
@@ -557,7 +432,7 @@
     {
       "id": "interior-restoration",
       "title": "Interior Restoration",
-      "description": "Complete interior restoration guide for the E30 including seat reupholstery, dashboard repair, carpet replacement, and headliner restoration. Return your interior to factory-fresh condition.",
+      "description": "Seats, dash, carpet, and headliner. How to bring a worn E30 cabin back without spending more than the car is worth.",
       "difficulty": "Intermediate",
       "time": "20-40 hours",
       "cost": "$500-2,500",
@@ -587,48 +462,96 @@
         "Sewing machine (for major upholstery)"
       ],
       "steps": [
-        "SEATS: Remove seats from vehicle - four 13mm bolts per seat, disconnect heated seat wiring if equipped.",
+        "Seats: Remove seats from vehicle—four 13mm bolts per seat, disconnect heated seat wiring if equipped.",
         "Remove the seat covers by unclipping hog rings from the seat frame with pliers.",
-        "Inspect seat foam - collapsed or cracked foam should be replaced.",
+        "Inspect seat foam—collapsed or cracked foam should be replaced.",
         "If recovering, use the old covers as templates for new material.",
         "Install new foam, then stretch new covers over and secure with new hog rings.",
         "For leather care only: clean with dedicated leather cleaner, then condition and protect.",
-        "CARPET: Remove seats, door sill plates, center console, and kick panels.",
-        "Pull up old carpet and inspect floor for rust - repair any rust before installing new carpet.",
+        "Carpet: Remove seats, door sill plates, center console, and kick panels.",
+        "Pull up old carpet and inspect floor for rust—repair any rust before installing new carpet.",
         "Clean and treat floor with sound deadening if desired.",
         "Test-fit new molded carpet and trim where needed for pedals and transmission tunnel.",
         "Secure carpet with adhesive at edges and under door sills.",
-        "HEADLINER: This is the most challenging interior repair - work carefully.",
+        "Headliner: This is the most challenging interior repair—work carefully.",
         "Remove all trim around the edges: sun visors, dome light, A/B/C pillar trim.",
         "Carefully lower the headliner board through the door opening.",
-        "Remove old fabric and all foam backing - scrape and wire brush until smooth.",
+        "Remove old fabric and all foam backing—scrape and wire brush until smooth.",
         "Apply spray adhesive to both the board and new fabric, wait until tacky.",
         "Starting from the center, press fabric onto board working outward to edges.",
         "Wrap fabric around edges and trim excess. Cut holes for dome light and visors.",
         "Allow to cure 24 hours before reinstalling in the vehicle.",
-        "DASHBOARD: For cracks, clean the area thoroughly and fill with flexible filler.",
+        "Dashboard: For cracks, clean the area thoroughly and fill with flexible filler.",
         "Sand smooth, apply texture coat to match, then paint with interior dye.",
         "Alternatively, install a dash cap cover for a quick solution.",
         "Clean and condition all vinyl and plastic trim with appropriate products."
       ],
       "tips": [
-        "Work in a temperature-controlled environment - adhesives don't work well in cold or extreme heat.",
-        "Original E30 leather is very durable - often just needs thorough cleaning and conditioning.",
+        "Work in a temperature-controlled environment—adhesives don't work well in cold or extreme heat.",
+        "Original E30 leather is very durable—often just needs thorough cleaning and conditioning.",
         "Lseat.com offers excellent pattern-matched E30 seat covers at reasonable prices.",
-        "The headliner board is fragile - handle with care and don't bend it sharply.",
-        "Use 3M Super 90 for headliner work - it's stronger than Super 77.",
+        "The headliner board is fragile—handle with care and don't bend it sharply.",
+        "Use 3M Super 90 for headliner work—it's stronger than Super 77.",
         "Taking photos before disassembly helps with reassembly of trim pieces.",
         "Condor Speed Shop offers complete interior restoration kits for E30s."
       ],
       "warnings": [
-        "Spray adhesive should only be used in well-ventilated areas - fumes are harmful.",
-        "The headliner board can break if flexed too much - remove carefully through the door.",
-        "Leather dye is permanent - test on a hidden area first.",
-        "Heated seats have electrical connections that can short if damaged - disconnect battery first."
+        "Spray adhesive should only be used in well-ventilated areas—fumes are harmful.",
+        "The headliner board can break if flexed too much—remove carefully through the door.",
+        "Leather dye is permanent—test on a hidden area first.",
+        "Heated seats have electrical connections that can short if damaged—disconnect battery first."
       ],
       "references": [
         { "name": "R3VLimited Interior Guide", "url": "https://www.r3vlimited.com/board/showthread.php?t=119899" },
         { "name": "Lseat E30 Seat Covers", "url": "https://www.lseat.com/bmw-e30.html" }
+      ]
+    },
+    {
+      "id": "rear-subframe-bushings",
+      "title": "Rear Subframe and Differential Mount Bushings",
+      "description": "Worn subframe and diff bushings make an E30 clunk on and off the throttle and feel loose in fast corners. New bushings tighten the whole rear end, and this is the time to do the trailing arm bushings too.",
+      "difficulty": "Advanced",
+      "time": "8-12 hours",
+      "cost": "$150-350",
+      "parts": [
+        { "name": "Rear subframe mount bushings (pair)", "aftermarket": "Lemforder, Meyle, Powerflex", "cost": "$40-100" },
+        { "name": "Differential mount bushing", "aftermarket": "Lemforder, Powerflex", "cost": "$20-50" },
+        { "name": "Rear trailing arm bushings (pair)", "aftermarket": "Lemforder, Meyle HD", "cost": "$30-60" },
+        { "name": "Subframe and diff mount bolts (new)", "cost": "$20-40" }
+      ],
+      "tools": [
+        "Jack stands (four)",
+        "Transmission or floor jack to support the subframe",
+        "Subframe bushing press tool or rental kit",
+        "Driveshaft and exhaust hand tools",
+        "Torque wrench",
+        "Penetrating oil"
+      ],
+      "steps": [
+        "Soak every bolt you'll be removing with penetrating oil the day before.",
+        "Raise the car on four stands and remove the rear wheels.",
+        "Drop the rear exhaust section and unbolt the driveshaft from the differential. Support the driveshaft; don't let it hang.",
+        "Disconnect the brake lines or unbolt the calipers and hang them, disconnect the handbrake cables, and unplug the ABS sensors if fitted.",
+        "Support the subframe with a jack, then remove the diff mount bolt and the two subframe mount bolts.",
+        "Lower the subframe and differential assembly slowly, checking for anything still attached.",
+        "Press out the old subframe bushings with the tool. Note their orientation first.",
+        "Press in new bushings in the same orientation. A little rubber-safe lubricant helps.",
+        "Replace the diff mount bushing and, while it's out, the trailing arm bushings.",
+        "Raise the assembly back into place and install new bolts loosely.",
+        "Tighten the rubber bushing bolts only once the car is sitting on its wheels at ride height. Torque to the value in the Torque Specs table on this page, or your workshop manual.",
+        "Reconnect everything, bleed the brakes if you opened the lines, and get an alignment."
+      ],
+      "tips": [
+        "Poly bushings sharpen the car but add noise and vibration. OEM-style rubber is right for a street car.",
+        "Check the subframe mounting points in the body for cracks while it's down."
+      ],
+      "warnings": [
+        "The subframe assembly is heavy. Never work under it supported only by a jack.",
+        "Tightening rubber bushings with the suspension hanging preloads them and ruins them early."
+      ],
+      "references": [
+        { "name": "R3VLimited forums", "url": "https://www.r3vlimited.com/" },
+        { "name": "RealOEM parts diagrams", "url": "https://www.realoem.com/" }
       ]
     }
   ],
@@ -637,8 +560,11 @@
       {
         "name": "FCP Euro",
         "url": "https://www.fcpeuro.com/BMW-parts",
-        "notes": "Industry-leading lifetime replacement guarantee on all parts. Excellent E30 coverage with OE and OEM options.",
-        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "notes": "Lifetime replacement guarantee on everything they sell. Excellent E30 coverage with OE and OEM options.",
+        "specialties": [
+          "Lifetime Warranty",
+          "OE Quality"
+        ],
         "shipping": "Free over $49",
         "warranty": "Lifetime",
         "featured": true
@@ -647,20 +573,29 @@
         "name": "BMW Parts Direct",
         "url": "https://www.bmwpartsdirect.com/",
         "notes": "Genuine BMW OEM parts direct from authorized dealers at discounted prices.",
-        "specialties": ["Genuine BMW", "Dealer Direct"]
+        "specialties": [
+          "Genuine BMW",
+          "Dealer Direct"
+        ]
       },
       {
         "name": "Pelican Parts",
         "url": "https://www.pelicanparts.com/BMW/catalog/3-Series_Main.htm",
         "notes": "Huge E30 catalog with OEM, OE, and quality aftermarket. Excellent DIY tech articles.",
-        "specialties": ["Tech Articles", "OE Parts"],
+        "specialties": [
+          "Tech Articles",
+          "OE Parts"
+        ],
         "shipping": "Free over $99"
       },
       {
         "name": "BavAuto",
         "url": "https://www.bavauto.com/",
         "notes": "Quality OE and OEM BMW parts. Good prices on Genuine and equivalent parts.",
-        "specialties": ["OE Equivalent", "Good Prices"]
+        "specialties": [
+          "OE Equivalent",
+          "Good Prices"
+        ]
       }
     ],
     "performance": [
@@ -668,26 +603,42 @@
         "name": "Ireland Engineering",
         "url": "https://www.iemotorsport.com/",
         "notes": "The original E30 performance specialists since 1979. Suspension, engine, and chassis upgrades.",
-        "specialties": ["Suspension", "Engine", "E30 Experts"],
+        "specialties": [
+          "Suspension",
+          "Engine",
+          "E30 Experts"
+        ],
         "featured": true
       },
       {
         "name": "Turner Motorsport",
         "url": "https://www.turnermotorsport.com/BMW-E30-Parts",
         "notes": "Race-proven performance parts. Custom E30 M20/24V intakes and suspension components.",
-        "specialties": ["Race Parts", "Intakes", "Suspension"]
+        "specialties": [
+          "Race Parts",
+          "Intakes",
+          "Suspension"
+        ]
       },
       {
         "name": "Condor Speed Shop",
         "url": "https://www.condorspeedshop.com/",
         "notes": "E30 specialists with unique restoration and performance parts. Excellent steering racks.",
-        "specialties": ["E30 Only", "Steering", "Restoration"]
+        "specialties": [
+          "E30 Only",
+          "Steering",
+          "Restoration"
+        ]
       },
       {
         "name": "Garagistic",
         "url": "https://www.garagistic.com/",
         "notes": "E30-focused performance and restoration parts. Quality engine mounts and chassis components.",
-        "specialties": ["Engine Mounts", "Chassis", "Restoration"]
+        "specialties": [
+          "Engine Mounts",
+          "Chassis",
+          "Restoration"
+        ]
       }
     ],
     "general": [
@@ -695,20 +646,29 @@
         "name": "ECS Tuning",
         "url": "https://www.ecstuning.com/BMW-E30/",
         "notes": "Wide selection of maintenance and upgrade parts. Now owns Turner and Pelican.",
-        "specialties": ["Large Inventory", "Fast Shipping"],
+        "specialties": [
+          "Large Inventory",
+          "Fast Shipping"
+        ],
         "shipping": "Free over $49"
       },
       {
         "name": "BimmerWorld",
         "url": "https://www.bimmerworld.com/BMW-Parts/E30-1984-1991/",
         "notes": "BMW parts specialist with racing pedigree. Good selection of maintenance items.",
-        "specialties": ["Maintenance", "Quality Parts"]
+        "specialties": [
+          "Maintenance",
+          "Quality Parts"
+        ]
       },
       {
         "name": "AutohausAZ",
         "url": "https://www.autohausaz.com/",
         "notes": "Competitive prices on name brand parts. Good for bulk maintenance items.",
-        "specialties": ["Good Prices", "Name Brands"],
+        "specialties": [
+          "Good Prices",
+          "Name Brands"
+        ],
         "shipping": "Free over $50"
       }
     ],
@@ -717,20 +677,29 @@
         "name": "Guten Parts",
         "url": "https://www.gutenparts.com/",
         "notes": "E30 community favorite run by enthusiasts. Specializes in hard-to-find and rare parts.",
-        "specialties": ["Rare Parts", "Community Owned"],
+        "specialties": [
+          "Rare Parts",
+          "Community Owned"
+        ],
         "featured": true
       },
       {
         "name": "Blunt Tech",
         "url": "https://blunttech.com/",
         "notes": "Mom & pop E30 specialist known in the community. Call for hard-to-find items.",
-        "specialties": ["E30 Specialist", "Personal Service"]
+        "specialties": [
+          "E30 Specialist",
+          "Personal Service"
+        ]
       },
       {
         "name": "Bavarian Autosport",
         "url": "https://www.bavauto.com/",
         "notes": "Long-standing BMW specialist with excellent E30 knowledge and parts selection.",
-        "specialties": ["BMW Specialist", "Tech Support"]
+        "specialties": [
+          "BMW Specialist",
+          "Tech Support"
+        ]
       }
     ],
     "used": [
@@ -738,26 +707,38 @@
         "name": "R3VLimited Classifieds",
         "url": "https://www.r3vlimited.com/board/forumdisplay.php?f=3",
         "notes": "The largest E30 community marketplace. Best place for used and rare E30 parts.",
-        "specialties": ["E30 Community", "Rare Parts"],
+        "specialties": [
+          "E30 Community",
+          "Rare Parts"
+        ],
         "featured": true
       },
       {
         "name": "E30 Zone Classifieds",
         "url": "https://www.e30zone.net/forum/for-sale/",
         "notes": "UK-based E30 community marketplace. Good for European-spec parts.",
-        "specialties": ["UK/Euro Parts", "Community"]
+        "specialties": [
+          "UK/Euro Parts",
+          "Community"
+        ]
       },
       {
         "name": "eBay Motors",
         "url": "https://www.ebay.com/b/BMW-E30/6030/bn_79664762",
         "notes": "Large selection of used, NOS, and reproduction E30 parts.",
-        "specialties": ["NOS Parts", "Wide Selection"]
+        "specialties": [
+          "NOS Parts",
+          "Wide Selection"
+        ]
       },
       {
         "name": "Car-Part.com",
         "url": "https://www.car-part.com/",
         "notes": "Search salvage yard inventory nationwide. Great for body panels and interior parts.",
-        "specialties": ["Salvage Yards", "Body Parts"]
+        "specialties": [
+          "Salvage Yards",
+          "Body Parts"
+        ]
       }
     ],
     "tools": [
@@ -766,32 +747,15 @@
         "url": "https://www.realoem.com/bmw/enUS/select?product=P&archive=0&series=E30",
         "notes": "Free BMW parts diagrams and part number lookup"
       },
-      {
-        "name": "BMW Parts Price Comparison",
-        "url": "https://www.bmwpnpc.com/",
-        "notes": "Compare prices across multiple BMW parts vendors"
-      },
-      {
-        "name": "E30 Zone Wiki",
-        "url": "https://www.e30zone.net/e30wiki/",
-        "notes": "Comprehensive E30 technical wiki with part numbers and specs"
-      }
+      { "name": "BMW Parts Price Comparison", "url": "https://www.bmwpnpc.com/", "notes": "Compare prices across multiple BMW parts vendors" },
+      { "name": "E30 Zone Wiki", "url": "https://www.e30zone.net/e30wiki/", "notes": "Detailed E30 technical wiki with part numbers and specs" }
     ]
   },
   "torqueSpecs": {
     "sources": [
-      {
-        "name": "Garagistic E30 Torque Guide",
-        "url": "https://www.garagistic.com/pages/bmw-e30-bolt-torque-values"
-      },
-      {
-        "name": "E30 Zone Wiki",
-        "url": "https://www.e30zone.net/e30wiki/index.php/Torque_Settings"
-      },
-      {
-        "name": "RTS Auto E30 Specs",
-        "url": "https://www.rtsauto.com/e30-torque-specs-and-technical-specifications/"
-      }
+      { "name": "Garagistic E30 Torque Guide", "url": "https://www.garagistic.com/pages/bmw-e30-bolt-torque-values" },
+      { "name": "E30 Zone Wiki", "url": "https://www.e30zone.net/e30wiki/index.php/Torque_Settings" },
+      { "name": "RTS Auto E30 Specs", "url": "https://www.rtsauto.com/e30-torque-specs-and-technical-specifications/" }
     ],
     "engine": [
       {
@@ -799,147 +763,43 @@
         "spec": "44 ft-lbs (60 Nm) + 90°",
         "notes": "Torque-to-yield, replace each use. Wait 15 min between stages."
       },
-      {
-        "component": "Cylinder Head Bolts (M20 Torx)",
-        "spec": "22 ft-lbs (30 Nm) + 90° + 90°",
-        "notes": "Torque-to-yield, replace each use"
-      },
-      {
-        "component": "Main Bearing Caps",
-        "spec": "44 ft-lbs (60 Nm)",
-        "notes": "All engines except M40"
-      },
-      {
-        "component": "Connecting Rod Bolts (M20)",
-        "spec": "15 ft-lbs (20 Nm) + 70°",
-        "notes": "Angle-tighten method"
-      },
-      {
-        "component": "Flywheel Bolts (Manual)",
-        "spec": "77 ft-lbs (105 Nm)",
-        "notes": "Use new bolts, apply Loctite"
-      },
-      {
-        "component": "Flywheel Bolts (Auto)",
-        "spec": "88 ft-lbs (120 Nm)",
-        "notes": "Use new bolts"
-      },
-      {
-        "component": "Spark Plugs",
-        "spec": "22-24 ft-lbs (30-33 Nm)",
-        "notes": "Non-M10 engines"
-      },
-      {
-        "component": "Valve Cover Nuts",
-        "spec": "7 ft-lbs (9-11 Nm)",
-        "notes": "Do not overtighten"
-      },
-      {
-        "component": "Oil Drain Plug (M12)",
-        "spec": "18 ft-lbs (25 Nm)",
-        "notes": "Replace crush washer"
-      },
-      {
-        "component": "Oil Pump Bolts",
-        "spec": "16 ft-lbs (22 Nm)",
-        "notes": "Except M40 engine"
-      },
-      {
-        "component": "Exhaust Manifold Nuts",
-        "spec": "16-18 ft-lbs (22-25 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Intake Manifold Bolts",
-        "spec": "22-24 ft-lbs (30-33 Nm)",
-        "notes": "Per Bentley manual"
-      }
+      { "component": "Cylinder Head Bolts (M20 Torx)", "spec": "22 ft-lbs (30 Nm) + 90° + 90°", "notes": "Torque-to-yield, replace each use" },
+      { "component": "Main Bearing Caps", "spec": "44 ft-lbs (60 Nm)", "notes": "All engines except M40" },
+      { "component": "Connecting Rod Bolts (M20)", "spec": "15 ft-lbs (20 Nm) + 70°", "notes": "Angle-tighten method" },
+      { "component": "Flywheel Bolts (Manual)", "spec": "77 ft-lbs (105 Nm)", "notes": "Use new bolts, apply Loctite" },
+      { "component": "Flywheel Bolts (Auto)", "spec": "88 ft-lbs (120 Nm)", "notes": "Use new bolts" },
+      { "component": "Spark Plugs", "spec": "22-24 ft-lbs (30-33 Nm)", "notes": "Non-M10 engines" },
+      { "component": "Valve Cover Nuts", "spec": "7 ft-lbs (9-11 Nm)", "notes": "Do not overtighten" },
+      { "component": "Oil Drain Plug (M12)", "spec": "18 ft-lbs (25 Nm)", "notes": "Replace crush washer" },
+      { "component": "Oil Pump Bolts", "spec": "16 ft-lbs (22 Nm)", "notes": "Except M40 engine" },
+      { "component": "Exhaust Manifold Nuts", "spec": "16-18 ft-lbs (22-25 Nm)", "notes": "" },
+      { "component": "Intake Manifold Bolts", "spec": "22-24 ft-lbs (30-33 Nm)", "notes": "Per Bentley manual" }
     ],
     "suspension": [
-      {
-        "component": "Front Strut Top Nut",
-        "spec": "48 ft-lbs (65 Nm)",
-        "notes": "External hex type"
-      },
-      {
-        "component": "Front Control Arm Outer (Ball Joint)",
-        "spec": "47 ft-lbs (64 Nm)",
-        "notes": "Use new self-locking nut"
-      },
-      {
-        "component": "Front Control Arm Inner (to Subframe)",
-        "spec": "61 ft-lbs (83 Nm)",
-        "notes": "Use new self-locking nut"
-      },
-      {
-        "component": "Control Arm Bracket to Body",
-        "spec": "30 ft-lbs (41 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Sway Bar End Links",
-        "spec": "30 ft-lbs (41 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Wheel Lug Bolts",
-        "spec": "74-80 ft-lbs (100 Nm)",
-        "notes": "Tighten in star pattern"
-      },
-      {
-        "component": "Front Hub Nut",
-        "spec": "214 ft-lbs (290 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Hub Nut",
-        "spec": "184 ft-lbs (249 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Steering Wheel Nut",
-        "spec": "58 ft-lbs (79 Nm)",
-        "notes": ""
-      }
+      { "component": "Front Strut Top Nut", "spec": "48 ft-lbs (65 Nm)", "notes": "External hex type" },
+      { "component": "Front Control Arm Outer (Ball Joint)", "spec": "47 ft-lbs (64 Nm)", "notes": "Use new self-locking nut" },
+      { "component": "Front Control Arm Inner (to Subframe)", "spec": "61 ft-lbs (83 Nm)", "notes": "Use new self-locking nut" },
+      { "component": "Control Arm Bracket to Body", "spec": "30 ft-lbs (41 Nm)", "notes": "" },
+      { "component": "Sway Bar End Links", "spec": "30 ft-lbs (41 Nm)", "notes": "" },
+      { "component": "Wheel Lug Bolts", "spec": "74-80 ft-lbs (100 Nm)", "notes": "Tighten in star pattern" },
+      { "component": "Front Hub Nut", "spec": "214 ft-lbs (290 Nm)", "notes": "" },
+      { "component": "Rear Hub Nut", "spec": "184 ft-lbs (249 Nm)", "notes": "" },
+      { "component": "Steering Wheel Nut", "spec": "58 ft-lbs (79 Nm)", "notes": "" }
     ],
     "brakes": [
-      {
-        "component": "Front Caliper Bracket",
-        "spec": "91 ft-lbs (123 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Front Caliper Guide Bolts",
-        "spec": "22-26 ft-lbs (30-35 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Caliper Bracket",
-        "spec": "48 ft-lbs (65 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Caliper Guide Bolts",
-        "spec": "22-26 ft-lbs (30-35 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Brake Hose Banjo Bolt",
-        "spec": "10 ft-lbs (14 Nm)",
-        "notes": "Use new copper washers"
-      },
-      {
-        "component": "Bleed Valve",
-        "spec": "3-4 ft-lbs (4-5 Nm)",
-        "notes": "Do not overtighten"
-      }
+      { "component": "Front Caliper Bracket", "spec": "91 ft-lbs (123 Nm)", "notes": "" },
+      { "component": "Front Caliper Guide Bolts", "spec": "22-26 ft-lbs (30-35 Nm)", "notes": "" },
+      { "component": "Rear Caliper Bracket", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
+      { "component": "Rear Caliper Guide Bolts", "spec": "22-26 ft-lbs (30-35 Nm)", "notes": "" },
+      { "component": "Brake Hose Banjo Bolt", "spec": "10 ft-lbs (14 Nm)", "notes": "Use new copper washers" },
+      { "component": "Bleed Valve", "spec": "3-4 ft-lbs (4-5 Nm)", "notes": "Do not overtighten" }
     ]
   },
   "diyGuides": [
     {
       "id": "oil-change",
       "title": "Oil Change",
-      "description": "Complete guide to changing oil and filter on M20 and M42 engines. Regular oil changes are the single most important maintenance item for engine longevity.",
+      "description": "Oil and filter on the M20 and M42. If you do one job yourself, make it this one.",
       "difficulty": "Easy",
       "time": "30-45 min",
       "interval": "Every 3,000-5,000 miles or 6 months",
@@ -966,14 +826,14 @@
       ],
       "tips": [
         "Use 15W-40 or 20W-50 for high-mileage engines, 10W-40 for normal use",
-        "Always use a quality filter - Mann, Mahle, or OEM BMW",
+        "Always use a quality filter—Mann, Mahle, or OEM BMW",
         "Check for oil leaks from the valve cover gasket while you're under the car"
       ]
     },
     {
       "id": "brake-pads",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement with rotor inspection. Essential safety maintenance that should not be delayed when pads are worn.",
+      "description": "Front and rear pads with a rotor check. Worn pads get expensive quickly once they start eating rotors, so don't put this off.",
       "difficulty": "Easy",
       "time": "1-2 hours",
       "interval": "Every 25,000-50,000 miles or when pad thickness reaches 3mm",
@@ -991,7 +851,7 @@
         "Loosen lug bolts while the car is on the ground. Lift the car and secure on jack stands.",
         "Remove the wheel to access the brake caliper.",
         "Remove the two 7mm hex bolts holding the caliper carrier to the caliper bracket.",
-        "Slide the caliper off the rotor. Do not let it hang by the brake line - support it with a wire or bungee.",
+        "Slide the caliper off the rotor. Do not let it hang by the brake line—support it with a wire or bungee.",
         "Remove the old brake pads from the caliper carrier. Note the orientation of any wear sensors.",
         "Inspect the rotor surface for scoring, hot spots, or excessive wear. Minimum thickness is stamped on the rotor.",
         "Use a C-clamp to compress the caliper piston back into the caliper body. Open the brake fluid reservoir cap first to prevent pressure buildup.",
@@ -1003,14 +863,14 @@
       ],
       "tips": [
         "Bed in new pads: 10 moderate stops from 30 mph, then 10 harder stops from 40 mph",
-        "Replace pads in axle pairs - both fronts or both rears together",
-        "Check brake fluid level after compressing pistons - it will rise in the reservoir"
+        "Replace pads in axle pairs—both fronts or both rears together",
+        "Check brake fluid level after compressing pistons—it will rise in the reservoir"
       ]
     },
     {
       "id": "timing-belt-diy",
       "title": "Timing Belt Replacement",
-      "description": "Step-by-step timing belt, tensioner, and water pump replacement. Critical service for M20 and M42 engines - failure causes catastrophic valve damage.",
+      "description": "Belt, tensioner, and water pump on the M20 six. This is the job that keeps the valves away from the pistons, so don't let it slide past the interval.",
       "difficulty": "Intermediate",
       "time": "4-6 hours",
       "interval": "Every 50,000 miles or 4 years (whichever comes first)",
@@ -1027,7 +887,7 @@
       ],
       "steps": [
         "Drain coolant from the radiator using the petcock at the bottom. Collect in a clean pan if reusing.",
-        "Remove the fan shroud (4 clips) and fan clutch (32mm, turns clockwise to loosen - reverse thread).",
+        "Remove the fan shroud (4 clips) and fan clutch (32mm, turns clockwise to loosen—reverse thread).",
         "Remove the accessory belts by loosening the tensioner pulleys.",
         "Remove the upper and lower timing belt covers (10mm bolts).",
         "Rotate the engine clockwise using a 22mm socket on the crank bolt until the timing marks align. The cam gear dot should point straight up, and the crank gear dot should align with the mark on the oil pump housing.",
@@ -1041,16 +901,16 @@
         "Reinstall timing covers, fan, belts, and refill coolant. Run engine and check for leaks."
       ],
       "tips": [
-        "Never reuse an old timing belt - always replace when removed",
+        "Never reuse an old timing belt—always replace when removed",
         "Replace the front crank seal and cam seal while the covers are off",
-        "Use only OEM or high-quality belts (Continental, Gates) - not cheap alternatives",
-        "Mark the old belt's rotation direction - running a used belt backward can cause failure"
+        "Use only OEM or high-quality belts (Continental, Gates)—not cheap alternatives",
+        "Mark the old belt's rotation direction—running a used belt backward can cause failure"
       ]
     },
     {
       "id": "cooling-system-service",
       "title": "Cooling System Service",
-      "description": "Complete coolant flush and thermostat replacement. Prevents overheating failures that can destroy the head gasket or warp the cylinder head.",
+      "description": "Coolant flush and thermostat. An M20 that overheats warps its head, so fresh coolant is cheap protection.",
       "difficulty": "Easy",
       "time": "1-2 hours",
       "interval": "Every 2 years or 30,000 miles",
@@ -1069,16 +929,16 @@
         "Remove the lower radiator hose for more complete drainage. Approximately 2 gallons will drain.",
         "For a thorough flush: close the petcock, fill with distilled water, run the engine to operating temp with heat on high, drain again. Repeat until water runs clear.",
         "Remove the thermostat housing (upper radiator hose neck). The M20 housing uses 10mm bolts.",
-        "Remove the old thermostat. Note the orientation - the spring goes toward the engine.",
+        "Remove the old thermostat. Note the orientation—the spring goes toward the engine.",
         "Clean the mating surfaces of all old gasket material. Do not let debris fall into the engine.",
         "Install the new thermostat with a new gasket. Use an 88°C (192°F) thermostat for normal driving, 80°C (176°F) for warm climates or track use.",
-        "Reinstall the housing and hoses. Torque bolts to 7 ft-lbs. Do not overtighten - the housing is aluminum.",
+        "Reinstall the housing and hoses. Torque bolts to 7 ft-lbs. Do not overtighten—the housing is aluminum.",
         "Fill the system with a 50/50 mix of BMW-approved coolant and distilled water. Fill slowly to minimize air pockets.",
         "Leave the bleed screw open until a steady stream of coolant (no bubbles) emerges, then close it.",
         "Start the engine with the heat on high. Watch the temperature gauge and top off coolant as air bleeds out. The level will drop as air pockets clear."
       ],
       "tips": [
-        "Use BMW blue coolant or a phosphate-free equivalent - never use green universal coolant",
+        "Use BMW blue coolant or a phosphate-free equivalent—never use green universal coolant",
         "Replace the expansion tank if it shows any cracks or discoloration",
         "Squeeze the upper hose while filling to help push air out of the system"
       ]
@@ -1089,7 +949,7 @@
       { "id": "e30-afm", "name": "Rebuild/replace AFM (Air Flow Meter)", "description": "Common failure point on M20 engines" },
       { "id": "e30-iac", "name": "Replace idle control valve", "description": "Causes rough idle and stalling" },
       { "id": "e30-cps", "name": "Replace crankshaft position sensor", "description": "Common cause of no-start conditions" },
-      { "id": "e30-oil-cooler", "name": "Inspect oil cooler lines", "description": "M20 engines - check for leaks at banjo fittings" }
+      { "id": "e30-oil-cooler", "name": "Inspect oil cooler lines", "description": "M20 engines—check for leaks at banjo fittings" }
     ],
     "cooling": [
       { "id": "e30-aux-fan", "name": "Test auxiliary cooling fan", "description": "Check fan switch and relay" },
@@ -1097,7 +957,7 @@
     ],
     "suspension": [
       { "id": "e30-strut-mounts", "name": "Replace front strut mounts", "description": "Common wear item, causes clunking" },
-      { "id": "e30-rear-trailing", "name": "Replace rear trailing arm bushings", "description": "Critical for handling and tire wear" },
+      { "id": "e30-rear-trailing", "name": "Replace rear trailing arm bushings", "description": "Big effect on handling and tire wear" },
       { "id": "e30-subframe", "name": "Inspect front subframe mounts", "description": "Check for cracks in mounting points" }
     ],
     "body": [
@@ -1113,22 +973,22 @@
     ],
     "electrical": [
       { "id": "e30-check-panel", "name": "Repair check control panel", "description": "Replace bulbs and test sensors" },
-      { "id": "e30-obc", "name": "Repair onboard computer", "description": "If equipped - common display failures" }
+      { "id": "e30-obc", "name": "Repair onboard computer", "description": "If equipped—common display failures" }
     ]
   },
   "buyersGuide": {
-    "overview": "The BMW E30 3 Series (1982-1994) represents the golden era of BMW engineering - a time when the company built driver-focused cars with exceptional balance, communicative steering, and an analog driving experience that modern BMWs struggle to replicate. The E30 was the car that established BMW's reputation in North America and remains one of the most sought-after classic BMWs. Whether you want a practical classic daily driver, a weekend canyon carver, or a track day weapon, the E30 delivers. However, these cars are now 30-40+ years old, and rust, deferred maintenance, and questionable modifications are common. A thorough pre-purchase inspection is essential.",
+    "overview": "The E30 is the one everybody wishes they'd kept. It's light, the steering talks to you, and the M20 six sounds better than it has any right to. That popularity cuts both ways: prices have climbed, and plenty of cars have been modified, drifted, or left to rot. Rust and a forgotten timing belt are the two things that turn a good deal into a bad one. Find a straight, dry shell with records and you can sort the rest over a few weekends.",
     "quickFacts": {
       "productionYears": "1982-1994",
       "totalProduced": "~2.34 million worldwide",
-      "priceRange": "$8,000 - $100,000+",
+      "priceRange": "$8,000–$100,000+",
       "bestYears": "1988-1991 (post-facelift, best build quality)"
     },
     "variants": [
       {
         "name": "325i / 325is",
         "years": "1987-1991",
-        "description": "The sweet spot of the E30 range. The 2.5L M20B25 engine produces 168 hp and offers the best balance of performance, reliability, and parts availability. The 'is' denotes the sport package with limited-slip differential, sport seats, and firmer suspension.",
+        "description": "The one most people want. The 2.5L M20 makes 168 hp and has the best mix of performance, durability, and parts supply. The 'is' adds a limited-slip differential, sport seats, and firmer suspension.",
         "desirability": "High"
       },
       {
@@ -1140,13 +1000,13 @@
       {
         "name": "318i / 318is",
         "years": "1984-1991",
-        "description": "Entry-level E30 with the M10 (early) or M42 (1991) four-cylinder. The 1991 318is with the M42 is particularly desirable - rev-happy engine in the lightest E30 chassis. Earlier M10 cars are basic but charming.",
+        "description": "The entry-level E30, with the M10 four early on or the M42 in 1991. The '91 318is is the one to find: a rev-happy twin-cam in the lightest E30 there is, and a timing chain instead of a belt. Early M10 cars are slow but honest.",
         "desirability": "Medium"
       },
       {
         "name": "M3",
         "years": "1988-1991",
-        "description": "The legendary homologation special with the S14 2.3L four-cylinder producing 192 hp. Wider fenders, aggressive aerodynamics, and motorsport DNA. Values have skyrocketed - expect $50,000-$150,000+ for clean examples.",
+        "description": "The homologation special: a 2.3L S14 four with 192 hp, box flares, and a body built to win touring car races. Values have gone through the roof, so expect $50,000–$150,000+ for a clean one.",
         "desirability": "High"
       },
       {
@@ -1164,7 +1024,7 @@
     ],
     "inspectionPoints": [
       {
-        "category": "Rust (Critical)",
+        "category": "Rust (check first)",
         "items": [
           {
             "check": "Front Fenders Behind Wheels",
@@ -1173,7 +1033,7 @@
           },
           {
             "check": "Rocker Panels / Sills",
-            "detail": "Jack up the car and inspect the pinch welds and rocker panels. Poke with a screwdriver - solid metal won't flex. Check under side skirts if equipped.",
+            "detail": "Jack up the car and inspect the pinch welds and rocker panels. Poke with a screwdriver—solid metal won't flex. Check under side skirts if equipped.",
             "costIfBad": "$1,000-3,000+ for proper repair"
           },
           {
@@ -1203,7 +1063,7 @@
         "items": [
           {
             "check": "Timing Belt Service History",
-            "detail": "M20 and M42 engines use timing belts that must be replaced every 50,000 miles. Ask for records - if unknown, budget for immediate replacement.",
+            "detail": "Six-cylinder cars (M20) run a timing belt that needs replacing every 50,000 miles or four years. Ask for the receipt. If there isn't one, budget for a belt job before you drive it hard. Four-cylinder M10 and M42 cars use chains.",
             "costIfBad": "$500-900 for service"
           },
           {
@@ -1218,12 +1078,12 @@
           },
           {
             "check": "Clutch Condition (Manual)",
-            "detail": "Test the clutch engagement point - should be smooth and grab in the middle of pedal travel. Slipping under load indicates worn clutch.",
+            "detail": "Test the clutch engagement point—should be smooth and grab in the middle of pedal travel. Slipping under load indicates worn clutch.",
             "costIfBad": "$800-1,500"
           },
           {
             "check": "Transmission Synchros",
-            "detail": "Test all gears, especially 2nd gear. Grinding or difficulty engaging indicates worn synchros. Getrag 260 transmissions are robust but not indestructible.",
+            "detail": "Test every gear, especially second. Grinding or a notchy engagement means worn synchros. The Getrag 260 is tough, not indestructible.",
             "costIfBad": "$1,500-3,000 for rebuild"
           }
         ]
@@ -1258,7 +1118,7 @@
         "items": [
           {
             "check": "Ground Points",
-            "detail": "E30 electrical gremlins are often traced to corroded grounds. Check that all accessories work - windows, sunroof, gauges, lights.",
+            "detail": "E30 electrical gremlins are often traced to corroded grounds. Check that all accessories work—windows, sunroof, gauges, lights.",
             "costIfBad": "$100-300 for diagnosis and repair"
           },
           {
@@ -1295,31 +1155,32 @@
       }
     ],
     "pricingGuide": {
+      "asOf": "January 2026",
       "project": {
-        "price": "$3,000 - $8,000",
+        "price": "$3,000–$8,000",
         "description": "Non-running or heavily rusted cars needing major work. Only for experienced builders with welding skills. Budget 2-3x purchase price for restoration."
       },
       "driver": {
-        "price": "$8,000 - $18,000",
-        "description": "Running and driving with some issues - cosmetic flaws, minor rust, deferred maintenance. Can be enjoyed while improving over time."
+        "price": "$8,000–$18,000",
+        "description": "Running and driving with some issues—cosmetic flaws, minor rust, deferred maintenance. Can be enjoyed while improving over time."
       },
       "excellent": {
-        "price": "$18,000 - $35,000",
+        "price": "$18,000–$35,000",
         "description": "Well-maintained examples with documented history, minimal rust, good cosmetics. May have tasteful modifications or be mostly stock."
       },
       "concours": {
-        "price": "$35,000 - $100,000+",
+        "price": "$35,000–$100,000+",
         "description": "Museum-quality cars, often M3s or rare variants. Fully documented, low miles, completely original or professionally restored."
       }
     },
     "redFlags": [
-      "Structural rust in subframe mounting points, shock towers, or frame rails - walk away or budget for professional restoration",
-      "Unknown timing belt service history on M20/M42 engines - assume it needs immediate replacement",
-      "Signs of previous flood damage - musty interior smell, water lines in trunk, corroded electrical connectors",
+      "Structural rust in subframe mounting points, shock towers, or frame rails—walk away or budget for professional restoration",
+      "No record of the last timing belt on an M20 six. Assume it's due and knock the cost off your offer.",
+      "Signs of previous flood damage—musty interior smell, water lines in trunk, corroded electrical connectors",
       "Salvage or rebuilt title without clear explanation of the damage",
-      "Excessive modifications with poor workmanship - cut wiring, mismatched parts, amateur body work",
+      "Excessive modifications with poor workmanship—cut wiring, mismatched parts, amateur body work",
       "Seller unwilling to allow pre-purchase inspection by an independent mechanic",
-      "Oil in coolant or coolant in oil - indicates head gasket failure or worse",
+      "Oil in coolant or coolant in oil—indicates head gasket failure or worse",
       "M3 cars without proper documentation or with suspiciously low prices"
     ],
     "whatToLookFor": [
@@ -1341,76 +1202,40 @@
       "fuel": "22-28 MPG depending on driving style"
     },
     "expertTips": [
-      "Join R3VLimited.com before buying - the community can help verify cars and identify red flags",
-      "Budget for a full suspension refresh on any E30 - bushings wear out and transform the driving experience when replaced",
-      "The 'is' package (325is, 318is) adds significant value - limited-slip diff and sport suspension are expensive to add later",
-      "Convertibles rust more due to water intrusion - inspect very carefully around the top mechanism and rear quarters",
-      "Early 1984-1986 cars have different bumpers and trim that are harder to find - later facelift parts (1988+) are more available",
-      "The M20 engine is extremely robust when maintained - 300,000+ mile examples exist with proper care",
-      "Consider a pre-purchase inspection by an E30 specialist - generic mechanics may miss model-specific issues",
-      "Beware of 'M3 clone' cars - legitimate conversions are rare and expensive, most are poorly done",
-      "Factor in the cost of period-correct replacement parts - many items are discontinued and expensive",
-      "An E30 in solid mechanical condition with rust is often a better buy than a rust-free car with a tired drivetrain - metal work is harder than mechanical repairs"
+      "Join R3VLimited.com before buying—the community can help verify cars and identify red flags",
+      "Budget for a full suspension refresh on any E30—bushings wear out and transform the driving experience when replaced",
+      "The 'is' package (325is, 318is) adds significant value—limited-slip diff and sport suspension are expensive to add later",
+      "Convertibles rust more due to water intrusion—inspect very carefully around the top mechanism and rear quarters",
+      "Early 1984-1986 cars have different bumpers and trim that are harder to find—later facelift parts (1988+) are more available",
+      "A maintained M20 is very durable. There are 300,000-mile examples out there.",
+      "Consider a pre-purchase inspection by an E30 specialist—generic mechanics may miss model-specific issues",
+      "Beware of 'M3 clone' cars—legitimate conversions are rare and expensive, most are poorly done",
+      "Factor in the cost of period-correct replacement parts—many items are discontinued and expensive",
+      "An E30 in solid mechanical condition with rust is often a better buy than a rust-free car with a tired drivetrain—metal work is harder than mechanical repairs"
     ]
   },
   "communityResources": {
     "youtube": [
-      {
-        "name": "Restore It",
-        "url": "https://www.youtube.com/@RestoreIt",
-        "description": "E30 325i restoration with 60M+ views and detailed weekly updates"
-      },
+      { "name": "Restore It", "url": "https://www.youtube.com/@RestoreIt", "description": "E30 325i restoration with 60M+ views and detailed weekly updates" },
       {
         "name": "M539 Restorations",
         "url": "https://www.youtube.com/@M539Restorations",
         "description": "BMW repairs and restorations from experienced enthusiast"
       },
-      {
-        "name": "BMW Group Classic",
-        "url": "https://www.youtube.com/@BMWGroupClassic",
-        "description": "Official heritage channel featuring classic BMWs"
-      }
+      { "name": "BMW Group Classic", "url": "https://www.youtube.com/@BMWGroupClassic", "description": "Official heritage channel featuring classic BMWs" }
     ],
     "forums": [
-      {
-        "name": "R3VLimited",
-        "url": "https://www.r3vlimited.com/board/",
-        "description": "The most active E30 forum with extensive technical archives"
-      },
-      {
-        "name": "E30 Zone",
-        "url": "https://www.e30zone.net/",
-        "description": "UK's largest E30 community with comprehensive wiki"
-      },
-      {
-        "name": "BimmerBoard E30 Forum",
-        "url": "http://www.bimmerboard.com/forums/e30/",
-        "description": "Technical how-to articles and expert advice"
-      },
-      {
-        "name": "SpecE30",
-        "url": "http://spece30.com/",
-        "description": "Racing-focused community for E30 track enthusiasts"
-      }
+      { "name": "R3VLimited", "url": "https://www.r3vlimited.com/board/", "description": "The most active E30 forum with extensive technical archives" },
+      { "name": "E30 Zone", "url": "https://www.e30zone.net/", "description": "UK's largest E30 community with a detailed wiki" },
+      { "name": "BimmerBoard E30 Forum", "url": "http://www.bimmerboard.com/forums/e30/", "description": "Technical how-to articles and expert advice" },
+      { "name": "SpecE30", "url": "http://spece30.com/", "description": "Racing-focused community for E30 track enthusiasts" }
     ],
     "facebook": [
-      {
-        "name": "BMW E30 Owners",
-        "url": "https://www.facebook.com/groups/bmwe30owners",
-        "description": "Large international E30 community"
-      },
-      {
-        "name": "E30 Zone Facebook",
-        "url": "https://www.facebook.com/groups/e30zone",
-        "description": "Official E30 Zone forum group"
-      }
+      { "name": "BMW E30 Owners", "url": "https://www.facebook.com/groups/bmwe30owners", "description": "Large international E30 community" },
+      { "name": "E30 Zone Facebook", "url": "https://www.facebook.com/groups/e30zone", "description": "Official E30 Zone forum group" }
     ],
     "websites": [
-      {
-        "name": "E30 Zone Wiki",
-        "url": "https://www.e30zone.net/e30wiki/",
-        "description": "Comprehensive E30 technical wiki and guides"
-      }
+      { "name": "E30 Zone Wiki", "url": "https://www.e30zone.net/e30wiki/", "description": "Detailed E30 technical wiki and guides" }
     ]
   }
 }

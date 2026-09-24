@@ -3,6 +3,7 @@
 // ================================
 
 let searchIndex = null;
+let searchIndexReady = null;
 let currentFilter = 'all';
 let currentTypeFilter = 'all';
 
@@ -329,7 +330,7 @@ function initSearch() {
     if (!searchInput) return; // Not on search page
 
     // Load index
-    loadSearchIndex();
+    searchIndexReady = loadSearchIndex();
 
     // Search on input (debounced)
     let debounceTimer;
@@ -394,16 +395,23 @@ function initSearch() {
     // Focus search input on page load
     searchInput.focus();
 
-    // Check for URL parameters (for linking to search)
+    // URL parameters: ?q= runs a search, ?brand=BMW|Porsche presets the filter
     const urlParams = new URLSearchParams(window.location.search);
+    const brandParam = urlParams.get('brand');
+    const brandBtn = brandParam && [...filterBtns].find(b => b.dataset.filter.toLowerCase() === brandParam.toLowerCase());
+    if (brandBtn) {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        brandBtn.classList.add('active');
+        currentFilter = brandBtn.dataset.filter;
+    }
+
     const queryParam = urlParams.get('q');
     if (queryParam) {
         searchInput.value = queryParam;
-        // Wait for index to load, then search
-        setTimeout(() => {
+        searchIndexReady.then(() => {
             const results = performSearch(queryParam);
             renderResults(results, queryParam);
-        }, 500);
+        });
     }
 }
 

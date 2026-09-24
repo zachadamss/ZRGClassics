@@ -1,38 +1,32 @@
 ---
 layout: layouts/base.njk
-title: Restoration Checklist
-description: "Step-by-step restoration checklists for vintage BMW and Porsche. Track progress, costs, and notes organized by system. Vehicle-specific items for E30, 944, and more."
-keywords: "restoration checklist, car restoration guide, BMW restoration, Porsche restoration, project car checklist, restoration tracker"
+title: Restoration Tracker
+permalink: /account/garage/restoration/
+description: "System-by-system restoration checklist for a car in your ZRG Classics garage, with budget, actual spend, and notes on every item."
+robots: noindex
 extraScripts:
+  - js/platforms.js
   - js/garage.js
-  - tools/restoration-checklist.js
+  - js/restoration-tracker.js
 ---
 
-<div class="restoration-checklist">
+<div class="restoration-checklist garage-tool">
+    <nav class="garage-tool-crumbs" aria-label="Breadcrumb">
+        <a href="/account/garage/">My Garage</a>
+        <span aria-hidden="true">›</span>
+        <span id="crumb-vehicle-name">Restoration</span>
+    </nav>
     <div class="tracker-header">
-        <h1>Restoration Checklist</h1>
-        <p>Track your restoration progress with vehicle-specific checklists organized by system</p>
+        <h1>Restoration</h1>
+        <p>Every system, every item: what's done, what's next, and what it's costing you.</p>
     </div>
 
-        <!-- Garage View -->
-        <div class="tracker-section garage-section" id="garage-section">
-            <div class="section-header">
-                <h2>Select Vehicle</h2>
-                <a href="/account/garage/" class="btn btn-secondary">Manage Garage</a>
-            </div>
-            <div class="garage-grid" id="garage-grid">
-                <!-- Vehicle cards will be inserted here -->
-                <div class="empty-garage" id="empty-garage">
-                    <p>No vehicles in your garage yet.</p>
-                    <p>Add a vehicle to start tracking your restoration progress.</p>
-                </div>
-            </div>
-        </div>
+        <div class="garage-tool-loading" id="tool-loading">Loading your car…</div>
 
         <!-- Progress Summary (hidden until project started) -->
         <section class="tracker-section progress-summary" id="progress-summary" style="display: none;">
             <div class="section-header">
-                <button type="button" class="btn btn-secondary" id="back-to-garage">&larr; Back</button>
+                <a href="/account/garage/" class="btn btn-secondary" id="back-to-garage">&larr; My Garage</a>
                 <div class="vehicle-info">
                     <h2 id="current-vehicle-name">Progress Summary</h2>
                 </div>

@@ -1,7 +1,8 @@
 ---
 layout: layouts/base.njk
 title: My Garage
-description: Manage your garage vehicles, track restoration progress, and log maintenance history.
+description: "Your cars in one place: service schedules, maintenance history, and restoration progress."
+robots: noindex
 ---
 
 <main class="garage-page">
@@ -18,16 +19,16 @@ description: Manage your garage vehicles, track restoration progress, and log ma
     <!-- Vehicle Grid -->
     <div class="garage-section">
       <div class="section-header">
-        <h2>My Vehicles</h2>
+        <h2>Your Cars</h2>
         <div class="section-header-actions">
-          <span class="vehicle-count"><span id="vehicle-count">0</span>/10 vehicles</span>
+          <span class="vehicle-count"><span id="vehicle-count">0</span> of 10 spots used</span>
           <button type="button" class="btn btn-primary" id="add-vehicle-btn">+ Add Vehicle</button>
         </div>
       </div>
       <div class="vehicle-grid" id="vehicle-grid">
         <div class="empty-state" id="empty-vehicles">
-          <p>No vehicles in your garage yet.</p>
-          <p>Click "Add Vehicle" to get started tracking your cars.</p>
+          <p><strong>Nothing parked here yet.</strong></p>
+          <p>Add a car and you get a service schedule built for that platform, a restoration tracker, and one place for the paperwork.</p>
         </div>
       </div>
     </div>
@@ -137,7 +138,7 @@ description: Manage your garage vehicles, track restoration progress, and log ma
             </div>
           </div>
           <div class="restoration-cta">
-            <a href="#" class="btn btn-primary btn-lg" id="open-restoration-checklist">Open Full Checklist</a>
+            <a href="#" class="btn btn-primary btn-lg" id="open-restoration-checklist">Open Restoration Tracker</a>
             <p class="restoration-cta-note">Track detailed progress, costs, and notes for each restoration item</p>
           </div>
         </div>
@@ -170,7 +171,7 @@ description: Manage your garage vehicles, track restoration progress, and log ma
             </div>
           </div>
           <div class="maintenance-cta">
-            <a href="#" class="btn btn-primary btn-lg" id="open-maintenance-tracker">Open Full Tracker</a>
+            <a href="#" class="btn btn-primary btn-lg" id="open-maintenance-tracker">Open Maintenance Log</a>
             <p class="maintenance-cta-note">View schedules, log services, and track all maintenance</p>
           </div>
         </div>
@@ -206,27 +207,13 @@ description: Manage your garage vehicles, track restoration progress, and log ma
         <label for="vehicle-platform">Platform</label>
         <select id="vehicle-platform">
           <option value="">Select a platform...</option>
-          <optgroup label="BMW">
-            <option value="e28">E28 5-Series (1982-1988)</option>
-            <option value="e30">E30 3-Series (1982-1994)</option>
-            <option value="e34">E34 5-Series (1988-1996)</option>
-            <option value="e36">E36 3-Series (1990-2000)</option>
-            <option value="e39">E39 5-Series (1995-2004)</option>
-            <option value="e46">E46 3-Series (1998-2006)</option>
-            <option value="e90">E90 3-Series (2005-2013)</option>
+          {%- for brand in [["bmw", "BMW"], ["porsche", "Porsche"]] %}
+          <optgroup label="{{ brand[1] }}">
+            {%- for key in vehicleList[brand[0]] %}{% set v = vehicles[key] %}
+            <option value="{{ key }}">{{ v.fullName | replace(v.brand + " ", "") }} ({{ v.years }})</option>
+            {%- endfor %}
           </optgroup>
-          <optgroup label="Porsche">
-            <option value="924">924 (1976-1988)</option>
-            <option value="928">928 (1977-1995)</option>
-            <option value="944">944 (1982-1991)</option>
-            <option value="964">964 911 (1989-1994)</option>
-            <option value="986">986 Boxster (1996-2004)</option>
-            <option value="987">987 Boxster/Cayman (2005-2012)</option>
-            <option value="991">991 911 (2011-2019)</option>
-            <option value="993">993 911 (1994-1998)</option>
-            <option value="996">996 911 (1997-2005)</option>
-            <option value="997">997 911 (2004-2012)</option>
-          </optgroup>
+          {%- endfor %}
           <optgroup label="Other">
             <option value="custom">Custom Vehicle</option>
           </optgroup>
@@ -278,7 +265,7 @@ description: Manage your garage vehicles, track restoration progress, and log ma
       </div>
       <div class="form-group">
         <label for="vehicle-notes">Notes</label>
-        <textarea id="vehicle-notes" rows="3" placeholder="Any notes about this vehicle..."></textarea>
+        <textarea id="vehicle-notes" rows="3" placeholder="History, quirks, things to remember…"></textarea>
       </div>
       <input type="hidden" id="vehicle-edit-id">
     </div>
@@ -307,7 +294,7 @@ description: Manage your garage vehicles, track restoration progress, and log ma
       </div>
       <div class="form-group">
         <label for="profile-bio">Bio</label>
-        <textarea id="profile-bio" rows="3" maxlength="500" placeholder="Tell us about yourself..."></textarea>
+        <textarea id="profile-bio" rows="3" maxlength="500" placeholder="What you drive, what you're working on…"></textarea>
       </div>
     </div>
     <div class="modal-footer">
@@ -317,6 +304,7 @@ description: Manage your garage vehicles, track restoration progress, and log ma
   </div>
 </div>
 
+<script src="/js/platforms.js"></script>
 <script src="/js/garage.js"></script>
 <script src="/js/forum.js"></script>
 <script>
@@ -356,8 +344,27 @@ const RESTORATION_CATEGORIES = {
       currentProfile?.display_name || currentProfile?.username || 'Member';
 
     await loadVehicles();
-    await loadRecentThreads();
     bindEvents();
+    handleDeepLinks();
+    await loadRecentThreads();
+  }
+
+  // ?vehicle=<id> opens that car; ?add=<platform> opens the add form with the
+  // platform picked (vehicle pages link here with "Add to My Garage").
+  function handleDeepLinks() {
+    const params = new URLSearchParams(window.location.search);
+    const vehicleId = params.get('vehicle');
+    const addPlatform = params.get('add');
+
+    if (vehicleId) {
+      const match = vehicles.find(v => String(v.id) === String(vehicleId));
+      if (match) selectVehicle(match.id);
+    } else if (addPlatform && Garage.PLATFORMS[addPlatform]) {
+      openVehicleModal();
+      const select = document.getElementById('vehicle-platform');
+      select.value = addPlatform;
+      select.dispatchEvent(new Event('change'));
+    }
   }
 
   // Load vehicles
@@ -480,7 +487,7 @@ const RESTORATION_CATEGORIES = {
       // Update link to full checklist
       const checklistLink = document.getElementById('open-restoration-checklist');
       if (checklistLink) {
-        checklistLink.href = `/tools/restoration-checklist/?vehicle=${vehicleId}`;
+        checklistLink.href = `/account/garage/restoration/?vehicle=${vehicleId}`;
       }
     } catch (error) {
       console.error('Error loading restoration data:', error);
@@ -594,7 +601,7 @@ const RESTORATION_CATEGORIES = {
       // Update link to full tracker
       const trackerLink = document.getElementById('open-maintenance-tracker');
       if (trackerLink) {
-        trackerLink.href = `/tools/maintenance-tracker/?vehicle=${vehicleId}`;
+        trackerLink.href = `/account/garage/maintenance/?vehicle=${vehicleId}`;
       }
     } catch (error) {
       console.error('Error loading maintenance data:', error);

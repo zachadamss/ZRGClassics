@@ -2,27 +2,29 @@
 
 ## Current Status
 - 17 vehicle platforms (BMW: E28, E30, E34, E36, E39, E46, E90 | Porsche: 924, 928, 944, 964, 986, 987, 991, 993, 996, 997)
-- 136 guides (56 restoration + 80 DIY maintenance) with step-by-step procedures
-- 17 comprehensive buyer's guides with inspection checklists and pricing
-- 132+ documented issues with repair costs and difficulty ratings
+- 153 guides (85 restoration, including one model-specific "signature" guide per car, + 68 DIY maintenance)
+- 17 buyer's guides on their own pages (`/resources/<brand>/<car>/buying/`) with printable inspection checklists and dated pricing
+- 137 documented issues with repair costs and difficulty ratings
 - 465 torque specs indexed
-- Full-text search across all content
-- 3 tools: Build Cost Calculator, Maintenance Tracker, Restoration Checklist
+- Full-text search across all content, with brand filtering from the brand pages
+- My Garage: vehicles, maintenance tracker, and restoration tracker in one place; Build Cost Calculator as a public tool
 - User authentication with Supabase (login, register, password reset)
 - Community Forums with categories, threads, replies, search
-- My Garage - Personal vehicle management with DB-synced restoration & maintenance tracking
-- Community Resources for each vehicle (YouTube channels, forums, Facebook groups, websites)
-- Comprehensive Parts Suppliers with categorized listings (OEM, performance, general, specialty, used, tools)
-- Hero images for all 17 vehicles (optimized WebP + responsive sizes)
-- Mobile responsive with touch-friendly UI (44px tap targets, card layouts, 480px breakpoint)
-- Dark mode with theme-aware button styling
-- Print-friendly layouts
+- Community Resources and categorized parts suppliers for each vehicle
+- Responsive WebP/JPEG images via Eleventy Image (vehicle photos are placeholders)
+- SVG logo, favicon, and social card; Archivo + Inter type; AA-contrast color tokens
+- Dark mode (follows the system setting, no flash), mobile layouts, print styles
 - Production build with CSS/JS minification
+
+Full record of the September 2026 design and copy review: `docs/site-review-2026-09.md`.
 
 ---
 
 ## Action Required (Manual Steps)
 
+- [ ] **Send the About page details** — name or handle, the cars you've owned, and why ZRG exists. The page is built with a marked spot for it (`src/about.njk`).
+- [ ] **Replace the placeholder vehicle photos** — drop real photos into `src/images/vehicles/` with the same filenames (landscape, at least 1920px wide) and fill each car's `photoCredit`.
+- [ ] **Review the flagged content** listed under "Needs owner review" in `docs/site-review-2026-09.md`, especially the 17 new signature guides, before they go live.
 - [ ] **Run `supabase-migration-security.sql` in the Supabase SQL Editor** — the site-side XSS fixes are deployed with the code, but the database hardening (username/avatar rules, protected forum columns, locked-thread replies) only takes effect once this is run
 - [ ] **Validate the new profile constraints** — after the migration, check for existing profiles that break the new rules, fix them, then enforce the rules on all rows:
   ```sql

@@ -2,6 +2,8 @@
   "model": "E34",
   "brand": "BMW",
   "fullName": "BMW E34 5 Series",
+  "series": "5 Series",
+  "tagline": "Built to outlast the loan, and cheap now because nobody's looking.",
   "years": "1988-1996",
   "engines": [
     "M20 2.5L I6",
@@ -13,6 +15,11 @@
     "S38 3.6L I6 (M5)"
   ],
   "heroImage": "/images/vehicles/e34-hero.jpg",
+  "photoCredit": {
+    "text": "",
+    "url": "",
+    "license": ""
+  },
   "issues": [
     {
       "id": "timing-chain-guides",
@@ -27,14 +34,8 @@
         "Clear oil pan of any debris during service"
       ],
       "sources": [
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        },
-        {
-          "name": "M5Board",
-          "url": "https://www.m5board.com/"
-        }
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
+        { "name": "M5Board", "url": "https://www.m5board.com/" }
       ],
       "repairCosts": {
         "diy": "$400-800",
@@ -42,21 +43,9 @@
         "notes": "M60 V8 timing chain guide failure is serious. Service before failure."
       },
       "parts": [
-        {
-          "name": "Timing Chain Guide Set (M60)",
-          "partNumber": "11311703713",
-          "price": "$200-400"
-        },
-        {
-          "name": "Timing Chain",
-          "partNumber": "11311725458",
-          "price": "$100-200"
-        },
-        {
-          "name": "Tensioner",
-          "partNumber": "11311725640",
-          "price": "$80-150"
-        }
+        { "name": "Timing Chain Guide Set (M60)", "partNumber": "11311703713", "price": "$200-400" },
+        { "name": "Timing Chain", "partNumber": "11311725458", "price": "$100-200" },
+        { "name": "Tensioner", "partNumber": "11311725640", "price": "$80-150" }
       ],
       "difficulty": "Advanced"
     },
@@ -73,14 +62,8 @@
         "Dr. VANOS and Beisan Systems offer quality rebuild kits"
       ],
       "sources": [
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        },
-        {
-          "name": "Beisan Systems",
-          "url": "https://www.beisansystems.com/"
-        }
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
+        { "name": "Beisan Systems", "url": "https://www.beisansystems.com/" }
       ],
       "repairCosts": {
         "diy": "$80-150",
@@ -88,16 +71,8 @@
         "notes": "M50TU/M52 single VANOS. Seal replacement common fix."
       },
       "parts": [
-        {
-          "name": "VANOS Seal Kit",
-          "partNumber": "BS030",
-          "price": "$80-100"
-        },
-        {
-          "name": "VANOS Solenoid",
-          "partNumber": "11361433513",
-          "price": "$80-120"
-        }
+        { "name": "VANOS Seal Kit", "partNumber": "BS030", "price": "$80-100" },
+        { "name": "VANOS Solenoid", "partNumber": "11361433513", "price": "$80-120" }
       ],
       "relatedIssues": [
         { "vehicle": "e36", "brand": "BMW", "model": "E36", "issueId": "vanos" },
@@ -121,41 +96,19 @@
         "Flush system and use BMW-approved coolant"
       ],
       "sources": [
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        },
-        {
-          "name": "FCP Euro",
-          "url": "https://www.fcpeuro.com/"
-        }
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" },
+        { "name": "FCP Euro", "url": "https://www.fcpeuro.com/" }
       ],
       "repairCosts": {
         "diy": "$250-450",
         "shop": "$600-1200",
-        "notes": "Comprehensive refresh recommended. V8 models more complex."
+        "notes": "Do it all at once. The V8 cars take longer."
       },
       "parts": [
-        {
-          "name": "Water Pump (M50)",
-          "partNumber": "11517527799",
-          "price": "$60-100"
-        },
-        {
-          "name": "Thermostat",
-          "partNumber": "11531733803",
-          "price": "$20-40"
-        },
-        {
-          "name": "Expansion Tank",
-          "partNumber": "17111723520",
-          "price": "$30-50"
-        },
-        {
-          "name": "Radiator",
-          "partNumber": "17111723333",
-          "price": "$150-280"
-        }
+        { "name": "Water Pump (M50)", "partNumber": "11517527799", "price": "$60-100" },
+        { "name": "Thermostat", "partNumber": "11531733803", "price": "$20-40" },
+        { "name": "Expansion Tank", "partNumber": "17111723520", "price": "$30-50" },
+        { "name": "Radiator", "partNumber": "17111723333", "price": "$150-280" }
       ],
       "difficulty": "Advanced"
     },
@@ -172,14 +125,8 @@
         "Some owners upgrade to later-style displays"
       ],
       "sources": [
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        },
-        {
-          "name": "BavAuto",
-          "url": "https://www.bavauto.com/"
-        }
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
+        { "name": "BavAuto", "url": "https://www.bavauto.com/" }
       ],
       "repairCosts": {
         "diy": "$20-60",
@@ -187,16 +134,8 @@
         "notes": "OBC and cluster pixel failure. Ribbon replacement common DIY."
       },
       "parts": [
-        {
-          "name": "Pixel Repair Ribbon (Cluster)",
-          "partNumber": "Various aftermarket",
-          "price": "$15-30"
-        },
-        {
-          "name": "Pixel Repair Ribbon (OBC)",
-          "partNumber": "Various aftermarket",
-          "price": "$15-30"
-        }
+        { "name": "Pixel Repair Ribbon (Cluster)", "price": "$15-30" },
+        { "name": "Pixel Repair Ribbon (OBC)", "price": "$15-30" }
       ],
       "difficulty": "Easy"
     },
@@ -214,14 +153,8 @@
         "Address rear subframe mount rust immediately"
       ],
       "sources": [
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        },
-        {
-          "name": "R3VLimited",
-          "url": "https://www.r3vlimited.com/"
-        }
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
+        { "name": "R3VLimited", "url": "https://www.r3vlimited.com/" }
       ],
       "repairCosts": {
         "diy": "$200-800",
@@ -229,16 +162,8 @@
         "notes": "Rocker panels and wheel arches common."
       },
       "parts": [
-        {
-          "name": "Rocker Panel",
-          "partNumber": "Various",
-          "price": "$100-200"
-        },
-        {
-          "name": "Wheel Arch Repair",
-          "partNumber": "Various",
-          "price": "$80-150"
-        }
+        { "name": "Rocker Panel", "price": "$100-200" },
+        { "name": "Wheel Arch Repair", "price": "$80-150" }
       ],
       "difficulty": "Advanced"
     },
@@ -256,14 +181,8 @@
         "Address leaks before they cause damage or fire risk"
       ],
       "sources": [
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        },
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        }
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" },
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" }
       ],
       "repairCosts": {
         "diy": "$100-250",
@@ -271,21 +190,9 @@
         "notes": "Valve cover and oil filter housing most common."
       },
       "parts": [
-        {
-          "name": "Valve Cover Gasket (M50)",
-          "partNumber": "11129070531",
-          "price": "$25-50"
-        },
-        {
-          "name": "Oil Filter Housing Gasket",
-          "partNumber": "11421719855",
-          "price": "$15-30"
-        },
-        {
-          "name": "Oil Pan Gasket",
-          "partNumber": "11131437237",
-          "price": "$30-60"
-        }
+        { "name": "Valve Cover Gasket (M50)", "partNumber": "11129070531", "price": "$25-50" },
+        { "name": "Oil Filter Housing Gasket", "partNumber": "11421719855", "price": "$15-30" },
+        { "name": "Oil Pan Gasket", "partNumber": "11131437237", "price": "$30-60" }
       ],
       "difficulty": "Advanced"
     },
@@ -304,36 +211,18 @@
         "Alignment after suspension work"
       ],
       "sources": [
-        {
-          "name": "Ireland Engineering",
-          "url": "https://www.iemotorsport.com/"
-        },
-        {
-          "name": "FCP Euro",
-          "url": "https://www.fcpeuro.com/"
-        }
+        { "name": "Ireland Engineering", "url": "https://www.iemotorsport.com/" },
+        { "name": "FCP Euro", "url": "https://www.fcpeuro.com/" }
       ],
       "repairCosts": {
         "diy": "$300-600",
         "shop": "$700-1200",
-        "notes": "Thrust arm bushings critical on E34."
+        "notes": "Thrust arm bushings matter most on an E34."
       },
       "parts": [
-        {
-          "name": "Thrust Arm",
-          "partNumber": "31121139992",
-          "price": "$60-100"
-        },
-        {
-          "name": "Control Arm",
-          "partNumber": "31121139991",
-          "price": "$50-80"
-        },
-        {
-          "name": "Strut Mount",
-          "partNumber": "31331133674",
-          "price": "$30-60"
-        }
+        { "name": "Thrust Arm", "partNumber": "31121139992", "price": "$60-100" },
+        { "name": "Control Arm", "partNumber": "31121139991", "price": "$50-80" },
+        { "name": "Strut Mount", "partNumber": "31331133674", "price": "$30-60" }
       ],
       "difficulty": "Advanced"
     },
@@ -351,14 +240,8 @@
         "Repair brittle wiring as needed"
       ],
       "sources": [
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        },
-        {
-          "name": "BMW CCA",
-          "url": "https://www.bmwcca.org/"
-        }
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
+        { "name": "BMW CCA", "url": "https://www.bmwcca.org/" }
       ],
       "repairCosts": {
         "diy": "$50-200",
@@ -366,16 +249,8 @@
         "notes": "Various relay issues and grounds."
       },
       "parts": [
-        {
-          "name": "General Module (ZKE)",
-          "partNumber": "61358359031",
-          "price": "$150-300"
-        },
-        {
-          "name": "Main Relay",
-          "partNumber": "12631709557",
-          "price": "$40-70"
-        }
+        { "name": "General Module (ZKE)", "partNumber": "61358359031", "price": "$150-300" },
+        { "name": "Main Relay", "partNumber": "12631709557", "price": "$40-70" }
       ],
       "difficulty": "Easy"
     }
@@ -384,73 +259,23 @@
     {
       "id": "suspension-refresh",
       "title": "Complete Suspension Refresh",
-      "description": "Full front and rear suspension rebuild addressing the E34's sophisticated multi-link design with all control arm bushings, thrust arms, steering components, and rear trailing arm bushings.",
+      "description": "Control arms, thrust arm bushings, tie rods, and the rear trailing arm bushings. The E34 rides and steers beautifully when this is done and vaguely when it isn't.",
       "difficulty": "Intermediate",
       "time": "14-18 hours",
       "cost": "$700-1,400",
       "interval": "Every 80,000-120,000 miles or restoration",
       "laborHours": "12-16 hours shop time",
       "parts": [
-        {
-          "name": "Front Control Arm (Left)",
-          "oem": "31121139991",
-          "aftermarket": "Lemforder 11857 01, Meyle HD",
-          "cost": "$50-90"
-        },
-        {
-          "name": "Front Control Arm (Right)",
-          "oem": "31121139992",
-          "aftermarket": "Lemforder 11858 01, Meyle HD",
-          "cost": "$50-90"
-        },
-        {
-          "name": "Front Thrust Arm (Left)",
-          "oem": "31121139993",
-          "aftermarket": "Lemforder 11749 01, Meyle HD",
-          "cost": "$60-100"
-        },
-        {
-          "name": "Front Thrust Arm (Right)",
-          "oem": "31121139994",
-          "aftermarket": "Lemforder 11750 01, Meyle HD",
-          "cost": "$60-100"
-        },
-        {
-          "name": "Tie Rod Assembly (Inner/Outer Set)",
-          "oem": "32111139315, 32111139316",
-          "aftermarket": "Lemforder, Meyle",
-          "cost": "$80-160"
-        },
-        {
-          "name": "Front Strut Mount (Pair)",
-          "oem": "31331133674",
-          "aftermarket": "Lemforder 21403 01, Sachs",
-          "cost": "$50-100"
-        },
-        {
-          "name": "Front Sway Bar End Link (Pair)",
-          "oem": "31351132069",
-          "aftermarket": "Lemforder, Meyle",
-          "cost": "$30-60"
-        },
-        {
-          "name": "Rear Trailing Arm Bushing Set",
-          "oem": "33321135808",
-          "aftermarket": "Lemforder, Powerflex PFR5-307",
-          "cost": "$60-120"
-        },
-        {
-          "name": "Rear Upper Control Arm",
-          "oem": "33321135105",
-          "aftermarket": "Lemforder 17778 01, SPC adjustable",
-          "cost": "$40-80"
-        },
-        {
-          "name": "Rear Subframe Bushing Set",
-          "oem": "33311135808",
-          "aftermarket": "Lemforder, Powerflex",
-          "cost": "$80-160"
-        }
+        { "name": "Front Control Arm (Left)", "oem": "31121139991", "aftermarket": "Lemforder 11857 01, Meyle HD", "cost": "$50-90" },
+        { "name": "Front Control Arm (Right)", "oem": "31121139992", "aftermarket": "Lemforder 11858 01, Meyle HD", "cost": "$50-90" },
+        { "name": "Front Thrust Arm (Left)", "oem": "31121139993", "aftermarket": "Lemforder 11749 01, Meyle HD", "cost": "$60-100" },
+        { "name": "Front Thrust Arm (Right)", "oem": "31121139994", "aftermarket": "Lemforder 11750 01, Meyle HD", "cost": "$60-100" },
+        { "name": "Tie Rod Assembly (Inner/Outer Set)", "oem": "32111139315, 32111139316", "aftermarket": "Lemforder, Meyle", "cost": "$80-160" },
+        { "name": "Front Strut Mount (Pair)", "oem": "31331133674", "aftermarket": "Lemforder 21403 01, Sachs", "cost": "$50-100" },
+        { "name": "Front Sway Bar End Link (Pair)", "oem": "31351132069", "aftermarket": "Lemforder, Meyle", "cost": "$30-60" },
+        { "name": "Rear Trailing Arm Bushing Set", "oem": "33321135808", "aftermarket": "Lemforder, Powerflex PFR5-307", "cost": "$60-120" },
+        { "name": "Rear Upper Control Arm", "oem": "33321135105", "aftermarket": "Lemforder 17778 01, SPC adjustable", "cost": "$40-80" },
+        { "name": "Rear Subframe Bushing Set", "oem": "33311135808", "aftermarket": "Lemforder, Powerflex", "cost": "$80-160" }
       ],
       "tools": [
         "Floor jack and jack stands (4)",
@@ -466,127 +291,68 @@
         "Alignment specs printout"
       ],
       "steps": [
-        "Raise vehicle and support on jack stands at all four corners - must be completely level.",
+        "Raise vehicle and support on jack stands at all four corners—must be completely level.",
         "Remove all four wheels and mark positions for reinstallation.",
         "Photograph suspension geometry before disassembly for reference.",
-        "Soak all suspension fasteners with penetrating oil - E34 bolts can be seized.",
-        "Begin with front suspension - remove sway bar end links (17mm nuts).",
+        "Soak all suspension fasteners with penetrating oil—E34 bolts can be seized.",
+        "Begin with front suspension—remove sway bar end links (17mm nuts).",
         "Remove lower control arm pivot bolt (21mm) from subframe bracket.",
         "Support control arm with jack, separate ball joint from steering knuckle using separator.",
-        "Remove control arm completely - inspect for worn ball joint and replace if needed.",
+        "Remove control arm completely—inspect for worn ball joint and replace if needed.",
         "Remove thrust arm bolts at both ends (18mm at subframe, 19mm at steering knuckle area).",
-        "Remove tie rod end from steering knuckle using puller - note toe adjustment position.",
+        "Remove tie rod end from steering knuckle using puller—note toe adjustment position.",
         "For struts: mark camber position, remove three 13mm upper mount nuts, loosen pinch bolt.",
         "Use spring compressor to disassemble strut and replace mount/bearing assembly.",
         "For rear suspension: support trailing arm before removing any bolts.",
         "Remove trailing arm pivot bolt and press new bushings into arm housing.",
-        "Remove and replace rear upper control arms - these are often adjustable on replacement.",
+        "Remove and replace rear upper control arms—these are often adjustable on replacement.",
         "Lower rear subframe slightly to access and replace subframe bushings if needed.",
-        "Reassemble all components - torque control arms to 57 ft-lbs at ride height.",
-        "Torque thrust arms to 81 ft-lbs - these are critical for steering feel.",
-        "Install wheels and lower vehicle - bounce corners to settle suspension.",
-        "Professional 4-wheel alignment is mandatory - E34 alignment is sensitive."
+        "Reassemble all components—torque control arms to 57 ft-lbs at ride height.",
+        "Torque thrust arms to 81 ft-lbs—they make or break steering feel.",
+        "Install wheels and lower vehicle—bounce corners to settle suspension.",
+        "Professional 4-wheel alignment is mandatory—E34 alignment is sensitive."
       ],
       "tips": [
-        "E34 thrust arm bushings are critical for steering precision - don't overlook them.",
+        "E34 thrust arm bushings make or break steering precision—don't overlook them.",
         "Meyle HD bushings are stiffer and last longer than OEM rubber.",
         "Consider self-leveling rear suspension service if equipped (common on Touring models).",
         "Mark eccentric bolt positions before removal to get close to original alignment.",
-        "The E34 uses inner and outer tie rod ends - replace both at the same time.",
+        "The E34 uses inner and outer tie rod ends—replace both at the same time.",
         "Upgraded polyurethane bushings available for track-oriented builds."
       ],
       "warnings": [
-        "Never strike ball joints directly - use proper separator or puller tools.",
-        "Spring compressors are dangerous - follow tool instructions carefully.",
-        "Rear subframe is heavy - ensure adequate support before loosening bolts.",
+        "Never strike ball joints directly—use proper separator or puller tools.",
+        "Spring compressors are dangerous—follow tool instructions carefully.",
+        "Rear subframe is heavy—ensure adequate support before loosening bolts.",
         "Self-leveling suspension (if equipped) must be deactivated before rear work.",
         "Always replace hardware that shows corrosion or thread damage."
       ],
       "references": [
-        {
-          "name": "Bimmerforums E34 Suspension Guide",
-          "url": "https://www.bimmerforums.com/forum/forumdisplay.php?f=50"
-        },
-        {
-          "name": "Turner Motorsport E34 Parts",
-          "url": "https://www.turnermotorsport.com/BMW-E34-Parts"
-        },
-        {
-          "name": "Pelican Parts E34 Tech Articles",
-          "url": "https://www.pelicanparts.com/techarticles/BMW/"
-        }
+        { "name": "Bimmerforums E34 Suspension Guide", "url": "https://www.bimmerforums.com/forum/forumdisplay.php?f=50" },
+        { "name": "Turner Motorsport E34 Parts", "url": "https://www.turnermotorsport.com/BMW-E34-Parts" },
+        { "name": "Pelican Parts E34 Tech Articles", "url": "https://www.pelicanparts.com/techarticles/BMW/" }
       ]
     },
     {
       "id": "rust-repair",
       "title": "Rust Prevention and Repair",
-      "description": "Comprehensive rust inspection and repair guide addressing the E34's known problem areas including rocker panels, wheel arches, jack points, and trunk floor.",
+      "description": "Rockers, wheel arches, jack points, and the trunk floor. The E34's thick paint hides rust well, so here's where to look.",
       "difficulty": "Advanced",
       "time": "10-30+ hours",
       "cost": "$200-2,500+",
       "interval": "Inspect annually, repair as discovered",
       "laborHours": "Varies by severity",
       "parts": [
-        {
-          "name": "Front Fender (Left)",
-          "oem": "41351977887",
-          "aftermarket": "Aftermarket reproduction",
-          "cost": "$180-350"
-        },
-        {
-          "name": "Front Fender (Right)",
-          "oem": "41351977888",
-          "aftermarket": "Aftermarket reproduction",
-          "cost": "$180-350"
-        },
-        {
-          "name": "Rocker Panel (Left)",
-          "oem": "41101977889",
-          "aftermarket": "Klokkerholm, aftermarket",
-          "cost": "$100-220"
-        },
-        {
-          "name": "Rocker Panel (Right)",
-          "oem": "41101977890",
-          "aftermarket": "Klokkerholm, aftermarket",
-          "cost": "$100-220"
-        },
-        {
-          "name": "Rear Wheel Arch (Left)",
-          "oem": "41351977891",
-          "aftermarket": "Klokkerholm, aftermarket",
-          "cost": "$90-200"
-        },
-        {
-          "name": "Rear Wheel Arch (Right)",
-          "oem": "41351977892",
-          "aftermarket": "Klokkerholm, aftermarket",
-          "cost": "$90-200"
-        },
-        {
-          "name": "Trunk Floor Section",
-          "oem": "41121977893",
-          "aftermarket": "Fabricated or aftermarket",
-          "cost": "$100-250"
-        },
-        {
-          "name": "Jack Point Reinforcement",
-          "oem": "—",
-          "aftermarket": "Fabricated or aftermarket",
-          "cost": "$30-80"
-        },
-        {
-          "name": "POR-15 Rust Preventive",
-          "oem": "—",
-          "aftermarket": "POR-15 quart",
-          "cost": "$35-50"
-        },
-        {
-          "name": "Eastwood Internal Frame Coating",
-          "oem": "—",
-          "aftermarket": "Eastwood spray",
-          "cost": "$20-35"
-        }
+        { "name": "Front Fender (Left)", "oem": "41351977887", "aftermarket": "Aftermarket reproduction", "cost": "$180-350" },
+        { "name": "Front Fender (Right)", "oem": "41351977888", "aftermarket": "Aftermarket reproduction", "cost": "$180-350" },
+        { "name": "Rocker Panel (Left)", "oem": "41101977889", "aftermarket": "Klokkerholm, aftermarket", "cost": "$100-220" },
+        { "name": "Rocker Panel (Right)", "oem": "41101977890", "aftermarket": "Klokkerholm, aftermarket", "cost": "$100-220" },
+        { "name": "Rear Wheel Arch (Left)", "oem": "41351977891", "aftermarket": "Klokkerholm, aftermarket", "cost": "$90-200" },
+        { "name": "Rear Wheel Arch (Right)", "oem": "41351977892", "aftermarket": "Klokkerholm, aftermarket", "cost": "$90-200" },
+        { "name": "Trunk Floor Section", "oem": "41121977893", "aftermarket": "Fabricated or aftermarket", "cost": "$100-250" },
+        { "name": "Jack Point Reinforcement", "oem": "—", "aftermarket": "Fabricated or aftermarket", "cost": "$30-80" },
+        { "name": "POR-15 Rust Preventive", "oem": "—", "aftermarket": "POR-15 quart", "cost": "$35-50" },
+        { "name": "Eastwood Internal Frame Coating", "oem": "—", "aftermarket": "Eastwood spray", "cost": "$20-35" }
       ],
       "tools": [
         "Angle grinder with cut-off and flap discs",
@@ -606,15 +372,15 @@
       "steps": [
         "Thoroughly clean undercarriage and wheel wells before inspection.",
         "Inspect known E34 rust areas: rocker panels (tap with screwdriver), jack points, front fender lips, rear wheel arches, trunk floor (especially spare tire well), door bottoms.",
-        "Check rear subframe mounting points for rust - structural safety concern.",
-        "Remove carpets and check floor pans from inside - rust hides under padding.",
+        "Check rear subframe mounting points for rust—structural safety concern.",
+        "Remove carpets and check floor pans from inside—rust hides under padding.",
         "For surface rust: wire brush to bare metal, apply rust converter, prime and paint.",
         "For rust-through: mark damage extent, cut out 1 inch into clean metal.",
         "Create cardboard template, transfer to new sheet metal, cut patch.",
         "Use Clecos to hold patch in position during fit-up.",
         "Tack weld corners, stitch weld 1-inch segments, allow to cool between welds.",
         "For replacement panels (rocker, fender): drill out spot welds, remove old panel, fit new.",
-        "Grind welds flush and inspect for warping - planish if needed.",
+        "Grind welds flush and inspect for warping—planish if needed.",
         "Treat all bare metal and welds with weld-through primer on backside.",
         "Apply POR-15 to inaccessible areas and inner surfaces.",
         "Seal all welded joints with automotive seam sealer.",
@@ -625,104 +391,45 @@
       ],
       "tips": [
         "E34s are better protected than E28s but still develop rust in similar areas.",
-        "Jack point rust indicates compromised rocker panels - inspect thoroughly.",
-        "Rear subframe mount rust is a structural safety issue - don't ignore it.",
+        "Jack point rust indicates compromised rocker panels—inspect thoroughly.",
+        "Rear subframe mount rust is a structural safety issue—don't ignore it.",
         "The E34 Touring (wagon) has additional rust-prone areas around tailgate.",
         "Fluid Film or similar applied annually helps prevent recurrence.",
-        "Check behind front fender liners - dirt and moisture collect there."
+        "Check behind front fender liners—dirt and moisture collect there."
       ],
       "warnings": [
-        "Always wear P100 respirator when grinding rust - particles are hazardous.",
+        "Always wear P100 respirator when grinding rust—particles are hazardous.",
         "Check for fuel lines and wiring before cutting or welding any panels.",
         "Have fire extinguisher ready when welding near interior components.",
-        "Structural rust near suspension mounts affects safety - consider professional repair.",
+        "Structural rust near suspension mounts affects safety—consider professional repair.",
         "Test fire extinguisher before starting any welding work."
       ],
       "references": [
-        {
-          "name": "Bimmerforums E34 Rust Discussion",
-          "url": "https://www.bimmerforums.com/forum/forumdisplay.php?f=50"
-        },
-        {
-          "name": "Eastwood Rust Repair Guide",
-          "url": "https://www.eastwood.com/rust-repair"
-        },
-        {
-          "name": "POR-15 Application Guide",
-          "url": "https://www.por15.com/instructions"
-        }
+        { "name": "Bimmerforums E34 Rust Discussion", "url": "https://www.bimmerforums.com/forum/forumdisplay.php?f=50" },
+        { "name": "Eastwood Rust Repair Guide", "url": "https://www.eastwood.com/rust-repair" },
+        { "name": "POR-15 Application Guide", "url": "https://www.por15.com/instructions" }
       ]
     },
     {
       "id": "electrical-restoration",
       "title": "Electrical System Restoration",
-      "description": "Complete electrical system overhaul covering the E34's pixel display repair, window regulator replacement, ground restoration, and module troubleshooting.",
+      "description": "Pixel repair, window regulators, grounds, and module troubleshooting on a car with a lot more electronics than the E28.",
       "difficulty": "Intermediate",
       "time": "10-18 hours",
       "cost": "$200-700",
       "interval": "Address as symptoms appear",
       "laborHours": "8-14 hours shop time",
       "parts": [
-        {
-          "name": "Instrument Cluster Pixel Ribbon",
-          "oem": "—",
-          "aftermarket": "BavAuto, aftermarket kits",
-          "cost": "$15-35"
-        },
-        {
-          "name": "OBC Display Pixel Ribbon",
-          "oem": "—",
-          "aftermarket": "BavAuto, aftermarket kits",
-          "cost": "$15-35"
-        },
-        {
-          "name": "Window Regulator (Front Left)",
-          "oem": "51321944049",
-          "aftermarket": "URO, aftermarket",
-          "cost": "$50-100"
-        },
-        {
-          "name": "Window Regulator (Front Right)",
-          "oem": "51321944050",
-          "aftermarket": "URO, aftermarket",
-          "cost": "$50-100"
-        },
-        {
-          "name": "Main Relay (DME/EWS)",
-          "oem": "12631709557",
-          "aftermarket": "Bosch 0332014112",
-          "cost": "$40-70"
-        },
-        {
-          "name": "Fuel Pump Relay",
-          "oem": "12631735424",
-          "aftermarket": "Bosch, Stribel",
-          "cost": "$25-50"
-        },
-        {
-          "name": "General Module (ZKE)",
-          "oem": "61358359031",
-          "aftermarket": "Used OEM, rebuilt",
-          "cost": "$150-300"
-        },
-        {
-          "name": "Blower Motor Final Stage",
-          "oem": "64118391749",
-          "aftermarket": "URO, aftermarket",
-          "cost": "$30-60"
-        },
-        {
-          "name": "Ground Point Ring Terminals",
-          "oem": "—",
-          "aftermarket": "Copper ring terminals (25 pack)",
-          "cost": "$10-20"
-        },
-        {
-          "name": "Contact Cleaner",
-          "oem": "—",
-          "aftermarket": "DeoxIT D5, CRC Contact",
-          "cost": "$10-20"
-        }
+        { "name": "Instrument Cluster Pixel Ribbon", "oem": "—", "aftermarket": "BavAuto, aftermarket kits", "cost": "$15-35" },
+        { "name": "OBC Display Pixel Ribbon", "oem": "—", "aftermarket": "BavAuto, aftermarket kits", "cost": "$15-35" },
+        { "name": "Window Regulator (Front Left)", "oem": "51321944049", "aftermarket": "URO, aftermarket", "cost": "$50-100" },
+        { "name": "Window Regulator (Front Right)", "oem": "51321944050", "aftermarket": "URO, aftermarket", "cost": "$50-100" },
+        { "name": "Main Relay (DME/EWS)", "oem": "12631709557", "aftermarket": "Bosch 0332014112", "cost": "$40-70" },
+        { "name": "Fuel Pump Relay", "oem": "12631735424", "aftermarket": "Bosch, Stribel", "cost": "$25-50" },
+        { "name": "General Module (ZKE)", "oem": "61358359031", "aftermarket": "Used OEM, rebuilt", "cost": "$150-300" },
+        { "name": "Blower Motor Final Stage", "oem": "64118391749", "aftermarket": "URO, aftermarket", "cost": "$30-60" },
+        { "name": "Ground Point Ring Terminals", "oem": "—", "aftermarket": "Copper ring terminals (25 pack)", "cost": "$10-20" },
+        { "name": "Contact Cleaner", "oem": "—", "aftermarket": "DeoxIT D5, CRC Contact", "cost": "$10-20" }
       ],
       "tools": [
         "Torx driver set (T10, T15, T20, T25)",
@@ -739,7 +446,7 @@
       ],
       "steps": [
         "Disconnect battery and wait 10 minutes before any electrical work.",
-        "Start with ground point restoration - critical for E34 electrical reliability.",
+        "Start with ground point restoration—most E34 electrical faults start here.",
         "Locate grounds: engine to firewall, battery to chassis, cluster ground, tail light grounds.",
         "Remove each ground, wire brush contact surface to bare metal, clean terminal.",
         "Apply dielectric grease and torque securely.",
@@ -753,110 +460,51 @@
         "Support window glass with tape, unbolt regulator mounting points.",
         "Remove old regulator, install new, test operation before reassembly.",
         "Clean fuse box contacts with contact cleaner, replace corroded fuses.",
-        "Test and replace relays as needed - main relay and fuel pump relay common failures.",
+        "Test and replace relays as needed—main relay and fuel pump relay common failures.",
         "Inspect wiring harness for brittle insulation, repair as needed.",
         "Reconnect battery and test all electrical systems systematically."
       ],
       "tips": [
-        "E34 pixel failure is extremely common - repair is straightforward.",
-        "The general module (ZKE) controls many functions - can cause odd symptoms.",
-        "Window regulators often fail due to cable fatigue - listen for grinding sounds.",
-        "The E34 uses separate OBC and cluster displays - both may need pixel repair.",
-        "Blower motor final stage failure causes fan speed issues - common problem.",
-        "Ground issues cause many mysterious electrical symptoms - always check grounds first."
+        "E34 pixel failure is extremely common—repair is straightforward.",
+        "The general module (ZKE) controls many functions—can cause odd symptoms.",
+        "Window regulators often fail due to cable fatigue—listen for grinding sounds.",
+        "The E34 uses separate OBC and cluster displays—both may need pixel repair.",
+        "Blower motor final stage failure causes fan speed issues—common problem.",
+        "Ground issues cause many mysterious electrical symptoms—always check grounds first."
       ],
       "warnings": [
         "Always disconnect battery before electrical work.",
-        "Don't probe airbag (SRS) wiring - risk of deployment.",
-        "Use minimal heat when soldering pixel ribbons - excess heat damages LCD.",
-        "Vapor barrier is critical for water sealing - handle carefully.",
-        "Dielectric grease insulates - use only on contact surfaces, not inside connectors."
+        "Don't probe airbag (SRS) wiring—risk of deployment.",
+        "Use minimal heat when soldering pixel ribbons—excess heat damages LCD.",
+        "The vapor barrier keeps water out of the door—handle carefully.",
+        "Dielectric grease insulates—use only on contact surfaces, not inside connectors."
       ],
       "references": [
-        {
-          "name": "Bimmerforums E34 Pixel Repair",
-          "url": "https://www.bimmerforums.com/forum/showthread.php?1234567-E34-Pixel-Repair"
-        },
-        {
-          "name": "BavAuto E34 Guides",
-          "url": "https://www.bavauto.com/"
-        },
-        {
-          "name": "Pelican Parts E34 Window Regulator",
-          "url": "https://www.pelicanparts.com/techarticles/BMW/"
-        }
+        { "name": "Bimmerforums E34 Pixel Repair", "url": "https://www.bimmerforums.com/forum/showthread.php?1234567-E34-Pixel-Repair" },
+        { "name": "BavAuto E34 Guides", "url": "https://www.bavauto.com/" },
+        { "name": "Pelican Parts E34 Window Regulator", "url": "https://www.pelicanparts.com/techarticles/BMW/" }
       ]
     },
     {
       "id": "interior-restoration",
       "title": "Interior Restoration",
-      "description": "Complete interior refresh addressing the E34's common wear items including leather deterioration, headliner sag, dashboard cracks, and trim restoration.",
+      "description": "Leather, headliner, dash, and trim. The E34 cabin wears well, but 30 years catches up with everything.",
       "difficulty": "Intermediate",
       "time": "12-24 hours",
       "cost": "$300-1,200",
       "interval": "One-time restoration",
       "laborHours": "10-20 hours shop time",
       "parts": [
-        {
-          "name": "Dashboard Cover/Cap",
-          "oem": "—",
-          "aftermarket": "Coverlay, DashSkin",
-          "cost": "$150-300"
-        },
-        {
-          "name": "Headliner Fabric (4 yards)",
-          "oem": "—",
-          "aftermarket": "OEM-match foam-backed",
-          "cost": "$50-100"
-        },
-        {
-          "name": "Headliner Adhesive",
-          "oem": "—",
-          "aftermarket": "3M Super 77, Permatex",
-          "cost": "$15-30"
-        },
-        {
-          "name": "Leather Repair Kit",
-          "oem": "—",
-          "aftermarket": "Leatherique, Colourlock",
-          "cost": "$50-100"
-        },
-        {
-          "name": "Seat Foam (Driver Bolster)",
-          "oem": "52101977855",
-          "aftermarket": "Recovered or aftermarket",
-          "cost": "$80-180"
-        },
-        {
-          "name": "Shift Boot (Manual)",
-          "oem": "25111220650",
-          "aftermarket": "Leather replicas, Redline",
-          "cost": "$30-70"
-        },
-        {
-          "name": "E-Brake Boot",
-          "oem": "34411162485",
-          "aftermarket": "Leather replicas",
-          "cost": "$20-50"
-        },
-        {
-          "name": "Door Panel Fabric Insert",
-          "oem": "Various",
-          "aftermarket": "Recovered or used OEM",
-          "cost": "$50-150"
-        },
-        {
-          "name": "Wood Trim Refinishing Kit",
-          "oem": "—",
-          "aftermarket": "Clearcoat and touch-up",
-          "cost": "$25-50"
-        },
-        {
-          "name": "Door Seal Set",
-          "oem": "51711944045",
-          "aftermarket": "URO, aftermarket",
-          "cost": "$120-250"
-        }
+        { "name": "Dashboard Cover/Cap", "oem": "—", "aftermarket": "Coverlay, DashSkin", "cost": "$150-300" },
+        { "name": "Headliner Fabric (4 yards)", "oem": "—", "aftermarket": "OEM-match foam-backed", "cost": "$50-100" },
+        { "name": "Headliner Adhesive", "oem": "—", "aftermarket": "3M Super 77, Permatex", "cost": "$15-30" },
+        { "name": "Leather Repair Kit", "oem": "—", "aftermarket": "Leatherique, Colourlock", "cost": "$50-100" },
+        { "name": "Seat Foam (Driver Bolster)", "oem": "52101977855", "aftermarket": "Recovered or aftermarket", "cost": "$80-180" },
+        { "name": "Shift Boot (Manual)", "oem": "25111220650", "aftermarket": "Leather replicas, Redline", "cost": "$30-70" },
+        { "name": "E-Brake Boot", "oem": "34411162485", "aftermarket": "Leather replicas", "cost": "$20-50" },
+        { "name": "Door Panel Fabric Insert", "oem": "Various", "aftermarket": "Recovered or used OEM", "cost": "$50-150" },
+        { "name": "Wood Trim Refinishing Kit", "oem": "—", "aftermarket": "Clearcoat and touch-up", "cost": "$25-50" },
+        { "name": "Door Seal Set", "oem": "51711944045", "aftermarket": "URO, aftermarket", "cost": "$120-250" }
       ],
       "tools": [
         "Trim removal tools (plastic pry set)",
@@ -874,17 +522,17 @@
       "steps": [
         "Document everything with photos before disassembly.",
         "Remove seats (4 bolts each) and all carpeting to clean floor pans.",
-        "For dashboard: evaluate crack severity - cap vs. full recovery.",
+        "For dashboard: evaluate crack severity—cap vs. full recovery.",
         "Option 1: Install dashboard cap/cover over existing cracked dash.",
         "Option 2: Remove and recover with flocked vinyl (professional recommended).",
         "For headliner: remove sun visors, dome light, A-pillar trim, grab handles, rear trim.",
-        "Remove headliner board through rear door opening - flex carefully.",
+        "Remove headliner board through rear door opening—flex carefully.",
         "Strip old fabric and deteriorated foam completely with scraper and brush.",
         "Apply adhesive in sections, press new fabric from center outward.",
-        "Stretch fabric taut - no wrinkles or bubbles. Let cure before trimming.",
+        "Stretch fabric taut—no wrinkles or bubbles. Let cure before trimming.",
         "For leather: clean thoroughly with dedicated leather cleaner.",
         "Fill cracks with leather filler, sand smooth when dry.",
-        "Apply leather dye in thin coats - multiple light coats for even coverage.",
+        "Apply leather dye in thin coats—multiple light coats for even coverage.",
         "Condition all leather surfaces after dye cures.",
         "For wood trim: assess if veneer is intact or delaminating.",
         "If intact: wet sand clearcoat (600-2000 grit), reapply clearcoat.",
@@ -894,33 +542,72 @@
         "Reassemble in reverse order."
       ],
       "tips": [
-        "E34 dashboards crack severely from sun exposure - caps are practical solution.",
-        "The E34 wood trim is real veneer - can be refinished if not too damaged.",
-        "Headliner adhesive sets fast in heat - work in cool, shaded conditions.",
-        "Match leather dye color carefully - test on hidden area first.",
+        "E34 dashboards crack severely from sun exposure—caps are practical solution.",
+        "The E34 wood trim is real veneer—can be refinished if not too damaged.",
+        "Headliner adhesive sets fast in heat—work in cool, shaded conditions.",
+        "Match leather dye color carefully—test on hidden area first.",
         "E34 Sport seats have more aggressive bolsters that wear faster.",
         "Consider recovering shift/e-brake boots with matching leather during resto."
       ],
       "warnings": [
-        "Headliner adhesive is flammable - no sparks or flames nearby.",
+        "Headliner adhesive is flammable—no sparks or flames nearby.",
         "Work in well-ventilated area when using adhesives and dyes.",
-        "Don't pull headliner fabric after positioning - it will stretch.",
+        "Don't pull headliner fabric after positioning—it will stretch.",
         "Test all chemicals on hidden areas first.",
-        "Dashboard removal is complex - many hidden fasteners and connectors."
+        "Dashboard removal is complex—many hidden fasteners and connectors."
       ],
       "references": [
-        {
-          "name": "Bimmerforums E34 Interior",
-          "url": "https://www.bimmerforums.com/forum/forumdisplay.php?f=50"
-        },
-        {
-          "name": "Coverlay Dashboard Products",
-          "url": "https://www.coverlay.com/"
-        },
-        {
-          "name": "Leatherique Restoration Guide",
-          "url": "https://www.leatherique.com/"
-        }
+        { "name": "Bimmerforums E34 Interior", "url": "https://www.bimmerforums.com/forum/forumdisplay.php?f=50" },
+        { "name": "Coverlay Dashboard Products", "url": "https://www.coverlay.com/" },
+        { "name": "Leatherique Restoration Guide", "url": "https://www.leatherique.com/" }
+      ]
+    },
+    {
+      "id": "m60-timing-guides",
+      "title": "Timing Chain Guides (M60 V8)",
+      "description": "The 540i and 530i's M60 V8 has plastic chain guides that crack with age, and a failure can wreck the engine. A rattle from the front at startup means it's time. It's a big job, but it's the one that makes a V8 E34 worth owning.",
+      "difficulty": "Advanced",
+      "time": "20-30 hours",
+      "cost": "$600-1,200",
+      "parts": [
+        { "name": "Timing chain guide set (upper and lower, both banks)", "aftermarket": "Febi, Iwis", "cost": "$250-450" },
+        { "name": "Chain tensioners", "aftermarket": "Febi, Iwis", "cost": "$80-150" },
+        { "name": "Timing covers gasket set", "aftermarket": "Elring, Victor Reinz", "cost": "$80-150" },
+        { "name": "Water pump", "aftermarket": "Graf, Geba", "cost": "$100-200" },
+        { "name": "Valve cover gaskets and spark plug tube seals", "aftermarket": "Elring", "cost": "$40-80" }
+      ],
+      "tools": [
+        "M60 camshaft alignment tools",
+        "Crank locking pin",
+        "Torque wrench and angle gauge",
+        "Engine support or hoist",
+        "Gasket scraper",
+        "Full metric socket set"
+      ],
+      "steps": [
+        "Drain the coolant and oil, and disconnect the battery.",
+        "Remove the radiator, fan, and front accessories to clear the front of the engine.",
+        "Remove the intake manifold and both valve covers.",
+        "Lock the crank at TDC and fit the camshaft alignment tools to both banks.",
+        "Remove the vibration damper, then the upper and lower timing covers.",
+        "Remove the tensioners and chains, then the guide rails. Look for broken pieces and recover every fragment.",
+        "Inspect the chains and sprockets and replace them if worn.",
+        "Fit new guides and tensioners, then the chains, with the cam tools still in place.",
+        "Remove the tools, rotate the engine two full turns by hand, and recheck timing with the tools.",
+        "Reassemble with new gaskets, a new water pump, and new front seals. Torque to the value in the Torque Specs table on this page, or your workshop manual.",
+        "Refill, bleed the cooling system carefully, and check for leaks at operating temperature."
+      ],
+      "tips": [
+        "Budget for the valley pan gasket and coolant pipes while the intake is off.",
+        "Label every connector as you unplug it."
+      ],
+      "warnings": [
+        "Never rotate the engine with the chains removed.",
+        "Without the correct cam tools, the timing can't be set properly. Don't improvise."
+      ],
+      "references": [
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
+        { "name": "RealOEM parts diagrams", "url": "https://www.realoem.com/" }
       ]
     }
   ],
@@ -930,7 +617,10 @@
         "name": "FCP Euro",
         "url": "https://www.fcpeuro.com/BMW-parts",
         "notes": "Lifetime replacement guarantee. Excellent E34 coverage including M50/M30 engine parts.",
-        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "specialties": [
+          "Lifetime Warranty",
+          "OE Quality"
+        ],
         "shipping": "Free over $49",
         "warranty": "Lifetime",
         "featured": true
@@ -939,14 +629,20 @@
         "name": "Pelican Parts",
         "url": "https://www.pelicanparts.com/BMW/catalog/5-Series_Main.htm",
         "notes": "Large E34 catalog with OEM and quality aftermarket. Excellent DIY tech articles.",
-        "specialties": ["Tech Articles", "OE Parts"],
+        "specialties": [
+          "Tech Articles",
+          "OE Parts"
+        ],
         "shipping": "Free over $99"
       },
       {
         "name": "BMW Parts Direct",
         "url": "https://www.bmwpartsdirect.com/",
         "notes": "Genuine BMW OEM parts from authorized dealers.",
-        "specialties": ["Genuine BMW", "Dealer Direct"]
+        "specialties": [
+          "Genuine BMW",
+          "Dealer Direct"
+        ]
       }
     ],
     "performance": [
@@ -954,20 +650,31 @@
         "name": "Turner Motorsport",
         "url": "https://www.turnermotorsport.com/BMW-E34-Parts",
         "notes": "Race-proven performance parts. Suspension, brakes, and engine upgrades.",
-        "specialties": ["Race Parts", "Suspension", "Brakes"],
+        "specialties": [
+          "Race Parts",
+          "Suspension",
+          "Brakes"
+        ],
         "featured": true
       },
       {
         "name": "Ireland Engineering",
         "url": "https://www.iemotorsport.com/",
         "notes": "Classic BMW performance specialists since 1979.",
-        "specialties": ["Suspension", "Engine", "Handling"]
+        "specialties": [
+          "Suspension",
+          "Engine",
+          "Handling"
+        ]
       },
       {
         "name": "Beisan Systems",
         "url": "https://www.beisansystems.com/",
         "notes": "VANOS repair specialists. DIY kits and tech articles for M50/M52 engines.",
-        "specialties": ["VANOS Repair", "DIY Kits"]
+        "specialties": [
+          "VANOS Repair",
+          "DIY Kits"
+        ]
       }
     ],
     "general": [
@@ -975,20 +682,29 @@
         "name": "ECS Tuning",
         "url": "https://www.ecstuning.com/BMW-E34/",
         "notes": "Large inventory of maintenance and upgrade parts.",
-        "specialties": ["Large Inventory", "Fast Shipping"],
+        "specialties": [
+          "Large Inventory",
+          "Fast Shipping"
+        ],
         "shipping": "Free over $49"
       },
       {
         "name": "BimmerWorld",
         "url": "https://www.bimmerworld.com/BMW-Parts/E34-1989-1995/",
         "notes": "BMW parts specialist with racing pedigree.",
-        "specialties": ["Maintenance", "Quality Parts"]
+        "specialties": [
+          "Maintenance",
+          "Quality Parts"
+        ]
       },
       {
         "name": "AutohausAZ",
         "url": "https://www.autohausaz.com/",
         "notes": "Competitive prices on name brand parts.",
-        "specialties": ["Good Prices", "Name Brands"],
+        "specialties": [
+          "Good Prices",
+          "Name Brands"
+        ],
         "shipping": "Free over $50"
       }
     ],
@@ -997,7 +713,10 @@
         "name": "BMWE34.net",
         "url": "http://www.bmwe34.net/",
         "notes": "Dedicated E34 resource with parts sources and technical information.",
-        "specialties": ["E34 Specialist", "Tech Info"],
+        "specialties": [
+          "E34 Specialist",
+          "Tech Info"
+        ],
         "featured": true
       }
     ],
@@ -1006,20 +725,29 @@
         "name": "5Series.net Classifieds",
         "url": "https://5series.net/forums/e34-classifieds/",
         "notes": "E34 community marketplace with active listings.",
-        "specialties": ["E34 Community", "Rare Parts"],
+        "specialties": [
+          "E34 Community",
+          "Rare Parts"
+        ],
         "featured": true
       },
       {
         "name": "eBay Motors",
         "url": "https://www.ebay.com/b/BMW-E34/6030/bn_81442364",
         "notes": "Large selection of used, NOS, and reproduction E34 parts.",
-        "specialties": ["NOS Parts", "Wide Selection"]
+        "specialties": [
+          "NOS Parts",
+          "Wide Selection"
+        ]
       },
       {
         "name": "Car-Part.com",
         "url": "https://www.car-part.com/",
         "notes": "Search salvage yard inventory nationwide.",
-        "specialties": ["Salvage Yards", "Body Parts"]
+        "specialties": [
+          "Salvage Yards",
+          "Body Parts"
+        ]
       }
     ],
     "tools": [
@@ -1028,170 +756,53 @@
         "url": "https://www.realoem.com/bmw/enUS/select?product=P&archive=0&series=E34",
         "notes": "Free BMW parts diagrams and part number lookup"
       },
-      {
-        "name": "Bentley Service Manual",
-        "url": "https://www.bentleypublishers.com/bmw.html",
-        "notes": "Official factory repair manual for E34"
-      }
+      { "name": "Bentley Service Manual", "url": "https://www.bentleypublishers.com/bmw.html", "notes": "Official factory repair manual for E34" }
     ]
   },
   "torqueSpecs": {
     "sources": [
-      {
-        "name": "Bentley E34 Service Manual",
-        "url": "https://www.bentleypublishers.com/bmw.html"
-      },
-      {
-        "name": "Bimmerforums E34 Technical",
-        "url": "https://www.bimmerforums.com/forum/forumdisplay.php?f=50"
-      },
-      {
-        "name": "M5Board Torque Reference",
-        "url": "https://www.m5board.com/"
-      }
+      { "name": "Bentley E34 Service Manual", "url": "https://www.bentleypublishers.com/bmw.html" },
+      { "name": "Bimmerforums E34 Technical", "url": "https://www.bimmerforums.com/forum/forumdisplay.php?f=50" },
+      { "name": "M5Board Torque Reference", "url": "https://www.m5board.com/" }
     ],
     "engine": [
-      {
-        "component": "Cylinder Head Bolts (M50/M50TU)",
-        "spec": "22 ft-lbs (30 Nm) + 90° + 90°",
-        "notes": "TTY bolts, replace each use"
-      },
-      {
-        "component": "Cylinder Head Bolts (M60 V8)",
-        "spec": "22 ft-lbs (30 Nm) + 70° + 70°",
-        "notes": "TTY bolts, replace each use"
-      },
-      {
-        "component": "Cylinder Head Bolts (M30)",
-        "spec": "44 ft-lbs (60 Nm) + 59 ft-lbs (80 Nm) + 35°",
-        "notes": "Wait 15 min between stages"
-      },
-      {
-        "component": "Main Bearing Caps (M50)",
-        "spec": "15-18 ft-lbs (20-25 Nm) + 50°",
-        "notes": "Angle-tighten method"
-      },
-      {
-        "component": "Connecting Rod Bolts (M50)",
-        "spec": "17 ft-lbs (23 Nm) + 70°",
-        "notes": "Angle-tighten method"
-      },
-      {
-        "component": "Flywheel Bolts (Manual)",
-        "spec": "77 ft-lbs (105 Nm)",
-        "notes": "Use new bolts"
-      },
-      {
-        "component": "Flywheel Bolts (Auto)",
-        "spec": "88 ft-lbs (120 Nm)",
-        "notes": "Use new bolts"
-      },
-      {
-        "component": "Valve Cover Bolts (M50)",
-        "spec": "9 ft-lbs (12 Nm)",
-        "notes": "Do not overtighten"
-      },
-      {
-        "component": "Spark Plugs",
-        "spec": "22-24 ft-lbs (30-33 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Oil Drain Plug",
-        "spec": "18 ft-lbs (25 Nm)",
-        "notes": "Replace crush washer"
-      },
-      {
-        "component": "VANOS Solenoid (M50TU)",
-        "spec": "11 ft-lbs (15 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Oil Filter Housing Bolts",
-        "spec": "18 ft-lbs (25 Nm)",
-        "notes": ""
-      }
+      { "component": "Cylinder Head Bolts (M50/M50TU)", "spec": "22 ft-lbs (30 Nm) + 90° + 90°", "notes": "TTY bolts, replace each use" },
+      { "component": "Cylinder Head Bolts (M60 V8)", "spec": "22 ft-lbs (30 Nm) + 70° + 70°", "notes": "TTY bolts, replace each use" },
+      { "component": "Cylinder Head Bolts (M30)", "spec": "44 ft-lbs (60 Nm) + 59 ft-lbs (80 Nm) + 35°", "notes": "Wait 15 min between stages" },
+      { "component": "Main Bearing Caps (M50)", "spec": "15-18 ft-lbs (20-25 Nm) + 50°", "notes": "Angle-tighten method" },
+      { "component": "Connecting Rod Bolts (M50)", "spec": "17 ft-lbs (23 Nm) + 70°", "notes": "Angle-tighten method" },
+      { "component": "Flywheel Bolts (Manual)", "spec": "77 ft-lbs (105 Nm)", "notes": "Use new bolts" },
+      { "component": "Flywheel Bolts (Auto)", "spec": "88 ft-lbs (120 Nm)", "notes": "Use new bolts" },
+      { "component": "Valve Cover Bolts (M50)", "spec": "9 ft-lbs (12 Nm)", "notes": "Do not overtighten" },
+      { "component": "Spark Plugs", "spec": "22-24 ft-lbs (30-33 Nm)", "notes": "" },
+      { "component": "Oil Drain Plug", "spec": "18 ft-lbs (25 Nm)", "notes": "Replace crush washer" },
+      { "component": "VANOS Solenoid (M50TU)", "spec": "11 ft-lbs (15 Nm)", "notes": "" },
+      { "component": "Oil Filter Housing Bolts", "spec": "18 ft-lbs (25 Nm)", "notes": "" }
     ],
     "suspension": [
-      {
-        "component": "Control Arm to Subframe",
-        "spec": "57 ft-lbs (77 Nm)",
-        "notes": "Tighten with weight on wheels"
-      },
-      {
-        "component": "Thrust Arm Bolts",
-        "spec": "81 ft-lbs (110 Nm)",
-        "notes": "Tighten with weight on wheels"
-      },
-      {
-        "component": "Tie Rod End Nut",
-        "spec": "30 ft-lbs (41 Nm)",
-        "notes": "Use new cotter pin"
-      },
-      {
-        "component": "Wheel Lug Bolts",
-        "spec": "88-90 ft-lbs (120 Nm)",
-        "notes": "Tighten in star pattern"
-      },
-      {
-        "component": "Strut Top Nut",
-        "spec": "18 ft-lbs (24 Nm)",
-        "notes": "Hold strut shaft while tightening"
-      },
-      {
-        "component": "Subframe Bolts",
-        "spec": "74 ft-lbs (100 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Trailing Arm",
-        "spec": "52 ft-lbs (70 Nm)",
-        "notes": "Tighten with weight on wheels"
-      },
-      {
-        "component": "Sway Bar End Links",
-        "spec": "16 ft-lbs (22 Nm)",
-        "notes": ""
-      }
+      { "component": "Control Arm to Subframe", "spec": "57 ft-lbs (77 Nm)", "notes": "Tighten with weight on wheels" },
+      { "component": "Thrust Arm Bolts", "spec": "81 ft-lbs (110 Nm)", "notes": "Tighten with weight on wheels" },
+      { "component": "Tie Rod End Nut", "spec": "30 ft-lbs (41 Nm)", "notes": "Use new cotter pin" },
+      { "component": "Wheel Lug Bolts", "spec": "88-90 ft-lbs (120 Nm)", "notes": "Tighten in star pattern" },
+      { "component": "Strut Top Nut", "spec": "18 ft-lbs (24 Nm)", "notes": "Hold strut shaft while tightening" },
+      { "component": "Subframe Bolts", "spec": "74 ft-lbs (100 Nm)", "notes": "" },
+      { "component": "Rear Trailing Arm", "spec": "52 ft-lbs (70 Nm)", "notes": "Tighten with weight on wheels" },
+      { "component": "Sway Bar End Links", "spec": "16 ft-lbs (22 Nm)", "notes": "" }
     ],
     "brakes": [
-      {
-        "component": "Front Caliper Carrier Bolts",
-        "spec": "81 ft-lbs (110 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Caliper Carrier Bolts",
-        "spec": "48 ft-lbs (65 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Caliper Guide Pins",
-        "spec": "22 ft-lbs (30 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Brake Rotor Set Screw",
-        "spec": "12 ft-lbs (16 Nm)",
-        "notes": "Use thread locker"
-      },
-      {
-        "component": "Brake Line Fittings",
-        "spec": "13 ft-lbs (18 Nm)",
-        "notes": "Do not overtighten"
-      },
-      {
-        "component": "Wheel Speed Sensor",
-        "spec": "7 ft-lbs (10 Nm)",
-        "notes": ""
-      }
+      { "component": "Front Caliper Carrier Bolts", "spec": "81 ft-lbs (110 Nm)", "notes": "" },
+      { "component": "Rear Caliper Carrier Bolts", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
+      { "component": "Caliper Guide Pins", "spec": "22 ft-lbs (30 Nm)", "notes": "" },
+      { "component": "Brake Rotor Set Screw", "spec": "12 ft-lbs (16 Nm)", "notes": "Use thread locker" },
+      { "component": "Brake Line Fittings", "spec": "13 ft-lbs (18 Nm)", "notes": "Do not overtighten" },
+      { "component": "Wheel Speed Sensor", "spec": "7 ft-lbs (10 Nm)", "notes": "" }
     ]
   },
   "diyGuides": [
     {
       "id": "oil-change",
       "title": "Oil Change",
-      "description": "Complete oil and filter change procedure for M50, M60, and S38 engines.",
+      "description": "Oil and filter on the M50, M60 V8, and the M5's S38.",
       "difficulty": "Easy",
       "time": "30 min",
       "interval": "Every 5,000-7,500 miles",
@@ -1229,7 +840,7 @@
     {
       "id": "brake-pads",
       "title": "Brake Pad Replacement",
-      "description": "Front and rear brake pad replacement with rotor inspection.",
+      "description": "Front and rear pads, with a rotor check while you're in there.",
       "difficulty": "Easy",
       "time": "1-2 hours",
       "interval": "Every 25,000-50,000 miles",
@@ -1249,13 +860,13 @@
         "Remove wheel to expose the brake caliper.",
         "Disconnect the brake pad wear sensor electrical connector if equipped.",
         "Remove the two 7mm Allen caliper guide pin bolts from the back of the caliper.",
-        "Swing the caliper up and secure with wire - do not let it hang by the hose.",
+        "Swing the caliper up and secure with wire—do not let it hang by the hose.",
         "Remove the old brake pads from the caliper bracket.",
         "Inspect rotor surface for scoring, cracks, or minimum thickness wear.",
         "Clean the pad contact surfaces in the bracket with wire brush.",
         "Compress the caliper piston fully using C-clamp or piston tool.",
         "Apply thin layer of brake grease to pad backing plate contact areas.",
-        "Install new pads - wear sensor slot goes on inner pad, toward piston.",
+        "Install new pads—wear sensor slot goes on inner pad, toward piston.",
         "Swing caliper back over pads and reinstall guide pins to 22 ft-lbs (30 Nm).",
         "Reconnect wear sensor and reinstall wheel. Torque lug bolts to 88 ft-lbs (120 Nm).",
         "Pump brake pedal several times until firm before driving."
@@ -1269,7 +880,7 @@
     {
       "id": "pixel-repair",
       "title": "Instrument Cluster Pixel Repair",
-      "description": "Repair dead pixels in the cluster display with ribbon cable resoldering.",
+      "description": "Dead pixels in the cluster or check-control display are almost always a failed ribbon cable. Resolder or replace it and the display comes back.",
       "difficulty": "Intermediate",
       "time": "2-3 hours",
       "interval": "As needed (common issue)",
@@ -1292,7 +903,7 @@
         "Remove the cluster to a clean work surface.",
         "Remove the clear lens and surround by releasing the clips around the edge.",
         "Locate the LCD display ribbon cable connection on the circuit board.",
-        "Inspect the ribbon cable - look for cracks or lifted traces at the solder joints.",
+        "Inspect the ribbon cable—look for cracks or lifted traces at the solder joints.",
         "Apply flux to the ribbon cable connection and carefully reflow solder with iron.",
         "Alternatively, install a replacement ribbon cable using proper alignment.",
         "Test the display before reassembly by reconnecting the cluster in the car.",
@@ -1301,7 +912,7 @@
       ],
       "tips": [
         "Use a temperature-controlled soldering iron set to around 300°C.",
-        "Don't apply too much heat - you can damage the LCD if overheated.",
+        "Don't apply too much heat—you can damage the LCD if overheated.",
         "Replacement ribbon cables are inexpensive and often easier than resoldering.",
         "Consider doing the OBC display ribbon at the same time if it has pixel issues."
       ]
@@ -1309,7 +920,7 @@
     {
       "id": "coolant-flush",
       "title": "Cooling System Flush",
-      "description": "Proper cooling system drain, flush, and refill procedure.",
+      "description": "Drain, flush, and refill the cooling system properly, including bleeding the air out so it doesn't overheat on the way home.",
       "difficulty": "Easy",
       "time": "1-2 hours",
       "interval": "Every 2 years or 30,000 miles",
@@ -1323,7 +934,7 @@
         "Clean rags"
       ],
       "steps": [
-        "Allow the engine to cool completely - never open a hot cooling system.",
+        "Allow the engine to cool completely—never open a hot cooling system.",
         "Remove the expansion tank cap slowly to release any pressure.",
         "Position drain pan under the radiator and open the drain cock on lower passenger side.",
         "For a more complete drain, remove the lower radiator hose at the thermostat housing.",
@@ -1331,7 +942,7 @@
         "Optional flush: Close drain, fill with distilled water, run engine to temp, drain again.",
         "Close the radiator drain cock or reconnect the lower hose.",
         "Fill the system through the expansion tank with 50/50 BMW coolant mix.",
-        "Fill slowly to allow air to escape - the system holds about 11 liters.",
+        "Fill slowly to allow air to escape—the system holds about 11 liters.",
         "Start the engine with the heater on full hot and expansion tank cap off.",
         "Allow engine to reach operating temperature and thermostat to open.",
         "Top off coolant as level drops and air bubbles escape.",
@@ -1341,7 +952,7 @@
       ],
       "tips": [
         "Use only BMW-approved blue coolant or equivalent phosphate-free formula.",
-        "Inspect the expansion tank for cracks - this is a common failure point.",
+        "Inspect the expansion tank for cracks—this is a common failure point.",
         "If the old coolant is rusty or contaminated, consider a block flush.",
         "Check all hoses for cracks or soft spots while the system is drained."
       ]
@@ -1349,9 +960,9 @@
   ],
   "restorationItems": {
     "engine": [
-      { "id": "e34-timing-guides", "name": "Replace timing chain guides (M60 V8)", "description": "Critical - Nikasil guides fail" },
-      { "id": "e34-vanos", "name": "Rebuild VANOS (M50TU)", "description": "Early VANOS system - seals fail" },
-      { "id": "e34-timing-belt", "name": "Replace timing belt (M20)", "description": "Interference engine - critical service" },
+      { "id": "e34-timing-guides", "name": "Replace timing chain guides (M60 V8)", "description": "Nikasil-era guides fail" },
+      { "id": "e34-vanos", "name": "Rebuild VANOS (M50TU)", "description": "Early VANOS system—seals fail" },
+      { "id": "e34-timing-belt", "name": "Replace timing belt (M20)", "description": "Interference engine—don't skip it" },
       { "id": "e34-valve-cover", "name": "Replace valve cover gasket", "description": "Common oil leak source" },
       { "id": "e34-oil-leaks", "name": "Address oil leaks", "description": "Oil pan, front/rear main seals" }
     ],
@@ -1362,7 +973,7 @@
       { "id": "e34-thermostat", "name": "Replace thermostat", "description": "Include housing" }
     ],
     "suspension": [
-      { "id": "e34-thrust-arms", "name": "Replace front thrust arm bushings", "description": "Critical for steering feel" },
+      { "id": "e34-thrust-arms", "name": "Replace front thrust arm bushings", "description": "Big effect on steering feel" },
       { "id": "e34-shocks", "name": "Replace shocks and struts", "description": "Self-leveling rear common" },
       { "id": "e34-control-arms", "name": "Replace control arm bushings", "description": "Affects handling" },
       { "id": "e34-subframe", "name": "Inspect rear subframe bushings", "description": "Common wear item" }
@@ -1386,11 +997,11 @@
     ]
   },
   "buyersGuide": {
-    "overview": "The BMW E34 5 Series (1988-1996) represents the peak of BMW's over-engineering philosophy - a time when the company built cars to last decades rather than lease cycles. The E34 introduced multi-link rear suspension, available all-wheel drive (525ix), and the legendary M5 with its hand-built S38 engine. Build quality is exceptional, with thick paint, quality materials, and robust mechanicals. Today, E34s offer tremendous value - a comfortable, refined driving experience with genuine BMW character at affordable prices. The challenge is finding one that hasn't been neglected.",
+    "overview": "The E34 comes from the period when BMW engineered things to outlast the loan. The paint is thick, the doors close with a thunk, and the M50-powered 525i is one of the most dependable BMWs of its era. The V8 540i is the one I'd want, provided its timing chain guides have been done. They're cheap because nobody's looking, which also means most of them have been neglected by somebody. Budget for the cooling system and suspension bushings whatever the listing says.",
     "quickFacts": {
       "productionYears": "1988-1996",
       "totalProduced": "~1.33 million worldwide",
-      "priceRange": "$4,000 - $60,000+",
+      "priceRange": "$4,000–$60,000+",
       "bestYears": "1991-1995 (M50 engines, best reliability)"
     },
     "variants": [
@@ -1433,7 +1044,7 @@
     ],
     "inspectionPoints": [
       {
-        "category": "Rust (Critical)",
+        "category": "Rust (check first)",
         "items": [
           {
             "check": "Rocker Panels",
@@ -1492,7 +1103,7 @@
           },
           {
             "check": "Manual Transmission",
-            "detail": "Test all gears. Getrag 260 (M30) or ZF (V8) transmissions are robust but synchros can wear.",
+            "detail": "Test every gear. The Getrag and ZF gearboxes are tough, but synchros wear.",
             "costIfBad": "$1,500-3,000"
           }
         ]
@@ -1502,19 +1113,11 @@
         "items": [
           {
             "check": "Thrust Arm Bushings",
-            "detail": "E34's notorious wear item. Causes steering wander and clunking. Inspect for cracking.",
+            "detail": "A known E34 wear item. Worn ones cause wander and clunks over bumps. Look for cracked rubber.",
             "costIfBad": "$400-700"
           },
-          {
-            "check": "Rear Subframe Bushings",
-            "detail": "Check for deterioration - causes rear-end looseness and alignment issues.",
-            "costIfBad": "$400-800"
-          },
-          {
-            "check": "Steering Rack",
-            "detail": "Check for play at center and leaks from seals. Power steering pump can also fail.",
-            "costIfBad": "$600-1,200"
-          },
+          { "check": "Rear Subframe Bushings", "detail": "Check for deterioration—causes rear-end looseness and alignment issues.", "costIfBad": "$400-800" },
+          { "check": "Steering Rack", "detail": "Check for play at center and leaks from seals. Power steering pump can also fail.", "costIfBad": "$600-1,200" },
           {
             "check": "Self-Leveling Suspension",
             "detail": "Touring models have self-leveling rear. Check for sag or leaking spheres.",
@@ -1535,34 +1138,27 @@
             "detail": "E34 window regulators have plastic parts that break. Test all windows multiple times.",
             "costIfBad": "$150-300 each"
           },
-          {
-            "check": "Climate Control",
-            "detail": "HVAC blend doors fail causing stuck temperature. Test heating and cooling.",
-            "costIfBad": "$500-1,500"
-          },
-          {
-            "check": "ABS System",
-            "detail": "ABS control modules can fail. Check for ABS light and pump operation.",
-            "costIfBad": "$500-1,200"
-          }
+          { "check": "Climate Control", "detail": "HVAC blend doors fail causing stuck temperature. Test heating and cooling.", "costIfBad": "$500-1,500" },
+          { "check": "ABS System", "detail": "ABS control modules can fail. Check for ABS light and pump operation.", "costIfBad": "$500-1,200" }
         ]
       }
     ],
     "pricingGuide": {
+      "asOf": "January 2026",
       "project": {
-        "price": "$1,500 - $5,000",
+        "price": "$1,500–$5,000",
         "description": "Rusty or high-mileage cars needing significant work. Common in the Rust Belt. Budget carefully."
       },
       "driver": {
-        "price": "$5,000 - $12,000",
+        "price": "$5,000–$12,000",
         "description": "Running and driving with cosmetic wear or deferred maintenance. Great value for the experience."
       },
       "excellent": {
-        "price": "$12,000 - $25,000",
+        "price": "$12,000–$25,000",
         "description": "Well-maintained 540i 6-speed or clean 525i examples. Documented service history."
       },
       "concours": {
-        "price": "$25,000 - $70,000+",
+        "price": "$25,000–$70,000+",
         "description": "M5 models or pristine low-mileage examples. Fully documented with original equipment."
       }
     },
@@ -1595,76 +1191,40 @@
       "fuel": "18-25 MPG depending on engine"
     },
     "expertTips": [
-      "The E34 is the best-built 5 Series BMW ever made - they were over-engineered for durability",
+      "The E34 is the best-built 5 Series BMW ever made—they were over-engineered for durability",
       "M50-powered 525i models offer the best balance of reliability, performance, and running costs",
-      "540i V8 cars should be carefully vetted for Nikasil damage - check the engine code and casting date",
-      "Parts availability is excellent - many components are shared with E36 and E32",
-      "The thrust arm bushings are the Achilles heel - plan to replace them during your ownership",
-      "Touring (wagon) models are becoming collectible - practical and rare in the US",
-      "M5 values have stabilized at strong levels - they're not likely to decrease significantly",
+      "540i V8 cars should be carefully vetted for Nikasil damage—check the engine code and casting date",
+      "Parts availability is excellent—many components are shared with E36 and E32",
+      "The thrust arm bushings are the Achilles heel—plan to replace them during your ownership",
+      "Touring (wagon) models are becoming collectible—practical and rare in the US",
+      "M5 values have stabilized at strong levels—they're not likely to decrease significantly",
       "Join the E34 community at bimmerforums.com for excellent technical support",
-      "Factory sport seats are far superior to standard seats - worth seeking out",
+      "Factory sport seats are far superior to standard seats—worth seeking out",
       "A well-maintained E34 can exceed 300,000 miles without major engine work"
     ]
   },
   "communityResources": {
     "youtube": [
-      {
-        "name": "M539 Restorations",
-        "url": "https://www.youtube.com/@M539Restorations",
-        "description": "BMW repairs and restorations with E34 content"
-      },
-      {
-        "name": "E39Source",
-        "url": "https://www.youtube.com/@E39Source",
-        "description": "BMW tutorials covering E34 and E39 platforms"
-      },
-      {
-        "name": "BMW Group Classic",
-        "url": "https://www.youtube.com/@BMWGroupClassic",
-        "description": "Official heritage channel with classic E34 features"
-      }
+      { "name": "M539 Restorations", "url": "https://www.youtube.com/@M539Restorations", "description": "BMW repairs and restorations with E34 content" },
+      { "name": "E39Source", "url": "https://www.youtube.com/@E39Source", "description": "BMW tutorials covering E34 and E39 platforms" },
+      { "name": "BMW Group Classic", "url": "https://www.youtube.com/@BMWGroupClassic", "description": "Official heritage channel with classic E34 features" }
     ],
     "forums": [
-      {
-        "name": "5Series.net",
-        "url": "https://5series.net/forums/",
-        "description": "Leading E34 and 5 Series community"
-      },
-      {
-        "name": "M5Board",
-        "url": "https://www.m5board.com/",
-        "description": "E34 M5 performance and technical discussion"
-      },
+      { "name": "5Series.net", "url": "https://5series.net/forums/", "description": "Leading E34 and 5 Series community" },
+      { "name": "M5Board", "url": "https://www.m5board.com/", "description": "E34 M5 performance and technical discussion" },
       {
         "name": "BimmerFest E34 Forum",
         "url": "https://www.bimmerfest.com/forums/e34-1989-1995.102/",
         "description": "Dedicated E34 section with active community"
       },
-      {
-        "name": "BMW5Series.org",
-        "url": "https://www.bmw5series.org/forums/bmw-5-series-e34.215/",
-        "description": "E34 discussion and technical resources"
-      }
+      { "name": "BMW5Series.org", "url": "https://www.bmw5series.org/forums/bmw-5-series-e34.215/", "description": "E34 discussion and technical resources" }
     ],
     "facebook": [
-      {
-        "name": "BMW E34 Owners",
-        "url": "https://www.facebook.com/groups/bmwe34owners",
-        "description": "International E34 enthusiast community"
-      },
-      {
-        "name": "BMW E34 5 Series",
-        "url": "https://www.facebook.com/groups/bmwe345series",
-        "description": "Active E34 discussion and marketplace"
-      }
+      { "name": "BMW E34 Owners", "url": "https://www.facebook.com/groups/bmwe34owners", "description": "International E34 enthusiast community" },
+      { "name": "BMW E34 5 Series", "url": "https://www.facebook.com/groups/bmwe345series", "description": "Active E34 discussion and marketplace" }
     ],
     "websites": [
-      {
-        "name": "BMWE34.net",
-        "url": "http://www.bmwe34.net/",
-        "description": "Dedicated E34 tuning and repair resource"
-      }
+      { "name": "BMWE34.net", "url": "http://www.bmwe34.net/", "description": "Dedicated E34 tuning and repair resource" }
     ]
   }
 }

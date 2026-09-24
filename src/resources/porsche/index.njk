@@ -1,191 +1,85 @@
 ---
 layout: layouts/base.njk
-title: Porsche Resources
-description: "Complete Porsche resource guides for 911 (964, 993, 996, 997, 991), Boxster (986, 987), Cayman, 924, 928, and 944 models. Find common issues, repair costs, torque specs, and parts suppliers."
-keywords: "Porsche 911, Porsche Boxster, Porsche Cayman, Porsche 944, Porsche 964, Porsche 993, Porsche 996, Porsche 997, Porsche common issues, Porsche repair guide, Porsche torque specs"
+title: "Classic Porsche: 924 to 991"
+description: "Known issues, repair costs, guides, torque specs, and buyer's guides for the Porsche 924, 928, 944, 964, 993, 996, 997, 991, 986 Boxster, and 987 Boxster/Cayman."
 breadcrumbs:
   - { label: "Home", url: "/" }
   - { label: "Porsche" }
 ---
-
-<!-- Hero Section -->
+{% set b = stats.byBrand.porsche %}
 <section class="brand-hero">
     <div class="brand-hero-content">
-        <span class="hero-badge">Porsche Resources</span>
-        <h1>There Is No <span class="highlight">Substitute</span></h1>
-        <p class="hero-subtitle">Comprehensive guides, verified specs, and trusted resources for Porsche enthusiasts.</p>
+        <p class="hero-eyebrow">Porsche</p>
+        <h1>Ten Porsches: front-engined, air-cooled, and water-cooled.</h1>
+        <p class="hero-subtitle">From the Audi-engined 924 to the 991. The failures each one is known for, how to fix them, and what it'll cost.</p>
     </div>
 </section>
 
-<!-- Stats Bar -->
-<section class="stats-bar">
-    <div class="stats-container">
-        <div class="stat-item">
-            <span class="stat-number">10</span>
-            <span class="stat-label">Platforms</span>
-        </div>
-        <div class="stat-item">
-            <span class="stat-number">{{ vehicles['924'].issues | length + vehicles['928'].issues | length + vehicles['944'].issues | length + vehicles['964'].issues | length + vehicles['986'].issues | length + vehicles['987'].issues | length + vehicles['991'].issues | length + vehicles['993'].issues | length + vehicles['996'].issues | length + vehicles['997'].issues | length }}+</span>
-            <span class="stat-label">Issues Documented</span>
-        </div>
-        <div class="stat-item">
-            <span class="stat-number">40</span>
-            <span class="stat-label">Restoration Guides</span>
-        </div>
-        <div class="stat-item">
-            <span class="stat-number">{{ vehicles['924'].diyGuides | length + vehicles['928'].diyGuides | length + vehicles['944'].diyGuides | length + vehicles['964'].diyGuides | length + vehicles['986'].diyGuides | length + vehicles['987'].diyGuides | length + vehicles['991'].diyGuides | length + vehicles['993'].diyGuides | length + vehicles['996'].diyGuides | length + vehicles['997'].diyGuides | length }}+</span>
-            <span class="stat-label">DIY Guides</span>
-        </div>
-    </div>
+<section class="stats-bar" aria-label="Porsche coverage">
+    <dl class="stats-container">
+        <div class="stat-item"><dt class="stat-label">Cars</dt><dd class="stat-number">{{ b.vehicles }}</dd></div>
+        <div class="stat-item"><dt class="stat-label">Known issues</dt><dd class="stat-number">{{ b.issues }}</dd></div>
+        <div class="stat-item"><dt class="stat-label">Guides</dt><dd class="stat-number">{{ b.guides }}</dd></div>
+        <div class="stat-item"><dt class="stat-label">Torque specs</dt><dd class="stat-number">{{ b.torqueSpecs }}</dd></div>
+    </dl>
 </section>
 
-<!-- Quick Search Section -->
+<section id="vehicles" class="vehicles-section">
+    <div class="brand-block">
+        <div class="brand-header">
+            <h2 class="brand-title">Front-engine transaxle</h2>
+            <p class="brand-blurb">924, 944, and 928: engine up front, gearbox at the back.</p>
+        </div>
+        {% set brandKey = "porsche" %}{% set gridKeys = ["924", "944", "928"] %}
+        {% include "partials/vehicle-grid.njk" %}
+    </div>
+
+    <div class="brand-block">
+        <div class="brand-header">
+            <h2 class="brand-title">Air-cooled 911</h2>
+            <p class="brand-blurb">The 964 and 993, the last of the air-cooled cars.</p>
+        </div>
+        {% set brandKey = "porsche" %}{% set gridKeys = ["964", "993"] %}
+        {% include "partials/vehicle-grid.njk" %}
+    </div>
+
+    <div class="brand-block">
+        <div class="brand-header">
+            <h2 class="brand-title">Water-cooled 911</h2>
+            <p class="brand-blurb">996, 997, and 991.</p>
+        </div>
+        {% set brandKey = "porsche" %}{% set gridKeys = ["996", "997", "991"] %}
+        {% include "partials/vehicle-grid.njk" %}
+    </div>
+
+    <div class="brand-block">
+        <div class="brand-header">
+            <h2 class="brand-title">Boxster & Cayman</h2>
+            <p class="brand-blurb">The mid-engined cars: 986 and 987.</p>
+        </div>
+        {% set brandKey = "porsche" %}{% set gridKeys = ["986", "987"] %}
+        {% include "partials/vehicle-grid.njk" %}
+    </div>
+    {% set gridKeys = null %}
+</section>
+
 <section class="quick-search-section">
     <div class="quick-search-container">
         <h2>What are you working on?</h2>
-        <p>Search across all Porsche models for issues, specs, guides, and suppliers</p>
-        <form class="home-search-form" action="/search/" method="get">
+        <p>Search every Porsche page for issues, guides, specs, and parts.</p>
+        <form class="home-search-form" action="/search/" method="get" role="search">
             <input type="hidden" name="brand" value="Porsche">
-            <input type="text" name="q" placeholder="Try 'IMS bearing', 'timing belt', 'RMS leak'..." class="home-search-input">
+            <label for="brand-search" class="visually-hidden">Search Porsche pages</label>
+            <input type="search" id="brand-search" name="q" placeholder="IMS bearing, RMS leak, timing belt…" class="home-search-input">
             <button type="submit" class="btn btn-primary">Search</button>
         </form>
-        <div class="popular-searches">
-            <span>Popular:</span>
-            <a href="/search/?q=ims+bearing">IMS Bearing</a>
-            <a href="/search/?q=timing+belt">Timing Belt</a>
-            <a href="/search/?q=rms+leak">RMS Leak</a>
-            <a href="/search/?q=coolant+pipe">Coolant Pipes</a>
-            <a href="/search/?q=air+oil+separator">AOS</a>
-        </div>
-    </div>
-</section>
-
-<!-- Vehicle Platforms Section -->
-<section id="vehicles" class="vehicles-section">
-    <div class="section-header">
-        <h2>Select Your Porsche</h2>
-        <p>Choose your model for common issues, restoration guides, torque specs, and parts suppliers</p>
-    </div>
-
-    <!-- Front-Engine Models -->
-    <div class="brand-block">
-        <div class="brand-header">
-            <h3 class="brand-title">Front-Engine</h3>
-        </div>
-        <div class="vehicle-grid">
-            {% set frontEngine = ['924', '944', '928'] %}
-            {% for key in frontEngine %}
-            {% set vehicle = vehicles[key] %}
-            <a href="/resources/porsche/{{ key }}/" class="vehicle-card">
-                <div class="vehicle-card-image">
-                    {% if vehicle.heroImage %}<img src="{{ vehicle.heroImage }}" alt="{{ vehicle.fullName }} {{ vehicle.years }}" loading="lazy">{% endif %}
-                </div>
-                <div class="vehicle-card-content">
-                    <h4>{{ vehicle.model }}</h4>
-                    <span class="vehicle-years">{{ vehicle.years }}</span>
-                    <span class="vehicle-name">{{ vehicle.fullName | replace("Porsche ", "") }}</span>
-                </div>
-            </a>
-            {% endfor %}
-        </div>
-    </div>
-
-    <!-- Air-Cooled 911 -->
-    <div class="brand-block">
-        <div class="brand-header">
-            <h3 class="brand-title">Air-Cooled 911</h3>
-        </div>
-        <div class="vehicle-grid">
-            {% set airCooled = ['964', '993'] %}
-            {% for key in airCooled %}
-            {% set vehicle = vehicles[key] %}
-            <a href="/resources/porsche/{{ key }}/" class="vehicle-card">
-                <div class="vehicle-card-image">
-                    {% if vehicle.heroImage %}<img src="{{ vehicle.heroImage }}" alt="{{ vehicle.fullName }} {{ vehicle.years }}" loading="lazy">{% endif %}
-                </div>
-                <div class="vehicle-card-content">
-                    <h4>{{ vehicle.model }}</h4>
-                    <span class="vehicle-years">{{ vehicle.years }}</span>
-                    <span class="vehicle-name">{{ vehicle.fullName | replace("Porsche ", "") }}</span>
-                </div>
-            </a>
-            {% endfor %}
-        </div>
-    </div>
-
-    <!-- Water-Cooled 911 -->
-    <div class="brand-block">
-        <div class="brand-header">
-            <h3 class="brand-title">Water-Cooled 911</h3>
-        </div>
-        <div class="vehicle-grid">
-            {% set waterCooled911 = ['996', '997', '991'] %}
-            {% for key in waterCooled911 %}
-            {% set vehicle = vehicles[key] %}
-            <a href="/resources/porsche/{{ key }}/" class="vehicle-card">
-                <div class="vehicle-card-image">
-                    {% if vehicle.heroImage %}<img src="{{ vehicle.heroImage }}" alt="{{ vehicle.fullName }} {{ vehicle.years }}" loading="lazy">{% endif %}
-                </div>
-                <div class="vehicle-card-content">
-                    <h4>{{ vehicle.model }}</h4>
-                    <span class="vehicle-years">{{ vehicle.years }}</span>
-                    <span class="vehicle-name">{{ vehicle.fullName | replace("Porsche ", "") }}</span>
-                </div>
-            </a>
-            {% endfor %}
-        </div>
-    </div>
-
-    <!-- Boxster / Cayman -->
-    <div class="brand-block">
-        <div class="brand-header">
-            <h3 class="brand-title">Boxster / Cayman</h3>
-        </div>
-        <div class="vehicle-grid">
-            {% set midEngine = ['986', '987'] %}
-            {% for key in midEngine %}
-            {% set vehicle = vehicles[key] %}
-            <a href="/resources/porsche/{{ key }}/" class="vehicle-card">
-                <div class="vehicle-card-image">
-                    {% if vehicle.heroImage %}<img src="{{ vehicle.heroImage }}" alt="{{ vehicle.fullName }} {{ vehicle.years }}" loading="lazy">{% endif %}
-                </div>
-                <div class="vehicle-card-content">
-                    <h4>{{ vehicle.model }}</h4>
-                    <span class="vehicle-years">{{ vehicle.years }}</span>
-                    <span class="vehicle-name">{{ vehicle.fullName | replace("Porsche ", "") }}</span>
-                </div>
-            </a>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
-<!-- Features Section -->
-<section class="features-section">
-    <div class="section-header">
-        <h2>What You'll Find</h2>
-        <p>Everything you need to keep your Porsche on the road</p>
-    </div>
-    <div class="features-grid">
-        <div class="feature-card">
-            <div class="feature-icon">🔧</div>
-            <h3>Common Issues</h3>
-            <p>Detailed documentation of known problems with symptoms, causes, and proven fixes for each platform.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">📐</div>
-            <h3>Torque Specs</h3>
-            <p>Factory-verified torque specifications for engine, suspension, brakes, and drivetrain components.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">📋</div>
-            <h3>Restoration Guides</h3>
-            <p>Comprehensive guides for suspension refresh, rust repair, electrical systems, and interior restoration.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">🛒</div>
-            <h3>Parts Suppliers</h3>
-            <p>Curated lists of trusted OEM, aftermarket, and used parts suppliers for each model.</p>
-        </div>
+        <p class="popular-searches">
+            <span>People look up:</span>
+            <a href="/search/?q=ims+bearing&amp;brand=Porsche">IMS bearing</a>
+            <a href="/search/?q=timing+belt&amp;brand=Porsche">Timing belt</a>
+            <a href="/search/?q=rms+leak&amp;brand=Porsche">RMS leak</a>
+            <a href="/search/?q=coolant+pipe&amp;brand=Porsche">Coolant pipes</a>
+            <a href="/search/?q=air+oil+separator&amp;brand=Porsche">AOS</a>
+        </p>
     </div>
 </section>
