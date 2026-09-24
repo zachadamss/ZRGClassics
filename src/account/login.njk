@@ -9,7 +9,7 @@ robots: noindex
   <div class="auth-container">
     <div class="auth-card">
       <h1>Sign In</h1>
-      <p class="auth-subtitle">Welcome back to ZRG Classics</p>
+      <p class="auth-subtitle">Welcome back. Your garage is waiting.</p>
 
       <form id="login-form" class="auth-form">
         <div class="form-group">
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const submitBtn = form.querySelector('button[type="submit"]');
 
     submitBtn.disabled = true;
-    submitBtn.textContent = 'Signing in...';
+    submitBtn.textContent = 'Signing in…';
 
     try {
       await Auth.signIn(email, password);

@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       const result = await Forum.getThreads(slug, { page });
 
       if (!result.threads || result.threads.length === 0) {
-        container.innerHTML = '<p class="empty-state">No threads yet. Be the first to start a discussion!</p>';
+        container.innerHTML = '<p class="empty-state">No threads here yet. Start the first one.</p>';
         paginationContainer.innerHTML = '';
         return;
       }

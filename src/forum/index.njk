@@ -1,25 +1,25 @@
 ---
 layout: layouts/base.njk
-title: Forums
-description: Join the ZRG Classics community forums. Discuss classic BMW and Porsche maintenance, modifications, and share your enthusiasm with fellow enthusiasts.
+title: Forum
+description: "A board for each classic BMW and Porsche on ZRG Classics. Ask about the weird noise, post your build, or help someone else out."
 ---
 
 <main class="forum-page">
   <div class="container">
     <div class="forum-header">
-      <h1>Community Forums</h1>
-      <p class="forum-subtitle">Connect with fellow enthusiasts</p>
+      <h1>The Forum</h1>
+      <p class="forum-subtitle">A board for each car. Ask about the weird noise, post your build, or help someone else out.</p>
       <div class="forum-actions">
-        <a href="/forum/new/" class="btn btn-primary" id="new-thread-btn">Start New Thread</a>
+        <a href="/forum/new/" class="btn btn-primary" id="new-thread-btn">Start a thread</a>
       </div>
     </div>
 
     <div class="forum-search">
-      <input type="text" id="forum-search" placeholder="Search forums..." autocomplete="off">
+      <input type="text" id="forum-search" placeholder="Search the forum…" aria-label="Search the forum" autocomplete="off">
     </div>
 
     <div id="forum-categories" class="forum-categories">
-      <div class="loading">Loading forums...</div>
+      <div class="loading">Loading the forum…</div>
     </div>
   </div>
 </main>
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     container.innerHTML = html;
   } catch (error) {
     console.error('Error loading categories:', error);
-    container.innerHTML = '<p class="error">Unable to load forums. Please try again later.</p>';
+    container.innerHTML = '<p class="error">The forum didn't load. Refresh the page, and if it keeps happening, <a href="/about/#contact">let me know</a>.</p>';
   }
 
   // Search functionality
@@ -110,8 +110,10 @@ document.addEventListener('DOMContentLoaded', async () => {
           <p class="category-description">${Forum.sanitizeHtml(cat.description)}</p>
         </div>
         <div class="category-stats">
-          <span class="stat">${cat.thread_count || 0} threads</span>
-          <span class="stat">${cat.post_count || 0} posts</span>
+          ${cat.thread_count
+            ? `<span class="stat">${cat.thread_count} ${cat.thread_count === 1 ? 'thread' : 'threads'}</span>
+               <span class="stat">${cat.post_count || 0} ${cat.post_count === 1 ? 'post' : 'posts'}</span>`
+            : '<span class="stat stat-empty">Start the first thread</span>'}
         </div>
       </a>
     `;

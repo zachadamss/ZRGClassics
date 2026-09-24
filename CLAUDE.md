@@ -13,12 +13,11 @@ npm run serve              # Dev server with hot reload (localhost:8080)
 npm run build              # Build site to _site/
 npm run build:search       # Rebuild search index from vehicle JSON data
 npm run build:all          # Build site + search index
-npm run optimize:images    # Generate WebP + responsive image sizes
 npm run minify             # Minify CSS and JS
-npm run build:prod         # Full production build (build:all + optimize + minify)
+npm run build:prod         # Full production build (build:all + minify)
 ```
 
-No test runner or linter is configured.
+No test runner or linter is configured. Node 22+ is required (`@11ty/eleventy-img` 7).
 
 ## Architecture
 
@@ -29,9 +28,17 @@ The core content pattern: **JSON data files → Nunjucks templates → static HT
 - `src/_data/vehicles/*.json` — 17 vehicle data files (7 BMW, 10 Porsche), each containing issues, guides, torque specs, suppliers, buyer's guide, and community resources
 - `src/resources/bmw/*.njk` and `src/resources/porsche/*.njk` — page templates that reference vehicle data
 - `src/_includes/layouts/vehicle.njk` — shared layout for all vehicle pages
-- `src/_includes/partials/` — reusable components (guide-card, issue-card, specs-table, supplier-list, buyers-guide, etc.)
+- `src/resources/buying.njk` (+ `buying.11tydata.js`) — paginates `vehiclePages` into one buyer's guide per car at `/resources/<brand>/<car>/buying/`
+- `src/_includes/partials/` — reusable components (vehicle-hero, vehicle-grid, guide-card, issue-card, specs-table, supplier-list, buyers-guide, garage-cta, logo, etc.)
+- `src/_includes/icons/*.svg` — line icons, included inline
 
-Vehicle data is accessed in templates via the global `vehicles` object (e.g., `vehicles.e30`).
+Vehicle data is accessed in templates via the global `vehicles` object (e.g., `vehicles.e30`). Car lists, nav submenus, the footer, the sitemap, the garage platform list (`/js/platforms.js`, generated from `src/_generated/platforms.njk`), and all content counts (`stats.js`, including `stats.byBrand`) are generated from `vehicleList.json` and the vehicle files, so adding a car doesn't require editing them.
+
+Edit vehicle JSON with `scripts/vehicle_json.py` (load/save in the house formatting) so diffs stay readable.
+
+### Images
+
+Photos render through the async `{% picture src, alt, sizes, attrs %}` shortcode in `.eleventy.js` (Eleventy Image: WebP + JPEG at 400/800/1200/1920w, never upscaled, output to `_site/images/responsive/`). Nunjucks drops async shortcode output inside plain `{% for %}` loops, so loops that render pictures (directly or via an include) must use `{% asyncEach %}`. Vehicle photos are placeholders; replace a file in `src/images/vehicles/` and fill that car's `photoCredit`.
 
 ### Client-Side Search
 
@@ -45,20 +52,27 @@ The search index must be rebuilt (`npm run build:search`) when vehicle data chan
 
 Client-side Supabase handles all dynamic features:
 - **Auth**: Login, register, password reset (`src/account/`, `src/js/supabase.js`)
-- **My Garage**: Vehicle storage and maintenance history (`src/account/garage.njk`, `src/js/garage.js`)
+- **My Garage**: the single home for tracking a car (`src/account/garage.njk`, `src/js/garage.js`). Its maintenance tracker (`/account/garage/maintenance/`, `src/js/maintenance-tracker.js`) and restoration tracker (`/account/garage/restoration/`, `src/js/restoration-tracker.js`) always load one car from `?vehicle=<id>`; the garage page accepts `?vehicle=<id>` and `?add=<platform>` deep links.
 - **Forums**: Categories, threads, replies (`src/forum/`, `src/js/forum.js`)
-- **Tools**: Build calculator, maintenance tracker, restoration checklist (`src/tools/`)
+- **Tools**: the public Build Cost Calculator (`src/tools/`) and a `/tools/` hub
+- **Newsletter**: `src/js/newsletter.js` subscribes forms marked `data-newsletter-form` directly to ConvertKit
 
 Database schemas are in `supabase-schema*.sql` files at the project root. `supabase-migration-security.sql` must be run after them (username/avatar constraints, triggers that protect system-managed columns like `is_pinned`/`post_count`, and a block on replies to locked threads).
+
+The login page only follows same-site paths from `?return=` (`safeReturnUrl()`); keep it that way.
 
 Any user- or database-supplied value inserted via `innerHTML` must go through `Forum.sanitizeHtml()` (or the tools' `escapeHtml()`), and user-supplied URLs through `Forum.safeUrl()`. The Supabase client library and `/js/supabase.js` are loaded once in `layouts/base.njk`; pages should not include them again.
 
 ### Styling
 
-Single CSS file (`src/styles.css`, ~12K lines) using CSS custom properties for theming:
-- Gulf Racing color palette (Blue #7DCFEA, Orange #F26522, Navy #1E3A5F)
-- Dark mode via `[data-theme="dark"]` on `<html>`, persisted in localStorage
-- Mobile-first responsive design (breakpoints at 480px and 768px)
+Single CSS file (`src/styles.css`, ~10K lines) using design tokens in `:root`:
+- Gulf Racing palette (Blue #7DCFEA, Orange #F26522, Navy #1E3A5F) for accents and dark surfaces. For text and buttons on light backgrounds use the AA-contrast tokens: `--accent-text`, `--accent-strong` (button fill), `--link-blue`, `--text-muted`, `--text-subtle`
+- Type: Archivo (`--font-display`, expanded width) for headings, Inter (`--font-body`); fluid scale `--step--1`…`--step-5`; spacing `--space-1`…`--space-9`, `--gutter`, `--content-wide`, `--content-reading`
+- Dark mode via `[data-theme="dark"]` on `<html>`. An inline script in `base.njk` applies the saved theme or `prefers-color-scheme` before first paint; `script.js` only handles the toggle
+- `<html>` starts as `no-js` and becomes `js`; scroll-reveal content stays visible without JS
+- Desktop-first `max-width` media queries at 1024px, 768px, and 480px
+- Page-specific rules are scoped to the page wrapper (`.garage-page`, `.maintenance-tracker`, `.restoration-checklist`, `.calculator-container`, `.auth-page`, `.forum-page`). Don't add unscoped rules for generic class names like `.section-header` or `.vehicle-card`
+- Don't use a `<header>` element for page intros; the global `header` rule styles the site header
 
 ### Eleventy Configuration
 
@@ -69,7 +83,7 @@ Single CSS file (`src/styles.css`, ~12K lines) using CSS custom properties for t
 
 ### Vercel Routing
 
-`vercel.json` defines rewrites for dynamic forum URLs:
+`vercel.json` defines redirects for retired URLs (Invoice Creator, old `/tools/` tracker URLs, `/community/forums/`) and rewrites for dynamic forum URLs:
 - `/forum/:category/:threadId/` → `/forum/thread/`
 - `/forum/:category/` → `/forum/category/`
 
@@ -77,12 +91,16 @@ Also sets security headers (X-Frame-Options, CSP-adjacent headers, Permissions-P
 
 ## Vehicle Data Schema
 
-All vehicle JSON files follow a consistent structure with these top-level keys: `model`, `brand`, `fullName`, `years`, `engines`, `heroImage`, `buyersGuide`, `issues[]`, `guides[]`, `diyGuides[]`, `torqueSpecs{}`, `suppliers{}`, `communityResources[]`. See any existing file (e.g., `src/_data/vehicles/e30.json`) as the canonical reference when adding new vehicles.
+All vehicle JSON files follow a consistent structure with these top-level keys: `model`, `brand`, `fullName`, `series` (short card label), `tagline`, `years`, `engines`, `heroImage`, `photoCredit{text,url,license}`, `buyersGuide` (with `pricingGuide.asOf`), `issues[]`, `guides[]`, `diyGuides[]`, `torqueSpecs{}`, `suppliers{}`, `communityResources[]`. Issue parts use `partNumber` for real OEM numbers only; use `brand` for aftermarket makers and omit both when it varies. See any existing file (e.g., `src/_data/vehicles/e30.json`) as the canonical reference when adding new vehicles.
 
 ## Key Files
 
 - `src/_data/site.json` — site metadata (name, URL, social links)
 - `src/_data/navigation.json` — hierarchical menu structure
-- `src/_data/stats.js` — dynamically computes content counts for the homepage
-- `src/script.js` — global JS (dark mode toggle, mobile nav, expandable cards)
-- `optimize-images.js` — Sharp-based image optimization script
+- `src/_data/stats.js` — content counts for the homepage and brand pages (`stats.byBrand`)
+- `src/script.js` — global JS (theme toggle, mobile nav, expandable cards, print buttons)
+- `docs/site-review-2026-09.md` — September 2026 design/copy review: every finding, its status, and what's waiting on the owner
+
+## Voice
+
+Site copy is first person ("I"), in a tech-editor tone: knowledgeable, direct, occasional wit, measured opinions. Avoid "Comprehensive/Complete…" openers, "legendary", "sweet spot", "robust", and borrowed manufacturer slogans. Use en dashes for ranges (the `range` filter converts `1982-1994` in templates). Don't invent personal history for the owner.

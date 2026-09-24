@@ -8860,8 +8860,15 @@ nav ul li.dropdown.touch-open > .dropdown-menu {
 /* ================================
    Forum Pages
    ================================ */
+/* Page container shared by the forum and garage pages */
+.forum-page .container,
+.garage-page .container {
+    max-width: var(--content-wide);
+    margin: 0 auto;
+}
+
 .forum-page {
-    padding: 2rem 1rem;
+    padding: var(--space-7) var(--gutter);
     background: var(--background-alt);
     min-height: calc(100vh - 200px);
 }
@@ -9965,4 +9972,67 @@ nav ul li.dropdown.touch-open > .dropdown-menu {
 :focus-visible {
     outline: 3px solid var(--link-blue);
     outline-offset: 2px;
+}
+
+/* Parts tables: non-OEM entries */
+.part-number .part-brand {
+    font-family: var(--font-body);
+    color: var(--text-secondary);
+}
+
+.part-number .part-varies {
+    font-family: var(--font-body);
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.category-stats .stat-empty {
+    color: var(--accent-text);
+    font-weight: 600;
+}
+
+/* ================================
+   About Page
+   ================================ */
+.about-page .page-intro h1 {
+    text-align: left;
+}
+
+.about-section {
+    margin-bottom: var(--space-7);
+}
+
+.about-section h2 {
+    font-size: var(--step-2);
+    color: var(--primary-color);
+    margin-bottom: var(--space-3);
+}
+
+.about-section p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--text-color);
+}
+
+.about-section a {
+    color: var(--link-blue);
+    text-decoration: underline;
+}
+
+.contact-form {
+    max-width: none;
+    margin-top: var(--space-5);
+    padding: var(--space-6);
+}
+
+.contact-form .form-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-4);
+}
+
+@media (max-width: 600px) {
+    .contact-form .form-row {
+        grid-template-columns: 1fr;
+    }
 }

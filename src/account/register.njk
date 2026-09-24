@@ -9,7 +9,7 @@ robots: noindex
   <div class="auth-container">
     <div class="auth-card">
       <h1>Join ZRG Classics</h1>
-      <p class="auth-subtitle">Create your free account</p>
+      <p class="auth-subtitle">Free, and it gets you My Garage, the trackers, and the forum.</p>
 
       <form id="register-form" class="auth-form">
         <div class="form-group">
@@ -39,7 +39,7 @@ robots: noindex
         <div class="form-group form-checkbox">
           <label>
             <input type="checkbox" id="newsletter-optin" name="newsletter-optin" checked>
-            <span>Subscribe to the ZRG Classics newsletter for restoration tips, guides, and project updates</span>
+            <span>Email me when new guides go up</span>
           </label>
         </div>
 
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     submitBtn.disabled = true;
-    submitBtn.textContent = 'Creating account...';
+    submitBtn.textContent = 'Creating account…';
 
     try {
       await Auth.signUp(email, password, username);

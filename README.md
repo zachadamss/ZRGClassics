@@ -4,9 +4,10 @@ A free resource hub for classic Porsche and BMW owners — live at [zrgclassics.
 
 ## Features
 
-- **Vehicle resources** for 17 platforms (BMW E28–E90, Porsche 924–997): common issues with repair costs, step-by-step restoration and DIY guides, torque specs, buyer's guides, parts suppliers, and community links
+- **Vehicle resources** for 17 platforms (BMW E28–E90, Porsche 924–991): common issues with repair costs, step-by-step restoration and DIY guides, torque specs, buyer's guides, parts suppliers, and community links
 - **Site-wide search** across vehicles, issues, guides, specs, and suppliers
-- **Tools**: Restoration Checklist, Maintenance Tracker, and Build Cost Calculator
+- **My Garage**: maintenance tracker and restoration tracker for each car you own
+- **Tools**: Build Cost Calculator (no account needed)
 - **My Garage**: save vehicles and track restoration progress and service history
 - **Community forums** with per-platform categories
 
@@ -25,7 +26,7 @@ Requires Node.js 18 or newer.
 npm install
 npm run serve        # Dev server with live reload at http://localhost:8080
 npm run build:all    # Rebuild the search index and the site into _site/
-npm run build:prod   # Production build: search index, site, image optimization, minification
+npm run build:prod   # Production build: search index, site (with responsive images), minification
 ```
 
 Rebuild the search index (`npm run build:search`) whenever vehicle data in `src/_data/vehicles/` changes.
