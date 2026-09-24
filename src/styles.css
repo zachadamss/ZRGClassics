@@ -963,12 +963,12 @@ a:hover {
 }
 
 .logo-body { fill: var(--gulf-blue); }
-.logo-stripe { fill: var(--gulf-orange); }
-.logo-trim { fill: #07090C; }            /* black window surrounds and pillars */
-.logo-glass { fill: #3D5673; }
+.logo-trim { fill: #07090C; }            /* window surround and pillars */
+.logo-glass { fill: #3D5673; }           /* glass and the whale-tail tray */
 .logo-wheel { fill: #14243A; }            /* tires */
 .logo-rim { fill: #C9D3DE; }
 .logo-hub { fill: #14243A; }
+.logo-hole { fill: #14243A; }            /* RS Cup wheel openings */
 [data-theme="dark"] .logo-wheel { fill: #2B3B51; }  /* a shade off the dark header so the tires still show */
 
 .logo-word {
