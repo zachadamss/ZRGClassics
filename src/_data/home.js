@@ -7,7 +7,7 @@ const path = require('path');
 // The issue shown in full in "Inside a car page"
 const FEATURED = ['e30', 'timing-belt'];
 // The hero's job ticket
-const TICKET = ['944', 'timing-belt'];
+const TICKET = ['964', 'distributor-issues'];
 // "The big jobs, priced": expensive, well-known failures across both brands
 const BIG_JOBS = [
   ['996', 'ims-bearing'],
