@@ -22,14 +22,14 @@
       "id": "timing-belt",
       "title": "Timing Belt Failure",
       "symptoms": "Engine won't start, catastrophic engine noise, bent valves, visible belt damage through inspection hole",
-      "description": "The 928's V8 engine is an interference engine that uses a timing belt to drive the camshafts. Belt failure results in piston-to-valve contact and catastrophic engine damage. The 928 has a single belt that drives both camshafts via a complex path around multiple rollers.",
+      "description": "The 928's V8 is an interference engine, and one long belt drives both camshafts and the water pump around a path of rollers and a tensioner. When it fails, the valves meet the pistons. The job is big and the parts list is long, but it's the difference between owning a 928 and owning a parts car.",
       "fixes": [
         "Replace timing belt every 30,000-40,000 miles or 4 years",
-        "Replace ALL timing belt rollers and tensioner",
+        "Replace all timing belt rollers and tensioner",
         "Replace water pump at the same time",
         "Replace front camshaft and crankshaft seals",
         "Inspect and replace belt cover gaskets",
-        "Use only high-quality OEM or premium belts",
+        "Use only high-quality oem or premium belts",
         "Budget 8-12 hours labor at a specialist shop"
       ],
       "sources": [
@@ -39,7 +39,7 @@
       "repairCosts": {
         "diy": "$300-600",
         "shop": "$1500-3000",
-        "notes": "V8 timing belt service is major job. Replace all rollers."
+        "notes": "A major job. Replace the rollers, tensioner, and water pump too."
       },
       "parts": [
         { "name": "Timing Belt", "partNumber": "92810515102", "price": "$80-150" },
@@ -59,7 +59,7 @@
       "id": "cam-tower-gaskets",
       "title": "Cam Tower Gasket and Oil Leaks",
       "symptoms": "Oil leaks at top of engine, burning oil smell, oil on exhaust manifolds, low oil level, smoke from engine bay",
-      "description": "The 928 V8 is known for oil leaks, primarily from the cam tower (cam cover) gaskets. These gaskets are located at the top of each cylinder bank and seal the camshaft area. They harden with age and heat, causing oil to leak onto the exhaust manifolds.",
+      "description": "Oil leaks are part of 928 life, and the cam covers are the main source. The gaskets on top of each bank harden with heat and age and leak onto the exhaust manifolds, which you'll smell before you see. Reseal them, and look at the other gaskets while you're in there.",
       "fixes": [
         "Replace cam tower gaskets with updated Porsche gaskets",
         "Replace valve cover gaskets at the same time",
@@ -75,7 +75,7 @@
       "repairCosts": {
         "diy": "$200-400",
         "shop": "$600-1200",
-        "notes": "V8 leaks from everywhere eventually. Budget for full reseal."
+        "notes": "It all leaks eventually. Budget for a full reseal."
       },
       "parts": [
         { "name": "Cam Tower Gasket Set", "partNumber": "92810519503", "price": "$80-150" },
@@ -87,7 +87,7 @@
       "id": "wiring-harness",
       "title": "Engine Wiring Harness Deterioration",
       "symptoms": "Random misfires, check engine light, running issues, no-start conditions, sensors not reading correctly",
-      "description": "The 928's engine wiring harness is routed through a hot area near the engine and uses insulation that becomes brittle and cracks with age and heat. This is especially problematic on S4 and later models with more complex engine management.",
+      "description": "The engine harness runs through the heat in the valley of the V8, and its insulation goes brittle and cracks. That causes intermittent running faults that are hard to trace, especially on the S4 and later cars with more complex engine management. Rebuilt harnesses are available and often the real fix.",
       "fixes": [
         "Inspect harness for cracked or brittle insulation",
         "Rewrap harness with proper heat-resistant tape or conduit",
@@ -103,7 +103,7 @@
       "repairCosts": {
         "diy": "$200-800",
         "shop": "$1000-3000",
-        "notes": "Harness deteriorates with heat. Rebuilt harnesses available."
+        "notes": "Rebuilt harnesses are available."
       },
       "parts": [
         { "name": "Engine Harness (Rebuilt)", "price": "$500-1500" },
@@ -115,7 +115,7 @@
       "id": "automatic-transmission",
       "title": "Automatic Transmission Issues",
       "symptoms": "Harsh shifting, slipping, delayed engagement, no movement in gear, fluid leaks, overheating warning",
-      "description": "Most 928s were sold with automatic transmissions (Mercedes 4-speed or later Aisin-Warner 4-speed). These transmissions are generally tough but require proper maintenance and develop problems with age.",
+      "description": "Most 928s were sold as automatics, using Mercedes-Benz sourced gearboxes: a three-speed in early cars and a four-speed after that. They're tough, but they need fluid and filter service, and 30-plus years brings worn bands, tired mounts, and harsh or slipping shifts.",
       "fixes": [
         "Regular fluid and filter changes (every 30,000 miles)",
         "Flush transmission cooler and lines",
@@ -131,7 +131,7 @@
       "repairCosts": {
         "diy": "$100-200",
         "shop": "$300-2000+",
-        "notes": "Fluid and filter service DIY. Rebuild is shop job."
+        "notes": "Fluid and filter are DIY. Rebuilds are a shop job."
       },
       "parts": [
         { "name": "Transmission Fluid, Dexron VI (8L)", "price": "$60-100" },
@@ -143,10 +143,10 @@
       "id": "cooling-system",
       "title": "Cooling System Failures",
       "symptoms": "Overheating, coolant leaks, white smoke from tailpipe, heater not working, temperature gauge fluctuation",
-      "description": "The 928's V8 produces significant heat and relies on a complex cooling system. The water pump, driven by the timing belt, is a common failure point. The radiator's plastic end tanks crack with age.",
+      "description": "A 928 makes a lot of heat, and the cooling system has to keep up. The water pump is driven by the timing belt and should be replaced with it. Radiator end tanks crack with age, and a V8 this complex doesn't take overheating well.",
       "fixes": [
         "Replace water pump with every timing belt service",
-        "Replace thermostat with OEM temperature rating",
+        "Replace thermostat with oem temperature rating",
         "Replace radiator if plastic tanks cracking or leaking",
         "Replace all coolant hoses (including heater hoses)",
         "Flush cooling system and use proper coolant",
@@ -159,7 +159,7 @@
       "repairCosts": {
         "diy": "$300-600",
         "shop": "$800-1500",
-        "notes": "V8 runs hot. Full system service important."
+        "notes": "Service the whole system."
       },
       "parts": [
         { "name": "Water Pump", "partNumber": "92810603204", "price": "$150-250" },
@@ -172,7 +172,7 @@
       "id": "vacuum-system",
       "title": "Vacuum System Deterioration",
       "symptoms": "Climate control not working, doors won't lock, cruise control failure, rough idle, brake booster issues",
-      "description": "The 928 uses vacuum to power many systems including HVAC controls, door locks, cruise control, and brake booster. Over 25-45 years, the vacuum hoses become brittle and crack, causing leaks.",
+      "description": "The 928 uses vacuum for the climate control, central locking, cruise control, and brake booster, and after decades the hoses crack. A car with odd HVAC behavior, locks that don't work, or a rough idle often has one leak causing all of it.",
       "fixes": [
         "Replace all vacuum hoses throughout the car",
         "Check and replace vacuum reservoir if cracked",
@@ -187,7 +187,7 @@
       "repairCosts": {
         "diy": "$100-300",
         "shop": "$300-700",
-        "notes": "928 uses vacuum for HVAC, locks, cruise. Lines crack with age."
+        "notes": "Vacuum runs the HVAC, locks, and cruise. The lines crack with age."
       },
       "parts": [
         { "name": "Vacuum Hose Kit", "price": "$80-200" },
@@ -197,12 +197,12 @@
     },
     {
       "id": "weissach-axle",
-      "title": "Weissach Axle Suspension Wear (S4/GTS)",
+      "title": "Weissach Axle Bushing Wear",
       "symptoms": "Rear-end wander, unpredictable handling at limit, clunking from rear, uneven rear tire wear",
-      "description": "Later 928 models (S4, GT, GTS) use the Weissach rear axle, a sophisticated multi-link suspension that provides passive rear-wheel steering for improved handling. The system uses multiple bushings and control arms that wear over time.",
+      "description": "Every 928 uses the Weissach rear axle, which lets the rear wheels toe in slightly under braking and cornering loads to keep the car stable. It relies on a set of bushings and links, and when they wear the rear end feels loose and the passive steering effect disappears.",
       "fixes": [
         "Inspect all Weissach axle bushings for wear",
-        "Replace control arm bushings (polyurethane or OEM rubber)",
+        "Replace control arm bushings (polyurethane or oem rubber)",
         "Replace toe links and trailing arm bushings",
         "Check wheel bearings for play",
         "Rebuild or replace control arms if ball joints worn",
@@ -215,7 +215,7 @@
       "repairCosts": {
         "diy": "$300-600",
         "shop": "$800-1500",
-        "notes": "S4/GTS Weissach suspension. Multiple bushings and links."
+        "notes": "Several bushings and links. Do them together."
       },
       "parts": [
         { "name": "Weissach Bushing Kit", "price": "$150-300" },
@@ -227,7 +227,7 @@
       "id": "popup-headlights",
       "title": "Pop-Up Headlight Failure",
       "symptoms": "Headlights stuck up or down, slow headlight operation, one headlight won't open, motor noise but no movement",
-      "description": "The 928's distinctive pop-up headlights are operated by electric motors driving cables and linkages. The motors can fail, the cables can break or stretch, and the plastic linkage components can crack.",
+      "description": "The pop-up headlights are driven by electric motors through cables and linkages. Motors fail, cables stretch or break, and plastic linkage parts crack. Regular cleaning and lubrication prevent most of it.",
       "fixes": [
         "Lubricate headlight pivot points with white lithium grease",
         "Replace headlight cables if stretched or frayed",
@@ -242,7 +242,7 @@
       "repairCosts": {
         "diy": "$50-200",
         "shop": "$200-500",
-        "notes": "Motors, cables, and linkages wear. Lubrication helps."
+        "notes": "Lubrication prevents most failures."
       },
       "parts": [
         { "name": "Headlight Motor", "partNumber": "92863110100", "price": "$150-300" },
@@ -254,11 +254,11 @@
       "id": "instrument-cluster",
       "title": "Instrument Cluster and Electronics",
       "symptoms": "Dead or flickering gauges, inaccurate readings, warning lights stuck on, odometer failure, dim display",
-      "description": "The 928's instrument cluster is a complex electronic unit with multiple displays and warning systems. The circuit board develops solder cracks from thermal cycling. Capacitors fail with age. The LCD displays can fade or fail.",
+      "description": "The cluster's circuit board develops cracked solder joints from heat cycling, capacitors fail, and the displays fade. Specialist rebuild services fix all of it.",
       "fixes": [
         "Re-solder cracked connections on cluster circuit board",
         "Replace failed capacitors",
-        "Replace LCD displays with new or NOS units",
+        "Replace lcd displays with new or nos units",
         "Replace odometer gears (brass upgrade kits available)",
         "Have cluster professionally rebuilt by 928 specialist"
       ],
@@ -269,7 +269,7 @@
       "repairCosts": {
         "diy": "$100-300",
         "shop": "$300-700",
-        "notes": "Solder cracks and LCD failures. Rebuild services available."
+        "notes": "Rebuild services are available."
       },
       "parts": [
         { "name": "Cluster Rebuild Service", "price": "$200-500" },
@@ -281,7 +281,7 @@
       "id": "ac-system",
       "title": "Air Conditioning System Failures",
       "symptoms": "No cold air, weak airflow, hot on one side and cold on the other, clicking from dashboard, refrigerant leaks",
-      "description": "The 928's automatic climate control system was advanced for its time but is now 25-45 years old. The compressor, condenser, and evaporator all wear out. The early R12 systems have been converted to R134a, often improperly.",
+      "description": "The automatic climate control was advanced in its day and is old now. Compressors, condensers, and evaporators wear out, and many R12 systems were converted to R134a badly. A proper conversion, or a correct R12 service where it's legal, makes a big difference.",
       "fixes": [
         "Properly convert R12 systems to R134a",
         "Replace compressor if failed or worn",
@@ -297,7 +297,7 @@
       "repairCosts": {
         "diy": "$200-500",
         "shop": "$600-1500",
-        "notes": "R12 to R134a conversion common. Compressor failures."
+        "notes": "Many conversions to R134a were done poorly."
       },
       "parts": [
         { "name": "AC Compressor", "price": "$300-600" },
@@ -310,7 +310,7 @@
     {
       "id": "suspension-refresh",
       "title": "Complete Suspension Refresh",
-      "description": "Every joint and bushing, including the Weissach rear axle on S4, GT, and GTS cars. A fresh 928 chassis rides and handles far better than most people expect.",
+      "description": "Every joint and bushing, including the Weissach rear axle every 928 uses. A fresh 928 chassis rides and handles far better than most people expect.",
       "difficulty": "Intermediate to Advanced",
       "time": "14-20 hours",
       "cost": "$800-2,000",
@@ -355,7 +355,7 @@
         "Reassemble strut and install in vehicle.",
         "Replace front control arm bushings using press.",
         "For rear suspension, identify if car has standard or Weissach axle.",
-        "Weissach axle (S4/GT/GTS) has multiple control arms and links.",
+        "Weissach axle (S4/GT/gts) has multiple control arms and links.",
         "Remove upper control arms—note any shim washers for alignment.",
         "Remove lower control arms and toe links.",
         "Replace all Weissach bushings—they affect handling significantly.",
@@ -443,7 +443,7 @@
         "Tack weld panels in place, checking fit frequently.",
         "Finish weld using stitch welding to prevent warpage.",
         "Grind welds smooth and apply seam sealer to all joints.",
-        "Treat interior surfaces with rust preventive (POR-15 or equivalent).",
+        "Treat interior surfaces with rust preventive (por-15 or equivalent).",
         "Apply rubberized underseal to exterior underbody surfaces.",
         "Prime and paint repaired areas to match existing finish.",
         "Apply cavity wax to all hollow sections for ongoing protection."
@@ -933,7 +933,8 @@
         "The 928 V8 holds 8-9 quarts depending on model year and oil cooler.",
         "Use quality synthetic 15W-50 for hot climates or track use.",
         "Check for oil leaks at cam tower gaskets while under the hood."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "headlight-lubrication",
@@ -968,7 +969,8 @@
         "Don't use WD-40—it's not a lubricant and attracts dust.",
         "If headlights still operate slowly after lubrication, check motor brushes.",
         "Stretched or frayed cables should be replaced, not just lubricated."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "brake-pads",
@@ -1009,7 +1011,8 @@
         "The 928 uses large brakes with good pad life.",
         "Bed in new pads with moderate stops—avoid panic stops for 100 miles.",
         "Consider upgrading to ceramic or performance pads for less dust."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "vacuum-hose-inspection",
@@ -1045,7 +1048,8 @@
         "Original vacuum lines become brittle after 25+ years.",
         "A failed vacuum system can cause multiple seemingly unrelated failures.",
         "Consider replacing all vacuum lines as preventive maintenance."
-      ]
+      ],
+      "warnings": []
     }
   ],
   "buyersGuide": {
@@ -1060,7 +1064,7 @@
       {
         "name": "928 / 928S",
         "years": "1978-1986",
-        "description": "Early cars with 4.5L (219 hp) or 4.7L (288 hp) V8. Good cars but less refined than later models.",
+        "description": "The early cars: a 4.5L V8 with 219 hp in US trim, then the 4.7L 928S. US 928S models from 1985–86 got a 5.0L 32-valve V8 with 288 hp. Good cars, just less refined than what came later.",
         "desirability": "Low"
       },
       {
@@ -1072,7 +1076,7 @@
       {
         "name": "928 GT",
         "years": "1989-1991",
-        "description": "Sport-oriented model with manual transmission standard, sport suspension, and 326 hp. Rarer than S4.",
+        "description": "A 326 hp S4 with a firmer suspension, sold only with a manual gearbox. Rarer than the S4.",
         "desirability": "High"
       },
       {
@@ -1205,7 +1209,7 @@
       "Non-functional vacuum systems (door locks, HVAC not working)",
       "Automatic transmission slipping or harsh shifting",
       "Severe oil leaks from multiple locations",
-      "Rodent damage to wiring (biodegradable wire coating)",
+      "Rodent damage to the wiring",
       "Cars that have sat for extended periods without maintenance"
     ],
     "whatToLookFor": [
@@ -1225,16 +1229,16 @@
       "fuel": "16-22 MPG"
     },
     "expertTips": [
-      "The 928 is not a cheap car to own—budget accordingly for proper maintenance",
+      "A 928 isn't cheap to run. Budget for proper maintenance before you buy.",
       "Never skip or delay the timing belt service",
-      "The S4 offers the best balance of performance and value",
-      "GTS prices have risen dramatically—they are genuine collectibles now",
-      "Manual transmission cars are extremely rare and command significant premiums",
-      "Find a Porsche specialist or independent shop that knows 928s well",
-      "Join the 928 Owners Club for excellent technical resources and community support",
-      "Parts availability is good but prices are higher than 944",
-      "A well-maintained 928 is one of the most capable GT cars ever made",
-      "These cars were over-engineered and can exceed 300,000 miles with proper care"
+      "The S4 is the best balance of performance and price.",
+      "GTS prices have climbed a long way. They're collector cars now.",
+      "Manual cars are rare and cost significantly more.",
+      "Find a specialist who knows 928s before you need one.",
+      "The 928 Owners Club is an excellent technical resource.",
+      "Parts are available, but they cost more than 944 parts.",
+      "A well-sorted 928 is one of the most capable grand tourers ever made.",
+      "They were over-engineered, and a well-maintained one can pass 300,000 miles."
     ]
   },
   "communityResources": {

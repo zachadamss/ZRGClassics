@@ -21,14 +21,14 @@
       "id": "timing-belt",
       "title": "Timing Belt Failure",
       "symptoms": "Engine won't start, loud slapping noise, bent valves after failure, visible belt cracking or fraying",
-      "description": "The 924's Audi-derived 2.0L inline-4 (and later 2.5L in the 924S) uses a timing belt to drive the camshaft. This is an interference engine, meaning if the belt breaks, the pistons will contact the valves, causing severe engine damage. The 924 Turbo and 924S also require balance shaft belt replacement at the same interval.",
+      "description": "Every 924 drives its camshaft with a rubber belt, and the engines are interference designs, so a snapped belt means bent valves. Replace it every 30,000 to 40,000 miles or four years. The 924S uses the 944's 2.5L, which adds balance shaft belts that must be done at the same time. The 2.0L cars, including the Turbo, don't have balance shafts.",
       "fixes": [
         "Replace timing belt every 30,000-40,000 miles or 4 years",
         "Replace water pump at the same time (driven by timing belt)",
         "Replace timing belt tensioner and idler rollers",
         "On 924S/Turbo: replace balance shaft belt simultaneously",
         "Inspect and replace front crankshaft and camshaft seals if leaking",
-        "Use OEM or high-quality belts (Gates, Continental)"
+        "Use oem or high-quality belts (Gates, Continental)"
       ],
       "sources": [
         { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
@@ -37,7 +37,7 @@
       "repairCosts": {
         "diy": "$150-300",
         "shop": "$500-900",
-        "notes": "Interference engine. Replace every 30-40k miles."
+        "notes": "Interference engine. Every 30,000–40,000 miles."
       },
       "parts": [
         { "name": "Timing Belt", "partNumber": "95110515190", "price": "$40-70" },
@@ -56,10 +56,10 @@
       "id": "cis-fuel-injection",
       "title": "CIS Fuel Injection Problems",
       "symptoms": "Hard starting (especially when cold or hot), rough idle, hesitation under acceleration, poor fuel economy, flooding, black smoke",
-      "description": "The 924 uses Bosch K-Jetronic Continuous Injection System (CIS), a mechanical fuel injection system that was advanced for its time but is now 40+ years old. The system relies on precise fuel pressures, a mechanical fuel distributor, and vacuum-controlled warm-up regulator.",
+      "description": "The 2.0L cars use Bosch K-Jetronic (CIS) mechanical fuel injection. It's clever, durable, and completely dependent on correct fuel pressures, which drift as the warm-up regulator, fuel accumulator, and injectors age. Hard hot starts and rough warm-up are the classic symptoms. Test the pressures before replacing parts. The 924S uses the 944's electronic DME system instead.",
       "fixes": [
         "Test and set system pressures (control pressure, system pressure, residual pressure)",
-        "Replace warm-up regulator (WUR) if control pressure is incorrect",
+        "Replace warm-up regulator (wur) if control pressure is incorrect",
         "Clean or replace fuel injectors (rebuild kits available)",
         "Replace fuel accumulator if car is hard to hot-start",
         "Check fuel pump delivery volume and pressure",
@@ -73,7 +73,7 @@
       "repairCosts": {
         "diy": "$100-400",
         "shop": "$300-800",
-        "notes": "K-Jetronic system. WUR and accumulator common issues."
+        "notes": "Test fuel pressures first. The warm-up regulator and accumulator are the usual culprits."
       },
       "parts": [
         { "name": "Warm-Up Regulator", "brand": "Bosch", "price": "$200-400" },
@@ -86,7 +86,7 @@
       "id": "clutch-cable",
       "title": "Clutch Cable and Clutch System Wear",
       "symptoms": "Heavy clutch pedal, clutch slipping, difficulty shifting, clutch pedal sticks down, grinding when shifting",
-      "description": "The 924 uses a cable-operated clutch system running through the central tunnel to the rear-mounted transaxle. The clutch cable stretches with age and use, and the guide tube in the tunnel can wear, causing increased friction.",
+      "description": "The clutch is cable-operated, and the cable runs a long way through the central tunnel to the transaxle at the back. It stretches with age, and the guide tube wears, so the pedal gets heavy and the engagement point moves. Adjust it first; replace it if adjustment doesn't bring it back.",
       "fixes": [
         "Adjust clutch cable to restore proper free play",
         "Replace clutch cable if stretched beyond adjustment or frayed",
@@ -101,7 +101,7 @@
       "repairCosts": {
         "diy": "$50-100",
         "shop": "$150-300",
-        "notes": "Cable stretches. Adjustment first, then replace."
+        "notes": "Adjust first, then replace."
       },
       "parts": [
         { "name": "Clutch Cable", "partNumber": "94423721106", "price": "$40-80" }
@@ -112,13 +112,13 @@
       "id": "rust",
       "title": "Rust and Corrosion",
       "symptoms": "Bubbling paint, visible rust holes, soft floors, leaking trunk or cabin, rusty battery box",
-      "description": "The 924 is prone to rust in several well-known areas. The front fenders rust behind the headlights and at the lower edges. The battery box corrodes from acid exposure. Door bottoms and rocker panels trap moisture. The rear hatch area around the seal is vulnerable.",
+      "description": "Check the battery box first, because acid eats it. Then the front fenders behind the headlights and along the bottom edges, the door bottoms, the rockers, and the area around the rear hatch seal. Later cars are galvanized and hold up better, but 40 years finds every weak spot.",
       "fixes": [
         "Inspect battery box regularly and neutralize acid",
         "Check and clear all drain holes (doors, rocker panels, floor plugs)",
         "Replace front fenders if rust is extensive (reproduction available)",
         "Weld in repair panels for floor pan rust",
-        "Apply rust prevention coating (POR-15, Eastwood)",
+        "Apply rust prevention coating (por-15, Eastwood)",
         "Treat cavity areas with rust prevention spray"
       ],
       "sources": [
@@ -128,7 +128,7 @@
       "repairCosts": {
         "diy": "$200-1000",
         "shop": "$1000-5000+",
-        "notes": "Battery box, fenders, floors common rust areas."
+        "notes": "Battery box, fenders, and floors are the common spots."
       },
       "parts": [
         { "name": "Fender (Repro)", "price": "$150-300" },
@@ -140,9 +140,9 @@
       "id": "electrical",
       "title": "Electrical System Issues",
       "symptoms": "Intermittent no-start, dead gauges, flickering lights, non-functional windows/mirrors, fuel pump runs constantly",
-      "description": "The 924's electrical system suffers from 40+ years of age. The main culprits are the DME/fuel pump relay, corroded ground connections, and degraded wiring insulation. The combination relay on the fuse box controls multiple functions and commonly fails.",
+      "description": "Forty-plus years of heat and vibration take a toll. Corroded grounds, tired wiring insulation, and a failing fuel pump relay cause most problems, and the combination relay on the fuse panel runs several functions and fails often. On a 924S, add the DME relay to the list.",
       "fixes": [
-        "Replace DME/fuel pump relay with new OEM unit",
+        "Replace DME/fuel pump relay with new oem unit",
         "Clean and tighten all ground connections",
         "Inspect and repair wiring under the hood (heat damage common)",
         "Replace combination relay if multiple electrical functions affected",
@@ -156,7 +156,7 @@
       "repairCosts": {
         "diy": "$50-200",
         "shop": "$150-400",
-        "notes": "Relay and ground issues. DME relay common."
+        "notes": "Relays and grounds. Carry a spare fuel pump relay."
       },
       "parts": [
         { "name": "DME/Fuel Pump Relay", "partNumber": "92861530120", "price": "$30-60" },
@@ -168,10 +168,10 @@
       "id": "cooling-system",
       "title": "Cooling System Failures",
       "symptoms": "Overheating, coolant leaks, heater not working, temperature gauge fluctuation, steam from engine bay",
-      "description": "The 924's cooling system works hard, especially on turbocharged models. The water pump is driven by the timing belt and should be replaced with every belt service. The radiator's plastic end tanks become brittle with age.",
+      "description": "The water pump is driven by the timing belt, so replace it with every belt job. Radiator plastic end tanks go brittle with age. The Turbo runs hotter and is less forgiving of a tired cooling system.",
       "fixes": [
         "Replace water pump with every timing belt service",
-        "Replace thermostat (use OEM temperature rating)",
+        "Replace thermostat (use oem temperature rating)",
         "Upgrade to aluminum or modern radiator if plastic tanks cracking",
         "Replace all coolant hoses (including heater hoses)",
         "Flush cooling system and use proper coolant",
@@ -184,7 +184,7 @@
       "repairCosts": {
         "diy": "$150-300",
         "shop": "$400-700",
-        "notes": "Replace entire system on 40+ year old cars."
+        "notes": "Refresh the whole system on a car this age."
       },
       "parts": [
         { "name": "Water Pump", "partNumber": "95110601100", "price": "$60-100" },
@@ -197,7 +197,7 @@
       "id": "transaxle",
       "title": "Transaxle and Differential Issues",
       "symptoms": "Grinding when shifting, popping out of gear, whining noise from rear, difficulty engaging reverse, oil leaks",
-      "description": "The 924 uses a rear-mounted transaxle that combines the transmission and differential. Common issues include worn synchros (especially 2nd gear), tired shift linkage, and differential wear. The transaxle mount deteriorates and affects shift quality.",
+      "description": "The gearbox and differential sit together at the back in a transaxle. Second-gear synchros wear, the shift linkage gets sloppy over its long run, and a tired transaxle mount makes shifting vague. Use the correct GL-4 gear oil, not GL-5, to protect the synchros.",
       "fixes": [
         "Change transaxle fluid regularly with correct GL-4 gear oil",
         "Replace transaxle mount (donut) if shift quality is poor",
@@ -212,7 +212,7 @@
       "repairCosts": {
         "diy": "$100-300",
         "shop": "$400-1500",
-        "notes": "Synchros wear. Use correct GL-4 fluid."
+        "notes": "Use GL-4 gear oil."
       },
       "parts": [
         { "name": "Trans Mount (Donut)", "partNumber": "94433323500", "price": "$30-60" },
@@ -225,7 +225,7 @@
       "id": "suspension",
       "title": "Suspension and Steering Wear",
       "symptoms": "Clunking over bumps, vague steering, uneven tire wear, wandering at highway speed, squeaking from front end",
-      "description": "After 35-45 years, nearly every 924 needs suspension attention. Common wear items include strut mounts, control arm bushings, tie rod ends, and ball joints. The steering rack can develop play and leak.",
+      "description": "Nearly every 924 needs suspension work by now: strut mounts, control arm bushings, tie rod ends, and ball joints. The steering rack can also develop play or leak.",
       "fixes": [
         "Replace strut mounts (bearing and rubber mount)",
         "Install new shocks/struts (Bilstein, Koni, KW available)",
@@ -241,7 +241,7 @@
       "repairCosts": {
         "diy": "$200-400",
         "shop": "$500-900",
-        "notes": "Bushings and strut mounts wear on all 40+ year cars."
+        "notes": "Bushings and strut mounts are due on every car this age."
       },
       "parts": [
         { "name": "Strut Mount", "price": "$40-80" },
@@ -311,7 +311,7 @@
       ],
       "tips": [
         "The 924 shares many suspension components with the VW/Audi parts bin—alternatives may be available.",
-        "Bilstein B4s are excellent OEM-replacement quality shocks.",
+        "Bilstein B4s are excellent oem-replacement quality shocks.",
         "Note the torsion bar index marks before disassembly.",
         "Consider upgrading to polyurethane bushings for more responsive handling.",
         "The front strut tower braces from 944 models can be retrofitted.",
@@ -382,7 +382,7 @@
         "Tack weld panels in place, checking fit frequently.",
         "Finish weld using stitch welding to prevent warpage.",
         "Grind welds smooth and apply seam sealer to all joints.",
-        "Treat interior surfaces with rust preventive (POR-15 or equivalent).",
+        "Treat interior surfaces with rust preventive (por-15 or equivalent).",
         "Apply rubberized underseal to exterior underbody surfaces.",
         "Prime and paint repaired areas to match existing finish.",
         "Apply cavity wax to all hollow sections for ongoing protection."
@@ -840,7 +840,8 @@
         "The Audi-derived 924 engine benefits from high-zinc oils.",
         "Many owners use diesel-rated 15W-40 for the added zinc content.",
         "Check valve cover gasket for leaks while performing oil change."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "clutch-adjustment",
@@ -874,7 +875,8 @@
         "Too much free play can prevent full clutch disengagement.",
         "If cable is stretched beyond adjustment, replacement is needed.",
         "Check the cable guide tube for wear—a worn tube adds friction."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "fuel-filter",
@@ -913,7 +915,8 @@
         "The CIS fuel system operates at high pressure—be cautious.",
         "Replace rubber fuel lines if they are cracked or hard.",
         "Modern ethanol fuels degrade old rubber quickly."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "spark-plugs",
@@ -949,7 +952,8 @@
         "Use Bosch W7DTC or equivalent plugs for the Audi engine.",
         "Worn plugs can cause hard starting and poor fuel economy.",
         "Inspect plug wires for cracks while replacing plugs."
-      ]
+      ],
+      "warnings": []
     }
   ],
   "buyersGuide": {
@@ -964,25 +968,25 @@
       {
         "name": "924 (Audi engine)",
         "years": "1976-1985",
-        "description": "Base model with 2.0L Audi-derived engine producing 95-110 hp. Adequate but not exciting. Fuel injection improved later cars.",
+        "description": "The original, with an Audi-sourced 2.0L four and K-Jetronic injection: 95–110 hp depending on market and year. Light and well balanced, if not quick.",
         "desirability": "Low"
       },
       {
         "name": "924 Turbo (931)",
         "years": "1979-1982",
-        "description": "Turbocharged 2.0L producing 170-177 hp with distinctive hood scoop and wider fenders. Genuine sports car performance.",
+        "description": "The 2.0L turbo, with the NACA duct and vented nose. About 143 hp in US trim and up to 177 hp in Europe. A proper sports car, but its turbo-specific parts are getting scarce.",
         "desirability": "High"
       },
       {
         "name": "924 Carrera GT / GTR / GTS",
         "years": "1980-1981",
-        "description": "Homologation specials with 210-375 hp. Extremely rare and valuable—most were racing cars.",
+        "description": "The homologation specials, with 210–375 hp. Extremely rare and valuable, and most were built to race.",
         "desirability": "High"
       },
       {
         "name": "924S",
         "years": "1986-1988",
-        "description": "Updated with the 944's 2.5L engine producing 147-160 hp. The best of both worlds - 924 looks with 944 power.",
+        "description": "The 944's 2.5L four in the 924 body: 147–160 hp. The best of both worlds, and the one I'd look for.",
         "desirability": "High"
       }
     ],
@@ -1068,7 +1072,7 @@
     },
     "redFlags": [
       "Severe rust in structural areas (rockers, floor pans)",
-      "Unknown timing belt history on 924S models",
+      "No record of the last timing belt on any 924",
       "Turbo cars with shaft play or excessive smoke",
       "Non-functional CIS fuel injection",
       "Evidence of overheating or head gasket failure",
@@ -1081,7 +1085,7 @@
       "Documented service history",
       "Rust-free body",
       "Working air conditioning",
-      "Manual transmission (all 924s)",
+      "A manual (automatics were offered, but they're slower and less desirable)",
       "Original interior in good condition",
       "Complete tool kit"
     ],
@@ -1092,14 +1096,14 @@
       "fuel": "24-30 MPG"
     },
     "expertTips": [
-      "The 924S is the smart buy - 944 reliability with lower prices",
-      "Base 924s are plentiful and cheap but the Audi engine is underwhelming",
-      "924 Turbo parts availability is more limited than 944 Turbo",
-      "The 924 chassis is essentially the same as the 944—excellent handling",
-      "Many 924-specific parts are becoming hard to find",
-      "Consider the 924 as a stepping stone to a 944 if budget is tight",
-      "Rennlist.com and 924Board.org have excellent technical resources",
-      "These cars are mechanically simple compared to modern Porsches"
+      "The 924S is the smart buy: 944 mechanicals for less money.",
+      "Base 924s are cheap and plentiful, but the 2.0L is slow.",
+      "924 Turbo parts are harder to find than 944 Turbo parts.",
+      "The 924 shares its basic chassis with the 944, and it handles beautifully.",
+      "A lot of 924-specific trim is getting hard to find.",
+      "A 924 is a good way into the transaxle cars if a 944 is out of budget.",
+      "Rennlist and 924Board.org both have strong technical sections.",
+      "These are simple cars next to a modern Porsche, which makes them good to learn on."
     ]
   },
   "communityResources": {

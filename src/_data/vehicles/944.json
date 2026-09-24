@@ -22,13 +22,13 @@
       "id": "timing-belt",
       "title": "Timing Belt and Balance Shaft Belt Failure",
       "symptoms": "Engine won't start, catastrophic engine noise, bent valves, snapped belt visible through timing cover inspection hole",
-      "description": "The 944's 2.5L (and 2.7L/3.0L in later S and S2 models) inline-4 is an interference engine that relies on timing and balance shaft belts. If either belt fails, the valves will contact the pistons, requiring an engine rebuild or replacement. This is the most critical maintenance item on the 944.",
+      "description": "Every 944 runs a timing belt and a balance shaft belt, and the engine is an interference design. If either belt lets go, the valves hit the pistons and you're rebuilding the engine. Replace both belts, the rollers, and the water pump every 30,000 miles or four years, and set the tension with the proper gauge.",
       "fixes": [
-        "Replace BOTH timing belt AND balance shaft belt every 30,000 miles or 4 years",
+        "Replace both timing belt and balance shaft belt every 30,000 miles or 4 years",
         "Replace timing belt tensioner and rollers",
         "Replace water pump (driven by timing belt)",
         "Replace all timing belt area seals",
-        "Use only high-quality belts (OEM, Gates, Continental)",
+        "Use only high-quality belts (oem, Gates, Continental)",
         "Never buy a 944 without documented timing belt history"
       ],
       "sources": [
@@ -38,7 +38,7 @@
       "repairCosts": {
         "diy": "$200-400",
         "shop": "$700-1200",
-        "notes": "BOTH timing and balance shaft belts required. Don't skip it."
+        "notes": "Both belts, every time."
       },
       "parts": [
         { "name": "Timing Belt", "partNumber": "94410502504", "price": "$50-80" },
@@ -58,10 +58,10 @@
       "id": "water-pump",
       "title": "Water Pump Failure",
       "symptoms": "Coolant leak at front of engine, overheating, squealing noise from engine, play in water pump shaft",
-      "description": "The 944 water pump is driven by the timing belt and located behind the timing covers. When the pump bearings or seals fail, coolant leaks externally or, worse, internally into the timing belt area where it can contaminate and weaken the belt.",
+      "description": "The water pump sits behind the timing covers and is driven by the timing belt. When its bearing or seal fails, coolant can leak onto the belt and weaken it, which is exactly what you don't want on an interference engine. Always replace it with the belts.",
       "fixes": [
-        "ALWAYS replace water pump with timing belt service",
-        "Use OEM or quality metal-impeller pump",
+        "Always replace water pump with timing belt service",
+        "Use oem or quality metal-impeller pump",
         "Replace thermostat at the same time",
         "If pump failed between services, inspect timing belt for contamination",
         "Pressure test cooling system after repair"
@@ -73,7 +73,7 @@
       "repairCosts": {
         "diy": "$150-300",
         "shop": "$500-900",
-        "notes": "Always do with timing belt. Driven by belt."
+        "notes": "Always do it with the belts."
       },
       "parts": [
         { "name": "Water Pump", "partNumber": "94410601104", "price": "$80-150" },
@@ -85,9 +85,9 @@
       "id": "dme-relay",
       "title": "DME Relay Failure",
       "symptoms": "No-start condition, fuel pump doesn't prime, car dies while driving and won't restart, intermittent starting issues",
-      "description": "The DME (Digital Motor Electronics) relay is a well-known weak point on all 944s. This relay controls power to the fuel pump, fuel injectors, and engine management computer. The relay uses solder joints that crack over time from thermal cycling.",
+      "description": "The DME relay powers the fuel pump, injectors, and engine computer, and its internal solder joints crack from heat cycling. When it fails the car cranks and won't start, or cuts out on the road. It's the classic 944 failure, and a spare in the glovebox turns a tow into a five-minute fix.",
       "fixes": [
-        "Replace DME relay with new OEM unit",
+        "Replace DME relay with new oem unit",
         "Avoid cheap aftermarket relays",
         "Some owners re-solder the original relay as temporary fix",
         "Carry a spare relay in the glove box",
@@ -100,7 +100,7 @@
       "repairCosts": {
         "diy": "$30-80",
         "shop": "$100-200",
-        "notes": "The classic 944 failure. Carry a spare."
+        "notes": "Carry a spare."
       },
       "parts": [
         { "name": "DME Relay", "partNumber": "92861530120", "price": "$30-60" }
@@ -111,13 +111,13 @@
       "id": "clutch-hydraulics",
       "title": "Clutch Hydraulic System Failure",
       "symptoms": "Clutch pedal goes to floor, soft or spongy pedal, difficulty shifting, clutch won't disengage, fluid leak",
-      "description": "The 944 uses a hydraulic clutch system with a master cylinder at the pedal and a slave cylinder at the transaxle. Both cylinders use rubber seals that deteriorate over time, causing internal and external leaks.",
+      "description": "The clutch is hydraulic, with a master cylinder at the pedal and a slave at the transaxle. The rubber seals in both age and leak, so the pedal goes soft or sinks to the floor. Replace both cylinders together and flush the fluid.",
       "fixes": [
         "Replace clutch master cylinder",
         "Replace clutch slave cylinder",
         "Replace clutch hydraulic line if deteriorated",
         "Bleed system thoroughly (use pressure bleeder for best results)",
-        "Use DOT 4 brake fluid"
+        "Use dot 4 brake fluid"
       ],
       "sources": [
         { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" },
@@ -126,7 +126,7 @@
       "repairCosts": {
         "diy": "$100-200",
         "shop": "$300-600",
-        "notes": "Master and slave cylinders both fail with age."
+        "notes": "Replace the master and slave together."
       },
       "parts": [
         { "name": "Clutch Master Cylinder", "partNumber": "94423171100", "price": "$80-150" },
@@ -138,11 +138,11 @@
       "id": "torque-tube",
       "title": "Torque Tube Bearing Wear",
       "symptoms": "Vibration at certain speeds, humming or growling noise from center of car, vibration when accelerating or decelerating",
-      "description": "The 944 uses a torque tube to connect the front-mounted engine to the rear-mounted transaxle. The torque tube contains the driveshaft and uses a center support bearing that wears over time, causing vibrations and noise.",
+      "description": "A torque tube connects the engine at the front to the transaxle at the back, with the driveshaft spinning inside it on bearings. As those bearings wear they whine and cause vibration. It's usually sorted when the torque tube comes out for a clutch job.",
       "fixes": [
         "Replace torque tube center support bearing",
         "Inspect CV joints at both ends of the driveshaft",
-        "Replace flex disc (guibo) at engine end if cracked",
+        "Inspect the drivetrain couplings for cracked rubber",
         "Replace rear CV joint if worn",
         "Have torque tube serviced by specialist if unfamiliar"
       ],
@@ -153,7 +153,7 @@
       "repairCosts": {
         "diy": "$200-400",
         "shop": "$600-1200",
-        "notes": "Center bearing and flex disc (guibo) wear."
+        "notes": "Worn bearings whine and vibrate. Often done with the clutch."
       },
       "parts": [
         { "name": "Center Support Bearing", "partNumber": "94433231900", "price": "$80-150" },
@@ -165,7 +165,7 @@
       "id": "dashboard-crack",
       "title": "Dashboard Cracking",
       "symptoms": "Cracks appearing on dashboard surface, especially on top near windshield, warping, deteriorating texture",
-      "description": "The 944 dashboard is made of foam covered with vinyl and is extremely prone to cracking, especially in hot climates or when exposed to direct sunlight. UV exposure causes the vinyl to shrink and crack.",
+      "description": "Almost every 944 dash is cracked or will be. The vinyl over the foam shrinks in the sun and splits, worst in hot climates. A cap covers it cheaply; a proper recover or a good used dash fixes it for real.",
       "fixes": [
         "Dashboard cover or cap (covers damage but changes appearance)",
         "Professional dashboard restoration",
@@ -180,7 +180,7 @@
       "repairCosts": {
         "diy": "$100-300",
         "shop": "$300-800",
-        "notes": "All 944 dashes crack. Covers or professional restoration."
+        "notes": "Cap it, recover it, or find a good used one."
       },
       "parts": [
         { "name": "Dashboard Cover", "price": "$80-200" },
@@ -192,7 +192,7 @@
       "id": "power-steering",
       "title": "Power Steering Rack Leaks",
       "symptoms": "Power steering fluid leak, low fluid in reservoir, heavy steering when cold, whining from power steering pump",
-      "description": "The 944 power steering rack commonly develops leaks from the seals as they age. Leaks typically occur at the pinion seal, tie rod end seals, or pressure line connections.",
+      "description": "The power steering rack leaks from its pinion seal and tie rod boots as the seals age, and the pressure lines weep at their fittings. The pump wears too. Catch leaks early, before the rack runs low and wears itself out.",
       "fixes": [
         "Rebuild steering rack with new seals",
         "Replace steering rack with rebuilt or new unit",
@@ -207,7 +207,7 @@
       "repairCosts": {
         "diy": "$150-300",
         "shop": "$400-800",
-        "notes": "Rack seals and pump common failures."
+        "notes": "Rack seals and the pump are the common failures."
       },
       "parts": [
         { "name": "Steering Rack Seal Kit", "price": "$60-120" },
@@ -219,12 +219,12 @@
       "id": "odometer-gears",
       "title": "Odometer and Speedometer Gear Failure",
       "symptoms": "Odometer stops working while speedometer works, intermittent odometer, trip meter stuck",
-      "description": "The 944 instrument cluster uses plastic gears to drive the odometer from the speedometer. These gears strip or crack with age, causing the odometer to stop functioning while the speedometer continues to work.",
+      "description": "The odometer is driven by small plastic gears in the cluster, and they crack or strip with age. The speedometer keeps working while the odometer stops. Brass replacement gears fix it permanently.",
       "fixes": [
         "Replace odometer gears with aftermarket repair kit (brass gears available)",
         "Have instrument cluster professionally rebuilt",
         "Replace entire cluster with functional used unit",
-        "This is a common DIY repair with proper instructions"
+        "This is a common diy repair with proper instructions"
       ],
       "sources": [
         { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
@@ -233,7 +233,7 @@
       "repairCosts": {
         "diy": "$30-80",
         "shop": "$150-300",
-        "notes": "Plastic gears strip. Brass upgrade kits available."
+        "notes": "Brass gear kits fix it for good."
       },
       "parts": [
         { "name": "Odometer Gear Kit (Brass)", "price": "$20-40" }
@@ -244,9 +244,9 @@
       "id": "engine-mounts",
       "title": "Engine Mount Deterioration",
       "symptoms": "Excessive engine vibration, engine moves visibly during acceleration/deceleration, clunking when shifting",
-      "description": "The 944 engine is mounted to the chassis with rubber mounts that deteriorate over time. When worn, the engine moves excessively, causing vibrations and clunking noises during load changes.",
+      "description": "The engine mounts are rubber, and some are fluid-filled, and they sag and split with age. The engine then moves around, and you feel it as vibration at idle and a clunk when you get on and off the throttle. Replace them as a set.",
       "fixes": [
-        "Replace engine mounts with OEM rubber mounts",
+        "Replace engine mounts with oem rubber mounts",
         "Consider polyurethane mounts for performance use",
         "Replace transaxle mounts at the same time",
         "Check and replace torque tube mounts if worn"
@@ -258,7 +258,7 @@
       "repairCosts": {
         "diy": "$100-200",
         "shop": "$250-500",
-        "notes": "Rubber deteriorates. Replace as set."
+        "notes": "Replace as a set."
       },
       "parts": [
         { "name": "Engine Mount Set", "partNumber": "94437504900", "price": "$80-150" }
@@ -329,7 +329,7 @@
       ],
       "tips": [
         "The 944 suspension is well-designed and responds well to fresh components.",
-        "Bilstein B4s are excellent OEM-equivalent replacement shocks.",
+        "Bilstein B4s are excellent oem-equivalent replacement shocks.",
         "Note the torsion bar index marks before disassembly—you need them to get the ride height back.",
         "Consider polyurethane bushings for more responsive handling.",
         "The 944 Turbo and S2 have slightly different suspension—verify parts.",
@@ -402,7 +402,7 @@
         "Tack weld panels in place, checking fit frequently.",
         "Finish weld using stitch welding to prevent warpage.",
         "Grind welds smooth and apply seam sealer to all joints.",
-        "Treat interior surfaces with rust preventive (POR-15 or equivalent).",
+        "Treat interior surfaces with rust preventive (por-15 or equivalent).",
         "Apply rubberized underseal to exterior underbody surfaces.",
         "Prime and paint repaired areas to match existing finish.",
         "Apply cavity wax to all hollow sections for ongoing protection."
@@ -876,7 +876,8 @@
         "The 944 takes 6.5-7 quarts depending on model and oil cooler configuration.",
         "High-zinc oils (15W-40 diesel-rated) are recommended for the flat-tappet cam.",
         "Turbo models should use quality synthetic in hot climates."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "dme-relay",
@@ -910,7 +911,8 @@
         "If car dies while driving and won't restart, DME relay is the prime suspect.",
         "Some owners re-solder the original relay's cracked joints as a roadside repair.",
         "Always carry a spare DME relay—this is the most common 944 failure."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "brake-pads",
@@ -952,40 +954,40 @@
         "The 944 uses solid front rotors on base models, vented on Turbo and S2.",
         "Rear brakes on 944 are cable-operated parking brake—adjust cable after pad change.",
         "Bed in new pads with gradual stops—avoid hard braking for first 100 miles."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "timing-belt-inspection",
-      "title": "Timing Belt Inspection",
-      "description": "A quick check of the timing and balance shaft belts. On an interference engine, it's the most important fifteen minutes you'll spend on the car.",
+      "title": "Timing Belt Condition Check",
+      "description": "There's no inspection window on a 944, so checking the belts means pulling the upper timing cover. It's worth the half hour: on an interference engine, a cracked or oil-soaked belt is a warning you want to see early.",
       "difficulty": "Easy",
-      "time": "15 min",
-      "interval": "Every 5,000 miles or annually",
+      "time": "30-45 min",
+      "interval": "Annually, or whenever you buy a 944 without belt records",
       "cost": "$0",
       "tools": [
         "Flashlight",
-        "Inspection mirror (optional)",
-        "10mm socket for cover removal"
+        "Sockets to remove the upper timing cover",
+        "Socket for the crank bolt, to turn the engine by hand",
+        "Belt tension gauge (Porsche 9201 or equivalent) if you want to check tension"
       ],
       "steps": [
-        "Park the car and allow the engine to cool.",
-        "Open the hood and locate the timing belt cover on the driver's side of the engine.",
-        "Remove the small inspection cover plate (1-2 10mm bolts) from the upper timing cover.",
-        "Using a flashlight, peer through the inspection window.",
-        "Examine the visible portion of the timing belt for cracks, glazing, or fraying.",
-        "Look for any separation between the belt's teeth and backing.",
-        "Check for oil contamination—belt should be dry.",
-        "If possible, rotate the engine (by hand at crank bolt) to inspect more of the belt.",
-        "Reinstall the inspection cover.",
-        "Note: This is only a preliminary check—belts can fail with little visible warning.",
-        "If any damage is visible, schedule immediate belt replacement.",
-        "Even if belt looks good, replace at 30,000 mile intervals."
+        "Let the engine cool and disconnect the battery.",
+        "Remove the upper timing belt cover at the front of the engine.",
+        "Check the timing belt and the balance shaft belt for cracks, glazing, fraying, or missing teeth.",
+        "Look for oil or coolant on either belt. Both belts should be clean and dry.",
+        "Turn the engine by hand at the crank bolt, clockwise only, to see the rest of each belt.",
+        "If you have the 9201 gauge, check tension against the workshop manual. Without it, don't adjust tension by feel.",
+        "Refit the cover and reconnect the battery.",
+        "If anything looks wrong, or there are no records of the last belt job, replace both belts, the rollers, and the water pump."
       ],
       "tips": [
-        "This is an interference engine—belt failure destroys valves and pistons.",
-        "Oil on the belt means water pump or seal failure—address immediately.",
-        "Visual inspection does not replace scheduled belt changes.",
-        "Both timing belt AND balance shaft belt must be replaced together."
+        "Oil on a belt usually means a leaking cam, balance shaft, or crank seal. Coolant on it points to the water pump. Fix the leak when you replace the belt.",
+        "A visual check doesn't replace the interval. Replace both belts every 30,000 miles or four years."
+      ],
+      "warnings": [
+        "This is an interference engine. A snapped timing belt bends valves.",
+        "Never turn the engine backward with the belts fitted."
       ]
     }
   ],
@@ -1001,19 +1003,19 @@
       {
         "name": "944 (2.5L)",
         "years": "1982-1988",
-        "description": "The base model with 2.5L inline-four producing 143-150 hp. Lightweight and balanced. 1987+ cars received interior upgrades.",
+        "description": "The 2.5L eight-valve four with 143–150 hp. Light, balanced, and the most affordable way in. The 1985.5 update brought a much better dashboard and interior.",
         "desirability": "Medium"
       },
       {
         "name": "944S",
         "years": "1987-1988",
-        "description": "Upgraded with the 2.5L 16-valve engine producing 188 hp from the 968. Revvier and more powerful than the base 944.",
+        "description": "A 16-valve version of the 2.5L with 188 hp. Revs harder than the base car. Only sold for two years.",
         "desirability": "High"
       },
       {
         "name": "944S2",
         "years": "1989-1991",
-        "description": "Top naturally aspirated model with 3.0L 16-valve engine producing 208 hp. Nearly Turbo performance without the complexity.",
+        "description": "The 3.0L 16-valve four with 208 hp. Nearly Turbo pace without the turbo, and the one I'd pick as a driver.",
         "desirability": "High"
       },
       {
@@ -1176,12 +1178,12 @@
       "Documented timing belt service within last 30,000 miles or 4 years",
       "Service records showing regular maintenance",
       "Turbo or S2 for best performance value",
-      "Manual transmission (all 944s are manual—no automatics)",
+      "A manual (automatics were offered, but they're slower and less desirable)",
       "Factory LSD (limited-slip differential)",
       "Clean interior without severe dash cracking",
       "Rust-free body, especially southern or western cars",
       "Original paint in good condition",
-      "1987+ cars for improved interior quality",
+      "A car from after the 1985.5 update, for the better interior",
       "Complete tool kit in the hatch"
     ],
     "ownershipCosts": {
@@ -1191,16 +1193,16 @@
       "fuel": "22-28 MPG depending on driving style"
     },
     "expertTips": [
-      "The timing belt is the single most important maintenance item—never skip or delay this service",
-      "The 944 S2 offers nearly Turbo performance without the turbo complexity—consider it for a driver",
-      "Turbo models have different suspension geometry—don't interchange parts with NA cars",
-      "The torque tube design means clutch replacement is a major job—factor this into purchase decisions",
-      "Original Fuchs wheels are desirable and expensive—their presence adds value",
-      "The 944 chassis is one of the best-handling platforms ever made—properly set up, it's magic",
-      "Parts availability is excellent through specialists like Pelican Parts and 944Online",
-      "Join Rennlist.com for excellent technical resources and a supportive community",
-      "Consider a pre-purchase inspection by a Porsche specialist—generic mechanics miss 944-specific issues",
-      "A well-maintained 944 will provide years of reliable service—these are tough cars"
+      "The belts are the single most important maintenance item. Never skip or delay them.",
+      "The S2 has nearly Turbo pace without the turbo's complexity. For a driver, it's the one I'd pick.",
+      "Turbo cars use different suspension parts. Don't assume they interchange with the non-Turbo cars.",
+      "The torque tube makes a clutch job a big one. Factor that into the price.",
+      "Original Fuchs wheels are desirable and add value.",
+      "Set up properly, a 944 is one of the best-handling cars of its era.",
+      "Parts are easy to get through specialists like Pelican Parts and 944Online.",
+      "Rennlist has an excellent transaxle-car community.",
+      "Get the pre-purchase inspection from a Porsche specialist. A general shop can miss 944-specific problems.",
+      "A well-maintained 944 is a tough, dependable car."
     ]
   },
   "communityResources": {

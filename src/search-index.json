@@ -8,8 +8,8 @@
       "years": "1976-1988",
       "title": "Timing Belt Failure",
       "symptoms": "Engine won't start, loud slapping noise, bent valves after failure, visible belt cracking or fraying",
-      "description": "The 924's Audi-derived 2.0L inline-4 (and later 2.5L in the 924S) uses a timing belt to drive the camshaft. This is an interference engine, meaning if the belt breaks, the pistons will contact the valves, causing severe engine damage. The 924 Turbo and 924S also require balance shaft belt replacement at the same interval.",
-      "keywords": "timing belt failure engine won start loud slapping noise bent valves after visible cracking fraying the 924 audi derived inline",
+      "description": "Every 924 drives its camshaft with a rubber belt, and the engines are interference designs, so a snapped belt means bent valves. Replace it every 30,000 to 40,000 miles or four years. The 924S uses the 944's 2.5L, which adds balance shaft belts that must be done at the same time. The 2.0L cars, including the Turbo, don't have balance shafts.",
+      "keywords": "timing belt failure engine won start loud slapping noise bent valves after visible cracking fraying every 924 drives its camshaft",
       "url": "/resources/porsche/924/"
     },
     {
@@ -20,7 +20,7 @@
       "years": "1976-1988",
       "title": "CIS Fuel Injection Problems",
       "symptoms": "Hard starting (especially when cold or hot), rough idle, hesitation under acceleration, poor fuel economy, flooding, black smoke",
-      "description": "The 924 uses Bosch K-Jetronic Continuous Injection System (CIS), a mechanical fuel injection system that was advanced for its time but is now 40+ years old. The system relies on precise fuel pressures, a mechanical fuel distributor, and vacuum-controlled warm-up regulator.",
+      "description": "The 2.0L cars use Bosch K-Jetronic (CIS) mechanical fuel injection. It's clever, durable, and completely dependent on correct fuel pressures, which drift as the warm-up regulator, fuel accumulator, and injectors age. Hard hot starts and rough warm-up are the classic symptoms. Test the pressures before replacing parts. The 924S uses the 944's electronic DME system instead.",
       "keywords": "cis fuel injection problems hard starting especially when cold hot rough idle hesitation under acceleration poor economy flooding black smoke",
       "url": "/resources/porsche/924/"
     },
@@ -32,8 +32,8 @@
       "years": "1976-1988",
       "title": "Clutch Cable and Clutch System Wear",
       "symptoms": "Heavy clutch pedal, clutch slipping, difficulty shifting, clutch pedal sticks down, grinding when shifting",
-      "description": "The 924 uses a cable-operated clutch system running through the central tunnel to the rear-mounted transaxle. The clutch cable stretches with age and use, and the guide tube in the tunnel can wear, causing increased friction.",
-      "keywords": "clutch cable and system wear heavy pedal slipping difficulty shifting sticks down grinding when the 924 uses operated running through",
+      "description": "The clutch is cable-operated, and the cable runs a long way through the central tunnel to the transaxle at the back. It stretches with age, and the guide tube wears, so the pedal gets heavy and the engagement point moves. Adjust it first; replace it if adjustment doesn't bring it back.",
+      "keywords": "clutch cable and system wear heavy pedal slipping difficulty shifting sticks down grinding when the operated runs long way through",
       "url": "/resources/porsche/924/"
     },
     {
@@ -44,8 +44,8 @@
       "years": "1976-1988",
       "title": "Rust and Corrosion",
       "symptoms": "Bubbling paint, visible rust holes, soft floors, leaking trunk or cabin, rusty battery box",
-      "description": "The 924 is prone to rust in several well-known areas. The front fenders rust behind the headlights and at the lower edges. The battery box corrodes from acid exposure. Door bottoms and rocker panels trap moisture. The rear hatch area around the seal is vulnerable.",
-      "keywords": "rust and corrosion bubbling paint visible holes soft floors leaking trunk cabin rusty battery box the 924 prone several well",
+      "description": "Check the battery box first, because acid eats it. Then the front fenders behind the headlights and along the bottom edges, the door bottoms, the rockers, and the area around the rear hatch seal. Later cars are galvanized and hold up better, but 40 years finds every weak spot.",
+      "keywords": "rust and corrosion bubbling paint visible holes soft floors leaking trunk cabin rusty battery box check the first because acid",
       "url": "/resources/porsche/924/"
     },
     {
@@ -56,8 +56,8 @@
       "years": "1976-1988",
       "title": "Electrical System Issues",
       "symptoms": "Intermittent no-start, dead gauges, flickering lights, non-functional windows/mirrors, fuel pump runs constantly",
-      "description": "The 924's electrical system suffers from 40+ years of age. The main culprits are the DME/fuel pump relay, corroded ground connections, and degraded wiring insulation. The combination relay on the fuse box controls multiple functions and commonly fails.",
-      "keywords": "electrical system issues intermittent start dead gauges flickering lights non functional windows mirrors fuel pump runs constantly the 924 suffers",
+      "description": "Forty-plus years of heat and vibration take a toll. Corroded grounds, tired wiring insulation, and a failing fuel pump relay cause most problems, and the combination relay on the fuse panel runs several functions and fails often. On a 924S, add the DME relay to the list.",
+      "keywords": "electrical system issues intermittent start dead gauges flickering lights non functional windows mirrors fuel pump runs constantly forty plus years",
       "url": "/resources/porsche/924/"
     },
     {
@@ -68,8 +68,8 @@
       "years": "1976-1988",
       "title": "Cooling System Failures",
       "symptoms": "Overheating, coolant leaks, heater not working, temperature gauge fluctuation, steam from engine bay",
-      "description": "The 924's cooling system works hard, especially on turbocharged models. The water pump is driven by the timing belt and should be replaced with every belt service. The radiator's plastic end tanks become brittle with age.",
-      "keywords": "cooling system failures overheating coolant leaks heater not working temperature gauge fluctuation steam from engine bay the 924 works hard",
+      "description": "The water pump is driven by the timing belt, so replace it with every belt job. Radiator plastic end tanks go brittle with age. The Turbo runs hotter and is less forgiving of a tired cooling system.",
+      "keywords": "cooling system failures overheating coolant leaks heater not working temperature gauge fluctuation steam from engine bay the water pump driven",
       "url": "/resources/porsche/924/"
     },
     {
@@ -80,7 +80,7 @@
       "years": "1976-1988",
       "title": "Transaxle and Differential Issues",
       "symptoms": "Grinding when shifting, popping out of gear, whining noise from rear, difficulty engaging reverse, oil leaks",
-      "description": "The 924 uses a rear-mounted transaxle that combines the transmission and differential. Common issues include worn synchros (especially 2nd gear), tired shift linkage, and differential wear. The transaxle mount deteriorates and affects shift quality.",
+      "description": "The gearbox and differential sit together at the back in a transaxle. Second-gear synchros wear, the shift linkage gets sloppy over its long run, and a tired transaxle mount makes shifting vague. Use the correct GL-4 gear oil, not GL-5, to protect the synchros.",
       "keywords": "transaxle and differential issues grinding when shifting popping out gear whining noise from rear difficulty engaging reverse oil leaks the",
       "url": "/resources/porsche/924/"
     },
@@ -92,8 +92,8 @@
       "years": "1976-1988",
       "title": "Suspension and Steering Wear",
       "symptoms": "Clunking over bumps, vague steering, uneven tire wear, wandering at highway speed, squeaking from front end",
-      "description": "After 35-45 years, nearly every 924 needs suspension attention. Common wear items include strut mounts, control arm bushings, tie rod ends, and ball joints. The steering rack can develop play and leak.",
-      "keywords": "suspension and steering wear clunking over bumps vague uneven tire wandering highway speed squeaking from front end after years nearly",
+      "description": "Nearly every 924 needs suspension work by now: strut mounts, control arm bushings, tie rod ends, and ball joints. The steering rack can also develop play or leak.",
+      "keywords": "suspension and steering wear clunking over bumps vague uneven tire wandering highway speed squeaking from front end nearly every 924",
       "url": "/resources/porsche/924/"
     },
     {
@@ -104,8 +104,8 @@
       "years": "1977-1995",
       "title": "Timing Belt Failure",
       "symptoms": "Engine won't start, catastrophic engine noise, bent valves, visible belt damage through inspection hole",
-      "description": "The 928's V8 engine is an interference engine that uses a timing belt to drive the camshafts. Belt failure results in piston-to-valve contact and catastrophic engine damage. The 928 has a single belt that drives both camshafts via a complex path around multiple rollers.",
-      "keywords": "timing belt failure engine won start catastrophic noise bent valves visible damage through inspection hole the 928 interference that uses",
+      "description": "The 928's V8 is an interference engine, and one long belt drives both camshafts and the water pump around a path of rollers and a tensioner. When it fails, the valves meet the pistons. The job is big and the parts list is long, but it's the difference between owning a 928 and owning a parts car.",
+      "keywords": "timing belt failure engine won start catastrophic noise bent valves visible damage through inspection hole the 928 interference and one",
       "url": "/resources/porsche/928/"
     },
     {
@@ -116,8 +116,8 @@
       "years": "1977-1995",
       "title": "Cam Tower Gasket and Oil Leaks",
       "symptoms": "Oil leaks at top of engine, burning oil smell, oil on exhaust manifolds, low oil level, smoke from engine bay",
-      "description": "The 928 V8 is known for oil leaks, primarily from the cam tower (cam cover) gaskets. These gaskets are located at the top of each cylinder bank and seal the camshaft area. They harden with age and heat, causing oil to leak onto the exhaust manifolds.",
-      "keywords": "cam tower gasket and oil leaks top engine burning smell exhaust manifolds low level smoke from bay the 928 known",
+      "description": "Oil leaks are part of 928 life, and the cam covers are the main source. The gaskets on top of each bank harden with heat and age and leak onto the exhaust manifolds, which you'll smell before you see. Reseal them, and look at the other gaskets while you're in there.",
+      "keywords": "cam tower gasket and oil leaks top engine burning smell exhaust manifolds low level smoke from bay are part 928",
       "url": "/resources/porsche/928/"
     },
     {
@@ -128,8 +128,8 @@
       "years": "1977-1995",
       "title": "Engine Wiring Harness Deterioration",
       "symptoms": "Random misfires, check engine light, running issues, no-start conditions, sensors not reading correctly",
-      "description": "The 928's engine wiring harness is routed through a hot area near the engine and uses insulation that becomes brittle and cracks with age and heat. This is especially problematic on S4 and later models with more complex engine management.",
-      "keywords": "engine wiring harness deterioration random misfires check light running issues start conditions sensors not reading correctly the 928 routed through",
+      "description": "The engine harness runs through the heat in the valley of the V8, and its insulation goes brittle and cracks. That causes intermittent running faults that are hard to trace, especially on the S4 and later cars with more complex engine management. Rebuilt harnesses are available and often the real fix.",
+      "keywords": "engine wiring harness deterioration random misfires check light running issues start conditions sensors not reading correctly the runs through heat",
       "url": "/resources/porsche/928/"
     },
     {
@@ -140,8 +140,8 @@
       "years": "1977-1995",
       "title": "Automatic Transmission Issues",
       "symptoms": "Harsh shifting, slipping, delayed engagement, no movement in gear, fluid leaks, overheating warning",
-      "description": "Most 928s were sold with automatic transmissions (Mercedes 4-speed or later Aisin-Warner 4-speed). These transmissions are generally tough but require proper maintenance and develop problems with age.",
-      "keywords": "automatic transmission issues harsh shifting slipping delayed engagement movement gear fluid leaks overheating warning most 928s were sold with transmissions",
+      "description": "Most 928s were sold as automatics, using Mercedes-Benz sourced gearboxes: a three-speed in early cars and a four-speed after that. They're tough, but they need fluid and filter service, and 30-plus years brings worn bands, tired mounts, and harsh or slipping shifts.",
+      "keywords": "automatic transmission issues harsh shifting slipping delayed engagement movement gear fluid leaks overheating warning most 928s were sold automatics using",
       "url": "/resources/porsche/928/"
     },
     {
@@ -152,8 +152,8 @@
       "years": "1977-1995",
       "title": "Cooling System Failures",
       "symptoms": "Overheating, coolant leaks, white smoke from tailpipe, heater not working, temperature gauge fluctuation",
-      "description": "The 928's V8 produces significant heat and relies on a complex cooling system. The water pump, driven by the timing belt, is a common failure point. The radiator's plastic end tanks crack with age.",
-      "keywords": "cooling system failures overheating coolant leaks white smoke from tailpipe heater not working temperature gauge fluctuation the 928 produces significant",
+      "description": "A 928 makes a lot of heat, and the cooling system has to keep up. The water pump is driven by the timing belt and should be replaced with it. Radiator end tanks crack with age, and a V8 this complex doesn't take overheating well.",
+      "keywords": "cooling system failures overheating coolant leaks white smoke from tailpipe heater not working temperature gauge fluctuation 928 makes lot heat",
       "url": "/resources/porsche/928/"
     },
     {
@@ -164,7 +164,7 @@
       "years": "1977-1995",
       "title": "Vacuum System Deterioration",
       "symptoms": "Climate control not working, doors won't lock, cruise control failure, rough idle, brake booster issues",
-      "description": "The 928 uses vacuum to power many systems including HVAC controls, door locks, cruise control, and brake booster. Over 25-45 years, the vacuum hoses become brittle and crack, causing leaks.",
+      "description": "The 928 uses vacuum for the climate control, central locking, cruise control, and brake booster, and after decades the hoses crack. A car with odd HVAC behavior, locks that don't work, or a rough idle often has one leak causing all of it.",
       "keywords": "vacuum system deterioration climate control not working doors won lock cruise failure rough idle brake booster issues the 928 uses",
       "url": "/resources/porsche/928/"
     },
@@ -174,10 +174,10 @@
       "model": "928",
       "modelName": "928",
       "years": "1977-1995",
-      "title": "Weissach Axle Suspension Wear (S4/GTS)",
+      "title": "Weissach Axle Bushing Wear",
       "symptoms": "Rear-end wander, unpredictable handling at limit, clunking from rear, uneven rear tire wear",
-      "description": "Later 928 models (S4, GT, GTS) use the Weissach rear axle, a sophisticated multi-link suspension that provides passive rear-wheel steering for improved handling. The system uses multiple bushings and control arms that wear over time.",
-      "keywords": "weissach axle suspension wear gts rear end wander unpredictable handling limit clunking from uneven tire later 928 models use the",
+      "description": "Every 928 uses the Weissach rear axle, which lets the rear wheels toe in slightly under braking and cornering loads to keep the car stable. It relies on a set of bushings and links, and when they wear the rear end feels loose and the passive steering effect disappears.",
+      "keywords": "weissach axle bushing wear rear end wander unpredictable handling limit clunking from uneven tire every 928 uses the which lets",
       "url": "/resources/porsche/928/"
     },
     {
@@ -188,8 +188,8 @@
       "years": "1977-1995",
       "title": "Pop-Up Headlight Failure",
       "symptoms": "Headlights stuck up or down, slow headlight operation, one headlight won't open, motor noise but no movement",
-      "description": "The 928's distinctive pop-up headlights are operated by electric motors driving cables and linkages. The motors can fail, the cables can break or stretch, and the plastic linkage components can crack.",
-      "keywords": "pop headlight failure headlights stuck down slow operation one won open motor noise but movement the 928 distinctive are operated",
+      "description": "The pop-up headlights are driven by electric motors through cables and linkages. Motors fail, cables stretch or break, and plastic linkage parts crack. Regular cleaning and lubrication prevent most of it.",
+      "keywords": "pop headlight failure headlights stuck down slow operation one won open motor noise but movement the are driven electric motors",
       "url": "/resources/porsche/928/"
     },
     {
@@ -200,8 +200,8 @@
       "years": "1977-1995",
       "title": "Instrument Cluster and Electronics",
       "symptoms": "Dead or flickering gauges, inaccurate readings, warning lights stuck on, odometer failure, dim display",
-      "description": "The 928's instrument cluster is a complex electronic unit with multiple displays and warning systems. The circuit board develops solder cracks from thermal cycling. Capacitors fail with age. The LCD displays can fade or fail.",
-      "keywords": "instrument cluster and electronics dead flickering gauges inaccurate readings warning lights stuck odometer failure dim display the 928 complex electronic",
+      "description": "The cluster's circuit board develops cracked solder joints from heat cycling, capacitors fail, and the displays fade. Specialist rebuild services fix all of it.",
+      "keywords": "instrument cluster and electronics dead flickering gauges inaccurate readings warning lights stuck odometer failure dim display the circuit board develops",
       "url": "/resources/porsche/928/"
     },
     {
@@ -212,8 +212,8 @@
       "years": "1977-1995",
       "title": "Air Conditioning System Failures",
       "symptoms": "No cold air, weak airflow, hot on one side and cold on the other, clicking from dashboard, refrigerant leaks",
-      "description": "The 928's automatic climate control system was advanced for its time but is now 25-45 years old. The compressor, condenser, and evaporator all wear out. The early R12 systems have been converted to R134a, often improperly.",
-      "keywords": "air conditioning system failures cold weak airflow hot one side and the other clicking from dashboard refrigerant leaks 928 automatic",
+      "description": "The automatic climate control was advanced in its day and is old now. Compressors, condensers, and evaporators wear out, and many R12 systems were converted to R134a badly. A proper conversion, or a correct R12 service where it's legal, makes a big difference.",
+      "keywords": "air conditioning system failures cold weak airflow hot one side and the other clicking from dashboard refrigerant leaks automatic climate",
       "url": "/resources/porsche/928/"
     },
     {
@@ -224,8 +224,8 @@
       "years": "1982-1991",
       "title": "Timing Belt and Balance Shaft Belt Failure",
       "symptoms": "Engine won't start, catastrophic engine noise, bent valves, snapped belt visible through timing cover inspection hole",
-      "description": "The 944's 2.5L (and 2.7L/3.0L in later S and S2 models) inline-4 is an interference engine that relies on timing and balance shaft belts. If either belt fails, the valves will contact the pistons, requiring an engine rebuild or replacement. This is the most critical maintenance item on the 944.",
-      "keywords": "timing belt and balance shaft failure engine won start catastrophic noise bent valves snapped visible through cover inspection hole the",
+      "description": "Every 944 runs a timing belt and a balance shaft belt, and the engine is an interference design. If either belt lets go, the valves hit the pistons and you're rebuilding the engine. Replace both belts, the rollers, and the water pump every 30,000 miles or four years, and set the tension with the proper gauge.",
+      "keywords": "timing belt and balance shaft failure engine won start catastrophic noise bent valves snapped visible through cover inspection hole every",
       "url": "/resources/porsche/944/"
     },
     {
@@ -236,8 +236,8 @@
       "years": "1982-1991",
       "title": "Water Pump Failure",
       "symptoms": "Coolant leak at front of engine, overheating, squealing noise from engine, play in water pump shaft",
-      "description": "The 944 water pump is driven by the timing belt and located behind the timing covers. When the pump bearings or seals fail, coolant leaks externally or, worse, internally into the timing belt area where it can contaminate and weaken the belt.",
-      "keywords": "water pump failure coolant leak front engine overheating squealing noise from play shaft the 944 driven timing belt and located",
+      "description": "The water pump sits behind the timing covers and is driven by the timing belt. When its bearing or seal fails, coolant can leak onto the belt and weaken it, which is exactly what you don't want on an interference engine. Always replace it with the belts.",
+      "keywords": "water pump failure coolant leak front engine overheating squealing noise from play shaft the sits behind timing covers and driven",
       "url": "/resources/porsche/944/"
     },
     {
@@ -248,7 +248,7 @@
       "years": "1982-1991",
       "title": "DME Relay Failure",
       "symptoms": "No-start condition, fuel pump doesn't prime, car dies while driving and won't restart, intermittent starting issues",
-      "description": "The DME (Digital Motor Electronics) relay is a well-known weak point on all 944s. This relay controls power to the fuel pump, fuel injectors, and engine management computer. The relay uses solder joints that crack over time from thermal cycling.",
+      "description": "The DME relay powers the fuel pump, injectors, and engine computer, and its internal solder joints crack from heat cycling. When it fails the car cranks and won't start, or cuts out on the road. It's the classic 944 failure, and a spare in the glovebox turns a tow into a five-minute fix.",
       "keywords": "dme relay failure start condition fuel pump doesn prime car dies while driving and won restart intermittent starting issues the",
       "url": "/resources/porsche/944/"
     },
@@ -260,8 +260,8 @@
       "years": "1982-1991",
       "title": "Clutch Hydraulic System Failure",
       "symptoms": "Clutch pedal goes to floor, soft or spongy pedal, difficulty shifting, clutch won't disengage, fluid leak",
-      "description": "The 944 uses a hydraulic clutch system with a master cylinder at the pedal and a slave cylinder at the transaxle. Both cylinders use rubber seals that deteriorate over time, causing internal and external leaks.",
-      "keywords": "clutch hydraulic system failure pedal goes floor soft spongy difficulty shifting won disengage fluid leak the 944 uses with master",
+      "description": "The clutch is hydraulic, with a master cylinder at the pedal and a slave at the transaxle. The rubber seals in both age and leak, so the pedal goes soft or sinks to the floor. Replace both cylinders together and flush the fluid.",
+      "keywords": "clutch hydraulic system failure pedal goes floor soft spongy difficulty shifting won disengage fluid leak the with master cylinder and",
       "url": "/resources/porsche/944/"
     },
     {
@@ -272,8 +272,8 @@
       "years": "1982-1991",
       "title": "Torque Tube Bearing Wear",
       "symptoms": "Vibration at certain speeds, humming or growling noise from center of car, vibration when accelerating or decelerating",
-      "description": "The 944 uses a torque tube to connect the front-mounted engine to the rear-mounted transaxle. The torque tube contains the driveshaft and uses a center support bearing that wears over time, causing vibrations and noise.",
-      "keywords": "torque tube bearing wear vibration certain speeds humming growling noise from center car when accelerating decelerating the 944 uses connect",
+      "description": "A torque tube connects the engine at the front to the transaxle at the back, with the driveshaft spinning inside it on bearings. As those bearings wear they whine and cause vibration. It's usually sorted when the torque tube comes out for a clutch job.",
+      "keywords": "torque tube bearing wear vibration certain speeds humming growling noise from center car when accelerating decelerating connects the engine front",
       "url": "/resources/porsche/944/"
     },
     {
@@ -284,8 +284,8 @@
       "years": "1982-1991",
       "title": "Dashboard Cracking",
       "symptoms": "Cracks appearing on dashboard surface, especially on top near windshield, warping, deteriorating texture",
-      "description": "The 944 dashboard is made of foam covered with vinyl and is extremely prone to cracking, especially in hot climates or when exposed to direct sunlight. UV exposure causes the vinyl to shrink and crack.",
-      "keywords": "dashboard cracking cracks appearing surface especially top near windshield warping deteriorating texture the 944 made foam covered with vinyl and",
+      "description": "Almost every 944 dash is cracked or will be. The vinyl over the foam shrinks in the sun and splits, worst in hot climates. A cap covers it cheaply; a proper recover or a good used dash fixes it for real.",
+      "keywords": "dashboard cracking cracks appearing surface especially top near windshield warping deteriorating texture almost every 944 dash cracked will the vinyl",
       "url": "/resources/porsche/944/"
     },
     {
@@ -296,8 +296,8 @@
       "years": "1982-1991",
       "title": "Power Steering Rack Leaks",
       "symptoms": "Power steering fluid leak, low fluid in reservoir, heavy steering when cold, whining from power steering pump",
-      "description": "The 944 power steering rack commonly develops leaks from the seals as they age. Leaks typically occur at the pinion seal, tie rod end seals, or pressure line connections.",
-      "keywords": "power steering rack leaks fluid leak low reservoir heavy when cold whining from pump the 944 commonly develops seals they",
+      "description": "The power steering rack leaks from its pinion seal and tie rod boots as the seals age, and the pressure lines weep at their fittings. The pump wears too. Catch leaks early, before the rack runs low and wears itself out.",
+      "keywords": "power steering rack leaks fluid leak low reservoir heavy when cold whining from pump the its pinion seal and tie",
       "url": "/resources/porsche/944/"
     },
     {
@@ -308,8 +308,8 @@
       "years": "1982-1991",
       "title": "Odometer and Speedometer Gear Failure",
       "symptoms": "Odometer stops working while speedometer works, intermittent odometer, trip meter stuck",
-      "description": "The 944 instrument cluster uses plastic gears to drive the odometer from the speedometer. These gears strip or crack with age, causing the odometer to stop functioning while the speedometer continues to work.",
-      "keywords": "odometer and speedometer gear failure stops working while works intermittent trip meter stuck the 944 instrument cluster uses plastic gears",
+      "description": "The odometer is driven by small plastic gears in the cluster, and they crack or strip with age. The speedometer keeps working while the odometer stops. Brass replacement gears fix it permanently.",
+      "keywords": "odometer and speedometer gear failure stops working while works intermittent trip meter stuck the driven small plastic gears cluster they",
       "url": "/resources/porsche/944/"
     },
     {
@@ -320,8 +320,8 @@
       "years": "1982-1991",
       "title": "Engine Mount Deterioration",
       "symptoms": "Excessive engine vibration, engine moves visibly during acceleration/deceleration, clunking when shifting",
-      "description": "The 944 engine is mounted to the chassis with rubber mounts that deteriorate over time. When worn, the engine moves excessively, causing vibrations and clunking noises during load changes.",
-      "keywords": "engine mount deterioration excessive vibration moves visibly during acceleration deceleration clunking when shifting the 944 mounted chassis with rubber mounts",
+      "description": "The engine mounts are rubber, and some are fluid-filled, and they sag and split with age. The engine then moves around, and you feel it as vibration at idle and a clunk when you get on and off the throttle. Replace them as a set.",
+      "keywords": "engine mount deterioration excessive vibration moves visibly during acceleration deceleration clunking when shifting the mounts are rubber and some fluid",
       "url": "/resources/porsche/944/"
     },
     {
@@ -332,8 +332,8 @@
       "years": "1989-1994",
       "title": "Oil Leaks (Chain Housing and Case Seams)",
       "symptoms": "Oil spots under car, oil on engine surfaces, visible seepage, low oil level, burning oil smell",
-      "description": "The 964's M64 engine is known for oil leaks. The most common source is the chain housing gasket (timing chain cover), but oil also seeps from the case half seams, valve cover gaskets, oil cooler seals, and cam tower o-rings. While some seepage is considered normal for air-cooled engines, excessive leaks require attention.",
-      "keywords": "oil leaks chain housing and case seams spots under car engine surfaces visible seepage low level burning smell the 964",
+      "description": "Every M64 seeps a little. The chain housing gaskets are the usual source, followed by the case seams, valve covers, oil cooler seals, and cam tower O-rings. Some seepage is normal on an air-cooled 911. Drips on the floor aren't, and neither is oil on the heat exchangers.",
+      "keywords": "oil leaks chain housing and case seams spots under car engine surfaces visible seepage low level burning smell every m64",
       "url": "/resources/porsche/964/"
     },
     {
@@ -344,8 +344,8 @@
       "years": "1989-1994",
       "title": "Dual-Mass Flywheel Failure",
       "symptoms": "Clutch chatter, vibration at idle in gear, rattling noise, difficulty engaging gears",
-      "description": "The 964 was the first 911 to use a dual-mass flywheel (DMF) to smooth out the flat-six's inherent vibration. These flywheels have internal springs and dampers that wear out over time, causing chatter and vibration. A failed DMF can also damage the clutch and transmission input shaft bearing.",
-      "keywords": "dual mass flywheel failure clutch chatter vibration idle gear rattling noise difficulty engaging gears the 964 was first 911 use",
+      "description": "The 964 was the first 911 with a dual-mass flywheel, which uses internal springs to smooth out vibration. The springs wear, and a worn one rattles at idle and chatters on take-off. Left alone, it can damage the clutch and the gearbox input bearing. Replacing it means pulling the gearbox, so do the clutch at the same time.",
+      "keywords": "dual mass flywheel failure clutch chatter vibration idle gear rattling noise difficulty engaging gears the 964 was first 911 with",
       "url": "/resources/porsche/964/"
     },
     {
@@ -368,7 +368,7 @@
       "years": "1989-1994",
       "title": "Power Steering System Issues",
       "symptoms": "Whining pump, heavy steering, fluid leaks, lack of assist, groaning noise",
-      "description": "The 964 was the first 911 with standard power steering. The hydraulic system includes a pump, rack, reservoir, and lines that all age. Power steering pump failure is common, as are leaks from the rack seals, high-pressure lines, and return lines. The fluid should be changed regularly.",
+      "description": "The 964 was the first 911 with power steering as standard. The pump, rack, and hoses are all 30 years old now: pumps fail, and the rack seals and pressure lines leak. Change the fluid regularly and fix leaks early.",
       "keywords": "power steering system issues whining pump heavy fluid leaks lack assist groaning noise the 964 was first 911 with standard",
       "url": "/resources/porsche/964/"
     },
@@ -380,8 +380,8 @@
       "years": "1989-1994",
       "title": "G50 Transmission Synchro Wear",
       "symptoms": "Grinding when shifting, difficulty engaging gears, blocked shifts, gear pop-out",
-      "description": "The 964 uses the Getrag G50 5-speed transmission. While generally tough, the synchros wear over time, especially second gear. Aggressive driving, improper fluid, and inadequate warm-up accelerate wear. A worn synchro will grind or block when trying to engage the affected gear.",
-      "keywords": "g50 transmission synchro wear grinding when shifting difficulty engaging gears blocked shifts gear pop out the 964 uses getrag speed",
+      "description": "The G50 five-speed is tough, but its synchros wear, especially second. Hard driving, the wrong gear oil, and shifting before it's warm all speed that up. A worn synchro grinds or blocks going into gear.",
+      "keywords": "g50 transmission synchro wear grinding when shifting difficulty engaging gears blocked shifts gear pop out the five speed tough but",
       "url": "/resources/porsche/964/"
     },
     {
@@ -392,8 +392,8 @@
       "years": "1989-1994",
       "title": "Cylinder Head Stud Failures",
       "symptoms": "Oil leak at head, coolant seepage, compression loss, misfires",
-      "description": "The M64 engine can develop head stud issues, particularly the through-bolts that secure the heads to the case. These studs can pull out or stretch, especially if the engine has been overheated or has had incorrect torque applied. This is more common on Turbo models due to higher cylinder pressures.",
-      "keywords": "cylinder head stud failures oil leak coolant seepage compression loss misfires the m64 engine can develop issues particularly through bolts",
+      "description": "Head stud trouble is less common on the 964's 3.6L than on earlier air-cooled engines, but it happens, usually after overheating or incorrect torque. A broken or pulled stud lets combustion gases leak and the engine loses compression. Fixing it means taking the engine out.",
+      "keywords": "cylinder head stud failures oil leak coolant seepage compression loss misfires trouble less common the 964 than earlier air cooled",
       "url": "/resources/porsche/964/"
     },
     {
@@ -404,8 +404,8 @@
       "years": "1989-1994",
       "title": "Air Conditioning System Problems",
       "symptoms": "Weak cooling, no cold air, AC compressor noise, clutch not engaging",
-      "description": "The 964's air conditioning system uses R-12 refrigerant (original) and is complex due to the mid-engine layout. Compressor failures, condenser leaks, and evaporator issues are common in older systems. Many have been converted to R-134a with varying success. The AC evaporator requires dashboard removal to replace.",
-      "keywords": "air conditioning system problems weak cooling cold compressor noise clutch not engaging the 964 uses refrigerant original and complex due",
+      "description": "The original system uses R12, and its long refrigerant lines run from the engine at the back to the front of the car. Compressors, condensers, and evaporators all age, and many cars were converted to R134a with mixed results. Replacing the evaporator means taking the dash apart.",
+      "keywords": "air conditioning system problems weak cooling cold compressor noise clutch not engaging the original uses r12 and its long refrigerant",
       "url": "/resources/porsche/964/"
     },
     {
@@ -416,8 +416,8 @@
       "years": "1989-1994",
       "title": "Electrical System Problems",
       "symptoms": "Gauge failures, intermittent lights, dead dashboard, alarm issues, starting problems",
-      "description": "The 964 introduced more electrical complexity than earlier 911s, and these systems age poorly. The DME relay is a common failure point, as are ground connections and the alarm/immobilizer system. Gauge clusters develop cold solder joints. Wiring in the engine bay becomes brittle from heat.",
-      "keywords": "electrical system problems gauge failures intermittent lights dead dashboard alarm issues starting the 964 introduced more complexity than earlier 911s",
+      "description": "The 964 has far more electronics than earlier 911s. The DME relay fails, grounds corrode, the alarm and immobilizer act up, and gauge clusters develop cracked solder joints. Engine bay wiring goes brittle from the heat.",
+      "keywords": "electrical system problems gauge failures intermittent lights dead dashboard alarm issues starting the 964 has far more electronics than earlier",
       "url": "/resources/porsche/964/"
     },
     {
@@ -428,8 +428,8 @@
       "years": "1996-2004",
       "title": "IMS Bearing Failure",
       "symptoms": "Metallic debris in oil, grinding noise from engine, sudden catastrophic engine failure, oil light flickering",
-      "description": "The Intermediate Shaft (IMS) bearing is the most feared issue on the M96 engine used in the 986 Boxster. The bearing supports the intermediate shaft that drives the camshafts. When it fails, metal debris circulates through the engine, causing catastrophic damage. Early cars (1997-1999) with the dual-row bearing are less prone, while 2000-2005 cars with the single-row bearing are at higher risk.",
-      "keywords": "ims bearing failure metallic debris oil grinding noise from engine sudden catastrophic light flickering the intermediate shaft most feared issue",
+      "description": "The intermediate shaft (IMS) bearing supports the shaft that drives the camshafts, and when it fails, metal debris goes through the engine and usually ends it. Risk depends on the bearing: 1997–99 cars have a stronger dual-row bearing with a failure rate around 1%, while 2000–04 cars have a single-row bearing with a reported rate closer to 8%. A retrofit bearing, usually done with the clutch and rear main seal, takes the worry away.",
+      "keywords": "ims bearing failure metallic debris oil grinding noise from engine sudden catastrophic light flickering the intermediate shaft supports that drives",
       "url": "/resources/porsche/986/"
     },
     {
@@ -440,8 +440,8 @@
       "years": "1996-2004",
       "title": "Rear Main Seal (RMS) Leak",
       "symptoms": "Oil drips from bell housing area, oil on clutch (manual), burning oil smell, oil consumption",
-      "description": "The rear main seal on the M96 engine is known to leak, especially on higher mileage cars. Oil leaks onto the clutch causing slipping and requiring clutch replacement along with the seal. The RMS is located between the engine and transmission, so the job requires engine or transmission removal.",
-      "keywords": "rear main seal rms leak oil drips from bell housing area clutch manual burning smell consumption the m96 engine known",
+      "description": "The M96 rear main seal is known to weep, and on higher-mileage cars it can leak enough to contaminate the clutch. Because it sits between the engine and gearbox, replacing it means pulling the transmission, which makes it an obvious job to combine with an IMS retrofit and a clutch.",
+      "keywords": "rear main seal rms leak oil drips from bell housing area clutch manual burning smell consumption the m96 known weep",
       "url": "/resources/porsche/986/"
     },
     {
@@ -452,8 +452,8 @@
       "years": "1996-2004",
       "title": "Coolant Pipe Failure",
       "symptoms": "Sudden coolant loss, overheating, coolant smell, puddle under car, white smoke from engine bay",
-      "description": "The 986 uses plastic coolant pipes that run under the intake manifold. These pipes become brittle with age and heat, eventually cracking and causing rapid coolant loss. Because the engine is mid-mounted, overheating can occur quickly without warning.",
-      "keywords": "coolant pipe failure sudden loss overheating smell puddle under car white smoke from engine bay the 986 uses plastic pipes",
+      "description": "The cooling system runs a long way from the radiators in the nose to the engine behind the seats, and its plastic pipes, fittings, and expansion tank get brittle with heat and age. A cracked part can dump coolant quickly, so watch the level and fix small leaks before they become big ones.",
+      "keywords": "coolant pipe failure sudden loss overheating smell puddle under car white smoke from engine bay the cooling system runs long",
       "url": "/resources/porsche/986/"
     },
     {
@@ -464,8 +464,8 @@
       "years": "1996-2004",
       "title": "Convertible Top Issues",
       "symptoms": "Top won't open/close, warning light on dash, hydraulic fluid leak, slow operation, top stops mid-cycle",
-      "description": "The 986 Boxster's convertible top mechanism is hydraulic and electrically controlled. Common failure points include the hydraulic pump, rams (cylinders), and the micro switches that sense top position.",
-      "keywords": "convertible top issues won open close warning light dash hydraulic fluid leak slow operation stops mid cycle the 986 boxster",
+      "description": "The top is electro-hydraulic. The pump, hydraulic rams, and the microswitches that tell the system where the top is are the usual failures, and a stuck top is often just a switch.",
+      "keywords": "convertible top issues won open close warning light dash hydraulic fluid leak slow operation stops mid cycle the electro pump",
       "url": "/resources/porsche/986/"
     },
     {
@@ -476,8 +476,8 @@
       "years": "1996-2004",
       "title": "AOS (Air/Oil Separator) Failure",
       "symptoms": "Rough idle, smoke from exhaust on startup, oil consumption, whistling noise, check engine light",
-      "description": "The Air/Oil Separator (AOS) is part of the crankcase ventilation system. It separates oil vapor from air before routing it back to the intake. When the AOS fails (usually the internal diaphragm), it can cause vacuum leaks, allow oil into the intake, and cause rough running.",
-      "keywords": "aos air oil separator failure rough idle smoke from exhaust startup consumption whistling noise check engine light the part crankcase",
+      "description": "The air/oil separator strips oil from the crankcase vapors before they go back into the intake. When its diaphragm fails, the engine pulls oil into the intake: you'll see a cloud of smoke on startup, rising oil consumption, and a rough idle from the vacuum leak.",
+      "keywords": "aos air oil separator failure rough idle smoke from exhaust startup consumption whistling noise check engine light the strips crankcase",
       "url": "/resources/porsche/986/"
     },
     {
@@ -488,7 +488,7 @@
       "years": "1996-2004",
       "title": "Bore Scoring / Cylinder Wear",
       "symptoms": "Knocking noise from engine (cold or hot), increased oil consumption, smoke on startup, low compression",
-      "description": "Some M96 engines develop bore scoring—damage to the cylinder walls that allows oil to pass the piston rings. The cause is debated. Bore scoring can range from minor (cosmetic) to severe (engine rebuild required). It's more common on cars that sit for long periods or are driven short distances.",
+      "description": "Some M96 engines score their cylinder walls, which lets oil past the rings. The exact cause is still debated. It ranges from minor to rebuild-the-engine, and the tell-tales are a ticking cold start, oil consumption, and sooty tailpipes on one bank. A borescope inspection before you buy is cheap insurance.",
       "keywords": "bore scoring cylinder wear knocking noise from engine cold hot increased oil consumption smoke startup low compression some m96 engines",
       "url": "/resources/porsche/986/"
     },
@@ -500,8 +500,8 @@
       "years": "1996-2004",
       "title": "Window Regulator Failure",
       "symptoms": "Window drops into door, grinding noise, slow window operation, window off track",
-      "description": "Like many cars of this era, the 986 uses cable-driven window regulators with plastic components that fail. The cables can fray or the plastic guides can break, causing the window to drop or operate erratically.",
-      "keywords": "window regulator failure drops into door grinding noise slow operation off track like many cars this era the 986 uses",
+      "description": "The regulators use cables and plastic parts that fail, so the window drops or moves erratically. The frameless glass also has to be adjusted correctly to seal against the top.",
+      "keywords": "window regulator failure drops into door grinding noise slow operation off track the regulators use cables and plastic parts that",
       "url": "/resources/porsche/986/"
     },
     {
@@ -512,8 +512,8 @@
       "years": "2005-2012",
       "title": "IMS Bearing Failure (987.1 Only)",
       "symptoms": "Metallic debris in oil, grinding noise, oil pressure warning, catastrophic engine failure",
-      "description": "The 987.1 (2005-2008) uses the M97 engine which has the IMS (intermediate shaft) bearing that can fail. This dual-row bearing supports the intermediate shaft that drives the camshafts. When it fails, metal debris contaminates the engine and failure is catastrophic. The 987.2 (2009+) uses a different engine design with no IMS bearing concern.",
-      "keywords": "ims bearing failure 987 only metallic debris oil grinding noise pressure warning catastrophic engine the 2005 2008 uses m97 which",
+      "description": "The 987.1's M97 engine still has an intermediate shaft bearing. 2005 cars use the retrofittable single-row bearing; from 2006 Porsche fitted a larger bearing that fails less often but can't be replaced without splitting the engine. The 987.2 (2009 on) uses a new engine family with no IMS bearing at all.",
+      "keywords": "ims bearing failure 987 only metallic debris oil grinding noise pressure warning catastrophic engine the m97 still has intermediate shaft",
       "url": "/resources/porsche/987/"
     },
     {
@@ -524,8 +524,8 @@
       "years": "2005-2012",
       "title": "Bore Scoring / Cylinder Wear (987.1)",
       "symptoms": "Ticking/knocking noise, smoke on cold start, excessive oil consumption, low compression",
-      "description": "The M97 engine in the 987.1 can develop cylinder bore scoring, where the cylinder walls become damaged, allowing oil to bypass the piston rings. Cylinder 6 is most commonly affected due to cooling system design. The 987.2 with the MA1 engine has improved cooling and does not have this issue.",
-      "keywords": "bore scoring cylinder wear 987 ticking knocking noise smoke cold start excessive oil consumption low compression the m97 engine can",
+      "description": "The M97 can score its cylinder walls, letting oil past the rings. It's often reported worst on one bank, with cylinder 6 the most common, and it shows up as a ticking cold start, oil consumption, and sooty tailpipes on one side. The 987.2's engine doesn't have the problem. A borescope check before you buy a 987.1 is cheap insurance.",
+      "keywords": "bore scoring cylinder wear 987 ticking knocking noise smoke cold start excessive oil consumption low compression the m97 can score",
       "url": "/resources/porsche/987/"
     },
     {
@@ -536,8 +536,8 @@
       "years": "2005-2012",
       "title": "Rear Main Seal Leak (987.1)",
       "symptoms": "Oil drips from bell housing area, oil smell, clutch slipping (manual), burning oil smell",
-      "description": "The M97 engine in the 987.1 can develop rear main seal (RMS) leaks, similar to the 997.1. Oil leaks onto the clutch in manual transmission cars, causing slippage. The leak can also affect the intermediate plate seal. This is less common in the 987.2.",
-      "keywords": "rear main seal leak 987 oil drips from bell housing area smell clutch slipping manual burning the m97 engine can",
+      "description": "Like the 986 and 997.1, the 987.1's M97 can weep oil from its rear main seal, and on manual cars enough can reach the clutch to make it slip. Replacing it means pulling the gearbox. It's much less common on the 987.2.",
+      "keywords": "rear main seal leak 987 oil drips from bell housing area smell clutch slipping manual burning like the 986 and",
       "url": "/resources/porsche/987/"
     },
     {
@@ -548,8 +548,8 @@
       "years": "2005-2012",
       "title": "Air/Oil Separator (AOS) Failure",
       "symptoms": "Smoke from exhaust, oil consumption, rough idle, check engine light, vacuum leaks",
-      "description": "The AOS separates oil vapor from crankcase gases. When it fails, oil is drawn into the intake manifold and burned, causing smoke and consumption. The AOS diaphragm can also tear, creating a vacuum leak that affects idle quality. This affects both 987.1 and 987.2 models.",
-      "keywords": "air oil separator aos failure smoke from exhaust consumption rough idle check engine light vacuum leaks the separates vapor crankcase",
+      "description": "The air/oil separator strips oil from crankcase gases. When its diaphragm fails, oil gets pulled into the intake and burned, so you'll see smoke on startup and rising oil consumption, and the vacuum leak roughs up the idle. Both the 987.1 and 987.2 can have it.",
+      "keywords": "air oil separator aos failure smoke from exhaust consumption rough idle check engine light vacuum leaks the strips crankcase gases",
       "url": "/resources/porsche/987/"
     },
     {
@@ -560,8 +560,8 @@
       "years": "2005-2012",
       "title": "Coolant Pipe and System Failures",
       "symptoms": "Coolant loss, overheating, coolant warning, sweet smell, puddles under car",
-      "description": "The 987's mid-engine layout requires long coolant runs from the front-mounted radiators to the rear engine. Plastic coolant pipes, water pump, and expansion tank all degrade with heat and age. Coolant pipe failure can cause overheating and engine damage if not addressed immediately.",
-      "keywords": "coolant pipe and system failures loss overheating warning sweet smell puddles under car the 987 mid engine layout requires long",
+      "description": "Coolant has a long trip from the radiators in the nose to the engine behind the seats. Plastic pipes and fittings, the water pump, and the expansion tank all age with heat. Watch the coolant level, replace the pump on schedule, and fix small leaks early.",
+      "keywords": "coolant pipe and system failures loss overheating warning sweet smell puddles under car has long trip from the radiators nose",
       "url": "/resources/porsche/987/"
     },
     {
@@ -572,8 +572,8 @@
       "years": "2005-2012",
       "title": "Convertible Top Issues (Boxster)",
       "symptoms": "Top won't open/close, slow operation, error messages, hydraulic leaks, torn fabric",
-      "description": "The Boxster's power convertible top is complex and can develop issues. The hydraulic pump and rams wear, causing slow operation or failure to complete cycles. Microswitches fail, preventing operation. The fabric top itself wears and can develop tears or leaks at seams and the rear window.",
-      "keywords": "convertible top issues boxster won open close slow operation error messages hydraulic leaks torn fabric the power complex and can",
+      "description": "The Boxster's power top wears in the usual places: the hydraulic pump and rams slow down, microswitches fail and stop the top mid-cycle, and the fabric wears at the seams. Keep the drains clear so water doesn't end up in the cabin.",
+      "keywords": "convertible top issues boxster won open close slow operation error messages hydraulic leaks torn fabric the power wears usual places",
       "url": "/resources/porsche/987/"
     },
     {
@@ -584,8 +584,8 @@
       "years": "2005-2012",
       "title": "Carbon Buildup on Intake Valves (987.2 S Direct Injection)",
       "symptoms": "Rough idle, misfires, reduced power, hesitation, poor fuel economy",
-      "description": "The 987.2 uses direct fuel injection (DFI) which doesn't wash the intake valves with fuel. Over time, carbon deposits accumulate on the intake valves, affecting airflow and combustion. This requires periodic cleaning via walnut shell blasting, typically every 50,000-80,000 miles.",
-      "keywords": "carbon buildup intake valves 987 direct injection rough idle misfires reduced power hesitation poor fuel economy the uses dfi which",
+      "description": "The 987.2 S uses direct injection, so fuel no longer washes the backs of the intake valves and some carbon builds up. Porsche's layout seems less prone to it than many direct-injected engines, and plenty of cars never need cleaning. If a high-mileage car idles roughly or feels down on power, walnut blasting is the fix.",
+      "keywords": "carbon buildup intake valves 987 direct injection rough idle misfires reduced power hesitation poor fuel economy the uses longer washes",
       "url": "/resources/porsche/987/"
     },
     {
@@ -596,8 +596,8 @@
       "years": "2005-2012",
       "title": "Window Regulator Failure",
       "symptoms": "Window won't go up/down, grinding noise, slow window operation, window drops",
-      "description": "The 987's frameless windows use regulators that wear over time. The cable-driven regulators can fail, causing the window to drop or operate erratically. Since the windows must drop slightly for the door to open and close, a failed regulator can make it difficult to close the door properly.",
-      "keywords": "window regulator failure won down grinding noise slow operation drops the 987 frameless windows use regulators that wear over time",
+      "description": "The frameless windows drop slightly when you open the door, and a worn regulator or a misadjusted window can make the door hard to close properly. Regulators fail with frayed cables or broken plastic parts.",
+      "keywords": "window regulator failure won down grinding noise slow operation drops the frameless windows drop slightly when you open door and",
       "url": "/resources/porsche/987/"
     },
     {
@@ -606,10 +606,10 @@
       "model": "991",
       "modelName": "991 911",
       "years": "2012-2019",
-      "title": "Coolant Pipe Failures",
+      "title": "Cooling System Leaks (Housings, Seals, and Radiators)",
       "symptoms": "Coolant loss, overheating warning, coolant puddles, sweet smell, temperature fluctuation",
-      "description": "The 991 continues to use plastic coolant pipes in the cooling system. These pipes run from the front radiators to the rear engine and are subjected to heat cycling and vibration. They can crack, especially at connection points, causing coolant loss. The coolant transfer pipe in particular is a known failure point.",
-      "keywords": "coolant pipe failures loss overheating warning puddles sweet smell temperature fluctuation the 991 continues use plastic pipes cooling system these",
+      "description": "The 991's cooling system is a long circuit from the radiators in the nose to the engine at the back, with a lot of plastic housings, O-rings, and hose joints along the way. As it ages, the usual trouble is a seeping housing or joint, a tired expansion tank cap, or a leaking radiator rather than a dramatic pipe failure. Watch the coolant level and investigate any sweet smell or damp spots early.",
+      "keywords": "cooling system leaks housings seals and radiators coolant loss overheating warning puddles sweet smell temperature fluctuation the 991 long circuit",
       "url": "/resources/porsche/991/"
     },
     {
@@ -620,8 +620,8 @@
       "years": "2012-2019",
       "title": "Carbon Buildup on Intake Valves (DFI Engines)",
       "symptoms": "Rough idle, misfires, reduced power, poor fuel economy, hesitation under load",
-      "description": "All 991 engines use direct fuel injection (DFI), meaning fuel doesn't wash over the intake valves. Carbon deposits accumulate on the valve backs and intake ports, restricting airflow and affecting engine performance. This is a maintenance item requiring periodic walnut blasting, typically every 50,000-80,000 miles depending on driving style.",
-      "keywords": "carbon buildup intake valves dfi engines rough idle misfires reduced power poor fuel economy hesitation under load all 991 use",
+      "description": "Every 991 engine is direct-injected, so fuel doesn't wash the backs of the intake valves and some carbon builds up over time. Porsche's engines seem less prone to it than many direct-injected designs, and plenty of cars never need attention. If a high-mileage car idles roughly or feels down on power, walnut blasting cleans the valves.",
+      "keywords": "carbon buildup intake valves dfi engines rough idle misfires reduced power poor fuel economy hesitation under load every 991 engine",
       "url": "/resources/porsche/991/"
     },
     {
@@ -632,8 +632,8 @@
       "years": "2012-2019",
       "title": "PDK Transmission Issues",
       "symptoms": "Harsh shifts, jerky low-speed operation, shuddering, warning lights, delayed engagement",
-      "description": "The PDK dual-clutch transmission is generally reliable but can develop issues. Low-speed jerkiness, especially when cold, is common and may be normal for the system. More serious issues include clutch pack wear, mechatronic unit failures, and software glitches. PDK fluid should be serviced despite Porsche's 'lifetime' fill claim.",
-      "keywords": "pdk transmission issues harsh shifts jerky low speed operation shuddering warning lights delayed engagement the dual clutch generally reliable but",
+      "description": "The PDK is generally reliable. Some low-speed jerkiness, especially cold, is normal behavior. The real problems are clutch wear, mechatronic unit failures, and software faults. Porsche's schedule calls for the PDK clutch fluid every 60,000 miles and the transmission fluid every 120,000 miles or 12 years. Many specialists change the transmission fluid at 60,000 too, and I'd follow them. Ask for proof on any car you're buying.",
+      "keywords": "pdk transmission issues harsh shifts jerky low speed operation shuddering warning lights delayed engagement the generally reliable some jerkiness especially",
       "url": "/resources/porsche/991/"
     },
     {
@@ -644,8 +644,8 @@
       "years": "2012-2019",
       "title": "PASM Suspension Damper Failures",
       "symptoms": "PASM warning light, harsh ride, damper leaking, clunking noises, uneven handling",
-      "description": "PASM (Porsche Active Suspension Management) dampers use electronic valving to adjust stiffness. These dampers can fail, usually by leaking or developing electrical issues. A failed damper triggers a warning light and the system may default to a fixed setting. PASM dampers are expensive compared to conventional shocks.",
-      "keywords": "pasm suspension damper failures warning light harsh ride leaking clunking noises uneven handling porsche active management dampers use electronic valving",
+      "description": "PASM dampers adjust their stiffness electronically. They fail by leaking or with electrical faults, which brings up a warning and can leave the system stuck in one setting. They cost a lot more than conventional shocks, though remanufactured units help.",
+      "keywords": "pasm suspension damper failures warning light harsh ride leaking clunking noises uneven handling dampers adjust their stiffness electronically they fail",
       "url": "/resources/porsche/991/"
     },
     {
@@ -656,8 +656,8 @@
       "years": "2012-2019",
       "title": "Oil Consumption Concerns",
       "symptoms": "Low oil warnings, need to add oil between changes, blue smoke on startup, oil smell",
-      "description": "Some 991.1 models exhibit higher than expected oil consumption. Porsche's stated acceptable consumption is up to 1 quart per 1,000 miles, which many owners find excessive. Direct injection, high compression, and tight tolerances contribute. Tracking oil level is important, and the car should not be run low on oil.",
-      "keywords": "oil consumption concerns low warnings need add between changes blue smoke startup smell some 991 models exhibit higher than expected",
+      "description": "Some 991.1 engines use more oil than owners expect, and Porsche's published allowance is generous. It's usually not a sign of a failing engine, but it means you need to check the level regularly and never let it run low. A sudden increase is worth investigating.",
+      "keywords": "oil consumption concerns low warnings need add between changes blue smoke startup smell some 991 engines use more than owners",
       "url": "/resources/porsche/991/"
     },
     {
@@ -666,10 +666,10 @@
       "model": "991",
       "modelName": "991 911",
       "years": "2012-2019",
-      "title": "Twin-Turbo Specific Issues (991.2)",
+      "title": "Turbo-Specific Issues (991.2 Carrera)",
       "symptoms": "Boost inconsistency, wastegate rattle, turbo whine, check engine light, reduced power",
-      "description": "The 991.2 moved to twin-turbo engines for all models. While generally reliable, the turbos can develop issues including wastegate rattle, actuator problems, and seal failures. Turbo feed and drain lines need monitoring. These engines are more complex than the naturally aspirated 991.1.",
-      "keywords": "twin turbo specific issues 991 boost inconsistency wastegate rattle whine check engine light reduced power the moved engines for all",
+      "description": "The 991.2 Carreras moved to a twin-turbo 3.0L. The turbos are generally dependable, but wastegate rattle, actuator faults, and seal leaks do show up, and the feed and drain lines deserve a look at service time. It's a more complex engine than the naturally aspirated 991.1.",
+      "keywords": "turbo specific issues 991 carrera boost inconsistency wastegate rattle whine check engine light reduced power the carreras moved twin turbos",
       "url": "/resources/porsche/991/"
     },
     {
@@ -680,8 +680,8 @@
       "years": "2012-2019",
       "title": "Convertible Top Issues (Cabriolet)",
       "symptoms": "Slow operation, error messages, hydraulic leaks, top doesn't complete cycle, fabric wear",
-      "description": "The 991 Cabriolet's power top system is complex and can develop age-related issues. Hydraulic pump wear, microswitch failures, and ram seal leaks cause operational problems. The fabric top can wear at stress points, and the rear window can develop issues. Proper operation and storage help longevity.",
-      "keywords": "convertible top issues cabriolet slow operation error messages hydraulic leaks doesn complete cycle fabric wear the 991 power system complex",
+      "description": "The Cabriolet's top is hydraulic and complex. Pumps wear, microswitches fail, and ram seals leak, and the fabric wears at its stress points. Cycling it regularly and keeping the drains clear helps it last.",
+      "keywords": "convertible top issues cabriolet slow operation error messages hydraulic leaks doesn complete cycle fabric wear the and complex pumps microswitches",
       "url": "/resources/porsche/991/"
     },
     {
@@ -692,8 +692,8 @@
       "years": "2012-2019",
       "title": "Electric Steering Column Issues",
       "symptoms": "Creaking noise, steering feel inconsistency, steering wheel off-center, warning lights",
-      "description": "The 991 uses an electric power steering system. While generally reliable, some owners report issues with the steering column producing creaking noises, especially when turning at low speeds. There can also be software-related issues affecting steering feel or causing warning messages.",
-      "keywords": "electric steering column issues creaking noise feel inconsistency wheel off center warning lights the 991 uses power system while generally",
+      "description": "The 991 uses electric power steering. Some owners report creaks from the column at low speed, usually cured with lubrication, and occasional software-related warnings that a dealer update can fix.",
+      "keywords": "electric steering column issues creaking noise feel inconsistency wheel off center warning lights the 991 uses power some owners report",
       "url": "/resources/porsche/991/"
     },
     {
@@ -704,8 +704,8 @@
       "years": "1994-1998",
       "title": "Oil Leaks (Chain Tensioner and Case Seams)",
       "symptoms": "Oil spots under car, oil on engine, seepage visible, low oil level, burning smell",
-      "description": "Like its predecessor, the 993 is prone to oil leaks. The most common source is the chain tensioner cover, but leaks also develop at case seams, valve covers, cam tower seals, and oil cooler connections. The 993 added hydraulic valve lifters which also have potential leak points at the lifter galleries.",
-      "keywords": "oil leaks chain tensioner and case seams spots under car engine seepage visible low level burning smell like its predecessor",
+      "description": "Like every air-cooled 911, the 993 seeps. The chain tensioner covers are the usual source, then the case seams, valve covers, cam tower seals, and oil cooler connections. Some seepage is normal; drips on the floor or oil on the exhaust aren't.",
+      "keywords": "oil leaks chain tensioner and case seams spots under car engine seepage visible low level burning smell like every air",
       "url": "/resources/porsche/993/"
     },
     {
@@ -716,8 +716,8 @@
       "years": "1994-1998",
       "title": "Dual-Mass Flywheel Wear",
       "symptoms": "Clutch chatter, vibration at idle, rattling noise, harsh engagement, gear engagement difficulty",
-      "description": "The 993 continues with the dual-mass flywheel to dampen drivetrain vibrations. These flywheels have a service life and their internal springs and dampers wear out. A worn DMF causes chatter, vibration, and can damage the clutch disc and transmission input shaft bearing. Replacement is recommended with any clutch service.",
-      "keywords": "dual mass flywheel wear clutch chatter vibration idle rattling noise harsh engagement gear difficulty the 993 continues with dampen drivetrain",
+      "description": "The 993 keeps the 964's dual-mass flywheel, and its internal springs wear out. A worn one rattles at idle and chatters on take-off, and can damage the clutch and gearbox input bearing. Replace it with any clutch job.",
+      "keywords": "dual mass flywheel wear clutch chatter vibration idle rattling noise harsh engagement gear difficulty the 993 keeps 964 and its",
       "url": "/resources/porsche/993/"
     },
     {
@@ -728,8 +728,8 @@
       "years": "1994-1998",
       "title": "Hydraulic Lifter Noise and Failure",
       "symptoms": "Ticking noise on cold start, persistent ticking, reduced power, misfire, rough idle",
-      "description": "The 993 was the first 911 to use hydraulic valve lifters, eliminating the need for periodic valve adjustments. However, these lifters can develop issues—they may tick on cold start (often normal) or persistently (indicating wear). Using improper oil or extended oil change intervals accelerates lifter wear.",
-      "keywords": "hydraulic lifter noise and failure ticking cold start persistent reduced power misfire rough idle the 993 was first 911 use",
+      "description": "The 993 was the first 911 with hydraulic lifters, so no more valve adjustments. A brief tick on a cold start is normal. A tick that stays when the engine is warm usually means a worn lifter, and old or wrong oil makes it worse.",
+      "keywords": "hydraulic lifter noise and failure ticking cold start persistent reduced power misfire rough idle the 993 was first 911 with",
       "url": "/resources/porsche/993/"
     },
     {
@@ -740,8 +740,8 @@
       "years": "1994-1998",
       "title": "G50/52 Transmission Issues",
       "symptoms": "Grinding into gear, synchro failure, gear pop-out, shift cable wear, notchy shifting",
-      "description": "The 993 uses the G50 six-speed transmission. While tough, synchros wear over time, particularly second gear. The shift cables also wear and need adjustment or replacement. Improper fluid or aggressive cold shifting accelerates synchro wear. Some 993s have the limited-slip differential which has its own service needs.",
-      "keywords": "g50 transmission issues grinding into gear synchro failure pop out shift cable wear notchy shifting the 993 uses six speed",
+      "description": "The six-speed G50 is tough, but its synchros wear, second gear first. Worn shift linkage bushings make it sloppy. The wrong gear oil and hard shifts before it's warm speed up synchro wear. Cars with the limited-slip differential need it serviced too.",
+      "keywords": "g50 transmission issues grinding into gear synchro failure pop out shift cable wear notchy shifting the six speed tough but",
       "url": "/resources/porsche/993/"
     },
     {
@@ -752,8 +752,8 @@
       "years": "1994-1998",
       "title": "Suspension Component Wear",
       "symptoms": "Clunking over bumps, vague handling, uneven tire wear, loose steering feel, wandering",
-      "description": "The 993 introduced a completely redesigned multi-link rear suspension replacing the semi-trailing arms of earlier 911s. All suspension bushings, ball joints, and tie rods wear over time. The rear suspension has numerous bushings that affect alignment and handling. Worn components significantly diminish the 993's excellent handling.",
-      "keywords": "suspension component wear clunking over bumps vague handling uneven tire loose steering feel wandering the 993 introduced completely redesigned multi",
+      "description": "The 993's multi-link rear suspension replaced the semi-trailing arms of every earlier 911, and it's why the car handles so well. It also has a lot of bushings. After 30 years they're all due, along with ball joints and tie rods, and a worn 993 loses the precision that makes it special.",
+      "keywords": "suspension component wear clunking over bumps vague handling uneven tire loose steering feel wandering the 993 multi link rear replaced",
       "url": "/resources/porsche/993/"
     },
     {
@@ -764,8 +764,8 @@
       "years": "1994-1998",
       "title": "Power Steering System Failures",
       "symptoms": "Whining pump, heavy steering, fluid leaks, intermittent assist, groaning noise",
-      "description": "The 993 hydraulic power steering system shares components with the 964. The pump, rack, hoses, and reservoir all age. Power steering pump bearings fail causing whining. Rack seals leak. Hoses deteriorate internally and externally. Regular fluid changes help longevity.",
-      "keywords": "power steering system failures whining pump heavy fluid leaks intermittent assist groaning noise the 993 hydraulic shares components with 964",
+      "description": "The 993's hydraulic power steering shares a lot with the 964's. Pump bearings wear and whine, rack seals leak, and hoses deteriorate inside and out. Regular fluid changes help.",
+      "keywords": "power steering system failures whining pump heavy fluid leaks intermittent assist groaning noise the 993 hydraulic shares lot with 964",
       "url": "/resources/porsche/993/"
     },
     {
@@ -776,8 +776,8 @@
       "years": "1994-1998",
       "title": "Climate Control and HVAC Issues",
       "symptoms": "AC not cooling, heater not heating, blend door clicking, fan not working, temperature fluctuation",
-      "description": "The 993 climate control system is complex and prone to age-related failures. The blend door actuators (servos) fail, causing clicking noises and incorrect temperature output. The AC compressor, condenser, and evaporator develop issues. The heater core can leak. Blower motor resistors fail.",
-      "keywords": "climate control and hvac issues not cooling heater heating blend door clicking fan working temperature fluctuation the 993 system complex",
+      "description": "The climate control is complex and old now. Blend door servos fail and click, the AC compressor, condenser, and evaporator age, heater cores leak, and blower resistors fail. Plenty of cars have a system that only half works.",
+      "keywords": "climate control and hvac issues not cooling heater heating blend door clicking fan working temperature fluctuation the complex old now",
       "url": "/resources/porsche/993/"
     },
     {
@@ -788,8 +788,8 @@
       "years": "1994-1998",
       "title": "Turbo-Specific Issues (993 Turbo)",
       "symptoms": "Boost problems, wastegate issues, intercooler leaks, turbo failure, check engine light",
-      "description": "The 993 Turbo uses twin KKK turbochargers. While generally reliable, the turbo system has specific maintenance needs. Wastegates can stick, boost hoses crack, and intercoolers can develop leaks. Oil feed and drain lines must be inspected. Turbo bearing wear occurs at high mileage.",
-      "keywords": "turbo specific issues 993 boost problems wastegate intercooler leaks failure check engine light the uses twin kkk turbochargers while generally",
+      "description": "The 993 Turbo uses twin KKK turbochargers. They're dependable, but wastegates stick, boost hoses crack, and intercoolers leak. Inspect the oil feed and drain lines, and expect turbo bearing wear at high mileage.",
+      "keywords": "turbo specific issues 993 boost problems wastegate intercooler leaks failure check engine light the uses twin kkk turbochargers they dependable",
       "url": "/resources/porsche/993/"
     },
     {
@@ -812,8 +812,8 @@
       "years": "1998-2005",
       "title": "IMS Bearing Failure",
       "symptoms": "Metallic debris in oil filter, grinding/knocking noise, sudden catastrophic engine failure, oil pressure warning",
-      "description": "The 996 shares the M96 engine with the Boxster, and thus the same IMS bearing concern. The intermediate shaft bearing can fail without warning, destroying the engine. The 1999-2001 cars with the dual-row bearing have a lower failure rate, while 2002-2005 cars with the single-row bearing are at higher risk. The 996 Turbo and GT3 use different engines and are NOT affected by IMS issues.",
-      "keywords": "ims bearing failure metallic debris oil filter grinding knocking noise sudden catastrophic engine pressure warning the 996 shares m96 with",
+      "description": "The 996 Carrera shares the Boxster's M96 engine, and with it the intermediate shaft (IMS) bearing problem: the bearing can fail without warning and take the engine with it. Risk depends on the bearing. Cars built through the 2000 model year have the stronger dual-row bearing and a failure rate around 1%. From 2001 on, Porsche used a single-row bearing with a reported failure rate closer to 8%. The 996 Turbo, GT2, and GT3 use the Mezger engine and don't have an IMS problem at all.",
+      "keywords": "ims bearing failure metallic debris oil filter grinding knocking noise sudden catastrophic engine pressure warning the 996 carrera shares boxster",
       "url": "/resources/porsche/996/"
     },
     {
@@ -824,8 +824,8 @@
       "years": "1998-2005",
       "title": "Bore Scoring / D-Chunk",
       "symptoms": "Ticking/knocking noise (especially when cold), excessive oil consumption, smoke on startup, low compression on specific cylinders",
-      "description": "Bore scoring in the M96 engine is caused by debris damaging the cylinder walls, allowing oil past the piston rings. \"D-Chunk\" refers to a failure mode where a piece of the cylinder wall breaks away. Cylinders 5 and 6 are most commonly affected. This is distinct from IMS failure but equally serious.",
-      "keywords": "bore scoring chunk ticking knocking noise especially when cold excessive oil consumption smoke startup low compression specific cylinders the m96",
+      "description": "Some M96 engines score their cylinder walls, letting oil past the rings. The cause is still debated. Separately, some 3.4L engines suffer 'D-chunk,' where a piece of the cylinder liner cracks away. Both are major engine repairs and unrelated to the IMS bearing. A ticking cold start, rising oil consumption, and sooty tailpipes on one bank are the warnings, and a borescope confirms it.",
+      "keywords": "bore scoring chunk ticking knocking noise especially when cold excessive oil consumption smoke startup low compression specific cylinders some m96",
       "url": "/resources/porsche/996/"
     },
     {
@@ -836,7 +836,7 @@
       "years": "1998-2005",
       "title": "Rear Main Seal (RMS) Leak",
       "symptoms": "Oil drips from transmission area, oil on clutch causing slip, burning oil smell, visible oil around flywheel",
-      "description": "The rear main seal between the engine and transmission leaks on many M96 engines. On manual transmission cars, oil contaminates the clutch disc causing slipping. The repair requires separating the engine from the transmission.",
+      "description": "The rear main seal between the engine and gearbox weeps on many M96 engines, and on manual cars enough oil can reach the clutch to make it slip. Replacing it means separating the engine and gearbox, so combine it with an IMS retrofit and a clutch.",
       "keywords": "rear main seal rms leak oil drips from transmission area clutch causing slip burning smell visible around flywheel the between",
       "url": "/resources/porsche/996/"
     },
@@ -848,7 +848,7 @@
       "years": "1998-2005",
       "title": "AOS (Air/Oil Separator) Failure",
       "symptoms": "Rough idle, whistling noise, smoke from exhaust, oil consumption, check engine light for lean codes",
-      "description": "The Air/Oil Separator removes oil vapor from crankcase gases before they enter the intake. The AOS has an internal diaphragm that fails over time, causing vacuum leaks and allowing oil into the intake system.",
+      "description": "The air/oil separator removes oil from crankcase gases before they go back to the intake. When its diaphragm fails, oil gets pulled into the engine: a cloud of smoke on startup, rising oil consumption, and a rough idle from the vacuum leak.",
       "keywords": "aos air oil separator failure rough idle whistling noise smoke from exhaust consumption check engine light for lean codes the",
       "url": "/resources/porsche/996/"
     },
@@ -860,8 +860,8 @@
       "years": "1998-2005",
       "title": "Coolant System Failures",
       "symptoms": "Overheating, coolant loss, steam from engine area, coolant smell, temperature warning",
-      "description": "The 996 uses plastic coolant pipes and a complex cooling system with dual radiators in the front. The plastic pipes under the intake manifold can crack with age, causing sudden coolant loss.",
-      "keywords": "coolant system failures overheating loss steam from engine area smell temperature warning the 996 uses plastic pipes and complex cooling",
+      "description": "Coolant has a long trip from the two radiators in the nose to the engine in the tail, through plastic pipes and fittings that age with heat. A cracked part can dump coolant quickly, so keep an eye on the level. Clean the radiators out too: leaves and debris collect in front of them and cause both overheating and corrosion.",
+      "keywords": "coolant system failures overheating loss steam from engine area smell temperature warning has long trip the two radiators nose tail",
       "url": "/resources/porsche/996/"
     },
     {
@@ -872,8 +872,8 @@
       "years": "1998-2005",
       "title": "Headlight Seal Failure (\"Fried Egg\" Headlights)",
       "symptoms": "Condensation inside headlight, yellowed/cloudy appearance, reduced light output",
-      "description": "The 996's distinctive \"fried egg\" headlights are known for developing moisture inside the housing due to seal failure. This causes condensation, reduces light output, and can damage the bulbs and electronics.",
-      "keywords": "headlight seal failure fried egg headlights condensation inside yellowed cloudy appearance reduced light output the 996 distinctive are known for",
+      "description": "The 'fried egg' headlight units lose their seals and let moisture in, which fogs the lenses, cuts light output, and can corrode the bulbs and connectors. Resealing works if it's caught early; badly corroded units need replacing.",
+      "keywords": "headlight seal failure fried egg headlights condensation inside yellowed cloudy appearance reduced light output the units lose their seals and",
       "url": "/resources/porsche/996/"
     },
     {
@@ -884,8 +884,8 @@
       "years": "1998-2005",
       "title": "Suspension Wear",
       "symptoms": "Clunking over bumps, poor handling, uneven tire wear, steering play, car sitting lower on one side",
-      "description": "The 996's suspension uses control arms, ball joints, and bushings that wear over time. Front control arm bushings and ball joints are common failure points. The rear spring perches can crack, causing the car to sit lower.",
-      "keywords": "suspension wear clunking over bumps poor handling uneven tire steering play car sitting lower one side the 996 uses control",
+      "description": "Front control arm bushings and ball joints are the common wear items. At the rear, coil springs can crack at the bottom coil, which lowers that corner. A worn 996 feels vague where a fresh one feels like a proper 911.",
+      "keywords": "suspension wear clunking over bumps poor handling uneven tire steering play car sitting lower one side front control arm bushings",
       "url": "/resources/porsche/996/"
     },
     {
@@ -896,8 +896,8 @@
       "years": "2004-2012",
       "title": "IMS Bearing Failure (997.1 Only)",
       "symptoms": "Metallic debris in oil, grinding noise, catastrophic engine failure, oil pressure light",
-      "description": "The early 997.1 (2005-2008) with the M97 engine carries over the IMS bearing concern from the 996. However, only the base Carrera and Carrera S are affected—the Turbo and GT3 use different engines. The 997.2 (2009+) uses the 9A1 engine with a completely different design and has NO IMS bearing.",
-      "keywords": "ims bearing failure 997 only metallic debris oil grinding noise catastrophic engine pressure light the early 2005 2008 with m97",
+      "description": "The 997.1 Carrera's M97 engine still has an intermediate shaft bearing. Early cars use the retrofittable single-row bearing; from 2006 Porsche fitted a larger one that fails less often but can't be replaced without splitting the engine. The GT3 and 997.1 Turbo use the Mezger engine and don't have the problem, and the 997.2 (2009 on) dropped the IMS bearing entirely.",
+      "keywords": "ims bearing failure 997 only metallic debris oil grinding noise catastrophic engine pressure light the carrera m97 still has intermediate",
       "url": "/resources/porsche/997/"
     },
     {
@@ -908,8 +908,8 @@
       "years": "2004-2012",
       "title": "Bore Scoring (997.1 M97 Engine)",
       "symptoms": "Ticking/knocking noise, smoke on cold start, oil consumption, low compression",
-      "description": "The M97 engine in the 997.1 can develop bore scoring similar to the M96 in the 996. Cylinder 6 is most commonly affected. The scoring damages cylinder walls, causing oil to bypass the piston rings. The 997.2 with the 9A1 engine does not have this problem.",
-      "keywords": "bore scoring 997 m97 engine ticking knocking noise smoke cold start oil consumption low compression the can develop similar m96",
+      "description": "The 997.1's M97 can score its cylinder walls, letting oil past the rings. It's often reported worst on one bank, with cylinder 6 the most common, and shows up as a ticking cold start, oil consumption, and sooty tailpipes on one side. The 997.2's engine doesn't have the problem. Borescope any 997.1 before you buy it.",
+      "keywords": "bore scoring 997 m97 engine ticking knocking noise smoke cold start oil consumption low compression the can score its cylinder",
       "url": "/resources/porsche/997/"
     },
     {
@@ -920,8 +920,8 @@
       "years": "2004-2012",
       "title": "PDK Transmission Issues (997.2)",
       "symptoms": "Jerky low-speed shifts, shuddering during engagement, warning lights, harsh 1-2 shift",
-      "description": "The PDK (Porsche Doppelkupplung) dual-clutch transmission in the 997.2 can develop issues, particularly with the clutch packs and mechatronic unit. Some owners report jerky behavior at low speeds, especially when cold. The transmission is generally reliable but can be expensive to repair.",
-      "keywords": "pdk transmission issues 997 jerky low speed shifts shuddering during engagement warning lights harsh shift the porsche doppelkupplung dual clutch",
+      "description": "The PDK arrived with the 997.2. It's generally dependable, and some low-speed jerkiness, especially cold, is normal. The expensive problems are clutch wear and mechatronic unit failures. Keep up with the fluid service.",
+      "keywords": "pdk transmission issues 997 jerky low speed shifts shuddering during engagement warning lights harsh shift the arrived with generally dependable",
       "url": "/resources/porsche/997/"
     },
     {
@@ -932,8 +932,8 @@
       "years": "2004-2012",
       "title": "PASM Suspension Failures",
       "symptoms": "PASM warning light, harsh ride, suspension not adjusting, clunking noises, uneven ride height",
-      "description": "PASM (Porsche Active Suspension Management) uses electronically adjustable dampers. The dampers can fail (usually leaking), and the PASM control module can have electrical issues. Failed dampers result in a rough ride and warning lights.",
-      "keywords": "pasm suspension failures warning light harsh ride not adjusting clunking noises uneven height porsche active management uses electronically adjustable dampers",
+      "description": "PASM dampers adjust their stiffness electronically. They fail by leaking or with control module faults, which gives you a harsher ride and a warning light. Remanufactured dampers take some of the sting out of the cost.",
+      "keywords": "pasm suspension failures warning light harsh ride not adjusting clunking noises uneven height dampers adjust their stiffness electronically they fail",
       "url": "/resources/porsche/997/"
     },
     {
@@ -944,8 +944,8 @@
       "years": "2004-2012",
       "title": "Coolant Pipe and Water Pump Failures",
       "symptoms": "Coolant loss, overheating, coolant smell, puddles under car, temperature warning",
-      "description": "Both 997.1 and 997.2 can suffer from coolant system issues. The plastic coolant pipes, water pump, and expansion tank all degrade with age and heat. While the 997.2 improved some areas, it's still recommended to replace plastic coolant pipes with aluminum as preventive maintenance.",
-      "keywords": "coolant pipe and water pump failures loss overheating smell puddles under car temperature warning both 997 can suffer from system",
+      "description": "The cooling system runs from radiators in the nose to the engine in the tail, with plastic pipes, fittings, a water pump, and an expansion tank that all age with heat. Replace the water pump on schedule, keep the radiators clear of debris, and fix small leaks early. On the Mezger-engined Turbo, GT2, and GT3, the glued coolant pipe fittings are a separate, well-known problem with its own fix.",
+      "keywords": "coolant pipe and water pump failures loss overheating smell puddles under car temperature warning the cooling system runs from radiators",
       "url": "/resources/porsche/997/"
     },
     {
@@ -956,8 +956,8 @@
       "years": "2004-2012",
       "title": "Direct Fuel Injection Carbon Buildup (997.2)",
       "symptoms": "Rough idle, misfires, reduced power, poor fuel economy, check engine light",
-      "description": "The 997.2's 9A1 engine uses direct fuel injection (DFI), which doesn't wash the intake valves with fuel like port injection does. Over time, carbon deposits build up on the intake valves, causing running issues. This requires periodic cleaning, typically every 50,000-80,000 miles.",
-      "keywords": "direct fuel injection carbon buildup 997 rough idle misfires reduced power poor economy check engine light the 9a1 uses dfi",
+      "description": "The 997.2's engine is direct-injected, so fuel doesn't wash the backs of the intake valves and some carbon builds up. Porsche's design seems less prone to it than many direct-injected engines, and plenty of cars never need attention. If a high-mileage car idles roughly or feels down on power, walnut blasting is the fix.",
+      "keywords": "direct fuel injection carbon buildup 997 rough idle misfires reduced power poor economy check engine light the injected doesn wash",
       "url": "/resources/porsche/997/"
     },
     {
@@ -968,8 +968,8 @@
       "years": "2004-2012",
       "title": "Rear Main Seal Leak (997.1)",
       "symptoms": "Oil drips from transmission bell housing, burning oil smell, oil on clutch, clutch slippage",
-      "description": "The 997.1 with the M97 engine can develop rear main seal leaks similar to the 996. Oil leaks onto the clutch in manual transmission cars, causing slipping. The 997.2 with the 9A1 engine has a different seal design with fewer reported issues.",
-      "keywords": "rear main seal leak 997 oil drips from transmission bell housing burning smell clutch slippage the with m97 engine can",
+      "description": "Like the 996, the 997.1's M97 can weep oil from its rear main seal, and on manual cars enough can reach the clutch to make it slip. The 997.2's engine uses a different design with fewer reported problems.",
+      "keywords": "rear main seal leak 997 oil drips from transmission bell housing burning smell clutch slippage like the 996 m97 can",
       "url": "/resources/porsche/997/"
     },
     {
@@ -980,8 +980,8 @@
       "years": "1982-1988",
       "title": "Timing Belt Failure (M20 Engine)",
       "symptoms": "Engine won't start, loud slapping noise before failure, visible belt wear or cracking",
-      "description": "E28s equipped with the M20 engine (528e) use a timing belt that requires regular replacement. The M20 is an interference engine—if the belt fails, pistons will strike valves causing major engine damage. Factory interval is 60,000 miles but many recommend 50,000 miles for safety. The tensioner and water pump should always be replaced at the same time.",
-      "keywords": "timing belt failure m20 engine won start loud slapping noise before visible wear cracking e28s equipped with the 528e use",
+      "description": "The 528e's M20 six runs a rubber timing belt, and it's an interference engine, so a failure means bent valves. BMW's interval was 60,000 miles. I'd do it at 50,000 or four years, and always replace the tensioner and water pump with it.",
+      "keywords": "timing belt failure m20 engine won start loud slapping noise before visible wear cracking the 528e six runs rubber and",
       "url": "/resources/bmw/e28/"
     },
     {
@@ -992,8 +992,8 @@
       "years": "1982-1988",
       "title": "Timing Chain and Guide Wear (M30 Engine)",
       "symptoms": "Rattling on startup, chain slap noise, timing drift, poor running",
-      "description": "The M30 big-six engines (533i, 535i, M5) use timing chains rather than belts. While chains last longer, the plastic chain guides and tensioner pads deteriorate over time, especially in high-mileage examples. Broken guide pieces can clog the oil pickup. The chain itself stretches with age, affecting timing accuracy.",
-      "keywords": "timing chain and guide wear m30 engine rattling startup slap noise drift poor running the big six engines 533i 535i",
+      "description": "The M30 in the 533i and 535i uses a chain, which lasts, but the plastic guide rails and the tensioner don't. On a high-mile engine they crack, and broken pieces can end up blocking the oil pickup. A rattle at cold start is the warning. Replace the guides and tensioner, and the chain too if it's stretched.",
+      "keywords": "timing chain and guide wear m30 engine rattling startup slap noise drift poor running the 533i 535i uses which lasts",
       "url": "/resources/bmw/e28/"
     },
     {
@@ -1004,8 +1004,8 @@
       "years": "1982-1988",
       "title": "Rust and Corrosion",
       "symptoms": "Bubbling paint, rust holes, soft floor pans, damaged fender lips, deteriorated jack points",
-      "description": "E28s are extremely rust-prone, particularly in areas with road salt. The worst spots are the front fenders behind the wheels, rocker panels, rear wheel arches, jack points, battery tray, and trunk floor. The windshield frame and A-pillars can also rust from the inside out. Structural rust can compromise safety.",
-      "keywords": "rust and corrosion bubbling paint holes soft floor pans damaged fender lips deteriorated jack points e28s are extremely prone particularly",
+      "description": "Rust is the E28's biggest enemy, and it's why clean ones are getting scarce. Check the front fenders behind the wheels, rockers, rear arches, jack points, battery tray, and trunk floor. Rust around the windshield frame and A-pillars often starts inside and shows up late. If it's reached the structure, walk away unless you're ready for real metalwork.",
+      "keywords": "rust and corrosion bubbling paint holes soft floor pans damaged fender lips deteriorated jack points the e28 biggest enemy why",
       "url": "/resources/bmw/e28/"
     },
     {
@@ -1016,8 +1016,8 @@
       "years": "1982-1988",
       "title": "Oil Leaks (M30 Engine)",
       "symptoms": "Oil spots under car, burning oil smell, visible oil on engine, low oil level",
-      "description": "The M30 engine is known for oil leaks as gaskets age. Common leak points include the valve cover gasket, oil pan gasket, rear main seal, front crankshaft seal, oil filter housing gasket, and camshaft seal. While often dismissed as 'normal' for old BMWs, these leaks should be addressed to prevent oil starvation and fire risk.",
-      "keywords": "oil leaks m30 engine spots under car burning smell visible low level the known for gaskets age common leak points",
+      "description": "An M30 that doesn't leak is one that's been resealed recently. The usual suspects are the valve cover, oil pan, rear main seal, front crank seal, oil filter housing, and cam seal. Plenty of owners shrug these off as normal, but oil on a hot exhaust is a fire waiting to happen, so fix them.",
+      "keywords": "oil leaks m30 engine spots under car burning smell visible low level that doesn leak one been resealed recently the",
       "url": "/resources/bmw/e28/"
     },
     {
@@ -1028,8 +1028,8 @@
       "years": "1982-1988",
       "title": "Electrical System Problems",
       "symptoms": "Flickering lights, dead gauges, check control warnings, intermittent accessories, starting issues",
-      "description": "E28 electrical systems suffer from age-related degradation. Ground points corrode, causing erratic behavior. The instrument cluster uses early electronics that fail over time. The check control panel (OBC) is a common failure point. Window switches, sunroof motors, and the HVAC blower motor all wear out.",
-      "keywords": "electrical system problems flickering lights dead gauges check control warnings intermittent accessories starting issues e28 systems suffer from age related",
+      "description": "Forty years of heat and vibration catch up with the wiring. Corroded grounds cause most of the strange behavior, from flickering gauges to intermittent no-starts. The check control panel and on-board computer fail, and window switches, sunroof motors, and the blower motor all wear out. Start with the grounds before you buy any parts.",
+      "keywords": "electrical system problems flickering lights dead gauges check control warnings intermittent accessories starting issues forty years heat and vibration catch",
       "url": "/resources/bmw/e28/"
     },
     {
@@ -1040,8 +1040,8 @@
       "years": "1982-1988",
       "title": "Suspension Bushing and Component Wear",
       "symptoms": "Clunking over bumps, vague steering, uneven tire wear, wandering at speed, poor handling",
-      "description": "After 35+ years, all rubber suspension components in E28s need replacement. Control arm bushings, thrust arm bushings, subframe mounts, and steering components all deteriorate. The front end uses a complex multi-link design that requires careful attention. Worn bushings severely compromise the refined handling these cars are known for.",
-      "keywords": "suspension bushing and component wear clunking over bumps vague steering uneven tire wandering speed poor handling after years all rubber",
+      "description": "At this age every rubber bushing on an E28 is tired. The front uses MacPherson struts with control arms and thrust arms; the rear is a semi-trailing arm design on a rubber-mounted subframe. Worn control arm and thrust arm bushings, subframe mounts, and steering joints turn a car known for its composure into one that wanders and clunks.",
+      "keywords": "suspension bushing and component wear clunking over bumps vague steering uneven tire wandering speed poor handling this age every rubber",
       "url": "/resources/bmw/e28/"
     },
     {
@@ -1052,8 +1052,8 @@
       "years": "1982-1988",
       "title": "Cooling System Failures",
       "symptoms": "Overheating, coolant leaks, temperature gauge fluctuation, heater not working",
-      "description": "The E28 cooling system components degrade with age. Radiators develop leaks at the plastic end tanks, water pumps fail, and thermostats stick. The auxiliary electric fan and its relay are failure points. Overheating an M30 can crack the head, while M20 head gaskets are vulnerable to overheating damage.",
-      "keywords": "cooling system failures overheating coolant leaks temperature gauge fluctuation heater not working the e28 components degrade with age radiators develop",
+      "description": "Radiators crack at the plastic end tanks, water pumps weep, and thermostats stick. The auxiliary electric fan and its relay fail too, which you'll notice in traffic on a hot day. Don't let either engine overheat: an M30 can crack its head, and an M20 will lift its head gasket.",
+      "keywords": "cooling system failures overheating coolant leaks temperature gauge fluctuation heater not working radiators crack the plastic end tanks water pumps",
       "url": "/resources/bmw/e28/"
     },
     {
@@ -1064,8 +1064,8 @@
       "years": "1982-1988",
       "title": "Fuel Injection Issues",
       "symptoms": "Hard starting, rough idle, hesitation, poor fuel economy, stalling",
-      "description": "Early E28s use Bosch L-Jetronic fuel injection, while later models use Motronic. Common failures include the airflow meter (AFM), idle control valve (ICV), coolant temperature sensor, and cold start injector. Vacuum leaks from deteriorated hoses cause running problems. Fuel injectors can clog or leak.",
-      "keywords": "fuel injection issues hard starting rough idle hesitation poor economy stalling early e28s use bosch jetronic while later models motronic",
+      "description": "Early E28s use Bosch L-Jetronic; later ones use Motronic. The usual failures are the airflow meter, idle control valve, coolant temperature sensor, and on L-Jetronic cars the cold start injector. Cracked vacuum hoses cause rough running on both, so check for leaks before you blame an expensive part.",
+      "keywords": "fuel injection issues hard starting rough idle hesitation poor economy stalling early e28s use bosch jetronic later ones motronic the",
       "url": "/resources/bmw/e28/"
     },
     {
@@ -1088,8 +1088,8 @@
       "years": "1982-1994",
       "title": "Rust and Corrosion",
       "symptoms": "Bubbling paint, visible rust holes, soft floor pans, rusty fenders and wheel arches",
-      "description": "E30s are known for rust, especially in areas with road salt. Common rust spots include the front fenders (behind the wheels), rear wheel arches, rocker panels, battery tray, and floor pans. The trunk floor and spare tire well are also vulnerable. Rust can compromise structural integrity if left untreated.",
-      "keywords": "rust and corrosion bubbling paint visible holes soft floor pans rusty fenders wheel arches e30s are known for especially areas",
+      "description": "Rust decides the price of an E30 more than anything else. Check the front fenders behind the wheels, rear arches, rockers, battery tray, and floors, then lift the trunk mat and look at the spare wheel well. Surface rust is a weekend. Rot in the floors or subframe mounts is a project.",
+      "keywords": "rust and corrosion bubbling paint visible holes soft floor pans rusty fenders wheel arches decides the price e30 more than",
       "url": "/resources/bmw/e30/"
     },
     {
@@ -1100,8 +1100,8 @@
       "years": "1982-1994",
       "title": "Electrical Gremlins",
       "symptoms": "Intermittent gauge failures, flickering lights, dead pixels in OBC, non-working windows/sunroof",
-      "description": "The E30's electrical system, while simpler than modern BMWs, suffers from age-related issues. Ground points corrode, causing erratic behavior. The instrument cluster capacitors fail, leading to dead gauges or pixels. Window and sunroof switches wear out. The check control panel and on-board computer (OBC) are known failure points.",
-      "keywords": "electrical gremlins intermittent gauge failures flickering lights dead pixels obc non working windows sunroof the e30 system while simpler than",
+      "description": "The E30's wiring is simple, but it's old. Corroded grounds cause most of the odd behavior, and the hidden ground behind the glovebox is a classic. Instrument cluster solder joints and capacitors fail, leaving dead gauges, and the check control panel and on-board computer are known weak spots. Window and sunroof switches wear out too.",
+      "keywords": "electrical gremlins intermittent gauge failures flickering lights dead pixels obc non working windows sunroof the e30 wiring simple but old",
       "url": "/resources/bmw/e30/"
     },
     {
@@ -1112,8 +1112,8 @@
       "years": "1982-1994",
       "title": "Suspension Bushing Wear",
       "symptoms": "Clunking over bumps, vague steering, uneven tire wear, wandering at highway speeds",
-      "description": "After 30+ years, nearly all E30s have worn suspension bushings. The front control arm bushings, subframe mounts, rear trailing arm bushings, and sway bar end links all deteriorate with age. Worn bushings dramatically affect handling and can accelerate wear on other suspension components.",
-      "keywords": "suspension bushing wear clunking over bumps vague steering uneven tire wandering highway speeds after years nearly all e30s have worn",
+      "description": "Nearly every E30 on the road needs bushings. The front control arm bushings, rear subframe mounts, rear trailing arm bushings, and sway bar links all go soft with age, and the car starts to wander, clunk, and wear tires unevenly. A full refresh is the single best thing you can do for how an E30 drives.",
+      "keywords": "suspension bushing wear clunking over bumps vague steering uneven tire wandering highway speeds nearly every e30 the road needs bushings",
       "url": "/resources/bmw/e30/"
     },
     {
@@ -1124,8 +1124,8 @@
       "years": "1982-1994",
       "title": "Fuel Injection Issues (Bosch Motronic)",
       "symptoms": "Hard starting, rough idle, poor fuel economy, hesitation under acceleration, stalling",
-      "description": "E30s use Bosch Motronic or L-Jetronic fuel injection systems. Common failure points include the idle control valve (ICV), mass airflow sensor (AFM), coolant temperature sensor, and fuel injectors. Vacuum leaks from aged hoses also cause running issues. The fuel pump and filter should be checked if fuel delivery is suspected.",
-      "keywords": "fuel injection issues bosch motronic hard starting rough idle poor economy hesitation under acceleration stalling e30s use jetronic systems common",
+      "description": "The six-cylinder cars mostly use Bosch Motronic; early ones use L-Jetronic. The common failures are the idle control valve, airflow meter, coolant temperature sensor, and injectors, and cracked vacuum hoses cause more running problems than any sensor. If it's starving for fuel, check the pump, filter, and the DME and fuel pump relays.",
+      "keywords": "fuel injection issues bosch motronic hard starting rough idle poor economy hesitation under acceleration stalling the six cylinder cars mostly",
       "url": "/resources/bmw/e30/"
     },
     {
@@ -1136,8 +1136,8 @@
       "years": "1982-1994",
       "title": "Cooling System Failures",
       "symptoms": "Overheating, coolant leaks, heater not working, temperature gauge fluctuation",
-      "description": "While tougher than later BMW cooling systems, the E30's cooling components still fail with age. The water pump, thermostat, and radiator are common failure points. The heater core is known to leak, and the expansion tank can crack. On M20 engines, the head gasket can fail if overheating occurs.",
-      "keywords": "cooling system failures overheating coolant leaks heater not working temperature gauge fluctuation while tougher than later bmw systems the e30",
+      "description": "The E30 cooling system is tougher than what came later, but it's still 30-plus years old. Water pumps, thermostats, and radiators fail, the heater core leaks, and the expansion tank cracks. An M20 that overheats will lift its head gasket or warp the head, so fix small leaks before they strand you.",
+      "keywords": "cooling system failures overheating coolant leaks heater not working temperature gauge fluctuation the e30 tougher than what came later but",
       "url": "/resources/bmw/e30/"
     },
     {
@@ -1148,8 +1148,8 @@
       "years": "1988-1996",
       "title": "Timing Chain Guide Failure (M60 V8)",
       "symptoms": "Rattling on startup, chain noise, engine warning lights, catastrophic failure risk",
-      "description": "The M60 V8 engine in the 530i and 540i has timing chain guides made from a defective Nikasil-coated material that degrades and breaks apart. Broken guide pieces can jam the chain or clog the oil pickup, leading to catastrophic engine failure. This is considered a must-do service item on any M60-equipped E34.",
-      "keywords": "timing chain guide failure m60 rattling startup noise engine warning lights catastrophic risk the 530i and 540i has guides made",
+      "description": "The M60 V8 in the 530i and 540i uses plastic timing chain guides that go brittle with age and heat. When they break, pieces can jam the chain or block the oil pickup, and the engine usually doesn't survive. On any M60 car without a record of new guides, treat this as due. It's a separate problem from the Nikasil bore coating on early M60s, which is covered in the buyer's guide.",
+      "keywords": "timing chain guide failure m60 rattling startup noise engine warning lights catastrophic risk the 530i and 540i uses plastic guides",
       "url": "/resources/bmw/e34/"
     },
     {
@@ -1160,8 +1160,8 @@
       "years": "1988-1996",
       "title": "VANOS Problems (M50TU Engine)",
       "symptoms": "Loss of low-end power, rough idle, rattling noise, check engine light, poor fuel economy",
-      "description": "The M50TU engine introduced BMW's first VANOS (variable valve timing) system. The VANOS unit uses oil pressure to adjust intake cam timing. Seals within the unit harden and fail with age, causing loss of variable timing function. The unit can also develop mechanical wear in the helical gear mechanism.",
-      "keywords": "vanos problems m50tu engine loss low end power rough idle rattling noise check light poor fuel economy the introduced bmw",
+      "description": "The M50TU brought BMW's first VANOS, which uses oil pressure to vary intake cam timing. Its internal seals harden and leak with age, so the timing stops adjusting: you'll feel it as a soft bottom end and a rougher idle. The helical gear inside can also wear and rattle. A seal kit fixes most cars.",
+      "keywords": "vanos problems m50tu engine loss low end power rough idle rattling noise check light poor fuel economy the brought bmw",
       "url": "/resources/bmw/e34/"
     },
     {
@@ -1172,8 +1172,8 @@
       "years": "1988-1996",
       "title": "Cooling System Failures",
       "symptoms": "Overheating, coolant leaks, temperature warning, heater problems, expansion tank cracking",
-      "description": "The E34 cooling system uses plastic components that become brittle with age and heat cycles. The expansion tank, radiator end tanks, thermostat housing, and coolant hoses all fail. The water pump impeller can also degrade. Overheating can cause head gasket failure (especially M50) or head warping (M60).",
-      "keywords": "cooling system failures overheating coolant leaks temperature warning heater problems expansion tank cracking the e34 uses plastic components that become",
+      "description": "Like every BMW of this era, the E34 uses plastic cooling parts that go brittle: the expansion tank, radiator end tanks, thermostat housing, and hoses. Water pump impellers wear too. Overheat an M50 and you'll need a head gasket; overheat an M60 and you can warp the heads.",
+      "keywords": "cooling system failures overheating coolant leaks temperature warning heater problems expansion tank cracking like every bmw this era the e34",
       "url": "/resources/bmw/e34/"
     },
     {
@@ -1184,8 +1184,8 @@
       "years": "1988-1996",
       "title": "Instrument Cluster Pixel Failure",
       "symptoms": "Missing pixels in odometer/OBC display, complete display failure, intermittent display",
-      "description": "The E34's digital displays use ribbon cables with connections that fail over time due to heat cycling. This affects the odometer, on-board computer (OBC), and check control displays. The issue is cosmetic but can make it difficult to read important information.",
-      "keywords": "instrument cluster pixel failure missing pixels odometer obc display complete intermittent the e34 digital displays use ribbon cables with connections",
+      "description": "Missing segments in the odometer, on-board computer, or check control display are almost always a failed ribbon cable, not a dead display. It's cosmetic, but it hides information you want. Replacing the ribbon is a common DIY job.",
+      "keywords": "instrument cluster pixel failure missing pixels odometer obc display complete intermittent segments the board computer check control are almost always",
       "url": "/resources/bmw/e34/"
     },
     {
@@ -1196,8 +1196,8 @@
       "years": "1988-1996",
       "title": "Rust and Corrosion",
       "symptoms": "Bubbling paint, rust holes, deteriorated jack points, rusty wheel arches",
-      "description": "While better protected than the E28, E34s still develop rust in typical BMW problem areas. Front fenders behind wheels, rear wheel arches, rocker panels, jack points, and trunk floor are common. Northern cars with salt exposure are particularly vulnerable. Rust around the rear subframe mounting points is a structural concern.",
-      "keywords": "rust and corrosion bubbling paint holes deteriorated jack points rusty wheel arches while better protected than the e28 e34s still",
+      "description": "The E34 is better protected than the E28, but it still rusts in the usual BMW places: front fenders behind the wheels, rear arches, rockers, jack points, and the trunk floor. Salt-belt cars get it worst. Rust around the rear subframe mounts is structural, so check there carefully.",
+      "keywords": "rust and corrosion bubbling paint holes deteriorated jack points rusty wheel arches the e34 better protected than e28 but still",
       "url": "/resources/bmw/e34/"
     },
     {
@@ -1208,8 +1208,8 @@
       "years": "1988-1996",
       "title": "Oil Leaks",
       "symptoms": "Oil spots under car, burning oil smell, oil on engine components, low oil level",
-      "description": "Both inline-6 and V8 engines develop oil leaks as gaskets age. Common leak points include valve cover gaskets, oil pan gasket, oil filter housing gasket (M50/M60), VANOS line seals (M50TU), rear main seal, and timing cover gaskets. The M60 V8 also leaks from the valley pan gasket.",
-      "keywords": "oil leaks spots under car burning smell engine components low level both inline and engines develop gaskets age common leak",
+      "description": "Both the sixes and the V8s leak as they age. Check the valve cover gaskets, oil pan, oil filter housing, the VANOS oil line seals on M50TU engines, the rear main seal, and the timing covers. On the M60, add the valley pan gasket under the intake.",
+      "keywords": "oil leaks spots under car burning smell engine components low level both the sixes and v8s leak they age check",
       "url": "/resources/bmw/e34/"
     },
     {
@@ -1220,8 +1220,8 @@
       "years": "1988-1996",
       "title": "Suspension Component Wear",
       "symptoms": "Clunking over bumps, vague handling, uneven tire wear, wandering at highway speeds",
-      "description": "E34 suspension uses numerous rubber bushings that deteriorate with age. Control arm bushings, thrust arm bushings, rear trailing arm bushings, and subframe mounts all wear out. Ball joints, tie rod ends, and center support bearing also fail. Worn suspension dramatically affects the E34's refined handling.",
-      "keywords": "suspension component wear clunking over bumps vague handling uneven tire wandering highway speeds e34 uses numerous rubber bushings that deteriorate",
+      "description": "The E34 rides and steers beautifully on fresh bushings and vaguely on worn ones. The thrust arm bushings are the big one, followed by the control arm bushings, rear trailing arm bushings, and subframe mounts. Ball joints, tie rod ends, and the driveshaft center support bearing wear out too.",
+      "keywords": "suspension component wear clunking over bumps vague handling uneven tire wandering highway speeds the e34 rides and steers beautifully fresh",
       "url": "/resources/bmw/e34/"
     },
     {
@@ -1232,8 +1232,8 @@
       "years": "1988-1996",
       "title": "Electrical Problems",
       "symptoms": "Flickering lights, intermittent accessories, dead windows, climate control issues, starting problems",
-      "description": "The E34's electrical system is more complex than earlier BMWs and suffers from age-related issues. Ground points corrode, the general module can fail, window regulators break, and the climate control system develops faults. The SRS (airbag) system can trigger warning lights due to connector issues.",
-      "keywords": "electrical problems flickering lights intermittent accessories dead windows climate control issues starting the e34 system more complex than earlier bmws",
+      "description": "The E34 has far more electronics than the E28, and they're all 30 years old now. Grounds corrode, the general module can fail, window regulators break, and the climate control develops faults. An airbag warning light is more often a worn clockspring or a bad connector than a failed airbag.",
+      "keywords": "electrical problems flickering lights intermittent accessories dead windows climate control issues starting the e34 has far more electronics than e28",
       "url": "/resources/bmw/e34/"
     },
     {
@@ -1244,8 +1244,8 @@
       "years": "1990-2000",
       "title": "Cooling System Failures",
       "symptoms": "Overheating, coolant leaks, temperature gauge pegged high, steam from engine bay, heater blowing cold",
-      "description": "The E36 cooling system is fragile, and keeping it healthy matters more than anything else on the car. BMW used plastic components that become brittle with heat cycles and age. The expansion tank, thermostat housing, water pump impeller, and radiator end tanks are all prone to failure. A cooling system failure can quickly lead to head gasket damage or a warped head.",
-      "keywords": "cooling system failures overheating coolant leaks temperature gauge pegged high steam from engine bay heater blowing cold the e36 fragile",
+      "description": "If you only fix one thing on an E36, make it the cooling system. BMW used plastic parts that go brittle with heat and age: the expansion tank, thermostat housing, water pump impeller, and radiator end tanks. When one lets go the engine overheats fast, and a warped head or blown head gasket follows. Replace them all together, before they fail.",
+      "keywords": "cooling system failures overheating coolant leaks temperature gauge pegged high steam from engine bay heater blowing cold you only fix",
       "url": "/resources/bmw/e36/"
     },
     {
@@ -1256,7 +1256,7 @@
       "years": "1990-2000",
       "title": "VANOS System Issues (M50TU/M52)",
       "symptoms": "Rough idle, loss of low-end torque, engine rattle at startup, hesitation between 2500-3500 RPM",
-      "description": "The E36 with M50TU and M52 engines uses BMW's Single VANOS variable valve timing system. The VANOS unit's seals harden and fail over time, leading to oil leaks and loss of proper valve timing. The VANOS piston seals and the oil supply line seals are the most common failure points.",
+      "description": "The M50TU and M52 use single VANOS on the intake cam. The seals inside harden and leak with age, so cam timing stops adjusting properly: you'll feel a soft bottom end, a rougher idle, and sometimes a rattle. The piston seals and the oil supply line seals are the usual failures, and a seal kit fixes most cars.",
       "keywords": "vanos system issues m50tu m52 rough idle loss low end torque engine rattle startup hesitation between 2500 3500 rpm the",
       "url": "/resources/bmw/e36/"
     },
@@ -1268,7 +1268,7 @@
       "years": "1990-2000",
       "title": "Rear Trailing Arm Bushing (RTAB) Failure",
       "symptoms": "Clunking from rear over bumps, vague rear-end feel, rear tire wear on inside edge, visible bushing deterioration",
-      "description": "The rear trailing arm bushings on the E36 are a well-known weak point. These bushings support the rear suspension and when they wear out, they allow excessive movement of the rear wheels. This affects handling, causes accelerated tire wear, and can make the car feel loose or unpredictable in corners.",
+      "description": "The rear trailing arm bushings (RTABs) are the E36's best-known weak spot. When they wear, the rear wheels steer themselves over bumps and under power, and the car feels loose and unpredictable in corners. New bushings bring back the stability, but you need the press tool.",
       "keywords": "rear trailing arm bushing rtab failure clunking from over bumps vague end feel tire wear inside edge visible deterioration the",
       "url": "/resources/bmw/e36/"
     },
@@ -1280,7 +1280,7 @@
       "years": "1990-2000",
       "title": "Window Regulator Failure",
       "symptoms": "Window drops into door, grinding noise during operation, window moves slowly or crooked, clicking sounds",
-      "description": "E36 window regulators use plastic clips and guides that fail over time. When the clips break, the window can drop into the door panel. This is especially common on driver's side windows due to more frequent use.",
+      "description": "E36 window regulators use plastic clips and guides that break, and when they do the glass drops into the door. The driver's side goes first because it gets used the most. It's an easy afternoon DIY.",
       "keywords": "window regulator failure drops into door grinding noise during operation moves slowly crooked clicking sounds e36 regulators use plastic clips",
       "url": "/resources/bmw/e36/"
     },
@@ -1292,8 +1292,8 @@
       "years": "1990-2000",
       "title": "Oil Leaks",
       "symptoms": "Oil spots under car, burning oil smell, visible oil on engine, low oil level between changes",
-      "description": "E36s are known for developing oil leaks from several common locations. The valve cover gasket, oil filter housing gasket (OFHG), oil pan gasket, and rear main seal are all common leak points. The OFHG is a particularly common culprit and can leak onto the serpentine belt.",
-      "keywords": "oil leaks spots under car burning smell visible engine low level between changes e36s are known for developing from several",
+      "description": "The usual leak points are the valve cover gasket, oil filter housing gasket, oil pan, and rear main seal. The oil filter housing gasket is the one to watch: it drips onto the accessory belt, and a soaked belt can fail.",
+      "keywords": "oil leaks spots under car burning smell visible engine low level between changes the usual leak points are valve cover",
       "url": "/resources/bmw/e36/"
     },
     {
@@ -1304,8 +1304,8 @@
       "years": "1990-2000",
       "title": "Control Arm Bushings",
       "symptoms": "Steering wheel vibration, clunking over bumps, pulling to one side, uneven front tire wear",
-      "description": "The E36 front suspension uses control arms with pressed-in bushings that wear over time. The lower control arm bushings are the most common failure point. Worn bushings cause imprecise steering, vibration, and accelerated tire wear.",
-      "keywords": "control arm bushings steering wheel vibration clunking over bumps pulling one side uneven front tire wear the e36 suspension uses",
+      "description": "The front lower control arm bushings wear out and let the arm move, which you feel as vague steering, a shimmy under braking, and uneven tire wear. Replace them in pairs, and the ball joints too if they're original.",
+      "keywords": "control arm bushings steering wheel vibration clunking over bumps pulling one side uneven front tire wear the lower out and",
       "url": "/resources/bmw/e36/"
     },
     {
@@ -1316,8 +1316,8 @@
       "years": "1990-2000",
       "title": "Ignition System Failures",
       "symptoms": "Misfires, rough idle, poor fuel economy, check engine light, hesitation under load",
-      "description": "The E36's ignition system components wear out and can cause running issues. The ignition coils, spark plugs, plug wires (on earlier models), and crankshaft position sensor are common failure points.",
-      "keywords": "ignition system failures misfires rough idle poor fuel economy check engine light hesitation under load the e36 components wear out",
+      "description": "Coils, spark plugs, and the crankshaft position sensor are the usual causes of misfires and stalling on the six-cylinder cars. A failing crank sensor often shows up as a hot no-start.",
+      "keywords": "ignition system failures misfires rough idle poor fuel economy check engine light hesitation under load coils spark plugs and the",
       "url": "/resources/bmw/e36/"
     },
     {
@@ -1328,8 +1328,8 @@
       "years": "1995-2003",
       "title": "Cooling System Failures",
       "symptoms": "Overheating, coolant leaks, temperature warning, steam from hood, heater issues",
-      "description": "The E39 cooling system is known for failures. The expansion tank, radiator, thermostat housing, and water pump are all plastic components that become brittle with heat and age. The electric water pump (auxiliary) also fails. A cooling system failure at highway speed can destroy an engine in minutes—many E39 engines have been lost to overheating.",
-      "keywords": "cooling system failures overheating coolant leaks temperature warning steam from hood heater issues the e39 known for expansion tank radiator",
+      "description": "More E39 engines have died from overheating than from anything else. The expansion tank, radiator end tanks, thermostat housing, and water pump impeller are all plastic, and they go brittle with heat and age. The auxiliary heater pump fails too. A burst tank at highway speed can cook an engine in minutes, so replace the plastic parts before they fail.",
+      "keywords": "cooling system failures overheating coolant leaks temperature warning steam from hood heater issues more e39 engines have died than anything",
       "url": "/resources/bmw/e39/"
     },
     {
@@ -1340,8 +1340,8 @@
       "years": "1995-2003",
       "title": "VANOS System Problems (M52/M54)",
       "symptoms": "Loss of low-end torque, rough idle, engine hesitation, rattling noise, check engine light",
-      "description": "The dual-VANOS system on M52TU and M54 engines (1999+) adjusts both intake and exhaust cam timing. The seals within the VANOS unit deteriorate, causing loss of variable timing. Symptoms often appear gradually and are sometimes mistaken for other issues. The VANOS solenoids can also fail or become clogged with oil sludge.",
-      "keywords": "vanos system problems m52 m54 loss low end torque rough idle engine hesitation rattling noise check light the dual m52tu",
+      "description": "From 1999, the M52TU and M54 use double VANOS on both camshafts. The seals inside go hard, and the timing stops adjusting properly. It creeps up slowly, so owners often blame something else: a softer bottom end, a rough idle, worse fuel economy. The solenoids can also stick or clog with sludge.",
+      "keywords": "vanos system problems m52 m54 loss low end torque rough idle engine hesitation rattling noise check light from 1999 the",
       "url": "/resources/bmw/e39/"
     },
     {
@@ -1352,8 +1352,8 @@
       "years": "1995-2003",
       "title": "DISA Valve Failure (M54)",
       "symptoms": "Rattling/flapping noise from intake, loss of power, check engine light, potential engine damage",
-      "description": "The M54 engine uses a DISA (Differentiated Intake System Adjustment) valve to vary intake runner length. The plastic flap inside can crack and potentially break off, being ingested into the engine and causing catastrophic damage. Early symptoms include a rattling or flapping noise from the intake area.",
-      "keywords": "disa valve failure m54 rattling flapping noise from intake loss power check engine light potential damage the uses differentiated system",
+      "description": "The M54's DISA valve switches intake runner length for mid-range torque. Its plastic flap can crack or break off, and if it does, it can be pulled into the engine. A rattle or flapping sound from the intake at idle is the early warning. Pull it and check it. It takes minutes.",
+      "keywords": "disa valve failure m54 rattling flapping noise from intake loss power check engine light potential damage the switches runner length",
       "url": "/resources/bmw/e39/"
     },
     {
@@ -1364,8 +1364,8 @@
       "years": "1995-2003",
       "title": "Front Thrust Arm Bushing Failure",
       "symptoms": "Vibration under braking, steering wheel shimmy, clunking over bumps, wandering steering",
-      "description": "The front thrust arm (tension strut) bushings are a known weak point on the E39. These bushings handle braking forces and wear out relatively quickly, especially with spirited driving. Worn thrust arm bushings cause a pronounced vibration or shimmy during braking and can affect tire wear and alignment.",
-      "keywords": "front thrust arm bushing failure vibration under braking steering wheel shimmy clunking over bumps wandering the tension strut bushings are",
+      "description": "The front thrust arm bushings take the braking loads, and they wear quickly on an E39. When they go, the car shimmies under braking and wanders on the highway, and the tires wear unevenly. Most people replace the whole arm.",
+      "keywords": "front thrust arm bushing failure vibration under braking steering wheel shimmy clunking over bumps wandering the bushings take loads and",
       "url": "/resources/bmw/e39/"
     },
     {
@@ -1376,8 +1376,8 @@
       "years": "1995-2003",
       "title": "Timing Chain Guide Wear (M62 V8)",
       "symptoms": "Timing chain rattle on startup, rough running, check engine light, potential catastrophic failure",
-      "description": "The M62 V8 in the 540i uses timing chain guides that wear over time. Early M62 engines (1996-1998) used guides with plastic that would shed and clog the oil pickup. Later M62TU engines (1999-2003) improved the guides but they still wear. Chain guide failure can cause timing to jump and severe engine damage.",
-      "keywords": "timing chain guide wear m62 rattle startup rough running check engine light potential catastrophic failure the 540i uses guides that",
+      "description": "The 540i's M62 V8 has plastic timing chain guides that wear and crack, and the early engines were worse for it. Pieces of guide end up in the oil pan, and a broken guide can let the chain jump. A rattle from the front of the engine at startup means it's time. It's a big job, but cheaper than a new engine.",
+      "keywords": "timing chain guide wear m62 rattle startup rough running check engine light potential catastrophic failure the 540i has plastic guides",
       "url": "/resources/bmw/e39/"
     },
     {
@@ -1388,8 +1388,8 @@
       "years": "1995-2003",
       "title": "Valley Pan Gasket Leak (M62 V8)",
       "symptoms": "Coolant loss without visible external leak, overheating, white smoke from exhaust, coolant mixing with oil",
-      "description": "The M62 V8 has a valley pan between the cylinder banks that can leak coolant into the engine valley or oil system. The gasket degrades from heat and age. Because the leak is internal or into the valley, coolant loss may occur without visible external leaks. This can cause overheating or coolant contamination of oil.",
-      "keywords": "valley pan gasket leak m62 coolant loss without visible external overheating white smoke from exhaust mixing with oil the has",
+      "description": "Under the M62's intake manifold, between the cylinder banks, the valley pan gasket and coolant passages can start to leak. Because it's hidden in the valley, you can lose coolant with nothing on the ground. If a V8 E39 keeps needing coolant and you can't find the leak, look here.",
+      "keywords": "valley pan gasket leak m62 coolant loss without visible external overheating white smoke from exhaust mixing with oil under the",
       "url": "/resources/bmw/e39/"
     },
     {
@@ -1400,8 +1400,8 @@
       "years": "1995-2003",
       "title": "Oil Leaks",
       "symptoms": "Oil spots under car, oil smell, visible oil on engine, low oil level, smoke from engine bay",
-      "description": "E39s develop oil leaks from various locations as seals age. Common leak points include the valve cover gasket, oil filter housing gasket (M52/M54), oil pan gasket, VANOS solenoid seals, rear main seal, and power steering hoses. The M62 V8 leaks from additional locations including the valley pan and timing cover.",
-      "keywords": "oil leaks spots under car smell visible engine low level smoke from bay e39s develop various locations seals age common",
+      "description": "The usual E39 leaks are the valve cover gasket, oil filter housing gasket on the sixes, oil pan, VANOS solenoid seals, and rear main seal, plus the power steering hoses. The V8 adds the timing covers and the valley.",
+      "keywords": "oil leaks spots under car smell visible engine low level smoke from bay the usual e39 are valve cover gasket",
       "url": "/resources/bmw/e39/"
     },
     {
@@ -1412,8 +1412,8 @@
       "years": "1995-2003",
       "title": "Suspension Component Wear",
       "symptoms": "Clunking, poor handling, uneven tire wear, vague steering, rear end instability",
-      "description": "The E39's multi-link front and rear suspension uses numerous bushings that wear with age. Control arm bushings, thrust arm bushings, rear integral link bushings, and subframe mounts all deteriorate. Worn suspension significantly diminishes the refined handling the E39 is known for.",
-      "keywords": "suspension component wear clunking poor handling uneven tire vague steering rear end instability the e39 multi link front and uses",
+      "description": "The E39 uses aluminum MacPherson strut suspension up front and a multi-link rear, with a lot of bushings in between. Control arm and thrust arm bushings, rear integral link bushings, and subframe mounts all wear, and a worn E39 floats and wanders where a fresh one feels planted.",
+      "keywords": "suspension component wear clunking poor handling uneven tire vague steering rear end instability the e39 uses aluminum macpherson strut front",
       "url": "/resources/bmw/e39/"
     },
     {
@@ -1424,8 +1424,8 @@
       "years": "1995-2003",
       "title": "Pixel Failure and HVAC Final Stage Unit",
       "symptoms": "Missing pixels in radio/cluster, HVAC blower only works on high, intermittent blower operation",
-      "description": "Two common electrical issues: the pixel displays in the instrument cluster and radio fail due to ribbon cable connection issues. Additionally, the HVAC final stage unit (blower resistor) fails, causing the blower to only work on the highest speed setting. Both are relatively common age-related failures.",
-      "keywords": "pixel failure and hvac final stage unit missing pixels radio cluster blower only works high intermittent operation two common electrical",
+      "description": "Two classic E39 electrical faults. Missing pixels in the cluster or radio display are a failed ribbon cable. And if the blower only works on some speeds, or won't shut off, the HVAC final stage unit has failed. Both are cheap parts and easy DIY jobs.",
+      "keywords": "pixel failure and hvac final stage unit missing pixels radio cluster blower only works high intermittent operation two classic e39",
       "url": "/resources/bmw/e39/"
     },
     {
@@ -1436,8 +1436,8 @@
       "years": "1999-2006",
       "title": "VANOS System Failure",
       "symptoms": "Rough idle, loss of power at low RPM, engine rattle on cold start, poor fuel economy",
-      "description": "The VANOS (Variable Nockenwellen Steuerung) system controls variable valve timing on BMW engines. On the E46, the VANOS seals are made of a rubber compound that degrades over time, causing oil leaks and loss of oil pressure to the VANOS unit. This results in improper valve timing and reduced engine performance.",
-      "keywords": "vanos system failure rough idle loss power low rpm engine rattle cold start poor fuel economy the variable nockenwellen steuerung",
+      "description": "The E46's sixes use double VANOS to vary timing on both camshafts. The seals inside the unit harden with age and leak oil pressure, so the timing stops adjusting properly. You'll feel it as lost low-end torque, a rough idle, and a rattle on cold start. An upgraded seal kit fixes most cars.",
+      "keywords": "vanos system failure rough idle loss power low rpm engine rattle cold start poor fuel economy the e46 sixes use",
       "url": "/resources/bmw/e46/"
     },
     {
@@ -1448,8 +1448,8 @@
       "years": "1999-2006",
       "title": "Cooling System Failures",
       "symptoms": "Overheating, coolant leaks, temperature gauge fluctuation, steam from engine bay",
-      "description": "The E46 cooling system uses several plastic components that become brittle with age and heat cycles. The expansion tank, thermostat housing, and water pump impeller are particularly prone to failure. A complete cooling system failure can lead to catastrophic engine damage if the car overheats.",
-      "keywords": "cooling system failures overheating coolant leaks temperature gauge fluctuation steam from engine bay the e46 uses several plastic components that",
+      "description": "The E46 cooling system is full of plastic that goes brittle: the expansion tank, thermostat housing, and water pump impeller are the usual failures. It's also the most common way these cars end up on the shoulder, and an overheated M54 doesn't forgive easily. Replace everything at once and you won't have to think about it for years.",
+      "keywords": "cooling system failures overheating coolant leaks temperature gauge fluctuation steam from engine bay the e46 full plastic that goes brittle",
       "url": "/resources/bmw/e46/"
     },
     {
@@ -1460,8 +1460,8 @@
       "years": "1999-2006",
       "title": "Rear Subframe Cracking",
       "symptoms": "Clunking from rear on acceleration, visible cracks in trunk floor, misaligned rear wheels",
-      "description": "A well-documented issue on E46 models, particularly those with higher mileage or that have been driven hard. The rear subframe mounting points can crack the floor pan due to inadequate reinforcement from the factory. This is a serious structural issue that requires professional repair.",
-      "keywords": "rear subframe cracking clunking from acceleration visible cracks trunk floor misaligned wheels well documented issue e46 models particularly those with",
+      "description": "The rear subframe mounts can tear the floor they're bolted to, because the factory didn't reinforce it enough. It shows up most on high-mileage cars, M3s, and anything driven hard. It's structural, and once it's cracked the repair is welding. Check it before you buy any E46.",
+      "keywords": "rear subframe cracking clunking from acceleration visible cracks trunk floor misaligned wheels the mounts can tear they bolted because factory",
       "url": "/resources/bmw/e46/"
     },
     {
@@ -1472,8 +1472,8 @@
       "years": "1999-2006",
       "title": "Window Regulator Failure",
       "symptoms": "Window drops into door, grinding noise when operating window, window operates slowly",
-      "description": "The window regulators on the E46 use plastic guides and cables that wear out over time. When the regulator fails, the window can drop suddenly into the door or stop working altogether. This usually affects driver-side windows first due to more frequent use.",
-      "keywords": "window regulator failure drops into door grinding noise when operating operates slowly the regulators e46 use plastic guides and cables",
+      "description": "E46 window regulators use plastic guides and cables that wear out. When they go, the window drops into the door or stops moving. The driver's side usually fails first.",
+      "keywords": "window regulator failure drops into door grinding noise when operating operates slowly e46 regulators use plastic guides and cables that",
       "url": "/resources/bmw/e46/"
     },
     {
@@ -1484,8 +1484,8 @@
       "years": "1999-2006",
       "title": "Control Arm Bushing Wear",
       "symptoms": "Vibration at highway speeds, wandering steering, clunking over bumps, uneven tire wear",
-      "description": "The front control arm bushings on the E46 wear out relatively quickly, especially on cars driven on rough roads. Worn bushings cause imprecise steering and can lead to accelerated tire wear. The E46 uses a multi-link front suspension that is sensitive to worn bushings.",
-      "keywords": "control arm bushing wear vibration highway speeds wandering steering clunking over bumps uneven tire the front bushings e46 out relatively",
+      "description": "The front control arm bushings wear quickly, especially on rough roads, and the E46's MacPherson strut front end is sensitive to it. Worn bushings make the steering vague and chew through tires.",
+      "keywords": "control arm bushing wear vibration highway speeds wandering steering clunking over bumps uneven tire the front bushings quickly especially rough",
       "url": "/resources/bmw/e46/"
     },
     {
@@ -1544,8 +1544,8 @@
       "years": "2005-2013",
       "title": "Electric Water Pump and Thermostat Failure",
       "symptoms": "Overheating, coolant warning, reduced power mode, water pump whining, engine shut down",
-      "description": "The E90 generation was the first to use BMW's electric water pump and electronic thermostat. Both components have high failure rates, typically between 60,000-100,000 miles. When the water pump fails, there is no warning—the engine can overheat rapidly. The pump may also become noisy before complete failure. These are considered wear items requiring proactive replacement.",
-      "keywords": "electric water pump and thermostat failure overheating coolant warning reduced power mode whining engine shut down the e90 generation was",
+      "description": "The E90's sixes use an electric water pump and an electronically controlled thermostat, and both are wear items. Pumps typically fail somewhere between 60,000 and 100,000 miles, often with little warning: a warning light, then limp mode, then overheating if you keep driving. Some get noisy first. Replace the pump and thermostat together, and use a genuine or original-supplier pump.",
+      "keywords": "electric water pump and thermostat failure overheating coolant warning reduced power mode whining engine shut down the e90 sixes use",
       "url": "/resources/bmw/e90/"
     },
     {
@@ -1556,8 +1556,8 @@
       "years": "2005-2013",
       "title": "Oil Leaks (Valve Cover and Oil Filter Housing)",
       "symptoms": "Oil smell, visible oil on engine, oil spots under car, smoke from engine bay, low oil warning",
-      "description": "The E90's N52 and N5x engines develop oil leaks as they age. The valve cover gasket is a very common leak point due to the plastic valve cover warping from heat. The oil filter housing gasket (OFHG) is another common leak point that can drip oil onto hot exhaust components, creating fire risk and smoke.",
-      "keywords": "oil leaks valve cover and filter housing smell visible engine spots under car smoke from bay low warning the e90",
+      "description": "Two leaks show up on almost every N52, N54, and N55 eventually. The plastic valve cover warps and its gasket leaks, and the oil filter housing gasket drips onto the exhaust and the accessory belt. Burning oil smell or smoke from under the hood after a drive usually means one of these.",
+      "keywords": "oil leaks valve cover and filter housing smell visible engine spots under car smoke from bay low warning two show",
       "url": "/resources/bmw/e90/"
     },
     {
@@ -1568,7 +1568,7 @@
       "years": "2005-2013",
       "title": "High Pressure Fuel Pump Failure (N54/N55)",
       "symptoms": "Long crank time, rough idle, loss of power, engine stalling, check engine light, limp mode",
-      "description": "The N54 and early N55 engines use a mechanical high-pressure fuel pump (HPFP) driven by the intake camshaft. Early versions were prone to failure, causing drivability issues or complete stalling. BMW extended warranty coverage on early pumps. Later revisions improved reliability.",
+      "description": "The N54's high-pressure fuel pump, driven off the camshaft, was a known failure on early cars: long cranks, stumbling, limp mode, or stalling. BMW updated the pump and extended its warranty, which has now run out on almost every car. If you're buying an N54, ask whether the pump has been replaced with the updated version.",
       "keywords": "high pressure fuel pump failure n54 n55 long crank time rough idle loss power engine stalling check light limp mode",
       "url": "/resources/bmw/e90/"
     },
@@ -1580,8 +1580,8 @@
       "years": "2005-2013",
       "title": "Fuel Injector Problems (N54/N55)",
       "symptoms": "Rough idle, misfires, check engine light, poor fuel economy, hesitation",
-      "description": "The direct injection N54 engine is known for fuel injector issues, including leaking and failure to atomize fuel properly. The piezoelectric injectors are expensive and can fail individually or multiple at once. Index 12 injectors are the latest revision with improved reliability. N55 injectors are generally more reliable but can still fail.",
-      "keywords": "fuel injector problems n54 n55 rough idle misfires check engine light poor economy hesitation the direct injection known for issues",
+      "description": "The N54's piezo injectors can leak or spray badly, causing misfires, rough cold starts, and in bad cases fuel in the oil. They're expensive, and they can fail one at a time or several at once. Index 12 is the latest revision and the one to fit. The N55's solenoid injectors are more dependable.",
+      "keywords": "fuel injector problems n54 n55 rough idle misfires check engine light poor economy hesitation the piezo injectors can leak spray",
       "url": "/resources/bmw/e90/"
     },
     {
@@ -1592,8 +1592,8 @@
       "years": "2005-2013",
       "title": "VANOS Solenoid and System Issues",
       "symptoms": "Rough idle, loss of power, engine rattle, check engine light, fault codes for VANOS",
-      "description": "All E90 engines use VANOS variable valve timing. The VANOS solenoids can fail or become clogged with oil sludge, especially with extended oil change intervals. The N54 and N55 also have VANOS-related issues with the adjustment units themselves, including the bolts backing out and damaging components.",
-      "keywords": "vanos solenoid and system issues rough idle loss power engine rattle check light fault codes for all e90 engines use",
+      "description": "Every E90 engine uses double VANOS, and the solenoids are the usual failure. They stick or clog with sludge, especially on cars run to long oil change intervals, which gives you a rough idle and cam timing codes. Cleaning or replacing the solenoids fixes most cases.",
+      "keywords": "vanos solenoid and system issues rough idle loss power engine rattle check light fault codes for every e90 uses double",
       "url": "/resources/bmw/e90/"
     },
     {
@@ -1604,8 +1604,8 @@
       "years": "2005-2013",
       "title": "Turbo Wastegate Rattle (N54)",
       "symptoms": "Rattling noise on cold start, rattle under load, metallic rattling from engine bay",
-      "description": "The N54's twin turbochargers develop wastegate rattle due to wear in the wastegate actuator mechanism. The rattle is typically worst on cold startup and may diminish when warm. While the turbos still function with this rattle, it indicates wear that will eventually require turbo replacement or rebuild.",
-      "keywords": "turbo wastegate rattle n54 rattling noise cold start under load metallic from engine bay the twin turbochargers develop due wear",
+      "description": "The N54's twin turbos develop a rattle from worn wastegate linkage, loudest on a cold start and at light throttle. At first it's mostly noise and the turbos keep working. If it's joined by boost problems or oil smoke, the turbos themselves are on the way out, and they're usually replaced as a pair.",
+      "keywords": "turbo wastegate rattle n54 rattling noise cold start under load metallic from engine bay the twin turbos develop worn linkage",
       "url": "/resources/bmw/e90/"
     },
     {
@@ -1616,8 +1616,8 @@
       "years": "2005-2013",
       "title": "Carbon Buildup on Intake Valves (Direct Injection Engines)",
       "symptoms": "Rough idle, misfires, reduced power, poor fuel economy, hesitation",
-      "description": "All direct injection engines (N54, N55, N20) are susceptible to carbon buildup on the intake valves. Because fuel is injected directly into the cylinder rather than onto the valves, there is no fuel washing the valves clean. Over time, carbon deposits accumulate, affecting airflow and performance. Walnut blasting is the standard solution.",
-      "keywords": "carbon buildup intake valves direct injection engines rough idle misfires reduced power poor fuel economy hesitation all n54 n55 n20",
+      "description": "On the direct-injected N54 and N55, fuel goes straight into the cylinder, so nothing washes the back of the intake valves. Carbon builds up, restricts airflow, and causes rough running and misfires. Walnut blasting cleans it off, and the N54 typically needs it every 50,000 to 60,000 miles.",
+      "keywords": "carbon buildup intake valves direct injection engines rough idle misfires reduced power poor fuel economy hesitation the injected n54 and",
       "url": "/resources/bmw/e90/"
     },
     {
@@ -1628,8 +1628,8 @@
       "years": "2005-2013",
       "title": "Rod Bearing Wear (S65 M3)",
       "symptoms": "Knocking noise, engine rattle, low oil pressure, metal in oil",
-      "description": "The S65 V8 in the E90/E92/E93 M3 has a known rod bearing wear issue. The factory bearings can wear prematurely, especially with track use or aggressive driving. If caught early, bearings can be replaced. If ignored, bearing failure leads to catastrophic engine damage. Oil analysis is crucial for monitoring.",
-      "keywords": "rod bearing wear s65 knocking noise engine rattle low oil pressure metal the e90 e92 e93 has known issue factory",
+      "description": "The M3's S65 V8 wears its rod bearings early, especially with track use or hard revving before it's warm. Caught early, it's a bearing job. Ignored, it's an engine. Most owners replace them preventively, or at purchase if there's no record, and send oil samples in between.",
+      "keywords": "rod bearing wear s65 knocking noise engine rattle low oil pressure metal the wears its bearings early especially with track",
       "url": "/resources/bmw/e90/"
     },
     {
@@ -1638,10 +1638,10 @@
       "model": "E90",
       "modelName": "E90/E91/E92/E93 3 Series",
       "years": "2005-2013",
-      "title": "Timing Chain and Guide Issues (N20/N54/N55)",
+      "title": "Timing Chain and Guide Issues (N54/N55)",
       "symptoms": "Timing chain rattle, rough running, check engine light, chain stretch codes, failure to start",
-      "description": "The N20 four-cylinder engine has documented timing chain stretch and guide wear issues, sometimes at relatively low mileage. The N54 and N55 six-cylinders can also have chain and guide wear at high mileage. Ignoring chain stretch can lead to jumped timing and engine damage.",
-      "keywords": "timing chain and guide issues n20 n54 n55 rattle rough running check engine light stretch codes failure start the four",
+      "description": "The N54 and N55 can stretch their timing chains and wear the guides at high mileage. A rattle on startup and cam correlation codes are the warnings. Left alone, the timing can jump.",
+      "keywords": "timing chain and guide issues n54 n55 rattle rough running check engine light stretch codes failure start the can their",
       "url": "/resources/bmw/e90/"
     }
   ],
@@ -2606,19 +2606,6 @@
       "spec": "55 ft-lbs (75 Nm)",
       "notes": "",
       "keywords": "shock absorber top nut suspension torque spec ft-lbs ",
-      "url": "/resources/porsche/964/"
-    },
-    {
-      "id": "964-suspension-torsion-bar-cover",
-      "brand": "Porsche",
-      "model": "964",
-      "modelName": "964 911",
-      "years": "1989-1994",
-      "category": "suspension",
-      "component": "Torsion Bar Cover",
-      "spec": "34 ft-lbs (46 Nm)",
-      "notes": "",
-      "keywords": "torsion bar cover suspension torque spec ft-lbs ",
       "url": "/resources/porsche/964/"
     },
     {
@@ -7181,13 +7168,13 @@
       "modelName": "928",
       "years": "1977-1995",
       "title": "Complete Suspension Refresh",
-      "description": "Every joint and bushing, including the Weissach rear axle on S4, GT, and GTS cars. A fresh 928 chassis rides and handles far better than most people expect.",
+      "description": "Every joint and bushing, including the Weissach rear axle every 928 uses. A fresh 928 chassis rides and handles far better than most people expect.",
       "difficulty": "Intermediate to Advanced",
       "time": "14-20 hours",
       "interval": "Every 60,000-80,000 miles or when handling degrades",
       "cost": "$800-2,000",
       "type": "restoration",
-      "keywords": "complete suspension refresh every joint and bushing, including the weissach rear axle on s4, gt, and gts cars. a fresh 928 chassis rides and handles far better than most people expect. intermediate to advanced restoration every 60,000-80,000 miles or when handling degrades $800-2,000 floor jack and jack stands rated for vehicle weight 19mm socket for lug bolts 18mm, 19mm, 21mm, 24mm sockets and wrenches pickle fork or ball joint separator spring compressor (front struts) torque wrench (ft-lbs range) bushing press or hydraulic press penetrating oil (pb blaster) alignment tool set (optional) breaker bar for stubborn fasteners large pry bar for control arm manipulation raise vehicle and support securely on jack stands under reinforced jacking points. remove all four wheels and set aside. document current ride height and alignment settings before disassembly. the 928's weissach rear axle provides passive rear steering for stability. worn weissach bushings cause unpredictable handling at the limit.",
+      "keywords": "complete suspension refresh every joint and bushing, including the weissach rear axle every 928 uses. a fresh 928 chassis rides and handles far better than most people expect. intermediate to advanced restoration every 60,000-80,000 miles or when handling degrades $800-2,000 floor jack and jack stands rated for vehicle weight 19mm socket for lug bolts 18mm, 19mm, 21mm, 24mm sockets and wrenches pickle fork or ball joint separator spring compressor (front struts) torque wrench (ft-lbs range) bushing press or hydraulic press penetrating oil (pb blaster) alignment tool set (optional) breaker bar for stubborn fasteners large pry bar for control arm manipulation raise vehicle and support securely on jack stands under reinforced jacking points. remove all four wheels and set aside. document current ride height and alignment settings before disassembly. the 928's weissach rear axle provides passive rear steering for stability. worn weissach bushings cause unpredictable handling at the limit.",
       "url": "/resources/porsche/928/"
     },
     {
@@ -7452,14 +7439,14 @@
       "model": "944",
       "modelName": "944",
       "years": "1982-1991",
-      "title": "Timing Belt Inspection",
-      "description": "A quick check of the timing and balance shaft belts. On an interference engine, it's the most important fifteen minutes you'll spend on the car.",
+      "title": "Timing Belt Condition Check",
+      "description": "There's no inspection window on a 944, so checking the belts means pulling the upper timing cover. It's worth the half hour: on an interference engine, a cracked or oil-soaked belt is a warning you want to see early.",
       "difficulty": "Easy",
-      "time": "15 min",
-      "interval": "Every 5,000 miles or annually",
+      "time": "30-45 min",
+      "interval": "Annually, or whenever you buy a 944 without belt records",
       "cost": "$0",
       "type": "diy",
-      "keywords": "timing belt inspection a quick check of the timing and balance shaft belts. on an interference engine, it's the most important fifteen minutes you'll spend on the car. easy diy every 5,000 miles or annually $0 flashlight inspection mirror (optional) 10mm socket for cover removal park the car and allow the engine to cool. open the hood and locate the timing belt cover on the driver's side of the engine. remove the small inspection cover plate (1-2 10mm bolts) from the upper timing cover. this is an interference engine—belt failure destroys valves and pistons. oil on the belt means water pump or seal failure—address immediately.",
+      "keywords": "timing belt condition check there's no inspection window on a 944, so checking the belts means pulling the upper timing cover. it's worth the half hour: on an interference engine, a cracked or oil-soaked belt is a warning you want to see early. easy diy annually, or whenever you buy a 944 without belt records $0 flashlight sockets to remove the upper timing cover socket for the crank bolt, to turn the engine by hand belt tension gauge (porsche 9201 or equivalent) if you want to check tension let the engine cool and disconnect the battery. remove the upper timing belt cover at the front of the engine. check the timing belt and the balance shaft belt for cracks, glazing, fraying, or missing teeth. oil on a belt usually means a leaking cam, balance shaft, or crank seal. coolant on it points to the water pump. fix the leak when you replace the belt. a visual check doesn't replace the interval. replace both belts every 30,000 miles or four years.",
       "url": "/resources/porsche/944/"
     },
     {
@@ -7939,7 +7926,7 @@
       "interval": "Address as symptoms appear",
       "cost": "$300-1,000",
       "type": "restoration",
-      "keywords": "electrical system service ignition, pdk service, and the common electronic faults. intermediate restoration address as symptoms appear $300-1,000 piwis or compatible diagnostic tool torx driver set 10mm socket drain pan for pdk service battery registration tool contact cleaner dielectric grease begin with full diagnostic scan - 991 requires piwis for many functions. for coils: open engine lid, disconnect and remove. 991.2 turbo: inspect wastegate actuators for rattle. 991 requires piwis for many diagnostic functions. pdk fluid should be changed despite 'lifetime' claim.",
+      "keywords": "electrical system service ignition, pdk service, and the common electronic faults. intermediate restoration address as symptoms appear $300-1,000 piwis or compatible diagnostic tool torx driver set 10mm socket drain pan for pdk service battery registration tool contact cleaner dielectric grease begin with full diagnostic scan - 991 requires piwis for many functions. for coils: open engine lid, disconnect and remove. 991.2 turbo: inspect wastegate actuators for rattle. 991 requires piwis for many diagnostic functions. change the pdk fluids on schedule: clutch fluid every 60,000 miles, transmission fluid every 120,000 (many specialists say 60,000).",
       "url": "/resources/porsche/991/"
     },
     {
@@ -7971,7 +7958,7 @@
       "interval": "",
       "cost": "$400-900",
       "type": "restoration",
-      "keywords": "pdk service check and adaptation a pdk that shifts roughly is often overdue for its fluid service or an adaptation reset, not a rebuild. how to check the history, what the service involves, and when to leave it to a specialist. advanced restoration  $400-900 lift or level jack stands porsche-capable diagnostic tool (piwis or equivalent) fluid pump torque wrench check the service history. porsche specifies pdk fluid changes on a time and mileage schedule, and many cars miss it. scan for transmission fault codes before changing anything. raise the car level. the fill level is checked with the car level and at a set fluid temperature. if the car doesn't have a record of a pdk service, budget for one at purchase. rough low-speed shifts after a battery disconnect often just need adaptation.",
+      "keywords": "pdk service check and adaptation a pdk that shifts roughly is often overdue for its fluid service or an adaptation reset, not a rebuild. how to check the history, what the service involves, and when to leave it to a specialist. advanced restoration  $400-900 lift or level jack stands porsche-capable diagnostic tool (piwis or equivalent) fluid pump torque wrench check the service history. porsche's schedule calls for the pdk clutch fluid every 60,000 miles and the transmission fluid every 120,000 miles or 12 years, and many cars miss both. scan for transmission fault codes before changing anything. raise the car level. the fill level is checked with the car level and at a set fluid temperature. if there's no record of a pdk service, budget for one at purchase. many specialists change the transmission fluid at 60,000 miles rather than waiting for 120,000. rough low-speed shifts after a battery disconnect often just need adaptation.",
       "url": "/resources/porsche/991/"
     },
     {
@@ -8179,7 +8166,7 @@
       "interval": "Inspect every oil change; replace if cracked, glazed, or at 30,000–40,000 miles",
       "cost": "$20-50",
       "type": "diy",
-      "keywords": "fan and alternator belt the 993's fan and alternator share one v-belt, and tension is set with shims between the pulley halves, not a spring tensioner. a slipping belt means an undercharging battery and a hot engine, so check it at every oil change. easy diy inspect every oil change; replace if cracked, glazed, or at 30,000–40,000 miles $20-50 pulley holding tool or pin wrench socket for the pulley nut flashlight new belt disconnect the battery. clear access to the fan and alternator pulley at the top of the engine. hold the pulley still with the holding tool and loosen the center nut. carry a spare belt and the holding tool in the car. a squeal on startup usually means the belt needs one shim out.",
+      "keywords": "fan and alternator belt the 993's fan and alternator share one v-belt, and tension is set with shims between the pulley halves, not a spring tensioner. a slipping belt means an undercharging battery and a hot engine, so check it at every oil change. easy diy inspect every oil change; replace if cracked, glazed, or at 30,000–40,000 miles $20-50 pulley holding tool or a large screwdriver to brace the pulley allen/socket for the pulley bolts flashlight new belt disconnect the battery. clear access to the fan and alternator pulley at the top of the engine. brace the pulley and remove the small bolts that clamp the two pulley halves together. carry a spare belt and the holding tool in the car. a squeal on startup usually means the belt needs one shim out.",
       "url": "/resources/porsche/993/"
     },
     {

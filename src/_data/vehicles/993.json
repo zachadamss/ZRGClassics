@@ -21,7 +21,7 @@
       "id": "oil-leaks",
       "title": "Oil Leaks (Chain Tensioner and Case Seams)",
       "symptoms": "Oil spots under car, oil on engine, seepage visible, low oil level, burning smell",
-      "description": "Like its predecessor, the 993 is prone to oil leaks. The most common source is the chain tensioner cover, but leaks also develop at case seams, valve covers, cam tower seals, and oil cooler connections. The 993 added hydraulic valve lifters which also have potential leak points at the lifter galleries.",
+      "description": "Like every air-cooled 911, the 993 seeps. The chain tensioner covers are the usual source, then the case seams, valve covers, cam tower seals, and oil cooler connections. Some seepage is normal; drips on the floor or oil on the exhaust aren't.",
       "fixes": [
         "Chain tensioner cover reseal (common and accessible)",
         "Valve cover gaskets replacement",
@@ -37,7 +37,7 @@
       "repairCosts": {
         "diy": "$200-500",
         "shop": "$600-1500",
-        "notes": "Chain housings and cam covers most common. Valve cover O-rings."
+        "notes": "Chain housings and cam covers are the common ones."
       },
       "parts": [
         { "name": "Chain Housing Gasket Set", "partNumber": "99310519501", "price": "$100-200" },
@@ -50,13 +50,13 @@
       "id": "dual-mass-flywheel",
       "title": "Dual-Mass Flywheel Wear",
       "symptoms": "Clutch chatter, vibration at idle, rattling noise, harsh engagement, gear engagement difficulty",
-      "description": "The 993 continues with the dual-mass flywheel to dampen drivetrain vibrations. These flywheels have a service life and their internal springs and dampers wear out. A worn DMF causes chatter, vibration, and can damage the clutch disc and transmission input shaft bearing. Replacement is recommended with any clutch service.",
+      "description": "The 993 keeps the 964's dual-mass flywheel, and its internal springs wear out. A worn one rattles at idle and chatters on take-off, and can damage the clutch and gearbox input bearing. Replace it with any clutch job.",
       "fixes": [
-        "Replace dual-mass flywheel (OEM or quality aftermarket)",
-        "Single-mass flywheel conversion (increases NVH but more durable)",
+        "Replace dual-mass flywheel (oem or quality aftermarket)",
+        "Single-mass flywheel conversion (increases nvh but more durable)",
         "Replace clutch disc, pressure plate, and release bearing",
         "Inspect input shaft bearing while transmission is out",
-        "Resurface or replace DMF if within spec"
+        "Resurface or replace dmf if within spec"
       ],
       "sources": [
         { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
@@ -65,7 +65,7 @@
       "repairCosts": {
         "diy": "$800-1500",
         "shop": "$2000-3500",
-        "notes": "Same as 964. DMF failure common on high-mileage cars."
+        "notes": "Common on high-mileage cars."
       },
       "parts": [
         { "name": "Dual Mass Flywheel", "partNumber": "99311401201", "price": "$900-1300" },
@@ -78,7 +78,7 @@
       "id": "hydraulic-lifters",
       "title": "Hydraulic Lifter Noise and Failure",
       "symptoms": "Ticking noise on cold start, persistent ticking, reduced power, misfire, rough idle",
-      "description": "The 993 was the first 911 to use hydraulic valve lifters, eliminating the need for periodic valve adjustments. However, these lifters can develop issues—they may tick on cold start (often normal) or persistently (indicating wear). Using improper oil or extended oil change intervals accelerates lifter wear.",
+      "description": "The 993 was the first 911 with hydraulic lifters, so no more valve adjustments. A brief tick on a cold start is normal. A tick that stays when the engine is warm usually means a worn lifter, and old or wrong oil makes it worse.",
       "fixes": [
         "Use proper viscosity oil (Porsche specification)",
         "Regular oil changes to maintain lifter hydraulics",
@@ -93,7 +93,7 @@
       "repairCosts": {
         "diy": "$400-800",
         "shop": "$1000-2000",
-        "notes": "Lifter tick on cold start. Replace in sets."
+        "notes": "A cold-start tick is normal. A warm one isn't."
       },
       "parts": [
         { "name": "Hydraulic Lifter (each)", "partNumber": "93010508302", "price": "$30-50" },
@@ -105,13 +105,13 @@
       "id": "g50-transmission",
       "title": "G50/52 Transmission Issues",
       "symptoms": "Grinding into gear, synchro failure, gear pop-out, shift cable wear, notchy shifting",
-      "description": "The 993 uses the G50 six-speed transmission. While tough, synchros wear over time, particularly second gear. The shift cables also wear and need adjustment or replacement. Improper fluid or aggressive cold shifting accelerates synchro wear. Some 993s have the limited-slip differential which has its own service needs.",
+      "description": "The six-speed G50 is tough, but its synchros wear, second gear first. Worn shift linkage bushings make it sloppy. The wrong gear oil and hard shifts before it's warm speed up synchro wear. Cars with the limited-slip differential need it serviced too.",
       "fixes": [
         "Regular transmission fluid changes with GL-4 spec fluid",
         "Shift cable adjustment or replacement",
         "Synchro replacement requires transmission rebuild",
         "Allow transmission to warm up before aggressive shifting",
-        "LSD service if equipped (inspect during trans work)"
+        "lsd service if equipped (inspect during trans work)"
       ],
       "sources": [
         { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
@@ -120,7 +120,7 @@
       "repairCosts": {
         "diy": "$100-300",
         "shop": "$400-1500",
-        "notes": "Same G50 as 964. Synchro wear common."
+        "notes": "Second gear wears first. Use the correct gear oil."
       },
       "parts": [
         { "name": "GL-4 Gear Oil", "price": "$40-80" },
@@ -132,10 +132,10 @@
       "id": "suspension-wear",
       "title": "Suspension Component Wear",
       "symptoms": "Clunking over bumps, vague handling, uneven tire wear, loose steering feel, wandering",
-      "description": "The 993 introduced a completely redesigned multi-link rear suspension replacing the semi-trailing arms of earlier 911s. All suspension bushings, ball joints, and tie rods wear over time. The rear suspension has numerous bushings that affect alignment and handling. Worn components significantly diminish the 993's excellent handling.",
+      "description": "The 993's multi-link rear suspension replaced the semi-trailing arms of every earlier 911, and it's why the car handles so well. It also has a lot of bushings. After 30 years they're all due, along with ball joints and tie rods, and a worn 993 loses the precision that makes it special.",
       "fixes": [
         "Inspect and refresh the whole suspension",
-        "Replace all worn bushings (OEM rubber or polyurethane)",
+        "Replace all worn bushings (oem rubber or polyurethane)",
         "Rear suspension overhaul (multiple bushings per side)",
         "Front control arm bushings and ball joints",
         "Replace tie rods and steering components as needed",
@@ -148,7 +148,7 @@
       "repairCosts": {
         "diy": "$400-800",
         "shop": "$1000-2000",
-        "notes": "30-year-old bushings need replacement. LSA upgrade available."
+        "notes": "Thirty-year-old bushings need replacing."
       },
       "parts": [
         { "name": "Control Arm Kit", "price": "$300-500" },
@@ -161,9 +161,9 @@
       "id": "power-steering",
       "title": "Power Steering System Failures",
       "symptoms": "Whining pump, heavy steering, fluid leaks, intermittent assist, groaning noise",
-      "description": "The 993 hydraulic power steering system shares components with the 964. The pump, rack, hoses, and reservoir all age. Power steering pump bearings fail causing whining. Rack seals leak. Hoses deteriorate internally and externally. Regular fluid changes help longevity.",
+      "description": "The 993's hydraulic power steering shares a lot with the 964's. Pump bearings wear and whine, rack seals leak, and hoses deteriorate inside and out. Regular fluid changes help.",
       "fixes": [
-        "Power steering fluid flush (use Pentosin CHF 11S)",
+        "Power steering fluid flush (use Pentosin chf 11S)",
         "Pump rebuild or replacement",
         "High-pressure line replacement",
         "Rack seal replacement or rack rebuild",
@@ -176,7 +176,7 @@
       "repairCosts": {
         "diy": "$200-400",
         "shop": "$500-1000",
-        "notes": "Hydraulic system ages. Check pump and rack."
+        "notes": "Check the pump and the rack."
       },
       "parts": [
         { "name": "Power Steering Pump", "partNumber": "99334704008", "price": "$350-600" },
@@ -188,7 +188,7 @@
       "id": "hvac-issues",
       "title": "Climate Control and HVAC Issues",
       "symptoms": "AC not cooling, heater not heating, blend door clicking, fan not working, temperature fluctuation",
-      "description": "The 993 climate control system is complex and prone to age-related failures. The blend door actuators (servos) fail, causing clicking noises and incorrect temperature output. The AC compressor, condenser, and evaporator develop issues. The heater core can leak. Blower motor resistors fail.",
+      "description": "The climate control is complex and old now. Blend door servos fail and click, the AC compressor, condenser, and evaporator age, heater cores leak, and blower resistors fail. Plenty of cars have a system that only half works.",
       "fixes": [
         "Blend door actuator (servo) replacement",
         "AC system diagnosis and repair",
@@ -204,7 +204,7 @@
       "repairCosts": {
         "diy": "$100-300",
         "shop": "$400-1000",
-        "notes": "Blower motor and resistor common. AC conversion available."
+        "notes": "Blower and resistor are the common failures."
       },
       "parts": [
         { "name": "Blower Motor", "partNumber": "99362431401", "price": "$200-400" },
@@ -217,7 +217,7 @@
       "id": "turbo-specific",
       "title": "Turbo-Specific Issues (993 Turbo)",
       "symptoms": "Boost problems, wastegate issues, intercooler leaks, turbo failure, check engine light",
-      "description": "The 993 Turbo uses twin KKK turbochargers. While generally reliable, the turbo system has specific maintenance needs. Wastegates can stick, boost hoses crack, and intercoolers can develop leaks. Oil feed and drain lines must be inspected. Turbo bearing wear occurs at high mileage.",
+      "description": "The 993 Turbo uses twin KKK turbochargers. They're dependable, but wastegates stick, boost hoses crack, and intercoolers leak. Inspect the oil feed and drain lines, and expect turbo bearing wear at high mileage.",
       "fixes": [
         "Wastegate inspection and service",
         "Boost hose inspection and replacement",
@@ -233,7 +233,7 @@
       "repairCosts": {
         "diy": "$300-800",
         "shop": "$1500-4000",
-        "notes": "993 Turbo only. Wastegate actuators and boost issues."
+        "notes": "Turbo only. Wastegates and boost leaks are the common ones."
       },
       "parts": [
         { "name": "Wastegate Actuator", "price": "$200-400" },
@@ -334,7 +334,7 @@
         "The 993's multi-link rear suspension was a major upgrade over the 964's semi-trailing arms.",
         "Elephant Racing offers complete suspension kits with polyurethane options.",
         "The multi-link design allows precise camber, toe, and anti-squat adjustment.",
-        "OEM rubber bushings provide good street manners; poly is more responsive.",
+        "oem rubber bushings provide good street manners; poly is more responsive.",
         "Bilstein Sport or Koni adjustables are popular upgrades from stock shocks.",
         "Consider lowering springs (H&R, Eibach) if replacing for track use.",
         "Check CV boots and axles while suspension is disassembled.",
@@ -345,7 +345,7 @@
         "The car weighs approximately 3,100 lbs—use appropriate jack stands.",
         "Rear suspension work significantly affects alignment—budget for professional alignment.",
         "Some fasteners use threadlocker from factory—apply new threadlocker on reassembly.",
-        "Cars with LSA (load-sensitive damping) have special shocks—verify before ordering.",
+        "Cars with lsa (load-sensitive damping) have special shocks—verify before ordering.",
         "Always tighten suspension fasteners with weight on wheels for proper bushing loading."
       ],
       "references": [
@@ -406,7 +406,7 @@
         "Tack weld panels in place, checking fit frequently.",
         "Finish weld using stitch welding to prevent warpage.",
         "Grind welds smooth and apply seam sealer to all joints.",
-        "Treat interior surfaces with rust preventive (POR-15 or equivalent).",
+        "Treat interior surfaces with rust preventive (por-15 or equivalent).",
         "Apply rubberized underseal to exterior underbody surfaces.",
         "Prime and paint repaired areas to match existing finish.",
         "Apply cavity wax to all hollow sections for ongoing protection."
@@ -417,7 +417,7 @@
         "Spring plate covers often rust through—inspect carefully from below.",
         "The 993 is now highly collectible—quality repairs preserve value.",
         "Quality reproduction panels are available from Restoration Design and others.",
-        "POR-15 requires proper surface preparation—follow instructions exactly.",
+        "por-15 requires proper surface preparation—follow instructions exactly.",
         "Consider professional inspection before purchasing a 993 to assess rust severity.",
         "Cars from coastal or salt-road areas require extra diligence."
       ],
@@ -425,7 +425,7 @@
         "Extensive rust repair can affect the vehicle's collectible value—consult specialists.",
         "Welding near fuel lines and tank requires proper safety precautions.",
         "Improper structural repairs can affect crash safety—consult professionals if unsure.",
-        "MIG welding thin body panels requires skill to avoid burn-through.",
+        "mig welding thin body panels requires skill to avoid burn-through.",
         "Rust preventive coatings require proper ventilation and safety equipment.",
         "Disconnect battery and fuel system before any welding operations.",
         "The 993's value makes proper documentation of repairs important for resale."
@@ -954,7 +954,8 @@
         "Use quality 15W-50 or 20W-50 oil—Mobil 1 15W-50 is popular.",
         "Check for oil leaks at valve covers and chain tensioner while working.",
         "The 993 has hydraulic lifters—no valve adjustment needed."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "brake-pads",
@@ -994,9 +995,10 @@
       "tips": [
         "Four-piston calipers require all pistons pushed back evenly.",
         "Open brake fluid reservoir before compressing pistons.",
-        "Use quality pads from Pagid, Hawk, or Porsche OEM.",
+        "Use quality pads from Pagid, Hawk, or Porsche oem.",
         "Bed new pads with gradual stops—avoid hard braking for 100 miles."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "spark-plugs",
@@ -1031,10 +1033,11 @@
       ],
       "tips": [
         "The firing order is 1-6-2-4-3-5—cylinder 1 is front right.",
-        "Use Bosch or NGK plugs specified for the 993.",
+        "Use Bosch or ngk plugs specified for the 993.",
         "Inspect plug wires for cracks or carbon tracking while replacing plugs.",
         "A universal joint helps access plugs in tight areas."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "fan-belt",
@@ -1045,21 +1048,21 @@
       "interval": "Inspect every oil change; replace if cracked, glazed, or at 30,000–40,000 miles",
       "cost": "$20-50",
       "tools": [
-        "Pulley holding tool or pin wrench",
-        "Socket for the pulley nut",
+        "Pulley holding tool or a large screwdriver to brace the pulley",
+        "Allen/socket for the pulley bolts",
         "Flashlight",
         "New belt"
       ],
       "steps": [
         "Disconnect the battery.",
         "Clear access to the fan and alternator pulley at the top of the engine.",
-        "Hold the pulley still with the holding tool and loosen the center nut.",
-        "Remove the nut, the outer pulley half, and the shims between the halves. Keep the shims together.",
+        "Brace the pulley and remove the small bolts that clamp the two pulley halves together.",
+        "Remove the outer pulley half and the shims between the halves. Keep the shims together.",
         "Slip the old belt off and inspect the pulley faces for wear or rust.",
         "Fit the new belt, then reinstall the outer pulley half with shims between the halves.",
         "Fewer shims between the halves makes the belt tighter. Put any shims you remove on the outside of the pulley so they stay with the car.",
-        "Refit the nut and tighten it to the workshop manual value while holding the pulley.",
-        "Check belt deflection against your workshop manual, then adjust with shims if needed.",
+        "Tighten the bolts evenly, turning the engine by hand as you go so the belt seats between the halves.",
+        "Check tension: about 5 mm (3/16 in) of deflection with firm thumb pressure midway between the pulleys. Add or remove shims to get there.",
         "Reconnect the battery, start the engine, and confirm the charging light goes out.",
         "Recheck the tension after the first 50–100 miles. New belts stretch."
       ],
@@ -1124,25 +1127,25 @@
       {
         "name": "Carrera / Carrera S",
         "years": "1995-1998",
-        "description": "Rear-wheel drive with 272-282 hp. The S adds widebody styling and larger wheels. Pure driving experience.",
+        "description": "Rear-wheel drive with 272–282 hp. The Carrera S adds the wide body and bigger wheels. The purest 993.",
         "desirability": "High"
       },
       {
         "name": "Carrera 4 / Carrera 4S",
         "years": "1995-1998",
-        "description": "All-wheel drive variants. More stable but heavier. The 4S combines AWD with widebody.",
+        "description": "All-wheel drive. Heavier but more planted. The 4S combines it with the wide body and Turbo brakes.",
         "desirability": "High"
       },
       {
         "name": "Targa",
         "years": "1996-1998",
-        "description": "Glass-roof variant with sliding glass panel. Unique styling but complex mechanism.",
+        "description": "The glass-roof Targa, with a sliding glass panel. Distinctive, but the mechanism is complex.",
         "desirability": "Medium"
       },
       {
         "name": "Turbo / Turbo S",
         "years": "1996-1998",
-        "description": "Twin-turbocharged with 400-450 hp. The last air-cooled Turbo. Turbo S is extremely rare and valuable.",
+        "description": "Twin-turbocharged, 400–450 hp, and all-wheel drive. The last air-cooled Turbo. The Turbo S is extremely rare.",
         "desirability": "High"
       },
       {
@@ -1151,12 +1154,7 @@
         "description": "The rear-drive Turbo with 430+ hp, widebody, and no driver aids. The most extreme air-cooled 911, and priced accordingly.",
         "desirability": "High"
       },
-      {
-        "name": "Cabriolet",
-        "years": "1995-1998",
-        "description": "Full convertible variant. Adds weight and reduces rigidity but popular.",
-        "desirability": "Medium"
-      }
+      { "name": "Cabriolet", "years": "1995-1998", "description": "The full convertible. Heavier and less stiff, but popular.", "desirability": "Medium" }
     ],
     "inspectionPoints": [
       {
@@ -1282,16 +1280,16 @@
       "fuel": "16-22 MPG"
     },
     "expertTips": [
-      "The 993 is the most collectible modern 911—prices reflect this",
-      "Carrera S and 4S widebody cars command significant premiums",
-      "Varioram engines (1997-98) have better mid-range power",
-      "Manual transmissions are strongly preferred over Tiptronic",
-      "Turbo and GT2 prices have reached supercar levels",
-      "Budget for proper pre-purchase inspection by a specialist",
-      "Join Rennlist.com for excellent technical resources",
-      "Parts availability is good but prices are high",
-      "A well-maintained 993 is an appreciating asset",
-      "These are the last air-cooled 911s—that matters to collectors"
+      "The 993 is the most collectible modern 911, and prices reflect it.",
+      "Wide-body Carrera S and 4S cars sell at a significant premium.",
+      "The Varioram engines (1996–98) have more mid-range power.",
+      "Manual cars are strongly preferred over Tiptronic.",
+      "Turbo and GT2 prices have reached supercar territory.",
+      "Budget for a pre-purchase inspection by a specialist, with a leak-down test.",
+      "Rennlist has a deep 993 community.",
+      "Parts are available, but they're expensive.",
+      "A well-maintained 993 has held its value better than almost anything.",
+      "It's the last air-cooled 911, and that matters to collectors."
     ]
   },
   "communityResources": {

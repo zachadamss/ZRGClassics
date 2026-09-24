@@ -22,7 +22,7 @@
       "id": "ims-bearing",
       "title": "IMS Bearing Failure (997.1 Only)",
       "symptoms": "Metallic debris in oil, grinding noise, catastrophic engine failure, oil pressure light",
-      "description": "The early 997.1 (2005-2008) with the M97 engine carries over the IMS bearing concern from the 996. However, only the base Carrera and Carrera S are affected—the Turbo and GT3 use different engines. The 997.2 (2009+) uses the 9A1 engine with a completely different design and has NO IMS bearing.",
+      "description": "The 997.1 Carrera's M97 engine still has an intermediate shaft bearing. Early cars use the retrofittable single-row bearing; from 2006 Porsche fitted a larger one that fails less often but can't be replaced without splitting the engine. The GT3 and 997.1 Turbo use the Mezger engine and don't have the problem, and the 997.2 (2009 on) dropped the IMS bearing entirely.",
       "fixes": [
         "997.1: Proactive IMS bearing replacement with upgraded bearing",
         "LN Engineering ceramic hybrid bearing upgrade",
@@ -37,7 +37,7 @@
       "repairCosts": {
         "diy": "$500-1000",
         "shop": "$2000-3500",
-        "notes": "997.1 only. 997.2 has different engine design."
+        "notes": "997.1 Carrera only."
       },
       "parts": [
         { "name": "IMS Bearing Retrofit", "brand": "LN Engineering", "price": "$400-600" },
@@ -54,7 +54,7 @@
       "id": "bore-scoring",
       "title": "Bore Scoring (997.1 M97 Engine)",
       "symptoms": "Ticking/knocking noise, smoke on cold start, oil consumption, low compression",
-      "description": "The M97 engine in the 997.1 can develop bore scoring similar to the M96 in the 996. Cylinder 6 is most commonly affected. The scoring damages cylinder walls, causing oil to bypass the piston rings. The 997.2 with the 9A1 engine does not have this problem.",
+      "description": "The 997.1's M97 can score its cylinder walls, letting oil past the rings. It's often reported worst on one bank, with cylinder 6 the most common, and shows up as a ticking cold start, oil consumption, and sooty tailpipes on one side. The 997.2's engine doesn't have the problem. Borescope any 997.1 before you buy it.",
       "fixes": [
         "Borescope inspection (pre-purchase inspection must include this)",
         "Minor scoring: monitor, use quality oil, don't overheat",
@@ -69,7 +69,7 @@
       "repairCosts": {
         "diy": "N/A",
         "shop": "$5000-15000",
-        "notes": "997.1 M97 engine. Less common than 996 but still occurs."
+        "notes": "997.1 only. Borescope before you buy."
       },
       "parts": [
         { "name": "Cylinder Sleeving", "brand": "LN Engineering", "price": "$800-1200/cyl" }
@@ -80,7 +80,7 @@
       "id": "pdk",
       "title": "PDK Transmission Issues (997.2)",
       "symptoms": "Jerky low-speed shifts, shuddering during engagement, warning lights, harsh 1-2 shift",
-      "description": "The PDK (Porsche Doppelkupplung) dual-clutch transmission in the 997.2 can develop issues, particularly with the clutch packs and mechatronic unit. Some owners report jerky behavior at low speeds, especially when cold. The transmission is generally reliable but can be expensive to repair.",
+      "description": "The PDK arrived with the 997.2. It's generally dependable, and some low-speed jerkiness, especially cold, is normal. The expensive problems are clutch wear and mechatronic unit failures. Keep up with the fluid service.",
       "fixes": [
         "Ensure latest software updates are installed",
         "PDK fluid change (not technically required but beneficial)",
@@ -95,7 +95,7 @@
       "repairCosts": {
         "diy": "$100-200",
         "shop": "$400-2000+",
-        "notes": "Fluid service DIY possible. Major repairs shop only."
+        "notes": "Fluid service is DIY-able with the right tools. Major repairs are shop work."
       },
       "parts": [
         { "name": "PDK Fluid (7L)", "partNumber": "Pentosin FFL-2", "price": "$150-200" },
@@ -107,10 +107,10 @@
       "id": "pasm",
       "title": "PASM Suspension Failures",
       "symptoms": "PASM warning light, harsh ride, suspension not adjusting, clunking noises, uneven ride height",
-      "description": "PASM (Porsche Active Suspension Management) uses electronically adjustable dampers. The dampers can fail (usually leaking), and the PASM control module can have electrical issues. Failed dampers result in a rough ride and warning lights.",
+      "description": "PASM dampers adjust their stiffness electronically. They fail by leaking or with control module faults, which gives you a harsher ride and a warning light. Remanufactured dampers take some of the sting out of the cost.",
       "fixes": [
         "Diagnose with PIWIS/Durametric to identify failed damper",
-        "Replace failed PASM damper (OEM or remanufactured)",
+        "Replace failed PASM damper (oem or remanufactured)",
         "Convert to quality coilovers if multiple failures",
         "Check wiring and connectors before replacing dampers",
         "PASM control module can be rebuilt if electrical issue"
@@ -122,7 +122,7 @@
       "repairCosts": {
         "diy": "$400-800",
         "shop": "$800-1500",
-        "notes": "Per damper. Remanufactured units available."
+        "notes": "Per damper. Remanufactured units are available."
       },
       "parts": [
         { "name": "PASM Damper (Front)", "partNumber": "99734305310", "price": "$500-900" },
@@ -135,7 +135,7 @@
       "id": "coolant-pipes",
       "title": "Coolant Pipe and Water Pump Failures",
       "symptoms": "Coolant loss, overheating, coolant smell, puddles under car, temperature warning",
-      "description": "Both 997.1 and 997.2 can suffer from coolant system issues. The plastic coolant pipes, water pump, and expansion tank all degrade with age and heat. While the 997.2 improved some areas, it's still recommended to replace plastic coolant pipes with aluminum as preventive maintenance.",
+      "description": "The cooling system runs from radiators in the nose to the engine in the tail, with plastic pipes, fittings, a water pump, and an expansion tank that all age with heat. Replace the water pump on schedule, keep the radiators clear of debris, and fix small leaks early. On the Mezger-engined Turbo, GT2, and GT3, the glued coolant pipe fittings are a separate, well-known problem with its own fix.",
       "fixes": [
         "Replace plastic coolant pipes with aluminum upgrade kit",
         "Replace water pump (consider with major service)",
@@ -150,7 +150,7 @@
       "repairCosts": {
         "diy": "$200-400",
         "shop": "$500-1000",
-        "notes": "Similar to 996/986. Aluminum upgrade recommended."
+        "notes": "Separate from the Mezger coolant pipe issue."
       },
       "parts": [
         { "name": "Coolant Pipe Kit", "price": "$150-300" },
@@ -162,7 +162,7 @@
       "id": "carbon-buildup",
       "title": "Direct Fuel Injection Carbon Buildup (997.2)",
       "symptoms": "Rough idle, misfires, reduced power, poor fuel economy, check engine light",
-      "description": "The 997.2's 9A1 engine uses direct fuel injection (DFI), which doesn't wash the intake valves with fuel like port injection does. Over time, carbon deposits build up on the intake valves, causing running issues. This requires periodic cleaning, typically every 50,000-80,000 miles.",
+      "description": "The 997.2's engine is direct-injected, so fuel doesn't wash the backs of the intake valves and some carbon builds up. Porsche's design seems less prone to it than many direct-injected engines, and plenty of cars never need attention. If a high-mileage car idles roughly or feels down on power, walnut blasting is the fix.",
       "fixes": [
         "Walnut shell blasting to clean intake valves",
         "Chemical cleaning (less effective but less invasive)",
@@ -177,7 +177,7 @@
       "repairCosts": {
         "diy": "$200-400",
         "shop": "$500-1000",
-        "notes": "997.2 DFI engines. Walnut blasting required."
+        "notes": "Mild on these engines. Walnut blasting if it's needed."
       },
       "parts": [
         { "name": "Walnut Media (bag)", "price": "$30-50" },
@@ -189,7 +189,7 @@
       "id": "rms-leak",
       "title": "Rear Main Seal Leak (997.1)",
       "symptoms": "Oil drips from transmission bell housing, burning oil smell, oil on clutch, clutch slippage",
-      "description": "The 997.1 with the M97 engine can develop rear main seal leaks similar to the 996. Oil leaks onto the clutch in manual transmission cars, causing slipping. The 997.2 with the 9A1 engine has a different seal design with fewer reported issues.",
+      "description": "Like the 996, the 997.1's M97 can weep oil from its rear main seal, and on manual cars enough can reach the clutch to make it slip. The 997.2's engine uses a different design with fewer reported problems.",
       "fixes": [
         "Replace rear main seal (requires engine/trans separation)",
         "Combine with IMS bearing replacement to save labor (997.1)",
@@ -203,7 +203,7 @@
       "repairCosts": {
         "diy": "$400-800",
         "shop": "$1500-2500",
-        "notes": "997.1 only. Same M97 engine RMS issues."
+        "notes": "997.1 only. Combine with a clutch if it's worn."
       },
       "parts": [
         { "name": "Rear Main Seal", "partNumber": "99710322571", "price": "$30-60" }
@@ -324,7 +324,7 @@
       ],
       "warnings": [
         "Water in frunk destroys expensive electronics.",
-        "Headlight moisture damages HID ballasts.",
+        "Headlight moisture damages hid ballasts.",
         "Always wear respirator when grinding."
       ],
       "references": [
@@ -376,7 +376,7 @@
       "tips": [
         "997 headlight condensation extremely common.",
         "997.1 vs 997.2 have different filter locations.",
-        "VarioCam solenoid issues cause rough running—use OEM.",
+        "VarioCam solenoid issues cause rough running—use oem.",
         "PASM failures trigger warning light."
       ],
       "warnings": [
@@ -807,7 +807,8 @@
         "Use quality 0W-40 oil meeting Porsche A40 spec (Mobil 1, Motul, etc.).",
         "Consider oil analysis for 997.1 cars—helps monitor IMS bearing health.",
         "Don't overfill—these engines are sensitive to overfilling."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "brake-pads",
@@ -850,7 +851,8 @@
         "Bed in new pads properly: 10 moderate stops from 40 mph, then cool down.",
         "PCCB (ceramic brake) cars have different procedure—do not attempt without proper training.",
         "Open brake fluid reservoir cap before compressing pistons to prevent overflow."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "spark-plugs",
@@ -886,12 +888,13 @@
         "Reconnect coil electrical connectors until they click."
       ],
       "tips": [
-        "Use NGK or Bosch plugs—these engines are sensitive to plug brand and heat range.",
+        "Use ngk or Bosch plugs—these engines are sensitive to plug brand and heat range.",
         "997.1 uses different plugs than 997.2—verify correct part number.",
         "Never install plugs in a hot engine—risk of stripping aluminum threads.",
         "Gap is preset from factory—do not adjust unless specified.",
         "If a plug feels difficult to remove, apply penetrating oil and try again rather than forcing."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "serpentine-belt",
@@ -927,7 +930,8 @@
         "Always verify belt is fully seated in all pulley grooves before starting.",
         "Keep hands clear when releasing tensioner—significant spring pressure.",
         "Some owners do this from underneath the car—personal preference."
-      ]
+      ],
+      "warnings": []
     }
   ],
   "restorationItems": {
@@ -986,25 +990,25 @@
       {
         "name": "Carrera / Carrera S (997.2)",
         "years": "2009-2012",
-        "description": "Second generation with DFI (direct fuel injection) 3.6L (345 hp) or 3.8L (385 hp). No IMS bearing. PDK available.",
+        "description": "The second generation, with direct injection: 3.6L (345 hp) or 3.8L (385 hp), no IMS bearing, and the PDK as an option. The safer buy.",
         "desirability": "High"
       },
       {
         "name": "Carrera 4 / Carrera 4S",
         "years": "2005-2012",
-        "description": "All-wheel drive variants. Widebody styling on 4S. More stable in all conditions.",
+        "description": "All-wheel drive, with the wider rear body. More planted in all conditions.",
         "desirability": "High"
       },
       {
         "name": "GT3 / GT3 RS",
         "years": "2007-2012",
-        "description": "Track-focused with Mezger engine (435-450 hp). No IMS concerns. The RS adds aero and weight savings. Highly collectible.",
+        "description": "The track-focused GT3s, with the Mezger engine making 415–500 hp and no IMS bearing. The RS adds aero and loses weight. Highly collectible.",
         "desirability": "High"
       },
       {
         "name": "Turbo / Turbo S",
         "years": "2007-2012",
-        "description": "Twin-turbo with 480-530 hp. All-wheel drive standard. Mezger engine on 997.1, DFI on 997.2.",
+        "description": "Twin-turbo, 480–530 hp, and all-wheel drive. The 997.1 uses the Mezger engine; the 997.2 moved to a new direct-injected engine.",
         "desirability": "High"
       },
       {
@@ -1124,16 +1128,16 @@
       "fuel": "18-25 MPG"
     },
     "expertTips": [
-      "The 997.2 (2009+) is the safest buy with no IMS bearing concerns",
-      "997.1 Turbo and GT3 use Mezger engine with excellent reliability",
-      "PDK is faster but manual is more engaging—choose based on preference",
-      "The 997 Carrera S is one of the best all-around sports cars ever made",
-      "GT3 and GT3 RS values have appreciated significantly",
-      "Avoid PCCB brakes if possible—replacement costs are extreme",
-      "Budget for proper PPI by a Porsche specialist before purchase",
-      "Join Rennlist.com for excellent owner community and resources",
-      "The 997 can be a reliable daily driver with proper maintenance",
-      "Factory sport seats and Sport Chrono add resale value"
+      "The 997.2 (2009 on) is the safest buy: no IMS bearing.",
+      "The GT3 and 997.1 Turbo use the Mezger engine, which is very durable.",
+      "The PDK is quicker. The manual is more engaging. Pick what you'll enjoy.",
+      "The 997 Carrera S is one of the best all-round sports cars ever made.",
+      "GT3 and GT3 RS values have climbed a long way.",
+      "Skip the ceramic brakes (PCCB) unless you can afford to replace them.",
+      "Budget for a pre-purchase inspection by a Porsche specialist.",
+      "Rennlist has a deep 997 community.",
+      "Looked after properly, a 997 makes a dependable daily driver.",
+      "Factory sport seats and Sport Chrono help resale."
     ]
   },
   "communityResources": {

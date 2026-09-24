@@ -21,7 +21,7 @@
       "id": "ims-bearing",
       "title": "IMS Bearing Failure",
       "symptoms": "Metallic debris in oil, grinding noise from engine, sudden catastrophic engine failure, oil light flickering",
-      "description": "The Intermediate Shaft (IMS) bearing is the most feared issue on the M96 engine used in the 986 Boxster. The bearing supports the intermediate shaft that drives the camshafts. When it fails, metal debris circulates through the engine, causing catastrophic damage. Early cars (1997-1999) with the dual-row bearing are less prone, while 2000-2005 cars with the single-row bearing are at higher risk.",
+      "description": "The intermediate shaft (IMS) bearing supports the shaft that drives the camshafts, and when it fails, metal debris goes through the engine and usually ends it. Risk depends on the bearing: 1997–99 cars have a stronger dual-row bearing with a failure rate around 1%, while 2000–04 cars have a single-row bearing with a reported rate closer to 8%. A retrofit bearing, usually done with the clutch and rear main seal, takes the worry away.",
       "fixes": [
         "Proactive IMS bearing replacement with upgraded bearing",
         "LN Engineering ceramic hybrid bearing (most popular upgrade)",
@@ -36,7 +36,7 @@
       "repairCosts": {
         "diy": "$500-1000",
         "shop": "$2000-3500",
-        "notes": "Preventive, and worth it. Often combined with RMS and clutch."
+        "notes": "Preventive, and worth it. Usually done with the clutch and RMS."
       },
       "parts": [
         { "name": "IMS Bearing (Single Row Retrofit)", "brand": "LN Engineering", "price": "$400-600" },
@@ -54,7 +54,7 @@
       "id": "rms-leak",
       "title": "Rear Main Seal (RMS) Leak",
       "symptoms": "Oil drips from bell housing area, oil on clutch (manual), burning oil smell, oil consumption",
-      "description": "The rear main seal on the M96 engine is known to leak, especially on higher mileage cars. Oil leaks onto the clutch causing slipping and requiring clutch replacement along with the seal. The RMS is located between the engine and transmission, so the job requires engine or transmission removal.",
+      "description": "The M96 rear main seal is known to weep, and on higher-mileage cars it can leak enough to contaminate the clutch. Because it sits between the engine and gearbox, replacing it means pulling the transmission, which makes it an obvious job to combine with an IMS retrofit and a clutch.",
       "fixes": [
         "Replace rear main seal (requires engine/trans separation)",
         "Combine with IMS bearing and clutch if applicable",
@@ -68,7 +68,7 @@
       "repairCosts": {
         "diy": "$400-800",
         "shop": "$1500-2500",
-        "notes": "Requires transmission removal. Often done with IMS bearing."
+        "notes": "Transmission out. Combine it with the IMS and clutch."
       },
       "parts": [
         { "name": "Rear Main Seal", "partNumber": "99610322571", "price": "$30-60" },
@@ -81,9 +81,9 @@
       "id": "coolant-pipes",
       "title": "Coolant Pipe Failure",
       "symptoms": "Sudden coolant loss, overheating, coolant smell, puddle under car, white smoke from engine bay",
-      "description": "The 986 uses plastic coolant pipes that run under the intake manifold. These pipes become brittle with age and heat, eventually cracking and causing rapid coolant loss. Because the engine is mid-mounted, overheating can occur quickly without warning.",
+      "description": "The cooling system runs a long way from the radiators in the nose to the engine behind the seats, and its plastic pipes, fittings, and expansion tank get brittle with heat and age. A cracked part can dump coolant quickly, so watch the level and fix small leaks before they become big ones.",
       "fixes": [
-        "Replace with updated OEM plastic pipes",
+        "Replace with updated oem plastic pipes",
         "Upgrade to aluminum coolant pipe kit (permanent fix)",
         "Replace coolant tank and hoses at the same time",
         "Consider replacing thermostat during service",
@@ -96,7 +96,7 @@
       "repairCosts": {
         "diy": "$200-400",
         "shop": "$500-1000",
-        "notes": "Replace with aluminum upgrade. Plastic pipes crack with age."
+        "notes": "Aluminum replacements are available for the plastic parts that fail."
       },
       "parts": [
         { "name": "Coolant Pipe Kit (Aluminum)", "price": "$150-300" },
@@ -109,9 +109,9 @@
       "id": "convertible-top",
       "title": "Convertible Top Issues",
       "symptoms": "Top won't open/close, warning light on dash, hydraulic fluid leak, slow operation, top stops mid-cycle",
-      "description": "The 986 Boxster's convertible top mechanism is hydraulic and electrically controlled. Common failure points include the hydraulic pump, rams (cylinders), and the micro switches that sense top position.",
+      "description": "The top is electro-hydraulic. The pump, hydraulic rams, and the microswitches that tell the system where the top is are the usual failures, and a stuck top is often just a switch.",
       "fixes": [
-        "Check and refill hydraulic fluid (use correct Pentosin CHF 11S)",
+        "Check and refill hydraulic fluid (use correct Pentosin chf 11S)",
         "Replace hydraulic rams if leaking",
         "Replace or repair hydraulic pump",
         "Adjust or replace micro switches",
@@ -125,7 +125,7 @@
       "repairCosts": {
         "diy": "$100-400",
         "shop": "$400-1500",
-        "notes": "Hydraulic system issues. Microswitches and pump common."
+        "notes": "Microswitches and the pump are the common failures."
       },
       "parts": [
         { "name": "Hydraulic Pump", "partNumber": "98656160901", "price": "$300-600" },
@@ -138,9 +138,9 @@
       "id": "aos",
       "title": "AOS (Air/Oil Separator) Failure",
       "symptoms": "Rough idle, smoke from exhaust on startup, oil consumption, whistling noise, check engine light",
-      "description": "The Air/Oil Separator (AOS) is part of the crankcase ventilation system. It separates oil vapor from air before routing it back to the intake. When the AOS fails (usually the internal diaphragm), it can cause vacuum leaks, allow oil into the intake, and cause rough running.",
+      "description": "The air/oil separator strips oil from the crankcase vapors before they go back into the intake. When its diaphragm fails, the engine pulls oil into the intake: you'll see a cloud of smoke on startup, rising oil consumption, and a rough idle from the vacuum leak.",
       "fixes": [
-        "Replace AOS unit (OEM or aftermarket)",
+        "Replace AOS unit (oem or aftermarket)",
         "Consider upgraded AOS designs that are more durable",
         "Replace vacuum lines while AOS is accessible",
         "Check and clean throttle body during service",
@@ -153,7 +153,7 @@
       "repairCosts": {
         "diy": "$200-400",
         "shop": "$400-800",
-        "notes": "Air-Oil Separator. Causes smoke and consumption when failed."
+        "notes": "Smoke on startup and oil consumption are the tell."
       },
       "parts": [
         { "name": "AOS Assembly", "partNumber": "99610702558", "price": "$200-350" },
@@ -165,7 +165,7 @@
       "id": "bore-scoring",
       "title": "Bore Scoring / Cylinder Wear",
       "symptoms": "Knocking noise from engine (cold or hot), increased oil consumption, smoke on startup, low compression",
-      "description": "Some M96 engines develop bore scoring—damage to the cylinder walls that allows oil to pass the piston rings. The cause is debated. Bore scoring can range from minor (cosmetic) to severe (engine rebuild required). It's more common on cars that sit for long periods or are driven short distances.",
+      "description": "Some M96 engines score their cylinder walls, which lets oil past the rings. The exact cause is still debated. It ranges from minor to rebuild-the-engine, and the tell-tales are a ticking cold start, oil consumption, and sooty tailpipes on one bank. A borescope inspection before you buy is cheap insurance.",
       "fixes": [
         "Borescope inspection to assess cylinder condition",
         "For minor scoring: monitor and use quality oil",
@@ -180,7 +180,7 @@
       "repairCosts": {
         "diy": "N/A",
         "shop": "$5000-15000",
-        "notes": "Major engine work. Cylinder sleeving or replacement required."
+        "notes": "Major engine work: sleeving or a replacement engine."
       },
       "parts": [
         { "name": "Cylinder Sleeving (per cyl)", "brand": "LN Engineering", "price": "$800-1200" },
@@ -192,7 +192,7 @@
       "id": "window-regulator",
       "title": "Window Regulator Failure",
       "symptoms": "Window drops into door, grinding noise, slow window operation, window off track",
-      "description": "Like many cars of this era, the 986 uses cable-driven window regulators with plastic components that fail. The cables can fray or the plastic guides can break, causing the window to drop or operate erratically.",
+      "description": "The regulators use cables and plastic parts that fail, so the window drops or moves erratically. The frameless glass also has to be adjusted correctly to seal against the top.",
       "fixes": [
         "Replace window regulator assembly",
         "Lubricate window tracks to reduce regulator strain",
@@ -206,7 +206,7 @@
       "repairCosts": {
         "diy": "$100-200",
         "shop": "$300-500",
-        "notes": "Frameless windows require proper adjustment."
+        "notes": "Frameless glass needs proper adjustment afterward."
       },
       "parts": [
         { "name": "Window Regulator (Left)", "partNumber": "98654207504", "price": "$150-250" },
@@ -841,7 +841,8 @@
         "Frequent oil changes (every 5,000 miles) help protect the IMS bearing.",
         "Use quality synthetic oil meeting Porsche A40 specification.",
         "Consider periodic oil analysis to monitor engine wear."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "convertible-top-lube",
@@ -875,8 +876,9 @@
         "Don't operate the top if it's wet or below freezing.",
         "A slow-operating top often means low hydraulic fluid.",
         "The hydraulic pump is in the rear storage compartment.",
-        "Use Pentosin CHF 11S for any hydraulic fluid top-off."
-      ]
+        "Use Pentosin chf 11S for any hydraulic fluid top-off."
+      ],
+      "warnings": []
     },
     {
       "id": "brake-pads",
@@ -919,7 +921,8 @@
         "Open reservoir cap before compressing pistons.",
         "Bed new pads with moderate stops—avoid hard braking initially.",
         "Consider upgrading to ceramic pads for less brake dust."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "spark-plugs",
@@ -953,11 +956,12 @@
         "Start engine and verify smooth operation."
       ],
       "tips": [
-        "Use NGK or Bosch platinum/iridium plugs.",
+        "Use ngk or Bosch platinum/iridium plugs.",
         "The 986 uses coil-on-plug ignition—no plug wires.",
         "Inspect coil boots for cracks while replacing plugs.",
         "Replace coils if you're experiencing misfires."
-      ]
+      ],
+      "warnings": []
     }
   ],
   "restorationItems": {
@@ -1002,19 +1006,19 @@
       "productionYears": "1997-2004",
       "totalProduced": "~164,000 worldwide",
       "priceRange": "$10,000–$40,000+",
-      "bestYears": "2003-2004 (most refined, improved IMS bearing)"
+      "bestYears": "2003–2004 (facelift: glass rear window, updated interior). The 1997–99 cars have the stronger dual-row IMS bearing."
     },
     "variants": [
       {
         "name": "Boxster (Base)",
         "years": "1997-2004",
-        "description": "Entry model with 2.5L (1997-99) or 2.7L (2000-04) producing 201-228 hp. Excellent handling, adequate power.",
+        "description": "The base car, with a 2.5L (1997–99) or 2.7L (2000–04) flat-six making 201–228 hp. Handles beautifully, with adequate power.",
         "desirability": "Medium"
       },
       {
         "name": "Boxster S",
         "years": "2000-2004",
-        "description": "Performance model with 3.2L producing 250-258 hp. Better brakes, larger wheels, more power. The one to have.",
+        "description": "The 3.2L with 250–258 hp, bigger brakes, and bigger wheels. The one I'd buy.",
         "desirability": "High"
       }
     ],
@@ -1100,7 +1104,7 @@
     "redFlags": [
       "Unknown IMS bearing status",
       "Evidence of bore scoring (knocking, smoke, oil consumption)",
-      "RMS leak (potential IMS indicator)",
+      "A rear main seal leak. Budget to fix it along with an IMS retrofit.",
       "Water damage from clogged drains",
       "Non-functional convertible top",
       "Missing service records",
@@ -1111,7 +1115,7 @@
       "Boxster S for better performance",
       "Manual transmission",
       "Complete service documentation",
-      "2003-2004 model years (best IMS design)",
+      "A 1997–99 car for the stronger dual-row IMS bearing, or a 2003–04 for the updated interior and glass rear window",
       "Sport package with improved suspension",
       "Dry-climate car (less rust, better soft top)"
     ],
@@ -1122,15 +1126,15 @@
       "fuel": "20-26 MPG"
     },
     "expertTips": [
-      "The 986 Boxster is one of the best sports car values available today",
-      "Mid-engine layout means better handling balance than the 911",
-      "IMS bearing retrofit is worthwhile insurance—factor it into purchase",
-      "Boxster S is worth the premium over the base model",
-      "Oil analysis before purchase can indicate IMS bearing health",
-      "Maintenance costs are similar to a Japanese sports car when DIY",
-      "Join Rennlist.com for excellent technical resources",
-      "The convertible top is simple and reliable when maintained",
-      "Budget for consumables like water pump and soft top maintenance"
+      "The 986 is one of the best sports car values around.",
+      "The mid-engine layout gives it better balance than a 911 of the same era.",
+      "An IMS retrofit is worthwhile insurance. Factor it into the price.",
+      "The Boxster S is worth the extra money.",
+      "An oil analysis before you buy can hint at the IMS bearing's health.",
+      "If you do your own work, running costs are very reasonable for a Porsche.",
+      "Rennlist and Planet-9 both have excellent 986 sections.",
+      "The convertible top is dependable when the switches and seals are looked after.",
+      "Budget for a water pump and top maintenance."
     ]
   },
   "communityResources": {

@@ -56,12 +56,12 @@
       "id": "rust-corrosion",
       "title": "Rust and Corrosion",
       "symptoms": "Bubbling paint, visible rust holes, soft floor pans, rusty fenders and wheel arches",
-      "description": "E30s are known for rust, especially in areas with road salt. Common rust spots include the front fenders (behind the wheels), rear wheel arches, rocker panels, battery tray, and floor pans. The trunk floor and spare tire well are also vulnerable. Rust can compromise structural integrity if left untreated.",
+      "description": "Rust decides the price of an E30 more than anything else. Check the front fenders behind the wheels, rear arches, rockers, battery tray, and floors, then lift the trunk mat and look at the spare wheel well. Surface rust is a weekend. Rot in the floors or subframe mounts is a project.",
       "fixes": [
         "Inspect and treat rust early—surface rust is much easier to fix",
         "Replace fenders if rust is beyond repair (aftermarket available)",
         "Weld in new metal for floor pan and structural rust",
-        "Apply rust prevention (POR-15, Fluid Film) to undercarriage",
+        "Apply rust prevention (por-15, Fluid Film) to undercarriage",
         "Keep drain holes clear to prevent water accumulation"
       ],
       "sources": [
@@ -71,7 +71,7 @@
       "repairCosts": {
         "diy": "$200-1000",
         "shop": "$1000-5000+",
-        "notes": "Cost varies widely by extent. Fenders and floors most common."
+        "notes": "Varies hugely. Fenders and floors are the common ones."
       },
       "parts": [
         { "name": "Fender (Reproduction)", "price": "$150-300" },
@@ -85,11 +85,11 @@
       "id": "electrical-gremlins",
       "title": "Electrical Gremlins",
       "symptoms": "Intermittent gauge failures, flickering lights, dead pixels in OBC, non-working windows/sunroof",
-      "description": "The E30's electrical system, while simpler than modern BMWs, suffers from age-related issues. Ground points corrode, causing erratic behavior. The instrument cluster capacitors fail, leading to dead gauges or pixels. Window and sunroof switches wear out. The check control panel and on-board computer (OBC) are known failure points.",
+      "description": "The E30's wiring is simple, but it's old. Corroded grounds cause most of the odd behavior, and the hidden ground behind the glovebox is a classic. Instrument cluster solder joints and capacitors fail, leaving dead gauges, and the check control panel and on-board computer are known weak spots. Window and sunroof switches wear out too.",
       "fixes": [
         "Clean and re-ground all chassis ground points",
-        "Replace instrument cluster capacitors (common DIY repair)",
-        "Rebuild or replace OBC units",
+        "Replace instrument cluster capacitors (common diy repair)",
+        "Rebuild or replace obc units",
         "Check and clean all fuse box connections",
         "Replace worn window/sunroof switches"
       ],
@@ -100,7 +100,7 @@
       "repairCosts": {
         "diy": "$50-200",
         "shop": "$150-400",
-        "notes": "Often ground connection issues. Check grounds first."
+        "notes": "Clean the grounds before you buy parts."
       },
       "parts": [
         { "name": "Combination Relay", "partNumber": "12631709557", "price": "$40-70" },
@@ -114,9 +114,9 @@
       "id": "suspension-bushings",
       "title": "Suspension Bushing Wear",
       "symptoms": "Clunking over bumps, vague steering, uneven tire wear, wandering at highway speeds",
-      "description": "After 30+ years, nearly all E30s have worn suspension bushings. The front control arm bushings, subframe mounts, rear trailing arm bushings, and sway bar end links all deteriorate with age. Worn bushings dramatically affect handling and can accelerate wear on other suspension components.",
+      "description": "Nearly every E30 on the road needs bushings. The front control arm bushings, rear subframe mounts, rear trailing arm bushings, and sway bar links all go soft with age, and the car starts to wander, clunk, and wear tires unevenly. A full refresh is the single best thing you can do for how an E30 drives.",
       "fixes": [
-        "Full suspension refresh with new bushings (OEM rubber or polyurethane)",
+        "Full suspension refresh with new bushings (oem rubber or polyurethane)",
         "Replace control arms with fresh bushings",
         "Install new subframe mounts",
         "Replace the rear trailing arm bushings (a known wear item)",
@@ -129,7 +129,7 @@
       "repairCosts": {
         "diy": "$200-400",
         "shop": "$500-900",
-        "notes": "Full refresh transforms handling. Common on 30+ year old cars."
+        "notes": "A full refresh transforms the car."
       },
       "parts": [
         { "name": "Control Arm Bushing Set", "partNumber": "31129058817", "price": "$40-80" },
@@ -143,7 +143,7 @@
       "id": "fuel-injection",
       "title": "Fuel Injection Issues (Bosch Motronic)",
       "symptoms": "Hard starting, rough idle, poor fuel economy, hesitation under acceleration, stalling",
-      "description": "E30s use Bosch Motronic or L-Jetronic fuel injection systems. Common failure points include the idle control valve (ICV), mass airflow sensor (AFM), coolant temperature sensor, and fuel injectors. Vacuum leaks from aged hoses also cause running issues. The fuel pump and filter should be checked if fuel delivery is suspected.",
+      "description": "The six-cylinder cars mostly use Bosch Motronic; early ones use L-Jetronic. The common failures are the idle control valve, airflow meter, coolant temperature sensor, and injectors, and cracked vacuum hoses cause more running problems than any sensor. If it's starving for fuel, check the pump, filter, and the DME and fuel pump relays.",
       "fixes": [
         "Clean or replace the idle control valve (ICV)",
         "Test and replace AFM (airflow meter) if faulty",
@@ -159,7 +159,7 @@
       "repairCosts": {
         "diy": "$100-400",
         "shop": "$300-800",
-        "notes": "Motronic systems need proper diagnosis. AFM common failure."
+        "notes": "Diagnose before you replace. The AFM is the common expensive one."
       },
       "parts": [
         { "name": "Air Flow Meter (AFM)", "partNumber": "13621286615", "price": "$150-300" },
@@ -173,7 +173,7 @@
       "id": "cooling-system",
       "title": "Cooling System Failures",
       "symptoms": "Overheating, coolant leaks, heater not working, temperature gauge fluctuation",
-      "description": "While tougher than later BMW cooling systems, the E30's cooling components still fail with age. The water pump, thermostat, and radiator are common failure points. The heater core is known to leak, and the expansion tank can crack. On M20 engines, the head gasket can fail if overheating occurs.",
+      "description": "The E30 cooling system is tougher than what came later, but it's still 30-plus years old. Water pumps, thermostats, and radiators fail, the heater core leaks, and the expansion tank cracks. An M20 that overheats will lift its head gasket or warp the head, so fix small leaks before they strand you.",
       "fixes": [
         "Replace water pump (do with timing belt service)",
         "Install new thermostat (80°C or 88°C based on preference)",
@@ -188,7 +188,7 @@
       "repairCosts": {
         "diy": "$150-300",
         "shop": "$400-700",
-        "notes": "Replace all hoses and thermostat during water pump service."
+        "notes": "Do the hoses and thermostat with the water pump."
       },
       "parts": [
         { "name": "Water Pump (M20)", "partNumber": "11519070755", "price": "$50-80" },
@@ -258,10 +258,10 @@
       "tips": [
         "Spray all bolts with penetrating oil 24 hours before starting to ease removal.",
         "Take photos of the suspension geometry before disassembly for reference.",
-        "Lemforder and Meyle HD bushings are OEM-equivalent quality—avoid cheap alternatives.",
+        "Lemforder and Meyle HD bushings are oem-equivalent quality—avoid cheap alternatives.",
         "Bilstein B6 (yellow) offers improved damping over stock without being too stiff for street use.",
         "If the strut tower nuts are seized, use heat carefully—the tower is thin metal.",
-        "Powerflex polyurethane bushings last longer but transmit more NVH than rubber."
+        "Powerflex polyurethane bushings last longer but transmit more nvh than rubber."
       ],
       "warnings": [
         "Spring compressors are extremely dangerous if used incorrectly—follow all safety procedures.",
@@ -329,7 +329,7 @@
         "Allow metal to cool between welds—touch test with back of hand.",
         "Grind welds smooth with flap disc.",
         "Sealing: Apply seam sealer to all welded joints inside and out.",
-        "Coat repair area with POR-15 or epoxy primer for rust prevention.",
+        "Coat repair area with por-15 or epoxy primer for rust prevention.",
         "Apply cavity wax inside all boxed sections through drain holes.",
         "Reinstall trim, undercoating, and paint as needed."
       ],
@@ -338,7 +338,7 @@
         "Remove the gas tank before any welding near the rear of the car.",
         "Use a heat sink (wet rag or copper backing) to prevent warping thin panels.",
         "Stitch welding in 1-inch segments with cooling time prevents heat distortion.",
-        "POR-15 must be applied over rust-free metal or rust converter for best results.",
+        "por-15 must be applied over rust-free metal or rust converter for best results.",
         "Cavity wax through factory drain holes protects inside of rockers and frame rails.",
         "If the subframe mounting points are rusty, do not drive the car—this is a safety issue."
       ],
@@ -542,7 +542,7 @@
         "Reconnect everything, bleed the brakes if you opened the lines, and get an alignment."
       ],
       "tips": [
-        "Poly bushings sharpen the car but add noise and vibration. OEM-style rubber is right for a street car.",
+        "Poly bushings sharpen the car but add noise and vibration. oem-style rubber is right for a street car.",
         "Check the subframe mounting points in the body for cracks while it's down."
       ],
       "warnings": [
@@ -821,14 +821,15 @@
         "Apply a thin layer of fresh oil to the new filter gasket. Hand-tighten the new filter until the gasket contacts, then turn an additional 3/4 turn.",
         "Clean the drain plug and inspect the crush washer. Replace the washer if it's damaged or reused multiple times.",
         "Reinstall the drain plug and torque to 18-22 ft-lbs (25-30 Nm).",
-        "Lower the car and add oil through the filler cap. M20: 5.0 quarts, M42: 4.5 quarts.",
+        "Lower the car and add oil through the filler cap. With a new filter, the M20 takes about 4.5 quarts (4.25 L) and the M42 about 5.25 quarts (5.0 L). Add a little less, run the engine, then top up to the dipstick.",
         "Start the engine and check for leaks. Let idle for 2 minutes, then turn off and check the oil level. Top off as needed."
       ],
       "tips": [
         "Use 15W-40 or 20W-50 for high-mileage engines, 10W-40 for normal use",
-        "Always use a quality filter—Mann, Mahle, or OEM BMW",
+        "Always use a quality filter—Mann, Mahle, or oem bmw",
         "Check for oil leaks from the valve cover gasket while you're under the car"
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "brake-pads",
@@ -865,7 +866,8 @@
         "Bed in new pads: 10 moderate stops from 30 mph, then 10 harder stops from 40 mph",
         "Replace pads in axle pairs—both fronts or both rears together",
         "Check brake fluid level after compressing pistons—it will rise in the reservoir"
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "timing-belt-diy",
@@ -903,9 +905,10 @@
       "tips": [
         "Never reuse an old timing belt—always replace when removed",
         "Replace the front crank seal and cam seal while the covers are off",
-        "Use only OEM or high-quality belts (Continental, Gates)—not cheap alternatives",
+        "Use only oem or high-quality belts (Continental, Gates)—not cheap alternatives",
         "Mark the old belt's rotation direction—running a used belt backward can cause failure"
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "cooling-system-service",
@@ -941,7 +944,8 @@
         "Use BMW blue coolant or a phosphate-free equivalent—never use green universal coolant",
         "Replace the expansion tank if it shows any cracks or discoloration",
         "Squeeze the upper hose while filling to help push air out of the system"
-      ]
+      ],
+      "warnings": []
     }
   ],
   "restorationItems": {
@@ -994,7 +998,7 @@
       {
         "name": "325e / 325es",
         "years": "1984-1988",
-        "description": "The 'eta' engine prioritizes fuel economy with a 2.7L low-revving motor producing 121 hp. Great for relaxed cruising but lacks the sporting character of the 'i' models. Can be converted to 'i' spec.",
+        "description": "The 'eta' 2.7L six, tuned for economy: 121 hp but lots of low-end torque. A relaxed cruiser, and a popular base for 'i'-spec conversions.",
         "desirability": "Medium"
       },
       {
@@ -1012,13 +1016,13 @@
       {
         "name": "325ix",
         "years": "1988-1991",
-        "description": "All-wheel-drive variant with a sophisticated viscous-coupling system. Great for snowy climates but adds complexity and weight. Unique drivetrain components can be expensive to repair.",
+        "description": "All-wheel drive with a viscous center coupling. Great in the snow, but heavier, and its unique drivetrain parts are expensive and getting harder to find.",
         "desirability": "Medium"
       },
       {
         "name": "Convertible",
         "years": "1987-1993",
-        "description": "Open-top E30 built by Baur (early) or fully by BMW (later). Heavier and less rigid than coupes/sedans but offers top-down driving enjoyment. Check carefully for rust and top mechanism issues.",
+        "description": "BMW's own convertible, sold in the US from 1987. Heavier and less stiff than the sedans and coupes, but it's an E30 with the top down. Check for rust at the rear quarters and a tired top mechanism. Don't confuse it with the Baur Top Cabriolet, a targa-style conversion.",
         "desirability": "Medium"
       }
     ],
@@ -1174,14 +1178,14 @@
       }
     },
     "redFlags": [
-      "Structural rust in subframe mounting points, shock towers, or frame rails—walk away or budget for professional restoration",
+      "Structural rust in the subframe mounts, shock towers, or frame rails. Walk away, or budget for a professional repair.",
       "No record of the last timing belt on an M20 six. Assume it's due and knock the cost off your offer.",
-      "Signs of previous flood damage—musty interior smell, water lines in trunk, corroded electrical connectors",
-      "Salvage or rebuilt title without clear explanation of the damage",
-      "Excessive modifications with poor workmanship—cut wiring, mismatched parts, amateur body work",
-      "Seller unwilling to allow pre-purchase inspection by an independent mechanic",
-      "Oil in coolant or coolant in oil—indicates head gasket failure or worse",
-      "M3 cars without proper documentation or with suspiciously low prices"
+      "Signs of a flood: musty smell, a water line in the trunk, corroded connectors.",
+      "A salvage or rebuilt title without a clear story behind it.",
+      "Lots of modifications done badly: cut wiring, mismatched parts, rough bodywork.",
+      "A seller who won't allow a pre-purchase inspection.",
+      "Oil in the coolant or coolant in the oil. That's a head gasket, or worse.",
+      "An M3 without documentation, or priced too good to be true."
     ],
     "whatToLookFor": [
       "Documented service history, especially timing belt records",
@@ -1202,16 +1206,16 @@
       "fuel": "22-28 MPG depending on driving style"
     },
     "expertTips": [
-      "Join R3VLimited.com before buying—the community can help verify cars and identify red flags",
-      "Budget for a full suspension refresh on any E30—bushings wear out and transform the driving experience when replaced",
-      "The 'is' package (325is, 318is) adds significant value—limited-slip diff and sport suspension are expensive to add later",
-      "Convertibles rust more due to water intrusion—inspect very carefully around the top mechanism and rear quarters",
-      "Early 1984-1986 cars have different bumpers and trim that are harder to find—later facelift parts (1988+) are more available",
+      "Ask on R3VLimited before you buy. The community is good at spotting problems and fakes.",
+      "Budget for a full suspension refresh on any E30. It transforms the car.",
+      "The 'is' package adds real value. The limited-slip differential and sport suspension cost a lot to add later.",
+      "Convertibles let water in. Check around the top mechanism and the rear quarters carefully.",
+      "Early cars (1984–86) have trim and bumpers that are harder to find than the later facelift parts.",
       "A maintained M20 is very durable. There are 300,000-mile examples out there.",
-      "Consider a pre-purchase inspection by an E30 specialist—generic mechanics may miss model-specific issues",
-      "Beware of 'M3 clone' cars—legitimate conversions are rare and expensive, most are poorly done",
-      "Factor in the cost of period-correct replacement parts—many items are discontinued and expensive",
-      "An E30 in solid mechanical condition with rust is often a better buy than a rust-free car with a tired drivetrain—metal work is harder than mechanical repairs"
+      "Get the pre-purchase inspection from someone who knows E30s. A general shop can miss model-specific problems.",
+      "Be wary of M3 clones. Proper conversions are rare, and most are rough.",
+      "Budget for period-correct parts. A lot of trim is discontinued and expensive now.",
+      "A rust-free shell with a tired engine is a better buy than a fresh engine in a rusty shell. Mechanical work is easier than metalwork."
     ]
   },
   "communityResources": {

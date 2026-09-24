@@ -123,22 +123,48 @@ Design and copy review of zrgclassics.com, and the fixes that came out of it. Wo
 | N16 | 987.2 described as all-DFI | ✅ | Base 2.9 was port-injected; wording, best-years, and issue title corrected |
 | N17 | Tools-hub intro used a `<header>` element and inherited the site header's sticky navy styling | ✅ | Changed to `<div>`; noted in CLAUDE.md |
 
+## Content review pass (2026-09-24)
+
+Second pass over every vehicle file for accuracy and voice. All 137 issue descriptions, all 17 buyer's guides (variants, red flags, what to look for, tips), and the flagged items were re-read; uncertain claims were checked against published sources (dictionaries, LN Engineering, Porsche/BMW community references, specialist tech articles).
+
+**Verified and resolved from the previous review list**
+- E30 oil capacities were swapped: now M20 ≈ 4.5 qt (4.25 L), M42 ≈ 5.25 qt (5.0 L)
+- 944 has no timing belt "inspection window": the guide now pulls the upper cover; "oil on the belt = water pump" corrected (oil = seals, coolant = pump)
+- 986/996 "best years… improved IMS bearing" was backwards: 1997–99 (986) and through MY2000 (996) have the stronger dual-row bearing (~1% failure); 2001–05 single-row (~8%). 996 issue text had the dual-row years wrong too
+- 987.1 IMS bearing is single-row (larger, non-serviceable from 2006), not dual-row
+- 991: "coolant pipe failures" retitled to cooling-system leaks (housings, seals, radiators); DI carbon buildup toned down for 987.2/997.2/991 (mild on Porsche engines)
+- PDK: Porsche's 991 schedule is clutch fluid every 60,000 mi and transmission fluid every 120,000 mi/12 yrs (many specialists say 60,000), not "lifetime"
+- 964 uses coil springs (confirmed); a leftover "Torsion Bar Cover" torque spec was removed
+- 993 fan belt: shim-adjusted (confirmed); steps corrected to the pulley's clamp bolts and ~5 mm deflection target
+- Glued coolant pipes are a Mezger (Turbo/GT2/GT3) problem (confirmed); E90 electric pump bleed routine confirmed
+- Year conventions (N9): overviews no longer restate years, so the only years shown are the page header's
+
+**New errors found and fixed in this pass**
+- E28: front suspension isn't multi-link; warm-up regulator isn't used on US E28s; 1,340 North American M5s (was 1,239)
+- E30: convertible wrongly credited to Baur; a buying tip contradicted itself
+- E34: M60 timing guides are plastic, not "Nikasil"; the 3.8L M5 was Europe-only; US Touring included the 530iT
+- E36: removed an S52 rod-bearing red flag, "glass European headlights," and an unverifiable "M3/4/5 package"
+- E39: front suspension is MacPherson (multi-link rear); US Touring included the V8 540iT; M5 rod-bearing advice toned down
+- E46: front suspension is MacPherson; the ZHP didn't include a limited-slip differential; removed an unverified transmission model
+- E90: the N20 isn't an E90 engine; "VANOS bolts backing out" is an S54 problem; HPFP trouble is N54, not N55; fixed "300-300 hp"
+- 924: 2.0L cars (including the Turbo) have no balance shafts; base 924s have no DME; all 924s were fuel-injected; automatics existed
+- 928: automatics were Mercedes-sourced (no Aisin); every 928 has the Weissach axle; removed "biodegradable wiring"
+- 944: the 944S engine didn't come "from the 968"; automatics existed; removed "guibo" from the torque tube
+- 964: it's rear-engined, not mid-engined; not the cheapest air-cooled 911
+- 993: Varioram arrived for 1996; manual cars use a shift rod, not cables
+- 996: PASM/Sport Chrono weren't 996 options; 997 GT3 output range corrected (415–500 hp)
+
+**Voice**: every issue description, variant blurb, and buying tip is now in the first-person tech-editor voice; ALL-CAPS in guide steps changed to sentence case.
+
 ## Needs owner review
 
-Things I changed or added but couldn't verify well enough to call finished. Worth a read before merging.
+Much shorter now. What's left is judgment calls rather than likely errors:
 
-1. **Signature guides (T9)**, one per car: E28 M30 timing chain guides · E30 rear subframe and diff bushings · E34 M60 timing chain guides · E36 window regulator · E39 front thrust arm bushings · E46 rear subframe mount inspection · E90 electric water pump and thermostat · 924 timing belt and water pump · 928 timing belt and water pump · 944 timing and balance shaft belts · 964 distributor belt and vent kit · 986 IMS retrofit · 987 borescope inspection · 991 PDK service check · 993 hydraulic lifter noise · 996 IMS retrofit · 997 coolant pipe pinning (Turbo/GT2/GT3).
-2. **E30 oil capacities** in the oil change guide say M20 5.0 qt and M42 4.5 qt. I think these may be swapped (M20 ≈ 4.5 qt, M42 ≈ 5.3 qt). Not changed.
-3. **964 suspension guide** and **993 fan belt guide** (N12, N13): corrected, but procedure-level detail should be checked against a manual.
-4. **New issues**: E46 (4) and 993 SAI. Costs are estimates.
-5. **Prices** are marked "checked January 2026". Recheck and update `pricingGuide.asOf`.
-6. **Year conventions** (N9): model years vs production years are mixed across files.
-7. **991 coolant pipe**, **987.2/991 carbon buildup**, and the **986 "improved IMS bearing" best-years note** (A7).
-8. **944 timing belt inspection** guide mentions an inspection window; confirm.
-9. **Logo** is my redraw in the Gulf palette. Keep it, tweak it, or replace it with a designer's version.
-10. **Overviews and taglines** are written in your voice. Make sure they sound like you.
-11. **Issue descriptions** (137) had filler removed but weren't fully rewritten in first person. A later voice pass is optional.
-12. **Vehicle-page checklist removal**: anyone who saved progress in the old localStorage checklist on a vehicle page loses it.
+1. **Signature guides (T9)**: the key claims were checked (964 coil springs, 993 fan belt, 997 Mezger coolant pipes, E90 bleed routine, 944 tension gauge, PDK intervals). The procedures are conservative, but a read-through from you is still the best check.
+2. **924/944 drivetrain couplings**: the inspection checklist mentions a rubber coupling between the engine and torque tube. Confirm or remove.
+3. **Prices** are "checked January 2026". Recheck and update `pricingGuide.asOf` when you do.
+4. **Logo** is my redraw. Keep, tweak, or replace.
+5. **Vehicle-page checklist removal**: anyone with progress saved in the old localStorage checklist lost it.
 
 ## Change log
 
@@ -147,3 +173,4 @@ Things I changed or added but couldn't verify well enough to call finished. Wort
 - **2026-09-23**: `adc4386` vehicle data accuracy fixes (A1–A10, N11–N16), 17 signature guides, overviews/taglines, guide descriptions, filler and typography pass.
 - **2026-09-23**: `2ba1617` page copy (forum, account, calculator, Terms), About rebuild, CLAUDE.md/README/TODO updates.
 - **2026-09-23**: site URL switched to `https://www.zrgclassics.com` (Vercel's primary domain) so canonical tags, sitemap, and social links stop pointing at a redirect; About page owner section and "Why ZRG" added.
+- **2026-09-24**: content review pass (accuracy + voice) on branch `content-review`; see "Content review pass" above.

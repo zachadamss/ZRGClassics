@@ -23,7 +23,7 @@
       "id": "vanos",
       "title": "VANOS System Failure",
       "symptoms": "Rough idle, loss of power at low RPM, engine rattle on cold start, poor fuel economy",
-      "description": "The VANOS (Variable Nockenwellen Steuerung) system controls variable valve timing on BMW engines. On the E46, the VANOS seals are made of a rubber compound that degrades over time, causing oil leaks and loss of oil pressure to the VANOS unit. This results in improper valve timing and reduced engine performance.",
+      "description": "The E46's sixes use double VANOS to vary timing on both camshafts. The seals inside the unit harden with age and leak oil pressure, so the timing stops adjusting properly. You'll feel it as lost low-end torque, a rough idle, and a rattle on cold start. An upgraded seal kit fixes most cars.",
       "fixes": [
         "Replace VANOS seals with upgraded Viton seals",
         "Replace VANOS solenoids if seals don't resolve issue",
@@ -32,7 +32,7 @@
       "repairCosts": {
         "diy": "$100-200",
         "shop": "$400-800",
-        "notes": "Labor is 3-5 hours. Seal kit is most cost-effective fix."
+        "notes": "Three to five hours. A seal kit is the cost-effective fix."
       },
       "parts": [
         { "name": "VANOS Seal Kit (Beisan)", "partNumber": "BS032", "price": "$100-130" },
@@ -56,7 +56,7 @@
       "id": "cooling-system",
       "title": "Cooling System Failures",
       "symptoms": "Overheating, coolant leaks, temperature gauge fluctuation, steam from engine bay",
-      "description": "The E46 cooling system uses several plastic components that become brittle with age and heat cycles. The expansion tank, thermostat housing, and water pump impeller are particularly prone to failure. A complete cooling system failure can lead to catastrophic engine damage if the car overheats.",
+      "description": "The E46 cooling system is full of plastic that goes brittle: the expansion tank, thermostat housing, and water pump impeller are the usual failures. It's also the most common way these cars end up on the shoulder, and an overheated M54 doesn't forgive easily. Replace everything at once and you won't have to think about it for years.",
       "fixes": [
         "Replace expansion tank (recommended every 60k miles)",
         "Install aluminum thermostat housing",
@@ -66,7 +66,7 @@
       "repairCosts": {
         "diy": "$300-500",
         "shop": "$800-1500",
-        "notes": "Full refresh recommended. Budget for all components to avoid repeat work."
+        "notes": "Replace everything at once to avoid doing it twice."
       },
       "parts": [
         { "name": "Expansion Tank", "partNumber": "17137543003", "price": "$40-60" },
@@ -86,7 +86,7 @@
       "id": "subframe-crack",
       "title": "Rear Subframe Cracking",
       "symptoms": "Clunking from rear on acceleration, visible cracks in trunk floor, misaligned rear wheels",
-      "description": "A well-documented issue on E46 models, particularly those with higher mileage or that have been driven hard. The rear subframe mounting points can crack the floor pan due to inadequate reinforcement from the factory. This is a serious structural issue that requires professional repair.",
+      "description": "The rear subframe mounts can tear the floor they're bolted to, because the factory didn't reinforce it enough. It shows up most on high-mileage cars, M3s, and anything driven hard. It's structural, and once it's cracked the repair is welding. Check it before you buy any E46.",
       "fixes": [
         "Professional inspection of subframe mounting points",
         "Subframe reinforcement plates (if caught early)",
@@ -95,7 +95,7 @@
       "repairCosts": {
         "diy": "$200-400",
         "shop": "$1500-5000",
-        "notes": "DIY only for reinforcement plates on undamaged floors. Welding repairs require professional fabrication."
+        "notes": "Reinforcement plates on an undamaged floor are DIY-able. Cracked floors need a fabricator."
       },
       "parts": [
         { "name": "Subframe Reinforcement Plates (Kit)", "price": "$100-200" },
@@ -112,7 +112,7 @@
       "id": "window-regulator",
       "title": "Window Regulator Failure",
       "symptoms": "Window drops into door, grinding noise when operating window, window operates slowly",
-      "description": "The window regulators on the E46 use plastic guides and cables that wear out over time. When the regulator fails, the window can drop suddenly into the door or stop working altogether. This usually affects driver-side windows first due to more frequent use.",
+      "description": "E46 window regulators use plastic guides and cables that wear out. When they go, the window drops into the door or stops moving. The driver's side usually fails first.",
       "fixes": [
         "Replace window regulator assembly",
         "Some owners replace just the plastic clips if caught early",
@@ -121,7 +121,7 @@
       "repairCosts": {
         "diy": "$80-150",
         "shop": "$250-400",
-        "notes": "Per window. Easy DIY job - 1-2 hours. Door panel removal required."
+        "notes": "Per window. One to two hours, door panel off."
       },
       "parts": [
         { "name": "Window Regulator (Front Left)", "partNumber": "51338252393", "price": "$80-130" },
@@ -145,7 +145,7 @@
       "id": "control-arms",
       "title": "Control Arm Bushing Wear",
       "symptoms": "Vibration at highway speeds, wandering steering, clunking over bumps, uneven tire wear",
-      "description": "The front control arm bushings on the E46 wear out relatively quickly, especially on cars driven on rough roads. Worn bushings cause imprecise steering and can lead to accelerated tire wear. The E46 uses a multi-link front suspension that is sensitive to worn bushings.",
+      "description": "The front control arm bushings wear quickly, especially on rough roads, and the E46's MacPherson strut front end is sensitive to it. Worn bushings make the steering vague and chew through tires.",
       "fixes": [
         "Replace control arms with new bushings (often sold as complete assemblies)",
         "Consider upgraded polyurethane bushings for performance applications",
@@ -154,7 +154,7 @@
       "repairCosts": {
         "diy": "$200-400",
         "shop": "$500-900",
-        "notes": "For pair of lower control arms + alignment. Upper arms add $150-300."
+        "notes": "Pair of lower arms plus alignment. Upper (inner) bushings add $150–300."
       },
       "parts": [
         { "name": "Lower Control Arm (Left)", "partNumber": "31126758519", "price": "$60-100" },
@@ -330,25 +330,25 @@
         "Torque thrust rod bolts: subframe end 57 ft-lbs, knuckle bracket end 81 ft-lbs.",
         "Install new sway bar end links—torque to 48 ft-lbs.",
         "Move to rear suspension—support trailing arm with jack before removing anything.",
-        "For RTAB replacement: remove trailing arm rear bolt (21mm), press out old bushings with tool.",
+        "For rtab replacement: remove trailing arm rear bolt (21mm), press out old bushings with tool.",
         "Press new RTABs into trailing arm—note orientation marks on bushings.",
         "Remove and replace upper control arms (camber arms) - 57 ft-lbs at subframe, 81 ft-lbs at trailing arm.",
-        "Remove and replace lower control arms - 81 ft-lbs both ends. Torque at RIDE HEIGHT.",
+        "Remove and replace lower control arms - 81 ft-lbs both ends. Torque at ride height.",
         "For subframe bushing replacement: support subframe, lower it to access bushings, press new ones in.",
         "Reinstall all components, checking for correct torque on every fastener.",
         "Install wheels and lower vehicle—bounce corners to settle suspension.",
-        "Perform professional 4-wheel alignment IMMEDIATELY—do not drive far without alignment."
+        "Perform professional 4-wheel alignment immediately—do not drive far without alignment."
       ],
       "tips": [
         "The E46 multi-link rear is sensitive to worn bushings—imprecise handling often traces to RTABs.",
         "Always torque rear control arms at ride height—not with suspension hanging.",
-        "Meyle HD bushings are stiffer than OEM and last longer but transmit more road noise.",
+        "Meyle HD bushings are stiffer than oem and last longer but transmit more road noise.",
         "Mark subframe position before lowering to make reinstallation alignment easier.",
         "Replace subframe bushings while you have access—they're often overlooked.",
-        "Consider upgrading to SPC adjustable rear camber arms if chasing alignment specs."
+        "Consider upgrading to spc adjustable rear camber arms if chasing alignment specs."
       ],
       "warnings": [
-        "RTAB replacement requires a special press tool or a hydraulic press—do not attempt with hammers.",
+        "rtab replacement requires a special press tool or a hydraulic press—do not attempt with hammers.",
         "Worn RTABs can cause sudden rear-end instability—prioritize this repair if symptoms present.",
         "Always support subframe before loosening bolts—it's heavy and can shift suddenly.",
         "E46 M3 owners: inspect subframe mounting points for cracks before suspension work—if found, repair first."
@@ -423,7 +423,7 @@
         "Trunk rust often originates from clogged drain plugs in the spare tire well—clear these regularly.",
         "Battery acid accelerates rust in the battery tray—neutralize acid before repair.",
         "Rocker panel jacking points rust from inside out—catch it early or full replacement is needed.",
-        "POR-15 works well but must be topcoated as it degrades in UV light.",
+        "por-15 works well but must be topcoated as it degrades in UV light.",
         "Fluid Film applied annually to inner fenders and cavities prevents future rust."
       ],
       "warnings": [
@@ -475,7 +475,7 @@
       ],
       "steps": [
         "Start with instrument cluster pixel repair—remove cluster (4 Torx screws, disconnect cables).",
-        "Disassemble cluster housing to access the LCD display ribbon cable.",
+        "Disassemble cluster housing to access the lcd display ribbon cable.",
         "Use heat gun to warm existing ribbon, carefully peel off failed ribbon.",
         "Clean contact points with isopropyl alcohol and install new ribbon with heat gun.",
         "Reinstall cluster and verify all pixels display correctly.",
@@ -507,7 +507,7 @@
         "Disconnect battery before any electrical work to prevent shorts and airbag deployment.",
         "Be careful with the vapor barrier when removing door panels—it keeps water out.",
         "Don't force instrument cluster removal—the locking tabs are fragile.",
-        "When soldering pixel ribbon, use minimal heat—excess heat damages the LCD.",
+        "When soldering pixel ribbon, use minimal heat—excess heat damages the lcd.",
         "ABS sensors are magnetic—keep away from other sensors and metal debris."
       ],
       "references": [
@@ -878,7 +878,8 @@
         "The E46 uses a cartridge-style filter—the housing stays in place.",
         "Always replace the O-ring to prevent leaks from the filter housing.",
         "Check the oil filter housing gasket for signs of leaking while you have access."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "expansion-tank",
@@ -916,7 +917,8 @@
         "Inspect the old tank carefully—cracks often start at the seams or sensor fitting.",
         "This is a known failure point—replace preventively rather than waiting for failure.",
         "Consider doing a full cooling system refresh while you have coolant drained."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "brake-pads",
@@ -957,9 +959,10 @@
       ],
       "tips": [
         "Always replace pads in axle pairs—never replace just one side.",
-        "E46 wear sensors are on front left and rear right—reset the CBS if equipped.",
+        "E46 wear sensors are on front left and rear right—reset the cbs if equipped.",
         "Bed new pads with gradual stops—avoid heavy braking for the first 100 miles."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "cooling-system-refresh",
@@ -983,7 +986,7 @@
       "steps": [
         "Ensure engine is completely cool before starting.",
         "Remove the intake snorkel and cabin filter housing cover for access.",
-        "Remove the fan clutch using 32mm wrench and holding tool (LEFT-HAND THREAD—clockwise to loosen).",
+        "Remove the fan clutch using 32mm wrench and holding tool (left-hand thread—clockwise to loosen).",
         "Remove the fan shroud clips and lift fan and shroud out together.",
         "Drain coolant from the radiator drain plug and expansion tank.",
         "Disconnect all hoses from the thermostat housing.",
@@ -995,17 +998,18 @@
         "Install the water pump pulley.",
         "Install new thermostat in the housing with new gasket—jiggle valve at 12 o'clock.",
         "Replace expansion tank (recommended) and all coolant hoses.",
-        "Reinstall fan clutch (LEFT-HAND THREAD—counter-clockwise to tighten).",
+        "Reinstall fan clutch (left-hand thread—counter-clockwise to tighten).",
         "Fill system with 50/50 BMW coolant through the expansion tank.",
         "Bleed the system by running engine with heater on max, cap off, until thermostat opens.",
         "Top off coolant, install cap, and check for leaks at operating temperature."
       ],
       "tips": [
-        "The fan clutch is LEFT-HAND THREADED—turn clockwise to remove, counter-clockwise to tighten.",
+        "The fan clutch is left-hand threaded—turn clockwise to remove, counter-clockwise to tighten.",
         "Use a water pump with metal impeller—plastic impellers can fail catastrophically.",
         "Consider upgrading to an aluminum thermostat housing to prevent future cracks.",
         "Inspect the radiator end tanks for cracks while you have access—replace if questionable."
-      ]
+      ],
+      "warnings": []
     }
   ],
   "restorationItems": {
@@ -1066,19 +1070,19 @@
       {
         "name": "328i",
         "years": "1999-2000",
-        "description": "Early E46 with 2.8L M52TU producing 193 hp. Only available first two years before transition to 330i.",
+        "description": "The early 2.8L M52TU with 193 hp, sold for two years before the 330i replaced it.",
         "desirability": "Medium"
       },
       {
         "name": "330i / 330Ci",
         "years": "2001-2006",
-        "description": "Top inline-six with 3.0L M54 producing 225 hp. Performance-oriented with ZHP package available. Available as sedan, coupe, convertible, and wagon.",
+        "description": "The 3.0L M54 with 225 hp. Sedan, coupe, convertible, or wagon, and the base for the ZHP.",
         "desirability": "High"
       },
       {
         "name": "330i ZHP",
         "years": "2003-2006",
-        "description": "The ZHP Performance Package added aggressive styling, sport suspension, limited-slip differential, and 235 hp. The closest to an M3 without the M tax.",
+        "description": "The ZHP Performance Package: 235 hp from sharper cams, a shorter final drive, sport suspension, and unique trim. Sharper than a regular 330i, without M3 running costs. It didn't include a limited-slip differential.",
         "desirability": "High"
       },
       {
@@ -1090,7 +1094,7 @@
       {
         "name": "325xi / 330xi",
         "years": "2001-2005",
-        "description": "All-wheel drive variants. Popular in snowy climates but adds complexity and weight. Less sporting character.",
+        "description": "All-wheel drive. Great in the snow, but heavier and less lively than the rear-drive cars.",
         "desirability": "Medium"
       }
     ],
@@ -1212,14 +1216,14 @@
       }
     },
     "redFlags": [
-      "M3 without rod bearing service documentation—this is a known failure point",
-      "Subframe cracks or reinforcement welds on M3 (indicates track abuse)",
-      "Overheating history or milky oil (head gasket failure)",
-      "Rough idle with no explanation (VANOS failure)",
-      "Extensive amateur modifications or drift car history",
+      "An M3 without rod bearing records. It's a known failure point.",
+      "Subframe cracks or reinforcement welds on an M3 (usually track use)",
+      "Overheating history or milky oil",
+      "A rough idle nobody can explain (often VANOS)",
+      "Lots of amateur modifications, or drift car history",
       "Check engine light for VANOS or oxygen sensor codes",
-      "Water damage in trunk or interior from failed seals",
-      "Missing cooling system service records on high-mileage cars"
+      "Water in the trunk or cabin from failed seals",
+      "No cooling system records on a high-mileage car"
     ],
     "whatToLookFor": [
       "Manual transmission (5-speed or 6-speed on M3)",
@@ -1241,15 +1245,15 @@
     },
     "expertTips": [
       "The 330i ZHP is the one I'd look for: sharper than a regular 330i, without M3 running costs",
-      "Cooling system components should be replaced proactively—overheating kills these engines",
-      "M3 rod bearing service is mandatory—either verify it's been done or budget for it immediately",
-      "Window regulators are easy DIY repairs—don't let them deter you from an otherwise good car",
-      "The E46 chassis is excellent for track use with proper preparation (subframe reinforcement)",
-      "Avoid high-mileage automatic transmission cars—the ZF 5HP19 can develop issues",
-      "The xi all-wheel drive models are heavier and less engaging—rear-wheel drive is preferred",
-      "Parts availability is excellent and many components are shared with E39",
+      "Replace the cooling system parts before they fail. Overheating is what kills these engines.",
+      "On an M3, rod bearings aren't optional. Confirm they've been done or budget for them right away.",
+      "Window regulators are an easy DIY. Don't let one put you off an otherwise good car.",
+      "The E46 makes a great track car with the right prep, starting with subframe reinforcement.",
+      "Be cautious with high-mileage automatics. Check shift quality and ask about fluid service.",
+      "The xi models are heavier and less engaging. Rear-drive is the one to have.",
+      "Parts are cheap and plentiful, and many are shared with the E39.",
       "A well-maintained E46 will pass 250,000 miles. They're durable cars.",
-      "Join bimmerforums.com for excellent E46 technical resources and buyer advice"
+      "Bimmerforums and E46Fanatics are both good places for technical help and buying advice."
     ]
   },
   "communityResources": {

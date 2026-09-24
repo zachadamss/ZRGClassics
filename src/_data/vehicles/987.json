@@ -22,7 +22,7 @@
       "id": "ims-bearing",
       "title": "IMS Bearing Failure (987.1 Only)",
       "symptoms": "Metallic debris in oil, grinding noise, oil pressure warning, catastrophic engine failure",
-      "description": "The 987.1 (2005-2008) uses the M97 engine which has the IMS (intermediate shaft) bearing that can fail. This dual-row bearing supports the intermediate shaft that drives the camshafts. When it fails, metal debris contaminates the engine and failure is catastrophic. The 987.2 (2009+) uses a different engine design with no IMS bearing concern.",
+      "description": "The 987.1's M97 engine still has an intermediate shaft bearing. 2005 cars use the retrofittable single-row bearing; from 2006 Porsche fitted a larger bearing that fails less often but can't be replaced without splitting the engine. The 987.2 (2009 on) uses a new engine family with no IMS bearing at all.",
       "fixes": [
         "987.1: Proactive IMS bearing replacement highly recommended",
         "LN Engineering or IMS Retrofit single-row bearing upgrade",
@@ -37,7 +37,7 @@
       "repairCosts": {
         "diy": "$500-1000",
         "shop": "$2000-3500",
-        "notes": "987.1 only (M97). 987.2 has different design—no IMS concern."
+        "notes": "987.1 only. The 987.2 has no IMS bearing."
       },
       "parts": [
         { "name": "IMS Bearing Retrofit", "brand": "LN Engineering", "price": "$400-600" },
@@ -54,7 +54,7 @@
       "id": "bore-scoring",
       "title": "Bore Scoring / Cylinder Wear (987.1)",
       "symptoms": "Ticking/knocking noise, smoke on cold start, excessive oil consumption, low compression",
-      "description": "The M97 engine in the 987.1 can develop cylinder bore scoring, where the cylinder walls become damaged, allowing oil to bypass the piston rings. Cylinder 6 is most commonly affected due to cooling system design. The 987.2 with the MA1 engine has improved cooling and does not have this issue.",
+      "description": "The M97 can score its cylinder walls, letting oil past the rings. It's often reported worst on one bank, with cylinder 6 the most common, and it shows up as a ticking cold start, oil consumption, and sooty tailpipes on one side. The 987.2's engine doesn't have the problem. A borescope check before you buy a 987.1 is cheap insurance.",
       "fixes": [
         "Borescope the cylinders before you buy (987.1)",
         "Minor scoring: monitor with oil analysis, use quality oil",
@@ -69,7 +69,7 @@
       "repairCosts": {
         "diy": "N/A",
         "shop": "$5000-15000",
-        "notes": "987.1 M97 engine. Borescope inspection recommended."
+        "notes": "987.1 only. Borescope before you buy."
       },
       "parts": [
         { "name": "Cylinder Sleeving", "brand": "LN Engineering", "price": "$800-1200/cyl" }
@@ -80,7 +80,7 @@
       "id": "rms-leak",
       "title": "Rear Main Seal Leak (987.1)",
       "symptoms": "Oil drips from bell housing area, oil smell, clutch slipping (manual), burning oil smell",
-      "description": "The M97 engine in the 987.1 can develop rear main seal (RMS) leaks, similar to the 997.1. Oil leaks onto the clutch in manual transmission cars, causing slippage. The leak can also affect the intermediate plate seal. This is less common in the 987.2.",
+      "description": "Like the 986 and 997.1, the 987.1's M97 can weep oil from its rear main seal, and on manual cars enough can reach the clutch to make it slip. Replacing it means pulling the gearbox. It's much less common on the 987.2.",
       "fixes": [
         "Rear main seal replacement (requires transmission removal)",
         "Replace clutch if contaminated with oil",
@@ -95,7 +95,7 @@
       "repairCosts": {
         "diy": "$400-800",
         "shop": "$1500-2500",
-        "notes": "987.1 shares RMS issues with 986/996."
+        "notes": "Transmission out. Do the clutch at the same time if it's worn."
       },
       "parts": [
         { "name": "Rear Main Seal", "partNumber": "99710322571", "price": "$30-60" }
@@ -106,7 +106,7 @@
       "id": "aos-failure",
       "title": "Air/Oil Separator (AOS) Failure",
       "symptoms": "Smoke from exhaust, oil consumption, rough idle, check engine light, vacuum leaks",
-      "description": "The AOS separates oil vapor from crankcase gases. When it fails, oil is drawn into the intake manifold and burned, causing smoke and consumption. The AOS diaphragm can also tear, creating a vacuum leak that affects idle quality. This affects both 987.1 and 987.2 models.",
+      "description": "The air/oil separator strips oil from crankcase gases. When its diaphragm fails, oil gets pulled into the intake and burned, so you'll see smoke on startup and rising oil consumption, and the vacuum leak roughs up the idle. Both the 987.1 and 987.2 can have it.",
       "fixes": [
         "AOS replacement (located under intake manifold)",
         "Replace vacuum lines while accessible",
@@ -121,7 +121,7 @@
       "repairCosts": {
         "diy": "$200-400",
         "shop": "$400-800",
-        "notes": "Both 987.1 and 987.2 can have AOS issues."
+        "notes": "Both generations can have it."
       },
       "parts": [
         { "name": "AOS Assembly", "partNumber": "99710704453", "price": "$200-350" }
@@ -132,7 +132,7 @@
       "id": "coolant-pipes",
       "title": "Coolant Pipe and System Failures",
       "symptoms": "Coolant loss, overheating, coolant warning, sweet smell, puddles under car",
-      "description": "The 987's mid-engine layout requires long coolant runs from the front-mounted radiators to the rear engine. Plastic coolant pipes, water pump, and expansion tank all degrade with heat and age. Coolant pipe failure can cause overheating and engine damage if not addressed immediately.",
+      "description": "Coolant has a long trip from the radiators in the nose to the engine behind the seats. Plastic pipes and fittings, the water pump, and the expansion tank all age with heat. Watch the coolant level, replace the pump on schedule, and fix small leaks early.",
       "fixes": [
         "Replace plastic coolant pipes with aluminum upgrade",
         "Replace water pump with metal impeller version",
@@ -147,7 +147,7 @@
       "repairCosts": {
         "diy": "$200-400",
         "shop": "$500-1000",
-        "notes": "Same plastic pipe issues as 986. Aluminum upgrade available."
+        "notes": "Aluminum replacements exist for the plastic parts that fail."
       },
       "parts": [
         { "name": "Coolant Pipe Kit", "price": "$150-300" },
@@ -159,7 +159,7 @@
       "id": "convertible-top",
       "title": "Convertible Top Issues (Boxster)",
       "symptoms": "Top won't open/close, slow operation, error messages, hydraulic leaks, torn fabric",
-      "description": "The Boxster's power convertible top is complex and can develop issues. The hydraulic pump and rams wear, causing slow operation or failure to complete cycles. Microswitches fail, preventing operation. The fabric top itself wears and can develop tears or leaks at seams and the rear window.",
+      "description": "The Boxster's power top wears in the usual places: the hydraulic pump and rams slow down, microswitches fail and stop the top mid-cycle, and the fabric wears at the seams. Keep the drains clear so water doesn't end up in the cabin.",
       "fixes": [
         "Hydraulic fluid top-off (use correct fluid)",
         "Hydraulic pump and ram replacement",
@@ -175,7 +175,7 @@
       "repairCosts": {
         "diy": "$100-400",
         "shop": "$400-1500",
-        "notes": "Boxster only. Hydraulic system issues common."
+        "notes": "Boxster only."
       },
       "parts": [
         { "name": "Hydraulic Pump", "partNumber": "98756160901", "price": "$400-700" },
@@ -187,7 +187,7 @@
       "id": "carbon-buildup",
       "title": "Carbon Buildup on Intake Valves (987.2 S Direct Injection)",
       "symptoms": "Rough idle, misfires, reduced power, hesitation, poor fuel economy",
-      "description": "The 987.2 uses direct fuel injection (DFI) which doesn't wash the intake valves with fuel. Over time, carbon deposits accumulate on the intake valves, affecting airflow and combustion. This requires periodic cleaning via walnut shell blasting, typically every 50,000-80,000 miles.",
+      "description": "The 987.2 S uses direct injection, so fuel no longer washes the backs of the intake valves and some carbon builds up. Porsche's layout seems less prone to it than many direct-injected engines, and plenty of cars never need cleaning. If a high-mileage car idles roughly or feels down on power, walnut blasting is the fix.",
       "fixes": [
         "Walnut shell blasting to remove carbon deposits",
         "Chemical treatments (less effective but less invasive)",
@@ -202,7 +202,7 @@
       "repairCosts": {
         "diy": "$200-400",
         "shop": "$500-1000",
-        "notes": "987.2 DFI engines. Walnut blasting every 50-80k miles."
+        "notes": "Mild on these engines. Walnut blasting if it's needed."
       },
       "parts": [
         { "name": "Walnut Media", "price": "$30-50" },
@@ -214,7 +214,7 @@
       "id": "window-regulators",
       "title": "Window Regulator Failure",
       "symptoms": "Window won't go up/down, grinding noise, slow window operation, window drops",
-      "description": "The 987's frameless windows use regulators that wear over time. The cable-driven regulators can fail, causing the window to drop or operate erratically. Since the windows must drop slightly for the door to open and close, a failed regulator can make it difficult to close the door properly.",
+      "description": "The frameless windows drop slightly when you open the door, and a worn regulator or a misadjusted window can make the door hard to close properly. Regulators fail with frayed cables or broken plastic parts.",
       "fixes": [
         "Window regulator replacement",
         "Motor replacement if regulator is intact but motor failed",
@@ -229,7 +229,7 @@
       "repairCosts": {
         "diy": "$100-200",
         "shop": "$300-500",
-        "notes": "Frameless windows. Adjustment and regulator issues."
+        "notes": "Frameless glass needs proper adjustment."
       },
       "parts": [
         { "name": "Window Regulator", "partNumber": "98754207504", "price": "$150-250" }
@@ -818,7 +818,8 @@
         "987.2 has no IMS concern—uses different engine design.",
         "Use quality synthetic oil meeting Porsche A40 specification.",
         "The 987.2 uses a top-mounted cartridge filter like BMW."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "brake-pads",
@@ -861,7 +862,8 @@
         "Four-piston calipers require all pistons pushed back evenly.",
         "Bed new pads with moderate stops—avoid hard braking initially.",
         "Wear sensors should be replaced with new pads."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "spark-plugs",
@@ -895,11 +897,12 @@
         "Start engine and verify smooth operation."
       ],
       "tips": [
-        "Use NGK or Bosch platinum/iridium plugs specified for your engine.",
+        "Use ngk or Bosch platinum/iridium plugs specified for your engine.",
         "Both 987.1 and 987.2 use coil-on-plug ignition.",
         "Inspect coil boots for cracks while replacing plugs.",
         "Replace coils if you're experiencing misfires."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "serpentine-belt",
@@ -936,7 +939,8 @@
         "If the tensioner pulley is noisy, replace it with the belt.",
         "Check idler pulleys for smooth rotation while belt is off.",
         "A cracked belt can leave you stranded—replace proactively."
-      ]
+      ],
+      "warnings": []
     }
   ],
   "restorationItems": {
@@ -990,25 +994,25 @@
       {
         "name": "Boxster / Cayman",
         "years": "2005-2012",
-        "description": "Base models with 2.7L (240-255 hp) or 2.9L (255 hp). Excellent entry point.",
+        "description": "The base cars: a 2.7L with 240–255 hp, then a 2.9L on the 987.2 with 255–265 hp. A great way in.",
         "desirability": "Medium"
       },
       {
         "name": "Boxster S / Cayman S",
         "years": "2005-2012",
-        "description": "Performance models with 3.2L/3.4L (295-320 hp). Better brakes, LSD available.",
+        "description": "The 3.2L or 3.4L with 280–320 hp, bigger brakes, and an optional limited-slip differential.",
         "desirability": "High"
       },
       {
         "name": "Cayman R",
         "years": "2011-2012",
-        "description": "Lightweight special with 330 hp, sport suspension, and bucket seats. The driver's choice.",
+        "description": "Lighter, with 330 hp, stiffer suspension, and bucket seats. The one for drivers.",
         "desirability": "High"
       },
       {
         "name": "Boxster Spyder",
         "years": "2010-2012",
-        "description": "Lightweight roadster with manual top, 320 hp, and aggressive styling. Very desirable.",
+        "description": "The lightweight roadster, with a manual top and 320 hp. Very desirable.",
         "desirability": "High"
       }
     ],
@@ -1018,7 +1022,7 @@
         "items": [
           {
             "check": "IMS Bearing Status",
-            "detail": "987.1 (2005-2008) has improved IMS bearing but failure is still possible. Verify if retrofitted.",
+            "detail": "The 987.1 (2005–08) still has an IMS bearing: the retrofittable single-row type in 2005, then a larger, more durable one that can't be serviced without splitting the engine. Ask about its history, check the oil filter for metal, and consider an oil analysis. The 987.2 has no IMS bearing.",
             "costIfBad": "$2,000-3,500 for retrofit"
           },
           { "check": "Bore Scoring", "detail": "M97 engine can develop bore scoring. Listen for knocking, check for smoke.", "costIfBad": "$10,000-20,000" },
@@ -1104,14 +1108,14 @@
       "fuel": "20-27 MPG"
     },
     "expertTips": [
-      "The 987.2 is the safest buy with no IMS bearing concerns",
-      "The Cayman is often considered the best-handling Porsche",
-      "Cayman R and Boxster Spyder are appreciating classics",
-      "Manual transmission is more engaging but PDK is faster",
-      "987 parts are more affordable than 911 parts",
-      "The mid-engine layout makes certain maintenance easier",
-      "Join Rennlist.com for excellent owner community",
-      "Budget for consumables but enjoy lower running costs than 911"
+      "The 987.2 is the safer buy: no IMS bearing to worry about.",
+      "Many people consider the Cayman the best-handling Porsche of its era.",
+      "The Cayman R and Boxster Spyder are already collector cars.",
+      "The manual is more engaging. The PDK (987.2 only) is quicker.",
+      "987 parts cost less than 911 parts.",
+      "The mid-engine layout makes some jobs harder. The engine is reached through panels behind the seats and from underneath.",
+      "Planet-9 and Rennlist both have excellent 987 communities.",
+      "Running costs are noticeably lower than a 911 of the same age."
     ]
   },
   "communityResources": {

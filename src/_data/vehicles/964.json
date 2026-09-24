@@ -21,7 +21,7 @@
       "id": "oil-leaks",
       "title": "Oil Leaks (Chain Housing and Case Seams)",
       "symptoms": "Oil spots under car, oil on engine surfaces, visible seepage, low oil level, burning oil smell",
-      "description": "The 964's M64 engine is known for oil leaks. The most common source is the chain housing gasket (timing chain cover), but oil also seeps from the case half seams, valve cover gaskets, oil cooler seals, and cam tower o-rings. While some seepage is considered normal for air-cooled engines, excessive leaks require attention.",
+      "description": "Every M64 seeps a little. The chain housing gaskets are the usual source, followed by the case seams, valve covers, oil cooler seals, and cam tower O-rings. Some seepage is normal on an air-cooled 911. Drips on the floor aren't, and neither is oil on the heat exchangers.",
       "fixes": [
         "Chain housing (timing cover) gasket replacement—most common leak",
         "Case seam resealing requires engine removal",
@@ -37,7 +37,7 @@
       "repairCosts": {
         "diy": "$200-500",
         "shop": "$500-1200",
-        "notes": "Chain housings, valve covers, and cam towers common."
+        "notes": "Chain housings, valve covers, and cam towers are the common ones."
       },
       "parts": [
         { "name": "Chain Housing Gasket Set", "partNumber": "96410519501", "price": "$100-200" },
@@ -50,10 +50,10 @@
       "id": "dual-mass-flywheel",
       "title": "Dual-Mass Flywheel Failure",
       "symptoms": "Clutch chatter, vibration at idle in gear, rattling noise, difficulty engaging gears",
-      "description": "The 964 was the first 911 to use a dual-mass flywheel (DMF) to smooth out the flat-six's inherent vibration. These flywheels have internal springs and dampers that wear out over time, causing chatter and vibration. A failed DMF can also damage the clutch and transmission input shaft bearing.",
+      "description": "The 964 was the first 911 with a dual-mass flywheel, which uses internal springs to smooth out vibration. The springs wear, and a worn one rattles at idle and chatters on take-off. Left alone, it can damage the clutch and the gearbox input bearing. Replacing it means pulling the gearbox, so do the clutch at the same time.",
       "fixes": [
-        "Replace dual-mass flywheel with OEM or single-mass conversion",
-        "Single-mass conversion popular but increases drivetrain NVH",
+        "Replace dual-mass flywheel with oem or single-mass conversion",
+        "Single-mass conversion popular but increases drivetrain nvh",
         "Replace clutch and throw-out bearing at the same time",
         "Inspect transmission input shaft bearing while apart",
         "Consider lightweight flywheel for track use"
@@ -65,7 +65,7 @@
       "repairCosts": {
         "diy": "$800-1500",
         "shop": "$2000-3500",
-        "notes": "DMF failure requires trans removal. Convert to single mass optional."
+        "notes": "Gearbox out. A single-mass conversion is an option."
       },
       "parts": [
         { "name": "Dual Mass Flywheel", "partNumber": "96411401200", "price": "$800-1200" },
@@ -94,7 +94,7 @@
       "repairCosts": {
         "diy": "$200-400",
         "shop": "$400-800",
-        "notes": "DME trigger failure. Rebuilt units available."
+        "notes": "Replace the internal belt and fit a vent kit."
       },
       "parts": [
         { "name": "Distributor (Rebuilt)", "price": "$300-600" },
@@ -107,7 +107,7 @@
       "id": "power-steering",
       "title": "Power Steering System Issues",
       "symptoms": "Whining pump, heavy steering, fluid leaks, lack of assist, groaning noise",
-      "description": "The 964 was the first 911 with standard power steering. The hydraulic system includes a pump, rack, reservoir, and lines that all age. Power steering pump failure is common, as are leaks from the rack seals, high-pressure lines, and return lines. The fluid should be changed regularly.",
+      "description": "The 964 was the first 911 with power steering as standard. The pump, rack, and hoses are all 30 years old now: pumps fail, and the rack seals and pressure lines leak. Change the fluid regularly and fix leaks early.",
       "fixes": [
         "Power steering pump rebuild or replacement",
         "Replace leaking high-pressure and return hoses",
@@ -122,7 +122,7 @@
       "repairCosts": {
         "diy": "$200-400",
         "shop": "$500-1000",
-        "notes": "Pump and rack leaks common."
+        "notes": "Pump and rack leaks are the common ones."
       },
       "parts": [
         { "name": "Power Steering Pump", "partNumber": "96434704007", "price": "$300-500" },
@@ -134,7 +134,7 @@
       "id": "g50-transmission",
       "title": "G50 Transmission Synchro Wear",
       "symptoms": "Grinding when shifting, difficulty engaging gears, blocked shifts, gear pop-out",
-      "description": "The 964 uses the Getrag G50 5-speed transmission. While generally tough, the synchros wear over time, especially second gear. Aggressive driving, improper fluid, and inadequate warm-up accelerate wear. A worn synchro will grind or block when trying to engage the affected gear.",
+      "description": "The G50 five-speed is tough, but its synchros wear, especially second. Hard driving, the wrong gear oil, and shifting before it's warm all speed that up. A worn synchro grinds or blocks going into gear.",
       "fixes": [
         "Regular transmission fluid changes (GL-4 or Swepco 201)",
         "Synchro replacement during transmission rebuild",
@@ -149,7 +149,7 @@
       "repairCosts": {
         "diy": "$100-300",
         "shop": "$400-1500",
-        "notes": "Synchros wear (especially 2nd). Use correct GL-4 fluid."
+        "notes": "Second gear wears first. Use the correct gear oil."
       },
       "parts": [
         { "name": "GL-4 Gear Oil (Swepco 201)", "price": "$40-80" },
@@ -161,7 +161,7 @@
       "id": "cylinder-head-studs",
       "title": "Cylinder Head Stud Failures",
       "symptoms": "Oil leak at head, coolant seepage, compression loss, misfires",
-      "description": "The M64 engine can develop head stud issues, particularly the through-bolts that secure the heads to the case. These studs can pull out or stretch, especially if the engine has been overheated or has had incorrect torque applied. This is more common on Turbo models due to higher cylinder pressures.",
+      "description": "Head stud trouble is less common on the 964's 3.6L than on earlier air-cooled engines, but it happens, usually after overheating or incorrect torque. A broken or pulled stud lets combustion gases leak and the engine loses compression. Fixing it means taking the engine out.",
       "fixes": [
         "Head stud inspection during any engine work",
         "Follow the torque procedure exactly on reassembly",
@@ -176,7 +176,7 @@
       "repairCosts": {
         "diy": "$800-1500",
         "shop": "$2500-5000",
-        "notes": "Head stud failures on early 964. Requires engine removal."
+        "notes": "Engine-out work. Check with a leak-down test."
       },
       "parts": [
         { "name": "Head Stud Kit (Dilavar)", "price": "$400-700" },
@@ -188,10 +188,10 @@
       "id": "ac-system",
       "title": "Air Conditioning System Problems",
       "symptoms": "Weak cooling, no cold air, AC compressor noise, clutch not engaging",
-      "description": "The 964's air conditioning system uses R-12 refrigerant (original) and is complex due to the mid-engine layout. Compressor failures, condenser leaks, and evaporator issues are common in older systems. Many have been converted to R-134a with varying success. The AC evaporator requires dashboard removal to replace.",
+      "description": "The original system uses R12, and its long refrigerant lines run from the engine at the back to the front of the car. Compressors, condensers, and evaporators all age, and many cars were converted to R134a with mixed results. Replacing the evaporator means taking the dash apart.",
       "fixes": [
         "R-134a conversion with proper components",
-        "Compressor replacement (denso or OEM)",
+        "Compressor replacement (denso or oem)",
         "Condenser inspection and replacement if leaking",
         "Evaporator replacement (major labor, dashboard out)",
         "Receiver-drier replacement with any major AC work",
@@ -204,7 +204,7 @@
       "repairCosts": {
         "diy": "$200-500",
         "shop": "$600-1500",
-        "notes": "R12 to R134a conversion common."
+        "notes": "Many conversions to R134a were done poorly."
       },
       "parts": [
         { "name": "AC Compressor", "price": "$400-700" },
@@ -216,7 +216,7 @@
       "id": "electrical-issues",
       "title": "Electrical System Problems",
       "symptoms": "Gauge failures, intermittent lights, dead dashboard, alarm issues, starting problems",
-      "description": "The 964 introduced more electrical complexity than earlier 911s, and these systems age poorly. The DME relay is a common failure point, as are ground connections and the alarm/immobilizer system. Gauge clusters develop cold solder joints. Wiring in the engine bay becomes brittle from heat.",
+      "description": "The 964 has far more electronics than earlier 911s. The DME relay fails, grounds corrode, the alarm and immobilizer act up, and gauge clusters develop cracked solder joints. Engine bay wiring goes brittle from the heat.",
       "fixes": [
         "DME relay replacement (common failure)",
         "Clean and resecure ground connections",
@@ -232,7 +232,7 @@
       "repairCosts": {
         "diy": "$100-300",
         "shop": "$300-700",
-        "notes": "DME and relay issues. Grounds important."
+        "notes": "Relays and grounds first."
       },
       "parts": [
         { "name": "DME Relay", "partNumber": "96461815100", "price": "$40-80" },
@@ -298,7 +298,7 @@
       "tips": [
         "Unlike earlier 911s, the 964 uses coil springs over the dampers at all four corners, so there are no torsion bars to index.",
         "Elephant Racing makes excellent polyurethane upgrades for street/track use.",
-        "Original rubber bushings are adequate for street use with OEM handling feel.",
+        "Original rubber bushings are adequate for street use with oem handling feel.",
         "Mark all adjustment points and count turns for ride height reference.",
         "Consider Bilstein HD or Koni adjustables for improved handling.",
         "Check CV boots while suspension is disassembled—common failure point.",
@@ -369,7 +369,7 @@
         "Tack weld panels in place, checking fit frequently.",
         "Finish weld using stitch welding to prevent warpage.",
         "Grind welds smooth and apply seam sealer to all joints.",
-        "Treat interior surfaces with rust preventive (POR-15 or equivalent).",
+        "Treat interior surfaces with rust preventive (por-15 or equivalent).",
         "Apply rubberized underseal to exterior underbody surfaces.",
         "Prime and paint repaired areas to match existing finish.",
         "Apply cavity wax to all hollow sections for ongoing protection."
@@ -380,7 +380,7 @@
         "Kidney area rust often starts invisibly and spreads—probe thoroughly.",
         "Original factory underseal can trap moisture—remove damaged sections.",
         "Quality reproduction panels are available from Restoration Design and others.",
-        "POR-15 requires proper surface preparation—follow instructions exactly.",
+        "por-15 requires proper surface preparation—follow instructions exactly.",
         "Consider professional inspection before purchasing a 964 to assess rust severity.",
         "Cars from coastal or salt-road areas require extra diligence."
       ],
@@ -388,7 +388,7 @@
         "Extensive rust repair can exceed the vehicle's value—assess carefully first.",
         "Welding near fuel lines and tank requires proper safety precautions.",
         "Improper structural repairs can affect crash safety—consult professionals if unsure.",
-        "MIG welding thin body panels requires skill to avoid burn-through.",
+        "mig welding thin body panels requires skill to avoid burn-through.",
         "Rust preventive coatings require proper ventilation and safety equipment.",
         "Disconnect battery and fuel system before any welding operations."
       ],
@@ -460,7 +460,7 @@
         "Good grounds matter—clean and protect with dielectric grease.",
         "The gauge cluster capacitor kit is an inexpensive preventive repair.",
         "Biodegradable wiring insulation attracts rodents—inspect stored cars carefully.",
-        "Consider upgrading to LED bulbs for instrument lighting—more reliable.",
+        "Consider upgrading to led bulbs for instrument lighting—more reliable.",
         "The 964 uses dual distributors—service both at the same time.",
         "Document any wiring changes with photographs for future reference."
       ],
@@ -791,7 +791,6 @@
       { "component": "Control Arm Bolts", "spec": "63 ft-lbs (85 Nm)", "notes": "Tighten with weight on wheels" },
       { "component": "Tie Rod End Nut", "spec": "33 ft-lbs (45 Nm)", "notes": "Use new cotter pin" },
       { "component": "Shock Absorber Top Nut", "spec": "55 ft-lbs (75 Nm)", "notes": "" },
-      { "component": "Torsion Bar Cover", "spec": "34 ft-lbs (46 Nm)", "notes": "" },
       { "component": "Steering Wheel Nut", "spec": "33 ft-lbs (45 Nm)", "notes": "" }
     ],
     "brakes": [
@@ -839,7 +838,8 @@
         "Use quality 15W-50 or 20W-50 conventional or synthetic oil.",
         "Check for oil leaks at valve covers and chain housings while working.",
         "Some owners use Mobil 1 15W-50 or Brad Penn racing oil."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "brake-pads",
@@ -879,9 +879,10 @@
       "tips": [
         "Four-piston calipers require all pistons pushed back evenly.",
         "Open brake fluid reservoir before compressing pistons.",
-        "Use quality pads from Pagid, Hawk, or Porsche OEM.",
+        "Use quality pads from Pagid, Hawk, or Porsche oem.",
         "Bed new pads with gradual stops—avoid hard braking for 100 miles."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "distributor-service",
@@ -916,11 +917,12 @@
         "Start engine and verify smooth operation."
       ],
       "tips": [
-        "Always use Bosch or OEM quality caps and rotors.",
+        "Always use Bosch or oem quality caps and rotors.",
         "Note the firing order: 1-6-2-4-3-5 with cylinders numbered from front.",
         "Inspect the distributor gear for wear while the cap is off.",
         "Replace spark plug wires if they show cracking or corrosion."
-      ]
+      ],
+      "warnings": []
     },
     {
       "id": "valve-adjustment",
@@ -958,7 +960,8 @@
         "Mark each valve as you adjust to track progress.",
         "Cylinder 1 is at the front right (passenger side, front).",
         "Too tight = burned valves; too loose = noisy, poor performance."
-      ]
+      ],
+      "warnings": []
     }
   ],
   "restorationItems": {
@@ -1013,19 +1016,19 @@
       {
         "name": "Carrera 2",
         "years": "1990-1994",
-        "description": "Rear-wheel drive variant with 247 hp. Lighter and more pure driving experience than C4. The driver's choice.",
+        "description": "Rear-wheel drive with the 3.6L and 247 hp. Lighter and more pure than the C4, and the one most drivers want.",
         "desirability": "High"
       },
       {
         "name": "Carrera 4",
         "years": "1989-1994",
-        "description": "All-wheel drive with sophisticated viscous coupling. Heavier but more stable. First year of 964 production.",
+        "description": "All-wheel drive, and the first 964 on sale. Heavier, but more planted in bad weather.",
         "desirability": "Medium"
       },
       {
         "name": "RS / RS America",
         "years": "1992-1994",
-        "description": "Lightweight homologation specials. European RS had 260 hp, RS America was a stripped Carrera 2. Both are collectible.",
+        "description": "The lightweight specials. The European RS had 260 hp and a stripped interior; the RS America was a pared-back Carrera 2 for the US. Both are serious collector cars.",
         "desirability": "High"
       },
       {
@@ -1037,7 +1040,7 @@
       {
         "name": "Targa / Cabriolet",
         "years": "1990-1994",
-        "description": "Open-top variants. Targa has removable roof panel, Cabriolet is full convertible. Less rigid but popular.",
+        "description": "The open cars. The Targa has a removable roof panel, the Cabriolet a full folding top. Less stiff, but popular.",
         "desirability": "Medium"
       }
     ],
@@ -1170,16 +1173,16 @@
       "fuel": "16-22 MPG"
     },
     "expertTips": [
-      "The 964 is the most affordable air-cooled 911 entry point currently",
-      "Carrera 2 is preferred by drivers, C4 is more forgiving in bad weather",
-      "Oil leaks are normal—excessive leaks are not. Learn the difference.",
-      "Find a Porsche specialist or independent shop that knows air-cooled cars",
-      "Factor in the cost of a pre-purchase inspection by an expert",
-      "RS America values have skyrocketed—verify authenticity carefully",
+      "The 964 is one of the most usable air-cooled 911s: modern enough for regular driving, still air-cooled at heart.",
+      "Drivers prefer the Carrera 2. The C4 is more forgiving in bad weather.",
+      "Some seepage is normal. Real leaks aren't. Learn the difference.",
+      "Find a specialist who knows air-cooled cars before you need one.",
+      "Budget for a pre-purchase inspection by someone who knows 964s, with a leak-down test.",
+      "RS America values have climbed a long way. Verify authenticity carefully.",
       "The G50 gearbox is tough, and parts are easy to get",
-      "Join Rennlist.com and Pelican Parts forums for excellent technical support",
-      "Budget for consumables like motor mounts and suspension bushings",
-      "A well-maintained 964 will last indefinitely with proper care"
+      "Rennlist and the Pelican Parts forums both have deep 964 knowledge.",
+      "Budget for engine mounts and suspension bushings. At this age they're due.",
+      "A well-maintained 964 will last indefinitely."
     ]
   },
   "communityResources": {
