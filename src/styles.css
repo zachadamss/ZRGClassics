@@ -963,7 +963,7 @@ a:hover {
 }
 
 .logo-body { fill: var(--gulf-blue); }
-.logo-trim { fill: #07090C; }            /* window surround and the whale tail's rubber edge */
+.logo-trim { fill: #07090C; }            /* window frame, pillars, whale-tail rubber edge */
 .logo-glass { fill: #3D5673; }
 .logo-wheel { fill: #14243A; }            /* tires */
 .logo-rim { fill: #C9D3DE; }
