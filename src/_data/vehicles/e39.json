@@ -28,14 +28,8 @@
         "Consider full cooling system refresh on purchase"
       ],
       "sources": [
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        },
-        {
-          "name": "FCP Euro",
-          "url": "https://www.fcpeuro.com/"
-        }
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
+        { "name": "FCP Euro", "url": "https://www.fcpeuro.com/" }
       ],
       "repairCosts": {
         "diy": "$300-500",
@@ -43,26 +37,10 @@
         "notes": "V8 models add complexity. Full refresh strongly recommended."
       },
       "parts": [
-        {
-          "name": "Water Pump (M52/M54)",
-          "partNumber": "11517527910",
-          "price": "$80-150"
-        },
-        {
-          "name": "Thermostat",
-          "partNumber": "11537509227",
-          "price": "$25-45"
-        },
-        {
-          "name": "Expansion Tank",
-          "partNumber": "17137787039",
-          "price": "$40-70"
-        },
-        {
-          "name": "Radiator",
-          "partNumber": "17117503249",
-          "price": "$180-300"
-        }
+        { "name": "Water Pump (M52/M54)", "partNumber": "11517527910", "price": "$80-150" },
+        { "name": "Thermostat", "partNumber": "11537509227", "price": "$25-45" },
+        { "name": "Expansion Tank", "partNumber": "17137787039", "price": "$40-70" },
+        { "name": "Radiator", "partNumber": "17117503249", "price": "$180-300" }
       ],
       "difficulty": "Moderate"
     },
@@ -79,14 +57,8 @@
         "Full VANOS unit rebuild for severely worn units"
       ],
       "sources": [
-        {
-          "name": "Beisan Systems",
-          "url": "https://www.beisansystems.com/"
-        },
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        }
+        { "name": "Beisan Systems", "url": "https://www.beisansystems.com/" },
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" }
       ],
       "repairCosts": {
         "diy": "$100-200",
@@ -94,21 +66,9 @@
         "notes": "Double VANOS on M52TU/M54. Seals and solenoids common."
       },
       "parts": [
-        {
-          "name": "VANOS Seal Kit (Beisan)",
-          "partNumber": "BS032",
-          "price": "$100-130"
-        },
-        {
-          "name": "VANOS Solenoid (Intake)",
-          "partNumber": "11361432532",
-          "price": "$80-120"
-        },
-        {
-          "name": "VANOS Solenoid (Exhaust)",
-          "partNumber": "11361433513",
-          "price": "$80-120"
-        }
+        { "name": "VANOS Seal Kit (Beisan)", "partNumber": "BS032", "price": "$100-130" },
+        { "name": "VANOS Solenoid (Intake)", "partNumber": "11361432532", "price": "$80-120" },
+        { "name": "VANOS Solenoid (Exhaust)", "partNumber": "11361433513", "price": "$80-120" }
       ],
       "relatedIssues": [
         { "vehicle": "e34", "brand": "BMW", "model": "E34", "issueId": "vanos-issues" },
@@ -131,14 +91,8 @@
         "Check valve during any intake-related service"
       ],
       "sources": [
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        },
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        }
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" },
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" }
       ],
       "repairCosts": {
         "diy": "$80-150",
@@ -146,16 +100,8 @@
         "notes": "M54 engines. DISA flap can break and get ingested."
       },
       "parts": [
-        {
-          "name": "DISA Valve Assembly",
-          "partNumber": "11617544805",
-          "price": "$150-250"
-        },
-        {
-          "name": "DISA Repair Kit",
-          "partNumber": "Various aftermarket",
-          "price": "$30-50"
-        }
+        { "name": "DISA Valve Assembly", "partNumber": "11617544805", "price": "$150-250" },
+        { "name": "DISA Repair Kit", "partNumber": "Various aftermarket", "price": "$30-50" }
       ],
       "difficulty": "Moderate"
     },
@@ -172,14 +118,8 @@
         "Alignment required after replacement"
       ],
       "sources": [
-        {
-          "name": "FCP Euro",
-          "url": "https://www.fcpeuro.com/"
-        },
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        }
+        { "name": "FCP Euro", "url": "https://www.fcpeuro.com/" },
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" }
       ],
       "repairCosts": {
         "diy": "$150-300",
@@ -187,16 +127,8 @@
         "notes": "Critical for E39 handling. Replace with control arms."
       },
       "parts": [
-        {
-          "name": "Thrust Arm (Left)",
-          "partNumber": "31126774825",
-          "price": "$60-100"
-        },
-        {
-          "name": "Thrust Arm (Right)",
-          "partNumber": "31126774826",
-          "price": "$60-100"
-        }
+        { "name": "Thrust Arm (Left)", "partNumber": "31126774825", "price": "$60-100" },
+        { "name": "Thrust Arm (Right)", "partNumber": "31126774826", "price": "$60-100" }
       ],
       "difficulty": "Advanced"
     },
@@ -213,14 +145,8 @@
         "Inspect timing chain guides on any M62 purchase"
       ],
       "sources": [
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        },
-        {
-          "name": "BimmerBoard",
-          "url": "https://www.bimmerboard.com/"
-        }
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
+        { "name": "BimmerBoard", "url": "https://www.bimmerboard.com/" }
       ],
       "repairCosts": {
         "diy": "$500-1000",
@@ -228,16 +154,8 @@
         "notes": "M62 V8 timing chain guide failure. Serious job."
       },
       "parts": [
-        {
-          "name": "Timing Chain Guide Set (M62)",
-          "partNumber": "Various",
-          "price": "$300-500"
-        },
-        {
-          "name": "Timing Chains",
-          "partNumber": "Various",
-          "price": "$200-350"
-        }
+        { "name": "Timing Chain Guide Set (M62)", "partNumber": "Various", "price": "$300-500" },
+        { "name": "Timing Chains", "partNumber": "Various", "price": "$200-350" }
       ],
       "difficulty": "Advanced"
     },
@@ -254,14 +172,8 @@
         "Check oil for coolant contamination"
       ],
       "sources": [
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        },
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        }
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" },
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" }
       ],
       "repairCosts": {
         "diy": "$200-400",
@@ -269,16 +181,8 @@
         "notes": "M62 V8 only. Leaks coolant into valley."
       },
       "parts": [
-        {
-          "name": "Valley Pan Gasket",
-          "partNumber": "11141742042",
-          "price": "$30-60"
-        },
-        {
-          "name": "Valley Pan Bolts",
-          "partNumber": "Various",
-          "price": "$20-40"
-        }
+        { "name": "Valley Pan Gasket", "partNumber": "11141742042", "price": "$30-60" },
+        { "name": "Valley Pan Bolts", "partNumber": "Various", "price": "$20-40" }
       ],
       "difficulty": "Advanced"
     },
@@ -296,14 +200,8 @@
         "Address leaks promptly - oil on exhaust is fire hazard"
       ],
       "sources": [
-        {
-          "name": "FCP Euro",
-          "url": "https://www.fcpeuro.com/"
-        },
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        }
+        { "name": "FCP Euro", "url": "https://www.fcpeuro.com/" },
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" }
       ],
       "repairCosts": {
         "diy": "$100-300",
@@ -311,16 +209,8 @@
         "notes": "Valve cover and oil filter housing common."
       },
       "parts": [
-        {
-          "name": "Valve Cover Gasket (M54)",
-          "partNumber": "11127512839",
-          "price": "$30-60"
-        },
-        {
-          "name": "Oil Filter Housing Gasket",
-          "partNumber": "11428637820",
-          "price": "$15-30"
-        }
+        { "name": "Valve Cover Gasket (M54)", "partNumber": "11127512839", "price": "$30-60" },
+        { "name": "Oil Filter Housing Gasket", "partNumber": "11428637820", "price": "$15-30" }
       ],
       "difficulty": "Advanced"
     },
@@ -338,14 +228,8 @@
         "Full alignment after suspension work"
       ],
       "sources": [
-        {
-          "name": "FCP Euro",
-          "url": "https://www.fcpeuro.com/"
-        },
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        }
+        { "name": "FCP Euro", "url": "https://www.fcpeuro.com/" },
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" }
       ],
       "repairCosts": {
         "diy": "$300-600",
@@ -353,21 +237,9 @@
         "notes": "Thrust arm and control arm bushings wear. Alignment required."
       },
       "parts": [
-        {
-          "name": "Thrust Arm Kit",
-          "partNumber": "31126774826",
-          "price": "$60-100"
-        },
-        {
-          "name": "Control Arm (Lower)",
-          "partNumber": "31126758520",
-          "price": "$60-100"
-        },
-        {
-          "name": "Tie Rod Assembly",
-          "partNumber": "32106774335",
-          "price": "$50-80"
-        }
+        { "name": "Thrust Arm Kit", "partNumber": "31126774826", "price": "$60-100" },
+        { "name": "Control Arm (Lower)", "partNumber": "31126758520", "price": "$60-100" },
+        { "name": "Tie Rod Assembly", "partNumber": "32106774335", "price": "$50-80" }
       ],
       "difficulty": "Advanced"
     },
@@ -384,14 +256,8 @@
         "Both are accessible DIY repairs with basic skills"
       ],
       "sources": [
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        },
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        }
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" }
       ],
       "repairCosts": {
         "diy": "$30-100",
@@ -399,16 +265,8 @@
         "notes": "Pixel ribbon and final stage unit failures common."
       },
       "parts": [
-        {
-          "name": "Pixel Repair Ribbon",
-          "partNumber": "Various aftermarket",
-          "price": "$20-40"
-        },
-        {
-          "name": "Final Stage Unit",
-          "partNumber": "64116923204",
-          "price": "$80-150"
-        }
+        { "name": "Pixel Repair Ribbon", "partNumber": "Various aftermarket", "price": "$20-40" },
+        { "name": "Final Stage Unit", "partNumber": "64116923204", "price": "$80-150" }
       ],
       "difficulty": "Easy"
     }
@@ -424,66 +282,16 @@
       "interval": "Every 80,000-120,000 miles",
       "laborHours": "10-14 hours shop time",
       "parts": [
-        {
-          "name": "Front Lower Control Arm (Left)",
-          "oem": "31126758519",
-          "aftermarket": "Lemforder 27044 01, Meyle HD",
-          "cost": "$55-95"
-        },
-        {
-          "name": "Front Lower Control Arm (Right)",
-          "oem": "31126758520",
-          "aftermarket": "Lemforder 27045 01, Meyle HD",
-          "cost": "$55-95"
-        },
-        {
-          "name": "Front Thrust Arm (Tension Strut) Left",
-          "oem": "31126774825",
-          "aftermarket": "Lemforder 27064 01, Meyle HD",
-          "cost": "$55-95"
-        },
-        {
-          "name": "Front Thrust Arm (Tension Strut) Right",
-          "oem": "31126774826",
-          "aftermarket": "Lemforder 27065 01, Meyle HD",
-          "cost": "$55-95"
-        },
-        {
-          "name": "Tie Rod Assembly (Pair)",
-          "oem": "32106774335",
-          "aftermarket": "Lemforder, Meyle",
-          "cost": "$80-160"
-        },
-        {
-          "name": "Front Strut Mount (Pair)",
-          "oem": "31336752735",
-          "aftermarket": "Lemforder, Sachs",
-          "cost": "$60-120"
-        },
-        {
-          "name": "Front Sway Bar End Link (Pair)",
-          "oem": "31351095694",
-          "aftermarket": "Lemforder, Meyle",
-          "cost": "$30-60"
-        },
-        {
-          "name": "Rear Integral Link Set",
-          "oem": "33326767831, 33321094209",
-          "aftermarket": "Lemforder, Meyle HD",
-          "cost": "$200-400"
-        },
-        {
-          "name": "Rear Trailing Arm Bushing",
-          "oem": "33326770824",
-          "aftermarket": "Lemforder, Powerflex",
-          "cost": "$40-80"
-        },
-        {
-          "name": "Rear Subframe Bushing Set",
-          "oem": "33316770454",
-          "aftermarket": "Lemforder, Powerflex PFR5-4610",
-          "cost": "$80-160"
-        }
+        { "name": "Front Lower Control Arm (Left)", "oem": "31126758519", "aftermarket": "Lemforder 27044 01, Meyle HD", "cost": "$55-95" },
+        { "name": "Front Lower Control Arm (Right)", "oem": "31126758520", "aftermarket": "Lemforder 27045 01, Meyle HD", "cost": "$55-95" },
+        { "name": "Front Thrust Arm (Tension Strut) Left", "oem": "31126774825", "aftermarket": "Lemforder 27064 01, Meyle HD", "cost": "$55-95" },
+        { "name": "Front Thrust Arm (Tension Strut) Right", "oem": "31126774826", "aftermarket": "Lemforder 27065 01, Meyle HD", "cost": "$55-95" },
+        { "name": "Tie Rod Assembly (Pair)", "oem": "32106774335", "aftermarket": "Lemforder, Meyle", "cost": "$80-160" },
+        { "name": "Front Strut Mount (Pair)", "oem": "31336752735", "aftermarket": "Lemforder, Sachs", "cost": "$60-120" },
+        { "name": "Front Sway Bar End Link (Pair)", "oem": "31351095694", "aftermarket": "Lemforder, Meyle", "cost": "$30-60" },
+        { "name": "Rear Integral Link Set", "oem": "33326767831, 33321094209", "aftermarket": "Lemforder, Meyle HD", "cost": "$200-400" },
+        { "name": "Rear Trailing Arm Bushing", "oem": "33326770824", "aftermarket": "Lemforder, Powerflex", "cost": "$40-80" },
+        { "name": "Rear Subframe Bushing Set", "oem": "33316770454", "aftermarket": "Lemforder, Powerflex PFR5-4610", "cost": "$80-160" }
       ],
       "tools": [
         "Floor jack and jack stands (4)",
@@ -535,18 +343,9 @@
         "E39 rear subframe bolts are stretch bolts - replace with new hardware."
       ],
       "references": [
-        {
-          "name": "Bimmerforums E39 Suspension Guide",
-          "url": "https://www.bimmerforums.com/forum/forumdisplay.php?f=53"
-        },
-        {
-          "name": "Turner Motorsport E39 Parts",
-          "url": "https://www.turnermotorsport.com/BMW-E39-Parts"
-        },
-        {
-          "name": "FCP Euro E39 Suspension",
-          "url": "https://www.fcpeuro.com/BMW-E39"
-        }
+        { "name": "Bimmerforums E39 Suspension Guide", "url": "https://www.bimmerforums.com/forum/forumdisplay.php?f=53" },
+        { "name": "Turner Motorsport E39 Parts", "url": "https://www.turnermotorsport.com/BMW-E39-Parts" },
+        { "name": "FCP Euro E39 Suspension", "url": "https://www.fcpeuro.com/BMW-E39" }
       ]
     },
     {
@@ -559,66 +358,16 @@
       "interval": "Inspect annually, repair as discovered",
       "laborHours": "Varies by severity",
       "parts": [
-        {
-          "name": "Front Fender (Left)",
-          "oem": "41358240405",
-          "aftermarket": "Aftermarket reproduction",
-          "cost": "$180-350"
-        },
-        {
-          "name": "Front Fender (Right)",
-          "oem": "41358240406",
-          "aftermarket": "Aftermarket reproduction",
-          "cost": "$180-350"
-        },
-        {
-          "name": "Rocker Panel (Left)",
-          "oem": "41218238249",
-          "aftermarket": "Klokkerholm, aftermarket",
-          "cost": "$100-220"
-        },
-        {
-          "name": "Rocker Panel (Right)",
-          "oem": "41218238250",
-          "aftermarket": "Klokkerholm, aftermarket",
-          "cost": "$100-220"
-        },
-        {
-          "name": "Rear Wheel Arch (Left)",
-          "oem": "41358195617",
-          "aftermarket": "Klokkerholm, aftermarket",
-          "cost": "$80-180"
-        },
-        {
-          "name": "Rear Wheel Arch (Right)",
-          "oem": "41358195618",
-          "aftermarket": "Klokkerholm, aftermarket",
-          "cost": "$80-180"
-        },
-        {
-          "name": "Trunk Floor Section",
-          "oem": "41128185101",
-          "aftermarket": "Fabricated or aftermarket",
-          "cost": "$120-280"
-        },
-        {
-          "name": "Jack Point Reinforcement",
-          "oem": "—",
-          "aftermarket": "Fabricated or aftermarket",
-          "cost": "$30-80"
-        },
-        {
-          "name": "POR-15 Rust Preventive",
-          "oem": "—",
-          "aftermarket": "POR-15 quart",
-          "cost": "$35-50"
-        },
-        {
-          "name": "Fluid Film Rust Preventive",
-          "oem": "—",
-          "aftermarket": "Fluid Film spray can",
-          "cost": "$12-18"
-        }
+        { "name": "Front Fender (Left)", "oem": "41358240405", "aftermarket": "Aftermarket reproduction", "cost": "$180-350" },
+        { "name": "Front Fender (Right)", "oem": "41358240406", "aftermarket": "Aftermarket reproduction", "cost": "$180-350" },
+        { "name": "Rocker Panel (Left)", "oem": "41218238249", "aftermarket": "Klokkerholm, aftermarket", "cost": "$100-220" },
+        { "name": "Rocker Panel (Right)", "oem": "41218238250", "aftermarket": "Klokkerholm, aftermarket", "cost": "$100-220" },
+        { "name": "Rear Wheel Arch (Left)", "oem": "41358195617", "aftermarket": "Klokkerholm, aftermarket", "cost": "$80-180" },
+        { "name": "Rear Wheel Arch (Right)", "oem": "41358195618", "aftermarket": "Klokkerholm, aftermarket", "cost": "$80-180" },
+        { "name": "Trunk Floor Section", "oem": "41128185101", "aftermarket": "Fabricated or aftermarket", "cost": "$120-280" },
+        { "name": "Jack Point Reinforcement", "oem": "—", "aftermarket": "Fabricated or aftermarket", "cost": "$30-80" },
+        { "name": "POR-15 Rust Preventive", "oem": "—", "aftermarket": "POR-15 quart", "cost": "$35-50" },
+        { "name": "Fluid Film Rust Preventive", "oem": "—", "aftermarket": "Fluid Film spray can", "cost": "$12-18" }
       ],
       "tools": [
         "Angle grinder with cut-off and flap discs",
@@ -672,18 +421,9 @@
         "Never weld near fuel tank or lines without proper precautions."
       ],
       "references": [
-        {
-          "name": "Bimmerforums E39 Rust Discussion",
-          "url": "https://www.bimmerforums.com/forum/forumdisplay.php?f=53"
-        },
-        {
-          "name": "Eastwood Rust Repair Products",
-          "url": "https://www.eastwood.com/rust-repair"
-        },
-        {
-          "name": "POR-15 Application Guide",
-          "url": "https://www.por15.com/instructions"
-        }
+        { "name": "Bimmerforums E39 Rust Discussion", "url": "https://www.bimmerforums.com/forum/forumdisplay.php?f=53" },
+        { "name": "Eastwood Rust Repair Products", "url": "https://www.eastwood.com/rust-repair" },
+        { "name": "POR-15 Application Guide", "url": "https://www.por15.com/instructions" }
       ]
     },
     {
@@ -696,66 +436,16 @@
       "interval": "Address as symptoms appear",
       "laborHours": "8-12 hours shop time",
       "parts": [
-        {
-          "name": "Instrument Cluster Pixel Ribbon",
-          "oem": "—",
-          "aftermarket": "BavAuto, aftermarket kits",
-          "cost": "$20-40"
-        },
-        {
-          "name": "Radio Pixel Ribbon",
-          "oem": "—",
-          "aftermarket": "BavAuto, aftermarket kits",
-          "cost": "$20-40"
-        },
-        {
-          "name": "HVAC Final Stage Unit (FSU)",
-          "oem": "64116923204",
-          "aftermarket": "URO, aftermarket upgraded",
-          "cost": "$80-150"
-        },
-        {
-          "name": "Window Regulator (Front Left)",
-          "oem": "51338252393",
-          "aftermarket": "URO, aftermarket",
-          "cost": "$60-110"
-        },
-        {
-          "name": "Window Regulator (Front Right)",
-          "oem": "51338252394",
-          "aftermarket": "URO, aftermarket",
-          "cost": "$60-110"
-        },
-        {
-          "name": "Main Relay (DME)",
-          "oem": "12631729004",
-          "aftermarket": "Bosch, aftermarket",
-          "cost": "$40-70"
-        },
-        {
-          "name": "Fuel Pump Relay",
-          "oem": "12631735424",
-          "aftermarket": "Bosch, Stribel",
-          "cost": "$25-50"
-        },
-        {
-          "name": "Tail Light Gasket Set",
-          "oem": "63216900473/74",
-          "aftermarket": "URO, aftermarket",
-          "cost": "$20-40"
-        },
-        {
-          "name": "Ground Point Ring Terminals",
-          "oem": "—",
-          "aftermarket": "Copper ring terminals (25 pack)",
-          "cost": "$10-20"
-        },
-        {
-          "name": "Contact Cleaner",
-          "oem": "—",
-          "aftermarket": "DeoxIT D5, CRC Contact",
-          "cost": "$10-20"
-        }
+        { "name": "Instrument Cluster Pixel Ribbon", "oem": "—", "aftermarket": "BavAuto, aftermarket kits", "cost": "$20-40" },
+        { "name": "Radio Pixel Ribbon", "oem": "—", "aftermarket": "BavAuto, aftermarket kits", "cost": "$20-40" },
+        { "name": "HVAC Final Stage Unit (FSU)", "oem": "64116923204", "aftermarket": "URO, aftermarket upgraded", "cost": "$80-150" },
+        { "name": "Window Regulator (Front Left)", "oem": "51338252393", "aftermarket": "URO, aftermarket", "cost": "$60-110" },
+        { "name": "Window Regulator (Front Right)", "oem": "51338252394", "aftermarket": "URO, aftermarket", "cost": "$60-110" },
+        { "name": "Main Relay (DME)", "oem": "12631729004", "aftermarket": "Bosch, aftermarket", "cost": "$40-70" },
+        { "name": "Fuel Pump Relay", "oem": "12631735424", "aftermarket": "Bosch, Stribel", "cost": "$25-50" },
+        { "name": "Tail Light Gasket Set", "oem": "63216900473/74", "aftermarket": "URO, aftermarket", "cost": "$20-40" },
+        { "name": "Ground Point Ring Terminals", "oem": "—", "aftermarket": "Copper ring terminals (25 pack)", "cost": "$10-20" },
+        { "name": "Contact Cleaner", "oem": "—", "aftermarket": "DeoxIT D5, CRC Contact", "cost": "$10-20" }
       ],
       "tools": [
         "Torx driver set (T10, T15, T20, T25, T30)",
@@ -806,18 +496,9 @@
         "Apply dielectric grease only to contact surfaces, not inside connectors."
       ],
       "references": [
-        {
-          "name": "Bimmerforums E39 Electrical",
-          "url": "https://www.bimmerforums.com/forum/forumdisplay.php?f=53"
-        },
-        {
-          "name": "Pelican Parts E39 FSU Replacement",
-          "url": "https://www.pelicanparts.com/techarticles/BMW/"
-        },
-        {
-          "name": "BavAuto Pixel Repair Kits",
-          "url": "https://www.bavauto.com/"
-        }
+        { "name": "Bimmerforums E39 Electrical", "url": "https://www.bimmerforums.com/forum/forumdisplay.php?f=53" },
+        { "name": "Pelican Parts E39 FSU Replacement", "url": "https://www.pelicanparts.com/techarticles/BMW/" },
+        { "name": "BavAuto Pixel Repair Kits", "url": "https://www.bavauto.com/" }
       ]
     },
     {
@@ -830,66 +511,16 @@
       "interval": "One-time restoration",
       "laborHours": "10-20 hours shop time",
       "parts": [
-        {
-          "name": "Leather Repair Kit",
-          "oem": "—",
-          "aftermarket": "Leatherique, Colourlock",
-          "cost": "$50-100"
-        },
-        {
-          "name": "Headliner Fabric (4 yards)",
-          "oem": "—",
-          "aftermarket": "OEM-match foam-backed",
-          "cost": "$50-100"
-        },
-        {
-          "name": "Headliner Adhesive",
-          "oem": "—",
-          "aftermarket": "3M Super 77, Permatex",
-          "cost": "$15-30"
-        },
-        {
-          "name": "Seat Foam (Driver Bolster)",
-          "oem": "52107896892",
-          "aftermarket": "Recovered or aftermarket",
-          "cost": "$80-180"
-        },
-        {
-          "name": "Shift Boot (Manual)",
-          "oem": "25117896886",
-          "aftermarket": "Redline Goods, leather",
-          "cost": "$30-70"
-        },
-        {
-          "name": "E-Brake Boot",
-          "oem": "34411162910",
-          "aftermarket": "Redline Goods, leather",
-          "cost": "$20-50"
-        },
-        {
-          "name": "Wood Trim Refinishing Kit",
-          "oem": "—",
-          "aftermarket": "2K clearcoat, touch-up supplies",
-          "cost": "$30-60"
-        },
-        {
-          "name": "Door Panel Clip Set",
-          "oem": "51418224768",
-          "aftermarket": "URO, aftermarket",
-          "cost": "$10-20"
-        },
-        {
-          "name": "Cabin Air Filter (Microfilter)",
-          "oem": "64319218706",
-          "aftermarket": "Mann CUK3139, Bosch",
-          "cost": "$20-40"
-        },
-        {
-          "name": "Door Seal Set",
-          "oem": "51728185001",
-          "aftermarket": "URO, aftermarket",
-          "cost": "$120-250"
-        }
+        { "name": "Leather Repair Kit", "oem": "—", "aftermarket": "Leatherique, Colourlock", "cost": "$50-100" },
+        { "name": "Headliner Fabric (4 yards)", "oem": "—", "aftermarket": "OEM-match foam-backed", "cost": "$50-100" },
+        { "name": "Headliner Adhesive", "oem": "—", "aftermarket": "3M Super 77, Permatex", "cost": "$15-30" },
+        { "name": "Seat Foam (Driver Bolster)", "oem": "52107896892", "aftermarket": "Recovered or aftermarket", "cost": "$80-180" },
+        { "name": "Shift Boot (Manual)", "oem": "25117896886", "aftermarket": "Redline Goods, leather", "cost": "$30-70" },
+        { "name": "E-Brake Boot", "oem": "34411162910", "aftermarket": "Redline Goods, leather", "cost": "$20-50" },
+        { "name": "Wood Trim Refinishing Kit", "oem": "—", "aftermarket": "2K clearcoat, touch-up supplies", "cost": "$30-60" },
+        { "name": "Door Panel Clip Set", "oem": "51418224768", "aftermarket": "URO, aftermarket", "cost": "$10-20" },
+        { "name": "Cabin Air Filter (Microfilter)", "oem": "64319218706", "aftermarket": "Mann CUK3139, Bosch", "cost": "$20-40" },
+        { "name": "Door Seal Set", "oem": "51728185001", "aftermarket": "URO, aftermarket", "cost": "$120-250" }
       ],
       "tools": [
         "Trim removal tools (plastic pry set)",
@@ -939,18 +570,9 @@
         "Door panel clips break easily - have extras on hand."
       ],
       "references": [
-        {
-          "name": "Bimmerforums E39 Interior",
-          "url": "https://www.bimmerforums.com/forum/forumdisplay.php?f=53"
-        },
-        {
-          "name": "Leatherique Products",
-          "url": "https://www.leatherique.com/"
-        },
-        {
-          "name": "Redline Goods Interior",
-          "url": "https://www.redlinegoods.com/"
-        }
+        { "name": "Bimmerforums E39 Interior", "url": "https://www.bimmerforums.com/forum/forumdisplay.php?f=53" },
+        { "name": "Leatherique Products", "url": "https://www.leatherique.com/" },
+        { "name": "Redline Goods Interior", "url": "https://www.redlinegoods.com/" }
       ]
     }
   ],
@@ -960,7 +582,10 @@
         "name": "FCP Euro",
         "url": "https://www.fcpeuro.com/BMW-parts/5-series/E39",
         "notes": "Lifetime replacement guarantee. Cooling systems, suspension, and engine parts with excellent E39 coverage.",
-        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "specialties": [
+          "Lifetime Warranty",
+          "OE Quality"
+        ],
         "shipping": "Free over $49",
         "warranty": "Lifetime",
         "featured": true
@@ -969,14 +594,20 @@
         "name": "Pelican Parts",
         "url": "https://www.pelicanparts.com/BMW/catalog/5-Series_Main.htm",
         "notes": "Extensive E39 catalog with excellent DIY tech articles and guides.",
-        "specialties": ["Tech Articles", "OE Parts"],
+        "specialties": [
+          "Tech Articles",
+          "OE Parts"
+        ],
         "shipping": "Free over $99"
       },
       {
         "name": "BMW Parts Direct",
         "url": "https://www.bmwpartsdirect.com/",
         "notes": "Genuine BMW OEM parts from authorized dealers.",
-        "specialties": ["Genuine BMW", "Dealer Direct"]
+        "specialties": [
+          "Genuine BMW",
+          "Dealer Direct"
+        ]
       }
     ],
     "performance": [
@@ -984,26 +615,41 @@
         "name": "Turner Motorsport",
         "url": "https://www.turnermotorsport.com/BMW-E39-Parts",
         "notes": "Race-proven E39 M5 and 540i performance parts. Suspension and brakes.",
-        "specialties": ["M5 Parts", "Suspension", "Brakes"],
+        "specialties": [
+          "M5 Parts",
+          "Suspension",
+          "Brakes"
+        ],
         "featured": true
       },
       {
         "name": "Rogue Engineering",
         "url": "https://www.rogueengineering.co/",
         "notes": "E39 performance specialists. Exhaust systems and intake upgrades.",
-        "specialties": ["Exhaust", "Intakes", "Performance"]
+        "specialties": [
+          "Exhaust",
+          "Intakes",
+          "Performance"
+        ]
       },
       {
         "name": "Beisan Systems",
         "url": "https://www.beisansystems.com/",
         "notes": "VANOS repair specialists with DIY kits and technical information.",
-        "specialties": ["VANOS Repair", "DIY Kits"]
+        "specialties": [
+          "VANOS Repair",
+          "DIY Kits"
+        ]
       },
       {
         "name": "Dinan",
         "url": "https://www.dinanbmw.com/",
         "notes": "Premium BMW performance upgrades with warranty-friendly options.",
-        "specialties": ["Software", "Suspension", "Premium"]
+        "specialties": [
+          "Software",
+          "Suspension",
+          "Premium"
+        ]
       }
     ],
     "general": [
@@ -1011,20 +657,29 @@
         "name": "ECS Tuning",
         "url": "https://www.ecstuning.com/BMW-E39/",
         "notes": "Large inventory of maintenance and upgrade parts.",
-        "specialties": ["Large Inventory", "Fast Shipping"],
+        "specialties": [
+          "Large Inventory",
+          "Fast Shipping"
+        ],
         "shipping": "Free over $49"
       },
       {
         "name": "BimmerWorld",
         "url": "https://www.bimmerworld.com/BMW-Parts/E39-1997-2003/",
         "notes": "BMW parts specialist with racing pedigree.",
-        "specialties": ["Maintenance", "Quality Parts"]
+        "specialties": [
+          "Maintenance",
+          "Quality Parts"
+        ]
       },
       {
         "name": "AutohausAZ",
         "url": "https://www.autohausaz.com/",
         "notes": "Competitive prices on name brand parts.",
-        "specialties": ["Good Prices", "Name Brands"],
+        "specialties": [
+          "Good Prices",
+          "Name Brands"
+        ],
         "shipping": "Free over $50"
       }
     ],
@@ -1033,7 +688,10 @@
         "name": "E39Source",
         "url": "https://www.e39source.com/",
         "notes": "E39 enthusiast resource with parts recommendations and DIY guides.",
-        "specialties": ["E39 Specialist", "DIY Guides"],
+        "specialties": [
+          "E39 Specialist",
+          "DIY Guides"
+        ],
         "featured": true
       }
     ],
@@ -1042,26 +700,38 @@
         "name": "M5Board Classifieds",
         "url": "https://www.m5board.com/forums/e39-5-series-forum.33/",
         "notes": "Premier E39 and M5 community marketplace.",
-        "specialties": ["M5 Community", "Rare Parts"],
+        "specialties": [
+          "M5 Community",
+          "Rare Parts"
+        ],
         "featured": true
       },
       {
         "name": "5Series.net Classifieds",
         "url": "https://5series.net/forums/e39-classifieds/",
         "notes": "E39 community marketplace with active listings.",
-        "specialties": ["E39 Community", "Used Parts"]
+        "specialties": [
+          "E39 Community",
+          "Used Parts"
+        ]
       },
       {
         "name": "eBay Motors",
         "url": "https://www.ebay.com/b/BMW-E39/6030/bn_81442368",
         "notes": "Large selection of used, NOS, and M5 parts.",
-        "specialties": ["NOS Parts", "M5 Parts"]
+        "specialties": [
+          "NOS Parts",
+          "M5 Parts"
+        ]
       },
       {
         "name": "Car-Part.com",
         "url": "https://www.car-part.com/",
         "notes": "Search salvage yard inventory nationwide.",
-        "specialties": ["Salvage Yards", "Body Parts"]
+        "specialties": [
+          "Salvage Yards",
+          "Body Parts"
+        ]
       }
     ],
     "tools": [
@@ -1070,173 +740,48 @@
         "url": "https://www.realoem.com/bmw/enUS/select?product=P&archive=0&series=E39",
         "notes": "Free BMW parts diagrams and part number lookup"
       },
-      {
-        "name": "E39Source DIY Library",
-        "url": "https://www.e39source.com/diy/",
-        "notes": "Comprehensive E39 DIY guides and tutorials"
-      }
+      { "name": "E39Source DIY Library", "url": "https://www.e39source.com/diy/", "notes": "Comprehensive E39 DIY guides and tutorials" }
     ]
   },
   "torqueSpecs": {
     "sources": [
-      {
-        "name": "Bentley E39 Service Manual",
-        "url": "https://www.bentleypublishers.com/bmw.html"
-      },
-      {
-        "name": "M5Board Torque Reference",
-        "url": "https://www.m5board.com/threads/torque-specs-for-brake-job.206498/"
-      },
-      {
-        "name": "Bimmerforums E39 Technical",
-        "url": "https://www.bimmerfest.com/threads/torque-settings-etc.260774/"
-      }
+      { "name": "Bentley E39 Service Manual", "url": "https://www.bentleypublishers.com/bmw.html" },
+      { "name": "M5Board Torque Reference", "url": "https://www.m5board.com/threads/torque-specs-for-brake-job.206498/" },
+      { "name": "Bimmerforums E39 Technical", "url": "https://www.bimmerfest.com/threads/torque-settings-etc.260774/" }
     ],
     "engine": [
-      {
-        "component": "Cylinder Head Bolts (M52/M54)",
-        "spec": "30 ft-lbs (40 Nm) + 90° + 90°",
-        "notes": "TTY bolts, replace each use"
-      },
-      {
-        "component": "Main Bearing Caps (M52/M54)",
-        "spec": "15 ft-lbs (20 Nm) + 70°",
-        "notes": "Angle-tighten method"
-      },
-      {
-        "component": "Connecting Rod Bolts",
-        "spec": "15 ft-lbs (20 Nm) + 70°",
-        "notes": "Angle-tighten method"
-      },
-      {
-        "component": "Flywheel Bolts (Manual)",
-        "spec": "77 ft-lbs (105 Nm)",
-        "notes": "Use new bolts"
-      },
-      {
-        "component": "Valve Cover Bolts",
-        "spec": "9 ft-lbs (12 Nm)",
-        "notes": "Do not overtighten"
-      },
-      {
-        "component": "Spark Plugs",
-        "spec": "22 ft-lbs (30 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Oil Drain Plug",
-        "spec": "18 ft-lbs (25 Nm)",
-        "notes": "Replace crush washer"
-      },
-      {
-        "component": "Oil Filter Housing Bolts",
-        "spec": "18 ft-lbs (25 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "VANOS Solenoid",
-        "spec": "11 ft-lbs (15 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "DISA Valve Bolts",
-        "spec": "7 ft-lbs (10 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Intake Manifold Bolts",
-        "spec": "11 ft-lbs (15 Nm)",
-        "notes": ""
-      }
+      { "component": "Cylinder Head Bolts (M52/M54)", "spec": "30 ft-lbs (40 Nm) + 90° + 90°", "notes": "TTY bolts, replace each use" },
+      { "component": "Main Bearing Caps (M52/M54)", "spec": "15 ft-lbs (20 Nm) + 70°", "notes": "Angle-tighten method" },
+      { "component": "Connecting Rod Bolts", "spec": "15 ft-lbs (20 Nm) + 70°", "notes": "Angle-tighten method" },
+      { "component": "Flywheel Bolts (Manual)", "spec": "77 ft-lbs (105 Nm)", "notes": "Use new bolts" },
+      { "component": "Valve Cover Bolts", "spec": "9 ft-lbs (12 Nm)", "notes": "Do not overtighten" },
+      { "component": "Spark Plugs", "spec": "22 ft-lbs (30 Nm)", "notes": "" },
+      { "component": "Oil Drain Plug", "spec": "18 ft-lbs (25 Nm)", "notes": "Replace crush washer" },
+      { "component": "Oil Filter Housing Bolts", "spec": "18 ft-lbs (25 Nm)", "notes": "" },
+      { "component": "VANOS Solenoid", "spec": "11 ft-lbs (15 Nm)", "notes": "" },
+      { "component": "DISA Valve Bolts", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
+      { "component": "Intake Manifold Bolts", "spec": "11 ft-lbs (15 Nm)", "notes": "" }
     ],
     "suspension": [
-      {
-        "component": "Control Arm to Subframe",
-        "spec": "57 ft-lbs (77 Nm)",
-        "notes": "Tighten with weight on wheels"
-      },
-      {
-        "component": "Thrust Arm to Knuckle",
-        "spec": "59 ft-lbs (80 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Thrust Arm to Subframe",
-        "spec": "74 ft-lbs (100 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Steering Knuckle Pinch Bolt",
-        "spec": "60 ft-lbs (81 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Tie Rod End Nut",
-        "spec": "48 ft-lbs (65 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Wheel Lug Bolts",
-        "spec": "88 ft-lbs (120 Nm)",
-        "notes": "Tighten in star pattern, 2-stage"
-      },
-      {
-        "component": "Strut Top Nut",
-        "spec": "18 ft-lbs (24 Nm)",
-        "notes": "Hold strut shaft"
-      },
-      {
-        "component": "Front Subframe Bolts",
-        "spec": "74 ft-lbs (100 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Subframe Bolts",
-        "spec": "74 ft-lbs (100 Nm) + 90°",
-        "notes": "Stretch bolts, replace"
-      },
-      {
-        "component": "Sway Bar Bracket",
-        "spec": "18 ft-lbs (24 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Sway Bar End Links",
-        "spec": "48 ft-lbs (65 Nm)",
-        "notes": ""
-      }
+      { "component": "Control Arm to Subframe", "spec": "57 ft-lbs (77 Nm)", "notes": "Tighten with weight on wheels" },
+      { "component": "Thrust Arm to Knuckle", "spec": "59 ft-lbs (80 Nm)", "notes": "" },
+      { "component": "Thrust Arm to Subframe", "spec": "74 ft-lbs (100 Nm)", "notes": "" },
+      { "component": "Steering Knuckle Pinch Bolt", "spec": "60 ft-lbs (81 Nm)", "notes": "" },
+      { "component": "Tie Rod End Nut", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
+      { "component": "Wheel Lug Bolts", "spec": "88 ft-lbs (120 Nm)", "notes": "Tighten in star pattern, 2-stage" },
+      { "component": "Strut Top Nut", "spec": "18 ft-lbs (24 Nm)", "notes": "Hold strut shaft" },
+      { "component": "Front Subframe Bolts", "spec": "74 ft-lbs (100 Nm)", "notes": "" },
+      { "component": "Rear Subframe Bolts", "spec": "74 ft-lbs (100 Nm) + 90°", "notes": "Stretch bolts, replace" },
+      { "component": "Sway Bar Bracket", "spec": "18 ft-lbs (24 Nm)", "notes": "" },
+      { "component": "Sway Bar End Links", "spec": "48 ft-lbs (65 Nm)", "notes": "" }
     ],
     "brakes": [
-      {
-        "component": "Front Caliper Carrier",
-        "spec": "81 ft-lbs (110 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Caliper Carrier",
-        "spec": "48 ft-lbs (65 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Caliper Guide Pins (Slide Bolts)",
-        "spec": "22 ft-lbs (30 Nm)",
-        "notes": "7mm Allen"
-      },
-      {
-        "component": "Brake Rotor Set Screw",
-        "spec": "12 ft-lbs (16 Nm)",
-        "notes": "Use anti-seize on threads"
-      },
-      {
-        "component": "Brake Line Fittings",
-        "spec": "13 ft-lbs (18 Nm)",
-        "notes": "Do not overtighten"
-      },
-      {
-        "component": "ABS Sensor Bolt",
-        "spec": "7 ft-lbs (10 Nm)",
-        "notes": ""
-      }
+      { "component": "Front Caliper Carrier", "spec": "81 ft-lbs (110 Nm)", "notes": "" },
+      { "component": "Rear Caliper Carrier", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
+      { "component": "Caliper Guide Pins (Slide Bolts)", "spec": "22 ft-lbs (30 Nm)", "notes": "7mm Allen" },
+      { "component": "Brake Rotor Set Screw", "spec": "12 ft-lbs (16 Nm)", "notes": "Use anti-seize on threads" },
+      { "component": "Brake Line Fittings", "spec": "13 ft-lbs (18 Nm)", "notes": "Do not overtighten" },
+      { "component": "ABS Sensor Bolt", "spec": "7 ft-lbs (10 Nm)", "notes": "" }
     ]
   },
   "diyGuides": [
@@ -1546,21 +1091,9 @@
       {
         "category": "Suspension & Steering",
         "items": [
-          {
-            "check": "Thrust Arm Bushings",
-            "detail": "Primary wear item. Causes clunking and steering wander. Check for cracking.",
-            "costIfBad": "$400-700"
-          },
-          {
-            "check": "Tie Rod Ends",
-            "detail": "Check for play by grabbing the wheel and rocking. Worn ends cause vague steering.",
-            "costIfBad": "$200-400"
-          },
-          {
-            "check": "Rear Subframe Bushings",
-            "detail": "Large rubber bushings deteriorate causing handling issues and noise.",
-            "costIfBad": "$500-900"
-          },
+          { "check": "Thrust Arm Bushings", "detail": "Primary wear item. Causes clunking and steering wander. Check for cracking.", "costIfBad": "$400-700" },
+          { "check": "Tie Rod Ends", "detail": "Check for play by grabbing the wheel and rocking. Worn ends cause vague steering.", "costIfBad": "$200-400" },
+          { "check": "Rear Subframe Bushings", "detail": "Large rubber bushings deteriorate causing handling issues and noise.", "costIfBad": "$500-900" },
           {
             "check": "Self-Leveling Suspension",
             "detail": "Touring models have self-leveling rear. Check for sag or leaking accumulators.",
@@ -1576,21 +1109,13 @@
             "detail": "Instrument cluster, radio display, and climate control all suffer from pixel failure.",
             "costIfBad": "$150-400 each"
           },
-          {
-            "check": "Window Regulators",
-            "detail": "Cables fray and snap. Test all windows multiple times up and down.",
-            "costIfBad": "$150-300 each"
-          },
+          { "check": "Window Regulators", "detail": "Cables fray and snap. Test all windows multiple times up and down.", "costIfBad": "$150-300 each" },
           {
             "check": "DSC/ABS Module",
             "detail": "The integrated ABS/DSC module can fail causing warning lights and reduced braking.",
             "costIfBad": "$1,000-2,000"
           },
-          {
-            "check": "Final Stage Unit (FSU)",
-            "detail": "Blower motor resistor fails causing climate control fan issues.",
-            "costIfBad": "$100-200"
-          },
+          { "check": "Final Stage Unit (FSU)", "detail": "Blower motor resistor fails causing climate control fan issues.", "costIfBad": "$100-200" },
           {
             "check": "Navigation System",
             "detail": "If equipped, check that the navigation and CD functions work. Parts are expensive.",
@@ -1660,62 +1185,26 @@
   },
   "communityResources": {
     "youtube": [
-      {
-        "name": "E39Source",
-        "url": "https://www.youtube.com/@E39Source",
-        "description": "500+ videos dedicated to E39 maintenance and tutorials"
-      },
+      { "name": "E39Source", "url": "https://www.youtube.com/@E39Source", "description": "500+ videos dedicated to E39 maintenance and tutorials" },
       {
         "name": "M539 Restorations",
         "url": "https://www.youtube.com/@M539Restorations",
         "description": "BMW repairs and restorations with extensive E39 content"
       },
-      {
-        "name": "BMW Group Classic",
-        "url": "https://www.youtube.com/@BMWGroupClassic",
-        "description": "Official heritage channel featuring classic BMWs"
-      }
+      { "name": "BMW Group Classic", "url": "https://www.youtube.com/@BMWGroupClassic", "description": "Official heritage channel featuring classic BMWs" }
     ],
     "forums": [
-      {
-        "name": "M5Board",
-        "url": "https://www.m5board.com/",
-        "description": "The best E39 M5 forum community"
-      },
-      {
-        "name": "5Series.net",
-        "url": "https://5series.net/forums/",
-        "description": "Leading 5 Series community for E39 discussion"
-      },
-      {
-        "name": "BimmerBoard E39 Forum",
-        "url": "http://www.bimmerboard.com/forums/e39/",
-        "description": "Technical how-to articles and expert advice"
-      },
-      {
-        "name": "5Post E39 Forum",
-        "url": "https://e39.5post.com/forums/",
-        "description": "Active E39 discussion community"
-      }
+      { "name": "M5Board", "url": "https://www.m5board.com/", "description": "The best E39 M5 forum community" },
+      { "name": "5Series.net", "url": "https://5series.net/forums/", "description": "Leading 5 Series community for E39 discussion" },
+      { "name": "BimmerBoard E39 Forum", "url": "http://www.bimmerboard.com/forums/e39/", "description": "Technical how-to articles and expert advice" },
+      { "name": "5Post E39 Forum", "url": "https://e39.5post.com/forums/", "description": "Active E39 discussion community" }
     ],
     "facebook": [
-      {
-        "name": "BMW E39 5 Series Owners",
-        "url": "https://www.facebook.com/groups/bmwe39owners",
-        "description": "Large E39 enthusiast community"
-      },
-      {
-        "name": "E39 M5 Owners",
-        "url": "https://www.facebook.com/groups/e39m5owners",
-        "description": "Dedicated E39 M5 discussion group"
-      }
+      { "name": "BMW E39 5 Series Owners", "url": "https://www.facebook.com/groups/bmwe39owners", "description": "Large E39 enthusiast community" },
+      { "name": "E39 M5 Owners", "url": "https://www.facebook.com/groups/e39m5owners", "description": "Dedicated E39 M5 discussion group" }
     ],
     "websites": [
-      {
-        "name": "E39Source Website",
-        "url": "https://www.e39source.com/",
-        "description": "Comprehensive E39 guides and parts resources"
-      }
+      { "name": "E39Source Website", "url": "https://www.e39source.com/", "description": "Comprehensive E39 guides and parts resources" }
     ]
   }
 }

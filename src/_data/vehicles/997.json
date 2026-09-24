@@ -24,14 +24,8 @@
         "Always verify engine type when purchasing a 997"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "LN Engineering",
-          "url": "https://lnengineering.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "LN Engineering", "url": "https://lnengineering.com/" }
       ],
       "repairCosts": {
         "diy": "$500-1000",
@@ -39,16 +33,8 @@
         "notes": "997.1 only. 997.2 has different engine design."
       },
       "parts": [
-        {
-          "name": "IMS Bearing Retrofit",
-          "partNumber": "LN Engineering",
-          "price": "$400-600"
-        },
-        {
-          "name": "IMS Solution Kit",
-          "partNumber": "Flat Six Innovations",
-          "price": "$1200-1500"
-        }
+        { "name": "IMS Bearing Retrofit", "partNumber": "LN Engineering", "price": "$400-600" },
+        { "name": "IMS Solution Kit", "partNumber": "Flat Six Innovations", "price": "$1200-1500" }
       ],
       "relatedIssues": [
         { "vehicle": "986", "brand": "Porsche", "model": "986 Boxster", "issueId": "ims-bearing" },
@@ -70,14 +56,8 @@
         "Prevention: proper warm-up, quality oil, avoid short trips"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "Flat Six Innovations",
-          "url": "https://flat6innovations.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "Flat Six Innovations", "url": "https://flat6innovations.com/" }
       ],
       "repairCosts": {
         "diy": "N/A",
@@ -85,11 +65,7 @@
         "notes": "997.1 M97 engine. Less common than 996 but still occurs."
       },
       "parts": [
-        {
-          "name": "Cylinder Sleeving",
-          "partNumber": "LN Engineering",
-          "price": "$800-1200/cyl"
-        }
+        { "name": "Cylinder Sleeving", "partNumber": "LN Engineering", "price": "$800-1200/cyl" }
       ],
       "difficulty": "Advanced"
     },
@@ -106,14 +82,8 @@
         "Mechatronic unit repair or replacement if electrical issues"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "Planet-9",
-          "url": "https://www.planet-9.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "Planet-9", "url": "https://www.planet-9.com/" }
       ],
       "repairCosts": {
         "diy": "$100-200",
@@ -121,16 +91,8 @@
         "notes": "Fluid service DIY possible. Major repairs shop only."
       },
       "parts": [
-        {
-          "name": "PDK Fluid (7L)",
-          "partNumber": "Pentosin FFL-2",
-          "price": "$150-200"
-        },
-        {
-          "name": "PDK Filter",
-          "partNumber": "9G132153300",
-          "price": "$40-80"
-        }
+        { "name": "PDK Fluid (7L)", "partNumber": "Pentosin FFL-2", "price": "$150-200" },
+        { "name": "PDK Filter", "partNumber": "9G132153300", "price": "$40-80" }
       ],
       "difficulty": "Advanced"
     },
@@ -147,14 +109,8 @@
         "PASM control module can be rebuilt if electrical issue"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" }
       ],
       "repairCosts": {
         "diy": "$400-800",
@@ -162,21 +118,9 @@
         "notes": "Per damper. Remanufactured units available."
       },
       "parts": [
-        {
-          "name": "PASM Damper (Front)",
-          "partNumber": "99734305310",
-          "price": "$500-900"
-        },
-        {
-          "name": "PASM Damper (Rear)",
-          "partNumber": "99733305310",
-          "price": "$500-900"
-        },
-        {
-          "name": "Remanufactured PASM",
-          "partNumber": "Various",
-          "price": "$300-500"
-        }
+        { "name": "PASM Damper (Front)", "partNumber": "99734305310", "price": "$500-900" },
+        { "name": "PASM Damper (Rear)", "partNumber": "99733305310", "price": "$500-900" },
+        { "name": "Remanufactured PASM", "partNumber": "Various", "price": "$300-500" }
       ],
       "difficulty": "Moderate"
     },
@@ -193,14 +137,8 @@
         "Flush and refill coolant every 4 years"
       ],
       "sources": [
-        {
-          "name": "FCP Euro",
-          "url": "https://www.fcpeuro.com/"
-        },
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        }
+        { "name": "FCP Euro", "url": "https://www.fcpeuro.com/" },
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$200-400",
@@ -208,16 +146,8 @@
         "notes": "Similar to 996/986. Aluminum upgrade recommended."
       },
       "parts": [
-        {
-          "name": "Coolant Pipe Kit",
-          "partNumber": "Various",
-          "price": "$150-300"
-        },
-        {
-          "name": "Water Pump",
-          "partNumber": "99710601106",
-          "price": "$120-200"
-        }
+        { "name": "Coolant Pipe Kit", "partNumber": "Various", "price": "$150-300" },
+        { "name": "Water Pump", "partNumber": "99710601106", "price": "$120-200" }
       ],
       "difficulty": "Advanced"
     },
@@ -234,14 +164,8 @@
         "Some owners add catch can to reduce oil vapor deposits"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" }
       ],
       "repairCosts": {
         "diy": "$200-400",
@@ -249,16 +173,8 @@
         "notes": "997.2 DFI engines. Walnut blasting required."
       },
       "parts": [
-        {
-          "name": "Walnut Media (bag)",
-          "partNumber": "N/A",
-          "price": "$30-50"
-        },
-        {
-          "name": "Intake Gaskets",
-          "partNumber": "9A111023500",
-          "price": "$20-40"
-        }
+        { "name": "Walnut Media (bag)", "partNumber": "N/A", "price": "$30-50" },
+        { "name": "Intake Gaskets", "partNumber": "9A111023500", "price": "$20-40" }
       ],
       "difficulty": "Moderate"
     },
@@ -274,14 +190,8 @@
         "Use updated seal design for longer life"
       ],
       "sources": [
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        },
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        }
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" },
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$400-800",
@@ -289,11 +199,7 @@
         "notes": "997.1 only. Same M97 engine RMS issues."
       },
       "parts": [
-        {
-          "name": "Rear Main Seal",
-          "partNumber": "99710322571",
-          "price": "$30-60"
-        }
+        { "name": "Rear Main Seal", "partNumber": "99710322571", "price": "$30-60" }
       ],
       "difficulty": "Advanced"
     }
@@ -309,22 +215,60 @@
       "interval": "Every 60,000-80,000 miles",
       "laborHours": "10-14 hours shop time",
       "parts": [
-        {"name": "Front Control Arm (Left)", "oem": "99734105310", "aftermarket": "Lemforder, URO", "cost": "$120-200"},
-        {"name": "Front Control Arm (Right)", "oem": "99734105410", "aftermarket": "Lemforder, URO", "cost": "$120-200"},
-        {"name": "Front Thrust Arm (Pair)", "oem": "99734105500", "aftermarket": "Lemforder", "cost": "$100-180"},
-        {"name": "Front Strut Mount (Pair)", "oem": "99734351900", "aftermarket": "Sachs, Lemforder", "cost": "$80-150"},
-        {"name": "Tie Rod End (Pair)", "oem": "99734713100", "aftermarket": "Lemforder", "cost": "$60-120"},
-        {"name": "Rear Control Arm Upper (Pair)", "oem": "99733105105", "aftermarket": "Lemforder", "cost": "$120-220"},
-        {"name": "Rear Control Arm Lower (Pair)", "oem": "99733105205", "aftermarket": "Lemforder", "cost": "$120-220"},
-        {"name": "Rear Thrust Arm (Pair)", "oem": "99733105600", "aftermarket": "Lemforder", "cost": "$80-160"},
-        {"name": "Rear Sway Bar End Link (Pair)", "oem": "99733306700", "aftermarket": "Lemforder", "cost": "$40-80"},
-        {"name": "Wheel Bearing (Each)", "oem": "99705302304", "aftermarket": "FAG, SKF", "cost": "$80-150"}
+        { "name": "Front Control Arm (Left)", "oem": "99734105310", "aftermarket": "Lemforder, URO", "cost": "$120-200" },
+        { "name": "Front Control Arm (Right)", "oem": "99734105410", "aftermarket": "Lemforder, URO", "cost": "$120-200" },
+        { "name": "Front Thrust Arm (Pair)", "oem": "99734105500", "aftermarket": "Lemforder", "cost": "$100-180" },
+        { "name": "Front Strut Mount (Pair)", "oem": "99734351900", "aftermarket": "Sachs, Lemforder", "cost": "$80-150" },
+        { "name": "Tie Rod End (Pair)", "oem": "99734713100", "aftermarket": "Lemforder", "cost": "$60-120" },
+        { "name": "Rear Control Arm Upper (Pair)", "oem": "99733105105", "aftermarket": "Lemforder", "cost": "$120-220" },
+        { "name": "Rear Control Arm Lower (Pair)", "oem": "99733105205", "aftermarket": "Lemforder", "cost": "$120-220" },
+        { "name": "Rear Thrust Arm (Pair)", "oem": "99733105600", "aftermarket": "Lemforder", "cost": "$80-160" },
+        { "name": "Rear Sway Bar End Link (Pair)", "oem": "99733306700", "aftermarket": "Lemforder", "cost": "$40-80" },
+        { "name": "Wheel Bearing (Each)", "oem": "99705302304", "aftermarket": "FAG, SKF", "cost": "$80-150" }
       ],
-      "tools": ["Floor jack and jack stands", "18mm, 19mm, 21mm sockets", "Ball joint separator", "Tie rod puller", "Spring compressor", "Torque wrench", "Penetrating oil", "Alignment specs printout"],
-      "steps": ["Raise vehicle on jack stands at all four corners.", "Remove wheels and photograph suspension.", "Soak all bolts with penetrating oil.", "Front: Remove sway bar links, tie rod ends, control arm bolts.", "Separate ball joint from knuckle.", "For struts: mark camber, remove upper mount nuts and pinch bolt (65 ft-lbs).", "Replace strut mount/bearing using spring compressor.", "Install new front components - control arm to frame 89 ft-lbs.", "Rear: The 997's rear is critical for handling.", "Support trailing arm, remove control arms (81 ft-lbs inner).", "Replace thrust arms - affect toe settings.", "CRITICAL: Check rear spring perches for cracks.", "Install wheels and lower vehicle.", "Professional alignment mandatory."],
-      "tips": ["The 997 is rear-engine biased - suspension issues amplified.", "997.1 and 997.2 use similar suspension despite different engines.", "Cracked spring perches are a known safety issue.", "PASM dampers fail over time - consider replacement if leaking."],
-      "warnings": ["CRITICAL: Inspect rear spring perches for cracks.", "Spring compressors are dangerous.", "Rear-engine weight distribution amplifies issues.", "Incorrect alignment causes rear instability at speed."],
-      "references": [{"name": "Rennlist 997 Suspension", "url": "https://rennlist.com/forums/997-forum/"}, {"name": "Pelican Parts 997", "url": "https://www.pelicanparts.com/techarticles/"}, {"name": "Department 69 Torque Specs", "url": "https://www.department69.com/"}]
+      "tools": [
+        "Floor jack and jack stands",
+        "18mm, 19mm, 21mm sockets",
+        "Ball joint separator",
+        "Tie rod puller",
+        "Spring compressor",
+        "Torque wrench",
+        "Penetrating oil",
+        "Alignment specs printout"
+      ],
+      "steps": [
+        "Raise vehicle on jack stands at all four corners.",
+        "Remove wheels and photograph suspension.",
+        "Soak all bolts with penetrating oil.",
+        "Front: Remove sway bar links, tie rod ends, control arm bolts.",
+        "Separate ball joint from knuckle.",
+        "For struts: mark camber, remove upper mount nuts and pinch bolt (65 ft-lbs).",
+        "Replace strut mount/bearing using spring compressor.",
+        "Install new front components - control arm to frame 89 ft-lbs.",
+        "Rear: The 997's rear is critical for handling.",
+        "Support trailing arm, remove control arms (81 ft-lbs inner).",
+        "Replace thrust arms - affect toe settings.",
+        "CRITICAL: Check rear spring perches for cracks.",
+        "Install wheels and lower vehicle.",
+        "Professional alignment mandatory."
+      ],
+      "tips": [
+        "The 997 is rear-engine biased - suspension issues amplified.",
+        "997.1 and 997.2 use similar suspension despite different engines.",
+        "Cracked spring perches are a known safety issue.",
+        "PASM dampers fail over time - consider replacement if leaking."
+      ],
+      "warnings": [
+        "CRITICAL: Inspect rear spring perches for cracks.",
+        "Spring compressors are dangerous.",
+        "Rear-engine weight distribution amplifies issues.",
+        "Incorrect alignment causes rear instability at speed."
+      ],
+      "references": [
+        { "name": "Rennlist 997 Suspension", "url": "https://rennlist.com/forums/997-forum/" },
+        { "name": "Pelican Parts 997", "url": "https://www.pelicanparts.com/techarticles/" },
+        { "name": "Department 69 Torque Specs", "url": "https://www.department69.com/" }
+      ]
     },
     {
       "id": "rust-repair",
@@ -336,19 +280,50 @@
       "interval": "Inspect annually",
       "laborHours": "Varies by severity",
       "parts": [
-        {"name": "Front Trunk Seal", "oem": "99756193100", "aftermarket": "URO", "cost": "$60-120"},
-        {"name": "Door Seal Set", "oem": "99753193101", "aftermarket": "URO", "cost": "$100-200"},
-        {"name": "Headlight Seal Kit", "oem": "Various", "aftermarket": "Butyl tape", "cost": "$30-80"},
-        {"name": "Battery Box Repair", "oem": "—", "aftermarket": "Fabricated", "cost": "$100-250"},
-        {"name": "Rust Converter", "oem": "—", "aftermarket": "POR-15", "cost": "$20-40"},
-        {"name": "Cavity Wax", "oem": "—", "aftermarket": "Fluid Film", "cost": "$15-30"},
-        {"name": "Trunk Drain Tubes", "oem": "99756192900", "aftermarket": "Aftermarket", "cost": "$20-40"}
+        { "name": "Front Trunk Seal", "oem": "99756193100", "aftermarket": "URO", "cost": "$60-120" },
+        { "name": "Door Seal Set", "oem": "99753193101", "aftermarket": "URO", "cost": "$100-200" },
+        { "name": "Headlight Seal Kit", "oem": "Various", "aftermarket": "Butyl tape", "cost": "$30-80" },
+        { "name": "Battery Box Repair", "oem": "—", "aftermarket": "Fabricated", "cost": "$100-250" },
+        { "name": "Rust Converter", "oem": "—", "aftermarket": "POR-15", "cost": "$20-40" },
+        { "name": "Cavity Wax", "oem": "—", "aftermarket": "Fluid Film", "cost": "$15-30" },
+        { "name": "Trunk Drain Tubes", "oem": "99756192900", "aftermarket": "Aftermarket", "cost": "$20-40" }
       ],
-      "tools": ["Inspection mirror and flashlight", "Wire brush", "Compressed air", "Respirator", "Spray wand for cavity wax"],
-      "steps": ["The 997 is fully galvanized - most issues are water-related.", "Clean undercarriage before inspection.", "Check front trunk for water - DME and fuse box located here.", "Clear front trunk drain tubes.", "Inspect battery box for acid corrosion.", "Check headlights for moisture (bi-xenon prone to seal failure).", "Examine rocker panels and door bottoms.", "Check wheel wells and suspension mounts.", "Surface rust: wire brush, convert, prime, topcoat.", "Reseal headlights if moisture present.", "Apply cavity wax to hollow sections.", "Clear all drain tubes with compressed air."],
-      "tips": ["997s rarely have structural rust due to galvanization.", "Most corrosion from water intrusion and battery acid.", "Headlight seal failure extremely common.", "Annual Fluid Film prevents most issues."],
-      "warnings": ["Water in frunk destroys expensive electronics.", "Headlight moisture damages HID ballasts.", "Always wear respirator when grinding."],
-      "references": [{"name": "Rennlist 997 Maintenance", "url": "https://rennlist.com/forums/997-forum/"}, {"name": "Pelican Parts 997", "url": "https://www.pelicanparts.com/techarticles/"}]
+      "tools": [
+        "Inspection mirror and flashlight",
+        "Wire brush",
+        "Compressed air",
+        "Respirator",
+        "Spray wand for cavity wax"
+      ],
+      "steps": [
+        "The 997 is fully galvanized - most issues are water-related.",
+        "Clean undercarriage before inspection.",
+        "Check front trunk for water - DME and fuse box located here.",
+        "Clear front trunk drain tubes.",
+        "Inspect battery box for acid corrosion.",
+        "Check headlights for moisture (bi-xenon prone to seal failure).",
+        "Examine rocker panels and door bottoms.",
+        "Check wheel wells and suspension mounts.",
+        "Surface rust: wire brush, convert, prime, topcoat.",
+        "Reseal headlights if moisture present.",
+        "Apply cavity wax to hollow sections.",
+        "Clear all drain tubes with compressed air."
+      ],
+      "tips": [
+        "997s rarely have structural rust due to galvanization.",
+        "Most corrosion from water intrusion and battery acid.",
+        "Headlight seal failure extremely common.",
+        "Annual Fluid Film prevents most issues."
+      ],
+      "warnings": [
+        "Water in frunk destroys expensive electronics.",
+        "Headlight moisture damages HID ballasts.",
+        "Always wear respirator when grinding."
+      ],
+      "references": [
+        { "name": "Rennlist 997 Maintenance", "url": "https://rennlist.com/forums/997-forum/" },
+        { "name": "Pelican Parts 997", "url": "https://www.pelicanparts.com/techarticles/" }
+      ]
     },
     {
       "id": "electrical-restoration",
@@ -360,19 +335,53 @@
       "interval": "Address as symptoms appear",
       "laborHours": "8-12 hours shop time",
       "parts": [
-        {"name": "Ignition Coil Pack (Set of 6)", "oem": "99760210402", "aftermarket": "Bosch", "cost": "$150-300"},
-        {"name": "Mass Air Flow Sensor", "oem": "99760612400", "aftermarket": "Bosch", "cost": "$80-150"},
-        {"name": "Oxygen Sensor Set (4)", "oem": "99760612600/700", "aftermarket": "Bosch, NTK", "cost": "$300-500"},
-        {"name": "Headlight Seal Kit", "oem": "Various", "aftermarket": "Butyl tape", "cost": "$20-50"},
-        {"name": "PASM Damper", "oem": "99734305310", "aftermarket": "Remanufactured", "cost": "$300-900"},
-        {"name": "Window Regulator", "oem": "99754207504", "aftermarket": "URO", "cost": "$150-250"},
-        {"name": "VarioCam Solenoid", "oem": "99760530101", "aftermarket": "OEM only", "cost": "$100-180"}
+        { "name": "Ignition Coil Pack (Set of 6)", "oem": "99760210402", "aftermarket": "Bosch", "cost": "$150-300" },
+        { "name": "Mass Air Flow Sensor", "oem": "99760612400", "aftermarket": "Bosch", "cost": "$80-150" },
+        { "name": "Oxygen Sensor Set (4)", "oem": "99760612600/700", "aftermarket": "Bosch, NTK", "cost": "$300-500" },
+        { "name": "Headlight Seal Kit", "oem": "Various", "aftermarket": "Butyl tape", "cost": "$20-50" },
+        { "name": "PASM Damper", "oem": "99734305310", "aftermarket": "Remanufactured", "cost": "$300-900" },
+        { "name": "Window Regulator", "oem": "99754207504", "aftermarket": "URO", "cost": "$150-250" },
+        { "name": "VarioCam Solenoid", "oem": "99760530101", "aftermarket": "OEM only", "cost": "$100-180" }
       ],
-      "tools": ["OBD2 scanner (Durametric/PIWIS)", "Torx driver set", "10mm socket", "Heat gun", "Butyl tape", "Multimeter", "Contact cleaner", "Dielectric grease"],
-      "steps": ["Begin with diagnostic scan for fault codes.", "Check front trunk for water intrusion.", "For headlight reseal: remove assembly (3 bolts).", "Heat headlight at 200°F for 15-20 min to soften sealant.", "Separate lens, clean old butyl, apply new sealant.", "For coils: open engine lid, disconnect and remove.", "Inspect spark plug wells for oil.", "For PASM: diagnose which damper failed, replace.", "For window regulator: remove door panel, support glass, swap.", "Clean all ground points.", "Clear codes and verify repairs."],
-      "tips": ["997 headlight condensation extremely common.", "997.1 vs 997.2 have different filter locations.", "VarioCam solenoid issues cause rough running - use OEM.", "PASM failures trigger warning light."],
-      "warnings": ["Water in frunk destroys DME.", "Be careful heating headlights.", "Never use carburetor cleaner on MAF.", "Always disconnect battery before electrical work."],
-      "references": [{"name": "Rennlist 997 Electrical", "url": "https://rennlist.com/forums/997-forum/"}, {"name": "Pelican Parts Headlight DIY", "url": "https://www.pelicanparts.com/techarticles/"}]
+      "tools": [
+        "OBD2 scanner (Durametric/PIWIS)",
+        "Torx driver set",
+        "10mm socket",
+        "Heat gun",
+        "Butyl tape",
+        "Multimeter",
+        "Contact cleaner",
+        "Dielectric grease"
+      ],
+      "steps": [
+        "Begin with diagnostic scan for fault codes.",
+        "Check front trunk for water intrusion.",
+        "For headlight reseal: remove assembly (3 bolts).",
+        "Heat headlight at 200°F for 15-20 min to soften sealant.",
+        "Separate lens, clean old butyl, apply new sealant.",
+        "For coils: open engine lid, disconnect and remove.",
+        "Inspect spark plug wells for oil.",
+        "For PASM: diagnose which damper failed, replace.",
+        "For window regulator: remove door panel, support glass, swap.",
+        "Clean all ground points.",
+        "Clear codes and verify repairs."
+      ],
+      "tips": [
+        "997 headlight condensation extremely common.",
+        "997.1 vs 997.2 have different filter locations.",
+        "VarioCam solenoid issues cause rough running - use OEM.",
+        "PASM failures trigger warning light."
+      ],
+      "warnings": [
+        "Water in frunk destroys DME.",
+        "Be careful heating headlights.",
+        "Never use carburetor cleaner on MAF.",
+        "Always disconnect battery before electrical work."
+      ],
+      "references": [
+        { "name": "Rennlist 997 Electrical", "url": "https://rennlist.com/forums/997-forum/" },
+        { "name": "Pelican Parts Headlight DIY", "url": "https://www.pelicanparts.com/techarticles/" }
+      ]
     },
     {
       "id": "interior-restoration",
@@ -384,20 +393,50 @@
       "interval": "As needed",
       "laborHours": "8-16 hours shop time",
       "parts": [
-        {"name": "Leather Repair Kit", "oem": "—", "aftermarket": "Leatherique, Colourlock", "cost": "$50-100"},
-        {"name": "Steering Wheel Re-wrap", "oem": "—", "aftermarket": "Professional service", "cost": "$200-400"},
-        {"name": "Shift Knob", "oem": "99742407504", "aftermarket": "Aftermarket, weighted", "cost": "$60-200"},
-        {"name": "E-Brake Boot", "oem": "99755298001", "aftermarket": "Leather replicas", "cost": "$30-60"},
-        {"name": "Seat Foam (Driver)", "oem": "99752191203", "aftermarket": "Recovered", "cost": "$100-200"},
-        {"name": "Cabin Air Filter", "oem": "99757221901", "aftermarket": "Mann, Bosch", "cost": "$25-50"},
-        {"name": "Door Seal Set", "oem": "99753193101", "aftermarket": "URO", "cost": "$100-200"},
-        {"name": "HVAC Blend Actuator", "oem": "99757319100", "aftermarket": "VDO", "cost": "$60-120"}
+        { "name": "Leather Repair Kit", "oem": "—", "aftermarket": "Leatherique, Colourlock", "cost": "$50-100" },
+        { "name": "Steering Wheel Re-wrap", "oem": "—", "aftermarket": "Professional service", "cost": "$200-400" },
+        { "name": "Shift Knob", "oem": "99742407504", "aftermarket": "Aftermarket, weighted", "cost": "$60-200" },
+        { "name": "E-Brake Boot", "oem": "99755298001", "aftermarket": "Leather replicas", "cost": "$30-60" },
+        { "name": "Seat Foam (Driver)", "oem": "99752191203", "aftermarket": "Recovered", "cost": "$100-200" },
+        { "name": "Cabin Air Filter", "oem": "99757221901", "aftermarket": "Mann, Bosch", "cost": "$25-50" },
+        { "name": "Door Seal Set", "oem": "99753193101", "aftermarket": "URO", "cost": "$100-200" },
+        { "name": "HVAC Blend Actuator", "oem": "99757319100", "aftermarket": "VDO", "cost": "$60-120" }
       ],
-      "tools": ["Trim removal tools", "Torx driver set", "Microfiber cloths", "Leather cleaner and conditioner", "Interior detailing brushes"],
-      "steps": ["Document condition with photos.", "Clean leather thoroughly with dedicated cleaner.", "Fill cracks with leather filler, sand smooth, apply dye.", "Condition all leather surfaces.", "Assess steering wheel - rewrap if worn.", "Replace worn boots and knobs.", "Replace cabin air filter - in frunk under carpet.", "Clean HVAC vents with brushes.", "Address seat bolster wear with dye or foam replacement.", "Replace door seals if wind noise present.", "Apply UV protectant to exposed surfaces."],
-      "tips": ["Sport seats wear faster on driver bolster.", "Steering wheel often wears before seats.", "997 leather responds well to conditioning.", "HVAC clicking indicates blend actuator failure."],
-      "warnings": ["Don't use silicone on leather.", "Steering wheel has airbag - disconnect battery.", "Be careful with aged trim clips."],
-      "references": [{"name": "Leatherique Products", "url": "https://www.leatherique.com/"}, {"name": "Rennlist 997 Interior", "url": "https://rennlist.com/forums/997-forum/"}]
+      "tools": [
+        "Trim removal tools",
+        "Torx driver set",
+        "Microfiber cloths",
+        "Leather cleaner and conditioner",
+        "Interior detailing brushes"
+      ],
+      "steps": [
+        "Document condition with photos.",
+        "Clean leather thoroughly with dedicated cleaner.",
+        "Fill cracks with leather filler, sand smooth, apply dye.",
+        "Condition all leather surfaces.",
+        "Assess steering wheel - rewrap if worn.",
+        "Replace worn boots and knobs.",
+        "Replace cabin air filter - in frunk under carpet.",
+        "Clean HVAC vents with brushes.",
+        "Address seat bolster wear with dye or foam replacement.",
+        "Replace door seals if wind noise present.",
+        "Apply UV protectant to exposed surfaces."
+      ],
+      "tips": [
+        "Sport seats wear faster on driver bolster.",
+        "Steering wheel often wears before seats.",
+        "997 leather responds well to conditioning.",
+        "HVAC clicking indicates blend actuator failure."
+      ],
+      "warnings": [
+        "Don't use silicone on leather.",
+        "Steering wheel has airbag - disconnect battery.",
+        "Be careful with aged trim clips."
+      ],
+      "references": [
+        { "name": "Leatherique Products", "url": "https://www.leatherique.com/" },
+        { "name": "Rennlist 997 Interior", "url": "https://rennlist.com/forums/997-forum/" }
+      ]
     }
   ],
   "suppliers": {
@@ -406,7 +445,10 @@
         "name": "FCP Euro",
         "url": "https://www.fcpeuro.com/Porsche-parts",
         "notes": "Industry-leading lifetime replacement guarantee on all parts - excellent 997 coverage",
-        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "specialties": [
+          "Lifetime Warranty",
+          "OE Quality"
+        ],
         "shipping": "Free over $49",
         "warranty": "Lifetime",
         "featured": true
@@ -415,7 +457,11 @@
         "name": "Pelican Parts",
         "url": "https://www.pelicanparts.com/Porsche/catalog/997.htm",
         "notes": "Comprehensive 997 parts catalog with tech articles for DIY repairs",
-        "specialties": ["OEM Parts", "Tech Articles", "DIY Support"],
+        "specialties": [
+          "OEM Parts",
+          "Tech Articles",
+          "DIY Support"
+        ],
         "shipping": "Free over $99",
         "featured": true
       },
@@ -423,14 +469,20 @@
         "name": "Porsche Parts",
         "url": "https://parts.porsche.com/",
         "notes": "Factory genuine Porsche parts direct from the manufacturer",
-        "specialties": ["Factory Original", "Genuine Porsche"],
+        "specialties": [
+          "Factory Original",
+          "Genuine Porsche"
+        ],
         "warranty": "Genuine OEM"
       },
       {
         "name": "Sunset Porsche Parts",
         "url": "https://www.sunsetporscheparts.com/",
         "notes": "Porsche dealer parts department with competitive pricing",
-        "specialties": ["OEM Dealer", "New Genuine Parts"],
+        "specialties": [
+          "OEM Dealer",
+          "New Genuine Parts"
+        ],
         "shipping": "Fast shipping"
       }
     ],
@@ -439,39 +491,60 @@
         "name": "LN Engineering",
         "url": "https://lnengineering.com/",
         "notes": "IMS bearing solutions for 997.1 (997.2 has no IMS concern) - essential for early models",
-        "specialties": ["IMS Bearings", "Engine Components", "M97 Expert"],
+        "specialties": [
+          "IMS Bearings",
+          "Engine Components",
+          "M97 Expert"
+        ],
         "featured": true
       },
       {
         "name": "Fabspeed",
         "url": "https://www.fabspeed.com/porsche/911/997/",
         "notes": "Premium exhaust systems that unleash the 997's flat-six soundtrack",
-        "specialties": ["Exhaust Systems", "Performance Parts"],
+        "specialties": [
+          "Exhaust Systems",
+          "Performance Parts"
+        ],
         "featured": true
       },
       {
         "name": "Dundon Motorsports",
         "url": "https://dundonmotorsports.com/",
         "notes": "Premium race-inspired exhaust systems for 997 GT cars and street builds",
-        "specialties": ["Exhaust", "GT Parts", "Race Parts"]
+        "specialties": [
+          "Exhaust",
+          "GT Parts",
+          "Race Parts"
+        ]
       },
       {
         "name": "Softronic",
         "url": "https://www.softronic.us/",
         "notes": "ECU tuning to maximize power from the 997's engine",
-        "specialties": ["ECU Tuning", "Performance Software"]
+        "specialties": [
+          "ECU Tuning",
+          "Performance Software"
+        ]
       },
       {
         "name": "Elephant Racing",
         "url": "https://www.elephantracing.com/",
         "notes": "Premium suspension components for street or track performance",
-        "specialties": ["Suspension", "Handling Kits", "Track Parts"]
+        "specialties": [
+          "Suspension",
+          "Handling Kits",
+          "Track Parts"
+        ]
       },
       {
         "name": "JRZ Suspension",
         "url": "https://www.jrz-suspension.com/",
         "notes": "Professional-grade dampers for serious track use",
-        "specialties": ["Coilovers", "Race Suspension"]
+        "specialties": [
+          "Coilovers",
+          "Race Suspension"
+        ]
       }
     ],
     "general": [
@@ -479,21 +552,30 @@
         "name": "AutohausAZ",
         "url": "https://www.autohausaz.com/porsche-911-parts",
         "notes": "Large selection of replacement parts at competitive prices",
-        "specialties": ["Replacement Parts", "Maintenance Items"],
+        "specialties": [
+          "Replacement Parts",
+          "Maintenance Items"
+        ],
         "shipping": "Free over $99"
       },
       {
         "name": "ECS Tuning",
         "url": "https://www.ecstuning.com/Porsche-997_911/",
         "notes": "Wide selection of OEM and aftermarket parts with detailed fitment data",
-        "specialties": ["OEM Parts", "Aftermarket Options"],
+        "specialties": [
+          "OEM Parts",
+          "Aftermarket Options"
+        ],
         "shipping": "Free over $99"
       },
       {
         "name": "PartsGeek",
         "url": "https://www.partsgeek.com/catalog/porsche/911.html",
         "notes": "Budget-friendly replacement parts for common maintenance items",
-        "specialties": ["Budget Parts", "Fast Shipping"]
+        "specialties": [
+          "Budget Parts",
+          "Fast Shipping"
+        ]
       }
     ],
     "specialty": [
@@ -501,27 +583,41 @@
         "name": "SharkWerks",
         "url": "https://www.sharkwerks.com/",
         "notes": "Performance shop with extensive 997 expertise - known for GT car builds",
-        "specialties": ["GT Models", "Engine Builds", "Performance"],
+        "specialties": [
+          "GT Models",
+          "Engine Builds",
+          "Performance"
+        ],
         "featured": true
       },
       {
         "name": "GMG Racing",
         "url": "https://gmgracing.com/",
         "notes": "Track-focused upgrades and complete race preparation for 997s",
-        "specialties": ["Track Parts", "Race Prep", "Full Builds"],
+        "specialties": [
+          "Track Parts",
+          "Race Prep",
+          "Full Builds"
+        ],
         "featured": true
       },
       {
         "name": "Numeric Racing",
         "url": "https://numericracing.com/",
         "notes": "Precision shifter assemblies that transform the 997 driving experience",
-        "specialties": ["Shifters", "Transmission Parts"]
+        "specialties": [
+          "Shifters",
+          "Transmission Parts"
+        ]
       },
       {
         "name": "Rennkit",
         "url": "https://rennkit.com/",
         "notes": "Known for LED lighting upgrades and OEM+ improvements for 997",
-        "specialties": ["LED Upgrades", "Lighting"]
+        "specialties": [
+          "LED Upgrades",
+          "Lighting"
+        ]
       }
     ],
     "used": [
@@ -529,26 +625,39 @@
         "name": "Rennlist 997 Classifieds",
         "url": "https://rennlist.com/forums/997-forum/",
         "notes": "Active 997 community with dedicated marketplace - the first place to look",
-        "specialties": ["997 Community", "Vetted Sellers"],
+        "specialties": [
+          "997 Community",
+          "Vetted Sellers"
+        ],
         "featured": true
       },
       {
         "name": "6SpeedOnline Classifieds",
         "url": "https://www.6speedonline.com/forums/parts-sale-wanted-911/",
         "notes": "Large enthusiast community with active 997 marketplace",
-        "specialties": ["Forum Marketplace", "Wide Selection"]
+        "specialties": [
+          "Forum Marketplace",
+          "Wide Selection"
+        ]
       },
       {
         "name": "eBay Motors",
         "url": "https://www.ebay.com/b/Parts-for-Porsche-911/6030/bn_574968",
         "notes": "Global marketplace for used and NOS 997 parts",
-        "specialties": ["Used Parts", "NOS", "Global Sellers"]
+        "specialties": [
+          "Used Parts",
+          "NOS",
+          "Global Sellers"
+        ]
       },
       {
         "name": "Car-Part.com",
         "url": "https://www.car-part.com/",
         "notes": "Search nationwide salvage yard inventory - good for body panels and glass",
-        "specialties": ["Salvage Parts", "Body Panels"]
+        "specialties": [
+          "Salvage Parts",
+          "Body Panels"
+        ]
       }
     ],
     "tools": [
@@ -579,151 +688,40 @@
         "name": "LN Engineering 997 Torque Book",
         "url": "https://lnengineering.com/997-torque-book-fastening-specifications-for-porsche-911-type-997-automobile.html"
       },
-      {
-        "name": "Rennlist 997 Technical",
-        "url": "https://rennlist.com/forums/997-forum/"
-      }
+      { "name": "Rennlist 997 Technical", "url": "https://rennlist.com/forums/997-forum/" }
     ],
     "engine": [
-      {
-        "component": "Spark Plugs",
-        "spec": "22 ft-lbs (30 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Ignition Coil Pack Bolts",
-        "spec": "7.5 ft-lbs (10 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Oil Drain Plug",
-        "spec": "37 ft-lbs (50 Nm)",
-        "notes": "Replace washer"
-      },
-      {
-        "component": "Oil Filter Housing Cap (997.2)",
-        "spec": "19 ft-lbs (26 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Water Pump Bolts",
-        "spec": "7.5 ft-lbs (10 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Engine Carrier to Engine Bolts",
-        "spec": "34 ft-lbs (46 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Serpentine Belt Tensioner Pulley",
-        "spec": "44 ft-lbs (60 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Serpentine Belt Idler Pulley (Lower)",
-        "spec": "17 ft-lbs (23 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Catalytic Converter Bracket",
-        "spec": "17 ft-lbs (23 Nm)",
-        "notes": ""
-      }
+      { "component": "Spark Plugs", "spec": "22 ft-lbs (30 Nm)", "notes": "" },
+      { "component": "Ignition Coil Pack Bolts", "spec": "7.5 ft-lbs (10 Nm)", "notes": "" },
+      { "component": "Oil Drain Plug", "spec": "37 ft-lbs (50 Nm)", "notes": "Replace washer" },
+      { "component": "Oil Filter Housing Cap (997.2)", "spec": "19 ft-lbs (26 Nm)", "notes": "" },
+      { "component": "Water Pump Bolts", "spec": "7.5 ft-lbs (10 Nm)", "notes": "" },
+      { "component": "Engine Carrier to Engine Bolts", "spec": "34 ft-lbs (46 Nm)", "notes": "" },
+      { "component": "Serpentine Belt Tensioner Pulley", "spec": "44 ft-lbs (60 Nm)", "notes": "" },
+      { "component": "Serpentine Belt Idler Pulley (Lower)", "spec": "17 ft-lbs (23 Nm)", "notes": "" },
+      { "component": "Catalytic Converter Bracket", "spec": "17 ft-lbs (23 Nm)", "notes": "" }
     ],
     "suspension": [
-      {
-        "component": "Wheel Lug Bolts",
-        "spec": "96-118 ft-lbs (130-160 Nm)",
-        "notes": "118 ft-lbs is revised spec; center-lock different"
-      },
-      {
-        "component": "Front Strut Pinch Bolt",
-        "spec": "65 ft-lbs (85 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Front Lower Control Arm to Frame",
-        "spec": "89 ft-lbs (120 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Front Control Arm Ball Joint Nut",
-        "spec": "56 ft-lbs (76 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Front Thrust Arm to Frame",
-        "spec": "118 ft-lbs (160 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Front Strut Top Mount Nuts",
-        "spec": "23 ft-lbs (31 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Front Sway Bar Bracket Bolts",
-        "spec": "17 ft-lbs (23 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Upper Control Arm Inner Bolt",
-        "spec": "81 ft-lbs (110 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Control Arm Eccentric Bolts",
-        "spec": "74 ft-lbs (100 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Toe Link Ball Joint Nut",
-        "spec": "56 ft-lbs (76 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Sway Bar Drop Link Nuts",
-        "spec": "48 ft-lbs (65 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Engine Mount Bolts (Top)",
-        "spec": "23 ft-lbs (31 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Engine Mount Thru-Bolt Nut (Bottom)",
-        "spec": "63 ft-lbs (85 Nm)",
-        "notes": ""
-      }
+      { "component": "Wheel Lug Bolts", "spec": "96-118 ft-lbs (130-160 Nm)", "notes": "118 ft-lbs is revised spec; center-lock different" },
+      { "component": "Front Strut Pinch Bolt", "spec": "65 ft-lbs (85 Nm)", "notes": "" },
+      { "component": "Front Lower Control Arm to Frame", "spec": "89 ft-lbs (120 Nm)", "notes": "" },
+      { "component": "Front Control Arm Ball Joint Nut", "spec": "56 ft-lbs (76 Nm)", "notes": "" },
+      { "component": "Front Thrust Arm to Frame", "spec": "118 ft-lbs (160 Nm)", "notes": "" },
+      { "component": "Front Strut Top Mount Nuts", "spec": "23 ft-lbs (31 Nm)", "notes": "" },
+      { "component": "Front Sway Bar Bracket Bolts", "spec": "17 ft-lbs (23 Nm)", "notes": "" },
+      { "component": "Rear Upper Control Arm Inner Bolt", "spec": "81 ft-lbs (110 Nm)", "notes": "" },
+      { "component": "Rear Control Arm Eccentric Bolts", "spec": "74 ft-lbs (100 Nm)", "notes": "" },
+      { "component": "Rear Toe Link Ball Joint Nut", "spec": "56 ft-lbs (76 Nm)", "notes": "" },
+      { "component": "Rear Sway Bar Drop Link Nuts", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
+      { "component": "Engine Mount Bolts (Top)", "spec": "23 ft-lbs (31 Nm)", "notes": "" },
+      { "component": "Engine Mount Thru-Bolt Nut (Bottom)", "spec": "63 ft-lbs (85 Nm)", "notes": "" }
     ],
     "brakes": [
-      {
-        "component": "Front Caliper Mounting Bolts",
-        "spec": "63 ft-lbs (85 Nm)",
-        "notes": "Use new bolts"
-      },
-      {
-        "component": "Rear Caliper Mounting Bolts",
-        "spec": "63 ft-lbs (85 Nm)",
-        "notes": "Use new bolts"
-      },
-      {
-        "component": "Brake Rotor Screws",
-        "spec": "7.5 ft-lbs (10 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Brake Bleeder Screws",
-        "spec": "6-9 ft-lbs (8-12 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "PCCB Caliper Bolts",
-        "spec": "74 ft-lbs (100 Nm)",
-        "notes": "Ceramic brake cars only"
-      }
+      { "component": "Front Caliper Mounting Bolts", "spec": "63 ft-lbs (85 Nm)", "notes": "Use new bolts" },
+      { "component": "Rear Caliper Mounting Bolts", "spec": "63 ft-lbs (85 Nm)", "notes": "Use new bolts" },
+      { "component": "Brake Rotor Screws", "spec": "7.5 ft-lbs (10 Nm)", "notes": "" },
+      { "component": "Brake Bleeder Screws", "spec": "6-9 ft-lbs (8-12 Nm)", "notes": "" },
+      { "component": "PCCB Caliper Bolts", "spec": "74 ft-lbs (100 Nm)", "notes": "Ceramic brake cars only" }
     ]
   },
   "diyGuides": [
@@ -1006,46 +1004,22 @@
             "detail": "DFI injectors can fail causing rough running. Usually diagnosed with scan tool.",
             "costIfBad": "$800-1,500"
           },
-          {
-            "check": "Oil Consumption",
-            "detail": "Some oil consumption is normal. Monitor level between services.",
-            "costIfBad": "Monitor and maintain"
-          }
+          { "check": "Oil Consumption", "detail": "Some oil consumption is normal. Monitor level between services.", "costIfBad": "Monitor and maintain" }
         ]
       },
       {
         "category": "Transmission",
         "items": [
-          {
-            "check": "Manual Transmission",
-            "detail": "Test all gears. G97 6-speed is robust and well-regarded.",
-            "costIfBad": "$2,000-4,000"
-          },
-          {
-            "check": "PDK (997.2)",
-            "detail": "Check for smooth operation and proper clutch wear. PDK requires fluid service.",
-            "costIfBad": "$1,500-5,000"
-          },
-          {
-            "check": "Clutch",
-            "detail": "Manual car clutch engagement should be smooth. Dual-mass flywheel is expensive.",
-            "costIfBad": "$3,000-5,000"
-          }
+          { "check": "Manual Transmission", "detail": "Test all gears. G97 6-speed is robust and well-regarded.", "costIfBad": "$2,000-4,000" },
+          { "check": "PDK (997.2)", "detail": "Check for smooth operation and proper clutch wear. PDK requires fluid service.", "costIfBad": "$1,500-5,000" },
+          { "check": "Clutch", "detail": "Manual car clutch engagement should be smooth. Dual-mass flywheel is expensive.", "costIfBad": "$3,000-5,000" }
         ]
       },
       {
         "category": "Suspension & Brakes",
         "items": [
-          {
-            "check": "PASM Shocks",
-            "detail": "If equipped, test in all modes. Shocks can develop leaks.",
-            "costIfBad": "$2,000-4,000"
-          },
-          {
-            "check": "Control Arm Bushings",
-            "detail": "Check for clunking and worn bushings. Common wear item.",
-            "costIfBad": "$600-1,500"
-          },
+          { "check": "PASM Shocks", "detail": "If equipped, test in all modes. Shocks can develop leaks.", "costIfBad": "$2,000-4,000" },
+          { "check": "Control Arm Bushings", "detail": "Check for clunking and worn bushings. Common wear item.", "costIfBad": "$600-1,500" },
           {
             "check": "PCCB Brakes (if equipped)",
             "detail": "Ceramic brakes are expensive to replace. Check rotor condition.",
@@ -1056,21 +1030,9 @@
       {
         "category": "Electrical & Interior",
         "items": [
-          {
-            "check": "PCM/Navigation",
-            "detail": "Check touchscreen function and navigation. Older units may need updates.",
-            "costIfBad": "$500-2,000"
-          },
-          {
-            "check": "Convertible Top (Cab)",
-            "detail": "Test full operation including automatic wind blocker if equipped.",
-            "costIfBad": "$1,000-3,000"
-          },
-          {
-            "check": "Sport Seat Bolsters",
-            "detail": "Driver side bolster wear is common on sport seats.",
-            "costIfBad": "$500-1,500"
-          }
+          { "check": "PCM/Navigation", "detail": "Check touchscreen function and navigation. Older units may need updates.", "costIfBad": "$500-2,000" },
+          { "check": "Convertible Top (Cab)", "detail": "Test full operation including automatic wind blocker if equipped.", "costIfBad": "$1,000-3,000" },
+          { "check": "Sport Seat Bolsters", "detail": "Driver side bolster wear is common on sport seats.", "costIfBad": "$500-1,500" }
         ]
       }
     ],
@@ -1131,62 +1093,22 @@
   },
   "communityResources": {
     "youtube": [
-      {
-        "name": "Rolling Slow Media",
-        "url": "https://www.youtube.com/@RollingSlowMedia",
-        "description": "997 owner content and Porsche reviews"
-      },
-      {
-        "name": "Channel P101tv",
-        "url": "https://www.youtube.com/@P101tv",
-        "description": "Independent Porsche channel"
-      },
-      {
-        "name": "SavageGeese",
-        "url": "https://www.youtube.com/@SavageGeese",
-        "description": "Detailed reviews including 997 models"
-      }
+      { "name": "Rolling Slow Media", "url": "https://www.youtube.com/@RollingSlowMedia", "description": "997 owner content and Porsche reviews" },
+      { "name": "Channel P101tv", "url": "https://www.youtube.com/@P101tv", "description": "Independent Porsche channel" },
+      { "name": "SavageGeese", "url": "https://www.youtube.com/@SavageGeese", "description": "Detailed reviews including 997 models" }
     ],
     "forums": [
-      {
-        "name": "Rennlist 997 Forum",
-        "url": "https://rennlist.com/forums/997-forum-113/",
-        "description": "The most active 997 community"
-      },
-      {
-        "name": "911UK 997 Forum",
-        "url": "https://911uk.com/forums/997-2004-2012.16/",
-        "description": "UK-based 997 discussion and classifieds"
-      },
-      {
-        "name": "6SpeedOnline 997 Forum",
-        "url": "https://www.6speedonline.com/forums/997-31/",
-        "description": "C2, C2S, C4, C4S, GTS, Targa discussion"
-      },
-      {
-        "name": "Planet-9 911 Section",
-        "url": "https://www.planet-9.com/forums/",
-        "description": "All-Porsche community"
-      }
+      { "name": "Rennlist 997 Forum", "url": "https://rennlist.com/forums/997-forum-113/", "description": "The most active 997 community" },
+      { "name": "911UK 997 Forum", "url": "https://911uk.com/forums/997-2004-2012.16/", "description": "UK-based 997 discussion and classifieds" },
+      { "name": "6SpeedOnline 997 Forum", "url": "https://www.6speedonline.com/forums/997-31/", "description": "C2, C2S, C4, C4S, GTS, Targa discussion" },
+      { "name": "Planet-9 911 Section", "url": "https://www.planet-9.com/forums/", "description": "All-Porsche community" }
     ],
     "facebook": [
-      {
-        "name": "Porsche 997 Owners",
-        "url": "https://www.facebook.com/groups/porsche997owners",
-        "description": "Active 997 enthusiast community"
-      },
-      {
-        "name": "997 GT3 Owners",
-        "url": "https://www.facebook.com/groups/997gt3owners",
-        "description": "Dedicated GT3 and GT3 RS discussion"
-      }
+      { "name": "Porsche 997 Owners", "url": "https://www.facebook.com/groups/porsche997owners", "description": "Active 997 enthusiast community" },
+      { "name": "997 GT3 Owners", "url": "https://www.facebook.com/groups/997gt3owners", "description": "Dedicated GT3 and GT3 RS discussion" }
     ],
     "websites": [
-      {
-        "name": "911UK 997 FAQ",
-        "url": "https://911uk.com/forums/997-faq.40/",
-        "description": "997 frequently asked questions and documents"
-      }
+      { "name": "911UK 997 FAQ", "url": "https://911uk.com/forums/997-faq.40/", "description": "997 frequently asked questions and documents" }
     ]
   }
 }

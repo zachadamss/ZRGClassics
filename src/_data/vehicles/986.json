@@ -23,14 +23,8 @@
         "Use quality oil and change every 5,000 miles"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "LN Engineering",
-          "url": "https://lnengineering.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "LN Engineering", "url": "https://lnengineering.com/" }
       ],
       "repairCosts": {
         "diy": "$500-1000",
@@ -38,21 +32,9 @@
         "notes": "Critical preventive maintenance. Often combined with RMS and clutch."
       },
       "parts": [
-        {
-          "name": "IMS Bearing (Single Row Retrofit)",
-          "partNumber": "LN Engineering",
-          "price": "$400-600"
-        },
-        {
-          "name": "IMS Guardian/Magnetic Drain",
-          "partNumber": "LN Engineering",
-          "price": "$80-120"
-        },
-        {
-          "name": "RMS (Rear Main Seal)",
-          "partNumber": "99610322571",
-          "price": "$30-60"
-        }
+        { "name": "IMS Bearing (Single Row Retrofit)", "partNumber": "LN Engineering", "price": "$400-600" },
+        { "name": "IMS Guardian/Magnetic Drain", "partNumber": "LN Engineering", "price": "$80-120" },
+        { "name": "RMS (Rear Main Seal)", "partNumber": "99610322571", "price": "$30-60" }
       ],
       "relatedIssues": [
         { "vehicle": "996", "brand": "Porsche", "model": "996 911", "issueId": "ims-bearing" },
@@ -73,14 +55,8 @@
         "Inspect flywheel for oil contamination damage"
       ],
       "sources": [
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        },
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        }
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" },
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$400-800",
@@ -88,21 +64,9 @@
         "notes": "Requires transmission removal. Often done with IMS bearing."
       },
       "parts": [
-        {
-          "name": "Rear Main Seal",
-          "partNumber": "99610322571",
-          "price": "$30-60"
-        },
-        {
-          "name": "Intermediate Plate Seal",
-          "partNumber": "99610322870",
-          "price": "$20-40"
-        },
-        {
-          "name": "Clutch Kit (if needed)",
-          "partNumber": "98611691100",
-          "price": "$400-700"
-        }
+        { "name": "Rear Main Seal", "partNumber": "99610322571", "price": "$30-60" },
+        { "name": "Intermediate Plate Seal", "partNumber": "99610322870", "price": "$20-40" },
+        { "name": "Clutch Kit (if needed)", "partNumber": "98611691100", "price": "$400-700" }
       ],
       "difficulty": "Advanced"
     },
@@ -119,14 +83,8 @@
         "This is a preventive maintenance item - don't wait for failure"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "FCP Euro",
-          "url": "https://www.fcpeuro.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "FCP Euro", "url": "https://www.fcpeuro.com/" }
       ],
       "repairCosts": {
         "diy": "$200-400",
@@ -134,21 +92,9 @@
         "notes": "Replace with aluminum upgrade. Plastic pipes crack with age."
       },
       "parts": [
-        {
-          "name": "Coolant Pipe Kit (Aluminum)",
-          "partNumber": "Various aftermarket",
-          "price": "$150-300"
-        },
-        {
-          "name": "Water Pump",
-          "partNumber": "99610601157",
-          "price": "$100-180"
-        },
-        {
-          "name": "Thermostat",
-          "partNumber": "99610601501",
-          "price": "$30-60"
-        }
+        { "name": "Coolant Pipe Kit (Aluminum)", "partNumber": "Various aftermarket", "price": "$150-300" },
+        { "name": "Water Pump", "partNumber": "99610601157", "price": "$100-180" },
+        { "name": "Thermostat", "partNumber": "99610601501", "price": "$30-60" }
       ],
       "difficulty": "Advanced"
     },
@@ -166,14 +112,8 @@
         "Regular lubrication of moving parts prevents issues"
       ],
       "sources": [
-        {
-          "name": "Planet-9",
-          "url": "https://www.planet-9.com/"
-        },
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        }
+        { "name": "Planet-9", "url": "https://www.planet-9.com/" },
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" }
       ],
       "repairCosts": {
         "diy": "$100-400",
@@ -181,21 +121,9 @@
         "notes": "Hydraulic system issues. Microswitches and pump common."
       },
       "parts": [
-        {
-          "name": "Hydraulic Pump",
-          "partNumber": "98656160901",
-          "price": "$300-600"
-        },
-        {
-          "name": "Microswitch Set",
-          "partNumber": "Various",
-          "price": "$50-100"
-        },
-        {
-          "name": "Hydraulic Fluid",
-          "partNumber": "Pentosin CHF 11S",
-          "price": "$25-40"
-        }
+        { "name": "Hydraulic Pump", "partNumber": "98656160901", "price": "$300-600" },
+        { "name": "Microswitch Set", "partNumber": "Various", "price": "$50-100" },
+        { "name": "Hydraulic Fluid", "partNumber": "Pentosin CHF 11S", "price": "$25-40" }
       ],
       "difficulty": "Advanced"
     },
@@ -212,14 +140,8 @@
         "Combine with other under-intake repairs to save labor"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "Flat 6 Innovations",
-          "url": "https://flat6innovations.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "Flat 6 Innovations", "url": "https://flat6innovations.com/" }
       ],
       "repairCosts": {
         "diy": "$200-400",
@@ -227,16 +149,8 @@
         "notes": "Air-Oil Separator. Causes smoke and consumption when failed."
       },
       "parts": [
-        {
-          "name": "AOS Assembly",
-          "partNumber": "99610702558",
-          "price": "$200-350"
-        },
-        {
-          "name": "AOS Hose Kit",
-          "partNumber": "Various",
-          "price": "$50-100"
-        }
+        { "name": "AOS Assembly", "partNumber": "99610702558", "price": "$200-350" },
+        { "name": "AOS Hose Kit", "partNumber": "Various", "price": "$50-100" }
       ],
       "difficulty": "Moderate"
     },
@@ -253,14 +167,8 @@
         "Prevention: regular driving, proper warm-up, quality oil"
       ],
       "sources": [
-        {
-          "name": "LN Engineering",
-          "url": "https://lnengineering.com/"
-        },
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        }
+        { "name": "LN Engineering", "url": "https://lnengineering.com/" },
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" }
       ],
       "repairCosts": {
         "diy": "N/A",
@@ -268,16 +176,8 @@
         "notes": "Major engine work. Cylinder sleeving or replacement required."
       },
       "parts": [
-        {
-          "name": "Cylinder Sleeving (per cyl)",
-          "partNumber": "LN Engineering",
-          "price": "$800-1200"
-        },
-        {
-          "name": "Used Engine",
-          "partNumber": "N/A",
-          "price": "$5000-10000"
-        }
+        { "name": "Cylinder Sleeving (per cyl)", "partNumber": "LN Engineering", "price": "$800-1200" },
+        { "name": "Used Engine", "partNumber": "N/A", "price": "$5000-10000" }
       ],
       "difficulty": "Advanced"
     },
@@ -293,14 +193,8 @@
         "Replace both sides if one fails (the other is likely close behind)"
       ],
       "sources": [
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        },
-        {
-          "name": "Planet-9",
-          "url": "https://www.planet-9.com/"
-        }
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" },
+        { "name": "Planet-9", "url": "https://www.planet-9.com/" }
       ],
       "repairCosts": {
         "diy": "$100-200",
@@ -308,16 +202,8 @@
         "notes": "Frameless windows require proper adjustment."
       },
       "parts": [
-        {
-          "name": "Window Regulator (Left)",
-          "partNumber": "98654207504",
-          "price": "$150-250"
-        },
-        {
-          "name": "Window Regulator (Right)",
-          "partNumber": "98654207604",
-          "price": "$150-250"
-        }
+        { "name": "Window Regulator (Left)", "partNumber": "98654207504", "price": "$150-250" },
+        { "name": "Window Regulator (Right)", "partNumber": "98654207604", "price": "$150-250" }
       ],
       "relatedIssues": [
         { "vehicle": "e36", "brand": "BMW", "model": "E36", "issueId": "window-regulator" },
@@ -338,66 +224,16 @@
       "interval": "Every 60,000-80,000 miles",
       "laborHours": "8-12 hours shop time",
       "parts": [
-        {
-          "name": "Front Control Arm (Left)",
-          "oem": "99634105314",
-          "aftermarket": "Lemforder, URO",
-          "cost": "$120-200"
-        },
-        {
-          "name": "Front Control Arm (Right)",
-          "oem": "99634105414",
-          "aftermarket": "Lemforder, URO",
-          "cost": "$120-200"
-        },
-        {
-          "name": "Front Strut Mount (Pair)",
-          "oem": "99634351900",
-          "aftermarket": "Sachs, Lemforder",
-          "cost": "$80-150"
-        },
-        {
-          "name": "Tie Rod End (Pair)",
-          "oem": "99634713100",
-          "aftermarket": "Lemforder, Meyle",
-          "cost": "$60-120"
-        },
-        {
-          "name": "Front Sway Bar End Link (Pair)",
-          "oem": "99634306901",
-          "aftermarket": "Lemforder, aftermarket",
-          "cost": "$40-80"
-        },
-        {
-          "name": "Rear Control Arm Upper (Pair)",
-          "oem": "98633105101",
-          "aftermarket": "Lemforder, aftermarket",
-          "cost": "$100-180"
-        },
-        {
-          "name": "Rear Control Arm Lower (Pair)",
-          "oem": "98633105201",
-          "aftermarket": "Lemforder, aftermarket",
-          "cost": "$100-180"
-        },
-        {
-          "name": "Rear Trailing Arm Bushing Set",
-          "oem": "99633105500",
-          "aftermarket": "Powerflex, aftermarket",
-          "cost": "$60-120"
-        },
-        {
-          "name": "Rear Sway Bar End Link (Pair)",
-          "oem": "99633306700",
-          "aftermarket": "Lemforder, aftermarket",
-          "cost": "$40-80"
-        },
-        {
-          "name": "Wheel Bearing (Each)",
-          "oem": "99905302303",
-          "aftermarket": "FAG, SKF",
-          "cost": "$80-150"
-        }
+        { "name": "Front Control Arm (Left)", "oem": "99634105314", "aftermarket": "Lemforder, URO", "cost": "$120-200" },
+        { "name": "Front Control Arm (Right)", "oem": "99634105414", "aftermarket": "Lemforder, URO", "cost": "$120-200" },
+        { "name": "Front Strut Mount (Pair)", "oem": "99634351900", "aftermarket": "Sachs, Lemforder", "cost": "$80-150" },
+        { "name": "Tie Rod End (Pair)", "oem": "99634713100", "aftermarket": "Lemforder, Meyle", "cost": "$60-120" },
+        { "name": "Front Sway Bar End Link (Pair)", "oem": "99634306901", "aftermarket": "Lemforder, aftermarket", "cost": "$40-80" },
+        { "name": "Rear Control Arm Upper (Pair)", "oem": "98633105101", "aftermarket": "Lemforder, aftermarket", "cost": "$100-180" },
+        { "name": "Rear Control Arm Lower (Pair)", "oem": "98633105201", "aftermarket": "Lemforder, aftermarket", "cost": "$100-180" },
+        { "name": "Rear Trailing Arm Bushing Set", "oem": "99633105500", "aftermarket": "Powerflex, aftermarket", "cost": "$60-120" },
+        { "name": "Rear Sway Bar End Link (Pair)", "oem": "99633306700", "aftermarket": "Lemforder, aftermarket", "cost": "$40-80" },
+        { "name": "Wheel Bearing (Each)", "oem": "99905302303", "aftermarket": "FAG, SKF", "cost": "$80-150" }
       ],
       "tools": [
         "Floor jack and jack stands",
@@ -447,18 +283,9 @@
         "Check for cracked spring perches before reassembly - safety item."
       ],
       "references": [
-        {
-          "name": "Pelican Parts 986 Suspension Guide",
-          "url": "https://www.pelicanparts.com/techarticles/Porsche-Boxster-986/"
-        },
-        {
-          "name": "Planet-9 Suspension DIY",
-          "url": "https://www.planet-9.com/"
-        },
-        {
-          "name": "Rennlist 986 Forum",
-          "url": "https://rennlist.com/forums/986-forum/"
-        }
+        { "name": "Pelican Parts 986 Suspension Guide", "url": "https://www.pelicanparts.com/techarticles/Porsche-Boxster-986/" },
+        { "name": "Planet-9 Suspension DIY", "url": "https://www.planet-9.com/" },
+        { "name": "Rennlist 986 Forum", "url": "https://rennlist.com/forums/986-forum/" }
       ]
     },
     {
@@ -471,66 +298,16 @@
       "interval": "Inspect annually",
       "laborHours": "Varies by severity",
       "parts": [
-        {
-          "name": "Rocker Panel Repair Section",
-          "oem": "—",
-          "aftermarket": "Fabricated or aftermarket",
-          "cost": "$100-250"
-        },
-        {
-          "name": "Floor Pan Repair Section",
-          "oem": "—",
-          "aftermarket": "Fabricated",
-          "cost": "$80-200"
-        },
-        {
-          "name": "Door Bottom Patch",
-          "oem": "—",
-          "aftermarket": "Fabricated",
-          "cost": "$40-100"
-        },
-        {
-          "name": "Battery Box",
-          "oem": "99661118303",
-          "aftermarket": "Fabricated",
-          "cost": "$100-250"
-        },
-        {
-          "name": "Rust Converter",
-          "oem": "—",
-          "aftermarket": "POR-15, Eastwood",
-          "cost": "$20-40"
-        },
-        {
-          "name": "Cavity Wax",
-          "oem": "—",
-          "aftermarket": "Fluid Film, Eastwood",
-          "cost": "$15-30"
-        },
-        {
-          "name": "Epoxy Primer",
-          "oem": "—",
-          "aftermarket": "Eastwood, SPI",
-          "cost": "$30-60"
-        },
-        {
-          "name": "Seam Sealer",
-          "oem": "—",
-          "aftermarket": "3M, Eastwood",
-          "cost": "$15-25"
-        },
-        {
-          "name": "Convertible Top Drain Tubes",
-          "oem": "99656172100",
-          "aftermarket": "Aftermarket",
-          "cost": "$30-60"
-        },
-        {
-          "name": "Trunk Seal",
-          "oem": "98656193100",
-          "aftermarket": "URO, aftermarket",
-          "cost": "$60-120"
-        }
+        { "name": "Rocker Panel Repair Section", "oem": "—", "aftermarket": "Fabricated or aftermarket", "cost": "$100-250" },
+        { "name": "Floor Pan Repair Section", "oem": "—", "aftermarket": "Fabricated", "cost": "$80-200" },
+        { "name": "Door Bottom Patch", "oem": "—", "aftermarket": "Fabricated", "cost": "$40-100" },
+        { "name": "Battery Box", "oem": "99661118303", "aftermarket": "Fabricated", "cost": "$100-250" },
+        { "name": "Rust Converter", "oem": "—", "aftermarket": "POR-15, Eastwood", "cost": "$20-40" },
+        { "name": "Cavity Wax", "oem": "—", "aftermarket": "Fluid Film, Eastwood", "cost": "$15-30" },
+        { "name": "Epoxy Primer", "oem": "—", "aftermarket": "Eastwood, SPI", "cost": "$30-60" },
+        { "name": "Seam Sealer", "oem": "—", "aftermarket": "3M, Eastwood", "cost": "$15-25" },
+        { "name": "Convertible Top Drain Tubes", "oem": "99656172100", "aftermarket": "Aftermarket", "cost": "$30-60" },
+        { "name": "Trunk Seal", "oem": "98656193100", "aftermarket": "URO, aftermarket", "cost": "$60-120" }
       ],
       "tools": [
         "Inspection mirror and flashlight",
@@ -576,18 +353,9 @@
         "Fire extinguisher must be accessible if welding."
       ],
       "references": [
-        {
-          "name": "Pelican Parts 986 Maintenance",
-          "url": "https://www.pelicanparts.com/techarticles/Porsche-Boxster-986/"
-        },
-        {
-          "name": "Planet-9 Water Leak Solutions",
-          "url": "https://www.planet-9.com/"
-        },
-        {
-          "name": "986 Forum Technical",
-          "url": "https://986forum.com/"
-        }
+        { "name": "Pelican Parts 986 Maintenance", "url": "https://www.pelicanparts.com/techarticles/Porsche-Boxster-986/" },
+        { "name": "Planet-9 Water Leak Solutions", "url": "https://www.planet-9.com/" },
+        { "name": "986 Forum Technical", "url": "https://986forum.com/" }
       ]
     },
     {
@@ -600,66 +368,16 @@
       "interval": "Address as symptoms appear",
       "laborHours": "6-10 hours shop time",
       "parts": [
-        {
-          "name": "Ignition Coil Pack (Set of 6)",
-          "oem": "99660210101",
-          "aftermarket": "Bosch, aftermarket",
-          "cost": "$150-300"
-        },
-        {
-          "name": "Mass Air Flow Sensor",
-          "oem": "99660612300",
-          "aftermarket": "Bosch, VDO",
-          "cost": "$80-150"
-        },
-        {
-          "name": "Oxygen Sensor (Pre-Cat)",
-          "oem": "99660612600",
-          "aftermarket": "Bosch, NTK",
-          "cost": "$100-200"
-        },
-        {
-          "name": "Oxygen Sensor (Post-Cat)",
-          "oem": "99660612700",
-          "aftermarket": "Bosch, NTK",
-          "cost": "$80-150"
-        },
-        {
-          "name": "Crankshaft Position Sensor",
-          "oem": "99660610601",
-          "aftermarket": "Bosch, VDO",
-          "cost": "$60-120"
-        },
-        {
-          "name": "Camshaft Position Sensor",
-          "oem": "99660610602",
-          "aftermarket": "Bosch, VDO",
-          "cost": "$60-120"
-        },
-        {
-          "name": "Window Regulator (Left)",
-          "oem": "98654207504",
-          "aftermarket": "URO, aftermarket",
-          "cost": "$150-250"
-        },
-        {
-          "name": "Window Regulator (Right)",
-          "oem": "98654207604",
-          "aftermarket": "URO, aftermarket",
-          "cost": "$150-250"
-        },
-        {
-          "name": "Convertible Top Microswitch",
-          "oem": "Various",
-          "aftermarket": "Aftermarket",
-          "cost": "$30-60"
-        },
-        {
-          "name": "Central Locking Pump",
-          "oem": "99656192100",
-          "aftermarket": "Rebuilt, aftermarket",
-          "cost": "$200-400"
-        }
+        { "name": "Ignition Coil Pack (Set of 6)", "oem": "99660210101", "aftermarket": "Bosch, aftermarket", "cost": "$150-300" },
+        { "name": "Mass Air Flow Sensor", "oem": "99660612300", "aftermarket": "Bosch, VDO", "cost": "$80-150" },
+        { "name": "Oxygen Sensor (Pre-Cat)", "oem": "99660612600", "aftermarket": "Bosch, NTK", "cost": "$100-200" },
+        { "name": "Oxygen Sensor (Post-Cat)", "oem": "99660612700", "aftermarket": "Bosch, NTK", "cost": "$80-150" },
+        { "name": "Crankshaft Position Sensor", "oem": "99660610601", "aftermarket": "Bosch, VDO", "cost": "$60-120" },
+        { "name": "Camshaft Position Sensor", "oem": "99660610602", "aftermarket": "Bosch, VDO", "cost": "$60-120" },
+        { "name": "Window Regulator (Left)", "oem": "98654207504", "aftermarket": "URO, aftermarket", "cost": "$150-250" },
+        { "name": "Window Regulator (Right)", "oem": "98654207604", "aftermarket": "URO, aftermarket", "cost": "$150-250" },
+        { "name": "Convertible Top Microswitch", "oem": "Various", "aftermarket": "Aftermarket", "cost": "$30-60" },
+        { "name": "Central Locking Pump", "oem": "99656192100", "aftermarket": "Rebuilt, aftermarket", "cost": "$200-400" }
       ],
       "tools": [
         "OBD2 scanner (Durametric or PIWIS preferred)",
@@ -707,18 +425,9 @@
         "Support window glass before removing regulator - it will fall."
       ],
       "references": [
-        {
-          "name": "Pelican Parts 986 Electrical",
-          "url": "https://www.pelicanparts.com/techarticles/Porsche-Boxster-986/"
-        },
-        {
-          "name": "986 Forum DIY",
-          "url": "https://986forum.com/"
-        },
-        {
-          "name": "Rennlist 986 Technical",
-          "url": "https://rennlist.com/forums/986-forum/"
-        }
+        { "name": "Pelican Parts 986 Electrical", "url": "https://www.pelicanparts.com/techarticles/Porsche-Boxster-986/" },
+        { "name": "986 Forum DIY", "url": "https://986forum.com/" },
+        { "name": "Rennlist 986 Technical", "url": "https://rennlist.com/forums/986-forum/" }
       ]
     },
     {
@@ -731,66 +440,16 @@
       "interval": "As needed for wear items",
       "laborHours": "8-14 hours shop time",
       "parts": [
-        {
-          "name": "Leather Repair Kit",
-          "oem": "—",
-          "aftermarket": "Leatherique, Colourlock",
-          "cost": "$50-100"
-        },
-        {
-          "name": "Convertible Top Fabric",
-          "oem": "98656191900",
-          "aftermarket": "German canvas, Haartz Stayfast",
-          "cost": "$300-600"
-        },
-        {
-          "name": "Convertible Top Hydraulic Fluid",
-          "oem": "Pentosin CHF 11S",
-          "aftermarket": "Pentosin",
-          "cost": "$25-40"
-        },
-        {
-          "name": "Rear Window (Plastic)",
-          "oem": "98656190501",
-          "aftermarket": "Aftermarket",
-          "cost": "$150-300"
-        },
-        {
-          "name": "Shift Knob (Manual)",
-          "oem": "99642407504",
-          "aftermarket": "Aftermarket",
-          "cost": "$60-150"
-        },
-        {
-          "name": "E-Brake Boot",
-          "oem": "99655298001",
-          "aftermarket": "Leather replicas",
-          "cost": "$30-60"
-        },
-        {
-          "name": "Door Panel Clip Set",
-          "oem": "Various",
-          "aftermarket": "Aftermarket",
-          "cost": "$15-30"
-        },
-        {
-          "name": "Carpet Set",
-          "oem": "—",
-          "aftermarket": "German Molded, aftermarket",
-          "cost": "$300-600"
-        },
-        {
-          "name": "Seat Foam (Driver)",
-          "oem": "99652191103",
-          "aftermarket": "Recovered",
-          "cost": "$100-200"
-        },
-        {
-          "name": "Cabin Air Filter",
-          "oem": "99657221901",
-          "aftermarket": "Mann, Bosch",
-          "cost": "$20-40"
-        }
+        { "name": "Leather Repair Kit", "oem": "—", "aftermarket": "Leatherique, Colourlock", "cost": "$50-100" },
+        { "name": "Convertible Top Fabric", "oem": "98656191900", "aftermarket": "German canvas, Haartz Stayfast", "cost": "$300-600" },
+        { "name": "Convertible Top Hydraulic Fluid", "oem": "Pentosin CHF 11S", "aftermarket": "Pentosin", "cost": "$25-40" },
+        { "name": "Rear Window (Plastic)", "oem": "98656190501", "aftermarket": "Aftermarket", "cost": "$150-300" },
+        { "name": "Shift Knob (Manual)", "oem": "99642407504", "aftermarket": "Aftermarket", "cost": "$60-150" },
+        { "name": "E-Brake Boot", "oem": "99655298001", "aftermarket": "Leather replicas", "cost": "$30-60" },
+        { "name": "Door Panel Clip Set", "oem": "Various", "aftermarket": "Aftermarket", "cost": "$15-30" },
+        { "name": "Carpet Set", "oem": "—", "aftermarket": "German Molded, aftermarket", "cost": "$300-600" },
+        { "name": "Seat Foam (Driver)", "oem": "99652191103", "aftermarket": "Recovered", "cost": "$100-200" },
+        { "name": "Cabin Air Filter", "oem": "99657221901", "aftermarket": "Mann, Bosch", "cost": "$20-40" }
       ],
       "tools": [
         "Trim removal tools (plastic pry set)",
@@ -836,18 +495,9 @@
         "Rear window removal requires care to avoid damaging the track."
       ],
       "references": [
-        {
-          "name": "Pelican Parts 986 Interior",
-          "url": "https://www.pelicanparts.com/techarticles/Porsche-Boxster-986/"
-        },
-        {
-          "name": "Leatherique Products",
-          "url": "https://www.leatherique.com/"
-        },
-        {
-          "name": "Planet-9 Convertible Top Guide",
-          "url": "https://www.planet-9.com/"
-        }
+        { "name": "Pelican Parts 986 Interior", "url": "https://www.pelicanparts.com/techarticles/Porsche-Boxster-986/" },
+        { "name": "Leatherique Products", "url": "https://www.leatherique.com/" },
+        { "name": "Planet-9 Convertible Top Guide", "url": "https://www.planet-9.com/" }
       ]
     }
   ],
@@ -857,7 +507,10 @@
         "name": "FCP Euro",
         "url": "https://www.fcpeuro.com/Porsche-parts",
         "notes": "Industry-leading lifetime replacement guarantee on all parts - excellent 986 coverage",
-        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "specialties": [
+          "Lifetime Warranty",
+          "OE Quality"
+        ],
         "shipping": "Free over $49",
         "warranty": "Lifetime",
         "featured": true
@@ -866,7 +519,11 @@
         "name": "Pelican Parts",
         "url": "https://www.pelicanparts.com/Porsche/catalog/986.htm",
         "notes": "Comprehensive 986 parts catalog with detailed tech articles for every repair",
-        "specialties": ["OEM Parts", "Tech Articles", "DIY Support"],
+        "specialties": [
+          "OEM Parts",
+          "Tech Articles",
+          "DIY Support"
+        ],
         "shipping": "Free over $99",
         "featured": true
       },
@@ -874,14 +531,20 @@
         "name": "Porsche Parts",
         "url": "https://parts.porsche.com/",
         "notes": "Factory genuine Porsche parts direct from the manufacturer",
-        "specialties": ["Factory Original", "Genuine Porsche"],
+        "specialties": [
+          "Factory Original",
+          "Genuine Porsche"
+        ],
         "warranty": "Genuine OEM"
       },
       {
         "name": "Sunset Porsche Parts",
         "url": "https://www.sunsetporscheparts.com/",
         "notes": "Porsche dealer parts department with competitive pricing",
-        "specialties": ["OEM Dealer", "New Genuine Parts"],
+        "specialties": [
+          "OEM Dealer",
+          "New Genuine Parts"
+        ],
         "shipping": "Fast shipping"
       }
     ],
@@ -890,27 +553,41 @@
         "name": "LN Engineering",
         "url": "https://lnengineering.com/",
         "notes": "The go-to for IMS bearing solutions - their retrofit bearings are essential for 986 ownership peace of mind",
-        "specialties": ["IMS Bearings", "Engine Components", "986/996 Specialist"],
+        "specialties": [
+          "IMS Bearings",
+          "Engine Components",
+          "986/996 Specialist"
+        ],
         "featured": true
       },
       {
         "name": "Flat 6 Innovations",
         "url": "https://flat6innovations.com/",
         "notes": "986/996 performance specialist - IMS solutions, engine upgrades, and complete builds",
-        "specialties": ["IMS Solutions", "Performance Builds", "M96 Expert"],
+        "specialties": [
+          "IMS Solutions",
+          "Performance Builds",
+          "M96 Expert"
+        ],
         "featured": true
       },
       {
         "name": "Fabspeed",
         "url": "https://www.fabspeed.com/porsche/boxster/986/",
         "notes": "Premium exhaust systems and performance parts for the 986 Boxster",
-        "specialties": ["Exhaust Systems", "Performance Parts"]
+        "specialties": [
+          "Exhaust Systems",
+          "Performance Parts"
+        ]
       },
       {
         "name": "Softronic",
         "url": "https://www.softronic.us/",
         "notes": "ECU tuning solutions to extract more power from the M96 engine",
-        "specialties": ["ECU Tuning", "Performance Software"]
+        "specialties": [
+          "ECU Tuning",
+          "Performance Software"
+        ]
       }
     ],
     "general": [
@@ -918,21 +595,30 @@
         "name": "AutohausAZ",
         "url": "https://www.autohausaz.com/porsche-boxster-parts",
         "notes": "Large selection of replacement parts at competitive prices",
-        "specialties": ["Replacement Parts", "Maintenance Items"],
+        "specialties": [
+          "Replacement Parts",
+          "Maintenance Items"
+        ],
         "shipping": "Free over $99"
       },
       {
         "name": "ECS Tuning",
         "url": "https://www.ecstuning.com/Porsche-986_Boxster/",
         "notes": "Wide selection of OEM and aftermarket parts with detailed fitment data",
-        "specialties": ["OEM Parts", "Aftermarket Options"],
+        "specialties": [
+          "OEM Parts",
+          "Aftermarket Options"
+        ],
         "shipping": "Free over $99"
       },
       {
         "name": "PartsGeek",
         "url": "https://www.partsgeek.com/catalog/porsche/boxster.html",
         "notes": "Budget-friendly replacement parts for common maintenance items",
-        "specialties": ["Budget Parts", "Fast Shipping"]
+        "specialties": [
+          "Budget Parts",
+          "Fast Shipping"
+        ]
       }
     ],
     "specialty": [
@@ -940,20 +626,30 @@
         "name": "986 Forum Store",
         "url": "https://986forum.com/forums/986-forum-store.97/",
         "notes": "Community-driven store with 986-specific parts and group buys",
-        "specialties": ["986 Exclusive", "Group Buys", "Community Resource"],
+        "specialties": [
+          "986 Exclusive",
+          "Group Buys",
+          "Community Resource"
+        ],
         "featured": true
       },
       {
         "name": "Numeric Racing",
         "url": "https://numericracing.com/",
         "notes": "Precision shifter assemblies and transmission upgrades for the 986",
-        "specialties": ["Shifters", "Transmission Parts"]
+        "specialties": [
+          "Shifters",
+          "Transmission Parts"
+        ]
       },
       {
         "name": "Hard Motorsport",
         "url": "https://www.hardmotorsport.com/",
         "notes": "Track-focused upgrades and safety equipment",
-        "specialties": ["Track Parts", "Safety Equipment"]
+        "specialties": [
+          "Track Parts",
+          "Safety Equipment"
+        ]
       }
     ],
     "used": [
@@ -961,40 +657,52 @@
         "name": "Planet-9 Classifieds",
         "url": "https://www.planet-9.com/forums/986-boxster-marketplace.55/",
         "notes": "Active Boxster/Cayman community marketplace - 986-specific section",
-        "specialties": ["986 Community", "Vetted Sellers"],
+        "specialties": [
+          "986 Community",
+          "Vetted Sellers"
+        ],
         "featured": true
       },
       {
         "name": "Rennlist Classifieds",
         "url": "https://rennlist.com/forums/986-forum/",
         "notes": "Large Porsche community marketplace with active 986 section",
-        "specialties": ["Forum Marketplace", "Wide Selection"]
+        "specialties": [
+          "Forum Marketplace",
+          "Wide Selection"
+        ]
       },
       {
         "name": "986 Forum Classifieds",
         "url": "https://986forum.com/forums/marketplace.42/",
         "notes": "Dedicated 986 community marketplace",
-        "specialties": ["986 Exclusive", "Community Vetted"]
+        "specialties": [
+          "986 Exclusive",
+          "Community Vetted"
+        ]
       },
       {
         "name": "eBay Motors",
         "url": "https://www.ebay.com/b/Parts-for-Porsche-Boxster/6030/bn_574972",
         "notes": "Global marketplace for used and NOS 986 parts",
-        "specialties": ["Used Parts", "NOS", "Global Sellers"]
+        "specialties": [
+          "Used Parts",
+          "NOS",
+          "Global Sellers"
+        ]
       },
       {
         "name": "Car-Part.com",
         "url": "https://www.car-part.com/",
         "notes": "Search nationwide salvage yard inventory for 986 parts",
-        "specialties": ["Salvage Parts", "Low Cost"]
+        "specialties": [
+          "Salvage Parts",
+          "Low Cost"
+        ]
       }
     ],
     "tools": [
-      {
-        "name": "RealOEM Porsche",
-        "url": "https://www.realoem.com/",
-        "notes": "Parts diagrams and part number lookup - useful for cross-referencing"
-      },
+      { "name": "RealOEM Porsche", "url": "https://www.realoem.com/", "notes": "Parts diagrams and part number lookup - useful for cross-referencing" },
       {
         "name": "Pelican Parts Tech Articles",
         "url": "https://www.pelicanparts.com/techarticles/Porsche-Boxster-986/",
@@ -1013,110 +721,32 @@
         "name": "LN Engineering 996 Torque Book",
         "url": "https://lnengineering.com/996-torque-book-fastening-specifications-for-porsche-911-type-996-automobile.html"
       },
-      {
-        "name": "Lindsey Racing Torque Specs",
-        "url": "https://www.lindseyracing.com/LR/Parts/TORQUESPEC.html"
-      },
-      {
-        "name": "986 Forum Technical",
-        "url": "https://986forum.com/"
-      }
+      { "name": "Lindsey Racing Torque Specs", "url": "https://www.lindseyracing.com/LR/Parts/TORQUESPEC.html" },
+      { "name": "986 Forum Technical", "url": "https://986forum.com/" }
     ],
     "engine": [
-      {
-        "component": "Crankcase Girdle (M12 studs)",
-        "spec": "22 ft-lbs (30 Nm) + 60°",
-        "notes": "Two-stage tightening"
-      },
-      {
-        "component": "Connecting Rod Bolts (M10)",
-        "spec": "55 ft-lbs (75 Nm) + 5°",
-        "notes": "Use assembly lube"
-      },
-      {
-        "component": "Front Crankshaft Bolt (M16)",
-        "spec": "155 ft-lbs (210 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Spark Plugs (M14)",
-        "spec": "18-22 ft-lbs (25-30 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Oil Drain Plug (M20)",
-        "spec": "37 ft-lbs (50 Nm)",
-        "notes": "Replace washer"
-      },
-      {
-        "component": "Oil Pressure Sensor (M18)",
-        "spec": "26 ft-lbs (35 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Intake Manifold Bolts",
-        "spec": "7 ft-lbs (10 Nm)",
-        "notes": ""
-      }
+      { "component": "Crankcase Girdle (M12 studs)", "spec": "22 ft-lbs (30 Nm) + 60°", "notes": "Two-stage tightening" },
+      { "component": "Connecting Rod Bolts (M10)", "spec": "55 ft-lbs (75 Nm) + 5°", "notes": "Use assembly lube" },
+      { "component": "Front Crankshaft Bolt (M16)", "spec": "155 ft-lbs (210 Nm)", "notes": "" },
+      { "component": "Spark Plugs (M14)", "spec": "18-22 ft-lbs (25-30 Nm)", "notes": "" },
+      { "component": "Oil Drain Plug (M20)", "spec": "37 ft-lbs (50 Nm)", "notes": "Replace washer" },
+      { "component": "Oil Pressure Sensor (M18)", "spec": "26 ft-lbs (35 Nm)", "notes": "" },
+      { "component": "Intake Manifold Bolts", "spec": "7 ft-lbs (10 Nm)", "notes": "" }
     ],
     "suspension": [
-      {
-        "component": "Wheel Lug Bolts (M14)",
-        "spec": "96 ft-lbs (130 Nm)",
-        "notes": "Grease threads with aluminum paste"
-      },
-      {
-        "component": "Front Control Arm to Crossmember (M12)",
-        "spec": "48 ft-lbs (65 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "McPherson Strut to Knuckle (M12)",
-        "spec": "74 ft-lbs (100 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Strut Top Nut",
-        "spec": "44 ft-lbs (60 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Control Arm Bolts (M12)",
-        "spec": "63 ft-lbs (85 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Wheel Hub to Shaft (M22)",
-        "spec": "369 ft-lbs (500 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Tie Rod End (M14)",
-        "spec": "52 ft-lbs (70 Nm)",
-        "notes": ""
-      }
+      { "component": "Wheel Lug Bolts (M14)", "spec": "96 ft-lbs (130 Nm)", "notes": "Grease threads with aluminum paste" },
+      { "component": "Front Control Arm to Crossmember (M12)", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
+      { "component": "McPherson Strut to Knuckle (M12)", "spec": "74 ft-lbs (100 Nm)", "notes": "" },
+      { "component": "Strut Top Nut", "spec": "44 ft-lbs (60 Nm)", "notes": "" },
+      { "component": "Rear Control Arm Bolts (M12)", "spec": "63 ft-lbs (85 Nm)", "notes": "" },
+      { "component": "Wheel Hub to Shaft (M22)", "spec": "369 ft-lbs (500 Nm)", "notes": "" },
+      { "component": "Tie Rod End (M14)", "spec": "52 ft-lbs (70 Nm)", "notes": "" }
     ],
     "brakes": [
-      {
-        "component": "Front Caliper to Knuckle (M12)",
-        "spec": "63 ft-lbs (85 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Caliper to Control Arm (M12)",
-        "spec": "63 ft-lbs (85 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Brake Bleeder Screws",
-        "spec": "6-9 ft-lbs (8-12 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Brake Line Fittings",
-        "spec": "11 ft-lbs (15 Nm)",
-        "notes": "Do not overtighten"
-      }
+      { "component": "Front Caliper to Knuckle (M12)", "spec": "63 ft-lbs (85 Nm)", "notes": "" },
+      { "component": "Rear Caliper to Control Arm (M12)", "spec": "63 ft-lbs (85 Nm)", "notes": "" },
+      { "component": "Brake Bleeder Screws", "spec": "6-9 ft-lbs (8-12 Nm)", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "11 ft-lbs (15 Nm)", "notes": "Do not overtighten" }
     ]
   },
   "diyGuides": [
@@ -1368,36 +998,16 @@
             "detail": "Test full operation multiple times. Check hydraulic cylinders and cables.",
             "costIfBad": "$1,000-2,500"
           },
-          {
-            "check": "Window Regulators",
-            "detail": "Common failure. Test both windows multiple times up and down.",
-            "costIfBad": "$300-600 each"
-          },
-          {
-            "check": "Rear Window Clarity",
-            "detail": "Plastic rear window yellows and scratches. Check visibility.",
-            "costIfBad": "$300-600"
-          },
-          {
-            "check": "Drain Tubes",
-            "detail": "Clogged drains cause water in cabin. Check carpets for moisture.",
-            "costIfBad": "$100-500"
-          }
+          { "check": "Window Regulators", "detail": "Common failure. Test both windows multiple times up and down.", "costIfBad": "$300-600 each" },
+          { "check": "Rear Window Clarity", "detail": "Plastic rear window yellows and scratches. Check visibility.", "costIfBad": "$300-600" },
+          { "check": "Drain Tubes", "detail": "Clogged drains cause water in cabin. Check carpets for moisture.", "costIfBad": "$100-500" }
         ]
       },
       {
         "category": "Transmission",
         "items": [
-          {
-            "check": "Manual Transmission",
-            "detail": "Test all gears. G86 5-speed is robust. Check for synchro wear.",
-            "costIfBad": "$1,500-3,000"
-          },
-          {
-            "check": "Tiptronic",
-            "detail": "Check for smooth shifts. Less desirable but functional.",
-            "costIfBad": "$2,000-4,000"
-          },
+          { "check": "Manual Transmission", "detail": "Test all gears. G86 5-speed is robust. Check for synchro wear.", "costIfBad": "$1,500-3,000" },
+          { "check": "Tiptronic", "detail": "Check for smooth shifts. Less desirable but functional.", "costIfBad": "$2,000-4,000" },
           {
             "check": "Clutch",
             "detail": "Should engage smoothly mid-travel. Mid-engine car makes clutch replacement easier than 911.",
@@ -1408,21 +1018,9 @@
       {
         "category": "Suspension & Electrical",
         "items": [
-          {
-            "check": "Control Arm Bushings",
-            "detail": "Wear causes clunking and vague handling. Common wear item.",
-            "costIfBad": "$400-800"
-          },
-          {
-            "check": "Coil Packs",
-            "detail": "Common failure causing misfires. Usually replaced in sets.",
-            "costIfBad": "$300-600"
-          },
-          {
-            "check": "MAF Sensor",
-            "detail": "Dirty MAF causes running issues. Can often be cleaned.",
-            "costIfBad": "$100-300"
-          }
+          { "check": "Control Arm Bushings", "detail": "Wear causes clunking and vague handling. Common wear item.", "costIfBad": "$400-800" },
+          { "check": "Coil Packs", "detail": "Common failure causing misfires. Usually replaced in sets.", "costIfBad": "$300-600" },
+          { "check": "MAF Sensor", "detail": "Dirty MAF causes running issues. Can often be cleaned.", "costIfBad": "$100-300" }
         ]
       }
     ],
@@ -1482,33 +1080,17 @@
   },
   "communityResources": {
     "youtube": [
-      {
-        "name": "Casey Putsch",
-        "url": "https://www.youtube.com/@CaseyPutsch",
-        "description": "986 Boxster content and automotive education"
-      },
-      {
-        "name": "Channel P101tv",
-        "url": "https://www.youtube.com/@P101tv",
-        "description": "Independent Porsche channel"
-      }
+      { "name": "Casey Putsch", "url": "https://www.youtube.com/@CaseyPutsch", "description": "986 Boxster content and automotive education" },
+      { "name": "Channel P101tv", "url": "https://www.youtube.com/@P101tv", "description": "Independent Porsche channel" }
     ],
     "forums": [
-      {
-        "name": "986 Forum",
-        "url": "http://986forum.com/",
-        "description": "Dedicated Boxster and Cayman community"
-      },
+      { "name": "986 Forum", "url": "http://986forum.com/", "description": "Dedicated Boxster and Cayman community" },
       {
         "name": "Rennlist 986 Forum",
         "url": "https://rennlist.com/forums/boxster-and-boxster-s-986-forum-67/",
         "description": "Boxster discussion and DIY guides"
       },
-      {
-        "name": "BoXa.net",
-        "url": "https://www.boxa.net/",
-        "description": "Porsche Boxster forum with maintenance tips"
-      },
+      { "name": "BoXa.net", "url": "https://www.boxa.net/", "description": "Porsche Boxster forum with maintenance tips" },
       {
         "name": "Planet-9 986 Section",
         "url": "https://www.planet-9.com/forums/986-boxster-general-discussion-1997-2004.148/",
@@ -1516,23 +1098,11 @@
       }
     ],
     "facebook": [
-      {
-        "name": "Porsche 986 Boxster Owners",
-        "url": "https://www.facebook.com/groups/porsche986boxster",
-        "description": "Active 986 Boxster community"
-      },
-      {
-        "name": "Porsche Boxster Community",
-        "url": "https://www.facebook.com/groups/porscheboxster",
-        "description": "All-generation Boxster enthusiasts"
-      }
+      { "name": "Porsche 986 Boxster Owners", "url": "https://www.facebook.com/groups/porsche986boxster", "description": "Active 986 Boxster community" },
+      { "name": "Porsche Boxster Community", "url": "https://www.facebook.com/groups/porscheboxster", "description": "All-generation Boxster enthusiasts" }
     ],
     "websites": [
-      {
-        "name": "986 Forum Wiki",
-        "url": "http://986forum.com/wiki/",
-        "description": "986 technical wiki and catalogs"
-      }
+      { "name": "986 Forum Wiki", "url": "http://986forum.com/wiki/", "description": "986 technical wiki and catalogs" }
     ]
   }
 }

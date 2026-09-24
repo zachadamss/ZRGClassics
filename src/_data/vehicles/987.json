@@ -24,14 +24,8 @@
         "Always verify production date when purchasing a 987"
       ],
       "sources": [
-        {
-          "name": "LN Engineering",
-          "url": "https://lnengineering.com/"
-        },
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        }
+        { "name": "LN Engineering", "url": "https://lnengineering.com/" },
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$500-1000",
@@ -39,16 +33,8 @@
         "notes": "987.1 only (M97). 987.2 has different design - no IMS concern."
       },
       "parts": [
-        {
-          "name": "IMS Bearing Retrofit",
-          "partNumber": "LN Engineering",
-          "price": "$400-600"
-        },
-        {
-          "name": "IMS Guardian",
-          "partNumber": "LN Engineering",
-          "price": "$80-120"
-        }
+        { "name": "IMS Bearing Retrofit", "partNumber": "LN Engineering", "price": "$400-600" },
+        { "name": "IMS Guardian", "partNumber": "LN Engineering", "price": "$80-120" }
       ],
       "relatedIssues": [
         { "vehicle": "986", "brand": "Porsche", "model": "986 Boxster", "issueId": "ims-bearing" },
@@ -70,14 +56,8 @@
         "Prevention: proper warm-up, quality oil, avoid short trips"
       ],
       "sources": [
-        {
-          "name": "Flat Six Innovations",
-          "url": "https://flat6innovations.com/"
-        },
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        }
+        { "name": "Flat Six Innovations", "url": "https://flat6innovations.com/" },
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" }
       ],
       "repairCosts": {
         "diy": "N/A",
@@ -85,11 +65,7 @@
         "notes": "987.1 M97 engine. Borescope inspection recommended."
       },
       "parts": [
-        {
-          "name": "Cylinder Sleeving",
-          "partNumber": "LN Engineering",
-          "price": "$800-1200/cyl"
-        }
+        { "name": "Cylinder Sleeving", "partNumber": "LN Engineering", "price": "$800-1200/cyl" }
       ],
       "difficulty": "Advanced"
     },
@@ -106,14 +82,8 @@
         "Inspect intermediate plate seal while apart"
       ],
       "sources": [
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        },
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        }
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" },
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$400-800",
@@ -121,11 +91,7 @@
         "notes": "987.1 shares RMS issues with 986/996."
       },
       "parts": [
-        {
-          "name": "Rear Main Seal",
-          "partNumber": "99710322571",
-          "price": "$30-60"
-        }
+        { "name": "Rear Main Seal", "partNumber": "99710322571", "price": "$30-60" }
       ],
       "difficulty": "Advanced"
     },
@@ -142,14 +108,8 @@
         "Clean throttle body if oil contaminated"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" }
       ],
       "repairCosts": {
         "diy": "$200-400",
@@ -157,11 +117,7 @@
         "notes": "Both 987.1 and 987.2 can have AOS issues."
       },
       "parts": [
-        {
-          "name": "AOS Assembly",
-          "partNumber": "99710704453",
-          "price": "$200-350"
-        }
+        { "name": "AOS Assembly", "partNumber": "99710704453", "price": "$200-350" }
       ],
       "difficulty": "Moderate"
     },
@@ -178,14 +134,8 @@
         "Flush and refill with proper coolant mix"
       ],
       "sources": [
-        {
-          "name": "FCP Euro",
-          "url": "https://www.fcpeuro.com/"
-        },
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        }
+        { "name": "FCP Euro", "url": "https://www.fcpeuro.com/" },
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$200-400",
@@ -193,16 +143,8 @@
         "notes": "Same plastic pipe issues as 986. Aluminum upgrade available."
       },
       "parts": [
-        {
-          "name": "Coolant Pipe Kit",
-          "partNumber": "Various",
-          "price": "$150-300"
-        },
-        {
-          "name": "Water Pump",
-          "partNumber": "99710601106",
-          "price": "$120-200"
-        }
+        { "name": "Coolant Pipe Kit", "partNumber": "Various", "price": "$150-300" },
+        { "name": "Water Pump", "partNumber": "99710601106", "price": "$120-200" }
       ],
       "difficulty": "Advanced"
     },
@@ -220,14 +162,8 @@
         "Convertible top reset procedure after battery disconnect"
       ],
       "sources": [
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        },
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        }
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" },
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$100-400",
@@ -235,16 +171,8 @@
         "notes": "Boxster only. Hydraulic system issues common."
       },
       "parts": [
-        {
-          "name": "Hydraulic Pump",
-          "partNumber": "98756160901",
-          "price": "$400-700"
-        },
-        {
-          "name": "Microswitch",
-          "partNumber": "Various",
-          "price": "$30-60"
-        }
+        { "name": "Hydraulic Pump", "partNumber": "98756160901", "price": "$400-700" },
+        { "name": "Microswitch", "partNumber": "Various", "price": "$30-60" }
       ],
       "difficulty": "Moderate"
     },
@@ -261,14 +189,8 @@
         "Periodic spirited driving to help burn off deposits"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "Planet-9",
-          "url": "https://www.planet-9.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "Planet-9", "url": "https://www.planet-9.com/" }
       ],
       "repairCosts": {
         "diy": "$200-400",
@@ -276,16 +198,8 @@
         "notes": "987.2 DFI engines. Walnut blasting every 50-80k miles."
       },
       "parts": [
-        {
-          "name": "Walnut Media",
-          "partNumber": "N/A",
-          "price": "$30-50"
-        },
-        {
-          "name": "Intake Gaskets",
-          "partNumber": "9A111023500",
-          "price": "$20-40"
-        }
+        { "name": "Walnut Media", "partNumber": "N/A", "price": "$30-50" },
+        { "name": "Intake Gaskets", "partNumber": "9A111023500", "price": "$20-40" }
       ],
       "difficulty": "Moderate"
     },
@@ -302,14 +216,8 @@
         "Window reset procedure after replacement"
       ],
       "sources": [
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        },
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        }
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" },
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$100-200",
@@ -317,11 +225,7 @@
         "notes": "Frameless windows. Adjustment and regulator issues."
       },
       "parts": [
-        {
-          "name": "Window Regulator",
-          "partNumber": "98754207504",
-          "price": "$150-250"
-        }
+        { "name": "Window Regulator", "partNumber": "98754207504", "price": "$150-250" }
       ],
       "relatedIssues": [
         { "vehicle": "e36", "brand": "BMW", "model": "E36", "issueId": "window-regulator" },
@@ -342,22 +246,59 @@
       "interval": "Every 60,000-80,000 miles",
       "laborHours": "8-12 hours shop time",
       "parts": [
-        {"name": "Front Control Arm (Left)", "oem": "99734105310", "aftermarket": "Lemforder, URO", "cost": "$120-200"},
-        {"name": "Front Control Arm (Right)", "oem": "99734105410", "aftermarket": "Lemforder, URO", "cost": "$120-200"},
-        {"name": "Front Strut Mount (Pair)", "oem": "99734351900", "aftermarket": "Sachs, Lemforder", "cost": "$80-150"},
-        {"name": "Tie Rod End (Pair)", "oem": "99734713100", "aftermarket": "Lemforder, Meyle", "cost": "$60-120"},
-        {"name": "Front Sway Bar End Link (Pair)", "oem": "99734306901", "aftermarket": "Lemforder", "cost": "$40-80"},
-        {"name": "Rear Control Arm Upper (Pair)", "oem": "98733105101", "aftermarket": "Lemforder", "cost": "$100-180"},
-        {"name": "Rear Control Arm Lower (Pair)", "oem": "98733105201", "aftermarket": "Lemforder", "cost": "$100-180"},
-        {"name": "Rear Trailing Arm Bushing Set", "oem": "99733105500", "aftermarket": "Powerflex", "cost": "$60-120"},
-        {"name": "Rear Sway Bar End Link (Pair)", "oem": "99733306700", "aftermarket": "Lemforder", "cost": "$40-80"},
-        {"name": "Wheel Bearing (Each)", "oem": "99705302304", "aftermarket": "FAG, SKF", "cost": "$80-150"}
+        { "name": "Front Control Arm (Left)", "oem": "99734105310", "aftermarket": "Lemforder, URO", "cost": "$120-200" },
+        { "name": "Front Control Arm (Right)", "oem": "99734105410", "aftermarket": "Lemforder, URO", "cost": "$120-200" },
+        { "name": "Front Strut Mount (Pair)", "oem": "99734351900", "aftermarket": "Sachs, Lemforder", "cost": "$80-150" },
+        { "name": "Tie Rod End (Pair)", "oem": "99734713100", "aftermarket": "Lemforder, Meyle", "cost": "$60-120" },
+        { "name": "Front Sway Bar End Link (Pair)", "oem": "99734306901", "aftermarket": "Lemforder", "cost": "$40-80" },
+        { "name": "Rear Control Arm Upper (Pair)", "oem": "98733105101", "aftermarket": "Lemforder", "cost": "$100-180" },
+        { "name": "Rear Control Arm Lower (Pair)", "oem": "98733105201", "aftermarket": "Lemforder", "cost": "$100-180" },
+        { "name": "Rear Trailing Arm Bushing Set", "oem": "99733105500", "aftermarket": "Powerflex", "cost": "$60-120" },
+        { "name": "Rear Sway Bar End Link (Pair)", "oem": "99733306700", "aftermarket": "Lemforder", "cost": "$40-80" },
+        { "name": "Wheel Bearing (Each)", "oem": "99705302304", "aftermarket": "FAG, SKF", "cost": "$80-150" }
       ],
-      "tools": ["Floor jack and jack stands", "18mm, 19mm, 21mm sockets", "Ball joint separator", "Tie rod end puller", "Spring compressor", "Torque wrench", "Penetrating oil", "Alignment specs printout"],
-      "steps": ["Raise vehicle and support on jack stands at all four corners.", "Remove all wheels and photograph suspension for reference.", "Soak all suspension bolts with penetrating oil.", "Front: Remove sway bar end links, tie rod ends, and control arm bolts.", "Separate ball joint from knuckle using separator tool.", "For struts: mark camber position, remove upper mount nuts and pinch bolt.", "Use spring compressor to replace strut mount/bearing.", "Install new front components - torque control arm to 89 ft-lbs.", "Rear: Support trailing arm before removing control arm bolts.", "Replace upper and lower control arms - torque at ride height.", "Check for cracked spring perches (known issue).", "Install wheels and lower vehicle.", "Professional alignment mandatory."],
-      "tips": ["The 987 shares suspension with 997 but has mid-engine weight distribution.", "Check spring perches for cracks - common issue.", "Cayman has fixed roof = stiffer chassis than Boxster.", "Consider PASM shock replacement if equipped and leaking."],
-      "warnings": ["Spring compressors are dangerous - follow instructions.", "Never strike ball joints directly.", "Mid-engine cars are sensitive to alignment.", "PASM shocks require diagnostic tool to calibrate."],
-      "references": [{"name": "Pelican Parts 987 Suspension", "url": "https://www.pelicanparts.com/techarticles/"}, {"name": "Planet-9 987 Forum", "url": "https://www.planet-9.com/"}, {"name": "Rennlist 987 Technical", "url": "https://rennlist.com/forums/987-forum/"}]
+      "tools": [
+        "Floor jack and jack stands",
+        "18mm, 19mm, 21mm sockets",
+        "Ball joint separator",
+        "Tie rod end puller",
+        "Spring compressor",
+        "Torque wrench",
+        "Penetrating oil",
+        "Alignment specs printout"
+      ],
+      "steps": [
+        "Raise vehicle and support on jack stands at all four corners.",
+        "Remove all wheels and photograph suspension for reference.",
+        "Soak all suspension bolts with penetrating oil.",
+        "Front: Remove sway bar end links, tie rod ends, and control arm bolts.",
+        "Separate ball joint from knuckle using separator tool.",
+        "For struts: mark camber position, remove upper mount nuts and pinch bolt.",
+        "Use spring compressor to replace strut mount/bearing.",
+        "Install new front components - torque control arm to 89 ft-lbs.",
+        "Rear: Support trailing arm before removing control arm bolts.",
+        "Replace upper and lower control arms - torque at ride height.",
+        "Check for cracked spring perches (known issue).",
+        "Install wheels and lower vehicle.",
+        "Professional alignment mandatory."
+      ],
+      "tips": [
+        "The 987 shares suspension with 997 but has mid-engine weight distribution.",
+        "Check spring perches for cracks - common issue.",
+        "Cayman has fixed roof = stiffer chassis than Boxster.",
+        "Consider PASM shock replacement if equipped and leaking."
+      ],
+      "warnings": [
+        "Spring compressors are dangerous - follow instructions.",
+        "Never strike ball joints directly.",
+        "Mid-engine cars are sensitive to alignment.",
+        "PASM shocks require diagnostic tool to calibrate."
+      ],
+      "references": [
+        { "name": "Pelican Parts 987 Suspension", "url": "https://www.pelicanparts.com/techarticles/" },
+        { "name": "Planet-9 987 Forum", "url": "https://www.planet-9.com/" },
+        { "name": "Rennlist 987 Technical", "url": "https://rennlist.com/forums/987-forum/" }
+      ]
     },
     {
       "id": "rust-repair",
@@ -369,20 +310,49 @@
       "interval": "Inspect annually",
       "laborHours": "Varies by severity",
       "parts": [
-        {"name": "Front Trunk Seal", "oem": "98756193100", "aftermarket": "URO", "cost": "$60-120"},
-        {"name": "Door Seal Set", "oem": "98753193101", "aftermarket": "URO", "cost": "$100-200"},
-        {"name": "Convertible Top Drain Tube (Boxster)", "oem": "98756172100", "aftermarket": "Aftermarket", "cost": "$30-60"},
-        {"name": "Battery Box", "oem": "98761118303", "aftermarket": "Fabricated", "cost": "$100-250"},
-        {"name": "Rust Converter", "oem": "—", "aftermarket": "POR-15, Eastwood", "cost": "$20-40"},
-        {"name": "Cavity Wax", "oem": "—", "aftermarket": "Fluid Film", "cost": "$15-30"},
-        {"name": "Epoxy Primer", "oem": "—", "aftermarket": "Eastwood", "cost": "$30-60"},
-        {"name": "Seam Sealer", "oem": "—", "aftermarket": "3M", "cost": "$15-25"}
+        { "name": "Front Trunk Seal", "oem": "98756193100", "aftermarket": "URO", "cost": "$60-120" },
+        { "name": "Door Seal Set", "oem": "98753193101", "aftermarket": "URO", "cost": "$100-200" },
+        { "name": "Convertible Top Drain Tube (Boxster)", "oem": "98756172100", "aftermarket": "Aftermarket", "cost": "$30-60" },
+        { "name": "Battery Box", "oem": "98761118303", "aftermarket": "Fabricated", "cost": "$100-250" },
+        { "name": "Rust Converter", "oem": "—", "aftermarket": "POR-15, Eastwood", "cost": "$20-40" },
+        { "name": "Cavity Wax", "oem": "—", "aftermarket": "Fluid Film", "cost": "$15-30" },
+        { "name": "Epoxy Primer", "oem": "—", "aftermarket": "Eastwood", "cost": "$30-60" },
+        { "name": "Seam Sealer", "oem": "—", "aftermarket": "3M", "cost": "$15-25" }
       ],
-      "tools": ["Inspection mirror and flashlight", "Wire brush", "Compressed air", "Safety glasses and respirator", "Spray wand for cavity wax"],
-      "steps": ["The 987 is galvanized and generally rust-resistant.", "Clean undercarriage before inspection.", "Check front trunk for water intrusion - DME and fuse box located here.", "Inspect battery box for acid corrosion.", "Boxster: Check convertible top drains - clogs cause interior damage.", "Examine door bottoms and rocker panels.", "Check wheel wells for debris damage.", "Surface rust: wire brush, convert, prime, topcoat.", "Apply cavity wax to hollow sections annually.", "Clear all drain tubes with compressed air."],
-      "tips": ["Most 987 rust is from water intrusion, not structural.", "Front trunk contains expensive electronics.", "Boxster drains must be kept clear.", "Annual Fluid Film prevents most issues."],
-      "warnings": ["Water in frunk destroys DME.", "Battery acid causes severe corrosion.", "Always wear respirator when grinding."],
-      "references": [{"name": "Planet-9 Maintenance", "url": "https://www.planet-9.com/"}, {"name": "Pelican Parts 987", "url": "https://www.pelicanparts.com/techarticles/"}]
+      "tools": [
+        "Inspection mirror and flashlight",
+        "Wire brush",
+        "Compressed air",
+        "Safety glasses and respirator",
+        "Spray wand for cavity wax"
+      ],
+      "steps": [
+        "The 987 is galvanized and generally rust-resistant.",
+        "Clean undercarriage before inspection.",
+        "Check front trunk for water intrusion - DME and fuse box located here.",
+        "Inspect battery box for acid corrosion.",
+        "Boxster: Check convertible top drains - clogs cause interior damage.",
+        "Examine door bottoms and rocker panels.",
+        "Check wheel wells for debris damage.",
+        "Surface rust: wire brush, convert, prime, topcoat.",
+        "Apply cavity wax to hollow sections annually.",
+        "Clear all drain tubes with compressed air."
+      ],
+      "tips": [
+        "Most 987 rust is from water intrusion, not structural.",
+        "Front trunk contains expensive electronics.",
+        "Boxster drains must be kept clear.",
+        "Annual Fluid Film prevents most issues."
+      ],
+      "warnings": [
+        "Water in frunk destroys DME.",
+        "Battery acid causes severe corrosion.",
+        "Always wear respirator when grinding."
+      ],
+      "references": [
+        { "name": "Planet-9 Maintenance", "url": "https://www.planet-9.com/" },
+        { "name": "Pelican Parts 987", "url": "https://www.pelicanparts.com/techarticles/" }
+      ]
     },
     {
       "id": "electrical-restoration",
@@ -394,19 +364,50 @@
       "interval": "Address as symptoms appear",
       "laborHours": "6-10 hours shop time",
       "parts": [
-        {"name": "Ignition Coil Pack (Set of 6)", "oem": "99760210402", "aftermarket": "Bosch", "cost": "$150-300"},
-        {"name": "Mass Air Flow Sensor", "oem": "99760612400", "aftermarket": "Bosch", "cost": "$80-150"},
-        {"name": "Oxygen Sensor Set", "oem": "99760612600/700", "aftermarket": "Bosch, NTK", "cost": "$300-500"},
-        {"name": "Window Regulator", "oem": "98754207504", "aftermarket": "URO", "cost": "$150-250"},
-        {"name": "Convertible Top Microswitch", "oem": "Various", "aftermarket": "Aftermarket", "cost": "$30-60"},
-        {"name": "Central Locking Pump", "oem": "99756192100", "aftermarket": "Rebuilt", "cost": "$200-400"},
-        {"name": "Crankshaft Position Sensor", "oem": "99760610601", "aftermarket": "Bosch", "cost": "$60-120"}
+        { "name": "Ignition Coil Pack (Set of 6)", "oem": "99760210402", "aftermarket": "Bosch", "cost": "$150-300" },
+        { "name": "Mass Air Flow Sensor", "oem": "99760612400", "aftermarket": "Bosch", "cost": "$80-150" },
+        { "name": "Oxygen Sensor Set", "oem": "99760612600/700", "aftermarket": "Bosch, NTK", "cost": "$300-500" },
+        { "name": "Window Regulator", "oem": "98754207504", "aftermarket": "URO", "cost": "$150-250" },
+        { "name": "Convertible Top Microswitch", "oem": "Various", "aftermarket": "Aftermarket", "cost": "$30-60" },
+        { "name": "Central Locking Pump", "oem": "99756192100", "aftermarket": "Rebuilt", "cost": "$200-400" },
+        { "name": "Crankshaft Position Sensor", "oem": "99760610601", "aftermarket": "Bosch", "cost": "$60-120" }
       ],
-      "tools": ["OBD2 scanner (Durametric preferred)", "Torx driver set", "10mm socket", "Multimeter", "Trim removal tools", "Contact cleaner", "Dielectric grease"],
-      "steps": ["Begin with diagnostic scan for fault codes.", "Check front trunk for water intrusion.", "For coil replacement: open engine lid, disconnect and remove coils.", "Inspect spark plug wells for oil contamination.", "For MAF: clean with MAF-specific cleaner only.", "For window regulator: remove door panel, support glass, swap regulator.", "Boxster top issues: check hydraulic fluid level first.", "Clean all ground points with wire brush.", "Clear codes and verify repairs."],
-      "tips": ["Many electrical issues trace to water damage in frunk.", "987.1 and 987.2 have different oil filter locations.", "Frameless windows require precise adjustment.", "Durametric scanner provides much better diagnosis."],
-      "warnings": ["Water in frunk destroys DME.", "Never use carburetor cleaner on MAF.", "Support window glass before removing regulator.", "Disconnect battery before electrical work."],
-      "references": [{"name": "Planet-9 Electrical", "url": "https://www.planet-9.com/"}, {"name": "Rennlist 987 Technical", "url": "https://rennlist.com/forums/987-forum/"}]
+      "tools": [
+        "OBD2 scanner (Durametric preferred)",
+        "Torx driver set",
+        "10mm socket",
+        "Multimeter",
+        "Trim removal tools",
+        "Contact cleaner",
+        "Dielectric grease"
+      ],
+      "steps": [
+        "Begin with diagnostic scan for fault codes.",
+        "Check front trunk for water intrusion.",
+        "For coil replacement: open engine lid, disconnect and remove coils.",
+        "Inspect spark plug wells for oil contamination.",
+        "For MAF: clean with MAF-specific cleaner only.",
+        "For window regulator: remove door panel, support glass, swap regulator.",
+        "Boxster top issues: check hydraulic fluid level first.",
+        "Clean all ground points with wire brush.",
+        "Clear codes and verify repairs."
+      ],
+      "tips": [
+        "Many electrical issues trace to water damage in frunk.",
+        "987.1 and 987.2 have different oil filter locations.",
+        "Frameless windows require precise adjustment.",
+        "Durametric scanner provides much better diagnosis."
+      ],
+      "warnings": [
+        "Water in frunk destroys DME.",
+        "Never use carburetor cleaner on MAF.",
+        "Support window glass before removing regulator.",
+        "Disconnect battery before electrical work."
+      ],
+      "references": [
+        { "name": "Planet-9 Electrical", "url": "https://www.planet-9.com/" },
+        { "name": "Rennlist 987 Technical", "url": "https://rennlist.com/forums/987-forum/" }
+      ]
     },
     {
       "id": "interior-restoration",
@@ -418,20 +419,51 @@
       "interval": "As needed",
       "laborHours": "8-14 hours shop time",
       "parts": [
-        {"name": "Leather Repair Kit", "oem": "—", "aftermarket": "Leatherique, Colourlock", "cost": "$50-100"},
-        {"name": "Convertible Top Fabric (Boxster)", "oem": "98756191900", "aftermarket": "Haartz Stayfast", "cost": "$300-600"},
-        {"name": "Convertible Top Hydraulic Fluid", "oem": "Pentosin CHF 11S", "aftermarket": "Pentosin", "cost": "$25-40"},
-        {"name": "Shift Knob", "oem": "99742407504", "aftermarket": "Aftermarket", "cost": "$60-150"},
-        {"name": "E-Brake Boot", "oem": "99755298001", "aftermarket": "Leather replicas", "cost": "$30-60"},
-        {"name": "Seat Foam (Driver)", "oem": "98752191103", "aftermarket": "Recovered", "cost": "$100-200"},
-        {"name": "Cabin Air Filter", "oem": "99757221901", "aftermarket": "Mann, Bosch", "cost": "$25-50"},
-        {"name": "Door Seal Set", "oem": "98753193101", "aftermarket": "URO", "cost": "$100-200"}
+        { "name": "Leather Repair Kit", "oem": "—", "aftermarket": "Leatherique, Colourlock", "cost": "$50-100" },
+        { "name": "Convertible Top Fabric (Boxster)", "oem": "98756191900", "aftermarket": "Haartz Stayfast", "cost": "$300-600" },
+        { "name": "Convertible Top Hydraulic Fluid", "oem": "Pentosin CHF 11S", "aftermarket": "Pentosin", "cost": "$25-40" },
+        { "name": "Shift Knob", "oem": "99742407504", "aftermarket": "Aftermarket", "cost": "$60-150" },
+        { "name": "E-Brake Boot", "oem": "99755298001", "aftermarket": "Leather replicas", "cost": "$30-60" },
+        { "name": "Seat Foam (Driver)", "oem": "98752191103", "aftermarket": "Recovered", "cost": "$100-200" },
+        { "name": "Cabin Air Filter", "oem": "99757221901", "aftermarket": "Mann, Bosch", "cost": "$25-50" },
+        { "name": "Door Seal Set", "oem": "98753193101", "aftermarket": "URO", "cost": "$100-200" }
       ],
-      "tools": ["Trim removal tools", "Torx driver set", "Microfiber cloths", "Leather cleaner and conditioner", "Convertible top cleaner", "Heat gun"],
-      "steps": ["Document condition with photos.", "Clean leather thoroughly with dedicated cleaner.", "Fill cracks with leather filler, sand, dye.", "Condition all leather surfaces.", "Boxster: Clean top fabric with specific cleaner.", "Inspect and treat fabric with protectant.", "Check hydraulic fluid level in reservoir.", "Lubricate top mechanism pivot points.", "Replace worn boots and knobs.", "Replace cabin air filter.", "Apply UV protectant to exposed surfaces."],
-      "tips": ["987 leather responds well to conditioning.", "Sport seats wear faster on driver bolster.", "Convertible hydraulic fluid often overlooked.", "Cayman has less top mechanism but same interior."],
-      "warnings": ["Never operate top when wet or freezing.", "Don't use silicone on leather.", "Be careful with aged trim clips."],
-      "references": [{"name": "Leatherique Products", "url": "https://www.leatherique.com/"}, {"name": "Planet-9 Interior", "url": "https://www.planet-9.com/"}]
+      "tools": [
+        "Trim removal tools",
+        "Torx driver set",
+        "Microfiber cloths",
+        "Leather cleaner and conditioner",
+        "Convertible top cleaner",
+        "Heat gun"
+      ],
+      "steps": [
+        "Document condition with photos.",
+        "Clean leather thoroughly with dedicated cleaner.",
+        "Fill cracks with leather filler, sand, dye.",
+        "Condition all leather surfaces.",
+        "Boxster: Clean top fabric with specific cleaner.",
+        "Inspect and treat fabric with protectant.",
+        "Check hydraulic fluid level in reservoir.",
+        "Lubricate top mechanism pivot points.",
+        "Replace worn boots and knobs.",
+        "Replace cabin air filter.",
+        "Apply UV protectant to exposed surfaces."
+      ],
+      "tips": [
+        "987 leather responds well to conditioning.",
+        "Sport seats wear faster on driver bolster.",
+        "Convertible hydraulic fluid often overlooked.",
+        "Cayman has less top mechanism but same interior."
+      ],
+      "warnings": [
+        "Never operate top when wet or freezing.",
+        "Don't use silicone on leather.",
+        "Be careful with aged trim clips."
+      ],
+      "references": [
+        { "name": "Leatherique Products", "url": "https://www.leatherique.com/" },
+        { "name": "Planet-9 Interior", "url": "https://www.planet-9.com/" }
+      ]
     }
   ],
   "suppliers": {
@@ -440,7 +472,10 @@
         "name": "FCP Euro",
         "url": "https://www.fcpeuro.com/Porsche-parts",
         "notes": "Industry-leading lifetime replacement guarantee on all parts - comprehensive 987 coverage",
-        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "specialties": [
+          "Lifetime Warranty",
+          "OE Quality"
+        ],
         "shipping": "Free over $49",
         "warranty": "Lifetime",
         "featured": true
@@ -449,7 +484,11 @@
         "name": "Pelican Parts",
         "url": "https://www.pelicanparts.com/Porsche/catalog/987.htm",
         "notes": "Comprehensive 987 parts catalog with detailed tech articles for DIY repairs",
-        "specialties": ["OEM Parts", "Tech Articles", "DIY Support"],
+        "specialties": [
+          "OEM Parts",
+          "Tech Articles",
+          "DIY Support"
+        ],
         "shipping": "Free over $99",
         "featured": true
       },
@@ -457,14 +496,20 @@
         "name": "Porsche Parts",
         "url": "https://parts.porsche.com/",
         "notes": "Factory genuine Porsche parts direct from the manufacturer",
-        "specialties": ["Factory Original", "Genuine Porsche"],
+        "specialties": [
+          "Factory Original",
+          "Genuine Porsche"
+        ],
         "warranty": "Genuine OEM"
       },
       {
         "name": "Sunset Porsche Parts",
         "url": "https://www.sunsetporscheparts.com/",
         "notes": "Porsche dealer parts department with competitive pricing",
-        "specialties": ["OEM Dealer", "New Genuine Parts"],
+        "specialties": [
+          "OEM Dealer",
+          "New Genuine Parts"
+        ],
         "shipping": "Fast shipping"
       }
     ],
@@ -473,33 +518,51 @@
         "name": "LN Engineering",
         "url": "https://lnengineering.com/",
         "notes": "IMS bearing solutions for 987.1 (987.2 has no IMS concern) - essential for early models",
-        "specialties": ["IMS Bearings", "Engine Components", "M97 Expert"],
+        "specialties": [
+          "IMS Bearings",
+          "Engine Components",
+          "M97 Expert"
+        ],
         "featured": true
       },
       {
         "name": "Flat 6 Innovations",
         "url": "https://flat6innovations.com/",
         "notes": "987 performance specialist with engine upgrades and IMS solutions for 987.1",
-        "specialties": ["IMS Solutions", "Performance Builds", "Engine Specialist"],
+        "specialties": [
+          "IMS Solutions",
+          "Performance Builds",
+          "Engine Specialist"
+        ],
         "featured": true
       },
       {
         "name": "Fabspeed",
         "url": "https://www.fabspeed.com/porsche/boxster/987/",
         "notes": "Premium exhaust systems that unlock the flat-six sound",
-        "specialties": ["Exhaust Systems", "Performance Parts"]
+        "specialties": [
+          "Exhaust Systems",
+          "Performance Parts"
+        ]
       },
       {
         "name": "Softronic",
         "url": "https://www.softronic.us/",
         "notes": "ECU tuning to extract more power from the M97/MA1 engine",
-        "specialties": ["ECU Tuning", "Performance Software"]
+        "specialties": [
+          "ECU Tuning",
+          "Performance Software"
+        ]
       },
       {
         "name": "Elephant Racing",
         "url": "https://www.elephantracing.com/",
         "notes": "Premium suspension components for track or street performance",
-        "specialties": ["Suspension", "Handling Kits", "Track Parts"]
+        "specialties": [
+          "Suspension",
+          "Handling Kits",
+          "Track Parts"
+        ]
       }
     ],
     "general": [
@@ -507,21 +570,30 @@
         "name": "AutohausAZ",
         "url": "https://www.autohausaz.com/porsche-boxster-parts",
         "notes": "Large selection of replacement parts at competitive prices",
-        "specialties": ["Replacement Parts", "Maintenance Items"],
+        "specialties": [
+          "Replacement Parts",
+          "Maintenance Items"
+        ],
         "shipping": "Free over $99"
       },
       {
         "name": "ECS Tuning",
         "url": "https://www.ecstuning.com/Porsche-987_Boxster/",
         "notes": "Wide selection of OEM and aftermarket parts with detailed fitment data",
-        "specialties": ["OEM Parts", "Aftermarket Options"],
+        "specialties": [
+          "OEM Parts",
+          "Aftermarket Options"
+        ],
         "shipping": "Free over $99"
       },
       {
         "name": "PartsGeek",
         "url": "https://www.partsgeek.com/catalog/porsche/boxster.html",
         "notes": "Budget-friendly replacement parts for common maintenance items",
-        "specialties": ["Budget Parts", "Fast Shipping"]
+        "specialties": [
+          "Budget Parts",
+          "Fast Shipping"
+        ]
       }
     ],
     "specialty": [
@@ -529,27 +601,40 @@
         "name": "Planet-9 Store",
         "url": "https://www.planet-9.com/",
         "notes": "Active Boxster/Cayman community with group buys and 987-specific parts",
-        "specialties": ["987 Community", "Group Buys", "Community Resource"],
+        "specialties": [
+          "987 Community",
+          "Group Buys",
+          "Community Resource"
+        ],
         "featured": true
       },
       {
         "name": "Numeric Racing",
         "url": "https://numericracing.com/",
         "notes": "Precision shifter assemblies that transform the 987 driving experience",
-        "specialties": ["Shifters", "Transmission Parts"],
+        "specialties": [
+          "Shifters",
+          "Transmission Parts"
+        ],
         "featured": true
       },
       {
         "name": "GMG Racing",
         "url": "https://gmgracing.com/",
         "notes": "Track-focused upgrades for the 987 Cayman S and Boxster S",
-        "specialties": ["Track Parts", "Race Prep"]
+        "specialties": [
+          "Track Parts",
+          "Race Prep"
+        ]
       },
       {
         "name": "Bilt Racing Service",
         "url": "https://www.biltracingservice.com/",
         "notes": "987 specialists known for track builds and suspension setups",
-        "specialties": ["Track Builds", "Suspension"]
+        "specialties": [
+          "Track Builds",
+          "Suspension"
+        ]
       }
     ],
     "used": [
@@ -557,32 +642,48 @@
         "name": "Planet-9 Classifieds",
         "url": "https://www.planet-9.com/forums/987-boxster-cayman-marketplace.57/",
         "notes": "The go-to marketplace for used 987 parts - active community with vetted sellers",
-        "specialties": ["987 Community", "Vetted Sellers"],
+        "specialties": [
+          "987 Community",
+          "Vetted Sellers"
+        ],
         "featured": true
       },
       {
         "name": "Rennlist Classifieds",
         "url": "https://rennlist.com/forums/987-forum/",
         "notes": "Large Porsche community marketplace with active 987 section",
-        "specialties": ["Forum Marketplace", "Wide Selection"]
+        "specialties": [
+          "Forum Marketplace",
+          "Wide Selection"
+        ]
       },
       {
         "name": "6SpeedOnline Classifieds",
         "url": "https://www.6speedonline.com/forums/parts-sale-wanted-boxster-cayman/",
         "notes": "Large enthusiast community with Boxster/Cayman parts section",
-        "specialties": ["Forum Marketplace", "Enthusiast Parts"]
+        "specialties": [
+          "Forum Marketplace",
+          "Enthusiast Parts"
+        ]
       },
       {
         "name": "eBay Motors",
         "url": "https://www.ebay.com/b/Parts-for-Porsche-Boxster/6030/bn_574972",
         "notes": "Global marketplace for used and NOS 987 parts",
-        "specialties": ["Used Parts", "NOS", "Global Sellers"]
+        "specialties": [
+          "Used Parts",
+          "NOS",
+          "Global Sellers"
+        ]
       },
       {
         "name": "Car-Part.com",
         "url": "https://www.car-part.com/",
         "notes": "Search nationwide salvage yard inventory for 987 parts",
-        "specialties": ["Salvage Parts", "Low Cost"]
+        "specialties": [
+          "Salvage Parts",
+          "Low Cost"
+        ]
       }
     ],
     "tools": [
@@ -591,11 +692,7 @@
         "url": "https://www.pelicanparts.com/techarticles/Porsche-Boxster-987/",
         "notes": "Extensive library of 987 DIY articles with step-by-step instructions"
       },
-      {
-        "name": "LN Engineering Torque Specs",
-        "url": "https://lnengineering.com/",
-        "notes": "Torque specifications for M97 and MA1 engine work"
-      },
+      { "name": "LN Engineering Torque Specs", "url": "https://lnengineering.com/", "notes": "Torque specifications for M97 and MA1 engine work" },
       {
         "name": "Durametric Diagnostic",
         "url": "https://www.durametric.com/",
@@ -609,130 +706,36 @@
         "name": "Department 69 997 Torque Chart",
         "url": "https://www.department69.com/articles/porsche-9971-common-torque-specifications-maintenance-amp-diy-jobs"
       },
-      {
-        "name": "LN Engineering Technical",
-        "url": "https://lnengineering.com/education/technical-library/m96.html"
-      },
-      {
-        "name": "Planet-9 Technical Forum",
-        "url": "https://www.planet-9.com/"
-      }
+      { "name": "LN Engineering Technical", "url": "https://lnengineering.com/education/technical-library/m96.html" },
+      { "name": "Planet-9 Technical Forum", "url": "https://www.planet-9.com/" }
     ],
     "engine": [
-      {
-        "component": "Spark Plugs",
-        "spec": "22 ft-lbs (30 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Ignition Coil Bolts",
-        "spec": "7 ft-lbs (10 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Oil Drain Plug",
-        "spec": "37 ft-lbs (50 Nm)",
-        "notes": "Replace crush washer"
-      },
-      {
-        "component": "Oil Filter Cap (987.2)",
-        "spec": "19 ft-lbs (26 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Intake Manifold",
-        "spec": "7 ft-lbs (10 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "AOS Mounting Bolts",
-        "spec": "7 ft-lbs (10 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Coolant Pipe Fittings",
-        "spec": "15 ft-lbs (20 Nm)",
-        "notes": "New o-rings"
-      },
-      {
-        "component": "Water Pump Bolts",
-        "spec": "7 ft-lbs (10 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Serpentine Belt Tensioner",
-        "spec": "44 ft-lbs (60 Nm)",
-        "notes": ""
-      }
+      { "component": "Spark Plugs", "spec": "22 ft-lbs (30 Nm)", "notes": "" },
+      { "component": "Ignition Coil Bolts", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
+      { "component": "Oil Drain Plug", "spec": "37 ft-lbs (50 Nm)", "notes": "Replace crush washer" },
+      { "component": "Oil Filter Cap (987.2)", "spec": "19 ft-lbs (26 Nm)", "notes": "" },
+      { "component": "Intake Manifold", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
+      { "component": "AOS Mounting Bolts", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
+      { "component": "Coolant Pipe Fittings", "spec": "15 ft-lbs (20 Nm)", "notes": "New o-rings" },
+      { "component": "Water Pump Bolts", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
+      { "component": "Serpentine Belt Tensioner", "spec": "44 ft-lbs (60 Nm)", "notes": "" }
     ],
     "suspension": [
-      {
-        "component": "Wheel Lug Bolts (M14)",
-        "spec": "96-118 ft-lbs (130-160 Nm)",
-        "notes": "118 ft-lbs revised spec"
-      },
-      {
-        "component": "Front Strut Pinch Bolt",
-        "spec": "65 ft-lbs (85 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Front Control Arm to Frame",
-        "spec": "89 ft-lbs (120 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Front Control Arm Ball Joint",
-        "spec": "56 ft-lbs (76 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Tie Rod End Nut",
-        "spec": "37 ft-lbs (50 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Strut Top Nut",
-        "spec": "44 ft-lbs (60 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Sway Bar End Links",
-        "spec": "48 ft-lbs (65 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Control Arm Eccentric",
-        "spec": "74 ft-lbs (100 Nm)",
-        "notes": ""
-      }
+      { "component": "Wheel Lug Bolts (M14)", "spec": "96-118 ft-lbs (130-160 Nm)", "notes": "118 ft-lbs revised spec" },
+      { "component": "Front Strut Pinch Bolt", "spec": "65 ft-lbs (85 Nm)", "notes": "" },
+      { "component": "Front Control Arm to Frame", "spec": "89 ft-lbs (120 Nm)", "notes": "" },
+      { "component": "Front Control Arm Ball Joint", "spec": "56 ft-lbs (76 Nm)", "notes": "" },
+      { "component": "Tie Rod End Nut", "spec": "37 ft-lbs (50 Nm)", "notes": "" },
+      { "component": "Strut Top Nut", "spec": "44 ft-lbs (60 Nm)", "notes": "" },
+      { "component": "Sway Bar End Links", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
+      { "component": "Rear Control Arm Eccentric", "spec": "74 ft-lbs (100 Nm)", "notes": "" }
     ],
     "brakes": [
-      {
-        "component": "Front Caliper Bolts",
-        "spec": "63 ft-lbs (85 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Caliper Bolts",
-        "spec": "63 ft-lbs (85 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Brake Rotor Screws",
-        "spec": "7 ft-lbs (10 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Brake Line Fittings",
-        "spec": "13 ft-lbs (18 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Pad Wear Sensor",
-        "spec": "Hand tight",
-        "notes": "Clips into place"
-      }
+      { "component": "Front Caliper Bolts", "spec": "63 ft-lbs (85 Nm)", "notes": "" },
+      { "component": "Rear Caliper Bolts", "spec": "63 ft-lbs (85 Nm)", "notes": "" },
+      { "component": "Brake Rotor Screws", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "13 ft-lbs (18 Nm)", "notes": "" },
+      { "component": "Pad Wear Sensor", "spec": "Hand tight", "notes": "Clips into place" }
     ]
   },
   "diyGuides": [
@@ -976,91 +979,43 @@
             "detail": "987.1 (2005-2008) has improved IMS bearing but failure is still possible. Verify if retrofitted.",
             "costIfBad": "$2,000-3,500 for retrofit"
           },
-          {
-            "check": "Bore Scoring",
-            "detail": "M97 engine can develop bore scoring. Listen for knocking, check for smoke.",
-            "costIfBad": "$10,000-20,000"
-          },
-          {
-            "check": "Oil Consumption",
-            "detail": "Some consumption is normal. Excessive consumption indicates bore issues.",
-            "costIfBad": "Varies"
-          }
+          { "check": "Bore Scoring", "detail": "M97 engine can develop bore scoring. Listen for knocking, check for smoke.", "costIfBad": "$10,000-20,000" },
+          { "check": "Oil Consumption", "detail": "Some consumption is normal. Excessive consumption indicates bore issues.", "costIfBad": "Varies" }
         ]
       },
       {
         "category": "Engine (987.2)",
         "items": [
-          {
-            "check": "No IMS Concerns",
-            "detail": "987.2 (2009-2012) DFI engines have no IMS bearing. Major reliability improvement.",
-            "costIfBad": "N/A"
-          },
+          { "check": "No IMS Concerns", "detail": "987.2 (2009-2012) DFI engines have no IMS bearing. Major reliability improvement.", "costIfBad": "N/A" },
           {
             "check": "Carbon Buildup",
             "detail": "DFI engines can develop intake valve carbon deposits at high mileage.",
             "costIfBad": "$500-1,000 for cleaning"
           },
-          {
-            "check": "Direct Injectors",
-            "detail": "DFI injectors can fail causing rough running.",
-            "costIfBad": "$800-1,500"
-          }
+          { "check": "Direct Injectors", "detail": "DFI injectors can fail causing rough running.", "costIfBad": "$800-1,500" }
         ]
       },
       {
         "category": "Transmission",
         "items": [
-          {
-            "check": "Manual Transmission",
-            "detail": "6-speed manual is robust and engaging. Test all gears.",
-            "costIfBad": "$2,000-4,000"
-          },
-          {
-            "check": "PDK (987.2)",
-            "detail": "Dual-clutch is fast and smooth. Check for shudder or harsh engagement.",
-            "costIfBad": "$2,000-5,000"
-          },
-          {
-            "check": "Clutch",
-            "detail": "Manual clutch should engage smoothly. Mid-engine makes replacement easier.",
-            "costIfBad": "$1,500-2,500"
-          }
+          { "check": "Manual Transmission", "detail": "6-speed manual is robust and engaging. Test all gears.", "costIfBad": "$2,000-4,000" },
+          { "check": "PDK (987.2)", "detail": "Dual-clutch is fast and smooth. Check for shudder or harsh engagement.", "costIfBad": "$2,000-5,000" },
+          { "check": "Clutch", "detail": "Manual clutch should engage smoothly. Mid-engine makes replacement easier.", "costIfBad": "$1,500-2,500" }
         ]
       },
       {
         "category": "Body & Convertible",
         "items": [
-          {
-            "check": "Convertible Top (Boxster)",
-            "detail": "Test operation. Hydraulics and cables can fail.",
-            "costIfBad": "$1,000-2,500"
-          },
-          {
-            "check": "Manual Top (Spyder)",
-            "detail": "Spyder has manual top. Check fabric and frame condition.",
-            "costIfBad": "$500-1,500"
-          },
-          {
-            "check": "Window Regulators",
-            "detail": "Test both windows. Less problematic than 986 but can fail.",
-            "costIfBad": "$300-600"
-          }
+          { "check": "Convertible Top (Boxster)", "detail": "Test operation. Hydraulics and cables can fail.", "costIfBad": "$1,000-2,500" },
+          { "check": "Manual Top (Spyder)", "detail": "Spyder has manual top. Check fabric and frame condition.", "costIfBad": "$500-1,500" },
+          { "check": "Window Regulators", "detail": "Test both windows. Less problematic than 986 but can fail.", "costIfBad": "$300-600" }
         ]
       },
       {
         "category": "Suspension",
         "items": [
-          {
-            "check": "PASM Shocks",
-            "detail": "If equipped, test in all modes. Shocks can develop leaks.",
-            "costIfBad": "$2,000-4,000"
-          },
-          {
-            "check": "Control Arm Bushings",
-            "detail": "Common wear item causing clunks and handling issues.",
-            "costIfBad": "$400-800"
-          }
+          { "check": "PASM Shocks", "detail": "If equipped, test in all modes. Shocks can develop leaks.", "costIfBad": "$2,000-4,000" },
+          { "check": "Control Arm Bushings", "detail": "Common wear item causing clunks and handling issues.", "costIfBad": "$400-800" }
         ]
       }
     ],
@@ -1118,57 +1073,21 @@
   },
   "communityResources": {
     "youtube": [
-      {
-        "name": "Channel P101tv",
-        "url": "https://www.youtube.com/@P101tv",
-        "description": "Independent Porsche channel with Boxster/Cayman content"
-      },
-      {
-        "name": "SavageGeese",
-        "url": "https://www.youtube.com/@SavageGeese",
-        "description": "Detailed reviews including 987 models"
-      }
+      { "name": "Channel P101tv", "url": "https://www.youtube.com/@P101tv", "description": "Independent Porsche channel with Boxster/Cayman content" },
+      { "name": "SavageGeese", "url": "https://www.youtube.com/@SavageGeese", "description": "Detailed reviews including 987 models" }
     ],
     "forums": [
-      {
-        "name": "Planet-9",
-        "url": "https://www.planet-9.com/forums/",
-        "description": "Premier Cayman and Boxster community"
-      },
-      {
-        "name": "Rennlist 987 Forum",
-        "url": "https://rennlist.com/forums/987-forum-125/",
-        "description": "Cayman/Boxster discussion and DIY guides"
-      },
-      {
-        "name": "BoXa.net 987 Section",
-        "url": "https://www.boxa.net/forum/66-987/",
-        "description": "987 Boxster and Spyder discussion"
-      },
-      {
-        "name": "CaymanOC",
-        "url": "https://www.caymanoc.com/",
-        "description": "Dedicated Cayman owner community"
-      }
+      { "name": "Planet-9", "url": "https://www.planet-9.com/forums/", "description": "Premier Cayman and Boxster community" },
+      { "name": "Rennlist 987 Forum", "url": "https://rennlist.com/forums/987-forum-125/", "description": "Cayman/Boxster discussion and DIY guides" },
+      { "name": "BoXa.net 987 Section", "url": "https://www.boxa.net/forum/66-987/", "description": "987 Boxster and Spyder discussion" },
+      { "name": "CaymanOC", "url": "https://www.caymanoc.com/", "description": "Dedicated Cayman owner community" }
     ],
     "facebook": [
-      {
-        "name": "Porsche 987 Owners",
-        "url": "https://www.facebook.com/groups/porsche987owners",
-        "description": "Active 987 Boxster/Cayman community"
-      },
-      {
-        "name": "Porsche Cayman Owners",
-        "url": "https://www.facebook.com/groups/porschecayman",
-        "description": "All-generation Cayman enthusiasts"
-      }
+      { "name": "Porsche 987 Owners", "url": "https://www.facebook.com/groups/porsche987owners", "description": "Active 987 Boxster/Cayman community" },
+      { "name": "Porsche Cayman Owners", "url": "https://www.facebook.com/groups/porschecayman", "description": "All-generation Cayman enthusiasts" }
     ],
     "websites": [
-      {
-        "name": "Planet-9 Wiki",
-        "url": "https://www.planet-9.com/wiki/",
-        "description": "987 technical wiki and resources"
-      }
+      { "name": "Planet-9 Wiki", "url": "https://www.planet-9.com/wiki/", "description": "987 technical wiki and resources" }
     ]
   }
 }

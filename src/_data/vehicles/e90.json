@@ -26,14 +26,8 @@
         "Consider replacing when doing timing chain service (N20/N54/N55)"
       ],
       "sources": [
-        {
-          "name": "E90Post",
-          "url": "https://www.e90post.com/forums/"
-        },
-        {
-          "name": "Bimmerpost",
-          "url": "https://www.bimmerpost.com/forums/"
-        }
+        { "name": "E90Post", "url": "https://www.e90post.com/forums/" },
+        { "name": "Bimmerpost", "url": "https://www.bimmerpost.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$200-400",
@@ -41,21 +35,9 @@
         "notes": "Electric water pump on N52/N54. Thermostat often done together."
       },
       "parts": [
-        {
-          "name": "Electric Water Pump (N52)",
-          "partNumber": "11517586925",
-          "price": "$300-500"
-        },
-        {
-          "name": "Electric Water Pump (N54)",
-          "partNumber": "11517632426",
-          "price": "$350-550"
-        },
-        {
-          "name": "Thermostat (Electric)",
-          "partNumber": "11537549476",
-          "price": "$80-150"
-        }
+        { "name": "Electric Water Pump (N52)", "partNumber": "11517586925", "price": "$300-500" },
+        { "name": "Electric Water Pump (N54)", "partNumber": "11517632426", "price": "$350-550" },
+        { "name": "Thermostat (Electric)", "partNumber": "11537549476", "price": "$80-150" }
       ],
       "difficulty": "Moderate"
     },
@@ -72,14 +54,8 @@
         "Address oil leaks promptly - oil on exhaust is fire hazard"
       ],
       "sources": [
-        {
-          "name": "FCP Euro",
-          "url": "https://www.fcpeuro.com/"
-        },
-        {
-          "name": "E90Post",
-          "url": "https://www.e90post.com/forums/"
-        }
+        { "name": "FCP Euro", "url": "https://www.fcpeuro.com/" },
+        { "name": "E90Post", "url": "https://www.e90post.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$100-300",
@@ -87,21 +63,9 @@
         "notes": "Valve cover and oil filter housing gaskets common."
       },
       "parts": [
-        {
-          "name": "Valve Cover Gasket (N52)",
-          "partNumber": "11127552281",
-          "price": "$40-80"
-        },
-        {
-          "name": "Valve Cover Gasket (N54)",
-          "partNumber": "11127565284",
-          "price": "$50-90"
-        },
-        {
-          "name": "Oil Filter Housing Gasket",
-          "partNumber": "11428637820",
-          "price": "$15-30"
-        }
+        { "name": "Valve Cover Gasket (N52)", "partNumber": "11127552281", "price": "$40-80" },
+        { "name": "Valve Cover Gasket (N54)", "partNumber": "11127565284", "price": "$50-90" },
+        { "name": "Oil Filter Housing Gasket", "partNumber": "11428637820", "price": "$15-30" }
       ],
       "difficulty": "Moderate"
     },
@@ -117,14 +81,8 @@
         "Later production N55 engines have improved pumps"
       ],
       "sources": [
-        {
-          "name": "N54Tech",
-          "url": "https://www.n54tech.com/forums/"
-        },
-        {
-          "name": "Bimmerpost",
-          "url": "https://www.bimmerpost.com/forums/"
-        }
+        { "name": "N54Tech", "url": "https://www.n54tech.com/forums/" },
+        { "name": "Bimmerpost", "url": "https://www.bimmerpost.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$400-700",
@@ -132,11 +90,7 @@
         "notes": "N54 only. High pressure fuel pump failure causes rough running."
       },
       "parts": [
-        {
-          "name": "High Pressure Fuel Pump",
-          "partNumber": "13517616170",
-          "price": "$400-700"
-        }
+        { "name": "High Pressure Fuel Pump", "partNumber": "13517616170", "price": "$400-700" }
       ],
       "difficulty": "Advanced"
     },
@@ -153,14 +107,8 @@
         "Walnut blast intake valves while replacing injectors"
       ],
       "sources": [
-        {
-          "name": "N54Tech",
-          "url": "https://www.n54tech.com/forums/"
-        },
-        {
-          "name": "E90Post",
-          "url": "https://www.e90post.com/forums/"
-        }
+        { "name": "N54Tech", "url": "https://www.n54tech.com/forums/" },
+        { "name": "E90Post", "url": "https://www.e90post.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$300-600",
@@ -168,16 +116,8 @@
         "notes": "N54 piezo injectors. Replace as set if multiple fail."
       },
       "parts": [
-        {
-          "name": "Fuel Injector (Index 12)",
-          "partNumber": "13538616079",
-          "price": "$80-120 each"
-        },
-        {
-          "name": "Injector Seal Kit",
-          "partNumber": "Various",
-          "price": "$30-60"
-        }
+        { "name": "Fuel Injector (Index 12)", "partNumber": "13538616079", "price": "$80-120 each" },
+        { "name": "Injector Seal Kit", "partNumber": "Various", "price": "$30-60" }
       ],
       "difficulty": "Moderate"
     },
@@ -194,14 +134,8 @@
         "Timing chain tensioner service may be needed (N20)"
       ],
       "sources": [
-        {
-          "name": "Beisan Systems",
-          "url": "https://www.beisansystems.com/"
-        },
-        {
-          "name": "Bimmerpost",
-          "url": "https://www.bimmerpost.com/forums/"
-        }
+        { "name": "Beisan Systems", "url": "https://www.beisansystems.com/" },
+        { "name": "Bimmerpost", "url": "https://www.bimmerpost.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$100-200",
@@ -209,16 +143,8 @@
         "notes": "Solenoid failures cause rough idle and codes."
       },
       "parts": [
-        {
-          "name": "VANOS Solenoid (N52)",
-          "partNumber": "11367585425",
-          "price": "$100-180"
-        },
-        {
-          "name": "VANOS Solenoid (N54)",
-          "partNumber": "11367516293",
-          "price": "$100-180"
-        }
+        { "name": "VANOS Solenoid (N52)", "partNumber": "11367585425", "price": "$100-180" },
+        { "name": "VANOS Solenoid (N54)", "partNumber": "11367516293", "price": "$100-180" }
       ],
       "relatedIssues": [
         { "vehicle": "e34", "brand": "BMW", "model": "E34", "issueId": "vanos-issues" },
@@ -240,14 +166,8 @@
         "Upgraded pure turbos or Vargas units for performance builds"
       ],
       "sources": [
-        {
-          "name": "N54Tech",
-          "url": "https://www.n54tech.com/forums/"
-        },
-        {
-          "name": "E90Post",
-          "url": "https://www.e90post.com/forums/"
-        }
+        { "name": "N54Tech", "url": "https://www.n54tech.com/forums/" },
+        { "name": "E90Post", "url": "https://www.e90post.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$800-1500",
@@ -255,16 +175,8 @@
         "notes": "N54 turbos. Wastegate rattle common. Replacement often in pairs."
       },
       "parts": [
-        {
-          "name": "Turbocharger (each)",
-          "partNumber": "11657649291",
-          "price": "$600-1000"
-        },
-        {
-          "name": "Turbo Oil Line Kit",
-          "partNumber": "11427573211",
-          "price": "$80-150"
-        }
+        { "name": "Turbocharger (each)", "partNumber": "11657649291", "price": "$600-1000" },
+        { "name": "Turbo Oil Line Kit", "partNumber": "11427573211", "price": "$80-150" }
       ],
       "difficulty": "Advanced"
     },
@@ -281,14 +193,8 @@
         "Combine with injector replacement or other intake work"
       ],
       "sources": [
-        {
-          "name": "E90Post",
-          "url": "https://www.e90post.com/forums/"
-        },
-        {
-          "name": "N54Tech",
-          "url": "https://www.n54tech.com/forums/"
-        }
+        { "name": "E90Post", "url": "https://www.e90post.com/forums/" },
+        { "name": "N54Tech", "url": "https://www.n54tech.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$150-300",
@@ -296,16 +202,8 @@
         "notes": "N54 direct injection. Walnut blasting required every 50-60k."
       },
       "parts": [
-        {
-          "name": "Walnut Media",
-          "partNumber": "N/A",
-          "price": "$30-50"
-        },
-        {
-          "name": "Intake Gaskets",
-          "partNumber": "11617547242",
-          "price": "$25-50"
-        }
+        { "name": "Walnut Media", "partNumber": "N/A", "price": "$30-50" },
+        { "name": "Intake Gaskets", "partNumber": "11617547242", "price": "$25-50" }
       ],
       "difficulty": "Advanced"
     },
@@ -322,14 +220,8 @@
         "Address any abnormal noise immediately"
       ],
       "sources": [
-        {
-          "name": "M3Post",
-          "url": "https://www.m3post.com/forums/"
-        },
-        {
-          "name": "Bimmerpost",
-          "url": "https://www.bimmerpost.com/forums/"
-        }
+        { "name": "M3Post", "url": "https://www.m3post.com/forums/" },
+        { "name": "Bimmerpost", "url": "https://www.bimmerpost.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$500-1000",
@@ -337,16 +229,8 @@
         "notes": "S65 V8 (M3) only. Preventive replacement recommended."
       },
       "parts": [
-        {
-          "name": "Rod Bearing Set (ACL)",
-          "partNumber": "Various aftermarket",
-          "price": "$150-300"
-        },
-        {
-          "name": "Rod Bolts",
-          "partNumber": "11247840093",
-          "price": "$100-200"
-        }
+        { "name": "Rod Bearing Set (ACL)", "partNumber": "Various aftermarket", "price": "$150-300" },
+        { "name": "Rod Bolts", "partNumber": "11247840093", "price": "$100-200" }
       ],
       "difficulty": "Advanced"
     },
@@ -363,14 +247,8 @@
         "Replace water pump and thermostat while apart"
       ],
       "sources": [
-        {
-          "name": "Bimmerpost",
-          "url": "https://www.bimmerpost.com/forums/"
-        },
-        {
-          "name": "FCP Euro",
-          "url": "https://www.fcpeuro.com/"
-        }
+        { "name": "Bimmerpost", "url": "https://www.bimmerpost.com/forums/" },
+        { "name": "FCP Euro", "url": "https://www.fcpeuro.com/" }
       ],
       "repairCosts": {
         "diy": "$400-800",
@@ -378,16 +256,8 @@
         "notes": "N54/N55 timing chain stretch. Often guides and tensioner too."
       },
       "parts": [
-        {
-          "name": "Timing Chain Kit",
-          "partNumber": "Various",
-          "price": "$300-500"
-        },
-        {
-          "name": "Chain Guide Set",
-          "partNumber": "Various",
-          "price": "$150-300"
-        }
+        { "name": "Timing Chain Kit", "partNumber": "Various", "price": "$300-500" },
+        { "name": "Chain Guide Set", "partNumber": "Various", "price": "$150-300" }
       ],
       "difficulty": "Advanced"
     }
@@ -403,66 +273,16 @@
       "interval": "Every 80,000-100,000 miles",
       "laborHours": "8-12 hours shop time",
       "parts": [
-        {
-          "name": "Front Lower Control Arm (Left)",
-          "oem": "31126770849",
-          "aftermarket": "Lemforder 35606 01, Meyle HD",
-          "cost": "$50-90"
-        },
-        {
-          "name": "Front Lower Control Arm (Right)",
-          "oem": "31126770850",
-          "aftermarket": "Lemforder 35607 01, Meyle HD",
-          "cost": "$50-90"
-        },
-        {
-          "name": "Front Thrust Arm (Tension Strut) Left",
-          "oem": "31126770851",
-          "aftermarket": "Lemforder 35608 01, Meyle HD",
-          "cost": "$50-85"
-        },
-        {
-          "name": "Front Thrust Arm (Tension Strut) Right",
-          "oem": "31126770852",
-          "aftermarket": "Lemforder 35609 01, Meyle HD",
-          "cost": "$50-85"
-        },
-        {
-          "name": "Tie Rod Assembly (Pair)",
-          "oem": "32106793457",
-          "aftermarket": "Lemforder, Meyle",
-          "cost": "$70-140"
-        },
-        {
-          "name": "Front Strut Mount (Pair)",
-          "oem": "31336760943",
-          "aftermarket": "Lemforder, Sachs",
-          "cost": "$60-120"
-        },
-        {
-          "name": "Front Sway Bar End Link (Pair)",
-          "oem": "31356765933",
-          "aftermarket": "Lemforder 35595 01, Meyle",
-          "cost": "$30-60"
-        },
-        {
-          "name": "Rear Trailing Arm Bushing (RTABs Pair)",
-          "oem": "33326770824",
-          "aftermarket": "Lemforder, Powerflex PFR5-3608",
-          "cost": "$60-120"
-        },
-        {
-          "name": "Rear Upper Control Arm (Camber)",
-          "oem": "33326767832",
-          "aftermarket": "Lemforder, SPC adjustable",
-          "cost": "$45-90"
-        },
-        {
-          "name": "Rear Lower Control Arm",
-          "oem": "33326763479",
-          "aftermarket": "Lemforder, Meyle",
-          "cost": "$35-70"
-        }
+        { "name": "Front Lower Control Arm (Left)", "oem": "31126770849", "aftermarket": "Lemforder 35606 01, Meyle HD", "cost": "$50-90" },
+        { "name": "Front Lower Control Arm (Right)", "oem": "31126770850", "aftermarket": "Lemforder 35607 01, Meyle HD", "cost": "$50-90" },
+        { "name": "Front Thrust Arm (Tension Strut) Left", "oem": "31126770851", "aftermarket": "Lemforder 35608 01, Meyle HD", "cost": "$50-85" },
+        { "name": "Front Thrust Arm (Tension Strut) Right", "oem": "31126770852", "aftermarket": "Lemforder 35609 01, Meyle HD", "cost": "$50-85" },
+        { "name": "Tie Rod Assembly (Pair)", "oem": "32106793457", "aftermarket": "Lemforder, Meyle", "cost": "$70-140" },
+        { "name": "Front Strut Mount (Pair)", "oem": "31336760943", "aftermarket": "Lemforder, Sachs", "cost": "$60-120" },
+        { "name": "Front Sway Bar End Link (Pair)", "oem": "31356765933", "aftermarket": "Lemforder 35595 01, Meyle", "cost": "$30-60" },
+        { "name": "Rear Trailing Arm Bushing (RTABs Pair)", "oem": "33326770824", "aftermarket": "Lemforder, Powerflex PFR5-3608", "cost": "$60-120" },
+        { "name": "Rear Upper Control Arm (Camber)", "oem": "33326767832", "aftermarket": "Lemforder, SPC adjustable", "cost": "$45-90" },
+        { "name": "Rear Lower Control Arm", "oem": "33326763479", "aftermarket": "Lemforder, Meyle", "cost": "$35-70" }
       ],
       "tools": [
         "Floor jack and jack stands (4)",
@@ -511,18 +331,9 @@
         "M3 models have unique suspension components - verify correct parts."
       ],
       "references": [
-        {
-          "name": "E90Post Suspension DIY",
-          "url": "https://www.e90post.com/forums/forumdisplay.php?f=102"
-        },
-        {
-          "name": "Turner Motorsport E90 Parts",
-          "url": "https://www.turnermotorsport.com/BMW-E90-Parts"
-        },
-        {
-          "name": "FCP Euro E90 Suspension",
-          "url": "https://www.fcpeuro.com/BMW-E90"
-        }
+        { "name": "E90Post Suspension DIY", "url": "https://www.e90post.com/forums/forumdisplay.php?f=102" },
+        { "name": "Turner Motorsport E90 Parts", "url": "https://www.turnermotorsport.com/BMW-E90-Parts" },
+        { "name": "FCP Euro E90 Suspension", "url": "https://www.fcpeuro.com/BMW-E90" }
       ]
     },
     {
@@ -535,66 +346,16 @@
       "interval": "Inspect annually",
       "laborHours": "Varies by severity",
       "parts": [
-        {
-          "name": "Rocker Panel (Left)",
-          "oem": "41217152735",
-          "aftermarket": "Klokkerholm, aftermarket",
-          "cost": "$120-280"
-        },
-        {
-          "name": "Rocker Panel (Right)",
-          "oem": "41217152736",
-          "aftermarket": "Klokkerholm, aftermarket",
-          "cost": "$120-280"
-        },
-        {
-          "name": "Rear Wheel Arch (Left)",
-          "oem": "41357119211",
-          "aftermarket": "Aftermarket",
-          "cost": "$100-220"
-        },
-        {
-          "name": "Rear Wheel Arch (Right)",
-          "oem": "41357119212",
-          "aftermarket": "Aftermarket",
-          "cost": "$100-220"
-        },
-        {
-          "name": "Door Bottom Patch",
-          "oem": "—",
-          "aftermarket": "Fabricated",
-          "cost": "$30-80"
-        },
-        {
-          "name": "Jack Point Reinforcement",
-          "oem": "—",
-          "aftermarket": "Fabricated",
-          "cost": "$30-80"
-        },
-        {
-          "name": "Rust Converter",
-          "oem": "—",
-          "aftermarket": "POR-15, Eastwood",
-          "cost": "$20-40"
-        },
-        {
-          "name": "Cavity Wax",
-          "oem": "—",
-          "aftermarket": "Fluid Film, Eastwood",
-          "cost": "$15-30"
-        },
-        {
-          "name": "Epoxy Primer",
-          "oem": "—",
-          "aftermarket": "Eastwood, SPI",
-          "cost": "$30-60"
-        },
-        {
-          "name": "Seam Sealer",
-          "oem": "—",
-          "aftermarket": "3M, Eastwood",
-          "cost": "$15-25"
-        }
+        { "name": "Rocker Panel (Left)", "oem": "41217152735", "aftermarket": "Klokkerholm, aftermarket", "cost": "$120-280" },
+        { "name": "Rocker Panel (Right)", "oem": "41217152736", "aftermarket": "Klokkerholm, aftermarket", "cost": "$120-280" },
+        { "name": "Rear Wheel Arch (Left)", "oem": "41357119211", "aftermarket": "Aftermarket", "cost": "$100-220" },
+        { "name": "Rear Wheel Arch (Right)", "oem": "41357119212", "aftermarket": "Aftermarket", "cost": "$100-220" },
+        { "name": "Door Bottom Patch", "oem": "—", "aftermarket": "Fabricated", "cost": "$30-80" },
+        { "name": "Jack Point Reinforcement", "oem": "—", "aftermarket": "Fabricated", "cost": "$30-80" },
+        { "name": "Rust Converter", "oem": "—", "aftermarket": "POR-15, Eastwood", "cost": "$20-40" },
+        { "name": "Cavity Wax", "oem": "—", "aftermarket": "Fluid Film, Eastwood", "cost": "$15-30" },
+        { "name": "Epoxy Primer", "oem": "—", "aftermarket": "Eastwood, SPI", "cost": "$30-60" },
+        { "name": "Seam Sealer", "oem": "—", "aftermarket": "3M, Eastwood", "cost": "$15-25" }
       ],
       "tools": [
         "Inspection mirror and flashlight",
@@ -641,18 +402,9 @@
         "Don't ignore small rust spots - they spread quickly."
       ],
       "references": [
-        {
-          "name": "E90Post Rust Discussion",
-          "url": "https://www.e90post.com/forums/"
-        },
-        {
-          "name": "Eastwood Rust Treatment",
-          "url": "https://www.eastwood.com/rust-repair"
-        },
-        {
-          "name": "Fluid Film Application",
-          "url": "https://www.fluid-film.com/"
-        }
+        { "name": "E90Post Rust Discussion", "url": "https://www.e90post.com/forums/" },
+        { "name": "Eastwood Rust Treatment", "url": "https://www.eastwood.com/rust-repair" },
+        { "name": "Fluid Film Application", "url": "https://www.fluid-film.com/" }
       ]
     },
     {
@@ -665,66 +417,16 @@
       "interval": "Address as symptoms appear",
       "laborHours": "6-10 hours shop time",
       "parts": [
-        {
-          "name": "Ignition Coil (N52/N54/N55)",
-          "oem": "12138616153",
-          "aftermarket": "Bosch, Delphi",
-          "cost": "$30-50 each"
-        },
-        {
-          "name": "VANOS Solenoid (Pair)",
-          "oem": "11367585425",
-          "aftermarket": "Genuine BMW recommended",
-          "cost": "$150-300"
-        },
-        {
-          "name": "Battery (AGM)",
-          "oem": "61217604822",
-          "aftermarket": "Exide, Optima",
-          "cost": "$200-350"
-        },
-        {
-          "name": "Eccentric Shaft Sensor (N52)",
-          "oem": "11377524879",
-          "aftermarket": "Genuine BMW",
-          "cost": "$150-250"
-        },
-        {
-          "name": "Crankshaft Position Sensor",
-          "oem": "13627525015",
-          "aftermarket": "Bosch, VDO",
-          "cost": "$40-80"
-        },
-        {
-          "name": "Camshaft Position Sensor",
-          "oem": "13627525014",
-          "aftermarket": "Bosch, VDO",
-          "cost": "$40-80"
-        },
-        {
-          "name": "HVAC Blend Door Actuator",
-          "oem": "64119321034",
-          "aftermarket": "VDO, aftermarket",
-          "cost": "$60-120"
-        },
-        {
-          "name": "Window Regulator (Front)",
-          "oem": "51337140587/88",
-          "aftermarket": "URO, aftermarket",
-          "cost": "$70-130"
-        },
-        {
-          "name": "Charge Pipe (N54/N55)",
-          "oem": "11617563716",
-          "aftermarket": "BMS, aluminum upgrade",
-          "cost": "$80-200"
-        },
-        {
-          "name": "Fuel Injector Seal Kit",
-          "oem": "13647599877",
-          "aftermarket": "Aftermarket kit",
-          "cost": "$30-60"
-        }
+        { "name": "Ignition Coil (N52/N54/N55)", "oem": "12138616153", "aftermarket": "Bosch, Delphi", "cost": "$30-50 each" },
+        { "name": "VANOS Solenoid (Pair)", "oem": "11367585425", "aftermarket": "Genuine BMW recommended", "cost": "$150-300" },
+        { "name": "Battery (AGM)", "oem": "61217604822", "aftermarket": "Exide, Optima", "cost": "$200-350" },
+        { "name": "Eccentric Shaft Sensor (N52)", "oem": "11377524879", "aftermarket": "Genuine BMW", "cost": "$150-250" },
+        { "name": "Crankshaft Position Sensor", "oem": "13627525015", "aftermarket": "Bosch, VDO", "cost": "$40-80" },
+        { "name": "Camshaft Position Sensor", "oem": "13627525014", "aftermarket": "Bosch, VDO", "cost": "$40-80" },
+        { "name": "HVAC Blend Door Actuator", "oem": "64119321034", "aftermarket": "VDO, aftermarket", "cost": "$60-120" },
+        { "name": "Window Regulator (Front)", "oem": "51337140587/88", "aftermarket": "URO, aftermarket", "cost": "$70-130" },
+        { "name": "Charge Pipe (N54/N55)", "oem": "11617563716", "aftermarket": "BMS, aluminum upgrade", "cost": "$80-200" },
+        { "name": "Fuel Injector Seal Kit", "oem": "13647599877", "aftermarket": "Aftermarket kit", "cost": "$30-60" }
       ],
       "tools": [
         "ISTA/INPA diagnostic software or compatible tool",
@@ -771,18 +473,9 @@
         "SRS (airbag) system requires special procedures - don't probe these circuits."
       ],
       "references": [
-        {
-          "name": "E90Post Electrical DIY",
-          "url": "https://www.e90post.com/forums/"
-        },
-        {
-          "name": "Bimmerpost Coding Guide",
-          "url": "https://www.bimmerpost.com/"
-        },
-        {
-          "name": "FCP Euro E90 Guides",
-          "url": "https://www.fcpeuro.com/page/diy"
-        }
+        { "name": "E90Post Electrical DIY", "url": "https://www.e90post.com/forums/" },
+        { "name": "Bimmerpost Coding Guide", "url": "https://www.bimmerpost.com/" },
+        { "name": "FCP Euro E90 Guides", "url": "https://www.fcpeuro.com/page/diy" }
       ]
     },
     {
@@ -795,66 +488,16 @@
       "interval": "As needed for wear items",
       "laborHours": "8-14 hours shop time",
       "parts": [
-        {
-          "name": "Leather Repair Kit",
-          "oem": "—",
-          "aftermarket": "Leatherique, Colourlock",
-          "cost": "$50-100"
-        },
-        {
-          "name": "Headliner Fabric (3 yards)",
-          "oem": "—",
-          "aftermarket": "OEM-match foam-backed",
-          "cost": "$40-80"
-        },
-        {
-          "name": "Headliner Adhesive",
-          "oem": "—",
-          "aftermarket": "3M Super 77, Permatex",
-          "cost": "$15-25"
-        },
-        {
-          "name": "Aluminum Trim Wrap/Refinish",
-          "oem": "—",
-          "aftermarket": "3M vinyl, hydrodip",
-          "cost": "$30-100"
-        },
-        {
-          "name": "Shift Knob (Manual)",
-          "oem": "25117566267",
-          "aftermarket": "Aftermarket, BMW Performance",
-          "cost": "$50-150"
-        },
-        {
-          "name": "iDrive Controller (CCC/CIC)",
-          "oem": "65826944883",
-          "aftermarket": "Used OEM, rebuilt",
-          "cost": "$150-400"
-        },
-        {
-          "name": "Door Panel Clip Set",
-          "oem": "51417144334",
-          "aftermarket": "URO, aftermarket",
-          "cost": "$10-25"
-        },
-        {
-          "name": "Cabin Air Filter",
-          "oem": "64319142115",
-          "aftermarket": "Mann CUK2533, Bosch",
-          "cost": "$25-50"
-        },
-        {
-          "name": "Seat Foam (Driver Bolster)",
-          "oem": "52107122530",
-          "aftermarket": "Recovered, aftermarket",
-          "cost": "$80-180"
-        },
-        {
-          "name": "Door Seal Set",
-          "oem": "51727143847",
-          "aftermarket": "URO, aftermarket",
-          "cost": "$100-200"
-        }
+        { "name": "Leather Repair Kit", "oem": "—", "aftermarket": "Leatherique, Colourlock", "cost": "$50-100" },
+        { "name": "Headliner Fabric (3 yards)", "oem": "—", "aftermarket": "OEM-match foam-backed", "cost": "$40-80" },
+        { "name": "Headliner Adhesive", "oem": "—", "aftermarket": "3M Super 77, Permatex", "cost": "$15-25" },
+        { "name": "Aluminum Trim Wrap/Refinish", "oem": "—", "aftermarket": "3M vinyl, hydrodip", "cost": "$30-100" },
+        { "name": "Shift Knob (Manual)", "oem": "25117566267", "aftermarket": "Aftermarket, BMW Performance", "cost": "$50-150" },
+        { "name": "iDrive Controller (CCC/CIC)", "oem": "65826944883", "aftermarket": "Used OEM, rebuilt", "cost": "$150-400" },
+        { "name": "Door Panel Clip Set", "oem": "51417144334", "aftermarket": "URO, aftermarket", "cost": "$10-25" },
+        { "name": "Cabin Air Filter", "oem": "64319142115", "aftermarket": "Mann CUK2533, Bosch", "cost": "$25-50" },
+        { "name": "Seat Foam (Driver Bolster)", "oem": "52107122530", "aftermarket": "Recovered, aftermarket", "cost": "$80-180" },
+        { "name": "Door Seal Set", "oem": "51727143847", "aftermarket": "URO, aftermarket", "cost": "$100-200" }
       ],
       "tools": [
         "Trim removal tools (plastic pry set)",
@@ -901,18 +544,9 @@
         "Test all electrical after seat reinstallation - connectors can be fragile."
       ],
       "references": [
-        {
-          "name": "E90Post Interior DIY",
-          "url": "https://www.e90post.com/forums/"
-        },
-        {
-          "name": "Leatherique Guide",
-          "url": "https://www.leatherique.com/"
-        },
-        {
-          "name": "BimmerPost E90 Forum",
-          "url": "https://www.bimmerpost.com/"
-        }
+        { "name": "E90Post Interior DIY", "url": "https://www.e90post.com/forums/" },
+        { "name": "Leatherique Guide", "url": "https://www.leatherique.com/" },
+        { "name": "BimmerPost E90 Forum", "url": "https://www.bimmerpost.com/" }
       ]
     }
   ],
@@ -922,7 +556,10 @@
         "name": "FCP Euro",
         "url": "https://www.fcpeuro.com/BMW-parts/3-series/E90",
         "notes": "Lifetime replacement guarantee. Essential for water pumps, turbos, and HPFP parts.",
-        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "specialties": [
+          "Lifetime Warranty",
+          "OE Quality"
+        ],
         "shipping": "Free over $49",
         "warranty": "Lifetime",
         "featured": true
@@ -931,14 +568,20 @@
         "name": "Pelican Parts",
         "url": "https://www.pelicanparts.com/BMW/catalog/3-Series_Main.htm",
         "notes": "E90/E92 catalog with excellent DIY tech articles.",
-        "specialties": ["Tech Articles", "OE Parts"],
+        "specialties": [
+          "Tech Articles",
+          "OE Parts"
+        ],
         "shipping": "Free over $99"
       },
       {
         "name": "BMW Parts Direct",
         "url": "https://www.bmwpartsdirect.com/",
         "notes": "Genuine BMW OEM parts from authorized dealers.",
-        "specialties": ["Genuine BMW", "Dealer Direct"]
+        "specialties": [
+          "Genuine BMW",
+          "Dealer Direct"
+        ]
       }
     ],
     "performance": [
@@ -946,32 +589,51 @@
         "name": "Burger Motorsports",
         "url": "https://burgertuning.com/",
         "notes": "N54/N55 performance specialists. JB4 tuning, downpipes, and intakes.",
-        "specialties": ["N54/N55 Tuning", "JB4", "Intakes"],
+        "specialties": [
+          "N54/N55 Tuning",
+          "JB4",
+          "Intakes"
+        ],
         "featured": true
       },
       {
         "name": "Pure Turbos",
         "url": "https://pureturbos.com/",
         "notes": "Upgraded turbo units for N54 335i. Stage 1-3 options.",
-        "specialties": ["Upgraded Turbos", "N54", "Big Power"]
+        "specialties": [
+          "Upgraded Turbos",
+          "N54",
+          "Big Power"
+        ]
       },
       {
         "name": "Turner Motorsport",
         "url": "https://www.turnermotorsport.com/BMW-E90-Parts",
         "notes": "Race-proven E90 M3 and 335i performance parts.",
-        "specialties": ["M3 Parts", "Suspension", "Brakes"]
+        "specialties": [
+          "M3 Parts",
+          "Suspension",
+          "Brakes"
+        ]
       },
       {
         "name": "BimmerWorld",
         "url": "https://www.bimmerworld.com/BMW-Parts/E90-2006-2011/",
         "notes": "Track-focused parts with racing pedigree.",
-        "specialties": ["Track Parts", "Suspension"]
+        "specialties": [
+          "Track Parts",
+          "Suspension"
+        ]
       },
       {
         "name": "Dinan",
         "url": "https://www.dinanbmw.com/",
         "notes": "Premium BMW performance with warranty-friendly software and hardware.",
-        "specialties": ["Software", "Exhaust", "Premium"]
+        "specialties": [
+          "Software",
+          "Exhaust",
+          "Premium"
+        ]
       }
     ],
     "general": [
@@ -979,14 +641,20 @@
         "name": "ECS Tuning",
         "url": "https://www.ecstuning.com/BMW-E90/",
         "notes": "Large E90 inventory. Great for maintenance and N54/N55 parts.",
-        "specialties": ["Large Inventory", "Fast Shipping"],
+        "specialties": [
+          "Large Inventory",
+          "Fast Shipping"
+        ],
         "shipping": "Free over $49"
       },
       {
         "name": "AutohausAZ",
         "url": "https://www.autohausaz.com/",
         "notes": "Competitive prices on name brand parts.",
-        "specialties": ["Good Prices", "Name Brands"],
+        "specialties": [
+          "Good Prices",
+          "Name Brands"
+        ],
         "shipping": "Free over $50"
       }
     ],
@@ -995,14 +663,20 @@
         "name": "Vargas Turbo Technologies",
         "url": "https://www.vtt-industries.com/",
         "notes": "N54/N55 turbo specialists. Rebuild services and upgraded turbos.",
-        "specialties": ["Turbo Rebuilds", "N54/N55"],
+        "specialties": [
+          "Turbo Rebuilds",
+          "N54/N55"
+        ],
         "featured": true
       },
       {
         "name": "MHD Flasher",
         "url": "https://www.mhdtuning.com/",
         "notes": "DIY N54/N55 ECU tuning via smartphone app.",
-        "specialties": ["ECU Tuning", "DIY Flashing"]
+        "specialties": [
+          "ECU Tuning",
+          "DIY Flashing"
+        ]
       }
     ],
     "used": [
@@ -1010,20 +684,29 @@
         "name": "E90Post Classifieds",
         "url": "https://www.e90post.com/forums/e90-e91-e92-e93-parts-sale-wanted.61/",
         "notes": "Largest E90 community marketplace.",
-        "specialties": ["E90 Community", "M3 Parts"],
+        "specialties": [
+          "E90 Community",
+          "M3 Parts"
+        ],
         "featured": true
       },
       {
         "name": "eBay Motors",
         "url": "https://www.ebay.com/b/BMW-E90/6030/bn_81442372",
         "notes": "Large selection including M3 and 335i performance parts.",
-        "specialties": ["NOS Parts", "Performance Parts"]
+        "specialties": [
+          "NOS Parts",
+          "Performance Parts"
+        ]
       },
       {
         "name": "Car-Part.com",
         "url": "https://www.car-part.com/",
         "notes": "Search salvage yard inventory nationwide.",
-        "specialties": ["Salvage Yards", "Body Parts"]
+        "specialties": [
+          "Salvage Yards",
+          "Body Parts"
+        ]
       }
     ],
     "tools": [
@@ -1032,178 +715,49 @@
         "url": "https://www.realoem.com/bmw/enUS/select?product=P&archive=0&series=E90",
         "notes": "Free BMW parts diagrams and part number lookup"
       },
-      {
-        "name": "E90Post Wiki",
-        "url": "https://www.e90post.com/wiki/",
-        "notes": "E90 technical wiki and DIY guides"
-      }
+      { "name": "E90Post Wiki", "url": "https://www.e90post.com/wiki/", "notes": "E90 technical wiki and DIY guides" }
     ]
   },
   "torqueSpecs": {
     "sources": [
-      {
-        "name": "E90Post Torque Specs Thread",
-        "url": "https://www.e90post.com/forums/showthread.php?t=1362166"
-      },
-      {
-        "name": "TightTorque E90 Reference",
-        "url": "https://tighttorque.com/cars/bmw/3-series-5"
-      },
-      {
-        "name": "Bentley E90 Service Manual",
-        "url": "https://www.bentleypublishers.com/bmw.html"
-      }
+      { "name": "E90Post Torque Specs Thread", "url": "https://www.e90post.com/forums/showthread.php?t=1362166" },
+      { "name": "TightTorque E90 Reference", "url": "https://tighttorque.com/cars/bmw/3-series-5" },
+      { "name": "Bentley E90 Service Manual", "url": "https://www.bentleypublishers.com/bmw.html" }
     ],
     "engine": [
-      {
-        "component": "Cylinder Head Bolts (N52)",
-        "spec": "30 ft-lbs (40 Nm) + 90° + 90°",
-        "notes": "TTY bolts, replace each use"
-      },
-      {
-        "component": "Cylinder Head Bolts (N54/N55)",
-        "spec": "30 ft-lbs (40 Nm) + 90° + 90°",
-        "notes": "TTY bolts, replace each use"
-      },
-      {
-        "component": "Spark Plugs (N52)",
-        "spec": "17 ft-lbs (23 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Spark Plugs (N54/N55)",
-        "spec": "17 ft-lbs (23 Nm)",
-        "notes": "No anti-seize needed"
-      },
-      {
-        "component": "Valve Cover Bolts (N52)",
-        "spec": "9 ft-lbs (12 Nm)",
-        "notes": "Specific sequence required"
-      },
-      {
-        "component": "Oil Drain Plug",
-        "spec": "18 ft-lbs (25 Nm)",
-        "notes": "Replace crush washer"
-      },
-      {
-        "component": "Oil Filter Housing Bolts",
-        "spec": "18 ft-lbs (25 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Intake Manifold (N52)",
-        "spec": "7 ft-lbs (10 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Charge Pipe Clamps (N54/N55)",
-        "spec": "5 ft-lbs (7 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Turbo Oil Feed Line (N54)",
-        "spec": "15 ft-lbs (20 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Exhaust Forward Flanges (N54)",
-        "spec": "15 ft-lbs (21 Nm)",
-        "notes": "Turbo engine only"
-      }
+      { "component": "Cylinder Head Bolts (N52)", "spec": "30 ft-lbs (40 Nm) + 90° + 90°", "notes": "TTY bolts, replace each use" },
+      { "component": "Cylinder Head Bolts (N54/N55)", "spec": "30 ft-lbs (40 Nm) + 90° + 90°", "notes": "TTY bolts, replace each use" },
+      { "component": "Spark Plugs (N52)", "spec": "17 ft-lbs (23 Nm)", "notes": "" },
+      { "component": "Spark Plugs (N54/N55)", "spec": "17 ft-lbs (23 Nm)", "notes": "No anti-seize needed" },
+      { "component": "Valve Cover Bolts (N52)", "spec": "9 ft-lbs (12 Nm)", "notes": "Specific sequence required" },
+      { "component": "Oil Drain Plug", "spec": "18 ft-lbs (25 Nm)", "notes": "Replace crush washer" },
+      { "component": "Oil Filter Housing Bolts", "spec": "18 ft-lbs (25 Nm)", "notes": "" },
+      { "component": "Intake Manifold (N52)", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
+      { "component": "Charge Pipe Clamps (N54/N55)", "spec": "5 ft-lbs (7 Nm)", "notes": "" },
+      { "component": "Turbo Oil Feed Line (N54)", "spec": "15 ft-lbs (20 Nm)", "notes": "" },
+      { "component": "Exhaust Forward Flanges (N54)", "spec": "15 ft-lbs (21 Nm)", "notes": "Turbo engine only" }
     ],
     "suspension": [
-      {
-        "component": "Wheel Lug Bolts",
-        "spec": "89 ft-lbs (120 Nm)",
-        "notes": "Tighten in star pattern, dry torque"
-      },
-      {
-        "component": "Control Arm to Knuckle",
-        "spec": "122 ft-lbs (165 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Control Arm to Subframe",
-        "spec": "74 ft-lbs (100 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Tension Strut (Thrust Arm) to Knuckle",
-        "spec": "122 ft-lbs (165 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Tension Strut to Subframe",
-        "spec": "74 ft-lbs (100 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Strut Pinch Clamp",
-        "spec": "60 ft-lbs (81 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Strut Top Nut",
-        "spec": "25 ft-lbs (34 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Tie Rod Nut",
-        "spec": "52 ft-lbs (70 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Sway Bar End Links (Front)",
-        "spec": "44 ft-lbs (60 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Sway Bar End Links (Rear)",
-        "spec": "43 ft-lbs (58 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Sway Bar Bracket to Subframe",
-        "spec": "16 ft-lbs (21 Nm)",
-        "notes": "M8 bolts"
-      },
-      {
-        "component": "Subframe Reinforcement Plate",
-        "spec": "44 ft-lbs (59 Nm) + 90° ± 30°",
-        "notes": "8 Torx bolts, new bolts required"
-      }
+      { "component": "Wheel Lug Bolts", "spec": "89 ft-lbs (120 Nm)", "notes": "Tighten in star pattern, dry torque" },
+      { "component": "Control Arm to Knuckle", "spec": "122 ft-lbs (165 Nm)", "notes": "" },
+      { "component": "Control Arm to Subframe", "spec": "74 ft-lbs (100 Nm)", "notes": "" },
+      { "component": "Tension Strut (Thrust Arm) to Knuckle", "spec": "122 ft-lbs (165 Nm)", "notes": "" },
+      { "component": "Tension Strut to Subframe", "spec": "74 ft-lbs (100 Nm)", "notes": "" },
+      { "component": "Strut Pinch Clamp", "spec": "60 ft-lbs (81 Nm)", "notes": "" },
+      { "component": "Strut Top Nut", "spec": "25 ft-lbs (34 Nm)", "notes": "" },
+      { "component": "Tie Rod Nut", "spec": "52 ft-lbs (70 Nm)", "notes": "" },
+      { "component": "Sway Bar End Links (Front)", "spec": "44 ft-lbs (60 Nm)", "notes": "" },
+      { "component": "Sway Bar End Links (Rear)", "spec": "43 ft-lbs (58 Nm)", "notes": "" },
+      { "component": "Sway Bar Bracket to Subframe", "spec": "16 ft-lbs (21 Nm)", "notes": "M8 bolts" },
+      { "component": "Subframe Reinforcement Plate", "spec": "44 ft-lbs (59 Nm) + 90° ± 30°", "notes": "8 Torx bolts, new bolts required" }
     ],
     "brakes": [
-      {
-        "component": "Front Caliper Carrier",
-        "spec": "81 ft-lbs (110 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Caliper Carrier",
-        "spec": "48 ft-lbs (65 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Caliper Guide Pins",
-        "spec": "22 ft-lbs (30 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Brake Line to Hose",
-        "spec": "9 ft-lbs (12 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Brake Rotor Set Screw",
-        "spec": "12 ft-lbs (16 Nm)",
-        "notes": "Use thread locker"
-      },
-      {
-        "component": "Pad Wear Sensor",
-        "spec": "Hand tight",
-        "notes": "Clips into place"
-      }
+      { "component": "Front Caliper Carrier", "spec": "81 ft-lbs (110 Nm)", "notes": "" },
+      { "component": "Rear Caliper Carrier", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
+      { "component": "Caliper Guide Pins", "spec": "22 ft-lbs (30 Nm)", "notes": "" },
+      { "component": "Brake Line to Hose", "spec": "9 ft-lbs (12 Nm)", "notes": "" },
+      { "component": "Brake Rotor Set Screw", "spec": "12 ft-lbs (16 Nm)", "notes": "Use thread locker" },
+      { "component": "Pad Wear Sensor", "spec": "Hand tight", "notes": "Clips into place" }
     ]
   },
   "diyGuides": [
@@ -1477,11 +1031,7 @@
             "detail": "Extremely common leak point on N54 and N55. Check for oil around the filter housing.",
             "costIfBad": "$400-700"
           },
-          {
-            "check": "Valve Cover Gasket",
-            "detail": "Oil leaks from the valve cover gasket are common with age.",
-            "costIfBad": "$400-800"
-          }
+          { "check": "Valve Cover Gasket", "detail": "Oil leaks from the valve cover gasket are common with age.", "costIfBad": "$400-800" }
         ]
       },
       {
@@ -1497,11 +1047,7 @@
             "detail": "The individual throttle bodies can fail. Check for codes and rough running.",
             "costIfBad": "$1,500-3,000"
           },
-          {
-            "check": "VANOS",
-            "detail": "Complex variable valve timing system can develop issues. Listen for rattle.",
-            "costIfBad": "$1,500-3,000"
-          },
+          { "check": "VANOS", "detail": "Complex variable valve timing system can develop issues. Listen for rattle.", "costIfBad": "$1,500-3,000" },
           {
             "check": "Oil Consumption",
             "detail": "Some S65 engines consume oil. Check level and ask about consumption rate.",
@@ -1512,46 +1058,22 @@
       {
         "category": "Cooling & Electrical",
         "items": [
-          {
-            "check": "Water Pump (Electric)",
-            "detail": "Electric water pump can fail without warning. Common on all E90 engines.",
-            "costIfBad": "$500-900"
-          },
-          {
-            "check": "Thermostat",
-            "detail": "Electric thermostat fails, causing overcooling or overheating.",
-            "costIfBad": "$200-400"
-          },
-          {
-            "check": "Ignition Coils",
-            "detail": "Coil packs fail causing misfires. Usually replaced in sets.",
-            "costIfBad": "$200-400 for set"
-          },
+          { "check": "Water Pump (Electric)", "detail": "Electric water pump can fail without warning. Common on all E90 engines.", "costIfBad": "$500-900" },
+          { "check": "Thermostat", "detail": "Electric thermostat fails, causing overcooling or overheating.", "costIfBad": "$200-400" },
+          { "check": "Ignition Coils", "detail": "Coil packs fail causing misfires. Usually replaced in sets.", "costIfBad": "$200-400 for set" },
           {
             "check": "Battery Registration",
             "detail": "E90 requires battery registration when replaced. Verify proper charging.",
             "costIfBad": "$50-100 for registration"
           },
-          {
-            "check": "iDrive System",
-            "detail": "If equipped, check iDrive controller and screen functionality.",
-            "costIfBad": "$500-1,500"
-          }
+          { "check": "iDrive System", "detail": "If equipped, check iDrive controller and screen functionality.", "costIfBad": "$500-1,500" }
         ]
       },
       {
         "category": "Suspension & Drivetrain",
         "items": [
-          {
-            "check": "Control Arm Bushings",
-            "detail": "Front control arm bushings wear causing clunking and vague steering.",
-            "costIfBad": "$400-700"
-          },
-          {
-            "check": "Rear Trailing Arm Bushings",
-            "detail": "RTAB wear affects handling and causes tire wear.",
-            "costIfBad": "$300-500"
-          },
+          { "check": "Control Arm Bushings", "detail": "Front control arm bushings wear causing clunking and vague steering.", "costIfBad": "$400-700" },
+          { "check": "Rear Trailing Arm Bushings", "detail": "RTAB wear affects handling and causes tire wear.", "costIfBad": "$300-500" },
           {
             "check": "DCT Transmission (M3)",
             "detail": "The dual-clutch M DCT requires fluid service. Check for shudder or harsh shifts.",
@@ -1567,26 +1089,10 @@
       {
         "category": "Body & Interior",
         "items": [
-          {
-            "check": "Rust (Minimal)",
-            "detail": "E90s are better galvanized than predecessors, but check rockers and wheel wells.",
-            "costIfBad": "Varies"
-          },
-          {
-            "check": "Headlight Lenses",
-            "detail": "Plastic headlight lenses yellow and haze with age.",
-            "costIfBad": "$100-300 for restoration"
-          },
-          {
-            "check": "Door Seals",
-            "detail": "Check for wind noise indicating worn seals.",
-            "costIfBad": "$200-400"
-          },
-          {
-            "check": "Sport Seat Bolsters",
-            "detail": "Sport seat bolsters wear on driver's side entry point.",
-            "costIfBad": "$300-800 for reupholstery"
-          }
+          { "check": "Rust (Minimal)", "detail": "E90s are better galvanized than predecessors, but check rockers and wheel wells.", "costIfBad": "Varies" },
+          { "check": "Headlight Lenses", "detail": "Plastic headlight lenses yellow and haze with age.", "costIfBad": "$100-300 for restoration" },
+          { "check": "Door Seals", "detail": "Check for wind noise indicating worn seals.", "costIfBad": "$200-400" },
+          { "check": "Sport Seat Bolsters", "detail": "Sport seat bolsters wear on driver's side entry point.", "costIfBad": "$300-800 for reupholstery" }
         ]
       }
     ],
@@ -1651,38 +1157,14 @@
   },
   "communityResources": {
     "youtube": [
-      {
-        "name": "E39Source",
-        "url": "https://www.youtube.com/@E39Source",
-        "description": "BMW tutorials covering multiple generations"
-      },
-      {
-        "name": "M539 Restorations",
-        "url": "https://www.youtube.com/@M539Restorations",
-        "description": "BMW repairs and restorations"
-      },
-      {
-        "name": "Restore It",
-        "url": "https://www.youtube.com/@RestoreIt",
-        "description": "BMW restoration and maintenance tutorials"
-      }
+      { "name": "E39Source", "url": "https://www.youtube.com/@E39Source", "description": "BMW tutorials covering multiple generations" },
+      { "name": "M539 Restorations", "url": "https://www.youtube.com/@M539Restorations", "description": "BMW repairs and restorations" },
+      { "name": "Restore It", "url": "https://www.youtube.com/@RestoreIt", "description": "BMW restoration and maintenance tutorials" }
     ],
     "forums": [
-      {
-        "name": "E90Post",
-        "url": "https://www.e90post.com/forums/",
-        "description": "Largest dedicated E90/E92/E93 community"
-      },
-      {
-        "name": "BimmerPost",
-        "url": "https://www.bimmerpost.com/",
-        "description": "Comprehensive BMW forum covering all models"
-      },
-      {
-        "name": "BimmerBoard E90 Forum",
-        "url": "http://www.bimmerboard.com/forums/e90/",
-        "description": "Technical how-to articles and expert advice"
-      },
+      { "name": "E90Post", "url": "https://www.e90post.com/forums/", "description": "Largest dedicated E90/E92/E93 community" },
+      { "name": "BimmerPost", "url": "https://www.bimmerpost.com/", "description": "Comprehensive BMW forum covering all models" },
+      { "name": "BimmerBoard E90 Forum", "url": "http://www.bimmerboard.com/forums/e90/", "description": "Technical how-to articles and expert advice" },
       {
         "name": "BimmerFest E9X Forum",
         "url": "https://www.bimmerfest.com/forums/e90-e91-e92-e93-2006-2012.99/",
@@ -1690,23 +1172,11 @@
       }
     ],
     "facebook": [
-      {
-        "name": "BMW E90 Owners",
-        "url": "https://www.facebook.com/groups/bmwe90owners",
-        "description": "Large E90 enthusiast community"
-      },
-      {
-        "name": "E9X M3 Owners",
-        "url": "https://www.facebook.com/groups/e9xm3owners",
-        "description": "Dedicated E9X M3 discussion group"
-      }
+      { "name": "BMW E90 Owners", "url": "https://www.facebook.com/groups/bmwe90owners", "description": "Large E90 enthusiast community" },
+      { "name": "E9X M3 Owners", "url": "https://www.facebook.com/groups/e9xm3owners", "description": "Dedicated E9X M3 discussion group" }
     ],
     "websites": [
-      {
-        "name": "E90Post Wiki",
-        "url": "https://www.e90post.com/wiki/",
-        "description": "E90 technical wiki and DIY guides"
-      }
+      { "name": "E90Post Wiki", "url": "https://www.e90post.com/wiki/", "description": "E90 technical wiki and DIY guides" }
     ]
   }
 }

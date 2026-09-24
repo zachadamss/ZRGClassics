@@ -25,14 +25,8 @@
         "Consider upgraded tensioner from later models"
       ],
       "sources": [
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        },
-        {
-          "name": "BMW CCA",
-          "url": "https://www.bmwcca.org/"
-        }
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
+        { "name": "BMW CCA", "url": "https://www.bmwcca.org/" }
       ],
       "repairCosts": {
         "diy": "$150-300",
@@ -40,26 +34,10 @@
         "notes": "M30 has timing chain - less common issue. M20 requires belt service."
       },
       "parts": [
-        {
-          "name": "Timing Belt (M20)",
-          "partNumber": "11311711081",
-          "price": "$30-50"
-        },
-        {
-          "name": "Timing Chain Kit (M30)",
-          "partNumber": "11311717597",
-          "price": "$200-350"
-        },
-        {
-          "name": "Tensioner",
-          "partNumber": "11311308652",
-          "price": "$40-70"
-        },
-        {
-          "name": "Guides (M30)",
-          "partNumber": "11311265513",
-          "price": "$30-50 each"
-        }
+        { "name": "Timing Belt (M20)", "partNumber": "11311711081", "price": "$30-50" },
+        { "name": "Timing Chain Kit (M30)", "partNumber": "11311717597", "price": "$200-350" },
+        { "name": "Tensioner", "partNumber": "11311308652", "price": "$40-70" },
+        { "name": "Guides (M30)", "partNumber": "11311265513", "price": "$30-50 each" }
       ],
       "relatedIssues": [
         { "vehicle": "e30", "brand": "BMW", "model": "E30", "issueId": "timing-belt" },
@@ -82,14 +60,8 @@
         "Inspect oil pan for guide debris during service"
       ],
       "sources": [
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        },
-        {
-          "name": "R3VLimited",
-          "url": "https://www.r3vlimited.com/"
-        }
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
+        { "name": "R3VLimited", "url": "https://www.r3vlimited.com/" }
       ],
       "repairCosts": {
         "diy": "$300-600",
@@ -97,21 +69,9 @@
         "notes": "M30 timing chain and guides. Less common failure than M20 belt."
       },
       "parts": [
-        {
-          "name": "Timing Chain Kit",
-          "partNumber": "11311717597",
-          "price": "$200-350"
-        },
-        {
-          "name": "Chain Guide Rails",
-          "partNumber": "11311265513",
-          "price": "$30-50 each"
-        },
-        {
-          "name": "Tensioner",
-          "partNumber": "11311308652",
-          "price": "$60-100"
-        }
+        { "name": "Timing Chain Kit", "partNumber": "11311717597", "price": "$200-350" },
+        { "name": "Chain Guide Rails", "partNumber": "11311265513", "price": "$30-50 each" },
+        { "name": "Tensioner", "partNumber": "11311308652", "price": "$60-100" }
       ],
       "difficulty": "Advanced"
     },
@@ -129,14 +89,8 @@
         "Keep all drain holes clear to prevent water accumulation"
       ],
       "sources": [
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        },
-        {
-          "name": "R3VLimited",
-          "url": "https://www.r3vlimited.com/"
-        }
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
+        { "name": "R3VLimited", "url": "https://www.r3vlimited.com/" }
       ],
       "repairCosts": {
         "diy": "$200-1000",
@@ -144,21 +98,9 @@
         "notes": "Common on 40+ year old cars. Check floors and fenders."
       },
       "parts": [
-        {
-          "name": "Fender Patch Panel",
-          "partNumber": "Various",
-          "price": "$50-150"
-        },
-        {
-          "name": "Rocker Panel",
-          "partNumber": "Various",
-          "price": "$80-200"
-        },
-        {
-          "name": "Floor Pan Section",
-          "partNumber": "Various",
-          "price": "$100-250"
-        }
+        { "name": "Fender Patch Panel", "partNumber": "Various", "price": "$50-150" },
+        { "name": "Rocker Panel", "partNumber": "Various", "price": "$80-200" },
+        { "name": "Floor Pan Section", "partNumber": "Various", "price": "$100-250" }
       ],
       "difficulty": "Advanced"
     },
@@ -175,14 +117,8 @@
         "Address leaks promptly - oil on exhaust is a fire hazard"
       ],
       "sources": [
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        },
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        }
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" }
       ],
       "repairCosts": {
         "diy": "$100-300",
@@ -190,16 +126,8 @@
         "notes": "Valve cover and oil pan gaskets common."
       },
       "parts": [
-        {
-          "name": "Valve Cover Gasket",
-          "partNumber": "11121730229",
-          "price": "$30-60"
-        },
-        {
-          "name": "Oil Pan Gasket",
-          "partNumber": "11131730234",
-          "price": "$30-60"
-        }
+        { "name": "Valve Cover Gasket", "partNumber": "11121730229", "price": "$30-60" },
+        { "name": "Oil Pan Gasket", "partNumber": "11131730234", "price": "$30-60" }
       ],
       "difficulty": "Advanced"
     },
@@ -217,14 +145,8 @@
         "Inspect and repair wiring harness if brittle"
       ],
       "sources": [
-        {
-          "name": "E28 Goodies",
-          "url": "https://www.e28goodies.com/"
-        },
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        }
+        { "name": "E28 Goodies", "url": "https://www.e28goodies.com/" },
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" }
       ],
       "repairCosts": {
         "diy": "$50-200",
@@ -232,21 +154,9 @@
         "notes": "Ground connections and relays are common culprits."
       },
       "parts": [
-        {
-          "name": "Main Relay",
-          "partNumber": "12631709557",
-          "price": "$40-70"
-        },
-        {
-          "name": "Fuel Pump Relay",
-          "partNumber": "12631735424",
-          "price": "$25-45"
-        },
-        {
-          "name": "Ground Point Kit",
-          "partNumber": "Various",
-          "price": "$20-40"
-        }
+        { "name": "Main Relay", "partNumber": "12631709557", "price": "$40-70" },
+        { "name": "Fuel Pump Relay", "partNumber": "12631735424", "price": "$25-45" },
+        { "name": "Ground Point Kit", "partNumber": "Various", "price": "$20-40" }
       ],
       "difficulty": "Easy"
     },
@@ -265,14 +175,8 @@
         "Alignment after any suspension work"
       ],
       "sources": [
-        {
-          "name": "Ireland Engineering",
-          "url": "https://www.iemotorsport.com/"
-        },
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        }
+        { "name": "Ireland Engineering", "url": "https://www.iemotorsport.com/" },
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" }
       ],
       "repairCosts": {
         "diy": "$300-600",
@@ -280,21 +184,9 @@
         "notes": "Full refresh common at this age."
       },
       "parts": [
-        {
-          "name": "Front Control Arm Kit",
-          "partNumber": "Various",
-          "price": "$150-300"
-        },
-        {
-          "name": "Strut Mount",
-          "partNumber": "31331139438",
-          "price": "$30-60"
-        },
-        {
-          "name": "Tie Rod Assembly",
-          "partNumber": "32111125186",
-          "price": "$40-70"
-        }
+        { "name": "Front Control Arm Kit", "partNumber": "Various", "price": "$150-300" },
+        { "name": "Strut Mount", "partNumber": "31331139438", "price": "$30-60" },
+        { "name": "Tie Rod Assembly", "partNumber": "32111125186", "price": "$40-70" }
       ],
       "difficulty": "Advanced"
     },
@@ -312,14 +204,8 @@
         "Flush system and use proper BMW coolant"
       ],
       "sources": [
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        },
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        }
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" },
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" }
       ],
       "repairCosts": {
         "diy": "$200-400",
@@ -327,21 +213,9 @@
         "notes": "Full system refresh recommended on older cars."
       },
       "parts": [
-        {
-          "name": "Water Pump",
-          "partNumber": "11511719836",
-          "price": "$60-100"
-        },
-        {
-          "name": "Thermostat",
-          "partNumber": "11531266763",
-          "price": "$20-35"
-        },
-        {
-          "name": "Radiator",
-          "partNumber": "17111712447",
-          "price": "$150-250"
-        }
+        { "name": "Water Pump", "partNumber": "11511719836", "price": "$60-100" },
+        { "name": "Thermostat", "partNumber": "11531266763", "price": "$20-35" },
+        { "name": "Radiator", "partNumber": "17111712447", "price": "$150-250" }
       ],
       "difficulty": "Advanced"
     },
@@ -359,14 +233,8 @@
         "Check fuel pressure and replace pump/filter if low"
       ],
       "sources": [
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        },
-        {
-          "name": "BMW CCA",
-          "url": "https://www.bmwcca.org/"
-        }
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
+        { "name": "BMW CCA", "url": "https://www.bmwcca.org/" }
       ],
       "repairCosts": {
         "diy": "$100-400",
@@ -374,21 +242,9 @@
         "notes": "L-Jetronic and Motronic systems. AFM and WUR common issues."
       },
       "parts": [
-        {
-          "name": "Air Flow Meter",
-          "partNumber": "13621286615",
-          "price": "$150-300"
-        },
-        {
-          "name": "Warm-Up Regulator",
-          "partNumber": "Various",
-          "price": "$200-400"
-        },
-        {
-          "name": "Fuel Injector",
-          "partNumber": "13641730060",
-          "price": "$40-80 each"
-        }
+        { "name": "Air Flow Meter", "partNumber": "13621286615", "price": "$150-300" },
+        { "name": "Warm-Up Regulator", "partNumber": "Various", "price": "$200-400" },
+        { "name": "Fuel Injector", "partNumber": "13641730060", "price": "$40-80 each" }
       ],
       "difficulty": "Moderate"
     }
@@ -404,66 +260,16 @@
       "interval": "One-time restoration for aged vehicles",
       "laborHours": "12-16 hours shop time",
       "parts": [
-        {
-          "name": "Front Control Arm Bushing Kit",
-          "oem": "31121139456, 31129059288",
-          "aftermarket": "Lemforder, Powerflex PFF5-301/302",
-          "cost": "$80-180"
-        },
-        {
-          "name": "Front Thrust Arm Bushing (Pair)",
-          "oem": "31121136532",
-          "aftermarket": "Lemforder, Meyle HD",
-          "cost": "$40-80"
-        },
-        {
-          "name": "Front Sway Bar Bushings",
-          "oem": "31351127414",
-          "aftermarket": "Lemforder, Powerflex",
-          "cost": "$20-40"
-        },
-        {
-          "name": "Front Sway Bar End Links (Pair)",
-          "oem": "31351127413",
-          "aftermarket": "Lemforder, Febi",
-          "cost": "$30-60"
-        },
-        {
-          "name": "Tie Rod Assembly (Left)",
-          "oem": "32111125186",
-          "aftermarket": "Lemforder 10734 01",
-          "cost": "$40-70"
-        },
-        {
-          "name": "Tie Rod Assembly (Right)",
-          "oem": "32111125187",
-          "aftermarket": "Lemforder 10735 01",
-          "cost": "$40-70"
-        },
-        {
-          "name": "Idler Arm",
-          "oem": "32111127441",
-          "aftermarket": "Lemforder, aftermarket",
-          "cost": "$60-120"
-        },
-        {
-          "name": "Strut Mount (Front Pair)",
-          "oem": "31331139438",
-          "aftermarket": "Lemforder 10123 02, Sachs",
-          "cost": "$50-100"
-        },
-        {
-          "name": "Rear Subframe Bushing Set",
-          "oem": "33311125896",
-          "aftermarket": "Lemforder, Powerflex PFR5-301",
-          "cost": "$80-160"
-        },
-        {
-          "name": "Rear Trailing Arm Bushing",
-          "oem": "33322283513",
-          "aftermarket": "Lemforder, Meyle",
-          "cost": "$30-60"
-        }
+        { "name": "Front Control Arm Bushing Kit", "oem": "31121139456, 31129059288", "aftermarket": "Lemforder, Powerflex PFF5-301/302", "cost": "$80-180" },
+        { "name": "Front Thrust Arm Bushing (Pair)", "oem": "31121136532", "aftermarket": "Lemforder, Meyle HD", "cost": "$40-80" },
+        { "name": "Front Sway Bar Bushings", "oem": "31351127414", "aftermarket": "Lemforder, Powerflex", "cost": "$20-40" },
+        { "name": "Front Sway Bar End Links (Pair)", "oem": "31351127413", "aftermarket": "Lemforder, Febi", "cost": "$30-60" },
+        { "name": "Tie Rod Assembly (Left)", "oem": "32111125186", "aftermarket": "Lemforder 10734 01", "cost": "$40-70" },
+        { "name": "Tie Rod Assembly (Right)", "oem": "32111125187", "aftermarket": "Lemforder 10735 01", "cost": "$40-70" },
+        { "name": "Idler Arm", "oem": "32111127441", "aftermarket": "Lemforder, aftermarket", "cost": "$60-120" },
+        { "name": "Strut Mount (Front Pair)", "oem": "31331139438", "aftermarket": "Lemforder 10123 02, Sachs", "cost": "$50-100" },
+        { "name": "Rear Subframe Bushing Set", "oem": "33311125896", "aftermarket": "Lemforder, Powerflex PFR5-301", "cost": "$80-160" },
+        { "name": "Rear Trailing Arm Bushing", "oem": "33322283513", "aftermarket": "Lemforder, Meyle", "cost": "$30-60" }
       ],
       "tools": [
         "Floor jack and jack stands (4)",
@@ -517,18 +323,9 @@
         "Never reuse cotter pins - always install new pins after torquing castle nuts."
       ],
       "references": [
-        {
-          "name": "MyE28.com Suspension Forum",
-          "url": "https://forums.mye28.com/viewforum.php?f=21"
-        },
-        {
-          "name": "Ireland Engineering E28 Suspension Parts",
-          "url": "https://www.iemotorsport.com/bmw/e28/"
-        },
-        {
-          "name": "Bimmerforums E28 Tech Section",
-          "url": "https://www.bimmerforums.com/forum/forumdisplay.php?21-E28-1982-1988"
-        }
+        { "name": "MyE28.com Suspension Forum", "url": "https://forums.mye28.com/viewforum.php?f=21" },
+        { "name": "Ireland Engineering E28 Suspension Parts", "url": "https://www.iemotorsport.com/bmw/e28/" },
+        { "name": "Bimmerforums E28 Tech Section", "url": "https://www.bimmerforums.com/forum/forumdisplay.php?21-E28-1982-1988" }
       ]
     },
     {
@@ -541,66 +338,16 @@
       "interval": "Inspect annually, repair as discovered",
       "laborHours": "Varies significantly by severity",
       "parts": [
-        {
-          "name": "Front Fender (Left)",
-          "oem": "41351872063",
-          "aftermarket": "Aftermarket reproduction",
-          "cost": "$200-400"
-        },
-        {
-          "name": "Front Fender (Right)",
-          "oem": "41351872064",
-          "aftermarket": "Aftermarket reproduction",
-          "cost": "$200-400"
-        },
-        {
-          "name": "Rocker Panel (Left)",
-          "oem": "41101884485",
-          "aftermarket": "Klokkerholm, aftermarket",
-          "cost": "$100-250"
-        },
-        {
-          "name": "Rocker Panel (Right)",
-          "oem": "41101884486",
-          "aftermarket": "Klokkerholm, aftermarket",
-          "cost": "$100-250"
-        },
-        {
-          "name": "Floor Pan Repair Section",
-          "oem": "41101934765",
-          "aftermarket": "Universal sheet metal",
-          "cost": "$80-200"
-        },
-        {
-          "name": "Jack Point Repair Plate",
-          "oem": "—",
-          "aftermarket": "Fabricated or aftermarket",
-          "cost": "$30-80"
-        },
-        {
-          "name": "Rear Wheel Arch",
-          "oem": "41351872065/66",
-          "aftermarket": "Klokkerholm, aftermarket",
-          "cost": "$100-300"
-        },
-        {
-          "name": "Battery Tray",
-          "oem": "41141882977",
-          "aftermarket": "Fabricated or NOS",
-          "cost": "$50-150"
-        },
-        {
-          "name": "POR-15 Rust Preventive Coating",
-          "oem": "—",
-          "aftermarket": "POR-15 quart",
-          "cost": "$35-50"
-        },
-        {
-          "name": "Fluid Film Rust Preventive",
-          "oem": "—",
-          "aftermarket": "Fluid Film 11.75oz can",
-          "cost": "$12-18"
-        }
+        { "name": "Front Fender (Left)", "oem": "41351872063", "aftermarket": "Aftermarket reproduction", "cost": "$200-400" },
+        { "name": "Front Fender (Right)", "oem": "41351872064", "aftermarket": "Aftermarket reproduction", "cost": "$200-400" },
+        { "name": "Rocker Panel (Left)", "oem": "41101884485", "aftermarket": "Klokkerholm, aftermarket", "cost": "$100-250" },
+        { "name": "Rocker Panel (Right)", "oem": "41101884486", "aftermarket": "Klokkerholm, aftermarket", "cost": "$100-250" },
+        { "name": "Floor Pan Repair Section", "oem": "41101934765", "aftermarket": "Universal sheet metal", "cost": "$80-200" },
+        { "name": "Jack Point Repair Plate", "oem": "—", "aftermarket": "Fabricated or aftermarket", "cost": "$30-80" },
+        { "name": "Rear Wheel Arch", "oem": "41351872065/66", "aftermarket": "Klokkerholm, aftermarket", "cost": "$100-300" },
+        { "name": "Battery Tray", "oem": "41141882977", "aftermarket": "Fabricated or NOS", "cost": "$50-150" },
+        { "name": "POR-15 Rust Preventive Coating", "oem": "—", "aftermarket": "POR-15 quart", "cost": "$35-50" },
+        { "name": "Fluid Film Rust Preventive", "oem": "—", "aftermarket": "Fluid Film 11.75oz can", "cost": "$12-18" }
       ],
       "tools": [
         "Angle grinder with cut-off and flap discs",
@@ -656,18 +403,9 @@
         "Never grind or weld galvanized metal without proper ventilation - zinc fumes are toxic."
       ],
       "references": [
-        {
-          "name": "MyE28.com Rust Repair Registry",
-          "url": "https://forums.mye28.com/viewforum.php?f=29"
-        },
-        {
-          "name": "E28 Goodies Technical Articles",
-          "url": "https://www.e28goodies.com/"
-        },
-        {
-          "name": "Eastwood Welding and Metalwork Guide",
-          "url": "https://www.eastwood.com/welding-tips-and-training"
-        }
+        { "name": "MyE28.com Rust Repair Registry", "url": "https://forums.mye28.com/viewforum.php?f=29" },
+        { "name": "E28 Goodies Technical Articles", "url": "https://www.e28goodies.com/" },
+        { "name": "Eastwood Welding and Metalwork Guide", "url": "https://www.eastwood.com/welding-tips-and-training" }
       ]
     },
     {
@@ -680,66 +418,16 @@
       "interval": "One-time restoration, then maintenance",
       "laborHours": "10-16 hours shop time",
       "parts": [
-        {
-          "name": "Main Relay (DME/LKM)",
-          "oem": "12631709557",
-          "aftermarket": "Bosch 0332014112",
-          "cost": "$40-70"
-        },
-        {
-          "name": "Fuel Pump Relay",
-          "oem": "12631735424",
-          "aftermarket": "Bosch, Stribel",
-          "cost": "$25-50"
-        },
-        {
-          "name": "Auxiliary Fan Relay",
-          "oem": "61311378636",
-          "aftermarket": "Bosch, aftermarket",
-          "cost": "$20-40"
-        },
-        {
-          "name": "Ground Point Ring Terminals (25 pack)",
-          "oem": "—",
-          "aftermarket": "Quality copper ring terminals",
-          "cost": "$10-20"
-        },
-        {
-          "name": "Headlight Switch",
-          "oem": "61311372043",
-          "aftermarket": "URO, aftermarket",
-          "cost": "$30-60"
-        },
-        {
-          "name": "Turn Signal/Wiper Stalk",
-          "oem": "61311368056",
-          "aftermarket": "Aftermarket, used OEM",
-          "cost": "$60-150"
-        },
-        {
-          "name": "Instrument Cluster Voltage Regulator",
-          "oem": "—",
-          "aftermarket": "Rebuilt units available",
-          "cost": "$40-80"
-        },
-        {
-          "name": "Instrument Cluster Capacitor Kit",
-          "oem": "—",
-          "aftermarket": "Electronic supply houses",
-          "cost": "$10-25"
-        },
-        {
-          "name": "Window Switch (Driver)",
-          "oem": "61311380575",
-          "aftermarket": "Aftermarket, used OEM",
-          "cost": "$40-80"
-        },
-        {
-          "name": "Fuse Box Contact Cleaner",
-          "oem": "—",
-          "aftermarket": "DeoxIT D5, CRC QD Contact",
-          "cost": "$10-20"
-        }
+        { "name": "Main Relay (DME/LKM)", "oem": "12631709557", "aftermarket": "Bosch 0332014112", "cost": "$40-70" },
+        { "name": "Fuel Pump Relay", "oem": "12631735424", "aftermarket": "Bosch, Stribel", "cost": "$25-50" },
+        { "name": "Auxiliary Fan Relay", "oem": "61311378636", "aftermarket": "Bosch, aftermarket", "cost": "$20-40" },
+        { "name": "Ground Point Ring Terminals (25 pack)", "oem": "—", "aftermarket": "Quality copper ring terminals", "cost": "$10-20" },
+        { "name": "Headlight Switch", "oem": "61311372043", "aftermarket": "URO, aftermarket", "cost": "$30-60" },
+        { "name": "Turn Signal/Wiper Stalk", "oem": "61311368056", "aftermarket": "Aftermarket, used OEM", "cost": "$60-150" },
+        { "name": "Instrument Cluster Voltage Regulator", "oem": "—", "aftermarket": "Rebuilt units available", "cost": "$40-80" },
+        { "name": "Instrument Cluster Capacitor Kit", "oem": "—", "aftermarket": "Electronic supply houses", "cost": "$10-25" },
+        { "name": "Window Switch (Driver)", "oem": "61311380575", "aftermarket": "Aftermarket, used OEM", "cost": "$40-80" },
+        { "name": "Fuse Box Contact Cleaner", "oem": "—", "aftermarket": "DeoxIT D5, CRC QD Contact", "cost": "$10-20" }
       ],
       "tools": [
         "Multimeter with continuity function",
@@ -792,18 +480,9 @@
         "Brittle wiring is a fire hazard - repair or replace deteriorated sections."
       ],
       "references": [
-        {
-          "name": "E28 Goodies Electrical Guides",
-          "url": "https://www.e28goodies.com/"
-        },
-        {
-          "name": "MyE28.com Electrical Forum",
-          "url": "https://forums.mye28.com/viewforum.php?f=20"
-        },
-        {
-          "name": "BMW E28 Wiring Diagrams",
-          "url": "https://www.bimmerforums.com/forum/showthread.php?1537393-E28-Wiring-Diagrams"
-        }
+        { "name": "E28 Goodies Electrical Guides", "url": "https://www.e28goodies.com/" },
+        { "name": "MyE28.com Electrical Forum", "url": "https://forums.mye28.com/viewforum.php?f=20" },
+        { "name": "BMW E28 Wiring Diagrams", "url": "https://www.bimmerforums.com/forum/showthread.php?1537393-E28-Wiring-Diagrams" }
       ]
     },
     {
@@ -816,66 +495,16 @@
       "interval": "One-time restoration",
       "laborHours": "12-24 hours shop time",
       "parts": [
-        {
-          "name": "Dashboard Cover/Cap",
-          "oem": "—",
-          "aftermarket": "Coverlay, DashSkin",
-          "cost": "$150-300"
-        },
-        {
-          "name": "Headliner Fabric (4 yards)",
-          "oem": "—",
-          "aftermarket": "OEM-match foam-backed material",
-          "cost": "$50-100"
-        },
-        {
-          "name": "Headliner Adhesive",
-          "oem": "—",
-          "aftermarket": "3M Super 77, Permatex 27828",
-          "cost": "$15-30"
-        },
-        {
-          "name": "Door Panel Insert (Set)",
-          "oem": "51411889823/24/25/26",
-          "aftermarket": "Recovered or used OEM",
-          "cost": "$100-300"
-        },
-        {
-          "name": "Leather Dye/Refinisher Kit",
-          "oem": "—",
-          "aftermarket": "Leatherique, SEM Color Coat",
-          "cost": "$50-100"
-        },
-        {
-          "name": "Seat Foam Cushion (Driver)",
-          "oem": "52101884855",
-          "aftermarket": "Recovered foam, aftermarket",
-          "cost": "$100-200"
-        },
-        {
-          "name": "Window Regulator (Front)",
-          "oem": "51321889258/59",
-          "aftermarket": "Aftermarket, rebuilt",
-          "cost": "$60-120"
-        },
-        {
-          "name": "Shift Boot (Manual)",
-          "oem": "25111220455",
-          "aftermarket": "Leather replicas",
-          "cost": "$40-80"
-        },
-        {
-          "name": "Carpet Set",
-          "oem": "—",
-          "aftermarket": "German Molded, Stock Interiors",
-          "cost": "$300-600"
-        },
-        {
-          "name": "Door Seal Set (Complete)",
-          "oem": "51711884149",
-          "aftermarket": "URO, aftermarket",
-          "cost": "$150-300"
-        }
+        { "name": "Dashboard Cover/Cap", "oem": "—", "aftermarket": "Coverlay, DashSkin", "cost": "$150-300" },
+        { "name": "Headliner Fabric (4 yards)", "oem": "—", "aftermarket": "OEM-match foam-backed material", "cost": "$50-100" },
+        { "name": "Headliner Adhesive", "oem": "—", "aftermarket": "3M Super 77, Permatex 27828", "cost": "$15-30" },
+        { "name": "Door Panel Insert (Set)", "oem": "51411889823/24/25/26", "aftermarket": "Recovered or used OEM", "cost": "$100-300" },
+        { "name": "Leather Dye/Refinisher Kit", "oem": "—", "aftermarket": "Leatherique, SEM Color Coat", "cost": "$50-100" },
+        { "name": "Seat Foam Cushion (Driver)", "oem": "52101884855", "aftermarket": "Recovered foam, aftermarket", "cost": "$100-200" },
+        { "name": "Window Regulator (Front)", "oem": "51321889258/59", "aftermarket": "Aftermarket, rebuilt", "cost": "$60-120" },
+        { "name": "Shift Boot (Manual)", "oem": "25111220455", "aftermarket": "Leather replicas", "cost": "$40-80" },
+        { "name": "Carpet Set", "oem": "—", "aftermarket": "German Molded, Stock Interiors", "cost": "$300-600" },
+        { "name": "Door Seal Set (Complete)", "oem": "51711884149", "aftermarket": "URO, aftermarket", "cost": "$150-300" }
       ],
       "tools": [
         "Trim removal tools (plastic pry set)",
@@ -930,18 +559,9 @@
         "Test all chemicals on hidden areas first - some plastics react badly."
       ],
       "references": [
-        {
-          "name": "MyE28.com Interior Restoration",
-          "url": "https://forums.mye28.com/viewforum.php?f=23"
-        },
-        {
-          "name": "Coverlay Dashboard Covers",
-          "url": "https://www.coverlay.com/"
-        },
-        {
-          "name": "Leatherique Restoration Products",
-          "url": "https://www.leatherique.com/"
-        }
+        { "name": "MyE28.com Interior Restoration", "url": "https://forums.mye28.com/viewforum.php?f=23" },
+        { "name": "Coverlay Dashboard Covers", "url": "https://www.coverlay.com/" },
+        { "name": "Leatherique Restoration Products", "url": "https://www.leatherique.com/" }
       ]
     }
   ],
@@ -951,7 +571,10 @@
         "name": "FCP Euro",
         "url": "https://www.fcpeuro.com/BMW-parts",
         "notes": "Lifetime replacement guarantee on all parts. Excellent E28 coverage with OE quality options.",
-        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "specialties": [
+          "Lifetime Warranty",
+          "OE Quality"
+        ],
         "shipping": "Free over $49",
         "warranty": "Lifetime",
         "featured": true
@@ -960,13 +583,19 @@
         "name": "BMW Classic Parts",
         "url": "https://www.bmw-classic-parts.com/",
         "notes": "Genuine BMW OEM and NLA parts for classic BMWs. Source for discontinued items.",
-        "specialties": ["Genuine BMW", "NLA Parts"]
+        "specialties": [
+          "Genuine BMW",
+          "NLA Parts"
+        ]
       },
       {
         "name": "Pelican Parts",
         "url": "https://www.pelicanparts.com/BMW/catalog/5-Series_Main.htm",
         "notes": "Extensive E28 catalog with OEM and quality aftermarket parts.",
-        "specialties": ["Tech Articles", "OE Parts"],
+        "specialties": [
+          "Tech Articles",
+          "OE Parts"
+        ],
         "shipping": "Free over $99"
       }
     ],
@@ -975,20 +604,31 @@
         "name": "Ireland Engineering",
         "url": "https://www.iemotorsport.com/",
         "notes": "Classic BMW performance specialists. Suspension, engine, and chassis upgrades for E28.",
-        "specialties": ["Suspension", "Engine", "Handling"],
+        "specialties": [
+          "Suspension",
+          "Engine",
+          "Handling"
+        ],
         "featured": true
       },
       {
         "name": "Metric Mechanic",
         "url": "https://www.metricmechanic.com/",
         "notes": "M30 and Big Six engine specialists. Rebuilt engines and performance builds.",
-        "specialties": ["M30 Engines", "Rebuilds", "Performance"]
+        "specialties": [
+          "M30 Engines",
+          "Rebuilds",
+          "Performance"
+        ]
       },
       {
         "name": "Turner Motorsport",
         "url": "https://www.turnermotorsport.com/",
         "notes": "BMW performance parts with race-proven reliability.",
-        "specialties": ["Race Parts", "Suspension"]
+        "specialties": [
+          "Race Parts",
+          "Suspension"
+        ]
       }
     ],
     "general": [
@@ -996,14 +636,20 @@
         "name": "ECS Tuning",
         "url": "https://www.ecstuning.com/BMW-E28/",
         "notes": "Wide selection of maintenance and upgrade parts.",
-        "specialties": ["Large Inventory", "Fast Shipping"],
+        "specialties": [
+          "Large Inventory",
+          "Fast Shipping"
+        ],
         "shipping": "Free over $49"
       },
       {
         "name": "BavAuto",
         "url": "https://www.bavauto.com/",
         "notes": "Quality OE and OEM BMW parts with competitive pricing.",
-        "specialties": ["OE Equivalent", "Good Prices"]
+        "specialties": [
+          "OE Equivalent",
+          "Good Prices"
+        ]
       }
     ],
     "specialty": [
@@ -1011,14 +657,20 @@
         "name": "Blunt Tech",
         "url": "https://blunttech.com/",
         "notes": "E28 restoration specialist. Hard-to-find parts and personal service.",
-        "specialties": ["E28 Specialist", "Rare Parts"],
+        "specialties": [
+          "E28 Specialist",
+          "Rare Parts"
+        ],
         "featured": true
       },
       {
         "name": "Guten Parts",
         "url": "https://www.gutenparts.com/",
         "notes": "Community favorite for hard-to-find classic BMW parts.",
-        "specialties": ["Rare Parts", "Community Owned"]
+        "specialties": [
+          "Rare Parts",
+          "Community Owned"
+        ]
       }
     ],
     "used": [
@@ -1026,20 +678,29 @@
         "name": "MyE28.com Classifieds",
         "url": "https://forums.mye28.com/viewforum.php?f=3",
         "notes": "Premier E28 community marketplace. Best source for used E28 parts.",
-        "specialties": ["E28 Community", "Rare Parts"],
+        "specialties": [
+          "E28 Community",
+          "Rare Parts"
+        ],
         "featured": true
       },
       {
         "name": "eBay Motors",
         "url": "https://www.ebay.com/b/BMW-E28/6030/bn_81442362",
         "notes": "Large selection of used, NOS, and reproduction E28 parts.",
-        "specialties": ["NOS Parts", "Wide Selection"]
+        "specialties": [
+          "NOS Parts",
+          "Wide Selection"
+        ]
       },
       {
         "name": "Car-Part.com",
         "url": "https://www.car-part.com/",
         "notes": "Search salvage yard inventory nationwide.",
-        "specialties": ["Salvage Yards", "Body Parts"]
+        "specialties": [
+          "Salvage Yards",
+          "Body Parts"
+        ]
       }
     ],
     "tools": [
@@ -1048,153 +709,48 @@
         "url": "https://www.realoem.com/bmw/enUS/select?product=P&archive=0&series=E28",
         "notes": "Free BMW parts diagrams and part number lookup"
       },
-      {
-        "name": "MyE28.com Tech FAQ",
-        "url": "https://forums.mye28.com/viewforum.php?f=10",
-        "notes": "E28 technical information and part numbers"
-      }
+      { "name": "MyE28.com Tech FAQ", "url": "https://forums.mye28.com/viewforum.php?f=10", "notes": "E28 technical information and part numbers" }
     ]
   },
   "torqueSpecs": {
     "sources": [
-      {
-        "name": "MyE28.com Forums",
-        "url": "https://forums.mye28.com/viewtopic.php?t=27805"
-      },
-      {
-        "name": "M30 Basics Torque Guide",
-        "url": "https://m30basics.wordpress.com/torques/"
-      },
-      {
-        "name": "Bentley E28 Service Manual",
-        "url": "https://www.bentleypublishers.com/bmw.html"
-      }
+      { "name": "MyE28.com Forums", "url": "https://forums.mye28.com/viewtopic.php?t=27805" },
+      { "name": "M30 Basics Torque Guide", "url": "https://m30basics.wordpress.com/torques/" },
+      { "name": "Bentley E28 Service Manual", "url": "https://www.bentleypublishers.com/bmw.html" }
     ],
     "engine": [
-      {
-        "component": "Cylinder Head Bolts (M30 pre-1988)",
-        "spec": "44 ft-lbs (60 Nm) + 33° + 25°",
-        "notes": "Wait 15 min, final angle at operating temp"
-      },
+      { "component": "Cylinder Head Bolts (M30 pre-1988)", "spec": "44 ft-lbs (60 Nm) + 33° + 25°", "notes": "Wait 15 min, final angle at operating temp" },
       {
         "component": "Cylinder Head Bolts (M30 1988+)",
         "spec": "44 ft-lbs (60 Nm) + 59 ft-lbs (80 Nm) + 35°",
         "notes": "Wait 15 min between stages, final at operating temp"
       },
-      {
-        "component": "Main Bearing Caps (M30)",
-        "spec": "44 ft-lbs (60 Nm)",
-        "notes": "Clean and lubricate threads"
-      },
-      {
-        "component": "Connecting Rod Bolts (M30)",
-        "spec": "41 ft-lbs (55 Nm)",
-        "notes": "Clean and lubricate threads"
-      },
-      {
-        "component": "Flywheel Bolts (Manual)",
-        "spec": "77 ft-lbs (105 Nm)",
-        "notes": "Use new bolts"
-      },
-      {
-        "component": "Flywheel Bolts (Auto)",
-        "spec": "88 ft-lbs (120 Nm)",
-        "notes": "Use new bolts"
-      },
-      {
-        "component": "Valve Cover Nuts",
-        "spec": "7 ft-lbs (10 Nm)",
-        "notes": "Do not overtighten"
-      },
-      {
-        "component": "Spark Plugs",
-        "spec": "18-22 ft-lbs (25-30 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Oil Drain Plug",
-        "spec": "18 ft-lbs (25 Nm)",
-        "notes": "Replace crush washer"
-      },
-      {
-        "component": "Oil Pump Sprocket Bolts",
-        "spec": "7 ft-lbs (10 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Exhaust Manifold Nuts",
-        "spec": "11 ft-lbs (15 Nm)",
-        "notes": "M6 bolts"
-      },
-      {
-        "component": "Vibration Damper Hub Bolt",
-        "spec": "325 ft-lbs (440 Nm)",
-        "notes": "Replace bolt each use"
-      }
+      { "component": "Main Bearing Caps (M30)", "spec": "44 ft-lbs (60 Nm)", "notes": "Clean and lubricate threads" },
+      { "component": "Connecting Rod Bolts (M30)", "spec": "41 ft-lbs (55 Nm)", "notes": "Clean and lubricate threads" },
+      { "component": "Flywheel Bolts (Manual)", "spec": "77 ft-lbs (105 Nm)", "notes": "Use new bolts" },
+      { "component": "Flywheel Bolts (Auto)", "spec": "88 ft-lbs (120 Nm)", "notes": "Use new bolts" },
+      { "component": "Valve Cover Nuts", "spec": "7 ft-lbs (10 Nm)", "notes": "Do not overtighten" },
+      { "component": "Spark Plugs", "spec": "18-22 ft-lbs (25-30 Nm)", "notes": "" },
+      { "component": "Oil Drain Plug", "spec": "18 ft-lbs (25 Nm)", "notes": "Replace crush washer" },
+      { "component": "Oil Pump Sprocket Bolts", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
+      { "component": "Exhaust Manifold Nuts", "spec": "11 ft-lbs (15 Nm)", "notes": "M6 bolts" },
+      { "component": "Vibration Damper Hub Bolt", "spec": "325 ft-lbs (440 Nm)", "notes": "Replace bolt each use" }
     ],
     "suspension": [
-      {
-        "component": "Control Arm to Subframe",
-        "spec": "57-65 ft-lbs (77-88 Nm)",
-        "notes": "Tighten with weight on wheels"
-      },
-      {
-        "component": "Thrust Arm Bolts",
-        "spec": "65 ft-lbs (88 Nm)",
-        "notes": "Tighten with weight on wheels"
-      },
-      {
-        "component": "Tie Rod End Nut",
-        "spec": "25-33 ft-lbs (34-45 Nm)",
-        "notes": "Use new cotter pin"
-      },
-      {
-        "component": "Wheel Lug Bolts",
-        "spec": "80 ft-lbs (108 Nm)",
-        "notes": "Tighten in star pattern"
-      },
-      {
-        "component": "Shock Absorber Top Nut",
-        "spec": "16-18 ft-lbs (22-24 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Subframe Bolts",
-        "spec": "65 ft-lbs (88 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Sway Bar End Links",
-        "spec": "16-18 ft-lbs (22-24 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Front Wheel Bearing Nut",
-        "spec": "22-24 ft-lbs (30-33 Nm)",
-        "notes": "While rotating wheel, then back off and retorque to spec"
-      }
+      { "component": "Control Arm to Subframe", "spec": "57-65 ft-lbs (77-88 Nm)", "notes": "Tighten with weight on wheels" },
+      { "component": "Thrust Arm Bolts", "spec": "65 ft-lbs (88 Nm)", "notes": "Tighten with weight on wheels" },
+      { "component": "Tie Rod End Nut", "spec": "25-33 ft-lbs (34-45 Nm)", "notes": "Use new cotter pin" },
+      { "component": "Wheel Lug Bolts", "spec": "80 ft-lbs (108 Nm)", "notes": "Tighten in star pattern" },
+      { "component": "Shock Absorber Top Nut", "spec": "16-18 ft-lbs (22-24 Nm)", "notes": "" },
+      { "component": "Subframe Bolts", "spec": "65 ft-lbs (88 Nm)", "notes": "" },
+      { "component": "Sway Bar End Links", "spec": "16-18 ft-lbs (22-24 Nm)", "notes": "" },
+      { "component": "Front Wheel Bearing Nut", "spec": "22-24 ft-lbs (30-33 Nm)", "notes": "While rotating wheel, then back off and retorque to spec" }
     ],
     "brakes": [
-      {
-        "component": "Front Caliper Bolts",
-        "spec": "58-72 ft-lbs (79-98 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Caliper Bolts",
-        "spec": "42-48 ft-lbs (57-65 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Brake Line Fittings",
-        "spec": "11-14 ft-lbs (15-19 Nm)",
-        "notes": "Do not overtighten"
-      },
-      {
-        "component": "Brake Rotor Set Screw",
-        "spec": "9 ft-lbs (12 Nm)",
-        "notes": "Use thread locker"
-      }
+      { "component": "Front Caliper Bolts", "spec": "58-72 ft-lbs (79-98 Nm)", "notes": "" },
+      { "component": "Rear Caliper Bolts", "spec": "42-48 ft-lbs (57-65 Nm)", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "11-14 ft-lbs (15-19 Nm)", "notes": "Do not overtighten" },
+      { "component": "Brake Rotor Set Screw", "spec": "9 ft-lbs (12 Nm)", "notes": "Use thread locker" }
     ]
   },
   "diyGuides": [
@@ -1475,11 +1031,7 @@
       {
         "category": "Engine & Drivetrain",
         "items": [
-          {
-            "check": "Timing Belt (M20)",
-            "detail": "528e uses the M20 timing belt engine - requires replacement every 50,000 miles.",
-            "costIfBad": "$500-900"
-          },
+          { "check": "Timing Belt (M20)", "detail": "528e uses the M20 timing belt engine - requires replacement every 50,000 miles.", "costIfBad": "$500-900" },
           {
             "check": "Timing Chain (M30)",
             "detail": "535i uses the M30 with a timing chain. Listen for chain rattle on startup - indicates tensioner or guide wear.",
@@ -1540,16 +1092,8 @@
             "detail": "Verify all gauges work properly. Check for dead pixels on digital displays if equipped.",
             "costIfBad": "$200-500"
           },
-          {
-            "check": "Power Windows/Sunroof",
-            "detail": "Test all windows and sunroof. Motors and switches commonly fail with age.",
-            "costIfBad": "$200-600"
-          },
-          {
-            "check": "Climate Control",
-            "detail": "Check heater and A/C operation. Climate control panels can fail.",
-            "costIfBad": "$300-800"
-          }
+          { "check": "Power Windows/Sunroof", "detail": "Test all windows and sunroof. Motors and switches commonly fail with age.", "costIfBad": "$200-600" },
+          { "check": "Climate Control", "detail": "Check heater and A/C operation. Climate control panels can fail.", "costIfBad": "$300-800" }
         ]
       }
     ],
@@ -1619,52 +1163,20 @@
         "url": "https://www.youtube.com/@M539Restorations",
         "description": "BMW repairs, revivals, and restorations from an experienced owner"
       },
-      {
-        "name": "BMW Group Classic",
-        "url": "https://www.youtube.com/@BMWGroupClassic",
-        "description": "Official BMW heritage channel with classic features"
-      }
+      { "name": "BMW Group Classic", "url": "https://www.youtube.com/@BMWGroupClassic", "description": "Official BMW heritage channel with classic features" }
     ],
     "forums": [
-      {
-        "name": "MyE28.com",
-        "url": "https://forums.mye28.com/",
-        "description": "The premier E28 community with tech FAQ and troubleshooting"
-      },
-      {
-        "name": "BimmerBoard E28 Forum",
-        "url": "http://www.bimmerboard.com/forums/e28/",
-        "description": "Technical articles and expert advice"
-      },
-      {
-        "name": "5Series.net",
-        "url": "https://5series.net/forums/",
-        "description": "E28 and older 5 Series discussion"
-      },
-      {
-        "name": "M5Board",
-        "url": "https://www.m5board.com/",
-        "description": "M5 performance, specs, and technical discussion"
-      }
+      { "name": "MyE28.com", "url": "https://forums.mye28.com/", "description": "The premier E28 community with tech FAQ and troubleshooting" },
+      { "name": "BimmerBoard E28 Forum", "url": "http://www.bimmerboard.com/forums/e28/", "description": "Technical articles and expert advice" },
+      { "name": "5Series.net", "url": "https://5series.net/forums/", "description": "E28 and older 5 Series discussion" },
+      { "name": "M5Board", "url": "https://www.m5board.com/", "description": "M5 performance, specs, and technical discussion" }
     ],
     "facebook": [
-      {
-        "name": "BMW E28 Group",
-        "url": "https://www.facebook.com/groups/bmwe28",
-        "description": "Active international E28 community with 10k+ members"
-      },
-      {
-        "name": "BMW E28 Society UK",
-        "url": "https://www.facebook.com/groups/bmwe28societyuk",
-        "description": "UK-based E28 enthusiasts and events"
-      }
+      { "name": "BMW E28 Group", "url": "https://www.facebook.com/groups/bmwe28", "description": "Active international E28 community with 10k+ members" },
+      { "name": "BMW E28 Society UK", "url": "https://www.facebook.com/groups/bmwe28societyuk", "description": "UK-based E28 enthusiasts and events" }
     ],
     "websites": [
-      {
-        "name": "Rod's Automobile Pages",
-        "url": "http://www.unofficialbmw.com/",
-        "description": "Classic E28 DIY reference site"
-      }
+      { "name": "Rod's Automobile Pages", "url": "http://www.unofficialbmw.com/", "description": "Classic E28 DIY reference site" }
     ]
   }
 }

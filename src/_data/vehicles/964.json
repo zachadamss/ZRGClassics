@@ -24,14 +24,8 @@
         "Use correct Porsche sealant for case seams"
       ],
       "sources": [
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        },
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        }
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" },
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$200-500",
@@ -39,21 +33,9 @@
         "notes": "Chain housings, valve covers, and cam towers common."
       },
       "parts": [
-        {
-          "name": "Chain Housing Gasket Set",
-          "partNumber": "96410519501",
-          "price": "$100-200"
-        },
-        {
-          "name": "Valve Cover Gasket Set",
-          "partNumber": "96410593300",
-          "price": "$50-100"
-        },
-        {
-          "name": "Cam Tower Gasket",
-          "partNumber": "96410573900",
-          "price": "$30-60"
-        }
+        { "name": "Chain Housing Gasket Set", "partNumber": "96410519501", "price": "$100-200" },
+        { "name": "Valve Cover Gasket Set", "partNumber": "96410593300", "price": "$50-100" },
+        { "name": "Cam Tower Gasket", "partNumber": "96410573900", "price": "$30-60" }
       ],
       "difficulty": "Advanced"
     },
@@ -70,14 +52,8 @@
         "Consider lightweight flywheel for track use"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" }
       ],
       "repairCosts": {
         "diy": "$800-1500",
@@ -85,21 +61,9 @@
         "notes": "DMF failure requires trans removal. Convert to single mass optional."
       },
       "parts": [
-        {
-          "name": "Dual Mass Flywheel",
-          "partNumber": "96411401200",
-          "price": "$800-1200"
-        },
-        {
-          "name": "Single Mass Conversion",
-          "partNumber": "Various",
-          "price": "$600-1000"
-        },
-        {
-          "name": "Clutch Kit",
-          "partNumber": "96411691100",
-          "price": "$400-700"
-        }
+        { "name": "Dual Mass Flywheel", "partNumber": "96411401200", "price": "$800-1200" },
+        { "name": "Single Mass Conversion", "partNumber": "Various", "price": "$600-1000" },
+        { "name": "Clutch Kit", "partNumber": "96411691100", "price": "$400-700" }
       ],
       "difficulty": "Advanced"
     },
@@ -116,14 +80,8 @@
         "Upgrade to brass distributor gear (if equipped with plastic)"
       ],
       "sources": [
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        },
-        {
-          "name": "911 Motorsport",
-          "url": "https://www.911motorsport.com/"
-        }
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" },
+        { "name": "911 Motorsport", "url": "https://www.911motorsport.com/" }
       ],
       "repairCosts": {
         "diy": "$200-400",
@@ -131,21 +89,9 @@
         "notes": "DME trigger failure. Rebuilt units available."
       },
       "parts": [
-        {
-          "name": "Distributor (Rebuilt)",
-          "partNumber": "Various specialists",
-          "price": "$300-600"
-        },
-        {
-          "name": "Rotor",
-          "partNumber": "93060291600",
-          "price": "$40-80"
-        },
-        {
-          "name": "Distributor Cap",
-          "partNumber": "93060291800",
-          "price": "$50-100"
-        }
+        { "name": "Distributor (Rebuilt)", "partNumber": "Various specialists", "price": "$300-600" },
+        { "name": "Rotor", "partNumber": "93060291600", "price": "$40-80" },
+        { "name": "Distributor Cap", "partNumber": "93060291800", "price": "$50-100" }
       ],
       "difficulty": "Advanced"
     },
@@ -162,14 +108,8 @@
         "Check and clean reservoir screen"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" }
       ],
       "repairCosts": {
         "diy": "$200-400",
@@ -177,16 +117,8 @@
         "notes": "Pump and rack leaks common."
       },
       "parts": [
-        {
-          "name": "Power Steering Pump",
-          "partNumber": "96434704007",
-          "price": "$300-500"
-        },
-        {
-          "name": "Steering Rack Seal Kit",
-          "partNumber": "Various",
-          "price": "$80-150"
-        }
+        { "name": "Power Steering Pump", "partNumber": "96434704007", "price": "$300-500" },
+        { "name": "Steering Rack Seal Kit", "partNumber": "Various", "price": "$80-150" }
       ],
       "difficulty": "Moderate"
     },
@@ -203,14 +135,8 @@
         "Some owners run thicker fluid in worn transmissions"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" }
       ],
       "repairCosts": {
         "diy": "$100-300",
@@ -218,16 +144,8 @@
         "notes": "Synchros wear (especially 2nd). Use correct GL-4 fluid."
       },
       "parts": [
-        {
-          "name": "GL-4 Gear Oil (Swepco 201)",
-          "partNumber": "N/A",
-          "price": "$40-80"
-        },
-        {
-          "name": "Shift Coupler",
-          "partNumber": "96442407500",
-          "price": "$30-60"
-        }
+        { "name": "GL-4 Gear Oil (Swepco 201)", "partNumber": "N/A", "price": "$40-80" },
+        { "name": "Shift Coupler", "partNumber": "96442407500", "price": "$30-60" }
       ],
       "difficulty": "Advanced"
     },
@@ -244,14 +162,8 @@
         "Always use new hardware when reassembling"
       ],
       "sources": [
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        },
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        }
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" },
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$800-1500",
@@ -259,16 +171,8 @@
         "notes": "Head stud failures on early 964. Requires engine removal."
       },
       "parts": [
-        {
-          "name": "Head Stud Kit (Dilavar)",
-          "partNumber": "Various aftermarket",
-          "price": "$400-700"
-        },
-        {
-          "name": "Head Gasket Set",
-          "partNumber": "96410421500",
-          "price": "$200-400"
-        }
+        { "name": "Head Stud Kit (Dilavar)", "partNumber": "Various aftermarket", "price": "$400-700" },
+        { "name": "Head Gasket Set", "partNumber": "96410421500", "price": "$200-400" }
       ],
       "difficulty": "Advanced"
     },
@@ -286,14 +190,8 @@
         "System leak test before recharging"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" }
       ],
       "repairCosts": {
         "diy": "$200-500",
@@ -301,16 +199,8 @@
         "notes": "R12 to R134a conversion common."
       },
       "parts": [
-        {
-          "name": "AC Compressor",
-          "partNumber": "Various",
-          "price": "$400-700"
-        },
-        {
-          "name": "R134a Conversion Kit",
-          "partNumber": "Various",
-          "price": "$100-200"
-        }
+        { "name": "AC Compressor", "partNumber": "Various", "price": "$400-700" },
+        { "name": "R134a Conversion Kit", "partNumber": "Various", "price": "$100-200" }
       ],
       "difficulty": "Easy"
     },
@@ -328,14 +218,8 @@
         "Central electric panel inspection"
       ],
       "sources": [
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        },
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        }
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" },
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$100-300",
@@ -343,16 +227,8 @@
         "notes": "DME and relay issues. Grounds important."
       },
       "parts": [
-        {
-          "name": "DME Relay",
-          "partNumber": "96461815100",
-          "price": "$40-80"
-        },
-        {
-          "name": "Fuel Pump Relay",
-          "partNumber": "Various",
-          "price": "$30-60"
-        }
+        { "name": "DME Relay", "partNumber": "96461815100", "price": "$40-80" },
+        { "name": "Fuel Pump Relay", "partNumber": "Various", "price": "$30-60" }
       ],
       "difficulty": "Moderate"
     }
@@ -368,16 +244,16 @@
       "interval": "Every 60,000-80,000 miles or when handling degrades",
       "laborHours": "10-14 hours shop time",
       "parts": [
-        {"name": "Front Control Arm (Left)", "oem": "96434101703", "aftermarket": "Lemforder, Meyle", "cost": "$120-200"},
-        {"name": "Front Control Arm (Right)", "oem": "96434101803", "aftermarket": "Lemforder, Meyle", "cost": "$120-200"},
-        {"name": "Front Strut (Each)", "oem": "96434301503", "aftermarket": "Bilstein B4, Koni", "cost": "$150-300"},
-        {"name": "Rear Shock Absorber (Each)", "oem": "96433030300", "aftermarket": "Bilstein B4, Koni", "cost": "$150-250"},
-        {"name": "Front Control Arm Bushing Set", "oem": "96434199100", "aftermarket": "URO, Elephant Racing", "cost": "$80-150"},
-        {"name": "Rear Trailing Arm Bushing (Each)", "oem": "96433114105", "aftermarket": "Elephant Racing, URO", "cost": "$40-80"},
-        {"name": "Tie Rod End (Each)", "oem": "93034703202", "aftermarket": "Lemforder, Meyle", "cost": "$50-90"},
-        {"name": "Sway Bar End Link (Front, Each)", "oem": "96434306902", "aftermarket": "URO, aftermarket", "cost": "$30-60"},
-        {"name": "Ball Joint (Each)", "oem": "96434153200", "aftermarket": "Lemforder, URO", "cost": "$60-100"},
-        {"name": "Spring Plate Bushing (Rear)", "oem": "91133353100", "aftermarket": "Elephant Racing", "cost": "$50-100"}
+        { "name": "Front Control Arm (Left)", "oem": "96434101703", "aftermarket": "Lemforder, Meyle", "cost": "$120-200" },
+        { "name": "Front Control Arm (Right)", "oem": "96434101803", "aftermarket": "Lemforder, Meyle", "cost": "$120-200" },
+        { "name": "Front Strut (Each)", "oem": "96434301503", "aftermarket": "Bilstein B4, Koni", "cost": "$150-300" },
+        { "name": "Rear Shock Absorber (Each)", "oem": "96433030300", "aftermarket": "Bilstein B4, Koni", "cost": "$150-250" },
+        { "name": "Front Control Arm Bushing Set", "oem": "96434199100", "aftermarket": "URO, Elephant Racing", "cost": "$80-150" },
+        { "name": "Rear Trailing Arm Bushing (Each)", "oem": "96433114105", "aftermarket": "Elephant Racing, URO", "cost": "$40-80" },
+        { "name": "Tie Rod End (Each)", "oem": "93034703202", "aftermarket": "Lemforder, Meyle", "cost": "$50-90" },
+        { "name": "Sway Bar End Link (Front, Each)", "oem": "96434306902", "aftermarket": "URO, aftermarket", "cost": "$30-60" },
+        { "name": "Ball Joint (Each)", "oem": "96434153200", "aftermarket": "Lemforder, URO", "cost": "$60-100" },
+        { "name": "Spring Plate Bushing (Rear)", "oem": "91133353100", "aftermarket": "Elephant Racing", "cost": "$50-100" }
       ],
       "tools": [
         "Floor jack and jack stands rated for vehicle weight",
@@ -431,9 +307,9 @@
         "Always tighten suspension fasteners with weight on wheels for proper bushing loading."
       ],
       "references": [
-        {"name": "Pelican Parts 964 Suspension", "url": "https://www.pelicanparts.com/Porsche/catalog_911-64.htm"},
-        {"name": "Elephant Racing Suspension", "url": "https://www.elephantracing.com/"},
-        {"name": "Rennlist 964 Suspension Forum", "url": "https://rennlist.com/forums/964-forum/"}
+        { "name": "Pelican Parts 964 Suspension", "url": "https://www.pelicanparts.com/Porsche/catalog_911-64.htm" },
+        { "name": "Elephant Racing Suspension", "url": "https://www.elephantracing.com/" },
+        { "name": "Rennlist 964 Suspension Forum", "url": "https://rennlist.com/forums/964-forum/" }
       ]
     },
     {
@@ -446,16 +322,16 @@
       "interval": "Annual inspection, repair as needed",
       "laborHours": "Varies significantly by extent of rust",
       "parts": [
-        {"name": "Rocker Panel (Left)", "oem": "91150349100", "aftermarket": "Restoration Design", "cost": "$400-800"},
-        {"name": "Rocker Panel (Right)", "oem": "91150349200", "aftermarket": "Restoration Design", "cost": "$400-800"},
-        {"name": "Floor Pan Repair Section", "oem": "91150105300", "aftermarket": "Klokkerholm", "cost": "$200-400"},
-        {"name": "Battery Box", "oem": "96461213100", "aftermarket": "Reproduction", "cost": "$150-300"},
-        {"name": "Kidney Area Repair Panel", "oem": "91150115300", "aftermarket": "Restoration Design", "cost": "$300-600"},
-        {"name": "Jack Point Repair Section", "oem": "Various", "aftermarket": "Restoration Design", "cost": "$100-200"},
-        {"name": "POR-15 Rust Preventive Coating", "oem": "N/A", "aftermarket": "POR-15", "cost": "$40-80"},
-        {"name": "3M Underseal Rubberized Coating", "oem": "N/A", "aftermarket": "3M", "cost": "$15-25"},
-        {"name": "Weld-Through Primer", "oem": "N/A", "aftermarket": "Eastwood, 3M", "cost": "$15-30"},
-        {"name": "Body Seam Sealer", "oem": "N/A", "aftermarket": "3M, Eastwood", "cost": "$20-40"}
+        { "name": "Rocker Panel (Left)", "oem": "91150349100", "aftermarket": "Restoration Design", "cost": "$400-800" },
+        { "name": "Rocker Panel (Right)", "oem": "91150349200", "aftermarket": "Restoration Design", "cost": "$400-800" },
+        { "name": "Floor Pan Repair Section", "oem": "91150105300", "aftermarket": "Klokkerholm", "cost": "$200-400" },
+        { "name": "Battery Box", "oem": "96461213100", "aftermarket": "Reproduction", "cost": "$150-300" },
+        { "name": "Kidney Area Repair Panel", "oem": "91150115300", "aftermarket": "Restoration Design", "cost": "$300-600" },
+        { "name": "Jack Point Repair Section", "oem": "Various", "aftermarket": "Restoration Design", "cost": "$100-200" },
+        { "name": "POR-15 Rust Preventive Coating", "oem": "N/A", "aftermarket": "POR-15", "cost": "$40-80" },
+        { "name": "3M Underseal Rubberized Coating", "oem": "N/A", "aftermarket": "3M", "cost": "$15-25" },
+        { "name": "Weld-Through Primer", "oem": "N/A", "aftermarket": "Eastwood, 3M", "cost": "$15-30" },
+        { "name": "Body Seam Sealer", "oem": "N/A", "aftermarket": "3M, Eastwood", "cost": "$20-40" }
       ],
       "tools": [
         "Wire brush and wire wheel attachments",
@@ -511,9 +387,9 @@
         "Disconnect battery and fuel system before any welding operations."
       ],
       "references": [
-        {"name": "Restoration Design Panels", "url": "https://www.restorationdesign.com/"},
-        {"name": "Pelican Parts 964 Body", "url": "https://www.pelicanparts.com/Porsche/catalog_911-64.htm"},
-        {"name": "Rennlist 964 Body and Interior Forum", "url": "https://rennlist.com/forums/964-forum/"}
+        { "name": "Restoration Design Panels", "url": "https://www.restorationdesign.com/" },
+        { "name": "Pelican Parts 964 Body", "url": "https://www.pelicanparts.com/Porsche/catalog_911-64.htm" },
+        { "name": "Rennlist 964 Body and Interior Forum", "url": "https://rennlist.com/forums/964-forum/" }
       ]
     },
     {
@@ -526,16 +402,16 @@
       "interval": "Inspect every 2-3 years, service as needed",
       "laborHours": "4-12 hours shop time",
       "parts": [
-        {"name": "DME Relay", "oem": "96461815100", "aftermarket": "Bosch replacement", "cost": "$40-80"},
-        {"name": "Fuel Pump Relay", "oem": "91161510101", "aftermarket": "Bosch, URO", "cost": "$30-60"},
-        {"name": "Main Relay Board", "oem": "96461510110", "aftermarket": "Rebuilt available", "cost": "$200-400"},
-        {"name": "Ground Wire Kit", "oem": "Various", "aftermarket": "Custom fabrication", "cost": "$50-100"},
-        {"name": "Fuse Box Cover Gasket", "oem": "96461215301", "aftermarket": "N/A", "cost": "$20-40"},
-        {"name": "Alternator (Rebuilt)", "oem": "96460301502", "aftermarket": "Bosch rebuilt", "cost": "$200-400"},
-        {"name": "Battery Cable Set", "oem": "Various", "aftermarket": "Custom fabrication", "cost": "$80-150"},
-        {"name": "Distributor Cap (Each)", "oem": "93060291800", "aftermarket": "Bosch", "cost": "$50-100"},
-        {"name": "Rotor (Each)", "oem": "93060291600", "aftermarket": "Bosch", "cost": "$40-80"},
-        {"name": "Gauge Cluster Capacitor Kit", "oem": "N/A", "aftermarket": "Various suppliers", "cost": "$30-60"}
+        { "name": "DME Relay", "oem": "96461815100", "aftermarket": "Bosch replacement", "cost": "$40-80" },
+        { "name": "Fuel Pump Relay", "oem": "91161510101", "aftermarket": "Bosch, URO", "cost": "$30-60" },
+        { "name": "Main Relay Board", "oem": "96461510110", "aftermarket": "Rebuilt available", "cost": "$200-400" },
+        { "name": "Ground Wire Kit", "oem": "Various", "aftermarket": "Custom fabrication", "cost": "$50-100" },
+        { "name": "Fuse Box Cover Gasket", "oem": "96461215301", "aftermarket": "N/A", "cost": "$20-40" },
+        { "name": "Alternator (Rebuilt)", "oem": "96460301502", "aftermarket": "Bosch rebuilt", "cost": "$200-400" },
+        { "name": "Battery Cable Set", "oem": "Various", "aftermarket": "Custom fabrication", "cost": "$80-150" },
+        { "name": "Distributor Cap (Each)", "oem": "93060291800", "aftermarket": "Bosch", "cost": "$50-100" },
+        { "name": "Rotor (Each)", "oem": "93060291600", "aftermarket": "Bosch", "cost": "$40-80" },
+        { "name": "Gauge Cluster Capacitor Kit", "oem": "N/A", "aftermarket": "Various suppliers", "cost": "$30-60" }
       ],
       "tools": [
         "Digital multimeter with amp clamp",
@@ -591,9 +467,9 @@
         "Do not use excessive dielectric grease - it can attract dirt over time."
       ],
       "references": [
-        {"name": "Pelican Parts 964 Electrical", "url": "https://www.pelicanparts.com/Porsche/catalog_911-64.htm"},
-        {"name": "Rennlist 964 Electrical Forum", "url": "https://rennlist.com/forums/964-forum/"},
-        {"name": "Clark's Garage 964 Electrical", "url": "https://www.clarks-garage.com/"}
+        { "name": "Pelican Parts 964 Electrical", "url": "https://www.pelicanparts.com/Porsche/catalog_911-64.htm" },
+        { "name": "Rennlist 964 Electrical Forum", "url": "https://rennlist.com/forums/964-forum/" },
+        { "name": "Clark's Garage 964 Electrical", "url": "https://www.clarks-garage.com/" }
       ]
     },
     {
@@ -606,16 +482,16 @@
       "interval": "As needed based on condition",
       "laborHours": "12-30 hours shop time",
       "parts": [
-        {"name": "Leather Seat Cover Kit", "oem": "Various by color", "aftermarket": "Leatherique, Alea Leather", "cost": "$400-1,200"},
-        {"name": "Carpet Set", "oem": "Various by color", "aftermarket": "Autoloc, Specialty Automotive", "cost": "$400-800"},
-        {"name": "Door Panel Set", "oem": "Various", "aftermarket": "Refurbished available", "cost": "$300-600"},
-        {"name": "Seat Foam Cushion", "oem": "96452105100", "aftermarket": "Various", "cost": "$150-300"},
-        {"name": "Leather Conditioner/Dye Kit", "oem": "N/A", "aftermarket": "Leatherique, Connolly", "cost": "$50-120"},
-        {"name": "Door Seal Kit (Complete)", "oem": "Various", "aftermarket": "German OEM suppliers", "cost": "$300-600"},
-        {"name": "Shift Boot (Leather)", "oem": "96442404903", "aftermarket": "Various", "cost": "$60-120"},
-        {"name": "E-Brake Boot (Leather)", "oem": "96442404504", "aftermarket": "Various", "cost": "$40-80"},
-        {"name": "Sun Visor Set", "oem": "96473103300", "aftermarket": "Refurbished", "cost": "$100-200"},
-        {"name": "HVAC Blower Motor", "oem": "96457201101", "aftermarket": "Valeo, aftermarket", "cost": "$150-300"}
+        { "name": "Leather Seat Cover Kit", "oem": "Various by color", "aftermarket": "Leatherique, Alea Leather", "cost": "$400-1,200" },
+        { "name": "Carpet Set", "oem": "Various by color", "aftermarket": "Autoloc, Specialty Automotive", "cost": "$400-800" },
+        { "name": "Door Panel Set", "oem": "Various", "aftermarket": "Refurbished available", "cost": "$300-600" },
+        { "name": "Seat Foam Cushion", "oem": "96452105100", "aftermarket": "Various", "cost": "$150-300" },
+        { "name": "Leather Conditioner/Dye Kit", "oem": "N/A", "aftermarket": "Leatherique, Connolly", "cost": "$50-120" },
+        { "name": "Door Seal Kit (Complete)", "oem": "Various", "aftermarket": "German OEM suppliers", "cost": "$300-600" },
+        { "name": "Shift Boot (Leather)", "oem": "96442404903", "aftermarket": "Various", "cost": "$60-120" },
+        { "name": "E-Brake Boot (Leather)", "oem": "96442404504", "aftermarket": "Various", "cost": "$40-80" },
+        { "name": "Sun Visor Set", "oem": "96473103300", "aftermarket": "Refurbished", "cost": "$100-200" },
+        { "name": "HVAC Blower Motor", "oem": "96457201101", "aftermarket": "Valeo, aftermarket", "cost": "$150-300" }
       ],
       "tools": [
         "Trim panel removal tools (plastic pry bars)",
@@ -671,9 +547,9 @@
         "Some adhesives require ventilation - work in well-ventilated area."
       ],
       "references": [
-        {"name": "Leatherique Leather Care", "url": "https://www.leatherique.com/"},
-        {"name": "Pelican Parts 964 Interior", "url": "https://www.pelicanparts.com/Porsche/catalog_911-64.htm"},
-        {"name": "Rennlist 964 Interior Forum", "url": "https://rennlist.com/forums/964-forum/"}
+        { "name": "Leatherique Leather Care", "url": "https://www.leatherique.com/" },
+        { "name": "Pelican Parts 964 Interior", "url": "https://www.pelicanparts.com/Porsche/catalog_911-64.htm" },
+        { "name": "Rennlist 964 Interior Forum", "url": "https://rennlist.com/forums/964-forum/" }
       ]
     }
   ],
@@ -683,7 +559,11 @@
         "name": "Pelican Parts",
         "url": "https://www.pelicanparts.com/catalog/911_catalog_main.htm",
         "notes": "Extensive 964 catalog with tech articles. The go-to resource for air-cooled 911 parts.",
-        "specialties": ["Tech Articles", "OE Parts", "Air-Cooled"],
+        "specialties": [
+          "Tech Articles",
+          "OE Parts",
+          "Air-Cooled"
+        ],
         "shipping": "Free over $99",
         "featured": true
       },
@@ -691,19 +571,28 @@
         "name": "Porsche Classic",
         "url": "https://www.porsche.com/usa/accessoriesandservices/classic/",
         "notes": "Genuine Porsche OEM and remanufactured classic parts.",
-        "specialties": ["Genuine Porsche", "Classic OEM"]
+        "specialties": [
+          "Genuine Porsche",
+          "Classic OEM"
+        ]
       },
       {
         "name": "Suncoast Porsche Parts",
         "url": "https://www.suncoastparts.com/",
         "notes": "Genuine Porsche parts at discounted prices.",
-        "specialties": ["Genuine Porsche", "Dealer Discount"]
+        "specialties": [
+          "Genuine Porsche",
+          "Dealer Discount"
+        ]
       },
       {
         "name": "FCP Euro",
         "url": "https://www.fcpeuro.com/Porsche-parts",
         "notes": "Lifetime replacement guarantee on all parts.",
-        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "specialties": [
+          "Lifetime Warranty",
+          "OE Quality"
+        ],
         "shipping": "Free over $49",
         "warranty": "Lifetime"
       }
@@ -713,26 +602,42 @@
         "name": "Elephant Racing",
         "url": "https://www.elephantracing.com/",
         "notes": "964 suspension specialists. Track-proven coilovers and handling upgrades.",
-        "specialties": ["Suspension", "Coilovers", "Track"],
+        "specialties": [
+          "Suspension",
+          "Coilovers",
+          "Track"
+        ],
         "featured": true
       },
       {
         "name": "Wevo",
         "url": "https://www.wevo-shop.com/",
         "notes": "Shifters and drivetrain upgrades. Excellent short shifter kits.",
-        "specialties": ["Shifters", "Drivetrain", "Mounts"]
+        "specialties": [
+          "Shifters",
+          "Drivetrain",
+          "Mounts"
+        ]
       },
       {
         "name": "LN Engineering",
         "url": "https://lnengineering.com/",
         "notes": "Air-cooled engine components. Cylinders, pistons, and IMS solutions.",
-        "specialties": ["Engine Parts", "Cylinders", "Quality"]
+        "specialties": [
+          "Engine Parts",
+          "Cylinders",
+          "Quality"
+        ]
       },
       {
         "name": "Fabspeed",
         "url": "https://fabspeed.com/",
         "notes": "Performance exhaust systems and headers for 964.",
-        "specialties": ["Exhaust", "Headers", "Sound"]
+        "specialties": [
+          "Exhaust",
+          "Headers",
+          "Sound"
+        ]
       }
     ],
     "general": [
@@ -740,13 +645,19 @@
         "name": "Sierra Madre Collection",
         "url": "https://sierramadrecollection.com/",
         "notes": "Complete Porsche parts inventory. Quality parts for all 911 generations.",
-        "specialties": ["Large Inventory", "Quality Parts"]
+        "specialties": [
+          "Large Inventory",
+          "Quality Parts"
+        ]
       },
       {
         "name": "Stoddard Porsche Parts",
         "url": "https://www.stoddard.com/",
         "notes": "Vintage Porsche specialists. Authentic and reproduction parts.",
-        "specialties": ["Restoration", "Authentic Parts"]
+        "specialties": [
+          "Restoration",
+          "Authentic Parts"
+        ]
       }
     ],
     "specialty": [
@@ -754,14 +665,21 @@
         "name": "Rennsport Systems",
         "url": "https://www.rennsportsystems.com/",
         "notes": "Air-cooled 911 specialists. Engine rebuilds and performance builds.",
-        "specialties": ["Engine Rebuilds", "Air-Cooled"],
+        "specialties": [
+          "Engine Rebuilds",
+          "Air-Cooled"
+        ],
         "featured": true
       },
       {
         "name": "Aase Sales",
         "url": "https://www.aaborsmotorsport.com/",
         "notes": "Porsche restoration parts and trim.",
-        "specialties": ["Restoration", "Trim", "Interior"]
+        "specialties": [
+          "Restoration",
+          "Trim",
+          "Interior"
+        ]
       }
     ],
     "used": [
@@ -769,20 +687,29 @@
         "name": "Rennlist 964 Classifieds",
         "url": "https://rennlist.com/forums/964-forum/",
         "notes": "Premier air-cooled 911 community marketplace.",
-        "specialties": ["964 Community", "Rare Parts"],
+        "specialties": [
+          "964 Community",
+          "Rare Parts"
+        ],
         "featured": true
       },
       {
         "name": "911UK Classifieds",
         "url": "https://911uk.com/forums/classifieds/",
         "notes": "UK-based 911 marketplace. Good for Euro-spec parts.",
-        "specialties": ["UK/Euro Parts", "Community"]
+        "specialties": [
+          "UK/Euro Parts",
+          "Community"
+        ]
       },
       {
         "name": "eBay Motors",
         "url": "https://www.ebay.com/b/Porsche-964/6030/bn_81449782",
         "notes": "Large selection of used and NOS 964 parts.",
-        "specialties": ["NOS Parts", "Wide Selection"]
+        "specialties": [
+          "NOS Parts",
+          "Wide Selection"
+        ]
       }
     ],
     "tools": [
@@ -791,138 +718,41 @@
         "url": "https://www.pelicanparts.com/techarticles/Porsche_911-964/porsche_911_964_tech.htm",
         "notes": "Comprehensive 964 DIY tech articles"
       },
-      {
-        "name": "P101tv VIN Decoder",
-        "url": "http://p101tv.com/",
-        "notes": "Porsche VIN decoder and options codes"
-      }
+      { "name": "P101tv VIN Decoder", "url": "http://p101tv.com/", "notes": "Porsche VIN decoder and options codes" }
     ]
   },
   "torqueSpecs": {
     "sources": [
-      {
-        "name": "Rennlist 964 Torque Settings Thread",
-        "url": "https://rennlist.com/forums/964-forum/990830-964-torque-settings-thread.html"
-      },
-      {
-        "name": "Lindsey Racing Torque Specs",
-        "url": "https://www.lindseyracing.com/LR/Parts/TORQUESPEC.html"
-      },
-      {
-        "name": "Bentley 964 Service Manual",
-        "url": "https://www.bentleypublishers.com/porsche.html"
-      }
+      { "name": "Rennlist 964 Torque Settings Thread", "url": "https://rennlist.com/forums/964-forum/990830-964-torque-settings-thread.html" },
+      { "name": "Lindsey Racing Torque Specs", "url": "https://www.lindseyracing.com/LR/Parts/TORQUESPEC.html" },
+      { "name": "Bentley 964 Service Manual", "url": "https://www.bentleypublishers.com/porsche.html" }
     ],
     "engine": [
-      {
-        "component": "Engine Through-Bolt",
-        "spec": "37 ft-lbs (50 Nm)",
-        "notes": "Hold one end while torquing the other"
-      },
-      {
-        "component": "Case Perimeter Nuts",
-        "spec": "18 ft-lbs (25 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Spark Plugs",
-        "spec": "18-22 ft-lbs (25-30 Nm)",
-        "notes": "Anti-seize recommended"
-      },
-      {
-        "component": "Valve Cover Nuts",
-        "spec": "11 ft-lbs (15 Nm)",
-        "notes": "Diagonal pattern"
-      },
-      {
-        "component": "Oil Drain Plug",
-        "spec": "37 ft-lbs (50 Nm)",
-        "notes": "Replace crush washer"
-      },
-      {
-        "component": "Flywheel Bolts",
-        "spec": "66 ft-lbs (90 Nm) + 90°",
-        "notes": "Use new bolts"
-      },
-      {
-        "component": "Chain Housing Bolts",
-        "spec": "17 ft-lbs (23 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Cylinder Air Guide",
-        "spec": "7 ft-lbs (10 Nm)",
-        "notes": "Install with aluminum washer"
-      },
-      {
-        "component": "Oil Cooler Lines",
-        "spec": "33 ft-lbs (45 Nm)",
-        "notes": "Use new sealing washers"
-      },
-      {
-        "component": "Oil Pressure Switch (Small)",
-        "spec": "33 ft-lbs (45 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Power Steering Pump Bolts",
-        "spec": "17 ft-lbs (25 Nm)",
-        "notes": "Dry torque"
-      }
+      { "component": "Engine Through-Bolt", "spec": "37 ft-lbs (50 Nm)", "notes": "Hold one end while torquing the other" },
+      { "component": "Case Perimeter Nuts", "spec": "18 ft-lbs (25 Nm)", "notes": "" },
+      { "component": "Spark Plugs", "spec": "18-22 ft-lbs (25-30 Nm)", "notes": "Anti-seize recommended" },
+      { "component": "Valve Cover Nuts", "spec": "11 ft-lbs (15 Nm)", "notes": "Diagonal pattern" },
+      { "component": "Oil Drain Plug", "spec": "37 ft-lbs (50 Nm)", "notes": "Replace crush washer" },
+      { "component": "Flywheel Bolts", "spec": "66 ft-lbs (90 Nm) + 90°", "notes": "Use new bolts" },
+      { "component": "Chain Housing Bolts", "spec": "17 ft-lbs (23 Nm)", "notes": "" },
+      { "component": "Cylinder Air Guide", "spec": "7 ft-lbs (10 Nm)", "notes": "Install with aluminum washer" },
+      { "component": "Oil Cooler Lines", "spec": "33 ft-lbs (45 Nm)", "notes": "Use new sealing washers" },
+      { "component": "Oil Pressure Switch (Small)", "spec": "33 ft-lbs (45 Nm)", "notes": "" },
+      { "component": "Power Steering Pump Bolts", "spec": "17 ft-lbs (25 Nm)", "notes": "Dry torque" }
     ],
     "suspension": [
-      {
-        "component": "Wheel Lug Bolts (M14)",
-        "spec": "96 ft-lbs (130 Nm)",
-        "notes": "Tighten in star pattern"
-      },
-      {
-        "component": "Control Arm Bolts",
-        "spec": "63 ft-lbs (85 Nm)",
-        "notes": "Tighten with weight on wheels"
-      },
-      {
-        "component": "Tie Rod End Nut",
-        "spec": "33 ft-lbs (45 Nm)",
-        "notes": "Use new cotter pin"
-      },
-      {
-        "component": "Shock Absorber Top Nut",
-        "spec": "55 ft-lbs (75 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Torsion Bar Cover",
-        "spec": "34 ft-lbs (46 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Steering Wheel Nut",
-        "spec": "33 ft-lbs (45 Nm)",
-        "notes": ""
-      }
+      { "component": "Wheel Lug Bolts (M14)", "spec": "96 ft-lbs (130 Nm)", "notes": "Tighten in star pattern" },
+      { "component": "Control Arm Bolts", "spec": "63 ft-lbs (85 Nm)", "notes": "Tighten with weight on wheels" },
+      { "component": "Tie Rod End Nut", "spec": "33 ft-lbs (45 Nm)", "notes": "Use new cotter pin" },
+      { "component": "Shock Absorber Top Nut", "spec": "55 ft-lbs (75 Nm)", "notes": "" },
+      { "component": "Torsion Bar Cover", "spec": "34 ft-lbs (46 Nm)", "notes": "" },
+      { "component": "Steering Wheel Nut", "spec": "33 ft-lbs (45 Nm)", "notes": "" }
     ],
     "brakes": [
-      {
-        "component": "Front Caliper Bolts",
-        "spec": "63 ft-lbs (85 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Caliper Bolts",
-        "spec": "43 ft-lbs (58 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Brake Line Fittings",
-        "spec": "11-14 ft-lbs (15-19 Nm)",
-        "notes": "Do not overtighten"
-      },
-      {
-        "component": "ABS Sensor Bolt",
-        "spec": "7 ft-lbs (10 Nm)",
-        "notes": ""
-      }
+      { "component": "Front Caliper Bolts", "spec": "63 ft-lbs (85 Nm)", "notes": "" },
+      { "component": "Rear Caliper Bolts", "spec": "43 ft-lbs (58 Nm)", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "11-14 ft-lbs (15-19 Nm)", "notes": "Do not overtighten" },
+      { "component": "ABS Sensor Bolt", "spec": "7 ft-lbs (10 Nm)", "notes": "" }
     ]
   },
   "diyGuides": [
@@ -1209,11 +1039,7 @@
             "detail": "Test engagement - should be smooth and grab mid-travel. Clutch replacement is labor-intensive.",
             "costIfBad": "$2,000-3,500"
           },
-          {
-            "check": "CV Joints",
-            "detail": "Listen for clicking in turns. Check boot condition for tears.",
-            "costIfBad": "$500-1,000"
-          },
+          { "check": "CV Joints", "detail": "Listen for clicking in turns. Check boot condition for tears.", "costIfBad": "$500-1,000" },
           {
             "check": "AWD System (C4)",
             "detail": "Test for proper engagement. Check for differential noise. System adds complexity.",
@@ -1224,21 +1050,13 @@
       {
         "category": "Suspension & Steering",
         "items": [
-          {
-            "check": "Coilover Condition",
-            "detail": "964 introduced coil springs. Check for leaking shocks and worn bushings.",
-            "costIfBad": "$1,500-3,000"
-          },
+          { "check": "Coilover Condition", "detail": "964 introduced coil springs. Check for leaking shocks and worn bushings.", "costIfBad": "$1,500-3,000" },
           {
             "check": "Power Steering",
             "detail": "Check for leaks from pump, rack, and lines. Listen for whining indicating low fluid.",
             "costIfBad": "$800-2,000"
           },
-          {
-            "check": "Control Arm Bushings",
-            "detail": "Front and rear bushings wear. Check for play and cracking.",
-            "costIfBad": "$600-1,500"
-          },
+          { "check": "Control Arm Bushings", "detail": "Front and rear bushings wear. Check for play and cracking.", "costIfBad": "$600-1,500" },
           {
             "check": "Wheel Bearings",
             "detail": "Jack up each corner and check for play. Listen for grinding while driving.",
@@ -1254,21 +1072,9 @@
             "detail": "Check rocker panels, floor pans (especially under battery), and around windshield. Earlier cars rust more.",
             "costIfBad": "$2,000-10,000+"
           },
-          {
-            "check": "Wiring Condition",
-            "detail": "964 uses biodegradable wire sheathing that rodents love. Check for damage.",
-            "costIfBad": "$1,000-5,000"
-          },
-          {
-            "check": "Targa/Cabrio Seals",
-            "detail": "Check for leaks and proper seal condition on open-top models.",
-            "costIfBad": "$500-1,500"
-          },
-          {
-            "check": "HVAC System",
-            "detail": "Climate control can be complex. Test all functions including A/C.",
-            "costIfBad": "$500-2,000"
-          }
+          { "check": "Wiring Condition", "detail": "964 uses biodegradable wire sheathing that rodents love. Check for damage.", "costIfBad": "$1,000-5,000" },
+          { "check": "Targa/Cabrio Seals", "detail": "Check for leaks and proper seal condition on open-top models.", "costIfBad": "$500-1,500" },
+          { "check": "HVAC System", "detail": "Climate control can be complex. Test all functions including A/C.", "costIfBad": "$500-2,000" }
         ]
       }
     ],
@@ -1331,62 +1137,26 @@
   },
   "communityResources": {
     "youtube": [
-      {
-        "name": "PCA YouTube",
-        "url": "https://www.youtube.com/@PorscheClubAmerica",
-        "description": "Porsche Club of America buyer guides and tech tips"
-      },
-      {
-        "name": "Channel P101tv",
-        "url": "https://www.youtube.com/@P101tv",
-        "description": "Independent Porsche channel with 964 content"
-      },
-      {
-        "name": "SavageGeese",
-        "url": "https://www.youtube.com/@SavageGeese",
-        "description": "Detailed reviews including air-cooled Porsches"
-      }
+      { "name": "PCA YouTube", "url": "https://www.youtube.com/@PorscheClubAmerica", "description": "Porsche Club of America buyer guides and tech tips" },
+      { "name": "Channel P101tv", "url": "https://www.youtube.com/@P101tv", "description": "Independent Porsche channel with 964 content" },
+      { "name": "SavageGeese", "url": "https://www.youtube.com/@SavageGeese", "description": "Detailed reviews including air-cooled Porsches" }
     ],
     "forums": [
-      {
-        "name": "Rennlist 964 Forum",
-        "url": "https://rennlist.com/forums/964-forum/",
-        "description": "The most active air-cooled 911 community"
-      },
-      {
-        "name": "911UK 964 Forum",
-        "url": "https://911uk.com/forums/964-1989-1993.19/",
-        "description": "UK-based 964 discussion and classifieds"
-      },
+      { "name": "Rennlist 964 Forum", "url": "https://rennlist.com/forums/964-forum/", "description": "The most active air-cooled 911 community" },
+      { "name": "911UK 964 Forum", "url": "https://911uk.com/forums/964-1989-1993.19/", "description": "UK-based 964 discussion and classifieds" },
       {
         "name": "Pelican Parts 911 Forum",
         "url": "https://forums.pelicanparts.com/porsche-911-technical-forum/",
         "description": "Air-cooled 911 technical discussion"
       },
-      {
-        "name": "Carpokes 993/964 Forum",
-        "url": "https://www.carpokes.com/",
-        "description": "Air-cooled 911 community"
-      }
+      { "name": "Carpokes 993/964 Forum", "url": "https://www.carpokes.com/", "description": "Air-cooled 911 community" }
     ],
     "facebook": [
-      {
-        "name": "Porsche 964 Owners",
-        "url": "https://www.facebook.com/groups/porsche964owners",
-        "description": "Active 964 enthusiast community"
-      },
-      {
-        "name": "Air-Cooled Porsche 911",
-        "url": "https://www.facebook.com/groups/aircooled911",
-        "description": "All air-cooled 911 generations"
-      }
+      { "name": "Porsche 964 Owners", "url": "https://www.facebook.com/groups/porsche964owners", "description": "Active 964 enthusiast community" },
+      { "name": "Air-Cooled Porsche 911", "url": "https://www.facebook.com/groups/aircooled911", "description": "All air-cooled 911 generations" }
     ],
     "websites": [
-      {
-        "name": "P101tv Resources",
-        "url": "http://p101tv.com/",
-        "description": "Porsche VIN decoder, options codes, and guides"
-      }
+      { "name": "P101tv Resources", "url": "http://p101tv.com/", "description": "Porsche VIN decoder, options codes, and guides" }
     ]
   }
 }

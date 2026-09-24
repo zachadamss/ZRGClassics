@@ -24,14 +24,8 @@
         "Use OEM or high-quality belts (Gates, Continental)"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" }
       ],
       "repairCosts": {
         "diy": "$150-300",
@@ -39,21 +33,9 @@
         "notes": "Interference engine. Critical maintenance every 30-40k miles."
       },
       "parts": [
-        {
-          "name": "Timing Belt",
-          "partNumber": "95110515190",
-          "price": "$40-70"
-        },
-        {
-          "name": "Tensioner",
-          "partNumber": "95110551100",
-          "price": "$50-100"
-        },
-        {
-          "name": "Water Pump",
-          "partNumber": "95110601100",
-          "price": "$60-100"
-        }
+        { "name": "Timing Belt", "partNumber": "95110515190", "price": "$40-70" },
+        { "name": "Tensioner", "partNumber": "95110551100", "price": "$50-100" },
+        { "name": "Water Pump", "partNumber": "95110601100", "price": "$60-100" }
       ],
       "relatedIssues": [
         { "vehicle": "944", "brand": "Porsche", "model": "944", "issueId": "timing-belt" },
@@ -78,14 +60,8 @@
         "Replace all rubber fuel lines (ethanol degrades old rubber)"
       ],
       "sources": [
-        {
-          "name": "924Board",
-          "url": "https://www.924board.org/"
-        },
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        }
+        { "name": "924Board", "url": "https://www.924board.org/" },
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" }
       ],
       "repairCosts": {
         "diy": "$100-400",
@@ -93,21 +69,9 @@
         "notes": "K-Jetronic system. WUR and accumulator common issues."
       },
       "parts": [
-        {
-          "name": "Warm-Up Regulator",
-          "partNumber": "Various Bosch",
-          "price": "$200-400"
-        },
-        {
-          "name": "Fuel Accumulator",
-          "partNumber": "Various Bosch",
-          "price": "$100-200"
-        },
-        {
-          "name": "Fuel Injector (each)",
-          "partNumber": "Various Bosch",
-          "price": "$40-80"
-        }
+        { "name": "Warm-Up Regulator", "partNumber": "Various Bosch", "price": "$200-400" },
+        { "name": "Fuel Accumulator", "partNumber": "Various Bosch", "price": "$100-200" },
+        { "name": "Fuel Injector (each)", "partNumber": "Various Bosch", "price": "$40-80" }
       ],
       "difficulty": "Moderate"
     },
@@ -124,14 +88,8 @@
         "Consider upgraded clutch kits for spirited driving"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "924Board",
-          "url": "https://www.924board.org/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "924Board", "url": "https://www.924board.org/" }
       ],
       "repairCosts": {
         "diy": "$50-100",
@@ -139,11 +97,7 @@
         "notes": "Cable stretches. Adjustment first, then replace."
       },
       "parts": [
-        {
-          "name": "Clutch Cable",
-          "partNumber": "94423721106",
-          "price": "$40-80"
-        }
+        { "name": "Clutch Cable", "partNumber": "94423721106", "price": "$40-80" }
       ],
       "difficulty": "Advanced"
     },
@@ -161,14 +115,8 @@
         "Treat cavity areas with rust prevention spray"
       ],
       "sources": [
-        {
-          "name": "924Board",
-          "url": "https://www.924board.org/"
-        },
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        }
+        { "name": "924Board", "url": "https://www.924board.org/" },
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$200-1000",
@@ -176,16 +124,8 @@
         "notes": "Battery box, fenders, floors common rust areas."
       },
       "parts": [
-        {
-          "name": "Fender (Repro)",
-          "partNumber": "Various",
-          "price": "$150-300"
-        },
-        {
-          "name": "Battery Box Repair",
-          "partNumber": "Various",
-          "price": "$80-150"
-        }
+        { "name": "Fender (Repro)", "partNumber": "Various", "price": "$150-300" },
+        { "name": "Battery Box Repair", "partNumber": "Various", "price": "$80-150" }
       ],
       "difficulty": "Advanced"
     },
@@ -203,14 +143,8 @@
         "Replace ignition switch if experiencing intermittent starting issues"
       ],
       "sources": [
-        {
-          "name": "924Board",
-          "url": "https://www.924board.org/"
-        },
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        }
+        { "name": "924Board", "url": "https://www.924board.org/" },
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" }
       ],
       "repairCosts": {
         "diy": "$50-200",
@@ -218,16 +152,8 @@
         "notes": "Relay and ground issues. DME relay common."
       },
       "parts": [
-        {
-          "name": "DME/Fuel Pump Relay",
-          "partNumber": "92861530120",
-          "price": "$30-60"
-        },
-        {
-          "name": "Combination Relay",
-          "partNumber": "Various",
-          "price": "$40-80"
-        }
+        { "name": "DME/Fuel Pump Relay", "partNumber": "92861530120", "price": "$30-60" },
+        { "name": "Combination Relay", "partNumber": "Various", "price": "$40-80" }
       ],
       "difficulty": "Moderate"
     },
@@ -245,14 +171,8 @@
         "On turbo models: inspect turbo coolant lines and oil cooler"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" }
       ],
       "repairCosts": {
         "diy": "$150-300",
@@ -260,21 +180,9 @@
         "notes": "Replace entire system on 40+ year old cars."
       },
       "parts": [
-        {
-          "name": "Water Pump",
-          "partNumber": "95110601100",
-          "price": "$60-100"
-        },
-        {
-          "name": "Thermostat",
-          "partNumber": "Various",
-          "price": "$20-40"
-        },
-        {
-          "name": "Radiator",
-          "partNumber": "Various",
-          "price": "$150-300"
-        }
+        { "name": "Water Pump", "partNumber": "95110601100", "price": "$60-100" },
+        { "name": "Thermostat", "partNumber": "Various", "price": "$20-40" },
+        { "name": "Radiator", "partNumber": "Various", "price": "$150-300" }
       ],
       "difficulty": "Advanced"
     },
@@ -291,14 +199,8 @@
         "Replace output shaft seals if leaking"
       ],
       "sources": [
-        {
-          "name": "924Board",
-          "url": "https://www.924board.org/"
-        },
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        }
+        { "name": "924Board", "url": "https://www.924board.org/" },
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$100-300",
@@ -306,21 +208,9 @@
         "notes": "Synchros wear. Use correct GL-4 fluid."
       },
       "parts": [
-        {
-          "name": "Trans Mount (Donut)",
-          "partNumber": "94433323500",
-          "price": "$30-60"
-        },
-        {
-          "name": "Shift Bushing Kit",
-          "partNumber": "Various",
-          "price": "$40-80"
-        },
-        {
-          "name": "GL-4 Gear Oil",
-          "partNumber": "Various",
-          "price": "$30-50"
-        }
+        { "name": "Trans Mount (Donut)", "partNumber": "94433323500", "price": "$30-60" },
+        { "name": "Shift Bushing Kit", "partNumber": "Various", "price": "$40-80" },
+        { "name": "GL-4 Gear Oil", "partNumber": "Various", "price": "$30-50" }
       ],
       "difficulty": "Advanced"
     },
@@ -338,14 +228,8 @@
         "Perform full alignment after suspension work"
       ],
       "sources": [
-        {
-          "name": "924Board",
-          "url": "https://www.924board.org/"
-        },
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        }
+        { "name": "924Board", "url": "https://www.924board.org/" },
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" }
       ],
       "repairCosts": {
         "diy": "$200-400",
@@ -353,16 +237,8 @@
         "notes": "Bushings and strut mounts wear on all 40+ year cars."
       },
       "parts": [
-        {
-          "name": "Strut Mount",
-          "partNumber": "Various",
-          "price": "$40-80"
-        },
-        {
-          "name": "Control Arm Bushing Set",
-          "partNumber": "Various",
-          "price": "$60-120"
-        }
+        { "name": "Strut Mount", "partNumber": "Various", "price": "$40-80" },
+        { "name": "Control Arm Bushing Set", "partNumber": "Various", "price": "$60-120" }
       ],
       "difficulty": "Moderate"
     }
@@ -378,16 +254,16 @@
       "interval": "Every 60,000-80,000 miles or when handling degrades",
       "laborHours": "8-12 hours shop time",
       "parts": [
-        {"name": "Front Strut (Each)", "oem": "94434301502", "aftermarket": "Bilstein B4, KYB", "cost": "$100-200"},
-        {"name": "Rear Shock Absorber (Each)", "oem": "94433030102", "aftermarket": "Bilstein B4, KYB", "cost": "$80-150"},
-        {"name": "Front Control Arm Bushing Set", "oem": "94434199101", "aftermarket": "URO, Lemforder", "cost": "$60-120"},
-        {"name": "Front Strut Mount (Each)", "oem": "94434302700", "aftermarket": "URO, aftermarket", "cost": "$40-80"},
-        {"name": "Front Ball Joint (Each)", "oem": "94434153201", "aftermarket": "Lemforder, Meyle", "cost": "$40-80"},
-        {"name": "Tie Rod End (Each)", "oem": "94434703301", "aftermarket": "Lemforder, Meyle", "cost": "$30-60"},
-        {"name": "Rear Trailing Arm Bushing (Each)", "oem": "94433114102", "aftermarket": "URO, aftermarket", "cost": "$30-60"},
-        {"name": "Sway Bar End Link (Front, Each)", "oem": "94434306901", "aftermarket": "URO, aftermarket", "cost": "$25-50"},
-        {"name": "Rear Torsion Bar Bearing", "oem": "94433110900", "aftermarket": "Aftermarket available", "cost": "$40-80"},
-        {"name": "Wheel Bearing Kit (If needed)", "oem": "Various", "aftermarket": "FAG, SKF", "cost": "$50-100"}
+        { "name": "Front Strut (Each)", "oem": "94434301502", "aftermarket": "Bilstein B4, KYB", "cost": "$100-200" },
+        { "name": "Rear Shock Absorber (Each)", "oem": "94433030102", "aftermarket": "Bilstein B4, KYB", "cost": "$80-150" },
+        { "name": "Front Control Arm Bushing Set", "oem": "94434199101", "aftermarket": "URO, Lemforder", "cost": "$60-120" },
+        { "name": "Front Strut Mount (Each)", "oem": "94434302700", "aftermarket": "URO, aftermarket", "cost": "$40-80" },
+        { "name": "Front Ball Joint (Each)", "oem": "94434153201", "aftermarket": "Lemforder, Meyle", "cost": "$40-80" },
+        { "name": "Tie Rod End (Each)", "oem": "94434703301", "aftermarket": "Lemforder, Meyle", "cost": "$30-60" },
+        { "name": "Rear Trailing Arm Bushing (Each)", "oem": "94433114102", "aftermarket": "URO, aftermarket", "cost": "$30-60" },
+        { "name": "Sway Bar End Link (Front, Each)", "oem": "94434306901", "aftermarket": "URO, aftermarket", "cost": "$25-50" },
+        { "name": "Rear Torsion Bar Bearing", "oem": "94433110900", "aftermarket": "Aftermarket available", "cost": "$40-80" },
+        { "name": "Wheel Bearing Kit (If needed)", "oem": "Various", "aftermarket": "FAG, SKF", "cost": "$50-100" }
       ],
       "tools": [
         "Floor jack and jack stands",
@@ -442,9 +318,9 @@
         "Always tighten suspension fasteners with weight on wheels for proper bushing loading."
       ],
       "references": [
-        {"name": "Pelican Parts 924 Suspension", "url": "https://www.pelicanparts.com/Porsche/catalog_924.htm"},
-        {"name": "924Board Suspension Forum", "url": "https://www.924board.org/"},
-        {"name": "Rennlist 924 Forum", "url": "https://rennlist.com/forums/924-931-and-944-951-forum/"}
+        { "name": "Pelican Parts 924 Suspension", "url": "https://www.pelicanparts.com/Porsche/catalog_924.htm" },
+        { "name": "924Board Suspension Forum", "url": "https://www.924board.org/" },
+        { "name": "Rennlist 924 Forum", "url": "https://rennlist.com/forums/924-931-and-944-951-forum/" }
       ]
     },
     {
@@ -457,16 +333,16 @@
       "interval": "Annual inspection, repair as needed",
       "laborHours": "Varies significantly by extent of rust",
       "parts": [
-        {"name": "Front Fender (Left, Reproduction)", "oem": "94450302101", "aftermarket": "Restoration Design, aftermarket", "cost": "$150-300"},
-        {"name": "Front Fender (Right, Reproduction)", "oem": "94450302201", "aftermarket": "Restoration Design, aftermarket", "cost": "$150-300"},
-        {"name": "Battery Box Repair Panel", "oem": "Various", "aftermarket": "Fabricated or reproduction", "cost": "$80-200"},
-        {"name": "Floor Pan Repair Section", "oem": "Various", "aftermarket": "Klokkerholm, aftermarket", "cost": "$100-300"},
-        {"name": "Rocker Panel Section", "oem": "Various", "aftermarket": "Restoration Design", "cost": "$150-400"},
-        {"name": "Door Bottom Repair Panel", "oem": "Various", "aftermarket": "Aftermarket fabrication", "cost": "$50-150"},
-        {"name": "POR-15 Rust Preventive Coating", "oem": "N/A", "aftermarket": "POR-15", "cost": "$40-80"},
-        {"name": "3M Underseal Rubberized Coating", "oem": "N/A", "aftermarket": "3M", "cost": "$15-25"},
-        {"name": "Weld-Through Primer", "oem": "N/A", "aftermarket": "Eastwood, 3M", "cost": "$15-30"},
-        {"name": "Body Seam Sealer", "oem": "N/A", "aftermarket": "3M, Eastwood", "cost": "$20-40"}
+        { "name": "Front Fender (Left, Reproduction)", "oem": "94450302101", "aftermarket": "Restoration Design, aftermarket", "cost": "$150-300" },
+        { "name": "Front Fender (Right, Reproduction)", "oem": "94450302201", "aftermarket": "Restoration Design, aftermarket", "cost": "$150-300" },
+        { "name": "Battery Box Repair Panel", "oem": "Various", "aftermarket": "Fabricated or reproduction", "cost": "$80-200" },
+        { "name": "Floor Pan Repair Section", "oem": "Various", "aftermarket": "Klokkerholm, aftermarket", "cost": "$100-300" },
+        { "name": "Rocker Panel Section", "oem": "Various", "aftermarket": "Restoration Design", "cost": "$150-400" },
+        { "name": "Door Bottom Repair Panel", "oem": "Various", "aftermarket": "Aftermarket fabrication", "cost": "$50-150" },
+        { "name": "POR-15 Rust Preventive Coating", "oem": "N/A", "aftermarket": "POR-15", "cost": "$40-80" },
+        { "name": "3M Underseal Rubberized Coating", "oem": "N/A", "aftermarket": "3M", "cost": "$15-25" },
+        { "name": "Weld-Through Primer", "oem": "N/A", "aftermarket": "Eastwood, 3M", "cost": "$15-30" },
+        { "name": "Body Seam Sealer", "oem": "N/A", "aftermarket": "3M, Eastwood", "cost": "$20-40" }
       ],
       "tools": [
         "Wire brush and wire wheel attachments",
@@ -522,9 +398,9 @@
         "Disconnect battery before any welding operations."
       ],
       "references": [
-        {"name": "924Board Rust Discussion", "url": "https://www.924board.org/"},
-        {"name": "Pelican Parts 924 Body", "url": "https://www.pelicanparts.com/Porsche/catalog_924.htm"},
-        {"name": "Rennlist 924 Body Forum", "url": "https://rennlist.com/forums/924-931-and-944-951-forum/"}
+        { "name": "924Board Rust Discussion", "url": "https://www.924board.org/" },
+        { "name": "Pelican Parts 924 Body", "url": "https://www.pelicanparts.com/Porsche/catalog_924.htm" },
+        { "name": "Rennlist 924 Body Forum", "url": "https://rennlist.com/forums/924-931-and-944-951-forum/" }
       ]
     },
     {
@@ -537,16 +413,16 @@
       "interval": "Inspect every 2-3 years, service as needed",
       "laborHours": "4-10 hours shop time",
       "parts": [
-        {"name": "DME/Fuel Pump Relay", "oem": "92861530120", "aftermarket": "Bosch replacement", "cost": "$30-60"},
-        {"name": "Combination Relay", "oem": "Various", "aftermarket": "Bosch, aftermarket", "cost": "$40-80"},
-        {"name": "Ignition Switch", "oem": "94461310500", "aftermarket": "Aftermarket available", "cost": "$60-120"},
-        {"name": "Ground Wire Kit", "oem": "Various", "aftermarket": "Custom fabrication", "cost": "$30-80"},
-        {"name": "Alternator (Rebuilt)", "oem": "94460301501", "aftermarket": "Bosch rebuilt", "cost": "$150-300"},
-        {"name": "Starter Motor (Rebuilt)", "oem": "94460401501", "aftermarket": "Bosch rebuilt", "cost": "$120-250"},
-        {"name": "Battery Cable Set", "oem": "Various", "aftermarket": "Custom fabrication", "cost": "$60-120"},
-        {"name": "Distributor Cap", "oem": "Various Bosch", "aftermarket": "Bosch", "cost": "$20-40"},
-        {"name": "Rotor", "oem": "Various Bosch", "aftermarket": "Bosch", "cost": "$15-30"},
-        {"name": "Spark Plug Wire Set", "oem": "Various Bosch", "aftermarket": "Bosch, NGK", "cost": "$50-100"}
+        { "name": "DME/Fuel Pump Relay", "oem": "92861530120", "aftermarket": "Bosch replacement", "cost": "$30-60" },
+        { "name": "Combination Relay", "oem": "Various", "aftermarket": "Bosch, aftermarket", "cost": "$40-80" },
+        { "name": "Ignition Switch", "oem": "94461310500", "aftermarket": "Aftermarket available", "cost": "$60-120" },
+        { "name": "Ground Wire Kit", "oem": "Various", "aftermarket": "Custom fabrication", "cost": "$30-80" },
+        { "name": "Alternator (Rebuilt)", "oem": "94460301501", "aftermarket": "Bosch rebuilt", "cost": "$150-300" },
+        { "name": "Starter Motor (Rebuilt)", "oem": "94460401501", "aftermarket": "Bosch rebuilt", "cost": "$120-250" },
+        { "name": "Battery Cable Set", "oem": "Various", "aftermarket": "Custom fabrication", "cost": "$60-120" },
+        { "name": "Distributor Cap", "oem": "Various Bosch", "aftermarket": "Bosch", "cost": "$20-40" },
+        { "name": "Rotor", "oem": "Various Bosch", "aftermarket": "Bosch", "cost": "$15-30" },
+        { "name": "Spark Plug Wire Set", "oem": "Various Bosch", "aftermarket": "Bosch, NGK", "cost": "$50-100" }
       ],
       "tools": [
         "Digital multimeter",
@@ -600,9 +476,9 @@
         "Fuel system electrical work requires extra fire safety precautions."
       ],
       "references": [
-        {"name": "924Board Electrical Forum", "url": "https://www.924board.org/"},
-        {"name": "Pelican Parts 924 Electrical", "url": "https://www.pelicanparts.com/Porsche/catalog_924.htm"},
-        {"name": "Rennlist 924 Technical Forum", "url": "https://rennlist.com/forums/924-931-and-944-951-forum/"}
+        { "name": "924Board Electrical Forum", "url": "https://www.924board.org/" },
+        { "name": "Pelican Parts 924 Electrical", "url": "https://www.pelicanparts.com/Porsche/catalog_924.htm" },
+        { "name": "Rennlist 924 Technical Forum", "url": "https://rennlist.com/forums/924-931-and-944-951-forum/" }
       ]
     },
     {
@@ -615,16 +491,16 @@
       "interval": "As needed based on condition",
       "laborHours": "10-25 hours shop time",
       "parts": [
-        {"name": "Seat Cover Kit (Per Seat)", "oem": "Various by color", "aftermarket": "Leatherique, aftermarket", "cost": "$200-500"},
-        {"name": "Carpet Set", "oem": "Various by color", "aftermarket": "Autoloc, aftermarket", "cost": "$250-500"},
-        {"name": "Door Panel Set", "oem": "Various", "aftermarket": "Used or refurbished", "cost": "$150-400"},
-        {"name": "Seat Foam Cushion", "oem": "Various", "aftermarket": "Various", "cost": "$100-200"},
-        {"name": "Door Seal Kit (Complete)", "oem": "Various", "aftermarket": "Aftermarket suppliers", "cost": "$150-350"},
-        {"name": "Shift Boot", "oem": "94442404901", "aftermarket": "Aftermarket leather", "cost": "$30-70"},
-        {"name": "E-Brake Boot", "oem": "94442404501", "aftermarket": "Aftermarket leather", "cost": "$25-50"},
-        {"name": "Sun Visor Set", "oem": "Various", "aftermarket": "Used or refurbished", "cost": "$60-150"},
-        {"name": "Dashboard Pad/Cap", "oem": "Various", "aftermarket": "Dashboard cover options", "cost": "$100-300"},
-        {"name": "Heater Blower Motor", "oem": "94457201100", "aftermarket": "Aftermarket", "cost": "$80-175"}
+        { "name": "Seat Cover Kit (Per Seat)", "oem": "Various by color", "aftermarket": "Leatherique, aftermarket", "cost": "$200-500" },
+        { "name": "Carpet Set", "oem": "Various by color", "aftermarket": "Autoloc, aftermarket", "cost": "$250-500" },
+        { "name": "Door Panel Set", "oem": "Various", "aftermarket": "Used or refurbished", "cost": "$150-400" },
+        { "name": "Seat Foam Cushion", "oem": "Various", "aftermarket": "Various", "cost": "$100-200" },
+        { "name": "Door Seal Kit (Complete)", "oem": "Various", "aftermarket": "Aftermarket suppliers", "cost": "$150-350" },
+        { "name": "Shift Boot", "oem": "94442404901", "aftermarket": "Aftermarket leather", "cost": "$30-70" },
+        { "name": "E-Brake Boot", "oem": "94442404501", "aftermarket": "Aftermarket leather", "cost": "$25-50" },
+        { "name": "Sun Visor Set", "oem": "Various", "aftermarket": "Used or refurbished", "cost": "$60-150" },
+        { "name": "Dashboard Pad/Cap", "oem": "Various", "aftermarket": "Dashboard cover options", "cost": "$100-300" },
+        { "name": "Heater Blower Motor", "oem": "94457201100", "aftermarket": "Aftermarket", "cost": "$80-175" }
       ],
       "tools": [
         "Trim panel removal tools (plastic pry bars)",
@@ -678,9 +554,9 @@
         "Some adhesives require ventilation - work in well-ventilated area."
       ],
       "references": [
-        {"name": "924Board Interior Forum", "url": "https://www.924board.org/"},
-        {"name": "Pelican Parts 924 Interior", "url": "https://www.pelicanparts.com/Porsche/catalog_924.htm"},
-        {"name": "Rennlist 924 Forum", "url": "https://rennlist.com/forums/924-931-and-944-951-forum/"}
+        { "name": "924Board Interior Forum", "url": "https://www.924board.org/" },
+        { "name": "Pelican Parts 924 Interior", "url": "https://www.pelicanparts.com/Porsche/catalog_924.htm" },
+        { "name": "Rennlist 924 Forum", "url": "https://rennlist.com/forums/924-931-and-944-951-forum/" }
       ]
     }
   ],
@@ -690,7 +566,10 @@
         "name": "Porsche Classic",
         "url": "https://www.porsche.com/usa/accessoriesandservices/classic/",
         "notes": "Factory parts for classic Porsches - many 924 parts still available through the Classic program",
-        "specialties": ["Factory Original", "Genuine Porsche"],
+        "specialties": [
+          "Factory Original",
+          "Genuine Porsche"
+        ],
         "warranty": "Genuine OEM",
         "featured": true
       },
@@ -698,7 +577,11 @@
         "name": "Pelican Parts",
         "url": "https://www.pelicanparts.com/Porsche/catalog_924.htm",
         "notes": "Comprehensive 924 parts catalog with OEM and quality aftermarket options",
-        "specialties": ["OEM Parts", "Tech Articles", "924 Specialist"],
+        "specialties": [
+          "OEM Parts",
+          "Tech Articles",
+          "924 Specialist"
+        ],
         "shipping": "Free over $99",
         "featured": true
       },
@@ -706,7 +589,10 @@
         "name": "Sunset Porsche Parts",
         "url": "https://www.sunsetporscheparts.com/",
         "notes": "Porsche dealer parts department with competitive pricing on genuine parts",
-        "specialties": ["OEM Dealer", "New Genuine Parts"],
+        "specialties": [
+          "OEM Dealer",
+          "New Genuine Parts"
+        ],
         "shipping": "Fast shipping"
       }
     ],
@@ -715,14 +601,21 @@
         "name": "Lindsey Racing",
         "url": "https://www.lindseyracing.com/",
         "notes": "Premier Porsche performance shop - extensive 944/924 turbo expertise and parts",
-        "specialties": ["Turbo Upgrades", "Engine Parts", "Performance"],
+        "specialties": [
+          "Turbo Upgrades",
+          "Engine Parts",
+          "Performance"
+        ],
         "featured": true
       },
       {
         "name": "Paragon Products",
         "url": "https://www.paragonproducts.com/",
         "notes": "924/944 performance specialist with engine and suspension upgrades",
-        "specialties": ["Engine Builds", "Suspension"]
+        "specialties": [
+          "Engine Builds",
+          "Suspension"
+        ]
       }
     ],
     "general": [
@@ -730,14 +623,20 @@
         "name": "AutohausAZ",
         "url": "https://www.autohausaz.com/porsche-924-parts",
         "notes": "Large selection of replacement parts at competitive prices",
-        "specialties": ["Replacement Parts", "Maintenance Items"],
+        "specialties": [
+          "Replacement Parts",
+          "Maintenance Items"
+        ],
         "shipping": "Free over $99"
       },
       {
         "name": "FCP Euro",
         "url": "https://www.fcpeuro.com/",
         "notes": "Industry-leading lifetime replacement guarantee on all parts",
-        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "specialties": [
+          "Lifetime Warranty",
+          "OE Quality"
+        ],
         "shipping": "Free over $49",
         "warranty": "Lifetime"
       }
@@ -747,20 +646,30 @@
         "name": "924Board Store",
         "url": "https://www.924board.org/",
         "notes": "Community-driven store with 924-specific parts, gaskets, and hard-to-find items",
-        "specialties": ["924 Exclusive", "Rare Parts", "Community Resource"],
+        "specialties": [
+          "924 Exclusive",
+          "Rare Parts",
+          "Community Resource"
+        ],
         "featured": true
       },
       {
         "name": "928 International",
         "url": "https://www.928intl.com/",
         "notes": "While focused on 928s, carries many shared transaxle parts for 924/944",
-        "specialties": ["Transaxle Parts", "Electrical"]
+        "specialties": [
+          "Transaxle Parts",
+          "Electrical"
+        ]
       },
       {
         "name": "Porscheshop UK",
         "url": "https://www.porscheshop.co.uk/",
         "notes": "UK-based specialist with excellent 924/944 coverage",
-        "specialties": ["European Parts", "Rare Items"],
+        "specialties": [
+          "European Parts",
+          "Rare Items"
+        ],
         "shipping": "International"
       }
     ],
@@ -769,34 +678,43 @@
         "name": "924Board Classifieds",
         "url": "https://www.924board.org/forum/viewforum.php?f=3",
         "notes": "The go-to marketplace for used 924 parts - active enthusiast community",
-        "specialties": ["924 Exclusive", "Community Vetted"],
+        "specialties": [
+          "924 Exclusive",
+          "Community Vetted"
+        ],
         "featured": true
       },
       {
         "name": "Rennlist Classifieds",
         "url": "https://rennlist.com/forums/924-931-and-944-951-forum/",
         "notes": "Large Porsche community marketplace with 924/944 section",
-        "specialties": ["Forum Marketplace", "Wide Selection"]
+        "specialties": [
+          "Forum Marketplace",
+          "Wide Selection"
+        ]
       },
       {
         "name": "eBay Motors",
         "url": "https://www.ebay.com/b/Porsche-924-Parts/6030/bn_582131",
         "notes": "Global marketplace for used and NOS 924 parts",
-        "specialties": ["Used Parts", "NOS", "Global Sellers"]
+        "specialties": [
+          "Used Parts",
+          "NOS",
+          "Global Sellers"
+        ]
       },
       {
         "name": "Car-Part.com",
         "url": "https://www.car-part.com/",
         "notes": "Search nationwide salvage yard inventory for 924 parts",
-        "specialties": ["Salvage Parts", "Low Cost"]
+        "specialties": [
+          "Salvage Parts",
+          "Low Cost"
+        ]
       }
     ],
     "tools": [
-      {
-        "name": "RealOEM (via ETKA)",
-        "url": "https://www.realoem.com/",
-        "notes": "While BMW-focused, useful for cross-referencing shared components"
-      },
+      { "name": "RealOEM (via ETKA)", "url": "https://www.realoem.com/", "notes": "While BMW-focused, useful for cross-referencing shared components" },
       {
         "name": "Porsche Parts Diagrams",
         "url": "https://www.pelicanparts.com/Porsche/catalog_924.htm",
@@ -811,94 +729,29 @@
   },
   "torqueSpecs": {
     "sources": [
-      {
-        "name": "Lindsey Racing Torque Specs",
-        "url": "https://www.lindseyracing.com/LR/Parts/TORQUESPEC.html"
-      },
-      {
-        "name": "Rennlist 924/944 Technical",
-        "url": "https://rennlist.com/forums/924-931-and-944-951-forum/"
-      },
-      {
-        "name": "Porsche Factory Manual",
-        "url": "https://www.bentleypublishers.com/porsche.html"
-      }
+      { "name": "Lindsey Racing Torque Specs", "url": "https://www.lindseyracing.com/LR/Parts/TORQUESPEC.html" },
+      { "name": "Rennlist 924/944 Technical", "url": "https://rennlist.com/forums/924-931-and-944-951-forum/" },
+      { "name": "Porsche Factory Manual", "url": "https://www.bentleypublishers.com/porsche.html" }
     ],
     "engine": [
-      {
-        "component": "Cylinder Head Bolts",
-        "spec": "54 ft-lbs (73 Nm) + 90°",
-        "notes": "Cold engine, new bolts"
-      },
-      {
-        "component": "Timing Belt Tensioner",
-        "spec": "33 ft-lbs (45 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Water Pump Bolts",
-        "spec": "15 ft-lbs (20 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Spark Plugs",
-        "spec": "18-22 ft-lbs (25-30 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Valve Cover Nuts",
-        "spec": "7 ft-lbs (10 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Oil Drain Plug",
-        "spec": "22 ft-lbs (30 Nm)",
-        "notes": "Replace washer"
-      },
-      {
-        "component": "Exhaust Manifold Nuts",
-        "spec": "18 ft-lbs (25 Nm)",
-        "notes": ""
-      }
+      { "component": "Cylinder Head Bolts", "spec": "54 ft-lbs (73 Nm) + 90°", "notes": "Cold engine, new bolts" },
+      { "component": "Timing Belt Tensioner", "spec": "33 ft-lbs (45 Nm)", "notes": "" },
+      { "component": "Water Pump Bolts", "spec": "15 ft-lbs (20 Nm)", "notes": "" },
+      { "component": "Spark Plugs", "spec": "18-22 ft-lbs (25-30 Nm)", "notes": "" },
+      { "component": "Valve Cover Nuts", "spec": "7 ft-lbs (10 Nm)", "notes": "" },
+      { "component": "Oil Drain Plug", "spec": "22 ft-lbs (30 Nm)", "notes": "Replace washer" },
+      { "component": "Exhaust Manifold Nuts", "spec": "18 ft-lbs (25 Nm)", "notes": "" }
     ],
     "suspension": [
-      {
-        "component": "Wheel Lug Bolts (M14)",
-        "spec": "96 ft-lbs (130 Nm)",
-        "notes": "Tighten in star pattern"
-      },
-      {
-        "component": "Strut Top Nut",
-        "spec": "40 ft-lbs (54 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Control Arm Bolts",
-        "spec": "65 ft-lbs (88 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Tie Rod Ends",
-        "spec": "33 ft-lbs (45 Nm)",
-        "notes": "Use new cotter pin"
-      },
-      {
-        "component": "Steering Wheel Nut",
-        "spec": "33 ft-lbs (45 Nm)",
-        "notes": ""
-      }
+      { "component": "Wheel Lug Bolts (M14)", "spec": "96 ft-lbs (130 Nm)", "notes": "Tighten in star pattern" },
+      { "component": "Strut Top Nut", "spec": "40 ft-lbs (54 Nm)", "notes": "" },
+      { "component": "Control Arm Bolts", "spec": "65 ft-lbs (88 Nm)", "notes": "" },
+      { "component": "Tie Rod Ends", "spec": "33 ft-lbs (45 Nm)", "notes": "Use new cotter pin" },
+      { "component": "Steering Wheel Nut", "spec": "33 ft-lbs (45 Nm)", "notes": "" }
     ],
     "brakes": [
-      {
-        "component": "Caliper Bolts",
-        "spec": "48 ft-lbs (65 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Brake Line Fittings",
-        "spec": "11 ft-lbs (15 Nm)",
-        "notes": "Do not overtighten"
-      }
+      { "component": "Caliper Bolts", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "11 ft-lbs (15 Nm)", "notes": "Do not overtighten" }
     ]
   },
   "diyGuides": [
@@ -1097,31 +950,19 @@
             "detail": "Audi-derived engine uses a timing chain. Listen for rattle indicating chain stretch.",
             "costIfBad": "$800-1,500"
           },
-          {
-            "check": "Head Gasket",
-            "detail": "Early 924s can develop head gasket issues. Check for coolant in oil or overheating.",
-            "costIfBad": "$800-1,500"
-          },
+          { "check": "Head Gasket", "detail": "Early 924s can develop head gasket issues. Check for coolant in oil or overheating.", "costIfBad": "$800-1,500" },
           {
             "check": "Turbo Condition (931)",
             "detail": "Check for shaft play, oil smoke, and boost leaks. Turbo rebuilds are expensive.",
             "costIfBad": "$1,500-3,000"
           },
-          {
-            "check": "Oil Leaks",
-            "detail": "Check valve cover, rear main seal, and oil pan. Common with age.",
-            "costIfBad": "$200-600"
-          }
+          { "check": "Oil Leaks", "detail": "Check valve cover, rear main seal, and oil pan. Common with age.", "costIfBad": "$200-600" }
         ]
       },
       {
         "category": "Clutch & Transaxle",
         "items": [
-          {
-            "check": "Clutch Condition",
-            "detail": "Test clutch engagement - should be smooth and grab mid-pedal.",
-            "costIfBad": "$1,200-2,000"
-          },
+          { "check": "Clutch Condition", "detail": "Test clutch engagement - should be smooth and grab mid-pedal.", "costIfBad": "$1,200-2,000" },
           {
             "check": "Torque Tube Flex Disc",
             "detail": "Rubber flex disc connecting engine to torque tube wears out. Check for cracks.",
@@ -1137,46 +978,22 @@
       {
         "category": "Body & Rust",
         "items": [
-          {
-            "check": "Rocker Panels",
-            "detail": "Primary rust area. Check inside and out for rust-through.",
-            "costIfBad": "$800-2,000 per side"
-          },
-          {
-            "check": "Floor Pans",
-            "detail": "Check under carpets for rust, especially driver's footwell.",
-            "costIfBad": "$800-2,000"
-          },
-          {
-            "check": "Hatch Area",
-            "detail": "Hatch struts mount to fiberglass - check for cracks. Inspect rear quarters.",
-            "costIfBad": "$300-800"
-          },
-          {
-            "check": "Battery Box",
-            "detail": "Located in the engine bay - acid damage is common.",
-            "costIfBad": "$300-600"
-          }
+          { "check": "Rocker Panels", "detail": "Primary rust area. Check inside and out for rust-through.", "costIfBad": "$800-2,000 per side" },
+          { "check": "Floor Pans", "detail": "Check under carpets for rust, especially driver's footwell.", "costIfBad": "$800-2,000" },
+          { "check": "Hatch Area", "detail": "Hatch struts mount to fiberglass - check for cracks. Inspect rear quarters.", "costIfBad": "$300-800" },
+          { "check": "Battery Box", "detail": "Located in the engine bay - acid damage is common.", "costIfBad": "$300-600" }
         ]
       },
       {
         "category": "Electrical",
         "items": [
-          {
-            "check": "DME Relay",
-            "detail": "Common failure point causing no-start. Easy and cheap to replace.",
-            "costIfBad": "$30-60"
-          },
+          { "check": "DME Relay", "detail": "Common failure point causing no-start. Easy and cheap to replace.", "costIfBad": "$30-60" },
           {
             "check": "CIS System (early cars)",
             "detail": "Continuous Injection System can be finicky. Check fuel distributor operation.",
             "costIfBad": "$300-800"
           },
-          {
-            "check": "Wiring Condition",
-            "detail": "Check for brittle insulation, especially in engine bay.",
-            "costIfBad": "$200-600"
-          }
+          { "check": "Wiring Condition", "detail": "Check for brittle insulation, especially in engine bay.", "costIfBad": "$200-600" }
         ]
       }
     ],
@@ -1236,23 +1053,11 @@
   },
   "communityResources": {
     "youtube": [
-      {
-        "name": "Channel P101tv",
-        "url": "https://www.youtube.com/@P101tv",
-        "description": "Independent Porsche channel with technical content"
-      },
-      {
-        "name": "SavageGeese",
-        "url": "https://www.youtube.com/@SavageGeese",
-        "description": "Detailed car reviews including classic Porsches"
-      }
+      { "name": "Channel P101tv", "url": "https://www.youtube.com/@P101tv", "description": "Independent Porsche channel with technical content" },
+      { "name": "SavageGeese", "url": "https://www.youtube.com/@SavageGeese", "description": "Detailed car reviews including classic Porsches" }
     ],
     "forums": [
-      {
-        "name": "Porsche 924 Owners Club",
-        "url": "https://porsche924.co.uk/forum/",
-        "description": "Dedicated 924 community with 1,500+ members"
-      },
+      { "name": "Porsche 924 Owners Club", "url": "https://porsche924.co.uk/forum/", "description": "Dedicated 924 community with 1,500+ members" },
       {
         "name": "Rennlist 924/944/968 Forum",
         "url": "https://rennlist.com/forums/924-931-944-951-968-forum/",
@@ -1263,30 +1068,14 @@
         "url": "https://forums.pelicanparts.com/porsche-924-944-968-technical-forum/",
         "description": "Technical forum for water-cooled front-engine Porsches"
       },
-      {
-        "name": "TIPEC 924/944/968 Forum",
-        "url": "https://forums.tipec.net/viewforum.php?f=25",
-        "description": "Porsche Enthusiasts Club discussion"
-      }
+      { "name": "TIPEC 924/944/968 Forum", "url": "https://forums.tipec.net/viewforum.php?f=25", "description": "Porsche Enthusiasts Club discussion" }
     ],
     "facebook": [
-      {
-        "name": "Porsche 924 Owners",
-        "url": "https://www.facebook.com/groups/porsche924owners",
-        "description": "Active 924 enthusiast community"
-      },
-      {
-        "name": "Porsche 924/944/968 Club",
-        "url": "https://www.facebook.com/groups/924944968club",
-        "description": "Front-engine Porsche community"
-      }
+      { "name": "Porsche 924 Owners", "url": "https://www.facebook.com/groups/porsche924owners", "description": "Active 924 enthusiast community" },
+      { "name": "Porsche 924/944/968 Club", "url": "https://www.facebook.com/groups/924944968club", "description": "Front-engine Porsche community" }
     ],
     "websites": [
-      {
-        "name": "Channel P101tv Resources",
-        "url": "http://p101tv.com/",
-        "description": "Porsche video community and resource directory"
-      }
+      { "name": "Channel P101tv Resources", "url": "http://p101tv.com/", "description": "Porsche video community and resource directory" }
     ]
   }
 }

@@ -25,14 +25,8 @@
         "Never buy a 944 without documented timing belt history"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" }
       ],
       "repairCosts": {
         "diy": "$200-400",
@@ -40,26 +34,10 @@
         "notes": "BOTH timing and balance shaft belts required. Critical service."
       },
       "parts": [
-        {
-          "name": "Timing Belt",
-          "partNumber": "94410502504",
-          "price": "$50-80"
-        },
-        {
-          "name": "Balance Shaft Belt",
-          "partNumber": "94410502404",
-          "price": "$40-70"
-        },
-        {
-          "name": "Tensioner Roller",
-          "partNumber": "94410523300",
-          "price": "$60-120"
-        },
-        {
-          "name": "Water Pump",
-          "partNumber": "94410601104",
-          "price": "$80-150"
-        }
+        { "name": "Timing Belt", "partNumber": "94410502504", "price": "$50-80" },
+        { "name": "Balance Shaft Belt", "partNumber": "94410502404", "price": "$40-70" },
+        { "name": "Tensioner Roller", "partNumber": "94410523300", "price": "$60-120" },
+        { "name": "Water Pump", "partNumber": "94410601104", "price": "$80-150" }
       ],
       "relatedIssues": [
         { "vehicle": "924", "brand": "Porsche", "model": "924", "issueId": "timing-belt" },
@@ -82,14 +60,8 @@
         "Pressure test cooling system after repair"
       ],
       "sources": [
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        },
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        }
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" },
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$150-300",
@@ -97,16 +69,8 @@
         "notes": "Always do with timing belt. Driven by belt."
       },
       "parts": [
-        {
-          "name": "Water Pump",
-          "partNumber": "94410601104",
-          "price": "$80-150"
-        },
-        {
-          "name": "Thermostat",
-          "partNumber": "94410612702",
-          "price": "$30-50"
-        }
+        { "name": "Water Pump", "partNumber": "94410601104", "price": "$80-150" },
+        { "name": "Thermostat", "partNumber": "94410612702", "price": "$30-50" }
       ],
       "difficulty": "Advanced"
     },
@@ -123,14 +87,8 @@
         "Clean relay socket contacts while relay is out"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "944Online",
-          "url": "https://www.944online.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "944Online", "url": "https://www.944online.com/" }
       ],
       "repairCosts": {
         "diy": "$30-80",
@@ -138,11 +96,7 @@
         "notes": "Infamous 944 failure. Carry a spare."
       },
       "parts": [
-        {
-          "name": "DME Relay",
-          "partNumber": "92861530120",
-          "price": "$30-60"
-        }
+        { "name": "DME Relay", "partNumber": "92861530120", "price": "$30-60" }
       ],
       "difficulty": "Moderate"
     },
@@ -159,14 +113,8 @@
         "Use DOT 4 brake fluid"
       ],
       "sources": [
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        },
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        }
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" },
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$100-200",
@@ -174,16 +122,8 @@
         "notes": "Master and slave cylinders both fail with age."
       },
       "parts": [
-        {
-          "name": "Clutch Master Cylinder",
-          "partNumber": "94423171100",
-          "price": "$80-150"
-        },
-        {
-          "name": "Clutch Slave Cylinder",
-          "partNumber": "94411623100",
-          "price": "$60-120"
-        }
+        { "name": "Clutch Master Cylinder", "partNumber": "94423171100", "price": "$80-150" },
+        { "name": "Clutch Slave Cylinder", "partNumber": "94411623100", "price": "$60-120" }
       ],
       "difficulty": "Advanced"
     },
@@ -200,14 +140,8 @@
         "Have torque tube serviced by specialist if unfamiliar"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "944Online",
-          "url": "https://www.944online.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "944Online", "url": "https://www.944online.com/" }
       ],
       "repairCosts": {
         "diy": "$200-400",
@@ -215,16 +149,8 @@
         "notes": "Center bearing and flex disc (guibo) wear."
       },
       "parts": [
-        {
-          "name": "Center Support Bearing",
-          "partNumber": "94433231900",
-          "price": "$80-150"
-        },
-        {
-          "name": "Flex Disc (Guibo)",
-          "partNumber": "94433221900",
-          "price": "$60-120"
-        }
+        { "name": "Center Support Bearing", "partNumber": "94433231900", "price": "$80-150" },
+        { "name": "Flex Disc (Guibo)", "partNumber": "94433221900", "price": "$60-120" }
       ],
       "difficulty": "Advanced"
     },
@@ -241,14 +167,8 @@
         "Prevention: always use sunshade when parked"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "944Online",
-          "url": "https://www.944online.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "944Online", "url": "https://www.944online.com/" }
       ],
       "repairCosts": {
         "diy": "$100-300",
@@ -256,16 +176,8 @@
         "notes": "All 944 dashes crack. Covers or professional restoration."
       },
       "parts": [
-        {
-          "name": "Dashboard Cover",
-          "partNumber": "Various aftermarket",
-          "price": "$80-200"
-        },
-        {
-          "name": "Dashboard (Used)",
-          "partNumber": "N/A",
-          "price": "$200-500"
-        }
+        { "name": "Dashboard Cover", "partNumber": "Various aftermarket", "price": "$80-200" },
+        { "name": "Dashboard (Used)", "partNumber": "N/A", "price": "$200-500" }
       ],
       "difficulty": "Easy"
     },
@@ -282,14 +194,8 @@
         "Replace tie rod ends while rack is out"
       ],
       "sources": [
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        },
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        }
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" },
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$150-300",
@@ -297,16 +203,8 @@
         "notes": "Rack seals and pump common failures."
       },
       "parts": [
-        {
-          "name": "Steering Rack Seal Kit",
-          "partNumber": "Various",
-          "price": "$60-120"
-        },
-        {
-          "name": "Power Steering Pump",
-          "partNumber": "Various",
-          "price": "$200-400"
-        }
+        { "name": "Steering Rack Seal Kit", "partNumber": "Various", "price": "$60-120" },
+        { "name": "Power Steering Pump", "partNumber": "Various", "price": "$200-400" }
       ],
       "difficulty": "Moderate"
     },
@@ -322,14 +220,8 @@
         "This is a common DIY repair with proper instructions"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" }
       ],
       "repairCosts": {
         "diy": "$30-80",
@@ -337,11 +229,7 @@
         "notes": "Plastic gears strip. Brass upgrade kits available."
       },
       "parts": [
-        {
-          "name": "Odometer Gear Kit (Brass)",
-          "partNumber": "Various aftermarket",
-          "price": "$20-40"
-        }
+        { "name": "Odometer Gear Kit (Brass)", "partNumber": "Various aftermarket", "price": "$20-40" }
       ],
       "difficulty": "Easy"
     },
@@ -357,14 +245,8 @@
         "Check and replace torque tube mounts if worn"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "944Online",
-          "url": "https://www.944online.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "944Online", "url": "https://www.944online.com/" }
       ],
       "repairCosts": {
         "diy": "$100-200",
@@ -372,11 +254,7 @@
         "notes": "Rubber deteriorates. Replace as set."
       },
       "parts": [
-        {
-          "name": "Engine Mount Set",
-          "partNumber": "94437504900",
-          "price": "$80-150"
-        }
+        { "name": "Engine Mount Set", "partNumber": "94437504900", "price": "$80-150" }
       ],
       "difficulty": "Moderate"
     }
@@ -392,16 +270,16 @@
       "interval": "Every 60,000-80,000 miles or when handling degrades",
       "laborHours": "10-14 hours shop time",
       "parts": [
-        {"name": "Front Strut (Each)", "oem": "94434301503", "aftermarket": "Bilstein B4, Koni, KYB", "cost": "$120-250"},
-        {"name": "Rear Shock Absorber (Each)", "oem": "94433030103", "aftermarket": "Bilstein B4, Koni", "cost": "$100-200"},
-        {"name": "Front Control Arm Bushing Set", "oem": "94434199102", "aftermarket": "URO, Lemforder", "cost": "$70-140"},
-        {"name": "Front Strut Mount (Each)", "oem": "94434302701", "aftermarket": "URO, aftermarket", "cost": "$50-100"},
-        {"name": "Front Ball Joint (Each)", "oem": "94434153202", "aftermarket": "Lemforder, Meyle", "cost": "$45-90"},
-        {"name": "Tie Rod End (Each)", "oem": "94434703302", "aftermarket": "Lemforder, Meyle", "cost": "$35-70"},
-        {"name": "Rear Trailing Arm Bushing Set", "oem": "94433114103", "aftermarket": "URO, aftermarket", "cost": "$60-120"},
-        {"name": "Sway Bar End Link (Front, Each)", "oem": "94434306902", "aftermarket": "URO, aftermarket", "cost": "$30-60"},
-        {"name": "Rear Torsion Bar Bearing", "oem": "94433110901", "aftermarket": "Aftermarket available", "cost": "$50-100"},
-        {"name": "Wheel Bearing Kit (If needed)", "oem": "Various", "aftermarket": "FAG, SKF", "cost": "$60-120"}
+        { "name": "Front Strut (Each)", "oem": "94434301503", "aftermarket": "Bilstein B4, Koni, KYB", "cost": "$120-250" },
+        { "name": "Rear Shock Absorber (Each)", "oem": "94433030103", "aftermarket": "Bilstein B4, Koni", "cost": "$100-200" },
+        { "name": "Front Control Arm Bushing Set", "oem": "94434199102", "aftermarket": "URO, Lemforder", "cost": "$70-140" },
+        { "name": "Front Strut Mount (Each)", "oem": "94434302701", "aftermarket": "URO, aftermarket", "cost": "$50-100" },
+        { "name": "Front Ball Joint (Each)", "oem": "94434153202", "aftermarket": "Lemforder, Meyle", "cost": "$45-90" },
+        { "name": "Tie Rod End (Each)", "oem": "94434703302", "aftermarket": "Lemforder, Meyle", "cost": "$35-70" },
+        { "name": "Rear Trailing Arm Bushing Set", "oem": "94433114103", "aftermarket": "URO, aftermarket", "cost": "$60-120" },
+        { "name": "Sway Bar End Link (Front, Each)", "oem": "94434306902", "aftermarket": "URO, aftermarket", "cost": "$30-60" },
+        { "name": "Rear Torsion Bar Bearing", "oem": "94433110901", "aftermarket": "Aftermarket available", "cost": "$50-100" },
+        { "name": "Wheel Bearing Kit (If needed)", "oem": "Various", "aftermarket": "FAG, SKF", "cost": "$60-120" }
       ],
       "tools": [
         "Floor jack and jack stands",
@@ -459,9 +337,9 @@
         "Always tighten suspension fasteners with weight on wheels for proper loading."
       ],
       "references": [
-        {"name": "Pelican Parts 944 Suspension", "url": "https://www.pelicanparts.com/Porsche/catalog_944.htm"},
-        {"name": "944 Online Suspension", "url": "https://www.944online.com/"},
-        {"name": "Rennlist 944 Forum", "url": "https://rennlist.com/forums/924-931-and-944-951-forum/"}
+        { "name": "Pelican Parts 944 Suspension", "url": "https://www.pelicanparts.com/Porsche/catalog_944.htm" },
+        { "name": "944 Online Suspension", "url": "https://www.944online.com/" },
+        { "name": "Rennlist 944 Forum", "url": "https://rennlist.com/forums/924-931-and-944-951-forum/" }
       ]
     },
     {
@@ -474,16 +352,16 @@
       "interval": "Annual inspection, repair as needed",
       "laborHours": "Varies significantly by extent of rust",
       "parts": [
-        {"name": "Rocker Panel (Left)", "oem": "94450349100", "aftermarket": "Restoration Design, aftermarket", "cost": "$300-600"},
-        {"name": "Rocker Panel (Right)", "oem": "94450349200", "aftermarket": "Restoration Design, aftermarket", "cost": "$300-600"},
-        {"name": "Floor Pan Repair Section", "oem": "Various", "aftermarket": "Klokkerholm, aftermarket", "cost": "$150-350"},
-        {"name": "Door Bottom Repair Panel", "oem": "Various", "aftermarket": "Aftermarket fabrication", "cost": "$80-200"},
-        {"name": "Rear Hatch Seal Area Patch", "oem": "Various", "aftermarket": "Fabricated", "cost": "$100-250"},
-        {"name": "Battery Tray", "oem": "94461213100", "aftermarket": "Fabricated", "cost": "$80-180"},
-        {"name": "POR-15 Rust Preventive Coating", "oem": "N/A", "aftermarket": "POR-15", "cost": "$40-80"},
-        {"name": "3M Underseal Rubberized Coating", "oem": "N/A", "aftermarket": "3M", "cost": "$15-25"},
-        {"name": "Weld-Through Primer", "oem": "N/A", "aftermarket": "Eastwood, 3M", "cost": "$15-30"},
-        {"name": "Body Seam Sealer", "oem": "N/A", "aftermarket": "3M, Eastwood", "cost": "$20-40"}
+        { "name": "Rocker Panel (Left)", "oem": "94450349100", "aftermarket": "Restoration Design, aftermarket", "cost": "$300-600" },
+        { "name": "Rocker Panel (Right)", "oem": "94450349200", "aftermarket": "Restoration Design, aftermarket", "cost": "$300-600" },
+        { "name": "Floor Pan Repair Section", "oem": "Various", "aftermarket": "Klokkerholm, aftermarket", "cost": "$150-350" },
+        { "name": "Door Bottom Repair Panel", "oem": "Various", "aftermarket": "Aftermarket fabrication", "cost": "$80-200" },
+        { "name": "Rear Hatch Seal Area Patch", "oem": "Various", "aftermarket": "Fabricated", "cost": "$100-250" },
+        { "name": "Battery Tray", "oem": "94461213100", "aftermarket": "Fabricated", "cost": "$80-180" },
+        { "name": "POR-15 Rust Preventive Coating", "oem": "N/A", "aftermarket": "POR-15", "cost": "$40-80" },
+        { "name": "3M Underseal Rubberized Coating", "oem": "N/A", "aftermarket": "3M", "cost": "$15-25" },
+        { "name": "Weld-Through Primer", "oem": "N/A", "aftermarket": "Eastwood, 3M", "cost": "$15-30" },
+        { "name": "Body Seam Sealer", "oem": "N/A", "aftermarket": "3M, Eastwood", "cost": "$20-40" }
       ],
       "tools": [
         "Wire brush and wire wheel attachments",
@@ -540,9 +418,9 @@
         "Disconnect battery before any welding operations."
       ],
       "references": [
-        {"name": "944 Online Body/Rust Discussion", "url": "https://www.944online.com/"},
-        {"name": "Pelican Parts 944 Body", "url": "https://www.pelicanparts.com/Porsche/catalog_944.htm"},
-        {"name": "Rennlist 944 Body Forum", "url": "https://rennlist.com/forums/924-931-and-944-951-forum/"}
+        { "name": "944 Online Body/Rust Discussion", "url": "https://www.944online.com/" },
+        { "name": "Pelican Parts 944 Body", "url": "https://www.pelicanparts.com/Porsche/catalog_944.htm" },
+        { "name": "Rennlist 944 Body Forum", "url": "https://rennlist.com/forums/924-931-and-944-951-forum/" }
       ]
     },
     {
@@ -555,16 +433,16 @@
       "interval": "Inspect every 2-3 years, service as needed",
       "laborHours": "4-12 hours shop time",
       "parts": [
-        {"name": "DME Relay", "oem": "92861530120", "aftermarket": "Bosch replacement", "cost": "$30-60"},
-        {"name": "Fuel Pump Relay", "oem": "94461530100", "aftermarket": "Bosch", "cost": "$30-60"},
-        {"name": "Combination Relay", "oem": "Various", "aftermarket": "Bosch, aftermarket", "cost": "$40-80"},
-        {"name": "Ignition Switch", "oem": "94461310501", "aftermarket": "Aftermarket", "cost": "$70-140"},
-        {"name": "Ground Wire Kit", "oem": "Various", "aftermarket": "Custom fabrication", "cost": "$40-100"},
-        {"name": "Alternator (Rebuilt)", "oem": "94460301502", "aftermarket": "Bosch rebuilt", "cost": "$180-350"},
-        {"name": "Starter Motor (Rebuilt)", "oem": "94460401502", "aftermarket": "Bosch rebuilt", "cost": "$150-300"},
-        {"name": "Battery Cable Set", "oem": "Various", "aftermarket": "Custom fabrication", "cost": "$70-140"},
-        {"name": "Odometer Gear Kit (Brass)", "oem": "N/A", "aftermarket": "Various", "cost": "$20-40"},
-        {"name": "Spark Plug Wire Set", "oem": "Various", "aftermarket": "Bosch, NGK", "cost": "$60-120"}
+        { "name": "DME Relay", "oem": "92861530120", "aftermarket": "Bosch replacement", "cost": "$30-60" },
+        { "name": "Fuel Pump Relay", "oem": "94461530100", "aftermarket": "Bosch", "cost": "$30-60" },
+        { "name": "Combination Relay", "oem": "Various", "aftermarket": "Bosch, aftermarket", "cost": "$40-80" },
+        { "name": "Ignition Switch", "oem": "94461310501", "aftermarket": "Aftermarket", "cost": "$70-140" },
+        { "name": "Ground Wire Kit", "oem": "Various", "aftermarket": "Custom fabrication", "cost": "$40-100" },
+        { "name": "Alternator (Rebuilt)", "oem": "94460301502", "aftermarket": "Bosch rebuilt", "cost": "$180-350" },
+        { "name": "Starter Motor (Rebuilt)", "oem": "94460401502", "aftermarket": "Bosch rebuilt", "cost": "$150-300" },
+        { "name": "Battery Cable Set", "oem": "Various", "aftermarket": "Custom fabrication", "cost": "$70-140" },
+        { "name": "Odometer Gear Kit (Brass)", "oem": "N/A", "aftermarket": "Various", "cost": "$20-40" },
+        { "name": "Spark Plug Wire Set", "oem": "Various", "aftermarket": "Bosch, NGK", "cost": "$60-120" }
       ],
       "tools": [
         "Digital multimeter",
@@ -621,9 +499,9 @@
         "Fuel system electrical work requires fire safety precautions."
       ],
       "references": [
-        {"name": "944 Online Electrical", "url": "https://www.944online.com/"},
-        {"name": "Pelican Parts 944 Electrical", "url": "https://www.pelicanparts.com/Porsche/catalog_944.htm"},
-        {"name": "Clark's Garage 944 Electrical", "url": "https://www.clarks-garage.com/"}
+        { "name": "944 Online Electrical", "url": "https://www.944online.com/" },
+        { "name": "Pelican Parts 944 Electrical", "url": "https://www.pelicanparts.com/Porsche/catalog_944.htm" },
+        { "name": "Clark's Garage 944 Electrical", "url": "https://www.clarks-garage.com/" }
       ]
     },
     {
@@ -636,16 +514,16 @@
       "interval": "As needed based on condition",
       "laborHours": "12-28 hours shop time",
       "parts": [
-        {"name": "Dashboard Cover/Cap", "oem": "N/A", "aftermarket": "Various aftermarket", "cost": "$80-200"},
-        {"name": "Dashboard (Used, Uncracked)", "oem": "Various by year", "aftermarket": "N/A - used only", "cost": "$200-500"},
-        {"name": "Seat Cover Kit (Per Seat)", "oem": "Various by color", "aftermarket": "Leatherique, aftermarket", "cost": "$250-600"},
-        {"name": "Carpet Set", "oem": "Various by color", "aftermarket": "Autoloc, aftermarket", "cost": "$300-600"},
-        {"name": "Door Panel Set", "oem": "Various", "aftermarket": "Used or refurbished", "cost": "$200-500"},
-        {"name": "Seat Foam Cushion", "oem": "Various", "aftermarket": "Various", "cost": "$100-250"},
-        {"name": "Door Seal Kit (Complete)", "oem": "Various", "aftermarket": "Aftermarket suppliers", "cost": "$200-450"},
-        {"name": "Shift Boot", "oem": "94442404902", "aftermarket": "Aftermarket leather", "cost": "$40-90"},
-        {"name": "E-Brake Boot", "oem": "94442404502", "aftermarket": "Aftermarket leather", "cost": "$30-60"},
-        {"name": "Sun Visor Set", "oem": "Various", "aftermarket": "Used or refurbished", "cost": "$80-180"}
+        { "name": "Dashboard Cover/Cap", "oem": "N/A", "aftermarket": "Various aftermarket", "cost": "$80-200" },
+        { "name": "Dashboard (Used, Uncracked)", "oem": "Various by year", "aftermarket": "N/A - used only", "cost": "$200-500" },
+        { "name": "Seat Cover Kit (Per Seat)", "oem": "Various by color", "aftermarket": "Leatherique, aftermarket", "cost": "$250-600" },
+        { "name": "Carpet Set", "oem": "Various by color", "aftermarket": "Autoloc, aftermarket", "cost": "$300-600" },
+        { "name": "Door Panel Set", "oem": "Various", "aftermarket": "Used or refurbished", "cost": "$200-500" },
+        { "name": "Seat Foam Cushion", "oem": "Various", "aftermarket": "Various", "cost": "$100-250" },
+        { "name": "Door Seal Kit (Complete)", "oem": "Various", "aftermarket": "Aftermarket suppliers", "cost": "$200-450" },
+        { "name": "Shift Boot", "oem": "94442404902", "aftermarket": "Aftermarket leather", "cost": "$40-90" },
+        { "name": "E-Brake Boot", "oem": "94442404502", "aftermarket": "Aftermarket leather", "cost": "$30-60" },
+        { "name": "Sun Visor Set", "oem": "Various", "aftermarket": "Used or refurbished", "cost": "$80-180" }
       ],
       "tools": [
         "Trim panel removal tools (plastic pry bars)",
@@ -703,9 +581,9 @@
         "Door panel clips will break - don't start without spares on hand."
       ],
       "references": [
-        {"name": "944 Online Interior", "url": "https://www.944online.com/"},
-        {"name": "Pelican Parts 944 Interior", "url": "https://www.pelicanparts.com/Porsche/catalog_944.htm"},
-        {"name": "Rennlist 944 Interior Forum", "url": "https://rennlist.com/forums/924-931-and-944-951-forum/"}
+        { "name": "944 Online Interior", "url": "https://www.944online.com/" },
+        { "name": "Pelican Parts 944 Interior", "url": "https://www.pelicanparts.com/Porsche/catalog_944.htm" },
+        { "name": "Rennlist 944 Interior Forum", "url": "https://rennlist.com/forums/924-931-and-944-951-forum/" }
       ]
     }
   ],
@@ -715,7 +593,11 @@
         "name": "Pelican Parts",
         "url": "https://www.pelicanparts.com/944/944world.htm",
         "notes": "World's largest 944 parts catalog with extensive tech articles and DIY guides.",
-        "specialties": ["Tech Articles", "OE Parts", "944 Experts"],
+        "specialties": [
+          "Tech Articles",
+          "OE Parts",
+          "944 Experts"
+        ],
         "shipping": "Free over $99",
         "featured": true
       },
@@ -723,7 +605,10 @@
         "name": "FCP Euro",
         "url": "https://www.fcpeuro.com/Porsche-parts/944",
         "notes": "Lifetime replacement guarantee on all parts. Great for maintenance items.",
-        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "specialties": [
+          "Lifetime Warranty",
+          "OE Quality"
+        ],
         "shipping": "Free over $49",
         "warranty": "Lifetime"
       },
@@ -731,7 +616,10 @@
         "name": "Suncoast Porsche Parts",
         "url": "https://www.suncoastparts.com/",
         "notes": "Genuine Porsche parts at discounted prices from authorized dealer.",
-        "specialties": ["Genuine Porsche", "Dealer Discount"]
+        "specialties": [
+          "Genuine Porsche",
+          "Dealer Discount"
+        ]
       }
     ],
     "performance": [
@@ -739,20 +627,32 @@
         "name": "Lindsey Racing",
         "url": "https://www.lindseyracing.com/",
         "notes": "944 performance specialists. Track parts, turbo upgrades, and suspension.",
-        "specialties": ["Track Parts", "Turbo", "Suspension"],
+        "specialties": [
+          "Track Parts",
+          "Turbo",
+          "Suspension"
+        ],
         "featured": true
       },
       {
         "name": "LN Engineering",
         "url": "https://lnengineering.com/",
         "notes": "Engine components and IMS solutions. Quality internal engine parts.",
-        "specialties": ["Engine Parts", "IMS", "Quality"]
+        "specialties": [
+          "Engine Parts",
+          "IMS",
+          "Quality"
+        ]
       },
       {
         "name": "Elephant Racing",
         "url": "https://www.elephantracing.com/",
         "notes": "Suspension specialists with excellent 944 coilover kits.",
-        "specialties": ["Suspension", "Coilovers", "Handling"]
+        "specialties": [
+          "Suspension",
+          "Coilovers",
+          "Handling"
+        ]
       }
     ],
     "general": [
@@ -760,13 +660,19 @@
         "name": "Sierra Madre Collection",
         "url": "https://sierramadrecollection.com/",
         "notes": "Complete 944 parts inventory. Quality OE and aftermarket options.",
-        "specialties": ["Large Inventory", "Quality Parts"]
+        "specialties": [
+          "Large Inventory",
+          "Quality Parts"
+        ]
       },
       {
         "name": "Stoddard Porsche Parts",
         "url": "https://www.stoddard.com/watercooled-porsches-924-944-968-and-928/944.html",
         "notes": "944 restoration and maintenance parts from vintage Porsche specialists.",
-        "specialties": ["Restoration", "Vintage Porsche"]
+        "specialties": [
+          "Restoration",
+          "Vintage Porsche"
+        ]
       }
     ],
     "specialty": [
@@ -774,20 +680,30 @@
         "name": "944 Online",
         "url": "https://944online.com/",
         "notes": "944-specific parts specialist. Hard-to-find parts and tools.",
-        "specialties": ["944 Specialist", "Rare Parts", "Tools"],
+        "specialties": [
+          "944 Specialist",
+          "Rare Parts",
+          "Tools"
+        ],
         "featured": true
       },
       {
         "name": "Clarks Garage",
         "url": "https://www.clarks-garage.com/",
         "notes": "944 tech articles and parts. Essential DIY resource.",
-        "specialties": ["Tech Articles", "DIY Resource"]
+        "specialties": [
+          "Tech Articles",
+          "DIY Resource"
+        ]
       },
       {
         "name": "Partsklassik",
         "url": "https://www.partsklassik.com/",
         "notes": "Rebuilt components and exchange parts. Factory-trained mechanic owned.",
-        "specialties": ["Rebuilt Parts", "Exchange"]
+        "specialties": [
+          "Rebuilt Parts",
+          "Exchange"
+        ]
       }
     ],
     "used": [
@@ -795,33 +711,34 @@
         "name": "Rennlist 944 Classifieds",
         "url": "https://rennlist.com/forums/924-931-944-951-968-forum/",
         "notes": "Largest 944 community marketplace.",
-        "specialties": ["944 Community", "Rare Parts"],
+        "specialties": [
+          "944 Community",
+          "Rare Parts"
+        ],
         "featured": true
       },
       {
         "name": "Pelican Parts BBS",
         "url": "https://forums.pelicanparts.com/porsche-924-944-968-technical-forum/",
         "notes": "Active 944 forum with classifieds section.",
-        "specialties": ["Forum", "Tech Support"]
+        "specialties": [
+          "Forum",
+          "Tech Support"
+        ]
       },
       {
         "name": "eBay Motors",
         "url": "https://www.ebay.com/b/Porsche-944/6030/bn_81449780",
         "notes": "Large selection of used, NOS, and reproduction 944 parts.",
-        "specialties": ["NOS Parts", "Wide Selection"]
+        "specialties": [
+          "NOS Parts",
+          "Wide Selection"
+        ]
       }
     ],
     "tools": [
-      {
-        "name": "Clarks Garage Technical",
-        "url": "https://www.clarks-garage.com/",
-        "notes": "Essential 944 shop manual and tech articles"
-      },
-      {
-        "name": "Lindsey Racing Torque Specs",
-        "url": "https://www.lindseyracing.com/LR/Parts/TORQUESPEC.html",
-        "notes": "944 torque specifications reference"
-      }
+      { "name": "Clarks Garage Technical", "url": "https://www.clarks-garage.com/", "notes": "Essential 944 shop manual and tech articles" },
+      { "name": "Lindsey Racing Torque Specs", "url": "https://www.lindseyracing.com/LR/Parts/TORQUESPEC.html", "notes": "944 torque specifications reference" }
     ]
   },
   "torqueSpecs": {
@@ -830,170 +747,44 @@
         "name": "Rennlist 944 Rear Suspension Torques",
         "url": "https://rennlist.com/forums/944-turbo-and-turbo-s-forum/63169-torque-specs-for-rear-suspension.html"
       },
-      {
-        "name": "Clarks-Garage 944 Technical",
-        "url": "https://www.clarks-garage.com/shop-manual/eng-02.htm"
-      },
-      {
-        "name": "Lindsey Racing Torque Specs",
-        "url": "https://www.lindseyracing.com/LR/Parts/TORQUESPEC.html"
-      }
+      { "name": "Clarks-Garage 944 Technical", "url": "https://www.clarks-garage.com/shop-manual/eng-02.htm" },
+      { "name": "Lindsey Racing Torque Specs", "url": "https://www.lindseyracing.com/LR/Parts/TORQUESPEC.html" }
     ],
     "engine": [
-      {
-        "component": "Cylinder Head Bolts",
-        "spec": "48 ft-lbs (65 Nm) + 90°",
-        "notes": "New bolts required, cold engine"
-      },
-      {
-        "component": "Crankshaft Front Bolt (M16)",
-        "spec": "160 ft-lbs (217 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Timing Belt Tensioner",
-        "spec": "33 ft-lbs (45 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Balance Shaft Belt Tensioner",
-        "spec": "15 ft-lbs (20 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Camshaft Bearing to Head (M8)",
-        "spec": "15 ft-lbs (20 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Camshaft Housing to Head (Turbo)",
-        "spec": "15 ft-lbs (20 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Knock Sensor (pre-88)",
-        "spec": "7 ft-lbs (9 Nm)",
-        "notes": "From 88: 15 ft-lbs (20 Nm)"
-      },
-      {
-        "component": "Spark Plugs",
-        "spec": "22 ft-lbs (30 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Oil Drain Plug",
-        "spec": "22 ft-lbs (30 Nm)",
-        "notes": "Replace washer"
-      },
-      {
-        "component": "Upper Motor Mount Bolts (8mm)",
-        "spec": "17 ft-lbs (23 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Lower Motor Mount Bolts",
-        "spec": "32 ft-lbs (43 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Cross-Member Mounting Bolts (12mm)",
-        "spec": "63 ft-lbs (85 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Torque Tube to Clutch Housing (M10)",
-        "spec": "30 ft-lbs (42 Nm)",
-        "notes": ""
-      }
+      { "component": "Cylinder Head Bolts", "spec": "48 ft-lbs (65 Nm) + 90°", "notes": "New bolts required, cold engine" },
+      { "component": "Crankshaft Front Bolt (M16)", "spec": "160 ft-lbs (217 Nm)", "notes": "" },
+      { "component": "Timing Belt Tensioner", "spec": "33 ft-lbs (45 Nm)", "notes": "" },
+      { "component": "Balance Shaft Belt Tensioner", "spec": "15 ft-lbs (20 Nm)", "notes": "" },
+      { "component": "Camshaft Bearing to Head (M8)", "spec": "15 ft-lbs (20 Nm)", "notes": "" },
+      { "component": "Camshaft Housing to Head (Turbo)", "spec": "15 ft-lbs (20 Nm)", "notes": "" },
+      { "component": "Knock Sensor (pre-88)", "spec": "7 ft-lbs (9 Nm)", "notes": "From 88: 15 ft-lbs (20 Nm)" },
+      { "component": "Spark Plugs", "spec": "22 ft-lbs (30 Nm)", "notes": "" },
+      { "component": "Oil Drain Plug", "spec": "22 ft-lbs (30 Nm)", "notes": "Replace washer" },
+      { "component": "Upper Motor Mount Bolts (8mm)", "spec": "17 ft-lbs (23 Nm)", "notes": "" },
+      { "component": "Lower Motor Mount Bolts", "spec": "32 ft-lbs (43 Nm)", "notes": "" },
+      { "component": "Cross-Member Mounting Bolts (12mm)", "spec": "63 ft-lbs (85 Nm)", "notes": "" },
+      { "component": "Torque Tube to Clutch Housing (M10)", "spec": "30 ft-lbs (42 Nm)", "notes": "" }
     ],
     "suspension": [
-      {
-        "component": "Wheel Lug Bolts",
-        "spec": "96 ft-lbs (130 Nm)",
-        "notes": "Tighten in star pattern"
-      },
-      {
-        "component": "Front Control Arm Lock Nut (12mm)",
-        "spec": "48 ft-lbs (65 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Front Control Arm Bracket Bolts (10mm)",
-        "spec": "34 ft-lbs (46 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Steering Knuckle Lock Nut (10mm)",
-        "spec": "37 ft-lbs (50 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Front Stabilizer to Control Arm (10mm)",
-        "spec": "18 ft-lbs (24 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Front Stabilizer Bracket (8mm)",
-        "spec": "17 ft-lbs (23 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Bearing Flange to Cross Tube",
-        "spec": "34 ft-lbs (46 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Bearing Flange to Body",
-        "spec": "52 ft-lbs (70 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Trailing Arm to Axle Strut",
-        "spec": "66 ft-lbs (90 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Trailing Arm to Cross Tube",
-        "spec": "45 ft-lbs (61 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Shock to Body",
-        "spec": "45 ft-lbs (61 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Shock to Trailing Arm",
-        "spec": "90 ft-lbs (123 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Wheel Hub (Steel Arm)",
-        "spec": "280-332 ft-lbs (380-450 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Wheel Hub (Aluminum Arm)",
-        "spec": "340 ft-lbs (460 Nm)",
-        "notes": ""
-      }
+      { "component": "Wheel Lug Bolts", "spec": "96 ft-lbs (130 Nm)", "notes": "Tighten in star pattern" },
+      { "component": "Front Control Arm Lock Nut (12mm)", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
+      { "component": "Front Control Arm Bracket Bolts (10mm)", "spec": "34 ft-lbs (46 Nm)", "notes": "" },
+      { "component": "Steering Knuckle Lock Nut (10mm)", "spec": "37 ft-lbs (50 Nm)", "notes": "" },
+      { "component": "Front Stabilizer to Control Arm (10mm)", "spec": "18 ft-lbs (24 Nm)", "notes": "" },
+      { "component": "Front Stabilizer Bracket (8mm)", "spec": "17 ft-lbs (23 Nm)", "notes": "" },
+      { "component": "Rear Bearing Flange to Cross Tube", "spec": "34 ft-lbs (46 Nm)", "notes": "" },
+      { "component": "Rear Bearing Flange to Body", "spec": "52 ft-lbs (70 Nm)", "notes": "" },
+      { "component": "Rear Trailing Arm to Axle Strut", "spec": "66 ft-lbs (90 Nm)", "notes": "" },
+      { "component": "Rear Trailing Arm to Cross Tube", "spec": "45 ft-lbs (61 Nm)", "notes": "" },
+      { "component": "Rear Shock to Body", "spec": "45 ft-lbs (61 Nm)", "notes": "" },
+      { "component": "Rear Shock to Trailing Arm", "spec": "90 ft-lbs (123 Nm)", "notes": "" },
+      { "component": "Rear Wheel Hub (Steel Arm)", "spec": "280-332 ft-lbs (380-450 Nm)", "notes": "" },
+      { "component": "Rear Wheel Hub (Aluminum Arm)", "spec": "340 ft-lbs (460 Nm)", "notes": "" }
     ],
     "brakes": [
-      {
-        "component": "Caliper Bolts",
-        "spec": "63 ft-lbs (85 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Brake Back Plate to Trailing Arm",
-        "spec": "43 ft-lbs (52 Nm)",
-        "notes": "Steel trailing arm only"
-      },
-      {
-        "component": "Brake Line Fittings",
-        "spec": "11 ft-lbs (15 Nm)",
-        "notes": "Do not overtighten"
-      }
+      { "component": "Caliper Bolts", "spec": "63 ft-lbs (85 Nm)", "notes": "" },
+      { "component": "Brake Back Plate to Trailing Arm", "spec": "43 ft-lbs (52 Nm)", "notes": "Steel trailing arm only" },
+      { "component": "Brake Line Fittings", "spec": "11 ft-lbs (15 Nm)", "notes": "Do not overtighten" }
     ]
   },
   "diyGuides": [
@@ -1239,11 +1030,7 @@
             "detail": "Test all gears including reverse. Listen for grinding or difficulty engaging.",
             "costIfBad": "$2,000-4,000 for rebuild"
           },
-          {
-            "check": "CV Boots",
-            "detail": "Inspect rear CV boots for cracks or tears. Grease loss leads to CV joint failure.",
-            "costIfBad": "$300-600"
-          }
+          { "check": "CV Boots", "detail": "Inspect rear CV boots for cracks or tears. Grease loss leads to CV joint failure.", "costIfBad": "$300-600" }
         ]
       },
       {
@@ -1259,11 +1046,7 @@
             "detail": "Semi-trailing arm rear suspension has large bushings that wear over time.",
             "costIfBad": "$300-500"
           },
-          {
-            "check": "Tie Rods",
-            "detail": "Check for play in the steering. Worn tie rods cause wander and uneven tire wear.",
-            "costIfBad": "$150-300"
-          },
+          { "check": "Tie Rods", "detail": "Check for play in the steering. Worn tie rods cause wander and uneven tire wear.", "costIfBad": "$150-300" },
           {
             "check": "Struts/Shocks",
             "detail": "Bounce each corner - should settle in one bounce. Original units are long past due.",
@@ -1294,36 +1077,20 @@
             "detail": "Check rocker panels, floor pans, battery box, and around the windshield. Earlier cars rust more.",
             "costIfBad": "$500-3,000+ depending on severity"
           },
-          {
-            "check": "Sunroof Operation",
-            "detail": "Power sunroof motors and cables can fail. Test operation and check for leaks.",
-            "costIfBad": "$300-600"
-          }
+          { "check": "Sunroof Operation", "detail": "Power sunroof motors and cables can fail. Test operation and check for leaks.", "costIfBad": "$300-600" }
         ]
       },
       {
         "category": "Electrical",
         "items": [
-          {
-            "check": "DME Relay",
-            "detail": "Common failure point causing no-start conditions. Simple and cheap to replace.",
-            "costIfBad": "$30-60"
-          },
+          { "check": "DME Relay", "detail": "Common failure point causing no-start conditions. Simple and cheap to replace.", "costIfBad": "$30-60" },
           {
             "check": "Wiring Condition",
             "detail": "Check for brittle insulation, especially in the engine bay and around the battery.",
             "costIfBad": "$200-800"
           },
-          {
-            "check": "Instrument Cluster",
-            "detail": "Check that all gauges and warning lights function properly.",
-            "costIfBad": "$200-500"
-          },
-          {
-            "check": "Power Windows",
-            "detail": "Window regulators and motors can fail. Test all windows.",
-            "costIfBad": "$200-400 each"
-          }
+          { "check": "Instrument Cluster", "detail": "Check that all gauges and warning lights function properly.", "costIfBad": "$200-500" },
+          { "check": "Power Windows", "detail": "Window regulators and motors can fail. Test all windows.", "costIfBad": "$200-400 each" }
         ]
       }
     ],
@@ -1388,21 +1155,13 @@
   },
   "communityResources": {
     "youtube": [
-      {
-        "name": "NC944er",
-        "url": "https://www.youtube.com/@NC944er",
-        "description": "Amazing 944 DIY tutorials with professional quality"
-      },
+      { "name": "NC944er", "url": "https://www.youtube.com/@NC944er", "description": "Amazing 944 DIY tutorials with professional quality" },
       {
         "name": "European AutoCraft Studios",
         "url": "https://www.youtube.com/@EuropeanAutoCraftStudios",
         "description": "944 Turbo rebuild series and tech content"
       },
-      {
-        "name": "Channel P101tv",
-        "url": "https://www.youtube.com/@P101tv",
-        "description": "Independent Porsche channel with 944 content"
-      }
+      { "name": "Channel P101tv", "url": "https://www.youtube.com/@P101tv", "description": "Independent Porsche channel with 944 content" }
     ],
     "forums": [
       {
@@ -1415,45 +1174,17 @@
         "url": "https://forums.pelicanparts.com/porsche-924-944-968-technical-forum/",
         "description": "Technical forum for water-cooled Porsches"
       },
-      {
-        "name": "TIPEC 944 Forum",
-        "url": "https://forums.tipec.net/viewforum.php?f=25",
-        "description": "Porsche Enthusiasts Club 944 section"
-      },
-      {
-        "name": "944 Spec Forum",
-        "url": "https://community.drivenasa.com/forum/30-944-spec/",
-        "description": "Racing-focused 944 community"
-      }
+      { "name": "TIPEC 944 Forum", "url": "https://forums.tipec.net/viewforum.php?f=25", "description": "Porsche Enthusiasts Club 944 section" },
+      { "name": "944 Spec Forum", "url": "https://community.drivenasa.com/forum/30-944-spec/", "description": "Racing-focused 944 community" }
     ],
     "facebook": [
-      {
-        "name": "No Snob Porsche 944 Squad",
-        "url": "https://www.facebook.com/groups/944squad",
-        "description": "Welcoming 944 community for all enthusiasts"
-      },
-      {
-        "name": "Porsche 944 Turbo",
-        "url": "https://www.facebook.com/groups/porsche944turbo",
-        "description": "Dedicated 944 Turbo discussion"
-      },
-      {
-        "name": "Edredas Porsche 944 Group",
-        "url": "https://www.facebook.com/groups/edredas944",
-        "description": "DIY-focused 944 community"
-      }
+      { "name": "No Snob Porsche 944 Squad", "url": "https://www.facebook.com/groups/944squad", "description": "Welcoming 944 community for all enthusiasts" },
+      { "name": "Porsche 944 Turbo", "url": "https://www.facebook.com/groups/porsche944turbo", "description": "Dedicated 944 Turbo discussion" },
+      { "name": "Edredas Porsche 944 Group", "url": "https://www.facebook.com/groups/edredas944", "description": "DIY-focused 944 community" }
     ],
     "websites": [
-      {
-        "name": "944Online",
-        "url": "https://www.944online.com/",
-        "description": "944 parts and restoration resources"
-      },
-      {
-        "name": "Porsche Cars History",
-        "url": "https://porschecarshistory.com/",
-        "description": "944 magazine articles and history"
-      }
+      { "name": "944Online", "url": "https://www.944online.com/", "description": "944 parts and restoration resources" },
+      { "name": "Porsche Cars History", "url": "https://porschecarshistory.com/", "description": "944 magazine articles and history" }
     ]
   }
 }

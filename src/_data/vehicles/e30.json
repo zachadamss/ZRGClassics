@@ -23,14 +23,8 @@
         "Always replace the front crankshaft seal during service"
       ],
       "sources": [
-        {
-          "name": "R3VLimited",
-          "url": "https://www.r3vlimited.com/"
-        },
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        }
+        { "name": "R3VLimited", "url": "https://www.r3vlimited.com/" },
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" }
       ],
       "repairCosts": {
         "diy": "$150-300",
@@ -38,26 +32,10 @@
         "notes": "Critical maintenance. Replace water pump at same time."
       },
       "parts": [
-        {
-          "name": "Timing Belt (M20)",
-          "partNumber": "11311711081",
-          "price": "$30-50"
-        },
-        {
-          "name": "Timing Belt (M42)",
-          "partNumber": "11311714670",
-          "price": "$25-45"
-        },
-        {
-          "name": "Tensioner",
-          "partNumber": "11311308652",
-          "price": "$40-70"
-        },
-        {
-          "name": "Water Pump",
-          "partNumber": "11519070755",
-          "price": "$50-80"
-        }
+        { "name": "Timing Belt (M20)", "partNumber": "11311711081", "price": "$30-50" },
+        { "name": "Timing Belt (M42)", "partNumber": "11311714670", "price": "$25-45" },
+        { "name": "Tensioner", "partNumber": "11311308652", "price": "$40-70" },
+        { "name": "Water Pump", "partNumber": "11519070755", "price": "$50-80" }
       ],
       "relatedIssues": [
         { "vehicle": "e28", "brand": "BMW", "model": "E28", "issueId": "timing-belt" },
@@ -80,14 +58,8 @@
         "Keep drain holes clear to prevent water accumulation"
       ],
       "sources": [
-        {
-          "name": "R3VLimited",
-          "url": "https://www.r3vlimited.com/"
-        },
-        {
-          "name": "E30Zone",
-          "url": "https://www.e30zone.net/"
-        }
+        { "name": "R3VLimited", "url": "https://www.r3vlimited.com/" },
+        { "name": "E30Zone", "url": "https://www.e30zone.net/" }
       ],
       "repairCosts": {
         "diy": "$200-1000",
@@ -95,26 +67,10 @@
         "notes": "Cost varies widely by extent. Fenders and floors most common."
       },
       "parts": [
-        {
-          "name": "Fender (Reproduction)",
-          "partNumber": "Various",
-          "price": "$150-300"
-        },
-        {
-          "name": "Rocker Panel",
-          "partNumber": "Various",
-          "price": "$100-200"
-        },
-        {
-          "name": "Battery Box Repair Panel",
-          "partNumber": "41111945025",
-          "price": "$80-150"
-        },
-        {
-          "name": "POR-15 Rust Treatment Kit",
-          "partNumber": "N/A",
-          "price": "$50-100"
-        }
+        { "name": "Fender (Reproduction)", "partNumber": "Various", "price": "$150-300" },
+        { "name": "Rocker Panel", "partNumber": "Various", "price": "$100-200" },
+        { "name": "Battery Box Repair Panel", "partNumber": "41111945025", "price": "$80-150" },
+        { "name": "POR-15 Rust Treatment Kit", "partNumber": "N/A", "price": "$50-100" }
       ],
       "difficulty": "Advanced"
     },
@@ -131,14 +87,8 @@
         "Replace worn window/sunroof switches"
       ],
       "sources": [
-        {
-          "name": "E30Zone",
-          "url": "https://www.e30zone.net/"
-        },
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        }
+        { "name": "E30Zone", "url": "https://www.e30zone.net/" },
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" }
       ],
       "repairCosts": {
         "diy": "$50-200",
@@ -146,26 +96,10 @@
         "notes": "Often ground connection issues. Check grounds first."
       },
       "parts": [
-        {
-          "name": "Combination Relay",
-          "partNumber": "12631709557",
-          "price": "$40-70"
-        },
-        {
-          "name": "Fuel Pump Relay",
-          "partNumber": "12631735424",
-          "price": "$25-45"
-        },
-        {
-          "name": "Ground Strap Kit",
-          "partNumber": "Various",
-          "price": "$20-40"
-        },
-        {
-          "name": "Ignition Switch",
-          "partNumber": "61321377135",
-          "price": "$50-90"
-        }
+        { "name": "Combination Relay", "partNumber": "12631709557", "price": "$40-70" },
+        { "name": "Fuel Pump Relay", "partNumber": "12631735424", "price": "$25-45" },
+        { "name": "Ground Strap Kit", "partNumber": "Various", "price": "$20-40" },
+        { "name": "Ignition Switch", "partNumber": "61321377135", "price": "$50-90" }
       ],
       "difficulty": "Moderate"
     },
@@ -182,14 +116,8 @@
         "Don't forget sway bar bushings and end links"
       ],
       "sources": [
-        {
-          "name": "R3VLimited",
-          "url": "https://www.r3vlimited.com/"
-        },
-        {
-          "name": "Ireland Engineering",
-          "url": "https://www.iemotorsport.com/"
-        }
+        { "name": "R3VLimited", "url": "https://www.r3vlimited.com/" },
+        { "name": "Ireland Engineering", "url": "https://www.iemotorsport.com/" }
       ],
       "repairCosts": {
         "diy": "$200-400",
@@ -197,26 +125,10 @@
         "notes": "Full refresh transforms handling. Common on 30+ year old cars."
       },
       "parts": [
-        {
-          "name": "Control Arm Bushing Set",
-          "partNumber": "31129058817",
-          "price": "$40-80"
-        },
-        {
-          "name": "Subframe Bushing",
-          "partNumber": "33311128437",
-          "price": "$30-50 each"
-        },
-        {
-          "name": "Strut Mount",
-          "partNumber": "31331139438",
-          "price": "$30-60"
-        },
-        {
-          "name": "Tie Rod End",
-          "partNumber": "32111125186",
-          "price": "$25-45"
-        }
+        { "name": "Control Arm Bushing Set", "partNumber": "31129058817", "price": "$40-80" },
+        { "name": "Subframe Bushing", "partNumber": "33311128437", "price": "$30-50 each" },
+        { "name": "Strut Mount", "partNumber": "31331139438", "price": "$30-60" },
+        { "name": "Tie Rod End", "partNumber": "32111125186", "price": "$25-45" }
       ],
       "difficulty": "Advanced"
     },
@@ -234,14 +146,8 @@
         "Replace fuel filter and check fuel pump pressure"
       ],
       "sources": [
-        {
-          "name": "Bimmerforums",
-          "url": "https://www.bimmerforums.com/forum/"
-        },
-        {
-          "name": "BMW CCA",
-          "url": "https://www.bmwcca.org/"
-        }
+        { "name": "Bimmerforums", "url": "https://www.bimmerforums.com/forum/" },
+        { "name": "BMW CCA", "url": "https://www.bmwcca.org/" }
       ],
       "repairCosts": {
         "diy": "$100-400",
@@ -249,26 +155,10 @@
         "notes": "Motronic systems need proper diagnosis. AFM common failure."
       },
       "parts": [
-        {
-          "name": "Air Flow Meter (AFM)",
-          "partNumber": "13621286615",
-          "price": "$150-300"
-        },
-        {
-          "name": "Fuel Injector (each)",
-          "partNumber": "13641730060",
-          "price": "$40-80"
-        },
-        {
-          "name": "Fuel Pressure Regulator",
-          "partNumber": "13531715685",
-          "price": "$80-150"
-        },
-        {
-          "name": "Cold Start Valve",
-          "partNumber": "13411286064",
-          "price": "$60-100"
-        }
+        { "name": "Air Flow Meter (AFM)", "partNumber": "13621286615", "price": "$150-300" },
+        { "name": "Fuel Injector (each)", "partNumber": "13641730060", "price": "$40-80" },
+        { "name": "Fuel Pressure Regulator", "partNumber": "13531715685", "price": "$80-150" },
+        { "name": "Cold Start Valve", "partNumber": "13411286064", "price": "$60-100" }
       ],
       "difficulty": "Moderate"
     },
@@ -285,14 +175,8 @@
         "Replace heater core if leaking (labor-intensive job)"
       ],
       "sources": [
-        {
-          "name": "R3VLimited",
-          "url": "https://www.r3vlimited.com/"
-        },
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        }
+        { "name": "R3VLimited", "url": "https://www.r3vlimited.com/" },
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" }
       ],
       "repairCosts": {
         "diy": "$150-300",
@@ -300,26 +184,10 @@
         "notes": "Replace all hoses and thermostat during water pump service."
       },
       "parts": [
-        {
-          "name": "Water Pump (M20)",
-          "partNumber": "11519070755",
-          "price": "$50-80"
-        },
-        {
-          "name": "Thermostat",
-          "partNumber": "11531266763",
-          "price": "$20-35"
-        },
-        {
-          "name": "Radiator (Manual)",
-          "partNumber": "17111712447",
-          "price": "$120-200"
-        },
-        {
-          "name": "Coolant Hose Kit",
-          "partNumber": "Various",
-          "price": "$80-150"
-        }
+        { "name": "Water Pump (M20)", "partNumber": "11519070755", "price": "$50-80" },
+        { "name": "Thermostat", "partNumber": "11531266763", "price": "$20-35" },
+        { "name": "Radiator (Manual)", "partNumber": "17111712447", "price": "$120-200" },
+        { "name": "Coolant Hose Kit", "partNumber": "Various", "price": "$80-150" }
       ],
       "difficulty": "Advanced"
     }
@@ -638,7 +506,10 @@
         "name": "FCP Euro",
         "url": "https://www.fcpeuro.com/BMW-parts",
         "notes": "Industry-leading lifetime replacement guarantee on all parts. Excellent E30 coverage with OE and OEM options.",
-        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "specialties": [
+          "Lifetime Warranty",
+          "OE Quality"
+        ],
         "shipping": "Free over $49",
         "warranty": "Lifetime",
         "featured": true
@@ -647,20 +518,29 @@
         "name": "BMW Parts Direct",
         "url": "https://www.bmwpartsdirect.com/",
         "notes": "Genuine BMW OEM parts direct from authorized dealers at discounted prices.",
-        "specialties": ["Genuine BMW", "Dealer Direct"]
+        "specialties": [
+          "Genuine BMW",
+          "Dealer Direct"
+        ]
       },
       {
         "name": "Pelican Parts",
         "url": "https://www.pelicanparts.com/BMW/catalog/3-Series_Main.htm",
         "notes": "Huge E30 catalog with OEM, OE, and quality aftermarket. Excellent DIY tech articles.",
-        "specialties": ["Tech Articles", "OE Parts"],
+        "specialties": [
+          "Tech Articles",
+          "OE Parts"
+        ],
         "shipping": "Free over $99"
       },
       {
         "name": "BavAuto",
         "url": "https://www.bavauto.com/",
         "notes": "Quality OE and OEM BMW parts. Good prices on Genuine and equivalent parts.",
-        "specialties": ["OE Equivalent", "Good Prices"]
+        "specialties": [
+          "OE Equivalent",
+          "Good Prices"
+        ]
       }
     ],
     "performance": [
@@ -668,26 +548,42 @@
         "name": "Ireland Engineering",
         "url": "https://www.iemotorsport.com/",
         "notes": "The original E30 performance specialists since 1979. Suspension, engine, and chassis upgrades.",
-        "specialties": ["Suspension", "Engine", "E30 Experts"],
+        "specialties": [
+          "Suspension",
+          "Engine",
+          "E30 Experts"
+        ],
         "featured": true
       },
       {
         "name": "Turner Motorsport",
         "url": "https://www.turnermotorsport.com/BMW-E30-Parts",
         "notes": "Race-proven performance parts. Custom E30 M20/24V intakes and suspension components.",
-        "specialties": ["Race Parts", "Intakes", "Suspension"]
+        "specialties": [
+          "Race Parts",
+          "Intakes",
+          "Suspension"
+        ]
       },
       {
         "name": "Condor Speed Shop",
         "url": "https://www.condorspeedshop.com/",
         "notes": "E30 specialists with unique restoration and performance parts. Excellent steering racks.",
-        "specialties": ["E30 Only", "Steering", "Restoration"]
+        "specialties": [
+          "E30 Only",
+          "Steering",
+          "Restoration"
+        ]
       },
       {
         "name": "Garagistic",
         "url": "https://www.garagistic.com/",
         "notes": "E30-focused performance and restoration parts. Quality engine mounts and chassis components.",
-        "specialties": ["Engine Mounts", "Chassis", "Restoration"]
+        "specialties": [
+          "Engine Mounts",
+          "Chassis",
+          "Restoration"
+        ]
       }
     ],
     "general": [
@@ -695,20 +591,29 @@
         "name": "ECS Tuning",
         "url": "https://www.ecstuning.com/BMW-E30/",
         "notes": "Wide selection of maintenance and upgrade parts. Now owns Turner and Pelican.",
-        "specialties": ["Large Inventory", "Fast Shipping"],
+        "specialties": [
+          "Large Inventory",
+          "Fast Shipping"
+        ],
         "shipping": "Free over $49"
       },
       {
         "name": "BimmerWorld",
         "url": "https://www.bimmerworld.com/BMW-Parts/E30-1984-1991/",
         "notes": "BMW parts specialist with racing pedigree. Good selection of maintenance items.",
-        "specialties": ["Maintenance", "Quality Parts"]
+        "specialties": [
+          "Maintenance",
+          "Quality Parts"
+        ]
       },
       {
         "name": "AutohausAZ",
         "url": "https://www.autohausaz.com/",
         "notes": "Competitive prices on name brand parts. Good for bulk maintenance items.",
-        "specialties": ["Good Prices", "Name Brands"],
+        "specialties": [
+          "Good Prices",
+          "Name Brands"
+        ],
         "shipping": "Free over $50"
       }
     ],
@@ -717,20 +622,29 @@
         "name": "Guten Parts",
         "url": "https://www.gutenparts.com/",
         "notes": "E30 community favorite run by enthusiasts. Specializes in hard-to-find and rare parts.",
-        "specialties": ["Rare Parts", "Community Owned"],
+        "specialties": [
+          "Rare Parts",
+          "Community Owned"
+        ],
         "featured": true
       },
       {
         "name": "Blunt Tech",
         "url": "https://blunttech.com/",
         "notes": "Mom & pop E30 specialist known in the community. Call for hard-to-find items.",
-        "specialties": ["E30 Specialist", "Personal Service"]
+        "specialties": [
+          "E30 Specialist",
+          "Personal Service"
+        ]
       },
       {
         "name": "Bavarian Autosport",
         "url": "https://www.bavauto.com/",
         "notes": "Long-standing BMW specialist with excellent E30 knowledge and parts selection.",
-        "specialties": ["BMW Specialist", "Tech Support"]
+        "specialties": [
+          "BMW Specialist",
+          "Tech Support"
+        ]
       }
     ],
     "used": [
@@ -738,26 +652,38 @@
         "name": "R3VLimited Classifieds",
         "url": "https://www.r3vlimited.com/board/forumdisplay.php?f=3",
         "notes": "The largest E30 community marketplace. Best place for used and rare E30 parts.",
-        "specialties": ["E30 Community", "Rare Parts"],
+        "specialties": [
+          "E30 Community",
+          "Rare Parts"
+        ],
         "featured": true
       },
       {
         "name": "E30 Zone Classifieds",
         "url": "https://www.e30zone.net/forum/for-sale/",
         "notes": "UK-based E30 community marketplace. Good for European-spec parts.",
-        "specialties": ["UK/Euro Parts", "Community"]
+        "specialties": [
+          "UK/Euro Parts",
+          "Community"
+        ]
       },
       {
         "name": "eBay Motors",
         "url": "https://www.ebay.com/b/BMW-E30/6030/bn_79664762",
         "notes": "Large selection of used, NOS, and reproduction E30 parts.",
-        "specialties": ["NOS Parts", "Wide Selection"]
+        "specialties": [
+          "NOS Parts",
+          "Wide Selection"
+        ]
       },
       {
         "name": "Car-Part.com",
         "url": "https://www.car-part.com/",
         "notes": "Search salvage yard inventory nationwide. Great for body panels and interior parts.",
-        "specialties": ["Salvage Yards", "Body Parts"]
+        "specialties": [
+          "Salvage Yards",
+          "Body Parts"
+        ]
       }
     ],
     "tools": [
@@ -766,32 +692,15 @@
         "url": "https://www.realoem.com/bmw/enUS/select?product=P&archive=0&series=E30",
         "notes": "Free BMW parts diagrams and part number lookup"
       },
-      {
-        "name": "BMW Parts Price Comparison",
-        "url": "https://www.bmwpnpc.com/",
-        "notes": "Compare prices across multiple BMW parts vendors"
-      },
-      {
-        "name": "E30 Zone Wiki",
-        "url": "https://www.e30zone.net/e30wiki/",
-        "notes": "Comprehensive E30 technical wiki with part numbers and specs"
-      }
+      { "name": "BMW Parts Price Comparison", "url": "https://www.bmwpnpc.com/", "notes": "Compare prices across multiple BMW parts vendors" },
+      { "name": "E30 Zone Wiki", "url": "https://www.e30zone.net/e30wiki/", "notes": "Comprehensive E30 technical wiki with part numbers and specs" }
     ]
   },
   "torqueSpecs": {
     "sources": [
-      {
-        "name": "Garagistic E30 Torque Guide",
-        "url": "https://www.garagistic.com/pages/bmw-e30-bolt-torque-values"
-      },
-      {
-        "name": "E30 Zone Wiki",
-        "url": "https://www.e30zone.net/e30wiki/index.php/Torque_Settings"
-      },
-      {
-        "name": "RTS Auto E30 Specs",
-        "url": "https://www.rtsauto.com/e30-torque-specs-and-technical-specifications/"
-      }
+      { "name": "Garagistic E30 Torque Guide", "url": "https://www.garagistic.com/pages/bmw-e30-bolt-torque-values" },
+      { "name": "E30 Zone Wiki", "url": "https://www.e30zone.net/e30wiki/index.php/Torque_Settings" },
+      { "name": "RTS Auto E30 Specs", "url": "https://www.rtsauto.com/e30-torque-specs-and-technical-specifications/" }
     ],
     "engine": [
       {
@@ -799,140 +708,36 @@
         "spec": "44 ft-lbs (60 Nm) + 90°",
         "notes": "Torque-to-yield, replace each use. Wait 15 min between stages."
       },
-      {
-        "component": "Cylinder Head Bolts (M20 Torx)",
-        "spec": "22 ft-lbs (30 Nm) + 90° + 90°",
-        "notes": "Torque-to-yield, replace each use"
-      },
-      {
-        "component": "Main Bearing Caps",
-        "spec": "44 ft-lbs (60 Nm)",
-        "notes": "All engines except M40"
-      },
-      {
-        "component": "Connecting Rod Bolts (M20)",
-        "spec": "15 ft-lbs (20 Nm) + 70°",
-        "notes": "Angle-tighten method"
-      },
-      {
-        "component": "Flywheel Bolts (Manual)",
-        "spec": "77 ft-lbs (105 Nm)",
-        "notes": "Use new bolts, apply Loctite"
-      },
-      {
-        "component": "Flywheel Bolts (Auto)",
-        "spec": "88 ft-lbs (120 Nm)",
-        "notes": "Use new bolts"
-      },
-      {
-        "component": "Spark Plugs",
-        "spec": "22-24 ft-lbs (30-33 Nm)",
-        "notes": "Non-M10 engines"
-      },
-      {
-        "component": "Valve Cover Nuts",
-        "spec": "7 ft-lbs (9-11 Nm)",
-        "notes": "Do not overtighten"
-      },
-      {
-        "component": "Oil Drain Plug (M12)",
-        "spec": "18 ft-lbs (25 Nm)",
-        "notes": "Replace crush washer"
-      },
-      {
-        "component": "Oil Pump Bolts",
-        "spec": "16 ft-lbs (22 Nm)",
-        "notes": "Except M40 engine"
-      },
-      {
-        "component": "Exhaust Manifold Nuts",
-        "spec": "16-18 ft-lbs (22-25 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Intake Manifold Bolts",
-        "spec": "22-24 ft-lbs (30-33 Nm)",
-        "notes": "Per Bentley manual"
-      }
+      { "component": "Cylinder Head Bolts (M20 Torx)", "spec": "22 ft-lbs (30 Nm) + 90° + 90°", "notes": "Torque-to-yield, replace each use" },
+      { "component": "Main Bearing Caps", "spec": "44 ft-lbs (60 Nm)", "notes": "All engines except M40" },
+      { "component": "Connecting Rod Bolts (M20)", "spec": "15 ft-lbs (20 Nm) + 70°", "notes": "Angle-tighten method" },
+      { "component": "Flywheel Bolts (Manual)", "spec": "77 ft-lbs (105 Nm)", "notes": "Use new bolts, apply Loctite" },
+      { "component": "Flywheel Bolts (Auto)", "spec": "88 ft-lbs (120 Nm)", "notes": "Use new bolts" },
+      { "component": "Spark Plugs", "spec": "22-24 ft-lbs (30-33 Nm)", "notes": "Non-M10 engines" },
+      { "component": "Valve Cover Nuts", "spec": "7 ft-lbs (9-11 Nm)", "notes": "Do not overtighten" },
+      { "component": "Oil Drain Plug (M12)", "spec": "18 ft-lbs (25 Nm)", "notes": "Replace crush washer" },
+      { "component": "Oil Pump Bolts", "spec": "16 ft-lbs (22 Nm)", "notes": "Except M40 engine" },
+      { "component": "Exhaust Manifold Nuts", "spec": "16-18 ft-lbs (22-25 Nm)", "notes": "" },
+      { "component": "Intake Manifold Bolts", "spec": "22-24 ft-lbs (30-33 Nm)", "notes": "Per Bentley manual" }
     ],
     "suspension": [
-      {
-        "component": "Front Strut Top Nut",
-        "spec": "48 ft-lbs (65 Nm)",
-        "notes": "External hex type"
-      },
-      {
-        "component": "Front Control Arm Outer (Ball Joint)",
-        "spec": "47 ft-lbs (64 Nm)",
-        "notes": "Use new self-locking nut"
-      },
-      {
-        "component": "Front Control Arm Inner (to Subframe)",
-        "spec": "61 ft-lbs (83 Nm)",
-        "notes": "Use new self-locking nut"
-      },
-      {
-        "component": "Control Arm Bracket to Body",
-        "spec": "30 ft-lbs (41 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Sway Bar End Links",
-        "spec": "30 ft-lbs (41 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Wheel Lug Bolts",
-        "spec": "74-80 ft-lbs (100 Nm)",
-        "notes": "Tighten in star pattern"
-      },
-      {
-        "component": "Front Hub Nut",
-        "spec": "214 ft-lbs (290 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Hub Nut",
-        "spec": "184 ft-lbs (249 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Steering Wheel Nut",
-        "spec": "58 ft-lbs (79 Nm)",
-        "notes": ""
-      }
+      { "component": "Front Strut Top Nut", "spec": "48 ft-lbs (65 Nm)", "notes": "External hex type" },
+      { "component": "Front Control Arm Outer (Ball Joint)", "spec": "47 ft-lbs (64 Nm)", "notes": "Use new self-locking nut" },
+      { "component": "Front Control Arm Inner (to Subframe)", "spec": "61 ft-lbs (83 Nm)", "notes": "Use new self-locking nut" },
+      { "component": "Control Arm Bracket to Body", "spec": "30 ft-lbs (41 Nm)", "notes": "" },
+      { "component": "Sway Bar End Links", "spec": "30 ft-lbs (41 Nm)", "notes": "" },
+      { "component": "Wheel Lug Bolts", "spec": "74-80 ft-lbs (100 Nm)", "notes": "Tighten in star pattern" },
+      { "component": "Front Hub Nut", "spec": "214 ft-lbs (290 Nm)", "notes": "" },
+      { "component": "Rear Hub Nut", "spec": "184 ft-lbs (249 Nm)", "notes": "" },
+      { "component": "Steering Wheel Nut", "spec": "58 ft-lbs (79 Nm)", "notes": "" }
     ],
     "brakes": [
-      {
-        "component": "Front Caliper Bracket",
-        "spec": "91 ft-lbs (123 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Front Caliper Guide Bolts",
-        "spec": "22-26 ft-lbs (30-35 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Caliper Bracket",
-        "spec": "48 ft-lbs (65 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Rear Caliper Guide Bolts",
-        "spec": "22-26 ft-lbs (30-35 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Brake Hose Banjo Bolt",
-        "spec": "10 ft-lbs (14 Nm)",
-        "notes": "Use new copper washers"
-      },
-      {
-        "component": "Bleed Valve",
-        "spec": "3-4 ft-lbs (4-5 Nm)",
-        "notes": "Do not overtighten"
-      }
+      { "component": "Front Caliper Bracket", "spec": "91 ft-lbs (123 Nm)", "notes": "" },
+      { "component": "Front Caliper Guide Bolts", "spec": "22-26 ft-lbs (30-35 Nm)", "notes": "" },
+      { "component": "Rear Caliper Bracket", "spec": "48 ft-lbs (65 Nm)", "notes": "" },
+      { "component": "Rear Caliper Guide Bolts", "spec": "22-26 ft-lbs (30-35 Nm)", "notes": "" },
+      { "component": "Brake Hose Banjo Bolt", "spec": "10 ft-lbs (14 Nm)", "notes": "Use new copper washers" },
+      { "component": "Bleed Valve", "spec": "3-4 ft-lbs (4-5 Nm)", "notes": "Do not overtighten" }
     ]
   },
   "diyGuides": [
@@ -1355,62 +1160,26 @@
   },
   "communityResources": {
     "youtube": [
-      {
-        "name": "Restore It",
-        "url": "https://www.youtube.com/@RestoreIt",
-        "description": "E30 325i restoration with 60M+ views and detailed weekly updates"
-      },
+      { "name": "Restore It", "url": "https://www.youtube.com/@RestoreIt", "description": "E30 325i restoration with 60M+ views and detailed weekly updates" },
       {
         "name": "M539 Restorations",
         "url": "https://www.youtube.com/@M539Restorations",
         "description": "BMW repairs and restorations from experienced enthusiast"
       },
-      {
-        "name": "BMW Group Classic",
-        "url": "https://www.youtube.com/@BMWGroupClassic",
-        "description": "Official heritage channel featuring classic BMWs"
-      }
+      { "name": "BMW Group Classic", "url": "https://www.youtube.com/@BMWGroupClassic", "description": "Official heritage channel featuring classic BMWs" }
     ],
     "forums": [
-      {
-        "name": "R3VLimited",
-        "url": "https://www.r3vlimited.com/board/",
-        "description": "The most active E30 forum with extensive technical archives"
-      },
-      {
-        "name": "E30 Zone",
-        "url": "https://www.e30zone.net/",
-        "description": "UK's largest E30 community with comprehensive wiki"
-      },
-      {
-        "name": "BimmerBoard E30 Forum",
-        "url": "http://www.bimmerboard.com/forums/e30/",
-        "description": "Technical how-to articles and expert advice"
-      },
-      {
-        "name": "SpecE30",
-        "url": "http://spece30.com/",
-        "description": "Racing-focused community for E30 track enthusiasts"
-      }
+      { "name": "R3VLimited", "url": "https://www.r3vlimited.com/board/", "description": "The most active E30 forum with extensive technical archives" },
+      { "name": "E30 Zone", "url": "https://www.e30zone.net/", "description": "UK's largest E30 community with comprehensive wiki" },
+      { "name": "BimmerBoard E30 Forum", "url": "http://www.bimmerboard.com/forums/e30/", "description": "Technical how-to articles and expert advice" },
+      { "name": "SpecE30", "url": "http://spece30.com/", "description": "Racing-focused community for E30 track enthusiasts" }
     ],
     "facebook": [
-      {
-        "name": "BMW E30 Owners",
-        "url": "https://www.facebook.com/groups/bmwe30owners",
-        "description": "Large international E30 community"
-      },
-      {
-        "name": "E30 Zone Facebook",
-        "url": "https://www.facebook.com/groups/e30zone",
-        "description": "Official E30 Zone forum group"
-      }
+      { "name": "BMW E30 Owners", "url": "https://www.facebook.com/groups/bmwe30owners", "description": "Large international E30 community" },
+      { "name": "E30 Zone Facebook", "url": "https://www.facebook.com/groups/e30zone", "description": "Official E30 Zone forum group" }
     ],
     "websites": [
-      {
-        "name": "E30 Zone Wiki",
-        "url": "https://www.e30zone.net/e30wiki/",
-        "description": "Comprehensive E30 technical wiki and guides"
-      }
+      { "name": "E30 Zone Wiki", "url": "https://www.e30zone.net/e30wiki/", "description": "Comprehensive E30 technical wiki and guides" }
     ]
   }
 }

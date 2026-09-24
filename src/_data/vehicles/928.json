@@ -26,14 +26,8 @@
         "Budget 8-12 hours labor at a specialist shop"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "928 Specialists",
-          "url": "https://928specialists.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "928 Specialists", "url": "https://928specialists.com/" }
       ],
       "repairCosts": {
         "diy": "$300-600",
@@ -41,26 +35,10 @@
         "notes": "V8 timing belt service is major job. Replace all rollers."
       },
       "parts": [
-        {
-          "name": "Timing Belt",
-          "partNumber": "92810515102",
-          "price": "$80-150"
-        },
-        {
-          "name": "Roller Set",
-          "partNumber": "Various",
-          "price": "$200-400"
-        },
-        {
-          "name": "Water Pump",
-          "partNumber": "92810603204",
-          "price": "$150-250"
-        },
-        {
-          "name": "Tensioner",
-          "partNumber": "92810524006",
-          "price": "$100-200"
-        }
+        { "name": "Timing Belt", "partNumber": "92810515102", "price": "$80-150" },
+        { "name": "Roller Set", "partNumber": "Various", "price": "$200-400" },
+        { "name": "Water Pump", "partNumber": "92810603204", "price": "$150-250" },
+        { "name": "Tensioner", "partNumber": "92810524006", "price": "$100-200" }
       ],
       "relatedIssues": [
         { "vehicle": "924", "brand": "Porsche", "model": "924", "issueId": "timing-belt" },
@@ -84,14 +62,8 @@
         "Replace all oil cooler lines and seals"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "928 International",
-          "url": "https://928.org/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "928 International", "url": "https://928.org/" }
       ],
       "repairCosts": {
         "diy": "$200-400",
@@ -99,16 +71,8 @@
         "notes": "V8 leaks from everywhere eventually. Budget for full reseal."
       },
       "parts": [
-        {
-          "name": "Cam Tower Gasket Set",
-          "partNumber": "92810519503",
-          "price": "$80-150"
-        },
-        {
-          "name": "Valve Cover Gasket Set",
-          "partNumber": "92810593300",
-          "price": "$50-100"
-        }
+        { "name": "Cam Tower Gasket Set", "partNumber": "92810519503", "price": "$80-150" },
+        { "name": "Valve Cover Gasket Set", "partNumber": "92810593300", "price": "$50-100" }
       ],
       "difficulty": "Advanced"
     },
@@ -126,14 +90,8 @@
         "Clean and protect all electrical connectors"
       ],
       "sources": [
-        {
-          "name": "928 Specialists",
-          "url": "https://928specialists.com/"
-        },
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        }
+        { "name": "928 Specialists", "url": "https://928specialists.com/" },
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$200-800",
@@ -141,16 +99,8 @@
         "notes": "Harness deteriorates with heat. Rebuilt harnesses available."
       },
       "parts": [
-        {
-          "name": "Engine Harness (Rebuilt)",
-          "partNumber": "Various specialists",
-          "price": "$500-1500"
-        },
-        {
-          "name": "Harness Repair Kit",
-          "partNumber": "Various",
-          "price": "$50-150"
-        }
+        { "name": "Engine Harness (Rebuilt)", "partNumber": "Various specialists", "price": "$500-1500" },
+        { "name": "Harness Repair Kit", "partNumber": "Various", "price": "$50-150" }
       ],
       "difficulty": "Moderate"
     },
@@ -168,14 +118,8 @@
         "Full transmission rebuild for severe issues"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "928 International",
-          "url": "https://928.org/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "928 International", "url": "https://928.org/" }
       ],
       "repairCosts": {
         "diy": "$100-200",
@@ -183,16 +127,8 @@
         "notes": "Fluid and filter service DIY. Rebuild is shop job."
       },
       "parts": [
-        {
-          "name": "Trans Fluid (8L)",
-          "partNumber": "Dexron VI",
-          "price": "$60-100"
-        },
-        {
-          "name": "Trans Filter",
-          "partNumber": "92832590100",
-          "price": "$30-60"
-        }
+        { "name": "Trans Fluid (8L)", "partNumber": "Dexron VI", "price": "$60-100" },
+        { "name": "Trans Filter", "partNumber": "92832590100", "price": "$30-60" }
       ],
       "difficulty": "Advanced"
     },
@@ -210,14 +146,8 @@
         "Check and clean electric cooling fan operation"
       ],
       "sources": [
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        },
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        }
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" },
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$300-600",
@@ -225,21 +155,9 @@
         "notes": "V8 runs hot. Full system service important."
       },
       "parts": [
-        {
-          "name": "Water Pump",
-          "partNumber": "92810603204",
-          "price": "$150-250"
-        },
-        {
-          "name": "Thermostat",
-          "partNumber": "92810612701",
-          "price": "$40-80"
-        },
-        {
-          "name": "Radiator",
-          "partNumber": "Various",
-          "price": "$300-600"
-        }
+        { "name": "Water Pump", "partNumber": "92810603204", "price": "$150-250" },
+        { "name": "Thermostat", "partNumber": "92810612701", "price": "$40-80" },
+        { "name": "Radiator", "partNumber": "Various", "price": "$300-600" }
       ],
       "difficulty": "Advanced"
     },
@@ -256,14 +174,8 @@
         "Replace brake booster check valve if brakes feel hard"
       ],
       "sources": [
-        {
-          "name": "928 Specialists",
-          "url": "https://928specialists.com/"
-        },
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        }
+        { "name": "928 Specialists", "url": "https://928specialists.com/" },
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$100-300",
@@ -271,16 +183,8 @@
         "notes": "928 uses vacuum for HVAC, locks, cruise. Lines crack with age."
       },
       "parts": [
-        {
-          "name": "Vacuum Hose Kit",
-          "partNumber": "Various",
-          "price": "$80-200"
-        },
-        {
-          "name": "Vacuum Reservoir",
-          "partNumber": "92857112101",
-          "price": "$50-100"
-        }
+        { "name": "Vacuum Hose Kit", "partNumber": "Various", "price": "$80-200" },
+        { "name": "Vacuum Reservoir", "partNumber": "92857112101", "price": "$50-100" }
       ],
       "difficulty": "Easy"
     },
@@ -298,14 +202,8 @@
         "Perform full rear alignment after suspension work"
       ],
       "sources": [
-        {
-          "name": "928 International",
-          "url": "https://928.org/"
-        },
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        }
+        { "name": "928 International", "url": "https://928.org/" },
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$300-600",
@@ -313,16 +211,8 @@
         "notes": "S4/GTS Weissach suspension. Multiple bushings and links."
       },
       "parts": [
-        {
-          "name": "Weissach Bushing Kit",
-          "partNumber": "Various",
-          "price": "$150-300"
-        },
-        {
-          "name": "Toe Link",
-          "partNumber": "92833104700",
-          "price": "$80-150"
-        }
+        { "name": "Weissach Bushing Kit", "partNumber": "Various", "price": "$150-300" },
+        { "name": "Toe Link", "partNumber": "92833104700", "price": "$80-150" }
       ],
       "difficulty": "Advanced"
     },
@@ -339,14 +229,8 @@
         "Adjust limit switches for proper open/close positions"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "Pelican Parts",
-          "url": "https://www.pelicanparts.com/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "Pelican Parts", "url": "https://www.pelicanparts.com/" }
       ],
       "repairCosts": {
         "diy": "$50-200",
@@ -354,16 +238,8 @@
         "notes": "Motors, cables, and linkages wear. Lubrication helps."
       },
       "parts": [
-        {
-          "name": "Headlight Motor",
-          "partNumber": "92863110100",
-          "price": "$150-300"
-        },
-        {
-          "name": "Headlight Cable",
-          "partNumber": "92863120300",
-          "price": "$40-80"
-        }
+        { "name": "Headlight Motor", "partNumber": "92863110100", "price": "$150-300" },
+        { "name": "Headlight Cable", "partNumber": "92863120300", "price": "$40-80" }
       ],
       "difficulty": "Moderate"
     },
@@ -380,14 +256,8 @@
         "Have cluster professionally rebuilt by 928 specialist"
       ],
       "sources": [
-        {
-          "name": "928 Specialists",
-          "url": "https://928specialists.com/"
-        },
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        }
+        { "name": "928 Specialists", "url": "https://928specialists.com/" },
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" }
       ],
       "repairCosts": {
         "diy": "$100-300",
@@ -395,16 +265,8 @@
         "notes": "Solder cracks and LCD failures. Rebuild services available."
       },
       "parts": [
-        {
-          "name": "Cluster Rebuild Service",
-          "partNumber": "N/A",
-          "price": "$200-500"
-        },
-        {
-          "name": "Odometer Gear Kit",
-          "partNumber": "Various",
-          "price": "$20-50"
-        }
+        { "name": "Cluster Rebuild Service", "partNumber": "N/A", "price": "$200-500" },
+        { "name": "Odometer Gear Kit", "partNumber": "Various", "price": "$20-50" }
       ],
       "difficulty": "Easy"
     },
@@ -422,14 +284,8 @@
         "Check vacuum supply to HVAC system"
       ],
       "sources": [
-        {
-          "name": "Rennlist",
-          "url": "https://rennlist.com/forums/"
-        },
-        {
-          "name": "928 International",
-          "url": "https://928.org/"
-        }
+        { "name": "Rennlist", "url": "https://rennlist.com/forums/" },
+        { "name": "928 International", "url": "https://928.org/" }
       ],
       "repairCosts": {
         "diy": "$200-500",
@@ -437,16 +293,8 @@
         "notes": "R12 to R134a conversion common. Compressor failures."
       },
       "parts": [
-        {
-          "name": "AC Compressor",
-          "partNumber": "Various",
-          "price": "$300-600"
-        },
-        {
-          "name": "R134a Conversion Kit",
-          "partNumber": "Various",
-          "price": "$100-200"
-        }
+        { "name": "AC Compressor", "partNumber": "Various", "price": "$300-600" },
+        { "name": "R134a Conversion Kit", "partNumber": "Various", "price": "$100-200" }
       ],
       "difficulty": "Moderate"
     }
@@ -462,16 +310,16 @@
       "interval": "Every 60,000-80,000 miles or when handling degrades",
       "laborHours": "12-18 hours shop time",
       "parts": [
-        {"name": "Front Strut (Each)", "oem": "92834301502", "aftermarket": "Bilstein B4, Koni", "cost": "$150-300"},
-        {"name": "Rear Shock Absorber (Each)", "oem": "92833030301", "aftermarket": "Bilstein B4, Koni", "cost": "$150-280"},
-        {"name": "Front Control Arm Bushing Set", "oem": "92834199101", "aftermarket": "URO, Elephant Racing", "cost": "$80-160"},
-        {"name": "Front Strut Mount (Each)", "oem": "92834302701", "aftermarket": "URO, aftermarket", "cost": "$60-120"},
-        {"name": "Front Ball Joint (Each)", "oem": "92834153201", "aftermarket": "Lemforder, Meyle", "cost": "$50-100"},
-        {"name": "Tie Rod End (Each)", "oem": "92834703301", "aftermarket": "Lemforder, Meyle", "cost": "$50-90"},
-        {"name": "Weissach Bushing Kit (S4/GTS)", "oem": "Various", "aftermarket": "Elephant Racing, URO", "cost": "$150-300"},
-        {"name": "Rear Toe Link (Each)", "oem": "92833104700", "aftermarket": "Lemforder, URO", "cost": "$80-150"},
-        {"name": "Rear Trailing Arm Bushing (Each)", "oem": "92833114102", "aftermarket": "URO, aftermarket", "cost": "$50-100"},
-        {"name": "Sway Bar End Link (Front, Each)", "oem": "92834306902", "aftermarket": "URO, aftermarket", "cost": "$35-70"}
+        { "name": "Front Strut (Each)", "oem": "92834301502", "aftermarket": "Bilstein B4, Koni", "cost": "$150-300" },
+        { "name": "Rear Shock Absorber (Each)", "oem": "92833030301", "aftermarket": "Bilstein B4, Koni", "cost": "$150-280" },
+        { "name": "Front Control Arm Bushing Set", "oem": "92834199101", "aftermarket": "URO, Elephant Racing", "cost": "$80-160" },
+        { "name": "Front Strut Mount (Each)", "oem": "92834302701", "aftermarket": "URO, aftermarket", "cost": "$60-120" },
+        { "name": "Front Ball Joint (Each)", "oem": "92834153201", "aftermarket": "Lemforder, Meyle", "cost": "$50-100" },
+        { "name": "Tie Rod End (Each)", "oem": "92834703301", "aftermarket": "Lemforder, Meyle", "cost": "$50-90" },
+        { "name": "Weissach Bushing Kit (S4/GTS)", "oem": "Various", "aftermarket": "Elephant Racing, URO", "cost": "$150-300" },
+        { "name": "Rear Toe Link (Each)", "oem": "92833104700", "aftermarket": "Lemforder, URO", "cost": "$80-150" },
+        { "name": "Rear Trailing Arm Bushing (Each)", "oem": "92833114102", "aftermarket": "URO, aftermarket", "cost": "$50-100" },
+        { "name": "Sway Bar End Link (Front, Each)", "oem": "92834306902", "aftermarket": "URO, aftermarket", "cost": "$35-70" }
       ],
       "tools": [
         "Floor jack and jack stands rated for vehicle weight",
@@ -531,9 +379,9 @@
         "Professional alignment is required after rear suspension work."
       ],
       "references": [
-        {"name": "928 International Technical", "url": "https://928.org/"},
-        {"name": "928 Specialists", "url": "https://www.928specialists.com/"},
-        {"name": "Rennlist 928 Suspension Forum", "url": "https://rennlist.com/forums/928-forum/"}
+        { "name": "928 International Technical", "url": "https://928.org/" },
+        { "name": "928 Specialists", "url": "https://www.928specialists.com/" },
+        { "name": "Rennlist 928 Suspension Forum", "url": "https://rennlist.com/forums/928-forum/" }
       ]
     },
     {
@@ -546,16 +394,16 @@
       "interval": "Annual inspection, repair as needed",
       "laborHours": "Varies significantly by extent of rust",
       "parts": [
-        {"name": "Rocker Panel (Left)", "oem": "92850349100", "aftermarket": "Reproduction available", "cost": "$400-800"},
-        {"name": "Rocker Panel (Right)", "oem": "92850349200", "aftermarket": "Reproduction available", "cost": "$400-800"},
-        {"name": "Floor Pan Repair Section", "oem": "Various", "aftermarket": "Fabricated panels", "cost": "$200-500"},
-        {"name": "Rear Quarter Repair Panel", "oem": "Various", "aftermarket": "Reproduction", "cost": "$300-700"},
-        {"name": "Battery Tray", "oem": "92861213100", "aftermarket": "Fabricated", "cost": "$100-250"},
-        {"name": "Door Skin (If needed)", "oem": "Various", "aftermarket": "Reproduction limited", "cost": "$400-900"},
-        {"name": "POR-15 Rust Preventive Coating", "oem": "N/A", "aftermarket": "POR-15", "cost": "$40-80"},
-        {"name": "3M Underseal Rubberized Coating", "oem": "N/A", "aftermarket": "3M", "cost": "$15-25"},
-        {"name": "Weld-Through Primer", "oem": "N/A", "aftermarket": "Eastwood, 3M", "cost": "$15-30"},
-        {"name": "Body Seam Sealer", "oem": "N/A", "aftermarket": "3M, Eastwood", "cost": "$20-40"}
+        { "name": "Rocker Panel (Left)", "oem": "92850349100", "aftermarket": "Reproduction available", "cost": "$400-800" },
+        { "name": "Rocker Panel (Right)", "oem": "92850349200", "aftermarket": "Reproduction available", "cost": "$400-800" },
+        { "name": "Floor Pan Repair Section", "oem": "Various", "aftermarket": "Fabricated panels", "cost": "$200-500" },
+        { "name": "Rear Quarter Repair Panel", "oem": "Various", "aftermarket": "Reproduction", "cost": "$300-700" },
+        { "name": "Battery Tray", "oem": "92861213100", "aftermarket": "Fabricated", "cost": "$100-250" },
+        { "name": "Door Skin (If needed)", "oem": "Various", "aftermarket": "Reproduction limited", "cost": "$400-900" },
+        { "name": "POR-15 Rust Preventive Coating", "oem": "N/A", "aftermarket": "POR-15", "cost": "$40-80" },
+        { "name": "3M Underseal Rubberized Coating", "oem": "N/A", "aftermarket": "3M", "cost": "$15-25" },
+        { "name": "Weld-Through Primer", "oem": "N/A", "aftermarket": "Eastwood, 3M", "cost": "$15-30" },
+        { "name": "Body Seam Sealer", "oem": "N/A", "aftermarket": "3M, Eastwood", "cost": "$20-40" }
       ],
       "tools": [
         "Wire brush and wire wheel attachments",
@@ -611,9 +459,9 @@
         "Disconnect battery and fuel system before any welding operations."
       ],
       "references": [
-        {"name": "928 International Body/Paint Forum", "url": "https://928.org/"},
-        {"name": "Rennlist 928 Body Forum", "url": "https://rennlist.com/forums/928-forum/"},
-        {"name": "928 Specialists Body Repair", "url": "https://www.928specialists.com/"}
+        { "name": "928 International Body/Paint Forum", "url": "https://928.org/" },
+        { "name": "Rennlist 928 Body Forum", "url": "https://rennlist.com/forums/928-forum/" },
+        { "name": "928 Specialists Body Repair", "url": "https://www.928specialists.com/" }
       ]
     },
     {
@@ -626,16 +474,16 @@
       "interval": "Inspect every 2-3 years, service as needed",
       "laborHours": "6-20 hours shop time",
       "parts": [
-        {"name": "Engine Wiring Harness (Rebuilt)", "oem": "Various by year", "aftermarket": "Specialist rebuilt", "cost": "$500-1,500"},
-        {"name": "Harness Repair Kit", "oem": "N/A", "aftermarket": "Various suppliers", "cost": "$50-150"},
-        {"name": "DME Relay", "oem": "92861510100", "aftermarket": "Bosch", "cost": "$40-80"},
-        {"name": "Fuel Pump Relay", "oem": "92861510101", "aftermarket": "Bosch", "cost": "$35-70"},
-        {"name": "Alternator (Rebuilt)", "oem": "92860301502", "aftermarket": "Bosch rebuilt", "cost": "$250-500"},
-        {"name": "Headlight Motor", "oem": "92863110100", "aftermarket": "Rebuilt available", "cost": "$150-300"},
-        {"name": "Headlight Cable", "oem": "92863120300", "aftermarket": "Aftermarket", "cost": "$40-80"},
-        {"name": "Instrument Cluster Capacitor Kit", "oem": "N/A", "aftermarket": "Various", "cost": "$30-70"},
-        {"name": "Odometer Gear Kit (Brass)", "oem": "N/A", "aftermarket": "Various", "cost": "$20-50"},
-        {"name": "Ground Wire Kit", "oem": "Various", "aftermarket": "Custom fabrication", "cost": "$50-120"}
+        { "name": "Engine Wiring Harness (Rebuilt)", "oem": "Various by year", "aftermarket": "Specialist rebuilt", "cost": "$500-1,500" },
+        { "name": "Harness Repair Kit", "oem": "N/A", "aftermarket": "Various suppliers", "cost": "$50-150" },
+        { "name": "DME Relay", "oem": "92861510100", "aftermarket": "Bosch", "cost": "$40-80" },
+        { "name": "Fuel Pump Relay", "oem": "92861510101", "aftermarket": "Bosch", "cost": "$35-70" },
+        { "name": "Alternator (Rebuilt)", "oem": "92860301502", "aftermarket": "Bosch rebuilt", "cost": "$250-500" },
+        { "name": "Headlight Motor", "oem": "92863110100", "aftermarket": "Rebuilt available", "cost": "$150-300" },
+        { "name": "Headlight Cable", "oem": "92863120300", "aftermarket": "Aftermarket", "cost": "$40-80" },
+        { "name": "Instrument Cluster Capacitor Kit", "oem": "N/A", "aftermarket": "Various", "cost": "$30-70" },
+        { "name": "Odometer Gear Kit (Brass)", "oem": "N/A", "aftermarket": "Various", "cost": "$20-50" },
+        { "name": "Ground Wire Kit", "oem": "Various", "aftermarket": "Custom fabrication", "cost": "$50-120" }
       ],
       "tools": [
         "Digital multimeter with amp clamp",
@@ -693,9 +541,9 @@
         "Some 928 electrical components are expensive and hard to find - test before replacing."
       ],
       "references": [
-        {"name": "928 Specialists Electrical", "url": "https://www.928specialists.com/"},
-        {"name": "928 International Electrical Forum", "url": "https://928.org/"},
-        {"name": "Rennlist 928 Electrical Forum", "url": "https://rennlist.com/forums/928-forum/"}
+        { "name": "928 Specialists Electrical", "url": "https://www.928specialists.com/" },
+        { "name": "928 International Electrical Forum", "url": "https://928.org/" },
+        { "name": "Rennlist 928 Electrical Forum", "url": "https://rennlist.com/forums/928-forum/" }
       ]
     },
     {
@@ -708,16 +556,16 @@
       "interval": "As needed based on condition",
       "laborHours": "12-30 hours shop time",
       "parts": [
-        {"name": "Leather Seat Cover Kit (Per Seat)", "oem": "Various by color", "aftermarket": "Leatherique, Alea Leather", "cost": "$400-1,000"},
-        {"name": "Carpet Set", "oem": "Various by color", "aftermarket": "Autoloc, aftermarket", "cost": "$400-900"},
-        {"name": "Door Panel Set", "oem": "Various", "aftermarket": "Used or refurbished", "cost": "$300-700"},
-        {"name": "Seat Foam Cushion", "oem": "Various", "aftermarket": "Various", "cost": "$150-350"},
-        {"name": "Leather Conditioner/Dye Kit", "oem": "N/A", "aftermarket": "Leatherique, Connolly", "cost": "$60-140"},
-        {"name": "Door Seal Kit (Complete)", "oem": "Various", "aftermarket": "German OEM suppliers", "cost": "$300-700"},
-        {"name": "Shift Boot (Auto/Manual)", "oem": "Various", "aftermarket": "Aftermarket leather", "cost": "$60-130"},
-        {"name": "Sun Visor Set", "oem": "Various", "aftermarket": "Used or refurbished", "cost": "$100-250"},
-        {"name": "Dashboard (If cracked)", "oem": "Used only", "aftermarket": "Very limited", "cost": "$500-1,500"},
-        {"name": "HVAC Blend Door Servo", "oem": "Various", "aftermarket": "Rebuilt", "cost": "$100-250"}
+        { "name": "Leather Seat Cover Kit (Per Seat)", "oem": "Various by color", "aftermarket": "Leatherique, Alea Leather", "cost": "$400-1,000" },
+        { "name": "Carpet Set", "oem": "Various by color", "aftermarket": "Autoloc, aftermarket", "cost": "$400-900" },
+        { "name": "Door Panel Set", "oem": "Various", "aftermarket": "Used or refurbished", "cost": "$300-700" },
+        { "name": "Seat Foam Cushion", "oem": "Various", "aftermarket": "Various", "cost": "$150-350" },
+        { "name": "Leather Conditioner/Dye Kit", "oem": "N/A", "aftermarket": "Leatherique, Connolly", "cost": "$60-140" },
+        { "name": "Door Seal Kit (Complete)", "oem": "Various", "aftermarket": "German OEM suppliers", "cost": "$300-700" },
+        { "name": "Shift Boot (Auto/Manual)", "oem": "Various", "aftermarket": "Aftermarket leather", "cost": "$60-130" },
+        { "name": "Sun Visor Set", "oem": "Various", "aftermarket": "Used or refurbished", "cost": "$100-250" },
+        { "name": "Dashboard (If cracked)", "oem": "Used only", "aftermarket": "Very limited", "cost": "$500-1,500" },
+        { "name": "HVAC Blend Door Servo", "oem": "Various", "aftermarket": "Rebuilt", "cost": "$100-250" }
       ],
       "tools": [
         "Trim panel removal tools (plastic pry bars)",
@@ -775,9 +623,9 @@
         "Heat gun can damage leather if held too close - keep moving."
       ],
       "references": [
-        {"name": "Leatherique Leather Care", "url": "https://www.leatherique.com/"},
-        {"name": "928 International Interior Forum", "url": "https://928.org/"},
-        {"name": "Rennlist 928 Interior Forum", "url": "https://rennlist.com/forums/928-forum/"}
+        { "name": "Leatherique Leather Care", "url": "https://www.leatherique.com/" },
+        { "name": "928 International Interior Forum", "url": "https://928.org/" },
+        { "name": "Rennlist 928 Interior Forum", "url": "https://rennlist.com/forums/928-forum/" }
       ]
     }
   ],
@@ -787,7 +635,10 @@
         "name": "Porsche Classic",
         "url": "https://www.porsche.com/usa/accessoriesandservices/classic/",
         "notes": "Factory parts program for classic Porsches - 928 parts availability continues to improve",
-        "specialties": ["Factory Original", "Genuine Porsche"],
+        "specialties": [
+          "Factory Original",
+          "Genuine Porsche"
+        ],
         "warranty": "Genuine OEM",
         "featured": true
       },
@@ -795,7 +646,11 @@
         "name": "Pelican Parts",
         "url": "https://www.pelicanparts.com/Porsche/catalog_928.htm",
         "notes": "Comprehensive 928 parts catalog with detailed diagrams and tech articles",
-        "specialties": ["OEM Parts", "Tech Articles", "928 Coverage"],
+        "specialties": [
+          "OEM Parts",
+          "Tech Articles",
+          "928 Coverage"
+        ],
         "shipping": "Free over $99",
         "featured": true
       },
@@ -803,7 +658,10 @@
         "name": "Sunset Porsche Parts",
         "url": "https://www.sunsetporscheparts.com/",
         "notes": "Porsche dealer parts with competitive pricing on genuine parts",
-        "specialties": ["OEM Dealer", "New Genuine Parts"],
+        "specialties": [
+          "OEM Dealer",
+          "New Genuine Parts"
+        ],
         "shipping": "Fast shipping"
       }
     ],
@@ -812,20 +670,30 @@
         "name": "928 Motorsports",
         "url": "https://928motorsports.com/",
         "notes": "Performance upgrades specifically designed for the 928 platform",
-        "specialties": ["Engine Upgrades", "Suspension", "Performance"],
+        "specialties": [
+          "Engine Upgrades",
+          "Suspension",
+          "Performance"
+        ],
         "featured": true
       },
       {
         "name": "Devek",
         "url": "https://www.devek.us/",
         "notes": "928 performance specialist known for engine and transmission work",
-        "specialties": ["Engine Builds", "Transmissions"]
+        "specialties": [
+          "Engine Builds",
+          "Transmissions"
+        ]
       },
       {
         "name": "Elephant Racing",
         "url": "https://www.elephantracing.com/",
         "notes": "Premium suspension upgrades - 928 kits available",
-        "specialties": ["Suspension", "Handling Kits"]
+        "specialties": [
+          "Suspension",
+          "Handling Kits"
+        ]
       }
     ],
     "general": [
@@ -833,14 +701,20 @@
         "name": "AutohausAZ",
         "url": "https://www.autohausaz.com/porsche-928-parts",
         "notes": "Large selection of replacement parts at competitive prices",
-        "specialties": ["Replacement Parts", "Maintenance Items"],
+        "specialties": [
+          "Replacement Parts",
+          "Maintenance Items"
+        ],
         "shipping": "Free over $99"
       },
       {
         "name": "FCP Euro",
         "url": "https://www.fcpeuro.com/",
         "notes": "Industry-leading lifetime replacement guarantee on all parts",
-        "specialties": ["Lifetime Warranty", "OE Quality"],
+        "specialties": [
+          "Lifetime Warranty",
+          "OE Quality"
+        ],
         "shipping": "Free over $49",
         "warranty": "Lifetime"
       }
@@ -850,27 +724,41 @@
         "name": "928 International",
         "url": "https://www.928intl.com/",
         "notes": "Premier 928 specialist - comprehensive parts inventory including hard-to-find items",
-        "specialties": ["928 Exclusive", "Rare Parts", "Expertise"],
+        "specialties": [
+          "928 Exclusive",
+          "Rare Parts",
+          "Expertise"
+        ],
         "featured": true
       },
       {
         "name": "928 Specialists",
         "url": "https://928specialists.com/",
         "notes": "Decades of 928 experience - parts, service, and restoration",
-        "specialties": ["928 Exclusive", "Full Service", "Restoration"],
+        "specialties": [
+          "928 Exclusive",
+          "Full Service",
+          "Restoration"
+        ],
         "featured": true
       },
       {
         "name": "Only 928",
         "url": "https://www.only928.com/",
         "notes": "928-only specialists with parts and technical support",
-        "specialties": ["928 Exclusive", "Technical Support"]
+        "specialties": [
+          "928 Exclusive",
+          "Technical Support"
+        ]
       },
       {
         "name": "928s R Us",
         "url": "https://www.928s-r-us.com/",
         "notes": "UK-based 928 specialist with international shipping",
-        "specialties": ["European Parts", "928 Exclusive"],
+        "specialties": [
+          "European Parts",
+          "928 Exclusive"
+        ],
         "shipping": "International"
       }
     ],
@@ -879,34 +767,43 @@
         "name": "928 Forum Classifieds",
         "url": "https://928.org/forum/",
         "notes": "Dedicated 928 community marketplace - the first place to look for used parts",
-        "specialties": ["928 Exclusive", "Community Vetted"],
+        "specialties": [
+          "928 Exclusive",
+          "Community Vetted"
+        ],
         "featured": true
       },
       {
         "name": "Rennlist 928 Classifieds",
         "url": "https://rennlist.com/forums/928-forum/",
         "notes": "Large Porsche community with active 928 section",
-        "specialties": ["Forum Marketplace", "Wide Selection"]
+        "specialties": [
+          "Forum Marketplace",
+          "Wide Selection"
+        ]
       },
       {
         "name": "eBay Motors",
         "url": "https://www.ebay.com/b/Porsche-928-Parts/6030/bn_582140",
         "notes": "Global marketplace for used and NOS 928 parts",
-        "specialties": ["Used Parts", "NOS", "Global Sellers"]
+        "specialties": [
+          "Used Parts",
+          "NOS",
+          "Global Sellers"
+        ]
       },
       {
         "name": "Car-Part.com",
         "url": "https://www.car-part.com/",
         "notes": "Search nationwide salvage yard inventory - 928s are getting rare",
-        "specialties": ["Salvage Parts", "Low Cost"]
+        "specialties": [
+          "Salvage Parts",
+          "Low Cost"
+        ]
       }
     ],
     "tools": [
-      {
-        "name": "928 Spec Database",
-        "url": "https://www.928s.org/",
-        "notes": "Comprehensive 928 specifications, production numbers, and technical data"
-      },
+      { "name": "928 Spec Database", "url": "https://www.928s.org/", "notes": "Comprehensive 928 specifications, production numbers, and technical data" },
       {
         "name": "Porsche Parts Diagrams",
         "url": "https://www.pelicanparts.com/Porsche/catalog_928.htm",
@@ -921,99 +818,30 @@
   },
   "torqueSpecs": {
     "sources": [
-      {
-        "name": "Lindsey Racing Torque Specs",
-        "url": "https://www.lindseyracing.com/LR/Parts/TORQUESPEC.html"
-      },
-      {
-        "name": "928 Specialists Technical",
-        "url": "https://www.928specialists.com/"
-      },
-      {
-        "name": "Rennlist 928 Technical",
-        "url": "https://rennlist.com/forums/928-forum/"
-      }
+      { "name": "Lindsey Racing Torque Specs", "url": "https://www.lindseyracing.com/LR/Parts/TORQUESPEC.html" },
+      { "name": "928 Specialists Technical", "url": "https://www.928specialists.com/" },
+      { "name": "Rennlist 928 Technical", "url": "https://rennlist.com/forums/928-forum/" }
     ],
     "engine": [
-      {
-        "component": "Cylinder Head Bolts (S4/GTS)",
-        "spec": "Torque-to-yield sequence",
-        "notes": "See manual for multi-stage procedure"
-      },
-      {
-        "component": "Timing Belt Tensioner",
-        "spec": "33 ft-lbs (45 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Timing Belt Rollers",
-        "spec": "33 ft-lbs (45 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Spark Plugs",
-        "spec": "22 ft-lbs (30 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Cam Tower Bolts",
-        "spec": "7 ft-lbs (10 Nm)",
-        "notes": "Tighten evenly in pattern"
-      },
-      {
-        "component": "Oil Drain Plug",
-        "spec": "22 ft-lbs (30 Nm)",
-        "notes": "Replace washer"
-      },
-      {
-        "component": "Water Pump Bolts",
-        "spec": "15 ft-lbs (20 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Intake Manifold Bolts",
-        "spec": "7 ft-lbs (10 Nm)",
-        "notes": ""
-      }
+      { "component": "Cylinder Head Bolts (S4/GTS)", "spec": "Torque-to-yield sequence", "notes": "See manual for multi-stage procedure" },
+      { "component": "Timing Belt Tensioner", "spec": "33 ft-lbs (45 Nm)", "notes": "" },
+      { "component": "Timing Belt Rollers", "spec": "33 ft-lbs (45 Nm)", "notes": "" },
+      { "component": "Spark Plugs", "spec": "22 ft-lbs (30 Nm)", "notes": "" },
+      { "component": "Cam Tower Bolts", "spec": "7 ft-lbs (10 Nm)", "notes": "Tighten evenly in pattern" },
+      { "component": "Oil Drain Plug", "spec": "22 ft-lbs (30 Nm)", "notes": "Replace washer" },
+      { "component": "Water Pump Bolts", "spec": "15 ft-lbs (20 Nm)", "notes": "" },
+      { "component": "Intake Manifold Bolts", "spec": "7 ft-lbs (10 Nm)", "notes": "" }
     ],
     "suspension": [
-      {
-        "component": "Wheel Lug Bolts (M14)",
-        "spec": "96 ft-lbs (130 Nm)",
-        "notes": "Tighten in star pattern"
-      },
-      {
-        "component": "Front Control Arm Bolts",
-        "spec": "63 ft-lbs (85 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Weissach Axle Control Arms",
-        "spec": "74 ft-lbs (100 Nm)",
-        "notes": "S4/GTS only"
-      },
-      {
-        "component": "Tie Rod Ends",
-        "spec": "33 ft-lbs (45 Nm)",
-        "notes": "Use new cotter pin"
-      },
-      {
-        "component": "Strut Top Mount",
-        "spec": "44 ft-lbs (60 Nm)",
-        "notes": ""
-      }
+      { "component": "Wheel Lug Bolts (M14)", "spec": "96 ft-lbs (130 Nm)", "notes": "Tighten in star pattern" },
+      { "component": "Front Control Arm Bolts", "spec": "63 ft-lbs (85 Nm)", "notes": "" },
+      { "component": "Weissach Axle Control Arms", "spec": "74 ft-lbs (100 Nm)", "notes": "S4/GTS only" },
+      { "component": "Tie Rod Ends", "spec": "33 ft-lbs (45 Nm)", "notes": "Use new cotter pin" },
+      { "component": "Strut Top Mount", "spec": "44 ft-lbs (60 Nm)", "notes": "" }
     ],
     "brakes": [
-      {
-        "component": "Caliper Bolts",
-        "spec": "63 ft-lbs (85 Nm)",
-        "notes": ""
-      },
-      {
-        "component": "Brake Line Fittings",
-        "spec": "11 ft-lbs (15 Nm)",
-        "notes": "Do not overtighten"
-      }
+      { "component": "Caliper Bolts", "spec": "63 ft-lbs (85 Nm)", "notes": "" },
+      { "component": "Brake Line Fittings", "spec": "11 ft-lbs (15 Nm)", "notes": "Do not overtighten" }
     ]
   },
   "diyGuides": [
@@ -1225,11 +1053,7 @@
             "detail": "Coolant pipes under the intake manifold corrode and leak. Common failure point.",
             "costIfBad": "$800-1,500"
           },
-          {
-            "check": "Head Gaskets",
-            "detail": "Not common failures but serious when they occur. Check for coolant in oil.",
-            "costIfBad": "$3,000-6,000"
-          }
+          { "check": "Head Gaskets", "detail": "Not common failures but serious when they occur. Check for coolant in oil.", "costIfBad": "$3,000-6,000" }
         ]
       },
       {
@@ -1250,11 +1074,7 @@
             "detail": "The tube connecting engine to transaxle contains the driveshaft. Check for vibration.",
             "costIfBad": "$1,000-2,500"
           },
-          {
-            "check": "CV Joints / Axles",
-            "detail": "Rear CV joints wear over time. Listen for clicking in turns.",
-            "costIfBad": "$500-1,000"
-          }
+          { "check": "CV Joints / Axles", "detail": "Rear CV joints wear over time. Listen for clicking in turns.", "costIfBad": "$500-1,000" }
         ]
       },
       {
@@ -1270,11 +1090,7 @@
             "detail": "Check for leaks from pump, rack, and lines. The system operates at high pressure.",
             "costIfBad": "$500-1,500"
           },
-          {
-            "check": "Front Control Arms",
-            "detail": "Bushings and ball joints wear causing poor handling and tire wear.",
-            "costIfBad": "$600-1,200"
-          }
+          { "check": "Front Control Arms", "detail": "Bushings and ball joints wear causing poor handling and tire wear.", "costIfBad": "$600-1,200" }
         ]
       },
       {
@@ -1290,16 +1106,8 @@
             "detail": "HVAC system is complex with vacuum and electrical components. Test all functions.",
             "costIfBad": "$500-2,000"
           },
-          {
-            "check": "Instrument Cluster",
-            "detail": "Check for working gauges and proper speedometer/tachometer operation.",
-            "costIfBad": "$400-1,000"
-          },
-          {
-            "check": "Power Seat Motors",
-            "detail": "Electric seats can fail. Test all adjustments including memory function.",
-            "costIfBad": "$300-800"
-          }
+          { "check": "Instrument Cluster", "detail": "Check for working gauges and proper speedometer/tachometer operation.", "costIfBad": "$400-1,000" },
+          { "check": "Power Seat Motors", "detail": "Electric seats can fail. Test all adjustments including memory function.", "costIfBad": "$300-800" }
         ]
       },
       {
@@ -1315,11 +1123,7 @@
             "detail": "Interior leather can crack and wear. Check seats, door panels, and dashboard.",
             "costIfBad": "$1,000-4,000"
           },
-          {
-            "check": "Headlight Covers",
-            "detail": "Pop-up headlight covers can crack or discolor. Check operation and condition.",
-            "costIfBad": "$500-1,500"
-          }
+          { "check": "Headlight Covers", "detail": "Pop-up headlight covers can crack or discolor. Check operation and condition.", "costIfBad": "$500-1,500" }
         ]
       }
     ],
@@ -1381,62 +1185,26 @@
   },
   "communityResources": {
     "youtube": [
-      {
-        "name": "Channel P101tv",
-        "url": "https://www.youtube.com/@P101tv",
-        "description": "Independent Porsche channel with 928 content"
-      },
-      {
-        "name": "edredas",
-        "url": "https://www.youtube.com/@edredas",
-        "description": "Porsche DIY content including 928s"
-      },
-      {
-        "name": "Barn Find Hunter",
-        "url": "https://www.youtube.com/@HagertyDriversFoundation",
-        "description": "Classic car hunting including Porsches"
-      }
+      { "name": "Channel P101tv", "url": "https://www.youtube.com/@P101tv", "description": "Independent Porsche channel with 928 content" },
+      { "name": "edredas", "url": "https://www.youtube.com/@edredas", "description": "Porsche DIY content including 928s" },
+      { "name": "Barn Find Hunter", "url": "https://www.youtube.com/@HagertyDriversFoundation", "description": "Classic car hunting including Porsches" }
     ],
     "forums": [
-      {
-        "name": "928 Owners Club",
-        "url": "https://www.928oc.org/forum/",
-        "description": "Premier 928 community with 3,100+ cars in registry"
-      },
-      {
-        "name": "Rennlist 928 Forum",
-        "url": "https://rennlist.com/forums/928-forum/",
-        "description": "Active 928 discussion and technical resources"
-      },
+      { "name": "928 Owners Club", "url": "https://www.928oc.org/forum/", "description": "Premier 928 community with 3,100+ cars in registry" },
+      { "name": "Rennlist 928 Forum", "url": "https://rennlist.com/forums/928-forum/", "description": "Active 928 discussion and technical resources" },
       {
         "name": "Pelican Parts 928 Forum",
         "url": "https://forums.pelicanparts.com/porsche-928-technical-forum/",
         "description": "Technical forum for 928 owners"
       },
-      {
-        "name": "Planet-9 928 Section",
-        "url": "https://www.planet-9.com/forums/",
-        "description": "928 discussion and market tracking"
-      }
+      { "name": "Planet-9 928 Section", "url": "https://www.planet-9.com/forums/", "description": "928 discussion and market tracking" }
     ],
     "facebook": [
-      {
-        "name": "Porsche 928 Owners",
-        "url": "https://www.facebook.com/groups/porsche928owners",
-        "description": "Active 928 enthusiast community"
-      },
-      {
-        "name": "928 Owners Club",
-        "url": "https://www.facebook.com/groups/928ownersclub",
-        "description": "Official 928 OC Facebook group"
-      }
+      { "name": "Porsche 928 Owners", "url": "https://www.facebook.com/groups/porsche928owners", "description": "Active 928 enthusiast community" },
+      { "name": "928 Owners Club", "url": "https://www.facebook.com/groups/928ownersclub", "description": "Official 928 OC Facebook group" }
     ],
     "websites": [
-      {
-        "name": "928 Owners Club",
-        "url": "https://www.928oc.org/",
-        "description": "Official club with registry and resources"
-      }
+      { "name": "928 Owners Club", "url": "https://www.928oc.org/", "description": "Official club with registry and resources" }
     ]
   }
 }
